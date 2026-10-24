@@ -31,3 +31,26 @@ python tools/generate_tpose_nai.py --only mio rei --out art/tpose
 | 15a / 15b | 5장 |
 | 16a / 16b | 6장 : 일상·동기·수사 / 최종 재판·엔딩 |
 | 99_v2_보정사항.md | 설정집 v2와 달라진 점, 개정 이력 |
+
+## 제작 사양서 (`docs/spec/`)
+| 파일 | 내용 |
+|---|---|
+| 00_제작_사양_개요.md | 엔진·구조·데이터 파이프라인·세이브 |
+| 01_스크립트_연출_명령_사양.md | 대사 재생·대화창·키워드 연출·`@cmd` |
+| 02_UI_화면_명세.md | 전 화면 레이아웃(타이틀~재판 HUD~갤러리) |
+| 03_탐색_수사_시스템_사양.md | 파노라마 노드·핫스팟·수사·노트·코인 |
+| 04_재판_미니게임_사양.md | 재판 미니게임 수치·데이터 |
+| 05_연출_가이드.md | 장별 비주얼·카메라·처형 스토리보드·BGM/SFX |
+| 06_에셋_제작_목록.md | 스프라이트·배경·CG·UI·사운드 수량과 스타일 |
+| 07_데이터_스키마.md | JSON 스키마·ID 규칙 |
+| 08_구현_로드맵.md | 마일스톤·WBS·테스트 |
+| 09_챕터_플로우_테이블.md | 장별 비트 순서 |
+| 10_장면_인덱스.md | 장면 297개(자동 생성) |
+
+## 도구 / 데이터
+```bash
+python tools/build_data.py     # 각본 → data/*.json
+python tools/make_index_md.py  # 장면 인덱스 문서
+python tools/check_data.py     # 무결성 검사
+```
+`data/` : `scenes/` `tables/`(재판 표) `evidence.json` `characters.json` `emotion_map.json` `scene_index.json`
