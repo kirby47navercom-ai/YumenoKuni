@@ -21,13 +21,16 @@ private:
  std::vector<std::pair<std::string,std::string>> bullets;
  int debateAt=0,bullet=0,shownLine=-1,shownHearts=-1,shownNoise=-1,vBreaks=0;
  float messageTimer=0,cutinTimer=0,clearTimer=0,holdTime=-1,cameraFrom=0,cameraTo=0,cameraAngle=0,cameraTime=1;
+ float cameraPitch=0,pitchFrom=0;
  int speakerSeat=-1,retries=0,shownStars=-1;
  float debateTime=180;
  std::map<std::string,hb::Actor*> actors;
  float aimX=640,aimY=360;
- bool lie=false,lieCost=false;
+ bool lie=false,lieCost=false,enterPressed=false,spacePressed=false;
  struct GlyphCache{int visible=0;std::string text;float rotation=1e9f,opacity=-1;};
  std::map<std::string,GlyphCache> glyphCache;
+ struct GlyphStyle{std::string font;float size=0,r=-1,g=-1,b=-1;};
+ std::map<std::string,GlyphStyle> glyphStyle;bool noiseStyled=false;
  std::map<std::string,bool> held;
  std::map<std::string,std::string> texts;
  bool pressed(const std::string& key);
@@ -38,7 +41,7 @@ private:
  void advance();
  void save();
  void dialogVisible(bool visible);
- void startDebate(int at);
+ void startDebate(const hb::Json& d);
  void updateDebate(float delta);
  void message(const std::string& value,float seconds);
  void showBullet();
@@ -47,5 +50,20 @@ private:
  void seatVisible(int seat,bool visible);
  void placeCamera(float angle);
  void setupCourt();
+ // 재판 단계 (TrialRunner.hpp)
+ struct Orb{std::string ch;float x=0,y=0,vx=0,vy=0;bool taken=false;};
+ hb::Json stages,stage;std::string stageKind;int stageAt=-1;bool inScript=false,playingDebate=false,restartStage=false,stageShown=false,mouseWasDown=false;
+ std::vector<hb::Json> scriptLines;int scriptAt=0;
+ std::vector<std::string> opts,bladeIds,personIds,pieceIds,usedPieces,anaChars;std::vector<int> scrumIds,cells,loneHits,armOrder;std::vector<bool> filledPanel;std::vector<Orb> orbs;
+ int optAnswer=-1,optHover=0,optStep=0,climaxBlank=-1,sdLine=0,sdBullet=0,scPair=0,mash=-1,armLine=0,armHits=0,armFinal=-1,taxiQ=0,taxiLane=1,anaFilled=0,mineAnswer=0;
+ float optY=118,optStepPx=64,optH=56,stageTime=0,stageLimit=999,stageMsgTimer=0,sdTime=0,armBeat=0,taxiDist=0,lightX=-300,spot=0,dragX=0,dragY=0;
+ std::map<std::string,std::string> stexts;std::map<int,std::string> seatTexture;std::map<std::string,bool> svisible;
+ void stext(const std::string& id,const std::string& v);void svis(const std::string& id,bool v);void sclear();void smsg(const std::string& v,float seconds);
+ std::string nameOf(const std::string& slug)const;std::string poseTexture(const std::string& slug,const std::string& emo,const std::string& pose)const;
+ void debateHud(bool on);void drawHearts();void hurt();void heal();void focusSpeaker(const std::string& slug,const std::string& texture);void updateCamera(float delta);
+ void startTrial();void endTrial();void enterStage(int i);void finishStage();void beginScript();void nextScriptLine();void updateScript(float delta,bool next);
+ void showOptions(const std::string& question,const std::vector<std::string>& o);int optionAt(float x,float y)const;std::vector<std::string> alive(bool withMio)const;
+ void climaxOptions();void setupPlay();void optionPicked(int i);void scrumNext();void scrumPick(int i);void anaSlots();std::vector<int> mineGroup(int start)const;bool itemOpen(int item)const;void mineClick(int c);void taxiShow();
+ void updateTrial(float delta);hb::Json autoAction()const;
  void drawGlyphs(const std::string& prefix,int capacity,const std::vector<debate::Glyph>& glyphs);
 };

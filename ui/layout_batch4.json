@@ -1,0 +1,111 @@
+{
+  "canvas": [
+    2560,
+    1440
+  ],
+  "engine_canvas": [
+    1280,
+    720
+  ],
+  "scale": 2,
+  "hud": {
+    "hud_name": {
+      "path": "ui/trial/hud_name.png",
+      "texture_size": [
+        840,
+        160
+      ],
+      "rect": [
+        44,
+        24,
+        840,
+        160
+      ],
+      "engine_rect": [
+        22,
+        12,
+        420,
+        80
+      ],
+      "replace_svg": "Game/Assets/Art/ui/hud_name.svg",
+      "text": "runtime only"
+    },
+    "hud_status": {
+      "path": "ui/trial/hud_status.png",
+      "texture_size": [
+        660,
+        232
+      ],
+      "rect": [
+        1872,
+        104,
+        660,
+        232
+      ],
+      "engine_rect": [
+        936,
+        52,
+        330,
+        116
+      ],
+      "replace_svg": "Game/Assets/Art/ui/hud_status.svg",
+      "text": "runtime only"
+    },
+    "hud_bullet": {
+      "path": "ui/trial/hud_bullet.png",
+      "texture_size": [
+        840,
+        100
+      ],
+      "rect": [
+        244,
+        1120,
+        840,
+        100
+      ],
+      "engine_rect": [
+        122,
+        560,
+        420,
+        50
+      ],
+      "replace_svg": "Game/Assets/Art/ui/hud_bullet.svg",
+      "text": "runtime only"
+    },
+    "hud_timer": {
+      "path": "ui/trial/hud_timer.png",
+      "texture_size": [
+        660,
+        128
+      ],
+      "rect": [
+        1876,
+        1288,
+        660,
+        128
+      ],
+      "engine_rect": [
+        938,
+        644,
+        330,
+        64
+      ],
+      "replace_svg": "Game/Assets/Art/ui/hud_timer.svg",
+      "text": "runtime only"
+    }
+  },
+  "integration_status": "Delivered images and rectangle mapping; Game source untouched",
+  "wall": {
+    "path": "art/trial3d/wall.png",
+    "wrap": "repeat horizontally",
+    "size": [
+      1024,
+      1365
+    ],
+    "note": "full-bleed rectangular RGBA panel"
+  },
+  "podium_dead": {
+    "path": "art/trial3d/podium_dead.png",
+    "note": "Preserve pedestal size when placing this taller composite; use alpha bounds and pedestal subregion rather than scaling the whole memorial assembly to the ordinary podium height."
+  }
+}

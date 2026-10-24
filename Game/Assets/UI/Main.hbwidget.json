@@ -16126,7 +16126,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "Assets/Art/ui/hud_name.svg",
+    "texture": "Assets/Art/ui/hud_name.png",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -16329,7 +16329,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "Assets/Art/ui/hud_status.svg",
+    "texture": "Assets/Art/ui/hud_status.png",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -18674,7 +18674,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "Assets/Art/ui/hud_bullet.svg",
+    "texture": "Assets/Art/ui/hud_bullet.png",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -18978,7 +18978,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "Assets/Art/ui/hud_timer.svg",
+    "texture": "Assets/Art/ui/hud_timer.png",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -19635,10 +19635,10 @@
    "bindings": {}
   },
   {
-   "id": "TitleLogo",
-   "name": "TitleLogo",
+   "id": "TitleBg",
+   "name": "TitleBg",
    "parent": "Title",
-   "type": "Text",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -19648,9 +19648,9 @@
     ],
     "offset": [
      0,
-     220,
+     0,
      1280,
-     110
+     720
     ],
     "alignment": [
      0,
@@ -19688,9 +19688,9 @@
     "listItems": "[]",
     "selectedIndex": -1,
     "selectedItemId": "",
-    "text": "夢の国  유메노쿠니",
-    "texture": "",
-    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "text": "",
+    "texture": "Assets/Art/ui/title_bg.png",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
      1,
@@ -19705,8 +19705,8 @@
      0,
      0
     ],
-    "fontSize": 84,
-    "color": "#ff8fc8",
+    "fontSize": 24,
+    "color": "#f4f0f6",
     "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
@@ -19719,7 +19719,7 @@
     "enabled": true,
     "focusable": false,
     "tooltip": "",
-    "align": "center",
+    "align": "left",
     "value": 0,
     "min": 0,
     "max": 1,
@@ -19730,7 +19730,110 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "cover"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "TitleLogo",
+   "name": "TitleLogo",
+   "parent": "Title",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     300,
+     120,
+     680,
+     300
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "Assets/Art/ui/title_logo.png",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#f4f0f6",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": true,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
    },
    "events": {},
    "bindings": {}
@@ -19749,7 +19852,7 @@
     ],
     "offset": [
      0,
-     350,
+     470,
      1280,
      40
     ],

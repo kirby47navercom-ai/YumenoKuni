@@ -48,6 +48,10 @@ const hudSvg={
  starOn:'<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 2l4.2 9.3 10.1 1-7.6 6.8 2.2 10L16 24l-8.9 5.1 2.2-10L1.7 12.3l10.1-1z" fill="#6dff8f" stroke="#e5ffe9" stroke-width="1.6"/></svg>',
  starOff:'<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 2l4.2 9.3 10.1 1-7.6 6.8 2.2 10L16 24l-8.9 5.1 2.2-10L1.7 12.3l10.1-1z" fill="#1c2a22" stroke="#4b6b55" stroke-width="1.6"/></svg>'};
 for(const [k,v] of Object.entries(hudSvg))await write(`Assets/Art/ui/hud_${k}.svg`,v);
+// 4차 HUD 그림이 있으면 임시 SVG 대신 쓴다
+const hud=k=>{return hudPng.has(k)?`Assets/Art/ui/hud_${k}.png`:`Assets/Art/ui/hud_${k}.svg`;};
+const hudPng=new Set();for(const k of ['name','status','bullet','timer']){try{await copy(`ui/trial/hud_${k}.png`,`Assets/Art/ui/hud_${k}.png`);hudPng.add(k);}catch(e){if(e.code!=='ENOENT')throw e;}}
+for(const f of ['title_bg.png','title_logo.png','chapter_1.png','chapter_P.png'])try{await copy('ui/common/'+f,'Assets/Art/ui/'+f);}catch(e){if(e.code!=='ENOENT')throw e;}
 // 글꼴 : 대화창 Pretendard + 논의용 인물·감정 글꼴(docs/spec/04 §4-3). 라이선스 파일도 같이 복사
 const fontFiles={pretendard:['Pretendard-Medium.otf','LICENSE.txt'],blackhansans:['BlackHanSans-Regular.ttf','OFL.txt'],gothica1:['GothicA1-Light.ttf','GothicA1-Regular.ttf','GothicA1-Bold.ttf','OFL.txt'],songmyung:['SongMyung-Regular.ttf','OFL.txt'],jua:['Jua-Regular.ttf','OFL.txt'],notoserifkr:['NotoSerifKR[wght].ttf','OFL.txt'],gowundodum:['GowunDodum-Regular.ttf','OFL.txt'],gowunbatang:['GowunBatang-Regular.ttf','OFL.txt'],cutefont:['CuteFont-Regular.ttf','OFL.txt'],dohyeon:['DoHyeon-Regular.ttf','OFL.txt'],galmuri:['Galmuri11.ttf','LICENSE.txt'],dokdo:['Dokdo-Regular.ttf','OFL.txt'],eastseadokdo:['EastSeaDokdo-Regular.ttf','OFL.txt'],gugi:['Gugi-Regular.ttf','OFL.txt'],kiranghaerang:['KirangHaerang-Regular.ttf','OFL.txt'],gaegu:['Gaegu-Regular.ttf','OFL.txt'],nanumpenscript:['NanumPenScript-Regular.ttf','OFL.txt']};
 for(const [dir,files] of Object.entries(fontFiles))for(const f of files)await copy(`fonts/${dir}/${f}`,`Assets/Fonts/${dir}/${f.replace('[wght]','-VF')}`);
@@ -76,30 +80,68 @@ add('Text','Body',[136,548,1010,120],{fontSize:25,wrap:true});
 // 논스톱 논의 (V3) HUD + 화자 앞쪽 글자층
 add('Panel','Trial',[0,0,1280,720],{visible:false});
 for(let i=0;i<MAIN_GLYPHS;i++)glyph('MF'+i,'Trial',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NF'+i,'Trial',34);
-add('Image','NamePanel',[22,12,420,80],{texture:'Assets/Art/ui/hud_name.svg',imageFit:'fill'},'Trial');
+add('Image','NamePanel',[22,12,420,80],{texture:hud('name'),imageFit:'fill'},'Trial');
 add('Text','TrialSpeaker',[66,20,300,34],{font:head,fontSize:24,color:'#ffffff'},'Trial');
-add('Image','StatusPanel',[936,52,330,116],{texture:'Assets/Art/ui/hud_status.svg',imageFit:'fill'},'Trial');
+add('Image','StatusPanel',[936,52,330,116],{texture:hud('status'),imageFit:'fill'},'Trial');
 add('Text','StatusLabel',[994,58,140,22],{text:'STATUS',font:body,fontSize:15,color:'#ffffff'},'Trial');
 for(let i=0;i<10;i++)add('Image','Heart'+i,[990+i*25,90-i*1.6,26,26],{texture:'Assets/Art/ui/hud_heartOn.svg',imageFit:'contain'},'Trial');
 for(let i=0;i<10;i++)add('Image','Star'+i,[978+i*25,128-i*1.6,24,24],{texture:'Assets/Art/ui/hud_starOn.svg',imageFit:'contain'},'Trial');
 add('Image','Cylinder',[4,470,140,140],{texture:'Assets/Art/ui/bullet_cylinder.png',imageFit:'contain'},'Trial');
-add('Image','BulletPlate',[122,560,420,50],{texture:'Assets/Art/ui/hud_bullet.svg',imageFit:'fill'},'Trial');
+add('Image','BulletPlate',[122,560,420,50],{texture:hud('bullet'),imageFit:'fill'},'Trial');
 add('Text','Bullet',[156,567,370,36],{font:head,fontSize:25,color:'#ffffff'},'Trial');
 add('Text','BulletLabel',[220,612,160,20],{text:'언령',font:body,fontSize:15,color:'#d9e7ee'},'Trial');
-add('Image','TimerPanel',[938,644,330,64],{texture:'Assets/Art/ui/hud_timer.svg',imageFit:'fill'},'Trial');
+add('Image','TimerPanel',[938,644,330,64],{texture:hud('timer'),imageFit:'fill'},'Trial');
 add('Text','Timer',[1004,652,240,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:42,color:'#ffb21f',align:'right'},'Trial');
 add('Image','VPoint',[0,0,22,22],{texture:'Assets/Art/ui/vpoint.svg',imageFit:'contain',visible:false},'Trial').slot.alignment=[.5,.5];
 add('Text','TrialMsg',[0,300,1280,80],{font:head,fontSize:60,align:'center',color:'#ff8fc8',visible:false},'Trial');
 add('Image','Cutin',[128,200,1024,342],{texture:'Assets/Art/ui/cutin_objection.png',imageFit:'contain',visible:false},'Trial');
 add('Image','Aim',[608,328,64,64],{texture:'Assets/Art/ui/aim.svg',imageFit:'contain'},'Trial');
 add('Panel','Title',[0,0,1280,720],{background:'#0f0b16'});
-add('Text','TitleLogo',[0,220,1280,110],{text:'夢の国  유메노쿠니',font:head,fontSize:84,align:'center',color:'#ff8fc8'},'Title');
-add('Text','TitleSub',[0,350,1280,40],{text:'Enter  새로 시작      C  이어하기      T  1장 재판 체험',fontSize:26,align:'center',color:'#efe6f4'},'Title');
+add('Image','TitleBg',[0,0,1280,720],{texture:'Assets/Art/ui/title_bg.png',imageFit:'cover'},'Title');
+add('Image','TitleLogo',[300,120,680,300],{texture:'Assets/Art/ui/title_logo.png',imageFit:'contain'},'Title');
+add('Text','TitleSub',[0,470,1280,40],{text:'Enter  새로 시작      C  이어하기      T  1장 재판 체험',fontSize:26,align:'center',color:'#efe6f4'},'Title');
 add('Panel','Pad',[0,0,1280,720],{background:'#120d1af2',visible:false});
 add('Text','PadHead',[120,48,1040,60],{text:'래피 패드  ·  교칙',font:head,fontSize:40,color:'#ff8fc8'},'Pad');
 add('Text','PadBody',[120,120,1040,560],{fontSize:21,wrap:true},'Pad');
 add('Text','PadHint',[120,676,1040,30],{text:'Tab 닫기',fontSize:18,color:'#b9a9c6'},'Pad');
 await write('Assets/UI/Main.hbwidget.json',w);
+
+// 4-2) 재판 단계 위젯 (객관식·언령 고르기·지점·인물 지목·투표·쇼다운·스크럼·이론 무장·애너그램·발굴·택시·클라이맥스). Main 위에 겹쳐 띄운다.
+// 좌표는 Source/TrialRunner.hpp 의 상수와 같다.
+{
+ const v=createWidgetAsset('W_Stage');v.scaleMode='scale';v.scaleRule='fit';
+ const put=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:24,color:'#ffffff',background:'#00000000',padding:0,focusable:false,visible:false,...props});v.nodes.push(n);return n;};
+ put('Panel','Shade',[0,0,1280,720],{background:'#05030acc'});
+ put('Image','QPlate',[140,28,1000,64],{texture:hud('bullet'),imageFit:'fill'});
+ put('Text','Question',[180,38,930,46],{font:head,fontSize:28,align:'center'});
+ // 보기 8칸 (객관식·언령·인물·지점·투표·스크럼 키워드·클라이맥스 조각)
+ for(let i=0;i<8;i++){put('Panel','OptP'+i,[290,118+i*64,700,56],{background:'#0b1018e6',borderWidth:2,borderColor:'#36e3ff',radius:4});put('Text','OptT'+i,[316,128+i*64,650,38],{fontSize:24});}
+ // 클라이맥스 만화 칸 8 (4×2)
+ for(let i=0;i<8;i++){const c=i%4,r=Math.floor(i/4);put('Panel','PanP'+i,[24+c*310,102+r*150,298,142],{background:'#f4f0e8',borderWidth:4,borderColor:'#16121c'});put('Text','PanT'+i,[36+c*310,110+r*150,274,126],{fontSize:15,color:'#16121c',wrap:true});}
+ // 발굴 이매지네이션 블록 12×6 아래에 보물 3개
+ for(let i=0;i<3;i++)put('Text','MineItem'+i,[200+i*300,330,280,60],{font:head,fontSize:26,align:'center',color:'#ffe9a8',background:'#1b1325'});
+ for(let i=0;i<72;i++){const c=i%12,r=Math.floor(i/12);put('Panel','Cell'+i,[160+c*80,130+r*70,78,68],{background:'#ffffff',radius:3});}
+ // 섬광 애너그램 : 글자 구슬 10, 빈칸 줄, 빛
+ put('Panel','Light',[0,0,260,720],{background:'#fff6c840'});
+ for(let i=0;i<10;i++){const n=put('Text','Orb'+i,[0,0,84,84],{font:head,fontSize:40,align:'center',background:'#2b2140',radius:42,color:'#2b2140'});n.slot.alignment=[.5,.5];}
+ put('Text','Slots',[240,600,800,70],{font:head,fontSize:46,align:'center',color:'#ffe9a8'});
+ // 브레인 드라이브 : 차선 3, 차
+ for(let i=0;i<3;i++)put('Text','Lane'+i,[240+i*280,0,240,90],{font:head,fontSize:24,align:'center',background:'#ff4fa3cc',color:'#ffffff',wrap:true});
+ put('Panel','Road',[220,96,840,624],{background:'#140c2acc',borderWidth:4,borderColor:'#36e3ff'});
+ put('Text','Car',[0,600,120,90],{text:'▲',font:head,fontSize:80,align:'center',color:'#36e3ff'});
+ // 반론 쇼다운 : 날아오는 발언, 칼 이름
+ put('Text','Blade',[0,0,1280,90],{font:head,fontSize:52,align:'center',color:'#ffffff'}).slot.alignment=[0,.5];
+ put('Text','BladeName',[880,640,380,50],{font:head,fontSize:26,align:'right',color:'#7dff9a'});
+ put('Panel','Slash',[0,0,10,6],{background:'#ffffff'});
+ // 이론 무장 : 리듬 고리, 마지막 일격 조각 4
+ const ring=put('Panel','Ring',[0,0,200,200],{background:'#00000000',borderWidth:6,borderColor:'#ff4fa3',radius:100});ring.slot.alignment=[.5,.5];
+ put('Panel','RingCore',[590,310,100,100],{background:'#ff4fa355',radius:50});
+ put('Text','ArmLine',[140,140,1000,80],{font:head,fontSize:40,align:'center'});
+ for(let i=0;i<4;i++)put('Text','Piece'+i,[[540,840,540,240][i],[440,330,560,330][i],200,64],{font:head,fontSize:28,align:'center',background:'#0b1018e6',color:'#ffe9a8'});
+ put('Text','StageMsg',[0,300,1280,90],{font:head,fontSize:60,align:'center',color:'#ff8fc8'});
+ put('Text','StageTimer',[1040,656,220,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:40,color:'#ffb21f',align:'right'});
+ await write('Assets/UI/Stage.hbwidget.json',v);
+}
 
 // 5) 3D 학급 재판장 장면 (docs/spec/15 §2, Source/Courtroom.hpp 와 같은 수치) + 블루프린트 (Tick → Yumeno.Update)
 const R=5.5,PODIUM_INSET=.25,SPRITE=2.3,SPRITE_Y=1.25,PODIUM_W=1.15,PODIUM_H=1.25,FOV=43.6;
@@ -124,8 +166,9 @@ const sprite=(id,texture,position,w,h,extra={},rotation=[0,0,0])=>({id,name:id,k
 scene.objects.push({id:'Camera',name:'재판 카메라',kind:'camera',position:[0,1.5,-2.3],rotation:[0,180,0],scale:[1,1,1],visible:true,components:[makeSceneComponent('Camera',{projection:'perspective',fieldOfView:FOV,main:true,near:.05,far:200})]});
 scene.objects.push(sprite('Floor',prop.floor,[0,0,0],15,15,{},[-90,0,0]));
 for(let i=0;i<12;i++){const b=i*30*Math.PI/180;scene.objects.push(sprite('Wall'+i,prop.wall,[13*Math.sin(b),3.4,13*Math.cos(b)],7.2,9.6,{},[0,i*30+180,0]));}
-scene.objects.push(sprite('Throne',prop.throne,[0,1.9,-(R+3.4)],4,4,{billboard:true}));
-scene.objects.push(sprite('Host',`Assets/Art/sprites/lappy/lappy_L01.webp`,[0,3.15,-(R+3.3)],1.3,1.3,{billboard:true}));
+// 왕좌는 증언대 머리 위로 높이 (V3 : 모노쿠마는 재판장을 내려다본다)
+scene.objects.push(sprite('Throne',prop.throne,[0,4.2,-(R+3.4)],4,4,{billboard:true}));
+scene.objects.push(sprite('Host',`Assets/Art/sprites/lappy/lappy_L01.webp`,[0,4.6,-(R+2.4)],1.6,1.6,{billboard:true,sortingOrder:10})); // 왕좌보다 1m 앞
 SEATS.forEach((slug,i)=>{
  const a=i*22.5*Math.PI/180;
  scene.objects.push(sprite('Seat'+i,`Assets/Art/sprites/${slug}/${slug}_C01.webp`,[R*Math.sin(a),SPRITE_Y,R*Math.cos(a)],SPRITE,SPRITE,{billboard:true}));

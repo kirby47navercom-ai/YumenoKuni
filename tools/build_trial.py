@@ -17,6 +17,7 @@ CARD = re.compile(r"\b(?:[ETMN]\d-\d+(?:-[a-z])?|R-\d+)\b")
 WEAK = re.compile(r"【([^】]+)】")
 HEAD = re.compile(r"^### T-(\d+) (.+?)(?: [①-⑨])? : (.+)$", re.M)
 SAY = re.compile(r'^\[([^\]]+)\] "(.*?)"(?: \{([^}]*)\})?')
+GENERIC_SPOTS = ["바닥의 얼룩", "창문 틈", "천장 구석", "벽의 그림"]
 KINDS = {"개정": "opening", "논스톱 논의": "nonstop", "패닉 논의": "panic", "객관식": "choice", "언령 고르기": "bullet",
          "지점 고르기": "spot", "인물 지목": "person", "인터럽트": "interrupt", "반론 쇼다운": "showdown", "논의 스크럼": "scrum",
          "섬광 애너그램": "anagram", "발굴 이매지네이션": "mindmine", "브레인 드라이브": "taxi", "이론 무장": "armament",
@@ -24,6 +25,8 @@ KINDS = {"개정": "opening", "논스톱 논의": "nonstop", "패닉 논의": "p
 SLUG = {"미오": "mio", "레이": "rei", "소라": "sora", "켄": "ken", "나나": "nana", "리쿠": "riku", "아카리": "akari", "유우": "yuu",
         "코토": "koto", "사츠키": "satsuki", "타이가": "taiga", "린": "rin", "쇼": "sho", "아이": "ai", "하루카": "haruka", "카에데": "kaede"}
 errors = []
+MOTIONS = {"흐름": "slide", "날아듦": "fly", "회전": "swirl", "쾅": "slam", "일렁임": "wave", "떨림": "shake", "모임": "assemble", "돌진": "zoom", "솟음": "rise", "한 글자씩": "type", "통통": "bounce", "나선": "spiral"}
+NAME = {v: k for k, v in SLUG.items()} if "SLUG" in globals() else {}
 
 
 def known_cards():
@@ -58,8 +61,11 @@ def script(body):
     for block in re.findall(r"```\n(.*?)```", body, re.S):
         for raw in block.splitlines():
             m = SAY.match(raw.strip())
+            pose = re.search(r"← ?([a-z]+_[A-Z]\w*)", raw)
             if m:
-                lines.append({"speaker": m.group(1), "text": m.group(2), "emo": m.group(3) or ""})
+                lines.append({"speaker": m.group(1), "text": m.group(2), "emo": m.group(3) or ""} | ({"pose": pose.group(1)} if pose else {}))
+            elif raw.strip().startswith("[UI] 투표 →"):
+                continue
             elif raw.strip().startswith(("(", "[UI]")):
                 lines.append({"speaker": "", "text": raw.strip()})
     return lines
@@ -71,9 +77,11 @@ def field(body, name):
 
 
 def debate_line(row, where):
-    num, speaker, text, verdict, need = (row + [""] * 5)[:5]
+    num, speaker, text, verdict, need, direction = (row + [""] * 6)[:6]
     text = text.strip().strip('"')
     item = {"speaker": speaker, "text": WEAK.sub(r"\1", text)}
+    if direction:
+        item["motion"] = MOTIONS.get(direction.strip(), "")
     m = WEAK.search(text)
     if verdict in ("노란", "거짓"):
         answer = CARD.search(need)
@@ -103,6 +111,10 @@ def stage(num, kind_ko, title, body, chapter):
         errors.append(f"{where} : 모르는 단계 종류 「{kind_ko}」")
         kind = "scene"
     s = {"id": f"{chapter}:T-{num}", "kind": kind, "title": title, "script": script(body)}
+    if kind in ("showdown", "armament"):
+        who = next((SLUG[n] for n in sorted(SLUG, key=len, reverse=True) if n in title), None)
+        if who:
+            s["opponent"] = who
     t = tables(body)
     if kind in ("nonstop", "panic"):
         rows = t[0][1:] if t else []
@@ -156,6 +168,11 @@ def stage(num, kind_ko, title, body, chapter):
         s["final"] = [w.strip() for w in (field(body, "마지막 일격") or "").split("|")]
         if len(s["final"]) != 4:
             errors.append(f"{where} : 마지막 일격은 4조각")
+    elif kind == "vote":
+        m = re.search(r"\[UI\] 투표 → ([^\s(]+)", body)
+        s["answer"] = SLUG.get(m.group(1)) if m else None
+        if not s["answer"]:
+            errors.append(f"{where} : 투표 정답(「[UI] 투표 → 이름」) 없음")
     elif kind == "climax":
         rows = t[0][1:] if t else []
         s["panels"] = [{"no": int(r[0]), "caption": r[1], "blank": r[2] == "빈칸"} for r in rows]
@@ -171,6 +188,22 @@ def build(path, ids, names):
     for i, h in enumerate(heads):
         body = text[h.end(): heads[i + 1].start() if i + 1 < len(heads) else len(text)]
         stages.append(stage(h.group(1), h.group(2), h.group(3), body, chapter))
+    chapter_cards = [c for c in sorted(names) if c[:2] in (f"E{chapter[1]}", f"T{chapter[1]}", f"M{chapter[1]}")]
+    spots = [x["answer"] for x in stages if x["kind"] == "spot"]
+    for x in stages:
+        if x["kind"] in ("bullet", "mindmine", "showdown"):
+            ans = {"bullet": x.get("answer"), "mindmine": x.get("card"), "showdown": (x.get("blade") or {}).get("answer")}[x["kind"]]
+            others = [c for c in chapter_cards if c != ans]
+            k = int(x["id"].split("-")[-1])
+            pick = [others[(k * 3 + j * 5) % len(others)] for j in range(2 if x["kind"] == "mindmine" else 4)] if others else []
+            opts = list(dict.fromkeys([ans] + pick))
+            opts = opts[k % len(opts):] + opts[:k % len(opts)]
+            x["options"] = [{"id": o, "name": names.get(o, o)} for o in opts]
+        elif x["kind"] == "spot":
+            others = [a for a in spots if a != x["answer"]] + GENERIC_SPOTS
+            k = int(x["id"].split("-")[-1])
+            opts = [x["answer"], others[k % len(others)], others[(k + 1) % len(others)]]
+            x["options"] = opts[k % 3:] + opts[:k % 3]
     for s in stages:
         for ref in CARD.findall(json.dumps({k: v for k, v in s.items() if k != "script"}, ensure_ascii=False)):
             if ref not in ids and ref not in names:
