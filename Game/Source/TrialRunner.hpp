@@ -11,7 +11,7 @@ const float PIECE_X[4]{640,940,640,340},PIECE_Y[4]{472,362,592,362}; // 마지�
 constexpr float CELL_X=160,CELL_Y=130,CELL_W=80,CELL_H=70;constexpr int COLS=12,ROWS=6;
 constexpr float BLADE_Y=300;
 const char* const DECOYS[]{"가","나","다","라","마","바","사","아","자","차","카","타","파","하","소","문","기","록"};
-const Color MINE_COLORS[3]{{1,1,1,1},{1,.55f,.8f,1},{1,.86f,.35f,1}};
+const char* const MINE_TILES[3]{"Assets/Art/ui/mine_w.svg","Assets/Art/ui/mine_p.svg","Assets/Art/ui/mine_y.svg"};
 }
 
 // ── 위젯 도우미 ──────────────────────────────────────────────
@@ -91,7 +91,9 @@ void Yumeno::startTrial(){
 void Yumeno::endTrial(){
  mode=Mode::Title;debate=debate::State{};sclear();dialogVisible(false);
  for(auto id:{"Trial","TrialBack","SpeakerPodium","Portrait"})UI::SetVisible(this,UI_ID,id,false);
- for(auto id:{"Backdrop","Title"})UI::SetVisible(this,UI_ID,id,true);
+ UI::SetVisible(this,UI_ID,"Backdrop",true);
+ if(flowOn){trialDone();return;}
+ UI::SetVisible(this,UI_ID,"Title",true);
 }
 void Yumeno::enterStage(int i){
  restartStage=false;sclear();dialogVisible(false);debateHud(false);playingDebate=false;
@@ -101,7 +103,7 @@ void Yumeno::enterStage(int i){
  auto& k=stageKind;
  if(k=="opening"||k=="scene"){beginScript();return;}
  if(k=="interrupt"){smsg("반론!",1.2f);beginScript();return;}
- if(k=="intermission"){smsg("휴정",1.4f);try{Save::Write(SAVE_SLOT,Json{{"trial",story["trials"][0]},{"stage",i}});}catch(const std::exception&){}beginScript();return;}
+ if(k=="intermission"){smsg("휴정",1.4f);try{Save::Write(SAVE_SLOT,Json{{"trial",trialKey},{"stage",i}});}catch(const std::exception&){}beginScript();return;}
  if(k=="nonstop"||k=="panic"){
   for(auto& d:trials["debates"])if(d.value("id","")==stage.value("id","")){startDebate(d);return;}
   finishStage();return;
@@ -144,22 +146,25 @@ void Yumeno::updateScript(float delta,bool next){
 // ── 놀이 단계 준비 ───────────────────────────────────────────
 void Yumeno::showOptions(const std::string& question,const std::vector<std::string>& o){
  opts=o;stext("Question",question);svis("QPlate",!question.empty());svis("Question",!question.empty());
- bool comic=stageKind=="climax";optY=comic?404:118;optStepPx=comic?52:64;optH=comic?46:56;
+ bool comic=stageKind=="climax",chips=stageKind=="scrum";
+ optRects.clear();
  for(int i=0;i<8;i++){bool on=i<int(o.size());auto p="OptP"+std::to_string(i),t="OptT"+std::to_string(i);svis(p,on);svis(t,on);
-  if(!on)continue;stext(t,std::to_string(i+1)+".  "+o[i]);
-  UI::SetPosition(this,trialui::ID,p,{trialui::OPT_X,optY+i*optStepPx});UI::SetSize(this,trialui::ID,p,{trialui::OPT_W,optH});
-  UI::SetPosition(this,trialui::ID,t,{trialui::OPT_X+26,optY+i*optStepPx+(optH-38)/2});UI::SetFontSize(this,trialui::ID,t,comic?19.f:24.f);}
+  if(!on)continue;
+  float x=trialui::OPT_X,y=comic?404+i*52.f:118+i*64.f,w=trialui::OPT_W,h=comic?46.f:56.f;
+  if(chips){w=236;h=56;x=24+i*(w+12);y=640;} // 스크럼 : 우리 편 키워드를 아래에 가로로 (V3 십자키 선택)
+  optRects.push_back({x,y,w,h});
+  stext(t,chips?o[i]:std::to_string(i+1)+".  "+o[i]);
+  UI::SetPosition(this,trialui::ID,p,{x,y});UI::SetSize(this,trialui::ID,p,{w,h});
+  UI::SetPosition(this,trialui::ID,t,{x+(chips?10:26),y+(h-38)/2});UI::SetSize(this,trialui::ID,t,{w-(chips?20:40),38});UI::SetFontSize(this,trialui::ID,t,comic?19.f:chips?20.f:24.f);}
 }
 int Yumeno::optionAt(float x,float y)const{
- if(x<trialui::OPT_X||x>trialui::OPT_X+trialui::OPT_W||y<optY)return -1;
- int i=int((y-optY)/optStepPx);
- if(i<0||i>=int(opts.size())||y-optY-i*optStepPx>optH)return -1;
- return i;
+ for(size_t i=0;i<optRects.size();i++){auto& r=optRects[i];if(x>=r[0]&&x<=r[0]+r[2]&&y>=r[1]&&y<=r[1]+r[3])return int(i);}
+ return -1;
 }
 std::vector<std::string> Yumeno::alive(bool withMio)const{
  std::vector<std::string> out;std::vector<std::string> dead;
- auto key=story["trials"][0].get<std::string>();
- if(story.contains("dead")&&story["dead"].contains(key))for(auto& d:story["dead"][key])dead.push_back(d.get<std::string>());
+ auto key=trialKey;
+ dead=trialDead;(void)key;
  for(auto s:court::SEATS)if((withMio||std::string(s)!="mio")&&std::find(dead.begin(),dead.end(),s)==dead.end())out.push_back(s);
  return out;
 }
@@ -203,9 +208,9 @@ void Yumeno::setupPlay(){
   showOptions(k=="vote"?"범인이라고 생각하는 사람에게 투표하세요":stage.value("question",""),o);
  }
  if(k=="climax"){usedPieces.clear();filledPanel.assign(stage["panels"].size(),false);climaxOptions();}
- if((k=="showdown"||k=="armament")&&stage.contains("opponent")){auto who=stage.value("opponent","");speakerSeat=-1;focusSpeaker(who,poseTexture(who,"",who+(k=="armament"?"_T04":"_T02")));}
+ if((k=="showdown"||k=="armament")&&stage.contains("opponent")){auto who=stage.value("opponent","");speakerSeat=-1;focusSpeaker(who,poseTexture(who,"",who+(k=="armament"?"_T04":"_C12")));}
  if(k=="showdown"){sdBullet=0;sdTime=0;stext("BladeName","언령의 칼 · "+(bladeIds.empty()?std::string():stage["options"][0].value("name","")));svis("BladeName",true);svis("Blade",true);}
- if(k=="scrum"){scrumNext();}
+ if(k=="scrum"){scrumT=0;scrumWait=0;svis("ScBand",true);UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);scrumNext();}
  if(k=="armament"){svis("ArmLine",true);svis("Ring",true);svis("RingCore",true);stext("ArmLine",stage["lines"][0].get<std::string>());armBeat=0;}
  if(k=="anagram"){
   anaChars=debate::glyphs(stage.value("answer",""));orbs.clear();
@@ -219,12 +224,19 @@ void Yumeno::setupPlay(){
   for(size_t i=0;i<cells.size();i++)cells[i]=int(debate::hash(int(i),7)*3)%3;
   for(size_t i=0;i<cells.size();i++)svis("Cell"+std::to_string(i),true);
   mineAnswer=0;for(size_t i=0;i<bladeIds.size();i++)if(bladeIds[i]==stage.value("card",""))mineAnswer=int(i);
-  for(int i=0;i<3;i++){svis("MineItem"+std::to_string(i),i<int(o.size()));if(i<int(o.size()))stext("MineItem"+std::to_string(i),o[i]);}
+  { // 블록 아래 그림 : 장의 재판장 배경 + 보물 자리에 언령 카드 그림(없으면 이름표만)
+   auto art=Data::Get("Assets/Data/art.json");std::string bg="Assets/Art/bg/trial_room.webp";
+   for(auto& b:art["backgrounds"])if(stage.value("image","").find(b.get<std::string>())!=std::string::npos)bg="Assets/Art/bg/"+b.get<std::string>()+".webp";
+   UI::SetTexture(this,trialui::ID,"MineBg",bg);svis("MineBg",true);
+   for(int i=0;i<3;i++){bool on=i<int(o.size());svis("MineItem"+std::to_string(i),on);if(!on)continue;stext("MineItem"+std::to_string(i),o[i]);
+    bool icon=false;for(auto& c:art["kotodama"])if(c.get<std::string>()==bladeIds[i])icon=true;
+    if(icon){UI::SetTexture(this,trialui::ID,"MineIcon"+std::to_string(i),"Assets/Art/kotodama/"+bladeIds[i]+".png");svis("MineIcon"+std::to_string(i),true);}}
+  }
   stext("Question",stage.value("question",""));svis("QPlate",true);svis("Question",true);
-  for(size_t i=0;i<cells.size();i++)UI::SetColor(this,trialui::ID,"Cell"+std::to_string(i),trialui::MINE_COLORS[cells[i]]);
+  for(size_t i=0;i<cells.size();i++)UI::SetTexture(this,trialui::ID,"Cell"+std::to_string(i),trialui::MINE_TILES[cells[i]]);
   stageLimit=120;
  }
- if(k=="taxi"){svis("Road",true);svis("Car",true);for(int i=0;i<3;i++)svis("Lane"+std::to_string(i),true);taxiShow();}
+ if(k=="taxi"){svis("Road",true);svis("Car",true);carX=640;taxiLane=1;roadT=0;taxiShow();}
  if(k=="showdown"||k=="armament"||k=="scrum"||k=="anagram"||k=="taxi")stageLimit=k=="armament"?999:90;
  if(k!="mindmine"&&k!="showdown"&&k!="armament"&&k!="scrum"&&k!="anagram"&&k!="taxi")stageLimit=999;
 }
@@ -243,21 +255,51 @@ void Yumeno::optionPicked(int i){
  if(stageKind=="scrum"){scrumPick(i);return;}
  smsg(stageKind=="vote"?"투표 완료":"정답!",.8f);beginScript();
 }
+// 스크럼 배치 : 상대 편은 왼쪽 줄, 우리 편은 오른쪽 줄. 나머지 자리는 잠시 비운다.
+void Yumeno::scrumFormation(float t){
+ auto& pairs=stage["pairs"];
+ std::vector<std::string> them,us;
+ auto add=[&](std::vector<std::string>& v,const std::string& n){auto sl=slugs.count(n)?slugs.at(n):"";if(!sl.empty()&&std::find(v.begin(),v.end(),sl)==v.end())v.push_back(sl);};
+ for(auto& p:pairs){add(them,p.value("them",""));add(us,p.value("us",""));}
+ if(std::find(us.begin(),us.end(),"mio")==us.end())us.insert(us.begin(),"mio");
+ float e=t<.5f?2*t*t:1-std::pow(-2*t+2,2)/2;
+ for(int i=0;i<16;i++){
+  std::string sl=court::SEATS[i];
+  float a=court::seatAngle(i)*court::PI/180;
+  float cx=court::RADIUS*std::sin(a),cz=court::RADIUS*std::cos(a);           // 원래 자리
+  float tx=cx,tz=cz;bool shown=true;
+  auto f=std::find(them.begin(),them.end(),sl);auto g=std::find(us.begin(),us.end(),sl);
+  if(f!=them.end()){tx=-1.8f;tz=-1.2f-1.7f*float(f-them.begin());}
+  else if(g!=us.end()){tx=1.8f;tz=-1.2f-1.7f*float(g-us.begin());}
+  else shown=false;
+  float x=cx+(tx-cx)*e,z=cz+(tz-cz)*e;
+  if(auto* s1=actor("Seat"+std::to_string(i))){Scene::SetPosition(s1,{x,court::SPRITE_CENTER,z});if(!shown)Components::Set(s1,"SpriteRenderer","visible",t<.05f);}
+  if(auto* p1=actor("Podium"+std::to_string(i))){float k=1-court::PODIUM_INSET/court::RADIUS;Scene::SetPosition(p1,{x+(f!=them.end()?.35f:g!=us.end()?-.35f:0)*e+(cx*k-cx)*(1-e),court::PODIUM_H/2,z+(cz*k-cz)*(1-e)});if(!shown)Components::Set(p1,"SpriteRenderer","visible",t<.05f);}
+ }
+ // 카메라 : 원래 각도에서 통로 뒤(+Z)로 물러나 왕좌를 바라본다
+ auto sh=court::shot(cameraAngle);
+ if(auto* c=actor("Camera")){Scene::SetPosition(c,{sh.x+(0-sh.x)*e,sh.y+(2.1f-sh.y)*e,sh.z+(3.6f-sh.z)*e});Scene::SetRotation(c,{-6*e,sh.yaw+court::turn(0,360-sh.yaw,e)-0,0});}
+}
 void Yumeno::scrumNext(){
  auto& pairs=stage["pairs"];
- if(scPair>=int(pairs.size())){mash=0;stageTime=0;showOptions("",{});smsg("밀어붙여! Space 연타!",3.f);return;}
+ for(auto id:{"ScUsP","ScUsN","ScUsT"})svis(id,false);
+ if(scPair>=int(pairs.size())){mash=0;stageTime=0;showOptions("",{});for(auto id:{"ScThemP","ScThemN","ScThemT"})svis(id,false);smsg("밀어붙여! Space 연타!",3.f);return;}
  auto& p=pairs[scPair];
  auto them=p.value("themText","");auto kw=p.value("keyword","");
  auto pos=them.find(kw);if(pos!=std::string::npos)them.replace(pos,kw.size(),"■■■");
  std::vector<std::string> o;scrumIds.clear();
- for(size_t j=0;j<pairs.size();j++){size_t q=(j*3+scPair)%pairs.size();o.push_back(pairs[q].value("us","")+" : "+pairs[q].value("keyword",""));scrumIds.push_back(int(q));}
+ for(size_t j=0;j<pairs.size();j++){size_t q=(j*3+scPair)%pairs.size();o.push_back(pairs[q].value("us","")+" · "+pairs[q].value("keyword",""));scrumIds.push_back(int(q));}
  optAnswer=-1;for(size_t j=0;j<scrumIds.size();j++)if(scrumIds[j]==scPair)optAnswer=int(j);
- showOptions(p.value("them","")+" : "+them,o);stageTime=0;
+ showOptions("",o);
+ stext("ScThemN",p.value("them",""));stext("ScThemT",them);for(auto id:{"ScThemP","ScThemN","ScThemT"})svis(id,true);
+ stageTime=0;
 }
 void Yumeno::scrumPick(int i){
  auto& p=stage["pairs"][scPair];
- smsg(p.value("us","")+" 「"+p.value("usText","")+"」",1.4f);
- scPair++;scrumNext();(void)i;
+ stext("ScThemT",p.value("themText",""));
+ stext("ScUsN",p.value("us",""));stext("ScUsT",p.value("usText",""));for(auto id:{"ScUsP","ScUsN","ScUsT"})svis(id,true);
+ smsg("「"+p.value("keyword","")+"」!",.9f);
+ scPair++;scrumWait=1.4f;(void)i;
 }
 void Yumeno::anaSlots(){
  std::string s;for(size_t i=0;i<anaChars.size();i++)s+=(int(i)<anaFilled?anaChars[i]:std::string("＿"))+" ";
@@ -283,16 +325,55 @@ void Yumeno::mineClick(int c){
  for(int i:g){cells[i]=-1;svis("Cell"+std::to_string(i),false);}
  for(int i:g){int x=i%trialui::COLS,y=i/trialui::COLS;
   for(int n:{x>0?i-1:-1,x<trialui::COLS-1?i+1:-1,y>0?i-trialui::COLS:-1,y<trialui::ROWS-1?i+trialui::COLS:-1})
-   if(n>=0&&!gone[n]&&cells[n]>=0){cells[n]=(cells[n]+1)%3;gone[n]=true;UI::SetColor(this,trialui::ID,"Cell"+std::to_string(n),trialui::MINE_COLORS[cells[n]]);}}
+   if(n>=0&&!gone[n]&&cells[n]>=0){cells[n]=(cells[n]+1)%3;gone[n]=true;UI::SetTexture(this,trialui::ID,"Cell"+std::to_string(n),trialui::MINE_TILES[cells[n]]);}}
  // gone 표시는 한 번에 한 칸만 색을 바꾸려고 재사용했다
+}
+// 원근 : 깊이 d(0 먼 곳 ~ 1 가까운 곳), 차선 lane(0~2, 소수 = 차선 경계)
+static void taxiProject(float lane,float d,float& x,float& y,float& scale){
+ float e=d*d;float w=27+(413-27)*e;x=640+(lane-1)*w;y=250+470*e;scale=.25f+.95f*e;
 }
 void Yumeno::taxiShow(){
  auto& q=stage["questions"][taxiQ];
- stext("Question",q.value("q",""));svis("QPlate",true);svis("Question",true);
- for(int i=0;i<3;i++)stext("Lane"+std::to_string(i),i<int(q["options"].size())?q["options"][i].get<std::string>():"");
- taxiDist=0;
+ taxiChars.clear();for(auto& g:debate::glyphs(q.value("q","")))if(g!=" "&&g!="?"&&g!="!"&&g!=",")taxiChars.push_back(g);
+ taxiGot=0;taxiPhase=0;cubeD=-1;rivalD=-1;paxD=-1;taxiQText();
+ for(int i=0;i<3;i++)svis("Lane"+std::to_string(i),false);
 }
-
+void Yumeno::taxiQText(){
+ std::string t;int k=0;
+ for(auto& g:debate::glyphs(stage["questions"][taxiQ].value("q",""))){bool keep=g!=" "&&g!="?"&&g!="!"&&g!=",";t+=!keep?g:(k<taxiGot?g:std::string("□"));if(keep)k++;}
+ stext("TaxiQ",t);svis("TaxiQ",true);
+}
+void Yumeno::updateTaxi(float delta){
+ float speed=(Input::IsKeyDown("Shift")&&debate.focus>0?.5f:1.f);
+ if(Input::IsKeyDown("Shift"))debate.focus=std::max(0.f,debate.focus-20*delta);else debate.focus=std::min(100.f,debate.focus+6*delta);
+ if(pressed("a"))taxiLane=std::max(0,taxiLane-1);if(pressed("d"))taxiLane=std::min(2,taxiLane+1);
+ carX+=( (640+(taxiLane-1)*360.f) -carX)*std::min(1.f,delta*12); // 부드럽게 차선 이동
+ UI::SetPosition(this,trialui::ID,"Car",{carX,640});
+ roadT+=delta*speed*1.4f;
+ for(int i=0;i<8;i++){float d=std::fmod(roadT+i*.125f,1.f);float x,y,sc;taxiProject(i<4?.5f:1.5f,d,x,y,sc);auto id="Dash"+std::to_string(i);svis(id,true);UI::SetPosition(this,trialui::ID,id,{x,y});UI::SetScale(this,trialui::ID,id,{sc,sc});}
+ auto place=[&](const std::string& id,int lane,float d){float x,y,sc;taxiProject(float(lane),d,x,y,sc);UI::SetPosition(this,trialui::ID,id,{x,y});UI::SetScale(this,trialui::ID,id,{sc,sc});};
+ const float HIT=.93f;
+ // 다른 차 : 큐브와 다른 차선에서 다가온다. 부딪히면 집중력이 크게 준다(V3)
+ if(rivalD<0&&std::fmod(roadT,2.6f)<delta*speed*1.4f){rivalLane=(cubeLane+1+int(roadT*7)%2)%3;rivalD=0;}
+ if(rivalD>=0){rivalD+=delta*speed*.5f;place("Rival0",rivalLane,rivalD);svis("Rival0",true);
+  if(rivalD>=HIT){if(rivalLane==taxiLane){debate.focus=std::max(0.f,debate.focus-30);smsg("쾅!",.5f);}rivalD=-1;svis("Rival0",false);}}
+ if(taxiPhase==0){ // 글자 큐브 : 다음에 필요한 글자가 다가온다. 놓치면 다시 온다
+  if(cubeD<0){cubeLane=int(debate::hash(taxiGot+taxiQ*31,9)*3)%3;cubeD=0;stext("Cube0",taxiChars[taxiGot]);}
+  cubeD+=delta*speed*.55f;place("Cube0",cubeLane,cubeD);svis("Cube0",true);
+  if(cubeD>=HIT){if(cubeLane==taxiLane){taxiGot++;taxiQText();if(taxiGot>=int(taxiChars.size())){taxiPhase=1;svis("Cube0",false);smsg("질문 완성!",.8f);}}cubeD=-1;}
+  return;
+ }
+ // 손님 : 질문의 답을 든 세 사람. 정답 손님 차선으로 가서 태운다
+ auto& q=stage["questions"][taxiQ];
+ if(paxD<0){paxD=0;for(int i=0;i<3;i++){stext("Lane"+std::to_string(i),i<int(q["options"].size())?q["options"][i].get<std::string>():"");svis("Lane"+std::to_string(i),true);}}
+ paxD+=delta*speed*.4f;for(int i=0;i<3;i++)place("Lane"+std::to_string(i),i,paxD);
+ if(paxD>=HIT){
+  auto ans=q.value("answer","");
+  if(taxiLane<int(q["options"].size())&&q["options"][taxiLane].get<std::string>()==ans){heal();smsg("「"+ans+"」 태웠다!",1.f);taxiQ++;
+   if(taxiQ>=int(stage["questions"].size())){beginScript();return;}taxiShow();}
+  else{hurt();paxD=-1;}
+ }
+}
 void Yumeno::updateTrial(float delta){
  Vec2 m;if(Input::GetMousePosition(m)){aimX=m.x;aimY=m.y;}
  UI::SetPosition(this,UI_ID,"Aim",{aimX-32,aimY-32});
@@ -311,6 +392,12 @@ void Yumeno::updateTrial(float delta){
  auto& k=stageKind;
  stageTime+=delta;
  if(stageLimit<900){float left=std::max(0.f,stageLimit-stageTime);int ms=int(left*1000);char t[16];std::snprintf(t,sizeof t,"%02d:%02d:%03d",ms/60000,ms/1000%60,ms%1000);stext("StageTimer",t);svis("StageTimer",true);if(left<=0){hurt();restartStage=true;return;}}
+ if(k=="scrum"){
+  if(scrumT<1){scrumT=std::min(1.f,scrumT+delta/1.1f);scrumFormation(scrumT);if(scrumT>=1)svis("ScBand",false);stageTime=0;return;}
+  if(scrumWait>0){if((scrumWait-=delta)<=0)scrumNext();return;}
+  if(mash<0&&pressed("a"))optHover=(optHover+int(opts.size())-1)%std::max<int>(1,int(opts.size()));
+  if(mash<0&&pressed("d"))optHover=(optHover+1)%std::max<int>(1,int(opts.size()));
+ }
  // 키보드로도 고른다 : W/S 이동, Enter 확정
  if(!opts.empty()&&(k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="climax"||(k=="scrum"&&mash<0))){
   if(pressed("w"))optHover=(optHover+int(opts.size())-1)%int(opts.size());
@@ -324,7 +411,7 @@ void Yumeno::updateTrial(float delta){
  if(k=="scrum"){ // 마지막 연타
   if(spacePressed)mash++;
   stext("StageMsg","밀어붙여! "+std::to_string(mash)+" / 12");svis("StageMsg",true);
-  if(mash>=12){smsg("이게 우리의 답이야!",1.4f);beginScript();}
+  if(mash>=12){smsg("이게 우리의 답이야!",1.4f);scrumFormation(0);placeCamera(cameraAngle);beginScript();}
   else if(stageTime>4){mash=0;stageTime=0;}
   return;
  }
@@ -359,7 +446,7 @@ void Yumeno::updateTrial(float delta){
    return;
   }
   armBeat+=delta;float t=armBeat/.9f;float scale=2.2f-1.2f*t; // 고리가 줄어 가운데 원(1.0)에 닿을 때 Space
-  UI::SetPosition(this,trialui::ID,"Ring",{640,360});UI::SetScale(this,trialui::ID,"Ring",{scale,scale});
+  UI::SetScale(this,trialui::ID,"Ring",{scale,scale}); // 이미지 중심 기준 배율(위치 고정)
   if(spacePressed){
    if(std::abs(scale-1)<.16f){armHits++;armBeat=0;smsg("명중!",.3f);}
    else{hurt();armBeat=0;}
@@ -394,25 +481,12 @@ void Yumeno::updateTrial(float delta){
  }
  if(k=="mindmine"){
   for(int i=0;i<3;i++){bool open=itemOpen(i);UI::SetColor(this,trialui::ID,"MineItem"+std::to_string(i),open?Color{1,.91f,.66f,1}:Color{.4f,.35f,.3f,1});
-   if(open&&click&&aimX>200+i*300&&aimX<480+i*300&&aimY>330&&aimY<390){if(i==mineAnswer){heal();smsg("파냈다!",1.f);beginScript();return;}hurt();}}
+   if(open&&click&&aimX>180+i*320&&aimX<460+i*320&&aimY>272&&aimY<408){if(i==mineAnswer){heal();smsg("파냈다!",1.f);beginScript();return;}hurt();}}
   if(click){int cx=int((aimX-trialui::CELL_X)/trialui::CELL_W),cy=int((aimY-trialui::CELL_Y)/trialui::CELL_H);
    if(aimX>=trialui::CELL_X&&aimY>=trialui::CELL_Y&&cx<trialui::COLS&&cy<trialui::ROWS)mineClick(cy*trialui::COLS+cx);}
   return;
  }
- if(k=="taxi"){
-  if(pressed("a"))taxiLane=std::max(0,taxiLane-1);if(pressed("d"))taxiLane=std::min(2,taxiLane+1);
-  taxiDist+=delta/4.5f*(Input::IsKeyDown("Shift")?.5f:1);
-  for(int i=0;i<3;i++)UI::SetPosition(this,trialui::ID,"Lane"+std::to_string(i),{240.f+i*280,100+460*taxiDist});
-  UI::SetPosition(this,trialui::ID,"Car",{300.f+taxiLane*280,600});
-  if(taxiDist>=1){
-   auto& q=stage["questions"][taxiQ];auto ans=q.value("answer","");
-   if(taxiLane<int(q["options"].size())&&q["options"][taxiLane].get<std::string>()==ans){heal();smsg("「"+ans+"」",.9f);taxiQ++;
-    if(taxiQ>=int(stage["questions"].size())){beginScript();return;}}
-   else hurt();
-   taxiShow();
-  }
-  return;
- }
+ if(k=="taxi"){updateTaxi(delta);return;}
  beginScript(); // 모르는 단계는 대사만
 }
 
@@ -423,9 +497,9 @@ hb::Json Yumeno::autoAction()const{
  if(playingDebate)return {{"kind","debate"}};
  if(inScript)return {{"kind","key"},{"key","Enter"}};
  auto& k=stageKind;
- auto optClick=[&](int i){return Json{{"kind","click"},{"x",trialui::OPT_X+60},{"y",optY+i*optStepPx+optH/2}};};
- if((k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="climax"||(k=="scrum"&&mash<0))&&optAnswer>=0)return optClick(optAnswer);
- if(k=="scrum")return {{"kind","key"},{"key"," "}};
+ auto optClick=[&](int i){auto& r=optRects[i];return Json{{"kind","click"},{"x",r[0]+r[2]/2},{"y",r[1]+r[3]/2}};};
+ if((k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="climax"||(k=="scrum"&&mash<0&&scrumT>=1&&scrumWait<=0))&&optAnswer>=0&&optAnswer<int(optRects.size()))return optClick(optAnswer);
+ if(k=="scrum")return scrumT<1||scrumWait>0?Json{{"kind","wait"}}:Json{{"kind","key"},{"key"," "}};
  if(k=="showdown"){
   int n=int(stage["lines"].size());bool final=sdLine==n-1;
   if(final&&bladeIds[sdBullet]!=stage["blade"].value("answer",""))return {{"kind","key"},{"key","e"}};
@@ -442,14 +516,16 @@ hb::Json Yumeno::autoAction()const{
  }
  if(k=="anagram"){for(auto& b:orbs)if(!b.taken&&anaFilled<int(anaChars.size())&&b.ch==anaChars[anaFilled])return {{"kind","click"},{"x",b.x},{"y",b.y}};}
  if(k=="mindmine"){
-  if(itemOpen(mineAnswer))return {{"kind","click"},{"x",340+mineAnswer*300},{"y",360}};
+  if(itemOpen(mineAnswer))return {{"kind","click"},{"x",320+mineAnswer*320},{"y",340}};
   int best=-1;
   for(int y=2;y<=3&&best<0;y++)for(int x=mineAnswer*4;x<mineAnswer*4+4;x++){int c=y*trialui::COLS+x;if(cells[c]>=0){best=c;break;}}
   if(best>=0){for(size_t c=0;c<cells.size();c++)if(cells[c]>=0&&mineGroup(int(c)).size()>=2){auto g=mineGroup(int(c));if(std::find(g.begin(),g.end(),best)!=g.end()){best=int(c);break;}}
    return {{"kind","click"},{"x",trialui::CELL_X+(best%trialui::COLS)*trialui::CELL_W+40},{"y",trialui::CELL_Y+(best/trialui::COLS)*trialui::CELL_H+35}};}
  }
  if(k=="taxi"){
-  auto& q=stage["questions"][taxiQ];int want=0;for(size_t i=0;i<q["options"].size();i++)if(q["options"][i].get<std::string>()==q.value("answer",""))want=int(i);
+  int want=taxiLane;
+  if(taxiPhase==0&&cubeD>=0)want=cubeLane;
+  if(taxiPhase==1){auto& q=stage["questions"][taxiQ];for(size_t i=0;i<q["options"].size();i++)if(q["options"][i].get<std::string>()==q.value("answer",""))want=int(i);}
   if(taxiLane<want)return {{"kind","key"},{"key","d"}};if(taxiLane>want)return {{"kind","key"},{"key","a"}};
   return {{"kind","wait"}};
  }

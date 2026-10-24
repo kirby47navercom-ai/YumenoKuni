@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {randomUUID} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import {makeStarterScene} from '../../../engineCreate/prototype/scene-templates.js';
 import {makeSceneComponent} from '../../../engineCreate/prototype/scene-components.js';
 import {createAsset} from '../../../engineCreate/prototype/asset-documents.js';
@@ -22,7 +23,13 @@ const sceneFiles=(await fs.readdir(path.join(repo,'data/scenes'))).filter(f=>f.e
 for(const f of sceneFiles){const {source,...data}=JSON.parse(await fs.readFile(path.join(repo,'data/scenes',f),'utf8'));await write('Assets/Data/scenes/'+f.split('_')[0]+'.json',data);}
 await write('Assets/Data/emotion.json',JSON.parse(await fs.readFile(path.join(repo,'data/emotion_map.json'),'utf8')));
 // 진행 순서 : 프롤로그부터 (장이 늘면 여기 추가). 재판 : data/trials (tools/build_trial.py)
-await write('Assets/Data/story.json',{files:['10'],trials:['11c'],dead:{'11c':['taiga']}});
+await write('Assets/Data/story.json',{chapters:['P','1','2','3','4','5','6'],trials:['11c','12c'],dead:{'11c':['taiga'],'12c':['taiga','sho','yuu']}});
+// 장 진행표 (tools/build_flow.py) · 선물 · 언령 이름
+for(const f of (await fs.readdir(path.join(repo,'data/flow'))).filter(f=>f.endsWith('.json')))await copy('data/flow/'+f,'Assets/Data/flow/'+f);
+await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/reactions.json','Assets/Data/reactions.json');
+{const ev=JSON.parse(await fs.readFile(path.join(repo,'data/evidence.json'),'utf8')),names={};
+ for(const e of ev)names[e.id]=e.cells?`${e.cells[0]} : ${String(e.cells[1]).replace(/^"|"$/g,'').slice(0,28)}`:String(e.label||e.id).replace(/\s*\([A-Z]\d?-[\w-]+\)\s*/,'').trim();
+ await write('Assets/Data/kotodama.json',names);}
 for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
 // 2) 교칙 : docs/spec/11 §2·§3 표
@@ -31,9 +38,8 @@ const rules=[...rulesDoc.matchAll(/^\| (교칙 \d+|[1-6]장) \| ([^|]+) \|/gm)].
 await write('Assets/Data/rules.json',{rules});
 
 // 3) 그림 : 스프라이트(WebP)·UI·글꼴 복사
-for(const slug of await fs.readdir(path.join(repo,'art/sprites'))){
- for(const f of await fs.readdir(path.join(repo,'art/sprites',slug)))if(f.endsWith('.webp')&&!f.startsWith('sheet'))await copy(`art/sprites/${slug}/${f}`,`Assets/Art/sprites/${slug}/${f}`);
-}
+// 스프라이트는 1024²로 줄여 넣는다(텍스처 메모리) : tools/game_sprites.py
+execFileSync('python',[path.join(repo,'tools/game_sprites.py')],{stdio:'inherit'});
 for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png','trial/focus_track.png','trial/focus_fill.png','trial/bullet_cylinder.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
 await write('Assets/Art/ui/aim.svg','<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="#ff4fa3" stroke-width="4"/><circle cx="32" cy="32" r="3" fill="#ffffff"/><path d="M32 2v14M32 48v14M2 32h14M48 32h14" stroke="#ffffff" stroke-width="3"/></svg>');
 await write('Assets/Art/ui/vpoint.svg','<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" fill="#ff2040" stroke="#ffffff" stroke-width="2"/></svg>');
@@ -58,7 +64,19 @@ for(const [dir,files] of Object.entries(fontFiles))for(const f of files)await co
 // 배경·재판장 (4차 에셋이 있으면)
 let bgs=[];try{bgs=(await fs.readdir(path.join(repo,'bg'))).filter(f=>f.endsWith('.webp'));}catch(e){if(e.code!=='ENOENT')throw e;}
 for(const f of bgs)await copy('bg/'+f,'Assets/Art/bg/'+f);
-await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5))});
+// 언령 카드 그림 (있는 것만)
+let icons=[];try{icons=(await fs.readdir(path.join(repo,'ui/kotodama'))).filter(f=>/^[ETMN]\d-\d+.*\.png$/.test(f));}catch(e){if(e.code!=='ENOENT')throw e;}
+for(const f of icons)await copy('ui/kotodama/'+f,'Assets/Art/kotodama/'+f);
+// CG(사망·처형·이벤트)·선물·패드·장 제목 카드 (있는 것만)
+const list=async(dir,re)=>{try{return (await fs.readdir(path.join(repo,dir))).filter(f=>re.test(f));}catch(e){if(e.code==='ENOENT')return [];throw e;}};
+const cgs=(await list('art/cg',/\.webp$/)).filter(f=>!/_(bg|fg)\.webp$/.test(f));for(const f of cgs)await copy('art/cg/'+f,'Assets/Art/cg/'+f);
+const giftIcons=await list('ui/gift',/^G\d\d\.png$/);for(const f of giftIcons)await copy('ui/gift/'+f,'Assets/Art/gift/'+f);
+const padArt=await list('ui/pad',/^(coin|capsule_machine|face_\w+|map_\w+)\.png$/);for(const f of padArt)await copy('ui/pad/'+f,'Assets/Art/pad/'+f);
+const cards=await list('ui/common',/^(chapter_\w+|gameover|credits_bg|ending_\w+)\.png$/);for(const f of cards)await copy('ui/common/'+f,'Assets/Art/ui/'+f);
+// 소리 : audio/cues.json 에 파일이 적힌 것만
+const cues=JSON.parse(await fs.readFile(path.join(repo,'audio/cues.json'),'utf8')),audio={};
+for(const group of ['bgm','sfx'])for(const [k,v] of Object.entries(cues[group]||{}))if(v&&v.file){try{await copy('audio/'+v.file,'Assets/Audio/'+v.file);audio[k]='Assets/Audio/'+v.file;}catch(e){if(e.code!=='ENOENT')throw e;}}
+await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5)),kotodama:icons.map(f=>f.slice(0,-4)),cg:cgs.map(f=>f.slice(0,-5)),gifts:giftIcons.map(f=>f.slice(0,-4)),pad:padArt.map(f=>f.slice(0,-4)),cards:cards.map(f=>f.slice(0,-4)),audio});
 
 // 4) UI 위젯 (1280×720 기준, V3식 대화창)
 const body='Assets/Fonts/pretendard/Pretendard-Medium.otf',head='Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf';
@@ -99,11 +117,11 @@ add('Image','Aim',[608,328,64,64],{texture:'Assets/Art/ui/aim.svg',imageFit:'con
 add('Panel','Title',[0,0,1280,720],{background:'#0f0b16'});
 add('Image','TitleBg',[0,0,1280,720],{texture:'Assets/Art/ui/title_bg.png',imageFit:'cover'},'Title');
 add('Image','TitleLogo',[300,120,680,300],{texture:'Assets/Art/ui/title_logo.png',imageFit:'contain'},'Title');
-add('Text','TitleSub',[0,470,1280,40],{text:'Enter  새로 시작      C  이어하기      T  1장 재판 체험',fontSize:26,align:'center',color:'#efe6f4'},'Title');
+add('Text','TitleSub',[0,470,1280,40],{text:'Enter  새로 시작          C  이어하기',fontSize:26,align:'center',color:'#efe6f4'},'Title');
 add('Panel','Pad',[0,0,1280,720],{background:'#120d1af2',visible:false});
-add('Text','PadHead',[120,48,1040,60],{text:'래피 패드  ·  교칙',font:head,fontSize:40,color:'#ff8fc8'},'Pad');
+add('Text','PadHead',[120,48,1040,60],{text:'래피 패드',font:head,fontSize:40,color:'#ff8fc8'},'Pad');
 add('Text','PadBody',[120,120,1040,560],{fontSize:21,wrap:true},'Pad');
-add('Text','PadHint',[120,676,1040,30],{text:'Tab 닫기',fontSize:18,color:'#b9a9c6'},'Pad');
+add('Text','PadHint',[120,676,1040,30],{text:'Q / E  탭 넘기기      Tab  닫기',fontSize:18,color:'#b9a9c6'},'Pad');
 await write('Assets/UI/Main.hbwidget.json',w);
 
 // 4-2) 재판 단계 위젯 (객관식·언령 고르기·지점·인물 지목·투표·쇼다운·스크럼·이론 무장·애너그램·발굴·택시·클라이맥스). Main 위에 겹쳐 띄운다.
@@ -119,32 +137,72 @@ await write('Assets/UI/Main.hbwidget.json',w);
  // 클라이맥스 만화 칸 8 (4×2)
  for(let i=0;i<8;i++){const c=i%4,r=Math.floor(i/4);put('Panel','PanP'+i,[24+c*310,102+r*150,298,142],{background:'#f4f0e8',borderWidth:4,borderColor:'#16121c'});put('Text','PanT'+i,[36+c*310,110+r*150,274,126],{fontSize:15,color:'#16121c',wrap:true});}
  // 발굴 이매지네이션 블록 12×6 아래에 보물 3개
- for(let i=0;i<3;i++)put('Text','MineItem'+i,[200+i*300,330,280,60],{font:head,fontSize:26,align:'center',color:'#ffe9a8',background:'#1b1325'});
- for(let i=0;i<72;i++){const c=i%12,r=Math.floor(i/12);put('Panel','Cell'+i,[160+c*80,130+r*70,78,68],{background:'#ffffff',radius:3});}
+ put('Image','MineBg',[160,130,960,420],{texture:'',imageFit:'cover'});
+for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'',imageFit:'contain'});put('Text','MineItem'+i,[180+i*320,376,280,32],{font:head,fontSize:20,align:'center',color:'#ffe9a8',background:'#1b1325d0'});}
+ for(const [n,c,d] of [['w','#f4f2f8','#b9b4c8'],['p','#ff8cc8','#c9488c'],['y','#ffd95a','#c79a1c']])await write(`Assets/Art/ui/mine_${n}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" width="80" height="70"><rect x="1" y="1" width="78" height="68" rx="6" fill="${d}"/><rect x="4" y="3" width="72" height="58" rx="5" fill="${c}"/><path d="M10 10h40" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/></svg>`);
+ for(let i=0;i<72;i++){const c=i%12,r=Math.floor(i/12);put('Image','Cell'+i,[160+c*80,130+r*70,80,70],{texture:'Assets/Art/ui/mine_w.svg',imageFit:'fill'});}
  // 섬광 애너그램 : 글자 구슬 10, 빈칸 줄, 빛
  put('Panel','Light',[0,0,260,720],{background:'#fff6c840'});
  for(let i=0;i<10;i++){const n=put('Text','Orb'+i,[0,0,84,84],{font:head,fontSize:40,align:'center',background:'#2b2140',radius:42,color:'#2b2140'});n.slot.alignment=[.5,.5];}
  put('Text','Slots',[240,600,800,70],{font:head,fontSize:46,align:'center',color:'#ffe9a8'});
  // 브레인 드라이브 : 차선 3, 차
- for(let i=0;i<3;i++)put('Text','Lane'+i,[240+i*280,0,240,90],{font:head,fontSize:24,align:'center',background:'#ff4fa3cc',color:'#ffffff',wrap:true});
- put('Panel','Road',[220,96,840,624],{background:'#140c2acc',borderWidth:4,borderColor:'#36e3ff'});
- put('Text','Car',[0,600,120,90],{text:'▲',font:head,fontSize:80,align:'center',color:'#36e3ff'});
+ put('Image','Road',[0,0,1280,720],{texture:'Assets/Art/ui/taxi_road.svg',imageFit:'fill'});
+ for(let i=0;i<8;i++){const n=put('Panel','Dash'+i,[0,0,10,40],{background:'#ff4fa3'});n.slot.alignment=[.5,.5];}
+ for(let i=0;i<3;i++){const n=put('Text','Cube'+i,[0,0,90,90],{font:head,fontSize:48,align:'center',color:'#16121c',background:'#7dfcff',radius:8});n.slot.alignment=[.5,.5];}
+ for(let i=0;i<2;i++){const n=put('Image','Rival'+i,[0,0,160,110],{texture:'Assets/Art/ui/taxi_rival.svg',imageFit:'contain'});n.slot.alignment=[.5,.5];}
+ for(let i=0;i<3;i++){const n=put('Text','Lane'+i,[0,0,260,120],{font:head,fontSize:24,align:'center',color:'#ffffff',background:'#ff4fa3d8',radius:10,wrap:true});n.slot.alignment=[.5,.5];}
+ {const n=put('Image','Car',[0,0,240,150],{texture:'Assets/Art/ui/taxi_car.svg',imageFit:'contain'});n.slot.alignment=[.5,.5];}
+ put('Text','TaxiQ',[160,96,960,52],{font:head,fontSize:30,align:'center',color:'#7dfcff',background:'#0b1018cc'});
  // 반론 쇼다운 : 날아오는 발언, 칼 이름
  put('Text','Blade',[0,0,1280,90],{font:head,fontSize:52,align:'center',color:'#ffffff'}).slot.alignment=[0,.5];
  put('Text','BladeName',[880,640,380,50],{font:head,fontSize:26,align:'right',color:'#7dff9a'});
  put('Panel','Slash',[0,0,10,6],{background:'#ffffff'});
  // 이론 무장 : 리듬 고리, 마지막 일격 조각 4
- const ring=put('Panel','Ring',[0,0,200,200],{background:'#00000000',borderWidth:6,borderColor:'#ff4fa3',radius:100});ring.slot.alignment=[.5,.5];
- put('Panel','RingCore',[590,310,100,100],{background:'#ff4fa355',radius:50});
+ await write('Assets/Art/ui/arm_ring.svg','<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><circle cx="100" cy="100" r="96" fill="none" stroke="#ff4fa3" stroke-width="6"/></svg>');
+ await write('Assets/Art/ui/arm_core.svg','<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="50" cy="50" r="50" fill="#ff4fa3" fill-opacity=".33"/></svg>');
+ const ring=put('Image','Ring',[540,260,200,200],{texture:'Assets/Art/ui/arm_ring.svg',imageFit:'contain'});
+ put('Image','RingCore',[590,310,100,100],{texture:'Assets/Art/ui/arm_core.svg',imageFit:'contain'});
  put('Text','ArmLine',[140,140,1000,80],{font:head,fontSize:40,align:'center'});
  for(let i=0;i<4;i++)put('Text','Piece'+i,[[540,840,540,240][i],[440,330,560,330][i],200,64],{font:head,fontSize:28,align:'center',background:'#0b1018e6',color:'#ffe9a8'});
+ put('Image','ScBand',[0,300,1280,110],{texture:'Assets/Art/ui/scrum_band.svg',imageFit:'fill'});
+ put('Panel','ScThemP',[30,110,720,120],{background:'#0b1018e6',borderWidth:3,borderColor:'#ff4fa3'});
+ put('Text','ScThemN',[46,118,300,30],{font:head,fontSize:22,color:'#ff8fc8'});
+ put('Text','ScThemT',[46,150,690,74],{font:head,fontSize:30,wrap:true});
+ put('Panel','ScUsP',[530,436,720,110],{background:'#0b1018e6',borderWidth:3,borderColor:'#36e3ff'});
+ put('Text','ScUsN',[546,444,300,30],{font:head,fontSize:22,color:'#7dfcff'});
+ put('Text','ScUsT',[546,476,690,66],{font:head,fontSize:28,wrap:true});
  put('Text','StageMsg',[0,300,1280,90],{font:head,fontSize:60,align:'center',color:'#ff8fc8'});
  put('Text','StageTimer',[1040,656,220,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:40,color:'#ffb21f',align:'right'});
  await write('Assets/UI/Stage.hbwidget.json',v);
 }
+// 4-3) 진행 위젯 W_Flow : 장 제목 카드, 보기 목록, 인물·선물 칸, 알림, 코인, 크레딧. 좌표는 Source/Flow.hpp 와 같다.
+{
+ const f=createWidgetAsset('W_Flow');f.scaleMode='scale';f.scaleRule='fit';
+ const put=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:24,color:'#ffffff',background:'#00000000',padding:0,focusable:false,visible:false,...props});f.nodes.push(n);return n;};
+ put('Panel','FCardBack',[0,0,1280,720],{background:'#0b0812'});
+ put('Image','FCard',[0,0,1280,720],{texture:'',imageFit:'cover'});
+ put('Text','FCardT',[0,250,1280,120],{font:head,fontSize:84,align:'center',color:'#ff8fc8'});
+ put('Text','FCardS',[0,380,1280,50],{font:head,fontSize:30,align:'center',color:'#efe6f4'});
+ put('Text','FHud',[900,14,360,34],{font:head,fontSize:22,align:'right',color:'#ffe9a8',background:'#0b1018b0',visible:true});
+ put('Panel','FShade',[0,0,1280,720],{background:'#05030a99'});
+ put('Text','FMenuQ',[200,120,880,56],{font:head,fontSize:30,align:'center',background:'#0b1018e6'});
+ for(let i=0;i<9;i++){put('Panel','FOptP'+i,[340,200+i*58,600,50],{background:'#0b1018e6',borderWidth:2,borderColor:'#ff4fa3',radius:6});put('Text','FOptT'+i,[360,208+i*58,560,36],{fontSize:22});}
+ put('Text','FGridHead',[160,40,960,50],{font:head,fontSize:32,align:'center',color:'#ff8fc8'});
+ for(let i=0;i<16;i++){const x=150+(i%4)*250,y=110+Math.floor(i/4)*130;put('Panel','FCell'+i,[x,y,236,120],{background:'#0b1018e6',borderWidth:2,borderColor:'#36e3ff',radius:8});put('Image','FFace'+i,[x+6,y+6,108,108],{texture:'',imageFit:'cover'});put('Text','FName'+i,[x+118,y+14,112,94],{font:head,fontSize:20,wrap:true});}
+ put('Text','FGridFoot',[160,640,960,40],{fontSize:22,align:'center',color:'#ffe9a8',background:'#0b1018cc'});
+ put('Text','FToast',[340,24,600,46],{font:head,fontSize:24,align:'center',color:'#16121c',background:'#ffe36ee8',radius:8});
+ put('Text','FCredits',[140,60,1000,600],{fontSize:26,align:'center',wrap:true,color:'#efe6f4'});
+ await write('Assets/UI/Flow.hbwidget.json',f);
+}
+{ // 브레인 드라이브·스크럼 그림 (원근 네온 도로, 차, 띠)
+ await write('Assets/Art/ui/taxi_road.svg','<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07021a"/><stop offset=".45" stop-color="#2a0b45"/><stop offset="1" stop-color="#05020f"/></linearGradient></defs><rect width="1280" height="720" fill="url(#sky)"/>'+Array.from({length:60},(_,i)=>`<circle cx="${(i*197)%1280}" cy="${(i*71)%230}" r="${1+i%3*.6}" fill="#fff" opacity=".7"/>`).join('')+'<path d="M600 250H680L1260 720H20Z" fill="#12082a"/><path d="M600 250L20 720M680 250L1260 720" stroke="#ff4fa3" stroke-width="8"/><path d="M627 250L407 720M653 250L873 720" stroke="#36e3ff" stroke-width="2" opacity=".35"/>'+Array.from({length:10},(_,i)=>{const y=250+Math.pow(i/10,1.8)*470;return `<path d="M0 ${y}H1280" stroke="#a46bff" stroke-opacity="${.08+i*.02}"/>`;}).join('')+'</svg>');
+ await write('Assets/Art/ui/taxi_car.svg','<svg xmlns="http://www.w3.org/2000/svg" width="240" height="150"><path d="M30 120V80l30-40h120l30 40v40z" fill="#ff4fa3" stroke="#fff" stroke-width="4"/><path d="M70 48h100l20 30H50z" fill="#36e3ff" opacity=".7"/><rect x="95" y="20" width="50" height="22" rx="6" fill="#ffe9a8"/><text x="120" y="37" font-size="14" text-anchor="middle" fill="#16121c" font-family="sans-serif">TAXI</text><circle cx="65" cy="122" r="18" fill="#16121c"/><circle cx="175" cy="122" r="18" fill="#16121c"/></svg>');
+ await write('Assets/Art/ui/taxi_rival.svg','<svg xmlns="http://www.w3.org/2000/svg" width="160" height="110"><path d="M15 95V60l25-30h80l25 30v35z" fill="#3b2a55" stroke="#a46bff" stroke-width="4"/><rect x="30" y="68" width="22" height="10" fill="#ff2040"/><rect x="108" y="68" width="22" height="10" fill="#ff2040"/></svg>');
+ await write('Assets/Art/ui/scrum_band.svg','<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="110"><path d="M0 30L1280 0V80L0 110Z" fill="#16121c" fill-opacity=".85"/><path d="M0 30L1280 0M0 110L1280 80" stroke="#36e3ff" stroke-width="4"/><text x="640" y="72" font-size="54" text-anchor="middle" fill="#fff" font-family="sans-serif" font-weight="900" transform="rotate(-1.3 640 60)">논의 스크럼 START!</text></svg>');
+}
 
 // 5) 3D 학급 재판장 장면 (docs/spec/15 §2, Source/Courtroom.hpp 와 같은 수치) + 블루프린트 (Tick → Yumeno.Update)
-const R=5.5,PODIUM_INSET=.25,SPRITE=2.3,SPRITE_Y=1.25,PODIUM_W=1.15,PODIUM_H=1.25,FOV=43.6;
+const R=5.5,PODIUM_INSET=.25,SPRITE=2.3,SPRITE_Y=1.25,PODIUM_W=1.7,PODIUM_H=1.45,FOV=43.6;
 const SEATS=['mio','rin','ken','nana','taiga','ai','rei','sora','haruka','sho','koto','akari','riku','satsuki','yuu','kaede'];
 // 재판장 소품 : 4차 그림(art/trial3d/*.webp)이 있으면 쓰고, 없으면 임시 도형
 const placeholder={

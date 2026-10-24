@@ -2,17 +2,21 @@
 #include <HBEngine/Game.hpp>
 #include "Debate.hpp"
 #include <map>
+#include <array>
+#include <set>
 HB_CLASS(Blueprintable)
 class Yumeno : public hb::Actor {
 public:
  HB_FUNCTION(BlueprintCallable) void Update(float delta);
  HB_FUNCTION(BlueprintPure) std::string Stats() const;
+ HB_FUNCTION(BlueprintCallable) void DebugJump(int index);
+ HB_FUNCTION(BlueprintCallable) void DebugChapter(int index);
 private:
- enum class Mode{Title,Story,Pad,End,Trial};
+ enum class Mode{Title,Story,Pad,End,Trial,Menu,Grid,Card,Credits};
  Mode mode=Mode::Title,beforePad=Mode::Story;
  bool ready=false;
- hb::Json story,emotions,rules,file,trials;
- int fileIndex=0,scene=0,event=0;
+ hb::Json story,emotions,rules,trials,chapter,art,giftData,kotodama,reactions;
+ int event=0;
  std::string line,speaker,portrait;
  int lineLength=0;
  float shown=0,skipTimer=0;
@@ -35,11 +39,22 @@ private:
  std::map<std::string,std::string> texts;
  bool pressed(const std::string& key);
  void text(const std::string& id,const std::string& value);
- void loadFile(int index);
- void start(int fileAt,int sceneAt,int eventAt);
- void present();
- void advance();
- void save();
+ // 장 진행 (Flow.hpp)
+ enum class MenuKind{Event,Investigate,Ending,Gift};enum class GridKind{Free,Gift};enum class After{None,Gift,Slot};
+ MenuKind menuKind=MenuKind::Event;GridKind gridKind=GridKind::Free;After after=After::None;
+ bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0,padTab=0;float toastTimer=0;
+ std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen;std::vector<std::string> gridSlugs,giftOrder,trialDead;std::vector<int> spotOrder;
+ std::string giftTarget,musicCue;std::map<std::string,std::string> ftexts;std::map<std::string,bool> fvisible;
+ void ftext(const std::string& id,const std::string& v);void fvis(const std::string& id,bool v);
+ std::string artPath(const std::string& group,const std::string& name,const std::string& dir,const std::string& ext)const;
+ void music(const std::string& cue);int level(const std::string& slug)const;void addBond(const std::string& slug,int points);void toast(const std::string& v);void hud();
+ void saveFlow();bool loadFlow();void openChapter(int index);const hb::Json& currentBeat()const;const hb::Json& flowEvents()const;bool inPark(const std::string& slug)const;
+ void newGame();void hideFlow();void showStory();void nextBeat();void enterBeat();void toTitle();void flowPresent();void showLine();
+ void sayOnce(const std::string& slug,const std::string& value,const std::string& pose,After then);void eventsDone();void advanceFlow();
+ void showMenu(const std::string& q,const std::vector<std::string>& o,MenuKind kind);void hideMenu();int menuAt(float x,float y)const;void menuPicked(int i);
+ void showFreeSelect();int poolOf(const std::string& slug)const;int gridAt(float x,float y)const;void gridPicked(int i);void pullCapsule();
+ std::string giftName(const std::string& id)const;std::string reaction(const std::string& slug,const std::string& kind)const;std::string kotodamaName(const std::string& id)const;void showGifts();void giveGift(int i);void slotDone();void showInvestigate();void trialDone();void padPage();
+ void updateFlow(float delta,bool next,bool click);hb::Json autoFlow()const;
  void dialogVisible(bool visible);
  void startDebate(const hb::Json& d);
  void updateDebate(float delta);
@@ -52,7 +67,7 @@ private:
  void setupCourt();
  // 재판 단계 (TrialRunner.hpp)
  struct Orb{std::string ch;float x=0,y=0,vx=0,vy=0;bool taken=false;};
- hb::Json stages,stage;std::string stageKind;int stageAt=-1;bool inScript=false,playingDebate=false,restartStage=false,stageShown=false,mouseWasDown=false;
+ std::string trialKey="11c",lastError;hb::Json stages,stage;std::string stageKind;int stageAt=-1;bool inScript=false,playingDebate=false,restartStage=false,stageShown=false,mouseWasDown=false;
  std::vector<hb::Json> scriptLines;int scriptAt=0;
  std::vector<std::string> opts,bladeIds,personIds,pieceIds,usedPieces,anaChars;std::vector<int> scrumIds,cells,loneHits,armOrder;std::vector<bool> filledPanel;std::vector<Orb> orbs;
  int optAnswer=-1,optHover=0,optStep=0,climaxBlank=-1,sdLine=0,sdBullet=0,scPair=0,mash=-1,armLine=0,armHits=0,armFinal=-1,taxiQ=0,taxiLane=1,anaFilled=0,mineAnswer=0;
@@ -65,5 +80,8 @@ private:
  void showOptions(const std::string& question,const std::vector<std::string>& o);int optionAt(float x,float y)const;std::vector<std::string> alive(bool withMio)const;
  void climaxOptions();void setupPlay();void optionPicked(int i);void scrumNext();void scrumPick(int i);void anaSlots();std::vector<int> mineGroup(int start)const;bool itemOpen(int item)const;void mineClick(int c);void taxiShow();
  void updateTrial(float delta);hb::Json autoAction()const;
+ void scrumFormation(float t);void taxiQText();void updateTaxi(float delta);
+ std::vector<std::array<float,4>> optRects;std::vector<std::string> taxiChars;
+ float scrumT=1,scrumWait=0,cubeD=-1,rivalD=-1,paxD=-1,carX=640,roadT=0;int taxiGot=0,taxiPhase=0,cubeLane=1,rivalLane=0;
  void drawGlyphs(const std::string& prefix,int capacity,const std::vector<debate::Glyph>& glyphs);
 };

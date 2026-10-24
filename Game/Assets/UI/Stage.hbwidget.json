@@ -3645,6 +3645,210 @@
    "bindings": {}
   },
   {
+   "id": "MineBg",
+   "name": "MineBg",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     160,
+     130,
+     960,
+     420
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "cover"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "MineIcon0",
+   "name": "MineIcon0",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     180,
+     272,
+     280,
+     136
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
    "id": "MineItem0",
    "name": "MineItem0",
    "parent": "root",
@@ -3657,10 +3861,10 @@
      0
     ],
     "offset": [
-     200,
-     330,
+     180,
+     376,
      280,
-     60
+     32
     ],
     "alignment": [
      0,
@@ -3715,9 +3919,9 @@
      0,
      0
     ],
-    "fontSize": 26,
+    "fontSize": 20,
     "color": "#ffe9a8",
-    "background": "#1b1325",
+    "background": "#1b1325d0",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
@@ -3741,6 +3945,108 @@
     "placeholder": "",
     "maxLength": 256,
     "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "MineIcon1",
+   "name": "MineIcon1",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     500,
+     272,
+     280,
+     136
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
    },
    "events": {},
    "bindings": {}
@@ -3759,9 +4065,9 @@
     ],
     "offset": [
      500,
-     330,
+     376,
      280,
-     60
+     32
     ],
     "alignment": [
      0,
@@ -3816,9 +4122,9 @@
      0,
      0
     ],
-    "fontSize": 26,
+    "fontSize": 20,
     "color": "#ffe9a8",
-    "background": "#1b1325",
+    "background": "#1b1325d0",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
@@ -3847,6 +4153,108 @@
    "bindings": {}
   },
   {
+   "id": "MineIcon2",
+   "name": "MineIcon2",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     820,
+     272,
+     280,
+     136
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
    "id": "MineItem2",
    "name": "MineItem2",
    "parent": "root",
@@ -3859,10 +4267,10 @@
      0
     ],
     "offset": [
-     800,
-     330,
+     820,
+     376,
      280,
-     60
+     32
     ],
     "alignment": [
      0,
@@ -3917,9 +4325,9 @@
      0,
      0
     ],
-    "fontSize": 26,
+    "fontSize": 20,
     "color": "#ffe9a8",
-    "background": "#1b1325",
+    "background": "#1b1325d0",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
@@ -3951,7 +4359,7 @@
    "id": "Cell0",
    "name": "Cell0",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -3962,8 +4370,8 @@
     "offset": [
      160,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4002,7 +4410,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4020,13 +4428,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4043,7 +4451,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4052,7 +4461,7 @@
    "id": "Cell1",
    "name": "Cell1",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4063,8 +4472,8 @@
     "offset": [
      240,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4103,7 +4512,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4121,13 +4530,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4144,7 +4553,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4153,7 +4563,7 @@
    "id": "Cell2",
    "name": "Cell2",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4164,8 +4574,8 @@
     "offset": [
      320,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4204,7 +4614,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4222,13 +4632,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4245,7 +4655,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4254,7 +4665,7 @@
    "id": "Cell3",
    "name": "Cell3",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4265,8 +4676,8 @@
     "offset": [
      400,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4305,7 +4716,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4323,13 +4734,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4346,7 +4757,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4355,7 +4767,7 @@
    "id": "Cell4",
    "name": "Cell4",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4366,8 +4778,8 @@
     "offset": [
      480,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4406,7 +4818,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4424,13 +4836,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4447,7 +4859,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4456,7 +4869,7 @@
    "id": "Cell5",
    "name": "Cell5",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4467,8 +4880,8 @@
     "offset": [
      560,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4507,7 +4920,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4525,13 +4938,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4548,7 +4961,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4557,7 +4971,7 @@
    "id": "Cell6",
    "name": "Cell6",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4568,8 +4982,8 @@
     "offset": [
      640,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4608,7 +5022,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4626,13 +5040,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4649,7 +5063,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4658,7 +5073,7 @@
    "id": "Cell7",
    "name": "Cell7",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4669,8 +5084,8 @@
     "offset": [
      720,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4709,7 +5124,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4727,13 +5142,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4750,7 +5165,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4759,7 +5175,7 @@
    "id": "Cell8",
    "name": "Cell8",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4770,8 +5186,8 @@
     "offset": [
      800,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4810,7 +5226,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4828,13 +5244,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4851,7 +5267,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4860,7 +5277,7 @@
    "id": "Cell9",
    "name": "Cell9",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4871,8 +5288,8 @@
     "offset": [
      880,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -4911,7 +5328,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -4929,13 +5346,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -4952,7 +5369,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -4961,7 +5379,7 @@
    "id": "Cell10",
    "name": "Cell10",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -4972,8 +5390,8 @@
     "offset": [
      960,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5012,7 +5430,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5030,13 +5448,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5053,7 +5471,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5062,7 +5481,7 @@
    "id": "Cell11",
    "name": "Cell11",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5073,8 +5492,8 @@
     "offset": [
      1040,
      130,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5113,7 +5532,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5131,13 +5550,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5154,7 +5573,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5163,7 +5583,7 @@
    "id": "Cell12",
    "name": "Cell12",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5174,8 +5594,8 @@
     "offset": [
      160,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5214,7 +5634,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5232,13 +5652,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5255,7 +5675,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5264,7 +5685,7 @@
    "id": "Cell13",
    "name": "Cell13",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5275,8 +5696,8 @@
     "offset": [
      240,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5315,7 +5736,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5333,13 +5754,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5356,7 +5777,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5365,7 +5787,7 @@
    "id": "Cell14",
    "name": "Cell14",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5376,8 +5798,8 @@
     "offset": [
      320,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5416,7 +5838,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5434,13 +5856,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5457,7 +5879,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5466,7 +5889,7 @@
    "id": "Cell15",
    "name": "Cell15",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5477,8 +5900,8 @@
     "offset": [
      400,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5517,7 +5940,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5535,13 +5958,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5558,7 +5981,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5567,7 +5991,7 @@
    "id": "Cell16",
    "name": "Cell16",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5578,8 +6002,8 @@
     "offset": [
      480,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5618,7 +6042,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5636,13 +6060,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5659,7 +6083,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5668,7 +6093,7 @@
    "id": "Cell17",
    "name": "Cell17",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5679,8 +6104,8 @@
     "offset": [
      560,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5719,7 +6144,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5737,13 +6162,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5760,7 +6185,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5769,7 +6195,7 @@
    "id": "Cell18",
    "name": "Cell18",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5780,8 +6206,8 @@
     "offset": [
      640,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5820,7 +6246,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5838,13 +6264,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5861,7 +6287,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5870,7 +6297,7 @@
    "id": "Cell19",
    "name": "Cell19",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5881,8 +6308,8 @@
     "offset": [
      720,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -5921,7 +6348,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -5939,13 +6366,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -5962,7 +6389,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -5971,7 +6399,7 @@
    "id": "Cell20",
    "name": "Cell20",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -5982,8 +6410,8 @@
     "offset": [
      800,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6022,7 +6450,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6040,13 +6468,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6063,7 +6491,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6072,7 +6501,7 @@
    "id": "Cell21",
    "name": "Cell21",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6083,8 +6512,8 @@
     "offset": [
      880,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6123,7 +6552,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6141,13 +6570,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6164,7 +6593,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6173,7 +6603,7 @@
    "id": "Cell22",
    "name": "Cell22",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6184,8 +6614,8 @@
     "offset": [
      960,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6224,7 +6654,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6242,13 +6672,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6265,7 +6695,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6274,7 +6705,7 @@
    "id": "Cell23",
    "name": "Cell23",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6285,8 +6716,8 @@
     "offset": [
      1040,
      200,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6325,7 +6756,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6343,13 +6774,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6366,7 +6797,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6375,7 +6807,7 @@
    "id": "Cell24",
    "name": "Cell24",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6386,8 +6818,8 @@
     "offset": [
      160,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6426,7 +6858,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6444,13 +6876,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6467,7 +6899,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6476,7 +6909,7 @@
    "id": "Cell25",
    "name": "Cell25",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6487,8 +6920,8 @@
     "offset": [
      240,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6527,7 +6960,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6545,13 +6978,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6568,7 +7001,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6577,7 +7011,7 @@
    "id": "Cell26",
    "name": "Cell26",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6588,8 +7022,8 @@
     "offset": [
      320,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6628,7 +7062,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6646,13 +7080,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6669,7 +7103,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6678,7 +7113,7 @@
    "id": "Cell27",
    "name": "Cell27",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6689,8 +7124,8 @@
     "offset": [
      400,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6729,7 +7164,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6747,13 +7182,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6770,7 +7205,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6779,7 +7215,7 @@
    "id": "Cell28",
    "name": "Cell28",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6790,8 +7226,8 @@
     "offset": [
      480,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6830,7 +7266,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6848,13 +7284,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6871,7 +7307,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6880,7 +7317,7 @@
    "id": "Cell29",
    "name": "Cell29",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6891,8 +7328,8 @@
     "offset": [
      560,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -6931,7 +7368,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -6949,13 +7386,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -6972,7 +7409,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -6981,7 +7419,7 @@
    "id": "Cell30",
    "name": "Cell30",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -6992,8 +7430,8 @@
     "offset": [
      640,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7032,7 +7470,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7050,13 +7488,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7073,7 +7511,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7082,7 +7521,7 @@
    "id": "Cell31",
    "name": "Cell31",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7093,8 +7532,8 @@
     "offset": [
      720,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7133,7 +7572,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7151,13 +7590,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7174,7 +7613,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7183,7 +7623,7 @@
    "id": "Cell32",
    "name": "Cell32",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7194,8 +7634,8 @@
     "offset": [
      800,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7234,7 +7674,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7252,13 +7692,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7275,7 +7715,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7284,7 +7725,7 @@
    "id": "Cell33",
    "name": "Cell33",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7295,8 +7736,8 @@
     "offset": [
      880,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7335,7 +7776,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7353,13 +7794,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7376,7 +7817,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7385,7 +7827,7 @@
    "id": "Cell34",
    "name": "Cell34",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7396,8 +7838,8 @@
     "offset": [
      960,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7436,7 +7878,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7454,13 +7896,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7477,7 +7919,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7486,7 +7929,7 @@
    "id": "Cell35",
    "name": "Cell35",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7497,8 +7940,8 @@
     "offset": [
      1040,
      270,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7537,7 +7980,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7555,13 +7998,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7578,7 +8021,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7587,7 +8031,7 @@
    "id": "Cell36",
    "name": "Cell36",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7598,8 +8042,8 @@
     "offset": [
      160,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7638,7 +8082,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7656,13 +8100,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7679,7 +8123,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7688,7 +8133,7 @@
    "id": "Cell37",
    "name": "Cell37",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7699,8 +8144,8 @@
     "offset": [
      240,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7739,7 +8184,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7757,13 +8202,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7780,7 +8225,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7789,7 +8235,7 @@
    "id": "Cell38",
    "name": "Cell38",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7800,8 +8246,8 @@
     "offset": [
      320,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7840,7 +8286,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7858,13 +8304,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7881,7 +8327,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7890,7 +8337,7 @@
    "id": "Cell39",
    "name": "Cell39",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -7901,8 +8348,8 @@
     "offset": [
      400,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -7941,7 +8388,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -7959,13 +8406,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -7982,7 +8429,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -7991,7 +8439,7 @@
    "id": "Cell40",
    "name": "Cell40",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8002,8 +8450,8 @@
     "offset": [
      480,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8042,7 +8490,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8060,13 +8508,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8083,7 +8531,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8092,7 +8541,7 @@
    "id": "Cell41",
    "name": "Cell41",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8103,8 +8552,8 @@
     "offset": [
      560,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8143,7 +8592,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8161,13 +8610,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8184,7 +8633,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8193,7 +8643,7 @@
    "id": "Cell42",
    "name": "Cell42",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8204,8 +8654,8 @@
     "offset": [
      640,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8244,7 +8694,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8262,13 +8712,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8285,7 +8735,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8294,7 +8745,7 @@
    "id": "Cell43",
    "name": "Cell43",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8305,8 +8756,8 @@
     "offset": [
      720,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8345,7 +8796,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8363,13 +8814,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8386,7 +8837,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8395,7 +8847,7 @@
    "id": "Cell44",
    "name": "Cell44",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8406,8 +8858,8 @@
     "offset": [
      800,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8446,7 +8898,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8464,13 +8916,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8487,7 +8939,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8496,7 +8949,7 @@
    "id": "Cell45",
    "name": "Cell45",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8507,8 +8960,8 @@
     "offset": [
      880,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8547,7 +9000,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8565,13 +9018,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8588,7 +9041,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8597,7 +9051,7 @@
    "id": "Cell46",
    "name": "Cell46",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8608,8 +9062,8 @@
     "offset": [
      960,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8648,7 +9102,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8666,13 +9120,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8689,7 +9143,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8698,7 +9153,7 @@
    "id": "Cell47",
    "name": "Cell47",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8709,8 +9164,8 @@
     "offset": [
      1040,
      340,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8749,7 +9204,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8767,13 +9222,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8790,7 +9245,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8799,7 +9255,7 @@
    "id": "Cell48",
    "name": "Cell48",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8810,8 +9266,8 @@
     "offset": [
      160,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8850,7 +9306,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8868,13 +9324,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8891,7 +9347,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -8900,7 +9357,7 @@
    "id": "Cell49",
    "name": "Cell49",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -8911,8 +9368,8 @@
     "offset": [
      240,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -8951,7 +9408,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -8969,13 +9426,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -8992,7 +9449,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9001,7 +9459,7 @@
    "id": "Cell50",
    "name": "Cell50",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9012,8 +9470,8 @@
     "offset": [
      320,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9052,7 +9510,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9070,13 +9528,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9093,7 +9551,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9102,7 +9561,7 @@
    "id": "Cell51",
    "name": "Cell51",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9113,8 +9572,8 @@
     "offset": [
      400,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9153,7 +9612,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9171,13 +9630,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9194,7 +9653,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9203,7 +9663,7 @@
    "id": "Cell52",
    "name": "Cell52",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9214,8 +9674,8 @@
     "offset": [
      480,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9254,7 +9714,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9272,13 +9732,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9295,7 +9755,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9304,7 +9765,7 @@
    "id": "Cell53",
    "name": "Cell53",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9315,8 +9776,8 @@
     "offset": [
      560,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9355,7 +9816,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9373,13 +9834,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9396,7 +9857,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9405,7 +9867,7 @@
    "id": "Cell54",
    "name": "Cell54",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9416,8 +9878,8 @@
     "offset": [
      640,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9456,7 +9918,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9474,13 +9936,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9497,7 +9959,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9506,7 +9969,7 @@
    "id": "Cell55",
    "name": "Cell55",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9517,8 +9980,8 @@
     "offset": [
      720,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9557,7 +10020,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9575,13 +10038,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9598,7 +10061,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9607,7 +10071,7 @@
    "id": "Cell56",
    "name": "Cell56",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9618,8 +10082,8 @@
     "offset": [
      800,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9658,7 +10122,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9676,13 +10140,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9699,7 +10163,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9708,7 +10173,7 @@
    "id": "Cell57",
    "name": "Cell57",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9719,8 +10184,8 @@
     "offset": [
      880,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9759,7 +10224,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9777,13 +10242,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9800,7 +10265,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9809,7 +10275,7 @@
    "id": "Cell58",
    "name": "Cell58",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9820,8 +10286,8 @@
     "offset": [
      960,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9860,7 +10326,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9878,13 +10344,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -9901,7 +10367,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -9910,7 +10377,7 @@
    "id": "Cell59",
    "name": "Cell59",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -9921,8 +10388,8 @@
     "offset": [
      1040,
      410,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -9961,7 +10428,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -9979,13 +10446,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10002,7 +10469,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10011,7 +10479,7 @@
    "id": "Cell60",
    "name": "Cell60",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10022,8 +10490,8 @@
     "offset": [
      160,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10062,7 +10530,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10080,13 +10548,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10103,7 +10571,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10112,7 +10581,7 @@
    "id": "Cell61",
    "name": "Cell61",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10123,8 +10592,8 @@
     "offset": [
      240,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10163,7 +10632,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10181,13 +10650,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10204,7 +10673,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10213,7 +10683,7 @@
    "id": "Cell62",
    "name": "Cell62",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10224,8 +10694,8 @@
     "offset": [
      320,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10264,7 +10734,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10282,13 +10752,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10305,7 +10775,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10314,7 +10785,7 @@
    "id": "Cell63",
    "name": "Cell63",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10325,8 +10796,8 @@
     "offset": [
      400,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10365,7 +10836,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10383,13 +10854,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10406,7 +10877,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10415,7 +10887,7 @@
    "id": "Cell64",
    "name": "Cell64",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10426,8 +10898,8 @@
     "offset": [
      480,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10466,7 +10938,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10484,13 +10956,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10507,7 +10979,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10516,7 +10989,7 @@
    "id": "Cell65",
    "name": "Cell65",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10527,8 +11000,8 @@
     "offset": [
      560,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10567,7 +11040,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10585,13 +11058,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10608,7 +11081,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10617,7 +11091,7 @@
    "id": "Cell66",
    "name": "Cell66",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10628,8 +11102,8 @@
     "offset": [
      640,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10668,7 +11142,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10686,13 +11160,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10709,7 +11183,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10718,7 +11193,7 @@
    "id": "Cell67",
    "name": "Cell67",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10729,8 +11204,8 @@
     "offset": [
      720,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10769,7 +11244,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10787,13 +11262,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10810,7 +11285,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10819,7 +11295,7 @@
    "id": "Cell68",
    "name": "Cell68",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10830,8 +11306,8 @@
     "offset": [
      800,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10870,7 +11346,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10888,13 +11364,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -10911,7 +11387,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -10920,7 +11397,7 @@
    "id": "Cell69",
    "name": "Cell69",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -10931,8 +11408,8 @@
     "offset": [
      880,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -10971,7 +11448,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -10989,13 +11466,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -11012,7 +11489,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -11021,7 +11499,7 @@
    "id": "Cell70",
    "name": "Cell70",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -11032,8 +11510,8 @@
     "offset": [
      960,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -11072,7 +11550,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -11090,13 +11568,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -11113,7 +11591,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -11122,7 +11601,7 @@
    "id": "Cell71",
    "name": "Cell71",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -11133,8 +11612,8 @@
     "offset": [
      1040,
      480,
-     78,
-     68
+     80,
+     70
     ],
     "alignment": [
      0,
@@ -11173,7 +11652,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/mine_w.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -11191,13 +11670,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ffffff",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 3,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -11214,7 +11693,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "fill"
    },
    "events": {},
    "bindings": {}
@@ -12432,311 +12912,110 @@
    "bindings": {}
   },
   {
-   "id": "Lane0",
-   "name": "Lane0",
-   "parent": "root",
-   "type": "Text",
-   "slot": {
-    "anchors": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "offset": [
-     240,
-     0,
-     240,
-     90
-    ],
-    "alignment": [
-     0,
-     0
-    ],
-    "zIndex": 0,
-    "fill": 0
-   },
-   "properties": {
-    "inputKey": "space",
-    "inputMode": "keys",
-    "axisX": "MoveX",
-    "axisY": "MoveY",
-    "keyUp": "w",
-    "keyDown": "s",
-    "keyLeft": "a",
-    "keyRight": "d",
-    "deadZone": 0.15,
-    "floating": false,
-    "deviceVisibility": "all",
-    "widgetAsset": "",
-    "widgetOverrides": "{}",
-    "widgetEvents": "{}",
-    "widgetBindings": "{}",
-    "stringTable": "",
-    "textKey": "",
-    "textArguments": "{}",
-    "style": "",
-    "styleName": "Default",
-    "styleOverrides": "",
-    "ariaLabel": "",
-    "rowHeight": 40,
-    "variableRows": false,
-    "autoRows": false,
-    "listItems": "[]",
-    "selectedIndex": -1,
-    "selectedItemId": "",
-    "text": "",
-    "texture": "",
-    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
-    "rotation": 0,
-    "scale": [
-     1,
-     1
-    ],
-    "fillDirection": "leftToRight",
-    "fillTexture": "",
-    "backgroundTexture": "",
-    "nineSlice": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "fontSize": 24,
-    "color": "#ffffff",
-    "background": "#ff4fa3cc",
-    "accent": "#589ad6",
-    "hover": "#365778",
-    "pressed": "#1e4061",
-    "borderColor": "#4a5f73",
-    "borderWidth": 0,
-    "radius": 4,
-    "opacity": 1,
-    "visible": false,
-    "enabled": true,
-    "focusable": false,
-    "tooltip": "",
-    "align": "center",
-    "value": 0,
-    "min": 0,
-    "max": 1,
-    "step": 0.01,
-    "padding": 0,
-    "gap": 8,
-    "columns": 2,
-    "checked": false,
-    "placeholder": "",
-    "maxLength": 256,
-    "wrap": true
-   },
-   "events": {},
-   "bindings": {}
-  },
-  {
-   "id": "Lane1",
-   "name": "Lane1",
-   "parent": "root",
-   "type": "Text",
-   "slot": {
-    "anchors": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "offset": [
-     520,
-     0,
-     240,
-     90
-    ],
-    "alignment": [
-     0,
-     0
-    ],
-    "zIndex": 0,
-    "fill": 0
-   },
-   "properties": {
-    "inputKey": "space",
-    "inputMode": "keys",
-    "axisX": "MoveX",
-    "axisY": "MoveY",
-    "keyUp": "w",
-    "keyDown": "s",
-    "keyLeft": "a",
-    "keyRight": "d",
-    "deadZone": 0.15,
-    "floating": false,
-    "deviceVisibility": "all",
-    "widgetAsset": "",
-    "widgetOverrides": "{}",
-    "widgetEvents": "{}",
-    "widgetBindings": "{}",
-    "stringTable": "",
-    "textKey": "",
-    "textArguments": "{}",
-    "style": "",
-    "styleName": "Default",
-    "styleOverrides": "",
-    "ariaLabel": "",
-    "rowHeight": 40,
-    "variableRows": false,
-    "autoRows": false,
-    "listItems": "[]",
-    "selectedIndex": -1,
-    "selectedItemId": "",
-    "text": "",
-    "texture": "",
-    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
-    "rotation": 0,
-    "scale": [
-     1,
-     1
-    ],
-    "fillDirection": "leftToRight",
-    "fillTexture": "",
-    "backgroundTexture": "",
-    "nineSlice": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "fontSize": 24,
-    "color": "#ffffff",
-    "background": "#ff4fa3cc",
-    "accent": "#589ad6",
-    "hover": "#365778",
-    "pressed": "#1e4061",
-    "borderColor": "#4a5f73",
-    "borderWidth": 0,
-    "radius": 4,
-    "opacity": 1,
-    "visible": false,
-    "enabled": true,
-    "focusable": false,
-    "tooltip": "",
-    "align": "center",
-    "value": 0,
-    "min": 0,
-    "max": 1,
-    "step": 0.01,
-    "padding": 0,
-    "gap": 8,
-    "columns": 2,
-    "checked": false,
-    "placeholder": "",
-    "maxLength": 256,
-    "wrap": true
-   },
-   "events": {},
-   "bindings": {}
-  },
-  {
-   "id": "Lane2",
-   "name": "Lane2",
-   "parent": "root",
-   "type": "Text",
-   "slot": {
-    "anchors": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "offset": [
-     800,
-     0,
-     240,
-     90
-    ],
-    "alignment": [
-     0,
-     0
-    ],
-    "zIndex": 0,
-    "fill": 0
-   },
-   "properties": {
-    "inputKey": "space",
-    "inputMode": "keys",
-    "axisX": "MoveX",
-    "axisY": "MoveY",
-    "keyUp": "w",
-    "keyDown": "s",
-    "keyLeft": "a",
-    "keyRight": "d",
-    "deadZone": 0.15,
-    "floating": false,
-    "deviceVisibility": "all",
-    "widgetAsset": "",
-    "widgetOverrides": "{}",
-    "widgetEvents": "{}",
-    "widgetBindings": "{}",
-    "stringTable": "",
-    "textKey": "",
-    "textArguments": "{}",
-    "style": "",
-    "styleName": "Default",
-    "styleOverrides": "",
-    "ariaLabel": "",
-    "rowHeight": 40,
-    "variableRows": false,
-    "autoRows": false,
-    "listItems": "[]",
-    "selectedIndex": -1,
-    "selectedItemId": "",
-    "text": "",
-    "texture": "",
-    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
-    "rotation": 0,
-    "scale": [
-     1,
-     1
-    ],
-    "fillDirection": "leftToRight",
-    "fillTexture": "",
-    "backgroundTexture": "",
-    "nineSlice": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "fontSize": 24,
-    "color": "#ffffff",
-    "background": "#ff4fa3cc",
-    "accent": "#589ad6",
-    "hover": "#365778",
-    "pressed": "#1e4061",
-    "borderColor": "#4a5f73",
-    "borderWidth": 0,
-    "radius": 4,
-    "opacity": 1,
-    "visible": false,
-    "enabled": true,
-    "focusable": false,
-    "tooltip": "",
-    "align": "center",
-    "value": 0,
-    "min": 0,
-    "max": 1,
-    "step": 0.01,
-    "padding": 0,
-    "gap": 8,
-    "columns": 2,
-    "checked": false,
-    "placeholder": "",
-    "maxLength": 256,
-    "wrap": true
-   },
-   "events": {},
-   "bindings": {}
-  },
-  {
    "id": "Road",
    "name": "Road",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     1280,
+     720
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "Assets/Art/ui/taxi_road.svg",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "fill"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash0",
+   "name": "Dash0",
    "parent": "root",
    "type": "Panel",
    "slot": {
@@ -12747,14 +13026,14 @@
      0
     ],
     "offset": [
-     220,
-     96,
-     840,
-     624
+     0,
+     0,
+     10,
+     40
     ],
     "alignment": [
-     0,
-     0
+     0.5,
+     0.5
     ],
     "zIndex": 0,
     "fill": 0
@@ -12807,12 +13086,12 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#140c2acc",
+    "background": "#ff4fa3",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
-    "borderColor": "#36e3ff",
-    "borderWidth": 4,
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
     "radius": 4,
     "opacity": 1,
     "visible": false,
@@ -12836,8 +13115,715 @@
    "bindings": {}
   },
   {
-   "id": "Car",
-   "name": "Car",
+   "id": "Dash1",
+   "name": "Dash1",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash2",
+   "name": "Dash2",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash3",
+   "name": "Dash3",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash4",
+   "name": "Dash4",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash5",
+   "name": "Dash5",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash6",
+   "name": "Dash6",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Dash7",
+   "name": "Dash7",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     10,
+     40
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Cube0",
+   "name": "Cube0",
    "parent": "root",
    "type": "Text",
    "slot": {
@@ -12849,9 +13835,921 @@
     ],
     "offset": [
      0,
-     600,
-     120,
+     0,
+     90,
      90
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 48,
+    "color": "#16121c",
+    "background": "#7dfcff",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 8,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Cube1",
+   "name": "Cube1",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     90,
+     90
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 48,
+    "color": "#16121c",
+    "background": "#7dfcff",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 8,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Cube2",
+   "name": "Cube2",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     90,
+     90
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 48,
+    "color": "#16121c",
+    "background": "#7dfcff",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 8,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Rival0",
+   "name": "Rival0",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     160,
+     110
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "Assets/Art/ui/taxi_rival.svg",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Rival1",
+   "name": "Rival1",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     160,
+     110
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "Assets/Art/ui/taxi_rival.svg",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Lane0",
+   "name": "Lane0",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     260,
+     120
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3d8",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 10,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Lane1",
+   "name": "Lane1",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     260,
+     120
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3d8",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 10,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Lane2",
+   "name": "Lane2",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     260,
+     120
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#ff4fa3d8",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 10,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "Car",
+   "name": "Car",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     240,
+     150
+    ],
+    "alignment": [
+     0.5,
+     0.5
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "Assets/Art/ui/taxi_car.svg",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "contain"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "TaxiQ",
+   "name": "TaxiQ",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     160,
+     96,
+     960,
+     52
     ],
     "alignment": [
      0,
@@ -12889,7 +14787,7 @@
     "listItems": "[]",
     "selectedIndex": -1,
     "selectedItemId": "",
-    "text": "▲",
+    "text": "",
     "texture": "",
     "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
     "rotation": 0,
@@ -12906,9 +14804,9 @@
      0,
      0
     ],
-    "fontSize": 80,
-    "color": "#36e3ff",
-    "background": "#00000000",
+    "fontSize": 30,
+    "color": "#7dfcff",
+    "background": "#0b1018cc",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
@@ -13243,7 +15141,7 @@
    "id": "Ring",
    "name": "Ring",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -13252,14 +15150,14 @@
      0
     ],
     "offset": [
-     0,
-     0,
+     540,
+     260,
      200,
      200
     ],
     "alignment": [
-     0.5,
-     0.5
+     0,
+     0
     ],
     "zIndex": 0,
     "fill": 0
@@ -13294,7 +15192,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/arm_ring.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -13316,9 +15214,9 @@
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
-    "borderColor": "#ff4fa3",
-    "borderWidth": 6,
-    "radius": 100,
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -13335,7 +15233,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "contain"
    },
    "events": {},
    "bindings": {}
@@ -13344,7 +15243,7 @@
    "id": "RingCore",
    "name": "RingCore",
    "parent": "root",
-   "type": "Panel",
+   "type": "Image",
    "slot": {
     "anchors": [
      0,
@@ -13395,7 +15294,7 @@
     "selectedIndex": -1,
     "selectedItemId": "",
     "text": "",
-    "texture": "",
+    "texture": "Assets/Art/ui/arm_core.svg",
     "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
     "rotation": 0,
     "scale": [
@@ -13413,13 +15312,13 @@
     ],
     "fontSize": 24,
     "color": "#ffffff",
-    "background": "#ff4fa355",
+    "background": "#00000000",
     "accent": "#589ad6",
     "hover": "#365778",
     "pressed": "#1e4061",
     "borderColor": "#4a5f73",
     "borderWidth": 0,
-    "radius": 50,
+    "radius": 4,
     "opacity": 1,
     "visible": false,
     "enabled": true,
@@ -13436,7 +15335,8 @@
     "checked": false,
     "placeholder": "",
     "maxLength": 256,
-    "wrap": true
+    "wrap": true,
+    "imageFit": "contain"
    },
    "events": {},
    "bindings": {}
@@ -13931,6 +15831,714 @@
     "focusable": false,
     "tooltip": "",
     "align": "center",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScBand",
+   "name": "ScBand",
+   "parent": "root",
+   "type": "Image",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     0,
+     300,
+     1280,
+     110
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "Assets/Art/ui/scrum_band.svg",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true,
+    "imageFit": "fill"
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScThemP",
+   "name": "ScThemP",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     30,
+     110,
+     720,
+     120
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#0b1018e6",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#ff4fa3",
+    "borderWidth": 3,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScThemN",
+   "name": "ScThemN",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     46,
+     118,
+     300,
+     30
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 22,
+    "color": "#ff8fc8",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScThemT",
+   "name": "ScThemT",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     46,
+     150,
+     690,
+     74
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 30,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScUsP",
+   "name": "ScUsP",
+   "parent": "root",
+   "type": "Panel",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     530,
+     436,
+     720,
+     110
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/pretendard/Pretendard-Medium.otf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 24,
+    "color": "#ffffff",
+    "background": "#0b1018e6",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#36e3ff",
+    "borderWidth": 3,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScUsN",
+   "name": "ScUsN",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     546,
+     444,
+     300,
+     30
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 22,
+    "color": "#7dfcff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01,
+    "padding": 0,
+    "gap": 8,
+    "columns": 2,
+    "checked": false,
+    "placeholder": "",
+    "maxLength": 256,
+    "wrap": true
+   },
+   "events": {},
+   "bindings": {}
+  },
+  {
+   "id": "ScUsT",
+   "name": "ScUsT",
+   "parent": "root",
+   "type": "Text",
+   "slot": {
+    "anchors": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "offset": [
+     546,
+     476,
+     690,
+     66
+    ],
+    "alignment": [
+     0,
+     0
+    ],
+    "zIndex": 0,
+    "fill": 0
+   },
+   "properties": {
+    "inputKey": "space",
+    "inputMode": "keys",
+    "axisX": "MoveX",
+    "axisY": "MoveY",
+    "keyUp": "w",
+    "keyDown": "s",
+    "keyLeft": "a",
+    "keyRight": "d",
+    "deadZone": 0.15,
+    "floating": false,
+    "deviceVisibility": "all",
+    "widgetAsset": "",
+    "widgetOverrides": "{}",
+    "widgetEvents": "{}",
+    "widgetBindings": "{}",
+    "stringTable": "",
+    "textKey": "",
+    "textArguments": "{}",
+    "style": "",
+    "styleName": "Default",
+    "styleOverrides": "",
+    "ariaLabel": "",
+    "rowHeight": 40,
+    "variableRows": false,
+    "autoRows": false,
+    "listItems": "[]",
+    "selectedIndex": -1,
+    "selectedItemId": "",
+    "text": "",
+    "texture": "",
+    "font": "Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf",
+    "rotation": 0,
+    "scale": [
+     1,
+     1
+    ],
+    "fillDirection": "leftToRight",
+    "fillTexture": "",
+    "backgroundTexture": "",
+    "nineSlice": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "fontSize": 28,
+    "color": "#ffffff",
+    "background": "#00000000",
+    "accent": "#589ad6",
+    "hover": "#365778",
+    "pressed": "#1e4061",
+    "borderColor": "#4a5f73",
+    "borderWidth": 0,
+    "radius": 4,
+    "opacity": 1,
+    "visible": false,
+    "enabled": true,
+    "focusable": false,
+    "tooltip": "",
+    "align": "left",
     "value": 0,
     "min": 0,
     "max": 1,

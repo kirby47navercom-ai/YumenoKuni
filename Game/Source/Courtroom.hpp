@@ -8,7 +8,7 @@ constexpr float PI=3.14159265f;
 constexpr float RADIUS=5.5f;      // 증언대 원 반지름
 constexpr float CAMERA_DISTANCE=2.6f,CAMERA_HEIGHT=1.57f; // V3 실측 : 증언대 윗면이 화면 2/3, 머리가 위 20% 지점
 constexpr float SPRITE_SIZE=2.3f,SPRITE_CENTER=1.25f;   // 입상(정사각) 크기·중심 높이
-constexpr float PODIUM_W=1.15f,PODIUM_H=1.25f,PODIUM_INSET=.25f; // 증언대는 입상보다 0.25m 안쪽
+constexpr float PODIUM_W=1.7f,PODIUM_H=1.45f,PODIUM_INSET=.25f; // 증언대는 입상보다 0.25m 안쪽
 constexpr float FIELD_OF_VIEW=43.6f; // 초점거리 900px(1280×720) = debate::FOCAL 과 같은 원근
 constexpr float FOCAL=900;
 // 자리 순서(장 내내 고정)
