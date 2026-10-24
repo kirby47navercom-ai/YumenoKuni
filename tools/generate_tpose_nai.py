@@ -66,19 +66,19 @@ NEGATIVE = (
 # T자 기준 시트용 추가 지시. 스타일 프롬프트의 '구도를 흔드는' 태그와 충돌하므로
 # 아래 제거 목록을 적용 (원문을 그대로 쓰고 싶으면 --verbatim)
 POSE = (
-    "t-pose, arms outstretched, standing, full body, straight-on, front view, "
-    "symmetrical, looking at viewer, simple background, white background, "
+    "standing, arms at sides, relaxed pose, full body, straight-on, front view, "
+    "looking at viewer, simple background, white background, "
     "character sheet, flat lighting"
 )
 DROP_FROM_STYLE = ["dynamic angle,", "blurry background,", "depth of field,", "location,"]
-EXTRA_NEGATIVE = "dynamic angle, from above, from below, foreshortening, cropped, out of frame, "
+EXTRA_NEGATIVE = "t-pose, arms outstretched, arms up, dynamic angle, from above, from below, foreshortening, cropped, out of frame, "
 
 BOY_UNI = "navy blazer, red necktie, grey slacks, school uniform"
 GIRL_UNI = "navy blazer, red ribbon, plaid skirt, school uniform"
 
 CHARACTERS = {
-    "mio": f"1girl, solo, short black bob hair, outward flipped hair ends, olive brown eyes, {GIRL_UNI}, oversized blazer sleeves, small notebook strapped to wrist with rubber band, small worn animal keychain, ordinary look",
-    "rei": f"1boy, solo, dark silver-grey hair, hair over one eye, cold blue-grey eyes, {BOY_UNI}, metal tie pin, black leather cuffs on both wrists, composed expression",
+    "mio": f"1girl, solo, short black bob hair, outward flipped hair ends, olive brown eyes, {GIRL_UNI}, oversized blazer sleeves, 1.3::small notebook strapped to left wrist with rubber band::, small worn animal keychain, ordinary look",
+    "rei": f"1boy, solo, dark silver-grey hair, hair over one eye, cold blue-grey eyes, {BOY_UNI}, metal tie pin, 1.4::black leather wrist cuffs on both wrists::, composed expression",
     "sora": f"1boy, solo, messy light brown hair, big bright eyes, {BOY_UNI}, orange hoodie under blazer, orange paracord bracelet, cheerful smile",
     "ken": f"1boy, solo, neat black hair, sharp eyes, {BOY_UNI}, blazer draped over shoulders, unbuttoned collar, large wristwatch, confident smirk",
     "nana": f"1girl, solo, long silver-white hair in low ponytail, light purple eyes, pale skin, slender, {GIRL_UNI}, white cardigan over uniform, small cross pin, white ribbon wrapped around left wrist like a bandage, gentle expression",
