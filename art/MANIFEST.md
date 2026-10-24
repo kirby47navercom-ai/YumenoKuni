@@ -147,3 +147,46 @@
 - `python tools/pack_webp.py` 실행 완료. 스크립트는 원래부터 `bg/`를 지원하므로 수정하지 않았다. 이번 대상 PNG 50장(HD 1·스프라이트 28·컷인 3·배경 18)의 WebP 규격·알파 일치를 확인했다. UI·3D 소품은 PNG 납품이다.
 - `art/PROVENANCE.json`에 실제 생성 프롬프트·참조·원본/출력 해시·교체 이력을, `art/QA.json`의 `batch4`에 규격·알파·시각 검수 결과를 기록했다. 검수 미리보기는 `art/_work/batch4_sheet_*.png`, `art/_work/batch4_hud_preview.png`, 하루카 `sheet.png`다.
 - 생성 미완료 0장, 시각 검수 대기 0장. **엔진 적용·실행 검수는 별도 남음**이다. `Game/`, `data/`, `docs/` 수정이나 Git 스테이징·커밋·푸시를 수행하지 않았다. 이 절이 에셋 인계를 겸한다.
+
+<!-- sprite-furniture-rework -->
+## 스프라이트 가구 분리 재작업 — 2026-10-25
+
+| 분류 | 완료 | 진행 | 남음 | 경로 |
+|---|---:|---:|---:|---|
+| 래피 제외 전원 T02 재작업 | 16 | 0 | 0 | `art/sprites/{slug}/{slug}_T02.png`, 같은 이름 `.webp` |
+| 인물별 6열 미리보기 갱신 | 16 | 0 | 0 | `art/sprites/{slug}/sheet.png` |
+| 기존 스프라이트 가구 전수 검수 | 532 | 0 | 0 | `art/sprites/*/*_*.png` |
+
+- 17명 전수 시각 검수 결과 T02 외 책상·탁자 포함 컷 0장. T02 16장을 내장 image_gen으로 재생성했다. 두 손으로 앞으로 짚으며 몸을 기울이는 자세, 가구·바닥 없음, 손 아래 투명 영역을 확인했다.
+- 기준 `art/standing_hd`와 얼굴·복장·체형·그림체·소품을 대조했다. 국자 복원 및 긴 치마 길이 보정 포함. 2048×2048 RGBA, 머리 꼭대기 y=120·중심 x≈1024 정렬과 WebP 알파 일치 검증 통과.
+- `python tools/pack_webp.py` 실행 완료. `art/QA.json`의 `sprite_furniture_rework`와 `art/PROVENANCE.json`에 최신 검수·해시·생성 참조 기록. 이 절이 인계를 겸한다. 엔진 실행 검수는 수행하지 않았다.
+
+<!-- batch6-progress -->
+## 6차 묶음 — 2026-10-25
+
+이번 실행은 요청 순서의 1번 선물 묶음 24장을 납품했다. 2~11번은 미착수이며, 기존 파일을 재생성하거나 완료 수량에 새 납품으로 더하지 않았다. 아래 완료는 이번 신규 납품 기준이고, 기존 보유분은 별도로 표시한다.
+
+| 분류 | 필요 | 완료 | 남음 | 경로 |
+|---|---:|---:|---:|---|
+| 1. 선물 아이콘 | 24 | 24 | 0 | `ui/gift/G01.png` ~ `ui/gift/G24.png` |
+| 2. 패드 부속 | 25 | 0 | 25 | `ui/pad/coin.png`, `capsule_machine.png`, `capsule_{1..6}.png`, `face_{slug}.png` 17명 |
+| 3. 언령 삽화 신규분 | 114 | 0 | 114 | `ui/kotodama/{id}.png`; evidence.json 123장 중 기존 9장 제외 |
+| 3. 교칙 삽화 | 20 | 0 | 20 | `ui/kotodama/R-01.png` ~ `R-20.png` |
+| 4. 방별 배경 추가분 | 방·시간대 대응표 산정 필요 | 0 | 전부 미착수 | `bg/{room}_{day,night}.png` 등; 기존 18장 보존, `vip_hall_a.png`·`vip_hall_b.png` 모두 필요 |
+| 5. 발견 CG | 6 | 0 | 6 | `art/cg/death_*.png` |
+| 6. 처형 키프레임·레이어 | 132 | 0 | 132 | `art/cg/exec_{1..5}_{번호}{,_bg,_fg}.png` |
+| 7. 이벤트 CG | 약 38 (12 §5 각 셀의 장면별 확정 필요) | 0 | 전부 미착수 | `art/cg/event_*.png` |
+| 7. 막간 CG | 19 (`[CG]` 표기 기준) | 0 | 19 | `art/cg/interlude_*.png` |
+| 8. 지도 | 8 | 0 | 8 | `ui/pad/map_park.png`, `map_A0.png` ~ `map_A6.png` |
+| 9. 공통 화면 | 13 | 0 | 13 | `ui/common/chapter_{2..6,E}.png`, `broadcast_{morning,night,body}.png`, `gameover.png`, `credits_bg.png`, `ending_{A,B}.png` |
+| 10. 발굴 그림 | 6 | 0 | 6 | `ui/minigame/mindmine_{1..6}.png` |
+| 11. 클라이맥스 패널 | 48~72 + 빈칸 조각 (장별 대본 대조 필요) | 0 | 전부 미착수 | `art/cg/climax_{장}_{번호}.png`, `climax_{장}_piece_{번호}.png` |
+
+- 선물 이름·ID는 `docs/design/00_시스템_기획서.md` §4-3의 24종과 일치한다. 내장 image_gen으로 각 아이콘을 개별 생성했다.
+- 납품 PNG 24장을 각각 직접 열어 소품 식별·채색·흰 외곽선·래피 외형을 검수했다. 최종 512×512 RGBA, 실제 알파 0~255, 모서리 투명, 해시 중복 없음 검사 통과다.
+- 래피 쿠키·작은 인형은 `art/sprites/lappy/lappy_L01.png`를 직접 참조했다. 귀 실밥 위치·분홍 몸·표정·리본을 대조했다. 장미 팩은 별도 외형 설명이 없어 표의 이름에 맞는 장미 선물 포장으로 표현했다.
+- 생성 원본을 보존하고 알파를 유지한 RGBA 변환·Lanczos 축소만 적용했다. 프롬프트·참조·생성 원본 경로는 `art/BATCH6_ASSETS.json`, 규격·개별 검수·출력 해시는 `art/BATCH6_QA.json`에 기록했다.
+- 처형 수량은 05 §5의 1~5장 실제 표 행 수 10+8+9+9+8=44, 각 합성·배경·전경 3장으로 132장이다. 명세 본문의 약 45장 대신 실제 행 수로 집계했다.
+- 배경·이벤트·클라이맥스는 아직 세부 경로 대응표를 만들지 않아 확정 수량을 주장하지 않는다. 후속 제작 전 대본과 기존 파일을 대조해야 한다.
+- 기존 납품 파일 덮어쓰기, `Game/`·`data/`·`docs/` 수정, WebP 변환, Git 스테이징·커밋·푸시는 수행하지 않았다. 엔진 적용·실행 검수는 미실행이다.
+- 이 절이 이번 에셋 작업 인계를 겸한다. 별도 CODEX_HANDOFF.md·DEBUG_HANDOFF.md는 추가하지 않았다. 다음 순서는 2번 패드 부속이다.

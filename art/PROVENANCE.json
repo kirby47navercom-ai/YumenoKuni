@@ -2847,12 +2847,12 @@
     },
     {
       "path": "art/sprites/ai/ai_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/ai.png",
       "reference_sha256": "a3d94e643b52caf6dbce19c588505375e4c391c4a5f4668dd5d7e3c18949c20b",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite ai_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Quiet restrained face, usually holds ladle with both hands; keep apron, headscarf and exact outfit. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-45242384-27c2-4bb8-aa77-9356d2c65b03.png",
       "raw_sha256": "88d6567de6323e29caf79428f7abf91508427a29794a9da9f3216e95aa4f1aa0",
       "raw_size": [
@@ -2863,11 +2863,27 @@
         2048,
         2048
       ],
-      "sha256": "10c12e3e0224193dbbf8d7c1746a15b2c2b8d5d7ecb28e6718e2eac362aec68b",
+      "sha256": "0023b3d8e7e660edfada4e400978925727ba25ae3e1b102bdeefa377c1b9dac4",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-e12d7c52-dfd4-48d4-9be7-7fa175cbf306.png",
+      "bbox": [
+        350,
+        120,
+        1699,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/ai/ai_T02.webp",
+        "sha256": "2d0d629e1a913d5229b1c9fafb6c574c288dc0840f3e58985262fd0958f3a78b",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "10c12e3e0224193dbbf8d7c1746a15b2c2b8d5d7ecb28e6718e2eac362aec68b",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/ai/ai_T03.png",
@@ -3303,12 +3319,12 @@
     },
     {
       "path": "art/sprites/akari/akari_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/akari.png",
       "reference_sha256": "d0efbd1b2d2d238a454d3e4bbb5788ebe7829abf96f757a696e7c0bf99cf2812",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite akari_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Conscientious upright posture, touching clock hairpin; keep medicine, hourglass and clock accessories. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-91c5f898-0061-42c9-84fe-5fd35d539f21.png",
       "raw_sha256": "050069ecd512b8e468076d91124cfbb180fae9d8416c603d611ec59d7b4439d1",
       "raw_size": [
@@ -3319,11 +3335,27 @@
         2048,
         2048
       ],
-      "sha256": "5cb65f765e139944fa348188bcafbbe30d9bc23a54877789f9219e8573a15c7c",
+      "sha256": "c8da3949b19755b05a65b7d206d4908bbe72076825655645c11e02e4c02db540",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-d87ff283-8bc5-4679-911a-2ed5ea3ba39b.png",
+      "bbox": [
+        226,
+        120,
+        1821,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/akari/akari_T02.webp",
+        "sha256": "8be18d8b809f3f594ed9a23684b0a8c590ad72cecd4b23e5b49b870e222c540b",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "5cb65f765e139944fa348188bcafbbe30d9bc23a54877789f9219e8573a15c7c",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/akari/akari_T03.png",
@@ -3759,12 +3791,12 @@
     },
     {
       "path": "art/sprites/kaede/kaede_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/kaede.png",
       "reference_sha256": "0e91d0c4b3e89e26eaf14af2784b228c32b9c7f7e7192e149d8dbca5edf5b1e1",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite kaede_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Reserved competitive grace, stopwatch near chin when free; preserve stopwatch, wristwatch and exact outfit. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-cf2c8b30-339b-44b4-8b74-9941a19057fd.png",
       "raw_sha256": "c5916901f5221de68fe7aa443684ad8ee7d2caed1ffc8dee75899cf380255f88",
       "raw_size": [
@@ -3775,11 +3807,27 @@
         2048,
         2048
       ],
-      "sha256": "3ef45889215667c15381483b47149f9ae861e54197705912048194c9086a84af",
+      "sha256": "50435af952b97338fd63259e058b7b795c8466d617d41dd30d4712c17e04f434",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-5b667069-8e55-40a7-8149-6ed30ebef4cd.png",
+      "bbox": [
+        50,
+        120,
+        1998,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/kaede/kaede_T02.webp",
+        "sha256": "8d011a06437129574f4d3232a100f53d69d6ab27e4db22b453ed970476a17e03",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "3ef45889215667c15381483b47149f9ae861e54197705912048194c9086a84af",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/kaede/kaede_T03.png",
@@ -4215,12 +4263,12 @@
     },
     {
       "path": "art/sprites/ken/ken_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/ken.png",
       "reference_sha256": "f6a65c93b5397cac6717df80274e3fc007ace7e96a50bb601c21115233c70612",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite ken_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Theatrical precise gloved gestures, asymmetric smirk; burgundy gold-trim jacket draped over shoulders, coin pendulum, belt half-mask. Only Ken's own gestures; no thumbs-up or head scratching. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-58af401e-1725-4fbb-80a8-11e1fc57fb76.png",
       "raw_sha256": "c4aee65ea86a03565e28b63a23e4387a03596d6eac1122c849dfbe779dc6b0e6",
       "raw_size": [
@@ -4231,11 +4279,27 @@
         2048,
         2048
       ],
-      "sha256": "918835cda21cf1d9cb637bcb17dc9e3467fcabc0f081c0af7f24cbbae2fa7b4d",
+      "sha256": "a4ac9d31acf85994dc74d738d2a768f2cd10ed4ae17eb1a157aa39fbd22b8068",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-68436138-3ffd-47d9-a41e-deb3db59414c.png",
+      "bbox": [
+        44,
+        120,
+        2004,
+        1858
+      ],
+      "webp": {
+        "path": "art/sprites/ken/ken_T02.webp",
+        "sha256": "b64eb993bbeab21b72bf3455165c36b103eb1e2a5a00b8b22e6e6fc7e637bcc4",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "918835cda21cf1d9cb637bcb17dc9e3467fcabc0f081c0af7f24cbbae2fa7b4d",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/ken/ken_T03.png",
@@ -4671,12 +4735,12 @@
     },
     {
       "path": "art/sprites/koto/koto_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/koto.png",
       "reference_sha256": "06533a19970e3ac31ccd10535d5fd9746a97a8f9c0d63665b9989a5c03578a69",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite koto_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Kind composed organizer, clipboard held near chest when free; preserve exact armband and notebook accessories. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-1dee0cb2-656a-49ab-b853-af90915fac79.png",
       "raw_sha256": "12cad038d6957b1b79f10baf68e8eddaa8c248c362e681b694b9b9fd78894480",
       "raw_size": [
@@ -4687,11 +4751,27 @@
         2048,
         2048
       ],
-      "sha256": "55c58165bc844f3dea690bfd838ea692d23ba7a5d4229178f1ea4d3c8c73181d",
+      "sha256": "6fe036c1f06affc2c0d4cc66ee660dea0763beb1216a93b0d35625885ecd78a4",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-51fd28e9-11b7-46da-843b-8acc61b644e0.png",
+      "bbox": [
+        44,
+        120,
+        2004,
+        2046
+      ],
+      "webp": {
+        "path": "art/sprites/koto/koto_T02.webp",
+        "sha256": "e5fb11f2e74a7dad6217be9a049bb7cb9ab02630b41d3827c22b76780fb8c174",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "55c58165bc844f3dea690bfd838ea692d23ba7a5d4229178f1ea4d3c8c73181d",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/koto/koto_T03.png",
@@ -5127,12 +5207,12 @@
     },
     {
       "path": "art/sprites/mio/mio_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/mio.png",
       "reference_sha256": "e2c1c4354ac793dc3663ec828fc59ff7967247262af179067732e11b54e6a6c4",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite. Reference is absolute authority for identical person, dark bob with blue inner locks and ahoge, red tied side lock, purple eyes, dark red-piped blazer, white shirt, red ribbon, skirt, pink notebook, pen and pink rabbit keychain. Preserve exact face, proportions, clothing, colors, fine colored outlines, soft cel shading and highlights. Change ONLY expression and pose: T02: intensely leaning forward, BOTH flat hands separately braced on simple small dark witness podium at waist, fingers spread, notebook safely tucked at side; podium no scenery. Front view cowboy crop at mid-thigh. 2048x2048 transparent PNG; head top y120 torso x1024; hands/hair fully in safe margins. One character only, no scene, words, glasses, exposure, body emphasis, blood, injury. Keep all original accessories visible or correctly occluded.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-54753a90-20c7-45bc-8945-d2aac54cc47e.png",
       "raw_sha256": "cf059fd78cd327eb00ea8ebf32b7fa6c0959474011b5064c1ef72c6d4c882e8b",
       "raw_size": [
@@ -5143,11 +5223,27 @@
         2048,
         2048
       ],
-      "sha256": "9900ee3d12931ca8142402e5adaa7f6a09704de39407ce6dabed8a6120c6b3bb",
+      "sha256": "e116d2be0dd6344dd0bd0e01f1fa7645ecbd3c47184426c80cfedcc53f3586dd",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-01d68ba1-cfcb-488d-a8dd-9111ff6e4108.png",
+      "bbox": [
+        78,
+        120,
+        1970,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/mio/mio_T02.webp",
+        "sha256": "5b0526dd8f995505c5a7d154b031de0c40a241bf5278a6e81e73f26bacaec775",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "9900ee3d12931ca8142402e5adaa7f6a09704de39407ce6dabed8a6120c6b3bb",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/mio/mio_T03.png",
@@ -5583,12 +5679,12 @@
     },
     {
       "path": "art/sprites/nana/nana_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/nana.png",
       "reference_sha256": "762faace3268dd51e1436a7065e334e77e62c6f3ea3177558742a63a99299cf2",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite nana_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Shy gentle gestures; fidgets with wrist ribbon. Keep flower hairpin, cream cardigan, pale sailor clothes and long skirt. Wrist ribbon always covers wrist; no marks beneath. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-82db8b34-ea66-442a-ac02-0e37ac8fde4b.png",
       "raw_sha256": "217d81795d99bf6eafdf8a3d25d87aeeedfaff6bd2261d949cf9ebf65e87f21c",
       "raw_size": [
@@ -5599,11 +5695,27 @@
         2048,
         2048
       ],
-      "sha256": "8e2946bb47748ec0e7c422f4f9c90a624e6b7db29942a8a17c4acd2e593b07c8",
+      "sha256": "53fe6dea1613c8fc9a954b82d1de52911c7ebaa1ec9fb17583c2ca5e95d5e35c",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-af375126-a5cb-4526-bba2-4322d97d65af.png",
+      "bbox": [
+        212,
+        120,
+        1837,
+        2047
+      ],
+      "webp": {
+        "path": "art/sprites/nana/nana_T02.webp",
+        "sha256": "61b6e1bc621bd0e2ad936f3c585d852dac73ced43b49025b9bc34b1e864f1a1a",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "8e2946bb47748ec0e7c422f4f9c90a624e6b7db29942a8a17c4acd2e593b07c8",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/nana/nana_T03.png",
@@ -6039,12 +6151,12 @@
     },
     {
       "path": "art/sprites/rei/rei_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/rei.png",
       "reference_sha256": "5d7a32f413e0bc8da0d3e6aeb45c875a50361c1be6340206561da6dd287bd6e3",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite rei_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Restrained elegant gestures; adjusts sleeve cuffs. White high collar long coat, black gloves and silver chains exact reference; fringe keeps one eye covered. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-728a8a48-03f2-4311-9323-f1acd98b4557.png",
       "raw_sha256": "accc20fefb66d8188d80038901afd2c9fcef552f4a9dd803065d0256ead9bd49",
       "raw_size": [
@@ -6055,11 +6167,27 @@
         2048,
         2048
       ],
-      "sha256": "23f12601a0ea2c38aadb1e13e811c671b3dac71a65fb8bd277adf3332496548b",
+      "sha256": "aa33e254376921b2bbc1ab2915545cf8f6ad0baca90ac6f3c0fcb712b8fa6f2c",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-08b8f77c-969f-4fe8-b4fe-bb4bd5b6b75d.png",
+      "bbox": [
+        44,
+        120,
+        2004,
+        2034
+      ],
+      "webp": {
+        "path": "art/sprites/rei/rei_T02.webp",
+        "sha256": "80046013be2d097fcd0a77d42365efdbe6d1e9cbd431739e0dfbaf1e7cf60e69",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "23f12601a0ea2c38aadb1e13e811c671b3dac71a65fb8bd277adf3332496548b",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/rei/rei_T03.png",
@@ -6495,12 +6623,12 @@
     },
     {
       "path": "art/sprites/riku/riku_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/riku.png",
       "reference_sha256": "327a21b2ab2dd96af77c81237c0395610963f9e7da0729bec9dabcb1ff0c5c82",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite riku_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Playful magician; rolls a coin between fingers. Preserve hat, gloves, cards and all original outfit. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-a9f08e3b-9973-40ec-be7d-f876a030206d.png",
       "raw_sha256": "c48e170b00293a002adee49624e5dd7830cf86c9d754309e5d1b2b3e14a50822",
       "raw_size": [
@@ -6511,11 +6639,27 @@
         2048,
         2048
       ],
-      "sha256": "186d8c0bb7232c1ef943655f4baa6e3e689e95cf4eb6e304d608f0b10033827e",
+      "sha256": "7ef6800120c724cdc2205e6769ddc004a703abda318d5b4f435ef454591aaad7",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-864c2d71-a3fc-4647-8141-5ba623256104.png",
+      "bbox": [
+        44,
+        120,
+        2004,
+        2021
+      ],
+      "webp": {
+        "path": "art/sprites/riku/riku_T02.webp",
+        "sha256": "129164036fe2fd888070d701919f82cba1d41c13058f8fae9b2896e1ed024cfd",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "186d8c0bb7232c1ef943655f4baa6e3e689e95cf4eb6e304d608f0b10033827e",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/riku/riku_T03.png",
@@ -6951,12 +7095,12 @@
     },
     {
       "path": "art/sprites/rin/rin_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/rin.png",
       "reference_sha256": "85a8e12d741857ce9b957cfd156acd91562a621a8df4ce7cb0b1b2f5a85ff5b2",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite rin_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Mischievous small nimble gestures; twirls keyring, keep cat mask, keys and exact outfit. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-c0d49171-1189-453d-9f7d-3834ebb83d3f.png",
       "raw_sha256": "2fc08f369805c59b0f4d642daeadf90e7272aaf88f675c00f5a73bc94e7793fc",
       "raw_size": [
@@ -6967,11 +7111,27 @@
         2048,
         2048
       ],
-      "sha256": "256284286ccc541dc2a16b9a2698dee840f5b4ed10b24d4f13b3e9e93ecd9075",
+      "sha256": "163d9c5c3ab363840cdd81f6145c7a2bcbb9f91e5c50df34a76203f189ea936c",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-437912bc-ef52-471d-a918-3a58dbf71f1b.png",
+      "bbox": [
+        284,
+        120,
+        1765,
+        2047
+      ],
+      "webp": {
+        "path": "art/sprites/rin/rin_T02.webp",
+        "sha256": "0629ba41bb67f6ef26b8e89e38d5bec36ddb5f312f1bbe4cfc71353379e7147e",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "256284286ccc541dc2a16b9a2698dee840f5b4ed10b24d4f13b3e9e93ecd9075",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/rin/rin_T03.png",
@@ -7412,12 +7572,12 @@
     },
     {
       "path": "art/sprites/satsuki/satsuki_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/satsuki.png",
       "reference_sha256": "afdcd37053d3b889e92e0140c181b89abd17a32db096c1ef8c4da448e790ad51",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite satsuki_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Reserved stern gestures; folded arms when possible, keep scarf and exact outfit. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-a379f805-f2ba-4ec2-aeb3-fff70501e838.png",
       "raw_sha256": "625758be56c0f2b3c2e646c63387363206d426d2174fbee261a639611dc9092e",
       "raw_size": [
@@ -7428,11 +7588,27 @@
         2048,
         2048
       ],
-      "sha256": "5a105df3a6e99a7cf60cce0025bd0091ad1f68e8b07ac114de0f95de5e1329ce",
+      "sha256": "df3b90aae9cdb66105e4c91a4d6cfeeda52b829002cc888e0af02a6cec5570b9",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-971cdadb-6d3a-4499-ae27-637fbb87bc5c.png",
+      "bbox": [
+        125,
+        120,
+        1923,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/satsuki/satsuki_T02.webp",
+        "sha256": "a16891570b6ed3c3ef1c31036a65edaa9812e7f4cfd842d98899d9656a96c977",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "5a105df3a6e99a7cf60cce0025bd0091ad1f68e8b07ac114de0f95de5e1329ce",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/satsuki/satsuki_T03.png",
@@ -7868,12 +8044,12 @@
     },
     {
       "path": "art/sprites/sho/sho_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/sho.png",
       "reference_sha256": "f40df504fbb958ce0c99336b711f35228a8c3041070d17c8034a021cc68a74c8",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite sho_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Reserved gentle gestures, scratches back of neck when free; keep penlight and exact uniform. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-fd80c2a0-fc10-4750-bf26-29f3dffc49b3.png",
       "raw_sha256": "d558fdde97f4ff96113ec0fc5d433bc9b263762adda261c9a0ca67c8faafe168",
       "raw_size": [
@@ -7884,11 +8060,27 @@
         2048,
         2048
       ],
-      "sha256": "6365f2e3307f612e1061dd59b951aca03b5879ae2f93663f676ec28ab060fbd9",
+      "sha256": "de77ddc559309ee46736bbc209c66f02d14650c9742b6dfca4ab68f5cd877cb6",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-5daf65a8-a160-45ff-b2c8-c0992db9bf4b.png",
+      "bbox": [
+        236,
+        120,
+        1812,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/sho/sho_T02.webp",
+        "sha256": "ee76310f9337ee5c665c22a4fec68dc71bda9b35d94a403f0f6a997502168dcb",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "6365f2e3307f612e1061dd59b951aca03b5879ae2f93663f676ec28ab060fbd9",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/sho/sho_T03.png",
@@ -8324,12 +8516,12 @@
     },
     {
       "path": "art/sprites/sora/sora_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/sora.png",
       "reference_sha256": "b6e3118eed2f3127d5ee878afd024ffc759b33ece04f769da94a877999242907",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite sora_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Open athletic gestures, thumbs and fists, left-handed greeting only when appropriate. Orange jacket, headband, hip pouches and tags preserved. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-a91909ae-5375-42ce-bf28-d0cba3cb6644.png",
       "raw_sha256": "2161e5b834fd9fd24e26cbe21af3cd28edef54ea99e4df4352fc783faa231157",
       "raw_size": [
@@ -8340,11 +8532,27 @@
         2048,
         2048
       ],
-      "sha256": "f814a6f5abf89c15665529476a48f84036716d77fd7bc59c154341499c3aa413",
+      "sha256": "0b77de93a259400c6c5222dd8cfaddead6adafe8a365b27dfca288052d0a1335",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-f6836357-de67-4422-a705-843a862a6ee6.png",
+      "bbox": [
+        86,
+        120,
+        1963,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/sora/sora_T02.webp",
+        "sha256": "dd6550a8d05f419d21fe15677255f31cc74f9fc5d091e2fc7e6a984a2b582fef",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "f814a6f5abf89c15665529476a48f84036716d77fd7bc59c154341499c3aa413",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/sora/sora_T03.png",
@@ -8780,12 +8988,12 @@
     },
     {
       "path": "art/sprites/taiga/taiga_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/taiga.png",
       "reference_sha256": "4a09e3ddcece7ee3f11014c4786a643a29cc22599959230695f826c38c5a2961",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite taiga_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Bold protective gestures, clenched fists, keep whistle and exact uniform. No increased muscularity or body emphasis. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-fcc47d63-e079-43e7-a244-fde03211dfa4.png",
       "raw_sha256": "5734464e76fd36dd2b876746a62637f9a1bc91a8a667e3c964349ec1349fd04e",
       "raw_size": [
@@ -8796,11 +9004,27 @@
         2048,
         2048
       ],
-      "sha256": "612a187b1577ea554f07b55664094bd5cfeb7a3e45f01edacc5492f900b6cfef",
+      "sha256": "2d86134fe5d037c5cd39718c5330030cc4379c3e2e11c63281997491b4e720f4",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-daccb707-c946-45e1-be8b-be1098f6edba.png",
+      "bbox": [
+        51,
+        120,
+        1997,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/taiga/taiga_T02.webp",
+        "sha256": "bfa825a7ade76722d081f58c9b467c994ace1cfb7345d258abeed52a7a7a059a",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "612a187b1577ea554f07b55664094bd5cfeb7a3e45f01edacc5492f900b6cfef",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/taiga/taiga_T03.png",
@@ -9236,12 +9460,12 @@
     },
     {
       "path": "art/sprites/yuu/yuu_T02.png",
-      "batch": 2,
+      "batch": "sprite_furniture_rework",
       "reference": "art/standing_hd/yuu.png",
       "reference_sha256": "01cda65dd3541d43536b9cd053b1b169512d2e05b1049b32248791f917361671",
       "additional_references": [],
-      "tool": "built-in image_gen",
-      "prompt": "ONE production visual novel sprite yuu_T02. Reference image is absolute authority for exact identity, face, hair, eyes, outfit, colors, proportions, ALL accessories, fine colored lines, soft cel shading and highlights. Change ONLY pose/expression: leaning assertively forward; both hands flat separately braced on a small simple dark witness podium at waist, fingers spread. Podium as minimal prop, no background.. Character-specific behavior: Lively musical gestures; adjusts headphones; keep headphones and reference costume. For M, keep ALL light effects below the top of main character's hair; hair remains top anchor, full main face unobstructed; don't widen silhouette excessively. Match emotion with that personality. Keep props secured at belt or side when hands are occupied; no missing accessories. Hands and silhouette must differ from other poses: C01 signature, C02 smile, C04 startled arms, C05 angry fist, C08 chin thinking, T01 pointing. Front-facing cowboy shot cropped mid-thigh (profile/back or lower stance only if required by this specific action), 2048x2048 square transparent RGBA PNG; top hair y120, torso x1024. Entire hair, hands and props inside safe margins. For M, ALL effects stay BELOW main hair crown, do not obscure face or expand canvas; main body, eyes, costume remain unchanged, effect only. No scenery, words or watermark, no glasses, no exposure or sexualized body emphasis, no blood, injuries or pain. One main character; partial companion only if specifically required.",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
       "raw_image_id": "exec-51405f7b-3510-49e9-9150-a7c01059ec0c.png",
       "raw_sha256": "0bc3b6d7c136d093befca06928c0097bc691b3fc91b302a5daa0ffbe069f7fcb",
       "raw_size": [
@@ -9252,11 +9476,27 @@
         2048,
         2048
       ],
-      "sha256": "88d5943d902e0e54f8b7116b87cb52559f725ba814357dbd30acbe8a52f3aa30",
+      "sha256": "5da6236690fefd7c0e47db44b6fd01d47ece6a3c62d8cea42500a84392a41906",
       "crop_bottom": null,
       "shift_x": 0,
       "export": "Existing prepare.py: preserve alpha, proportional resize and transparent padding; head y120; torso anchor x1024; optional integer recenter for companion interaction",
-      "status": "visual_review_passed"
+      "status": "Passed",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-41113f5b-03b0-4ad3-ac3f-c8279fcaf8dd.png",
+      "bbox": [
+        72,
+        120,
+        1975,
+        2048
+      ],
+      "webp": {
+        "path": "art/sprites/yuu/yuu_T02.webp",
+        "sha256": "73829312de6e2290b6ca053beaf1450cc2785e678ec2f8c2b8efafb8afce2a0b",
+        "dimensions_and_alpha_match": true
+      },
+      "previous_record": {
+        "sha256": "88d5943d902e0e54f8b7116b87cb52559f725ba814357dbd30acbe8a52f3aa30",
+        "batch": 2
+      }
     },
     {
       "path": "art/sprites/yuu/yuu_T03.png",
@@ -15562,24 +15802,35 @@
       "references": [
         "C:/Users/kirby/OneDrive/바탕 화면/git/YumenoKuni/art/standing_hd/haruka.png"
       ],
-      "prompt": "Use case identity-preserve. ONE production anime visual novel sprite. Reference is the NEW APPROVED Haruka and absolute authority for exact face, pink bob, blue cat hairclip, gray-violet eyes, cream blazer, fully buttoned shirt, pink bow, waist-tied cardigan, burgundy plaid skirt, cameras and bracelets, fine colored lines and soft cel shading. Keep EXACT modest body proportions and near-knee skirt hem. Never enlarge/emphasize chest, hips or thighs. Eye-level front view, never low angle. Ordinary fully clothed nonsexual portrait. Anatomical RIGHT hand for camera and active gestures. Keep camera hanging safely if hands occupied. True transparent alpha. No background, text, glasses, watermark, blood, wounds, body damage or added people unless partial companion explicitly specified. Action: leans forward, both hands slam an invisible podium below lower crop; do not draw podium. Square 2048x2048, cowboy shot cropped at mid-thigh, all hair hands props within safe margins, head crown y120 and body center x1024.",
-      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16edf-2bb8-7b72-b5cc-b438ebdb83ef\\exec-dca460cb-586a-4ad2-bd14-3a49105d4d14.png",
-      "sha256": "e052d2c5b5de45bc0a3b3a4db0e3a13cd13aab92be612029acc8c9f23374eb71",
-      "tool": "built-in image_gen",
-      "batch": "4",
-      "status": "static_visual_review_passed",
+      "prompt": "Edit T02 against standing_hd reference: both hands braced forward palms down at waist height, forward torso lean; preserve face, outfit, body proportions and cel shading; no desk/table/podium/floor/shadow; transparent below hands; 2048 square, head y120 center x1024. Preserve personal accessories and original long skirt lengths.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f57-d565-76c1-9c9a-f9884b810048\\exec-66b22ff1-192c-414e-bbc9-515465f60bba.png",
+      "sha256": "74ef97e71f8f87ed53cc19ff02f1ad7f9cbd97e9777232a455a09476b658f3ee",
+      "tool": "built-in image_gen; deterministic alpha speck cleanup, scale and anchor alignment; tools/pack_webp.py",
+      "batch": "sprite_furniture_rework",
+      "status": "Passed",
       "source_sha256": "060b8c8f03a5b770705b6bd5121ae2fcd12ecf9f41704b483399efcb3e67c224",
       "reference_sha256": {
         "art/standing_hd/haruka.png": "99aa3f027420c2729d540ab68334d0d29450dd373892b284a040f490df40b13d"
       },
       "webp": {
         "path": "art/sprites/haruka/haruka_T02.webp",
-        "sha256": "6c37c20f3384f7d1991dbf61128f5fada5254ff832eef1c872794283329a8a6b",
+        "sha256": "901e51942bc43b3e3d6545ba93339755701583b287a4515777ccd44e8a0c61d8",
         "dimensions_and_alpha_match": true
       },
       "visual_review": {
         "status": "Passed",
         "method": "Direct individual output inspection and final grouped contact sheets; identity/proportions/clothing/acting, object counts, text, time variants, alpha and composition reviewed."
+      },
+      "reference": "art/standing_hd/haruka.png",
+      "bbox": [
+        219,
+        120,
+        1829,
+        2048
+      ],
+      "previous_record": {
+        "sha256": "e052d2c5b5de45bc0a3b3a4db0e3a13cd13aab92be612029acc8c9f23374eb71",
+        "batch": "4"
       }
     },
     {

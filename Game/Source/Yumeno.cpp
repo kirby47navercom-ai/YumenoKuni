@@ -136,7 +136,7 @@ void Yumeno::styleLine(){
    if(st.r!=c.r||st.g!=c.g||st.b!=c.b){UI::SetColor(this,UI_ID,id,c);st.r=c.r;st.g=c.g;st.b=c.b;}}
  }
  text("TrialSpeaker",l.speaker);
- portrait=slug.empty()?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L04":weak?"C12":l.kind=="agree"?"T03":"C02")+".webp";
+ portrait=slug.empty()?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L04":weak?"T02":l.kind=="agree"?"T03":"C02")+".webp";
  speakerSeat=-1; // 같은 화자라도 줄마다 카메라가 다시 잡는다(V3)
  focusSpeaker(slug,portrait);
 }
