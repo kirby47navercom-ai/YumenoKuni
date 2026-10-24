@@ -25,7 +25,7 @@ private:
  float debateTime=180;
  std::map<std::string,hb::Actor*> actors;
  float aimX=640,aimY=360;
- bool lie=false;
+ bool lie=false,lieCost=false;
  struct GlyphCache{int visible=0;std::string text;float rotation=1e9f,opacity=-1;};
  std::map<std::string,GlyphCache> glyphCache;
  std::map<std::string,bool> held;

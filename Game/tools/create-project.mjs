@@ -22,7 +22,7 @@ const sceneFiles=(await fs.readdir(path.join(repo,'data/scenes'))).filter(f=>f.e
 for(const f of sceneFiles){const {source,...data}=JSON.parse(await fs.readFile(path.join(repo,'data/scenes',f),'utf8'));await write('Assets/Data/scenes/'+f.split('_')[0]+'.json',data);}
 await write('Assets/Data/emotion.json',JSON.parse(await fs.readFile(path.join(repo,'data/emotion_map.json'),'utf8')));
 // 진행 순서 : 프롤로그부터 (장이 늘면 여기 추가). 재판 : data/trials (tools/build_trial.py)
-await write('Assets/Data/story.json',{files:['10'],trials:['11b'],dead:{'11b':['taiga']}});
+await write('Assets/Data/story.json',{files:['10'],trials:['11c'],dead:{'11c':['taiga']}});
 for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
 // 2) 교칙 : docs/spec/11 §2·§3 표

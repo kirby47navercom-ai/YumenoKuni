@@ -45,22 +45,23 @@ try{
  assert.equal((await stats()).trial.hearts,h2-1,'거짓 탄환 장전에 발언력 소모');
  // 4) 정답으로 논의 3개 클리어
  const report=[];
- for(let n=0;n<16;n++){
+ for(let n=0;n<60;n++){
   s=await stats();if(s.mode!=='trial')break;
   if(s.trial.clearing){await delay(2700);continue;}
   s=await waitWeak();await selectBullet(s.trial.answer);
   // 집중(Shift)으로 시간을 늦추고 쏜다. 글자가 움직이므로 최대 4번까지 다시 조준
   await key('Shift','ShiftLeft',16,'keyDown');
   let after,deb,before;
-  for(let shot=0;shot<4;shot++){s=await waitWeak();before=s.trial.broken;deb=s.trial.debate;await click(...s.trial.weakPoint,40);after=await stats();if(after.mode!=='trial'||after.trial.broken>before||after.trial.clearing||after.trial.debate!==deb)break;}
+  for(let shot=0;shot<4;shot++){s=await waitWeak();before=s.trial.broken;deb=s.trial.debate;await click(...s.trial.weakPoint,s.trial.needLie?700:40);after=await stats();if(after.mode!=='trial'||after.trial.broken>before||after.trial.clearing||after.trial.debate!==deb)break;}
   await key('Shift','ShiftLeft',16,'keyUp');
-  report.push({debate:deb,answer:s.trial.answer,motion:s.trial.motion});
+  report.push({debate:deb,answer:s.trial.answer,lie:s.trial.needLie,motion:s.trial.motion});
   assert(after.mode!=='trial'||after.trial.broken>before||after.trial.clearing||after.trial.debate!==deb,'정답이면 논파');
  }
  s=await stats();await probe.capture('05-end.png');
  assert.equal(s.mode,'title','논의 3개 클리어 후 타이틀로');
  assert(maxBack>0,'글자가 화자 뒤로 지나감(뒤층 사용)');assert(maxFront>0,'화자 앞 글자');
- const result={ok:true,breaks:report.length,maxBack,maxFront,motions:[...motions]};
+ assert(report.some(r=>r.lie),'거짓 탄환 필수 논의 통과');
+ const result={ok:true,breaks:report.length,lies:report.filter(r=>r.lie).length,maxBack,maxFront,motions:[...motions]};
  await fs.writeFile(path.join(work,'report.json'),JSON.stringify({...result,report},null,1));
  console.log(JSON.stringify(result,null,1));
 }finally{await probe?.close?.();}

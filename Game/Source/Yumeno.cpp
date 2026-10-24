@@ -251,7 +251,7 @@ void Yumeno::updateDebate(float delta){
  if(down){
   if(holdTime<0)holdTime=0;
   holdTime+=delta;
-  if(!lie&&holdTime>.45f&&debate.hearts>1){lie=true;--debate.hearts;showBullet();}
+  if(!lie&&holdTime>.45f){lie=true;lieCost=debate.hearts>1;if(lieCost)--debate.hearts;showBullet();} // 발언력 1칸이면 걸지 않고 장전
   return;
  }
  if(holdTime<0)return;
@@ -262,7 +262,7 @@ void Yumeno::updateDebate(float delta){
  bool correct=bullets[bullet].first==l.answer&&lieShot==l.lie;
  if(correct){
   float px=0,py=0;bool v=debate.vpoint(px,py)&&std::hypot(aimX-px,aimY-py)<16;
-  if(lieShot)++debate.hearts;
+  if(lieShot&&lieCost)++debate.hearts;
   debate.broken[debate.index]=true;vBreaks+=v;
   UI::SetVisible(this,UI_ID,"Cutin",true);cutinTimer=1.1f;
   if(debate.cleared()){message(v?"V논파! 논의 종료!":"논파 완료!",2.2f);clearTimer=2.4f;}
@@ -328,7 +328,7 @@ std::string Yumeno::Stats()const{
   Json weakPoint=nullptr;int front=0,back=0;
   for(auto& g:debate.current()){(g.front?front:back)++;if(weakPoint.is_null()&&g.weak&&g.front&&g.opacity>.5f&&g.x>80&&g.x<1200&&g.y>40&&g.y<620)weakPoint={g.x,g.y};}
   float vx=0,vy=0;bool v=debate.vpoint(vx,vy);
-  s["trial"]={{"debate",debateAt},{"index",debate.index},{"kind",l.kind},{"motion",int(l.motion)},{"answer",l.answer},{"hearts",debate.hearts},{"broken",broken},{"vBreaks",vBreaks},{"focus",debate.focus},{"bullet",bullets.empty()?"":bullets[bullet].first},{"lie",lie},{"aim",{aimX,aimY}},{"weakPoint",weakPoint},{"vpoint",v?Json{vx,vy}:Json(nullptr)},{"glyphsFront",front},{"glyphsBack",back},{"noise",debate.noiseIndex()},{"clearing",clearTimer>0},{"camera",cameraAngle},{"speakerSeat",speakerSeat},{"turning",cameraTime<1}};
+  s["trial"]={{"debate",debateAt},{"index",debate.index},{"kind",l.kind},{"motion",int(l.motion)},{"answer",l.answer},{"needLie",l.lie},{"hearts",debate.hearts},{"broken",broken},{"vBreaks",vBreaks},{"focus",debate.focus},{"bullet",bullets.empty()?"":bullets[bullet].first},{"lie",lie},{"aim",{aimX,aimY}},{"weakPoint",weakPoint},{"vpoint",v?Json{vx,vy}:Json(nullptr)},{"glyphsFront",front},{"glyphsBack",back},{"noise",debate.noiseIndex()},{"clearing",clearTimer>0},{"camera",cameraAngle},{"speakerSeat",speakerSeat},{"turning",cameraTime<1}};
  }
  return s.dump();
 }
