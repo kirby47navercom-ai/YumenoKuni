@@ -39,9 +39,9 @@ def chapter_of(file):
 def bgm_of(r):
     f = r["file"]
     t = r["title"]
-    ch = {"10": "P", "11": "1", "12": "2", "13": "3", "14": "4", "15": "5", "16": "6"}.get(f[:2], "?")
+    ch = {"10": "P", "11": "1", "12": "2", "13": "3", "14": "4", "15": "5", "16": "6", "17": "I"}.get(f[:2], "?")
     daily = {"P": "bgm_pro_arrival", "1": "bgm_daily_pastel", "2": "bgm_daily_summer", "3": "bgm_daily_night",
-             "4": "bgm_daily_grey", "5": "bgm_daily_mono", "6": "bgm_core"}[ch]
+             "4": "bgm_daily_grey", "5": "bgm_daily_mono", "6": "bgm_core", "I": "bgm_interlude"}[ch]
     if "프리타임" in t or re.match(r"^B-\d+ .*[①②③]", t):
         return "bgm_freetime"
     if "동기" in t or "-M-" in r["uid"]:
