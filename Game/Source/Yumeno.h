@@ -1,5 +1,6 @@
 #pragma once
 #include <HBEngine/Game.hpp>
+#include "Debate.hpp"
 #include <map>
 HB_CLASS(Blueprintable)
 class Yumeno : public hb::Actor {
@@ -7,14 +8,20 @@ public:
  HB_FUNCTION(BlueprintCallable) void Update(float delta);
  HB_FUNCTION(BlueprintPure) std::string Stats() const;
 private:
- enum class Mode{Title,Story,Pad,End};
- Mode mode=Mode::Title;
+ enum class Mode{Title,Story,Pad,End,Trial};
+ Mode mode=Mode::Title,beforePad=Mode::Story;
  bool ready=false;
- hb::Json story,emotions,rules,file;
+ hb::Json story,emotions,rules,file,trials;
  int fileIndex=0,scene=0,event=0;
  std::string line,speaker,portrait;
  int lineLength=0;
  float shown=0,skipTimer=0;
+ // 논스톱 논의
+ debate::State debate;
+ std::vector<std::pair<std::string,std::string>> bullets;
+ int debateAt=0,bullet=0,shownLine=-1,shownHearts=-1;
+ float messageTimer=0,cutinTimer=0,clearTimer=0;
+ float aimX=640,aimY=360;
  std::map<std::string,bool> held;
  std::map<std::string,std::string> texts;
  bool pressed(const std::string& key);
@@ -24,4 +31,9 @@ private:
  void present();
  void advance();
  void save();
+ void dialogVisible(bool visible);
+ void startDebate(int at);
+ void updateDebate(float delta);
+ void message(const std::string& value,float seconds);
+ void showBullet();
 };

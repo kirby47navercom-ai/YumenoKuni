@@ -21,8 +21,9 @@ const sceneFiles=(await fs.readdir(path.join(repo,'data/scenes'))).filter(f=>f.e
 // source(원본 .md 이름)는 엔진 빌드가 파일 참조로 읽으므로 뺀다
 for(const f of sceneFiles){const {source,...data}=JSON.parse(await fs.readFile(path.join(repo,'data/scenes',f),'utf8'));await write('Assets/Data/scenes/'+f.split('_')[0]+'.json',data);}
 await write('Assets/Data/emotion.json',JSON.parse(await fs.readFile(path.join(repo,'data/emotion_map.json'),'utf8')));
-// 진행 순서 : 프롤로그부터 (장이 늘면 여기 추가)
-await write('Assets/Data/story.json',{files:['10']});
+// 진행 순서 : 프롤로그부터 (장이 늘면 여기 추가). 재판 : data/trials (tools/build_trial.py)
+await write('Assets/Data/story.json',{files:['10'],trials:['11b']});
+for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
 // 2) 교칙 : docs/spec/11 §2·§3 표
 const rulesDoc=await fs.readFile(path.join(repo,'docs/spec/11_래피패드_교칙.md'),'utf8');
@@ -33,7 +34,8 @@ await write('Assets/Data/rules.json',{rules});
 for(const slug of await fs.readdir(path.join(repo,'art/sprites'))){
  for(const f of await fs.readdir(path.join(repo,'art/sprites',slug)))if(f.endsWith('.webp')&&!f.startsWith('sheet'))await copy(`art/sprites/${slug}/${f}`,`Assets/Art/sprites/${slug}/${f}`);
 }
-for(const f of ['dialog/frame.png','dialog/nameplate.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
+for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
+await write('Assets/Art/ui/aim.svg','<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="#ff4fa3" stroke-width="4"/><circle cx="32" cy="32" r="3" fill="#ffffff"/><path d="M32 2v14M32 48v14M2 32h14M48 32h14" stroke="#ffffff" stroke-width="3"/></svg>');
 await copy('fonts/pretendard/Pretendard-Medium.otf','Assets/Fonts/Pretendard-Medium.otf');
 await copy('fonts/pretendard/LICENSE.txt','Assets/Fonts/Pretendard-LICENSE.txt');
 await copy('fonts/blackhansans/BlackHanSans-Regular.ttf','Assets/Fonts/BlackHanSans-Regular.ttf');
@@ -51,9 +53,20 @@ add('Text','Name',[118,490,196,36],{font:head,fontSize:26,align:'center',color:'
 add('Text','Body',[136,548,1010,120],{fontSize:25,wrap:true});
 add('Text','Hint',[760,690,500,26],{text:'Enter·클릭 다음   Ctrl 빨리감기   Tab 래피 패드',fontSize:16,color:'#b9a9c6',align:'right'});
 add('Text','SceneTitle',[24,16,800,30],{fontSize:18,color:'#d9b8e8'});
+// 논스톱 논의 (V3) : 떠다니는 증언 한 줄 = Stmt 패널 안의 앞·약점·뒤 세 조각
+add('Panel','Trial',[0,0,1280,720],{visible:false});
+add('Text','TrialSpeaker',[40,24,600,48],{font:head,fontSize:34,color:'#ffffff'},'Trial');
+add('Panel','Stmt',[1280,200,1200,64],{},'Trial');
+for(const [id,color] of [['StmtPre','#ffffff'],['StmtWeak','#ff9a2e'],['StmtPost','#ffffff']])add('Text',id,[0,0,400,64],{fontSize:40,color,wrap:false},'Stmt');
+for(let i=0;i<5;i++)add('Image','Heart'+i,[1010+i*50,22,44,44],{texture:'Assets/Art/ui/heart_full.png',imageFit:'contain'},'Trial');
+add('Text','Bullet',[40,646,760,46],{fontSize:24,color:'#ffe9a8',background:'#1b1325e6',padding:8},'Trial');
+add('Text','TrialHint',[820,656,440,30],{text:'Q/E 언령 바꾸기   클릭 발사',fontSize:17,color:'#b9a9c6',align:'right'},'Trial');
+add('Text','TrialMsg',[0,300,1280,80],{font:head,fontSize:56,align:'center',color:'#ff8fc8',visible:false},'Trial');
+add('Image','Cutin',[128,200,1024,342],{texture:'Assets/Art/ui/cutin_objection.png',imageFit:'contain',visible:false},'Trial');
+add('Image','Aim',[608,328,64,64],{texture:'Assets/Art/ui/aim.svg',imageFit:'contain'},'Trial');
 add('Panel','Title',[0,0,1280,720],{background:'#0f0b16'});
 add('Text','TitleLogo',[0,220,1280,110],{text:'夢の国  유메노쿠니',font:head,fontSize:84,align:'center',color:'#ff8fc8'},'Title');
-add('Text','TitleSub',[0,350,1280,40],{text:'Enter  새로 시작        C  이어하기',fontSize:26,align:'center',color:'#efe6f4'},'Title');
+add('Text','TitleSub',[0,350,1280,40],{text:'Enter  새로 시작      C  이어하기      T  1장 재판 체험',fontSize:26,align:'center',color:'#efe6f4'},'Title');
 add('Panel','Pad',[0,0,1280,720],{background:'#120d1af2',visible:false});
 add('Text','PadHead',[120,48,1040,60],{text:'래피 패드  ·  교칙',font:head,fontSize:40,color:'#ff8fc8'},'Pad');
 add('Text','PadBody',[120,120,1040,560],{fontSize:21,wrap:true},'Pad');
