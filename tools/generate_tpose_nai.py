@@ -91,7 +91,7 @@ CHARACTERS = {
     "rin": f"1girl, solo, 1.3::petite, small and short, slim::, 1.7::purple hair, violet hair::, short bob with messy bangs, hazel eyes, 1.4::sky blue sailor school uniform with oversized lemon yellow hoodie underneath::, sky blue skirt, mismatched socks, sneakers, 1.3::ring of many keys on belt::, key bracelet, cat-eye mask pushed up on head, playful wink, tongue out",
     "sho": f"1boy, solo, tall, broad shoulders, {MALE}, tousled ash brown hair, tired gentle teal eyes, 1.4::grey school blazer with teal necktie, knitted sweater vest::, white shirt, penlight in chest pocket, adhesive bandage on cheek, bandaged knuckles, grey slacks, calm awkward faint smile",
     "ai": f"1girl, solo, 1.4::petite, very short, tiny frame::, 1.7::mint green hair, light green hair::, bob cut with blunt bangs, big rose-pink eyes, 1.4::pastel pink school blazer with white frilled apron over it::, 1.2::small white kerchief on head::, white skirt, rolled-up sleeves, quiet expressionless face, sleepy eyes",
-    "haruka": f"1girl, solo, average height, soft round face, strawberry pink short bob, 1.4::blue hair clip::, big brown eyes, 1.4::cream yellow school blazer, pink ribbon, cardigan tied around waist::, red plaid skirt, loose white socks, 1.3::many colorful bracelets::, small camera on strap, bright cheerful open smile",
+    "haruka": f"1girl, solo, average height, 1.3::slim, slender, modest build::, soft round face, strawberry pink short bob, 1.4::blue hair clip::, big brown eyes, 1.4::cream yellow school blazer worn buttoned, pink ribbon, cardigan tied around waist::, 1.2::knee-length red plaid skirt::, loose white socks, 1.3::many colorful bracelets::, small camera on strap, bright cheerful open smile",
     "kaede": f"1girl, solo, tall, slender model-like long legs, very long straight deep navy blue hair, snowflake hairpin, cool grey-blue eyes, 1.4::ice blue long coat-style school uniform with silver snowflake buttons::, long white pleated skirt, black tights, thin silver bracelet, cool expressionless face, elegant",
     "lappy": "no humans, solo, 1.3::tiny cute pink rabbit mascot plushie::, chibi, small short body, big round head, standing upright on two legs, stubby arms, one eye glowing red, other eye dark, 1.2::angry eyebrows::, sharp fangs grin, 1.3::left ear torn and stitched with red thread::, small ribbon at neck, cute but fierce, stuffed toy",
 }
@@ -159,6 +159,8 @@ def build_prompts(name: str, verbatim: bool, pose: str = None):
         extra += MALE_NEG
     if name not in ("rin", "lappy"):
         extra += NO_STREAK_NEG
+    if name == "haruka":  # 기준 입상에서 신체 강조가 나와 포즈 컷까지 번졌다 → 보통 체형 고정
+        extra += "large breasts, cleavage, thick thighs, wide hips, miniskirt, "
     if name == "taiga":
         extra += "fat, chubby, obese, barefoot, "
     if name == "lappy":

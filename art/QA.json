@@ -5,7 +5,7 @@
     "lappy": 12,
     "P_set": 13,
     "ui": 15,
-    "total": 457,
+    "total": 612,
     "unique_sprites": 112
   },
   "checks": {
@@ -8177,5 +8177,2601 @@
         "review_note": "Inspected final normalized 2048 PNG after regeneration/framing correction; exact identity, required hand action and props, unchanged clothing, transparent margins and alignment verified. M uses effects only."
       }
     ]
+  },
+  "batch3": {
+    "required": 155,
+    "exported": 155,
+    "visual_review_passed": 155,
+    "not_generated": [],
+    "needs_visual_review": []
+  },
+  "batch3_restart": {
+    "required": 180,
+    "preserved_existing": 42,
+    "new_exports": 138,
+    "new_visual_passed": 138,
+    "missing": [],
+    "needs_visual_review": [],
+    "checks": {
+      "rgba_2048_transparency": true,
+      "head_y120": true,
+      "unaffected_existing_art_preserved": true,
+      "docs_bytes_preserved": false,
+      "docs_written_by_this_run": false,
+      "unique_output_hashes": true,
+      "all_requested_paths_present": true,
+      "all_new_assets_visually_reviewed": true
+    },
+    "authorized_webp_replacements": [
+      "art/cutin/haruka_1.webp",
+      "art/cutin/haruka_2.webp",
+      "art/cutin/haruka_3.webp",
+      "art/cutin/kaede_1.webp",
+      "art/cutin/kaede_2.webp",
+      "art/cutin/kaede_3.webp",
+      "art/cutin/ken_1.webp",
+      "art/cutin/ken_2.webp",
+      "art/cutin/ken_3.webp",
+      "art/cutin/koto_1.webp",
+      "art/cutin/koto_2.webp",
+      "art/cutin/koto_3.webp",
+      "art/cutin/mio_1.webp",
+      "art/cutin/mio_2.webp",
+      "art/cutin/mio_3.webp",
+      "art/cutin/nana_1.webp",
+      "art/cutin/nana_2.webp",
+      "art/cutin/nana_3.webp",
+      "art/cutin/rei_1.webp",
+      "art/cutin/rei_2.webp",
+      "art/cutin/rei_3.webp",
+      "art/cutin/riku_1.webp",
+      "art/cutin/riku_2.webp",
+      "art/cutin/riku_3.webp",
+      "art/cutin/rin_1.webp",
+      "art/cutin/rin_2.webp",
+      "art/cutin/rin_3.webp",
+      "art/cutin/satsuki_1.webp",
+      "art/cutin/satsuki_2.webp",
+      "art/cutin/satsuki_3.webp",
+      "art/cutin/sho_1.webp",
+      "art/cutin/sho_2.webp",
+      "art/cutin/sho_3.webp",
+      "art/cutin/sora_1.webp",
+      "art/cutin/sora_2.webp",
+      "art/cutin/sora_3.webp",
+      "art/cutin/taiga_1.webp",
+      "art/cutin/taiga_2.webp",
+      "art/cutin/taiga_3.webp",
+      "art/cutin/yuu_1.webp",
+      "art/cutin/yuu_2.webp",
+      "art/cutin/yuu_3.webp",
+      "art/sprites/ai/ai_K01.webp",
+      "art/sprites/ai/ai_K02.webp",
+      "art/sprites/ai/ai_K03.webp",
+      "art/sprites/akari/akari_K01.webp",
+      "art/sprites/akari/akari_K02.webp",
+      "art/sprites/akari/akari_K03.webp",
+      "art/sprites/akari/akari_X3.webp",
+      "art/sprites/haruka/haruka_C01.webp",
+      "art/sprites/haruka/haruka_C02.webp",
+      "art/sprites/haruka/haruka_C03.webp",
+      "art/sprites/haruka/haruka_C04.webp",
+      "art/sprites/haruka/haruka_C05.webp",
+      "art/sprites/haruka/haruka_C06.webp",
+      "art/sprites/haruka/haruka_C07.webp",
+      "art/sprites/haruka/haruka_C08.webp",
+      "art/sprites/haruka/haruka_C09.webp",
+      "art/sprites/haruka/haruka_C10.webp",
+      "art/sprites/haruka/haruka_C11.webp",
+      "art/sprites/haruka/haruka_C12.webp",
+      "art/sprites/haruka/haruka_C13.webp",
+      "art/sprites/haruka/haruka_C14.webp",
+      "art/sprites/haruka/haruka_K01.webp",
+      "art/sprites/haruka/haruka_K02.webp",
+      "art/sprites/haruka/haruka_K03.webp",
+      "art/sprites/haruka/haruka_K04.webp",
+      "art/sprites/haruka/haruka_K05.webp",
+      "art/sprites/haruka/haruka_K06.webp",
+      "art/sprites/haruka/haruka_M.webp",
+      "art/sprites/haruka/haruka_R01.webp",
+      "art/sprites/haruka/haruka_R02.webp",
+      "art/sprites/haruka/haruka_R03.webp",
+      "art/sprites/haruka/haruka_R04.webp",
+      "art/sprites/haruka/haruka_T01.webp",
+      "art/sprites/haruka/haruka_T02.webp",
+      "art/sprites/haruka/haruka_T03.webp",
+      "art/sprites/haruka/haruka_T04.webp",
+      "art/sprites/haruka/haruka_U1.webp",
+      "art/sprites/haruka/haruka_U2.webp",
+      "art/sprites/haruka/haruka_U3.webp",
+      "art/sprites/haruka/haruka_U4.webp",
+      "art/sprites/haruka/haruka_U5.webp",
+      "art/sprites/haruka/haruka_U6.webp",
+      "art/sprites/haruka/haruka_X1.webp",
+      "art/sprites/haruka/haruka_X2.webp",
+      "art/sprites/haruka/haruka_X3.webp",
+      "art/sprites/kaede/kaede_K01.webp",
+      "art/sprites/kaede/kaede_K02.webp",
+      "art/sprites/kaede/kaede_K03.webp",
+      "art/sprites/ken/ken_K01.webp",
+      "art/sprites/ken/ken_K02.webp",
+      "art/sprites/ken/ken_K03.webp",
+      "art/sprites/koto/koto_K01.webp",
+      "art/sprites/koto/koto_K02.webp",
+      "art/sprites/koto/koto_K03.webp",
+      "art/sprites/koto/koto_K04.webp",
+      "art/sprites/koto/koto_K05.webp",
+      "art/sprites/koto/koto_K06.webp",
+      "art/sprites/mio/mio_K01.webp",
+      "art/sprites/mio/mio_K02.webp",
+      "art/sprites/mio/mio_K03.webp",
+      "art/sprites/mio/mio_K04.webp",
+      "art/sprites/mio/mio_K05.webp",
+      "art/sprites/mio/mio_K06.webp",
+      "art/sprites/nana/nana_K01.webp",
+      "art/sprites/nana/nana_K02.webp",
+      "art/sprites/nana/nana_K03.webp",
+      "art/sprites/nana/nana_K04.webp",
+      "art/sprites/nana/nana_K05.webp",
+      "art/sprites/nana/nana_K06.webp",
+      "art/sprites/rei/rei_K01.webp",
+      "art/sprites/rei/rei_K02.webp",
+      "art/sprites/rei/rei_K03.webp",
+      "art/sprites/rei/rei_K04.webp",
+      "art/sprites/rei/rei_K05.webp",
+      "art/sprites/rei/rei_K06.webp",
+      "art/sprites/riku/riku_K01.webp",
+      "art/sprites/riku/riku_K02.webp",
+      "art/sprites/riku/riku_K03.webp",
+      "art/sprites/rin/rin_K01.webp",
+      "art/sprites/rin/rin_K02.webp",
+      "art/sprites/rin/rin_K03.webp",
+      "art/sprites/satsuki/satsuki_K01.webp",
+      "art/sprites/satsuki/satsuki_K02.webp",
+      "art/sprites/satsuki/satsuki_K03.webp",
+      "art/sprites/sho/sho_K01.webp",
+      "art/sprites/sho/sho_K02.webp",
+      "art/sprites/sho/sho_K03.webp",
+      "art/sprites/sora/sora_K01.webp",
+      "art/sprites/sora/sora_K02.webp",
+      "art/sprites/sora/sora_K03.webp",
+      "art/sprites/taiga/taiga_K01.webp",
+      "art/sprites/taiga/taiga_K02.webp",
+      "art/sprites/taiga/taiga_K03.webp",
+      "art/sprites/yuu/yuu_K01.webp",
+      "art/sprites/yuu/yuu_K02.webp",
+      "art/sprites/yuu/yuu_K03.webp"
+    ],
+    "external_docs_changes_observed": [
+      "docs/design/11b_1장_수사_재판.md"
+    ],
+    "files": [
+      {
+        "path": "art/sprites/ai/ai_K01.png",
+        "bbox": [
+          568,
+          120,
+          1393,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/ai/ai_K02.png",
+        "bbox": [
+          555,
+          120,
+          1393,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/ai/ai_K03.png",
+        "bbox": [
+          541,
+          120,
+          1436,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/akari/akari_K01.png",
+        "bbox": [
+          641,
+          120,
+          1543,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/akari/akari_K02.png",
+        "bbox": [
+          507,
+          120,
+          1577,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/akari/akari_K03.png",
+        "bbox": [
+          641,
+          120,
+          1580,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/akari/akari_X3.png",
+        "bbox": [
+          437,
+          120,
+          1617,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/haruka_1.png",
+        "bbox": [
+          90,
+          120,
+          1931,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/haruka_2.png",
+        "bbox": [
+          80,
+          120,
+          1866,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/haruka_3.png",
+        "bbox": [
+          104,
+          120,
+          1984,
+          2020
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C01.png",
+        "bbox": [
+          488,
+          120,
+          1785,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C02.png",
+        "bbox": [
+          535,
+          120,
+          1620,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C03.png",
+        "bbox": [
+          562,
+          120,
+          1717,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C04.png",
+        "bbox": [
+          461,
+          120,
+          1815,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C05.png",
+        "bbox": [
+          505,
+          120,
+          1710,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C06.png",
+        "bbox": [
+          535,
+          120,
+          1567,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C07.png",
+        "bbox": [
+          552,
+          120,
+          1546,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C08.png",
+        "bbox": [
+          533,
+          120,
+          1592,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C09.png",
+        "bbox": [
+          547,
+          120,
+          1754,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C10.png",
+        "bbox": [
+          535,
+          120,
+          1578,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C11.png",
+        "bbox": [
+          544,
+          120,
+          1661,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C12.png",
+        "bbox": [
+          539,
+          120,
+          1577,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C13.png",
+        "bbox": [
+          543,
+          120,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C14.png",
+        "bbox": [
+          518,
+          120,
+          1567,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_K01.png",
+        "bbox": [
+          576,
+          120,
+          1521,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_K02.png",
+        "bbox": [
+          485,
+          120,
+          1639,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_K03.png",
+        "bbox": [
+          538,
+          120,
+          1527,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_K04.png",
+        "bbox": [
+          494,
+          120,
+          1569,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_K05.png",
+        "bbox": [
+          518,
+          120,
+          1526,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_K06.png",
+        "bbox": [
+          564,
+          120,
+          1514,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_M.png",
+        "bbox": [
+          556,
+          120,
+          1654,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_R01.png",
+        "bbox": [
+          521,
+          120,
+          1509,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_R02.png",
+        "bbox": [
+          431,
+          120,
+          1645,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_R03.png",
+        "bbox": [
+          538,
+          120,
+          1533,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_R04.png",
+        "bbox": [
+          525,
+          120,
+          1662,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T01.png",
+        "bbox": [
+          518,
+          120,
+          1674,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T02.png",
+        "bbox": [
+          389,
+          120,
+          1758,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T03.png",
+        "bbox": [
+          536,
+          120,
+          1530,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T04.png",
+        "bbox": [
+          541,
+          120,
+          1603,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U1.png",
+        "bbox": [
+          365,
+          120,
+          1612,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U2.png",
+        "bbox": [
+          437,
+          120,
+          1801,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U3.png",
+        "bbox": [
+          526,
+          120,
+          1747,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U4.png",
+        "bbox": [
+          577,
+          120,
+          1585,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U5.png",
+        "bbox": [
+          535,
+          120,
+          1644,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U6.png",
+        "bbox": [
+          537,
+          120,
+          1514,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_X1.png",
+        "bbox": [
+          510,
+          120,
+          1738,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_X2.png",
+        "bbox": [
+          497,
+          120,
+          1775,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/haruka/haruka_X3.png",
+        "bbox": [
+          519,
+          120,
+          1779,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/kaede_1.png",
+        "bbox": [
+          64,
+          120,
+          1922,
+          1905
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/kaede_2.png",
+        "bbox": [
+          64,
+          121,
+          1878,
+          1887
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/kaede_3.png",
+        "bbox": [
+          64,
+          120,
+          1984,
+          2019
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/kaede/kaede_K01.png",
+        "bbox": [
+          227,
+          120,
+          1866,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/kaede/kaede_K02.png",
+        "bbox": [
+          192,
+          120,
+          1877,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/kaede/kaede_K03.png",
+        "bbox": [
+          143,
+          121,
+          1929,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/ken_1.png",
+        "bbox": [
+          64,
+          120,
+          1984,
+          2023
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/ken_2.png",
+        "bbox": [
+          64,
+          120,
+          1984,
+          2006
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/ken_3.png",
+        "bbox": [
+          64,
+          120,
+          1984,
+          2016
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/ken/ken_K01.png",
+        "bbox": [
+          548,
+          120,
+          1492,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/ken/ken_K02.png",
+        "bbox": [
+          523,
+          120,
+          1546,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/ken/ken_K03.png",
+        "bbox": [
+          606,
+          120,
+          1446,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/koto_1.png",
+        "bbox": [
+          64,
+          120,
+          1909,
+          1952
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/koto_2.png",
+        "bbox": [
+          64,
+          120,
+          1901,
+          1935
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/koto_3.png",
+        "bbox": [
+          64,
+          120,
+          1952,
+          1980
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/koto/koto_K01.png",
+        "bbox": [
+          188,
+          120,
+          1805,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/koto/koto_K02.png",
+        "bbox": [
+          128,
+          120,
+          1859,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/koto/koto_K03.png",
+        "bbox": [
+          152,
+          120,
+          1880,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/koto/koto_K04.png",
+        "bbox": [
+          150,
+          120,
+          1881,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/koto/koto_K05.png",
+        "bbox": [
+          81,
+          120,
+          1893,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/koto/koto_K06.png",
+        "bbox": [
+          179,
+          120,
+          1878,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/mio_1.png",
+        "bbox": [
+          114,
+          120,
+          1969,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/mio_2.png",
+        "bbox": [
+          117,
+          121,
+          1851,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/mio_3.png",
+        "bbox": [
+          389,
+          120,
+          1984,
+          1880
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/mio/mio_K01.png",
+        "bbox": [
+          576,
+          120,
+          1476,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/mio/mio_K02.png",
+        "bbox": [
+          514,
+          120,
+          1508,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/mio/mio_K03.png",
+        "bbox": [
+          616,
+          120,
+          1439,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/mio/mio_K04.png",
+        "bbox": [
+          589,
+          120,
+          1468,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/mio/mio_K05.png",
+        "bbox": [
+          555,
+          120,
+          1457,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/mio/mio_K06.png",
+        "bbox": [
+          580,
+          120,
+          1481,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/nana_1.png",
+        "bbox": [
+          145,
+          120,
+          1984,
+          2010
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/nana_2.png",
+        "bbox": [
+          100,
+          120,
+          1835,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/nana_3.png",
+        "bbox": [
+          227,
+          120,
+          1984,
+          2036
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/nana/nana_K01.png",
+        "bbox": [
+          593,
+          120,
+          1400,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/nana/nana_K02.png",
+        "bbox": [
+          521,
+          120,
+          1523,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/nana/nana_K03.png",
+        "bbox": [
+          541,
+          120,
+          1491,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/nana/nana_K04.png",
+        "bbox": [
+          519,
+          120,
+          1511,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/nana/nana_K05.png",
+        "bbox": [
+          493,
+          120,
+          1499,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/nana/nana_K06.png",
+        "bbox": [
+          558,
+          120,
+          1432,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/rei_1.png",
+        "bbox": [
+          64,
+          120,
+          1859,
+          1905
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/rei_2.png",
+        "bbox": [
+          149,
+          120,
+          1984,
+          2037
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/rei_3.png",
+        "bbox": [
+          64,
+          120,
+          1958,
+          2011
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rei/rei_K01.png",
+        "bbox": [
+          625,
+          120,
+          1413,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rei/rei_K02.png",
+        "bbox": [
+          447,
+          120,
+          1458,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rei/rei_K03.png",
+        "bbox": [
+          569,
+          120,
+          1475,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rei/rei_K04.png",
+        "bbox": [
+          572,
+          120,
+          1462,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rei/rei_K05.png",
+        "bbox": [
+          646,
+          120,
+          1463,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rei/rei_K06.png",
+        "bbox": [
+          622,
+          120,
+          1415,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/riku_1.png",
+        "bbox": [
+          64,
+          120,
+          1903,
+          1959
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/riku_2.png",
+        "bbox": [
+          64,
+          120,
+          1923,
+          1978
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/riku_3.png",
+        "bbox": [
+          64,
+          120,
+          1933,
+          1989
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/riku/riku_K01.png",
+        "bbox": [
+          716,
+          120,
+          1399,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/riku/riku_K02.png",
+        "bbox": [
+          460,
+          120,
+          1458,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/riku/riku_K03.png",
+        "bbox": [
+          620,
+          120,
+          1429,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/rin_1.png",
+        "bbox": [
+          68,
+          120,
+          1982,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/rin_2.png",
+        "bbox": [
+          64,
+          120,
+          1837,
+          1892
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/rin_3.png",
+        "bbox": [
+          64,
+          120,
+          1946,
+          2008
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rin/rin_K01.png",
+        "bbox": [
+          641,
+          120,
+          1427,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rin/rin_K02.png",
+        "bbox": [
+          552,
+          120,
+          1509,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/rin/rin_K03.png",
+        "bbox": [
+          604,
+          120,
+          1451,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/satsuki_1.png",
+        "bbox": [
+          64,
+          120,
+          1927,
+          1991
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/satsuki_2.png",
+        "bbox": [
+          193,
+          120,
+          1984,
+          1932
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/satsuki_3.png",
+        "bbox": [
+          69,
+          120,
+          1984,
+          2029
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_K01.png",
+        "bbox": [
+          660,
+          120,
+          1499,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_K02.png",
+        "bbox": [
+          535,
+          120,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_K03.png",
+        "bbox": [
+          585,
+          120,
+          1512,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/sho_1.png",
+        "bbox": [
+          193,
+          120,
+          1984,
+          1898
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/sho_2.png",
+        "bbox": [
+          222,
+          120,
+          1984,
+          1948
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/sho_3.png",
+        "bbox": [
+          265,
+          120,
+          1984,
+          1906
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/sho/sho_K01.png",
+        "bbox": [
+          619,
+          120,
+          1429,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/sho/sho_K02.png",
+        "bbox": [
+          527,
+          120,
+          1426,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/sho/sho_K03.png",
+        "bbox": [
+          590,
+          120,
+          1468,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/sora_1.png",
+        "bbox": [
+          64,
+          120,
+          1932,
+          2026
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/sora_2.png",
+        "bbox": [
+          109,
+          120,
+          1957,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/sora_3.png",
+        "bbox": [
+          186,
+          120,
+          1968,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/sora/sora_K01.png",
+        "bbox": [
+          630,
+          120,
+          1415,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/sora/sora_K02.png",
+        "bbox": [
+          525,
+          120,
+          1534,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/sora/sora_K03.png",
+        "bbox": [
+          620,
+          120,
+          1420,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/taiga_1.png",
+        "bbox": [
+          64,
+          120,
+          1975,
+          1944
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/taiga_2.png",
+        "bbox": [
+          64,
+          120,
+          1958,
+          1909
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/taiga_3.png",
+        "bbox": [
+          64,
+          120,
+          1855,
+          1868
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/taiga/taiga_K01.png",
+        "bbox": [
+          564,
+          121,
+          1500,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/taiga/taiga_K02.png",
+        "bbox": [
+          508,
+          120,
+          1651,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/taiga/taiga_K03.png",
+        "bbox": [
+          541,
+          120,
+          1500,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/yuu_1.png",
+        "bbox": [
+          64,
+          120,
+          1856,
+          1910
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/yuu_2.png",
+        "bbox": [
+          147,
+          120,
+          1893,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/cutin/yuu_3.png",
+        "bbox": [
+          64,
+          120,
+          1946,
+          2003
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/yuu/yuu_K01.png",
+        "bbox": [
+          594,
+          120,
+          1455,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/yuu/yuu_K02.png",
+        "bbox": [
+          502,
+          120,
+          1528,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      },
+      {
+        "path": "art/sprites/yuu/yuu_K03.png",
+        "bbox": [
+          610,
+          120,
+          1443,
+          2048
+        ],
+        "status": "visual_review_passed",
+        "note": "Direct montage review against standing reference and requested pose: identity, palette, costume/accessories, distinct acting, body proportions, modest framing and alpha checked. Childhood assets additionally checked for rounded child face, larger head ratio, thin limbs, child torso and consistent casual outfit."
+      }
+    ],
+    "supersedes_prior_completion_for_missing_paths": true,
+    "webp": {
+      "count": 180,
+      "all_2048": true,
+      "all_alpha_matches_png": true,
+      "files": [
+        {
+          "path": "art/sprites/sho/sho_X1.webp",
+          "sha256": "29471ea5dbae0c86df7594f4cfd5b4d715168373d651b0d782255afbcac1d777",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sho/sho_X2.webp",
+          "sha256": "5ff0b44215b183d09b2fbbcf01d080f16db210c4ea760bdb5f67011644da38aa",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sho/sho_X3.webp",
+          "sha256": "07caf3d487b7b6a47fbe3ae333b27c39591e090c935345cd7a695a4b3026d2fd",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sho/sho_X4.webp",
+          "sha256": "616638daee37b0921eec10d235858ce623bcd24e20785c7049beb55b688769f1",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_X1.webp",
+          "sha256": "b4e44136cb149c2784577622b41e09ada4d5fb69adfcce56a3109f2c2d128df0",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_X2.webp",
+          "sha256": "8c2c7112c0492f345cb3f30025d62a2fe55dfa9c4fc88a6e392c7d3ccc800d4a",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_X3.webp",
+          "sha256": "e6186c912c91c2cecc198c5998e1feb17caa400e75507954bda519fb02875b59",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_X4.webp",
+          "sha256": "9127ebdb8f50e471db70f8c63c2ee85bbffd92825e25cd87a31a29e0e90fa669",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_X1.webp",
+          "sha256": "8ec2682f16361e6d49603f9c76a1f31c01ba5228c8c9d337ac5ef218573a844b",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_X2.webp",
+          "sha256": "caaffd959d460603870cb2e783ffc837130421381925b8f2ad774b1bceb6d5a4",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_X3.webp",
+          "sha256": "28edd18ca8693990da6d88333fa5bc7dc0abe5547b4f08dabd756533c180893f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_X4.webp",
+          "sha256": "954cb8724b2aefb034cea5ec3bbbdf4bd43d9dde402c5d45d5854f2a19bd6408",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_X5.webp",
+          "sha256": "127592e9b997364474ff2b50b25478aeacfe694339677d7e97e35d0f03444dad",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_X1.webp",
+          "sha256": "f240d689a9933ffd3eba43fc5dd193a918a2d9fffecbfd0c58d1e3a15c1c731d",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_X2.webp",
+          "sha256": "26eef427387e7f8a17516c205d00623057ec76461b316d6c385a6dcb3b1e38b4",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_X3.webp",
+          "sha256": "96ba187ae5e777aa28279e103a49b2ce45a981262b0a7933675f5492cbe949da",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_X4.webp",
+          "sha256": "1e203950aac7468300f1ee08a2201ae4b39ace6b3b7f1eb6db1aaa592060a6fd",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_X1.webp",
+          "sha256": "128e2f43581b6409ade7adf8b56ea5ff04a8f83439b412ce8818b2faefc70ba5",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_X2.webp",
+          "sha256": "269b584de6335782d4a746d6175f6ddebdc4564b2b16cd61c979de41690b4e08",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_X3.webp",
+          "sha256": "7d1b4b2d02cf4163e871d3c3fbda092087d64b3d01025ccf346fcc8218e3d08f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_X1.webp",
+          "sha256": "053625d2b65518b2ea08eef66fbcd654b62ea6e37dd3b5f1a94c051079a1e364",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_X2.webp",
+          "sha256": "1a73fbf44ccb125cdfe3e3ae33a716fac35d4b62fce8590ef66b5c74a744e8f6",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_X3.webp",
+          "sha256": "45bada42ddca208dcbb938b3acd28dbea463ac210a61b51c1e42d53f78813398",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_X4.webp",
+          "sha256": "4c7178c92699cad84f3db4e7693bbc9d5fcd0bed9673763f8ae8e2860004655f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_X1.webp",
+          "sha256": "bbdfa9aa245df2f241340be0753db0676662b978ff87faeef1eb730c77c71a41",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_X2.webp",
+          "sha256": "09757a7400ef6e0475ae09451155ceb4502190415a4d98a1b66cc3cb38dad454",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_X3.webp",
+          "sha256": "fce68ddf4443cfafda7c0c750d40ac3a5ded650055f59bce9d6fb8ea8c487305",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_X4.webp",
+          "sha256": "05dcf216539e162232f70e7b8afe0cb3b166024d1949d09b0f4a3287e9107fc3",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_X5.webp",
+          "sha256": "3b2f523d085329cc1ff98bf112c5ec9824d2e2ba13e5977f8ddea864ae53d1be",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_X6.webp",
+          "sha256": "4c745d38d969855fe99228fb1a7e448f327ea24fe751a5c46304a2961886e8f1",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_X1.webp",
+          "sha256": "e717f0e83b4f67fa6a98d1f74fd3aafa4d20423b710a376d2628947cf354bc92",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_X2.webp",
+          "sha256": "5f7912843fab1074df5b9450d2e4f78e729a7a01d642797b6772f33453daef7f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/lappy/lappy_X1.webp",
+          "sha256": "0a5e1a3e47e336c316ff8d2e87b44aa68fbbd9a3a3e3b5fc6ae819c69bfa7a70",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/lappy/lappy_X2.webp",
+          "sha256": "83e29f374854d70af1332c50f9a43796068013cd01ee26c5972505c3bbd84602",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/lappy/lappy_X3.webp",
+          "sha256": "5c143f9894ddd972368bcdd311db24ca2d807364b0bf4dc716bf5735be4a2411",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_X1.webp",
+          "sha256": "f1c7c7acacf14a6688cd86ac6fc021291b37d7601501ef4138c1306722b65df6",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_X2.webp",
+          "sha256": "3a2d6c340b24754fdad9db2a596cf2994477ab887da445d15b13c8b7c5f0ce63",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_X3.webp",
+          "sha256": "9779ba36d1431b72564cbeba2913bea2a3f8e84c3fdda87c6f18dd47cc97d79e",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_X3.webp",
+          "sha256": "a0ca1a4bcda044a99c30c1295de7a00bf041ffebd85ccf2a6d708ddc8f8d0e22",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/lappy/lappy_X4.webp",
+          "sha256": "13570f19fb9f7d8913862f2e73d3d0ff78b2ed5426d945afcce9bd20202e6ef9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ai/ai_K01.webp",
+          "sha256": "da853e08cbcff90b0df0772fc20b1c2995f4bf7006fd84d40382eeda86a0c521",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ai/ai_K02.webp",
+          "sha256": "7352dba4430ecba49d5159cc537d600888689919a31b96f0cc9c486bbcd47893",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ai/ai_K03.webp",
+          "sha256": "d395b2d59b8fccb9137ac437f5c0e7c424959407d142e9abc63262f07d39fcc2",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_K01.webp",
+          "sha256": "f4f08da37f2d23814b37b9d9d8828ad78907fb06a5c3d276f5c488abcd265ab2",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_K02.webp",
+          "sha256": "e0d59fc9a060c44ea0386a1c7e490f8943c9641b4ef0ae14dee5aa40b628cb0b",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/akari/akari_K03.webp",
+          "sha256": "ffd1c4948166a6d7acd778d81fbe1e7ce9452db5d223ac7c4cc884199c0789c4",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_K01.webp",
+          "sha256": "76c095c03c3e21e291b86d46fdda77d1d0d99b2224cb3ee5eed352d8ffacd451",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_K02.webp",
+          "sha256": "b3f03ec9bf1c54747176b1893eff631b03063a1dcddac2f21cbf00854bfa924a",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_K03.webp",
+          "sha256": "bc68d2312f31ec53e31f6c2d5de64b0559573c0ff7bd951ab9d1b087691d5c5a",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_K04.webp",
+          "sha256": "d7e8015685b099665354e2650257b3a2bc75c2a361b5c03d5228335a5379e195",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_K05.webp",
+          "sha256": "f2b82d1d470252d6624524007988ac4e982c294caeec3d7fbf6f812214bb4312",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_K06.webp",
+          "sha256": "db1cedbd38555a2fe9c57f2cce83268680aa3bd52d82426fb413d00042a1d0fe",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/kaede/kaede_K01.webp",
+          "sha256": "7ddb191e7fb1dc62c0103312bd56c853e42608c4ee14d700715c44e7af6e62c7",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/kaede/kaede_K02.webp",
+          "sha256": "62c1031706f8e097c52879a870bbc755d5e6dfc428528f88a72d3293d4a23e0f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/kaede/kaede_K03.webp",
+          "sha256": "dee2ac5ec2991adff76512f0a367eccc7ccfa41c5b1e831f8b7710c55063c444",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_K01.webp",
+          "sha256": "dccc21c39072aeb246e8203cb711f19815b4d775b4d1df696831d7b944b7b364",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_K02.webp",
+          "sha256": "fee5fe91c50a7484bb6f0ea3001b977b050dc311357910991f6af63aa36819fd",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/ken/ken_K03.webp",
+          "sha256": "e8b1c9b8374c74dd20111b2812314aa3c1ed01f2d264a4a8c16f92c52954d83f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_K01.webp",
+          "sha256": "6da25df1145cf1fe1bbf07166476a9a20cfb1d8f9941ac3e9b9f84607a733bc8",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_K02.webp",
+          "sha256": "d2b6b9f66f493aa84dd5d4605addb104be91b3cd514f0fbceac18d843d7082c4",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_K03.webp",
+          "sha256": "48a83d8f439f076b0dc0e6338c00f371af69d91dba2396448f0ad1f3da0cbd57",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_K04.webp",
+          "sha256": "68f1f2b2ffc1237c6824315a6a15a8c537a133a31a609331e73332d00d721039",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_K05.webp",
+          "sha256": "7da07c748c8453f75381c1939be18cdb78c90f34571d014e93290923c381f33b",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/koto/koto_K06.webp",
+          "sha256": "928c59c32fd47988ea8afc60135d21a2d90b3fb1b9f4d063f903eef8a5a2aa71",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_K01.webp",
+          "sha256": "b77298f3ee40c8e7430bf6b534e76e203c6c4661b23c06c88c1a1ccd6651d89e",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_K02.webp",
+          "sha256": "08c25deef992d463d96f32c4f8185f98ba65e2d17d5bc86421805e4beaa9d10f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_K03.webp",
+          "sha256": "9e51ae03e7560eb7e98d0bd4558f08a154ad2ab2fb6f4b5c262bdf84e181b746",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_K04.webp",
+          "sha256": "9673b6d1dd29aec84e2b71d9e09f291f50f43a75692b5490fdf13b9b3e3e6e22",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_K05.webp",
+          "sha256": "9e0b96158e835a955e15d1ee1cd882df6131d4140f147fd8b540fcc8be8b2529",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/mio/mio_K06.webp",
+          "sha256": "f415a94aed665b1d499a42dba5fdf7cca02b02923211539206d8d01cfd87f318",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_K01.webp",
+          "sha256": "7c4700665c6918ff4e7b11e3f1432c3486ea5fa70c7337f4dfc6458f39643368",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_K02.webp",
+          "sha256": "f2f16b6fd75a8b769a9986dc34c94e97306a8423763e05c309b987f68b82e4c6",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_K03.webp",
+          "sha256": "bd62bc64e045305a2c12a019ca04293143735e87e82b0300d496ea59f1a3d101",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_K04.webp",
+          "sha256": "5f2a8a16177fbf86bc6720801314dabaa0ded079f2a91fcc91acdbd9c75ca965",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_K05.webp",
+          "sha256": "7ea1d9b59296d3913d565db1d4d42da8c99293af649565da31cf6efbcf979ab4",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/nana/nana_K06.webp",
+          "sha256": "7d9bd7a56eda6ad95d990e7a9ed024e8a13ba8182d6f3e79df92ab2841b259b7",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_K01.webp",
+          "sha256": "03d9fe34abe0c21ad3420db454994dbe7236d13fd5029898b524c67dcbec68cf",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_K02.webp",
+          "sha256": "fc14022c452f4fa7c542c89744dd1a83658c7cb56c19b16e0881af17845cfe65",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_K03.webp",
+          "sha256": "eeb53a804b3d931dff4a61f855fa8e4999c66c0e0201aa6ac11396e4d38da8a0",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_K04.webp",
+          "sha256": "b17e3a8d96c5875615631fbf280f315a6aa7ded57f2b0c8771676077bf108ec6",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_K05.webp",
+          "sha256": "8bc4ff961c2893a984f3651c88e917905e7d5a2d08a5e5650680cc45df2aba21",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rei/rei_K06.webp",
+          "sha256": "12ca7e9f79020fe71c997159cc0b4fac4469a7348af21c8624455822ab27deb9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/riku/riku_K01.webp",
+          "sha256": "2e8b218b93a039cfc644feea39a68d3b655d2ad63bb64515de2285f244ac5ed0",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/riku/riku_K02.webp",
+          "sha256": "94ecf48a3818031524f2c63ceb1ece8d8bb8920bec76a1753ce1728e223afcde",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/riku/riku_K03.webp",
+          "sha256": "13fd6aaa5d47e261f223d1fb0ece183d9093dc57cecfe3d4909ccfbc37bb8398",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rin/rin_K01.webp",
+          "sha256": "0affefd5ab807e75ac5df89c951b75f7594e6f97781cf13b7b4277cae85ffece",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rin/rin_K02.webp",
+          "sha256": "6c083badcf230c2c5c1af6f30a7b1bdf3fd6d2169a7c630aefae359fc0f5d7e9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/rin/rin_K03.webp",
+          "sha256": "7667a63c811320d990b98819a0186cd3cca3e087106c0d56e5555b8c9150b46f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_K01.webp",
+          "sha256": "3e0a86166ea93e4252de876c7e84161ef64eb3f09ceba6cdc534d0e8ab3452d3",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_K02.webp",
+          "sha256": "a2db9ad3e25383140592baa7c1b3f56ac16f9e49ebded8b5a203bde361365d9c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/satsuki/satsuki_K03.webp",
+          "sha256": "b3744937265e9e9d43a8246030f430096cd913e6a0032a3cf6c6b7a576227a8c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sho/sho_K01.webp",
+          "sha256": "9e314bc8b6dce27c1538f72382dcaeb0c7dc323155b29732b44b4d65c8c5fc11",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sho/sho_K02.webp",
+          "sha256": "083d93606e669d8cec1775d9c71004583cce3dd9da8523de38e59e748db25a54",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sho/sho_K03.webp",
+          "sha256": "f84a15df190da436e1ba7ae93221a06bc32d3639ec8739f4514b871ea038342d",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sora/sora_K01.webp",
+          "sha256": "d0f005e3122b7526a1478d55469cdecec25e31dffa42a9d0e2dcf0fb90e2540e",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sora/sora_K02.webp",
+          "sha256": "ec29a4a1578c43598583fc9b9f4b520bc14771892df908a0543a670458103bb9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/sora/sora_K03.webp",
+          "sha256": "c6dd0c205b791a7bd6da0537e431f0b3dbf554f768c381b65787b7d0f54d8b0b",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/taiga/taiga_K01.webp",
+          "sha256": "7635aeac68f457e6cbe1cede3eb98427035c5b3d03da653824f420c546538ae7",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/taiga/taiga_K02.webp",
+          "sha256": "3b5835099db821ff688b0d91e150e11a915ce0f8a8b3896d30ee79217fca9466",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/taiga/taiga_K03.webp",
+          "sha256": "d6b7fea8634ccaf0e3d8e9958c35e91427eee4fd5eb73caf3387ebcdf3c95257",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/yuu/yuu_K01.webp",
+          "sha256": "a19e378e7d59273498d29e0c5463a1617393d612a705ac185ebc573c7e7001e2",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/yuu/yuu_K02.webp",
+          "sha256": "b53eb3f80a7f512540d3a835cce0d843e9c4ea4f76fcb4a57eeb9f7615dc9ef3",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/yuu/yuu_K03.webp",
+          "sha256": "31f8bd3ff74a6c6079931e65407ad7f80c55e01a34150e8770028c72550af5a7",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_R01.webp",
+          "sha256": "1c292fce277e8c10965cb58ae429294624584e31d63505fab9375d0207a0ba92",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_R02.webp",
+          "sha256": "d4d5202acc35d25b59a4fb3bcbc97538eb79bb4c94dbc97ceeb6ff2f4e5aa575",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_R03.webp",
+          "sha256": "37a209488739f39314de9a1e6b698c1fcdc2c6d81647bc32e501410c0e2c4f8d",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_R04.webp",
+          "sha256": "a3895a8847ec6e90a0843ff7d44e739bbcacab575bbe988c12f7e608683f71a9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/ai_1.webp",
+          "sha256": "42f92287789434ffe626cc52058f8a698f7a403a71658b535a15f3f924693f6a",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/ai_2.webp",
+          "sha256": "80bb168e50a6ba33c192b1b49531fed0071ebae31e7674b3c41e6bca8b46e5a6",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/ai_3.webp",
+          "sha256": "bfaa2f93a06227b49462eedf9fdcb354383d913fb34221485a68001f95b696d7",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/akari_1.webp",
+          "sha256": "9858ec56ec361047063eb71d1106edfe1efde42d4e98966d4a8b63d3630a55e5",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/akari_2.webp",
+          "sha256": "bab46e699b719abfb48c2add7089e2831f206817a1f6d42cbcc366bd603f8f0c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/akari_3.webp",
+          "sha256": "a5c8d40bb4392ec9c7b8750d8b8d65f79c97f34ad6b998f6495c325fe4926efe",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/haruka_1.webp",
+          "sha256": "42a6549685fd18c75747ea0a02cfa95cae1700ead0a74b73ea40db3de41372f0",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/haruka_2.webp",
+          "sha256": "69b2053ce2c2a4d10f64b57041d849ff553126c294909d0898cb112166c38924",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/haruka_3.webp",
+          "sha256": "82df3d639dc54f39995a13f04dc6825eae7a127a3b64e2bf8c5a45663b7388f2",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/kaede_1.webp",
+          "sha256": "1d24d4659539dc5608f07d810817417b5653803aaad73c69662675281df10f94",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/kaede_2.webp",
+          "sha256": "7cdf572d94670d351897a70a57c9ac08be49653f4ce37f18b6cdbc7c94189a6b",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/kaede_3.webp",
+          "sha256": "c80b83c0f19f05c128628f0d47bab402ab16adc02b15789b9f48ec056df02d75",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/ken_1.webp",
+          "sha256": "789401ecd17c011b202d03f2d3db2f618316fa2bacf785c363774544c28e8f66",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/ken_2.webp",
+          "sha256": "677e041fbbbedbc358d02b5eb1421aaad12131221fdee5b4aff1189718756d65",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/ken_3.webp",
+          "sha256": "226b6541309569790d3897705ec8bf3ad8ab87f17876488c3990b3ffd972327f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/koto_1.webp",
+          "sha256": "24ad5b9e331a8a987857c8a5f20308a843a6a7bd34627ca475f317a6662abfb8",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/koto_2.webp",
+          "sha256": "354c78ea3af1caf176e63ae085f6af5fb6128b0e782bf6664d0d4dd2e61b1669",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/koto_3.webp",
+          "sha256": "0a2c9aa138dd69bf9ce81f83ce6d3e868363a7af941524ce7a24746b746dbaa3",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/mio_1.webp",
+          "sha256": "db3e821e6fb895f5914899b147a12ed07b6f8b0e80b23438bdb4622408099a97",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/mio_2.webp",
+          "sha256": "33c6231f6e92d088e3498cea3a92b204c3bb57e3c927aae1170a8514d793df78",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/mio_3.webp",
+          "sha256": "d2d8bdd8d947c2a4c4f9dcc9ba857b3a715a610631bccb4b317b73fd90fbb06f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/nana_1.webp",
+          "sha256": "4db3d6233e2dc98b6989f0a6f1142e64c3728eeb0d2d64c7ab7a87236790d60a",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/nana_2.webp",
+          "sha256": "612220f71c4c075b3be14dbc2e04f13d47b700b584bfd13ca92747fe16cce526",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/nana_3.webp",
+          "sha256": "325610edf5f5d6ee96a498c0b0fcb6e0de73a45757df167880d863d150d4eed8",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/rei_1.webp",
+          "sha256": "c2723066514b67d3df67423c2f3fe65087ce411f9cd6bb23f65f92fb6db2a590",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/rei_2.webp",
+          "sha256": "7305676abe05a5c08eef720399d226f12c823f4aba7a3036d14c932276f9562d",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/rei_3.webp",
+          "sha256": "855b37240a87a6191b9e086d1005e756238348218a33cae29eceb16d05be05b9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/riku_1.webp",
+          "sha256": "1d43462f8ef7ecbc08df64e60fa574aa9a57e6d0468b304386cc6bb46e9d11bc",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/riku_2.webp",
+          "sha256": "3efcbfeb989ba33a9d906cb443237eaab188f0181033bc724b4fc50b2031c249",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/riku_3.webp",
+          "sha256": "12a1ef04f0b59e8efe2a217e99777b94a562fdfb95003f5440a6c77d40519239",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/rin_1.webp",
+          "sha256": "afa2ade1cea71c859ead61de24f1547094c73b9c723778f3d9871072afe28f5e",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/rin_2.webp",
+          "sha256": "b171e65e51adf2a4d8d1e0eb2b1ca6d1f03166d9091ac4562b7d3a3e59b2c939",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/rin_3.webp",
+          "sha256": "56badc475f7107c79ea3e12a107a8b139f92deb85cc00e4d3f1032c460c9d712",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/satsuki_1.webp",
+          "sha256": "97b6ae229b0e170202f22c65c7b395e0ec97d72425d402899d7303a0446badb9",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/satsuki_2.webp",
+          "sha256": "d4b932c83950efd6da7d8bde07f63426eedcdfc45fded074db8a3d2bc65d90ae",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/satsuki_3.webp",
+          "sha256": "f5cf7b213fec48ce4e671d3532df9cbfdfcf814f0936bf8405a490b28ea4344f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/sho_1.webp",
+          "sha256": "5efa1effaa6a5205129757ede9271e0dd45323c0ecbf458c9db81a0e1aefa89e",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/sho_2.webp",
+          "sha256": "6f88ddbaf1c576f3906b938f8afe09cfb516f6bf8a17738fcace5991c822f924",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/sho_3.webp",
+          "sha256": "ccfa46ef1c032ca8cf356f47d6035d0d7e52c3a07231599363e0fafc5e803edf",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/sora_1.webp",
+          "sha256": "5c5bced86d3b17ee6e860777de043f7d8bb59b14919e269bb834b369952178bd",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/sora_2.webp",
+          "sha256": "a1918cb403b93268fe1c76d4643f37b70c9cf5f9b2a26fce914022d5916cfe30",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/sora_3.webp",
+          "sha256": "e2f4e875b21b67eab9fbc2064a5f60b959d09ea24192f72b558ac99fe2fa7d88",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/taiga_1.webp",
+          "sha256": "0a20428c2ad4d0cf67ee581cceb0426381a51dd062f7afa115e33113c563308c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/taiga_2.webp",
+          "sha256": "bb2d4be1403709274cfd16d966e9c70cbf9da17658bc8d87bd95bf90d1979e32",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/taiga_3.webp",
+          "sha256": "f7dbcaa5b8dd886ca4f04d1523e965edf7c442191c3fedaaa3e997e7dd66d2de",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/yuu_1.webp",
+          "sha256": "3ca1526174f0379376e1b647098c8ee9ccf23c65f02807658e922383241d6d0c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/yuu_2.webp",
+          "sha256": "5c3fedadb3792a02d2f2fa294fd4255f4eb6c91abfb309002af0fa4fe14a2368",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/cutin/yuu_3.webp",
+          "sha256": "7df19cc3f172a45a2460cd72d5a0618ce7f3fef62e3afb4cd033e48d3f3f4e64",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C01.webp",
+          "sha256": "9fb356ef21c8796daec039fe32dd2cfa4e0f4b288abeffec8f792db3cf569d15",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C02.webp",
+          "sha256": "51b022a6b28ce617fedd1cf334eb95e96ba8f887a24900d317cec83982741dce",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C03.webp",
+          "sha256": "864a6692963c89bc3a5df044950871888f6684232e4b9e68c1d7ce2075c13adc",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C04.webp",
+          "sha256": "dcd83e8e6d44dbe8da64160d118e66ce0247b4f4ce5031523e2d698bafec3fc4",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C05.webp",
+          "sha256": "9ff42eea9906763da7f2100330268b29a0cdd5408a78d2e1944619d50dcd5043",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C06.webp",
+          "sha256": "874e7442c912e813896f972ccaddf8ca24a19d53332a3501d5a6519391c681c2",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C07.webp",
+          "sha256": "9ce13f29dd7449d026f303af863cd1c13ea23cd15297073309f30d5078c0589f",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C08.webp",
+          "sha256": "0392839d1527e51f6d0b59fafd3b756f1b702c7b69b44a676844a75943174397",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C09.webp",
+          "sha256": "0f979fd5c92697f55b59809fc1b3568d6f8dc9fabe666c05523bf1242e727912",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C10.webp",
+          "sha256": "898f2510392fcff559b7b5835f3045d67a9e17e78239b3a67e6b7de6aef67034",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C11.webp",
+          "sha256": "897fa465ce09dc4fa8550c9855c7a4d3b1cdecf0129e116d6562894fa860fbf3",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C12.webp",
+          "sha256": "0115089a0cba95f32befc1353b7c054d59aea9eec951096fe273c270d0e3dbc1",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C13.webp",
+          "sha256": "6b502fc9a9fca5c21bf5ab664b812f5d2d700cc123819c06ed992a4b53e7d371",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_C14.webp",
+          "sha256": "f5f625036643c8120c0a76f4d4d68bc13e19f6ef980a11cda6b7ad6246d0eb8c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_T01.webp",
+          "sha256": "b92b6f5ef8e2e94b3d79c0b6933b492db4ce77116ad1e804bf5fac166563a01c",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_T02.webp",
+          "sha256": "41dae1caeeeaebec8d716fe553639cb0b89cd1683a3167558f9596c6cc129c01",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_T03.webp",
+          "sha256": "af7a2a3cc31442fc6aedb80d9f9783e8185699d4899bf736216f0386fbd926fa",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_T04.webp",
+          "sha256": "797aed8a3a95d948aae739891f3f953dc7b0425196465972f4f2f70c285b6157",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_U1.webp",
+          "sha256": "849a4f3a0215cadb9ed1b86bcc61eaaed5572171ca2aac65895adeb135601d2a",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_U2.webp",
+          "sha256": "48b70da5ae62b9398a631294ccb4f071db8f96aa5e18bdea772e961073ff7518",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_U3.webp",
+          "sha256": "101b920280ed68d2a58499cd9938e9d34de3b748379a3b88af088de0c897e313",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_U4.webp",
+          "sha256": "b9d042fb941367e192e8d1c4b0db9394646b624606c5a68aebb6187e465aff55",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_U5.webp",
+          "sha256": "1a8ef9a87c37730aec62dd98befe9efa9eee1b420d62d640bf51e0fff9886053",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_U6.webp",
+          "sha256": "3eb6f5b991b7a6f2c43e8bb72c18bf8c50fedc4ca135e32deceff81e5119c887",
+          "alpha_matches_png": true
+        },
+        {
+          "path": "art/sprites/haruka/haruka_M.webp",
+          "sha256": "c86b266ef3af9daa207ebfd94a6699918a0ac071230d0c9f0ff57bfcc514b71e",
+          "alpha_matches_png": true
+        }
+      ]
+    }
   }
 }
