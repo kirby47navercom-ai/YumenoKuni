@@ -35,70 +35,49 @@ SCALE = 5.0
 SAMPLER = "k_euler_ancestral"
 NOISE_SCHEDULE = "karras"
 
-# ---- 사용자가 지정한 스타일 프롬프트 (그대로) --------------------------------
+# ---- 사용자가 지정한 스타일 프롬프트 (v4 : 단간론파 화풍) ----------------------
+# 원문 맨 앞의 "1girl" 은 인물 프롬프트(1girl/1boy)로 옮겼다.
 STYLE_POSITIVE = (
-    "1.35::artist:shiun (siun 5513)::, 1.75::artist:zero (miraichizu)::, "
-    "1::artist:healthyman::, 1.45::artist:samidare (hoshi)::, "
-    "1.3::artist:kimhiro::, artist:doremi, 1.5::artist:aiamu iamu::, "
-    "year 2025, year 2024, year 2023, blurry background, depth of field, "
-    "incredibly absurdres, very aesthetic, highres, masterpiece, best quality, "
-    "amazing quality, best illustration, digital art, "
-    "-3::empty eyes, artist collaboration,doll::, dynamic angle, shiny skin, "
-    "location, smooth coloring,"
+    "in style of Danganronpa, danganronpa, official art, 2::artist:komatsuzaki rui ::, "
+    "0.7::artist:Mx2j ::, 0.6::artist:ratatatat74 ::, 0.5::artist:nyong nyong ::, "
+    "0.7::artist:tokiame ::, year 2023, year 2024, year 2025, {{white background}}, "
+    "{{detailed eyes, beautiful eyes, sharp eyelash}}, "
+    "{{{depth of field, masterpiece, best quality, amazing quality, aesthetic, highres, absurdres}}}"
 )
 
 NEGATIVE = (
-    "text, logo, watermark, too many watermarks, reference, signature, artist name, "
-    "dated, artistic error, scan artifacts, jpeg artifacts, upscaled, aliasing, "
-    "film grain, heavy film grain, dithering, chromatic aberration, digital dissolve, "
-    "halftone, screentones, artist:xinzoruo, artist:milkpanda, artist:kurukurumagical, "
-    "2::artist:bkub ::, artist collaboration, one-hour drawing challenge, toon (style), "
-    "1990s (style), 4koma, 2koma, mutation, deformed, distorted, disfigured, "
-    "1.2::bad anatomy ::, unnatural hair, bad face,  mob face, bad eyes, empty eyes, "
-    "bad proportions, bad limbs, amputee, bad arm, bad hands, bad hand structure, "
-    "extra digits, fewer digits, bad leg, extra leg, distorted composition, "
-    "bad perspective, multiple views, disorganized colors, unfinished, incomplete, "
-    "displeasing, very displeasing, unsatisfactory, inadequate, deficient, subpar, "
-    "poor, blurry, lowres, worst quality, bad quality, fewer details, bad portrait, "
-    "bad illustration, dark skin, plants, grass, leaves, hot coloring, reddish lips, "
-    "colored lips, cool tone, re:stage!, poptepipic, monochrome,"
+    "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, "
+    "jpeg artifacts, very displeasing, chromatic aberration, logo, too many watermarks, "
+    "text, nsfw, villan, evil, blank eyes, empty eyes, "
 )
 
-# T자 기준 시트용 추가 지시. 스타일 프롬프트의 '구도를 흔드는' 태그와 충돌하므로
-# 아래 제거 목록을 적용 (원문을 그대로 쓰고 싶으면 --verbatim)
-POSE = (
-    "standing, full body, straight-on, front view, "
-    "looking at viewer, simple background, white background, "
-    "character sheet, flat lighting"
-)
-DROP_FROM_STYLE = ["dynamic angle,", "blurry background,", "depth of field,", "location,"]
-EXTRA_NEGATIVE = "t-pose, arms outstretched, arms up, dynamic angle, from above, from below, foreshortening, cropped, out of frame, "
+POSE = "standing, full body, front view, looking at viewer, simple background"
+DROP_FROM_STYLE = []
+EXTRA_NEGATIVE = "t-pose, arms outstretched, from above, from below, foreshortening, cropped, out of frame, multiple views, "
 
-BOY_UNI = "navy blazer, red necktie, grey slacks, long trousers, school uniform"
-GIRL_UNI = "navy blazer, red ribbon, plaid skirt, school uniform"
 MALE = "male focus, masculine body, broad shoulders, flat chest, narrow hips, long legs"
 MALE_NEG = "androgynous, feminine body, wide hips, curvy, breasts, thick thighs, 1girl, "
-STAND_NEG = "glasses, eyewear, school blazer, plaid skirt, walking, running, jumping, wind, windblown, "
+STAND_NEG = "glasses, eyewear, walking, running, jumping, wind, windblown, "
 NO_STREAK_NEG = "multicolored hair, streaked hair, colored inner hair, gradient hair, colored tips, "
 
-# v3 : 인물마다 고유 의상(V3식 개인 복장) · 체형 · 시그니처 포즈 · 겹치지 않는 머리색
+# v4 : 학원 교복을 인물마다 색·형태를 바꿔 개조(단간론파식) · 체형 · 시그니처 포즈 · 머리색 비중복
 CHARACTERS = {
-    "mio": f"1girl, solo, protagonist, main character, slim average height, glossy blue-black short bob hair, 1.3::big ahoge::, one long side lock tied with red thread, 1.2::bright amber eyes, determined eyes::, 1.3::oversized black hooded short coat with red lining::, white sailor collar blouse, red neckerchief, dark pleated skirt, black thighhighs, 2::small notebook strapped to left wrist with rubber band::, worn pink rabbit keychain with red-stitched ear on coat zipper, pen behind ear, slight confident smile",
-    "rei": f"1boy, solo, very tall, slender, {MALE}, platinum silver hair, 1.5::long bangs covering right eye, hair over one eye::, cold blue-grey eyes, 1.3::long black high-collar frock coat with silver buttons::, grey waistcoat, white cravat, black gloves, 1.4::black leather wrist cuffs::, antique pocket watch chain on waistcoat, black dress trousers, polished boots, aloof cold expression, aristocrat",
-    "sora": f"1boy, solo, athletic muscular build, {MALE}, spiky sunny golden blonde hair, ahoge, red headband, big bright orange eyes, 1.4::orange firefighter turnout jacket with yellow reflective stripes, sleeves tied around waist::, black fitted t-shirt, cargo pants, heavy boots, carabiner on belt, huge energetic grin, sunny",
-    "ken": f"1boy, solo, tall lean, {MALE}, wavy deep wine-red hair swept to one side, half-lidded sharp amber eyes, beauty mark under eye, 1.3::burgundy stage tailcoat draped over shoulders like a cape::, open-collar black shirt, loose red cravat, white gloves, half theatre mask at belt, black slacks, smirk, one corner of mouth raised, theatrical",
-    "nana": f"1girl, solo, short, slender fragile frame, soft lilac lavender hair in low side ponytail over shoulder, white hair ribbon, pale violet eyes, pale skin, 1.3::long white nurse-style one-piece dress with pale blue collar::, cream knit cardigan, 1.5::white ribbon wrapped like bandage around left wrist::, forget-me-not hairpin, gentle shy smile, slightly sad eyes",
-    "riku": f"1boy, solo, short, slim boyish frame, {MALE}, curly tangerine orange hair, golden cat-like eyes, 1.2::tiny black mini top hat on head::, 1.3::short black magician tailcoat::, red vest, black bow tie, white gloves, checkered shorts over black tights, ankle boots, mischievous grin, sticking tongue out, trickster",
-    "akari": f"1girl, solo, average height, neat slim figure, chestnut auburn high ponytail with dark green scrunchie, green eyes, 1.3::white pharmacist lab coat over green turtleneck::, long sleeves buttoned at wrists, dark green pencil skirt, clock-shaped hairpin, 1.3::silver wristwatch::, hourglass charm, clipboard tucked under arm, serious earnest expression, slight blush",
-    "yuu": f"1boy, solo, lanky, {MALE}, 1.2::masculine face, defined jaw::, messy bright cyan-teal hair, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, 1.3::black leather jacket over white band t-shirt::, ripped black jeans, chain wallet, red high-top sneakers, guitar pick necklace, wide friendly grin",
-    "koto": f"1girl, solo, tall, mature calm figure, long honey caramel brown hair half-up with flower ornament, gentle light brown eyes, 1.3::traditional long navy sailor uniform with long skirt::, long beige cardigan, 1.4::red armband on left arm::, small gear-shaped pin, red thread tied on ring finger, kind warm smile, class president, motherly",
-    "satsuki": f"1girl, solo, tall, toned athletic build, deep moss green hair in short low ponytail with braided cord, sharp violet eyes, 1.3::worn khaki hunting jacket::, black turtleneck, cargo trousers, laced combat boots, 1.4::brown leather archery arm guards::, black scarf around neck, feather charm, quiet stern expression",
-    "taiga": f"1boy, solo, 1.4::very tall, huge, muscular, broad body::, {MALE}, short black buzz cut, thick eyebrows, rugged handsome face, earnest eyes, 1.4::white judo gi jacket open over black t-shirt::, black belt, athletic tape on fingers, whistle around neck, patrol armband, sweatpants, loud confident grin",
-    "rin": f"1girl, solo, 1.3::petite, small and short, slim::, short deep violet purple bob with messy bangs, hazel eyes, 1.3::oversized lemon yellow hoodie::, denim shorts, black tights, mismatched socks, sneakers, 1.3::ring of many keys on belt::, key bracelet, cat-eye mask pushed up on head, playful wink, tongue out",
-    "sho": f"1boy, solo, tall, broad shoulders, {MALE}, tousled ash brown hair, tired gentle teal eyes, 1.3::navy medical scrub shirt under long grey cardigan::, stethoscope around neck, penlight in chest pocket, adhesive bandage on cheek, bandaged knuckles, dark slacks, calm awkward faint smile",
-    "ai": f"1girl, solo, 1.4::petite, very short, tiny frame::, mint green bob with blunt bangs, big rose-pink eyes, 1.4::white double-breasted chef coat::, 1.2::small white kerchief on head::, short apron, rolled-up sleeves, quiet expressionless face, sleepy eyes",
-    "haruka": f"1girl, solo, average height, soft round face, strawberry pink short bob, 1.4::blue hair clip::, big brown eyes, 1.3::pastel pink oversized cardigan::, white blouse, denim overall skirt, loose white socks, sneakers, 1.3::many colorful bracelets::, cat paw charm, bright cheerful open smile",
-    "kaede": f"1girl, solo, tall, slender model-like long legs, very long straight deep navy blue hair, snowflake hairpin, cool grey-blue eyes, 1.3::long navy coat over white turtleneck::, black pleated long skirt, black tights, ankle boots, thin silver bracelet, cool expressionless face, elegant",
+    "mio": f"1girl, solo, protagonist, slim average height, 1.7::black hair::, glossy short bob, dark blue hair highlights, 1.3::big ahoge::, one long side lock tied with red thread, 1.2::bright amber eyes, determined eyes::, 1.3::black sailor school uniform with red collar lines, red neckerchief::, 1.2::oversized black hoodie jacket over uniform, sleeves past wrists::, black pleated skirt, black thighhighs, 2::small notebook strapped to left wrist with rubber band::, worn pink rabbit keychain with red-stitched ear hanging from zipper, pen behind ear, slight confident smile",
+    "rei": f"1boy, solo, very tall, slender, {MALE}, platinum silver hair, 1.5::long bangs covering right eye, hair over one eye::, cold blue-grey eyes, 1.4::white long gakuran school uniform with black trim and silver buttons, high collar::, black gloves, 1.4::black leather wrist cuffs::, antique pocket watch chain, black trousers, polished boots, aloof cold expression, aristocrat",
+    "sora": f"1boy, solo, athletic muscular build, {MALE}, spiky sunny golden blonde hair, ahoge, red headband, big bright orange eyes, 1.4::bright orange school blazer with yellow reflective stripes on sleeves, sleeves rolled up::, black t-shirt underneath, black school trousers, red sneakers, carabiner on belt, huge energetic grin",
+    "ken": f"1boy, solo, tall lean, {MALE}, wavy deep wine-red hair swept to one side, half-lidded sharp amber eyes, beauty mark under eye, 1.4::burgundy school blazer with gold piping worn draped over shoulders like a cape::, open-collar black shirt, loose red ribbon tie, white gloves, half theatre mask at belt, black slacks, smirk, theatrical",
+    "nana": f"1girl, solo, short, slender fragile frame, 1.7::lavender hair, light purple hair::, low side ponytail over shoulder, white hair ribbon, pale violet eyes, pale skin, 1.4::white sailor school uniform with pale lavender collar and long white skirt::, cream knit cardigan, 1.5::white ribbon wrapped like bandage around left wrist::, forget-me-not hairpin, gentle shy smile",
+    "riku": f"1boy, solo, short, slim boyish frame, {MALE}, curly tangerine orange hair, golden cat-like eyes, 1.2::tiny black mini top hat on head::, 1.4::black gakuran school uniform with gold buttons, short red-lined cape::, black bow tie, white gloves, black school shorts with checkered socks, mischievous grin, trickster",
+    "akari": f"1girl, solo, average height, neat slim figure, chestnut auburn high ponytail with dark green scrunchie, green eyes, 1.4::dark green school blazer with white trim, buttoned neatly::, white shirt, green plaid skirt, long sleeves buttoned at wrists, clock-shaped hairpin, 1.3::silver wristwatch::, hourglass charm, serious earnest expression",
+    "yuu": f"1boy, solo, lanky, {MALE}, 1.2::masculine face, defined jaw::, messy bright cyan-teal hair, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, 1.4::open navy gakuran school jacket over white band t-shirt::, loose navy trousers, chain wallet, red high-top sneakers, guitar pick necklace, wide friendly grin",
+    "koto": f"1girl, solo, tall, calm graceful figure, long honey caramel brown hair half-up with flower ornament, gentle light brown eyes, 1.4::classic navy sailor school uniform with long navy skirt::, long beige cardigan, 1.4::red armband on left arm::, small gear-shaped pin, red thread tied on ring finger, kind warm smile, class president",
+    "satsuki": f"1girl, solo, tall, toned athletic build, 1.7::dark green hair::, short low ponytail with braided cord, sharp violet eyes, 1.4::khaki military-style school blazer with brass buttons::, black skirt, black tights, laced boots, 1.4::brown leather archery arm guards::, black scarf around neck, feather charm, quiet stern expression",
+    "taiga": f"1boy, solo, 1.5::very tall, muscular, athletic, broad shoulders, fit::, {MALE}, short black buzz cut, thick eyebrows, rugged handsome face, earnest eyes, 1.4::black gakuran school uniform unbuttoned, white t-shirt underneath::, black judo belt tied over uniform, athletic tape on fingers, whistle around neck, patrol armband, white sneakers, loud confident grin",
+    "rin": f"1girl, solo, 1.3::petite, small and short, slim::, 1.7::purple hair, violet hair::, short bob with messy bangs, hazel eyes, 1.4::sky blue sailor school uniform with oversized lemon yellow hoodie underneath::, sky blue skirt, mismatched socks, sneakers, 1.3::ring of many keys on belt::, key bracelet, cat-eye mask pushed up on head, playful wink, tongue out",
+    "sho": f"1boy, solo, tall, broad shoulders, {MALE}, tousled ash brown hair, tired gentle teal eyes, 1.4::grey school blazer with teal necktie, knitted sweater vest::, white shirt, penlight in chest pocket, adhesive bandage on cheek, bandaged knuckles, grey slacks, calm awkward faint smile",
+    "ai": f"1girl, solo, 1.4::petite, very short, tiny frame::, 1.7::mint green hair, light green hair::, bob cut with blunt bangs, big rose-pink eyes, 1.4::pastel pink school blazer with white frilled apron over it::, 1.2::small white kerchief on head::, white skirt, rolled-up sleeves, quiet expressionless face, sleepy eyes",
+    "haruka": f"1girl, solo, average height, soft round face, strawberry pink short bob, 1.4::blue hair clip::, big brown eyes, 1.4::cream yellow school blazer, pink ribbon, cardigan tied around waist::, red plaid skirt, loose white socks, 1.3::many colorful bracelets::, small camera on strap, bright cheerful open smile",
+    "kaede": f"1girl, solo, tall, slender model-like long legs, very long straight deep navy blue hair, snowflake hairpin, cool grey-blue eyes, 1.4::ice blue long coat-style school uniform with silver snowflake buttons::, long white pleated skirt, black tights, thin silver bracelet, cool expressionless face, elegant",
     "lappy": "no humans, solo, 1.3::tiny cute pink rabbit mascot plushie::, chibi, small short body, big round head, standing upright on two legs, stubby arms, one eye glowing red, other eye dark, 1.2::angry eyebrows::, sharp fangs grin, 1.3::left ear torn and stitched with red thread::, small ribbon at neck, cute but fierce, stuffed toy",
 }
 
@@ -121,18 +100,19 @@ SIGNATURE = {
     "kaede": "1.4::holding stopwatch near chin::"
 }
 
-# earlier exit from the story -> more attractive design (player attachment)
-TOP = "1.3::extremely beautiful face::, extremely detailed beautiful eyes, sparkling eyes, long eyelashes, glamorous, elegant, striking charm, eye-catching design"
+# 전원 미형. 일찍 퇴장하는 인물은 한 단계 더(플레이어 애착)
+BEAUTY = "beautiful face, detailed beautiful eyes"
+TOP = "1.3::extremely beautiful face::, sparkling eyes, long eyelashes, striking charm"
 TOP_BOY = "bishounen, handsome, "
-HERO = "1.3::striking protagonist presence::, beautiful face, detailed beautiful eyes"
+HERO = "1.3::striking protagonist presence::"
 TOP_SET = {"taiga", "sho", "yuu", "akari", "riku", "sora", "ken"}
-MID = "pretty face, detailed beautiful eyes"
-MID_SET = {"rei", "haruka", "satsuki", "nana"}
+MID_SET = set()
+MID = ""
 MALES = {"rei", "sora", "ken", "riku", "yuu", "taiga", "sho"}
 
 
 POSES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "art", "poses.json")
-SPRITE_FRAME = "cowboy shot, upper body to thighs, front view, looking at viewer, simple background, white background, flat lighting"
+SPRITE_FRAME = "cowboy shot, upper body to thighs, front view, looking at viewer, simple background"
 
 
 def pose_tags(name: str, pose: str):
@@ -151,13 +131,11 @@ def build_prompts(name: str, verbatim: bool, pose: str = None):
     if not verbatim:
         for token in DROP_FROM_STYLE:
             style = style.replace(token, "")
-    tier = ""
+    tier = "" if name == "lappy" else BEAUTY + ", "
     if name in TOP_SET:
-        tier = (TOP_BOY if name in MALES else "") + TOP + ", "
+        tier += (TOP_BOY if name in MALES else "") + TOP + ", "
     elif name == "mio":
-        tier = HERO + ", "
-    elif name in MID_SET:
-        tier = MID + ", "
+        tier += HERO + ", "
     frame = POSE if pose is None else SPRITE_FRAME
     act = pose_tags(name, pose)
     positive = f"{CHARACTERS[name]}, {act + ', ' if act else ''}{tier}{frame}, {style}"
@@ -168,6 +146,8 @@ def build_prompts(name: str, verbatim: bool, pose: str = None):
         extra += MALE_NEG
     if name not in ("rin", "lappy"):
         extra += NO_STREAK_NEG
+    if name == "taiga":
+        extra += "fat, chubby, obese, barefoot, "
     if name == "lappy":
         extra += "realistic, quadruped, on all fours, sitting, large, huge, fur detail, horror, gore, "
     return positive, extra + NEGATIVE
