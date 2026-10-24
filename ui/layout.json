@@ -1,0 +1,29 @@
+{
+  "canvas": [2560, 1440],
+  "reference_canvas": [1280, 720],
+  "scale": 2,
+  "dialog": {
+    "frame": {"path": "ui/dialog/frame.png", "rect": [160, 1040, 2240, 340]},
+    "nameplate": {"path": "ui/dialog/nameplate.png", "rect": [1940, 992, 440, 88], "accent_tint": "speaker_theme", "text_color": "#111111"},
+    "text_rect": [360, 1100, 1880, 240],
+    "font_size": 56,
+    "line_height": 76,
+    "lines": 3
+  },
+  "kotodama": {
+    "size": [440, 600],
+    "evidence": "ui/kotodama/frame_evidence.png",
+    "testimony": "ui/kotodama/frame_testimony.png",
+    "rule_magic": "ui/kotodama/frame_rule_magic.png",
+    "memo": "ui/kotodama/frame_memo.png"
+  },
+  "trial": {
+    "speech_power": {"max": 5, "start": [2048, 40], "step": [80, 0], "size": [64, 64], "full": "ui/trial/heart_full.png", "half": "ui/trial/heart_half.png", "empty": "ui/trial/heart_empty.png"},
+    "concentration": {"max": 100, "track": "ui/trial/focus_track.png", "track_rect": [1840, 128, 640, 64], "fill": "ui/trial/focus_fill.png", "fill_rect": [1880, 142, 560, 36], "fill_direction": "left_to_right"},
+    "cylinder": {"path": "ui/trial/bullet_cylinder.png", "rect": [80, 976, 384, 384], "capacity": 5},
+    "cutin_rect": [512, 464, 1536, 512],
+    "objection": "ui/trial/cutin_objection.png",
+    "agree": "ui/trial/cutin_agree.png",
+    "perjury": "ui/trial/cutin_perjury.png"
+  }
+}

@@ -8,3 +8,16 @@ audio/**/*.ogg
 audio/**/*.mp3
 audio/**/*.wav
 audio/**/*.flac
+
+# 작업용 대용량 PNG는 로컬 전용, 저장소에는 WebP (tools/pack_webp.py)
+art/standing_hd/*.png
+art/sprites/**/*.png
+art/cg/**/*.png
+art/cutin/**/*.png
+bg/**/*.png
+inspect/**/*.png
+**/sheet.webp
+**/preview*.png
+ui/trial/cutins_sheet.png
+docs/index.bleve/
+video/

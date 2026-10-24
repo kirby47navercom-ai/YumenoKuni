@@ -1,0 +1,7573 @@
+{
+  "counts": {
+    "standing_hd": 17,
+    "common_sprites": 288,
+    "lappy": 12,
+    "P_set": 13,
+    "ui": 15,
+    "total": 457,
+    "unique_sprites": 112
+  },
+  "checks": {
+    "original_standing_unchanged": true,
+    "required_paths_present": true,
+    "unique_images": true,
+    "declared_dimensions": true,
+    "sprite_rgba_transparency": true,
+    "head_top_y_120": true,
+    "card_windows_transparent": true,
+    "L10_body_partial_alpha": true,
+    "manual_reference_identity_pose_review": false,
+    "manual_ui_composition_review": true
+  },
+  "manual_review_artifacts": [
+    "art/sprites/ai/sheet.png",
+    "art/sprites/akari/sheet.png",
+    "art/sprites/haruka/sheet.png",
+    "art/sprites/kaede/sheet.png",
+    "art/sprites/ken/sheet.png",
+    "art/sprites/koto/sheet.png",
+    "art/sprites/lappy/sheet.png",
+    "art/sprites/mio/sheet.png",
+    "art/sprites/nana/sheet.png",
+    "art/sprites/rei/sheet.png",
+    "art/sprites/riku/sheet.png",
+    "art/sprites/rin/sheet.png",
+    "art/sprites/satsuki/sheet.png",
+    "art/sprites/sho/sheet.png",
+    "art/sprites/sora/sheet.png",
+    "art/sprites/taiga/sheet.png",
+    "art/sprites/yuu/sheet.png",
+    "ui/preview.png",
+    "ui/dialog/preview.png",
+    "ui/trial/cutins_sheet.png"
+  ],
+  "limits": [
+    "Static asset review only; engine animation and runtime integration not performed."
+  ],
+  "files": {
+    "standing_hd": [
+      {
+        "path": "art/standing_hd/ai.png",
+        "source_sha256": "ecac14ad62c382cba5f61f50f538cd5dd45071e65d1c64e44b7a528b6aff5124"
+      },
+      {
+        "path": "art/standing_hd/akari.png",
+        "source_sha256": "9ad85c9df91db6edf5313e5f8afdcac26b5f622ae63bc91c59b0cc19f27656be"
+      },
+      {
+        "path": "art/standing_hd/haruka.png",
+        "source_sha256": "49e45c1bd48a4d4b0cb43284a3d35c0fa6989f45397a9053f32109c556aff854"
+      },
+      {
+        "path": "art/standing_hd/kaede.png",
+        "source_sha256": "10cd0501ff34dcc1e1d7a39d035d7225850facff5c8aa62d0026566496dc8413"
+      },
+      {
+        "path": "art/standing_hd/ken.png",
+        "source_sha256": "7d59c0b377ba323bb8d92ab0c13182bfc9ebb707905cfc5fecc3d4e86a4c8031"
+      },
+      {
+        "path": "art/standing_hd/koto.png",
+        "source_sha256": "2b62cfeb536add14effd377557ed9a1873cf2512c02cdde182be8094677c0293"
+      },
+      {
+        "path": "art/standing_hd/lappy.png",
+        "source_sha256": "f0122638c9ee1510dec6d97ee91b943899e50920a95e8bc2bc5581acbcd4b3d7"
+      },
+      {
+        "path": "art/standing_hd/mio.png",
+        "source_sha256": "c128249a986fe4ea7c5a5e1e964515e54c528988cedd06c6650953e63c9c3f27"
+      },
+      {
+        "path": "art/standing_hd/nana.png",
+        "source_sha256": "8142b0aeb3e278308707fb13a089892df393e1d30b69422591a1b3f3ad3c37af"
+      },
+      {
+        "path": "art/standing_hd/rei.png",
+        "source_sha256": "cd7ca9ab6721db1bab32c8856ba80453d74d2e341315ff50baf5ca71145790bb"
+      },
+      {
+        "path": "art/standing_hd/riku.png",
+        "source_sha256": "d0cb49324e117d75982438368d983aad964eab103d1b225790dc331831b2b48f"
+      },
+      {
+        "path": "art/standing_hd/rin.png",
+        "source_sha256": "9a6946183204d3d63b3752cc4017b6d31b783124abc3ec4324c0da033ad2aeff"
+      },
+      {
+        "path": "art/standing_hd/satsuki.png",
+        "source_sha256": "2eae05e6bcb47182263b521adf7053fc01f7ebbc4114aa2823ec4a9a484b906d"
+      },
+      {
+        "path": "art/standing_hd/sho.png",
+        "source_sha256": "9976326cac5a384a101aa4e1179f8b7d49558a4e53b73b41e11f313ea7ba9663"
+      },
+      {
+        "path": "art/standing_hd/sora.png",
+        "source_sha256": "26704f19a7eabd5340bcd62a3b85853b82b070f9ece00e1772c4a3cc83215122"
+      },
+      {
+        "path": "art/standing_hd/taiga.png",
+        "source_sha256": "b2332688faf8bb3a4decf8a87f7315b0df0a847109e683efe5ab9722f94beadd"
+      },
+      {
+        "path": "art/standing_hd/yuu.png",
+        "source_sha256": "c16756a366c99002bcf87284674688a04da770802ab8c0769776aed34607c6b0"
+      }
+    ],
+    "sprites": [
+      {
+        "path": "art/sprites/ai/ai_C01.png",
+        "bbox": [
+          492,
+          120,
+          1630,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C02.png",
+        "bbox": [
+          502,
+          120,
+          1631,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C04.png",
+        "bbox": [
+          449,
+          120,
+          1644,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C05.png",
+        "bbox": [
+          525,
+          120,
+          1621,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C08.png",
+        "bbox": [
+          474,
+          120,
+          1588,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_T01.png",
+        "bbox": [
+          471,
+          121,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C01.png",
+        "bbox": [
+          532,
+          120,
+          1621,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C02.png",
+        "bbox": [
+          515,
+          120,
+          1714,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C04.png",
+        "bbox": [
+          484,
+          120,
+          1655,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C05.png",
+        "bbox": [
+          561,
+          120,
+          1721,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C08.png",
+        "bbox": [
+          599,
+          120,
+          1590,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_T01.png",
+        "bbox": [
+          532,
+          120,
+          1781,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C01.png",
+        "bbox": [
+          462,
+          120,
+          1819,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C02.png",
+        "bbox": [
+          507,
+          121,
+          1652,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C04.png",
+        "bbox": [
+          453,
+          120,
+          1768,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C05.png",
+        "bbox": [
+          470,
+          120,
+          1768,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C08.png",
+        "bbox": [
+          551,
+          120,
+          1610,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T01.png",
+        "bbox": [
+          445,
+          120,
+          1738,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C01.png",
+        "bbox": [
+          240,
+          120,
+          1984,
+          1858
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C02.png",
+        "bbox": [
+          114,
+          120,
+          1984,
+          2031
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C04.png",
+        "bbox": [
+          154,
+          120,
+          1984,
+          1965
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C05.png",
+        "bbox": [
+          73,
+          121,
+          1928,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C08.png",
+        "bbox": [
+          103,
+          120,
+          1938,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T01.png",
+        "bbox": [
+          161,
+          120,
+          1984,
+          1952
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C01.png",
+        "bbox": [
+          221,
+          120,
+          1984,
+          1924
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C02.png",
+        "bbox": [
+          107,
+          120,
+          1914,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C04.png",
+        "bbox": [
+          64,
+          120,
+          1884,
+          2025
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C05.png",
+        "bbox": [
+          64,
+          120,
+          1870,
+          1952
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C08.png",
+        "bbox": [
+          64,
+          120,
+          1864,
+          2013
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T01.png",
+        "bbox": [
+          130,
+          120,
+          1984,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P01.png",
+        "bbox": [
+          114,
+          120,
+          1900,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P02.png",
+        "bbox": [
+          453,
+          120,
+          1648,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P03.png",
+        "bbox": [
+          99,
+          121,
+          1957,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P03b.png",
+        "bbox": [
+          169,
+          120,
+          1798,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P04.png",
+        "bbox": [
+          207,
+          120,
+          1919,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P05.png",
+        "bbox": [
+          176,
+          120,
+          1846,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P06.png",
+        "bbox": [
+          64,
+          120,
+          1770,
+          1856
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P07.png",
+        "bbox": [
+          334,
+          120,
+          1664,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P08.png",
+        "bbox": [
+          366,
+          120,
+          1671,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P09.png",
+        "bbox": [
+          64,
+          120,
+          1824,
+          2046
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P10.png",
+        "bbox": [
+          179,
+          120,
+          1876,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P11.png",
+        "bbox": [
+          103,
+          120,
+          1953,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_P12.png",
+        "bbox": [
+          139,
+          120,
+          1803,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C01.png",
+        "bbox": [
+          64,
+          120,
+          1956,
+          1952
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C02.png",
+        "bbox": [
+          64,
+          120,
+          1930,
+          1903
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C04.png",
+        "bbox": [
+          127,
+          120,
+          1984,
+          1815
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C05.png",
+        "bbox": [
+          64,
+          120,
+          1905,
+          1839
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C08.png",
+        "bbox": [
+          64,
+          120,
+          1925,
+          1921
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_T01.png",
+        "bbox": [
+          64,
+          120,
+          1868,
+          1804
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L01.png",
+        "bbox": [
+          515,
+          121,
+          1534,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L02.png",
+        "bbox": [
+          497,
+          120,
+          1571,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L03.png",
+        "bbox": [
+          557,
+          120,
+          1684,
+          2047
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L04.png",
+        "bbox": [
+          490,
+          120,
+          1651,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L05.png",
+        "bbox": [
+          64,
+          120,
+          1981,
+          1947
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L06.png",
+        "bbox": [
+          487,
+          120,
+          1572,
+          2047
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L07.png",
+        "bbox": [
+          551,
+          120,
+          1516,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L08.png",
+        "bbox": [
+          582,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L09.png",
+        "bbox": [
+          489,
+          120,
+          1502,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L10.png",
+        "bbox": [
+          547,
+          120,
+          1521,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L11.png",
+        "bbox": [
+          274,
+          120,
+          1767,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/lappy/lappy_L12.png",
+        "bbox": [
+          504,
+          120,
+          1566,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C01.png",
+        "bbox": [
+          609,
+          120,
+          1711,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C02.png",
+        "bbox": [
+          612,
+          120,
+          1448,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C04.png",
+        "bbox": [
+          529,
+          120,
+          1920,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C05.png",
+        "bbox": [
+          586,
+          120,
+          1454,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C08.png",
+        "bbox": [
+          591,
+          120,
+          1457,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T01.png",
+        "bbox": [
+          516,
+          120,
+          1612,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C01.png",
+        "bbox": [
+          478,
+          120,
+          1551,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C02.png",
+        "bbox": [
+          442,
+          120,
+          1629,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C04.png",
+        "bbox": [
+          361,
+          120,
+          1605,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C05.png",
+        "bbox": [
+          400,
+          120,
+          1632,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C08.png",
+        "bbox": [
+          424,
+          120,
+          1656,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_T01.png",
+        "bbox": [
+          384,
+          120,
+          1577,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C01.png",
+        "bbox": [
+          533,
+          121,
+          1491,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C02.png",
+        "bbox": [
+          503,
+          120,
+          1544,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C04.png",
+        "bbox": [
+          506,
+          120,
+          1602,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C05.png",
+        "bbox": [
+          461,
+          120,
+          1592,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C08.png",
+        "bbox": [
+          526,
+          120,
+          1540,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T01.png",
+        "bbox": [
+          410,
+          120,
+          1518,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C01.png",
+        "bbox": [
+          64,
+          120,
+          1933,
+          2009
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C02.png",
+        "bbox": [
+          66,
+          120,
+          1920,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C04.png",
+        "bbox": [
+          64,
+          120,
+          1824,
+          1892
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C05.png",
+        "bbox": [
+          85,
+          120,
+          1950,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C08.png",
+        "bbox": [
+          152,
+          120,
+          1887,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_T01.png",
+        "bbox": [
+          126,
+          120,
+          1965,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C01.png",
+        "bbox": [
+          362,
+          120,
+          1984,
+          2029
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C02.png",
+        "bbox": [
+          370,
+          120,
+          1909,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C04.png",
+        "bbox": [
+          285,
+          120,
+          1849,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C05.png",
+        "bbox": [
+          287,
+          120,
+          1978,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C08.png",
+        "bbox": [
+          485,
+          120,
+          1800,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_T01.png",
+        "bbox": [
+          365,
+          120,
+          1944,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C01.png",
+        "bbox": [
+          607,
+          121,
+          1503,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C02.png",
+        "bbox": [
+          608,
+          120,
+          1537,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C04.png",
+        "bbox": [
+          494,
+          120,
+          1693,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C05.png",
+        "bbox": [
+          599,
+          120,
+          1506,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C08.png",
+        "bbox": [
+          609,
+          120,
+          1468,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T01.png",
+        "bbox": [
+          482,
+          120,
+          1592,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C01.png",
+        "bbox": [
+          366,
+          120,
+          1472,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C02.png",
+        "bbox": [
+          317,
+          120,
+          1499,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C04.png",
+        "bbox": [
+          368,
+          120,
+          1717,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C05.png",
+        "bbox": [
+          398,
+          120,
+          1621,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C08.png",
+        "bbox": [
+          485,
+          120,
+          1479,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_T01.png",
+        "bbox": [
+          509,
+          120,
+          1500,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C01.png",
+        "bbox": [
+          373,
+          120,
+          1736,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C02.png",
+        "bbox": [
+          290,
+          120,
+          1763,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C04.png",
+        "bbox": [
+          399,
+          120,
+          1791,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C05.png",
+        "bbox": [
+          336,
+          120,
+          1777,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C08.png",
+        "bbox": [
+          527,
+          120,
+          1731,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T01.png",
+        "bbox": [
+          496,
+          120,
+          1704,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C01.png",
+        "bbox": [
+          320,
+          120,
+          1917,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C02.png",
+        "bbox": [
+          282,
+          120,
+          1803,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C04.png",
+        "bbox": [
+          126,
+          120,
+          1758,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C05.png",
+        "bbox": [
+          300,
+          120,
+          1858,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C08.png",
+        "bbox": [
+          491,
+          120,
+          1594,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T01.png",
+        "bbox": [
+          281,
+          120,
+          1871,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C01.png",
+        "bbox": [
+          470,
+          120,
+          1612,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C02.png",
+        "bbox": [
+          488,
+          120,
+          1581,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C04.png",
+        "bbox": [
+          340,
+          120,
+          1741,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C05.png",
+        "bbox": [
+          503,
+          120,
+          1639,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C08.png",
+        "bbox": [
+          528,
+          120,
+          1551,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T01.png",
+        "bbox": [
+          436,
+          120,
+          1658,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C03.png",
+        "bbox": [
+          546,
+          120,
+          1594,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C06.png",
+        "bbox": [
+          581,
+          120,
+          1560,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C07.png",
+        "bbox": [
+          533,
+          120,
+          1620,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C09.png",
+        "bbox": [
+          565,
+          120,
+          1653,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C10.png",
+        "bbox": [
+          554,
+          120,
+          1565,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C11.png",
+        "bbox": [
+          534,
+          120,
+          1503,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C12.png",
+        "bbox": [
+          540,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C13.png",
+        "bbox": [
+          539,
+          120,
+          1549,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C14.png",
+        "bbox": [
+          597,
+          120,
+          1515,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_M.png",
+        "bbox": [
+          121,
+          120,
+          1614,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_T02.png",
+        "bbox": [
+          369,
+          120,
+          1661,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_T03.png",
+        "bbox": [
+          571,
+          120,
+          1632,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_T04.png",
+        "bbox": [
+          571,
+          120,
+          1653,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_U1.png",
+        "bbox": [
+          473,
+          120,
+          1501,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U2.png",
+        "bbox": [
+          528,
+          120,
+          1542,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U3.png",
+        "bbox": [
+          547,
+          120,
+          1480,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U4.png",
+        "bbox": [
+          440,
+          120,
+          1574,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U5.png",
+        "bbox": [
+          542,
+          120,
+          1524,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U6.png",
+        "bbox": [
+          584,
+          120,
+          1684,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/akari/akari_C03.png",
+        "bbox": [
+          568,
+          120,
+          1571,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C06.png",
+        "bbox": [
+          620,
+          120,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C07.png",
+        "bbox": [
+          608,
+          120,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C09.png",
+        "bbox": [
+          559,
+          120,
+          1681,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C10.png",
+        "bbox": [
+          612,
+          120,
+          1521,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C11.png",
+        "bbox": [
+          609,
+          120,
+          1658,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C12.png",
+        "bbox": [
+          599,
+          120,
+          1495,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C13.png",
+        "bbox": [
+          601,
+          120,
+          1570,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C14.png",
+        "bbox": [
+          530,
+          120,
+          1550,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_M.png",
+        "bbox": [
+          513,
+          120,
+          1653,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/akari/akari_T02.png",
+        "bbox": [
+          255,
+          120,
+          1732,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_T03.png",
+        "bbox": [
+          630,
+          120,
+          1531,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_T04.png",
+        "bbox": [
+          298,
+          121,
+          1675,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U1.png",
+        "bbox": [
+          578,
+          120,
+          1605,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U2.png",
+        "bbox": [
+          608,
+          120,
+          1533,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U3.png",
+        "bbox": [
+          575,
+          120,
+          1583,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U4.png",
+        "bbox": [
+          597,
+          120,
+          1565,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/akari/akari_U5.png",
+        "bbox": [
+          322,
+          120,
+          1571,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U6.png",
+        "bbox": [
+          582,
+          120,
+          1571,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C03.png",
+        "bbox": [
+          517,
+          120,
+          1865,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C06.png",
+        "bbox": [
+          514,
+          120,
+          1562,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C07.png",
+        "bbox": [
+          547,
+          120,
+          1602,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C09.png",
+        "bbox": [
+          517,
+          120,
+          1747,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C10.png",
+        "bbox": [
+          544,
+          120,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C11.png",
+        "bbox": [
+          560,
+          121,
+          1731,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C12.png",
+        "bbox": [
+          512,
+          120,
+          1623,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C13.png",
+        "bbox": [
+          520,
+          120,
+          1595,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C14.png",
+        "bbox": [
+          543,
+          120,
+          1697,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_M.png",
+        "bbox": [
+          515,
+          121,
+          1689,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T02.png",
+        "bbox": [
+          363,
+          120,
+          1845,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T03.png",
+        "bbox": [
+          505,
+          120,
+          1624,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T04.png",
+        "bbox": [
+          344,
+          120,
+          1788,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U1.png",
+        "bbox": [
+          354,
+          120,
+          1927,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U2.png",
+        "bbox": [
+          484,
+          120,
+          1844,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U3.png",
+        "bbox": [
+          519,
+          120,
+          1711,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U4.png",
+        "bbox": [
+          504,
+          120,
+          1734,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U5.png",
+        "bbox": [
+          509,
+          120,
+          1679,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U6.png",
+        "bbox": [
+          547,
+          120,
+          1516,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C03.png",
+        "bbox": [
+          139,
+          120,
+          1984,
+          1986
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C06.png",
+        "bbox": [
+          156,
+          120,
+          1983,
+          2017
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C07.png",
+        "bbox": [
+          85,
+          120,
+          1946,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C09.png",
+        "bbox": [
+          293,
+          120,
+          1984,
+          1892
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C10.png",
+        "bbox": [
+          86,
+          120,
+          1964,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C11.png",
+        "bbox": [
+          115,
+          120,
+          1958,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C12.png",
+        "bbox": [
+          115,
+          120,
+          1910,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C13.png",
+        "bbox": [
+          188,
+          120,
+          1984,
+          1978
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C14.png",
+        "bbox": [
+          183,
+          120,
+          1972,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_M.png",
+        "bbox": [
+          64,
+          121,
+          1870,
+          2024
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T02.png",
+        "bbox": [
+          64,
+          120,
+          1947,
+          2026
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T03.png",
+        "bbox": [
+          196,
+          121,
+          1984,
+          2042
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T04.png",
+        "bbox": [
+          108,
+          120,
+          1984,
+          2042
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U1.png",
+        "bbox": [
+          141,
+          120,
+          1946,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U2.png",
+        "bbox": [
+          384,
+          120,
+          1984,
+          1822
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U3.png",
+        "bbox": [
+          76,
+          120,
+          1920,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U4.png",
+        "bbox": [
+          101,
+          120,
+          1984,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U5.png",
+        "bbox": [
+          200,
+          120,
+          1943,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U6.png",
+        "bbox": [
+          106,
+          120,
+          1910,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ken/ken_C03.png",
+        "bbox": [
+          74,
+          120,
+          1966,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C06.png",
+        "bbox": [
+          283,
+          121,
+          1758,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C07.png",
+        "bbox": [
+          90,
+          120,
+          1925,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C09.png",
+        "bbox": [
+          64,
+          120,
+          1863,
+          2028
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C10.png",
+        "bbox": [
+          266,
+          120,
+          1742,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C11.png",
+        "bbox": [
+          64,
+          120,
+          1883,
+          2006
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C12.png",
+        "bbox": [
+          65,
+          120,
+          1880,
+          1974
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C13.png",
+        "bbox": [
+          70,
+          120,
+          1910,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C14.png",
+        "bbox": [
+          97,
+          120,
+          1907,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_M.png",
+        "bbox": [
+          64,
+          120,
+          1928,
+          2035
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T02.png",
+        "bbox": [
+          75,
+          120,
+          1984,
+          2031
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T03.png",
+        "bbox": [
+          128,
+          120,
+          1922,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T04.png",
+        "bbox": [
+          64,
+          120,
+          1739,
+          1864
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U1.png",
+        "bbox": [
+          64,
+          120,
+          1922,
+          1956
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U2.png",
+        "bbox": [
+          109,
+          120,
+          1688,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ken/ken_U3.png",
+        "bbox": [
+          64,
+          120,
+          1945,
+          2042
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U4.png",
+        "bbox": [
+          96,
+          120,
+          1954,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U5.png",
+        "bbox": [
+          64,
+          120,
+          1800,
+          1866
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U6.png",
+        "bbox": [
+          107,
+          120,
+          1932,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C03.png",
+        "bbox": [
+          91,
+          120,
+          1936,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C06.png",
+        "bbox": [
+          250,
+          120,
+          1867,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C07.png",
+        "bbox": [
+          72,
+          120,
+          1965,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C09.png",
+        "bbox": [
+          187,
+          120,
+          1892,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C10.png",
+        "bbox": [
+          191,
+          120,
+          1898,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C11.png",
+        "bbox": [
+          64,
+          120,
+          1918,
+          1815
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C12.png",
+        "bbox": [
+          88,
+          120,
+          1789,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C13.png",
+        "bbox": [
+          162,
+          120,
+          1931,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C14.png",
+        "bbox": [
+          148,
+          120,
+          1888,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_M.png",
+        "bbox": [
+          64,
+          120,
+          1849,
+          1948
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_T02.png",
+        "bbox": [
+          140,
+          121,
+          1900,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_T03.png",
+        "bbox": [
+          170,
+          120,
+          1909,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_T04.png",
+        "bbox": [
+          98,
+          120,
+          1905,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_U1.png",
+        "bbox": [
+          189,
+          120,
+          1872,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U2.png",
+        "bbox": [
+          108,
+          120,
+          1896,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U3.png",
+        "bbox": [
+          152,
+          120,
+          1921,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U4.png",
+        "bbox": [
+          167,
+          121,
+          1915,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U5.png",
+        "bbox": [
+          153,
+          120,
+          1930,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U6.png",
+        "bbox": [
+          131,
+          120,
+          1961,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/mio/mio_C03.png",
+        "bbox": [
+          624,
+          120,
+          1439,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C06.png",
+        "bbox": [
+          632,
+          120,
+          1411,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C07.png",
+        "bbox": [
+          572,
+          120,
+          1451,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C09.png",
+        "bbox": [
+          459,
+          120,
+          1482,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C10.png",
+        "bbox": [
+          618,
+          120,
+          1396,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C11.png",
+        "bbox": [
+          537,
+          120,
+          1436,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C12.png",
+        "bbox": [
+          575,
+          120,
+          1503,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C13.png",
+        "bbox": [
+          402,
+          120,
+          1478,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C14.png",
+        "bbox": [
+          528,
+          120,
+          1536,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_M.png",
+        "bbox": [
+          619,
+          120,
+          1470,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T02.png",
+        "bbox": [
+          125,
+          120,
+          1880,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T03.png",
+        "bbox": [
+          440,
+          120,
+          1460,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T04.png",
+        "bbox": [
+          444,
+          120,
+          1507,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U1.png",
+        "bbox": [
+          598,
+          120,
+          1513,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U2.png",
+        "bbox": [
+          600,
+          120,
+          1452,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U3.png",
+        "bbox": [
+          589,
+          120,
+          1426,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U4.png",
+        "bbox": [
+          433,
+          120,
+          1460,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U5.png",
+        "bbox": [
+          422,
+          120,
+          1704,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U6.png",
+        "bbox": [
+          525,
+          120,
+          1928,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C03.png",
+        "bbox": [
+          525,
+          120,
+          1505,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C06.png",
+        "bbox": [
+          581,
+          120,
+          1435,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C07.png",
+        "bbox": [
+          510,
+          120,
+          1472,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C09.png",
+        "bbox": [
+          403,
+          120,
+          1763,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C10.png",
+        "bbox": [
+          525,
+          121,
+          1540,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C11.png",
+        "bbox": [
+          551,
+          120,
+          1472,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C12.png",
+        "bbox": [
+          489,
+          120,
+          1491,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C13.png",
+        "bbox": [
+          518,
+          120,
+          1477,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C14.png",
+        "bbox": [
+          403,
+          120,
+          1489,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_M.png",
+        "bbox": [
+          563,
+          120,
+          1469,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/nana/nana_T02.png",
+        "bbox": [
+          216,
+          120,
+          1760,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_T03.png",
+        "bbox": [
+          550,
+          120,
+          1496,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_T04.png",
+        "bbox": [
+          378,
+          120,
+          1572,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U1.png",
+        "bbox": [
+          476,
+          120,
+          1568,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U2.png",
+        "bbox": [
+          389,
+          120,
+          1857,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/nana/nana_U3.png",
+        "bbox": [
+          611,
+          120,
+          1420,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/nana/nana_U4.png",
+        "bbox": [
+          531,
+          120,
+          1501,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U5.png",
+        "bbox": [
+          529,
+          120,
+          1552,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U6.png",
+        "bbox": [
+          572,
+          120,
+          1419,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C03.png",
+        "bbox": [
+          452,
+          120,
+          1537,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C06.png",
+        "bbox": [
+          582,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C07.png",
+        "bbox": [
+          579,
+          120,
+          1562,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C09.png",
+        "bbox": [
+          391,
+          120,
+          1785,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C10.png",
+        "bbox": [
+          587,
+          121,
+          1530,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C11.png",
+        "bbox": [
+          495,
+          120,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C12.png",
+        "bbox": [
+          563,
+          121,
+          1604,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C13.png",
+        "bbox": [
+          544,
+          120,
+          1552,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C14.png",
+        "bbox": [
+          408,
+          120,
+          1449,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_M.png",
+        "bbox": [
+          338,
+          120,
+          1636,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T02.png",
+        "bbox": [
+          64,
+          120,
+          1890,
+          2014
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T03.png",
+        "bbox": [
+          580,
+          120,
+          1510,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T04.png",
+        "bbox": [
+          304,
+          120,
+          1638,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U1.png",
+        "bbox": [
+          450,
+          120,
+          1558,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U2.png",
+        "bbox": [
+          343,
+          120,
+          1662,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U3.png",
+        "bbox": [
+          444,
+          120,
+          1496,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U4.png",
+        "bbox": [
+          540,
+          120,
+          1607,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U5.png",
+        "bbox": [
+          592,
+          120,
+          1693,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U6.png",
+        "bbox": [
+          639,
+          120,
+          1511,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C03.png",
+        "bbox": [
+          156,
+          121,
+          1936,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C06.png",
+        "bbox": [
+          183,
+          121,
+          1843,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C07.png",
+        "bbox": [
+          200,
+          120,
+          1848,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C09.png",
+        "bbox": [
+          139,
+          120,
+          1907,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C10.png",
+        "bbox": [
+          218,
+          120,
+          1812,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C11.png",
+        "bbox": [
+          293,
+          120,
+          1843,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C12.png",
+        "bbox": [
+          225,
+          120,
+          1866,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C13.png",
+        "bbox": [
+          115,
+          120,
+          1907,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C14.png",
+        "bbox": [
+          175,
+          120,
+          1865,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_M.png",
+        "bbox": [
+          172,
+          120,
+          1935,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/riku/riku_T02.png",
+        "bbox": [
+          198,
+          120,
+          1886,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_T03.png",
+        "bbox": [
+          231,
+          120,
+          1829,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_T04.png",
+        "bbox": [
+          198,
+          120,
+          1945,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U1.png",
+        "bbox": [
+          77,
+          120,
+          1909,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/riku/riku_U2.png",
+        "bbox": [
+          109,
+          120,
+          1904,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U3.png",
+        "bbox": [
+          73,
+          120,
+          1967,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U4.png",
+        "bbox": [
+          188,
+          120,
+          1927,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/riku/riku_U5.png",
+        "bbox": [
+          145,
+          120,
+          1846,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U6.png",
+        "bbox": [
+          152,
+          120,
+          1903,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C03.png",
+        "bbox": [
+          461,
+          120,
+          1600,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C06.png",
+        "bbox": [
+          497,
+          120,
+          1637,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C07.png",
+        "bbox": [
+          484,
+          120,
+          1546,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C09.png",
+        "bbox": [
+          412,
+          120,
+          1636,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C10.png",
+        "bbox": [
+          511,
+          120,
+          1508,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C11.png",
+        "bbox": [
+          469,
+          121,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C12.png",
+        "bbox": [
+          449,
+          120,
+          1601,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C13.png",
+        "bbox": [
+          490,
+          120,
+          1747,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C14.png",
+        "bbox": [
+          504,
+          120,
+          1652,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_M.png",
+        "bbox": [
+          314,
+          120,
+          1757,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_T02.png",
+        "bbox": [
+          391,
+          120,
+          1725,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_T03.png",
+        "bbox": [
+          528,
+          120,
+          1536,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_T04.png",
+        "bbox": [
+          376,
+          120,
+          1655,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_U1.png",
+        "bbox": [
+          315,
+          120,
+          1828,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U2.png",
+        "bbox": [
+          449,
+          120,
+          1624,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U3.png",
+        "bbox": [
+          65,
+          120,
+          1732,
+          2001
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U4.png",
+        "bbox": [
+          376,
+          120,
+          1924,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U5.png",
+        "bbox": [
+          397,
+          120,
+          1715,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U6.png",
+        "bbox": [
+          358,
+          120,
+          1969,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C03.png",
+        "bbox": [
+          595,
+          120,
+          1527,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C06.png",
+        "bbox": [
+          619,
+          120,
+          1432,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C07.png",
+        "bbox": [
+          572,
+          120,
+          1481,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C09.png",
+        "bbox": [
+          465,
+          120,
+          1612,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C10.png",
+        "bbox": [
+          604,
+          120,
+          1402,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C11.png",
+        "bbox": [
+          560,
+          120,
+          1482,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C12.png",
+        "bbox": [
+          606,
+          120,
+          1540,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C13.png",
+        "bbox": [
+          621,
+          120,
+          1485,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C14.png",
+        "bbox": [
+          526,
+          120,
+          1464,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_M.png",
+        "bbox": [
+          254,
+          120,
+          1763,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T02.png",
+        "bbox": [
+          116,
+          120,
+          1885,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T03.png",
+        "bbox": [
+          456,
+          120,
+          1512,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T04.png",
+        "bbox": [
+          497,
+          120,
+          1505,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U1.png",
+        "bbox": [
+          428,
+          120,
+          1793,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U2.png",
+        "bbox": [
+          572,
+          120,
+          1478,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U3.png",
+        "bbox": [
+          455,
+          120,
+          1577,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U4.png",
+        "bbox": [
+          578,
+          120,
+          1490,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U5.png",
+        "bbox": [
+          631,
+          120,
+          1498,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U6.png",
+        "bbox": [
+          627,
+          120,
+          1475,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_C03.png",
+        "bbox": [
+          501,
+          120,
+          1489,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C06.png",
+        "bbox": [
+          598,
+          120,
+          1411,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C07.png",
+        "bbox": [
+          598,
+          120,
+          1468,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C09.png",
+        "bbox": [
+          467,
+          120,
+          1630,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C10.png",
+        "bbox": [
+          616,
+          121,
+          1411,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C11.png",
+        "bbox": [
+          581,
+          120,
+          1469,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C12.png",
+        "bbox": [
+          526,
+          120,
+          1498,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C13.png",
+        "bbox": [
+          560,
+          121,
+          1486,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C14.png",
+        "bbox": [
+          432,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_M.png",
+        "bbox": [
+          451,
+          120,
+          1481,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_T02.png",
+        "bbox": [
+          170,
+          120,
+          1892,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_T03.png",
+        "bbox": [
+          571,
+          120,
+          1500,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_T04.png",
+        "bbox": [
+          424,
+          120,
+          1641,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_U1.png",
+        "bbox": [
+          394,
+          120,
+          1645,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U2.png",
+        "bbox": [
+          561,
+          120,
+          1566,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U3.png",
+        "bbox": [
+          638,
+          120,
+          1565,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U4.png",
+        "bbox": [
+          612,
+          120,
+          1424,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U5.png",
+        "bbox": [
+          518,
+          120,
+          1543,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U6.png",
+        "bbox": [
+          479,
+          120,
+          1520,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sora/sora_C03.png",
+        "bbox": [
+          355,
+          120,
+          1717,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C06.png",
+        "bbox": [
+          598,
+          120,
+          1464,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C07.png",
+        "bbox": [
+          536,
+          120,
+          1495,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C09.png",
+        "bbox": [
+          408,
+          120,
+          1712,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C10.png",
+        "bbox": [
+          573,
+          120,
+          1467,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C11.png",
+        "bbox": [
+          536,
+          120,
+          1519,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C12.png",
+        "bbox": [
+          562,
+          120,
+          1621,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C13.png",
+        "bbox": [
+          519,
+          120,
+          1502,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C14.png",
+        "bbox": [
+          390,
+          120,
+          1523,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_M.png",
+        "bbox": [
+          177,
+          120,
+          1909,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T02.png",
+        "bbox": [
+          151,
+          120,
+          1846,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T03.png",
+        "bbox": [
+          557,
+          120,
+          1509,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T04.png",
+        "bbox": [
+          202,
+          120,
+          1671,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U1.png",
+        "bbox": [
+          513,
+          120,
+          1670,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U2.png",
+        "bbox": [
+          253,
+          120,
+          1640,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sora/sora_U3.png",
+        "bbox": [
+          579,
+          120,
+          1469,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U4.png",
+        "bbox": [
+          461,
+          120,
+          1581,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U5.png",
+        "bbox": [
+          204,
+          120,
+          1884,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U6.png",
+        "bbox": [
+          410,
+          120,
+          1984,
+          2019
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C03.png",
+        "bbox": [
+          349,
+          120,
+          1780,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C06.png",
+        "bbox": [
+          503,
+          120,
+          1478,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C07.png",
+        "bbox": [
+          484,
+          120,
+          1574,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C09.png",
+        "bbox": [
+          306,
+          120,
+          1840,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C10.png",
+        "bbox": [
+          537,
+          120,
+          1534,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C11.png",
+        "bbox": [
+          380,
+          120,
+          1728,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C12.png",
+        "bbox": [
+          495,
+          120,
+          1688,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C13.png",
+        "bbox": [
+          410,
+          120,
+          1714,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C14.png",
+        "bbox": [
+          351,
+          120,
+          1626,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_M.png",
+        "bbox": [
+          262,
+          120,
+          1984,
+          2043
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T02.png",
+        "bbox": [
+          64,
+          120,
+          1916,
+          2043
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T03.png",
+        "bbox": [
+          438,
+          120,
+          1640,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T04.png",
+        "bbox": [
+          256,
+          120,
+          1631,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U1.png",
+        "bbox": [
+          233,
+          120,
+          1774,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U2.png",
+        "bbox": [
+          64,
+          120,
+          1972,
+          1949
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U3.png",
+        "bbox": [
+          398,
+          120,
+          1622,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U4.png",
+        "bbox": [
+          334,
+          120,
+          1846,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U5.png",
+        "bbox": [
+          64,
+          120,
+          1963,
+          1967
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U6.png",
+        "bbox": [
+          64,
+          121,
+          1747,
+          1849
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C03.png",
+        "bbox": [
+          421,
+          120,
+          1664,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C06.png",
+        "bbox": [
+          654,
+          120,
+          1450,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C07.png",
+        "bbox": [
+          594,
+          120,
+          1442,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C09.png",
+        "bbox": [
+          369,
+          120,
+          1749,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C10.png",
+        "bbox": [
+          663,
+          120,
+          1435,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C11.png",
+        "bbox": [
+          565,
+          120,
+          1517,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C12.png",
+        "bbox": [
+          620,
+          120,
+          1604,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C13.png",
+        "bbox": [
+          580,
+          120,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C14.png",
+        "bbox": [
+          469,
+          120,
+          1569,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_M.png",
+        "bbox": [
+          242,
+          120,
+          1840,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T02.png",
+        "bbox": [
+          146,
+          120,
+          1916,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T03.png",
+        "bbox": [
+          573,
+          121,
+          1514,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T04.png",
+        "bbox": [
+          264,
+          121,
+          1557,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U1.png",
+        "bbox": [
+          466,
+          120,
+          1830,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U2.png",
+        "bbox": [
+          315,
+          120,
+          1542,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U3.png",
+        "bbox": [
+          526,
+          120,
+          1545,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U4.png",
+        "bbox": [
+          377,
+          120,
+          1689,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U5.png",
+        "bbox": [
+          522,
+          120,
+          1557,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U6.png",
+        "bbox": [
+          337,
+          120,
+          1777,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      }
+    ],
+    "ui": [
+      {
+        "path": "ui/dialog/frame.png",
+        "size": [
+          2240,
+          340
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/dialog/nameplate.png",
+        "size": [
+          440,
+          88
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/kotodama/frame_evidence.png",
+        "size": [
+          440,
+          600
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/kotodama/frame_memo.png",
+        "size": [
+          440,
+          600
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/kotodama/frame_rule_magic.png",
+        "size": [
+          440,
+          600
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/kotodama/frame_testimony.png",
+        "size": [
+          440,
+          600
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/bullet_cylinder.png",
+        "size": [
+          384,
+          384
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/cutin_agree.png",
+        "size": [
+          1536,
+          512
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/cutin_objection.png",
+        "size": [
+          1536,
+          512
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/cutin_perjury.png",
+        "size": [
+          1536,
+          512
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/focus_fill.png",
+        "size": [
+          640,
+          64
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/focus_track.png",
+        "size": [
+          640,
+          64
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/heart_empty.png",
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/heart_full.png",
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "path": "ui/trial/heart_half.png",
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA"
+      }
+    ]
+  },
+  "first_batch_checks": {
+    "original_standing_unchanged": true,
+    "required_paths_present": true,
+    "unique_images": true,
+    "declared_dimensions": true,
+    "sprite_rgba_transparency": true,
+    "head_top_y_120": true,
+    "card_windows_transparent": true,
+    "L10_body_partial_alpha": true,
+    "manual_reference_identity_pose_review": true,
+    "manual_ui_composition_review": true
+  },
+  "batch2": {
+    "required": 304,
+    "exported": 304,
+    "visual_review_passed": 230,
+    "common": {
+      "required": 192,
+      "completed": 192,
+      "remaining": 0
+    },
+    "unique": {
+      "required": 112,
+      "completed": 38,
+      "remaining": 74
+    },
+    "checks": {
+      "first_batch_bytes_preserved": true,
+      "standing_and_hd_bytes_preserved": true,
+      "rgba_2048_transparency": true,
+      "head_top_y_120": true,
+      "unique_output_hashes": true,
+      "all_requested_files_present": true,
+      "all_visually_reviewed": false
+    },
+    "pending": [],
+    "files": [
+      {
+        "path": "art/sprites/ai/ai_C03.png",
+        "bbox": [
+          546,
+          120,
+          1594,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C06.png",
+        "bbox": [
+          581,
+          120,
+          1560,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C07.png",
+        "bbox": [
+          533,
+          120,
+          1620,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C09.png",
+        "bbox": [
+          565,
+          120,
+          1653,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C10.png",
+        "bbox": [
+          554,
+          120,
+          1565,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C11.png",
+        "bbox": [
+          534,
+          120,
+          1503,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C12.png",
+        "bbox": [
+          540,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C13.png",
+        "bbox": [
+          539,
+          120,
+          1549,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_C14.png",
+        "bbox": [
+          597,
+          120,
+          1515,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_M.png",
+        "bbox": [
+          121,
+          120,
+          1614,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_T02.png",
+        "bbox": [
+          369,
+          120,
+          1661,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_T03.png",
+        "bbox": [
+          571,
+          120,
+          1632,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_T04.png",
+        "bbox": [
+          571,
+          120,
+          1653,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ai/ai_U1.png",
+        "bbox": [
+          473,
+          120,
+          1501,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U2.png",
+        "bbox": [
+          528,
+          120,
+          1542,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U3.png",
+        "bbox": [
+          547,
+          120,
+          1480,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U4.png",
+        "bbox": [
+          440,
+          120,
+          1574,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U5.png",
+        "bbox": [
+          542,
+          120,
+          1524,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ai/ai_U6.png",
+        "bbox": [
+          584,
+          120,
+          1684,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/akari/akari_C03.png",
+        "bbox": [
+          568,
+          120,
+          1571,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C06.png",
+        "bbox": [
+          620,
+          120,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C07.png",
+        "bbox": [
+          608,
+          120,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C09.png",
+        "bbox": [
+          559,
+          120,
+          1681,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C10.png",
+        "bbox": [
+          612,
+          120,
+          1521,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C11.png",
+        "bbox": [
+          609,
+          120,
+          1658,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C12.png",
+        "bbox": [
+          599,
+          120,
+          1495,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C13.png",
+        "bbox": [
+          601,
+          120,
+          1570,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_C14.png",
+        "bbox": [
+          530,
+          120,
+          1550,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_M.png",
+        "bbox": [
+          513,
+          120,
+          1653,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/akari/akari_T02.png",
+        "bbox": [
+          255,
+          120,
+          1732,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_T03.png",
+        "bbox": [
+          630,
+          120,
+          1531,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_T04.png",
+        "bbox": [
+          298,
+          121,
+          1675,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U1.png",
+        "bbox": [
+          578,
+          120,
+          1605,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U2.png",
+        "bbox": [
+          608,
+          120,
+          1533,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U3.png",
+        "bbox": [
+          575,
+          120,
+          1583,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U4.png",
+        "bbox": [
+          597,
+          120,
+          1565,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/akari/akari_U5.png",
+        "bbox": [
+          322,
+          120,
+          1571,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/akari/akari_U6.png",
+        "bbox": [
+          582,
+          120,
+          1571,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C03.png",
+        "bbox": [
+          517,
+          120,
+          1865,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C06.png",
+        "bbox": [
+          514,
+          120,
+          1562,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C07.png",
+        "bbox": [
+          547,
+          120,
+          1602,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C09.png",
+        "bbox": [
+          517,
+          120,
+          1747,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C10.png",
+        "bbox": [
+          544,
+          120,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C11.png",
+        "bbox": [
+          560,
+          121,
+          1731,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C12.png",
+        "bbox": [
+          512,
+          120,
+          1623,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C13.png",
+        "bbox": [
+          520,
+          120,
+          1595,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_C14.png",
+        "bbox": [
+          543,
+          120,
+          1697,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_M.png",
+        "bbox": [
+          515,
+          121,
+          1689,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T02.png",
+        "bbox": [
+          363,
+          120,
+          1845,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T03.png",
+        "bbox": [
+          505,
+          120,
+          1624,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_T04.png",
+        "bbox": [
+          344,
+          120,
+          1788,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U1.png",
+        "bbox": [
+          354,
+          120,
+          1927,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U2.png",
+        "bbox": [
+          484,
+          120,
+          1844,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U3.png",
+        "bbox": [
+          519,
+          120,
+          1711,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U4.png",
+        "bbox": [
+          504,
+          120,
+          1734,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U5.png",
+        "bbox": [
+          509,
+          120,
+          1679,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/haruka/haruka_U6.png",
+        "bbox": [
+          547,
+          120,
+          1516,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C03.png",
+        "bbox": [
+          139,
+          120,
+          1984,
+          1986
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C06.png",
+        "bbox": [
+          156,
+          120,
+          1983,
+          2017
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C07.png",
+        "bbox": [
+          85,
+          120,
+          1946,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C09.png",
+        "bbox": [
+          293,
+          120,
+          1984,
+          1892
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C10.png",
+        "bbox": [
+          86,
+          120,
+          1964,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C11.png",
+        "bbox": [
+          115,
+          120,
+          1958,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C12.png",
+        "bbox": [
+          115,
+          120,
+          1910,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C13.png",
+        "bbox": [
+          188,
+          120,
+          1984,
+          1978
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_C14.png",
+        "bbox": [
+          183,
+          120,
+          1972,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_M.png",
+        "bbox": [
+          64,
+          121,
+          1870,
+          2024
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T02.png",
+        "bbox": [
+          64,
+          120,
+          1947,
+          2026
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T03.png",
+        "bbox": [
+          196,
+          121,
+          1984,
+          2042
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_T04.png",
+        "bbox": [
+          108,
+          120,
+          1984,
+          2042
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U1.png",
+        "bbox": [
+          141,
+          120,
+          1946,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U2.png",
+        "bbox": [
+          384,
+          120,
+          1984,
+          1822
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U3.png",
+        "bbox": [
+          76,
+          120,
+          1920,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U4.png",
+        "bbox": [
+          101,
+          120,
+          1984,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U5.png",
+        "bbox": [
+          200,
+          120,
+          1943,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/kaede/kaede_U6.png",
+        "bbox": [
+          106,
+          120,
+          1910,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ken/ken_C03.png",
+        "bbox": [
+          74,
+          120,
+          1966,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C06.png",
+        "bbox": [
+          283,
+          121,
+          1758,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C07.png",
+        "bbox": [
+          90,
+          120,
+          1925,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C09.png",
+        "bbox": [
+          64,
+          120,
+          1863,
+          2028
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C10.png",
+        "bbox": [
+          266,
+          120,
+          1742,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C11.png",
+        "bbox": [
+          64,
+          120,
+          1883,
+          2006
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C12.png",
+        "bbox": [
+          65,
+          120,
+          1880,
+          1974
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C13.png",
+        "bbox": [
+          70,
+          120,
+          1910,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_C14.png",
+        "bbox": [
+          97,
+          120,
+          1907,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_M.png",
+        "bbox": [
+          64,
+          120,
+          1928,
+          2035
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T02.png",
+        "bbox": [
+          75,
+          120,
+          1984,
+          2031
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T03.png",
+        "bbox": [
+          128,
+          120,
+          1922,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_T04.png",
+        "bbox": [
+          64,
+          120,
+          1739,
+          1864
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U1.png",
+        "bbox": [
+          64,
+          120,
+          1922,
+          1956
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U2.png",
+        "bbox": [
+          109,
+          120,
+          1688,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/ken/ken_U3.png",
+        "bbox": [
+          64,
+          120,
+          1945,
+          2042
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U4.png",
+        "bbox": [
+          96,
+          120,
+          1954,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U5.png",
+        "bbox": [
+          64,
+          120,
+          1800,
+          1866
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/ken/ken_U6.png",
+        "bbox": [
+          107,
+          120,
+          1932,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C03.png",
+        "bbox": [
+          91,
+          120,
+          1936,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C06.png",
+        "bbox": [
+          250,
+          120,
+          1867,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C07.png",
+        "bbox": [
+          72,
+          120,
+          1965,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C09.png",
+        "bbox": [
+          187,
+          120,
+          1892,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C10.png",
+        "bbox": [
+          191,
+          120,
+          1898,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C11.png",
+        "bbox": [
+          64,
+          120,
+          1918,
+          1815
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C12.png",
+        "bbox": [
+          88,
+          120,
+          1789,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C13.png",
+        "bbox": [
+          162,
+          120,
+          1931,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_C14.png",
+        "bbox": [
+          148,
+          120,
+          1888,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_M.png",
+        "bbox": [
+          64,
+          120,
+          1849,
+          1948
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_T02.png",
+        "bbox": [
+          140,
+          121,
+          1900,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_T03.png",
+        "bbox": [
+          170,
+          120,
+          1909,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_T04.png",
+        "bbox": [
+          98,
+          120,
+          1905,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/koto/koto_U1.png",
+        "bbox": [
+          189,
+          120,
+          1872,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U2.png",
+        "bbox": [
+          108,
+          120,
+          1896,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U3.png",
+        "bbox": [
+          152,
+          120,
+          1921,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U4.png",
+        "bbox": [
+          167,
+          121,
+          1915,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U5.png",
+        "bbox": [
+          153,
+          120,
+          1930,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/koto/koto_U6.png",
+        "bbox": [
+          131,
+          120,
+          1961,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/mio/mio_C03.png",
+        "bbox": [
+          624,
+          120,
+          1439,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C06.png",
+        "bbox": [
+          632,
+          120,
+          1411,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C07.png",
+        "bbox": [
+          572,
+          120,
+          1451,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C09.png",
+        "bbox": [
+          459,
+          120,
+          1482,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C10.png",
+        "bbox": [
+          618,
+          120,
+          1396,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C11.png",
+        "bbox": [
+          537,
+          120,
+          1436,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C12.png",
+        "bbox": [
+          575,
+          120,
+          1503,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C13.png",
+        "bbox": [
+          402,
+          120,
+          1478,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_C14.png",
+        "bbox": [
+          528,
+          120,
+          1536,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_M.png",
+        "bbox": [
+          619,
+          120,
+          1470,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T02.png",
+        "bbox": [
+          125,
+          120,
+          1880,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T03.png",
+        "bbox": [
+          440,
+          120,
+          1460,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_T04.png",
+        "bbox": [
+          444,
+          120,
+          1507,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U1.png",
+        "bbox": [
+          598,
+          120,
+          1513,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U2.png",
+        "bbox": [
+          600,
+          120,
+          1452,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U3.png",
+        "bbox": [
+          589,
+          120,
+          1426,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U4.png",
+        "bbox": [
+          433,
+          120,
+          1460,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U5.png",
+        "bbox": [
+          422,
+          120,
+          1704,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/mio/mio_U6.png",
+        "bbox": [
+          525,
+          120,
+          1928,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C03.png",
+        "bbox": [
+          525,
+          120,
+          1505,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C06.png",
+        "bbox": [
+          581,
+          120,
+          1435,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C07.png",
+        "bbox": [
+          510,
+          120,
+          1472,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C09.png",
+        "bbox": [
+          403,
+          120,
+          1763,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C10.png",
+        "bbox": [
+          525,
+          121,
+          1540,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C11.png",
+        "bbox": [
+          551,
+          120,
+          1472,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C12.png",
+        "bbox": [
+          489,
+          120,
+          1491,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C13.png",
+        "bbox": [
+          518,
+          120,
+          1477,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_C14.png",
+        "bbox": [
+          403,
+          120,
+          1489,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_M.png",
+        "bbox": [
+          563,
+          120,
+          1469,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/nana/nana_T02.png",
+        "bbox": [
+          216,
+          120,
+          1760,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_T03.png",
+        "bbox": [
+          550,
+          120,
+          1496,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_T04.png",
+        "bbox": [
+          378,
+          120,
+          1572,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U1.png",
+        "bbox": [
+          476,
+          120,
+          1568,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U2.png",
+        "bbox": [
+          389,
+          120,
+          1857,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/nana/nana_U3.png",
+        "bbox": [
+          611,
+          120,
+          1420,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/nana/nana_U4.png",
+        "bbox": [
+          531,
+          120,
+          1501,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U5.png",
+        "bbox": [
+          529,
+          120,
+          1552,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/nana/nana_U6.png",
+        "bbox": [
+          572,
+          120,
+          1419,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C03.png",
+        "bbox": [
+          452,
+          120,
+          1537,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C06.png",
+        "bbox": [
+          582,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C07.png",
+        "bbox": [
+          579,
+          120,
+          1562,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C09.png",
+        "bbox": [
+          391,
+          120,
+          1785,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C10.png",
+        "bbox": [
+          587,
+          121,
+          1530,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C11.png",
+        "bbox": [
+          495,
+          120,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C12.png",
+        "bbox": [
+          563,
+          121,
+          1604,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C13.png",
+        "bbox": [
+          544,
+          120,
+          1552,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_C14.png",
+        "bbox": [
+          408,
+          120,
+          1449,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_M.png",
+        "bbox": [
+          338,
+          120,
+          1636,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T02.png",
+        "bbox": [
+          64,
+          120,
+          1890,
+          2014
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T03.png",
+        "bbox": [
+          580,
+          120,
+          1510,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_T04.png",
+        "bbox": [
+          304,
+          120,
+          1638,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U1.png",
+        "bbox": [
+          450,
+          120,
+          1558,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U2.png",
+        "bbox": [
+          343,
+          120,
+          1662,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U3.png",
+        "bbox": [
+          444,
+          120,
+          1496,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U4.png",
+        "bbox": [
+          540,
+          120,
+          1607,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U5.png",
+        "bbox": [
+          592,
+          120,
+          1693,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rei/rei_U6.png",
+        "bbox": [
+          639,
+          120,
+          1511,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C03.png",
+        "bbox": [
+          156,
+          121,
+          1936,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C06.png",
+        "bbox": [
+          183,
+          121,
+          1843,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C07.png",
+        "bbox": [
+          200,
+          120,
+          1848,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C09.png",
+        "bbox": [
+          139,
+          120,
+          1907,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C10.png",
+        "bbox": [
+          218,
+          120,
+          1812,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C11.png",
+        "bbox": [
+          293,
+          120,
+          1843,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C12.png",
+        "bbox": [
+          225,
+          120,
+          1866,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C13.png",
+        "bbox": [
+          115,
+          120,
+          1907,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_C14.png",
+        "bbox": [
+          175,
+          120,
+          1865,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_M.png",
+        "bbox": [
+          172,
+          120,
+          1935,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/riku/riku_T02.png",
+        "bbox": [
+          198,
+          120,
+          1886,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_T03.png",
+        "bbox": [
+          231,
+          120,
+          1829,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_T04.png",
+        "bbox": [
+          198,
+          120,
+          1945,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U1.png",
+        "bbox": [
+          77,
+          120,
+          1909,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/riku/riku_U2.png",
+        "bbox": [
+          109,
+          120,
+          1904,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U3.png",
+        "bbox": [
+          73,
+          120,
+          1967,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U4.png",
+        "bbox": [
+          188,
+          120,
+          1927,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/riku/riku_U5.png",
+        "bbox": [
+          145,
+          120,
+          1846,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/riku/riku_U6.png",
+        "bbox": [
+          152,
+          120,
+          1903,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C03.png",
+        "bbox": [
+          461,
+          120,
+          1600,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C06.png",
+        "bbox": [
+          497,
+          120,
+          1637,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C07.png",
+        "bbox": [
+          484,
+          120,
+          1546,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C09.png",
+        "bbox": [
+          412,
+          120,
+          1636,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C10.png",
+        "bbox": [
+          511,
+          120,
+          1508,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C11.png",
+        "bbox": [
+          469,
+          121,
+          1556,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C12.png",
+        "bbox": [
+          449,
+          120,
+          1601,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C13.png",
+        "bbox": [
+          490,
+          120,
+          1747,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_C14.png",
+        "bbox": [
+          504,
+          120,
+          1652,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_M.png",
+        "bbox": [
+          314,
+          120,
+          1757,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_T02.png",
+        "bbox": [
+          391,
+          120,
+          1725,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_T03.png",
+        "bbox": [
+          528,
+          120,
+          1536,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_T04.png",
+        "bbox": [
+          376,
+          120,
+          1655,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/rin/rin_U1.png",
+        "bbox": [
+          315,
+          120,
+          1828,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U2.png",
+        "bbox": [
+          449,
+          120,
+          1624,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U3.png",
+        "bbox": [
+          65,
+          120,
+          1732,
+          2001
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U4.png",
+        "bbox": [
+          376,
+          120,
+          1924,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U5.png",
+        "bbox": [
+          397,
+          120,
+          1715,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/rin/rin_U6.png",
+        "bbox": [
+          358,
+          120,
+          1969,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C03.png",
+        "bbox": [
+          595,
+          120,
+          1527,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C06.png",
+        "bbox": [
+          619,
+          120,
+          1432,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C07.png",
+        "bbox": [
+          572,
+          120,
+          1481,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C09.png",
+        "bbox": [
+          465,
+          120,
+          1612,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C10.png",
+        "bbox": [
+          604,
+          120,
+          1402,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C11.png",
+        "bbox": [
+          560,
+          120,
+          1482,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C12.png",
+        "bbox": [
+          606,
+          120,
+          1540,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C13.png",
+        "bbox": [
+          621,
+          120,
+          1485,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_C14.png",
+        "bbox": [
+          526,
+          120,
+          1464,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_M.png",
+        "bbox": [
+          254,
+          120,
+          1763,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T02.png",
+        "bbox": [
+          116,
+          120,
+          1885,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T03.png",
+        "bbox": [
+          456,
+          120,
+          1512,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_T04.png",
+        "bbox": [
+          497,
+          120,
+          1505,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U1.png",
+        "bbox": [
+          428,
+          120,
+          1793,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U2.png",
+        "bbox": [
+          572,
+          120,
+          1478,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U3.png",
+        "bbox": [
+          455,
+          120,
+          1577,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U4.png",
+        "bbox": [
+          578,
+          120,
+          1490,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U5.png",
+        "bbox": [
+          631,
+          120,
+          1498,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/satsuki/satsuki_U6.png",
+        "bbox": [
+          627,
+          120,
+          1475,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_C03.png",
+        "bbox": [
+          501,
+          120,
+          1489,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C06.png",
+        "bbox": [
+          598,
+          120,
+          1411,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C07.png",
+        "bbox": [
+          598,
+          120,
+          1468,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C09.png",
+        "bbox": [
+          467,
+          120,
+          1630,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C10.png",
+        "bbox": [
+          616,
+          121,
+          1411,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C11.png",
+        "bbox": [
+          581,
+          120,
+          1469,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C12.png",
+        "bbox": [
+          526,
+          120,
+          1498,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C13.png",
+        "bbox": [
+          560,
+          121,
+          1486,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_C14.png",
+        "bbox": [
+          432,
+          120,
+          1474,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_M.png",
+        "bbox": [
+          451,
+          120,
+          1481,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_T02.png",
+        "bbox": [
+          170,
+          120,
+          1892,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_T03.png",
+        "bbox": [
+          571,
+          120,
+          1500,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_T04.png",
+        "bbox": [
+          424,
+          120,
+          1641,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sho/sho_U1.png",
+        "bbox": [
+          394,
+          120,
+          1645,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U2.png",
+        "bbox": [
+          561,
+          120,
+          1566,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U3.png",
+        "bbox": [
+          638,
+          120,
+          1565,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U4.png",
+        "bbox": [
+          612,
+          120,
+          1424,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U5.png",
+        "bbox": [
+          518,
+          120,
+          1543,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sho/sho_U6.png",
+        "bbox": [
+          479,
+          120,
+          1520,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sora/sora_C03.png",
+        "bbox": [
+          355,
+          120,
+          1717,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C06.png",
+        "bbox": [
+          598,
+          120,
+          1464,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C07.png",
+        "bbox": [
+          536,
+          120,
+          1495,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C09.png",
+        "bbox": [
+          408,
+          120,
+          1712,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C10.png",
+        "bbox": [
+          573,
+          120,
+          1467,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C11.png",
+        "bbox": [
+          536,
+          120,
+          1519,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C12.png",
+        "bbox": [
+          562,
+          120,
+          1621,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C13.png",
+        "bbox": [
+          519,
+          120,
+          1502,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_C14.png",
+        "bbox": [
+          390,
+          120,
+          1523,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_M.png",
+        "bbox": [
+          177,
+          120,
+          1909,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T02.png",
+        "bbox": [
+          151,
+          120,
+          1846,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T03.png",
+        "bbox": [
+          557,
+          120,
+          1509,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_T04.png",
+        "bbox": [
+          202,
+          120,
+          1671,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U1.png",
+        "bbox": [
+          513,
+          120,
+          1670,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U2.png",
+        "bbox": [
+          253,
+          120,
+          1640,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/sora/sora_U3.png",
+        "bbox": [
+          579,
+          120,
+          1469,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U4.png",
+        "bbox": [
+          461,
+          120,
+          1581,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U5.png",
+        "bbox": [
+          204,
+          120,
+          1884,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/sora/sora_U6.png",
+        "bbox": [
+          410,
+          120,
+          1984,
+          2019
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C03.png",
+        "bbox": [
+          349,
+          120,
+          1780,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C06.png",
+        "bbox": [
+          503,
+          120,
+          1478,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C07.png",
+        "bbox": [
+          484,
+          120,
+          1574,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C09.png",
+        "bbox": [
+          306,
+          120,
+          1840,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C10.png",
+        "bbox": [
+          537,
+          120,
+          1534,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C11.png",
+        "bbox": [
+          380,
+          120,
+          1728,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C12.png",
+        "bbox": [
+          495,
+          120,
+          1688,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C13.png",
+        "bbox": [
+          410,
+          120,
+          1714,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_C14.png",
+        "bbox": [
+          351,
+          120,
+          1626,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_M.png",
+        "bbox": [
+          262,
+          120,
+          1984,
+          2043
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T02.png",
+        "bbox": [
+          64,
+          120,
+          1916,
+          2043
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T03.png",
+        "bbox": [
+          438,
+          120,
+          1640,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_T04.png",
+        "bbox": [
+          256,
+          120,
+          1631,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U1.png",
+        "bbox": [
+          233,
+          120,
+          1774,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U2.png",
+        "bbox": [
+          64,
+          120,
+          1972,
+          1949
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U3.png",
+        "bbox": [
+          398,
+          120,
+          1622,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U4.png",
+        "bbox": [
+          334,
+          120,
+          1846,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U5.png",
+        "bbox": [
+          64,
+          120,
+          1963,
+          1967
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/taiga/taiga_U6.png",
+        "bbox": [
+          64,
+          121,
+          1747,
+          1849
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C03.png",
+        "bbox": [
+          421,
+          120,
+          1664,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C06.png",
+        "bbox": [
+          654,
+          120,
+          1450,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C07.png",
+        "bbox": [
+          594,
+          120,
+          1442,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C09.png",
+        "bbox": [
+          369,
+          120,
+          1749,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C10.png",
+        "bbox": [
+          663,
+          120,
+          1435,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C11.png",
+        "bbox": [
+          565,
+          120,
+          1517,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C12.png",
+        "bbox": [
+          620,
+          120,
+          1604,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C13.png",
+        "bbox": [
+          580,
+          120,
+          1522,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_C14.png",
+        "bbox": [
+          469,
+          120,
+          1569,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_M.png",
+        "bbox": [
+          242,
+          120,
+          1840,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T02.png",
+        "bbox": [
+          146,
+          120,
+          1916,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T03.png",
+        "bbox": [
+          573,
+          121,
+          1514,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_T04.png",
+        "bbox": [
+          264,
+          121,
+          1557,
+          2048
+        ],
+        "status": "visual_review_passed"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U1.png",
+        "bbox": [
+          466,
+          120,
+          1830,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U2.png",
+        "bbox": [
+          315,
+          120,
+          1542,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U3.png",
+        "bbox": [
+          526,
+          120,
+          1545,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U4.png",
+        "bbox": [
+          377,
+          120,
+          1689,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U5.png",
+        "bbox": [
+          522,
+          120,
+          1557,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      },
+      {
+        "path": "art/sprites/yuu/yuu_U6.png",
+        "bbox": [
+          337,
+          120,
+          1777,
+          2048
+        ],
+        "status": "needs_visual_qa"
+      }
+    ]
+  }
+}
