@@ -34,9 +34,20 @@ await write('Assets/Data/rules.json',{rules});
 for(const slug of await fs.readdir(path.join(repo,'art/sprites'))){
  for(const f of await fs.readdir(path.join(repo,'art/sprites',slug)))if(f.endsWith('.webp')&&!f.startsWith('sheet'))await copy(`art/sprites/${slug}/${f}`,`Assets/Art/sprites/${slug}/${f}`);
 }
-for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png','trial/focus_track.png','trial/focus_fill.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
+for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png','trial/focus_track.png','trial/focus_fill.png','trial/bullet_cylinder.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
 await write('Assets/Art/ui/aim.svg','<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="#ff4fa3" stroke-width="4"/><circle cx="32" cy="32" r="3" fill="#ffffff"/><path d="M32 2v14M32 48v14M2 32h14M48 32h14" stroke="#ffffff" stroke-width="3"/></svg>');
 await write('Assets/Art/ui/vpoint.svg','<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" fill="#ff2040" stroke="#ffffff" stroke-width="2"/></svg>');
+
+const hudSvg={
+ name:'<svg xmlns="http://www.w3.org/2000/svg" width="420" height="80"><path d="M28 6H414L392 74H6Z" fill="#0b1018" fill-opacity=".82" stroke="#36e3ff" stroke-width="2"/><path d="M40 12H300" stroke="#36e3ff" stroke-opacity=".6"/>'+Array.from({length:9},(_,i)=>`<circle cx="${48+i*12}" cy="62" r="2.6" fill="#ffffff" fill-opacity="${.9-i*.08}"/>`).join('')+'</svg>',
+ status:'<svg xmlns="http://www.w3.org/2000/svg" width="330" height="116"><path d="M40 4H326L292 112H6Z" fill="#0b1018" fill-opacity=".8" stroke="#36e3ff" stroke-width="2"/><path d="M52 30H306" stroke="#ffffff" stroke-opacity=".35"/></svg>',
+ bullet:'<svg xmlns="http://www.w3.org/2000/svg" width="420" height="50"><path d="M18 3H417L402 47H3Z" fill="#0b1018" fill-opacity=".85" stroke="#ffffff" stroke-width="2.5"/><path d="M3 47L18 3" stroke="#36e3ff" stroke-width="5"/></svg>',
+ timer:'<svg xmlns="http://www.w3.org/2000/svg" width="330" height="64"><path d="M26 3H327L304 61H3Z" fill="#0b1018" fill-opacity=".85" stroke="#36e3ff" stroke-width="2"/><path d="M28 20v28M28 20h22l-6 7 6 7H28" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/></svg>',
+ heartOn:'<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 29C4 20 1 13 4 8s10-5 12 1c2-6 9-6 12-1s0 12-12 21z" fill="#ff4fa3" stroke="#ffd1e8" stroke-width="2"/></svg>',
+ heartOff:'<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 29C4 20 1 13 4 8s10-5 12 1c2-6 9-6 12-1s0 12-12 21z" fill="#2a2030" stroke="#6b5470" stroke-width="2"/></svg>',
+ starOn:'<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 2l4.2 9.3 10.1 1-7.6 6.8 2.2 10L16 24l-8.9 5.1 2.2-10L1.7 12.3l10.1-1z" fill="#6dff8f" stroke="#e5ffe9" stroke-width="1.6"/></svg>',
+ starOff:'<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 2l4.2 9.3 10.1 1-7.6 6.8 2.2 10L16 24l-8.9 5.1 2.2-10L1.7 12.3l10.1-1z" fill="#1c2a22" stroke="#4b6b55" stroke-width="1.6"/></svg>'};
+for(const [k,v] of Object.entries(hudSvg))await write(`Assets/Art/ui/hud_${k}.svg`,v);
 // 글꼴 : 대화창 Pretendard + 논의용 인물·감정 글꼴(docs/spec/04 §4-3). 라이선스 파일도 같이 복사
 const fontFiles={pretendard:['Pretendard-Medium.otf','LICENSE.txt'],blackhansans:['BlackHanSans-Regular.ttf','OFL.txt'],gothica1:['GothicA1-Light.ttf','GothicA1-Regular.ttf','GothicA1-Bold.ttf','OFL.txt'],songmyung:['SongMyung-Regular.ttf','OFL.txt'],jua:['Jua-Regular.ttf','OFL.txt'],notoserifkr:['NotoSerifKR[wght].ttf','OFL.txt'],gowundodum:['GowunDodum-Regular.ttf','OFL.txt'],gowunbatang:['GowunBatang-Regular.ttf','OFL.txt'],cutefont:['CuteFont-Regular.ttf','OFL.txt'],dohyeon:['DoHyeon-Regular.ttf','OFL.txt'],galmuri:['Galmuri11.ttf','LICENSE.txt'],dokdo:['Dokdo-Regular.ttf','OFL.txt'],eastseadokdo:['EastSeaDokdo-Regular.ttf','OFL.txt'],gugi:['Gugi-Regular.ttf','OFL.txt'],kiranghaerang:['KirangHaerang-Regular.ttf','OFL.txt'],gaegu:['Gaegu-Regular.ttf','OFL.txt'],nanumpenscript:['NanumPenScript-Regular.ttf','OFL.txt']};
 for(const [dir,files] of Object.entries(fontFiles))for(const f of files)await copy(`fonts/${dir}/${f}`,`Assets/Fonts/${dir}/${f.replace('[wght]','-VF')}`);
@@ -62,18 +73,21 @@ add('Image','DialogFrame',[80,512,1120,170],{texture:'Assets/Art/ui/frame.png',i
 add('Image','Nameplate',[104,486,220,44],{texture:'Assets/Art/ui/nameplate.png',imageFit:'fill'});
 add('Text','Name',[118,490,196,36],{font:head,fontSize:26,align:'center',color:'#ffffff'});
 add('Text','Body',[136,548,1010,120],{fontSize:25,wrap:true});
-add('Text','Hint',[760,690,500,26],{text:'Enter·클릭 다음   Ctrl 빨리감기   Tab 래피 패드',fontSize:16,color:'#b9a9c6',align:'right'});
-add('Text','SceneTitle',[24,16,800,30],{fontSize:18,color:'#d9b8e8'});
 // 논스톱 논의 (V3) HUD + 화자 앞쪽 글자층
 add('Panel','Trial',[0,0,1280,720],{visible:false});
 for(let i=0;i<MAIN_GLYPHS;i++)glyph('MF'+i,'Trial',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NF'+i,'Trial',34);
-add('Panel','NameBand',[0,18,560,62],{background:'#000000c0'},'Trial');
-add('Text','TrialSpeaker',[36,24,520,50],{font:head,fontSize:38,color:'#ffffff'},'Trial');
-for(let i=0;i<5;i++)add('Image','Heart'+i,[1010+i*50,22,44,44],{texture:'Assets/Art/ui/heart_full.png',imageFit:'contain'},'Trial');
-add('Image','FocusTrack',[930,74,320,28],{texture:'Assets/Art/ui/focus_track.png',imageFit:'fill'},'Trial');
-add('Image','FocusFill',[948,81,284,14],{texture:'Assets/Art/ui/focus_fill.png',imageFit:'fill'},'Trial');
-add('Text','Bullet',[40,646,780,46],{fontSize:24,color:'#ffe9a8',background:'#1b1325e6',padding:8},'Trial');
-add('Text','TrialHint',[700,618,560,24],{text:'Q/E 언령  클릭 발사  길게 눌렀다 떼기 거짓 탄환  우클릭 사일런서  Shift 집중',fontSize:15,color:'#b9a9c6',align:'right'},'Trial');
+add('Image','NamePanel',[22,12,420,80],{texture:'Assets/Art/ui/hud_name.svg',imageFit:'fill'},'Trial');
+add('Text','TrialSpeaker',[66,20,300,34],{font:head,fontSize:24,color:'#ffffff'},'Trial');
+add('Image','StatusPanel',[936,52,330,116],{texture:'Assets/Art/ui/hud_status.svg',imageFit:'fill'},'Trial');
+add('Text','StatusLabel',[994,58,140,22],{text:'STATUS',font:body,fontSize:15,color:'#ffffff'},'Trial');
+for(let i=0;i<10;i++)add('Image','Heart'+i,[990+i*25,90-i*1.6,26,26],{texture:'Assets/Art/ui/hud_heartOn.svg',imageFit:'contain'},'Trial');
+for(let i=0;i<10;i++)add('Image','Star'+i,[978+i*25,128-i*1.6,24,24],{texture:'Assets/Art/ui/hud_starOn.svg',imageFit:'contain'},'Trial');
+add('Image','Cylinder',[4,470,140,140],{texture:'Assets/Art/ui/bullet_cylinder.png',imageFit:'contain'},'Trial');
+add('Image','BulletPlate',[122,560,420,50],{texture:'Assets/Art/ui/hud_bullet.svg',imageFit:'fill'},'Trial');
+add('Text','Bullet',[156,567,370,36],{font:head,fontSize:25,color:'#ffffff'},'Trial');
+add('Text','BulletLabel',[220,612,160,20],{text:'언령',font:body,fontSize:15,color:'#d9e7ee'},'Trial');
+add('Image','TimerPanel',[938,644,330,64],{texture:'Assets/Art/ui/hud_timer.svg',imageFit:'fill'},'Trial');
+add('Text','Timer',[1004,652,240,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:42,color:'#ffb21f',align:'right'},'Trial');
 add('Image','VPoint',[0,0,22,22],{texture:'Assets/Art/ui/vpoint.svg',imageFit:'contain',visible:false},'Trial').slot.alignment=[.5,.5];
 add('Text','TrialMsg',[0,300,1280,80],{font:head,fontSize:60,align:'center',color:'#ff8fc8',visible:false},'Trial');
 add('Image','Cutin',[128,200,1024,342],{texture:'Assets/Art/ui/cutin_objection.png',imageFit:'contain',visible:false},'Trial');

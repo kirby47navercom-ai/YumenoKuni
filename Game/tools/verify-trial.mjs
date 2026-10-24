@@ -58,7 +58,7 @@ try{
   assert(after.mode!=='trial'||after.trial.broken>before||after.trial.clearing||after.trial.debate!==deb,'정답이면 논파');
  }
  s=await stats();await probe.capture('05-end.png');
- assert.equal(s.mode,'end','논의 3개 클리어 후 종료');
+ assert.equal(s.mode,'title','논의 3개 클리어 후 타이틀로');
  assert(maxBack>0,'글자가 화자 뒤로 지나감(뒤층 사용)');assert(maxFront>0,'화자 앞 글자');
  const result={ok:true,breaks:report.length,maxBack,maxFront,motions:[...motions]};
  await fs.writeFile(path.join(work,'report.json'),JSON.stringify({...result,report},null,1));

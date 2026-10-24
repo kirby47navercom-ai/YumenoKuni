@@ -21,7 +21,8 @@ private:
  std::vector<std::pair<std::string,std::string>> bullets;
  int debateAt=0,bullet=0,shownLine=-1,shownHearts=-1,shownNoise=-1,vBreaks=0;
  float messageTimer=0,cutinTimer=0,clearTimer=0,holdTime=-1,cameraFrom=0,cameraTo=0,cameraAngle=0,cameraTime=1;
- int speakerSeat=-1;
+ int speakerSeat=-1,retries=0,shownStars=-1;
+ float debateTime=180;
  std::map<std::string,hb::Actor*> actors;
  float aimX=640,aimY=360;
  bool lie=false;

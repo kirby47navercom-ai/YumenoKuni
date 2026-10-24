@@ -1,5 +1,6 @@
 #include "Yumeno.h"
 #include "Courtroom.hpp"
+#include <cstdio>
 using namespace hb;
 
 namespace {
@@ -79,20 +80,19 @@ void Yumeno::present(){
  text("Name",speaker);
  UI::SetVisible(this,UI_ID,"Portrait",!portrait.empty());
  if(!portrait.empty())UI::SetTexture(this,UI_ID,"Portrait",portrait);
- if(scene<int(file["scenes"].size()))text("SceneTitle",file["scenes"][scene].value("title",""));
  text("Body","");
 }
 
 void Yumeno::dialogVisible(bool visible){
- for(auto id:{"DialogFrame","Nameplate","Name","Body","Hint","SceneTitle"})UI::SetVisible(this,UI_ID,id,visible);
+ for(auto id:{"DialogFrame","Nameplate","Name","Body"})UI::SetVisible(this,UI_ID,id,visible);
 }
 
 void Yumeno::message(const std::string& value,float seconds){text("TrialMsg",value);UI::SetVisible(this,UI_ID,"TrialMsg",true);messageTimer=seconds;}
 
 void Yumeno::showBullet(){
  if(bullets.empty())return;
- auto& b=bullets[bullet];
- text("Bullet",std::string(lie?"거짓 언령  ◀ 「":"언령  ◀ 「")+b.second+(lie?"」의 반대 ▶   (":"」 ▶   (")+std::to_string(bullet+1)+"/"+std::to_string(bullets.size())+")");
+ text("Bullet",(lie?"거짓 · ":"")+bullets[bullet].second);
+ UI::SetRotation(this,UI_ID,"Cylinder",bullet*72.f);
 }
 
 
@@ -125,10 +125,9 @@ static std::pair<std::string,std::string> fontsOf(const std::string& slug);
 void Yumeno::startDebate(int at){
  auto& list=trials["debates"];
  if(at>=int(list.size())){
-  mode=Mode::End;UI::SetVisible(this,UI_ID,"Trial",false);UI::SetVisible(this,UI_ID,"TrialBack",false);UI::SetVisible(this,UI_ID,"Background",false);
-  UI::SetVisible(this,UI_ID,"Backdrop",true);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);dialogVisible(true);UI::SetVisible(this,UI_ID,"Portrait",false);
-  speaker.clear();line="— 1장 논스톱 논의 체험 끝. Enter로 타이틀 —";text("Name","");text("Body",line);text("SceneTitle","");
-  UI::SetVisible(this,UI_ID,"Nameplate",false);UI::SetVisible(this,UI_ID,"Name",false);
+  mode=Mode::Title;debate=debate::State{};
+  for(auto id:{"Trial","TrialBack","SpeakerPodium","Portrait"})UI::SetVisible(this,UI_ID,id,false);
+  for(auto id:{"Backdrop","Title"})UI::SetVisible(this,UI_ID,id,true);
   return;
  }
  debateAt=at;auto& d=list[at];
@@ -149,7 +148,7 @@ void Yumeno::startDebate(int at){
  UI::SetVisible(this,UI_ID,"Trial",true);UI::SetVisible(this,UI_ID,"TrialBack",true);
  UI::SetVisible(this,UI_ID,"Backdrop",false);UI::SetVisible(this,UI_ID,"Portrait",false);
  setupCourt();
- showBullet();message("논스톱 논의 개시!",1.6f);
+ debateTime=180;showBullet();message("논스톱 논의 개시!",1.6f);
 }
 
 // 인물별 논의 글꼴 (docs/spec/04 §4-3) : {평소, 감정 폭발}
@@ -214,8 +213,11 @@ void Yumeno::updateDebate(float delta){
  // 집중 : Shift 를 누르는 동안 시간 0.35배, 게이지 소모. 놓으면 회복.
  bool focusing=Input::IsKeyDown("Shift")&&debate.focus>0;
  debate.focus=std::clamp(debate.focus+(focusing?-28.f:9.f)*delta,0.f,100.f);
- UI::SetSize(this,UI_ID,"FocusFill",{284*debate.focus/100,14});
+ {int lit=int(std::ceil(debate.focus/10));if(lit!=shownStars){shownStars=lit;for(int k=0;k<10;k++)UI::SetTexture(this,UI_ID,"Star"+std::to_string(k),k<lit?"Assets/Art/ui/hud_starOn.svg":"Assets/Art/ui/hud_starOff.svg");}}
  bool turning=cameraTime<1;
+ if(!turning)debateTime-=delta*(Input::IsKeyDown("Shift")&&debate.focus>0?.35f:1);
+ {int ms=std::max(0,int(debateTime*1000));char t[16];std::snprintf(t,sizeof t,"%02d:%02d:%03d",ms/60000,ms/1000%60,ms%1000);text("Timer",t);}
+ if(debateTime<=0){message("시간 초과… 처음부터!",2.f);debateTime=180;debate.hearts=5;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;retries++;}
  bool changed=(!turning&&debate.tick(delta*(focusing?.35f:1)))||shownLine!=debate.index;
  if(changed){shownLine=debate.index;styleLine();}
  if(turning){
@@ -234,7 +236,8 @@ void Yumeno::updateDebate(float delta){
  drawGlyphs("N",26,debate.noise());
  float vx=0,vy=0;bool hasV=focusing&&debate.vpoint(vx,vy);
  UI::SetVisible(this,UI_ID,"VPoint",hasV);if(hasV)UI::SetPosition(this,UI_ID,"VPoint",{vx,vy});
- if(shownHearts!=debate.hearts){shownHearts=debate.hearts;for(int k=0;k<5;k++)UI::SetTexture(this,UI_ID,"Heart"+std::to_string(k),k<debate.hearts?"Assets/Art/ui/heart_full.png":"Assets/Art/ui/heart_empty.png");}
+ // 발언력 : 하트 10개 줄(발언력 1 = 하트 2개)
+ if(shownHearts!=debate.hearts){shownHearts=debate.hearts;for(int k=0;k<10;k++)UI::SetTexture(this,UI_ID,"Heart"+std::to_string(k),k<debate.hearts*2?"Assets/Art/ui/hud_heartOn.svg":"Assets/Art/ui/hud_heartOff.svg");}
  // 조준 : 마우스 위치(뷰포트 픽셀). ponytail: 창 크기 1280×720 고정 가정.
  Vec2 m;if(Input::GetMousePosition(m)){aimX=m.x;aimY=m.y;}
  UI::SetPosition(this,UI_ID,"Aim",{aimX-32,aimY-32});
@@ -265,7 +268,7 @@ void Yumeno::updateDebate(float delta){
   if(debate.cleared()){message(v?"V논파! 논의 종료!":"논파 완료!",2.2f);clearTimer=2.4f;}
   else{message(lieShot?"위증!":v?"V논파!":"논파!",1.0f);debate.next();}
  }else{
-  if(--debate.hearts<=0){message("발언력이 바닥났어요… 처음부터!",2.f);debate.hearts=5;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;}
+  if(--debate.hearts<=0){message("발언력이 바닥났어요… 처음부터!",2.f);debate.hearts=5;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;debateTime=180;retries++;}
   else message("아야! 틀렸어요~!",1.2f);
  }
 }
