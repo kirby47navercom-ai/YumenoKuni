@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-유메노쿠니 캐릭터 T자 일러스트 생성 스크립트 (NovelAI)
+유메노쿠니 캐릭터 입상·포즈 생성 스크립트 (NovelAI V5)
 
 사용법
   1) pip install requests
@@ -12,7 +12,8 @@
      python generate_tpose_nai.py --n 3           # 캐릭터당 3장
      python generate_tpose_nai.py --seed 12345    # 시드 고정(재현)
 
-결과는 ./tpose_out/ 에 PNG 로 저장됨.
+결과는 art/_candidates/ 에 PNG + 같은 이름의 .txt(모델·시드·프롬프트)로 저장됨.
+고른 것은 art/standing/{slug}.png / {slug}.txt 로 옮긴다.
 Anlas 를 소모하므로 처음엔 --only 로 1~2명만 테스트하는 것을 권장.
 엔드포인트/모델명은 NovelAI 쪽 변경 가능성이 있으니 오류가 나면 공식 문서를 확인할 것.
 """
@@ -120,8 +121,6 @@ TOP = "1.3::extremely attractive::, sparkling eyes, striking charm"
 TOP_BOY = "bishounen, handsome, "
 HERO = "1.4::striking protagonist presence, beautiful heroine::"
 TOP_SET = {"taiga", "sho", "yuu", "akari", "riku", "sora", "ken"}
-MID_SET = set()
-MID = ""
 MALES = {"rei", "sora", "ken", "riku", "yuu", "taiga", "sho"}
 
 
@@ -152,7 +151,7 @@ def build_prompts(name: str, verbatim: bool, pose: str = None):
         tier += HERO + ", "
     frame = POSE if pose is None else SPRITE_FRAME
     act = pose_tags(name, pose)
-    positive = f"{CHARACTERS[name]}, {act + ', ' if act else ''}{tier}{frame}, {style}"
+    positive = " ".join(f"{CHARACTERS[name]}, {act + ', ' if act else ''}{tier}{frame}, {style}".split())
     if verbatim:
         return positive, NEGATIVE
     extra = EXTRA_NEGATIVE + STAND_NEG
@@ -245,7 +244,7 @@ def main():
     parser.add_argument("--n", type=int, default=1, help="캐릭터당 장수")
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--verbatim", action="store_true", help="스타일 프롬프트 원문 그대로 사용")
-    parser.add_argument("--out", default="tpose_out")
+    parser.add_argument("--out", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "art", "_candidates"))
     parser.add_argument("--pose", nargs="*", default=None, help="포즈 ID (예: C02 T01 U3 M X1). 없으면 전신 기준 입상")
     args = parser.parse_args()
 
@@ -265,6 +264,8 @@ def main():
             try:
                 content = generate(token, positive, negative, seed)
                 for p in save_zip(content, args.out, tag, seed):
+                    with open(p[:-4] + ".txt", "w", encoding="utf-8") as f:
+                        f.write(f"model: {MODEL}\nsize: {WIDTH}x{HEIGHT}  steps: {STEPS}  scale: {SCALE}  sampler: {SAMPLER}\nseed: {seed}\n\n[positive]\n{positive}\n\n[negative]\n{negative}\n")
                     print("  saved:", p)
             except Exception as e:
                 print("  실패:", e)
