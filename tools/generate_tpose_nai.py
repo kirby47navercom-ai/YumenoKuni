@@ -28,32 +28,46 @@ import zipfile
 import requests
 
 API_URL = "https://image.novelai.net/ai/generate-image"
-MODEL = "nai-diffusion-4-5-full"
+MODEL = "nai-diffusion-5-full"
 WIDTH, HEIGHT = 832, 1216
 STEPS = 28
 SCALE = 5.0
 SAMPLER = "k_euler_ancestral"
 NOISE_SCHEDULE = "karras"
 
-# ---- 사용자가 지정한 스타일 프롬프트 (v4 : 단간론파 화풍) ----------------------
-# 원문 맨 앞의 "1girl" 은 인물 프롬프트(1girl/1boy)로 옮겼다.
+# ---- 사용자가 지정한 스타일 프롬프트 (v5) ----------------------------------
 STYLE_POSITIVE = (
-    "in style of Danganronpa, danganronpa, official art, 2::artist:komatsuzaki rui ::, "
-    "0.7::artist:Mx2j ::, 0.6::artist:ratatatat74 ::, 0.5::artist:nyong nyong ::, "
-    "0.7::artist:tokiame ::, year 2023, year 2024, year 2025, {{white background}}, "
-    "{{detailed eyes, beautiful eyes, sharp eyelash}}, "
-    "{{{depth of field, masterpiece, best quality, amazing quality, aesthetic, highres, absurdres}}}"
+    "1.35::artist:shiun (siun 5513)::, 1.75::artist:zero (miraichizu)::, "
+    "1::artist:healthyman::, 1.45::artist:samidare (hoshi)::, "
+    "1.3::artist:kimhiro::, artist:doremi, 1.5::artist:aiamu iamu::, "
+    "year 2025, year 2024, year 2023, blurry background, depth of field, "
+    "incredibly absurdres, very aesthetic, highres, masterpiece, best quality, "
+    "amazing quality, best illustration, digital art, "
+    "-3::empty eyes, artist collaboration,doll::, dynamic angle, shiny skin, "
+    "location, smooth coloring,"
 )
 
 NEGATIVE = (
-    "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, "
-    "jpeg artifacts, very displeasing, chromatic aberration, logo, too many watermarks, "
-    "text, nsfw, villan, evil, blank eyes, empty eyes, "
+    "text, logo, watermark, too many watermarks, reference, signature, artist name, "
+    "dated, artistic error, scan artifacts, jpeg artifacts, upscaled, aliasing, "
+    "film grain, heavy film grain, dithering, chromatic aberration, digital dissolve, "
+    "halftone, screentones, artist:xinzoruo, artist:milkpanda, artist:kurukurumagical, "
+    "2::artist:bkub ::, artist collaboration, one-hour drawing challenge, toon (style), "
+    "1990s (style), 4koma, 2koma, mutation, deformed, distorted, disfigured, "
+    "1.2::bad anatomy ::, unnatural hair, bad face,  mob face, bad eyes, empty eyes, "
+    "bad proportions, bad limbs, amputee, bad arm, bad hands, bad hand structure, "
+    "extra digits, fewer digits, bad leg, extra leg, distorted composition, "
+    "bad perspective, multiple views, disorganized colors, unfinished, incomplete, "
+    "displeasing, very displeasing, unsatisfactory, inadequate, deficient, subpar, "
+    "poor, blurry, lowres, worst quality, bad quality, fewer details, bad portrait, "
+    "bad illustration, dark skin, plants, grass, leaves, hot coloring, reddish lips, "
+    "colored lips, cool tone, re:stage!, poptepipic, monochrome,"
 )
 
-POSE = "standing, full body, front view, looking at viewer, simple background"
-DROP_FROM_STYLE = []
-EXTRA_NEGATIVE = "t-pose, arms outstretched, from above, from below, foreshortening, cropped, out of frame, multiple views, "
+# 입상은 흰 배경 단독 컷이 필요하므로 구도를 흔드는 태그는 뺀다(원문 그대로는 --verbatim)
+POSE = "standing, full body, front view, looking at viewer, simple background, white background"
+DROP_FROM_STYLE = ["dynamic angle,", "blurry background,", "depth of field,", "location,"]
+EXTRA_NEGATIVE = "t-pose, arms outstretched, dynamic angle, from above, from below, foreshortening, cropped, out of frame, "
 
 MALE = "male focus, masculine body, broad shoulders, flat chest, narrow hips, long legs"
 MALE_NEG = "androgynous, feminine body, wide hips, curvy, breasts, thick thighs, 1girl, "
@@ -68,7 +82,7 @@ CHARACTERS = {
     "ken": f"1boy, solo, tall lean, {MALE}, wavy deep wine-red hair swept to one side, half-lidded sharp amber eyes, beauty mark under eye, 1.4::burgundy school blazer with gold piping worn draped over shoulders like a cape::, open-collar black shirt, loose red ribbon tie, white gloves, half theatre mask at belt, black slacks, smirk, theatrical",
     "nana": f"1girl, solo, short, slender fragile frame, 1.7::lavender hair, light purple hair::, low side ponytail over shoulder, white hair ribbon, pale violet eyes, pale skin, 1.4::white sailor school uniform with pale lavender collar and long white skirt::, cream knit cardigan, 1.5::white ribbon wrapped like bandage around left wrist::, forget-me-not hairpin, gentle shy smile",
     "riku": f"1boy, solo, short, slim boyish frame, {MALE}, curly tangerine orange hair, golden cat-like eyes, 1.2::tiny black mini top hat on head::, 1.4::black gakuran school uniform with gold buttons, short red-lined cape::, black bow tie, white gloves, black school shorts with checkered socks, mischievous grin, trickster",
-    "akari": f"1girl, solo, average height, neat slim figure, chestnut auburn high ponytail with dark green scrunchie, green eyes, 1.4::dark green school blazer with white trim, buttoned neatly::, white shirt, green plaid skirt, long sleeves buttoned at wrists, clock-shaped hairpin, 1.3::silver wristwatch::, hourglass charm, serious earnest expression",
+    "akari": f"1girl, solo, average height, neat slim figure, 1.8::auburn hair, chestnut brown hair::, high ponytail with dark green scrunchie, green eyes, 1.4::dark green school blazer with white trim, buttoned neatly::, white shirt, green plaid skirt, white knee socks, brown loafers, 1.4::full body, feet visible::, long sleeves buttoned at wrists, clock-shaped hairpin, 1.3::silver wristwatch::, hourglass charm, serious earnest expression",
     "yuu": f"1boy, solo, lanky, {MALE}, 1.2::masculine face, defined jaw::, messy bright cyan-teal hair, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, 1.4::open navy gakuran school jacket over white band t-shirt::, loose navy trousers, chain wallet, red high-top sneakers, guitar pick necklace, wide friendly grin",
     "koto": f"1girl, solo, tall, calm graceful figure, long honey caramel brown hair half-up with flower ornament, gentle light brown eyes, 1.4::classic navy sailor school uniform with long navy skirt::, long beige cardigan, 1.4::red armband on left arm::, small gear-shaped pin, red thread tied on ring finger, kind warm smile, class president",
     "satsuki": f"1girl, solo, tall, toned athletic build, 1.7::dark green hair::, short low ponytail with braided cord, sharp violet eyes, 1.4::khaki military-style school blazer with brass buttons::, black skirt, black tights, laced boots, 1.4::brown leather archery arm guards::, black scarf around neck, feather charm, quiet stern expression",
@@ -112,7 +126,7 @@ MALES = {"rei", "sora", "ken", "riku", "yuu", "taiga", "sho"}
 
 
 POSES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "art", "poses.json")
-SPRITE_FRAME = "cowboy shot, upper body to thighs, front view, looking at viewer, simple background"
+SPRITE_FRAME = "cowboy shot, upper body to thighs, front view, looking at viewer, simple background, white background"
 
 
 def pose_tags(name: str, pose: str):
