@@ -17,6 +17,7 @@ Anlas 를 소모하므로 처음엔 --only 로 1~2명만 테스트하는 것을 
 엔드포인트/모델명은 NovelAI 쪽 변경 가능성이 있으니 오류가 나면 공식 문서를 확인할 것.
 """
 import argparse
+import json
 import io
 import os
 import random
@@ -66,7 +67,7 @@ NEGATIVE = (
 # T자 기준 시트용 추가 지시. 스타일 프롬프트의 '구도를 흔드는' 태그와 충돌하므로
 # 아래 제거 목록을 적용 (원문을 그대로 쓰고 싶으면 --verbatim)
 POSE = (
-    "standing, feet together, arms at sides, relaxed pose, full body, straight-on, front view, "
+    "standing, full body, straight-on, front view, "
     "looking at viewer, simple background, white background, "
     "character sheet, flat lighting"
 )
@@ -77,39 +78,75 @@ BOY_UNI = "navy blazer, red necktie, grey slacks, long trousers, school uniform"
 GIRL_UNI = "navy blazer, red ribbon, plaid skirt, school uniform"
 MALE = "male focus, masculine body, broad shoulders, flat chest, narrow hips, long legs"
 MALE_NEG = "androgynous, feminine body, wide hips, curvy, breasts, thick thighs, 1girl, "
-STAND_NEG = "glasses, eyewear, hand on hip, hands on hips, hand in pocket, hands in pockets, walking, one leg forward, wind, windblown, "
+STAND_NEG = "glasses, eyewear, school blazer, plaid skirt, walking, running, jumping, wind, windblown, "
 NO_STREAK_NEG = "multicolored hair, streaked hair, colored inner hair, gradient hair, colored tips, "
 
+# v3 : 인물마다 고유 의상(V3식 개인 복장) · 체형 · 시그니처 포즈 · 겹치지 않는 머리색
 CHARACTERS = {
-    "mio": f"1girl, solo, short black bob hair, outward flipped hair ends, olive brown eyes, small and slight, {GIRL_UNI}, oversized blazer sleeves covering hands, 2::small notebook strapped to left wrist with rubber band::, hands at sides, small worn rabbit keychain with red-stitched ear hanging from blazer pocket, pen tucked behind ear, ink-stained fingertips, bookmark ribbon sticking out of blazer pocket, black knee socks, plain ordinary look, shy faint smile",
-    "rei": f"1boy, solo, tall slender, {MALE}, short dark ash-grey hair with bluish tint, 1.5::long bangs covering right eye, hair over one eye::, cold blue-grey eyes, {BOY_UNI}, grey vest under blazer, 1.3::metal tie pin::, 1.4::black leather wrist cuffs on both wrists::, black leather shoes, antique pocket watch with silver chain on vest, upright posture, expressionless, aristocratic",
-    "sora": f"1boy, solo, athletic build, {MALE}, messy spiky golden-blonde hair, ahoge, red headband around forehead, big bright orange eyes, {BOY_UNI}, 1.4::orange hoodie under blazer::, 1.3::orange paracord bracelet::, small fire-department badge on blazer, white sneakers, 1.3::standing still, legs straight and together, symmetrical stance::, both feet flat on ground, hands at sides, reflective stripe armband, carabiner clipped to belt, energetic wide grin",
-    "ken": f"1boy, solo, lean, {MALE}, wavy dark wine-red hair swept to one side, sharp amber eyes, 1.3::blazer draped over shoulders, not wearing sleeves::, white shirt, unbuttoned collar, loosened black necktie, grey slacks, 1.2::large gold wristwatch::, silver ring, small beauty mark under eye, 1.2::five-yen coin on string necklace like a hypnosis pendulum::, small half theatre mask hanging at belt, confident smirk, theatrical, 1.3::both arms straight down at sides::, standing straight, feet together",
-    "nana": f"1girl, solo, slender, silver-white hair in a low ponytail resting over shoulder, chest-length hair, white hair ribbon, light purple eyes, pale skin, {GIRL_UNI}, 1.3::white cardigan over uniform::, small cross pin, 1.5::short white ribbon bandage wrapped around left wrist, ribbon tied in small bow::, hands at sides, white knee socks, forget-me-not flower hairpin, herbal tea sachet charm on cardigan, gentle soft smile",
-    "riku": f"1boy, solo, slim, {MALE}, short wavy orange hair, golden eyes, 1.2::mischievous grin::, 1.2::tiny mini top hat clipped to hair::, grey vest, 1.2::black bow tie::, 1.3::white gloves::, white shirt, 1.3::long grey trousers::, playing card tucked in vest pocket, joker playing card in vest pocket, coin between fingers, magician style, standing still, hands at sides, legs together",
-    "akari": f"1girl, solo, tidy, auburn red-brown high ponytail with dark green scrunchie, green eyes, {GIRL_UNI}, 1.2::long sleeves buttoned at wrists::, 1.3::silver wristwatch on left wrist::, white knee socks, straight neat posture, clock-shaped hair pin, small hourglass charm on watch, medical cross tag on blazer, serious expression, pen in blazer pocket",
-    "yuu": f"1boy, solo, slim, {MALE}, short messy bright teal hair, 1.2::masculine face, defined jaw, adam's apple::, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, white shirt untucked, no blazer, rolled-up sleeves, black wristband, 1.3::loose baggy straight-leg grey trousers::, guitar pick necklace, red sneakers, music note earring, sound wave pin on shirt, friendly open smile, hands at sides",
-    "koto": f"1girl, solo, caramel brown long hair half-up with small flower hair ornament, gentle light brown eyes, {GIRL_UNI}, 1.3::long beige cardigan under blazer, long sleeves::, 1.4::red armband on left arm::, small gear-shaped pin, beige loafers, small rule notebook and clipboard pin, red thread tied around ring finger, kind smile, class representative",
-    "satsuki": f"1girl, solo, athletic, dark forest-green hair in short low ponytail with braided cord, sharp violet eyes, {GIRL_UNI}, 1.3::worn khaki jacket over uniform::, 1.4::brown leather archery arm guards on both forearms::, black ankle boots, black shadow-colored scarf, feather charm on cord, arms straight at sides, quiet stern expression",
-    "taiga": f"1boy, solo, very tall, huge, {MALE}, short black buzz cut, handsome sharp face, muscular arms, tall strong build, earnest eyes, {BOY_UNI}, 1.2::rolled-up sleeves::, 1.4::white athletic tape on fingers and wrists::, whistle on cord around neck, patrol armband, black judo belt tied around waist over uniform, determined expression",
-    "rin": f"1girl, solo, small, short blue-black bob, 1.3::one single light blue hair streak::, hazel eyes, {GIRL_UNI}, oversized yellow hoodie under blazer, rolled-up sleeves, 1.3::ring of keys on belt::, 1.3::key-shaped bracelet::, mismatched socks, lockpick tools tucked in hair, small cat-eye mask pushed up on head, playful wink, tongue out",
-    "sho": f"1boy, solo, tall slender, {MALE}, neat short dark chocolate-brown hair, gentle teal eyes, {BOY_UNI}, grey knit vest, white shirt, 1.3::penlight in chest pocket::, thin wristwatch, adhesive bandage on cheek, bandaged knuckles, calm composed expression",
-    "ai": f"1girl, solo, petite, short, mint-green bob with blunt bangs, big rose-pink eyes, {GIRL_UNI}, 1.4::white apron over uniform::, 1.2::small white kerchief on head::, rolled-up sleeves, small ladle in apron pocket, large name tag pinned on apron, kitchen timer pendant, quiet expression",
-    "haruka": f"1girl, solo, strawberry pink short bob, 1.4::blue hair clip::, big brown eyes, cat paw charm on bracelets, bright cheerful open smile, {GIRL_UNI}, 1.3::many colorful bracelets on both wrists::, cardigan tied around waist, small camera on strap, loose white socks",
-    "kaede": f"1girl, solo, tall, dark navy long straight hair with silver hairpin, snowflake hairpin, pale ice-blue ribbon accents, stopwatch pendant, cool sharp grey-blue eyes, {GIRL_UNI}, black tights, 1.3::thin silver bracelet::, 1.2::wristwatch::, expressionless, elegant posture",
+    "mio": f"1girl, solo, protagonist, main character, slim average height, glossy blue-black short bob hair, 1.3::big ahoge::, one long side lock tied with red thread, 1.2::bright amber eyes, determined eyes::, 1.3::oversized black hooded short coat with red lining::, white sailor collar blouse, red neckerchief, dark pleated skirt, black thighhighs, 2::small notebook strapped to left wrist with rubber band::, worn pink rabbit keychain with red-stitched ear on coat zipper, pen behind ear, slight confident smile",
+    "rei": f"1boy, solo, very tall, slender, {MALE}, platinum silver hair, 1.5::long bangs covering right eye, hair over one eye::, cold blue-grey eyes, 1.3::long black high-collar frock coat with silver buttons::, grey waistcoat, white cravat, black gloves, 1.4::black leather wrist cuffs::, antique pocket watch chain on waistcoat, black dress trousers, polished boots, aloof cold expression, aristocrat",
+    "sora": f"1boy, solo, athletic muscular build, {MALE}, spiky sunny golden blonde hair, ahoge, red headband, big bright orange eyes, 1.4::orange firefighter turnout jacket with yellow reflective stripes, sleeves tied around waist::, black fitted t-shirt, cargo pants, heavy boots, carabiner on belt, huge energetic grin, sunny",
+    "ken": f"1boy, solo, tall lean, {MALE}, wavy deep wine-red hair swept to one side, half-lidded sharp amber eyes, beauty mark under eye, 1.3::burgundy stage tailcoat draped over shoulders like a cape::, open-collar black shirt, loose red cravat, white gloves, half theatre mask at belt, black slacks, smirk, one corner of mouth raised, theatrical",
+    "nana": f"1girl, solo, short, slender fragile frame, soft lilac lavender hair in low side ponytail over shoulder, white hair ribbon, pale violet eyes, pale skin, 1.3::long white nurse-style one-piece dress with pale blue collar::, cream knit cardigan, 1.5::white ribbon wrapped like bandage around left wrist::, forget-me-not hairpin, gentle shy smile, slightly sad eyes",
+    "riku": f"1boy, solo, short, slim boyish frame, {MALE}, curly tangerine orange hair, golden cat-like eyes, 1.2::tiny black mini top hat on head::, 1.3::short black magician tailcoat::, red vest, black bow tie, white gloves, checkered shorts over black tights, ankle boots, mischievous grin, sticking tongue out, trickster",
+    "akari": f"1girl, solo, average height, neat slim figure, chestnut auburn high ponytail with dark green scrunchie, green eyes, 1.3::white pharmacist lab coat over green turtleneck::, long sleeves buttoned at wrists, dark green pencil skirt, clock-shaped hairpin, 1.3::silver wristwatch::, hourglass charm, clipboard tucked under arm, serious earnest expression, slight blush",
+    "yuu": f"1boy, solo, lanky, {MALE}, 1.2::masculine face, defined jaw::, messy bright cyan-teal hair, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, 1.3::black leather jacket over white band t-shirt::, ripped black jeans, chain wallet, red high-top sneakers, guitar pick necklace, wide friendly grin",
+    "koto": f"1girl, solo, tall, mature calm figure, long honey caramel brown hair half-up with flower ornament, gentle light brown eyes, 1.3::traditional long navy sailor uniform with long skirt::, long beige cardigan, 1.4::red armband on left arm::, small gear-shaped pin, red thread tied on ring finger, kind warm smile, class president, motherly",
+    "satsuki": f"1girl, solo, tall, toned athletic build, deep moss green hair in short low ponytail with braided cord, sharp violet eyes, 1.3::worn khaki hunting jacket::, black turtleneck, cargo trousers, laced combat boots, 1.4::brown leather archery arm guards::, black scarf around neck, feather charm, quiet stern expression",
+    "taiga": f"1boy, solo, 1.4::very tall, huge, muscular, broad body::, {MALE}, short black buzz cut, thick eyebrows, rugged handsome face, earnest eyes, 1.4::white judo gi jacket open over black t-shirt::, black belt, athletic tape on fingers, whistle around neck, patrol armband, sweatpants, loud confident grin",
+    "rin": f"1girl, solo, 1.3::petite, small and short, slim::, short deep violet purple bob with messy bangs, hazel eyes, 1.3::oversized lemon yellow hoodie::, denim shorts, black tights, mismatched socks, sneakers, 1.3::ring of many keys on belt::, key bracelet, cat-eye mask pushed up on head, playful wink, tongue out",
+    "sho": f"1boy, solo, tall, broad shoulders, {MALE}, tousled ash brown hair, tired gentle teal eyes, 1.3::navy medical scrub shirt under long grey cardigan::, stethoscope around neck, penlight in chest pocket, adhesive bandage on cheek, bandaged knuckles, dark slacks, calm awkward faint smile",
+    "ai": f"1girl, solo, 1.4::petite, very short, tiny frame::, mint green bob with blunt bangs, big rose-pink eyes, 1.4::white double-breasted chef coat::, 1.2::small white kerchief on head::, short apron, rolled-up sleeves, quiet expressionless face, sleepy eyes",
+    "haruka": f"1girl, solo, average height, soft round face, strawberry pink short bob, 1.4::blue hair clip::, big brown eyes, 1.3::pastel pink oversized cardigan::, white blouse, denim overall skirt, loose white socks, sneakers, 1.3::many colorful bracelets::, cat paw charm, bright cheerful open smile",
+    "kaede": f"1girl, solo, tall, slender model-like long legs, very long straight deep navy blue hair, snowflake hairpin, cool grey-blue eyes, 1.3::long navy coat over white turtleneck::, black pleated long skirt, black tights, ankle boots, thin silver bracelet, cool expressionless face, elegant",
     "lappy": "no humans, solo, 1.3::tiny cute pink rabbit mascot plushie::, chibi, small short body, big round head, standing upright on two legs, stubby arms, one eye glowing red, other eye dark, 1.2::angry eyebrows::, sharp fangs grin, 1.3::left ear torn and stitched with red thread::, small ribbon at neck, cute but fierce, stuffed toy",
+}
+
+SIGNATURE = {
+    "mio": "1.2::right hand holding pen against notebook::",
+    "rei": "1.3::arms crossed::",
+    "sora": "1.3::thumbs up, other hand on hip::",
+    "ken": "1.4::holding five-yen coin on string like hypnosis pendulum in raised hand::",
+    "nana": "1.2::hands clasped in front of chest::",
+    "riku": "1.4::fanning playing cards in one hand, joker card on top::",
+    "akari": "1.2::one hand touching hairpin::",
+    "yuu": "1.2::hands in jacket pockets::",
+    "koto": "1.3::holding clipboard against chest::",
+    "satsuki": "1.3::arms crossed::",
+    "taiga": "1.3::pumping fist, flexing arm::",
+    "rin": "1.3::twirling key ring on finger, peace sign::",
+    "sho": "1.2::one hand rubbing back of neck::",
+    "ai": "1.3::holding ladle with both hands::",
+    "haruka": "1.3::holding camera up, peace sign::",
+    "kaede": "1.4::holding stopwatch near chin::"
 }
 
 # earlier exit from the story -> more attractive design (player attachment)
 TOP = "1.3::extremely beautiful face::, extremely detailed beautiful eyes, sparkling eyes, long eyelashes, glamorous, elegant, striking charm, eye-catching design"
 TOP_BOY = "bishounen, handsome, "
+HERO = "1.3::striking protagonist presence::, beautiful face, detailed beautiful eyes"
 TOP_SET = {"taiga", "sho", "yuu", "akari", "riku", "sora", "ken"}
 MID = "pretty face, detailed beautiful eyes"
 MID_SET = {"rei", "haruka", "satsuki", "nana"}
 MALES = {"rei", "sora", "ken", "riku", "yuu", "taiga", "sho"}
 
 
-def build_prompts(name: str, verbatim: bool):
+POSES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "art", "poses.json")
+SPRITE_FRAME = "cowboy shot, upper body to thighs, front view, looking at viewer, simple background, white background, flat lighting"
+
+
+def pose_tags(name: str, pose: str):
+    """C01 = 시그니처, 그 외는 art/poses.json 의 common / 인물별 태그."""
+    if pose in (None, "", "C01"):
+        return SIGNATURE.get(name, "")
+    data = json.load(open(POSES_PATH, encoding="utf-8"))
+    tags = data.get(name, {}).get(pose) or data["common"].get(pose)
+    if tags is None:
+        sys.exit(f"포즈 {pose} 가 {name} 에 정의되어 있지 않습니다.")
+    return tags
+
+
+def build_prompts(name: str, verbatim: bool, pose: str = None):
     style = STYLE_POSITIVE
     if not verbatim:
         for token in DROP_FROM_STYLE:
@@ -117,9 +154,13 @@ def build_prompts(name: str, verbatim: bool):
     tier = ""
     if name in TOP_SET:
         tier = (TOP_BOY if name in MALES else "") + TOP + ", "
+    elif name == "mio":
+        tier = HERO + ", "
     elif name in MID_SET:
         tier = MID + ", "
-    positive = f"{CHARACTERS[name]}, {tier}{POSE}, {style}"
+    frame = POSE if pose is None else SPRITE_FRAME
+    act = pose_tags(name, pose)
+    positive = f"{CHARACTERS[name]}, {act + ', ' if act else ''}{tier}{frame}, {style}"
     if verbatim:
         return positive, NEGATIVE
     extra = EXTRA_NEGATIVE + STAND_NEG
@@ -211,6 +252,7 @@ def main():
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--verbatim", action="store_true", help="스타일 프롬프트 원문 그대로 사용")
     parser.add_argument("--out", default="tpose_out")
+    parser.add_argument("--pose", nargs="*", default=None, help="포즈 ID (예: C02 T01 U3 M X1). 없으면 전신 기준 입상")
     args = parser.parse_args()
 
     token = os.environ.get("NAI_TOKEN") or os.environ.get("NOVELAI_API_KEY")
@@ -219,14 +261,16 @@ def main():
 
     os.makedirs(args.out, exist_ok=True)
     names = args.only or list(CHARACTERS.keys())
-    for name in names:
-        positive, negative = build_prompts(name, args.verbatim)
+    jobs = [(name, pose) for name in names for pose in (args.pose or [None])]
+    for name, pose in jobs:
+        positive, negative = build_prompts(name, args.verbatim, pose)
+        tag = name if pose is None else f"{name}_{pose}"
         for _ in range(args.n):
             seed = args.seed if args.seed is not None else random.randint(0, 2**32 - 1)
-            print(f"[{name}] seed={seed}")
+            print(f"[{tag}] seed={seed}")
             try:
                 content = generate(token, positive, negative, seed)
-                for p in save_zip(content, args.out, name, seed):
+                for p in save_zip(content, args.out, tag, seed):
                     print("  saved:", p)
             except Exception as e:
                 print("  실패:", e)
