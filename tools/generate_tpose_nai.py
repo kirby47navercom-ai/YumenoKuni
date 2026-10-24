@@ -66,7 +66,7 @@ NEGATIVE = (
 # T자 기준 시트용 추가 지시. 스타일 프롬프트의 '구도를 흔드는' 태그와 충돌하므로
 # 아래 제거 목록을 적용 (원문을 그대로 쓰고 싶으면 --verbatim)
 POSE = (
-    "standing, arms at sides, relaxed pose, full body, straight-on, front view, "
+    "standing, feet together, arms at sides, relaxed pose, full body, straight-on, front view, "
     "looking at viewer, simple background, white background, "
     "character sheet, flat lighting"
 )
