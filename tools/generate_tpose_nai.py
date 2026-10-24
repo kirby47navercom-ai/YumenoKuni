@@ -69,21 +69,21 @@ POSE = "standing, full body, front view, looking at viewer, simple background, w
 DROP_FROM_STYLE = ["dynamic angle,", "blurry background,", "depth of field,", "location,"]
 EXTRA_NEGATIVE = "t-pose, arms outstretched, dynamic angle, from above, from below, foreshortening, cropped, out of frame, "
 
-MALE = "male focus, masculine body, broad shoulders, flat chest, narrow hips, long legs"
-MALE_NEG = "androgynous, feminine body, wide hips, curvy, breasts, thick thighs, 1girl, "
+MALE = "male focus, 1.5::masculine face, sharp jawline, adam's apple, thick eyebrows::, masculine body, broad shoulders, flat chest, narrow hips, long legs, short hair"
+MALE_NEG = "androgynous, feminine face, girly, effeminate, makeup, long eyelashes, blush, feminine body, wide hips, curvy, breasts, thick thighs, bare legs, shorts, skirt, 1girl, "
 STAND_NEG = "glasses, eyewear, walking, running, jumping, wind, windblown, "
 NO_STREAK_NEG = "multicolored hair, streaked hair, colored inner hair, gradient hair, colored tips, "
 
 # v4 : 학원 교복을 인물마다 색·형태를 바꿔 개조(단간론파식) · 체형 · 시그니처 포즈 · 머리색 비중복
 CHARACTERS = {
-    "mio": f"1girl, solo, protagonist, slim average height, 1.7::black hair::, glossy short bob, dark blue hair highlights, 1.3::big ahoge::, one long side lock tied with red thread, 1.2::bright amber eyes, determined eyes::, 1.3::black sailor school uniform with red collar lines, red neckerchief::, 1.2::oversized black hoodie jacket over uniform, sleeves past wrists::, black pleated skirt, black thighhighs, 2::small notebook strapped to left wrist with rubber band::, worn pink rabbit keychain with red-stitched ear hanging from zipper, pen behind ear, slight confident smile",
-    "rei": f"1boy, solo, very tall, slender, {MALE}, platinum silver hair, 1.5::long bangs covering right eye, hair over one eye::, cold blue-grey eyes, 1.4::white long gakuran school uniform with black trim and silver buttons, high collar::, black gloves, 1.4::black leather wrist cuffs::, antique pocket watch chain, black trousers, polished boots, aloof cold expression, aristocrat",
+    "mio": f"1girl, solo, protagonist, slim average height, 1.7::black hair::, glossy short bob, dark blue hair highlights, 1.3::big ahoge::, one long side lock tied with red thread, 1.2::bright amber eyes, determined eyes::, 1.5::neat fitted black school blazer with red piping, buttoned, white collared shirt, red ribbon tie::, black pleated skirt, black knee socks, brown loafers, 2::small notebook strapped to left wrist with rubber band::, worn pink rabbit keychain with red-stitched ear on blazer pocket, pen in breast pocket, 1.3::tidy, neat, well-groomed, upright posture::, calm confident smile, main heroine",
+    "rei": f"1boy, solo, very tall, slender, {MALE}, platinum silver hair, 1.5::long bangs covering right eye, hair over one eye::, cold blue-grey eyes, handsome young man, 1.4::white long gakuran school uniform with black trim and silver buttons, high collar::, black gloves, 1.4::black leather wrist cuffs::, antique pocket watch chain, black trousers, polished boots, aloof cold expression, aristocrat",
     "sora": f"1boy, solo, athletic muscular build, {MALE}, spiky sunny golden blonde hair, ahoge, red headband, big bright orange eyes, 1.4::bright orange school blazer with yellow reflective stripes on sleeves, sleeves rolled up::, black t-shirt underneath, black school trousers, red sneakers, carabiner on belt, huge energetic grin",
-    "ken": f"1boy, solo, tall lean, {MALE}, wavy deep wine-red hair swept to one side, half-lidded sharp amber eyes, beauty mark under eye, 1.4::burgundy school blazer with gold piping worn draped over shoulders like a cape::, open-collar black shirt, loose red ribbon tie, white gloves, half theatre mask at belt, black slacks, smirk, theatrical",
+    "ken": f"1boy, solo, tall lean, {MALE}, wavy deep wine-red hair swept to one side, sharp amber eyes, beauty mark under eye, handsome young man, 1.4::burgundy school blazer with gold piping worn draped over shoulders like a cape::, open-collar black shirt, loose red ribbon tie, white gloves, half theatre mask at belt, black slacks, black leather shoes, 1.4::full body, feet visible::, smirk, theatrical",
     "nana": f"1girl, solo, short, slender fragile frame, 1.7::lavender hair, light purple hair::, low side ponytail over shoulder, white hair ribbon, pale violet eyes, pale skin, 1.4::white sailor school uniform with pale lavender collar and long white skirt::, cream knit cardigan, 1.5::white ribbon wrapped like bandage around left wrist::, forget-me-not hairpin, gentle shy smile",
-    "riku": f"1boy, solo, short, slim boyish frame, {MALE}, curly tangerine orange hair, golden cat-like eyes, 1.2::tiny black mini top hat on head::, 1.4::black gakuran school uniform with gold buttons, short red-lined cape::, black bow tie, white gloves, black school shorts with checkered socks, mischievous grin, trickster",
+    "riku": f"1boy, solo, short, slim but masculine frame, {MALE}, curly tangerine orange hair, golden cat-like eyes, 1.2::tiny black mini top hat on head::, 1.4::black gakuran school uniform with gold buttons, short red-lined cape::, black bow tie, white gloves, 1.3::long black school trousers::, checkered cuffs, black shoes, mischievous grin, trickster",
     "akari": f"1girl, solo, average height, neat slim figure, 1.8::auburn hair, chestnut brown hair::, high ponytail with dark green scrunchie, green eyes, 1.4::dark green school blazer with white trim, buttoned neatly::, white shirt, green plaid skirt, white knee socks, brown loafers, 1.4::full body, feet visible::, long sleeves buttoned at wrists, clock-shaped hairpin, 1.3::silver wristwatch::, hourglass charm, serious earnest expression",
-    "yuu": f"1boy, solo, lanky, {MALE}, 1.2::masculine face, defined jaw::, messy bright cyan-teal hair, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, 1.4::open navy gakuran school jacket over white band t-shirt::, loose navy trousers, chain wallet, red high-top sneakers, guitar pick necklace, wide friendly grin",
+    "yuu": f"1boy, solo, lanky, {MALE}, messy bright cyan-teal hair, purple eyes, 1.3::three silver piercings on one ear::, 1.4::big headphones around neck::, 1.4::open navy gakuran school jacket over white band t-shirt::, loose navy trousers, chain wallet, red high-top sneakers, guitar pick necklace, wide friendly grin",
     "koto": f"1girl, solo, tall, calm graceful figure, long honey caramel brown hair half-up with flower ornament, gentle light brown eyes, 1.4::classic navy sailor school uniform with long navy skirt::, long beige cardigan, 1.4::red armband on left arm::, small gear-shaped pin, red thread tied on ring finger, kind warm smile, class president",
     "satsuki": f"1girl, solo, tall, toned athletic build, 1.7::dark green hair::, short low ponytail with braided cord, sharp violet eyes, 1.4::khaki military-style school blazer with brass buttons::, black skirt, black tights, laced boots, 1.4::brown leather archery arm guards::, black scarf around neck, feather charm, quiet stern expression",
     "taiga": f"1boy, solo, 1.5::very tall, muscular, athletic, broad shoulders, fit::, {MALE}, short black buzz cut, thick eyebrows, rugged handsome face, earnest eyes, 1.4::black gakuran school uniform unbuttoned, white t-shirt underneath::, black judo belt tied over uniform, athletic tape on fingers, whistle around neck, patrol armband, white sneakers, loud confident grin",
@@ -116,9 +116,9 @@ SIGNATURE = {
 
 # 전원 미형. 일찍 퇴장하는 인물은 한 단계 더(플레이어 애착)
 BEAUTY = "beautiful face, detailed beautiful eyes"
-TOP = "1.3::extremely beautiful face::, sparkling eyes, long eyelashes, striking charm"
+TOP = "1.3::extremely attractive::, sparkling eyes, striking charm"
 TOP_BOY = "bishounen, handsome, "
-HERO = "1.3::striking protagonist presence::"
+HERO = "1.4::striking protagonist presence, beautiful heroine::"
 TOP_SET = {"taiga", "sho", "yuu", "akari", "riku", "sora", "ken"}
 MID_SET = set()
 MID = ""
@@ -145,7 +145,7 @@ def build_prompts(name: str, verbatim: bool, pose: str = None):
     if not verbatim:
         for token in DROP_FROM_STYLE:
             style = style.replace(token, "")
-    tier = "" if name == "lappy" else BEAUTY + ", "
+    tier = "" if name == "lappy" else ("handsome face, detailed eyes, " if name in MALES else BEAUTY + ", ")
     if name in TOP_SET:
         tier += (TOP_BOY if name in MALES else "") + TOP + ", "
     elif name == "mio":
