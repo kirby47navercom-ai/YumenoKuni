@@ -34,18 +34,28 @@ await write('Assets/Data/rules.json',{rules});
 for(const slug of await fs.readdir(path.join(repo,'art/sprites'))){
  for(const f of await fs.readdir(path.join(repo,'art/sprites',slug)))if(f.endsWith('.webp')&&!f.startsWith('sheet'))await copy(`art/sprites/${slug}/${f}`,`Assets/Art/sprites/${slug}/${f}`);
 }
-for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
+for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png','trial/focus_track.png','trial/focus_fill.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
 await write('Assets/Art/ui/aim.svg','<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="#ff4fa3" stroke-width="4"/><circle cx="32" cy="32" r="3" fill="#ffffff"/><path d="M32 2v14M32 48v14M2 32h14M48 32h14" stroke="#ffffff" stroke-width="3"/></svg>');
-await copy('fonts/pretendard/Pretendard-Medium.otf','Assets/Fonts/Pretendard-Medium.otf');
-await copy('fonts/pretendard/LICENSE.txt','Assets/Fonts/Pretendard-LICENSE.txt');
-await copy('fonts/blackhansans/BlackHanSans-Regular.ttf','Assets/Fonts/BlackHanSans-Regular.ttf');
-await copy('fonts/blackhansans/OFL.txt','Assets/Fonts/BlackHanSans-OFL.txt');
+await write('Assets/Art/ui/vpoint.svg','<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" fill="#ff2040" stroke="#ffffff" stroke-width="2"/></svg>');
+// 글꼴 : 대화창 Pretendard + 논의용 인물·감정 글꼴(docs/spec/04 §4-3). 라이선스 파일도 같이 복사
+const fontFiles={pretendard:['Pretendard-Medium.otf','LICENSE.txt'],blackhansans:['BlackHanSans-Regular.ttf','OFL.txt'],gothica1:['GothicA1-Light.ttf','GothicA1-Regular.ttf','GothicA1-Bold.ttf','OFL.txt'],songmyung:['SongMyung-Regular.ttf','OFL.txt'],jua:['Jua-Regular.ttf','OFL.txt'],notoserifkr:['NotoSerifKR[wght].ttf','OFL.txt'],gowundodum:['GowunDodum-Regular.ttf','OFL.txt'],gowunbatang:['GowunBatang-Regular.ttf','OFL.txt'],cutefont:['CuteFont-Regular.ttf','OFL.txt'],dohyeon:['DoHyeon-Regular.ttf','OFL.txt'],galmuri:['Galmuri11.ttf','LICENSE.txt'],dokdo:['Dokdo-Regular.ttf','OFL.txt'],eastseadokdo:['EastSeaDokdo-Regular.ttf','OFL.txt'],gugi:['Gugi-Regular.ttf','OFL.txt'],kiranghaerang:['KirangHaerang-Regular.ttf','OFL.txt'],gaegu:['Gaegu-Regular.ttf','OFL.txt'],nanumpenscript:['NanumPenScript-Regular.ttf','OFL.txt']};
+for(const [dir,files] of Object.entries(fontFiles))for(const f of files)await copy(`fonts/${dir}/${f}`,`Assets/Fonts/${dir}/${f.replace('[wght]','-VF')}`);
+// 배경·재판장 (4차 에셋이 있으면)
+let bgs=[];try{bgs=(await fs.readdir(path.join(repo,'bg'))).filter(f=>f.endsWith('.webp'));}catch(e){if(e.code!=='ENOENT')throw e;}
+for(const f of bgs)await copy('bg/'+f,'Assets/Art/bg/'+f);
+await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5))});
 
 // 4) UI 위젯 (1280×720 기준, V3식 대화창)
-const body='Assets/Fonts/Pretendard-Medium.otf',head='Assets/Fonts/BlackHanSans-Regular.ttf';
+const body='Assets/Fonts/pretendard/Pretendard-Medium.otf',head='Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf';
+const MAIN_GLYPHS=48,NOISE_GLYPHS=26;
 const w=createWidgetAsset('W_Yumeno');w.scaleMode='scale';w.scaleRule='fit';
 const add=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:24,color:'#f4f0f6',background:'#00000000',padding:0,focusable:false,...props});w.nodes.push(n);return n;};
 add('Panel','Backdrop',[0,0,1280,720],{background:'#17121f'});
+add('Image','Background',[-40,-24,1360,768],{texture:'',imageFit:'cover',visible:false});
+// 논의 글자 : 글자 하나 = Text 하나. 정렬점 중심(.5,.5)이라 SetPosition 이 글자 중심, 배율·회전도 중심 기준
+const glyph=(id,parent,size)=>{const n=add('Text',id,[0,0,size*1.6,size*1.6],{fontSize:size,align:'center',visible:false,wrap:false},parent);n.slot.alignment=[.5,.5];};
+add('Panel','TrialBack',[0,0,1280,720],{visible:false});
+for(let i=0;i<MAIN_GLYPHS;i++)glyph('MB'+i,'TrialBack',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NB'+i,'TrialBack',34);
 add('Image','Portrait',[290,0,700,700],{texture:'',imageFit:'contain',visible:false});
 add('Image','DialogFrame',[80,512,1120,170],{texture:'Assets/Art/ui/frame.png',imageFit:'fill'});
 add('Image','Nameplate',[104,486,220,44],{texture:'Assets/Art/ui/nameplate.png',imageFit:'fill'});
@@ -53,15 +63,18 @@ add('Text','Name',[118,490,196,36],{font:head,fontSize:26,align:'center',color:'
 add('Text','Body',[136,548,1010,120],{fontSize:25,wrap:true});
 add('Text','Hint',[760,690,500,26],{text:'Enter·클릭 다음   Ctrl 빨리감기   Tab 래피 패드',fontSize:16,color:'#b9a9c6',align:'right'});
 add('Text','SceneTitle',[24,16,800,30],{fontSize:18,color:'#d9b8e8'});
-// 논스톱 논의 (V3) : 떠다니는 증언 한 줄 = Stmt 패널 안의 앞·약점·뒤 세 조각
+// 논스톱 논의 (V3) HUD + 화자 앞쪽 글자층
 add('Panel','Trial',[0,0,1280,720],{visible:false});
-add('Text','TrialSpeaker',[40,24,600,48],{font:head,fontSize:34,color:'#ffffff'},'Trial');
-add('Panel','Stmt',[1280,200,1200,64],{},'Trial');
-for(const [id,color] of [['StmtPre','#ffffff'],['StmtWeak','#ff9a2e'],['StmtPost','#ffffff']])add('Text',id,[0,0,400,64],{fontSize:40,color,wrap:false},'Stmt');
+for(let i=0;i<MAIN_GLYPHS;i++)glyph('MF'+i,'Trial',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NF'+i,'Trial',34);
+add('Panel','NameBand',[0,18,560,62],{background:'#000000c0'},'Trial');
+add('Text','TrialSpeaker',[36,24,520,50],{font:head,fontSize:38,color:'#ffffff'},'Trial');
 for(let i=0;i<5;i++)add('Image','Heart'+i,[1010+i*50,22,44,44],{texture:'Assets/Art/ui/heart_full.png',imageFit:'contain'},'Trial');
-add('Text','Bullet',[40,646,760,46],{fontSize:24,color:'#ffe9a8',background:'#1b1325e6',padding:8},'Trial');
-add('Text','TrialHint',[820,656,440,30],{text:'Q/E 언령 바꾸기   클릭 발사',fontSize:17,color:'#b9a9c6',align:'right'},'Trial');
-add('Text','TrialMsg',[0,300,1280,80],{font:head,fontSize:56,align:'center',color:'#ff8fc8',visible:false},'Trial');
+add('Image','FocusTrack',[930,74,320,28],{texture:'Assets/Art/ui/focus_track.png',imageFit:'fill'},'Trial');
+add('Image','FocusFill',[948,81,284,14],{texture:'Assets/Art/ui/focus_fill.png',imageFit:'fill'},'Trial');
+add('Text','Bullet',[40,646,780,46],{fontSize:24,color:'#ffe9a8',background:'#1b1325e6',padding:8},'Trial');
+add('Text','TrialHint',[700,618,560,24],{text:'Q/E 언령  클릭 발사  길게 눌렀다 떼기 거짓 탄환  우클릭 사일런서  Shift 집중',fontSize:15,color:'#b9a9c6',align:'right'},'Trial');
+add('Image','VPoint',[0,0,22,22],{texture:'Assets/Art/ui/vpoint.svg',imageFit:'contain',visible:false},'Trial').slot.alignment=[.5,.5];
+add('Text','TrialMsg',[0,300,1280,80],{font:head,fontSize:60,align:'center',color:'#ff8fc8',visible:false},'Trial');
 add('Image','Cutin',[128,200,1024,342],{texture:'Assets/Art/ui/cutin_objection.png',imageFit:'contain',visible:false},'Trial');
 add('Image','Aim',[608,328,64,64],{texture:'Assets/Art/ui/aim.svg',imageFit:'contain'},'Trial');
 add('Panel','Title',[0,0,1280,720],{background:'#0f0b16'});

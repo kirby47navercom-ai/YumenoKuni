@@ -91,13 +91,14 @@ void Yumeno::message(const std::string& value,float seconds){text("TrialMsg",val
 void Yumeno::showBullet(){
  if(bullets.empty())return;
  auto& b=bullets[bullet];
- text("Bullet","언령  ◀ "+b.second+" ▶   ("+std::to_string(bullet+1)+"/"+std::to_string(bullets.size())+")");
+ text("Bullet",std::string(lie?"거짓 언령  ◀ 「":"언령  ◀ 「")+b.second+(lie?"」의 반대 ▶   (":"」 ▶   (")+std::to_string(bullet+1)+"/"+std::to_string(bullets.size())+")");
 }
 
+static std::pair<std::string,std::string> fontsOf(const std::string& slug);
 void Yumeno::startDebate(int at){
  auto& list=trials["debates"];
  if(at>=int(list.size())){
-  mode=Mode::End;UI::SetVisible(this,UI_ID,"Trial",false);dialogVisible(true);UI::SetVisible(this,UI_ID,"Portrait",false);
+  mode=Mode::End;UI::SetVisible(this,UI_ID,"Trial",false);UI::SetVisible(this,UI_ID,"TrialBack",false);UI::SetVisible(this,UI_ID,"Background",false);dialogVisible(true);UI::SetVisible(this,UI_ID,"Portrait",false);
   speaker.clear();line="— 1장 논스톱 논의 체험 끝. Enter로 타이틀 —";text("Name","");text("Body",line);text("SceneTitle","");
   UI::SetVisible(this,UI_ID,"Nameplate",false);UI::SetVisible(this,UI_ID,"Name",false);
   return;
@@ -105,57 +106,122 @@ void Yumeno::startDebate(int at){
  debateAt=at;auto& d=list[at];
  int hearts=debate.lines.empty()?5:debate.hearts; // 발언력은 재판 내내 이어짐
  debate=debate::State{};
+ int i=0;
  for(auto& l:d["lines"]){
   debate::Line x{l.value("speaker",""),l.value("text",""),l.value("kind","plain")};
-  if(l.contains("weak")){x.word=l["weak"].value("word","");x.answer=l["weak"].value("answer","");x.start=l["weak"].value("start",0);}
+  if(l.contains("weak")){x.word=l["weak"].value("word","");x.answer=l["weak"].value("answer","");x.start=l["weak"].value("start",0);x.lie=l["weak"].value("lie",false);}
+  x.motion=debate::motionOf(l.value("motion",""),x.kind,i++);
+  {auto sl=slugs.count(x.speaker)?slugs.at(x.speaker):"";auto fs=fontsOf(sl);x.spacing=debate::spacingOf(x.kind=="weak"?fs.second:x.kind=="noise"?"Gaegu":fs.first);}
   debate.lines.push_back(x);
  }
- debate.broken.assign(debate.lines.size(),false);debate.hearts=hearts;
+ debate.broken.assign(debate.lines.size(),false);debate.silenced.assign(debate.lines.size(),false);debate.hearts=hearts;
  bullets.clear();for(auto& b:d["bullets"])bullets.emplace_back(b.value("id",""),b.value("name",""));
- bullet=0;shownLine=-1;shownHearts=-1;clearTimer=0;
- mode=Mode::Trial;dialogVisible(false);UI::SetVisible(this,UI_ID,"Title",false);UI::SetVisible(this,UI_ID,"Trial",true);
+ bullet=0;shownLine=-1;shownHearts=-1;shownNoise=-1;clearTimer=0;holdTime=-1;lie=false;
+ mode=Mode::Trial;dialogVisible(false);UI::SetVisible(this,UI_ID,"Title",false);
+ UI::SetVisible(this,UI_ID,"Trial",true);UI::SetVisible(this,UI_ID,"TrialBack",true);
+ if(!trialBackground.empty()){UI::SetTexture(this,UI_ID,"Background",trialBackground);UI::SetVisible(this,UI_ID,"Background",true);}
  showBullet();message("논스톱 논의 개시!",1.6f);
 }
 
+// 인물별 논의 글꼴 (docs/spec/04 §4-3) : {평소, 감정 폭발}
+static std::pair<std::string,std::string> fontsOf(const std::string& slug){
+ static const std::map<std::string,std::pair<std::string,std::string>> f{
+  {"mio",{"gothica1/GothicA1-Bold.ttf","blackhansans/BlackHanSans-Regular.ttf"}},{"rei",{"songmyung/SongMyung-Regular.ttf","notoserifkr/NotoSerifKR-VF.ttf"}},
+  {"sora",{"jua/Jua-Regular.ttf","blackhansans/BlackHanSans-Regular.ttf"}},{"ken",{"notoserifkr/NotoSerifKR-VF.ttf","gugi/Gugi-Regular.ttf"}},
+  {"nana",{"gowundodum/GowunDodum-Regular.ttf","nanumpenscript/NanumPenScript-Regular.ttf"}},{"riku",{"cutefont/CuteFont-Regular.ttf","kiranghaerang/KirangHaerang-Regular.ttf"}},
+  {"akari",{"gothica1/GothicA1-Regular.ttf","gaegu/Gaegu-Regular.ttf"}},{"yuu",{"dohyeon/DoHyeon-Regular.ttf","eastseadokdo/EastSeaDokdo-Regular.ttf"}},
+  {"koto",{"gowunbatang/GowunBatang-Regular.ttf","gugi/Gugi-Regular.ttf"}},{"satsuki",{"songmyung/SongMyung-Regular.ttf","dokdo/Dokdo-Regular.ttf"}},
+  {"taiga",{"blackhansans/BlackHanSans-Regular.ttf","dokdo/Dokdo-Regular.ttf"}},{"rin",{"jua/Jua-Regular.ttf","cutefont/CuteFont-Regular.ttf"}},
+  {"sho",{"gothica1/GothicA1-Light.ttf","nanumpenscript/NanumPenScript-Regular.ttf"}},{"ai",{"gowundodum/GowunDodum-Regular.ttf","dohyeon/DoHyeon-Regular.ttf"}},
+  {"haruka",{"cutefont/CuteFont-Regular.ttf","gaegu/Gaegu-Regular.ttf"}},{"kaede",{"notoserifkr/NotoSerifKR-VF.ttf","songmyung/SongMyung-Regular.ttf"}},
+  {"lappy",{"galmuri/Galmuri11.ttf","gugi/Gugi-Regular.ttf"}}};
+ auto it=f.find(slug);
+ auto v=it==f.end()?std::pair<std::string,std::string>{"pretendard/Pretendard-Medium.otf","blackhansans/BlackHanSans-Regular.ttf"}:it->second;
+ return {"Assets/Fonts/"+v.first,"Assets/Fonts/"+v.second};
+}
+
+// 글자 한 층(앞/뒤 짝) 그리기. 바뀐 값만 엔진에 보낸다.
+void Yumeno::drawGlyphs(const std::string& prefix,int capacity,const std::vector<debate::Glyph>& gs){
+ for(int i=0;i<capacity;i++){
+  auto front=prefix+"F"+std::to_string(i),back=prefix+"B"+std::to_string(i);
+  auto& c=glyphCache[front];
+  if(i>=int(gs.size())){if(c.visible!=0){UI::SetVisible(this,UI_ID,front,false);UI::SetVisible(this,UI_ID,back,false);c.visible=0;}continue;}
+  auto& g=gs[i];int vis=g.front?1:2;
+  if(c.visible!=vis){UI::SetVisible(this,UI_ID,front,vis==1);UI::SetVisible(this,UI_ID,back,vis==2);c.visible=vis;}
+  auto id=vis==1?front:back;
+  if(c.text!=g.text){UI::SetText(this,UI_ID,front,g.text);UI::SetText(this,UI_ID,back,g.text);c.text=g.text;}
+  UI::SetPosition(this,UI_ID,id,{g.x,g.y});UI::SetScale(this,UI_ID,id,{g.scale,g.scale});
+  if(std::abs(c.rotation-g.rotation)>.2f){UI::SetRotation(this,UI_ID,front,g.rotation);UI::SetRotation(this,UI_ID,back,g.rotation);c.rotation=g.rotation;}
+  if(std::abs(c.opacity-g.opacity)>.03f){UI::SetOpacity(this,UI_ID,front,g.opacity);UI::SetOpacity(this,UI_ID,back,g.opacity);c.opacity=g.opacity;}
+ }
+}
+
+// 줄이 바뀔 때 : 글꼴·색·크기·화자 입상
+void Yumeno::styleLine(){
+ auto& l=debate.line();
+ auto slug=slugs.count(l.speaker)?slugs.at(l.speaker):"";
+ auto fonts=fontsOf(slug);bool weak=l.kind=="weak";
+ for(int i=0;i<48;i++){
+  bool w=weak&&i>=l.start&&i<l.start+debate::u8len(l.word);
+  Color c=w?Color{1,.6f,.15f,1}:l.kind=="agree"?Color{.42f,.78f,1,1}:Color{1,1,1,1};
+  for(auto side:{"F","B"}){auto id=std::string("M")+side+std::to_string(i);UI::SetFont(this,UI_ID,id,weak?fonts.second:fonts.first);UI::SetFontSize(this,UI_ID,id,debate.base());UI::SetColor(this,UI_ID,id,c);}
+ }
+ text("TrialSpeaker",l.speaker);
+ portrait=slug.empty()||slug=="mio"?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L04":weak?"T02":l.kind=="agree"?"T03":"C02")+".webp";
+ UI::SetVisible(this,UI_ID,"Portrait",!portrait.empty());if(!portrait.empty())UI::SetTexture(this,UI_ID,"Portrait",portrait);
+ // 카메라가 다른 증언대로 도는 느낌 : 배경·입상이 옆에서 미끄러져 들어온다
+ cameraFrom=float((debate.index%2?1:-1)*120);cameraTime=0;
+}
+
 void Yumeno::updateDebate(float delta){
- // 타이머 : 메시지·컷인·논의 종료
  if(messageTimer>0&&(messageTimer-=delta)<=0)UI::SetVisible(this,UI_ID,"TrialMsg",false);
  if(cutinTimer>0&&(cutinTimer-=delta)<=0)UI::SetVisible(this,UI_ID,"Cutin",false);
  if(clearTimer>0){if((clearTimer-=delta)<=0)startDebate(debateAt+1);return;}
- bool changed=debate.tick(delta)||shownLine!=debate.index;
- auto& l=debate.line();auto o=debate.layout();
- if(changed){
-  shownLine=debate.index;
-  bool weak=l.kind=="weak";
-  text("StmtPre",weak?debate::u8sub(l.text,0,l.start):l.text);
-  text("StmtWeak",weak?l.word:"");
-  text("StmtPost",weak?debate::u8sub(l.text,l.start+debate::u8len(l.word),1<<20):"");
-  for(auto id:{"StmtPre","StmtWeak","StmtPost"})UI::SetFontSize(this,UI_ID,id,o.size);
-  UI::SetColor(this,UI_ID,"StmtPre",l.kind=="agree"?Color{.45f,.78f,1,1}:l.kind=="noise"?Color{.75f,.72f,.78f,1}:Color{1,1,1,1});
-  UI::SetPosition(this,UI_ID,"StmtPre",{0,0});UI::SetSize(this,UI_ID,"StmtPre",{o.pre+8,o.size*1.4f});
-  UI::SetPosition(this,UI_ID,"StmtWeak",{o.pre,0});UI::SetSize(this,UI_ID,"StmtWeak",{o.weak+8,o.size*1.4f});
-  UI::SetPosition(this,UI_ID,"StmtPost",{o.pre+o.weak,0});UI::SetSize(this,UI_ID,"StmtPost",{o.post+8,o.size*1.4f});
-  text("TrialSpeaker",l.speaker);
-  auto slug=slugs.count(l.speaker)?slugs.at(l.speaker):"";
-  portrait=slug.empty()||slug=="mio"?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L01":weak?"T02":l.kind=="agree"?"T03":"C02")+".webp";
-  UI::SetVisible(this,UI_ID,"Portrait",!portrait.empty());if(!portrait.empty())UI::SetTexture(this,UI_ID,"Portrait",portrait);
- }
- UI::SetPosition(this,UI_ID,"Stmt",{o.x,o.y});
- if(shownHearts!=debate.hearts){shownHearts=debate.hearts;for(int i=0;i<5;i++)UI::SetTexture(this,UI_ID,"Heart"+std::to_string(i),i<debate.hearts?"Assets/Art/ui/heart_full.png":"Assets/Art/ui/heart_empty.png");}
+ // 집중 : Shift 를 누르는 동안 시간 0.35배, 게이지 소모. 놓으면 회복.
+ bool focusing=Input::IsKeyDown("Shift")&&debate.focus>0;
+ debate.focus=std::clamp(debate.focus+(focusing?-28.f:9.f)*delta,0.f,100.f);
+ UI::SetSize(this,UI_ID,"FocusFill",{284*debate.focus/100,14});
+ bool changed=debate.tick(delta*(focusing?.35f:1))||shownLine!=debate.index;
+ if(changed){shownLine=debate.index;styleLine();}
+ cameraTime=std::min(1.f,cameraTime+delta*4);float ease=1-std::pow(1-cameraTime,3);
+ UI::SetPosition(this,UI_ID,"Portrait",{290+cameraFrom*(1-ease),0});
+ UI::SetPosition(this,UI_ID,"Background",{-40-cameraFrom*.4f*(1-ease),-24});
+ drawGlyphs("M",48,debate.current());
+ int ni=debate.noiseIndex();
+ if(ni>=0&&ni!=shownNoise){shownNoise=ni;for(int k=0;k<26;k++)for(auto side:{"F","B"}){auto id=std::string("N")+side+std::to_string(k);UI::SetFont(this,UI_ID,id,"Assets/Fonts/gaegu/Gaegu-Regular.ttf");UI::SetColor(this,UI_ID,id,Color{.85f,.85f,.9f,1});}}
+ drawGlyphs("N",26,debate.noise());
+ float vx=0,vy=0;bool hasV=focusing&&debate.vpoint(vx,vy);
+ UI::SetVisible(this,UI_ID,"VPoint",hasV);if(hasV)UI::SetPosition(this,UI_ID,"VPoint",{vx,vy});
+ if(shownHearts!=debate.hearts){shownHearts=debate.hearts;for(int k=0;k<5;k++)UI::SetTexture(this,UI_ID,"Heart"+std::to_string(k),k<debate.hearts?"Assets/Art/ui/heart_full.png":"Assets/Art/ui/heart_empty.png");}
  // 조준 : 마우스 위치(뷰포트 픽셀). ponytail: 창 크기 1280×720 고정 가정.
  Vec2 m;if(Input::GetMousePosition(m)){aimX=m.x;aimY=m.y;}
  UI::SetPosition(this,UI_ID,"Aim",{aimX-32,aimY-32});
- if(!bullets.empty()){
-  if(pressed("q")){bullet=(bullet+int(bullets.size())-1)%int(bullets.size());showBullet();}
-  if(pressed("e")){bullet=(bullet+1)%int(bullets.size());showBullet();}
+ if(bullets.empty())return;
+ if(pressed("q")){bullet=(bullet+int(bullets.size())-1)%int(bullets.size());showBullet();}
+ if(pressed("e")){bullet=(bullet+1)%int(bullets.size());showBullet();}
+ // 사일런서 : 우클릭으로 소음 제거
+ if(pressed("mouse1")&&debate.noiseHit(aimX,aimY)){if(ni>=0)debate.silenced[ni]=true;debate.focus=std::min(100.f,debate.focus+10);message("조용!",.6f);}
+ // 발사 : 누를 때 장전, 떼면 발사. 0.45초 이상 누르면 거짓 탄환(발언력 1칸을 걸어 둔다)
+ bool down=Input::IsKeyDown("mouse0");
+ if(down){
+  if(holdTime<0)holdTime=0;
+  holdTime+=delta;
+  if(!lie&&holdTime>.45f&&debate.hearts>1){lie=true;--debate.hearts;showBullet();}
+  return;
  }
- if(!pressed("mouse0")||bullets.empty())return;
- if(!debate.weakHit(aimX,aimY))return; // 빗나감 : 감점 없음
- if(bullets[bullet].first==l.answer){
-  debate.broken[debate.index]=true;
+ if(holdTime<0)return;
+ holdTime=-1;bool lieShot=lie;lie=false;showBullet();
+ if(debate.noiseHit(aimX,aimY)){message("소음에 막혔다!",.8f);return;}
+ if(!debate.weakHit(aimX,aimY))return; // 빗나감 : 거짓 탄환이면 걸어 둔 발언력은 잃는다
+ auto& l=debate.line();
+ bool correct=bullets[bullet].first==l.answer&&lieShot==l.lie;
+ if(correct){
+  float px=0,py=0;bool v=debate.vpoint(px,py)&&std::hypot(aimX-px,aimY-py)<16;
+  if(lieShot)++debate.hearts;
+  debate.broken[debate.index]=true;vBreaks+=v;
   UI::SetVisible(this,UI_ID,"Cutin",true);cutinTimer=1.1f;
-  if(debate.cleared()){message("논파 완료!",2.2f);clearTimer=2.4f;}
-  else{message("논파!",1.0f);debate.next();}
+  if(debate.cleared()){message(v?"V논파! 논의 종료!":"논파 완료!",2.2f);clearTimer=2.4f;}
+  else{message(lieShot?"위증!":v?"V논파!":"논파!",1.0f);debate.next();}
  }else{
   if(--debate.hearts<=0){message("발언력이 바닥났어요… 처음부터!",2.f);debate.hearts=5;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;}
   else message("아야! 틀렸어요~!",1.2f);
@@ -175,6 +241,7 @@ void Yumeno::Update(float delta){
   emotions=Data::Get("Assets/Data/emotion.json");
   rules=Data::Get("Assets/Data/rules.json");
   trials=Data::Get("Assets/Data/trials/"+story["trials"][0].get<std::string>()+".json");
+  {auto art=Data::Get("Assets/Data/art.json");for(auto& b:art["backgrounds"])if(b.get<std::string>()=="trial_room_close")trialBackground="Assets/Art/bg/trial_room_close.webp";}
   std::string pad;
   for(auto& r:rules["rules"])pad+=r.value("no","")+"   "+r.value("text","")+"\n";
   UI::Show(this,"Assets/UI/Main.hbwidget.json",UI_ID);
@@ -213,8 +280,11 @@ std::string Yumeno::Stats()const{
  const char* names[]{"title","story","pad","end","trial"};
  Json s{{"mode",names[int(mode)]},{"file",fileIndex},{"scene",scene},{"event",event},{"speaker",speaker},{"portrait",portrait},{"line",line},{"shown",int(shown)},{"length",lineLength}};
  if(mode==Mode::Trial&&!debate.lines.empty()){
-  auto o=debate.layout();auto& l=debate.line();int broken=0;for(bool b:debate.broken)broken+=b;
-  s["trial"]={{"debate",debateAt},{"index",debate.index},{"kind",l.kind},{"answer",l.answer},{"hearts",debate.hearts},{"broken",broken},{"bullet",bullets.empty()?"":bullets[bullet].first},{"aim",{aimX,aimY}},{"weakRect",{o.x+o.pre,o.y,o.weak,o.size*1.4f}},{"clearing",clearTimer>0}};
+  auto& l=debate.line();int broken=0;for(bool b:debate.broken)broken+=b;
+  Json weakPoint=nullptr;int front=0,back=0;
+  for(auto& g:debate.current()){(g.front?front:back)++;if(weakPoint.is_null()&&g.weak&&g.front&&g.opacity>.5f&&g.x>80&&g.x<1200&&g.y>40&&g.y<620)weakPoint={g.x,g.y};}
+  float vx=0,vy=0;bool v=debate.vpoint(vx,vy);
+  s["trial"]={{"debate",debateAt},{"index",debate.index},{"kind",l.kind},{"motion",int(l.motion)},{"answer",l.answer},{"hearts",debate.hearts},{"broken",broken},{"vBreaks",vBreaks},{"focus",debate.focus},{"bullet",bullets.empty()?"":bullets[bullet].first},{"lie",lie},{"aim",{aimX,aimY}},{"weakPoint",weakPoint},{"vpoint",v?Json{vx,vy}:Json(nullptr)},{"glyphsFront",front},{"glyphsBack",back},{"noise",debate.noiseIndex()},{"clearing",clearTimer>0}};
  }
  return s.dump();
 }
