@@ -20,10 +20,11 @@ private:
  debate::State debate;
  std::vector<std::pair<std::string,std::string>> bullets;
  int debateAt=0,bullet=0,shownLine=-1,shownHearts=-1,shownNoise=-1,vBreaks=0;
- float messageTimer=0,cutinTimer=0,clearTimer=0,holdTime=-1,cameraFrom=0,cameraTime=1;
+ float messageTimer=0,cutinTimer=0,clearTimer=0,holdTime=-1,cameraFrom=0,cameraTo=0,cameraAngle=0,cameraTime=1;
+ int speakerSeat=-1;
+ std::map<std::string,hb::Actor*> actors;
  float aimX=640,aimY=360;
  bool lie=false;
- std::string trialBackground;
  struct GlyphCache{int visible=0;std::string text;float rotation=1e9f,opacity=-1;};
  std::map<std::string,GlyphCache> glyphCache;
  std::map<std::string,bool> held;
@@ -41,5 +42,9 @@ private:
  void message(const std::string& value,float seconds);
  void showBullet();
  void styleLine();
+ hb::Actor* actor(const std::string& id);
+ void seatVisible(int seat,bool visible);
+ void placeCamera(float angle);
+ void setupCourt();
  void drawGlyphs(const std::string& prefix,int capacity,const std::vector<debate::Glyph>& glyphs);
 };

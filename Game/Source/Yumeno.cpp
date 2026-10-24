@@ -1,4 +1,5 @@
 #include "Yumeno.h"
+#include "Courtroom.hpp"
 using namespace hb;
 
 namespace {
@@ -94,11 +95,38 @@ void Yumeno::showBullet(){
  text("Bullet",std::string(lie?"거짓 언령  ◀ 「":"언령  ◀ 「")+b.second+(lie?"」의 반대 ▶   (":"」 ▶   (")+std::to_string(bullet+1)+"/"+std::to_string(bullets.size())+")");
 }
 
+
+hb::Actor* Yumeno::actor(const std::string& id){auto& a=actors[id];if(!a)a=Scene::FindActorById(id);return a;}
+void Yumeno::seatVisible(int seat,bool visible){if(auto* a=actor("Seat"+std::to_string(seat)))Components::Set(a,"SpriteRenderer","visible",visible);}
+void Yumeno::placeCamera(float angle){
+ auto s=court::shot(angle);
+ if(auto* c=actor("Camera")){Scene::SetPosition(c,{s.x,s.y,s.z});Scene::SetRotation(c,{0,s.yaw,0});}
+}
+// 재판 시작 : 생존자는 입상, 사망자는 영정. 카메라는 첫 화자 자리에서 시작
+void Yumeno::setupCourt(){
+ auto court=Data::Get("Assets/Data/court.json");
+ std::vector<std::string> dead;
+ auto key=story["trials"][0].get<std::string>();
+ if(story.contains("dead")&&story["dead"].contains(key))for(auto& d:story["dead"][key])dead.push_back(d.get<std::string>());
+ for(int i=0;i<16;i++){
+  std::string slug=court::SEATS[i];bool gone=std::find(dead.begin(),dead.end(),slug)!=dead.end();
+  if(auto* a=actor("Seat"+std::to_string(i))){
+   Components::SetString(a,"SpriteRenderer","texture",gone?court.value("dead",std::string()):"Assets/Art/sprites/"+slug+"/"+slug+"_C01.webp");
+   Components::Set(a,"SpriteRenderer","height",gone?1.2f:court::SPRITE_SIZE);Components::Set(a,"SpriteRenderer","width",gone?1.2f:court::SPRITE_SIZE);
+   Components::Set(a,"SpriteRenderer","visible",true);
+   if(gone){auto p=Scene::GetPosition(a);Scene::SetPosition(a,{p.x,1.85f,p.z});}
+  }
+ }
+ UI::SetTexture(this,UI_ID,"SpeakerPodium",court.value("podium",std::string()));
+ speakerSeat=-1;cameraAngle=cameraFrom=cameraTo=0;cameraTime=1;placeCamera(0);
+}
+
 static std::pair<std::string,std::string> fontsOf(const std::string& slug);
 void Yumeno::startDebate(int at){
  auto& list=trials["debates"];
  if(at>=int(list.size())){
-  mode=Mode::End;UI::SetVisible(this,UI_ID,"Trial",false);UI::SetVisible(this,UI_ID,"TrialBack",false);UI::SetVisible(this,UI_ID,"Background",false);dialogVisible(true);UI::SetVisible(this,UI_ID,"Portrait",false);
+  mode=Mode::End;UI::SetVisible(this,UI_ID,"Trial",false);UI::SetVisible(this,UI_ID,"TrialBack",false);UI::SetVisible(this,UI_ID,"Background",false);
+  UI::SetVisible(this,UI_ID,"Backdrop",true);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);dialogVisible(true);UI::SetVisible(this,UI_ID,"Portrait",false);
   speaker.clear();line="— 1장 논스톱 논의 체험 끝. Enter로 타이틀 —";text("Name","");text("Body",line);text("SceneTitle","");
   UI::SetVisible(this,UI_ID,"Nameplate",false);UI::SetVisible(this,UI_ID,"Name",false);
   return;
@@ -119,7 +147,8 @@ void Yumeno::startDebate(int at){
  bullet=0;shownLine=-1;shownHearts=-1;shownNoise=-1;clearTimer=0;holdTime=-1;lie=false;
  mode=Mode::Trial;dialogVisible(false);UI::SetVisible(this,UI_ID,"Title",false);
  UI::SetVisible(this,UI_ID,"Trial",true);UI::SetVisible(this,UI_ID,"TrialBack",true);
- if(!trialBackground.empty()){UI::SetTexture(this,UI_ID,"Background",trialBackground);UI::SetVisible(this,UI_ID,"Background",true);}
+ UI::SetVisible(this,UI_ID,"Backdrop",false);UI::SetVisible(this,UI_ID,"Portrait",false);
+ setupCourt();
  showBullet();message("논스톱 논의 개시!",1.6f);
 }
 
@@ -167,10 +196,15 @@ void Yumeno::styleLine(){
   for(auto side:{"F","B"}){auto id=std::string("M")+side+std::to_string(i);UI::SetFont(this,UI_ID,id,weak?fonts.second:fonts.first);UI::SetFontSize(this,UI_ID,id,debate.base());UI::SetColor(this,UI_ID,id,c);}
  }
  text("TrialSpeaker",l.speaker);
- portrait=slug.empty()||slug=="mio"?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L04":weak?"T02":l.kind=="agree"?"T03":"C02")+".webp";
- UI::SetVisible(this,UI_ID,"Portrait",!portrait.empty());if(!portrait.empty())UI::SetTexture(this,UI_ID,"Portrait",portrait);
- // 카메라가 다른 증언대로 도는 느낌 : 배경·입상이 옆에서 미끄러져 들어온다
- cameraFrom=float((debate.index%2?1:-1)*120);cameraTime=0;
+ portrait=slug.empty()?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L04":weak?"T02":l.kind=="agree"?"T03":"C02")+".webp";
+ if(!portrait.empty())UI::SetTexture(this,UI_ID,"Portrait",portrait);
+ int seat=court::seatOf(slug);
+ if(speakerSeat>=0)seatVisible(speakerSeat,true);
+ if(seat>=0){
+  if(auto* a=actor("Seat"+std::to_string(seat)))Components::SetString(a,"SpriteRenderer","texture",portrait);
+  speakerSeat=seat;cameraFrom=cameraAngle;cameraTo=court::seatAngle(seat);cameraTime=0;
+  UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
+ }
 }
 
 void Yumeno::updateDebate(float delta){
@@ -181,12 +215,20 @@ void Yumeno::updateDebate(float delta){
  bool focusing=Input::IsKeyDown("Shift")&&debate.focus>0;
  debate.focus=std::clamp(debate.focus+(focusing?-28.f:9.f)*delta,0.f,100.f);
  UI::SetSize(this,UI_ID,"FocusFill",{284*debate.focus/100,14});
- bool changed=debate.tick(delta*(focusing?.35f:1))||shownLine!=debate.index;
+ bool turning=cameraTime<1;
+ bool changed=(!turning&&debate.tick(delta*(focusing?.35f:1)))||shownLine!=debate.index;
  if(changed){shownLine=debate.index;styleLine();}
- cameraTime=std::min(1.f,cameraTime+delta*4);float ease=1-std::pow(1-cameraTime,3);
- UI::SetPosition(this,UI_ID,"Portrait",{290+cameraFrom*(1-ease),0});
- UI::SetPosition(this,UI_ID,"Background",{-40-cameraFrom*.4f*(1-ease),-24});
- drawGlyphs("M",48,debate.current());
+ if(turning){
+  cameraTime=std::min(1.f,cameraTime+delta/.45f);
+  float t=cameraTime<.5f?4*cameraTime*cameraTime*cameraTime:1-std::pow(-2*cameraTime+2,3)/2; // 가속·감속
+  cameraAngle=court::turn(cameraFrom,cameraTo,t);placeCamera(cameraAngle);
+  if(cameraTime>=1&&speakerSeat>=0){
+   seatVisible(speakerSeat,false);
+   auto r=court::speakerRect();UI::SetPosition(this,UI_ID,"Portrait",{r.x,r.y});UI::SetSize(this,UI_ID,"Portrait",{r.w,r.h});UI::SetVisible(this,UI_ID,"Portrait",true);
+   auto p=court::podiumRect();UI::SetPosition(this,UI_ID,"SpeakerPodium",{p.x,p.y});UI::SetSize(this,UI_ID,"SpeakerPodium",{p.w,p.h});UI::SetVisible(this,UI_ID,"SpeakerPodium",true);
+  }
+ }
+ drawGlyphs("M",48,turning?std::vector<debate::Glyph>{}:debate.current());
  int ni=debate.noiseIndex();
  if(ni>=0&&ni!=shownNoise){shownNoise=ni;for(int k=0;k<26;k++)for(auto side:{"F","B"}){auto id=std::string("N")+side+std::to_string(k);UI::SetFont(this,UI_ID,id,"Assets/Fonts/gaegu/Gaegu-Regular.ttf");UI::SetColor(this,UI_ID,id,Color{.85f,.85f,.9f,1});}}
  drawGlyphs("N",26,debate.noise());
@@ -241,7 +283,6 @@ void Yumeno::Update(float delta){
   emotions=Data::Get("Assets/Data/emotion.json");
   rules=Data::Get("Assets/Data/rules.json");
   trials=Data::Get("Assets/Data/trials/"+story["trials"][0].get<std::string>()+".json");
-  {auto art=Data::Get("Assets/Data/art.json");for(auto& b:art["backgrounds"])if(b.get<std::string>()=="trial_room_close")trialBackground="Assets/Art/bg/trial_room_close.webp";}
   std::string pad;
   for(auto& r:rules["rules"])pad+=r.value("no","")+"   "+r.value("text","")+"\n";
   UI::Show(this,"Assets/UI/Main.hbwidget.json",UI_ID);
@@ -284,7 +325,7 @@ std::string Yumeno::Stats()const{
   Json weakPoint=nullptr;int front=0,back=0;
   for(auto& g:debate.current()){(g.front?front:back)++;if(weakPoint.is_null()&&g.weak&&g.front&&g.opacity>.5f&&g.x>80&&g.x<1200&&g.y>40&&g.y<620)weakPoint={g.x,g.y};}
   float vx=0,vy=0;bool v=debate.vpoint(vx,vy);
-  s["trial"]={{"debate",debateAt},{"index",debate.index},{"kind",l.kind},{"motion",int(l.motion)},{"answer",l.answer},{"hearts",debate.hearts},{"broken",broken},{"vBreaks",vBreaks},{"focus",debate.focus},{"bullet",bullets.empty()?"":bullets[bullet].first},{"lie",lie},{"aim",{aimX,aimY}},{"weakPoint",weakPoint},{"vpoint",v?Json{vx,vy}:Json(nullptr)},{"glyphsFront",front},{"glyphsBack",back},{"noise",debate.noiseIndex()},{"clearing",clearTimer>0}};
+  s["trial"]={{"debate",debateAt},{"index",debate.index},{"kind",l.kind},{"motion",int(l.motion)},{"answer",l.answer},{"hearts",debate.hearts},{"broken",broken},{"vBreaks",vBreaks},{"focus",debate.focus},{"bullet",bullets.empty()?"":bullets[bullet].first},{"lie",lie},{"aim",{aimX,aimY}},{"weakPoint",weakPoint},{"vpoint",v?Json{vx,vy}:Json(nullptr)},{"glyphsFront",front},{"glyphsBack",back},{"noise",debate.noiseIndex()},{"clearing",clearTimer>0},{"camera",cameraAngle},{"speakerSeat",speakerSeat},{"turning",cameraTime<1}};
  }
  return s.dump();
 }

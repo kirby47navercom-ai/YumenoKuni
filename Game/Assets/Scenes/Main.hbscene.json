@@ -4,12 +4,951 @@
  "objects": [
   {
    "id": "Camera",
-   "name": "카메라",
+   "name": "재판 카메라",
    "kind": "camera",
    "position": [
     0,
+    1.5,
+    -2.3
+   ],
+   "rotation": [
     0,
-    12
+    180,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "9d721cbd-8604-4649-98ba-d39a9569734b",
+     "name": "Camera",
+     "type": "Camera",
+     "properties": {
+      "enabled": true,
+      "projection": "perspective",
+      "fieldOfView": 43.6,
+      "physicalLens": false,
+      "focalLength": 50,
+      "sensorHeight": 24,
+      "aperture": 2.8,
+      "apertureBladeCount": 5,
+      "apertureRotation": 0,
+      "apertureCurvature": 1,
+      "orthographicSize": 5,
+      "near": 0.05,
+      "far": 200,
+      "priority": 0,
+      "main": true,
+      "followTarget": "",
+      "followOffset": [
+       0,
+       3,
+       6
+      ],
+      "pixelPerfect": false,
+      "pixelReferenceWidth": 640,
+      "pixelReferenceHeight": 360,
+      "pixelPixelsPerUnit": 32
+     }
+    }
+   ]
+  },
+  {
+   "id": "Floor",
+   "name": "Floor",
+   "kind": "sprite",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    -90,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "2cca048d-ced3-44d1-9cde-905437133cdc",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/floor.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 15,
+      "height": 15,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall0",
+   "name": "Wall0",
+   "kind": "sprite",
+   "position": [
+    0,
+    3.4,
+    13
+   ],
+   "rotation": [
+    0,
+    180,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "8936170b-24ce-48ef-ae27-09a20ba0792f",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall1",
+   "name": "Wall1",
+   "kind": "sprite",
+   "position": [
+    6.499999999999999,
+    3.4,
+    11.258330249197703
+   ],
+   "rotation": [
+    0,
+    210,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "39b116f4-8f9a-47b4-bb21-f3123c30406d",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall2",
+   "name": "Wall2",
+   "kind": "sprite",
+   "position": [
+    11.258330249197702,
+    3.4,
+    6.500000000000002
+   ],
+   "rotation": [
+    0,
+    240,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "4b02eb56-93e2-4520-a663-354d16d827ae",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall3",
+   "name": "Wall3",
+   "kind": "sprite",
+   "position": [
+    13,
+    3.4,
+    7.960204194457795e-16
+   ],
+   "rotation": [
+    0,
+    270,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "a739fddb-ea79-44b9-b63d-6a9ca5eff2ae",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall4",
+   "name": "Wall4",
+   "kind": "sprite",
+   "position": [
+    11.258330249197703,
+    3.4,
+    -6.499999999999997
+   ],
+   "rotation": [
+    0,
+    300,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "b493dbc7-6bfe-4b4f-9d7f-6524f2025780",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall5",
+   "name": "Wall5",
+   "kind": "sprite",
+   "position": [
+    6.499999999999999,
+    3.4,
+    -11.258330249197703
+   ],
+   "rotation": [
+    0,
+    330,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "980e7186-78ca-480e-8363-80a3cb401de7",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall6",
+   "name": "Wall6",
+   "kind": "sprite",
+   "position": [
+    1.592040838891559e-15,
+    3.4,
+    -13
+   ],
+   "rotation": [
+    0,
+    360,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "054b8a56-7a57-4cf4-a638-3bf6852ce7eb",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall7",
+   "name": "Wall7",
+   "kind": "sprite",
+   "position": [
+    -6.500000000000002,
+    3.4,
+    -11.258330249197702
+   ],
+   "rotation": [
+    0,
+    390,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "db6c8d9f-d740-48a3-9a3f-e1f4f89bd1a3",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall8",
+   "name": "Wall8",
+   "kind": "sprite",
+   "position": [
+    -11.2583302491977,
+    3.4,
+    -6.500000000000005
+   ],
+   "rotation": [
+    0,
+    420,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "68ae7123-c9b8-4efe-b2f4-4041d1524ea0",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall9",
+   "name": "Wall9",
+   "kind": "sprite",
+   "position": [
+    -13,
+    3.4,
+    -2.3880612583373385e-15
+   ],
+   "rotation": [
+    0,
+    450,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "77500340-1ef1-413b-9e6e-2b8f9a23ff83",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall10",
+   "name": "Wall10",
+   "kind": "sprite",
+   "position": [
+    -11.258330249197702,
+    3.4,
+    6.500000000000002
+   ],
+   "rotation": [
+    0,
+    480,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "1b776c5f-116d-43e4-aff4-1b5d6dac01b4",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Wall11",
+   "name": "Wall11",
+   "kind": "sprite",
+   "position": [
+    -6.500000000000005,
+    3.4,
+    11.258330249197698
+   ],
+   "rotation": [
+    0,
+    510,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "9072186e-99ae-4fca-b355-50ab9e3e0e1d",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/wall.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 7.2,
+      "height": 9.6,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": false,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Throne",
+   "name": "Throne",
+   "kind": "sprite",
+   "position": [
+    0,
+    1.9,
+    -8.9
    ],
    "rotation": [
     0,
@@ -24,35 +963,2292 @@
    "visible": true,
    "components": [
     {
-     "id": "3a09067a-684c-4d57-9f73-105e7ac9e0df",
-     "name": "Camera",
-     "type": "Camera",
+     "id": "99e4da96-7246-4c6f-a28c-3ad6c5c58dbf",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
      "properties": {
       "enabled": true,
-      "projection": "orthographic",
-      "fieldOfView": 60,
-      "physicalLens": false,
-      "focalLength": 50,
-      "sensorHeight": 24,
-      "aperture": 2.8,
-      "apertureBladeCount": 5,
-      "apertureRotation": 0,
-      "apertureCurvature": 1,
-      "orthographicSize": 4.5,
-      "near": 0.1,
-      "far": 200,
-      "priority": 0,
-      "main": true,
-      "followTarget": "",
-      "followOffset": [
-       0,
-       3,
-       6
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/throne.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
       ],
-      "pixelPerfect": false,
-      "pixelReferenceWidth": 640,
-      "pixelReferenceHeight": 360,
-      "pixelPixelsPerUnit": 32
+      "width": 4,
+      "height": 4,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Host",
+   "name": "Host",
+   "kind": "sprite",
+   "position": [
+    0,
+    3.15,
+    -8.8
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "b766ccd6-5da4-4ad3-a559-090e19da3110",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/lappy/lappy_L01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.3,
+      "height": 1.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat0",
+   "name": "Seat0",
+   "kind": "sprite",
+   "position": [
+    0,
+    1.25,
+    5.5
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "1b01fffa-9b54-42bc-8a7b-836cb0c607c8",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/mio/mio_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium0",
+   "name": "Podium0",
+   "kind": "sprite",
+   "position": [
+    0,
+    0.625,
+    5.25
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "3b62127f-7774-4805-9a25-9face6d36841",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat1",
+   "name": "Seat1",
+   "kind": "sprite",
+   "position": [
+    2.1047588780079938,
+    1.25,
+    5.081337428812077
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "d5700214-70d3-43e2-9c87-a281eb9dba10",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/rin/rin_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium1",
+   "name": "Podium1",
+   "kind": "sprite",
+   "position": [
+    2.0090880199167214,
+    0.625,
+    4.850367545684255
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "ae2affa6-3047-4813-818e-1a8374552071",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat2",
+   "name": "Seat2",
+   "kind": "sprite",
+   "position": [
+    3.889087296526011,
+    1.25,
+    3.8890872965260117
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "05734e5c-d533-44e8-8292-3520a82a0b7c",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/ken/ken_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium2",
+   "name": "Podium2",
+   "kind": "sprite",
+   "position": [
+    3.7123106012293743,
+    0.625,
+    3.7123106012293747
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "10da1dc0-e8dd-4bd3-a065-79ba06d7fcd7",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat3",
+   "name": "Seat3",
+   "kind": "sprite",
+   "position": [
+    5.081337428812077,
+    1.25,
+    2.104758878007994
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "75b88722-e03f-4fbc-9b16-ddfd612e47ce",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/nana/nana_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium3",
+   "name": "Podium3",
+   "kind": "sprite",
+   "position": [
+    4.850367545684255,
+    0.625,
+    2.009088019916722
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "788156eb-cfb0-47ae-85de-127b447f7860",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat4",
+   "name": "Seat4",
+   "kind": "sprite",
+   "position": [
+    5.5,
+    1.25,
+    3.3677786976552215e-16
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "5e6ff9a4-bf3c-45d3-b863-adb12ab69ebb",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/taiga/taiga_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium4",
+   "name": "Podium4",
+   "kind": "sprite",
+   "position": [
+    5.25,
+    0.625,
+    3.214697847761802e-16
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "4a2adbb9-eca3-4b53-80fe-e6640f7ac611",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat5",
+   "name": "Seat5",
+   "kind": "sprite",
+   "position": [
+    5.081337428812077,
+    1.25,
+    -2.1047588780079933
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "9075c04d-1823-4001-a9f5-5a99d303284f",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/ai/ai_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium5",
+   "name": "Podium5",
+   "kind": "sprite",
+   "position": [
+    4.850367545684255,
+    0.625,
+    -2.009088019916721
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "e735f987-988d-43e0-8dca-4428ad376b71",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat6",
+   "name": "Seat6",
+   "kind": "sprite",
+   "position": [
+    3.8890872965260117,
+    1.25,
+    -3.889087296526011
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "75223089-6131-495e-9ce0-631abbdd39e1",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/rei/rei_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium6",
+   "name": "Podium6",
+   "kind": "sprite",
+   "position": [
+    3.7123106012293747,
+    0.625,
+    -3.7123106012293743
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "cec33686-0b6a-4ea5-8bad-c66ec14aa0a6",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat7",
+   "name": "Seat7",
+   "kind": "sprite",
+   "position": [
+    2.104758878007994,
+    1.25,
+    -5.081337428812077
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "75f807e8-df8f-46a1-9d6d-76b17368be0f",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/sora/sora_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium7",
+   "name": "Podium7",
+   "kind": "sprite",
+   "position": [
+    2.009088019916722,
+    0.625,
+    -4.850367545684255
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "d2cc88e9-090c-4267-a289-8a04d9020ea2",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat8",
+   "name": "Seat8",
+   "kind": "sprite",
+   "position": [
+    6.735557395310443e-16,
+    1.25,
+    -5.5
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "d57fc9b0-0fb2-4e5c-8ae9-9a1ba2409fb6",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/haruka/haruka_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium8",
+   "name": "Podium8",
+   "kind": "sprite",
+   "position": [
+    6.429395695523604e-16,
+    0.625,
+    -5.25
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "0eec7f54-4c7e-44a0-98c8-8a4d679ce68d",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat9",
+   "name": "Seat9",
+   "kind": "sprite",
+   "position": [
+    -2.1047588780079907,
+    1.25,
+    -5.081337428812079
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "2c874711-a386-4788-b9e7-bc4cfe7fd212",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/sho/sho_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium9",
+   "name": "Podium9",
+   "kind": "sprite",
+   "position": [
+    -2.0090880199167183,
+    0.625,
+    -4.850367545684256
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "45e7190d-7d8a-4037-a0db-cd3e26a4eda0",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat10",
+   "name": "Seat10",
+   "kind": "sprite",
+   "position": [
+    -3.889087296526011,
+    1.25,
+    -3.889087296526012
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "48966f85-bc80-4e72-a8d8-4b6bdb63da6f",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/koto/koto_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium10",
+   "name": "Podium10",
+   "kind": "sprite",
+   "position": [
+    -3.7123106012293743,
+    0.625,
+    -3.712310601229375
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "cf8ee473-0026-4e62-b424-3bcbde0edacb",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat11",
+   "name": "Seat11",
+   "kind": "sprite",
+   "position": [
+    -5.081337428812078,
+    1.25,
+    -2.1047588780079924
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "7e3d6324-70ba-4137-91da-d12161b2fa35",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/akari/akari_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium11",
+   "name": "Podium11",
+   "kind": "sprite",
+   "position": [
+    -4.850367545684256,
+    0.625,
+    -2.00908801991672
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "4630ab33-89af-45b3-a923-6fefa4857da8",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat12",
+   "name": "Seat12",
+   "kind": "sprite",
+   "position": [
+    -5.5,
+    1.25,
+    -1.0103336092965664e-15
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "a627a89f-8bb1-4481-9faf-fda4e68a7c54",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/riku/riku_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium12",
+   "name": "Podium12",
+   "kind": "sprite",
+   "position": [
+    -5.25,
+    0.625,
+    -9.644093543285407e-16
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "9e494284-2e44-4105-8705-d779f5737bb6",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat13",
+   "name": "Seat13",
+   "kind": "sprite",
+   "position": [
+    -5.081337428812076,
+    1.25,
+    2.104758878007995
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "238353c4-a8f6-4066-a344-b4ddb5a1ba71",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/satsuki/satsuki_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium13",
+   "name": "Podium13",
+   "kind": "sprite",
+   "position": [
+    -4.8503675456842545,
+    0.625,
+    2.0090880199167227
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "9f3b4ec5-efe7-46a7-bdd6-a7faf2e5cd3a",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat14",
+   "name": "Seat14",
+   "kind": "sprite",
+   "position": [
+    -3.889087296526012,
+    1.25,
+    3.8890872965260104
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "cf73b029-f7a9-4eb0-9f7d-7c63eb5113b8",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/yuu/yuu_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium14",
+   "name": "Podium14",
+   "kind": "sprite",
+   "position": [
+    -3.712310601229375,
+    0.625,
+    3.7123106012293734
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "1d814b49-dbef-40d2-8628-15c17efce1fa",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Seat15",
+   "name": "Seat15",
+   "kind": "sprite",
+   "position": [
+    -2.1047588780079924,
+    1.25,
+    5.081337428812078
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "d80ebb27-6752-40ab-a243-034a849a39d2",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/sprites/kaede/kaede_C01.webp",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 2.3,
+      "height": 2.3,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "Podium15",
+   "name": "Podium15",
+   "kind": "sprite",
+   "position": [
+    -2.00908801991672,
+    0.625,
+    4.850367545684256
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "components": [
+    {
+     "id": "f186e569-a7ba-4adc-a01f-edaf0c8c025f",
+     "name": "SpriteRenderer",
+     "type": "SpriteRenderer",
+     "properties": {
+      "enabled": true,
+      "sprite": "",
+      "drawMode": "simple",
+      "texture": "Assets/Art/trial3d/podium.svg",
+      "color": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "width": 1.15,
+      "height": 1.25,
+      "pixelsPerUnit": 100,
+      "flipX": false,
+      "flipY": false,
+      "sortingOrder": 0,
+      "billboard": true,
+      "visible": true,
+      "tileOrigin": "bottomLeft",
+      "borderLeft": 0,
+      "borderBottom": 0,
+      "borderRight": 0,
+      "borderTop": 0,
+      "sortPoint": "center",
+      "useCustomSize": false,
+      "sortingLayer": "default",
+      "maskInteraction": "none",
+      "shading": "unlit",
+      "toneMapping": "display",
+      "blendMode": "translucent",
+      "emissiveIntensity": 0,
+      "alphaCutoff": 0.5,
+      "normalTexture": "",
+      "lightMaskTexture": "",
+      "normalStrength": 1,
+      "normalFlipY": false,
+      "castShadow": false,
+      "receiveShadow": false
      }
     }
    ]
@@ -91,17 +3287,16 @@
   "preset": "day",
   "skyEnabled": false,
   "sunEnabled": false,
-  "shadowEnabled": true,
+  "shadowEnabled": false,
   "cloudsEnabled": false,
   "fogEnabled": false,
   "cloudDensity": 0.55,
   "sunAzimuth": -30,
   "sunElevation": 50,
-  "fogAmount": 0.25,
-  "groundColor": "#17121f"
+  "fogAmount": 0.25
  },
  "runtime": {
-  "dimension": "2d",
+  "dimension": "3d",
   "gameConfig": "",
   "gravity": [
    0,
