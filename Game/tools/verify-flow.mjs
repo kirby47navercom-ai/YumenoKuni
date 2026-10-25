@@ -27,11 +27,12 @@ try{
  await delay(800);for(let k=0;k<20&&(await stats()).mode==='title';k++){await tap('Enter');await delay(500);}
  if(from>0)await probe.evaluate(`window.hbPlayerDebug.call("Driver","Yumeno.DebugChapter",{index:${from}})`);await delay(500);
  const beats=new Map();
- const seen=new Map(),seenLines=new Set(),log=[];let last=-1,steps=0,focused=false;
+ const seen=new Map(),seenLines=new Set(),log=[];let last=-1,steps=0,focused=false,lastSig='',stall=0;
  while(steps++<200000){
   const t0=Date.now();const s=await stats();const dt=Date.now()-t0;
   if(s.error){console.log('GAME ERROR',s.error);break;}
   if(s.mode==='title'||s.chapter>to)break;
+  {const sig=JSON.stringify([s.mode,s.chapter,s.beat,s.event,s.stage,s.trial?.index,s.trial?.broken]);if(sig===lastSig){if(++stall>3000){console.log('STALL',sig,JSON.stringify(s.auto));break;}}else{lastSig=sig;stall=0;}}
   if(s.mode!=='trial'){
    const k=`${s.chapter}/${s.beat}`;if(!beats.has(k)){beats.set(k,s.beatKind);console.log('beat',k,s.beatKind,'coins',s.coins,'cards',s.cards,'gifts',s.gifts);if(['card','freetime','investigate','ending','end'].includes(s.beatKind)){await delay(400);try{await probe.capture(`${k.replace('/','-')}-${s.beatKind}.png`);}catch(e){}}}
    if(s.mode==='story'&&s.line&&!seenLines.has(k+s.event)){seenLines.add(k+s.event);if(seenLines.size%400===0){try{await probe.capture(`line-${seenLines.size}.png`);}catch(e){}}}
@@ -61,4 +62,4 @@ try{
  assert(!end.error,'게임 오류 : '+end.error);
  assert(end.mode==='title'||end.chapter>to,'끝까지 가지 못함 : '+JSON.stringify(end).slice(0,300));
  console.log(JSON.stringify({ok:true,beats:beats.size,trialStages:log.length,coins:end.coins,cards:end.cards,steps}));
-}finally{await probe?.close?.();}
+}finally{await Promise.race([probe?.close?.(),delay(8000)]);try{(await import('node:child_process')).execSync('taskkill /F /FI "IMAGENAME eq HBGame*"',{stdio:'ignore'});}catch{}process.exit(process.exitCode??0);}

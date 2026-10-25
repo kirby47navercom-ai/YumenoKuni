@@ -202,7 +202,8 @@ void Yumeno::setupPlay(){
  else if(k=="spot"){for(auto& v:stage["options"])o.push_back(v.get<std::string>());for(size_t i=0;i<o.size();i++)if(o[i]==stage.value("answer",""))optAnswer=int(i);showOptions(stage.value("question",""),o);}
  else if(k=="person"||k=="vote"){
   personIds=alive(k=="person");
-  for(size_t i=0;i<personIds.size();i++){o.push_back(nameOf(personIds[i]));if(personIds[i]==stage.value("answer",""))optAnswer=int(i);}
+  {auto ans=stage.value("answer","");if(k=="vote"&&!ans.empty()&&std::find(personIds.begin(),personIds.end(),ans)==personIds.end())personIds.push_back(ans);} // 영정에게도 투표할 수 있다(3장)
+  for(size_t i=0;i<personIds.size();i++){bool dead=std::find(trialDead.begin(),trialDead.end(),personIds[i])!=trialDead.end();o.push_back(nameOf(personIds[i])+(dead?" (영정)":""));if(personIds[i]==stage.value("answer",""))optAnswer=int(i);}
   if(o.size()>8){ // 8칸 : 정답이 들어가게 앞에서 자른다
    int start=std::clamp(optAnswer-3,0,int(o.size())-8);o=std::vector<std::string>(o.begin()+start,o.begin()+start+8);personIds=std::vector<std::string>(personIds.begin()+start,personIds.begin()+start+8);optAnswer-=start;}
   showOptions(k=="vote"?"범인이라고 생각하는 사람에게 투표하세요":stage.value("question",""),o);
@@ -237,7 +238,7 @@ void Yumeno::setupPlay(){
   stageLimit=120;
  }
  if(k=="taxi"){svis("Road",true);svis("Car",true);carX=640;taxiLane=1;roadT=0;taxiShow();}
- if(k=="showdown"||k=="armament"||k=="scrum"||k=="anagram"||k=="taxi")stageLimit=k=="armament"?999:90;
+ if(k=="showdown"||k=="armament"||k=="scrum"||k=="anagram"||k=="taxi")stageLimit=k=="armament"||k=="taxi"?999:90; // 브레인 드라이브는 시간 대신 집중력(다른 차와 부딪히면 감소)
  if(k!="mindmine"&&k!="showdown"&&k!="armament"&&k!="scrum"&&k!="anagram"&&k!="taxi")stageLimit=999;
 }
 

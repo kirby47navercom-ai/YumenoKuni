@@ -63,4 +63,4 @@ try{
  assert.equal(end.mode,'title','27단계를 모두 지나 재판이 끝남 (마지막 : '+JSON.stringify(log.at(-1))+')');
  assert(log.length>=(process.argv[2]==='2'?29:27),'단계 수 '+log.length);
  console.log(JSON.stringify({ok:true,stages:log.length,kinds:[...seen.keys()],steps},null,1));
-}finally{await probe?.close?.();}
+}finally{await Promise.race([probe?.close?.(),delay(8000)]);try{(await import('node:child_process')).execSync('taskkill /F /FI "IMAGENAME eq HBGame*"',{stdio:'ignore'});}catch{}process.exit(process.exitCode??0);}

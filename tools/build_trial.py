@@ -136,7 +136,7 @@ def stage(num, kind_ko, title, body, chapter):
             errors.append(f"{where} : 인물 지목 정답 slug 오류")
         if kind == "mindmine":
             a = CARD.search(s["answer"] or "")
-            s["card"] = a.group(0) if a else None
+            s["card"] = a.group(0) if a else s["answer"]  # 카드가 아닌 물건(그림 속 정답)은 이름 그대로
     elif kind == "showdown":
         rows = t[0][1:] if t else []
         s["lines"] = [{"text": r[1].strip('"'), "action": r[2]} for r in rows]
