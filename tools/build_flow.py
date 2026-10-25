@@ -202,9 +202,9 @@ def room_of(beat, ch):
         if not any(evs[k]["type"] in ("say", "stage", "card") for k in range(at, end)):
             continue
         who = NAMES.get(name.split("(")[0].split("·")[0].strip().split(" ")[0])
-        objects.append({"name": name, "from": at, "to": end, "who": who if who and who != "mio" else None})
+        objects.append({"name": name, "from": at, "to": end, "who": who if who and who != "mio" else ""})
     if not objects:  # 나뉘지 않은 장면 : 장면 전체가 조사 대상 하나
-        objects.append({"name": beat.get("spot", "조사"), "from": 0, "to": len(evs), "who": None})
+        objects.append({"name": beat.get("spot", "조사"), "from": 0, "to": len(evs), "who": ""})
         intro = 0
     else:
         intro = cuts[0]

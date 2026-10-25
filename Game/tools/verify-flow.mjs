@@ -10,7 +10,7 @@ const built=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'ut
 const from=Number(process.argv[2]||0),to=Number(process.argv[3]??6);
 const work=path.join(root,'Saved/verification-flow-'+Date.now().toString(36));await fs.mkdir(work,{recursive:true});
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
-const KEYS={g:[71,'KeyG'],y:[89,'KeyY'],Enter:[13,'Enter'],' ':[32,'Space'],e:[69,'KeyE'],q:[81,'KeyQ'],a:[65,'KeyA'],d:[68,'KeyD'],t:[84,'KeyT'],Shift:[16,'ShiftLeft'],1:[49,'Digit1'],2:[50,'Digit2'],3:[51,'Digit3'],4:[52,'Digit4']};
+const KEYS={Tab:[9,'Tab'],Backspace:[8,'Backspace'],m:[77,'KeyM'],g:[71,'KeyG'],y:[89,'KeyY'],Enter:[13,'Enter'],' ':[32,'Space'],e:[69,'KeyE'],q:[81,'KeyQ'],a:[65,'KeyA'],d:[68,'KeyD'],t:[84,'KeyT'],Shift:[16,'ShiftLeft'],1:[49,'Digit1'],2:[50,'Digit2'],3:[51,'Digit3'],4:[52,'Digit4']};
 // 플레이어 --smoke-test 는 180초 뒤 스스로 끝난다(엔진 수락 모드). 긴 검증은 소크 시간으로 늘린다.
 process.env.HB_PLAYER_SOAK_HOURS??='3';
 let probe;
@@ -27,7 +27,7 @@ try{
  await delay(800);for(let k=0;k<20&&(await stats()).mode==='title';k++){await tap('Enter');await delay(500);}
  if(from>0)await probe.evaluate(`window.hbPlayerDebug.call("Driver","Yumeno.DebugChapter",{index:${from}})`);await delay(500);
  const beats=new Map();
- const seen=new Map(),seenLines=new Set(),seenModes=new Set(),log=[];let last=-1,steps=0,focused=false,lastSig='',stall=0;
+ const seen=new Map(),seenLines=new Set(),seenModes=new Set(),log=[];let padShot=false;let last=-1,steps=0,focused=false,lastSig='',stall=0;
  while(steps++<200000){
   const t0=Date.now();const s=await stats();const dt=Date.now()-t0;
   if(s.error){console.log('GAME ERROR',s.error);break;}
@@ -37,6 +37,10 @@ try{
    const k=`${s.chapter}/${s.beat}`;if(!beats.has(k)){beats.set(k,s.beatKind);console.log('beat',k,s.beatKind,'coins',s.coins,'cards',s.cards,'gifts',s.gifts);if(['card','freetime','investigate','ending','end'].includes(s.beatKind)){await delay(400);try{await probe.capture(`${k.replace('/','-')}-${s.beatKind}.png`);}catch(e){}}}
    if(s.mode==='story'&&s.line&&!seenLines.has(k+s.event)){seenLines.add(k+s.event);if(seenLines.size%400===0){try{await probe.capture(`line-${seenLines.size}.png`);}catch(e){}}}
    if(['explore','map','confirm','popup','grid'].includes(s.mode)&&!seenModes.has(s.mode+s.chapter)){seenModes.add(s.mode+s.chapter);await delay(700);try{await probe.capture(`mode-${s.chapter}-${s.mode}-${s.beat}.png`);}catch(e){}}
+   if(s.mode==='explore'&&!padShot){padShot=true;await tap('Tab');await delay(700);try{await probe.capture('pad-menu.png');}catch(e){}
+    for(const k of ['Enter']){await tap(k);await delay(600);try{await probe.capture('pad-page0.png');}catch(e){}}
+    await tap('Backspace');await delay(200);for(let i=0;i<3;i++){await tap('d');await delay(150);}await tap('Enter');await delay(600);try{await probe.capture('pad-card.png');}catch(e){}
+    await tap('Backspace');await delay(200);await tap('Backspace');await delay(400);continue;}
    const a=s.auto;if(!a){await delay(40);continue;}
    if(a.kind==='key')await tap(a.key);else if(a.kind==='click')await click(a.x,a.y);
    continue;

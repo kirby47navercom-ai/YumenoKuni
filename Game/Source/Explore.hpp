@@ -9,10 +9,15 @@ constexpr float CF_YES_X=380,CF_NO_X=660,CF_Y=360,CF_W=220,CF_H=50;
 const char* const PLACES[]{"중앙 광장","호텔 로비","호텔 라운지","푸드코트","의무실","기념품샵","호텔 식당"}; // 이벤트가 없는 인물이 서 있을 곳
 }
 
+// 받침 있으면 b, 없으면 a (예 : 레이와 / 미오와 / 린과)
+std::string josa(const std::string& word,const std::string& a,const std::string& b){
+ if(word.size()<3)return a;auto s=word.substr(word.size()-3);unsigned c=((unsigned char)s[0]&0x0F)<<12|((unsigned char)s[1]&0x3F)<<6|((unsigned char)s[2]&0x3F);
+ return c>=0xAC00&&c<=0xD7A3&&(c-0xAC00)%28?b:a;
+}
 void Yumeno::etext(const std::string& id,const std::string& v){if(etexts.count(id)&&etexts[id]==v)return;etexts[id]=v;UI::SetText(this,exui::ID,id,v);}
 void Yumeno::evis(const std::string& id,bool v){if(evisible.count(id)&&evisible[id]==v)return;evisible[id]=v;UI::SetVisible(this,exui::ID,id,v);}
 void Yumeno::hideExplore(){
- for(auto id:{"ExBg","ArL","ArR","AreaBand","AreaIcon","AreaName","Mini","ExHint","LblBand","LblText","Cross","MapBack","MapImg","MapHead","MapSub","MapHint","CfShade","CfBox","CfText","CfYesP","CfYes","CfNoP","CfNo"})evis(id,false);
+ for(auto id:{"ExBg","ArL","ArR","AreaBand","AreaIcon","AreaName","Mini","ExHint","LblBand","LblText","Cross","MapBack","MapImg","MapPlace","MapWho","MapHead","MapSub","MapHint","CfShade","CfBox","CfText","CfYesP","CfYes","CfNoP","CfNo"})evis(id,false);
  for(int i=0;i<6;i++)evis("Fig"+std::to_string(i),false);
  for(int i=0;i<10;i++){evis("MiniDot"+std::to_string(i),false);evis("Spark"+std::to_string(i),false);}
  for(int i=0;i<9;i++){evis("MapP"+std::to_string(i),false);evis("MapT"+std::to_string(i),false);for(int k=0;k<4;k++)evis("MapF"+std::to_string(i)+"_"+std::to_string(k),false);}
@@ -41,7 +46,7 @@ void Yumeno::showMap(){
   if(rooms.size()>9)rooms.resize(9);
  }
  evis("MapBack",true);evis("MapHead",true);evis("MapSub",true);evis("MapHint",true);
- {auto img=artPath("pad","map_A"+std::string(chapterAt<=1?"0":std::to_string(chapterAt)),"pad",".png");if(img.empty())img=artPath("pad","map_park","pad",".png");evis("MapImg",!img.empty());if(!img.empty())UI::SetTexture(this,exui::ID,"MapImg",img);}
+ mapPreview();
  etext("MapHead",inv?"수사 — 어디를 조사할까?":"자유행동 — 누구와 보낼까?");
  etext("MapSub",inv?"현장 "+std::to_string(rooms.size())+"곳":"남은 시간 "+std::to_string(slots)+"번   ◎ "+std::to_string(coins));
  etext("MapHint",inv?"클릭 : 이동":"클릭 : 이동     G : 캡슐 머신(3코인)");
@@ -57,6 +62,13 @@ bool Yumeno::roomDone(const Room& r)const{
  auto& s=currentBeat()["spots"][r.spot];
  for(auto& o:r.objects)if(!seen.count(s.value("id","")+"#"+std::to_string(o.index)))return false;
  return true;
+}
+// 지도 왼쪽 : 가리킨 장소 미리보기 + 그곳에 있는 사람
+void Yumeno::mapPreview(){
+ if(mapHover>=int(rooms.size()))return;auto& r=rooms[mapHover];
+ auto img=artPath("backgrounds",r.bg,"bg",".webp");evis("MapImg",!img.empty());if(!img.empty())UI::SetTexture(this,exui::ID,"MapImg",img);
+ std::string who;for(auto& p:r.people)who+=(who.empty()?"":" · ")+nameOf(p);
+ etext("MapPlace",r.name);etext("MapWho",who.empty()?std::string(" "):who);evis("MapPlace",true);evis("MapWho",true);
 }
 int Yumeno::mapAt(float x,float y)const{
  if(x<exui::MAP_X||x>exui::MAP_X+exui::MAP_W||y<exui::MAP_Y)return -1;
@@ -125,7 +137,7 @@ void Yumeno::interact(int i){
  }
  // 자유행동 : 확인 → 이벤트
  if(!h.person)return;
- confirmWho=h.who;showConfirm(nameOf(h.who)+"와(과) 함께 시간을 보낼까?");
+ confirmWho=h.who;showConfirm(nameOf(h.who)+josa(nameOf(h.who),"와","과")+" 함께 시간을 보낼까?");
 }
 void Yumeno::showConfirm(const std::string& q){
  mode=Mode::Confirm;confirmYes=true;
@@ -171,7 +183,7 @@ void Yumeno::kotodamaGet(const std::string& id){
  evis("KCard",icon);if(icon)UI::SetTexture(this,exui::ID,"KCard","Assets/Art/kotodama/"+id+".png");
  std::string frame=id[0]=='T'?"frame_testimony":id[0]=='M'||id[0]=='R'?"frame_rule_magic":id[0]=='N'?"frame_memo":"frame_evidence";
  UI::SetTexture(this,exui::ID,"KFrame","Assets/Art/ui/kotodama/"+frame+".png");
- etext("KTitle","언령 「"+kotodamaName(id)+"」");etext("KMsg","을(를) 손에 넣었다!");
+ etext("KTitle","언령 「"+kotodamaName(id)+"」");etext("KMsg",josa(kotodamaName(id),"를","을")+" 손에 넣었다!");
  popupFrom=mode;mode=Mode::Popup;kspin=0;
 }
 void Yumeno::updateExplore(float delta,bool click){
@@ -180,12 +192,12 @@ void Yumeno::updateExplore(float delta,bool click){
  Vec2 m{640,360};Input::GetMousePosition(m);
  if(mode==Mode::Popup){
   kspin+=delta;UI::SetRotation(this,exui::ID,"KGlow",kspin*20);UI::SetScale(this,exui::ID,"KFrame",{std::min(1.f,kspin*4),std::min(1.f,kspin*4)});
-  if(click||pressed("Enter")){for(auto x:{"KShade","KGlow","KFrame","KCard","KBand","KTitle","KMsg"})evis(x,false);mode=popupFrom;++event;flowPresent();}
+  if(click||enterNow){for(auto x:{"KShade","KGlow","KFrame","KCard","KBand","KTitle","KMsg"})evis(x,false);mode=popupFrom;++event;flowPresent();}
   return;
  }
  if(mode==Mode::Map){
   if(pressed("g")&&currentBeat().value("t","")=="freetime"){pullCapsule();etext("MapSub","남은 시간 "+std::to_string(slots)+"번   ◎ "+std::to_string(coins));}
-  int over=mapAt(m.x,m.y);if(over>=0&&over!=mapHover){mapHover=over;for(int i=0;i<int(rooms.size());i++)UI::SetTexture(this,exui::ID,"MapP"+std::to_string(i),i==mapHover?"Assets/Art/ui/map_item_on.svg":"Assets/Art/ui/map_item.svg");}
+  int over=mapAt(m.x,m.y);if(over>=0&&over!=mapHover){mapHover=over;for(int i=0;i<int(rooms.size());i++)UI::SetTexture(this,exui::ID,"MapP"+std::to_string(i),i==mapHover?"Assets/Art/ui/map_item_on.svg":"Assets/Art/ui/map_item.svg");mapPreview();}
   if(click&&over>=0){hideExplore();enterRoom(over);}
   return;
  }
@@ -194,7 +206,7 @@ void Yumeno::updateExplore(float delta,bool click){
   bool overNo=m.y>exui::CF_Y&&m.y<exui::CF_Y+exui::CF_H&&m.x>exui::CF_NO_X&&m.x<exui::CF_NO_X+exui::CF_W;
   if(pressed("a")||overYes)confirmYes=true;if(pressed("d")||overNo)confirmYes=false;
   UI::SetTexture(this,exui::ID,"CfYesP",confirmYes?"Assets/Art/ui/map_item_on.svg":"Assets/Art/ui/map_item.svg");UI::SetTexture(this,exui::ID,"CfNoP",confirmYes?"Assets/Art/ui/map_item.svg":"Assets/Art/ui/map_item_on.svg");
-  if((click&&(overYes||overNo))||pressed("Enter"))confirmPicked(click?overYes:confirmYes);
+  if((click&&(overYes||overNo))||enterNow)confirmPicked(click?overYes:confirmYes);
   return;
  }
  // 방 : 화면 끝으로 마우스를 대거나 A/D 로 돌아본다

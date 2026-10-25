@@ -61,10 +61,14 @@ private:
  struct Hot{float u=0,v=0;bool person=false;int object=-1;std::string who;};
  std::vector<Room> rooms;std::vector<Hot> hotspots;int roomAt=0,mapHover=0,crossOver=-1,eventEnd=-1;float panX=0,bandTimer=0,flashTimer=0,kspin=0;
  std::string segmentKey,confirmWho;bool confirmYes=true;Mode popupFrom=Mode::Story;std::map<std::string,std::string> etexts;std::map<std::string,bool> evisible;
- void etext(const std::string& id,const std::string& v);void evis(const std::string& id,bool v);void hideExplore();void showMap();bool roomDone(const Room& r)const;int mapAt(float x,float y)const;
+ void etext(const std::string& id,const std::string& v);void evis(const std::string& id,bool v);void hideExplore();void showMap();void mapPreview();bool roomDone(const Room& r)const;int mapAt(float x,float y)const;
  void enterRoom(int i);void placeRoom();int hotspotAt(float x,float y)const;std::string hotspotLabel(int i)const;void playSegment(int spot,int from,int to);void interact(int i);
  void showConfirm(const std::string& q);void confirmPicked(bool yes);void segmentDone();void enterRoomBack();void band(const std::string& kind);void kotodamaGet(const std::string& id);
  void updateExplore(float delta,bool click);hb::Json autoExplore()const;
+ // 래피 패드 (Pad.hpp)
+ int padIcon=0,padPageAt=-1,padRow=0;bool enterNow=false;std::map<std::string,std::string> ptexts;std::map<std::string,bool> pvisible;
+ void ptext(const std::string& id,const std::string& v);void pvis(const std::string& id,bool v);void padToggle();void padMenu();void padHidePage();
+ std::vector<std::pair<std::string,std::string>> padRows()const;void padShowPage();void updatePad(float delta,bool click);
  void dialogVisible(bool visible);
  void startDebate(const hb::Json& d);
  void updateDebate(float delta);

@@ -31,23 +31,23 @@ DEAD = ("1.8::corpse, dead, death::, 1.6::lying on back on the floor, motionless
         "1.5::expressionless, slack face, mouth slightly open, dull glassy unfocused eyes, no highlight in eyes::, pale grey skin, "
         "1.7::purple blood::, 1.6::purple blood on face, purple blood on clothes, purple blood pool under body::, purple blood splatter, "
         "1.6::full body, whole body visible, head to toe::, 1.4::from directly above, overhead view, wide shot::, simple background, white background")
-DEAD_NEG = ("2::multiple people, 2boys, 2girls, multiple bodies, duplicate, another person, bystander::, 1.6::sleeping, asleep, peaceful, resting, closed eyes, smile, grimace, angry, teeth, clenched teeth, frown, alive expression::, 1.6::crawling, all fours, kneeling, sitting, reaching, fighting, action pose::, 2::red blood::, 1.5::cropped, out of frame, cut off legs, close-up::, red blood, 1.5::gore, guts, wound, injury, exposed organs::, "
+DEAD_NEG = ("2::multiple people, 2boys, 2girls, multiple bodies, duplicate, another person, bystander::, 1.6::sleeping, asleep, peaceful, resting, closed eyes, smile, grimace, angry, teeth, clenched teeth, frown, alive expression::, 1.6::crawling, all fours, kneeling, sitting, reaching, fighting, action pose::, 2::red blood::, 1.5::cropped, out of frame, cut off legs, close-up::, red blood, 1.5::gore, guts, exposed organs, dismemberment::, "
             "nsfw, cleavage, panties, underwear, upskirt, 1.2::alive, standing, looking at viewer::, scenery, background objects, ")
 PLATE = "1.5::no humans, scenery::, 1.5::large pool of purple blood on the floor in the center::, purple blood splatter, crime scene, ominous dramatic lighting, high contrast shadows, from above, cinematic wide shot"
 # 이름 : (인물, 인물 자세, 현장, 합성 위치 cx·cy(0~1) · 폭 비율)
-DEATHS = {
-    "death_1_taiga": ("taiga", "lying face down, arm stretched out",
-                      "night, empty carousel platform under purple neon light, giant pink horse figure no.7 lowered to the floor, whistle on red cord on the floor, twisted horse statue", (.52, .64, .5)),
-    "death_2_yuu": ("yuu", "lying face down, arms spread, soaking wet clothes",
-                    "evening poolside of an indoor water park, pool edge, headphones floating on the water, soda can rolled away, wet tiles", (.46, .64, .48)),
-    "death_3a_riku": ("riku", "lying on back, limbs bent, white gloved hand reaching out",
-                      "theater rigging room, huge fallen sandbag on the floor, scattered playing cards, a single joker card, black mini top hat fallen", (.5, .64, .46)),
-    "death_3b_sora": ("sora", "1.4::slumped sitting against a wall, head drooping, legs out::",
-                      "dark theater sound control room with mixing consoles, purple blood stain on the wall, shadow of an axe on the wall, red headband on the floor", (.62, .6, .34)),
-    "death_4_haruka": ("haruka", "collapsed on the floor on her side, one hand raised toward a door, deathly pale, bluish lips",
-                       "luxury hotel room no.505, closed locked door with scratch marks, camera dropped on the carpet", (.46, .66, .46)),
-    "death_5_nana": ("nana", "lying on her side, arm stretched",
-                     "narrow aisle between tall bookshelves in a castle library, crossbow bolt on the floor, scattered herb leaves, fallen books, table clock on a shelf", (.5, .64, .46)),
+DEATHS = {  # 이름 : (인물, 자세·상처(사인과 일치), 현장, 합성 위치, 피 웅덩이)
+    "death_1_taiga": ("taiga", "lying on back, 1.5::crushed chest, purple blood from mouth, purple bloodstain spreading on chest::, small red pressure mark on side of neck below ear",
+                      "night, empty carousel platform under purple neon light, giant pink horse figure no.7 lowered to the floor, whistle on red cord on the floor, twisted horse statue", (.52, .64, .5), True),
+    "death_2_yuu": ("yuu", "lying face down, 1.5::soaking wet clothes and hair, water dripping, bluish lips::, no wound, headphones missing",
+                    "evening poolside of an indoor water park, pool edge, headphones floating on the water, soda can rolled away, wet tiles, puddle of water", (.46, .64, .48), False),
+    "death_3a_riku": ("riku", "lying on back, 1.5::purple blood pool spreading under body, purple blood from head::, limbs bent, white gloved hand reaching out",
+                      "theater rigging room, huge fallen sandbag on the floor, scattered playing cards, a single joker card, black mini top hat fallen", (.5, .64, .46), True),
+    "death_3b_sora": ("sora", "1.4::slumped sitting against a wall, head drooping::, 1.6::head wound with purple blood running down face, purple blood on shoulder and chest::, legs out",
+                      "dark theater sound control room with mixing consoles, purple blood splatter on the wall, shadow of an axe on the wall, red headband on the floor", (.62, .6, .34), True),
+    "death_4_haruka": ("haruka", "collapsed on the floor on her side, one hand raised toward a door, 1.4::broken fingernails with purple blood on fingertips::, deathly pale, bluish lips, no other wound",
+                       "luxury hotel room no.505, closed locked door with purple-stained scratch marks, camera dropped on the carpet", (.46, .66, .46), False),
+    "death_5_nana": ("nana", "lying on her side, 1.7::crossbow bolt stuck in chest, purple blood around the wound, purple bloodstain on cardigan::, arm stretched",
+                     "narrow aisle between tall bookshelves in a castle library, scattered herb leaves, fallen books, table clock on a shelf", (.5, .64, .46), True),
 }
 
 # ---- 배경 : 사람 없음, V3 「무대 세트」 같은 실내외 ----
@@ -129,10 +129,14 @@ def cutout(src):
         _session
     except NameError:
         _session = new_session("isnet-anime")
-    return remove(Image.open(src).convert("RGB"), session=_session).convert("RGBA")
+    im = remove(Image.open(src).convert("RGB"), session=_session).convert("RGBA")
+    # 반투명 잔여(바닥 그림자·흰 테두리)를 걷어 낸다
+    a = im.getchannel("A").point(lambda v: 0 if v < 120 else min(255, int((v - 120) * 255 / 100)))
+    im.putalpha(a)
+    return im
 
 
-def composite(plate, figure, place, dst):
+def composite(plate, figure, place, dst, bleed=True):
     """판 위에 인물 : 크기·위치, 판 평균색으로 살짝 물들이고, 바닥 접촉 그림자"""
     from PIL import ImageFilter, ImageEnhance, ImageChops
     bg = Image.open(plate).convert("RGB")
@@ -168,20 +172,12 @@ def composite(plate, figure, place, dst):
         px, py = rnd.randint(fg.width // 5, fg.width * 4 // 5), rnd.randint(fg.height // 3, fg.height)
         d.ellipse((px - r, py - r * .55, px + r, py + r * .55), fill=235)
     pool = ImageChops.multiply(pool, blobs.filter(ImageFilter.GaussianBlur(10)).point(lambda v: min(255, v * 2)))
-    out.paste(Image.new("RGBA", fg.size, (118, 22, 150, 255)), (x + 6, y + 14), pool.point(lambda v: int(v * .92)))
-    gloss = pool.filter(ImageFilter.GaussianBlur(6)).point(lambda v: 60 if v > 200 else 0)
-    out.paste(Image.new("RGBA", fg.size, (210, 150, 255, 255)), (x + 2, y + 8), gloss)
+    if bleed:
+        out.paste(Image.new("RGBA", fg.size, (118, 22, 150, 255)), (x + 6, y + 14), pool.point(lambda v: int(v * .92)))
+        gloss = pool.filter(ImageFilter.GaussianBlur(6)).point(lambda v: 60 if v > 200 else 0)
+        out.paste(Image.new("RGBA", fg.size, (210, 150, 255, 255)), (x + 2, y + 8), gloss)
     edge = alpha.filter(ImageFilter.GaussianBlur(1.2))  # 가장자리를 부드럽게
     out.paste(rgb, (x, y), edge)
-    # 몸 위 핏자국 (옷·얼굴, 몸 실루엣 안에서만)
-    stain = Image.new("L", fg.size, 0)
-    d = ImageDraw.Draw(stain)
-    for _ in range(9):
-        r = rnd.randint(fg.width // 40, fg.width // 16)
-        px, py = rnd.randint(fg.width // 6, fg.width * 5 // 6), rnd.randint(fg.height // 6, fg.height * 5 // 6)
-        d.ellipse((px - r, py - r, px + r, py + r), fill=200)
-    stain = ImageChops.multiply(stain.filter(ImageFilter.GaussianBlur(5)), alpha.filter(ImageFilter.MinFilter(9)))
-    out.paste(Image.new("RGBA", fg.size, (96, 14, 128, 255)), (x, y), stain.point(lambda v: int(v * .75)))
     out.convert("RGB").save(dst)
 
 
@@ -208,8 +204,14 @@ def main():
     ap.add_argument("--death", nargs="*", default=None)
     ap.add_argument("--bg", nargs="*", default=None)
     ap.add_argument("--n", type=int, default=1)
+    ap.add_argument("--compose", nargs=2, metavar=("NAME", "FIGURE_PNG"), help="고른 인물 후보로 다시 합성(생성 없음)")
     ap.add_argument("--replate", action="store_true", help="사망 CG 배경 판도 다시 뽑는다(기본 : 있으면 재사용)")
     a = ap.parse_args()
+    if a.compose:
+        name, fig = a.compose
+        d = DEATHS[name]
+        composite(os.path.join(ROOT, "art", "cg", name + "_bg.png"), fig, d[3], os.path.join(ROOT, "art", "cg", name + ".png"), d[4])
+        return
     token = os.environ.get("NAI_TOKEN") or os.environ.get("NOVELAI_API_KEY")
     if not token:
         sys.exit("환경변수 NAI_TOKEN 에 토큰을 설정하세요.")
@@ -217,15 +219,19 @@ def main():
         cg = os.path.join(ROOT, "art", "cg")
         os.makedirs(cg, exist_ok=True)
         for name in a.death or DEATHS:
-            who, pose, scene, place = DEATHS[name]
+            who, pose, scene, place, bleed = DEATHS[name]
             look = nai.CHARACTERS[who]  # solo 유지 : 시체가 둘 생기지 않게
             plate = os.path.join(cg, name + "_bg.png")
             if a.replate or not os.path.exists(plate):
-                run(token, name + "_bg", f"{STYLE} {PLATE}, {scene}, {PARK}", "1.5::1girl, 1boy, people, person, character::, red blood, " + NEG, plate, a.n)
+                tags = PLATE if bleed else PLATE.replace("1.5::large pool of purple blood on the floor in the center::, purple blood splatter, ", "")
+                plate_neg = "1.5::1girl, 1boy, people, person, character::, red blood, " + ("" if bleed else "2::blood, purple blood, blood pool, blood splatter::, ")
+                run(token, name + "_bg", f"{STYLE} {tags}, {scene}, {PARK}", plate_neg + NEG, plate, 1)
             fig = os.path.join(ROOT, "art", "_candidates", "scene", name + "_fg_src.png")
-            run(token, name + "_fg", f"{STYLE} {look}, {pose}, {DEAD}", DEAD_NEG + (nai.MALE_NEG if "1boy" in look else "") + NEG, fig, a.n, raw=True)
+            dead = DEAD if bleed else DEAD.replace("1.7::purple blood::, 1.6::purple blood on face, purple blood on clothes, purple blood pool under body::, purple blood splatter, ", "")
+            fig_neg = DEAD_NEG + ("" if bleed else "2::blood pool, blood splatter, bloodstain on clothes::, ") + (nai.MALE_NEG if "1boy" in look else "") + NEG
+            run(token, name + "_fg", f"{STYLE} {look}, {pose}, {dead}", fig_neg, fig, a.n, raw=True)
             if os.path.exists(plate) and os.path.exists(fig):
-                composite(plate, fig, place, os.path.join(cg, name + ".png"))
+                composite(plate, fig, place, os.path.join(cg, name + ".png"), bleed)
                 print("  합성 →", name, flush=True)
     if a.bg is not None:
         for name in a.bg or BG:

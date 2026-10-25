@@ -214,21 +214,17 @@ void Yumeno::Update(float delta){
   UI::Show(this,"Assets/UI/Main.hbwidget.json",UI_ID);
   UI::Show(this,"Assets/UI/Explore.hbwidget.json","explore");
   UI::Show(this,"Assets/UI/Flow.hbwidget.json","flow");
+  UI::Show(this,"Assets/UI/Pad.hbwidget.json","pad");
   music("bgm_title");
   return;
  }
  if(mode==Mode::Trial){try{updateTrial(delta);}catch(const std::exception& e){lastError=std::string("stage ")+std::to_string(stageAt)+" "+stageKind+": "+e.what();}return;}
- bool click=pressed("mouse0"),next=pressed("Enter")|pressed("Space")|click;
+ bool click=pressed("mouse0");enterNow=pressed("Enter");bool next=enterNow|pressed("Space")|click; // 키 눈금은 한 번만 읽는다(pressed 는 읽으면 사라짐)
  if(pressed("Tab")&&flowOn&&(mode==Mode::Story||mode==Mode::Pad||mode==Mode::Menu||mode==Mode::Grid||mode==Mode::Explore||mode==Mode::Map)){
-  if(mode==Mode::Pad){mode=beforePad;UI::SetVisible(this,UI_ID,"Pad",false);}
-  else{beforePad=mode;mode=Mode::Pad;padPage();UI::SetVisible(this,UI_ID,"Pad",true);}
+  padToggle();
   return;
  }
- if(mode==Mode::Pad){
-  if(pressed("e")){padTab=(padTab+1)%4;padPage();}
-  if(pressed("q")){padTab=(padTab+3)%4;padPage();}
-  return;
- }
+ if(mode==Mode::Pad){updatePad(delta,click);return;}
  if(mode==Mode::Title){
   if(pressed("c")&&loadFlow()){flowOn=true;UI::SetVisible(this,UI_ID,"Title",false);return;}
   if(pressed("t")||pressed("y")){trialKey=story["trials"][held["y"]?1:0].get<std::string>();trialDead.clear();for(auto& d:story["dead"][trialKey])trialDead.push_back(d.get<std::string>());trials=Data::Get("Assets/Data/trials/"+trialKey+".json");startTrial();return;}
@@ -260,6 +256,7 @@ std::string Yumeno::Stats()const{
 #include "TrialRunner.hpp"
 #include "Flow.hpp"
 #include "Explore.hpp"
+#include "Pad.hpp"
 
 void Yumeno::DebugJump(int index){if(mode==Mode::Trial)enterStage(index);}
 void Yumeno::DebugChapter(int index){newGame();openChapter(index);enterBeat();}

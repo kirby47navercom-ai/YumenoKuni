@@ -71,6 +71,7 @@ for(const f of icons)await copy('ui/kotodama/'+f,'Assets/Art/kotodama/'+f);
 for(const f of ['frame_evidence','frame_testimony','frame_rule_magic','frame_memo'])await copy(`ui/kotodama/${f}.png`,`Assets/Art/ui/kotodama/${f}.png`);
 // CG(사망·처형·이벤트)·선물·패드·장 제목 카드 (있는 것만)
 const list=async(dir,re)=>{try{return (await fs.readdir(path.join(repo,dir))).filter(f=>re.test(f));}catch(e){if(e.code==='ENOENT')return [];throw e;}};
+for(const f of await list('art/cutin',/\.webp$/))await copy('art/cutin/'+f,'Assets/Art/cutin/'+f);
 const cgs=(await list('art/cg',/\.webp$/)).filter(f=>!/_(bg|fg)\.webp$/.test(f));for(const f of cgs)await copy('art/cg/'+f,'Assets/Art/cg/'+f);
 const giftIcons=await list('ui/gift',/^G\d\d\.png$/);for(const f of giftIcons)await copy('ui/gift/'+f,'Assets/Art/gift/'+f);
 const padArt=await list('ui/pad',/^(coin|capsule_machine|face_\w+|map_\w+)\.png$/);for(const f of padArt)await copy('ui/pad/'+f,'Assets/Art/pad/'+f);
@@ -288,9 +289,9 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  {const n=put('Image','Cross',[0,0,80,80],{texture:'Assets/Art/ui/ex_cross.svg',imageFit:'contain'});n.slot.alignment=[.5,.5];}
  // 지도 : 왼쪽 지도 그림, 오른쪽 장소 목록(얼굴 아이콘)
  put('Panel','MapBack',[0,0,1280,720],{background:'#08122af2'});
- put('Image','MapImg',[30,90,640,560],{texture:'',imageFit:'contain'});
+ put('Image','MapImg',[34,120,640,400],{texture:'',imageFit:'cover'});put('Text','MapPlace',[34,530,640,44],{font:head,fontSize:30,color:'#ffffff'});put('Text','MapWho',[34,578,640,60],{fontSize:20,color:'#cfe8ff',wrap:true});
  put('Text','MapHead',[30,24,700,56],{font:head,fontSize:40,color:'#ff4fa3',text:'MAP'});
- put('Text','MapSub',[700,40,560,36],{fontSize:20,color:'#cfe8ff',align:'right'});
+ put('Text','MapSub',[34,78,640,30],{fontSize:20,color:'#cfe8ff'});
  for(let i=0;i<9;i++){const y=96+i*62;put('Image','MapP'+i,[700,y,520,56],{texture:'Assets/Art/ui/map_item.svg',imageFit:'fill'});put('Text','MapT'+i,[728,y+10,300,36],{font:head,fontSize:24});
   for(let k=0;k<4;k++)put('Image',`MapF${i}_${k}`,[1040+k*44,y+6,42,42],{texture:'',imageFit:'cover',radius:21});}
  put('Text','MapHint',[700,668,560,30],{fontSize:18,color:'#ffffff',align:'right'});
@@ -312,6 +313,50 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  put('Image','Band',[0,280,1280,160],{texture:'Assets/Art/ui/band_free.svg',imageFit:'fill'});
  put('Panel','Flash',[0,0,1280,720],{background:'#d81f2acc'});
  await write('Assets/UI/Explore.hbwidget.json',e);
+}
+// 4-5) 래피 패드 W_Pad (V3 모노패드 배치, docs/spec/16 §5-2) : 아래 둥근 아이콘 6, 위 머리 띠(얼굴·제목·말풍선·큰 아이콘), 오른쪽 세로 띠(코인·이름)
+{
+ const d=createWidgetAsset('W_Pad');d.scaleMode='scale';d.scaleRule='fit';
+ const put=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:24,color:'#ffffff',background:'#00000000',padding:0,focusable:false,visible:false,...props});d.nodes.push(n);return n;};
+ const svg=(name,b,w,h)=>write(`Assets/Art/ui/${name}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">${b}</svg>`);
+ const ring=(c,inner)=>`<circle cx="70" cy="70" r="64" fill="#16121c" stroke="#ffffff" stroke-width="5"/><circle cx="70" cy="70" r="52" fill="${c}" fill-opacity=".22" stroke="${c}" stroke-width="4"/>${inner}`;
+ const ICONS={
+  map:['#ff2a4d','<circle cx="70" cy="70" r="30" fill="none" stroke="#ff2a4d" stroke-width="6"/><path d="M40 70h60M70 40v60M48 52c14 8 30 8 44 0M48 88c14-8 30-8 44 0" stroke="#ff2a4d" stroke-width="4" fill="none"/>'],
+  bullet:['#d8d8e0','<path d="M52 98V56l18-20 18 20v42z" fill="#d8d8e0"/><path d="M52 66h36" stroke="#16121c" stroke-width="4"/>'],
+  gift:['#36b6ff','<rect x="42" y="58" width="56" height="40" fill="#36b6ff"/><rect x="38" y="48" width="64" height="14" fill="#9fe0ff"/><path d="M70 48v50" stroke="#ffffff" stroke-width="6"/><path d="M70 48c-10-14-26-10-20 0M70 48c10-14 26-10 20 0" stroke="#ffffff" stroke-width="5" fill="none"/>'],
+  card:['#ff2a4d','<circle cx="56" cy="52" r="9" fill="#ff2a4d"/><path d="M44 98V70q12-10 24 0v28z" fill="#ff2a4d"/><circle cx="84" cy="52" r="9" fill="#ff8fc8"/><path d="M72 98V70q12-10 24 0v28z" fill="#ff8fc8"/>'],
+  rules:['#36b6ff','<path d="M40 86l30-46 30 46z" fill="none" stroke="#36b6ff" stroke-width="6"/><path d="M48 70l16 10 26-30" stroke="#ffffff" stroke-width="6" fill="none"/>'],
+  option:['#b0b8c8','<circle cx="80" cy="60" r="16" fill="none" stroke="#b0b8c8" stroke-width="8" stroke-dasharray="7 5"/><path d="M44 96l30-30" stroke="#36b6ff" stroke-width="10" stroke-linecap="round"/>']};
+ for(const [k,[c,inner]] of Object.entries(ICONS))await svg('pad_'+k,ring(c,inner),140,140);
+ await svg('pad_head','<path d="M0 0H1060V170H0z" fill="#0b0f1a" fill-opacity=".92"/><path d="M0 168H1060" stroke="#ffffff" stroke-opacity=".3" stroke-width="2"/>',1060,170);
+ await svg('pad_bubble','<path d="M18 4H540Q556 4 556 20V120Q556 136 540 136H40L18 160V20Q18 4 34 4z" fill="#ffffff" stroke="#16121c" stroke-width="4"/>',560,164);
+ await svg('pad_side','<path d="M0 0H140V720H0z" fill="#ff2a4d"/><path d="M10 0V720M130 0V720" stroke="#ffffff" stroke-opacity=".5" stroke-width="2"/>',140,720);
+ await svg('pad_floor','<defs><linearGradient id="f" x2="0" y2="1"><stop stop-color="#1a1030"/><stop offset="1" stop-color="#05030a"/></linearGradient></defs><rect width="1140" height="720" fill="url(#f)"/>'+Array.from({length:12},(_,i)=>`<path d="M${i*110-200} 720L${i*110+300} 300" stroke="#ffffff" stroke-opacity=".05" stroke-width="40"/>`).join(''),1140,720);
+ await svg('pad_row','<path d="M14 0H720L706 40H0z" fill="#0b0f1a" fill-opacity=".86"/><path d="M14 1H720" stroke="#ffffff" stroke-opacity=".25"/>',720,42);
+ await svg('pad_row_on','<path d="M14 0H720L706 40H0z" fill="#ff2a4d" fill-opacity=".9"/>',720,42);
+ put('Image','PdFloor',[0,0,1140,720],{texture:'Assets/Art/ui/pad_floor.svg',imageFit:'fill'});
+ put('Panel','PdTint',[0,0,1140,720],{background:'#ff2a4d22'});
+ put('Image','PdHead',[40,30,1060,170],{texture:'Assets/Art/ui/pad_head.svg',imageFit:'fill'});
+ put('Image','PdFace',[52,38,190,154],{texture:'',imageFit:'cover'});
+ put('Text','PdTitle',[262,44,600,60],{font:head,fontSize:42,color:'#ff2a4d'});
+ put('Image','PdBubble',[256,92,560,164],{texture:'Assets/Art/ui/pad_bubble.svg',imageFit:'fill'});
+ put('Text','PdDesc',[290,106,500,110],{fontSize:22,color:'#16121c',wrap:true});
+ put('Image','PdBig',[880,40,160,160],{texture:'',imageFit:'contain'});
+ for(let i=0;i<6;i++)put('Image','PdIcon'+i,[60+i*170,470,140,140],{texture:'',imageFit:'contain'});
+ put('Image','PdSide',[1140,0,140,720],{texture:'Assets/Art/ui/pad_side.svg',imageFit:'fill'});
+ put('Text','PdCoins',[1150,24,120,60],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:22,align:'center',color:'#ffffff',wrap:true});
+ put('Text','PdName',[1150,110,120,120],{font:head,fontSize:34,align:'center',color:'#ffffff',wrap:true,text:'래피\nPAD'});
+ put('Text','PdSchool',[1150,240,120,80],{fontSize:14,align:'center',color:'#ffffff',wrap:true,text:'유메노쿠니\n전자 수첩'});
+ put('Text','PdHint',[760,676,370,30],{fontSize:18,color:'#ffffff',align:'right'});
+ // 하위 화면 : 목록(왼쪽) + 그림·제목·설명(오른쪽) / 통신부 실루엣 줄
+ for(let i=0;i<12;i++){put('Image','PdRowP'+i,[60,230+i*36,560,34],{texture:'Assets/Art/ui/pad_row.svg',imageFit:'fill'});put('Text','PdRowT'+i,[84,234+i*36,520,28],{fontSize:20});}
+ put('Image','PdPic',[660,220,440,260],{texture:'',imageFit:'contain'});
+ put('Text','PdPicTitle',[660,488,460,36],{font:head,fontSize:28,color:'#ffffff'});
+ put('Text','PdPicText',[660,528,460,140],{fontSize:19,color:'#e6f2ff',wrap:true});
+ for(let i=0;i<15;i++)put('Image','PdSil'+i,[60+i*70,220,64,64],{texture:'',imageFit:'cover',radius:32});
+ put('Text','PdLevel',[60,300,560,360],{fontSize:21,color:'#ffffff',wrap:true});
+ put('Image','PdStand',[700,150,420,560],{texture:'',imageFit:'contain'});
+ await write('Assets/UI/Pad.hbwidget.json',d);
 }
 { // 브레인 드라이브·스크럼 그림 (원근 네온 도로, 차, 띠)
  await write('Assets/Art/ui/taxi_road.svg','<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07021a"/><stop offset=".45" stop-color="#2a0b45"/><stop offset="1" stop-color="#05020f"/></linearGradient></defs><rect width="1280" height="720" fill="url(#sky)"/>'+Array.from({length:60},(_,i)=>`<circle cx="${(i*197)%1280}" cy="${(i*71)%230}" r="${1+i%3*.6}" fill="#fff" opacity=".7"/>`).join('')+'<path d="M600 250H680L1260 720H20Z" fill="#12082a"/><path d="M600 250L20 720M680 250L1260 720" stroke="#ff4fa3" stroke-width="8"/><path d="M627 250L407 720M653 250L873 720" stroke="#36e3ff" stroke-width="2" opacity=".35"/>'+Array.from({length:10},(_,i)=>{const y=250+Math.pow(i/10,1.8)*470;return `<path d="M0 ${y}H1280" stroke="#a46bff" stroke-opacity="${.08+i*.02}"/>`;}).join('')+'</svg>');
