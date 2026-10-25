@@ -219,3 +219,66 @@
 - 처형은 44컷 × 합성·배경·전경 3종 = 132장이다. 현재 완성 세트 1컷과 별도 키프레임 1장이다. 합성은 1920×1080, 배경·전경은 사방 10% 여유가 있는 2304×1296이며 중앙 뷰포트는 `(192,108,1920,1080)`이다. 생성 원화를 비율 유지해 캔버스에 정렬한 뒤 레이어 합성 PNG를 내보낸다. 세부 순서·초·대사 원문은 `art/_work/batch6_execution_plan.json`에 있다.
 - 이전 표의 막간 19장은 문서 안내문의 `[CG]` 문자열까지 센 값이다. 실제 `[CG] interlude_...` 장면은 18장이므로 정정했다. 이벤트는 약 38장이라는 설명 대신 실제 표의 장면 항목 39개로 집계한다.
 - 선물 24장은 이전 납품을 유지했다. 기존 납품 이미지 덮어쓰기, WebP 변환, Git 스테이징·커밋·푸시, 엔진·데이터·대본 수정은 하지 않았다. 이번 실행에서 검수 탈락한 자체 생성본만 `art/_work/`로 이동해 새로 만들었다. 엔진 실행 검수는 별도 남음이다.
+
+
+<!-- batch6-progress-500 -->
+## 6차 제작 진행 — 2026-10-25 (500개 신규 PNG 검수, 계속 작업 중)
+
+아래 표가 앞선 이어서 체크포인트를 갱신한다. 기존 선물 24장·언령 9장·배경 18장은 건너뛰었다. 신규 납품 500장 검수를 마쳤으며, 마지막 묶음을 계속 제작 중이다.
+
+| 분류 | 필요 | 완료 | 남음 | 경로 |
+|---|---:|---:|---:|---|
+| 선물 (기존 유지) | 24 | 24 | 0 | `ui/gift/G01.png`~`G24.png` |
+| 패드 부속 | 25 | 25 | 0 | `ui/pad/coin.png`, `capsule*.png`, `face_*.png` |
+| 언령 (신규 114) | 123 | 123 | 0 | `ui/kotodama/{id}.png` |
+| 교칙 | 20 | 20 | 0 | `ui/kotodama/R-01.png`~`R-20.png` |
+| 배경 (신규 104) | 122 | 122 | 0 | `bg/*.png` |
+| 발견 CG | 6 | 6 | 0 | `art/cg/death_*.png` |
+| 처형 44컷·3종 | 132 | 132 | 0 | `art/cg/exec_*[_bg/_fg].png` |
+| 이벤트 CG | 39 | 39 | 0 | `art/cg/event_*.png` |
+| 막간 CG | 18 | 18 | 0 | `art/cg/interlude_*.png` |
+| 지도 | 8 | 8 | 0 | `ui/pad/map_park.png`, `map_A0.png`~`map_A6.png` |
+| 공통 화면 | 13 | 13 | 0 | `ui/common/chapter_*.png`, `broadcast_*.png`, `gameover.png`, `credits_bg.png`, `ending_*.png` |
+| 발굴 그림 | 6 | 6 | 0 | `ui/minigame/mindmine_1.png`~`mindmine_6.png` |
+| 클라이맥스 패널 (6장×8칸) | 48 | 9 | 39 | `art/cg/climax_{장}_{번호}.png` |
+| 클라이맥스 조각 (장별 6개) | 36 | 6 | 30 | `art/cg/climax_{장}_piece_{번호}.png` |
+| 합계 (기존 51 포함) | 620 | 551 | 69 | 신규 500장 완료 |
+
+- 처형 최종 기록은 `art/BATCH6_EXECUTION_FINAL_ASSETS.json`, `art/BATCH6_EXECUTION_FINAL_QA.json`이다. 132장과 44컷의 배경·전경 재합성 일치를 확인했다. 마지막 암전은 의도된 검은 합성·배경과 투명 전경이다.
+- 신규 배경의 자체 생성본 한 곳의 표기를 보완했다. `art/BATCH6_BACKGROUND_CORRECTIONS.json`에 기록했으며 기존 18장은 수정하지 않았다.
+- 이벤트·막간 57장, 지도·공통 21장, 발굴 6장은 전부 최종 PNG를 개별 열람했다. 규격·모드·투명도 검사는 `art/BATCH6_EVENT_INTERLUDE_QA.json`, `art/BATCH6_MAP_COMMON_QA.json`, `art/BATCH6_MINDMINE_QA.json`에 있다.
+- 지도는 문서가 절대 좌표를 지정하지 않아 통일된 일러스트 배치를 사용했다. A1은 시작 구역의 1장 해금 상태다. 공개 지도에 비공개 경로는 표시하지 않았다.
+- 클라이맥스는 장별 8칸, 빈칸 2곳마다 정답 1개와 오답 2개다. 정답은 해당 전체 패널과 일치하는 PNG 사본이다. 첫 장 14개 검수 기록은 `art/BATCH6_CLIMAX_1_ASSETS.json`, `art/BATCH6_CLIMAX_1_QA.json`에 있다.
+- 작업 재개 정보는 `art/_work/batch6_execution_checkpoint_v26.json`의 큐·검수 기록에 있다. PNG만 작성했으며 엔진·데이터·대본 수정, Git 스테이징·커밋·푸시는 실행하지 않았다. WebP 변환은 인계 대상이다.
+
+<!-- batch6-final -->
+## 6차 최종 — 2026-10-25
+
+앞선 6차 진행 체크포인트의 수량·남음은 아래 최종 표로 갱신한다. 2~11번 신규 PNG 569장을 제작하고 최종 파일을 열어 검수했다. 기존 선물 24장·언령 9장·배경 18장은 건너뛰었다.
+
+| 분류 | 필요 | 완료 | 남음 | 경로 |
+|---|---:|---:|---:|---|
+| 1. 선물 아이콘 (기존 유지) | 24 | 24 | 0 | `ui/gift/G01.png`~`G24.png` |
+| 2. 패드 부속 | 25 | 25 | 0 | `ui/pad/coin.png`, `capsule_machine.png`, `capsule_1.png`~`capsule_6.png`, `face_{slug}.png` 17명 |
+| 3. 언령 삽화 (신규 114) | 123 | 123 | 0 | `ui/kotodama/{id}.png` |
+| 3. 교칙 삽화 | 20 | 20 | 0 | `ui/kotodama/R-01.png`~`R-20.png` |
+| 4. 방별 배경 (신규 104) | 122 | 122 | 0 | `bg/*.png`; 방 대응표 `art/BATCH6_BACKGROUND_ROOM_MAP.json` |
+| 5. 발견 CG | 6 | 6 | 0 | `art/cg/death_*.png` |
+| 6. 처형 44컷·합성/배경/전경 | 132 | 132 | 0 | `art/cg/exec_{장}_{번호}.png`, `exec_{장}_{번호}_bg.png`, `exec_{장}_{번호}_fg.png` |
+| 7. 이벤트 CG | 39 | 39 | 0 | `art/cg/event_*.png` |
+| 7. 막간 CG | 18 | 18 | 0 | `art/cg/interlude_*.png` |
+| 8. 지도 | 8 | 8 | 0 | `ui/pad/map_park.png`, `map_A0.png`~`map_A6.png` |
+| 9. 공통 화면 | 13 | 13 | 0 | `ui/common/chapter_{2..6,E}.png`, `broadcast_{morning,night,body}.png`, `gameover.png`, `credits_bg.png`, `ending_{A,B}.png` |
+| 10. 발굴 이매지네이션 | 6 | 6 | 0 | `ui/minigame/mindmine_1.png`~`mindmine_6.png` |
+| 11. 클라이맥스 패널 (장별 8칸) | 48 | 48 | 0 | `art/cg/climax_{장}_{01..08}.png` |
+| 11. 클라이맥스 조각 (장별 6개) | 36 | 36 | 0 | `art/cg/climax_{장}_piece_{01..06}.png` |
+| 합계 (기존 51장 포함) | 620 | 620 | 0 | 신규 납품 569 PNG |
+
+- 최종 신규 파일 목록·크기·모드·바이트·SHA-256·분류별 원화 기록 연결은 `art/BATCH6_FINAL_ASSETS.json`에 있다. 최종 검사 결과는 `art/BATCH6_FINAL_QA.json`이다. 569개 고유 경로의 PNG 읽기·규격·모드, 언령 123장과 교칙 20장의 존재를 확인했다.
+- 패드 부속은 RGBA, 언령·교칙은 불투명 512×512, 신규 배경·발견/이벤트/막간 CG는 1920×1080, 발굴 그림은 960×420, 클라이맥스는 960×540이다. 지도·공통 화면은 2560×1440이며 장 카드 6장은 실제 투명 알파를 유지한다. 기존 파일의 모드는 수정하지 않았다.
+- 처형은 합성 1920×1080, 배경/전경 2304×1296이며 중앙 뷰포트 `(192,108,1920,1080)`으로 44컷 모두 픽셀 단위 재합성이 일치한다. 각 장 마지막 검은 합성·배경과 투명 전경은 의도된 암전 프레임이다. 최종 원화·레이어 기록은 `art/BATCH6_EXECUTION_FINAL_ASSETS.json`이다.
+- 클라이맥스 최종 기록은 `art/BATCH6_CLIMAX_FINAL_ASSETS.json`, `art/BATCH6_CLIMAX_FINAL_QA.json`이며 이전 장별 검수표를 대체한다. 각 장 1~7칸의 해당 인물은 검은 실루엣으로 유지하고 8칸에서만 정체를 공개한다. 장별 빈칸 2곳마다 정답 1개·오답 2개를 제공한다. 정답 조각 12개가 해당 전체 패널과 바이트 단위로 일치한다. 연결표는 `art/BATCH6_CLIMAX_PIECE_MAPPING.json`이다.
+- 지도는 동일한 공원 배치를 공유하며 장별 해금 상태를 색으로 구분한다. 공개 지도에는 비공개 경로를 표시하지 않았다. 절대 좌표가 없는 부분은 통일된 일러스트 배치로 표현했다.
+- 작업 중 이전 검수본과 달라진 이번 실행의 신규 PNG 47장을 확인했다. 변경본은 `art/_work/batch6_external_variants/`에 보관하고 검수한 원본을 복구·재확인했다. 기록은 `art/BATCH6_RESTORATION_QA.json`이다. 기존 51장에는 이 복구를 적용하지 않았다. 자체 생성 배경의 표기 보완 기록은 `art/BATCH6_BACKGROUND_CORRECTIONS.json`에 있다.
+- 검수 탈락본·비교용 시트·생성 패치는 `art/_work/`에 보관한다. 최종 납품 목록에는 포함하지 않는다. 최종 큐는 비어 있으며 재개 기록은 `art/_work/batch6_execution_checkpoint_v38_final.json`이다.
+- PNG만 납품했다. WebP 변환·Git 스테이징·커밋·푸시는 수행하지 않았다. 엔진·데이터·대본은 수정하지 않았으며 런타임 적용·실행 검수는 이번 에셋 제작 범위에 포함하지 않는다.

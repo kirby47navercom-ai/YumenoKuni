@@ -192,6 +192,7 @@ void Yumeno::updateDebate(float delta){
  auto& l=debate.line();
  bool correct=bullets[bullet].first==l.answer&&lieShot==l.lie;
  if(correct){
+  sfx("sfx_break");
   float px=0,py=0;bool v=debate.vpoint(px,py)&&std::hypot(aimX-px,aimY-py)<16;
   if(lieShot&&lieCost)++debate.hearts;
   debate.broken[debate.index]=true;vBreaks+=v;

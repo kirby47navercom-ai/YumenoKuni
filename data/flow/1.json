@@ -217,6 +217,10 @@
     },
     {
      "type": "bg",
+     "bg": "cg:event_1_cooking"
+    },
+    {
+     "type": "bg",
      "bg": "food_kitchen_day"
     },
     {
@@ -1991,6 +1995,10 @@
    "id": "11a:1-S3",
    "title": "1-S3 순찰대 정식 결성 (12분 / 오후 3시)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "cg:event_1_patrol"
+    },
     {
      "type": "stage",
      "text": "타이가가 노트를 한 권 들고 서 있다. 소라가 곁에서 연필을 깎는다."
@@ -6231,6 +6239,10 @@
        "bg": "carousel_day"
       },
       {
+       "type": "bg",
+       "bg": "cg:event_1_incident"
+      },
+      {
        "type": "break",
        "name": "시체"
       },
@@ -6379,24 +6391,24 @@
      ],
      "spot": "탑승장 (말 조형물 7번 · 시체)",
      "bg": "carousel_day",
-     "intro": 1,
+     "intro": 2,
      "objects": [
       {
        "name": "시체",
-       "from": 1,
-       "to": 12,
+       "from": 2,
+       "to": 13,
        "who": ""
       },
       {
        "name": "말 조형물 7번",
-       "from": 12,
-       "to": 20,
+       "from": 13,
+       "to": 21,
        "who": ""
       },
       {
        "name": "시체의 소지품",
-       "from": 20,
-       "to": 28,
+       "from": 21,
+       "to": 29,
        "who": ""
       }
      ],
@@ -7202,6 +7214,10 @@
      "bg": "hotel_dining"
     },
     {
+     "type": "bg",
+     "bg": "cg:interlude_1_breakfast"
+    },
+    {
      "type": "stage",
      "text": "접시가 열네 개. 아이가 늘 하던 대로 열여섯 개를 꺼냈다가 두 개를 조용히 찬장에 넣는다."
     },
@@ -7331,6 +7347,10 @@
      "bg": "hotel_laundry_day"
     },
     {
+     "type": "bg",
+     "bg": "cg:interlude_1_laundry"
+    },
+    {
      "type": "stage",
      "text": "세탁기 네 대. 래피 방송 : \"오늘은 빨래하는 날이에요~! 안 하면 냄새나요♪\""
     },
@@ -7442,6 +7462,10 @@
     {
      "type": "bg",
      "bg": "mio_room_day"
+    },
+    {
+     "type": "bg",
+     "bg": "cg:interlude_1_room"
     },
     {
      "type": "bg",

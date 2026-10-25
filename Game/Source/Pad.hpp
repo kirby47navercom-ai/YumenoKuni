@@ -17,7 +17,7 @@ void Yumeno::ptext(const std::string& id,const std::string& v){if(ptexts.count(i
 void Yumeno::pvis(const std::string& id,bool v){if(pvisible.count(id)&&pvisible[id]==v)return;pvisible[id]=v;UI::SetVisible(this,padui::ID,id,v);}
 void Yumeno::padToggle(){
  if(mode==Mode::Pad){for(auto& [id,v]:pvisible)if(v){UI::SetVisible(this,padui::ID,id,false);v=false;}mode=beforePad;return;}
- beforePad=mode;mode=Mode::Pad;padPageAt=-1;padRow=0;
+ beforePad=mode;mode=Mode::Pad;padPageAt=-1;padRow=0;sfx("ui_pad");
  for(auto id:{"PdFloor","PdTint","PdHead","PdFace","PdTitle","PdBubble","PdDesc","PdBig","PdSide","PdCoins","PdName","PdSchool","PdHint"})pvis(id,true);
  auto face=std::string("Assets/Art/cutin/mio_1.webp");UI::SetTexture(this,padui::ID,"PdFace",face);
  for(int i=0;i<6;i++){pvis("PdIcon"+std::to_string(i),true);UI::SetTexture(this,padui::ID,"PdIcon"+std::to_string(i),std::string("Assets/Art/ui/pad_")+padui::ICONS[i].key+".svg");}
@@ -83,12 +83,12 @@ void Yumeno::updatePad(float delta,bool click){
  if(padPageAt<0){
   int over=-1;if(m.y>padui::ICON_Y&&m.y<padui::ICON_Y+padui::ICON_W&&m.x>padui::ICON_X)over=int((m.x-padui::ICON_X)/padui::ICON_STEP);if(over>5)over=-1;
   int before=padIcon;if(pressed("a"))padIcon=(padIcon+5)%6;if(pressed("d"))padIcon=(padIcon+1)%6;if(over>=0)padIcon=over;
-  if(padIcon!=before)padMenu();
+  if(padIcon!=before){padMenu();sfx("ui_select");}
   if(enterNow||(click&&over>=0)){padPageAt=padIcon;padRow=0;padShowPage();}
   if(back)padToggle();
   return;
  }
- if(back){padPageAt=-1;padHidePage();padMenu();return;}
+ if(back){sfx("ui_cancel");padPageAt=-1;padHidePage();padMenu();return;}
  int before=padRow;
  if(padPageAt==3){if(pressed("a")||pressed("q"))padRow=(padRow+14)%15;if(pressed("d")||pressed("e"))padRow=(padRow+1)%15;
   if(click&&m.y>padui::SIL_Y&&m.y<padui::SIL_Y+64){int i=int((m.x-padui::SIL_X)/padui::SIL_STEP);if(i>=0&&i<15)padRow=i;}}

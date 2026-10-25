@@ -121,14 +121,32 @@ void Yumeno::enterStage(int i){
 void Yumeno::finishStage(){enterStage(stageAt+1);}
 
 // 대사 재생 (단계 뒤 연출 / 대사만 있는 단계)
+// 재판 CG (docs/spec/12 §5) : 이 단계 대사 동안 화면 가득. 둘이면 대사 절반에서 바뀐다
+std::vector<std::string> Yumeno::trialCgs()const{
+ static const std::map<std::string,std::map<std::string,std::vector<std::string>>> t{
+  {"11c",{{"vote",{"event_1_breakdown"}}}},{"12c",{{"vote",{"event_2_salute"}}}},{"13c",{{"vote",{"event_3_identity"}}}},
+  {"14c",{{"vote",{"event_4_fade","event_4_kneeling"}}}},{"15c",{{"vote",{"event_5_breakdown"}}}},
+  {"16c",{{"0",{"event_6_lappy_identity"}},{"14",{"event_6_oath_lines"}},{"15",{"event_6_record_100"}},{"16",{"event_6_lappy_sacrifice"}}}}};
+ auto a=t.find(trialKey);if(a==t.end())return {};
+ auto b=a->second.find(stageKind);if(b==a->second.end())b=a->second.find(std::to_string(stageAt));
+ std::vector<std::string> out;if(b!=a->second.end())for(auto& n:b->second)if(!artPath("cg",n,"cg",".webp").empty())out.push_back(n);
+ return out;
+}
+void Yumeno::showTrialCg(int i){
+ if(i>=int(scriptCgs.size()))return;
+ UI::SetTexture(this,UI_ID,"Background","Assets/Art/cg/"+scriptCgs[i]+".webp");UI::SetPosition(this,UI_ID,"Background",{-40,-24});UI::SetScale(this,UI_ID,"Background",{1,1});
+ UI::SetVisible(this,UI_ID,"Background",true);UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
+}
 void Yumeno::beginScript(){
  scriptLines.clear();for(auto& l:stage["script"])scriptLines.push_back(l);
  scriptAt=-1;inScript=true;sclear();debateHud(false);
+ scriptCgs=trialCgs();showTrialCg(0);
  if(stageMsgTimer>0)svis("StageMsg",true);
  nextScriptLine();
 }
 void Yumeno::nextScriptLine(){
- if(++scriptAt>=int(scriptLines.size())){inScript=false;dialogVisible(false);finishStage();return;}
+ if(++scriptAt>=int(scriptLines.size())){inScript=false;dialogVisible(false);if(!scriptCgs.empty()){scriptCgs.clear();UI::SetVisible(this,UI_ID,"Background",false);}finishStage();return;}
+ if(scriptCgs.size()>1&&scriptAt==int(scriptLines.size())/2)showTrialCg(1);
  auto& l=scriptLines[scriptAt];
  auto who=l.value("speaker","");auto base=baseName(who);
  line=l.value("text","");
@@ -138,7 +156,7 @@ void Yumeno::nextScriptLine(){
  if(narration&&line.rfind("[UI]",0)==0)line=line.substr(5);
  UI::SetColor(this,UI_ID,"Body",monologue?Color{.62f,.84f,1,1}:narration?(line.rfind("(",0)==0?Color{.8f,.75f,.85f,1}:Color{1,.86f,.45f,1}):Color{.96f,.94f,.97f,1});
  auto slug=slugs.count(base)?slugs.at(base):"";
- if(!slug.empty()&&!monologue)focusSpeaker(slug,poseTexture(slug,l.value("emo",""),l.value("pose","")));
+ if(!slug.empty()&&!monologue&&scriptCgs.empty())focusSpeaker(slug,poseTexture(slug,l.value("emo",""),l.value("pose","")));
  dialogVisible(true);
  bool named=!speaker.empty();UI::SetVisible(this,UI_ID,"Nameplate",named);UI::SetVisible(this,UI_ID,"Name",named);UI::SetVisible(this,UI_ID,"NameHead",named);
  text("Name",speaker);text("NameHead",u8prefix(speaker,1));UI::SetColor(this,UI_ID,"NameHead",nameColor(slug));text("Body","");lineLength=u8len(line);shown=0;
@@ -502,6 +520,7 @@ void Yumeno::updateTrial(float delta){
    // 베기 궤적이 발언을 지나갔는가 (발언 폭은 글자 수로 어림)
    float w=float(u8len(lines[sdLine].value("text","")))*52*.86f,a=std::min(aimX,dragX),b=std::max(aimX,dragX);
    if(b>x&&a<x+w){
+    sfx("sfx_slash");
     if(!final){smsg(sdLine%2?"발전!":"베어 버린다!",.6f);sdLine++;sdTime=0;}
     else if(bladeIds[sdBullet]==stage["blade"].value("answer","")){heal();svis("Blade",false);svis("BladeName",false);smsg("베어 버린다!",1.2f);UI::SetVisible(this,UI_ID,"Cutin",true);cutinTimer=1.1f;beginScript();return;}
     else{hurt();sdTime=0;}

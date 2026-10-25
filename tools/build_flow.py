@@ -39,6 +39,16 @@ PLACES = [("재판장", ["trial_room"]), ("엘리베이터", ["trial_elevator"])
           ("갑옷", ["castle_armor"]), ("수장고", ["castle_vault"]), ("지하 체험관", ["castle_basement"]), ("플로트", ["castle_float"]),
           ("왕좌", ["castle_throne"]), ("캐슬", ["castle_hall", "castle"]), ("제어실", ["core_control"]), ("대피소", ["core_shelter"]),
           ("코어", ["core_hall", "core"]), ("광장", ["plaza"]), ("분수", ["plaza"]), ("벤치", ["plaza"])]
+# 이벤트 CG (docs/spec/12 §5) : 장면 UID → art/cg 이름. 장면 첫 배경 바로 뒤에 넣는다.
+EVENT_CG = {"10:P-01": "event_P_awakening", "10:P-02": "event_P_meeting", "10:2_1_순서대로_자기소개": "event_P_snacks", "10:4_2_반응_컷": "event_P_practice_parade",
+            "11a:1-S2": "event_1_cooking", "11a:1-S3": "event_1_patrol", "12a:2-S2": "event_2_water_balloons", "12a:2-S3": "event_2_performance",
+            "13a:3-S3": "event_3_gondola", "13a:3-S7-a": "event_3_rehearsal", "14a:4-S5": "event_4_gallery_photo", "14a:4-S6": "event_4_pillow_party",
+            "15a:5-S3": "event_5_dress_code", "15a:5-S7": "event_5_clock_tower", "16a:6-S2": "event_6_last_breakfast", "16a:I_1_코어_홀_5년_전_사고_현장_": "event_6_past_night",
+            "16b:C_A_엔딩_A_기본_체포_30분_": "event_6_ending_A", "16b:C_B_엔딩_B_어두운_분기_처형": "event_6_ending_B", "16b:C_C_에필로그_후_공통_5분_": "event_6_gate"}
+# 막간 : I_N_1 식사 / I_N_2 서비스씬 / I_N_4 미오 혼자
+INTERLUDE_CG = {0: ["dinner", "rooms", "room"], 1: ["breakfast", "laundry", "room"], 2: ["dinner", "cat", "room"], 3: ["lunch", "movie", "room"], 4: ["breakfast", "gondola", "room"], 5: ["kitchen", "feast", "room"]}
+# 사건 CG : 그 장 첫 수사 현장에 들어갈 때
+INCIDENT_CG = {1: "event_1_incident", 2: "event_2_headphones", 3: "event_3_theater_case", 4: "event_4_latch", 5: "event_5_crossbow"}
 CARD = re.compile(r"(증거|증언|규칙|마법|메모|노트)\s*카드\s*[:：]?\s*(.*?)\s*\(?([ETMNR]\d?-\d+(?:-[a-z])?)\)?")
 OPTION = re.compile(r"^-?\s*([A-F])\.\s*(.*)$")
 REACT = re.compile(r"\[([^\]]+)\]\s*\"([^\"]+)\"(?:\s*\{([^}]*)\})?")
@@ -176,7 +186,17 @@ def load(prefix):
 
 
 def scene_beat(s, file_key):
-    return {"t": "scene", "id": f"{file_key}:{s['id']}", "title": s["title"], "events": convert(s["events"], f"{file_key}:{s['id']}", s["title"])}
+    uid = f"{file_key}:{s['id']}"
+    evs = convert(s["events"], uid, s["title"])
+    cg = EVENT_CG.get(uid)
+    m = re.match(r"I_(\d)_([124])_", s["id"]) if file_key == "17" else None
+    if m:
+        cg = f"interlude_{m.group(1)}_" + INTERLUDE_CG[int(m.group(1))][{"1": 0, "2": 1, "4": 2}[m.group(2)]]
+    if cg:
+        at = 1 if evs and evs[0]["type"] == "bg" else 0
+        evs.insert(at, {"type": "bg", "bg": "cg:" + cg})
+        shift(evs, at)
+    return {"t": "scene", "id": uid, "title": s["title"], "events": evs}
 
 
 def shift(events, at):
@@ -315,6 +335,15 @@ def chapter(ch):
     beats += found
     if intro:
         beats.append(intro)
+    if spots and ch in INCIDENT_CG:  # 첫 현장 들어가는 대사 앞에 사건 CG
+        evs = spots[0]["events"]
+        at = 1 if evs and evs[0]["type"] == "bg" else 0
+        evs.insert(at, {"type": "bg", "bg": "cg:" + INCIDENT_CG[ch]})
+        shift(evs, at)
+        spots[0]["intro"] = spots[0]["intro"] + 1 if spots[0]["intro"] >= at else at + 1  # 들어갈 때 CG 를 보인다
+        for o in spots[0]["objects"]:
+            o["from"] += o["from"] >= at
+            o["to"] += 1
     beats.append({"t": "investigate", "spots": spots})
     beats += after
     dead = gone_before(ch) + VICTIMS[ch]

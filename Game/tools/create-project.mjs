@@ -78,7 +78,14 @@ const padArt=await list('ui/pad',/^(coin|capsule_machine|face_\w+|map_\w+)\.png$
 const cards=await list('ui/common',/^(chapter_\w+|gameover|credits_bg|ending_\w+)\.png$/);for(const f of cards)await copy('ui/common/'+f,'Assets/Art/ui/'+f);
 // 소리 : audio/cues.json 에 파일이 적힌 것만
 const cues=JSON.parse(await fs.readFile(path.join(repo,'audio/cues.json'),'utf8')),audio={};
-for(const group of ['bgm','sfx'])for(const [k,v] of Object.entries(cues[group]||{}))if(v&&v.file){try{await copy('audio/'+v.file,'Assets/Audio/'+v.file);audio[k]='Assets/Audio/'+v.file;}catch(e){if(e.code!=='ENOENT')throw e;}}
+// 파일 찾기 : cues.json 의 file 칸 → 없으면 audio/ 아래에서 큐 ID 와 같은 이름(bgm_title.ogg 등, 하위 폴더 포함)
+const audioFiles=[];const walk=async d=>{for(const e of await fs.readdir(path.join(repo,d),{withFileTypes:true}).catch(()=>[])){const r=d+'/'+e.name;if(e.isDirectory())await walk(r);else if(/\.(ogg|mp3|wav|m4a|flac)$/i.test(e.name))audioFiles.push(r);}};await walk('audio');
+for(const group of ['bgm','sfx'])for(const [k0,v] of Object.entries(cues[group]||{})){
+ const k=k0.replace(/_\*$/,''),src=v&&v.file?'audio/'+v.file:audioFiles.find(f=>path.basename(f).replace(/\.[^.]+$/,'').toLowerCase()===k.toLowerCase());
+ if(!src)continue;try{const to='Assets/Audio/'+path.basename(src);await copy(src,to);audio[k]=to;}catch(e){if(e.code!=='ENOENT')throw e;}}
+// 큐 목록 : 사용자가 파일 이름을 맞출 수 있게 (audio/CUES.md)
+await fs.writeFile(path.join(repo,'audio/CUES.md'),['# 소리 파일 이름 표','','`audio/` 아래(하위 폴더도 됨)에 **아래 이름 그대로** 파일을 넣으면 다음 빌드부터 그 자리에서 나온다. 확장자는 .ogg .mp3 .wav .m4a .flac 아무거나.','','| 파일 이름 | 쓰는 곳 | 들어감 |','|---|---|---|',
+ ...['bgm','sfx'].flatMap(g=>Object.entries(cues[g]||{}).map(([k0,v])=>{const k=k0.replace(/_\*$/,'');return `| ${k} | ${(v&&(v.use||v.name))||''} | ${audio[k]?'✓':''} |`;})),''].join('\n'));
 await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5)),kotodama:icons.map(f=>f.slice(0,-4)),cg:cgs.map(f=>f.slice(0,-5)),gifts:giftIcons.map(f=>f.slice(0,-4)),pad:padArt.map(f=>f.slice(0,-4)),cards:cards.map(f=>f.slice(0,-4)),audio});
 
 // 4) UI 위젯 (1280×720 기준, V3식 대화창)

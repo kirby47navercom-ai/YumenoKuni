@@ -3,6 +3,7 @@
 * `cues.json`에 게임이 쓰는 BGM 31종·SFX 19종의 **ID·용도**가 들어 있다. 각 항목의 `file`에 이 폴더 안의 파일 이름을 적으면 게임이 그 소리를 쓴다. 비어 있으면 무음으로 진행한다.
 * 파일 형식 : `.ogg`(권장) / `.mp3` / `.wav`. 루프 BGM은 끊김 없는 루프 구간으로 자른다.
 * 예 : `"bgm_trial_nonstop": {"file": "trial/nonstop.ogg"}`
+* **더 쉬운 방법** : `cues.json`을 고치지 않고 파일 이름을 큐 ID 그대로(`bgm_title.ogg`, `sfx_break.wav` …) 해서 `audio/` 아래(하위 폴더도 됨)에 넣는다. 전체 이름표는 빌드할 때마다 갱신되는 `CUES.md`(들어간 것은 ✓).
 * 처형 영상 도구는 `audio/bgm_exec_{장}.ogg`가 있으면 자동으로 깐다.
 
 ## 주의

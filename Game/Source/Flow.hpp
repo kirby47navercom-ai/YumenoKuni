@@ -172,6 +172,7 @@ void Yumeno::flowPresent(){
   if(currentBeat().value("t","")=="execution"&&art.contains("cg")){
    std::vector<std::string> keys;auto pre="exec_"+std::to_string(currentBeat().value("chapter",1))+"_";
    for(auto& c:art["cg"]){auto n=c.get<std::string>();if(n.rfind(pre,0)==0)keys.push_back(n);}
+   {auto key="event_"+std::to_string(currentBeat().value("chapter",1))+"_execution_keyart";if(!artPath("cg",key,"cg",".webp").empty())keys.insert(keys.begin(),key);} // 처형 키아트가 첫 장
    if(!keys.empty()){UI::SetTexture(this,UI_ID,"Background","Assets/Art/cg/"+keys[std::min<size_t>(event,keys.size()-1)]+".webp");UI::SetVisible(this,UI_ID,"Background",true);kenTime=0;}
   }
   speaker.clear();portrait.clear();
@@ -241,7 +242,7 @@ int Yumeno::menuAt(float x,float y)const{
  return i<menuCount&&y-flowui::OPT_Y-i*flowui::OPT_STEP<=flowui::OPT_H?i:-1;
 }
 void Yumeno::menuPicked(int i){
- hideMenu();auto& b=currentBeat();
+ hideMenu();sfx("ui_confirm");auto& b=currentBeat();
  if(menuKind==MenuKind::Event){
   auto& o=flowEvents()[event]["options"][i];
   flags.insert(o.value("flag",""));event=o.value("to",event+1);showStory();flowPresent();return;
@@ -280,7 +281,7 @@ int Yumeno::gridAt(float x,float y)const{
 void Yumeno::gridPicked(int i){giveGift(i);}
 void Yumeno::pullCapsule(){
  if(coins<3){toast("코인이 모자라요");return;}
- coins-=3;++pulls;sfx("sfx_capsule_*");
+ coins-=3;++pulls;sfx("sfx_capsule");
  static std::mt19937 rng{std::random_device{}()};
  int roll=int(rng()%100);std::string tier=roll<1?"장미":roll<10?"희귀":roll<40?"좋은":"일반";
  if(pulls%15==0&&(tier=="일반"||tier=="좋은"))tier="희귀"; // 15회마다 희귀 이상 보증

@@ -78,7 +78,7 @@ int Yumeno::mapAt(float x,float y)const{
 
 // ── 방 : 배경을 넓게 깔고, 인물은 바닥에 서 있고, 조사 대상은 화면 곳곳 ──────
 void Yumeno::enterRoom(int i){
- roomAt=i;auto& r=rooms[i];panX=0;
+ roomAt=i;auto& r=rooms[i];panX=0;sfx("sfx_door");
  hideExplore();hideFlow();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);
  auto bg=artPath("backgrounds",r.bg,"bg",".webp");
  evis("ExBg",true);if(!bg.empty()){UI::SetTexture(this,exui::ID,"ExBg",bg);lastBackground=bg;if(currentBeat().value("t","")=="investigate")sceneBackground=bg;}
@@ -140,7 +140,7 @@ void Yumeno::interact(int i){
  confirmWho=h.who;showConfirm(nameOf(h.who)+josa(nameOf(h.who),"와","과")+" 함께 시간을 보낼까?");
 }
 void Yumeno::showConfirm(const std::string& q){
- mode=Mode::Confirm;confirmYes=true;
+ mode=Mode::Confirm;confirmYes=true;sfx("ui_select");
  for(auto id:{"CfShade","CfBox","CfText","CfYesP","CfYes","CfNoP","CfNo"})evis(id,true);etext("CfText",q);
  UI::SetTexture(this,exui::ID,"CfYesP","Assets/Art/ui/map_item_on.svg");UI::SetTexture(this,exui::ID,"CfNoP","Assets/Art/ui/map_item.svg");
 }

@@ -191,78 +191,108 @@
  "sfx": {
   "sfx_ding": {
    "desc": "시체 발견 \"딩동♪\"",
-   "file": null
+   "file": null,
+   "use": "방송 차임(딩동댕동) · 수사 종료"
   },
   "sfx_card": {
    "desc": "카드 획득",
-   "file": null
+   "file": null,
+   "use": "언령 획득"
   },
   "sfx_note": {
    "desc": "노트 적는 소리 + 금빛 반짝",
-   "file": null
+   "file": null,
+   "use": "노트에 적기"
   },
   "sfx_slash": {
    "desc": "반론 쇼다운 베기",
-   "file": null
+   "file": null,
+   "use": "반론 쇼다운 베기"
   },
   "sfx_break": {
    "desc": "논파 유리 깨짐",
-   "file": null
+   "file": null,
+   "use": "논파(약점 명중)"
   },
   "sfx_wrong": {
    "desc": "오답",
-   "file": null
+   "file": null,
+   "use": "오답·실패"
   },
   "sfx_correct": {
    "desc": "정답",
-   "file": null
+   "file": null,
+   "use": "정답·좋아하는 선물"
   },
   "sfx_coin": {
    "desc": "코인",
-   "file": null
+   "file": null,
+   "use": "코인 획득·조사"
   },
-  "sfx_capsule_*": {
+  "sfx_capsule": {
    "desc": "캡슐 뽑기(일반/좋은 것/희귀/장미)",
-   "file": null
+   "file": null,
+   "use": "캡슐 머신"
   },
   "sfx_bell": {
    "desc": "시계탑 종",
-   "file": null
+   "file": null,
+   "use": "시계탑 종(5장)"
   },
   "sfx_musicbox": {
    "desc": "오르골 한 소절",
-   "file": null
+   "file": null,
+   "use": "오르골(아침)"
   },
-  "sfx_door_*": {
+  "sfx_door": {
    "desc": "문(열림/잠김/걸쇠)",
-   "file": null
+   "file": null,
+   "use": "방에 들어갈 때"
   },
-  "sfx_footstep_*": {
+  "sfx_footstep": {
    "desc": "발소리 (바닥재별)",
-   "file": null
+   "file": null,
+   "use": "이동"
   },
-  "sfx_machine_*": {
+  "sfx_machine": {
    "desc": "제어반·낙하 장치·알람",
-   "file": null
+   "file": null,
+   "use": "기계 작동"
   },
-  "sfx_tv_*": {
+  "sfx_tv": {
    "desc": "TV 소리",
-   "file": null
+   "file": null,
+   "use": "모니터 방송 켜짐"
   },
-  "sfx_water_*": {
+  "sfx_water": {
    "desc": "물소리(파도·샤워·풀)",
-   "file": null
+   "file": null,
+   "use": "물소리(2장)"
   },
-  "sfx_glass_*": {
+  "sfx_glass": {
    "desc": "거울 깨짐",
-   "file": null
+   "file": null,
+   "use": "거울·유리(3장)"
   },
   "sfx_clock_tick": {
    "desc": "시계 틱",
+   "file": null,
+   "use": "시계 초침"
+  },
+  "ui_select": {
+   "use": "메뉴 고르기(커서)",
    "file": null
   },
-  "ui_*": {
-   "desc": "UI 계열(02 §0-2)",
+  "ui_confirm": {
+   "use": "결정",
+   "file": null
+  },
+  "ui_cancel": {
+   "use": "취소·돌아가기",
+   "file": null
+  },
+  "ui_pad": {
+   "use": "패드 열기",
    "file": null
   }
  }

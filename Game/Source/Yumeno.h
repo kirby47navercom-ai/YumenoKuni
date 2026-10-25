@@ -92,7 +92,7 @@ private:
  void debateHud(bool on);void drawHearts();void hurt();void heal();void focusSpeaker(const std::string& slug,const std::string& texture);void updateCamera(float delta);
  void startTrial();void endTrial();void enterStage(int i);void finishStage();void beginScript();void nextScriptLine();void updateScript(float delta,bool next);
  void showOptions(const std::string& question,const std::vector<std::string>& o);int optionAt(float x,float y)const;std::vector<std::string> alive(bool withMio)const;
- void climaxOptions();void bladeList();void optionHighlight();void personShow();void spotShow();void setupPlay();void optionPicked(int i);void scrumNext();void scrumPick(int i);void anaSlots();std::vector<int> mineGroup(int start)const;bool itemOpen(int item)const;void mineClick(int c);void taxiShow();
+ std::vector<std::string> trialCgs()const;void showTrialCg(int i);std::vector<std::string> scriptCgs;void climaxOptions();void bladeList();void optionHighlight();void personShow();void spotShow();void setupPlay();void optionPicked(int i);void scrumNext();void scrumPick(int i);void anaSlots();std::vector<int> mineGroup(int start)const;bool itemOpen(int item)const;void mineClick(int c);void taxiShow();
  void updateTrial(float delta);hb::Json autoAction()const;
  void scrumFormation(float t);void taxiQText();void updateTaxi(float delta);
  std::vector<std::array<float,4>> optRects;std::vector<std::string> taxiChars;

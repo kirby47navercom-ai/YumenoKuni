@@ -106,6 +106,10 @@
      "bg": "core_shelter"
     },
     {
+     "type": "bg",
+     "bg": "cg:event_6_last_breakfast"
+    },
+    {
      "type": "stage",
      "text": "대피소. 오래된 침상 열과 낡은 담요. 입구 쪽에 입소 단말기. 5명이 둥글게 앉는다."
     },
@@ -489,6 +493,10 @@
        "bg": "core_hall"
       },
       {
+       "type": "bg",
+       "bg": "cg:event_6_past_night"
+      },
+      {
        "type": "stage",
        "text": "거대한 원형 홀. 중앙에 푸르게 빛나는 코어. 천장은 높고 철제 난간이 둘러져 있다."
       },
@@ -560,7 +568,7 @@
       {
        "name": "I-1 코어 홀 (5년 전 사고 현장)",
        "from": 0,
-       "to": 13,
+       "to": 14,
        "who": ""
       }
      ],
@@ -868,6 +876,10 @@
       "title": "C-A 엔딩 A (기본) — 체포 (30분)",
       "events": [
        {
+        "type": "bg",
+        "bg": "cg:event_6_ending_A"
+       },
+       {
         "type": "say",
         "speaker": "코어",
         "text": "…정답입니다. 범인은 하나이 코토."
@@ -958,6 +970,10 @@
       "title": "C-B 엔딩 B (어두운 분기) — 처형",
       "events": [
        {
+        "type": "bg",
+        "bg": "cg:event_6_ending_B"
+       },
+       {
         "type": "say",
         "speaker": "미오",
         "text": "…살의를 버릴 수 없어. …하루카를 죽인 사람을 …용서할 수 없어."
@@ -1001,6 +1017,10 @@
    "id": "16b:C_C_에필로그_후_공통_5분_",
    "title": "C-C 에필로그 후 (공통 / 5분)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "cg:event_6_gate"
+    },
     {
      "type": "stage",
      "text": "아침 햇살 아래의 정문. 닫혀 있던 철문이 열린다. 5명이 문턱을 넘는다. 프롤로그의 카메라 워크가 이번에는 반대 방향으로."
