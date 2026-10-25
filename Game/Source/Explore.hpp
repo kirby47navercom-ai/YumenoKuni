@@ -134,6 +134,7 @@ void Yumeno::playSegment(int spot,int from,int to){
 }
 void Yumeno::interact(int i){
  auto h=hotspots[i];auto& r=rooms[roomAt];bool inv=currentBeat().value("t","")=="investigate";
+ sfx(h.person?"sfx_talk_in":"sfx_inspect");
  if(inv){
   int obj=h.object;
   if(h.person){auto& s=currentBeat()["spots"][r.spot];for(int k=0;k<int(r.objects.size());k++)if(r.objects[k].who==h.who){obj=k;if(!seen.count(s.value("id","")+"#"+std::to_string(r.objects[k].index)))break;}}
@@ -180,7 +181,8 @@ void Yumeno::enterRoomBack(){ // 대화가 끝난 뒤 같은 방 그대로
 // 띠 연출 : 자유행동·수사 개시·수사 종료·시체 발견 (1.4초, 입력을 막지 않음)
 void Yumeno::band(const std::string& kind){
  UI::SetTexture(this,exui::ID,"Band","Assets/Art/ui/band_"+kind+".svg");evis("Band",true);bandTimer=1.4f;
- if(kind=="body"){evis("Flash",true);flashTimer=.25f;music("bgm_discovery");sfx("sfx_ding");}
+ if(kind=="body"){evis("Flash",true);flashTimer=.25f;} // 소리(충격 + 시체 발견 징글)는 사망 CG 이벤트에 붙어 있다(tools/sound_design.py)
+ else if(kind!="invend")sfx("sfx_band");
 }
 // 언령 획득 : 빛 + 카드 + 「언령 ○○를 손에 넣었다」. 클릭할 때까지
 void Yumeno::kotodamaGet(const std::string& id){
@@ -203,7 +205,7 @@ void Yumeno::updateExplore(float delta,bool click){
  }
  if(mode==Mode::Map){
   if(pressed("g")&&currentBeat().value("t","")=="freetime"){pullCapsule();etext("MapSub","남은 시간 "+std::to_string(slots)+"번   ◎ "+std::to_string(coins));}
-  int over=mapAt(m.x,m.y);if(over>=0&&over!=mapHover){mapHover=over;for(int i=0;i<int(rooms.size());i++)UI::SetTexture(this,exui::ID,"MapP"+std::to_string(i),i==mapHover?"Assets/Art/ui/map_item_on.svg":"Assets/Art/ui/map_item.svg");mapPreview();}
+  int over=mapAt(m.x,m.y);if(over>=0&&over!=mapHover){mapHover=over;sfx("ui_select");for(int i=0;i<int(rooms.size());i++)UI::SetTexture(this,exui::ID,"MapP"+std::to_string(i),i==mapHover?"Assets/Art/ui/map_item_on.svg":"Assets/Art/ui/map_item.svg");mapPreview();}
   if(click&&over>=0){hideExplore();enterRoom(over);}
   return;
  }
@@ -220,9 +222,9 @@ void Yumeno::updateExplore(float delta,bool click){
  if(dir!=0){panX=std::clamp(panX+dir*delta*420,-exui::PAN,exui::PAN);placeRoom();}
  UI::SetPosition(this,exui::ID,"Cross",{m.x,m.y});
  int over=hotspotAt(m.x,m.y);
- if(over!=crossOver){crossOver=over;UI::SetTexture(this,exui::ID,"Cross",over>=0?"Assets/Art/ui/ex_cross_on.svg":"Assets/Art/ui/ex_cross.svg");
+ if(over!=crossOver){crossOver=over;UI::SetTexture(this,exui::ID,"Cross",over>=0?"Assets/Art/ui/ex_cross_on.svg":"Assets/Art/ui/ex_cross.svg");if(over>=0)sfx(hotspots[over].person?"sfx_hover_person":"sfx_hotspot");
   evis("LblBand",over>=0);evis("LblText",over>=0);if(over>=0)etext("LblText",hotspotLabel(over));}
- if(pressed("m")){showMap();return;}
+ if(pressed("m")){sfx("ui_page_b");showMap();return;}
  if(click&&over>=0){evis("LblBand",false);evis("LblText",false);crossOver=-1;interact(over);}
 }
 // 자동 진행 검증 : 지도에서 아직 안 끝난 곳 → 방에서 안 본 대상(또는 이벤트가 남은 인물)

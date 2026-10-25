@@ -172,8 +172,21 @@ node tools/verify-trial-full.mjs 2    # 2장 재판만. 셋째 인수 = 시작 �
 * **수사 무한 반복 3가지 고침(2026-10-25 밤)** : ① 좌표 키가 앞부분이 겹칠 때(「시체」/「시체의 소지품」) 가장 긴 키가 이긴다 ② 인물에게 말을 걸어야 나오는 대상(`who`)인데 그 사람이 방에 없으면 일반 조사 지점으로 둔다(5장 나나) ③ `who` 대상의 번호를 방 안 순서(k)로 쓴다(`o.index` 는 장면 전체 번호). 논스톱 의논은 줄이 바뀌는 프레임에 글꼴·색만 보내고 글자는 다음 프레임(엔진 명령 1000개 한도, 5장 6단계에서 걸렸음).
 * **verify-flow.mjs LOOP 검출** : 재판이 아닌 비트가 10분째 그대로면 `LOOP` 를 찍고 멈춘다(상태가 돌기만 해서 STALL 로 안 잡히던 경우).
 
+* **소리 (2026-10-25 밤)** : 사용자가 준 V3 OST(`Downloads/dtd`, 루프 조사 `dtd/loop-research/`)·효과음(`Downloads/Danganropa Sound Effects`, 사용처 대조표 포함)을 `python tools/import_audio.py` 로 `audio/bgm`·`audio/sfx`(ogg, **git 에 안 올림**)와 `audio/cues.json`(큐→원곡·루프 지점)으로 만든다. 큐↔원곡 표는 그 스크립트 맨 위 BGM/JINGLE/SFX.
+  * 루프 : 엔진은 파일 통째로만 반복 → 곡마다 `<큐>_intro`(한 번) + `<큐>`(반복)로 자르고 게임이 intro 끝나기 직전에 넘긴다(`Flow.hpp music/playCue/updateMusic`). 루프 지점 = 팬 BRSTM 수치를 파형 상관으로 다시 맞춤(23곡) / 앨범판이라 같은 소리가 안 되풀이되는 곡은 스펙트럼이 가장 닮은 두 지점(40곡, 이음매 30ms 섞음). 결과·상관값은 `audio/LOOPS.txt`.
+  * 징글(`jingle_*`, 장 표지·시체 발견 A~E·래피 등장·투표 슬롯·회상) = 한 번 틀고 `len` 초 뒤 다음 곡. 대본에는 `"music":"jingle_x>bgm_y"`.
+  * 장면 곡·이벤트 효과음 배치 = `tools/sound_design.py`(build_flow.py 가 부름). 장면 `bgm`, 이벤트 `music`/`sfx`(배열 가능). 재판 단계별 곡은 `TrialRunner.hpp enterStage`(장마다 재판 곡·이론 무장 곡, 논스톱은 뒤쪽에서 고조곡, 투표 징글 뒤 진상 곡).
+  * **엔진 버그 우회** : 런타임 `prototype/audio-pcm-cache.js` 가 `this.fetch(url)` 로 불러 「Illegal invocation」 → 효과음(PCM 경로)이 하나도 안 났다. `create-project.mjs` 가 소리마다 `Assets/Audio/S_<큐>.hbaudioasset.json`(streaming:true, virtualize:false)을 만들어 그 경로로 튼다(HTMLAudio 스트림 경로라 버그를 안 지남). 엔진이 고쳐지면 되돌려도 된다. 엔진 설치본은 건드리지 않았다.
+  * 재생 확인 : 런타임 보고서 `Saved/verification-flow-*/UserData/runtime-report.json` 의 `audio.voices`(peak)·`audio.errors`.
+* **선물 110종** : 원래 24종(G01~G24) + StrategyWiki 「Trigger Happy Havoc/Presents」 아이콘 86종(P###, 사용자 지시) — `python tools/import_gifts.py`(아이콘 받기·256px 정사각, 한국어 이름·등급, 인물별 love/like/hate). 속옷·성적인 물건·1편 줄거리 기념품은 뺐다(인물이 미성년자). build_flow.py gifts() 가 마지막에 이것을 다시 합친다. 선물 화면은 15종 넘으면 쪽 넘김(14종 + 「다음 쪽」 + 「주지 않는다」), like = 인연 +2.
+
+* **입상 키 비율·서는 자리** : `tools/game_sprites.py normalize()` — 대화 입상(카우보이 샷)을 머리 중심이 가운데(512)로 오게 옮기고, 아래 가운데를 기준으로 키(data/characters.json, 최대 188cm) 비율만큼 줄인다(래피 0.62). 탐색 전신은 480×1040 같은 캔버스에 발끝을 맞추고 키 비율. `NORM` 값을 올리면 전부 다시 변환.
+* **포즈** : `tools/pose_design.py`(build_flow.py 가 부름) — 대사마다 `pose`(C01~C14·U1~U6·K, 래피 L). 표정 지시 → 대사 내용 → 기본·미소·버릇 포즈 순환(복선 포즈 sora U4·haruka U6·ken U6 제외). 재판 대본(data/trials script)도 `pose_design.trials()` 가 「slug_코드」로 덮어씀(T01 지목·T02 짚기·T03 동의·T04 몰림 우선).
+* **재판 카메라(V3)** : `Courtroom.hpp SHOTS`(정면 밀기·좌우 돌아 들어가기·낮은 기운 샷·얼굴 가까이·높은 원경·논의용 큰 원호) + `TrialRunner.hpp focusSpeaker/updateCamera` — 같은 화자가 이어 말하면 컷, 다른 화자면 원을 따라 휩(0.38초, 속도선 `ui/whip.svg`), 대사 동안 드리프트·흔들림. 화자 밝은 입상(Portrait)·증언대(SpeakerPodium)는 매 프레임 3D 빌보드 투영 자리에 겹친다(`court::billboard`). 고르기 단계·패닉은 가운데에서 천천히 도는 원경(`courtWide`). 증언대 높이 1.2m(키 비율 입상 얼굴이 안 가리게). 확인 : `node tools/capture-trial-camera.mjs [단계] [fast]` → `Saved/camera/`.
+* **「수사 종료」 띠가 재판 내내 남던 버그** : 띠 시계가 탐색 화면에서만 돌아서. startTrial 에서 끈다.
+
 ### 6-2. 남은 일
-1. **소리 파일** : 사용자가 넣으면 `audio/CUES.md` 를 보고 이름이 맞는지 확인 → 빌드 → 큐마다 실제로 나는지 검증.
+1. **소리** : 들어갔다(§6-1). 새 PC 에서는 원본 폴더 두 개를 받아 `python tools/import_audio.py <dtd> <효과음 폴더>` 를 먼저 돌린다(음원은 저장소에 없음). 곡 고르기를 바꾸려면 import_audio.py 표 → 다시 돌리기. 오르골·종·물소리·시계 초침은 받은 효과음에 없어 무음.
 2. **Codex 와의 충돌 주의** : Codex 6차 마지막 단계가 「허락 없는 변경」이라며 Claude 가 NAI 로 바꾼 배경·사망 CG 47장을 자기 원본으로 되돌린 적이 있다. **배경(bg/)·사망 CG(art/cg/death_*)는 NAI 결과가 정본**(사용자 지시). Codex 에게 일을 줄 때 「bg/ 와 art/cg/death_* 는 건드리지 말 것」을 꼭 쓴다. NAI 후보 원본은 `art/_candidates/scene/`, 다시 만드는 법은 §4-1.
 3. 남은 V3 차이(작음) : 반론 쇼다운의 「???」 위증 칼날 목록, 논스톱 발언이 화자 렌즈 안에서 더 크게.
 4. 효과가 없어서 뺀 스킬 19종(표시·힌트형 : 거짓 증언 노란 마크, 증언 감정 표시 등)은 해당 기능을 만든 뒤에 `skills.json` 에 넣는다.

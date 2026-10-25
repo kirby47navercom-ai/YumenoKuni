@@ -43,7 +43,10 @@ hb::Actor* Yumeno::actor(const std::string& id){auto& a=actors[id];if(!a)a=Scene
 void Yumeno::seatVisible(int seat,bool visible){if(auto* a=actor("Seat"+std::to_string(seat)))Components::Set(a,"SpriteRenderer","visible",visible);}
 void Yumeno::placeCamera(float angle){
  auto s=court::shot(angle);
- if(auto* c=actor("Camera")){Scene::SetPosition(c,{s.x*(1-cameraPitch/30),s.y+cameraPitch*.02f,s.z*(1-cameraPitch/30)});Scene::SetRotation(c,{cameraPitch,s.yaw,0});} // 래피를 볼 때는 가운데로 물러나 올려다본다
+ setCam({s.x*(1-cameraPitch/30),s.y+cameraPitch*.02f,s.z*(1-cameraPitch/30),s.yaw,cameraPitch,0}); // 래피를 볼 때는 가운데로 물러나 올려다본다
+}
+void Yumeno::setCam(const court::Cam& c){
+ cam=c;if(auto* a=actor("Camera")){Scene::SetPosition(a,{c.x,c.y,c.z});Scene::SetRotation(a,{c.pitch,c.yaw,c.roll});}
 }
 // 재판 시작 : 생존자는 입상, 사망자는 영정. 카메라는 첫 화자 자리에서 시작
 void Yumeno::setupCourt(){
@@ -89,7 +92,7 @@ void Yumeno::startDebate(const hb::Json& d){
  if(panic){std::vector<std::string> who;for(auto& l:debate.lines){auto sl=slugs.count(l.speaker)?slugs.at(l.speaker):"";if(!sl.empty()&&std::find(who.begin(),who.end(),sl)==who.end()&&who.size()<3)who.push_back(sl);}
   for(int i=0;i<3;i++){bool on=i<int(who.size());for(auto id:{"PanicFig","PanicFrame","PanicName"})svis(id+std::to_string(i),on);if(!on)continue;
    UI::SetTexture(this,"stage","PanicFig"+std::to_string(i),"Assets/Art/cutin/"+who[i]+"_1.webp");stext("PanicName"+std::to_string(i),nameOf(who[i]));}
-  panicWho=who;UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);}else panicWho.clear();UI::SetTexture(this,UI_ID,"StartBand",panic?"Assets/Art/ui/start_panic.svg":"Assets/Art/ui/start_nonstop.svg");UI::SetVisible(this,UI_ID,"StartBand",true);startBandTimer=1.6f;
+  panicWho=who;courtWide();UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);}else panicWho.clear();UI::SetTexture(this,UI_ID,"StartBand",panic?"Assets/Art/ui/start_panic.svg":"Assets/Art/ui/start_nonstop.svg");UI::SetVisible(this,UI_ID,"StartBand",true);startBandTimer=1.6f;
  UI::SetVisible(this,UI_ID,"Lens",true);
 }
 
@@ -167,7 +170,7 @@ void Yumeno::updateDebate(float delta){
  bool turning=cameraTime<1;
  if(!turning)debateTime-=delta*(Input::IsKeyDown("Shift")&&debate.focus>0?.35f:1);
  {int ms=std::max(0,int(debateTime*1000));char t[16];std::snprintf(t,sizeof t,"%02d:%02d:%03d",ms/60000,ms/1000%60,ms%1000);text("Timer",t);}
- if(debateTime<=0){message("시간 초과… 처음부터!",2.f);debateTime=180;debate.hearts=maxHearts;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;retries++;}
+ if(debateTime<=0){sfx("sfx_timeup");message("시간 초과… 처음부터!",2.f);debateTime=180;debate.hearts=maxHearts;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;retries++;}
  bool changed=(!turning&&debate.tick(delta*(focusing?.35f:1)))||shownLine!=debate.index;
  if(changed){shownLine=debate.index;styleLine();} // 줄이 바뀐 프레임은 글꼴·색만, 글자는 다음 프레임(둘을 한 번에 보내면 1000개를 넘는다)
  else drawGlyphs("M",48,turning?std::vector<debate::Glyph>{}:debate.current());
@@ -213,6 +216,7 @@ void Yumeno::updateDebate(float delta){
 }
 
 void Yumeno::Update(float delta){
+ updateMusic(delta);
  if(!ready){
   ready=true;
   story=Data::Get("Assets/Data/story.json");

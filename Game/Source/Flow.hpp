@@ -16,16 +16,42 @@ std::string Yumeno::artPath(const std::string& group,const std::string& name,con
  for(auto& n:art[group])if(n.get<std::string>()==name)return "Assets/Art/"+dir+"/"+name+ext;
  return "";
 }
+// BGM : 엔진은 파일 전체만 반복한다 → 들어가는 부분(<큐>_intro)을 한 번 틀고 끝나기 직전에 반복 부분으로 (tools/import_audio.py)
+bool Yumeno::hasAudio(const std::string& cue)const{return art.contains("audio")&&art["audio"].contains(cue);}
+float Yumeno::audioLen(const std::string& cue)const{return art.contains("audioLen")&&art["audioLen"].contains(cue)?art["audioLen"][cue].get<float>():0.f;}
+void Yumeno::stopJingle(){if(!jingleHandle.empty())Audio::Stop(jingleHandle);jingleHandle.clear();jingleTimer=0;}
 void Yumeno::music(const std::string& cue){
- if(cue==musicCue)return;musicCue=cue;
- if(art.contains("audio")&&art["audio"].contains(cue))Audio::PlayMusic(art["audio"][cue].get<std::string>(),1.f);
+ if(cue==musicCue)return;stopJingle();musicCue=cue;
+ if(!hasAudio(cue))return;
+ if(hasAudio(cue+"_intro")){Audio::StopMusic(.5f);jingleHandle=Audio::Play(art["audio"][cue+"_intro"].get<std::string>(),1.f,1.f,"music");jingleTimer=std::max(.05f,audioLen(cue+"_intro")-.03f);jingleNext=cue;jingleIntro=true;return;}
+ Audio::PlayMusic(art["audio"][cue].get<std::string>(),1.f);
 }
-// 효과음 : audio/cues.json 에 파일이 있는 큐만 (docs/spec/16 §5)
+// 「징글>다음 곡」 : 징글(한 번)이 끝나면 다음 곡. 징글이 아니면 그냥 그 곡
+void Yumeno::playCue(const std::string& spec){
+ auto gt=spec.find('>');auto first=spec.substr(0,gt),then=gt==std::string::npos?std::string():spec.substr(gt+1);
+ if(first.rfind("jingle_",0)!=0){music(first);return;}
+ stopJingle();Audio::StopMusic(.3f);musicCue="";
+ if(hasAudio(first)){jingleHandle=Audio::Play(art["audio"][first].get<std::string>(),1.f,1.f,"music");jingleTimer=std::max(.5f,audioLen(first));jingleNext=then;jingleIntro=false;}
+ else if(!then.empty())music(then);
+}
+void Yumeno::updateMusic(float delta){
+ if(jingleTimer<=0||(jingleTimer-=delta)>0)return;
+ jingleHandle.clear();jingleTimer=0;if(jingleNext.empty())return;
+ if(jingleIntro){musicCue=jingleNext;Audio::PlayMusic(art["audio"][jingleNext].get<std::string>(),0.f);}
+ else{auto next=jingleNext;jingleNext.clear();music(next);}
+}
+// 효과음 : audio/cues.json 에 파일이 있는 큐만 (docs/spec/16 §5). ui_* 는 UI 버스
 void Yumeno::sfx(const std::string& cue){
- if(art.contains("audio")&&art["audio"].contains(cue))Audio::Play(art["audio"][cue].get<std::string>(),1.f,1.f,"sfx");
+ if(hasAudio(cue))Audio::Play(art["audio"][cue].get<std::string>(),1.f,1.f,cue.rfind("ui_",0)==0?"ui":"sfx");
+}
+// 대본 이벤트에 붙은 소리 : "music"(징글>곡 가능), "sfx"(하나 또는 여럿). 같은 이벤트는 한 번만
+void Yumeno::eventSound(const hb::Json& e){
+ if(&e==lastSoundEvent)return;lastSoundEvent=&e;
+ if(e.contains("music"))playCue(e["music"].get<std::string>());
+ if(e.contains("sfx")){if(e["sfx"].is_array())for(auto& s:e["sfx"])sfx(s.get<std::string>());else sfx(e["sfx"].get<std::string>());}
 }
 int Yumeno::level(const std::string& slug)const{int p=bonds.count(slug)?bonds.at(slug):0,l=1;for(int i=1;i<5;i++)if(p>=flowui::LEVELS[i])l=i+1;return l;}
-void Yumeno::addBond(const std::string& slug,int points){int before=level(slug);if(points>=3)sfx("sfx_correct");bonds[slug]=std::max(0,bonds[slug]+points);if(level(slug)>before)toast(nameOf(slug)+" 인연 Lv"+std::to_string(level(slug))+"!");}
+void Yumeno::addBond(const std::string& slug,int points){int before=level(slug);if(points>=3)sfx("sfx_correct");if(points<0)sfx("sfx_wrong");bonds[slug]=std::max(0,bonds[slug]+points);if(level(slug)>before){sfx("sfx_bond_up");toast(nameOf(slug)+" 인연 Lv"+std::to_string(level(slug))+"!");}}
 void Yumeno::toast(const std::string& v){ftext("FToast",v);fvis("FToast",true);toastTimer=2.2f;}
 void Yumeno::hud(){
  std::string ch=chapter.value("chapter","P");
@@ -105,36 +131,33 @@ void Yumeno::enterBeat(){
   fvis("FCardBack",true);fvis("FCard",!img.empty());if(!img.empty())UI::SetTexture(this,flowui::ID,"FCard",img);
   ftext("FCardT",img.empty()?(ch=="P"?std::string("프롤로그"):"제"+ch+"장"):"");ftext("FCardS",img.empty()?b.value("title",""):"");
   fvis("FCardT",img.empty());fvis("FCardS",img.empty());
-  music(ch=="P"?"bgm_pro_arrival":ch=="6"?"bgm_core":std::array<const char*,6>{"","bgm_daily_pastel","bgm_daily_summer","bgm_daily_night","bgm_daily_grey","bgm_daily_mono"}[std::stoi(ch)]);
+  if(ch=="P")sfx("sfx_prologue");
+  playCue(std::string(ch=="P"?"jingle_chapter_p":"jingle_chapter")+">"+(ch=="P"?"bgm_pro_arrival":ch=="6"?"bgm_core":std::array<const char*,6>{"","bgm_daily_pastel","bgm_daily_summer","bgm_daily_night","bgm_daily_grey","bgm_daily_mono"}[std::stoi(ch)]));
   return;
  }
  if(t=="scene"||t=="execution"){
   if(b.contains("need")&&level(b["need"].value("who",""))<b["need"].value("level",3)){nextBeat();return;} // 유품 : 인연 Lv3 이상
-  auto id=b.value("id","");
-  if(id.find(":B-")!=std::string::npos&&id.find("b:")!=std::string::npos)music("bgm_discovery");
-  else if(id.rfind("17:",0)==0)music("bgm_interlude");
-  else if(t=="execution")music("bgm_punishment_time");
-  else if(id.find("-M-")!=std::string::npos)music("bgm_motive");
-  else if(id.find("-E-")!=std::string::npos)music("bgm_epilogue");
+  // 장면 곡 : tools/sound_design.py 가 장면마다 정한 것(bgm). 없으면 처형만 처형 곡
+  if(b.contains("bgm"))playCue(b["bgm"].get<std::string>());else if(t=="execution")music("bgm_punishment_time");
   showStory();event=0;flowPresent();return;
  }
  if(t=="freetime"){slots=b.value("slots",2);music("bgm_freetime");mapHover=0;showMap();band("free");return;}
- if(t=="investigate"){music("bgm_investigation");mapHover=0;showMap();band("inv");return;}
+ if(t=="investigate"){music(chapter.value("chapter","1")=="6"?"bgm_investigation_final":"bgm_investigation");mapHover=0;showMap();band("inv");return;}
  if(t=="trial"&&!elevatorDone){
   elevatorDone=true;showStory();UI::SetTexture(this,UI_ID,"Background","Assets/Art/bg/trial_elevator.webp");UI::SetVisible(this,UI_ID,"Background",true);
-  music("bgm_trial_main");sayOnce("mio","(…엘리베이터가 내려간다. 철창 사이로 빛이 하나씩 지나간다. 이 아래에서 — 학급 재판이 기다리고 있다.)","C01",After::Trial);
+  music("bgm_elevator");sfx("sfx_elevator");sayOnce("mio","(…엘리베이터가 내려간다. 철창 사이로 빛이 하나씩 지나간다. 이 아래에서 — 학급 재판이 기다리고 있다.)","C01",After::Trial);
   speaker.clear();text("Name","");UI::SetVisible(this,UI_ID,"Nameplate",false);UI::SetVisible(this,UI_ID,"Name",false);UI::SetVisible(this,UI_ID,"NameHead",false);UI::SetColor(this,UI_ID,"Body",Color{.62f,.84f,1,1});
   shakeTimer=2.5f;return;
  }
  if(t=="trial"){
   elevatorDone=false;
   trialKey=b.value("key","11c");trialDead.clear();for(auto& d:b["dead"])trialDead.push_back(d.get<std::string>());
-  trials=Data::Get("Assets/Data/trials/"+trialKey+".json");hideFlow();fvis("FHud",false);music("bgm_trial_main");startTrial();return;
+  trials=Data::Get("Assets/Data/trials/"+trialKey+".json");hideFlow();fvis("FHud",false);sfx("sfx_elevator_stop");startTrial();return;
  }
  if(t=="ending"){
   showStory();UI::SetVisible(this,UI_ID,"Portrait",false);
   std::vector<std::string> o;for(auto& x:b["options"])o.push_back(x.value("label",""));
-  showMenu(b.value("q",""),o,MenuKind::Ending);return;
+  music("bgm_ending_choice");showMenu(b.value("q",""),o,MenuKind::Ending);return;
  }
  if(t=="end"){
   hideFlow();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);mode=Mode::Credits;music("bgm_ending_a");
@@ -156,6 +179,7 @@ void Yumeno::flowPresent(){
   if(event>=int(evs.size())||(eventEnd>=0&&event>=eventEnd)){eventsDone();return;}
   auto& e=evs[event];auto type=e.value("type","");
   if(type=="goto"){event=e.value("to",event+1);continue;}
+  eventSound(e);
   if(type=="bg"){
    auto bg=e.value("bg","");std::string path;
    if(bg.rfind("cg:death",0)==0)band("body");
@@ -184,7 +208,7 @@ void Yumeno::flowPresent(){
    if(!slug.empty()&&slug!="mio"){
     auto emo=emotions.value(e.value("emo",""),std::string("neutral"));
     auto& table=slug=="lappy"?lappyPoses:poses;
-    auto code=table.count(emo)?table.at(emo):(slug=="lappy"?"L01":"C01");
+    auto code=e.contains("pose")?e["pose"].get<std::string>():table.count(emo)?table.at(emo):(slug=="lappy"?"L01":"C01"); // pose = tools/pose_design.py
     portrait="Assets/Art/sprites/"+slug+"/"+slug+"_"+code+".webp";
    }
    bool mono=e.value("mono",false);
@@ -259,10 +283,12 @@ void Yumeno::giveGift(int i){
  {UI::SetPosition(this,UI_ID,"Portrait",{290,0});UI::SetSize(this,UI_ID,"Portrait",{700,700});}
  {
   hideFlow();
-  if(i>=int(giftOrder.size())){slotDone();return;}
-  auto id=giftOrder[i];if(--gifts[id]<=0)gifts.erase(id);
-  int delta=1;std::string pose="C02",kind="like";
+  if(i>=int(gridSlugs.size())||gridSlugs[i].empty()){slotDone();return;}
+  if(gridSlugs[i]=="#next"){++giftPage;sfx("ui_page");showGifts();return;}
+  auto id=gridSlugs[i];if(--gifts[id]<=0)gifts.erase(id);giftPage=0;
+  int delta=1;std::string pose="C02",kind="normal";
   if(giftData["likes"].contains(giftTarget)){
+   for(auto& g:giftData["likes"][giftTarget].value("like",hb::Json::array()))if(g.get<std::string>()==id){delta=2;pose="C02";kind="like";}
    for(auto& g:giftData["likes"][giftTarget]["love"])if(g.get<std::string>()==id){delta=3;pose="T03";kind="love";}
    for(auto& g:giftData["likes"][giftTarget]["hate"])if(g.get<std::string>()==id){delta=-1;pose="C09";kind="hate";}
   }
@@ -293,10 +319,12 @@ void Yumeno::pullCapsule(){
  std::vector<std::string> pick;for(auto& g:giftData["items"])if(g.value("tier","")==tier)pick.push_back(g.value("id",""));
  if(pick.empty())for(auto& g:giftData["items"])pick.push_back(g.value("id",""));
  auto id=pick[rng()%pick.size()];++gifts[id];
- toast("캡슐 : "+giftName(id)+" 획득!");
+ sfx("sfx_capsule_open");toast("캡슐 : "+giftName(id)+" 획득!");
 }
 std::string Yumeno::reaction(const std::string& slug,const std::string& kind)const{
- return reactions.contains(slug)?reactions[slug].value(kind,std::string("…고마워.")):std::string("…고마워.");
+ if(!reactions.contains(slug))return "…고마워.";
+ auto& r=reactions[slug];if(r.contains(kind))return r[kind].get<std::string>();
+ return kind=="normal"&&r.contains("like")?r["like"].get<std::string>():kind=="like"&&r.contains("love")?r["love"].get<std::string>():std::string("…고마워.");
 }
 // 이름표 첫 글자 색 : 인물 머리색 (docs/spec/06 §1-2)
 Color Yumeno::nameColor(const std::string& slug)const{
@@ -312,8 +340,13 @@ std::string Yumeno::kotodamaText(const std::string& id)const{return kotodama.con
 void Yumeno::showGifts(){
  giftOrder.clear();for(auto& [id,n]:gifts)if(n>0)giftOrder.push_back(id);
  if(giftOrder.empty()){slotDone();return;}
- if(giftOrder.size()>15)giftOrder.resize(15);
- hideFlow();dialogVisible(false);mode=Mode::Grid;gridSlugs=giftOrder;gridSlugs.push_back("");
+ // 15종이 넘으면 쪽을 넘긴다 : 한 쪽에 14종 + 「다음 쪽」 + 「주지 않는다」
+ gridSlugs.clear();
+ if(giftOrder.size()>15){int pages=int((giftOrder.size()+13)/14);giftPage%=pages;
+  for(int k=giftPage*14;k<std::min<int>(giftOrder.size(),giftPage*14+14);k++)gridSlugs.push_back(giftOrder[k]);gridSlugs.push_back("#next");}
+ else gridSlugs=giftOrder;
+ gridSlugs.push_back("");
+ hideFlow();dialogVisible(false);mode=Mode::Grid;
  // 받는 사람 : 왼쪽 큰 입상(V3)
  UI::SetTexture(this,UI_ID,"Portrait","Assets/Art/sprites/"+giftTarget+"/"+giftTarget+"_C01.webp");UI::SetPosition(this,UI_ID,"Portrait",{-40,40});UI::SetSize(this,UI_ID,"Portrait",{620,680});UI::SetVisible(this,UI_ID,"Portrait",true);
  fvis("FShade",true);ftext("FGridHead",nameOf(giftTarget)+"에게 선물을 줄까?");fvis("FGridHead",true);
@@ -323,7 +356,7 @@ void Yumeno::showGifts(){
   {auto c=cellAt(i);UI::SetPosition(this,flowui::ID,"FCell"+n,{c[0],c[1]});UI::SetPosition(this,flowui::ID,"FFace"+n,{c[0]+6,c[1]+6});UI::SetPosition(this,flowui::ID,"FName"+n,{c[0]+118,c[1]+14});}
   auto& id=gridSlugs[i];auto icon=id.empty()?"":artPath("gifts",id,"gift",".png");
   fvis("FFace"+n,!icon.empty());if(!icon.empty())UI::SetTexture(this,flowui::ID,"FFace"+n,icon);
-  ftext("FName"+n,id.empty()?std::string("주지 않는다"):giftName(id)+"\n×"+std::to_string(gifts[id]));
+  ftext("FName"+n,id.empty()?std::string("주지 않는다"):id=="#next"?"다음 쪽 ▶\n("+std::to_string(giftPage+1)+"/"+std::to_string((giftOrder.size()+13)/14)+")":giftName(id)+"\n×"+std::to_string(gifts[id]));
  }
  ftext("FGridFoot","좋아하는 선물이면 인연이 크게 오른다");fvis("FGridFoot",true);
 }
@@ -341,6 +374,7 @@ void Yumeno::showResult(){
  int h=debate.hearts;const char* grade=retries==0&&h>=4?"S":retries<=1&&h>=3?"A":retries<=3?"B":"C";
  int reward=grade[0]=='S'?30:grade[0]=='A'?20:grade[0]=='B'?15:10;coins+=reward;
  hideFlow();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);mode=Mode::Card;resultPending=true;
+ music("bgm_trial_end");
  fvis("FCardBack",true);fvis("FCard",false);ftext("FCardT",std::string("학급 재판 종료  ·  평가 ")+grade);fvis("FCardT",true);
  ftext("FCardS","남은 발언력 "+std::to_string(h)+"   다시 한 횟수 "+std::to_string(retries)+"   래피 코인 +"+std::to_string(reward));fvis("FCardS",true);
  sfx("sfx_coin");

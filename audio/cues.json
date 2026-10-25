@@ -1,299 +1,1047 @@
 {
- "_doc": "audio/README.md 참고. file 에 audio/ 아래 파일 이름을 적는다. 비어 있으면 무음.",
+ "_doc": "tools/import_audio.py 가 만든다. bgm = 반복(들어가는 부분은 <큐>_intro), jingle = 한 번(len 초 뒤 다음 곡), sfx = 효과음. src = 원본 파일.",
  "bgm": {
   "bgm_title": {
-   "name": "꿈의 입구",
-   "mood": "오르골 + 현",
    "use": "타이틀",
-   "file": null
+   "src": "1-01. DANGANRONPA V3.mp3",
+   "file": "bgm/bgm_title.ogg"
+  },
+  "bgm_pretitle": {
+   "use": "오프닝 타이틀 장면(00-1)",
+   "src": "2-01. Danganronpa V3 (Loop Version).mp3",
+   "file": "bgm/bgm_pretitle.ogg",
+   "intro": "bgm/bgm_pretitle_intro.ogg",
+   "introLen": 88.475,
+   "loop": [
+    88.475,
+    191.332
+   ]
   },
   "bgm_pro_arrival": {
-   "name": "깨어남",
-   "mood": "느린 현·피아노",
-   "use": "P-01~02",
-   "file": null
+   "use": "프롤로그 : 눈뜨기·정문",
+   "src": "1-11. Nightmare in the Locker.mp3",
+   "file": "bgm/bgm_pro_arrival.ogg",
+   "intro": "bgm/bgm_pro_arrival_intro.ogg",
+   "introLen": 43.635,
+   "loop": [
+    43.635,
+    223.635
+   ]
+  },
+  "bgm_pro_intro": {
+   "use": "프롤로그 : 자기소개",
+   "src": "1-03. Rise of the Ultimates.mp3",
+   "file": "bgm/bgm_pro_intro.ogg",
+   "intro": "bgm/bgm_pro_intro_intro.ogg",
+   "introLen": 34.39,
+   "loop": [
+    34.39,
+    214.39
+   ]
+  },
+  "bgm_killing_game": {
+   "use": "프롤로그 : 래피 등장·규칙 선언",
+   "src": "2-18. Let's Start the Killing Game.mp3",
+   "file": "bgm/bgm_killing_game.ogg",
+   "intro": "bgm/bgm_killing_game_intro.ogg",
+   "introLen": 26.437,
+   "loop": [
+    26.437,
+    99.544
+   ]
   },
   "bgm_rappy_theme": {
-   "name": "래피 퍼레이드",
-   "mood": "경쾌한 행진곡(장난)",
-   "use": "래피 등장",
-   "file": null
+   "use": "래피가 나와 떠드는 동안",
+   "src": "2-10. Mr. Monokuma's Lesson V3.mp3",
+   "file": "bgm/bgm_rappy_theme.ogg",
+   "intro": "bgm/bgm_rappy_theme_intro.ogg",
+   "introLen": 42.147,
+   "loop": [
+    42.147,
+    155.481
+   ]
   },
-  "bgm_daily_pastel": {
-   "name": "파스텔 데이",
-   "mood": "가벼운 재즈",
-   "use": "1장 일상",
-   "file": null
-  },
-  "bgm_daily_summer": {
-   "name": "여름 물방울",
-   "mood": "보사노바",
-   "use": "2장 일상",
-   "file": null
-  },
-  "bgm_daily_night": {
-   "name": "거울의 밤",
-   "mood": "저음 신스",
-   "use": "3장 일상",
-   "file": null
-  },
-  "bgm_daily_grey": {
-   "name": "회색 오후",
-   "mood": "미니멀",
-   "use": "4장 일상",
-   "file": null
-  },
-  "bgm_daily_mono": {
-   "name": "무채",
-   "mood": "무반주 피아노",
-   "use": "5장 일상",
-   "file": null
-  },
-  "bgm_freetime": {
-   "name": "잠깐의 쉼",
-   "mood": "어쿠스틱 기타",
-   "use": "프리타임",
-   "file": null
-  },
-  "bgm_motive": {
-   "name": "서늘한 선물",
-   "mood": "불안한 오르골",
-   "use": "동기",
-   "file": null
-  },
-  "bgm_discovery": {
-   "name": "딩동",
-   "mood": "단발 효과음 + 정적",
-   "use": "시체 발견",
-   "file": null
-  },
-  "bgm_investigation": {
-   "name": "수사",
-   "mood": "반복 미니멀",
-   "use": "수사",
-   "file": null
-  },
-  "bgm_trial_main": {
-   "name": "학급 재판",
-   "mood": "긴장 오케스트라",
-   "use": "재판 일반",
-   "file": null
-  },
-  "bgm_trial_nonstop": {
-   "name": "논스톱 논의",
-   "mood": "빠른 비트",
-   "use": "논스톱 논의",
-   "file": null
-  },
-  "bgm_trial_panic": {
-   "name": "패닉 논의",
-   "mood": "겹치는 리듬·불협",
-   "use": "패닉 논의",
-   "file": null
-  },
-  "bgm_trial_scrum": {
-   "name": "논의 스크럼",
-   "mood": "대립 드럼",
-   "use": "논의 스크럼",
-   "file": null
-  },
-  "bgm_trial_showdown": {
-   "name": "반론 쇼다운 진타",
-   "mood": "고조 드럼",
-   "use": "반론 쇼다운 진타",
-   "file": null
-  },
-  "bgm_trial_armament": {
-   "name": "이론 무장",
-   "mood": "리듬 게임용 고정 BPM",
-   "use": "이론 무장",
-   "file": null
-  },
-  "bgm_trial_mindmine": {
-   "name": "발굴 이매지네이션",
-   "mood": "퍼즐",
-   "use": "발굴 이매지네이션",
-   "file": null
-  },
-  "bgm_trial_taxi": {
-   "name": "브레인 드라이브",
-   "mood": "신스웨이브",
-   "use": "브레인 드라이브",
-   "file": null
-  },
-  "bgm_trial_anagram": {
-   "name": "섬광 애너그램",
-   "mood": "어둠 속 긴장",
-   "use": "섬광 애너그램",
-   "file": null
-  },
-  "bgm_trial_climax": {
-   "name": "클라이맥스 추리",
-   "mood": "풀 오케스트라",
-   "use": "클라이맥스 추리",
-   "file": null
-  },
-  "bgm_trial_vote": {
-   "name": "범인 투표",
-   "mood": "슬롯·북",
-   "use": "투표",
-   "file": null
-  },
-  "bgm_trial_truth": {
-   "name": "진실",
-   "mood": "정적인 현",
-   "use": "자백",
-   "file": null
-  },
-  "bgm_epilogue": {
-   "name": "남은 사람들",
-   "mood": "서정",
-   "use": "에필",
-   "file": null
-  },
-  "bgm_core": {
-   "name": "코어",
-   "mood": "저주파 허밍",
-   "use": "6장",
-   "file": null
-  },
-  "bgm_interlude": {
-   "name": "막간",
-   "mood": "어쿠스틱 기타·오르골, 느린 3박. 장이 지날수록 악기가 하나씩 빠짐",
-   "use": "막간 I-0~I-5",
-   "file": null
-  },
-  "bgm_ending_a": {
-   "name": "아침의 문",
-   "mood": "희망적 현",
-   "use": "엔딩 A",
-   "file": null
-  },
-  "bgm_ending_b": {
-   "name": "노트의 한 줄",
-   "mood": "어두운 피아노",
-   "use": "엔딩 B",
-   "file": null
+  "bgm_rappy_after": {
+   "use": "밤 방송",
+   "src": "2-15. Mr. Monokuma After Class V3.mp3",
+   "file": "bgm/bgm_rappy_after.ogg",
+   "intro": "bgm/bgm_rappy_after_intro.ogg",
+   "introLen": 59.141,
+   "loop": [
+    59.141,
+    151.301
+   ]
   },
   "bgm_morning": {
-   "name": "아침 방송",
-   "mood": "",
-   "use": "",
-   "file": null
+   "use": "아침 방송(모니터)",
+   "src": "1-07. Rise and Shine, Ursine!.mp3",
+   "file": "bgm/bgm_morning.ogg",
+   "intro": "bgm/bgm_morning_intro.ogg",
+   "introLen": 25.306,
+   "loop": [
+    25.306,
+    157.989
+   ]
+  },
+  "bgm_morning_calm": {
+   "use": "아침 모임",
+   "src": "1-18. Cool Morning.mp3",
+   "file": "bgm/bgm_morning_calm.ogg",
+   "intro": "bgm/bgm_morning_calm_intro.ogg",
+   "introLen": 17.292,
+   "loop": [
+    17.292,
+    167.88
+   ]
+  },
+  "bgm_daily_pro": {
+   "use": "프롤로그 일상·탐색",
+   "src": "1-04. Beautiful Lie (Ver.B).mp3",
+   "file": "bgm/bgm_daily_pro.ogg",
+   "intro": "bgm/bgm_daily_pro_intro.ogg",
+   "introLen": 28.755,
+   "loop": [
+    28.755,
+    226.302
+   ]
+  },
+  "bgm_daily_pastel": {
+   "use": "1장 일상",
+   "src": "1-12. Beautiful Lie.mp3",
+   "file": "bgm/bgm_daily_pastel.ogg",
+   "intro": "bgm/bgm_daily_pastel_intro.ogg",
+   "introLen": 37.059,
+   "loop": [
+    37.059,
+    234.606
+   ]
+  },
+  "bgm_daily_summer": {
+   "use": "2장 일상",
+   "src": "1-16. Living in a Lazy Parallel World.mp3",
+   "file": "bgm/bgm_daily_summer.ogg",
+   "intro": "bgm/bgm_daily_summer_intro.ogg",
+   "introLen": 39.985,
+   "loop": [
+    39.985,
+    199.985
+   ]
+  },
+  "bgm_daily_night": {
+   "use": "3장 일상",
+   "src": "3-05. Beautiful Lie in the Virtual World.mp3",
+   "file": "bgm/bgm_daily_night.ogg",
+   "intro": "bgm/bgm_daily_night_intro.ogg",
+   "introLen": 6.502,
+   "loop": [
+    6.502,
+    88.415
+   ]
+  },
+  "bgm_daily_grey": {
+   "use": "4장 일상",
+   "src": "2-13. Heartless Journey.mp3",
+   "file": "bgm/bgm_daily_grey.ogg",
+   "intro": "bgm/bgm_daily_grey_intro.ogg",
+   "introLen": 51.459,
+   "loop": [
+    51.459,
+    108.6
+   ]
+  },
+  "bgm_daily_mono": {
+   "use": "5장 일상(V3 도 일상은 대부분 Beautiful Lie)",
+   "src": "1-12. Beautiful Lie.mp3",
+   "file": "bgm/bgm_daily_mono.ogg",
+   "intro": "bgm/bgm_daily_mono_intro.ogg",
+   "introLen": 37.059,
+   "loop": [
+    37.059,
+    234.606
+   ]
+  },
+  "bgm_core": {
+   "use": "6장",
+   "src": "2-14. Real - Fiction.mp3",
+   "file": "bgm/bgm_core.ogg",
+   "intro": "bgm/bgm_core_intro.ogg",
+   "introLen": 16.756,
+   "loop": [
+    16.756,
+    222.47
+   ]
+  },
+  "bgm_freetime": {
+   "use": "자유행동",
+   "src": "1-10. Become Friends.mp3",
+   "file": "bgm/bgm_freetime.ogg",
+   "intro": "bgm/bgm_freetime_intro.ogg",
+   "introLen": 73.353,
+   "loop": [
+    73.353,
+    199.668
+   ]
+  },
+  "bgm_comedy": {
+   "use": "막간 식사·서비스 장면",
+   "src": "2-03. Finding Peace Party.mp3",
+   "file": "bgm/bgm_comedy.ogg",
+   "intro": "bgm/bgm_comedy_intro.ogg",
+   "introLen": 7.477,
+   "loop": [
+    7.477,
+    167.477
+   ]
+  },
+  "bgm_night": {
+   "use": "저녁·밤·혼자 있는 장면",
+   "src": "2-04. Hope of Autumn.mp3",
+   "file": "bgm/bgm_night.ogg",
+   "intro": "bgm/bgm_night_intro.ogg",
+   "introLen": 3.901,
+   "loop": [
+    3.901,
+    48.901
+   ]
+  },
+  "bgm_tense": {
+   "use": "사건 직전·시체 발견 뒤",
+   "src": "1-21. Darkness Time.mp3",
+   "file": "bgm/bgm_tense.ogg",
+   "intro": "bgm/bgm_tense_intro.ogg",
+   "introLen": 44.501,
+   "loop": [
+    44.501,
+    166.95
+   ]
+  },
+  "bgm_sad": {
+   "use": "유품·소멸",
+   "src": "2-12. Moon on the Water.mp3",
+   "file": "bgm/bgm_sad.ogg",
+   "intro": "bgm/bgm_sad_intro.ogg",
+   "introLen": 9.427,
+   "loop": [
+    9.427,
+    138.658
+   ]
+  },
+  "bgm_warm": {
+   "use": "마지막 대화·약속",
+   "src": "2-17. Wonderful Story.mp3",
+   "file": "bgm/bgm_warm.ogg",
+   "intro": "bgm/bgm_warm_intro.ogg",
+   "introLen": 13.728,
+   "loop": [
+    13.728,
+    108.728
+   ]
+  },
+  "bgm_motive": {
+   "use": "동기 발표 뒤",
+   "src": "1-23. Heaven of Almost Hell.mp3",
+   "file": "bgm/bgm_motive.ogg",
+   "intro": "bgm/bgm_motive_intro.ogg",
+   "introLen": 8.499,
+   "loop": [
+    8.499,
+    128.499
+   ]
+  },
+  "bgm_investigation": {
+   "use": "수사",
+   "src": "1-17. Despair Searching.mp3",
+   "file": "bgm/bgm_investigation.ogg",
+   "intro": "bgm/bgm_investigation_intro.ogg",
+   "introLen": 94.553,
+   "loop": [
+    94.553,
+    252.053
+   ]
+  },
+  "bgm_investigation_final": {
+   "use": "6장 수사",
+   "src": "2-08. Hope Searching.mp3",
+   "file": "bgm/bgm_investigation_final.ogg",
+   "intro": "bgm/bgm_investigation_final_intro.ogg",
+   "introLen": 114.091,
+   "loop": [
+    114.091,
+    489.091
+   ]
+  },
+  "bgm_trial_prep": {
+   "use": "수사 종료 → 재판 준비",
+   "src": "3-04. Trial Preparation.mp3",
+   "file": "bgm/bgm_trial_prep.ogg",
+   "intro": "bgm/bgm_trial_prep_intro.ogg",
+   "introLen": 4.988,
+   "loop": [
+    4.988,
+    52.988
+   ]
+  },
+  "bgm_elevator": {
+   "use": "재판장 엘리베이터",
+   "src": "1-07. Our Class Trial.mp3",
+   "file": "bgm/bgm_elevator.ogg",
+   "intro": "bgm/bgm_elevator_intro.ogg",
+   "introLen": 14.003,
+   "loop": [
+    14.003,
+    65.234
+   ]
+  },
+  "bgm_trial_main_1": {
+   "use": "1장 재판",
+   "src": "1-13. Class Trial - Sun Edition V3.mp3",
+   "file": "bgm/bgm_trial_main_1.ogg",
+   "intro": "bgm/bgm_trial_main_1_intro.ogg",
+   "introLen": 32.529,
+   "loop": [
+    32.529,
+    176.89
+   ]
+  },
+  "bgm_trial_main_2": {
+   "use": "2장 재판",
+   "src": "1-09. Class Trial - Space Edition.mp3",
+   "file": "bgm/bgm_trial_main_2.ogg",
+   "intro": "bgm/bgm_trial_main_2_intro.ogg",
+   "introLen": 50.127,
+   "loop": [
+    50.127,
+    326.217
+   ]
+  },
+  "bgm_trial_main_3": {
+   "use": "3장 재판",
+   "src": "1-08. Class Trial - Dawn Edition Vol.3.mp3",
+   "file": "bgm/bgm_trial_main_3.ogg",
+   "intro": "bgm/bgm_trial_main_3_intro.ogg",
+   "introLen": 32.306,
+   "loop": [
+    32.306,
+    209.537
+   ]
+  },
+  "bgm_trial_main_4": {
+   "use": "4장 재판",
+   "src": "1-10. Class Trial - Resurrection Edition.mp3",
+   "file": "bgm/bgm_trial_main_4.ogg",
+   "intro": "bgm/bgm_trial_main_4_intro.ogg",
+   "introLen": 69.087,
+   "loop": [
+    69.087,
+    182.23
+   ]
+  },
+  "bgm_trial_main_5": {
+   "use": "5장 재판",
+   "src": "1-19. Class Trial - Sun Edition V3 (Ver.B).mp3",
+   "file": "bgm/bgm_trial_main_5.ogg",
+   "intro": "bgm/bgm_trial_main_5_intro.ogg",
+   "introLen": 19.758,
+   "loop": [
+    19.758,
+    164.119
+   ]
+  },
+  "bgm_trial_main_6": {
+   "use": "6장 재판",
+   "src": "2-09. Class Trial - Resurrection Edition (No Intro).mp3",
+   "file": "bgm/bgm_trial_main_6.ogg",
+   "intro": "bgm/bgm_trial_main_6_intro.ogg",
+   "introLen": 52.067,
+   "loop": [
+    52.067,
+    165.21
+   ]
+  },
+  "bgm_trial_nonstop": {
+   "use": "논스톱 의논(재판 앞쪽)",
+   "src": "1-11. V3 Argument -Break-.mp3",
+   "file": "bgm/bgm_trial_nonstop.ogg",
+   "intro": "bgm/bgm_trial_nonstop_intro.ogg",
+   "introLen": 2.096,
+   "loop": [
+    2.096,
+    137.207
+   ]
+  },
+  "bgm_trial_nonstop_b": {
+   "use": "논스톱 의논(재판 뒤쪽)",
+   "src": "1-14. V3 Argument -Turn Up the Heat-.mp3",
+   "file": "bgm/bgm_trial_nonstop_b.ogg",
+   "intro": "bgm/bgm_trial_nonstop_b_intro.ogg",
+   "introLen": 17.323,
+   "loop": [
+    17.323,
+    209.323
+   ]
+  },
+  "bgm_trial_nonstop_lie": {
+   "use": "논스톱 의논(4·5장 뒤쪽)",
+   "src": "1-20. V3 Argument -Perjury-.mp3",
+   "file": "bgm/bgm_trial_nonstop_lie.ogg",
+   "intro": "bgm/bgm_trial_nonstop_lie_intro.ogg",
+   "introLen": 14.692,
+   "loop": [
+    14.692,
+    135.581
+   ]
+  },
+  "bgm_trial_nonstop_final": {
+   "use": "6장 의논",
+   "src": "1-16. V3 Argument -Hope vs Despair-.mp3",
+   "file": "bgm/bgm_trial_nonstop_final.ogg",
+   "intro": "bgm/bgm_trial_nonstop_final_intro.ogg",
+   "introLen": 72.681,
+   "loop": [
+    72.681,
+    119.025
+   ]
+  },
+  "bgm_trial_panic": {
+   "use": "패닉 의논",
+   "src": "1-15. V3 Argument -Panic-.mp3",
+   "file": "bgm/bgm_trial_panic.ogg",
+   "intro": "bgm/bgm_trial_panic_intro.ogg",
+   "introLen": 17.351,
+   "loop": [
+    17.351,
+    152.462
+   ]
+  },
+  "bgm_trial_scrum": {
+   "use": "의논 스크럼",
+   "src": "1-12. Debate Scrum.mp3",
+   "file": "bgm/bgm_trial_scrum.ogg",
+   "intro": "bgm/bgm_trial_scrum_intro.ogg",
+   "introLen": 74.293,
+   "loop": [
+    74.293,
+    258.043
+   ]
+  },
+  "bgm_trial_showdown": {
+   "use": "반론 쇼다운",
+   "src": "1-18. V3 Argument -Blade Lock-.mp3",
+   "file": "bgm/bgm_trial_showdown.ogg",
+   "intro": "bgm/bgm_trial_showdown_intro.ogg",
+   "introLen": 133.724,
+   "loop": [
+    133.724,
+    265.381
+   ]
+  },
+  "bgm_trial_armament_1": {
+   "use": "1장 이론 무장",
+   "src": "2-14. Hyper Ultra New a.A. (Ch. 1).mp3",
+   "file": "bgm/bgm_trial_armament_1.ogg",
+   "intro": "bgm/bgm_trial_armament_1_intro.ogg",
+   "introLen": 9.827,
+   "loop": [
+    9.827,
+    105.827
+   ]
+  },
+  "bgm_trial_armament_2": {
+   "use": "2장 이론 무장",
+   "src": "1-14. New a.A.mp3",
+   "file": "bgm/bgm_trial_armament_2.ogg",
+   "intro": "bgm/bgm_trial_armament_2_intro.ogg",
+   "introLen": 16.254,
+   "loop": [
+    16.254,
+    160.254
+   ]
+  },
+  "bgm_trial_armament_3": {
+   "use": "3장 이론 무장",
+   "src": "2-19. Hyper New a.A.mp3",
+   "file": "bgm/bgm_trial_armament_3.ogg",
+   "intro": "bgm/bgm_trial_armament_3_intro.ogg",
+   "introLen": 9.752,
+   "loop": [
+    9.752,
+    124.952
+   ]
+  },
+  "bgm_trial_armament_4": {
+   "use": "4장 이론 무장",
+   "src": "1-21. Final a.A.mp3",
+   "file": "bgm/bgm_trial_armament_4.ogg",
+   "intro": "bgm/bgm_trial_armament_4_intro.ogg",
+   "introLen": 87.249,
+   "loop": [
+    87.249,
+    143.267
+   ]
+  },
+  "bgm_trial_armament_5": {
+   "use": "5장 이론 무장",
+   "src": "2-10. Hyper Final a.A.mp3",
+   "file": "bgm/bgm_trial_armament_5.ogg",
+   "intro": "bgm/bgm_trial_armament_5_intro.ogg",
+   "introLen": 9.17,
+   "loop": [
+    9.17,
+    127.57
+   ]
+  },
+  "bgm_trial_armament_6": {
+   "use": "6장 이론 무장",
+   "src": "2-17. Hyper Final Ultra a.A.mp3",
+   "file": "bgm/bgm_trial_armament_6.ogg",
+   "intro": "bgm/bgm_trial_armament_6_intro.ogg",
+   "introLen": 28.705,
+   "loop": [
+    28.705,
+    126.038
+   ]
+  },
+  "bgm_trial_mindmine": {
+   "use": "발굴 이매지네이션",
+   "src": "2-05. Mind Mine.mp3",
+   "file": "bgm/bgm_trial_mindmine.ogg",
+   "intro": "bgm/bgm_trial_mindmine_intro.ogg",
+   "introLen": 150.651,
+   "loop": [
+    150.651,
+    210.651
+   ]
+  },
+  "bgm_trial_taxi": {
+   "use": "브레인 드라이브",
+   "src": "1-20. Psyche Taxi.mp3",
+   "file": "bgm/bgm_trial_taxi.ogg",
+   "intro": "bgm/bgm_trial_taxi_intro.ogg",
+   "introLen": 38.034,
+   "loop": [
+    38.034,
+    188.891
+   ]
+  },
+  "bgm_trial_anagram": {
+   "use": "섬광 애너그램",
+   "src": "1-17. Hangman's Gambit Ver 3.0.mp3",
+   "file": "bgm/bgm_trial_anagram.ogg",
+   "intro": "bgm/bgm_trial_anagram_intro.ogg",
+   "introLen": 3.901,
+   "loop": [
+    3.901,
+    123.901
+   ]
+  },
+  "bgm_trial_climax": {
+   "use": "클라이맥스 추리",
+   "src": "2-22. Closing Argument V3.mp3",
+   "file": "bgm/bgm_trial_climax.ogg",
+   "intro": "bgm/bgm_trial_climax_intro.ogg",
+   "introLen": 24.803,
+   "loop": [
+    24.803,
+    291.469
+   ]
+  },
+  "bgm_trial_truth": {
+   "use": "투표 뒤 진상",
+   "src": "2-15. Sing the Empty Truth.mp3",
+   "file": "bgm/bgm_trial_truth.ogg",
+   "intro": "bgm/bgm_trial_truth_intro.ogg",
+   "introLen": 37.941,
+   "loop": [
+    37.941,
+    123.275
+   ]
+  },
+  "bgm_trial_end": {
+   "use": "재판 결과",
+   "src": "3-16. Trial END.mp3",
+   "file": "bgm/bgm_trial_end.ogg",
+   "intro": "bgm/bgm_trial_end_intro.ogg",
+   "introLen": 9.517,
+   "loop": [
+    9.517,
+    238.608
+   ]
   },
   "bgm_punishment_time": {
-   "name": "처형 시작",
-   "mood": "",
-   "use": "",
-   "file": null
+   "use": "처형",
+   "src": "2-18. Destruction Of.mp3",
+   "file": "bgm/bgm_punishment_time.ogg"
+  },
+  "bgm_epilogue_1": {
+   "use": "1장 재판 뒤",
+   "src": "1-26. Hope of Spring.mp3",
+   "file": "bgm/bgm_epilogue_1.ogg",
+   "intro": "bgm/bgm_epilogue_1_intro.ogg",
+   "introLen": 4.876,
+   "loop": [
+    4.876,
+    50.59
+   ]
+  },
+  "bgm_epilogue_2": {
+   "use": "2장 재판 뒤",
+   "src": "2-09. Hope of Summer.mp3",
+   "file": "bgm/bgm_epilogue_2.ogg",
+   "intro": "bgm/bgm_epilogue_2_intro.ogg",
+   "introLen": 31.018,
+   "loop": [
+    31.018,
+    75.326
+   ]
+  },
+  "bgm_epilogue_3": {
+   "use": "3장 재판 뒤",
+   "src": "2-04. Hope of Autumn.mp3",
+   "file": "bgm/bgm_epilogue_3.ogg",
+   "intro": "bgm/bgm_epilogue_3_intro.ogg",
+   "introLen": 3.901,
+   "loop": [
+    3.901,
+    48.901
+   ]
+  },
+  "bgm_epilogue_4": {
+   "use": "4장 재판 뒤",
+   "src": "2-05. Hope of Winter.mp3",
+   "file": "bgm/bgm_epilogue_4.ogg",
+   "intro": "bgm/bgm_epilogue_4_intro.ogg",
+   "introLen": 11.301,
+   "loop": [
+    11.301,
+    59.304
+   ]
+  },
+  "bgm_epilogue_5": {
+   "use": "5장 재판 뒤",
+   "src": "2-12. Moon on the Water.mp3",
+   "file": "bgm/bgm_epilogue_5.ogg",
+   "intro": "bgm/bgm_epilogue_5_intro.ogg",
+   "introLen": 9.427,
+   "loop": [
+    9.427,
+    138.658
+   ]
+  },
+  "bgm_ending_choice": {
+   "use": "마지막 선택",
+   "src": "1-22. New World Order V3.mp3",
+   "file": "bgm/bgm_ending_choice.ogg",
+   "intro": "bgm/bgm_ending_choice_intro.ogg",
+   "introLen": 119.319,
+   "loop": [
+    119.319,
+    243.763
+   ]
+  },
+  "bgm_ending_a": {
+   "use": "엔딩·크레딧",
+   "src": "2-12. New Space Journey.mp3",
+   "file": "bgm/bgm_ending_a.ogg"
+  },
+  "bgm_ending_b": {
+   "use": "엔딩 B",
+   "src": "2-21. Immersive Picture Scrolls.mp3",
+   "file": "bgm/bgm_ending_b.ogg"
+  }
+ },
+ "jingle": {
+  "jingle_chapter": {
+   "use": "장 시작 표지",
+   "src": "1-08. Chapter A.mp3",
+   "file": "bgm/jingle_chapter.ogg",
+   "len": 12.44
+  },
+  "jingle_chapter_p": {
+   "use": "프롤로그 표지",
+   "src": "1-25. Chapter C.mp3",
+   "file": "bgm/jingle_chapter_p.ogg",
+   "len": 18.56
+  },
+  "jingle_chapter_end": {
+   "use": "장 끝(막간 들어갈 때)",
+   "src": "1-03. Chapter B.mp3",
+   "file": "bgm/jingle_chapter_end.ogg",
+   "len": 11.75
+  },
+  "jingle_body_1": {
+   "use": "1장 시체 발견",
+   "src": "1-13. Dead Body Found A.mp3",
+   "file": "bgm/jingle_body_1.ogg",
+   "len": 20.48
+  },
+  "jingle_body_2": {
+   "use": "2장 시체 발견",
+   "src": "2-20. Dead Body Found B.mp3",
+   "file": "bgm/jingle_body_2.ogg",
+   "len": 14.65
+  },
+  "jingle_body_3": {
+   "use": "3장 시체 발견",
+   "src": "2-13. Dead Body Found C.mp3",
+   "file": "bgm/jingle_body_3.ogg",
+   "len": 15.35
+  },
+  "jingle_body_4": {
+   "use": "4장 시체 발견",
+   "src": "1-05. Dead Body Found D.mp3",
+   "file": "bgm/jingle_body_4.ogg",
+   "len": 20.29
+  },
+  "jingle_body_5": {
+   "use": "5장 시체 발견",
+   "src": "2-07. Dead Body Found E.mp3",
+   "file": "bgm/jingle_body_5.ogg",
+   "len": 11.95
+  },
+  "jingle_rappy": {
+   "use": "래피 등장",
+   "src": "1-09. Mr. Monokuma Appearance.mp3",
+   "file": "bgm/jingle_rappy.ogg",
+   "len": 17.92
+  },
+  "jingle_vote": {
+   "use": "투표 슬롯",
+   "src": "3-03. Vote Slot.mp3",
+   "file": "bgm/jingle_vote.ogg",
+   "len": 24.44
+  },
+  "jingle_flashback": {
+   "use": "회상",
+   "src": "3-02. Flashback Light.mp3",
+   "file": "bgm/jingle_flashback.ogg",
+   "len": 35.4
   }
  },
  "sfx": {
-  "sfx_ding": {
-   "desc": "시체 발견 \"딩동♪\"",
-   "file": null,
-   "use": "방송 차임(딩동댕동) · 수사 종료"
-  },
-  "sfx_card": {
-   "desc": "카드 획득",
-   "file": null,
-   "use": "언령 획득"
-  },
-  "sfx_note": {
-   "desc": "노트 적는 소리 + 금빛 반짝",
-   "file": null,
-   "use": "노트에 적기"
-  },
-  "sfx_slash": {
-   "desc": "반론 쇼다운 베기",
-   "file": null,
-   "use": "반론 쇼다운 베기"
-  },
-  "sfx_break": {
-   "desc": "논파 유리 깨짐",
-   "file": null,
-   "use": "논파(약점 명중)"
-  },
-  "sfx_wrong": {
-   "desc": "오답",
-   "file": null,
-   "use": "오답·실패"
-  },
-  "sfx_correct": {
-   "desc": "정답",
-   "file": null,
-   "use": "정답·좋아하는 선물"
-  },
-  "sfx_coin": {
-   "desc": "코인",
-   "file": null,
-   "use": "코인 획득·조사"
-  },
-  "sfx_capsule": {
-   "desc": "캡슐 뽑기(일반/좋은 것/희귀/장미)",
-   "file": null,
-   "use": "캡슐 머신"
-  },
-  "sfx_bell": {
-   "desc": "시계탑 종",
-   "file": null,
-   "use": "시계탑 종(5장)"
-  },
-  "sfx_musicbox": {
-   "desc": "오르골 한 소절",
-   "file": null,
-   "use": "오르골(아침)"
-  },
-  "sfx_door": {
-   "desc": "문(열림/잠김/걸쇠)",
-   "file": null,
-   "use": "방에 들어갈 때"
-  },
-  "sfx_footstep": {
-   "desc": "발소리 (바닥재별)",
-   "file": null,
-   "use": "이동"
-  },
-  "sfx_machine": {
-   "desc": "제어반·낙하 장치·알람",
-   "file": null,
-   "use": "기계 작동"
-  },
-  "sfx_tv": {
-   "desc": "TV 소리",
-   "file": null,
-   "use": "모니터 방송 켜짐"
-  },
-  "sfx_water": {
-   "desc": "물소리(파도·샤워·풀)",
-   "file": null,
-   "use": "물소리(2장)"
-  },
-  "sfx_glass": {
-   "desc": "거울 깨짐",
-   "file": null,
-   "use": "거울·유리(3장)"
-  },
-  "sfx_clock_tick": {
-   "desc": "시계 틱",
-   "file": null,
-   "use": "시계 초침"
-  },
   "ui_select": {
-   "use": "메뉴 고르기(커서)",
-   "file": null
+   "use": "커서 이동",
+   "src": "HS_SE_005_메뉴커서이동.wav",
+   "file": "sfx/ui_select.ogg"
   },
   "ui_confirm": {
    "use": "결정",
-   "file": null
+   "src": "HS_SE_001_메뉴선택.wav",
+   "file": "sfx/ui_confirm.ogg"
   },
   "ui_cancel": {
    "use": "취소·돌아가기",
-   "file": null
+   "src": "HS_SE_004_메뉴취소_뒤로가기.wav",
+   "file": "sfx/ui_cancel.ogg"
+  },
+  "ui_locked": {
+   "use": "고를 수 없음",
+   "src": "HS_SE_000_선택불가_잠긴메뉴항목.wav",
+   "file": "sfx/ui_locked.ogg"
   },
   "ui_pad": {
    "use": "패드 열기",
-   "file": null
+   "src": "HS_SE_015_전자학생수첩_열기.wav",
+   "file": "sfx/ui_pad.ogg"
+  },
+  "ui_pad_close": {
+   "use": "패드 닫기",
+   "src": "HS_SE_016_학생수첩_증거창닫기.wav",
+   "file": "sfx/ui_pad_close.ogg"
+  },
+  "ui_page": {
+   "use": "패드 쪽 넘김",
+   "src": "HS_SE_007_학생수첩_페이지전환_효과A.wav",
+   "file": "sfx/ui_page.ogg"
+  },
+  "ui_page_b": {
+   "use": "지도·층 넘김",
+   "src": "HS_SE_236_학생수첩_지도층과페이지전환_효과B.wav",
+   "file": "sfx/ui_page_b.ogg"
+  },
+  "sfx_ding": {
+   "use": "방송 차임",
+   "src": "HS_SE_156_교내방송차임.wav",
+   "file": "sfx/sfx_ding.ogg"
+  },
+  "sfx_body_chime": {
+   "use": "시체 발견 방송 차임",
+   "src": "HS_SE_157_시체발견방송차임.wav",
+   "file": "sfx/sfx_body_chime.ogg"
+  },
+  "sfx_tv": {
+   "use": "모니터 켜짐",
+   "src": "HS_SE_164_방송화면켜짐.wav",
+   "file": "sfx/sfx_tv.ogg"
+  },
+  "sfx_tv_off": {
+   "use": "모니터 꺼짐",
+   "src": "HS_SE_165_방송화면꺼짐.wav",
+   "file": "sfx/sfx_tv_off.ogg"
+  },
+  "sfx_tv_noise": {
+   "use": "방송 잡음",
+   "src": "HS_SE_257_방송_영상잡음.wav",
+   "file": "sfx/sfx_tv_noise.ogg"
+  },
+  "sfx_door": {
+   "use": "방 문",
+   "src": "HS_SE_145_방_출입문.wav",
+   "file": "sfx/sfx_door.ogg"
+  },
+  "sfx_door_slam": {
+   "use": "문 세게 닫기",
+   "src": "HS_SE_146_문_세게닫기.wav",
+   "file": "sfx/sfx_door_slam.ogg"
+  },
+  "sfx_door_creak": {
+   "use": "문 삐걱",
+   "src": "HS_SE_233_문을천천히여닫는_삐걱임.wav",
+   "file": "sfx/sfx_door_creak.ogg"
+  },
+  "sfx_knock": {
+   "use": "노크",
+   "src": "HS_SE_150_문_노크.wav",
+   "file": "sfx/sfx_knock.ogg"
+  },
+  "sfx_bang_door": {
+   "use": "문 두드리기",
+   "src": "HS_SE_151_문_세게두드리기.wav",
+   "file": "sfx/sfx_bang_door.ogg"
+  },
+  "sfx_locked": {
+   "use": "잠긴 문",
+   "src": "HS_SE_153_잠긴문덜컥거림.wav",
+   "file": "sfx/sfx_locked.ogg"
+  },
+  "sfx_footstep": {
+   "use": "걷는 발소리",
+   "src": "HS_SE_141_걷는발소리.wav",
+   "file": "sfx/sfx_footstep.ogg"
+  },
+  "sfx_run": {
+   "use": "달리는 발소리",
+   "src": "HS_SE_142_달리는발소리.wav",
+   "file": "sfx/sfx_run.ogg"
+  },
+  "sfx_room_move": {
+   "use": "장소 이동",
+   "src": "HS_SE_140_방이동.wav",
+   "file": "sfx/sfx_room_move.ogg"
+  },
+  "sfx_hover_person": {
+   "use": "인물 위 커서",
+   "src": "HS_SE_018_인물커서호버.wav",
+   "file": "sfx/sfx_hover_person.ogg"
+  },
+  "sfx_talk_in": {
+   "use": "말 걸기",
+   "src": "HS_SE_019_인물대화진입.wav",
+   "file": "sfx/sfx_talk_in.ogg"
+  },
+  "sfx_talk_out": {
+   "use": "대화 끝",
+   "src": "HS_SE_020_인물대화종료.wav",
+   "file": "sfx/sfx_talk_out.ogg"
+  },
+  "sfx_hotspot": {
+   "use": "조사 대상 표시",
+   "src": "HS_SE_126_관찰_조사대상표시.wav",
+   "file": "sfx/sfx_hotspot.ogg"
+  },
+  "sfx_inspect": {
+   "use": "조사",
+   "src": "HS_SE_116_조사물음표표시.wav",
+   "file": "sfx/sfx_inspect.ogg"
+  },
+  "sfx_card": {
+   "use": "언령·교칙 획득",
+   "src": "HS_SE_021_교칙추가.wav",
+   "file": "sfx/sfx_card.ogg"
+  },
+  "sfx_note": {
+   "use": "노트에 적기",
+   "src": "HS_SE_007_학생수첩_페이지전환_효과A.wav",
+   "file": "sfx/sfx_note.ogg"
+  },
+  "sfx_coin": {
+   "use": "코인",
+   "src": "HS_SE_102_모노모노머신_투입코인수량늘리기.wav",
+   "file": "sfx/sfx_coin.ogg"
+  },
+  "sfx_capsule": {
+   "use": "캡슐 레버",
+   "src": "HS_SE_103_모노모노머신_손잡이작동_캡슐배출.wav",
+   "file": "sfx/sfx_capsule.ogg"
+  },
+  "sfx_capsule_open": {
+   "use": "캡슐 열림",
+   "src": "HS_SE_105_모노모노머신_캡슐개봉후_선물이미지등장.wav",
+   "file": "sfx/sfx_capsule_open.ogg"
+  },
+  "sfx_bond_up": {
+   "use": "인연 상승",
+   "src": "HS_SE_122_자유시간_친밀도상승.wav",
+   "file": "sfx/sfx_bond_up.ogg"
+  },
+  "sfx_wrong": {
+   "use": "오답·싫어하는 선물",
+   "src": "HS_SE_123_자유시간_오답.wav",
+   "file": "sfx/sfx_wrong.ogg"
+  },
+  "sfx_correct": {
+   "use": "정답·제출",
+   "src": "HS_SE_002_제출_입력확정.wav",
+   "file": "sfx/sfx_correct.ogg"
+  },
+  "sfx_band": {
+   "use": "자유행동·수사 개시 띠",
+   "src": "HS_SE_023_전환_자유시간_조사_미니게임시작.wav",
+   "file": "sfx/sfx_band.ogg"
+  },
+  "sfx_rappy": {
+   "use": "래피 등장·퇴장",
+   "src": "HS_SE_133_모노쿠마등장_퇴장.wav",
+   "file": "sfx/sfx_rappy.ogg"
+  },
+  "sfx_shock": {
+   "use": "충격(시체 발견·결정적 발언)",
+   "src": "HS_SE_031_결정적발언_충격강조.wav",
+   "file": "sfx/sfx_shock.ogg"
+  },
+  "sfx_flashback": {
+   "use": "회상 전환",
+   "src": "HS_SE_030_회상전환.wav",
+   "file": "sfx/sfx_flashback.ogg"
+  },
+  "emo_angry": {
+   "use": "호통",
+   "src": "HS_SE_025_호통_분노강조.wav",
+   "file": "sfx/emo_angry.ogg"
+  },
+  "emo_basic": {
+   "use": "강조",
+   "src": "HS_SE_026_기본대사강조.wav",
+   "file": "sfx/emo_basic.ogg"
+  },
+  "emo_surprise": {
+   "use": "놀람·깨달음",
+   "src": "HS_SE_027_놀람_깨달음강조.wav",
+   "file": "sfx/emo_surprise.ogg"
+  },
+  "emo_excited": {
+   "use": "주장·흥분",
+   "src": "HS_SE_028_주장_흥분강조.wav",
+   "file": "sfx/emo_excited.ogg"
+  },
+  "emo_shout": {
+   "use": "깜짝 외침",
+   "src": "HS_SE_029_깜짝놀람_외침강조.wav",
+   "file": "sfx/emo_shout.ogg"
+  },
+  "emo_gloomy": {
+   "use": "침울·난감",
+   "src": "HS_SE_037_침울_난감강조.wav",
+   "file": "sfx/emo_gloomy.ogg"
+  },
+  "sfx_fall": {
+   "use": "쓰러짐",
+   "src": "HS_SE_216_몸이날아가거나떨어지는충격.wav",
+   "file": "sfx/sfx_fall.ogg"
+  },
+  "sfx_glass": {
+   "use": "유리 깨짐",
+   "src": "HS_SE_217_컵_병깨짐.wav",
+   "file": "sfx/sfx_glass.ogg"
+  },
+  "sfx_punch": {
+   "use": "주먹",
+   "src": "HS_SE_210_주먹타격_인물충돌.wav",
+   "file": "sfx/sfx_punch.ogg"
+  },
+  "sfx_slap": {
+   "use": "뺨",
+   "src": "HS_SE_224_뺨때리기.wav",
+   "file": "sfx/sfx_slap.ogg"
+  },
+  "sfx_explode": {
+   "use": "폭발",
+   "src": "HS_SE_214_모노쿠마폭발.wav",
+   "file": "sfx/sfx_explode.ogg"
+  },
+  "sfx_gunshot": {
+   "use": "총성",
+   "src": "HS_SE_035_총성.wav",
+   "file": "sfx/sfx_gunshot.ogg"
+  },
+  "sfx_machine": {
+   "use": "기계 조작",
+   "src": "HS_SE_166_모노쿠마룸_제어패널조작.wav",
+   "file": "sfx/sfx_machine.ogg"
+  },
+  "sfx_elevator": {
+   "use": "엘리베이터 작동",
+   "src": "HS_SE_161_엘리베이터작동.wav",
+   "file": "sfx/sfx_elevator.ogg"
+  },
+  "sfx_elevator_stop": {
+   "use": "엘리베이터 정지",
+   "src": "HS_SE_162_재판장_엘리베이터_정지.wav",
+   "file": "sfx/sfx_elevator_stop.ogg"
+  },
+  "sfx_elevator_door": {
+   "use": "엘리베이터 문",
+   "src": "HS_SE_163_재판장_엘리베이터_문닫힘.wav",
+   "file": "sfx/sfx_elevator_door.ogg"
+  },
+  "sfx_typing": {
+   "use": "타이핑",
+   "src": "HS_SE_208_노트북타이핑.wav",
+   "file": "sfx/sfx_typing.ogg"
+  },
+  "sfx_break": {
+   "use": "논파",
+   "src": "HS_SE_032_논파성공_V3논의무장_격파연출.wav",
+   "file": "sfx/sfx_break.ogg"
+  },
+  "sfx_timeup": {
+   "use": "제한 시간 끝",
+   "src": "HS_SE_160_제한시간종료.wav",
+   "file": "sfx/sfx_timeup.ogg"
+  },
+  "sfx_heart_slow": {
+   "use": "느린 심장",
+   "src": "HS_SE_033_느린심장박동.wav",
+   "file": "sfx/sfx_heart_slow.ogg"
+  },
+  "sfx_heart_fast": {
+   "use": "빠른 심장",
+   "src": "HS_SE_034_빠른심장박동_BTB.wav",
+   "file": "sfx/sfx_heart_fast.ogg"
+  },
+  "sfx_slash": {
+   "use": "베기",
+   "src": "HS_SE_229_클라이맥스추리_사야카의_칼공격.wav",
+   "file": "sfx/sfx_slash.ogg"
+  },
+  "sfx_climax_flip": {
+   "use": "클라이맥스 칸 넘김",
+   "src": "HS_SE_006_클라이맥스추리_후보컷_좌우넘기기.wav",
+   "file": "sfx/sfx_climax_flip.ogg"
+  },
+  "sfx_flash": {
+   "use": "흰 섬광",
+   "src": "HS_SE_202_준코얼굴_흰섬광과연기연출.wav",
+   "file": "sfx/sfx_flash.ogg"
+  },
+  "sfx_chapter_end": {
+   "use": "장 끝",
+   "src": "HS_SE_251_챕터_END_공통도입부.wav",
+   "file": "sfx/sfx_chapter_end.ogg"
+  },
+  "sfx_prologue": {
+   "use": "프롤로그 시작",
+   "src": "HS_SE_244_프롤로그시작.wav",
+   "file": "sfx/sfx_prologue.ogg"
   }
  }
 }

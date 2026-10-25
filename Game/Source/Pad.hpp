@@ -16,7 +16,7 @@ const char* const STUDENTS[15]{"rei","sora","ken","nana","riku","akari","yuu","k
 void Yumeno::ptext(const std::string& id,const std::string& v){if(ptexts.count(id)&&ptexts[id]==v)return;ptexts[id]=v;UI::SetText(this,padui::ID,id,v);}
 void Yumeno::pvis(const std::string& id,bool v){if(pvisible.count(id)&&pvisible[id]==v)return;pvisible[id]=v;UI::SetVisible(this,padui::ID,id,v);}
 void Yumeno::padToggle(){
- if(mode==Mode::Pad){for(auto& [id,v]:pvisible)if(v){UI::SetVisible(this,padui::ID,id,false);v=false;}mode=beforePad;return;}
+ if(mode==Mode::Pad){for(auto& [id,v]:pvisible)if(v){UI::SetVisible(this,padui::ID,id,false);v=false;}mode=beforePad;sfx("ui_pad_close");return;}
  beforePad=mode;mode=Mode::Pad;padPageAt=-1;padRow=0;sfx("ui_pad");
  for(auto id:{"PdFloor","PdTint","PdHead","PdFace","PdTitle","PdBubble","PdDesc","PdBig","PdSide","PdCoins","PdName","PdSchool","PdHint"})pvis(id,true);
  auto face=std::string("Assets/Art/cutin/mio_1.webp");UI::SetTexture(this,padui::ID,"PdFace",face);

@@ -434,6 +434,8 @@ def gifts():
     assert len(items) == 24 and len(likes) == 15, (len(items), len(likes))
     with open(os.path.join(ROOT, "data", "gifts.json"), "w", encoding="utf-8") as f:
         json.dump({"items": items, "likes": likes}, f, ensure_ascii=False, indent=1)
+    import import_gifts  # 위키 선물(P###) 다시 합치기 — 아이콘은 이미 받은 것 그대로
+    import_gifts.main()
 
 
 def describe_cards(flows):
@@ -459,6 +461,11 @@ def main():
     errors, summary = [], []
     flows = [prologue()] + [chapter(c) for c in range(1, 7)]
     print("언령 설명 없음:", describe_cards(flows))
+    import sound_design, pose_design
+    pose_design.trials()
+    for flow in flows:
+        pose_design.score(flow)
+        print("장면 곡", flow["chapter"], sound_design.score(flow))
     for flow in flows:
         errors += check(flow)
         kinds = [b["t"] for b in flow["beats"]]

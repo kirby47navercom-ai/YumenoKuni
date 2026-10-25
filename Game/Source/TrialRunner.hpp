@@ -64,23 +64,56 @@ void Yumeno::focusSpeaker(const std::string& slug,const std::string& texture){
  if(!texture.empty())UI::SetTexture(this,UI_ID,"Portrait",texture);
  int seat=court::seatOf(slug);
  if(seat<0)return;
- if(seat==speakerSeat&&cameraTime>=1)return;
- if(cameraTime<1&&seat==speakerSeat)return;
  if(auto* a=actor("Seat"+std::to_string(seat)))if(!texture.empty()&&seatTexture[seat]!=texture){Components::SetString(a,"SpriteRenderer","texture",texture);seatTexture[seat]=texture;}
- pitchFrom=cameraPitch;speakerSeat=seat;cameraFrom=cameraAngle;cameraTo=court::seatAngle(seat);cameraTime=0;
+ courtIdle=false;
+ // V3 : 같은 사람이 이어 말하면 각도만 끊어 바꾸고(컷), 다른 사람이면 원을 따라 휙 돈다(휩)
+ static const int CUT[]{4,3,5,1,0,2},ARRIVE[]{0,1,2,0,3,1},DEBATE[]{6,7,1,7,6,2};
+ bool talk=playingDebate;
+ if(seat==speakerSeat){if(cameraTime>=1){shotKind=talk?DEBATE[shotCount++%6]:CUT[shotCount++%6];shotTime=0;}return;}
+ whipFrom=cam;pitchFrom=cameraPitch;speakerSeat=seat;cameraFrom=cameraAngle;cameraTo=court::seatAngle(seat);cameraTime=0;
+ shotKind=talk?DEBATE[shotCount++%6]:ARRIVE[shotCount++%6];shotTime=0;
  UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
 }
+// 화자 입상을 밝은 UI 층으로 겹치는 단계(대사·논의). 쇼다운·스크럼·이론 무장·미니게임은 자기 그림이 있다
+bool Yumeno::overlayStage()const{static const std::set<std::string> no{"showdown","scrum","armament","climax","anagram","mindmine","taxi"};return !no.count(stageKind);}
+// 고르기 화면(객관식·언령·인물·지점·투표) 뒤 : 재판장 가운데에서 천천히 돌며 모두를 비춘다
+void Yumeno::courtWide(){courtIdle=true;speakerSeat=-3;cameraTime=1;UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);}
+court::Cam Yumeno::shotCam(int seat,float u)const{
+ auto& s=court::SHOTS[shotKind];float e=u*u*(3-2*u),sway=std::sin(shotTime*.7f); // 끝난 뒤에도 숨 쉬듯 조금씩 흔들린다
+ return court::frame(court::seatAngle(seat),s.phi0+(s.phi1-s.phi0)*e+2.5f*sway,s.d0+(s.d1-s.d0)*e,s.h0+(s.h1-s.h0)*e+.03f*std::sin(shotTime*.9f),s.pitch,s.roll0+(s.roll1-s.roll0)*e+.6f*sway);
+}
 void Yumeno::updateCamera(float delta){
- if(cameraTime>=1)return;
- cameraTime=std::min(1.f,cameraTime+delta/.45f);
- float t=cameraTime<.5f?4*cameraTime*cameraTime*cameraTime:1-std::pow(-2*cameraTime+2,3)/2; // 가속·감속
- float pitchTo=speakerSeat==-2?24.f:0.f;cameraPitch=pitchFrom+(pitchTo-pitchFrom)*t;if(cameraTime>=1)pitchFrom=pitchTo;
- cameraAngle=court::turn(cameraFrom,cameraTo,t);placeCamera(cameraAngle);
- if(cameraTime>=1&&speakerSeat>=0){
-  auto r=court::speakerRect(); // 3D 입상과 정확히 같은 자리·크기 → 겹쳐도 바뀌어 보이지 않는다
-UI::SetPosition(this,UI_ID,"Portrait",{r.x,r.y});UI::SetSize(this,UI_ID,"Portrait",{r.w,r.h});UI::SetVisible(this,UI_ID,"Portrait",true);
-  auto p=court::podiumRect();UI::SetPosition(this,UI_ID,"SpeakerPodium",{p.x,p.y});UI::SetSize(this,UI_ID,"SpeakerPodium",{p.w,p.h});UI::SetVisible(this,UI_ID,"SpeakerPodium",true);
+ if(courtIdle){idleYaw+=delta*7;float a=idleYaw*court::PI/180;setCam({.8f*std::sin(a),2.1f,.8f*std::cos(a),idleYaw,-5,0});return;}
+ if(speakerSeat==-2||speakerSeat==-1){ // 래피(왕좌) · 시작 전 : 예전 정면 샷
+  if(cameraTime>=1)return;
+  cameraTime=std::min(1.f,cameraTime+delta/.45f);
+  float t=cameraTime<.5f?4*cameraTime*cameraTime*cameraTime:1-std::pow(-2*cameraTime+2,3)/2;
+  float pitchTo=speakerSeat==-2?24.f:0.f;cameraPitch=pitchFrom+(pitchTo-pitchFrom)*t;if(cameraTime>=1)pitchFrom=pitchTo;
+  cameraAngle=court::turn(cameraFrom,cameraTo,t);placeCamera(cameraAngle);return;
  }
+ if(speakerSeat<0)return;
+ shotTime+=delta;float u=std::min(1.f,shotTime/(playingDebate?7.f:5.f));
+ if(cameraTime<1){ // 휩 : 원을 따라 돌며 잠깐 멀어지고 기운다 + 속도선
+  cameraTime=std::min(1.f,cameraTime+delta/.38f);
+  float t=cameraTime<.5f?4*cameraTime*cameraTime*cameraTime:1-std::pow(-2*cameraTime+2,3)/2,bump=std::sin(cameraTime*court::PI);
+  cameraAngle=court::turn(cameraFrom,cameraTo,t);
+  auto to=shotCam(speakerSeat,0);auto mid=court::frame(cameraAngle,0,2.6f+1.3f*bump,1.6f,0,0);
+  float dir=std::fmod(cameraTo-cameraFrom+540.f,360.f)-180.f>0?1.f:-1.f;
+  auto lerp=[&](float a,float b){return a+(b-a)*t;};
+  court::Cam c=mid;c.y=lerp(whipFrom.y,to.y);c.pitch=lerp(whipFrom.pitch,to.pitch);c.roll=lerp(whipFrom.roll,to.roll)+10*bump*dir;
+  if(cameraTime>=1)c=to;
+  setCam(c);UI::SetVisible(this,UI_ID,"Whip",cameraTime<1);if(cameraTime<1)UI::SetOpacity(this,UI_ID,"Whip",.85f*bump);
+  if(cameraTime<1)return;shotTime=0;u=0;
+ }
+ setCam(shotCam(speakerSeat,u));
+ // 화자 입상·증언대(밝은 UI 층)를 3D 빌보드가 그려지는 자리에 겹친다 — 카메라가 움직여도 매 프레임 따라간다
+ court::Rect r,p;
+ bool on=court::billboard(cam,speakerSeat,court::RADIUS,court::SPRITE_CENTER,court::SPRITE_SIZE,court::SPRITE_SIZE,r)&&panicWho.empty()&&overlayStage();
+ UI::SetVisible(this,UI_ID,"Portrait",on);
+ if(on){UI::SetPosition(this,UI_ID,"Portrait",{r.x,r.y});UI::SetSize(this,UI_ID,"Portrait",{r.w,r.h});UI::SetRotation(this,UI_ID,"Portrait",cam.roll);}
+ bool pod=on&&court::billboard(cam,speakerSeat,court::RADIUS-court::PODIUM_INSET,court::PODIUM_H/2,court::PODIUM_W,court::PODIUM_H,p);
+ UI::SetVisible(this,UI_ID,"SpeakerPodium",pod);
+ if(pod){UI::SetPosition(this,UI_ID,"SpeakerPodium",{p.x,p.y});UI::SetSize(this,UI_ID,"SpeakerPodium",{p.w,p.h});UI::SetRotation(this,UI_ID,"SpeakerPodium",cam.roll);}
 }
 std::string Yumeno::poseTexture(const std::string& slug,const std::string& emo,const std::string& pose)const{
  if(slug.empty())return "";
@@ -95,6 +128,7 @@ std::string Yumeno::poseTexture(const std::string& slug,const std::string& emo,c
 // ── 재판 진행 ────────────────────────────────────────────────
 void Yumeno::startTrial(){
  stages=trials["stages"];
+ bandTimer=flashTimer=0;evis("Band",false);evis("Flash",false); // 「수사 종료」 띠가 재판 내내 남아 있던 것(띠 시계는 탐색 화면에서만 돈다)
  debate=debate::State{};maxHearts=skillOn("max_heart")?6:5;debate.hearts=maxHearts;shownHearts=-1;correctCount=0;reviveUsed=sdGuardUsed=missGuardUsed=false;retries=0;
  mode=Mode::Trial;dialogVisible(false);
  for(auto id:{"Title","Backdrop","Portrait"})UI::SetVisible(this,UI_ID,id,false);
@@ -119,9 +153,17 @@ void Yumeno::enterStage(int i){
  stage=stages[i];stageKind=stage.value("kind","scene");stageTime=0;optStep=0;sdLine=0;scPair=0;mash=-1;armLine=0;armHits=0;armFinal=-1;taxiQ=0;taxiLane=1;taxiDist=0;anaFilled=0;
  auto& k=stageKind;
  { // 단계별 BGM (docs/spec/16 §5, 15 §3)
-  static const std::map<std::string,std::string> cue{{"nonstop","bgm_trial_nonstop"},{"panic","bgm_trial_panic"},{"scrum","bgm_trial_scrum"},{"showdown","bgm_trial_showdown"},{"armament","bgm_trial_armament"},
-   {"mindmine","bgm_trial_mindmine"},{"taxi","bgm_trial_taxi"},{"anagram","bgm_trial_anagram"},{"climax","bgm_trial_climax"},{"vote","bgm_trial_vote"}};
-  auto it=cue.find(k);music(it!=cue.end()?it->second:"bgm_trial_main");
+  // 장마다 재판 곡·이론 무장 곡이 다르고, 논스톱은 재판 뒤쪽에서 고조되는 곡으로, 투표 슬롯 징글 뒤로는 진상 곡(V3)
+  auto ch=trialKey.substr(1,1);bool late=i*2>=int(stages.size());
+  if(i==0)trialVoted=false;
+  static const std::map<std::string,std::string> cue{{"panic","bgm_trial_panic"},{"scrum","bgm_trial_scrum"},{"showdown","bgm_trial_showdown"},
+   {"mindmine","bgm_trial_mindmine"},{"taxi","bgm_trial_taxi"},{"anagram","bgm_trial_anagram"},{"climax","bgm_trial_climax"}};
+  auto it=cue.find(k);
+  if(k=="vote"){trialVoted=true;playCue("jingle_vote>bgm_trial_truth");}
+  else if(k=="nonstop")music(ch=="6"?"bgm_trial_nonstop_final":!late?"bgm_trial_nonstop":ch=="4"||ch=="5"?"bgm_trial_nonstop_lie":"bgm_trial_nonstop_b");
+  else if(k=="armament"){sfx("sfx_heart_fast");music("bgm_trial_armament_"+ch);}
+  else if(it!=cue.end())music(it->second);
+  else if(!trialVoted)music("bgm_trial_main_"+ch);
  }
  if(k=="opening"||k=="scene"){beginScript();return;}
  if(k=="interrupt"){smsg("반론!",1.2f);beginScript();return;}
@@ -289,6 +331,7 @@ void Yumeno::climaxOptions(){
 }
 void Yumeno::setupPlay(){
  auto& k=stageKind;std::vector<std::string> o;optAnswer=-1;
+ if(k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="mindmine")courtWide(); // 고르는 동안 뒤에서 재판장이 천천히 돈다
  if(k=="choice"){for(auto& v:stage["options"])o.push_back(v.get<std::string>());optAnswer=stage.value("answer",0);showOptions(stage.value("question",""),o);}
  else if(k=="bullet"||k=="showdown"||k=="mindmine"){
   bladeIds.clear();for(auto& v:stage["options"]){bladeIds.push_back(v.value("id",""));o.push_back(v.value("name",""));}

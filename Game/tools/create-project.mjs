@@ -40,6 +40,7 @@ await write('Assets/Data/rules.json',{rules});
 execFileSync('python',[path.join(repo,'tools/game_sprites.py')],{stdio:'inherit'});
 for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png','trial/heart_empty.png','trial/cutin_objection.png','trial/focus_track.png','trial/focus_fill.png','trial/bullet_cylinder.png'])await copy('ui/'+f,'Assets/Art/ui/'+path.basename(f));
 await write('Assets/Art/ui/aim.svg','<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="#ff4fa3" stroke-width="4"/><circle cx="32" cy="32" r="3" fill="#ffffff"/><path d="M32 2v14M32 48v14M2 32h14M48 32h14" stroke="#ffffff" stroke-width="3"/></svg>');
+await write('Assets/Art/ui/whip.svg','<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><defs><linearGradient id="v" x2="1"><stop offset="0" stop-color="#ff4fa3" stop-opacity=".35"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#36c6e0" stop-opacity=".35"/></linearGradient></defs><rect width="1280" height="720" fill="url(#v)"/><rect x="463" y="154" width="664" height="2" fill="#ffffff" opacity="0.25"/><rect x="897" y="96" width="634" height="2" fill="#ffffff" opacity="0.4"/><rect x="-124" y="88" width="704" height="6" fill="#ffffff" opacity="0.25"/><rect x="292" y="92" width="824" height="6" fill="#ffffff" opacity="0.25"/><rect x="958" y="126" width="488" height="2" fill="#ffffff" opacity="0.8"/><rect x="-99" y="226" width="307" height="3" fill="#ffffff" opacity="0.6"/><rect x="658" y="147" width="813" height="2" fill="#ffffff" opacity="0.6"/><rect x="947" y="698" width="445" height="2" fill="#ffffff" opacity="0.4"/><rect x="562" y="99" width="820" height="2" fill="#ffffff" opacity="0.25"/><rect x="1067" y="210" width="768" height="6" fill="#ffffff" opacity="0.6"/><rect x="753" y="599" width="724" height="4" fill="#ffffff" opacity="0.6"/><rect x="308" y="184" width="509" height="2" fill="#ffffff" opacity="0.6"/><rect x="875" y="506" width="611" height="6" fill="#ffffff" opacity="0.6"/><rect x="1047" y="74" width="380" height="6" fill="#ffffff" opacity="0.4"/><rect x="500" y="155" width="760" height="6" fill="#ffffff" opacity="0.25"/><rect x="1168" y="79" width="831" height="4" fill="#ffffff" opacity="0.6"/><rect x="1223" y="358" width="868" height="6" fill="#ffffff" opacity="0.8"/><rect x="-60" y="95" width="536" height="6" fill="#ffffff" opacity="0.25"/><rect x="-76" y="718" width="577" height="6" fill="#ffffff" opacity="0.6"/><rect x="1267" y="395" width="615" height="2" fill="#ffffff" opacity="0.8"/><rect x="527" y="172" width="885" height="2" fill="#ffffff" opacity="0.8"/><rect x="-80" y="223" width="554" height="3" fill="#ffffff" opacity="0.4"/><rect x="614" y="400" width="768" height="2" fill="#ffffff" opacity="0.4"/><rect x="719" y="411" width="822" height="4" fill="#ffffff" opacity="0.4"/><rect x="681" y="563" width="545" height="6" fill="#ffffff" opacity="0.6"/><rect x="1198" y="389" width="496" height="3" fill="#ffffff" opacity="0.25"/><rect x="160" y="154" width="497" height="3" fill="#ffffff" opacity="0.25"/><rect x="793" y="603" width="446" height="4" fill="#ffffff" opacity="0.6"/><rect x="-192" y="149" width="689" height="4" fill="#ffffff" opacity="0.6"/><rect x="57" y="707" width="787" height="2" fill="#ffffff" opacity="0.8"/><rect x="1193" y="572" width="661" height="6" fill="#ffffff" opacity="0.8"/><rect x="607" y="106" width="753" height="6" fill="#ffffff" opacity="0.25"/><rect x="190" y="68" width="473" height="6" fill="#ffffff" opacity="0.4"/><rect x="25" y="348" width="875" height="2" fill="#ffffff" opacity="0.25"/><rect x="-200" y="580" width="414" height="2" fill="#ffffff" opacity="0.6"/><rect x="1056" y="26" width="332" height="3" fill="#ffffff" opacity="0.8"/><rect x="104" y="649" width="518" height="4" fill="#ffffff" opacity="0.6"/><rect x="771" y="125" width="378" height="6" fill="#ffffff" opacity="0.8"/><rect x="783" y="495" width="579" height="2" fill="#ffffff" opacity="0.4"/><rect x="9" y="350" width="531" height="6" fill="#ffffff" opacity="0.4"/><rect x="857" y="23" width="470" height="4" fill="#ffffff" opacity="0.4"/><rect x="1213" y="556" width="287" height="4" fill="#ffffff" opacity="0.25"/><rect x="1225" y="267" width="790" height="4" fill="#ffffff" opacity="0.4"/><rect x="528" y="228" width="805" height="4" fill="#ffffff" opacity="0.4"/><rect x="1055" y="199" width="505" height="6" fill="#ffffff" opacity="0.4"/><rect x="209" y="530" width="764" height="4" fill="#ffffff" opacity="0.25"/><rect x="-143" y="286" width="743" height="4" fill="#ffffff" opacity="0.4"/><rect x="1218" y="619" width="612" height="6" fill="#ffffff" opacity="0.6"/><rect x="546" y="82" width="485" height="2" fill="#ffffff" opacity="0.4"/><rect x="762" y="201" width="605" height="3" fill="#ffffff" opacity="0.8"/><rect x="1078" y="624" width="261" height="6" fill="#ffffff" opacity="0.6"/><rect x="1117" y="86" width="382" height="6" fill="#ffffff" opacity="0.4"/><rect x="779" y="182" width="704" height="4" fill="#ffffff" opacity="0.25"/><rect x="1278" y="405" width="734" height="6" fill="#ffffff" opacity="0.25"/><rect x="125" y="174" width="390" height="2" fill="#ffffff" opacity="0.4"/><rect x="1009" y="476" width="409" height="6" fill="#ffffff" opacity="0.6"/><rect x="119" y="561" width="821" height="3" fill="#ffffff" opacity="0.25"/><rect x="-171" y="665" width="365" height="3" fill="#ffffff" opacity="0.8"/><rect x="198" y="216" width="288" height="4" fill="#ffffff" opacity="0.4"/><rect x="399" y="513" width="506" height="4" fill="#ffffff" opacity="0.6"/><rect x="914" y="429" width="394" height="2" fill="#ffffff" opacity="0.6"/><rect x="738" y="678" width="857" height="6" fill="#ffffff" opacity="0.4"/><rect x="889" y="155" width="796" height="2" fill="#ffffff" opacity="0.8"/><rect x="175" y="623" width="264" height="3" fill="#ffffff" opacity="0.4"/><rect x="89" y="484" width="893" height="2" fill="#ffffff" opacity="0.25"/><rect x="467" y="698" width="790" height="6" fill="#ffffff" opacity="0.25"/><rect x="947" y="58" width="514" height="3" fill="#ffffff" opacity="0.6"/><rect x="-114" y="100" width="779" height="6" fill="#ffffff" opacity="0.25"/><rect x="-71" y="453" width="593" height="3" fill="#ffffff" opacity="0.6"/><rect x="726" y="520" width="806" height="6" fill="#ffffff" opacity="0.4"/></svg>'); // 휩 팬 속도선(V3 화자 전환)
 await write('Assets/Art/ui/vpoint.svg','<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" fill="#ff2040" stroke="#ffffff" stroke-width="2"/></svg>');
 
 // V3 논의 렌즈 : 가운데 투명, 가장자리 어둡게 + 동심원 + 흰·빨강 사각 조각 (docs/spec/16 §5-2)
@@ -73,7 +74,7 @@ for(const f of ['frame_evidence','frame_testimony','frame_rule_magic','frame_mem
 const list=async(dir,re)=>{try{return (await fs.readdir(path.join(repo,dir))).filter(f=>re.test(f));}catch(e){if(e.code==='ENOENT')return [];throw e;}};
 for(const f of await list('art/cutin',/\.webp$/))await copy('art/cutin/'+f,'Assets/Art/cutin/'+f);
 const cgs=(await list('art/cg',/\.webp$/)).filter(f=>!/_(bg|fg)\.webp$/.test(f));for(const f of cgs)await copy('art/cg/'+f,'Assets/Art/cg/'+f);
-const giftIcons=await list('ui/gift',/^G\d\d\.png$/);for(const f of giftIcons)await copy('ui/gift/'+f,'Assets/Art/gift/'+f);
+const giftIcons=await list('ui/gift',/^(G\d\d|P\d{3})\.png$/);for(const f of giftIcons)await copy('ui/gift/'+f,'Assets/Art/gift/'+f);
 const padArt=await list('ui/pad',/^(coin|capsule_machine|face_\w+|map_\w+)\.png$/);for(const f of padArt)await copy('ui/pad/'+f,'Assets/Art/pad/'+f);
 const minigame=await list('ui/minigame',/\.png$/);for(const f of minigame)await copy('ui/minigame/'+f,'Assets/Art/ui/minigame/'+f);
 const cards=await list('ui/common',/^(chapter_\w+|gameover|credits_bg|ending_\w+|broadcast_\w+)\.png$/);for(const f of cards)await copy('ui/common/'+f,'Assets/Art/ui/'+f);
@@ -81,13 +82,23 @@ const cards=await list('ui/common',/^(chapter_\w+|gameover|credits_bg|ending_\w+
 const cues=JSON.parse(await fs.readFile(path.join(repo,'audio/cues.json'),'utf8')),audio={};
 // 파일 찾기 : cues.json 의 file 칸 → 없으면 audio/ 아래에서 큐 ID 와 같은 이름(bgm_title.ogg 등, 하위 폴더 포함)
 const audioFiles=[];const walk=async d=>{for(const e of await fs.readdir(path.join(repo,d),{withFileTypes:true}).catch(()=>[])){const r=d+'/'+e.name;if(e.isDirectory())await walk(r);else if(/\.(ogg|mp3|wav|m4a|flac)$/i.test(e.name))audioFiles.push(r);}};await walk('audio');
-for(const group of ['bgm','sfx'])for(const [k0,v] of Object.entries(cues[group]||{})){
+// 반복 곡의 들어가는 부분은 <큐>_intro, 징글·들어가는 부분 길이(초)는 audioLen (tools/import_audio.py)
+const audioLen={};await fs.rm(path.join(root,'Assets/Audio'),{recursive:true,force:true}); // 빠진 곡이 남지 않게
+// 엔진 런타임 audio-pcm-cache.js 가 this.fetch(…) 로 불러 「Illegal invocation」이 난다(PCM 으로 미리 푸는 경로 = 효과음 전부).
+// 그래서 소리마다 오디오 에셋(streaming:true, virtualize:false)을 만들어 그 경로를 쓴다 → HTMLAudio 스트림으로 재생(그 버그를 안 지난다).
+const put1=async(k,src)=>{try{const to='Assets/Audio/'+path.basename(src);await copy(src,to);
+ const asset='Assets/Audio/S_'+k+'.hbaudioasset.json';
+ await write(asset,{version:1,name:'S_'+k,priority:128,virtualize:false,streaming:true,clip:to,volume:1,pitch:1,loop:false,spatial:false,autoplay:false,refDistance:1,maxDistance:100,rolloff:1,mixer:'',bus:k.startsWith('ui_')?'ui':/^(bgm|jingle)_/.test(k)?'music':'sfx'});
+ audio[k]=asset;return true;}catch(e){if(e.code!=='ENOENT')throw e;return false;}};
+for(const group of ['bgm','jingle','sfx'])for(const [k0,v] of Object.entries(cues[group]||{})){
  const k=k0.replace(/_\*$/,''),src=v&&v.file?'audio/'+v.file:audioFiles.find(f=>path.basename(f).replace(/\.[^.]+$/,'').toLowerCase()===k.toLowerCase());
- if(!src)continue;try{const to='Assets/Audio/'+path.basename(src);await copy(src,to);audio[k]=to;}catch(e){if(e.code!=='ENOENT')throw e;}}
+ if(!src||!await put1(k,src))continue;
+ if(v&&v.intro&&v.introLen>.2&&await put1(k+'_intro','audio/'+v.intro))audioLen[k+'_intro']=v.introLen;
+ if(v&&v.len)audioLen[k]=v.len;}
 // 큐 목록 : 사용자가 파일 이름을 맞출 수 있게 (audio/CUES.md)
 await fs.writeFile(path.join(repo,'audio/CUES.md'),['# 소리 파일 이름 표','','`audio/` 아래(하위 폴더도 됨)에 **아래 이름 그대로** 파일을 넣으면 다음 빌드부터 그 자리에서 나온다. 확장자는 .ogg .mp3 .wav .m4a .flac 아무거나.','','| 파일 이름 | 쓰는 곳 | 들어감 |','|---|---|---|',
- ...['bgm','sfx'].flatMap(g=>Object.entries(cues[g]||{}).map(([k0,v])=>{const k=k0.replace(/_\*$/,'');return `| ${k} | ${(v&&(v.use||v.name))||''} | ${audio[k]?'✓':''} |`;})),''].join('\n'));
-await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5)),kotodama:icons.map(f=>f.slice(0,-4)),cg:cgs.map(f=>f.slice(0,-5)),gifts:giftIcons.map(f=>f.slice(0,-4)),pad:padArt.map(f=>f.slice(0,-4)),cards:cards.map(f=>f.slice(0,-4)),minigame:minigame.map(f=>f.slice(0,-4)),audio});
+ ...['bgm','jingle','sfx'].flatMap(g=>Object.entries(cues[g]||{}).map(([k0,v])=>{const k=k0.replace(/_\*$/,'');return `| ${k} | ${(v&&(v.use||v.name))||''} | ${audio[k]?'✓':''} |`;})),''].join('\n'));
+await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5)),kotodama:icons.map(f=>f.slice(0,-4)),cg:cgs.map(f=>f.slice(0,-5)),gifts:giftIcons.map(f=>f.slice(0,-4)),pad:padArt.map(f=>f.slice(0,-4)),cards:cards.map(f=>f.slice(0,-4)),minigame:minigame.map(f=>f.slice(0,-4)),audio,audioLen});
 
 // 4) UI 위젯 (1280×720 기준, V3식 대화창)
 const body='Assets/Fonts/pretendard/Pretendard-Medium.otf',head='Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf';
@@ -99,8 +110,9 @@ add('Image','Background',[-40,-24,1360,768],{texture:'',imageFit:'cover',visible
 // 논의 글자 : 글자 하나 = Text 하나. 정렬점 중심(.5,.5)이라 SetPosition 이 글자 중심, 배율·회전도 중심 기준
 const glyph=(id,parent,size)=>{const n=add('Text',id,[0,0,size*1.6,size*1.6],{fontSize:size,align:'center',visible:false,wrap:false},parent);n.slot.alignment=[.5,.5];};
 add('Panel','CourtDim',[0,0,1280,720],{background:'#12051f80',visible:false}); // V3 법정은 어둡고 보라빛 : 3D 위·화자 입상 아래
+add('Image','Whip',[0,0,1280,720],{texture:'Assets/Art/ui/whip.svg',imageFit:'fill',visible:false}); // 화자 전환 속도선
 add('Panel','TrialBack',[0,0,1280,720],{visible:false});
-for(let i=0;i<MAIN_GLYPHS;i++)glyph('MB'+i,'TrialBack',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NB'+i,'TrialBack',34);
+for(let i=0;i<MAIN_GLYPHS;i++)glyph('MB'+i,'TrialBack',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NB'+i,'TrialBack',40);
 add('Image','Portrait',[290,0,700,700],{texture:'',imageFit:'contain',visible:false});
 add('Image','SpeakerPodium',[478,431,323,351],{texture:'',imageFit:'fill',visible:false}); // 화자 앞 증언대(3D 증언대와 같은 자리, 입상 위에 그림)
 add('Image','DialogFrame',[80,512,1120,170],{texture:'Assets/Art/ui/frame.png',imageFit:'fill'});
@@ -113,7 +125,7 @@ add('Text','Body',[136,548,1010,120],{fontSize:25,wrap:true});
 add('Panel','Trial',[0,0,1280,720],{visible:false});
 add('Image','Lens',[0,0,1280,720],{texture:'Assets/Art/ui/lens.svg',imageFit:'fill',visible:false},'Trial');
 for(let i=0;i<MAIN_GLYPHS;i++){const n=add('Text','MS'+i,[0,0,80,80],{fontSize:50,align:'center',visible:false,wrap:false,color:'#05020a'},'Trial');n.slot.alignment=[.5,.5];}
-for(let i=0;i<MAIN_GLYPHS;i++)glyph('MF'+i,'Trial',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NF'+i,'Trial',34);
+for(let i=0;i<MAIN_GLYPHS;i++)glyph('MF'+i,'Trial',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NF'+i,'Trial',40);
 add('Image','NamePanel',[22,12,420,80],{texture:hud('name'),imageFit:'fill'},'Trial');
 add('Text','TrialSpeaker',[66,20,300,34],{font:head,fontSize:24,color:'#ffffff'},'Trial');
 add('Image','StatusPanel',[936,52,330,116],{texture:hud('status'),imageFit:'fill'},'Trial');
@@ -383,7 +395,7 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
 }
 
 // 5) 3D 학급 재판장 장면 (docs/spec/15 §2, Source/Courtroom.hpp 와 같은 수치) + 블루프린트 (Tick → Yumeno.Update)
-const R=5.5,PODIUM_INSET=.25,SPRITE=2.3,SPRITE_Y=1.25,PODIUM_W=1.7,PODIUM_H=1.45,FOV=43.6;
+const R=5.5,PODIUM_INSET=.25,SPRITE=2.3,SPRITE_Y=1.25,PODIUM_W=1.7,PODIUM_H=1.2,FOV=43.6;
 const SEATS=['mio','rin','ken','nana','taiga','ai','rei','sora','haruka','sho','koto','akari','riku','satsuki','yuu','kaede'];
 // 재판장 소품 : 4차 그림(art/trial3d/*.webp)이 있으면 쓰고, 없으면 임시 도형
 const placeholder={

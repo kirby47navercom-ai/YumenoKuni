@@ -104,12 +104,12 @@ struct State{
  float time=0,focus=100;
 
  const Line& line()const{return lines[index];}
- float base()const{return line().kind=="weak"?50.f:40.f;} // 줄마다 size 로 다시 곱한다
+ float base()const{return line().kind=="weak"?62.f:54.f;} // 줄마다 size 로 다시 곱한다
  float t()const{return std::clamp(time/duration(line(),base()),0.f,1.f);}
  std::vector<Glyph> current()const{return place(line(),t(),index%3,base());}
  // 소음은 본 증언과 겹쳐서 흐른다 : 가장 가까운 소음 줄
  int noiseIndex()const{for(size_t k=1;k<lines.size();++k){int i=(index+int(k))%int(lines.size());if(lines[i].kind=="noise"&&!silenced[i])return i;}return -1;}
- std::vector<Glyph> noise()const{int i=noiseIndex();if(i<0)return {};float d=duration(lines[i],34);return place(lines[i],std::fmod(time+1.5f,d)/d,(index+1)%3,34);}
+ std::vector<Glyph> noise()const{int i=noiseIndex();if(i<0)return {};float d=duration(lines[i],40);return place(lines[i],std::fmod(time+1.5f,d)/d,(index+1)%3,40);}
 
  // 화자 앞으로 나온(보이는) 약점 글자만 맞힐 수 있다
  bool weakHit(float x,float y)const{if(line().kind!="weak"||broken[index])return false;for(auto& g:current())if(g.weak&&g.front&&g.opacity>.3f&&inside(g,x,y,12))return true;return false;}

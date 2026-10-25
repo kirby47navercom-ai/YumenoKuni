@@ -1,6 +1,7 @@
 #pragma once
 #include <HBEngine/Game.hpp>
 #include "Debate.hpp"
+#include "Courtroom.hpp"
 #include <map>
 #include <array>
 #include <set>
@@ -43,7 +44,9 @@ private:
  enum class MenuKind{Event,Ending,Gift};enum class After{None,Gift,Slot,Explore,Trial};
  MenuKind menuKind=MenuKind::Event;After after=After::None;
  bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0;float toastTimer=0,blink=0,kenTime=0,shakeTimer=0;bool elevatorDone=false;bool nextShown=false;
- std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen,notes;std::vector<std::string> gridSlugs,giftOrder,trialDead;
+ std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen,notes;std::vector<std::string> gridSlugs,giftOrder,trialDead;int giftPage=0;
+ std::string jingleHandle,jingleNext;float jingleTimer=0;bool jingleIntro=false,trialVoted=false;const hb::Json* lastSoundEvent=nullptr;
+ bool hasAudio(const std::string& cue)const;float audioLen(const std::string& cue)const;void stopJingle();void playCue(const std::string& spec);void updateMusic(float delta);void eventSound(const hb::Json& e);
  std::string giftTarget,musicCue,lastBackground,sceneBackground;std::map<std::string,std::string> ftexts;std::map<std::string,bool> fvisible;
  void ftext(const std::string& id,const std::string& v);void fvis(const std::string& id,bool v);
  std::string artPath(const std::string& group,const std::string& name,const std::string& dir,const std::string& ext)const;
@@ -77,7 +80,8 @@ private:
  void styleLine();
  hb::Actor* actor(const std::string& id);
  void seatVisible(int seat,bool visible);
- void placeCamera(float angle);
+ void placeCamera(float angle);void setCam(const court::Cam& c);void courtWide();bool overlayStage()const;court::Cam shotCam(int seat,float u)const;
+ court::Cam cam{},whipFrom{};int shotKind=0,shotCount=0;float shotTime=0,idleYaw=0;bool courtIdle=false;
  void setupCourt();
  // 재판 단계 (TrialRunner.hpp)
  struct Orb{std::string ch;float x=0,y=0,vx=0,vy=0;bool taken=false;};
