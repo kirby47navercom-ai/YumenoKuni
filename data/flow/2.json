@@ -122,6 +122,10 @@
    "title": "2-S2 워터파크 개장 · 물풍선 대결 (25분)",
    "events": [
     {
+     "type": "bg",
+     "bg": "waterpark_day"
+    },
+    {
      "type": "stage",
      "text": "푸른 하늘 아래 펼쳐진 대형 워터파크. 웨이브 풀, 워터슬라이드, 유수풀. 일부 간판의 불은 아직 꺼져 있다."
     },
@@ -158,6 +162,10 @@
      "emo": "살짝 붉어짐"
     },
     {
+     "type": "bg",
+     "bg": "waterpark_snack_day"
+    },
+    {
      "type": "say",
      "speaker": "유우",
      "text": "여기 자판기! 내가 좋아하는 코발트 소다가 있어!",
@@ -177,6 +185,10 @@
     {
      "type": "ui",
      "text": "자판기 정보 : 코발트 소다 500원 (코인 불가 / 지폐 불가 / 동전 전용)."
+    },
+    {
+     "type": "bg",
+     "bg": "carousel_machine_day"
     },
     {
      "type": "say",
@@ -376,6 +388,10 @@
      "speaker": "소라",
      "text": "…졌다~! 다음엔 이길 거야!",
      "emo": "웃음, 그러나 잠깐 눈빛이 비어 보임"
+    },
+    {
+     "type": "bg",
+     "bg": "waterpark_day"
     },
     {
      "type": "stage",
@@ -612,6 +628,10 @@
      "title": "B-3 켄 ② 「거울 앞」 (퍼레이드 스트리트 의상실)",
      "events": [
       {
+       "type": "bg",
+       "bg": "shop_costume_day"
+      },
+      {
        "type": "stage",
        "text": "의상실. 거울이 일렬로 놓인 벽 앞. 켄이 거울 앞에서 표정을 연습하고 있다."
       },
@@ -660,6 +680,10 @@
        "speaker": "켄",
        "text": "…침묵하면 사람들은 떠나니까.",
        "emo": "웃음 없음"
+      },
+      {
+       "type": "bg",
+       "bg": "mirror_center"
       },
       {
        "type": "stage",
@@ -926,7 +950,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -1094,6 +1118,10 @@
        "emo": "낮게"
       },
       {
+       "type": "bg",
+       "bg": "waterpark_day"
+      },
+      {
        "type": "stage",
        "text": "사츠키의 그림자가 풀 위에 길게 늘어진다. 그림자가 고양이처럼 몸을 웅크리는 듯한 연출."
       },
@@ -1124,6 +1152,10 @@
      "title": "B-10 린 ② 「공원 구석구석 탐험」 (워터파크 기계실 · 펌프실)",
      "events": [
       {
+       "type": "bg",
+       "bg": "carousel_machine_day"
+      },
+      {
        "type": "stage",
        "text": "워터파크 기계실. 린이 펌프실 문을 가리키며 눈을 반짝인다."
       },
@@ -1143,6 +1175,10 @@
        "speaker": "린",
        "text": "열쇠가 열려 있는 문은 열린 거나 마찬가지지롱.",
        "emo": "장난"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_pump_day"
       },
       {
        "type": "stage",
@@ -1193,7 +1229,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "foodcourt"
+       "bg": "food_backdoor_day"
       },
       {
        "type": "stage",
@@ -1308,7 +1344,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -1330,6 +1366,10 @@
        "speaker": "카에데",
        "text": "시간 낭비하지 말고 시작해.",
        "emo": "타이머를 누름"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -1380,6 +1420,14 @@
    "id": "12a:2-S3",
    "title": "2-S3 퍼레이드 스트리트 · 즉석 공연 (18분)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "parade_street_day"
+    },
+    {
+     "type": "bg",
+     "bg": "shop_costume_day"
+    },
     {
      "type": "stage",
      "text": "오후. 퍼레이드 로드가 알록달록한 깃발로 꾸며져 있다. 플로트 보관소, 의상실, 소품실, 야외 소극장."
@@ -1445,6 +1493,10 @@
      "emo": "극적"
     },
     {
+     "type": "bg",
+     "bg": "theater_seats_1f"
+    },
+    {
      "type": "stage",
      "text": "유우의 노래가 시작된다. 음계가 퍼지며 객석(나머지 인원)이 하나둘 고개를 든다."
     },
@@ -1453,6 +1505,10 @@
      "speaker": "미오",
      "text": "(…이상하다. 이 곡이 …슬퍼. 그리고 …기뻐. 동시에.)",
      "mono": true
+    },
+    {
+     "type": "bg",
+     "bg": "theater_seats_1f"
     },
     {
      "type": "stage",
@@ -1608,6 +1664,10 @@
      "emo": "웃음"
     },
     {
+     "type": "bg",
+     "bg": "waterpark_snack_day"
+    },
+    {
      "type": "stage",
      "text": "매점 앞 테이블. 팥빙수를 들고 온 미오 일행."
     },
@@ -1628,6 +1688,10 @@
      "speaker": "유우",
      "text": "너무해! …아, 그래도 한 입만!",
      "emo": "웃음"
+    },
+    {
+     "type": "bg",
+     "bg": "waterpark_snack_day"
     },
     {
      "type": "stage",
@@ -1864,6 +1928,10 @@
      "title": "B-3 켄 ② 「거울 앞」 (퍼레이드 스트리트 의상실)",
      "events": [
       {
+       "type": "bg",
+       "bg": "shop_costume_day"
+      },
+      {
        "type": "stage",
        "text": "의상실. 거울이 일렬로 놓인 벽 앞. 켄이 거울 앞에서 표정을 연습하고 있다."
       },
@@ -1912,6 +1980,10 @@
        "speaker": "켄",
        "text": "…침묵하면 사람들은 떠나니까.",
        "emo": "웃음 없음"
+      },
+      {
+       "type": "bg",
+       "bg": "mirror_center"
       },
       {
        "type": "stage",
@@ -2178,7 +2250,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -2346,6 +2418,10 @@
        "emo": "낮게"
       },
       {
+       "type": "bg",
+       "bg": "waterpark_day"
+      },
+      {
        "type": "stage",
        "text": "사츠키의 그림자가 풀 위에 길게 늘어진다. 그림자가 고양이처럼 몸을 웅크리는 듯한 연출."
       },
@@ -2376,6 +2452,10 @@
      "title": "B-10 린 ② 「공원 구석구석 탐험」 (워터파크 기계실 · 펌프실)",
      "events": [
       {
+       "type": "bg",
+       "bg": "carousel_machine_day"
+      },
+      {
        "type": "stage",
        "text": "워터파크 기계실. 린이 펌프실 문을 가리키며 눈을 반짝인다."
       },
@@ -2395,6 +2475,10 @@
        "speaker": "린",
        "text": "열쇠가 열려 있는 문은 열린 거나 마찬가지지롱.",
        "emo": "장난"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_pump_day"
       },
       {
        "type": "stage",
@@ -2445,7 +2529,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "foodcourt"
+       "bg": "food_backdoor_day"
       },
       {
        "type": "stage",
@@ -2560,7 +2644,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -2582,6 +2666,10 @@
        "speaker": "카에데",
        "text": "시간 낭비하지 말고 시작해.",
        "emo": "타이머를 누름"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -2728,6 +2816,10 @@
      "speaker": "하루카",
      "text": "에이~ 그래도!",
      "emo": "팔짱"
+    },
+    {
+     "type": "bg",
+     "bg": "waterpark_night"
     },
     {
      "type": "stage",
@@ -3006,6 +3098,10 @@
      "title": "B-3 켄 ② 「거울 앞」 (퍼레이드 스트리트 의상실)",
      "events": [
       {
+       "type": "bg",
+       "bg": "shop_costume_day"
+      },
+      {
        "type": "stage",
        "text": "의상실. 거울이 일렬로 놓인 벽 앞. 켄이 거울 앞에서 표정을 연습하고 있다."
       },
@@ -3054,6 +3150,10 @@
        "speaker": "켄",
        "text": "…침묵하면 사람들은 떠나니까.",
        "emo": "웃음 없음"
+      },
+      {
+       "type": "bg",
+       "bg": "mirror_center"
       },
       {
        "type": "stage",
@@ -3320,7 +3420,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -3488,6 +3588,10 @@
        "emo": "낮게"
       },
       {
+       "type": "bg",
+       "bg": "waterpark_day"
+      },
+      {
        "type": "stage",
        "text": "사츠키의 그림자가 풀 위에 길게 늘어진다. 그림자가 고양이처럼 몸을 웅크리는 듯한 연출."
       },
@@ -3518,6 +3622,10 @@
      "title": "B-10 린 ② 「공원 구석구석 탐험」 (워터파크 기계실 · 펌프실)",
      "events": [
       {
+       "type": "bg",
+       "bg": "carousel_machine_day"
+      },
+      {
        "type": "stage",
        "text": "워터파크 기계실. 린이 펌프실 문을 가리키며 눈을 반짝인다."
       },
@@ -3537,6 +3645,10 @@
        "speaker": "린",
        "text": "열쇠가 열려 있는 문은 열린 거나 마찬가지지롱.",
        "emo": "장난"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_pump_day"
       },
       {
        "type": "stage",
@@ -3587,7 +3699,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "foodcourt"
+       "bg": "food_backdoor_day"
       },
       {
        "type": "stage",
@@ -3702,7 +3814,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -3724,6 +3836,10 @@
        "speaker": "카에데",
        "text": "시간 낭비하지 말고 시작해.",
        "emo": "타이머를 누름"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -3910,7 +4026,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "hotel_lounge_day"
     },
     {
      "type": "stage",
@@ -4014,6 +4130,10 @@
    "id": "12a:2-S8-a",
    "title": "2-S8-a 유우와의 약속 (18:30 / 워터파크 입구) — 필수",
    "events": [
+    {
+     "type": "bg",
+     "bg": "waterpark_day"
+    },
     {
      "type": "stage",
      "text": "해 질 녘. 워터파크 입구. 유우가 풀 가장자리에서 기타를 조율하고 있다."
@@ -4191,7 +4311,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "hotel_lounge_day"
     },
     {
      "type": "stage",
@@ -4222,7 +4342,7 @@
     },
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "hotel_lounge_day"
     },
     {
      "type": "stage",
@@ -4265,7 +4385,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "hotel_lounge_day"
     },
     {
      "type": "stage",
@@ -4369,6 +4489,10 @@
      "emo": "걸음이 빨라짐"
     },
     {
+     "type": "bg",
+     "bg": "waterpark_day"
+    },
+    {
      "type": "stage",
      "text": "20:45. 워터파크. 웨이브 풀 가장자리에서 사츠키·카에데·린이 멈춰 서 있다."
     },
@@ -4398,6 +4522,10 @@
      "type": "say",
      "speaker": "래피",
      "text": "시체가 발견되었어요! 웨이브 풀로 모여 주세요."
+    },
+    {
+     "type": "bg",
+     "bg": "waterpark_day"
     },
     {
      "type": "stage",
@@ -4468,6 +4596,10 @@
      "title": "C-1 웨이브 풀 · 시체",
      "events": [
       {
+       "type": "bg",
+       "bg": "waterpark_day"
+      },
+      {
        "type": "stage",
        "text": "유우의 시체. 얼굴이 아래, 헤드폰 착용."
       },
@@ -4496,6 +4628,10 @@
        "emo": "어깨를 감쌈"
       },
       {
+       "type": "bg",
+       "bg": "waterpark_day"
+      },
+      {
        "type": "stage",
        "text": "풀 가장자리에서 신발 한 짝과 풀 스피커 한 대."
       },
@@ -4514,9 +4650,21 @@
      "title": "C-2 매점 (자판기 · 쓰레기통)",
      "events": [
       {
+       "type": "bg",
+       "bg": "waterpark_snack_day"
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_snack_day"
+      },
+      {
        "type": "say",
        "speaker": "미오",
        "text": "…판매 로그가 있어."
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_snack_day"
       },
       {
        "type": "stage",
@@ -4527,6 +4675,10 @@
        "id": "E2-03",
        "name": "자판기 판매 로그",
        "text": "증거 카드 : 자판기 판매 로그 (E2-03) 획득."
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_snack_day"
       },
       {
        "type": "stage",
@@ -4587,6 +4739,10 @@
        "bg": "infirmary"
       },
       {
+       "type": "bg",
+       "bg": "clinic_pharmacy_day"
+      },
+      {
        "type": "stage",
        "text": "의무실. 약품 보관함 앞에서 나나가 재고표를 들고 있다."
       },
@@ -4633,6 +4789,10 @@
        "mono": true
       },
       {
+       "type": "bg",
+       "bg": "clinic_pharmacy_day"
+      },
+      {
        "type": "stage",
        "text": "약품 설명서를 조사"
       },
@@ -4655,6 +4815,10 @@
      "id": "12b:C-4",
      "title": "C-4 기계실 · 파도 타이머",
      "events": [
+      {
+       "type": "bg",
+       "bg": "carousel_machine_day"
+      },
       {
        "type": "stage",
        "text": "기계실. 린이 패널을 가리킨다."
@@ -4693,7 +4857,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "yuu_room_day"
       },
       {
        "type": "stage",
@@ -4704,6 +4868,10 @@
        "speaker": "미오",
        "text": "…아카리 건데 …유우가 받았다고 했지.",
        "emo": "종이를 꺼냄"
+      },
+      {
+       "type": "bg",
+       "bg": "core_hall"
       },
       {
        "type": "stage",
@@ -4724,6 +4892,10 @@
        "id": "E2-14",
        "name": "유우의 쪽지",
        "text": "증거 카드 : 유우의 쪽지 (E2-14) 획득."
+      },
+      {
+       "type": "bg",
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -4934,6 +5106,10 @@
    "title": "2-E-01 에필로그 (15분)",
    "events": [
     {
+     "type": "bg",
+     "bg": "waterpark_day"
+    },
+    {
      "type": "stage",
      "text": "워터파크. 푸른 조명 아래 풀 가장자리. 사츠키가 홀로 앉아 있다."
     },
@@ -4985,6 +5161,10 @@
    "title": "C-1 유우 유품 (인연 Lv3 이상)",
    "events": [
     {
+     "type": "bg",
+     "bg": "yuu_room_day"
+    },
+    {
      "type": "stage",
      "text": "유우의 방. 침대 위에 기타 피크 한 개와 이름 없는 악보가 놓여 있다. 나나가 서 있다."
     },
@@ -5022,6 +5202,10 @@
    "id": "12a:C-2",
    "title": "C-2 아카리 유품 (인연 Lv3 이상)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "akari_room_day"
+    },
     {
      "type": "stage",
      "text": "아카리의 방. 책상 위에 정리된 약초 노트. 마지막 페이지는 비어 있다. 사츠키가 문 앞에 서 있다."

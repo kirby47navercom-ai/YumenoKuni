@@ -20,17 +20,25 @@ EXECUTED = {1: ["sho"], 2: ["akari"], 3: ["ken"], 4: ["rei"], 5: ["satsuki"], 6:
 TITLES = {"P": "프롤로그", 1: "개장", 2: "물놀이 시즌", 3: "거울의 밤", 4: "잠든 롤러코스터", 5: "드림 캐슬", 6: "드림 코어"}
 # 장소 낱말 → 배경 이름 앞부분 (bg/ 에 있는 것 중 첫 번째)
 PLACES = [("재판장", ["trial_room"]), ("엘리베이터", ["trial_elevator"]), ("정문", ["main_gate"]),
-          ("미오의 방", ["mio_room"]), ("객실", ["mio_room"]), ("식당", ["hotel_dining"]), ("로비", ["hotel_lobby"]),
-          ("라운지", ["hotel_lounge", "hotel_lobby"]), ("세탁", ["hotel_laundry", "hotel_corridor"]), ("복도", ["hotel_corridor"]),
-          ("5층", ["vip_hall", "hotel_corridor"]), ("505", ["vip_505", "vip_hall"]), ("갤러리", ["vip_gallery", "vip_hall"]),
-          ("호텔", ["hotel_lobby"]), ("제어반", ["carousel_control"]), ("매표소", ["carousel_control"]), ("회전목마", ["carousel"]),
-          ("탑승장", ["carousel"]), ("기념품", ["souvenir_shop"]), ("의무실", ["infirmary"]), ("푸드코트", ["foodcourt"]),
-          ("주방", ["foodcourt"]), ("워터파크", ["waterpark"]), ("풀", ["waterpark"]), ("퍼레이드", ["parade"]),
-          ("거울", ["mirror"]), ("관람차", ["ferris"]), ("극장", ["theater"]), ("음향실", ["theater_sound", "theater"]),
-          ("장치실", ["theater_rigging", "theater"]), ("롤러코스터", ["coaster"]), ("정비동", ["coaster_maintenance", "coaster"]),
-          ("발전기", ["coaster_generator", "coaster"]), ("서고", ["castle_library", "castle"]), ("시계탑", ["castle_tower", "castle"]),
-          ("연회장", ["castle_hall", "castle"]), ("캐슬", ["castle"]), ("코어", ["core"]), ("제어실", ["core_control", "core"]),
-          ("광장", ["plaza"]), ("분수", ["plaza"]), ("벤치", ["plaza"])]
+          ("미오의 방", ["mio_room"])] + [(f"{k}의 방", [f"{v}_room"]) for k, v in NAMES.items() if v not in ("mio", "lappy")] + [
+          ("객실", ["mio_room"]), ("식당", ["hotel_dining"]), ("로비", ["hotel_lobby"]), ("라운지", ["hotel_lounge", "hotel_lobby"]),
+          ("세탁", ["hotel_laundry", "hotel_corridor"]), ("옥상", ["roof_garden"]), ("별관", ["annex_hall"]), ("계단", ["hotel_stairs"]),
+          ("505", ["vip_505"]), ("리넨", ["vip_linen"]), ("갤러리", ["vip_gallery"]), ("5층", ["vip_hall_a", "hotel_corridor"]),
+          ("복도", ["hotel_corridor"]), ("호텔", ["hotel_lobby"]), ("인포메이션", ["info_center"]),
+          ("제어반", ["carousel_control"]), ("매표소", ["carousel_ticket", "carousel_control"]), ("기계실", ["carousel_machine", "waterpark_machine"]),
+          ("회전목마", ["carousel_day"]), ("탑승장", ["carousel_day"]), ("기념품", ["souvenir_shop"]), ("의상", ["shop_costume", "parade_costume"]),
+          ("약품", ["clinic_pharmacy", "infirmary"]), ("의무실", ["infirmary"]), ("뒷문", ["food_backdoor"]), ("서비스 복도", ["food_service_corridor"]),
+          ("주방", ["food_kitchen", "foodcourt"]), ("창고", ["food_storage"]), ("푸드코트", ["foodcourt"]),
+          ("매점", ["waterpark_snack"]), ("자판기", ["waterpark_snack"]), ("펌프", ["waterpark_pump"]), ("탈의", ["waterpark_locker"]),
+          ("워터파크", ["waterpark"]), ("풀", ["waterpark"]), ("퍼레이드", ["parade_street"]), ("소극장", ["parade_stage"]),
+          ("거울 미로", ["mirror_maze_1", "mirror"]), ("거울", ["mirror_center", "mirror"]), ("곤돌라", ["ferris_gondola"]), ("관람차", ["ferris_boarding", "ferris"]),
+          ("음향실", ["theater_sound"]), ("장치실", ["theater_rigging"]), ("분장실", ["theater_dressing"]), ("소품", ["theater_props"]),
+          ("객석", ["theater_seats_1f"]), ("무대", ["theater_stage"]), ("극장", ["theater_lobby", "theater"]),
+          ("정비동", ["rollercoaster_maintenance"]), ("발전기", ["rollercoaster_generator"]), ("점검", ["rollercoaster_inspection"]),
+          ("롤러코스터", ["rollercoaster_platform"]), ("서고", ["castle_library"]), ("시계탑", ["castle_tower"]), ("연회장", ["castle_hall"]),
+          ("갑옷", ["castle_armor"]), ("수장고", ["castle_vault"]), ("지하 체험관", ["castle_basement"]), ("플로트", ["castle_float"]),
+          ("왕좌", ["castle_throne"]), ("캐슬", ["castle_hall", "castle"]), ("제어실", ["core_control"]), ("대피소", ["core_shelter"]),
+          ("코어", ["core_hall", "core"]), ("광장", ["plaza"]), ("분수", ["plaza"]), ("벤치", ["plaza"])]
 CARD = re.compile(r"(증거|증언|규칙|마법|메모|노트)\s*카드\s*[:：]?\s*(.*?)\s*\(?([ETMNR]\d?-\d+(?:-[a-z])?)\)?")
 OPTION = re.compile(r"^-?\s*([A-F])\.\s*(.*)$")
 REACT = re.compile(r"\[([^\]]+)\]\s*\"([^\"]+)\"(?:\s*\{([^}]*)\})?")

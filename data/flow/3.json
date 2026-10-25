@@ -123,6 +123,10 @@
    "title": "3-S2 거울 미로 탐험 (20분)",
    "events": [
     {
+     "type": "bg",
+     "bg": "mirror_maze_1"
+    },
+    {
      "type": "stage",
      "text": "오전. 은빛으로 빛나는 건물. 입구 안내소, 미로 3구역, 중앙 홀, 비상 통로, 관리실."
     },
@@ -164,6 +168,10 @@
      "emo": "살짝 붉어짐"
     },
     {
+     "type": "bg",
+     "bg": "mirror_center"
+    },
+    {
      "type": "stage",
      "text": "미오가 손을 들어 인사하자 거울 속 미오는 반대쪽 손을 든다."
     },
@@ -190,6 +198,10 @@
      "emo": "돌아봄"
     },
     {
+     "type": "bg",
+     "bg": "mirror_center"
+    },
+    {
      "type": "stage",
      "text": "거울 속에는 사츠키의 몸만 비치고, 그림자는 비치지 않는다."
     },
@@ -208,6 +220,10 @@
     {
      "type": "ui",
      "text": "수첩 메모 카드 : M3-03 「사츠키의 그림자는 거울에 비치지 않는다. 그늘에서만 움직인다.」 — 이름은 비공개."
+    },
+    {
+     "type": "bg",
+     "bg": "mirror_center"
     },
     {
      "type": "stage",
@@ -300,6 +316,10 @@
      "emo": "표정이 가라앉음"
     },
     {
+     "type": "bg",
+     "bg": "mirror_center"
+    },
+    {
      "type": "stage",
      "text": "소라가 거울 속 자신에게 왼손을 흔든다. 거울에는 오른손이 흔들리는 것처럼 보인다."
     },
@@ -332,6 +352,14 @@
      "id": "13a:B-1",
      "title": "B-1 소라 ③ 「대관람차 앞」 (대관람차 승강장)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "ferris_boarding"
+      },
+      {
+       "type": "bg",
+       "bg": "ferris_gondola"
+      },
       {
        "type": "stage",
        "text": "해 질 녘. 대관람차 승강장. 소라가 곤돌라를 올려다보고 있다."
@@ -406,6 +434,10 @@
      "id": "13a:B-2",
      "title": "B-2 켄 ③ 「침묵」 (극장 객석)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "theater_seats_1f"
+      },
       {
        "type": "stage",
        "text": "극장 객석. 조명이 꺼져 있다. 켄이 가운데 줄에 홀로 앉아 있다."
@@ -543,7 +575,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -616,6 +648,14 @@
    "title": "3-S3 대관람차 토크 (15분)",
    "events": [
     {
+     "type": "bg",
+     "bg": "ferris_boarding"
+    },
+    {
+     "type": "bg",
+     "bg": "ferris_gondola"
+    },
+    {
      "type": "stage",
      "text": "오후. 대관람차 승강장. 곤돌라 24대, 제어실, 정상 데크."
     },
@@ -639,6 +679,10 @@
      "type": "say",
      "speaker": "미오",
      "text": "…응."
+    },
+    {
+     "type": "bg",
+     "bg": "ferris_gondola"
     },
     {
      "type": "stage",
@@ -749,6 +793,10 @@
      "text": "수첩 마법 카드 : M3-01 「소라 — 빙의(눈에 보이는 상대가 잠든 동안만, 15분, 본체 무방비, 호스트의 마법 불가)」 해금."
     },
     {
+     "type": "bg",
+     "bg": "ferris_gondola"
+    },
+    {
      "type": "stage",
      "text": "곤돌라가 정상에 도달. 유리 너머로 공원 전경."
     },
@@ -798,6 +846,10 @@
      "emo": "억지로 활기"
     },
     {
+     "type": "bg",
+     "bg": "ferris_gondola"
+    },
+    {
      "type": "stage",
      "text": "곤돌라가 내려온다. 세 사람의 침묵."
     }
@@ -826,6 +878,10 @@
      "type": "say",
      "speaker": "린",
      "text": "켄, 오늘은 좀 과하지롱."
+    },
+    {
+     "type": "bg",
+     "bg": "theater_stage"
     },
     {
      "type": "stage",
@@ -923,6 +979,10 @@
      "mono": true
     },
     {
+     "type": "bg",
+     "bg": "theater_sound"
+    },
+    {
      "type": "stage",
      "text": "음향실 앞. 소라가 문을 열어 본다."
     },
@@ -946,6 +1006,10 @@
     {
      "type": "ui",
      "text": "메모 카드 : 음향실 문은 자동 잠금. 고무 문받침으로 열어 둘 수 있다. (E3-07 선행)"
+    },
+    {
+     "type": "bg",
+     "bg": "theater_sound"
     },
     {
      "type": "stage",
@@ -1152,6 +1216,14 @@
      "title": "B-1 소라 ③ 「대관람차 앞」 (대관람차 승강장)",
      "events": [
       {
+       "type": "bg",
+       "bg": "ferris_boarding"
+      },
+      {
+       "type": "bg",
+       "bg": "ferris_gondola"
+      },
+      {
        "type": "stage",
        "text": "해 질 녘. 대관람차 승강장. 소라가 곤돌라를 올려다보고 있다."
       },
@@ -1225,6 +1297,10 @@
      "id": "13a:B-2",
      "title": "B-2 켄 ③ 「침묵」 (극장 객석)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "theater_seats_1f"
+      },
       {
        "type": "stage",
        "text": "극장 객석. 조명이 꺼져 있다. 켄이 가운데 줄에 홀로 앉아 있다."
@@ -1362,7 +1438,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "hotel_lounge_day"
       },
       {
        "type": "stage",
@@ -1434,6 +1510,10 @@
    "id": "13a:3-S7-a",
    "title": "3-S7-a 연극 연습 (10분)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "theater_stage"
+    },
     {
      "type": "stage",
      "text": "오후 3시. 무대 위. 켄이 지휘봉을 든다."
@@ -1550,6 +1630,10 @@
      "speaker": "리쿠",
      "text": "…아냐. 나중에 얘기하자.",
      "emo": "웃음"
+    },
+    {
+     "type": "bg",
+     "bg": "rollercoaster_inspection"
     },
     {
      "type": "stage",
@@ -1705,6 +1789,10 @@
      "emo": "짧게"
     },
     {
+     "type": "bg",
+     "bg": "theater_seats_1f"
+    },
+    {
      "type": "stage",
      "text": "21:00. 극장 문이 닫힌다. 객석의 불이 꺼진다."
     },
@@ -1719,6 +1807,10 @@
    "id": "13b:B-1",
    "title": "B-1 상영 (21:00~22:30)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "theater_seats_1f"
+    },
     {
      "type": "stage",
      "text": "21:00. 극장. 객석 불이 꺼진다. 스크린에 영사기 불빛."
@@ -1759,6 +1851,10 @@
      "text": "21:20. 스크린에 불길 장면이 흐른다. 소방관이 불길 속으로 뛰어든다."
     },
     {
+     "type": "bg",
+     "bg": "theater_seats_1f"
+    },
+    {
      "type": "stage",
      "text": "미오의 시점. 객석 뒤쪽 J열에서 의자 삐걱 소리. 켄이 몸을 뒤척인다."
     },
@@ -1785,6 +1881,10 @@
     {
      "type": "ui",
      "text": "노트에 적을 수 있어요. ▶ \"21:35 켄이 J-12에서 잠들어 있었다.\" (N3-07 / 알리바이 보강)"
+    },
+    {
+     "type": "bg",
+     "bg": "theater_seats_1f"
     },
     {
      "type": "stage",
@@ -1878,6 +1978,10 @@
      "mono": true
     },
     {
+     "type": "bg",
+     "bg": "theater_rigging"
+    },
+    {
      "type": "stage",
      "text": "미오·린·카에데가 장치실로 향한다. 22:55."
     }
@@ -1888,6 +1992,10 @@
    "id": "13b:B-3",
    "title": "B-3 1차 발견 : 장치실 (22:55)",
    "events": [
+    {
+     "type": "bg",
+     "bg": "theater_rigging"
+    },
     {
      "type": "stage",
      "text": "무대 장치실. 어둡다. 샌드백 낙하 장치가 작동해 있다."
@@ -1948,6 +2056,10 @@
    "title": "B-4 2차 발견 : 음향실 (23:15)",
    "events": [
     {
+     "type": "bg",
+     "bg": "theater_sound"
+    },
+    {
      "type": "stage",
      "text": "음향실 앞. 소라가 없다. 문은 자동 잠금. 문틀의 고무 문받침이 사라져 있다."
     },
@@ -1976,6 +2088,10 @@
      "speaker": "린",
      "text": "…열렸지롱…",
      "emo": "손떨림"
+    },
+    {
+     "type": "bg",
+     "bg": "theater_sound"
     },
     {
      "type": "bg",
@@ -2056,6 +2172,10 @@
      "title": "C-1 장치실 · 리쿠",
      "events": [
       {
+       "type": "bg",
+       "bg": "theater_rigging"
+      },
+      {
        "type": "stage",
        "text": "샌드백 낙하 장치. 레버, 안전핀, 윈치."
       },
@@ -2074,6 +2194,10 @@
        "speaker": "미오",
        "text": "…쪽지?",
        "emo": "펼침"
+      },
+      {
+       "type": "bg",
+       "bg": "rollercoaster_inspection"
       },
       {
        "type": "stage",
@@ -2115,6 +2239,10 @@
      "title": "C-2 음향실 · 소라",
      "events": [
       {
+       "type": "bg",
+       "bg": "theater_sound"
+      },
+      {
        "type": "stage",
        "text": "음향실 내부. 자동 잠금 문. 소라의 바지 주머니에서 카드 #2."
       },
@@ -2153,6 +2281,10 @@
      "id": "13b:C-3",
      "title": "C-3 객석 통로 · 쓰레기통",
      "events": [
+      {
+       "type": "bg",
+       "bg": "theater_seats_1f"
+      },
       {
        "type": "stage",
        "text": "객석 통로 쓰레기통. 고무 문받침이 버려져 있다."
@@ -2230,6 +2362,10 @@
       {
        "type": "bg",
        "bg": "hotel_lobby"
+      },
+      {
+       "type": "bg",
+       "bg": "theater_lobby"
       },
       {
        "type": "stage",
@@ -2424,6 +2560,10 @@
      "emo": "낮은 톤"
     },
     {
+     "type": "bg",
+     "bg": "mirror_maze_1"
+    },
+    {
      "type": "stage",
      "text": "켄의 몸이 거울 미로 중앙 홀에 서 있다. 사방이 거울. 거울이 켄을 복제한다."
     },
@@ -2594,7 +2734,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "hotel_lounge_day"
     },
     {
      "type": "stage",
