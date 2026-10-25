@@ -28,7 +28,7 @@
  "variables": [],
  "nodes": [
   {
-   "id": "node_58482494863d4c05825fdc186f9f2874",
+   "id": "node_7604a3e337ab4de7b8f8c90ef144185a",
    "key": "tick",
    "position": {
     "x": 100,
@@ -37,7 +37,7 @@
    "splitPins": []
   },
   {
-   "id": "node_1a1b1f8abeee4a458a0173b865002c3a",
+   "id": "node_3e308508be3c42fd90077c38c8514482",
    "key": "nativeCall",
    "position": {
     "x": 400,
@@ -50,21 +50,21 @@
  "edges": [
   {
    "from": {
-    "node": "node_58482494863d4c05825fdc186f9f2874",
+    "node": "node_7604a3e337ab4de7b8f8c90ef144185a",
     "pin": "then"
    },
    "to": {
-    "node": "node_1a1b1f8abeee4a458a0173b865002c3a",
+    "node": "node_3e308508be3c42fd90077c38c8514482",
     "pin": "exec"
    }
   },
   {
    "from": {
-    "node": "node_58482494863d4c05825fdc186f9f2874",
+    "node": "node_7604a3e337ab4de7b8f8c90ef144185a",
     "pin": "delta"
    },
    "to": {
-    "node": "node_1a1b1f8abeee4a458a0173b865002c3a",
+    "node": "node_3e308508be3c42fd90077c38c8514482",
     "pin": "delta"
    }
   }

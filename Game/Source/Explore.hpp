@@ -90,8 +90,10 @@ void Yumeno::enterRoom(int i){
  int n=int(r.objects.size()),m=int(r.people.size());
  // 조사 지점 : data/hotspots.json(그림을 보고 정한 좌표)이 있으면 그 자리, 없으면 고르게
  const hb::Json* marks=nullptr;if(r.spot>=0){auto id=currentBeat()["spots"][r.spot].value("id","");if(hotspotData.contains(id))marks=&hotspotData[id];}
- for(int k=0;k<n;k++){if(!r.objects[k].who.empty())continue;float u=.14f+.72f*(k+.5f)/std::max(1,n);float v=k%2?.58f:.7f;
-  if(marks)for(auto& [key,uv]:marks->items())if(r.objects[k].name.rfind(key,0)==0){u=uv[0].get<float>();v=uv[1].get<float>();break;}
+ // 말 걸 사람이 방에 없으면 그 대상은 그냥 조사 지점
+ auto standing=[&](const std::string& who){for(int k=0;k<m&&k<6;k++)if(r.people[k]==who)return true;return false;};
+ for(int k=0;k<n;k++){if(standing(r.objects[k].who))continue;float u=.14f+.72f*(k+.5f)/std::max(1,n);float v=k%2?.58f:.7f;
+  size_t best=0;if(marks)for(auto& [key,uv]:marks->items())if(key.size()>best&&r.objects[k].name.rfind(key,0)==0){best=key.size();u=uv[0].get<float>();v=uv[1].get<float>();} // 가장 긴 이름 (「시체」 ≠ 「시체의 소지품」)
   hotspots.push_back({u,v,false,k,""});}
  for(int k=0;k<m&&k<6;k++){float u=m==1?.5f:.22f+.56f*k/std::max(1,m-1);hotspots.push_back({u,.98f,true,-1,r.people[k]});
   UI::SetTexture(this,exui::ID,"Fig"+std::to_string(k),"Assets/Art/figure/"+r.people[k]+".webp");evis("Fig"+std::to_string(k),true);}
@@ -134,7 +136,7 @@ void Yumeno::interact(int i){
  auto h=hotspots[i];auto& r=rooms[roomAt];bool inv=currentBeat().value("t","")=="investigate";
  if(inv){
   int obj=h.object;
-  if(h.person){auto& s=currentBeat()["spots"][r.spot];for(auto& o:r.objects)if(o.who==h.who){obj=o.index;if(!seen.count(s.value("id","")+"#"+std::to_string(o.index)))break;}}
+  if(h.person){auto& s=currentBeat()["spots"][r.spot];for(int k=0;k<int(r.objects.size());k++)if(r.objects[k].who==h.who){obj=k;if(!seen.count(s.value("id","")+"#"+std::to_string(r.objects[k].index)))break;}}
   if(obj<0){sayOnce(h.who,reaction(h.who,"chat"),"C01",After::Explore);return;}
   auto& o=r.objects[obj];segmentKey=currentBeat()["spots"][r.spot].value("id","")+"#"+std::to_string(o.index);
   playSegment(r.spot,o.from,o.to);return;
@@ -239,8 +241,9 @@ Json Yumeno::autoExplore()const{
   auto& r=rooms[roomAt];float ox=-exui::PAN+panX,oy=-90;
   for(auto& h:hotspots){
    bool todo;
-   if(inv){int obj=h.object;if(h.person){obj=-1;for(auto& o:r.objects)if(o.who==h.who)obj=o.index;}
-    todo=obj>=0&&!seen.count(currentBeat()["spots"][r.spot].value("id","")+"#"+std::to_string(r.objects[obj].index));}
+   if(inv){int obj=h.object;auto sid=currentBeat()["spots"][r.spot].value("id","");
+    if(h.person){obj=-1;for(int k=0;k<int(r.objects.size());k++)if(r.objects[k].who==h.who&&!seen.count(sid+"#"+std::to_string(r.objects[k].index)))obj=k;}
+    todo=obj>=0&&!seen.count(sid+"#"+std::to_string(r.objects[obj].index));}
    else todo=h.person&&poolOf(h.who)>=0;
    if(todo){float x=ox+h.u*exui::BG_W,y=oy+h.v*exui::BG_H;if(h.person)y=std::min(y,740.f)-200;
     if(x<80)return Json{{"kind","key"},{"key","a"}};if(x>1200)return Json{{"kind","key"},{"key","d"}};

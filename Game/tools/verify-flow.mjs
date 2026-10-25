@@ -27,14 +27,15 @@ try{
  await delay(800);for(let k=0;k<20&&(await stats()).mode==='title';k++){await tap('Enter');await delay(500);}
  if(from>0)await probe.evaluate(`window.hbPlayerDebug.call("Driver","Yumeno.DebugChapter",{index:${from}})`);await delay(500);
  const beats=new Map();
- const seen=new Map(),seenLines=new Set(),seenModes=new Set(),log=[];let padShot=false;let last=-1,steps=0,focused=false,lastSig='',stall=0;
+ const seen=new Map(),seenLines=new Set(),seenModes=new Set(),log=[];let padShot=false;let last=-1,steps=0,beatAt=Date.now(),focused=false,lastSig='',stall=0;
  while(steps++<200000){
   const t0=Date.now();const s=await stats();const dt=Date.now()-t0;
   if(s.error){console.log('GAME ERROR',s.error);break;}
   if(s.mode==='title'||s.chapter>to)break;
   {const sig=JSON.stringify([s.mode,s.chapter,s.beat,s.event,s.stage,s.trial?.index,s.trial?.broken]);if(sig===lastSig){if(++stall>3000){console.log('STALL',sig,JSON.stringify(s.auto));break;}}else{lastSig=sig;stall=0;}}
   if(s.mode!=='trial'){
-   const k=`${s.chapter}/${s.beat}`;if(!beats.has(k)){beats.set(k,s.beatKind);console.log('beat',k,s.beatKind,'coins',s.coins,'cards',s.cards,'gifts',s.gifts);if(['card','freetime','investigate','ending','end'].includes(s.beatKind)){await delay(400);try{await probe.capture(`${k.replace('/','-')}-${s.beatKind}.png`);}catch(e){}}}
+   const k=`${s.chapter}/${s.beat}`;if(beats.has(k)&&Date.now()-beatAt>600000){console.log('LOOP',k,s.mode,JSON.stringify(s.auto));break;} // 상태가 돌기만 하고 비트가 10분째 그대로
+   if(!beats.has(k)){beats.set(k,s.beatKind);beatAt=Date.now();console.log('beat',k,s.beatKind,'coins',s.coins,'cards',s.cards,'gifts',s.gifts);if(['card','freetime','investigate','ending','end'].includes(s.beatKind)){await delay(400);try{await probe.capture(`${k.replace('/','-')}-${s.beatKind}.png`);}catch(e){}}}
    if(s.mode==='story'&&s.line&&!seenLines.has(k+s.event)){seenLines.add(k+s.event);if(seenLines.size%400===0){try{await probe.capture(`line-${seenLines.size}.png`);}catch(e){}}}
    if(['explore','map','confirm','popup','grid'].includes(s.mode)&&!seenModes.has(s.mode+s.chapter)){seenModes.add(s.mode+s.chapter);await delay(700);try{await probe.capture(`mode-${s.chapter}-${s.mode}-${s.beat}.png`);}catch(e){}}
    if(s.mode==='explore'&&!padShot){padShot=true;await tap('Tab');await delay(700);try{await probe.capture('pad-menu.png');}catch(e){}
@@ -45,7 +46,7 @@ try{
    if(a.kind==='key')await tap(a.key);else if(a.kind==='click')await click(a.x,a.y);
    continue;
   }
-  const st=s.stage;
+  const st=s.stage;beatAt=Date.now();
   if(st.index!==last){last=st.index;log.push({index:st.index,kind:st.kind,hearts:st.hearts});console.log('stage',st.index,st.kind);if(!seen.has(st.kind)){seen.set(st.kind,st.index);await delay(500);try{await probe.capture(`${String(st.index).padStart(2,'0')}-${st.kind}.png`);}catch(e){console.log('capture skipped',st.kind,e.message);}}}
   const a=s.auto;
   if(a.kind==='debate'){

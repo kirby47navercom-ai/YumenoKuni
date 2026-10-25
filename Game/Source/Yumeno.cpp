@@ -169,8 +169,8 @@ void Yumeno::updateDebate(float delta){
  {int ms=std::max(0,int(debateTime*1000));char t[16];std::snprintf(t,sizeof t,"%02d:%02d:%03d",ms/60000,ms/1000%60,ms%1000);text("Timer",t);}
  if(debateTime<=0){message("시간 초과… 처음부터!",2.f);debateTime=180;debate.hearts=maxHearts;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;retries++;}
  bool changed=(!turning&&debate.tick(delta*(focusing?.35f:1)))||shownLine!=debate.index;
- if(changed){shownLine=debate.index;styleLine();}
- drawGlyphs("M",48,turning?std::vector<debate::Glyph>{}:debate.current());
+ if(changed){shownLine=debate.index;styleLine();} // 줄이 바뀐 프레임은 글꼴·색만, 글자는 다음 프레임(둘을 한 번에 보내면 1000개를 넘는다)
+ else drawGlyphs("M",48,turning?std::vector<debate::Glyph>{}:debate.current());
  int ni=debate.noiseIndex();
  if(ni>=0&&!noiseStyled){noiseStyled=true;for(int k=0;k<26;k++)for(auto side:{"F","B"}){auto id=std::string("N")+side+std::to_string(k);UI::SetFont(this,UI_ID,id,"Assets/Fonts/gaegu/Gaegu-Regular.ttf");UI::SetColor(this,UI_ID,id,Color{.85f,.85f,.9f,1});}}
  drawGlyphs("N",26,debate.noise());
