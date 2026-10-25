@@ -23,7 +23,23 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 nai.WIDTH, nai.HEIGHT = 1216, 832
 STYLE = nai.STYLE_POSITIVE.replace("-3::empty eyes, artist collaboration,doll::,", "-3::artist collaboration,doll::,")
 NEG = nai.NEGATIVE.replace("plants, grass, leaves, ", "").replace("empty eyes, ", "")
-PARK = "pastel pink and mint amusement park theme, rabbit motif decorations, danganronpa style background, highly detailed interior"
+PARK = "amusement park interior, small rabbit motif decorations, danganronpa v3 style background, 3d stage set look, cinematic lighting, highly detailed"
+# 장별 분위기 (docs/spec/05 §1 : 장이 갈수록 채도·밝기 하락)
+MOOD = [("waterpark", "summer, bright aqua and white, sunlight through glass roof"), ("parade", "summer festival colors, bright"),
+        ("mirror", "night, dark purple and silver, eerie reflections, dim neon"), ("ferris", "night sky, dark blue and purple, city lights"),
+        ("theater", "dark theater, deep red and black, spotlight, dusty"), ("rollercoaster", "overcast, grey and teal, muted colors, abandoned feel"),
+        ("vip", "muted grey-beige luxury, cold fluorescent light, uneasy"), ("castle", "dusk, muted gold and dark wine red, candlelight, gloomy"),
+        ("core", "underground, cold dark blue, sterile, glowing machine, ominous"), ("trial", "dark industrial, red warning light, iron, ominous"),
+        ("", "soft pastel colors, gentle daylight, slightly desaturated")]
+
+
+def mood(name):
+    tone = next(m for k, m in MOOD if k in name)
+    if "night" in name:
+        tone += ", 1.4::night, dark, dim lamps, deep shadows, moonlight::"
+    if "dawn" in name:
+        tone += ", dawn, pale cold light"
+    return tone
 
 # ---- 사망 CG : 배경 판(현장·보라 피 웅덩이, 사람 없음) + 인물(쓰러진 자세, 흰 배경) 을 따로 뽑아 합성 ----
 # 인물은 분명히 죽어 있는 모습(자는 것처럼 보이지 않게). 피는 보라색, 상처 묘사 없음.
@@ -235,8 +251,8 @@ def main():
                 print("  합성 →", name, flush=True)
     if a.bg is not None:
         for name in a.bg or BG:
-            positive = f"{STYLE} 1.5::no humans, scenery::, {BG[name]}, {PARK}, wide angle, stage set like 3d background"
-            negative = "1.5::1girl, 1boy, people, person, character::, " + NEG
+            positive = f"{STYLE} 1.5::no humans, scenery::, {BG[name]}, {mood(name)}, {PARK}, wide angle"
+            negative = "1.5::1girl, 1boy, people, person, character::, 1.3::monochrome pink, everything pink, oversaturated::, " + NEG
             run(token, name, positive, negative, os.path.join(ROOT, "bg", name + ".png"), a.n)
 
 

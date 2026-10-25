@@ -20,8 +20,12 @@ void Yumeno::music(const std::string& cue){
  if(cue==musicCue)return;musicCue=cue;
  if(art.contains("audio")&&art["audio"].contains(cue))Audio::PlayMusic(art["audio"][cue].get<std::string>(),1.f);
 }
+// 효과음 : audio/cues.json 에 파일이 있는 큐만 (docs/spec/16 §5)
+void Yumeno::sfx(const std::string& cue){
+ if(art.contains("audio")&&art["audio"].contains(cue))Audio::Play(art["audio"][cue].get<std::string>(),1.f,1.f,"sfx");
+}
 int Yumeno::level(const std::string& slug)const{int p=bonds.count(slug)?bonds.at(slug):0,l=1;for(int i=1;i<5;i++)if(p>=flowui::LEVELS[i])l=i+1;return l;}
-void Yumeno::addBond(const std::string& slug,int points){int before=level(slug);bonds[slug]=std::max(0,bonds[slug]+points);if(level(slug)>before)toast(nameOf(slug)+" 인연 Lv"+std::to_string(level(slug))+"!");}
+void Yumeno::addBond(const std::string& slug,int points){int before=level(slug);if(points>=3)sfx("sfx_correct");bonds[slug]=std::max(0,bonds[slug]+points);if(level(slug)>before)toast(nameOf(slug)+" 인연 Lv"+std::to_string(level(slug))+"!");}
 void Yumeno::toast(const std::string& v){ftext("FToast",v);fvis("FToast",true);toastTimer=2.2f;}
 void Yumeno::hud(){
  std::string ch=chapter.value("chapter","P");
@@ -115,7 +119,14 @@ void Yumeno::enterBeat(){
  }
  if(t=="freetime"){slots=b.value("slots",2);music("bgm_freetime");mapHover=0;showMap();band("free");return;}
  if(t=="investigate"){music("bgm_investigation");mapHover=0;showMap();band("inv");return;}
+ if(t=="trial"&&!elevatorDone){
+  elevatorDone=true;showStory();UI::SetTexture(this,UI_ID,"Background","Assets/Art/bg/trial_elevator.webp");UI::SetVisible(this,UI_ID,"Background",true);
+  music("bgm_trial_main");sayOnce("mio","(…엘리베이터가 내려간다. 철창 사이로 빛이 하나씩 지나간다. 이 아래에서 — 학급 재판이 기다리고 있다.)","C01",After::Trial);
+  speaker.clear();text("Name","");UI::SetVisible(this,UI_ID,"Nameplate",false);UI::SetVisible(this,UI_ID,"Name",false);UI::SetVisible(this,UI_ID,"NameHead",false);UI::SetColor(this,UI_ID,"Body",Color{.62f,.84f,1,1});
+  shakeTimer=2.5f;return;
+ }
  if(t=="trial"){
+  elevatorDone=false;
   trialKey=b.value("key","11c");trialDead.clear();for(auto& d:b["dead"])trialDead.push_back(d.get<std::string>());
   trials=Data::Get("Assets/Data/trials/"+trialKey+".json");hideFlow();fvis("FHud",false);music("bgm_trial_main");startTrial();return;
  }
@@ -149,7 +160,7 @@ void Yumeno::flowPresent(){
    if(bg.rfind("cg:death",0)==0)band("body");
    if(bg.rfind("cg:",0)==0){auto want=bg.substr(3);if(art.contains("cg"))for(auto& c:art["cg"]){auto n=c.get<std::string>();if(n.rfind(want,0)==0){path="Assets/Art/cg/"+n+".webp";break;}}}
    else path=artPath("backgrounds",bg,"bg",".webp");
-   if(!path.empty()){UI::SetTexture(this,UI_ID,"Background",path);UI::SetVisible(this,UI_ID,"Background",true);if(bg.rfind("cg:",0)!=0)lastBackground=path;if(ctxSpot>=0&&bg.rfind("cg:",0)!=0)sceneBackground=path;}
+   if(!path.empty()){UI::SetTexture(this,UI_ID,"Background",path);UI::SetVisible(this,UI_ID,"Background",true);UI::SetScale(this,UI_ID,"Background",{1,1});UI::SetPosition(this,UI_ID,"Background",{-40,-24});if(bg.rfind("cg:",0)!=0)lastBackground=path;if(ctxSpot>=0&&bg.rfind("cg:",0)!=0)sceneBackground=path;}
    ++event;continue;
   }
   if(type=="card"){auto id=e.value("id","");if(cards.insert(id).second){showStory();kotodamaGet(id);return;}++event;continue;}
@@ -161,7 +172,7 @@ void Yumeno::flowPresent(){
   if(currentBeat().value("t","")=="execution"&&art.contains("cg")){
    std::vector<std::string> keys;auto pre="exec_"+std::to_string(currentBeat().value("chapter",1))+"_";
    for(auto& c:art["cg"]){auto n=c.get<std::string>();if(n.rfind(pre,0)==0)keys.push_back(n);}
-   if(!keys.empty()){UI::SetTexture(this,UI_ID,"Background","Assets/Art/cg/"+keys[std::min<size_t>(event,keys.size()-1)]+".webp");UI::SetVisible(this,UI_ID,"Background",true);}
+   if(!keys.empty()){UI::SetTexture(this,UI_ID,"Background","Assets/Art/cg/"+keys[std::min<size_t>(event,keys.size()-1)]+".webp");UI::SetVisible(this,UI_ID,"Background",true);kenTime=0;}
   }
   speaker.clear();portrait.clear();
   if(type=="say"){
@@ -212,7 +223,7 @@ void Yumeno::eventsDone(){
 void Yumeno::advanceFlow(){
  if(int(shown)<lineLength){shown=float(lineLength);text("Body",line);return;}
  if(after!=After::None){auto a=after;after=After::None;
-  if(a==After::Gift)showGifts();else if(a==After::Slot)slotDone();else if(a==After::Explore)enterRoomBack();
+  if(a==After::Gift)showGifts();else if(a==After::Slot)slotDone();else if(a==After::Explore)enterRoomBack();else if(a==After::Trial)enterBeat();
   return;}
  ++event;flowPresent();
 }
@@ -247,6 +258,7 @@ void Yumeno::menuPicked(int i){
  if(menuKind==MenuKind::Gift){giveGift(i);return;}
 }
 void Yumeno::giveGift(int i){
+ {UI::SetPosition(this,UI_ID,"Portrait",{290,0});UI::SetSize(this,UI_ID,"Portrait",{700,700});}
  {
   hideFlow();
   if(i>=int(giftOrder.size())){slotDone();return;}
@@ -270,6 +282,7 @@ void Yumeno::showFreeSelect(){
  for(int i=0;i<16;i++){
   bool on=i<int(gridSlugs.size());auto n=std::to_string(i);
   fvis("FCell"+n,on);fvis("FFace"+n,on);fvis("FName"+n,on);if(!on)continue;
+  {auto c=cellAt(i);UI::SetPosition(this,flowui::ID,"FCell"+n,{c[0],c[1]});UI::SetPosition(this,flowui::ID,"FFace"+n,{c[0]+6,c[1]+6});UI::SetPosition(this,flowui::ID,"FName"+n,{c[0]+118,c[1]+14});}
   auto& s=gridSlugs[i];auto face=artPath("pad","face_"+s,"pad",".png");
   UI::SetTexture(this,flowui::ID,"FFace"+n,face.empty()?"Assets/Art/sprites/"+s+"/"+s+"_C02.webp":face);
   ftext("FName"+n,nameOf(s)+"\nLv"+std::to_string(level(s))+(poolOf(s)>=0?"  ★":""));
@@ -281,11 +294,14 @@ int Yumeno::poolOf(const std::string& slug)const{
  for(int i=0;i<int(b["pool"].size());i++){auto& p=b["pool"][i];if(p.value("who","")==slug&&!seen.count(p.value("id","")))return i;}
  return -1;
 }
+// 칸 자리 : 선물은 V3 선물 화면처럼 오른쪽 3열(왼쪽은 받는 사람), 나머지는 4열
+std::array<float,2> Yumeno::cellAt(int i)const{
+ if(gridKind==GridKind::Gift)return {560+(i%3)*flowui::CELL_DX,flowui::CELL_Y+(i/3)*flowui::CELL_DY};
+ return {flowui::CELL_X+(i%4)*flowui::CELL_DX,flowui::CELL_Y+(i/4)*flowui::CELL_DY};
+}
 int Yumeno::gridAt(float x,float y)const{
- int c=int((x-flowui::CELL_X)/flowui::CELL_DX),r=int((y-flowui::CELL_Y)/flowui::CELL_DY);
- if(x<flowui::CELL_X||y<flowui::CELL_Y||c>3||r>3)return -1;
- if(x-flowui::CELL_X-c*flowui::CELL_DX>flowui::CELL_W||y-flowui::CELL_Y-r*flowui::CELL_DY>flowui::CELL_H)return -1;
- int i=r*4+c;return i<int(gridSlugs.size())?i:-1;
+ for(int i=0;i<int(gridSlugs.size())&&i<16;i++){auto c=cellAt(i);if(x>=c[0]&&x<=c[0]+flowui::CELL_W&&y>=c[1]&&y<=c[1]+flowui::CELL_H)return i;}
+ return -1;
 }
 void Yumeno::gridPicked(int i){
  if(gridKind==GridKind::Gift){giveGift(i);return;}
@@ -296,7 +312,7 @@ void Yumeno::gridPicked(int i){
 }
 void Yumeno::pullCapsule(){
  if(coins<3){toast("코인이 모자라요");return;}
- coins-=3;++pulls;
+ coins-=3;++pulls;sfx("sfx_capsule_*");
  static std::mt19937 rng{std::random_device{}()};
  int roll=int(rng()%100);std::string tier=roll<1?"장미":roll<10?"희귀":roll<40?"좋은":"일반";
  if(pulls%15==0&&(tier=="일반"||tier=="좋은"))tier="희귀"; // 15회마다 희귀 이상 보증
@@ -325,10 +341,13 @@ void Yumeno::showGifts(){
  if(giftOrder.empty()){slotDone();return;}
  if(giftOrder.size()>15)giftOrder.resize(15);
  hideFlow();dialogVisible(false);mode=Mode::Grid;gridKind=GridKind::Gift;gridSlugs=giftOrder;gridSlugs.push_back("");
+ // 받는 사람 : 왼쪽 큰 입상(V3)
+ UI::SetTexture(this,UI_ID,"Portrait","Assets/Art/sprites/"+giftTarget+"/"+giftTarget+"_C01.webp");UI::SetPosition(this,UI_ID,"Portrait",{-40,40});UI::SetSize(this,UI_ID,"Portrait",{620,680});UI::SetVisible(this,UI_ID,"Portrait",true);
  fvis("FShade",true);ftext("FGridHead",nameOf(giftTarget)+"에게 선물을 줄까?");fvis("FGridHead",true);
  for(int i=0;i<16;i++){
   bool on=i<int(gridSlugs.size());auto n=std::to_string(i);
   fvis("FCell"+n,on);fvis("FName"+n,on);if(!on){fvis("FFace"+n,false);continue;}
+  {auto c=cellAt(i);UI::SetPosition(this,flowui::ID,"FCell"+n,{c[0],c[1]});UI::SetPosition(this,flowui::ID,"FFace"+n,{c[0]+6,c[1]+6});UI::SetPosition(this,flowui::ID,"FName"+n,{c[0]+118,c[1]+14});}
   auto& id=gridSlugs[i];auto icon=id.empty()?"":artPath("gifts",id,"gift",".png");
   fvis("FFace"+n,!icon.empty());if(!icon.empty())UI::SetTexture(this,flowui::ID,"FFace"+n,icon);
   ftext("FName"+n,id.empty()?std::string("주지 않는다"):giftName(id)+"\n×"+std::to_string(gifts[id]));
@@ -385,6 +404,10 @@ void Yumeno::updateFlow(float delta,bool next,bool click){
   if(click){int i=gridAt(m.x,m.y);if(i>=0)gridPicked(i);}
   return;
  }
+ if(currentBeat().value("t","")=="execution"||shakeTimer>0){ // 처형 키프레임은 천천히 다가가고, 엘리베이터는 흔들린다
+  kenTime+=delta;float z=1+.06f*std::min(1.f,kenTime/6),sx=shakeTimer>0?std::sin(kenTime*40)*3:0;if(shakeTimer>0)shakeTimer-=delta;
+  UI::SetScale(this,UI_ID,"Background",{z,z});UI::SetPosition(this,UI_ID,"Background",{-40-12*std::min(1.f,kenTime/6)+sx,-24});
+ }
  if(mode==Mode::Story){
   if(int(shown)<lineLength){shown=std::min(float(lineLength),shown+delta*40);text("Body",u8prefix(line,int(shown)));}
   else{blink+=delta;bool on=std::fmod(blink,.8f)<.5f;if(on!=nextShown){nextShown=on;UI::SetVisible(this,UI_ID,"Next",on);}}
@@ -406,7 +429,7 @@ Json Yumeno::autoFlow()const{
   int i=0;for(int k=0;k<int(gridSlugs.size());k++)if(poolOf(gridSlugs[k])>=0){i=k;break;}
   if(gridKind==GridKind::Gift)i=0;
   else if(coins>=3&&gifts.empty())return Json{{"kind","key"},{"key","g"}};
-  return Json{{"kind","click"},{"x",flowui::CELL_X+(i%4)*flowui::CELL_DX+60},{"y",flowui::CELL_Y+(i/4)*flowui::CELL_DY+60}};
+  auto c=cellAt(i);return Json{{"kind","click"},{"x",c[0]+60},{"y",c[1]+60}};
  }
  return Json{{"kind","key"},{"key","Enter"}};
 }

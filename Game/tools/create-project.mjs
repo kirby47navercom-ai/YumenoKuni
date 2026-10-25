@@ -228,6 +228,8 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  put('Panel','ScUsP',[530,436,720,110],{background:'#0b1018e6',borderWidth:3,borderColor:'#36e3ff'});
  put('Text','ScUsN',[546,444,300,30],{font:head,fontSize:22,color:'#7dfcff'});
  put('Text','ScUsT',[546,476,690,66],{font:head,fontSize:28,wrap:true});
+ put('Image','SdFace',[-60,60,620,620],{texture:'',imageFit:'contain',opacity:.95}); // 반론 : 상대 큰 얼굴(V3)
+ put('Image','ArmFace',[1010,470,260,240],{texture:'',imageFit:'cover'}); // 이론 무장 : 미오 얼굴
  put('Text','StageMsg',[0,300,1280,90],{font:head,fontSize:60,align:'center',color:'#ff8fc8'});
  put('Text','StageTimer',[1040,656,220,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:40,color:'#ffb21f',align:'right'});
  await write('Assets/UI/Stage.hbwidget.json',v);

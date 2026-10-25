@@ -34,10 +34,11 @@ void Yumeno::drawHearts(){
 }
 // 발언력 : 단계 실패 시 감소, 0이면 그 단계 처음부터(V3 : 같은 지점 재도전 + 점수 감점)
 void Yumeno::hurt(){
+ sfx("sfx_wrong");
  if(--debate.hearts<=0){debate.hearts=5;retries++;smsg("발언력이 바닥났어요… 다시!",1.6f);restartStage=true;return;}
  smsg("아야! 틀렸어요~!",1.f);
 }
-void Yumeno::heal(){debate.hearts=std::min(5,debate.hearts+1);}
+void Yumeno::heal(){sfx("sfx_correct");debate.hearts=std::min(5,debate.hearts+1);}
 
 // ── 카메라 : 화자 자리로 돌고, 도착하면 화자를 UI 층으로 옮긴다 ─────────────
 void Yumeno::focusSpeaker(const std::string& slug,const std::string& texture){
@@ -103,6 +104,11 @@ void Yumeno::enterStage(int i){
  if(i>=int(stages.size())){endTrial();return;}
  stage=stages[i];stageKind=stage.value("kind","scene");stageTime=0;optStep=0;sdLine=0;scPair=0;mash=-1;armLine=0;armHits=0;armFinal=-1;taxiQ=0;taxiLane=1;taxiDist=0;anaFilled=0;
  auto& k=stageKind;
+ { // 단계별 BGM (docs/spec/16 §5, 15 §3)
+  static const std::map<std::string,std::string> cue{{"nonstop","bgm_trial_nonstop"},{"panic","bgm_trial_panic"},{"scrum","bgm_trial_scrum"},{"showdown","bgm_trial_showdown"},{"armament","bgm_trial_armament"},
+   {"mindmine","bgm_trial_mindmine"},{"taxi","bgm_trial_taxi"},{"anagram","bgm_trial_anagram"},{"climax","bgm_trial_climax"},{"vote","bgm_trial_vote"}};
+  auto it=cue.find(k);music(it!=cue.end()?it->second:"bgm_trial_main");
+ }
  if(k=="opening"||k=="scene"){beginScript();return;}
  if(k=="interrupt"){smsg("반론!",1.2f);beginScript();return;}
  if(k=="intermission"){smsg("휴정",1.4f);try{Save::Write(SAVE_SLOT,Json{{"trial",trialKey},{"stage",i}});}catch(const std::exception&){}beginScript();return;}
@@ -175,6 +181,12 @@ void Yumeno::showOptions(const std::string& question,const std::vector<std::stri
  optionHighlight();
 }
 // 고른 띠만 파랗게(V3). 언령 고르기는 오른쪽 카드·설명도 바꾼다
+void Yumeno::bladeList(){
+ for(int i=0;i<8;i++){bool on=i<int(bladeIds.size());auto p="OptP"+std::to_string(i),tt="OptT"+std::to_string(i);svis(p,on);svis(tt,on);if(!on)continue;
+  float x=780+i*6.f,y=560-(int(bladeIds.size())-1-i)*34.f;
+  UI::SetPosition(this,trialui::ID,p,{x,y});UI::SetSize(this,trialui::ID,p,{480,32});UI::SetTexture(this,trialui::ID,p,i==sdBullet?"Assets/Art/ui/band_on.svg":"Assets/Art/ui/band_off.svg");
+  UI::SetPosition(this,trialui::ID,tt,{x+24,y+2});UI::SetSize(this,trialui::ID,tt,{440,28});UI::SetFontSize(this,trialui::ID,tt,19.f);stext(tt,stage["options"][i].value("name",""));}
+}
 void Yumeno::optionHighlight(){
  auto& k=stageKind;
  for(int i=0;i<int(optRects.size());i++)UI::SetTexture(this,trialui::ID,"OptP"+std::to_string(i),i==optHover?"Assets/Art/ui/band_on.svg":"Assets/Art/ui/band_off.svg");
@@ -259,9 +271,16 @@ void Yumeno::setupPlay(){
  }
  if(k=="climax"){usedPieces.clear();filledPanel.assign(stage["panels"].size(),false);climaxOptions();}
  if((k=="showdown"||k=="armament")&&stage.contains("opponent")){auto who=stage.value("opponent","");speakerSeat=-1;focusSpeaker(who,poseTexture(who,"",who+(k=="armament"?"_T04":"_C12")));}
- if(k=="showdown"){sdBullet=0;sdTime=0;stext("BladeName","언령의 칼 · "+(bladeIds.empty()?std::string():stage["options"][0].value("name","")));svis("BladeName",true);svis("Blade",true);}
+ if(k=="showdown"){sdBullet=0;sdTime=0;stext("BladeName","언령의 칼 · "+(bladeIds.empty()?std::string():stage["options"][0].value("name","")));svis("BladeName",true);svis("Blade",true);
+  auto who=stage.value("opponent","");svis("SdFace",true);UI::SetTexture(this,trialui::ID,"SdFace","Assets/Art/cutin/"+who+"_2.webp");
+  UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
+  stext("SpkName",nameOf(who));svis("SpkTag",true);svis("SpkName",true);bladeList();}
  if(k=="scrum"){scrumT=0;scrumWait=0;svis("ScBand",true);UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);scrumNext();}
- if(k=="armament"){svis("ArmLine",true);svis("Ring",true);svis("RingCore",true);stext("ArmLine",stage["lines"][0].get<std::string>());armBeat=0;}
+ if(k=="armament"){svis("ArmLine",true);svis("Ring",true);svis("RingCore",true);stext("ArmLine",stage["lines"][0].get<std::string>());armBeat=0;
+  auto who=stage.value("opponent","");svis("AccFig",true);UI::SetTexture(this,trialui::ID,"AccFig","Assets/Art/figure/"+who+".webp");
+  svis("ArmFace",true);UI::SetTexture(this,trialui::ID,"ArmFace","Assets/Art/cutin/mio_3.webp");
+  UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
+  stext("SpkName",nameOf(who));svis("SpkTag",true);svis("SpkName",true);UI::SetPosition(this,trialui::ID,"SpkTag",{30,26});UI::SetPosition(this,trialui::ID,"SpkName",{52,34});}
  if(k=="anagram"){
   anaChars=debate::glyphs(stage.value("answer",""));orbs.clear();
   std::vector<std::string> pool=anaChars;
@@ -474,8 +493,8 @@ void Yumeno::updateTrial(float delta){
  }
  if(k=="showdown"){
   auto& lines=stage["lines"];int n=int(lines.size());bool final=sdLine==n-1;
-  if(final){if(pressed("e")){sdBullet=(sdBullet+1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));}
-            if(pressed("q")){sdBullet=(sdBullet+int(bladeIds.size())-1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));}}
+  if(final){if(pressed("e")){sdBullet=(sdBullet+1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));bladeList();}
+            if(pressed("q")){sdBullet=(sdBullet+int(bladeIds.size())-1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));bladeList();}}
   sdTime+=delta;float dur=final?6.f:3.6f;
   float x=1280-(1280+700)*(sdTime/dur);
   stext("Blade",lines[sdLine].value("text",""));UI::SetPosition(this,trialui::ID,"Blade",{x,trialui::BLADE_Y});

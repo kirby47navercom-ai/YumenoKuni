@@ -153,13 +153,13 @@ void Yumeno::confirmPicked(bool yes){
 }
 // 수사 : 방의 조사 대상 하나가 끝났다
 void Yumeno::segmentDone(){
- if(!segmentKey.empty()){seen.insert(segmentKey);segmentKey.clear();coins+=1;}
+ if(!segmentKey.empty()){seen.insert(segmentKey);segmentKey.clear();coins+=1;sfx("sfx_coin");}
  ctxSpot=-1;eventEnd=-1;
  bool all=true;for(auto& r:rooms)if(!roomDone(r))all=false;
  if(all){ // V3 : 필요한 조사를 다 하면 수사 종료 방송 → 재판으로
   auto ch=chapter.value("chapter","1");int added=0;
   for(auto& [id,v]:kotodama.items())if(id.size()>2&&id[1]==ch[0]&&cards.insert(id).second)++added;
-  band("invend");hideExplore();nextBeat();return;
+  band("invend");sfx("sfx_ding");hideExplore();nextBeat();return;
  }
  rooms[roomAt].done=roomDone(rooms[roomAt]);
  enterRoomBack();
@@ -174,7 +174,7 @@ void Yumeno::enterRoomBack(){ // 대화가 끝난 뒤 같은 방 그대로
 // 띠 연출 : 자유행동·수사 개시·수사 종료·시체 발견 (1.4초, 입력을 막지 않음)
 void Yumeno::band(const std::string& kind){
  UI::SetTexture(this,exui::ID,"Band","Assets/Art/ui/band_"+kind+".svg");evis("Band",true);bandTimer=1.4f;
- if(kind=="body"){evis("Flash",true);flashTimer=.25f;}
+ if(kind=="body"){evis("Flash",true);flashTimer=.25f;music("bgm_discovery");sfx("sfx_ding");}
 }
 // 언령 획득 : 빛 + 카드 + 「언령 ○○를 손에 넣었다」. 클릭할 때까지
 void Yumeno::kotodamaGet(const std::string& id){
@@ -184,7 +184,7 @@ void Yumeno::kotodamaGet(const std::string& id){
  std::string frame=id[0]=='T'?"frame_testimony":id[0]=='M'||id[0]=='R'?"frame_rule_magic":id[0]=='N'?"frame_memo":"frame_evidence";
  UI::SetTexture(this,exui::ID,"KFrame","Assets/Art/ui/kotodama/"+frame+".png");
  etext("KTitle","언령 「"+kotodamaName(id)+"」");etext("KMsg",josa(kotodamaName(id),"를","을")+" 손에 넣었다!");
- popupFrom=mode;mode=Mode::Popup;kspin=0;
+ popupFrom=mode;mode=Mode::Popup;kspin=0;sfx("sfx_card");
 }
 void Yumeno::updateExplore(float delta,bool click){
  if(bandTimer>0&&(bandTimer-=delta)<=0)evis("Band",false);
