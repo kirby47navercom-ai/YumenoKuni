@@ -247,14 +247,6 @@ void Yumeno::menuPicked(int i){
   flags.insert(o.value("flag",""));event=o.value("to",event+1);showStory();flowPresent();return;
  }
  if(menuKind==MenuKind::Ending){ctxEnding=i;event=0;showStory();flowPresent();return;}
- if(menuKind==MenuKind::Investigate){
-  if(i<int(spotOrder.size())){ctxSpot=spotOrder[i];event=0;showStory();flowPresent();return;}
-  // 수사 종료 : 그 장의 언령을 모두 정리(증언 표·메모 포함)
-  auto ch=chapter.value("chapter","1");int added=0;
-  if(kotodama.is_object())for(auto& [id,name]:kotodama.items())if(id.size()>2&&id[1]==ch[0]&&cards.insert(id).second)++added;
-  if(added)toast("언령 "+std::to_string(added)+"장을 수첩에 정리했다");
-  nextBeat();return;
- }
  if(menuKind==MenuKind::Gift){giveGift(i);return;}
 }
 void Yumeno::giveGift(int i){
@@ -272,23 +264,6 @@ void Yumeno::giveGift(int i){
  }
 }
 
-// 프리타임 : 인물 칸 (이벤트가 남은 인물은 밝게)
-void Yumeno::showFreeSelect(){
- hideFlow();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);mode=Mode::Grid;gridKind=GridKind::Free;
- for(int i=0;i<16;i++)fvis("FFace"+std::to_string(i),false); // 선물 칸에서 쓰던 그림
- fvis("FShade",true);ftext("FGridHead","자유시간 — 남은 시간 "+std::to_string(slots)+"번");fvis("FGridHead",true);
- gridSlugs.clear();
- for(auto s:{"rei","sora","ken","nana","riku","akari","yuu","koto","satsuki","taiga","rin","sho","ai","haruka","kaede"})if(inPark(s))gridSlugs.push_back(s);
- for(int i=0;i<16;i++){
-  bool on=i<int(gridSlugs.size());auto n=std::to_string(i);
-  fvis("FCell"+n,on);fvis("FFace"+n,on);fvis("FName"+n,on);if(!on)continue;
-  {auto c=cellAt(i);UI::SetPosition(this,flowui::ID,"FCell"+n,{c[0],c[1]});UI::SetPosition(this,flowui::ID,"FFace"+n,{c[0]+6,c[1]+6});UI::SetPosition(this,flowui::ID,"FName"+n,{c[0]+118,c[1]+14});}
-  auto& s=gridSlugs[i];auto face=artPath("pad","face_"+s,"pad",".png");
-  UI::SetTexture(this,flowui::ID,"FFace"+n,face.empty()?"Assets/Art/sprites/"+s+"/"+s+"_C02.webp":face);
-  ftext("FName"+n,nameOf(s)+"\nLv"+std::to_string(level(s))+(poolOf(s)>=0?"  ★":""));
- }
- ftext("FGridFoot","◎ "+std::to_string(coins)+"     G  캡슐 머신(3코인)     ★ 새 이야기");fvis("FGridFoot",true);
-}
 int Yumeno::poolOf(const std::string& slug)const{
  auto& b=currentBeat();if(!b.contains("pool"))return -1;
  for(int i=0;i<int(b["pool"].size());i++){auto& p=b["pool"][i];if(p.value("who","")==slug&&!seen.count(p.value("id","")))return i;}
@@ -296,20 +271,13 @@ int Yumeno::poolOf(const std::string& slug)const{
 }
 // 칸 자리 : 선물은 V3 선물 화면처럼 오른쪽 3열(왼쪽은 받는 사람), 나머지는 4열
 std::array<float,2> Yumeno::cellAt(int i)const{
- if(gridKind==GridKind::Gift)return {560+(i%3)*flowui::CELL_DX,flowui::CELL_Y+(i/3)*flowui::CELL_DY};
- return {flowui::CELL_X+(i%4)*flowui::CELL_DX,flowui::CELL_Y+(i/4)*flowui::CELL_DY};
+ return {560+(i%3)*flowui::CELL_DX,flowui::CELL_Y+(i/3)*flowui::CELL_DY};
 }
 int Yumeno::gridAt(float x,float y)const{
  for(int i=0;i<int(gridSlugs.size())&&i<16;i++){auto c=cellAt(i);if(x>=c[0]&&x<=c[0]+flowui::CELL_W&&y>=c[1]&&y<=c[1]+flowui::CELL_H)return i;}
  return -1;
 }
-void Yumeno::gridPicked(int i){
- if(gridKind==GridKind::Gift){giveGift(i);return;}
- auto slug=gridSlugs[i];int p=poolOf(slug);
- if(p>=0){ctxPool=p;event=0;showStory();flowPresent();return;}
- addBond(slug,1);coins+=1;giftTarget=slug; // 이벤트를 다 본 인물 : 짧은 잡담
- sayOnce(slug,reaction(slug,"chat"),"C02",After::Gift);
-}
+void Yumeno::gridPicked(int i){giveGift(i);}
 void Yumeno::pullCapsule(){
  if(coins<3){toast("코인이 모자라요");return;}
  coins-=3;++pulls;sfx("sfx_capsule_*");
@@ -320,7 +288,6 @@ void Yumeno::pullCapsule(){
  if(pick.empty())for(auto& g:giftData["items"])pick.push_back(g.value("id",""));
  auto id=pick[rng()%pick.size()];++gifts[id];
  toast("캡슐 : "+giftName(id)+" 획득!");
- if(gridKind==GridKind::Free&&mode==Mode::Grid)ftext("FGridFoot","◎ "+std::to_string(coins)+"     G  캡슐 머신(3코인)     ★ 새 이야기");
 }
 std::string Yumeno::reaction(const std::string& slug,const std::string& kind)const{
  return reactions.contains(slug)?reactions[slug].value(kind,std::string("…고마워.")):std::string("…고마워.");
@@ -340,7 +307,7 @@ void Yumeno::showGifts(){
  giftOrder.clear();for(auto& [id,n]:gifts)if(n>0)giftOrder.push_back(id);
  if(giftOrder.empty()){slotDone();return;}
  if(giftOrder.size()>15)giftOrder.resize(15);
- hideFlow();dialogVisible(false);mode=Mode::Grid;gridKind=GridKind::Gift;gridSlugs=giftOrder;gridSlugs.push_back("");
+ hideFlow();dialogVisible(false);mode=Mode::Grid;gridSlugs=giftOrder;gridSlugs.push_back("");
  // 받는 사람 : 왼쪽 큰 입상(V3)
  UI::SetTexture(this,UI_ID,"Portrait","Assets/Art/sprites/"+giftTarget+"/"+giftTarget+"_C01.webp");UI::SetPosition(this,UI_ID,"Portrait",{-40,40});UI::SetSize(this,UI_ID,"Portrait",{620,680});UI::SetVisible(this,UI_ID,"Portrait",true);
  fvis("FShade",true);ftext("FGridHead",nameOf(giftTarget)+"에게 선물을 줄까?");fvis("FGridHead",true);
@@ -359,32 +326,9 @@ void Yumeno::slotDone(){
  nextBeat();
 }
 
-// 수사 : 현장 목록. 모두 보면 「수사 종료」
-void Yumeno::showInvestigate(){
- showStory();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);
- auto& b=currentBeat();spotOrder.clear();std::vector<std::string> o;bool all=true;
- for(int i=0;i<int(b["spots"].size());i++){auto& s=b["spots"][i];bool done=seen.count(s.value("id",""))>0;all=all&&done;spotOrder.push_back(i);o.push_back((done?"✓ ":"")+s.value("spot",""));}
- if(spotOrder.size()>8){spotOrder.resize(8);o.resize(8);}
- if(all)o.push_back("수사 종료 — 재판장으로");
- showMenu(all?"충분히 조사한 것 같아.":"수사 — 어디를 조사할까?",o,MenuKind::Investigate);
-}
-
 // 재판이 끝나면 (TrialRunner.hpp endTrial)
 void Yumeno::trialDone(){
  coins+=20;UI::SetVisible(this,UI_ID,"Backdrop",true);fvis("FHud",true);nextBeat();
-}
-
-// 패드 : 교칙 · 언령 · 선물 · 인연
-void Yumeno::padPage(){
- static const char* tabs[]{"교칙","언령","선물","인연"};
- std::string head="래피 패드   ";for(int i=0;i<4;i++)head+=(i==padTab?std::string("【")+tabs[i]+"】 ":std::string(tabs[i])+"  ");
- text("PadHead",head);
- std::string body;
- if(padTab==0){for(auto& r:rules["rules"])body+=r.value("no","")+"   "+r.value("text","")+"\n";}
- if(padTab==1){if(cards.empty())body="아직 언령이 없다.";for(auto& c:cards)body+=c+"   "+kotodamaName(c)+"\n";}
- if(padTab==2){body="래피 코인 ◎ "+std::to_string(coins)+"\n\n";if(gifts.empty())body+="선물이 없다. 프리타임에 G 로 캡슐 머신을 돌릴 수 있다.";for(auto& [id,n]:gifts)body+=giftName(id)+"  ×"+std::to_string(n)+"\n";}
- if(padTab==3){for(auto s:{"rei","sora","ken","nana","riku","akari","yuu","koto","satsuki","taiga","rin","sho","ai","haruka","kaede"})body+=nameOf(s)+(flowOn&&!inPark(s)?"   (퇴장)":"")+"   Lv"+std::to_string(level(s))+"   "+std::string(level(s),'*')+"\n";}
- text("PadBody",body);
 }
 
 void Yumeno::updateFlow(float delta,bool next,bool click){
@@ -400,7 +344,6 @@ void Yumeno::updateFlow(float delta,bool next,bool click){
   return;
  }
  if(mode==Mode::Grid){
-  if(gridKind==GridKind::Free&&pressed("g"))pullCapsule();
   if(click){int i=gridAt(m.x,m.y);if(i>=0)gridPicked(i);}
   return;
  }
@@ -421,14 +364,11 @@ Json Yumeno::autoFlow()const{
  if(mode==Mode::Explore||mode==Mode::Map||mode==Mode::Confirm||mode==Mode::Popup)return autoExplore();
  if(mode==Mode::Menu){
   int i=0;
-  if(menuKind==MenuKind::Investigate){auto& b=currentBeat();i=menuCount-1;for(int k=0;k<int(spotOrder.size());k++)if(!seen.count(b["spots"][spotOrder[k]].value("id",""))){i=k;break;}}
   if(menuKind==MenuKind::Gift)i=0;
   return Json{{"kind","click"},{"x",flowui::OPT_X+60},{"y",flowui::OPT_Y+i*flowui::OPT_STEP+flowui::OPT_H/2}};
  }
  if(mode==Mode::Grid){
-  int i=0;for(int k=0;k<int(gridSlugs.size());k++)if(poolOf(gridSlugs[k])>=0){i=k;break;}
-  if(gridKind==GridKind::Gift)i=0;
-  else if(coins>=3&&gifts.empty())return Json{{"kind","key"},{"key","g"}};
+  int i=0; // 선물 칸 : 첫 선물
   auto c=cellAt(i);return Json{{"kind","click"},{"x",c[0]+60},{"y",c[1]+60}};
  }
  return Json{{"kind","key"},{"key","Enter"}};

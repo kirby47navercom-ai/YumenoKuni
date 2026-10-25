@@ -1,40 +1,21 @@
-// 배포 묶음 : release 빌드 → dist/YumenoKuni/ 로 복사 + 플레이 안내 + zip
-// node tools/package.mjs   (결과 : ../dist/YumenoKuni-날짜.zip)
+// 배포 묶음 : 엔진 패키징(release 빌드)의 결과 폴더를 그대로 dist/YumenoKuni 로 옮기고 zip 으로 묶는다.
+// 실행 파일은 엔진이 제품 이름을 찍은 HBGame_<프로젝트 ID>.exe (이름은 엔진의 창·저장 식별 규칙이라 바꾸지 않는다).
+// node tools/package.mjs   (결과 : ../dist/YumenoKuni/, ../dist/YumenoKuni-날짜.zip)
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const repo=path.dirname(root);
+const resultFile=path.join(root,'build-result.json');
+const devResult=await fs.readFile(resultFile,'utf8').catch(()=>null); // 개발 빌드 기록(검증 스크립트가 쓴다)은 되돌려 둔다
 execFileSync('node',[path.join(root,'tools/build.mjs'),'--release'],{stdio:'inherit',cwd:root});
-const built=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'utf8'));
+const built=JSON.parse(await fs.readFile(resultFile,'utf8'));
+if(devResult)await fs.writeFile(resultFile,devResult);
 const out=path.join(repo,'dist','YumenoKuni');
-await fs.rm(out,{recursive:true,force:true});
-await fs.cp(built.output,out,{recursive:true});
-const exe=path.basename(built.executable);
-await fs.writeFile(path.join(out,'유메노쿠니 시작.cmd'),`@echo off\r\ncd /d "%~dp0"\r\nstart "" "${exe}"\r\n`);
-await fs.writeFile(path.join(out,'플레이 방법.txt'),[
- '『유메노쿠니』',
- '',
- '시작 : 「유메노쿠니 시작.cmd」 또는 '+exe,
- '',
- '조작',
- ' Enter / Space / 클릭   대사 넘기기, 고르기',
- ' Ctrl (누르고 있기)     빨리 넘기기',
- ' 탐색(수사·자유행동)    마우스 조준 → 클릭 조사·말 걸기, 화면 끝·A/D 돌아보기, M 지도',
- ' Tab                    래피 패드 (A/D 아이콘, Enter 열기, Backspace 돌아가기)',
- ' G                      자유행동 지도에서 캡슐 머신 (3코인)',
- ' C (타이틀)             이어하기 — 장면마다 자동 저장',
- '',
- '학급 재판',
- ' 마우스 조준, 왼클릭 발사 (길게 누르면 거짓 탄환), 우클릭 소음 제거',
- ' Q/E 언령 바꾸기, Shift 집중',
- '',
- '소리 : audio/cues.json 에 파일을 지정하면 다음 빌드부터 들어갑니다.',
- '',
- '비상업 팬 게임입니다. 글꼴 라이선스는 licenses/ 와 Content 의 각 글꼴 폴더 참고.',
-].join('\r\n'));
+await fs.rm(path.join(repo,'dist'),{recursive:true,force:true});
+await fs.mkdir(path.dirname(out),{recursive:true});
+await fs.rename(built.output,out);
 const zip=path.join(repo,'dist',`YumenoKuni-${new Date().toISOString().slice(0,10)}.zip`);
-await fs.rm(zip,{force:true});
 execFileSync(process.platform==='win32'?'C:/Windows/System32/tar.exe':'tar',['-a','-c','-f',zip,'-C',path.join(repo,'dist'),'YumenoKuni'],{stdio:'inherit'});
-console.log(JSON.stringify({folder:out,zip,bytes:(await fs.stat(zip)).size}));
+console.log(JSON.stringify({folder:out,executable:path.join(out,path.basename(built.executable)),zip,bytes:(await fs.stat(zip)).size}));

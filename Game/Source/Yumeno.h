@@ -40,10 +40,10 @@ private:
  bool pressed(const std::string& key);
  void text(const std::string& id,const std::string& value);
  // 장 진행 (Flow.hpp)
- enum class MenuKind{Event,Investigate,Ending,Gift};enum class GridKind{Free,Gift};enum class After{None,Gift,Slot,Explore,Trial};
- MenuKind menuKind=MenuKind::Event;GridKind gridKind=GridKind::Free;After after=After::None;
- bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0,padTab=0;float toastTimer=0,blink=0,kenTime=0,shakeTimer=0;bool elevatorDone=false;bool nextShown=false;
- std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen;std::vector<std::string> gridSlugs,giftOrder,trialDead;std::vector<int> spotOrder;
+ enum class MenuKind{Event,Ending,Gift};enum class After{None,Gift,Slot,Explore,Trial};
+ MenuKind menuKind=MenuKind::Event;After after=After::None;
+ bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0;float toastTimer=0,blink=0,kenTime=0,shakeTimer=0;bool elevatorDone=false;bool nextShown=false;
+ std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen;std::vector<std::string> gridSlugs,giftOrder,trialDead;
  std::string giftTarget,musicCue,lastBackground,sceneBackground;std::map<std::string,std::string> ftexts;std::map<std::string,bool> fvisible;
  void ftext(const std::string& id,const std::string& v);void fvis(const std::string& id,bool v);
  std::string artPath(const std::string& group,const std::string& name,const std::string& dir,const std::string& ext)const;
@@ -52,8 +52,8 @@ private:
  void newGame();void hideFlow();void showStory();void nextBeat();void enterBeat();void toTitle();void flowPresent();void showLine();
  void sayOnce(const std::string& slug,const std::string& value,const std::string& pose,After then);void eventsDone();void advanceFlow();
  void showMenu(const std::string& q,const std::vector<std::string>& o,MenuKind kind);void hideMenu();int menuAt(float x,float y)const;void menuPicked(int i);
- void showFreeSelect();int poolOf(const std::string& slug)const;int gridAt(float x,float y)const;std::array<float,2> cellAt(int i)const;void gridPicked(int i);void pullCapsule();
- std::string giftName(const std::string& id)const;hb::Color nameColor(const std::string& slug)const;std::string reaction(const std::string& slug,const std::string& kind)const;std::string kotodamaName(const std::string& id)const;std::string kotodamaText(const std::string& id)const;void showGifts();void giveGift(int i);void slotDone();void showInvestigate();void trialDone();void padPage();
+ int poolOf(const std::string& slug)const;int gridAt(float x,float y)const;std::array<float,2> cellAt(int i)const;void gridPicked(int i);void pullCapsule();
+ std::string giftName(const std::string& id)const;hb::Color nameColor(const std::string& slug)const;std::string reaction(const std::string& slug,const std::string& kind)const;std::string kotodamaName(const std::string& id)const;std::string kotodamaText(const std::string& id)const;void showGifts();void giveGift(int i);void slotDone();void trialDone();
  void updateFlow(float delta,bool next,bool click);hb::Json autoFlow()const;
  // 탐색 (Explore.hpp)
  struct Obj{std::string name;int from=0,to=0;std::string who;int index=0;};

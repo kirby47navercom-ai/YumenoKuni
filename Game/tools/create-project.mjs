@@ -127,10 +127,6 @@ add('Panel','Title',[0,0,1280,720],{background:'#0f0b16'});
 add('Image','TitleBg',[0,0,1280,720],{texture:'Assets/Art/ui/title_bg.png',imageFit:'cover'},'Title');
 add('Image','TitleLogo',[300,120,680,300],{texture:'Assets/Art/ui/title_logo.png',imageFit:'contain'},'Title');
 add('Text','TitleSub',[0,470,1280,40],{text:'Enter  새로 시작          C  이어하기',fontSize:26,align:'center',color:'#efe6f4'},'Title');
-add('Panel','Pad',[0,0,1280,720],{background:'#120d1af2',visible:false});
-add('Text','PadHead',[120,48,1040,60],{text:'래피 패드',font:head,fontSize:40,color:'#ff8fc8'},'Pad');
-add('Text','PadBody',[120,120,1040,560],{fontSize:21,wrap:true},'Pad');
-add('Text','PadHint',[120,676,1040,30],{text:'Q / E  탭 넘기기      Tab  닫기',fontSize:18,color:'#b9a9c6'},'Pad');
 await write('Assets/UI/Main.hbwidget.json',w);
 
 // 4-2) 재판 단계 위젯 (객관식·언령 고르기·지점·인물 지목·투표·쇼다운·스크럼·이론 무장·애너그램·발굴·택시·클라이맥스). Main 위에 겹쳐 띄운다.
