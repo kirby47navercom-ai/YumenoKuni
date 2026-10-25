@@ -1,0 +1,894 @@
+[
+  {
+    "chapter": 1,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_01.png",
+    "w": 1920,
+    "h": 1080,
+    "refs": [
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni amusement-park carousel animation keyframe. Wide16:9,1920x1080. Match exact supplied empty carousel location. Carousel lights have just switched ON, foreground decorative horse labeled7 glows warm AMBER. Bright pastel theatrical3D-like anime set, crisp detail, eye-level medium-wide camera, no riders or people. Clear illuminated horse7 for foreground-layer extraction. No letters except the small physical7 plaque; no logo, UI, watermark.",
+    "layer": "composite",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-d9da0049-6f61-4531-b36e-a23ccadb5e77.png",
+    "review": "passed",
+    "normalization": {
+      "method": "center crop of alpha-composited generated layers",
+      "canvas": [
+        2304,
+        1296
+      ],
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ]
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_01_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_01.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is completed storyboard keyframe, EDIT TARGET. Create its CLEAN BACKGROUND PLATE. REMOVE ONLY foreground group: the illuminated ornamental horse7 and its pole, no other horses. Preserve the exact location, perspective, lighting, camera and all other background pixels, seamlessly reconstruct occluded empty scenery. Absolutely no people, mascot, reflected people, foreground prop or ghost remains. OUTPAINT10% on every side, canvas2304x1296; original1920x1080 view remains exactly centered at x192,y108, so central83.333% is same shot. Do NOT zoom or recompose. No UI/text/watermark. Grade: Chapter1 bright pastel/AMBER carousel light.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-eddcdf81-02ca-43f5-9878-303ec5b6dfab.png",
+    "review": "rejected: plate must retain fixed carousel pole"
+  },
+  {
+    "chapter": 1,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_01_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_01.png"
+    ],
+    "prompt": "Use case: background-extraction. Input1 is storyboard keyframe EDIT TARGET. Extract ONLY exactly this foreground group: the illuminated ornamental horse7 and its pole, no other horses. Keep same drawing, face identity, costume, pose, props, proportions and lighting EXACT. All scenery/room/ground/sky/environment becomes genuinely TRANSPARENT, no opaque rectangle, copied background, halo or checkerboard. Canvas2304x1296, preserve shot alignment: original1920x1080 picture is centered at x192,y108, extracted pixels retain their positions within that central frame; original content occupies83.333% of canvas in each dimension. Do not enlarge/recenter individual character. Extend only genuinely clipped moving foreground edges into10%overscan if needed. No new things, no UI/text/watermark. Chapter1 bright pastel/AMBER carousel light. Fully clothed, knees covered, clean full costume and neutral camera.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-a562c164-1a32-4e49-9b27-b2ddc21d77c2.png",
+    "review": "rejected: foreground enlarged and edge contamination; shot alignment failed"
+  },
+  {
+    "chapter": 1,
+    "cut": 2,
+    "seconds": 3,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_02.png",
+    "w": 1920,
+    "h": 1080,
+    "refs": [
+      "art/standing_hd/sho.png",
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: illustration-story. One original YumenoKuni cinematic storyboard frame, opaque1920x1080 PNG,16:9. Match supplied original anime character art where applicable, and theatrical3D-like amusement-park location reference. Keep exact hair, eye colors, full standard costume, accessories and normal proportions. Calm neutral eye-level or high camera. Visual action uses attraction machinery and symbolic LIGHT effects. No injuries or blood. No UI, subtitles, logo or watermark. Scene: Sho is seated quietly on horse7, a fully clothed dark silhouette, safety seat neutral posture. No choking device or harm. Match chapter color theme from location reference.",
+    "layer": "composite",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-63855518-36b9-4dba-b91b-5b5d90c42871.png",
+    "review": "passed",
+    "normalization": {
+      "method": "alpha-composite export and center crop",
+      "targetBox": [
+        430,
+        80,
+        1300,
+        1210
+      ],
+      "metadata": "art/_work/batch6_exec_1_02_export_v2.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_01_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_01.png",
+      "art/cg/exec_1_01_bg.png"
+    ],
+    "prompt": "Use case: background-extraction. Exact foreground layer for a 2304x1296 animation frame. Input1 is source shot, input2 is clean overscan background. Extract ONLY the small foreground decorative horse with physical7 plaque and its pole from input1. IMPORTANT: The horse stays SMALL, just14% of canvas WIDTH and21% of canvas HEIGHT. Horse bounding box at x33%..47%, y49%..70% of full output canvas, pole continues straight above/below it at same x39%. Most of the canvas (over90%area) is EMPTY TRANSPARENT. Match the small horse7 gap in input2, not a centered product illustration. Preserve exact design and pose of the original source horse. Fine clean alpha edges, no colored fringe, stray background pixels or white outline. All other horses, stage, sky, floor and buildings are fully transparent. No new objects, no enlarged/recentered horse, no text outside physical7.16:9 transparent PNG.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-1235b76b-44b3-49ca-bf4e-2a3f0fac413e.png",
+    "review": "rejected: foreground isolation revised to moving horse only"
+  },
+  {
+    "chapter": 1,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_01_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_01.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input is source storyboard frame. Remove ONLY horse7 sculpture (small front LEFT horse with number7), KEEP its fixed vertical brass pole exactly in place and keep all other horses, canopy, gate, stairs and perspective unchanged. Reconstruct the empty space behind removed horse, no rider or ghost sculpture. Outpaint10%on each side into2304x1296 canvas, keep source view centered1920x1080 atx192,y108. Same bright amber/pastel light, no letters/UI/watermark.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-6bf63ec6-b504-4fae-99cf-d7c1c5729f33.png",
+    "review": "passed",
+    "normalization": {
+      "method": "PNG size normalization",
+      "canvas": [
+        2304,
+        1296
+      ],
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ]
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_01_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_01.png"
+    ],
+    "prompt": "Use case: background-extraction. Extract ONLY the decorative pink-maned horse sculpture with physical7 plaque from the source frame. This is a MOVING PROP sprite for a carousel animation. No brass pole: fixed pole belongs to background. Preserve sculpture pose, colors, saddle, mane, carved legs and every decoration. All canopy, ground, gate, other horses, sky and poles become genuinely TRANSPARENT. Fine smooth alpha edges, no white border or colored matte fringe, no text outside small7 plaque. Whole horse completely inside canvas, no cropped parts.16:9 transparent PNG.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-bf000a70-5dfd-4ef7-bed6-69fce4928a69.png",
+    "review": "passed",
+    "normalization": {
+      "method": "transparent-padding trim and aspect-preserving PNG canvas placement",
+      "canvas": [
+        2304,
+        1296
+      ],
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ],
+      "targetBox": [
+        690,
+        600,
+        360,
+        290
+      ],
+      "raw": "art/_work/batch6_exec_1_01_fg_raw.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 2,
+    "seconds": 3,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_02_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_02.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is completed storyboard keyframe, EDIT TARGET. Create its CLEAN BACKGROUND PLATE. REMOVE ONLY foreground group: Sho plus horse7 and pole. Preserve the exact location, perspective, lighting, camera and all other background pixels, seamlessly reconstruct occluded empty scenery. Absolutely no people, mascot, reflected people, foreground prop or ghost remains. OUTPAINT10% on every side, canvas2304x1296; original1920x1080 view remains exactly centered at x192,y108, so central83.333% is same shot. Do NOT zoom or recompose. No UI/text/watermark. Grade: Chapter1 bright pastel/AMBER carousel light.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-36d39bad-92a7-417b-a14c-62a31b4546f2.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 1,
+    "cut": 2,
+    "seconds": 3,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_02_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_02.png"
+    ],
+    "prompt": "Use case: background-extraction. Input1 is storyboard keyframe EDIT TARGET. Extract ONLY exactly this foreground group: Sho plus horse7 and pole. Keep same drawing, face identity, costume, pose, props, proportions and lighting EXACT. All scenery/room/ground/sky/environment becomes genuinely TRANSPARENT, no opaque rectangle, copied background, halo or checkerboard. Canvas2304x1296, preserve shot alignment: original1920x1080 picture is centered at x192,y108, extracted pixels retain their positions within that central frame; original content occupies83.333% of canvas in each dimension. Do not enlarge/recenter individual character. Extend only genuinely clipped moving foreground edges into10%overscan if needed. No new things, no UI/text/watermark. Chapter1 bright pastel/AMBER carousel light. Fully clothed, knees covered, clean full costume and neutral camera.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-399f4665-a130-44ab-a495-276644658724.png",
+    "review": "rejected: rider should read as a backlit silhouette",
+    "normalization": {
+      "method": "aspect-preserving generated-layer canvas placement",
+      "targetBox": [
+        430,
+        80,
+        1300,
+        1210
+      ],
+      "metadata": "art/_work/batch6_exec_1_02_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 3,
+    "seconds": 3,
+    "dialogue": "원은 끝이 없으니까♪",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_03.png",
+    "w": 1920,
+    "h": 1080,
+    "refs": [
+      "art/sprites/lappy/lappy_L01.png",
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: illustration-story. One original YumenoKuni cinematic storyboard frame, opaque1920x1080 PNG,16:9. Match supplied original anime character art where applicable, and theatrical3D-like amusement-park location reference. Keep exact hair, eye colors, full standard costume, accessories and normal proportions. Calm neutral eye-level or high camera. Visual action uses attraction machinery and symbolic LIGHT effects. No injuries or blood. No UI, subtitles, logo or watermark. Scene: Original pink stitched rabbit Lappy in a cheerful host close-up against carousel lights, pointing into a circular gesture, exact L01 design. Match chapter color theme from location reference.",
+    "layer": "composite",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-f7e64c88-4e96-4e64-8cb3-c3a6d9ab4b3d.png",
+    "review": "passed",
+    "normalization": {
+      "method": "generated layers alpha composite and center crop",
+      "metadata": "art/_work/batch6_exec_1_03_export_v2.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 2,
+    "seconds": 3,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_02_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/_work/batch6_exec_1_02_fg_raw.png"
+    ],
+    "prompt": "Use case: lighting-weather. Edit reference transparent carousel foreground. Change ONLY lighting on the HUMAN RIDER: Sho must read as a very DARK BACKLIT SILHOUETTE, nearly black gray uniform/hair/face, with a faint teal rim along his outer contour. Facial features are hidden in shadow. Preserve his calm seated pose, figure proportions, hands, full gray suit and identity outline. Horse, saddle, pink mane, golden pole and all their colors remain exactly unchanged. Preserve genuine transparency, same composition, no background or new objects. Fine clean alpha edges. Output2304x1296 transparent PNG.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8f067568-a7b1-4741-889e-e879c79654f4.png",
+    "review": "passed",
+    "normalization": {
+      "method": "aspect-preserving generated-layer canvas placement",
+      "targetBox": [
+        430,
+        80,
+        1300,
+        1210
+      ],
+      "metadata": "art/_work/batch6_exec_1_02_export_v2.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 3,
+    "seconds": 3,
+    "dialogue": "원은 끝이 없으니까♪",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_03_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_03.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is completed storyboard keyframe, EDIT TARGET. Create its CLEAN BACKGROUND PLATE. REMOVE ONLY foreground group: Lappy only. Preserve the exact location, perspective, lighting, camera and all other background pixels, seamlessly reconstruct occluded empty scenery. Absolutely no people, mascot, reflected people, foreground prop or ghost remains. OUTPAINT10% on every side, canvas2304x1296; original1920x1080 view remains exactly centered at x192,y108, so central83.333% is same shot. Do NOT zoom or recompose. No UI/text/watermark. Grade: Chapter1 bright pastel/AMBER carousel light.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-9a3077ba-e239-43d1-b7c1-af2215d2686f.png",
+    "review": "passed",
+    "normalization": {
+      "method": "PNG size normalization",
+      "metadata": "art/_work/batch6_exec_1_03_export_v2.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 3,
+    "seconds": 3,
+    "dialogue": "원은 끝이 없으니까♪",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_03_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_03.png"
+    ],
+    "prompt": "Use case: background-extraction. Input1 is storyboard keyframe EDIT TARGET. Extract ONLY exactly this foreground group: Lappy only. Keep same drawing, face identity, costume, pose, props, proportions and lighting EXACT. All scenery/room/ground/sky/environment becomes genuinely TRANSPARENT, no opaque rectangle, copied background, halo or checkerboard. Canvas2304x1296, preserve shot alignment: original1920x1080 picture is centered at x192,y108, extracted pixels retain their positions within that central frame; original content occupies83.333% of canvas in each dimension. Do not enlarge/recenter individual character. Extend only genuinely clipped moving foreground edges into10%overscan if needed. No new things, no UI/text/watermark. Chapter1 bright pastel/AMBER carousel light. Fully clothed, knees covered, clean full costume and neutral camera.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-69b15128-eb6f-4863-9f62-45e125c80a5a.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas transparent export retaining all light effects",
+      "metadata": "art/_work/batch6_exec_1_03_export_v2.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 4,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_04.png",
+    "w": 1920,
+    "h": 1080,
+    "refs": [
+      "art/standing_hd/sho.png",
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: illustration-story. One original YumenoKuni cinematic storyboard frame, opaque1920x1080 PNG,16:9. Match supplied original anime character art where applicable, and theatrical3D-like amusement-park location reference. Keep exact hair, eye colors, full standard costume, accessories and normal proportions. Calm neutral eye-level or high camera. Visual action uses attraction machinery and symbolic LIGHT effects. No injuries or blood. No UI, subtitles, logo or watermark. Scene: Carousel accelerates. Sho seated calmly on horse7 in foreground, background streaks horizontally into ribbons of light. No injury, no motion distortion of body. Match chapter color theme from location reference.",
+    "layer": "composite",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-cfc65770-390f-42bb-9ac3-29a97e374dc3.png",
+    "review": "passed",
+    "normalization": {
+      "method": "generated layers alpha composite and center crop",
+      "metadata": "art/_work/batch6_exec_1_04_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 4,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_04_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_04.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is completed storyboard keyframe, EDIT TARGET. Create its CLEAN BACKGROUND PLATE. REMOVE ONLY foreground group: Sho plus horse7 and pole. Preserve the exact location, perspective, lighting, camera and all other background pixels, seamlessly reconstruct occluded empty scenery. Absolutely no people, mascot, reflected people, foreground prop or ghost remains. OUTPAINT10% on every side, canvas2304x1296; original1920x1080 view remains exactly centered at x192,y108, so central83.333% is same shot. Do NOT zoom or recompose. No UI/text/watermark. Grade: Chapter1 bright pastel/AMBER carousel light.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-17135dd9-76b9-401d-b9f6-2e5ec795531a.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas PNG export",
+      "metadata": "art/_work/batch6_exec_1_04_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 4,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_04_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_04.png"
+    ],
+    "prompt": "Use case: background-extraction. Input1 is storyboard keyframe EDIT TARGET. Extract ONLY exactly this foreground group: Sho plus horse7 and pole. Keep same drawing, face identity, costume, pose, props, proportions and lighting EXACT. All scenery/room/ground/sky/environment becomes genuinely TRANSPARENT, no opaque rectangle, copied background, halo or checkerboard. Canvas2304x1296, preserve shot alignment: original1920x1080 picture is centered at x192,y108, extracted pixels retain their positions within that central frame; original content occupies83.333% of canvas in each dimension. Do not enlarge/recenter individual character. Extend only genuinely clipped moving foreground edges into10%overscan if needed. No new things, no UI/text/watermark. Chapter1 bright pastel/AMBER carousel light. Fully clothed, knees covered, clean full costume and neutral camera.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-0f0db12c-3cf0-4883-aca1-057c5eb7d4ce.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas PNG export",
+      "metadata": "art/_work/batch6_exec_1_04_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 5,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_05.png",
+    "w": 1920,
+    "h": 1080,
+    "refs": [
+      "art/standing_hd/sho.png",
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: illustration-story. One original YumenoKuni cinematic storyboard frame, opaque1920x1080 PNG,16:9. Match supplied original anime character art where applicable, and theatrical3D-like amusement-park location reference. Keep exact hair, eye colors, full standard costume, accessories and normal proportions. Calm neutral eye-level or high camera. Visual action uses attraction machinery and symbolic LIGHT effects. No injuries or blood. No UI, subtitles, logo or watermark. Scene: Eye-level close-up of Sho's CALM face and one hand holding a small penlight. Gray blazer/teal tie/knit vest and normal cheek adhesive dressing match identity reference. No distress. Match chapter color theme from location reference.",
+    "layer": "composite",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-83c61707-4beb-4eb3-80e1-88b18cfd0c0d.png",
+    "review": "passed",
+    "normalization": {
+      "method": "generated layers alpha composite and center crop",
+      "metadata": "art/_work/batch6_exec_1_05_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 5,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_05_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_05.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is completed storyboard keyframe, EDIT TARGET. Create its CLEAN BACKGROUND PLATE. REMOVE ONLY foreground group: Sho upper body and hand holding penlight. Preserve the exact location, perspective, lighting, camera and all other background pixels, seamlessly reconstruct occluded empty scenery. Absolutely no people, mascot, reflected people, foreground prop or ghost remains. OUTPAINT10% on every side, canvas2304x1296; original1920x1080 view remains exactly centered at x192,y108, so central83.333% is same shot. Do NOT zoom or recompose. No UI/text/watermark. Grade: Chapter1 bright pastel/AMBER carousel light.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-f4114258-b583-4db8-a5ac-17bf51a61898.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas PNG export",
+      "metadata": "art/_work/batch6_exec_1_05_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 5,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_05_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_05.png"
+    ],
+    "prompt": "Use case: background-extraction. Input1 is storyboard keyframe EDIT TARGET. Extract ONLY exactly this foreground group: Sho upper body and hand holding penlight. Keep same drawing, face identity, costume, pose, props, proportions and lighting EXACT. All scenery/room/ground/sky/environment becomes genuinely TRANSPARENT, no opaque rectangle, copied background, halo or checkerboard. Canvas2304x1296, preserve shot alignment: original1920x1080 picture is centered at x192,y108, extracted pixels retain their positions within that central frame; original content occupies83.333% of canvas in each dimension. Do not enlarge/recenter individual character. Extend only genuinely clipped moving foreground edges into10%overscan if needed. No new things, no UI/text/watermark. Chapter1 bright pastel/AMBER carousel light. Fully clothed, knees covered, clean full costume and neutral camera.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-de6d8f46-0943-4fad-b611-cca3bdc22464.png",
+    "review": "rejected: ornamental glow stick and duplicate pocket penlight"
+  },
+  {
+    "chapter": 1,
+    "cut": 5,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_05_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/_work/batch6_rejected_exec_1_05_fg_penlight.png",
+      "art/standing_hd/sho.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is transparent Sho portrait foreground EDIT TARGET. Input2 is original identity/prop reference. Change ONLY the item in his raised hand to ONE SMALL PLAIN MEDICAL PENLIGHT, slim turquoise cylindrical body with a simple silver tip/clip, soft small white lamp at end. No gold caps, star, chain, charm, ribbons, decorations or concert glowstick design. This is the same penlight normally carried in his breast pocket: REMOVE the duplicated turquoise penlight sticking out of breast pocket, leave pocket empty. Keep his face, ash-gray hair, teal eyes/tie, cheek adhesive dressing, gray blazer/knit vest, fingers, calm smile, exact composition and genuine transparent background unchanged. ONE original medical penlight total, held in hand.2304x1296 PNG, no background or added text.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-cde52047-60c5-4138-ae42-83f2052ee50c.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas PNG export",
+      "metadata": "art/_work/batch6_exec_1_05_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 6,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_06.png",
+    "w": 1920,
+    "h": 1080,
+    "refs": [
+      "art/standing_hd/sho.png",
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: illustration-story. One original YumenoKuni cinematic storyboard frame, opaque1920x1080 PNG,16:9. Match supplied original anime character art where applicable, and theatrical3D-like amusement-park location reference. Keep exact hair, eye colors, full standard costume, accessories and normal proportions. Calm neutral eye-level or high camera. Visual action uses attraction machinery and symbolic LIGHT effects. No injuries or blood. No UI, subtitles, logo or watermark. Scene: Carousel horses turn one by one into soft light particles. Sho and intact horse7 remain distinct, no body damage or physical collision. Match chapter color theme from location reference.",
+    "layer": "composite",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-d2537da1-4c1c-4dfa-aad3-35aa113d9ffa.png",
+    "review": "passed",
+    "normalization": {
+      "method": "generated layers alpha composite and center crop",
+      "metadata": "art/_work/batch6_exec_1_06_native_export.json",
+      "scaleExport": {
+        "size": [
+          1844,
+          1037
+        ],
+        "offset": [
+          230,
+          129
+        ],
+        "reason": "keep full head and moving group inside mainviewport"
+      }
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 6,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_06_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_06.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 is completed storyboard keyframe, EDIT TARGET. Create its CLEAN BACKGROUND PLATE. REMOVE ONLY foreground group: Sho with intact horse7 and softly luminous dissolving neighboring horse silhouettes. Preserve the exact location, perspective, lighting, camera and all other background pixels, seamlessly reconstruct occluded empty scenery. Absolutely no people, mascot, reflected people, foreground prop or ghost remains. OUTPAINT10% on every side, canvas2304x1296; original1920x1080 view remains exactly centered at x192,y108, so central83.333% is same shot. Do NOT zoom or recompose. No UI/text/watermark. Grade: Chapter1 bright pastel/AMBER carousel light.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-37fb665e-dcf6-4930-9ba4-1c86e9d6730e.png",
+    "review": "rejected-continuity"
+  },
+  {
+    "chapter": 1,
+    "cut": 6,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_06_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/cg/exec_1_06.png"
+    ],
+    "prompt": "Use case: background-extraction. Input1 is storyboard keyframe EDIT TARGET. Extract ONLY exactly this foreground group: Sho with intact horse7 and softly luminous dissolving neighboring horse silhouettes. Keep same drawing, face identity, costume, pose, props, proportions and lighting EXACT. All scenery/room/ground/sky/environment becomes genuinely TRANSPARENT, no opaque rectangle, copied background, halo or checkerboard. Canvas2304x1296, preserve shot alignment: original1920x1080 picture is centered at x192,y108, extracted pixels retain their positions within that central frame; original content occupies83.333% of canvas in each dimension. Do not enlarge/recenter individual character. Extend only genuinely clipped moving foreground edges into10%overscan if needed. No new things, no UI/text/watermark. Chapter1 bright pastel/AMBER carousel light. Fully clothed, knees covered, clean full costume and neutral camera.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-0fb3011c-0b63-4e21-a28e-d9de06c8c75e.png",
+    "review": "rejected-continuity"
+  },
+  {
+    "chapter": 1,
+    "cut": 6,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_06_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "refs": [
+      "art/cg/exec_1_06.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 EDIT TARGET. Make perfectly EMPTY carousel architectural clean plate. REMOVE ALL HORSES (solid center horse AND ALL three glowing horses), all their luminous swirls and stars, Sho, all foreground people and objects. Keep ONLY carousel ceiling/poles/deck/railings and distant park architecture. Fill removed shapes with uninterrupted EMPTY architecture. Outpaint10%each side 2304x1296, original view center. Opaque. No horses of any kind, no glowing horse outlines, no figures.",
+    "layer": "background",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-aa971fe5-08d1-478b-9353-995944a45232.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas PNG export",
+      "metadata": "art/_work/batch6_exec_1_06_native_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 6,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_06_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "refs": [
+      "art/_work/batch6_rejected_exec_1_06_fg.png",
+      "art/standing_hd/sho.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 transparent foreground EDIT TARGET, Input2 identity reference. Keep the four carousel horses and luminous golden dissolving horses unchanged. Change ONLY Sho's POSE: he is SITTING ASTRIDE the central intact pink-white horse saddle, trousers covered legs naturally on each side, calm face. NOT standing beside the horse. Gray blazer, teal tie, sweater vest, cheek adhesive dressing, silver-gray hair identical, small plain turquoise medical penlight in breast pocket. Main intact horse7 has a small gold7saddlebadge. Keep actual transparent background, only horses+seatedSho+gold light particles, no scenery, platform, poles. Wide2304x1296, all important content inside centered1920x1080 viewport.",
+    "layer": "foreground",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-c94a7799-a840-4529-bb29-88027b7a263d.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native full-canvas PNG export",
+      "metadata": "art/_work/batch6_exec_1_06_native_export.json",
+      "scaleExport": {
+        "size": [
+          1844,
+          1037
+        ],
+        "offset": [
+          230,
+          129
+        ],
+        "reason": "keep full head and moving group inside mainviewport"
+      }
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 7,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_07_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Carousel architecture and distant park, with ZERO horses anywhere (all horses are foreground objects). The scene context for camera/lighting only: Only horse7 remains, Sho is a fading peaceful clothed SILHOUETTE dissolving into harmless sparkling light, no flesh or damaged anatomy. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (horse7 with Sho's fading silhouette and light particles), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright pastel AMBER carousel light. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-b820bb2f-9b64-4984-8e84-beaae5690043.png",
+    "review": "passed",
+    "normalization": {
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ],
+      "foregroundScale": [
+        1844,
+        1037
+      ],
+      "foregroundOffset": [
+        230,
+        129
+      ],
+      "native": "art/_work/batch6_exec_1_07_fg_native.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 7,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_07_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_1_07_bg.png",
+      "art/standing_hd/sho.png",
+      "art/cg/exec_1_01_fg.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY horse7 with Sho's fading silhouette and light particles. Storyboard action:Only horse7 remains, Sho is a fading peaceful clothed SILHOUETTE dissolving into harmless sparkling light, no flesh or damaged anatomy. Sho remains SEATED on horse7 as dark fading peaceful silhouette. True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright pastel AMBER carousel light. No subtitles/UI or decorative text.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-940dd570-d59c-4fd9-9ad1-20369315a5bc.png",
+    "review": "passed",
+    "normalization": {
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ],
+      "foregroundScale": [
+        1844,
+        1037
+      ],
+      "foregroundOffset": [
+        230,
+        129
+      ],
+      "native": "art/_work/batch6_exec_1_07_fg_native.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 7,
+    "path": "art/cg/exec_1_07.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ],
+      "foregroundScale": [
+        1844,
+        1037
+      ],
+      "foregroundOffset": [
+        230,
+        129
+      ],
+      "native": "art/_work/batch6_exec_1_07_fg_native.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 8,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_08_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Carousel architecture and distant park, with ZERO horses anywhere (all horses are foreground objects). The scene context for camera/lighting only: Carousel stands still. EMPTY horse7 saddle holds ONE small plain adhesive heat patch, no person remains. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (empty horse7 and one small adhesive heat patch), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright pastel AMBER carousel light. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-bb8b8a8a-7975-4788-b981-abf1c879408d.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 1,
+    "cut": 8,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_08_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_1_08_bg.png",
+      "art/cg/exec_1_01_fg.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY empty horse7 and one small adhesive heat patch. Storyboard action:Carousel stands still. EMPTY horse7 saddle holds ONE small plain adhesive heat patch, no person remains.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright pastel AMBER carousel light. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-c98fe1f2-24e0-4897-941e-e519b69f03d8.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 1,
+    "cut": 8,
+    "path": "art/cg/exec_1_08.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "metadata": "art/_work/batch6_exec_1_08_layer_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 9,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row9;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_09_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/carousel_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. CLOSE-UP at carousel floor level, frame filled by softly lit wooden deck. The scene context for camera/lighting only: Quiet carousel floor. ONE fallen family photograph remembering Sho's little sister. Photo shows a softly out-of-focus small clothed younger girl, no medical distress; no invented definite facial identity. Photo is the ONLY foreground object. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (single fallen photograph), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright pastel AMBER carousel light. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8ab80ba2-a0bc-43d0-a2d7-7b8e8785ee5b.png",
+    "review": "rejected-photo-staging"
+  },
+  {
+    "chapter": 1,
+    "cut": 9,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row9;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_09_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_1_09_bg.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY single fallen photograph. Storyboard action:Quiet carousel floor. ONE fallen family photograph remembering Sho's little sister. Photo shows a softly out-of-focus small clothed younger girl, no medical distress; no invented definite facial identity. Photo is the ONLY foreground object.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright pastel AMBER carousel light. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-9d56c891-2171-4350-bd2f-6d820a16ddd3.png",
+    "review": "rejected-photo-staging"
+  },
+  {
+    "chapter": 1,
+    "cut": 9,
+    "path": "art/cg/exec_1_09.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row9;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "rejected-photo-staging",
+    "normalization": {
+      "metadata": "art/_work/batch6_exec_1_09_layer_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 9,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row9;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_09_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [],
+    "prompt": "Use case: stylized-concept. Original anime3Dlike carousel deck CLEAN PLATE, 2304x1296opaquePNG. High camera looks straightDOWN at wooden carousel FLOOR, ENTIREframe filled by horizontalwarmhoneywood planks, gentleamberlight reflectingonpolishedwood. Nothingelse: no carouselhorses, noarchitecture, noobjects, nopeople,no photos, no petals, no text. Quiet emptyfloordetailshot. Central1920x1080 will cropfromx192y108.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-f8957d51-435d-401d-962b-808ae1d6d9dd.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 1,
+    "cut": 9,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row9;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_1_09_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_1_09_bg.png"
+    ],
+    "prompt": "Use case: illustration-story. Original transparent foreground prop2304x1296. Input1 cleanwoodenfloor is perspective/lightingreference ONLY. DrawONEsmall oldfamilyphotograph LYING FLAT on floor, viewedfromdirectlyABOVE, rotateslightlyclockwise, notleaningupright. Photo opaqueinsidewhitepaperborder, actualbackgroundoutsidephoto TRANSPARENT. Photo holdssoftly OUT-OF-FOCUS generic clothedyoungersister memory: paleashgrayhair andsimple bluecardigan, deliberatelyveryblurrednoeye/facialdetails, no pinkhair,no rabbitdoll,no ribbons,no toys. Do not giveherHarukaidentity. Photo widthabout1200canvaspx, centered, allwithin12%blankalphaboundary. No petals,glowingparticles,extra propsorcopiedfloor. Quietamberlight, noUI/text/watermark.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-244e4dc4-974e-4b58-b887-c69c49c2f464.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 1,
+    "cut": 9,
+    "path": "art/cg/exec_1_09.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row9;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "metadata": "art/_work/batch6_exec_1_09_layer_export.json"
+    }
+  },
+  {
+    "chapter": 1,
+    "cut": 10,
+    "seconds": 2,
+    "slug": "sho",
+    "bg": "bg/carousel_day.png",
+    "scene": "Complete BLACKOUT. Absolutely uniform pure black, no scene, grain, vignette, lights, character, text or objects.",
+    "foreground": "NONE",
+    "dialogue": "",
+    "path": "art/cg/exec_1_10.png",
+    "blank": true,
+    "layer": "composite",
+    "w": 1920,
+    "h": 1080,
+    "alpha": false,
+    "review": "passed",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row10",
+    "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+  },
+  {
+    "chapter": 1,
+    "cut": 10,
+    "seconds": 2,
+    "slug": "sho",
+    "bg": "bg/carousel_day.png",
+    "scene": "Complete BLACKOUT. Absolutely uniform pure black, no scene, grain, vignette, lights, character, text or objects.",
+    "foreground": "NONE",
+    "dialogue": "",
+    "path": "art/cg/exec_1_10_bg.png",
+    "blank": true,
+    "layer": "background",
+    "w": 2304,
+    "h": 1296,
+    "alpha": false,
+    "review": "passed",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row10",
+    "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+  },
+  {
+    "chapter": 1,
+    "cut": 10,
+    "seconds": 2,
+    "slug": "sho",
+    "bg": "bg/carousel_day.png",
+    "scene": "Complete BLACKOUT. Absolutely uniform pure black, no scene, grain, vignette, lights, character, text or objects.",
+    "foreground": "NONE",
+    "dialogue": "",
+    "path": "art/cg/exec_1_10_fg.png",
+    "blank": true,
+    "layer": "foreground",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "review": "passed",
+    "source_document": "docs/spec/05_연출_가이드.md §5-1 row10",
+    "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+  }
+]

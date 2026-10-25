@@ -1,0 +1,561 @@
+[
+  {
+    "chapter": 2,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_01_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Water slide entrance and pool architecture, bright summer. The scene context for camera/lighting only: Water-slide entrance, Akari seated inside a round flotation tube, fully buttoned green blazer, green plaid KNEE-LENGTH skirt covers knees, knees together, knee socks and brown shoes. Eye-level neutral safe posture. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (Akari and flotation tube), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright BLUE/YELLOW summer attraction. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-907fe19c-f91c-4920-af54-5c8038407847.png",
+    "review": "rejected-camera"
+  },
+  {
+    "chapter": 2,
+    "cut": 2,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_02_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Water slide entrance and pool architecture, bright summer. The scene context for camera/lighting only: Powerful BLUE/YELLOW water streams form a colorful curtain, original Lappy appears as small host at side, no human impact or distress. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (Lappy and foreground blue/yellow water curtain), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright BLUE/YELLOW summer attraction. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-a4da2820-1e53-469c-9def-c37669350705.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_01_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. OriginalYumenoKuni theatrical3Dlikeanime BACKGROUNDPLATE2304x1296opaque. Input1 architecture/paletteREFERENCEONLY, DO NOTcopyitswidepoolcamera. NEWCAMERA is ONTOPoftallwaterslide entranceplatform. CLOSEeye-levelview ofBLUE/YELLOWslideSTARTMOUTH andwetlaunchtrough fillingforeground, creamgoldguardrailsrightleft, stairlandingbehind. Distantwaterparkpool tiny FARBELOWbeyondguardrail. DrawEMPTYslide mouth withclearcenterplace forONEroundtube andseatedrider tobeaddedlater, absolutelyNOpeople/tubes/mascot. Brightblueyellowsummer. Canvas10%overscan, maincenter1920x1080crop. NoUI/text/logo.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-0db98c7f-1097-4da4-92a0-e093b4530fa2.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 2,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_02_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_02_bg.png",
+      "art/sprites/lappy/lappy_L01.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY Lappy and foreground blue/yellow water curtain. Storyboard action:Powerful BLUE/YELLOW water streams form a colorful curtain, original Lappy appears as small host at side, no human impact or distress.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright BLUE/YELLOW summer attraction. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-bb0826e0-39b4-4b55-ab0a-2efaabcd3bc4.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 2,
+    "path": "art/cg/exec_2_02.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "metadata": "art/_work/batch6_exec_2_02_layer_export.json"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_01_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_01_bg.png",
+      "art/standing_hd/akari.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY Akari and flotation tube. Storyboard action:Water-slide entrance, Akari seated inside a round flotation tube, fully buttoned green blazer, green plaid KNEE-LENGTH skirt covers knees, knees together, knee socks and brown shoes. Eye-level neutral safe posture.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright BLUE/YELLOW summer attraction. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-9a5a4f1e-dfee-4dc7-a886-9c42569b531a.png",
+    "review": "rejected-staging"
+  },
+  {
+    "chapter": 2,
+    "cut": 3,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_03_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. High-altitude fantasy waterslide rail and summer clouds, blue/yellow streaming light. The scene context for camera/lighting only: Fantasy slide tube is carried UPWARD along a rail extending to the sky. Wide high side view, fully clothed Akari sits in tube, knees covered, calm silhouette. Neutral high side camera. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (Akari with flotation tube and short attached rail segment), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright BLUE/YELLOW summer attraction. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-6f7f0303-df49-4136-b18d-027957f688c9.png",
+    "review": "rejected-staging"
+  },
+  {
+    "chapter": 2,
+    "cut": 4,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_04_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. High-altitude fantasy waterslide rail and summer clouds, blue/yellow streaming light. The scene context for camera/lighting only: At the highest point the tube pauses. Eye-level upper-body shot, Akari holds her CLOCK-SHAPED HAIRPIN calmly, ponytail/green blazer exact. No pain or injury. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (Akari upper body, tube rim and clock-shaped hairpin), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright BLUE/YELLOW summer attraction. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-d2cacb04-8407-4a1f-af0e-5ff4cd1929df.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native portrait foreground shifted down110px; bottom continues intooverscan",
+      "native": "art/_work/batch6_exec_2_04_fg_native.png",
+      "metadata": "art/_work/batch6_exec_2_04_portrait_export.json"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 1,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_01_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/_work/batch6_rejected_exec_2_01_fg_skirt.png",
+      "art/standing_hd/akari.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Input1 transparentforeground EDITTARGET,Input2identityreference. ChangeONLYskirtfabriccoverage:hergreenPLAIDskirtliesloosely andsmoothlyOVERherclosedknees, skirt hemextendsbelowBOTHkneecaps. Both kneesandupperlegs fullyCOVEREDbyopaquefabric. SeatedkneesremainTOGETHER. Keepface,ponytail,hourglass-shapedtimepiecehairpin,greenblazer,whitesocks,brownshoes,floatringandposeunchanged. Neutralhighcamera,noexaggeratedproportions. ActualTRANSPARENTbackground. Fullprop2304x1296 with12%emptyalphaboundaryallaround. Noscenery/text.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-545bc7f5-67b7-4765-9570-13d34eb8ae5f.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 3,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_03_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [],
+    "prompt": "Use case:stylized-concept. OriginalYumenoKuni emptyfantasywatersliderail CLEANPLATE2304x1296opaque. Frameis90%BLUEsummerSKYwithsoftWHITEclouds. ONEslenderBLUE/YELLOWattractionrailclimbsDIAGONALLYfrombottomleft towardupperrightsky. Tinyoriginalwaterpark FARBELOWonlyatbottomedge, groundstayscontinuous. NO floatingislands,cliffs,castlesinair,people,riders,tubes,mascots. Architecturalperspective highSIDEwidecamera, 3Dliketheatricalanimestageset.10%overscan, maincenter1920x1080viewport. NoUI/text/logo.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8b48fc6a-a82e-47f0-b9bb-8f712438c544.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 4,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_04_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_04_bg.png",
+      "art/standing_hd/akari.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY Akari upper body, tube rim and clock-shaped hairpin. Storyboard action:At the highest point the tube pauses. Eye-level upper-body shot, Akari holds her CLOCK-SHAPED HAIRPIN calmly, ponytail/green blazer exact. No pain or injury.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright BLUE/YELLOW summer attraction. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-09029ef6-70d3-4d7b-a48d-734551316d86.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native portrait foreground shifted down110px; bottom continues intooverscan",
+      "native": "art/_work/batch6_exec_2_04_fg_native.png",
+      "metadata": "art/_work/batch6_exec_2_04_portrait_export.json"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 1,
+    "path": "art/cg/exec_2_01.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "metadata": "art/_work/batch6_exec_2_01_layer_export.json"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 4,
+    "path": "art/cg/exec_2_04.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "method": "native portrait foreground shifted down110px; bottom continues intooverscan",
+      "native": "art/_work/batch6_exec_2_04_fg_native.png",
+      "metadata": "art/_work/batch6_exec_2_04_portrait_export.json"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 5,
+    "seconds": 10,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_05_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [],
+    "prompt": "Use case:stylized-concept. Emptycinematicbackgroundplate2304x1296opaquePNG. Cameraatgreatheight, entireframeBLUE/YELLOWVERTICALribbonsofLIGHTstreamTOPtoBOTTOM,painterlylongverticalmotionstreaks. Distantpool tinyatbottomfarbelow, nopeople,tubes,riders,mascots,figures,rails, floatingislands. Originaltheatrical3Dlikeamusementparklightshow. NoUI/text.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-05bf5183-af9b-42c0-bc15-053169f8430a.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 6,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_06_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Water slide entrance and pool architecture, bright summer. The scene context for camera/lighting only: A brilliant WHITE/BLUE burst of LIGHT at final descent point, no body visible, no collision or damage, only symbolic attraction lights. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (foreground radiant blue/white light particles), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright BLUE/YELLOW summer attraction. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-4a8a066c-e4bc-4dc9-9540-e62ddc3d37f0.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 3,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_03_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_03_bg.png",
+      "art/cg/exec_2_01_fg.png"
+    ],
+    "prompt": "Use case: illustration-story. Originalgame animatedride FOREGROUND,transparent2304x1296PNG. Input1 is railcamera/lightingREFERENCEONLY;Input2 shows the SAMEcostumedrider and roundtube. DrawONE small BLUE/YELLOWfloatring viewedfromhighSIDE, carrying the same quietrider seated as DARKclothedSILHOUETTE. It travelsUPWARD alongrail. PreserveInput2'smodest greenuniformandclosedseatedpose, boots/socks. Wholeobjectcentral40%canvas, distantwide shot, no anatomycloseups. Actualtransparentbackground; drawONLYtube+rider, noadditionalrails,sky,architecture orscenery. Softlightmagicalattraction, gentlecalmstorytone. Allobjectedgescompleteinside12%emptyalphaboundary. NoUI/text/logos.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-e3da772b-fab2-465f-9ca3-77ddad3f7202.png",
+    "review": "passed",
+    "normalization": {
+      "bbox": [
+        634,
+        141,
+        1693,
+        1161
+      ],
+      "size": [
+        467,
+        450
+      ],
+      "offset": [
+        616,
+        150
+      ],
+      "raw": "art/_work/batch6_exec_2_03_fg_native.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 5,
+    "seconds": 10,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_05_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_05_bg.png",
+      "art/standing_hd/akari.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY tube with small Akari silhouette and vertical light trails. Storyboard action:Tube descends through long vertical ribbons of blue/yellow light. High side/distant viewpoint, Akari is a tiny fully clothed silhouette inside tube, NO impact or distressed face.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright BLUE/YELLOW summer attraction. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-602082f2-c051-4e07-b561-3510370ef7a1.png",
+    "review": "rejected-wrong-tube"
+  },
+  {
+    "chapter": 2,
+    "cut": 6,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_06_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_06_bg.png"
+    ],
+    "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY foreground radiant blue/white light particles. Storyboard action:A brilliant WHITE/BLUE burst of LIGHT at final descent point, no body visible, no collision or damage, only symbolic attraction lights.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:bright BLUE/YELLOW summer attraction. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-2a3f1640-0be5-4dae-99aa-48cec4a318c2.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 5,
+    "seconds": 10,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_05_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_05_bg.png",
+      "art/cg/exec_2_01_fg.png"
+    ],
+    "prompt": "Use case:illustration-story. Input1lightstreaksONLYplacementreference,Input2exactSAMEfloatring+riderreference. DrawONEsmall ROUNDINFLATABLESWIMMINGRING (blue/yellowrubberlifering), carryingtheSAMErider inEXACTsamegreenuniformandclosedseatedposeasInput2. ShowriderasTINYDARKSILHOUETTE, bodyandcostumewhole. WholeFLOATRING+rideroccupiescentral35%canvas; it DESCENDS throughverticalblueyellowlighttrails. TrueTRANSPARENTbackground. No glasscylinder, capsules, glasscages, hourglassmachine, chamber, newobjectsorcopiedscenery. The ridevehicleisSOFTRUBBERROUNDLIFERING only. Quietfantasylightshow, noimpact. Canvas2304x1296, allobjectedgescompleteand12%emptyalphaboundary, noUI/text.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8e88b0c3-f7c5-490c-ab52-56ee84a01ae8.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 7,
+    "seconds": 6,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_07_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [
+      "bg/waterpark_day.png"
+    ],
+    "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Close-up smooth pool water surface with empty small ripples. The scene context for camera/lighting only: Quiet pool surface. ONE clock-shaped hairpin floats on water, tiny ripples, no people or bodies. Hairpin physical design matches Akari reference. Draw ONLY empty scenery, absolutely EXCLUDE the foreground group (single clock-shaped hairpin with small nearby ripples), all people/mascots/portraits, and their reflections. Match original theatrical3Dlike anime stage-set mood. Grade:bright BLUE/YELLOW summer attraction. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-4bccd8ad-c4d8-49a7-b810-29fdb441fded.png",
+    "review": "rejected-prop-in-cleanplate"
+  },
+  {
+    "chapter": 2,
+    "cut": 3,
+    "seconds": 8,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_03.png",
+    "w": 1920,
+    "h": 1080,
+    "alpha": false,
+    "layer": "composite",
+    "refs": [
+      "art/cg/exec_2_03_bg.png",
+      "art/cg/exec_2_01_fg.png"
+    ],
+    "prompt": "Exact generated layer export center crop",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-e3da772b-fab2-465f-9ca3-77ddad3f7202.png",
+    "review": "passed",
+    "normalization": {
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ],
+      "method": "Foreground original alpha>128 bbox+30px padding, contained467x450 at616,150; BG+FG exactalphaexport"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 6,
+    "seconds": 4,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_06.png",
+    "w": 1920,
+    "h": 1080,
+    "alpha": false,
+    "layer": "composite",
+    "refs": [
+      "art/cg/exec_2_06_bg.png"
+    ],
+    "prompt": "Exact generated layer export center crop",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-2a3f1640-0be5-4dae-99aa-48cec4a318c2.png",
+    "review": "passed",
+    "normalization": {
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ],
+      "method": "native foreground canvas; BG+FG exactalphaexport"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 5,
+    "seconds": 10,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_05.png",
+    "w": 1920,
+    "h": 1080,
+    "alpha": false,
+    "layer": "composite",
+    "refs": [
+      "art/cg/exec_2_05_bg.png",
+      "art/cg/exec_2_01_fg.png"
+    ],
+    "prompt": "Exact generated layers center-crop composite export",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8e88b0c3-f7c5-490c-ab52-56ee84a01ae8.png",
+    "review": "passed",
+    "normalization": {
+      "method": "native2304x1296foregroundcanvas",
+      "viewport": [
+        192,
+        108,
+        1920,
+        1080
+      ]
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 7,
+    "seconds": 6,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_07_bg.png",
+    "w": 2304,
+    "h": 1296,
+    "layer": "background",
+    "refs": [],
+    "prompt": "Use case: stylized-concept. EmptyCLEANPLATE2304x1296opaquePNG. Camera HIGHCLOSEUPlookingDOWNatquietpoolWATERSURFACE. ENTIREFRAMEfilledonlyclearCYANwaterandsoftsmallripples,tinygoldreflectedlight,sunlit3Dlikeanimestyle. AbsolutelyZERO objects,jewelry,hairpins,clocks,props,people,bodies,buildings,sky,textorUI. Onlyemptywatertoedgeofcanvas.10%overscan maincenter1920x1080.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-e9318ee4-3770-4591-ab48-2b9d438eea9f.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 7,
+    "seconds": 6,
+    "dialogue": "",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "path": "art/cg/exec_2_07_fg.png",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "layer": "foreground",
+    "refs": [
+      "art/cg/exec_2_07_bg.png",
+      "art/standing_hd/akari.png"
+    ],
+    "prompt": "Use case:illustration-story. TransparentFOREGROUNDPROP2304x1296. Input1emptywaterperspective/lightingREFERENCEONLY.Input2hairaccessoryshapeREFERENCEONLY. DrawONEsmallGOLDHOURGLASS-SHAPEDtimepieceHAIRPINmatchingInput2exactly,floatinghorizontallyonwaterwithtinylocalRIPPLES. No roundclockface,no bunnyears,no jewels/ribbons/flowersadded. Onlyhourglasshairpin+ripple, everythingelseactualTRANSPARENT; no copiedpool, no people/girl/face/hairorbody. Quietpropcloseup,singleitematcenter, width600px,12%alphaemptyboundaries. Originalanimepropdesign, noUI/text.",
+    "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8fd09c8a-c5c3-4afc-a7b2-b39f2bdab0f5.png",
+    "review": "passed"
+  },
+  {
+    "chapter": 2,
+    "cut": 7,
+    "path": "art/cg/exec_2_07.png",
+    "w": 1920,
+    "h": 1080,
+    "layer": "composite",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+    "prompt": "Exact PNG export of generated matching layers",
+    "review": "passed",
+    "normalization": {
+      "metadata": "art/_work/batch6_exec_2_07_layer_export.json"
+    }
+  },
+  {
+    "chapter": 2,
+    "cut": 8,
+    "seconds": 2,
+    "slug": "akari",
+    "bg": "bg/waterpark_day.png",
+    "scene": "Complete BLACKOUT, absolutely uniform pure black. No objects, text, glow, grain or vignette.",
+    "foreground": "NONE",
+    "dialogue": "",
+    "path": "art/cg/exec_2_08.png",
+    "blank": true,
+    "layer": "composite",
+    "w": 1920,
+    "h": 1080,
+    "alpha": false,
+    "review": "passed",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row8",
+    "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+  },
+  {
+    "chapter": 2,
+    "cut": 8,
+    "seconds": 2,
+    "slug": "akari",
+    "bg": "bg/waterpark_day.png",
+    "scene": "Complete BLACKOUT, absolutely uniform pure black. No objects, text, glow, grain or vignette.",
+    "foreground": "NONE",
+    "dialogue": "",
+    "path": "art/cg/exec_2_08_bg.png",
+    "blank": true,
+    "layer": "background",
+    "w": 2304,
+    "h": 1296,
+    "alpha": false,
+    "review": "passed",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row8",
+    "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+  },
+  {
+    "chapter": 2,
+    "cut": 8,
+    "seconds": 2,
+    "slug": "akari",
+    "bg": "bg/waterpark_day.png",
+    "scene": "Complete BLACKOUT, absolutely uniform pure black. No objects, text, glow, grain or vignette.",
+    "foreground": "NONE",
+    "dialogue": "",
+    "path": "art/cg/exec_2_08_fg.png",
+    "blank": true,
+    "layer": "foreground",
+    "w": 2304,
+    "h": 1296,
+    "alpha": true,
+    "review": "passed",
+    "source_document": "docs/spec/05_연출_가이드.md §5-2 row8",
+    "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+  }
+]

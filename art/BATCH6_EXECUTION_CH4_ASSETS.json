@@ -1,0 +1,698 @@
+{
+  "chapter": 4,
+  "cuts": 9,
+  "approvedFiles": 26,
+  "assets": [
+    {
+      "chapter": 4,
+      "cut": 1,
+      "seconds": 4,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_01_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "bg/rollercoaster_platform.png"
+      ],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. DreamLiner platform architecture, no train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-9f85b1af-1c6d-4c92-80ce-e026c290a2f9.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 1,
+      "seconds": 4,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row1;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_01_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_01_bg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY Rei and front coaster train car. Storyboard action:Dream Liner platform, Rei sits in FRONT seat of stationary coaster train, calm fully clothed white long gakuran, black gloves/cuffs, silver hair covers right eye. Eye-level side-front view.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:30% desaturated cloudy GRAY-BLUE. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-39f13a4d-6e2e-480a-b31d-70755d11c529.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 2,
+      "seconds": 3,
+      "dialogue": "이번엔 조용히, 아주 조용히요",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_02_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "bg/rollercoaster_platform.png"
+      ],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. DreamLiner platform architecture, no train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "reuse": "art/cg/exec_4_01_bg.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 2,
+      "seconds": 3,
+      "dialogue": "이번엔 조용히, 아주 조용히요",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_02_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_02_bg.png",
+        "art/sprites/lappy/lappy_L01.png"
+      ],
+      "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY Lappy only. Storyboard action:Original stitched pink Lappy as unusually polite quiet host, tidy small hat, no tilted clowning, subdued gray-blue platform behind.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:30% desaturated cloudy GRAY-BLUE. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-2feed1fe-d3e7-4870-b479-478294be8512.png",
+      "review": "rejected:large cheerful smile incompatible quiet host"
+    },
+    {
+      "chapter": 4,
+      "cut": 3,
+      "seconds": 12,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_03_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "bg/rollercoaster_platform.png"
+      ],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Cloudy sky and distant rollercoaster infrastructure at great height, gray-blue clouds; NO train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-ebb304c3-c6c9-4cf8-aa00-136220f2f4f9.png",
+      "review": "rejected:platform instead of ascent"
+    },
+    {
+      "chapter": 4,
+      "cut": 2,
+      "seconds": 3,
+      "dialogue": "이번엔 조용히, 아주 조용히요",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_02_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/_work/batch6_rejected_exec_4_02_fg_v1.png"
+      ],
+      "prompt": "Edit this original rabbit host foreground. Keep exact body, clothing, neatly straight little hat, earstitch and fully transparent background. Change face to a VERY QUIET reserved expression: OPEN eyes with subdued single highlight, mouth is a TINY CLOSED gentle smile, no blush, no broad grin. Arms rest neatly together. Calm polite solemn host, not energetic. Preserve original style, canvas2304x1296, complete figure with transparent margins, no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8f845104-0734-4d09-a3ba-248296c56fd6.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 3,
+      "seconds": 12,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_03_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [],
+      "prompt": "Original cinematic empty rollercoaster lift hill,2304x1296. HIGH SIDE VIEW: diagonal steel rail rises slowly from lowerleft to upperright against overcast gray-blue sky, distant miniature pastel amusementpark far BELOW. Rail continuous and EMPTY. Camera is high aboveparkfollowinglift, no station buildings, no platform canopy, no train or people. Rail atcenter ready for later trainforeground. 30%desaturated stage-set3Dlike anime, no text/UI.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-750e606b-ae0c-4d0c-82ff-39a97cae9b97.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 2,
+      "path": "art/cg/exec_4_02.png",
+      "w": 1920,
+      "h": 1080,
+      "layer": "composite",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row2;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "prompt": "Exact PNG export of generated matching layers",
+      "review": "passed",
+      "normalization": {
+        "metadata": "art/_work/batch6_exec_4_02_layer_export.json"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 3,
+      "seconds": 12,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_03_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_03_bg.png",
+        "art/standing_hd/rei.png",
+        "art/cg/exec_4_01_fg.png"
+      ],
+      "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY train with Rei seated in front. Storyboard action:Coaster train rises slowly toward cloudy sky, no musical spectacle, distant high side view. Rei sits quietly in front. No underside body view, pain or injury.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:30% desaturated cloudy GRAY-BLUE. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape. The train's front faces UPPER RIGHT, going UP the diagonal track in reference1. Keep same burgundy/gold rabbitmedallion train design from reference3. Wide high SIDE VIEW, wholetrainfitswithincenter80%, wheelsalignwithtrack. Character small seatedatfront.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-e61404af-5194-487a-8e76-ef9bed732395.png",
+      "review": "rejected:shot direction or fantasy floating architecture differs from storyboard"
+    },
+    {
+      "chapter": 4,
+      "cut": 4,
+      "seconds": 6,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_04_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Cloudy sky and distant rollercoaster infrastructure at great height, gray-blue clouds; NO train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-d7adc9ae-e731-467e-8382-d1e4b1533631.png",
+      "review": "rejected:shot direction or fantasy floating architecture differs from storyboard"
+    },
+    {
+      "chapter": 4,
+      "cut": 5,
+      "seconds": 10,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_05_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Cloudy sky and distant rollercoaster infrastructure at great height, gray-blue clouds; NO train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-fcc89121-4051-4515-9478-8d39286c0df3.png",
+      "review": "rejected:shot direction or fantasy floating architecture differs from storyboard"
+    },
+    {
+      "chapter": 4,
+      "cut": 3,
+      "seconds": 12,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_03_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_03_bg.png",
+        "art/cg/exec_4_01_fg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "Transparent foreground PNG2304x1296. Draw ONLY a small original burgundy-and-gold rollercoaster train on transparent background. SIDE VIEW, train POINTS TO UPPER RIGHT, its FRONT CAR is at UPPER RIGHT and REAR CAR at LOWER LEFT. It climbs uphill towardupperright, matching diagonal slope in reference1. Rei seated in FRONT RIGHTMOST car, silverhairedwhitegakuran exactref3. Trainshapeoriginalref2. Entire train within central70%ofcanvas. Do not draw track, supports, rails, ground or sky. OnlytrainandseatedRei. Lightingovercastgrayblue, 3Dlikeanimeprops, no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-dc07f0bb-061d-4100-b524-09c413eb017e.png",
+      "review": "passed",
+      "normalization": {
+        "method": "Mechanical layer export: native RGBA resized1613x907,placed230,190,rotated7degreesCCWabout550,1080; exactcomposite",
+        "viewport": [
+          192,
+          108,
+          1920,
+          1080
+        ],
+        "raw": "art/_work/batch6_exec_4_03_fg_native.png"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 4,
+      "seconds": 6,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_04_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [],
+      "prompt": "Cinematic2304x1296, emptyrollercoasterSUMMIT. GRAYBLUECLOUDS fillframe, TINYrealamusementpark onflatground farbelowalongBOTTOMEDGE. One STEELTRACK rises diagonally fromBOTTOMLEFT, levels atCENTER and ENDS ABRUPTLYatCENTER-RIGHT. END OFTRACK VERYCLEAR, beyondendONLYcloudysky. No train,people,castles,platforms,floatingislands,bridges orfantasybuildings. SIMPLEcleanplateforsubsequentforegroundtrain. Restrained3Dlikeoriginalanimebackground, no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-b304f0c6-599d-4183-9d02-6b35b05ed289.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 5,
+      "seconds": 10,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_05_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [],
+      "prompt": "Cinematic2304x1296CLEANPLATE, ONLYOVERCASTGRAYBLUECLOUDYSKY fillsupper90%, lower10%hazyminiatureamusementpark onREALFLATGROUNDFARBELOW. CentercompletelyEMPTYforlatermagicaltrain. No rails, trains, people, castles, buildingsintheair, floatingislandsorplatforms. Simple quiet 3Dlikeanime cloudsandatmosphericperspective, 30%desaturated,no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-9b31567f-02c4-4d92-b7b7-0297bd813e39.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 3,
+      "path": "art/cg/exec_4_03.png",
+      "w": 1920,
+      "h": 1080,
+      "layer": "composite",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row3;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "prompt": "Exact PNG export of generated matching layers",
+      "review": "passed",
+      "normalization": {
+        "method": "Mechanical layer export: native RGBA resized1613x907,placed230,190,rotated7degreesCCWabout550,1080; exactcomposite",
+        "viewport": [
+          192,
+          108,
+          1920,
+          1080
+        ],
+        "raw": "art/_work/batch6_exec_4_03_fg_native.png"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 6,
+      "seconds": 4,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_06_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "bg/rollercoaster_platform.png"
+      ],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Cloudy sky and distant rollercoaster infrastructure at great height, gray-blue clouds; NO train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "reuse": "art/cg/exec_4_05_bg.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 7,
+      "seconds": 8,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_07_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "bg/rollercoaster_platform.png"
+      ],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Cloudy sky and distant rollercoaster infrastructure at great height, gray-blue clouds; NO train. Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "reuse": "art/cg/exec_4_05_bg.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 4,
+      "seconds": 6,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_04_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_04_bg.png",
+        "art/cg/exec_4_01_fg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "Transparent foreground2304x1296. ONLY original burgundy-gold rabbitmedallion coastertrain with Rei seated calmly in FRONTRIGHT car. Match reference1sidecamera: train has reached HORIZONTAL SUMMIT, front pointsRIGHT toward abruptEND ofRAIL. Railitself/backgroundNOTdrawn. EntiretrainSMALLwithincentral60%, wheelsHORIZONTAL, frontnearx1200y420, backtowardleft. Originaltrainref2, exactReiidentityref3whitegakuran,silverbangs. Grayblueovercastlight, original3Dlikeanimeprop. Truealpha, no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-f72ad91e-0229-4f7e-a9b6-ff718f87fed0.png",
+      "review": "passed",
+      "normalization": {
+        "method": "Mechanicalpositiontohorizontalcrest",
+        "scale": [
+          806,
+          454
+        ],
+        "position": [
+          600,
+          60
+        ],
+        "rotation": 10,
+        "center": [
+          1300,
+          440
+        ],
+        "raw": "art/_work/batch6_exec_4_04_fg_native.png"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 5,
+      "seconds": 10,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_05_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_05_bg.png",
+        "art/standing_hd/rei.png",
+        "art/cg/exec_4_01_fg.png"
+      ],
+      "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY train with Rei and newly unfolding light rail. Storyboard action:Train proceeds into empty air while a luminous RAIL OF LIGHT unfolds beneath it. Rei fully clothed and calm, symbolic fantasy attraction, no collision.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:30% desaturated cloudy GRAY-BLUE. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape. SAMEburgundy-goldrabbitmedalliontrainasreference3. FronttowardRIGHT, ReiintheFRONTRIGHTseat, trainproceedscalmlyalongMAGICALWHITEBLUErailoflightunfoldingbeneathwheelsintoemptyair. ENTIREtrainandlightrailfitcenter80%oftransparentcanvas.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-73e0a0fe-ff16-4ed9-a567-316aa5545088.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 6,
+      "seconds": 4,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_06_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_06_bg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "Use case: illustration-story. Original YumenoKuni cinematic TRANSPARENT FOREGROUND LAYER. Input1 is clean BACKGROUND PLATE for EXACT camera,perspective,scale,lighting and placement reference ONLY, do not redraw scenery. Other inputs are original character/prop identity references: preserve hair,eyes,normal proportions,fullstandard costumes,correct accessories. Draw ONLY Rei head and upper shoulders. Storyboard action:Eye-level FACE close-up of Rei turning his gaze once toward offscreen Koto, no second person needed. Silver bangs over right eye, visible eye color exactreference, white high collar and black cuff exact, silent restraint.  True transparent background; ZERO copied scenery, floor, sky, opaque rectangles, checkerboard or watermark. Canvas2304x1296, finalviewport is center1920x1080 at x192y108; leave10%safeoverscan eachside. Fit object/character to the background reference naturally. Calmneutralface; coveredknees/fullyclothed; eye-level or highcamera. Use harmlesslightmagic, no injuries/blood. Match original animeidentity with3Dlike theatricalprops. Grade:30% desaturated cloudy GRAY-BLUE. No subtitles/UI or decorative text. Entire foreground silhouette AND all light particles must be fully drawn, with soft natural edges fading into transparency. Leave the OUTER12%canvas empty alpha on every edge; no clipped glow edges. Keep consistent previous cut prop shape.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-0cfb678c-73f7-42b2-a0ec-506b68916194.png",
+      "review": "passed",
+      "normalization": {
+        "method": "nativegeneratedforegroundcanvas;translateonly;exactalphacomposite",
+        "offset": [
+          0,
+          110
+        ],
+        "viewport": [
+          192,
+          108,
+          1920,
+          1080
+        ],
+        "raw": "art/_work/batch6_exec_4_06_fg_native.png"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 4,
+      "seconds": 6,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row4;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_04.png",
+      "w": 1920,
+      "h": 1080,
+      "alpha": false,
+      "layer": "composite",
+      "refs": [
+        "art/cg/exec_4_04_bg.png",
+        "art/cg/exec_4_01_fg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "Transparent foreground2304x1296. ONLY original burgundy-gold rabbitmedallion coastertrain with Rei seated calmly in FRONTRIGHT car. Match reference1sidecamera: train has reached HORIZONTAL SUMMIT, front pointsRIGHT toward abruptEND ofRAIL. Railitself/backgroundNOTdrawn. EntiretrainSMALLwithincentral60%, wheelsHORIZONTAL, frontnearx1200y420, backtowardleft. Originaltrainref2, exactReiidentityref3whitegakuran,silverbangs. Grayblueovercastlight, original3Dlikeanimeprop. Truealpha, no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-f72ad91e-0229-4f7e-a9b6-ff718f87fed0.png",
+      "review": "passed",
+      "normalization": {
+        "method": "Mechanicalpositiontohorizontalcrest",
+        "scale": [
+          806,
+          454
+        ],
+        "position": [
+          600,
+          60
+        ],
+        "rotation": 10,
+        "center": [
+          1300,
+          440
+        ],
+        "raw": "art/_work/batch6_exec_4_04_fg_native.png"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 5,
+      "path": "art/cg/exec_4_05.png",
+      "w": 1920,
+      "h": 1080,
+      "layer": "composite",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row5;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "prompt": "Exact PNG export of generated matching layers",
+      "review": "passed",
+      "normalization": {
+        "metadata": "art/_work/batch6_exec_4_05_layer_export.json"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 6,
+      "seconds": 4,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row6;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_06.png",
+      "w": 1920,
+      "h": 1080,
+      "alpha": false,
+      "layer": "composite",
+      "refs": [
+        "art/cg/exec_4_06_bg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "ExactPNGexportfromgeneratedlayers",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-0cfb678c-73f7-42b2-a0ec-506b68916194.png",
+      "review": "passed",
+      "normalization": {
+        "method": "nativegeneratedforegroundcanvas;translateonly;exactalphacomposite",
+        "offset": [
+          0,
+          110
+        ],
+        "viewport": [
+          192,
+          108,
+          1920,
+          1080
+        ],
+        "raw": "art/_work/batch6_exec_4_06_fg_native.png"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 7,
+      "seconds": 8,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_07_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_07_bg.png",
+        "art/cg/exec_4_05_fg.png",
+        "art/standing_hd/rei.png"
+      ],
+      "prompt": "Transparent foreground2304x1296. Continuationofreference2originalburgundy-goldrabbitmedallioncoasterwithRei. Rei quietly CLOSES HIS EYES, calm, FULLwhitecostumeintact. Traincarriage andmagicalrail dissolve softly into WHITEBLUE LIGHTparticles fromrearforward. Complete wholeclothed silhouette fadinginnocentlywithmagiclight. No injury or distress. SAMEtrainshape,camera,silverhairwhitegakuranidentity. Input1sky lightingonly, do notdrawsky. Wholefigureandlightwithincentral80%ofcanvas, truealpha, no text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-56963912-7dfc-4a18-a0ec-99b0d958b0e1.png",
+      "review": "passed"
+    },
+    {
+      "chapter": 4,
+      "cut": 8,
+      "seconds": 5,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_08_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "bg/vip_hall_a.png",
+        "bg/vip_hall_b.png"
+      ],
+      "prompt": "Use case: stylized-concept. Original YumenoKuni cinematic BACKGROUND PLATE. Supplied original location image(s) are architecture/style references. 2304x1296 opaque PNG. Main shot will be centered1920x1080 at x192,y108 with10%overscan eachside. Exact VIP corridor reference:fourLEFTdoors501502503504,NO rightdoors,farend plain door jamb EMPTY dark recess,farend label and doorpanel excluded (foreground change layer). Match original theatrical3Dlike anime stage-set mood. Grade:30% desaturated cloudy GRAY-BLUE. No text, UI, logos or watermark except exact intrinsic doorway numbers when required.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-250d9598-3a0f-4726-bfa7-92ab9c1c736b.png",
+      "review": "rejected:thirdleftdoor504must503"
+    },
+    {
+      "chapter": 4,
+      "cut": 7,
+      "path": "art/cg/exec_4_07.png",
+      "w": 1920,
+      "h": 1080,
+      "layer": "composite",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row7;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "prompt": "Exact PNG export of generated matching layers",
+      "review": "passed",
+      "normalization": {
+        "metadata": "art/_work/batch6_exec_4_07_layer_export.json"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 8,
+      "seconds": 5,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_08_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "art/_work/batch6_rejected_exec_4_08_bg_v1.png"
+      ],
+      "prompt": "EDITONLY ONE NUMBER on reference corridor, preserve EVERYTHING else exactly. FourleftdoorsfromNEARtoFAR must be501,502,503,504. Currently THIRDLEFTdoor incorrectlysays504: CHANGE THAT THIRDPLAQUE TO503. Keep first501,second502,fourth504unchanged. Keepemptyfarenddarkdoorjambwithoutlabel/panel, rightwallnodoor, exactcamera,colors,lighting,flowersandarchitecture. Originalcinematicbackground2304x1296opaque,noextraobjects.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-bba3b518-4e27-44a4-9688-3344ba061b60.png",
+      "review": "rejected:thirdplaque edit didnotcorrect504"
+    },
+    {
+      "chapter": 4,
+      "cut": 8,
+      "seconds": 5,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_08_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "art/_work/batch6_rejected_exec_4_08_bg_v1.png"
+      ],
+      "prompt": "EDITONLY ONE NUMBER on reference corridor, preserve EVERYTHING else exactly. FourleftdoorsfromNEARtoFAR must be501,502,503,504. Currently THIRDLEFTdoor incorrectlysays504: CHANGE THAT THIRDPLAQUE TO503. Keep first501,second502,fourth504unchanged. Keepemptyfarenddarkdoorjambwithoutlabel/panel, rightwallnodoor, exactcamera,colors,lighting,flowersandarchitecture. Originalcinematicbackground2304x1296opaque,noextraobjects.",
+      "source": "bg/vip_hall_a.png",
+      "review": "passed",
+      "reuse": "Approvedsamecorridorcleanplateincludingrestoredlinen;mechanicalresizeonly;ghost505inforeground",
+      "correction": {
+        "region": [
+          835,
+          490,
+          100,
+          100
+        ],
+        "generatedPatch": "art/_work/batch6_vip_503_patch.png",
+        "reason": "thirdleftdoor503"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 8,
+      "seconds": 5,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_08_fg.png",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "layer": "foreground",
+      "refs": [
+        "art/cg/exec_4_08_bg.png",
+        "bg/vip_hall_b.png"
+      ],
+      "prompt": "Original cinematic transparentFOREGROUND2304x1296. Draw ONLY the small FAR-ENDROOMDOOR from reference1, matching exact position and perspective. A ghostly pale opaque guestroomDOOR with small GOLDPLAQUE505 softly fadesinto WHITEBLUElightparticles, revealing linenclosetbackgroundbehindit. Farenddooronly aroundcenterx1175y665, approx100wide220high; no hallway scenery,nootherdoors,noperson. Truealphaeverywhereoutsideghostdoor. Sameoriginaltheatrical3Dlikeanime,30%desaturatedgrayblue. No giant foregrounddoor, no subtitle/UI.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-4b165a39-e697-47a7-9319-bd0562f0b295.png",
+      "review": "passed",
+      "normalization": {
+        "raw": "art/_work/batch6_exec_4_08_fg_native.png",
+        "scale": [
+          691,
+          389
+        ],
+        "offset": [
+          832,
+          450
+        ],
+        "method": "mechanicalpositioninfarendjamb;exactcomposite"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 8,
+      "seconds": 5,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_08.png",
+      "w": 1920,
+      "h": 1080,
+      "alpha": false,
+      "layer": "composite",
+      "refs": [
+        "art/cg/exec_4_08_bg.png",
+        "bg/vip_hall_b.png"
+      ],
+      "prompt": "Original cinematic transparentFOREGROUND2304x1296. Draw ONLY the small FAR-ENDROOMDOOR from reference1, matching exact position and perspective. A ghostly pale opaque guestroomDOOR with small GOLDPLAQUE505 softly fadesinto WHITEBLUElightparticles, revealing linenclosetbackgroundbehindit. Farenddooronly aroundcenterx1175y665, approx100wide220high; no hallway scenery,nootherdoors,noperson. Truealphaeverywhereoutsideghostdoor. Sameoriginaltheatrical3Dlikeanime,30%desaturatedgrayblue. No giant foregrounddoor, no subtitle/UI.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-4b165a39-e697-47a7-9319-bd0562f0b295.png",
+      "review": "passed",
+      "normalization": {
+        "raw": "art/_work/batch6_exec_4_08_fg_native.png",
+        "scale": [
+          691,
+          389
+        ],
+        "offset": [
+          832,
+          450
+        ],
+        "method": "mechanicalpositioninfarendjamb;exactcomposite"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 9,
+      "seconds": 2,
+      "slug": "rei",
+      "bg": "bg/rollercoaster_platform.png",
+      "scene": "Complete BLACKOUT, absolutely uniform pure black, no objects or textures.",
+      "foreground": "NONE",
+      "dialogue": "",
+      "path": "art/cg/exec_4_09.png",
+      "blank": true,
+      "layer": "composite",
+      "w": 1920,
+      "h": 1080,
+      "alpha": false,
+      "review": "passed",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row9",
+      "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+    },
+    {
+      "chapter": 4,
+      "cut": 9,
+      "seconds": 2,
+      "slug": "rei",
+      "bg": "bg/rollercoaster_platform.png",
+      "scene": "Complete BLACKOUT, absolutely uniform pure black, no objects or textures.",
+      "foreground": "NONE",
+      "dialogue": "",
+      "path": "art/cg/exec_4_09_bg.png",
+      "blank": true,
+      "layer": "background",
+      "w": 2304,
+      "h": 1296,
+      "alpha": false,
+      "review": "passed",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row9",
+      "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+    },
+    {
+      "chapter": 4,
+      "cut": 9,
+      "seconds": 2,
+      "slug": "rei",
+      "bg": "bg/rollercoaster_platform.png",
+      "scene": "Complete BLACKOUT, absolutely uniform pure black, no objects or textures.",
+      "foreground": "NONE",
+      "dialogue": "",
+      "path": "art/cg/exec_4_09_fg.png",
+      "blank": true,
+      "layer": "foreground",
+      "w": 2304,
+      "h": 1296,
+      "alpha": true,
+      "review": "passed",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row9",
+      "prompt": "Exact uniformblack timing frame; emptytransparentforeground by storyboard. Mechanically exported solid color, intentional blackout, not missing artwork."
+    }
+  ]
+}

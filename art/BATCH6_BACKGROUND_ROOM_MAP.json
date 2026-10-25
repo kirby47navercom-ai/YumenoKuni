@@ -1,0 +1,334 @@
+{
+  "source": "docs/spec/03_탐색_수사_시스템_사양.md §2; room-level production mapping, not an engine integration",
+  "new_backgrounds": 104,
+  "existing_backgrounds": 18,
+  "A0": {
+    "plaza": [
+      "plaza_day",
+      "plaza_dawn",
+      "plaza_night"
+    ],
+    "info": [
+      "info_center_day"
+    ],
+    "hotel1_lobby_front": [
+      "hotel_lobby"
+    ],
+    "hotel1_lounge": [
+      "hotel_lounge_day"
+    ],
+    "hotel1_laundry": [
+      "hotel_laundry_day"
+    ],
+    "hotel1_staff": [
+      "hotel_staff_day"
+    ],
+    "hotel1_dining": [
+      "hotel_dining"
+    ],
+    "hotel_elevator": [
+      "hotel_elevator_day"
+    ],
+    "hotel2_hall": [
+      "hotel_2f_corridor_day"
+    ],
+    "hotel3_hall": [
+      "hotel_corridor"
+    ],
+    "hotel4_hall": [
+      "hotel_4f_corridor_day"
+    ],
+    "stairs": [
+      "hotel_stairs_day"
+    ],
+    "hotel_room_variants": [
+      "ai_room_day",
+      "akari_room_day",
+      "haruka_room_day",
+      "kaede_room_day",
+      "ken_room_day",
+      "koto_room_day",
+      "mio_room_day",
+      "nana_room_day",
+      "rei_room_day",
+      "riku_room_day",
+      "rin_room_day",
+      "satsuki_room_day",
+      "sho_room_day",
+      "sora_room_day",
+      "taiga_room_day",
+      "yuu_room_day"
+    ],
+    "mio_night": [
+      "mio_room_night"
+    ],
+    "annex_hall": [
+      "annex_hall_day"
+    ],
+    "annex_shower": [
+      "annex_shower_day"
+    ],
+    "roof_garden": [
+      "roof_garden_day"
+    ],
+    "food_hall": [
+      "foodcourt"
+    ],
+    "food_kitchen": [
+      "food_kitchen_day"
+    ],
+    "food_freezer": [
+      "food_freezer_day"
+    ],
+    "food_storage": [
+      "food_storage_day"
+    ],
+    "food_backdoor": [
+      "food_backdoor_day"
+    ],
+    "food_service_corridor": [
+      "food_service_corridor_day"
+    ],
+    "carousel_gate_platform": [
+      "carousel_day",
+      "carousel_dawn"
+    ],
+    "carousel_control": [
+      "carousel_control"
+    ],
+    "carousel_machine": [
+      "carousel_machine_day"
+    ],
+    "carousel_ticket": [
+      "carousel_ticket_day"
+    ],
+    "carousel_storage": [
+      "carousel_storage_day"
+    ],
+    "shop_floor": [
+      "souvenir_shop"
+    ],
+    "shop_costume": [
+      "shop_costume_day"
+    ],
+    "shop_storage": [
+      "shop_storage_day"
+    ],
+    "clinic_exam": [
+      "infirmary"
+    ],
+    "clinic_pharmacy": [
+      "clinic_pharmacy_day"
+    ],
+    "clinic_bed": [
+      "clinic_bed_day"
+    ]
+  },
+  "A2": {
+    "wp_outdoors": [
+      "waterpark_day",
+      "waterpark_night"
+    ],
+    "wp_locker": [
+      "waterpark_locker_day"
+    ],
+    "wp_shower": [
+      "waterpark_shower_day"
+    ],
+    "wp_snack": [
+      "waterpark_snack_day"
+    ],
+    "wp_machine": [
+      "waterpark_machine_day"
+    ],
+    "wp_pump": [
+      "waterpark_pump_day"
+    ],
+    "pr_road": [
+      "parade_street_day"
+    ],
+    "pr_float": [
+      "parade_float_day"
+    ],
+    "pr_costume": [
+      "parade_costume_day"
+    ],
+    "pr_props": [
+      "parade_props_day"
+    ],
+    "pr_staff": [
+      "parade_staff_day"
+    ],
+    "pr_stage": [
+      "parade_stage_day"
+    ]
+  },
+  "A3": {
+    "mm_entrance": [
+      "mirror_entrance"
+    ],
+    "mm_maze": [
+      "mirror_maze_1",
+      "mirror_maze_2",
+      "mirror_maze_3"
+    ],
+    "mm_center": [
+      "mirror_center"
+    ],
+    "mm_emergency": [
+      "mirror_emergency"
+    ],
+    "mm_office": [
+      "mirror_office"
+    ],
+    "fw_ticket": [
+      "ferris_ticket"
+    ],
+    "fw_boarding": [
+      "ferris_boarding"
+    ],
+    "fw_gondola": [
+      "ferris_gondola"
+    ],
+    "fw_control": [
+      "ferris_control"
+    ],
+    "fw_top": [
+      "ferris_top"
+    ],
+    "th_lobby": [
+      "theater_lobby"
+    ],
+    "th_seats_1f": [
+      "theater_seats_1f"
+    ],
+    "th_seats_2f": [
+      "theater_seats_2f"
+    ],
+    "th_stage": [
+      "theater_stage"
+    ],
+    "th_rigging": [
+      "theater_rigging"
+    ],
+    "th_dressing": [
+      "theater_dressing"
+    ],
+    "th_sound": [
+      "theater_sound"
+    ],
+    "th_props": [
+      "theater_props"
+    ],
+    "th_emergency": [
+      "theater_emergency"
+    ]
+  },
+  "A4": {
+    "rc_platform": [
+      "rollercoaster_platform"
+    ],
+    "rc_control": [
+      "rollercoaster_control"
+    ],
+    "rc_maintenance": [
+      "rollercoaster_maintenance"
+    ],
+    "rc_generator": [
+      "rollercoaster_generator"
+    ],
+    "rc_inspection": [
+      "rollercoaster_inspection"
+    ],
+    "vip_elev": [
+      "vip_elevator"
+    ],
+    "vip_hall": [
+      "vip_hall_a",
+      "vip_hall_b"
+    ],
+    "vip_501": [
+      "vip_501"
+    ],
+    "vip_502": [
+      "vip_502"
+    ],
+    "vip_503": [
+      "vip_503"
+    ],
+    "vip_504": [
+      "vip_504"
+    ],
+    "vip_505": [
+      "vip_505"
+    ],
+    "vip_linen": [
+      "vip_linen"
+    ],
+    "vip_gallery": [
+      "vip_gallery"
+    ],
+    "vip_lounge": [
+      "vip_lounge"
+    ],
+    "vip_stairs": [
+      "vip_stairs"
+    ]
+  },
+  "A5": {
+    "cs_hall": [
+      "castle_hall"
+    ],
+    "cs_library": [
+      "castle_library"
+    ],
+    "cs_tower": [
+      "castle_tower"
+    ],
+    "cs_armor": [
+      "castle_armor"
+    ],
+    "cs_throne": [
+      "castle_throne"
+    ],
+    "cs_vault": [
+      "castle_vault"
+    ],
+    "cs_basement": [
+      "castle_basement"
+    ],
+    "cs_float": [
+      "castle_float"
+    ],
+    "cs_kitchen": [
+      "castle_kitchen"
+    ]
+  },
+  "A6": {
+    "core_elev": [
+      "core_elev"
+    ],
+    "core_shelter": [
+      "core_shelter"
+    ],
+    "core_inspection_a": [
+      "core_inspection_a"
+    ],
+    "core_inspection_b": [
+      "core_inspection_b"
+    ],
+    "core_hall": [
+      "core_hall"
+    ],
+    "core_control": [
+      "core_control"
+    ]
+  },
+  "notes": [
+    "Paths are bg/{name}.png.",
+    "One outdoor room overview serves its outdoor viewpoints; this request is room-level, not one image per360-degree node.",
+    "Hotel standard room variants follow freely chosen rooms in prologue; no new fixed room-number assignment is asserted.",
+    "All exploration backgrounds are clean empty stages. Incident state, objects and characters belong to separate CG/inspect/overlay assets.",
+    "Existing18 backgrounds and all other pre-session assets were skipped."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "note": "Only new batch6 BG corrected; pre-session18BG untouched. vip_hall_b already503verified.",
+  "assets": [
+    {
+      "path": "bg/vip_hall_a.png",
+      "w": 1920,
+      "h": 1080,
+      "chapter": 4,
+      "refs": [
+        "art/_work/batch6_rejected_vip_hall_a.png",
+        "bg/vip_hall_b.png"
+      ],
+      "source_document": "docs/spec/03_탐색_수사_시스템_사양.md §2-4;docs/design/14a_4장_일상_프리타임.md;14b_4장_수사_재판.md",
+      "prompt": "EDIT first reference image, change ONLY the THIRD LEFT GUESTROOM door small gold number plaque (center near x0.382,y0.418) to read exactly '503'. Four LEFT doors from near to far must be501,502,503,504. Copy third door digits503 from second reference if helpful. Far END door MUST KEEP first reference label '리넨 창고', NOT505. Keep ALL architecture, camera, furniture, colors, flowers, all other text exactly. No people. Return ONE full wide background, 16:9, no inset or crop.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-2a173b94-6c4d-47f4-bf5c-686e20004fe6.png",
+      "review": "passed",
+      "correction": {
+        "region": [
+          696,
+          408,
+          83,
+          83
+        ],
+        "generatedPatch": "art/_work/batch6_vip_503_patch.png",
+        "reason": "thirdleftdoor503"
+      }
+    },
+    {
+      "chapter": 4,
+      "cut": 8,
+      "seconds": 5,
+      "dialogue": "",
+      "source_document": "docs/spec/05_연출_가이드.md §5-4 row8;docs/spec/14_코덱스_에셋_작업지시서.md §3-2",
+      "path": "art/cg/exec_4_08_bg.png",
+      "w": 2304,
+      "h": 1296,
+      "layer": "background",
+      "refs": [
+        "art/_work/batch6_rejected_exec_4_08_bg_v1.png"
+      ],
+      "prompt": "EDITONLY ONE NUMBER on reference corridor, preserve EVERYTHING else exactly. FourleftdoorsfromNEARtoFAR must be501,502,503,504. Currently THIRDLEFTdoor incorrectlysays504: CHANGE THAT THIRDPLAQUE TO503. Keep first501,second502,fourth504unchanged. Keepemptyfarenddarkdoorjambwithoutlabel/panel, rightwallnodoor, exactcamera,colors,lighting,flowersandarchitecture. Originalcinematicbackground2304x1296opaque,noextraobjects.",
+      "source": "bg/vip_hall_a.png",
+      "review": "passed",
+      "reuse": "Approvedsamecorridorcleanplateincludingrestoredlinen;mechanicalresizeonly;ghost505inforeground",
+      "correction": {
+        "region": [
+          835,
+          490,
+          100,
+          100
+        ],
+        "generatedPatch": "art/_work/batch6_vip_503_patch.png",
+        "reason": "thirdleftdoor503"
+      }
+    }
+  ]
+}

@@ -37,7 +37,7 @@ void Yumeno::hud(){
 // 저장 : 장·비트·이벤트·문맥 + 인연·코인·선물·언령·플래그
 void Yumeno::saveFlow(){
  Json s{{"v",2},{"chapter",chapterAt},{"beat",beat},{"event",event},{"pool",ctxPool},{"spot",ctxSpot},{"ending",ctxEnding},{"slots",slots},
-  {"coins",coins},{"pulls",pulls},{"bonds",bonds},{"gifts",gifts},{"cards",std::vector<std::string>(cards.begin(),cards.end())},{"flags",std::vector<std::string>(flags.begin(),flags.end())},{"seen",std::vector<std::string>(seen.begin(),seen.end())}};
+  {"coins",coins},{"pulls",pulls},{"bonds",bonds},{"gifts",gifts},{"cards",std::vector<std::string>(cards.begin(),cards.end())},{"flags",std::vector<std::string>(flags.begin(),flags.end())},{"seen",std::vector<std::string>(seen.begin(),seen.end())},{"notes",std::vector<std::string>(notes.begin(),notes.end())}};
  try{Save::Write(SAVE_SLOT,s);}catch(const std::exception&){}
 }
 bool Yumeno::loadFlow(){
@@ -48,6 +48,7 @@ bool Yumeno::loadFlow(){
   cards.clear();for(auto& c:s["cards"])cards.insert(c.get<std::string>());
   flags.clear();for(auto& c:s["flags"])flags.insert(c.get<std::string>());
   seen.clear();for(auto& c:s["seen"])seen.insert(c.get<std::string>());
+  notes.clear();if(s.contains("notes"))for(auto& c:s["notes"])notes.insert(c.get<std::string>());
   openChapter(s.value("chapter",0));beat=s.value("beat",0);
   ctxPool=s.value("pool",-1);ctxSpot=s.value("spot",-1);ctxEnding=s.value("ending",-1);slots=s.value("slots",0);
   auto t=currentBeat().value("t","");
@@ -159,6 +160,7 @@ void Yumeno::flowPresent(){
    auto bg=e.value("bg","");std::string path;
    if(bg.rfind("cg:death",0)==0)band("body");
    if(bg.rfind("cg:",0)==0){auto want=bg.substr(3);if(art.contains("cg"))for(auto& c:art["cg"]){auto n=c.get<std::string>();if(n.rfind(want,0)==0){path="Assets/Art/cg/"+n+".webp";break;}}}
+   else if(bg.rfind("ui:",0)==0)path=artPath("cards",bg.substr(3),"ui",".png");
    else path=artPath("backgrounds",bg,"bg",".webp");
    if(!path.empty()){UI::SetTexture(this,UI_ID,"Background",path);UI::SetVisible(this,UI_ID,"Background",true);UI::SetScale(this,UI_ID,"Background",{1,1});UI::SetPosition(this,UI_ID,"Background",{-40,-24});if(bg.rfind("cg:",0)!=0)lastBackground=path;if(ctxSpot>=0&&bg.rfind("cg:",0)!=0)sceneBackground=path;}
    ++event;continue;
@@ -245,7 +247,10 @@ void Yumeno::menuPicked(int i){
  hideMenu();sfx("ui_confirm");auto& b=currentBeat();
  if(menuKind==MenuKind::Event){
   auto& o=flowEvents()[event]["options"][i];
-  flags.insert(o.value("flag",""));event=o.value("to",event+1);showStory();flowPresent();return;
+  flags.insert(o.value("flag",""));
+  {auto label=o.value("label","");if(label.rfind("적는다",0)==0||label.find("노트")!=std::string::npos){sfx("sfx_note");toast("노트에 적었다");
+   auto at=label.find("(N");if(at!=std::string::npos){auto end=label.find_first_of(" )/",at+1);auto id=label.substr(at+1,end-at-1);cards.insert(id);notes.insert(id);}}}
+  event=o.value("to",event+1);showStory();flowPresent();return;
  }
  if(menuKind==MenuKind::Ending){ctxEnding=i;event=0;showStory();flowPresent();return;}
  if(menuKind==MenuKind::Gift){giveGift(i);return;}
@@ -329,13 +334,22 @@ void Yumeno::slotDone(){
 
 // 재판이 끝나면 (TrialRunner.hpp endTrial)
 void Yumeno::trialDone(){
- coins+=20;UI::SetVisible(this,UI_ID,"Backdrop",true);fvis("FHud",true);nextBeat();
+ UI::SetVisible(this,UI_ID,"Backdrop",true);fvis("FHud",true);showResult();
+}
+// 재판 결과 : 남은 발언력·재도전 횟수로 평가, 코인 보상
+void Yumeno::showResult(){
+ int h=debate.hearts;const char* grade=retries==0&&h>=4?"S":retries<=1&&h>=3?"A":retries<=3?"B":"C";
+ int reward=grade[0]=='S'?30:grade[0]=='A'?20:grade[0]=='B'?15:10;coins+=reward;
+ hideFlow();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);mode=Mode::Card;resultPending=true;
+ fvis("FCardBack",true);fvis("FCard",false);ftext("FCardT",std::string("학급 재판 종료  ·  평가 ")+grade);fvis("FCardT",true);
+ ftext("FCardS","남은 발언력 "+std::to_string(h)+"   다시 한 횟수 "+std::to_string(retries)+"   래피 코인 +"+std::to_string(reward));fvis("FCardS",true);
+ sfx("sfx_coin");
 }
 
 void Yumeno::updateFlow(float delta,bool next,bool click){
  if(toastTimer>0&&(toastTimer-=delta)<=0)fvis("FToast",false);
  Vec2 m{0,0};Input::GetMousePosition(m);
- if(mode==Mode::Card){if(next)nextBeat();return;}
+ if(mode==Mode::Card){if(next){resultPending=false;nextBeat();}return;}
  if(mode==Mode::Credits){if(next){saveFlow();toTitle();}return;}
  if(mode==Mode::Menu){
   int pick=-1;

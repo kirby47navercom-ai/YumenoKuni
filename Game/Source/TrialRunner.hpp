@@ -14,6 +14,17 @@ const char* const DECOYS[]{"가","나","다","라","마","바","사","아","자"
 const char* const MINE_TILES[3]{"Assets/Art/ui/mine_w.svg","Assets/Art/ui/mine_p.svg","Assets/Art/ui/mine_y.svg"};
 }
 
+// ── 스킬 (00 §6, data/skills.json) : 인연 Lv 으로 익히고 SP(6 + 장마다 2, 최대 16) 안에서 표 순서대로 장착 ──
+std::vector<hb::Json> Yumeno::equippedSkills()const{
+ std::vector<hb::Json> out;int sp=std::min(16,6+2*std::max(0,chapterAt-1)),used=0;
+ if(skillData.contains("items"))for(auto& s:skillData["items"]){if(level(s.value("who",""))<s.value("level",9))continue;int c=s.value("sp",2);if(used+c>sp)continue;used+=c;out.push_back(s);}
+ return out;
+}
+bool Yumeno::skillOn(const std::string& effect)const{for(auto& s:equippedSkills())if(s.value("effect","")==effect)return true;return false;}
+void Yumeno::onCorrect(){
+ ++correctCount;
+ if((skillOn("heal_every_2")&&correctCount%2==0)||(skillOn("heal_every_3")&&correctCount%3==0)){if(debate.hearts<maxHearts){debate.hearts++;message("회복!",.6f);}}
+}
 // ── 위젯 도우미 ──────────────────────────────────────────────
 void Yumeno::stext(const std::string& id,const std::string& v){auto& c=stexts[id];if(c==v&&!c.empty())return;c=v;UI::SetText(this,trialui::ID,id,v);}
 void Yumeno::svis(const std::string& id,bool v){auto it=svisible.find(id);if(it!=svisible.end()&&it->second==v)return;svisible[id]=v;UI::SetVisible(this,trialui::ID,id,v);}
@@ -35,10 +46,12 @@ void Yumeno::drawHearts(){
 // 발언력 : 단계 실패 시 감소, 0이면 그 단계 처음부터(V3 : 같은 지점 재도전 + 점수 감점)
 void Yumeno::hurt(){
  sfx("sfx_wrong");
- if(--debate.hearts<=0){debate.hearts=5;retries++;smsg("발언력이 바닥났어요… 다시!",1.6f);restartStage=true;return;}
+ if(stageKind=="showdown"&&skillOn("showdown_guard")&&!sdGuardUsed){sdGuardUsed=true;smsg("최후의 중재!",1.f);return;}
+ if(--debate.hearts<=0&&skillOn("revive")&&!reviveUsed){reviveUsed=true;debate.hearts=2;smsg("다시 일어선다!",1.2f);return;}
+ if(debate.hearts<=0){debate.hearts=maxHearts;retries++;smsg("발언력이 바닥났어요… 다시!",1.6f);restartStage=true;return;}
  smsg("아야! 틀렸어요~!",1.f);
 }
-void Yumeno::heal(){sfx("sfx_correct");debate.hearts=std::min(5,debate.hearts+1);}
+void Yumeno::heal(){sfx("sfx_correct");debate.hearts=std::min(maxHearts,debate.hearts+1);onCorrect();}
 
 // ── 카메라 : 화자 자리로 돌고, 도착하면 화자를 UI 층으로 옮긴다 ─────────────
 void Yumeno::focusSpeaker(const std::string& slug,const std::string& texture){
@@ -82,7 +95,7 @@ std::string Yumeno::poseTexture(const std::string& slug,const std::string& emo,c
 // ── 재판 진행 ────────────────────────────────────────────────
 void Yumeno::startTrial(){
  stages=trials["stages"];
- debate=debate::State{};debate.hearts=5;shownHearts=-1;
+ debate=debate::State{};maxHearts=skillOn("max_heart")?6:5;debate.hearts=maxHearts;shownHearts=-1;correctCount=0;reviveUsed=sdGuardUsed=missGuardUsed=false;retries=0;
  mode=Mode::Trial;dialogVisible(false);
  for(auto id:{"Title","Backdrop","Portrait"})UI::SetVisible(this,UI_ID,id,false);
  UI::SetVisible(this,UI_ID,"Trial",true);UI::SetVisible(this,UI_ID,"CourtDim",true);
@@ -100,6 +113,7 @@ void Yumeno::endTrial(){
 void Yumeno::enterStage(int i){
  restartStage=false;sclear();dialogVisible(false);debateHud(false);playingDebate=false;
  UI::SetPosition(this,trialui::ID,"StageTimer",{1040,656}); // 객관식은 모래시계 아래로 옮긴다
+ for(int k=0;k<4;k++){auto pid="Piece"+std::to_string(k);UI::SetPosition(this,trialui::ID,pid,{std::array<float,4>{540,840,540,240}[k],std::array<float,4>{440,330,560,330}[k]});UI::SetColor(this,trialui::ID,pid,Color{1,.91f,.66f,1});UI::SetFontSize(this,trialui::ID,pid,28.f);}
  stageAt=i;
  if(i>=int(stages.size())){endTrial();return;}
  stage=stages[i];stageKind=stage.value("kind","scene");stageTime=0;optStep=0;sdLine=0;scPair=0;mash=-1;armLine=0;armHits=0;armFinal=-1;taxiQ=0;taxiLane=1;taxiDist=0;anaFilled=0;
@@ -268,7 +282,9 @@ void Yumeno::climaxOptions(){
  // 만화 칸 : 맞힌 칸은 설명, 빈칸은 「?」, 지금 채울 칸은 붉은 테두리
  for(size_t i=0;i<8;i++){bool on=i<panels.size();svis("PanP"+std::to_string(i),on);svis("PanT"+std::to_string(i),on);if(!on)continue;
   bool hole=panels[i].value("blank",false)&&!filledPanel[i];
-  stext("PanT"+std::to_string(i),std::to_string(panels[i].value("no",0))+"  "+(hole?std::string("?"):panels[i].value("caption","")));
+  {auto img=artPath("cg","climax_"+trialKey.substr(1,1)+"_"+(panels[i].value("no",0)<10?"0":"")+std::to_string(panels[i].value("no",0)),"cg",".webp");bool pic=!hole&&!img.empty();
+   svis("PanI"+std::to_string(i),pic);if(pic)UI::SetTexture(this,trialui::ID,"PanI"+std::to_string(i),img);
+   stext("PanT"+std::to_string(i),pic?std::to_string(panels[i].value("no",0)):std::to_string(panels[i].value("no",0))+"  "+(hole?std::string("?"):panels[i].value("caption","")));}
   UI::SetColor(this,trialui::ID,"PanP"+std::to_string(i),int(i)==blank?Color{1,.82f,.86f,1}:hole?Color{.75f,.72f,.78f,1}:Color{.96f,.94f,.91f,1});}
 }
 void Yumeno::setupPlay(){
@@ -313,6 +329,7 @@ void Yumeno::setupPlay(){
   mineAnswer=0;for(size_t i=0;i<bladeIds.size();i++)if(bladeIds[i]==stage.value("card",""))mineAnswer=int(i);
   { // 블록 아래 그림 : 장의 재판장 배경 + 보물 자리에 언령 카드 그림(없으면 이름표만)
    auto art=Data::Get("Assets/Data/art.json");std::string bg="Assets/Art/bg/trial_room.webp";
+   for(auto& m:art["minigame"])if(m.get<std::string>()=="mindmine_"+trialKey.substr(1,1))bg="Assets/Art/ui/minigame/mindmine_"+trialKey.substr(1,1)+".png";
    for(auto& b:art["backgrounds"])if(stage.value("image","").find(b.get<std::string>())!=std::string::npos)bg="Assets/Art/bg/"+b.get<std::string>()+".webp";
    UI::SetTexture(this,trialui::ID,"MineBg",bg);svis("MineBg",true);
    for(int i=0;i<3;i++){bool on=i<int(o.size());svis("MineItem"+std::to_string(i),on);if(!on)continue;stext("MineItem"+std::to_string(i),o[i]);
@@ -324,7 +341,7 @@ void Yumeno::setupPlay(){
   stageLimit=120;
  }
  if(k=="taxi"){svis("Road",true);svis("Car",true);carX=640;taxiLane=1;roadT=0;taxiShow();}
- if(k=="showdown"||k=="armament"||k=="scrum"||k=="anagram"||k=="taxi")stageLimit=k=="armament"||k=="taxi"?999:90; // 브레인 드라이브는 시간 대신 집중력(다른 차와 부딪히면 감소)
+ if(k=="showdown"||k=="armament"||k=="scrum"||k=="anagram"||k=="taxi")stageLimit=k=="armament"||k=="taxi"?999:90*(skillOn("time_pct_5")?1.05f:1.f); // 브레인 드라이브는 시간 대신 집중력(다른 차와 부딪히면 감소)
  if(k!="mindmine"&&k!="showdown"&&k!="armament"&&k!="scrum"&&k!="anagram"&&k!="taxi")stageLimit=999;
 }
 
@@ -340,7 +357,9 @@ void Yumeno::optionPicked(int i){
   return;
  }
  if(stageKind=="scrum"){scrumPick(i);return;}
- smsg(stageKind=="vote"?"투표 완료":"정답!",.8f);beginScript();
+ if(stageKind=="vote"){slotTimer=2.6f;slotWho=personIds[i];svis("SlotFrame",true);svis("SlotTitle",true);stext("SlotTitle","투표");for(int k=0;k<3;k++)svis("Reel"+std::to_string(k),true);
+  for(auto id:{"AccLbl","AccRing","AccFig","AccTag","AccNo","AccName","AccArrows","AccArrowR","QBand","QText","Hint","Shade"})svis(id,false);sfx("sfx_machine");return;}
+ smsg("정답!",.8f);beginScript();
 }
 // 스크럼 배치 : 상대 편은 왼쪽 줄, 우리 편은 오른쪽 줄. 나머지 자리는 잠시 비운다.
 void Yumeno::scrumFormation(float t){
@@ -379,12 +398,14 @@ void Yumeno::scrumNext(){
  optAnswer=-1;for(size_t j=0;j<scrumIds.size();j++)if(scrumIds[j]==scPair)optAnswer=int(j);
  showOptions("",o);
  stext("ScThemN",p.value("them",""));stext("ScThemT",them);for(auto id:{"ScThemP","ScThemN","ScThemT"})svis(id,true);
+ {auto t=slugs.count(p.value("them",""))?slugs.at(p.value("them","")):"";if(!t.empty()){UI::SetTexture(this,trialui::ID,"ScThemFace","Assets/Art/cutin/"+t+"_1.webp");svis("ScThemFace",true);}svis("ScUsFace",false);}
  stageTime=0;
 }
 void Yumeno::scrumPick(int i){
  auto& p=stage["pairs"][scPair];
  stext("ScThemT",p.value("themText",""));
  stext("ScUsN",p.value("us",""));stext("ScUsT",p.value("usText",""));for(auto id:{"ScUsP","ScUsN","ScUsT"})svis(id,true);
+ {auto u=slugs.count(p.value("us",""))?slugs.at(p.value("us","")):"";if(!u.empty()){UI::SetTexture(this,trialui::ID,"ScUsFace","Assets/Art/cutin/"+u+"_3.webp");svis("ScUsFace",true);}}
  smsg("「"+p.value("keyword","")+"」!",.9f);
  scPair++;scrumWait=1.4f;(void)i;
 }
@@ -474,6 +495,14 @@ void Yumeno::updateTrial(float delta){
  drawHearts();
  updateCamera(delta);
  if(restartStage){enterStage(stageAt);return;}
+ if(slotTimer>0){ // 투표 슬롯 : 왼쪽부터 하나씩 멈춘다(V3)
+  slotTimer-=delta;stageTime+=delta;auto faces=alive(true);
+  for(int k=0;k<3;k++){bool stop=slotTimer<1.8f-k*.6f;auto s=stop?slotWho:faces[size_t(stageTime*12+k*5)%faces.size()];
+   auto face=artPath("pad","face_"+s,"pad",".png");UI::SetTexture(this,trialui::ID,"Reel"+std::to_string(k),face.empty()?"Assets/Art/sprites/"+s+"/"+s+"_C01.webp":face);}
+  if(slotTimer<=0){stext("SlotTitle","투표 결과 : "+nameOf(slotWho));sfx("sfx_bell");slotHold=1.4f;}
+  return;
+ }
+ if(slotHold>0){if((slotHold-=delta)<=0){svis("SlotFrame",false);svis("SlotTitle",false);for(int k=0;k<3;k++)svis("Reel"+std::to_string(k),false);beginScript();}return;}
  if(playingDebate){updateDebate(delta);return;}
  if(inScript){updateScript(delta,next);return;}
  auto& k=stageKind;
@@ -513,7 +542,7 @@ void Yumeno::updateTrial(float delta){
   auto& lines=stage["lines"];int n=int(lines.size());bool final=sdLine==n-1;
   if(final){if(pressed("e")){sdBullet=(sdBullet+1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));bladeList();}
             if(pressed("q")){sdBullet=(sdBullet+int(bladeIds.size())-1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));bladeList();}}
-  sdTime+=delta;float dur=final?6.f:3.6f;
+  sdTime+=delta;float dur=(final?6.f:3.6f)*(skillOn("showdown_time")?1.3f:1.f);
   float x=1280-(1280+700)*(sdTime/dur);
   stext("Blade",lines[sdLine].value("text",""));UI::SetPosition(this,trialui::ID,"Blade",{x,trialui::BLADE_Y});
   if(released&&std::abs(aimX-dragX)>150&&std::abs((aimY+dragY)/2-trialui::BLADE_Y)<70){
@@ -535,7 +564,8 @@ void Yumeno::updateTrial(float delta){
    for(int i=0;i<4;i++){
     bool hit=click&&std::abs(aimX-trialui::PIECE_X[i])<100&&std::abs(aimY-trialui::PIECE_Y[i])<32;
     if(!hit&&!pressed(std::to_string(i+1)))continue;
-    if(armOrder[i]==armFinal){armFinal++;svis("Piece"+std::to_string(i),false);if(armFinal>=4){smsg("이걸로 끝이야!",1.4f);svis("Ring",false);svis("RingCore",false);svis("ArmLine",false);beginScript();return;}}
+    if(armOrder[i]==armFinal){static const Color C[4]{{1,.31f,.64f,1},{.4f,1,.55f,1},{1,.25f,.25f,1},{.35f,.7f,1,1}};auto pid="Piece"+std::to_string(i);
+     UI::SetPosition(this,trialui::ID,pid,{70.f+armFinal*290,620});UI::SetColor(this,trialui::ID,pid,C[armFinal]);UI::SetFontSize(this,trialui::ID,pid,34.f);armFinal++;if(armFinal>=4){smsg("이걸로 끝이야!",1.4f);svis("Ring",false);svis("RingCore",false);svis("ArmLine",false);beginScript();return;}}
     else{hurt();armFinal=0;for(int j=0;j<4;j++)svis("Piece"+std::to_string(j),true);}
    }
    return;
@@ -591,6 +621,7 @@ hb::Json Yumeno::autoAction()const{
  if(mode!=Mode::Trial)return {{"kind","none"}};
  if(playingDebate)return {{"kind","debate"}};
  if(inScript)return {{"kind","key"},{"key","Enter"}};
+ if(slotTimer>0||slotHold>0)return {{"kind","wait"}};
  auto& k=stageKind;
  auto optClick=[&](int i){auto& r=optRects[i];return Json{{"kind","click"},{"x",r[0]+r[2]/2},{"y",r[1]+r[3]/2}};};
  if((k=="person"||k=="vote")&&optAnswer>=0)return optHover!=optAnswer?Json{{"kind","key"},{"key","d"}}:Json{{"kind","key"},{"key","Enter"}};

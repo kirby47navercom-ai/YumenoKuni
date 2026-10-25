@@ -1,0 +1,116 @@
+{
+  "stage": 8,
+  "count": 8,
+  "note": "Original illustrative park topology; no source absolute coordinates. A1 is first-chapter state of A0; public maps exclude hidden B and alternate VIP room.",
+  "assets": [
+    {
+      "path": "ui/pad/map_park.png",
+      "w": 2560,
+      "h": 1440,
+      "refs": [
+        "bg/plaza_day.png",
+        "bg/carousel_day.png",
+        "bg/waterpark_day.png",
+        "bg/castle_hall.png",
+        "ui/pad/frame.png"
+      ],
+      "layer": "map",
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Create one original YumenoKuni LappyPad PARK OVERVIEW MAP,2560x1440 opaque PNG. Clean illustrated amusement-park bird's-eye map, thin charcoal/white outlines, pastel pink and mint, original angular UI labels matching reference5. References1-4 are ORIGINAL architecture/material style, not layouts. Preserve this explicit topology for future regional maps: CENTRAL PLAZA at center; MAIN GATE south; HOTEL west; FOOD COURT southwest; CAROUSEL east of plaza; SHOP and CLINIC southeast; WATER PARK farther east; PARADE STREET northeast; MIRROR MAZE north-central; FERRIS WHEEL northwest; THEATER north; COASTER far west; CASTLE far north. Small elevator icon beneath central service area hints underground access, no underground passages shown. Clear walkways connect all attractions, legible schematic miniature buildings in 3D-like theatrical pink/mint style. Dark high-contrast Korean labels, spell EXACTLY once each: 정문 / 중앙광장 / 인포메이션 / 드림호텔 / 푸드코트 / 회전목마 / 기념품샵 / 의무실 / 워터파크 / 퍼레이드스트리트 / 거울미로 / 대관람차 / 드림시어터 / 롤러코스터 / 드림캐슬. Title at top: 유메노쿠니 안내지도. All areas colored for this master overview. No people, bodies, case clues, hidden room numbers, private passage B, portraits, logos, extra words or watermark. Keep generous spacing and readable Korean labels, not dense ornamental text.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-f1f90c95-416c-42c7-a0d4-beb963455e95.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A0.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "ui/pad/map_park.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Original YumenoKuni LappyPad REGION MAP,2560x1440 opaque PNG. Reference1 is the approved ORIGINAL PARK MAP and style master. Preserve its exact attraction positions, pink/mint miniature-building style, angular charcoal/white/pink border and Korean label design. NEW LAYOUT: LEFT 70% is a spacious readable REGIONAL DETAIL DIAGRAM with miniature buildings and connected simple room boxes; RIGHT 30% is a SMALL IDENTICAL PARK OVERVIEW MINIMAP showing context. Do not copy the entire master at full size. No people, case clues, portraits, player marker, invented room numbers, logos or watermark. Dark high-contrast Korean labels, spell every listed label correctly, generous spacing. Title: A0 안내지도. PROLOGUE state: ONLY 정문, 중앙광장, 인포메이션, 드림호텔 and 푸드코트 are in full color; every attraction elsewhere is LOCKED GRAY in minimap, no colored later zones. Detail left shows THREE connected groups: 중앙 광장 — 인포메이션; 호텔 1층 room boxes labeled 로비, 프런트, 라운지, 세탁실, 직원실, 식당, 엘리베이터; 호텔 2~4층 room boxes labeled 복도, 객실, 계단. Small 호텔 별관 with 홀 and 샤워실 and 옥상 정원 are GRAY LOCKED. Food court room boxes labeled 푸드코트, 주방, 냉동고, 창고, 뒷문, 직원 통로. Connect public paths simply, do not invent absolute room assignments. Include only these original locations, no attraction interior details.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-7dfb45db-6d1b-4e7d-9800-988f14fd0bb3.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A1.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "ui/pad/map_park.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Original YumenoKuni LappyPad REGION MAP,2560x1440 opaque PNG. Reference1 is the approved ORIGINAL PARK MAP and style master. Preserve its exact attraction positions, pink/mint miniature-building style, angular charcoal/white/pink border and Korean label design. NEW LAYOUT: LEFT 70% is a spacious readable REGIONAL DETAIL DIAGRAM with miniature buildings and connected simple room boxes; RIGHT 30% is a SMALL IDENTICAL PARK OVERVIEW MINIMAP showing context. Do not copy the entire master at full size. No people, case clues, portraits, player marker, invented room numbers, logos or watermark. Dark high-contrast Korean labels, spell every listed label correctly, generous spacing. Title: A1 안내지도. CHAPTER ONE opening state: prior 정문/중앙광장/인포메이션/드림호텔/푸드코트 plus newly opened 회전목마/기념품샵/의무실 are FULL COLOR in minimap. All later 워터파크/퍼레이드/거울미로/대관람차/극장/롤러코스터/캐슬 GRAY LOCKED. Detail LEFT shows THREE connected attraction groups: 회전목마 with boxes 입구, 탑승장, 제어실, 기계실, 매표소, 창고; 기념품샵 with boxes 매장, 의상 코너, 창고; 의무실 with boxes 진료실, 약품실, 침상. Clear paths connect to a tiny 중앙광장 connector. No case clues, room numbers, bodies or lever/card details. This is the first-chapter state of the starting park, no invented separate island.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-685b9ffc-3d3c-4474-97f7-0dbf47e7a58b.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A2.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "ui/pad/map_park.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Original YumenoKuni LappyPad REGION MAP,2560x1440 opaque PNG. Reference1 is the approved ORIGINAL PARK MAP and style master. Preserve its exact attraction positions, pink/mint miniature-building style, angular charcoal/white/pink border and Korean label design. NEW LAYOUT: LEFT 70% is a spacious readable REGIONAL DETAIL DIAGRAM with miniature buildings and connected simple room boxes; RIGHT 30% is a SMALL IDENTICAL PARK OVERVIEW MINIMAP showing context. Do not copy the entire master at full size. No people, case clues, portraits, player marker, invented room numbers, logos or watermark. Dark high-contrast Korean labels, spell every listed label correctly, generous spacing. Title: A2 안내지도. CHAPTER TWO opening state: WATER PARK and PARADE STREET newly color; ALL previously opened starting plaza/hotel/food/carousel/shop/clinic stay color in minimap. Mirror maze, wheel, theater, coaster, castle are GRAY LOCKED. LEFT detail shows TWO groups: 워터파크 with clear labeled miniature pools/rooms 입구, 웨이브 풀, 슬라이드, 유수풀, 라이프가드, 탈의실, 샤워실, 매점, 기계실, 펌프실; 퍼레이드 스트리트 with labeled rooms 거리, 플로트, 의상실, 소품실, 직원실, 무대. Simple clear connecting paths, correct pool and parade miniature architecture, no case clues or people. Blue/yellow region accents within same original pink/mint pad-map family.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-a10c5b8e-0e4a-4e0a-acdd-fbe41c7ded24.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A3.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "ui/pad/map_park.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Original YumenoKuni LappyPad REGION MAP,2560x1440 opaque PNG. Reference1 is the approved ORIGINAL PARK MAP and style master. Preserve its exact attraction positions, pink/mint miniature-building style, angular charcoal/white/pink border and Korean label design. NEW LAYOUT: LEFT 70% is a spacious readable REGIONAL DETAIL DIAGRAM with miniature buildings and connected simple room boxes; RIGHT 30% is a SMALL IDENTICAL PARK OVERVIEW MINIMAP showing context. Do not copy the entire master at full size. No people, case clues, portraits, player marker, invented room numbers, logos or watermark. Dark high-contrast Korean labels, spell every listed label correctly, generous spacing. Title: A3 안내지도. CHAPTER THREE opening: mirror maze, Ferris wheel and theater newly color, all earlier plaza/hotel/food/carousel/shop/clinic/water/parade stay colored in minimap; coaster and castle are GRAY LOCKED. LEFT detail has THREE neatly separated groups. 거울 미로: 입구, 미로 1, 미로 2, 미로 3, 중앙 홀, 비상구, 관리실. 대관람차: 매표소, 승강장, 곤돌라, 제어실, 최상부. 드림 시어터: 로비, 1층 객석, 2층 객석, 무대, 장치실, 분장실, 음향실, 소품고, 비상구. Preserve each Korean label clearly, no cases or props, no hidden passages. Navy/purple region accents, same original pad-map family. Keep room diagrams simple and readable, minibuildings with connected room labels, no invented external sky deck for 최상부: it denotes inside the top-position gondola.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-3366a813-6648-4caf-9411-692b62cea909.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A5.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "ui/pad/map_park.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Original YumenoKuni LappyPad REGION MAP,2560x1440 opaque PNG. Reference1 is the approved ORIGINAL PARK MAP and style master. Preserve its exact attraction positions, pink/mint miniature-building style, angular charcoal/white/pink border and Korean label design. NEW LAYOUT: LEFT 70% is a spacious readable REGIONAL DETAIL DIAGRAM with miniature buildings and connected simple room boxes; RIGHT 30% is a SMALL IDENTICAL PARK OVERVIEW MINIMAP showing context. Do not copy the entire master at full size. No people, case clues, portraits, player marker, invented room numbers, logos or watermark. Dark high-contrast Korean labels, spell every listed label correctly, generous spacing. Title: A5 안내지도. CHAPTER FIVE opening: CASTLE newly colored, all earlier park areas remain colored in minimap. Underground core remains locked and is NOT shown. LEFT detail a connected illustrative castle interior diagram, eight rooms with exact labels: 대연회장 / 서고 / 시계탑 / 갑옷 복도 / 왕좌의 방 / 수장고 / 지하 체험관 / 플로트 격납고. Main heading 드림 캐슬. Simple public connections with graceful paths, miniature original pink/cream castle architecture matching master, muted gray-green interior accents. Do not show trap wires, clock time, weapon details, case clues, people or hidden rooms. Correct Korean labels, readable open spacing.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-8fc2008c-0727-416d-90aa-0f74e101bc85.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A4.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "art/_work/batch6_rejected_mapA4_vip_layout.png",
+        "bg/vip_hall_a.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Edit ONLY the LOWER LEFT HOTEL FIFTH-FLOOR panel of reference1. Keep rollercoaster panel, all borders/titles and entire right park minimap unchanged. Replace the old hotel floor diagram with a clean TOP-DOWN public floor plan matching corridor reference2: long corridor runs VERTICALLY from elevator landing at BOTTOM to linen cupboard at TOP. Four guest rooms are ONLY on PAGE LEFT of corridor, in bottom-to-top order501,502,503,504, each once. Each door opens into the LEFT corridor wall. The corridor RIGHT wall is SOLID with no guest doors. At TOP FAR END is ONE very shallow linen cupboard labeled 리넨 창고. At BOTTOM elevator landing are three separate PUBLIC branch boxes labeled 라운지, 갤러리, 계단 and the elevator labeled 엘리베이터; do not add unlabeled doors or extra rooms. Label central corridor 복도. Diagram miniature/isometric original pink hotel architectural style, all text legible. Four left guest rooms only, one terminal linen cupboard, no505 or secret room or alternate version. You may widen the lower panel vertically within its current border to make room for all labels, but preserve upper coaster panel and right minimap. Original LappyPad design,2560x1440 opaque PNG.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-ec30a029-f022-4bb2-8108-a9119e160554.png",
+      "review": "passed"
+    },
+    {
+      "path": "ui/pad/map_A6.png",
+      "w": 2560,
+      "h": 1440,
+      "layer": "map",
+      "refs": [
+        "ui/pad/map_park.png"
+      ],
+      "source_document": "docs/spec/14_코덱스_에셋_작업지시서.md §5;docs/spec/03_탐색_수사_시스템_사양.md §2",
+      "prompt": "Original YumenoKuni LappyPad REGION MAP,2560x1440 opaque PNG. Reference1 is the approved ORIGINAL PARK MAP and style master. Preserve its exact attraction positions, pink/mint miniature-building style, angular charcoal/white/pink border and Korean label design. NEW LAYOUT: LEFT 70% is a spacious readable REGIONAL DETAIL DIAGRAM with miniature buildings and connected simple room boxes; RIGHT 30% is a SMALL IDENTICAL PARK OVERVIEW MINIMAP showing context. Do not copy the entire master at full size. No people, case clues, portraits, player marker, invented room numbers, logos or watermark. Dark high-contrast Korean labels, spell every listed label correctly, generous spacing. Title: A6 안내지도. PUBLIC chapter SIX underground CORE map: LEFT detail is a clean readable original 3D-like theatrical technical miniature floor diagram. Show ONLY the known public route: 엘리베이터 connects to 대피소, then 점검 통로 A, then 코어 홀 and 제어실. Exactly these FIVE labels with main heading 드림 코어. Ordinary metal walkways and core machinery with restrained core-blue light, white/mint details and original angular pink/charcoal pad border. CRITICAL: NEVER draw or label any hidden passage B, secret branch, unnamed corridor, graffiti, uncertain room or private route. No symbols hinting a hidden route. The RIGHT park minimap preserves exact master park geometry and all previously opened park attractions are colored, with only one small elevator access symbol pointing below ground. No core-machine case clues or people.",
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a16f77-3787-71c3-af6b-14a978346b47\\exec-42549b46-cef7-4e83-ac76-8306e8bd810f.png",
+      "review": "passed"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ private:
  enum class Mode{Title,Story,Pad,End,Trial,Menu,Grid,Card,Credits,Explore,Map,Confirm,Popup};
  Mode mode=Mode::Title,beforePad=Mode::Story;
  bool ready=false;
- hb::Json story,emotions,rules,trials,chapter,art,giftData,kotodama,reactions;
+ hb::Json story,emotions,rules,trials,chapter,art,giftData,kotodama,reactions,hotspotData;
  int event=0;
  std::string line,speaker,portrait;
  int lineLength=0;
@@ -43,7 +43,7 @@ private:
  enum class MenuKind{Event,Ending,Gift};enum class After{None,Gift,Slot,Explore,Trial};
  MenuKind menuKind=MenuKind::Event;After after=After::None;
  bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0;float toastTimer=0,blink=0,kenTime=0,shakeTimer=0;bool elevatorDone=false;bool nextShown=false;
- std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen;std::vector<std::string> gridSlugs,giftOrder,trialDead;
+ std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen,notes;std::vector<std::string> gridSlugs,giftOrder,trialDead;
  std::string giftTarget,musicCue,lastBackground,sceneBackground;std::map<std::string,std::string> ftexts;std::map<std::string,bool> fvisible;
  void ftext(const std::string& id,const std::string& v);void fvis(const std::string& id,bool v);
  std::string artPath(const std::string& group,const std::string& name,const std::string& dir,const std::string& ext)const;
@@ -96,6 +96,8 @@ private:
  void updateTrial(float delta);hb::Json autoAction()const;
  void scrumFormation(float t);void taxiQText();void updateTaxi(float delta);
  std::vector<std::array<float,4>> optRects;std::vector<std::string> taxiChars;
+ std::vector<std::string> panicWho;hb::Json skillData;int correctCount=0,maxHearts=5;bool reviveUsed=false,sdGuardUsed=false,missGuardUsed=false,resultPending=false;
+ std::vector<hb::Json> equippedSkills()const;bool skillOn(const std::string& effect)const;void onCorrect();void showResult();std::string slotWho;float slotTimer=0,slotHold=0;
  float scrumT=1,scrumWait=0,cubeD=-1,rivalD=-1,paxD=-1,carX=640,roadT=0;int taxiGot=0,taxiPhase=0,cubeLane=1,rivalLane=0;
  void drawGlyphs(const std::string& prefix,int capacity,const std::vector<debate::Glyph>& glyphs);
 };

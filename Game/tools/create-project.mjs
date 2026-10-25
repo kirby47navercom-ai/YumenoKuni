@@ -26,7 +26,7 @@ await write('Assets/Data/emotion.json',JSON.parse(await fs.readFile(path.join(re
 await write('Assets/Data/story.json',{chapters:['P','1','2','3','4','5','6'],trials:['11c','12c'],dead:{'11c':['taiga'],'12c':['taiga','sho','yuu']}});
 // 장 진행표 (tools/build_flow.py) · 선물 · 언령 이름
 for(const f of (await fs.readdir(path.join(repo,'data/flow'))).filter(f=>f.endsWith('.json')))await copy('data/flow/'+f,'Assets/Data/flow/'+f);
-await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/reactions.json','Assets/Data/reactions.json');
+await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/hotspots.json','Assets/Data/hotspots.json');await copy('data/skills.json','Assets/Data/skills.json');await copy('data/reactions.json','Assets/Data/reactions.json');
 await copy('data/kotodama.json','Assets/Data/kotodama.json'); // 이름·설명 : tools/build_trial.py · build_flow.py
 for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
@@ -75,7 +75,8 @@ for(const f of await list('art/cutin',/\.webp$/))await copy('art/cutin/'+f,'Asse
 const cgs=(await list('art/cg',/\.webp$/)).filter(f=>!/_(bg|fg)\.webp$/.test(f));for(const f of cgs)await copy('art/cg/'+f,'Assets/Art/cg/'+f);
 const giftIcons=await list('ui/gift',/^G\d\d\.png$/);for(const f of giftIcons)await copy('ui/gift/'+f,'Assets/Art/gift/'+f);
 const padArt=await list('ui/pad',/^(coin|capsule_machine|face_\w+|map_\w+)\.png$/);for(const f of padArt)await copy('ui/pad/'+f,'Assets/Art/pad/'+f);
-const cards=await list('ui/common',/^(chapter_\w+|gameover|credits_bg|ending_\w+)\.png$/);for(const f of cards)await copy('ui/common/'+f,'Assets/Art/ui/'+f);
+const minigame=await list('ui/minigame',/\.png$/);for(const f of minigame)await copy('ui/minigame/'+f,'Assets/Art/ui/minigame/'+f);
+const cards=await list('ui/common',/^(chapter_\w+|gameover|credits_bg|ending_\w+|broadcast_\w+)\.png$/);for(const f of cards)await copy('ui/common/'+f,'Assets/Art/ui/'+f);
 // 소리 : audio/cues.json 에 파일이 적힌 것만
 const cues=JSON.parse(await fs.readFile(path.join(repo,'audio/cues.json'),'utf8')),audio={};
 // 파일 찾기 : cues.json 의 file 칸 → 없으면 audio/ 아래에서 큐 ID 와 같은 이름(bgm_title.ogg 등, 하위 폴더 포함)
@@ -86,7 +87,7 @@ for(const group of ['bgm','sfx'])for(const [k0,v] of Object.entries(cues[group]|
 // 큐 목록 : 사용자가 파일 이름을 맞출 수 있게 (audio/CUES.md)
 await fs.writeFile(path.join(repo,'audio/CUES.md'),['# 소리 파일 이름 표','','`audio/` 아래(하위 폴더도 됨)에 **아래 이름 그대로** 파일을 넣으면 다음 빌드부터 그 자리에서 나온다. 확장자는 .ogg .mp3 .wav .m4a .flac 아무거나.','','| 파일 이름 | 쓰는 곳 | 들어감 |','|---|---|---|',
  ...['bgm','sfx'].flatMap(g=>Object.entries(cues[g]||{}).map(([k0,v])=>{const k=k0.replace(/_\*$/,'');return `| ${k} | ${(v&&(v.use||v.name))||''} | ${audio[k]?'✓':''} |`;})),''].join('\n'));
-await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5)),kotodama:icons.map(f=>f.slice(0,-4)),cg:cgs.map(f=>f.slice(0,-5)),gifts:giftIcons.map(f=>f.slice(0,-4)),pad:padArt.map(f=>f.slice(0,-4)),cards:cards.map(f=>f.slice(0,-4)),audio});
+await write('Assets/Data/art.json',{backgrounds:bgs.map(f=>f.slice(0,-5)),kotodama:icons.map(f=>f.slice(0,-4)),cg:cgs.map(f=>f.slice(0,-5)),gifts:giftIcons.map(f=>f.slice(0,-4)),pad:padArt.map(f=>f.slice(0,-4)),cards:cards.map(f=>f.slice(0,-4)),minigame:minigame.map(f=>f.slice(0,-4)),audio});
 
 // 4) UI 위젯 (1280×720 기준, V3식 대화창)
 const body='Assets/Fonts/pretendard/Pretendard-Medium.otf',head='Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf';
@@ -195,7 +196,7 @@ await write('Assets/UI/Main.hbwidget.json',w);
  // 보기 8칸 : V3 번호 띠(오른쪽 끝까지), 고른 띠만 파랗게. 좌표는 TrialRunner showOptions 가 정한다
  for(let i=0;i<8;i++){put('Image','OptP'+i,[300,250+i*46,980,42],{texture:'Assets/Art/ui/band_off.svg',imageFit:'fill'});put('Text','OptT'+i,[330,254+i*46,900,34],{fontSize:24});}
  // 클라이맥스 만화 칸 8 (4×2)
- for(let i=0;i<8;i++){const c=i%4,r=Math.floor(i/4);put('Panel','PanP'+i,[24+c*310,102+r*150,298,142],{background:'#f4f0e8',borderWidth:4,borderColor:'#16121c'});put('Text','PanT'+i,[36+c*310,110+r*150,274,126],{fontSize:15,color:'#16121c',wrap:true});}
+ for(let i=0;i<8;i++){const c=i%4,r=Math.floor(i/4);put('Panel','PanP'+i,[24+c*310,102+r*150,298,142],{background:'#f4f0e8',borderWidth:4,borderColor:'#16121c'});put('Image','PanI'+i,[28+c*310,106+r*150,290,134],{texture:'',imageFit:'cover'});put('Text','PanT'+i,[36+c*310,110+r*150,274,126],{fontSize:15,color:'#16121c',wrap:true});}
  // 발굴 이매지네이션 블록 12×6 아래에 보물 3개
  put('Image','MineBg',[160,130,960,420],{texture:'',imageFit:'cover'});
 for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'',imageFit:'contain'});put('Text','MineItem'+i,[180+i*320,376,280,32],{font:head,fontSize:20,align:'center',color:'#ffe9a8',background:'#1b1325d0'});}
@@ -233,6 +234,17 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  put('Text','ScUsT',[546,476,690,66],{font:head,fontSize:28,wrap:true});
  put('Image','SdFace',[-60,60,620,620],{texture:'',imageFit:'contain',opacity:.95}); // 반론 : 상대 큰 얼굴(V3)
  put('Image','ArmFace',[1010,470,260,240],{texture:'',imageFit:'cover'}); // 이론 무장 : 미오 얼굴
+ // 패닉 논의(V3) : 화면을 사선 세 칸으로 나눠 세 사람을 동시에
+ for(let i=0;i<3;i++){await write(`Assets/Art/ui/panic_${i}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" width="520" height="720"><path d="M120 0H520L400 720H0Z" fill="none" stroke="${['#ff4fa3','#36e3ff','#ffe36e'][i]}" stroke-width="10"/></svg>`);
+  put('Image','PanicFig'+i,[-40+i*440,60,520,660],{texture:'',imageFit:'cover',opacity:.85});put('Image','PanicFrame'+i,[-40+i*440,0,520,720],{texture:`Assets/Art/ui/panic_${i}.svg`,imageFit:'fill'});
+  put('Text','PanicName'+i,[40+i*440,24,300,40],{font:head,fontSize:26,color:['#ff8fc8','#7dfcff','#ffe36e'][i]});}
+ // 투표 슬롯머신(V3) : 얼굴 세 칸이 돌다가 멈춘다
+ await write('Assets/Art/ui/slot_frame.svg','<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320"><rect x="6" y="6" width="888" height="308" rx="30" fill="#16121c" stroke="#ffd21f" stroke-width="12"/>'+[0,1,2].map(i=>`<rect x="${40+i*280}" y="40" width="260" height="240" rx="16" fill="#0b0812" stroke="#ff4fa3" stroke-width="6"/>`).join('')+'</svg>');
+ put('Image','SlotFrame',[190,200,900,320],{texture:'Assets/Art/ui/slot_frame.svg',imageFit:'fill'});
+ for(let i=0;i<3;i++)put('Image','Reel'+i,[236+i*280,246,252,232],{texture:'',imageFit:'cover'});
+ put('Text','SlotTitle',[0,120,1280,70],{font:head,fontSize:52,align:'center',color:'#ffd21f',text:'투표 결과'});
+ // 스크럼(V3) : 맞서는 두 사람 얼굴
+ put('Image','ScThemFace',[-40,80,420,420],{texture:'',imageFit:'contain'});put('Image','ScUsFace',[900,330,420,420],{texture:'',imageFit:'contain'});
  put('Text','StageMsg',[0,300,1280,90],{font:head,fontSize:60,align:'center',color:'#ff8fc8'});
  put('Text','StageTimer',[1040,656,220,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:40,color:'#ffb21f',align:'right'});
  await write('Assets/UI/Stage.hbwidget.json',v);

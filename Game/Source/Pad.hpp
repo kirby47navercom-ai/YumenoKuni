@@ -58,6 +58,8 @@ void Yumeno::padShowPage(){
   auto s=padui::STUDENTS[std::clamp(padRow,0,14)];int lv=level(s),pts=bonds.count(s)?bonds.at(s):0;
   std::string t=nameOf(s)+"\n\n";for(int k=5;k>=1;k--)t+=std::string(k<=lv?"■ ":"□ ")+"Lv"+std::to_string(k)+(k==lv?"   ← 지금":"")+"\n";
   t+="\n인연 포인트 "+std::to_string(pts)+(flowOn&&!inPark(s)?"\n\n(이제 만날 수 없다)":"");
+  {auto eq=equippedSkills();for(auto& k:skillData["items"])if(k.value("who","")==std::string(s)){bool got=lv>=k.value("level",9);bool on=std::any_of(eq.begin(),eq.end(),[&](const hb::Json& e){return e.value("id","")==k.value("id","");});
+   t+="\n\n스킬 「"+k.value("name","")+"」 "+(on?"[장착]":got?"[익힘]":"(Lv"+std::to_string(k.value("level",0))+")")+"\n  "+k.value("text","");}}
   ptext("PdLevel",t);pvis("PdLevel",true);
   UI::SetTexture(this,padui::ID,"PdStand",std::string("Assets/Art/figure/")+s+".webp");pvis("PdStand",true);
   ptext("PdHint","A/D 학생 넘기기   Backspace 돌아가기");
@@ -72,7 +74,7 @@ void Yumeno::padShowPage(){
  if(padPageAt==1){bool icon=false;for(auto& c:art["kotodama"])if(c.get<std::string>()==cur.first)icon=true;if(icon)pic="Assets/Art/kotodama/"+cur.first+".png";title=kotodamaName(cur.first);body=kotodamaText(cur.first);}
  if(padPageAt==2){pic=artPath("gifts",cur.first,"gift",".png");title=giftName(cur.first);for(auto& g:giftData["items"])if(g.value("id","")==cur.first)body="등급 : "+g.value("tier","");}
  if(padPageAt==4){title=cur.first;body=cur.second.substr(std::min(cur.second.size(),cur.first.size()+3));}
- if(padPageAt==0){pic=artPath("backgrounds",cur.first,"bg",".webp");if(pic.empty()){pic=artPath("pad","map_park","pad",".png");}body=" ";}
+ if(padPageAt==0){auto ch=chapter.value("chapter","P");pic=cur.first=="here"?artPath("pad","map_A"+std::string(ch=="P"||ch=="1"?"0":ch),"pad",".png"):artPath("backgrounds",cur.first,"bg",".webp");if(pic.empty())pic=artPath("pad","map_park","pad",".png");body=cur.first=="here"?"지금 갈 수 있는 구역":" ";}
  if(padPageAt==5){title=cur.second;body=cur.first=="save"?"지금까지의 진행을 저장합니다.":"저장하지 않은 진행은 사라집니다.";}
  pvis("PdPic",!pic.empty());if(!pic.empty())UI::SetTexture(this,padui::ID,"PdPic",pic);
  ptext("PdPicTitle",title);ptext("PdPicText",body.empty()?std::string(" "):body);pvis("PdPicTitle",true);pvis("PdPicText",true);

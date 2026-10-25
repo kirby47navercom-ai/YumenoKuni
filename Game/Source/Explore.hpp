@@ -66,7 +66,7 @@ bool Yumeno::roomDone(const Room& r)const{
 // 지도 왼쪽 : 가리킨 장소 미리보기 + 그곳에 있는 사람
 void Yumeno::mapPreview(){
  if(mapHover>=int(rooms.size()))return;auto& r=rooms[mapHover];
- auto img=artPath("backgrounds",r.bg,"bg",".webp");evis("MapImg",!img.empty());if(!img.empty())UI::SetTexture(this,exui::ID,"MapImg",img);
+ auto img=r.bg.rfind("cg:",0)==0?artPath("cg",r.bg.substr(3),"cg",".webp"):artPath("backgrounds",r.bg,"bg",".webp");evis("MapImg",!img.empty());if(!img.empty())UI::SetTexture(this,exui::ID,"MapImg",img);
  std::string who;for(auto& p:r.people)who+=(who.empty()?"":" · ")+nameOf(p);
  etext("MapPlace",r.name);etext("MapWho",who.empty()?std::string(" "):who);evis("MapPlace",true);evis("MapWho",true);
 }
@@ -80,7 +80,7 @@ int Yumeno::mapAt(float x,float y)const{
 void Yumeno::enterRoom(int i){
  roomAt=i;auto& r=rooms[i];panX=0;sfx("sfx_door");
  hideExplore();hideFlow();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);
- auto bg=artPath("backgrounds",r.bg,"bg",".webp");
+ auto bg=r.bg.rfind("cg:",0)==0?artPath("cg",r.bg.substr(3),"cg",".webp"):artPath("backgrounds",r.bg,"bg",".webp"); // 범죄 현장은 사망 CG
  evis("ExBg",true);if(!bg.empty()){UI::SetTexture(this,exui::ID,"ExBg",bg);lastBackground=bg;if(currentBeat().value("t","")=="investigate")sceneBackground=bg;}
  for(auto id:{"ArL","ArR","AreaBand","AreaIcon","AreaName","Mini","ExHint","Cross"})evis(id,true);
  etext("AreaName",r.name);
@@ -88,7 +88,11 @@ void Yumeno::enterRoom(int i){
  // 조사 대상 자리 : 배경 가로를 고르게 나눠 바닥~벽 높이에 둔다(인물은 사이사이)
  hotspots.clear();
  int n=int(r.objects.size()),m=int(r.people.size());
- for(int k=0;k<n;k++){if(!r.objects[k].who.empty())continue;float u=.14f+.72f*(k+.5f)/std::max(1,n);float v=k%2?.58f:.7f;hotspots.push_back({u,v,false,k,""});}
+ // 조사 지점 : data/hotspots.json(그림을 보고 정한 좌표)이 있으면 그 자리, 없으면 고르게
+ const hb::Json* marks=nullptr;if(r.spot>=0){auto id=currentBeat()["spots"][r.spot].value("id","");if(hotspotData.contains(id))marks=&hotspotData[id];}
+ for(int k=0;k<n;k++){if(!r.objects[k].who.empty())continue;float u=.14f+.72f*(k+.5f)/std::max(1,n);float v=k%2?.58f:.7f;
+  if(marks)for(auto& [key,uv]:marks->items())if(r.objects[k].name.rfind(key,0)==0){u=uv[0].get<float>();v=uv[1].get<float>();break;}
+  hotspots.push_back({u,v,false,k,""});}
  for(int k=0;k<m&&k<6;k++){float u=m==1?.5f:.22f+.56f*k/std::max(1,m-1);hotspots.push_back({u,.98f,true,-1,r.people[k]});
   UI::SetTexture(this,exui::ID,"Fig"+std::to_string(k),"Assets/Art/figure/"+r.people[k]+".webp");evis("Fig"+std::to_string(k),true);}
  placeRoom();mode=Mode::Explore;
@@ -130,7 +134,7 @@ void Yumeno::interact(int i){
  auto h=hotspots[i];auto& r=rooms[roomAt];bool inv=currentBeat().value("t","")=="investigate";
  if(inv){
   int obj=h.object;
-  if(h.person)for(auto& o:r.objects)if(o.who==h.who)obj=o.index;
+  if(h.person){auto& s=currentBeat()["spots"][r.spot];for(auto& o:r.objects)if(o.who==h.who){obj=o.index;if(!seen.count(s.value("id","")+"#"+std::to_string(o.index)))break;}}
   if(obj<0){sayOnce(h.who,reaction(h.who,"chat"),"C01",After::Explore);return;}
   auto& o=r.objects[obj];segmentKey=currentBeat()["spots"][r.spot].value("id","")+"#"+std::to_string(o.index);
   playSegment(r.spot,o.from,o.to);return;

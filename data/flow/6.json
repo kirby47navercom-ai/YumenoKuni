@@ -529,7 +529,7 @@
       },
       {
        "type": "bg",
-       "bg": "rollercoaster_inspection"
+       "bg": "core_hall"
       },
       {
        "type": "stage",
@@ -566,8 +566,14 @@
      "intro": 0,
      "objects": [
       {
-       "name": "I-1 코어 홀 (5년 전 사고 현장)",
+       "name": "난간 손바닥 자국",
        "from": 0,
+       "to": 6,
+       "who": ""
+      },
+      {
+       "name": "점검표(위조) 사본",
+       "from": 6,
        "to": 14,
        "who": ""
       }
@@ -704,7 +710,7 @@
       }
      ],
      "spot": "I-4 미오의 노트 · 일기장",
-     "bg": "hotel_lobby",
+     "bg": "core_shelter",
      "intro": 0,
      "objects": [
       {
@@ -766,12 +772,24 @@
       }
      ],
      "spot": "I-5 서약선 · 침묵 패턴 정리 (노트 정리 이벤트)",
-     "bg": "hotel_lobby",
+     "bg": "core_shelter",
      "intro": 0,
      "objects": [
       {
-       "name": "I-5 서약선 · 침묵 패턴 정리 (노트 정리 이벤트)",
+       "name": "서약선 보유자 기록",
        "from": 0,
+       "to": 5,
+       "who": ""
+      },
+      {
+       "name": "침묵 패턴",
+       "from": 5,
+       "to": 6,
+       "who": ""
+      },
+      {
+       "name": "점검 통로 B 언급 (E6-05) / 시계 조작 지식 (E6-07 : 5장 T5-06) 연동",
+       "from": 6,
        "to": 7,
        "who": ""
       }
@@ -813,7 +831,7 @@
       }
      ],
      "spot": "I-6 코토의 완장",
-     "bg": "hotel_lobby",
+     "bg": "core_shelter",
      "intro": 0,
      "objects": [
       {

@@ -25,7 +25,7 @@ PLACES = [("재판장", ["trial_room"]), ("엘리베이터", ["trial_elevator"])
           ("세탁", ["hotel_laundry", "hotel_corridor"]), ("옥상", ["roof_garden"]), ("별관", ["annex_hall"]), ("계단", ["hotel_stairs"]),
           ("505", ["vip_505"]), ("리넨", ["vip_linen"]), ("갤러리", ["vip_gallery"]), ("5층", ["vip_hall_a", "hotel_corridor"]),
           ("복도", ["hotel_corridor"]), ("호텔", ["hotel_lobby"]), ("인포메이션", ["info_center"]),
-          ("파도", ["waterpark_pump"]), ("제어반", ["carousel_control"]), ("매표소", ["carousel_ticket", "carousel_control"]), ("기계실", ["carousel_machine", "waterpark_machine"]),
+          ("파도 타이머", ["waterpark_pump"]), ("파도", ["waterpark_pump"]), ("엘리베이터 홀", ["vip_elevator", "hotel_elevator"]), ("비상 장비", ["theater_emergency", "hotel_lobby"]), ("제어반", ["carousel_control"]), ("매표소", ["carousel_ticket", "carousel_control"]), ("기계실", ["carousel_machine", "waterpark_machine"]),
           ("회전목마", ["carousel_day"]), ("탑승장", ["carousel_day"]), ("기념품", ["souvenir_shop"]), ("의상", ["shop_costume", "parade_costume"]),
           ("약품", ["clinic_pharmacy", "infirmary"]), ("의무실", ["infirmary"]), ("뒷문", ["food_backdoor"]), ("서비스 복도", ["food_service_corridor"]),
           ("주방", ["food_kitchen", "foodcourt"]), ("창고", ["food_storage"]), ("푸드코트", ["foodcourt"]),
@@ -47,23 +47,28 @@ EVENT_CG = {"10:P-01": "event_P_awakening", "10:P-02": "event_P_meeting", "10:2_
             "16b:C_A_엔딩_A_기본_체포_30분_": "event_6_ending_A", "16b:C_B_엔딩_B_어두운_분기_처형": "event_6_ending_B", "16b:C_C_에필로그_후_공통_5분_": "event_6_gate"}
 # 막간 : I_N_1 식사 / I_N_2 서비스씬 / I_N_4 미오 혼자
 INTERLUDE_CG = {0: ["dinner", "rooms", "room"], 1: ["breakfast", "laundry", "room"], 2: ["dinner", "cat", "room"], 3: ["lunch", "movie", "room"], 4: ["breakfast", "gondola", "room"], 5: ["kitchen", "feast", "room"]}
+# 범죄 현장 방 = 사망 CG (현장 이름 낱말 → CG)
+CRIME_ROOM = {1: {"탑승장": "death_1_taiga"}, 2: {"웨이브 풀": "death_2_yuu"}, 3: {"장치실": "death_3a_riku", "음향실": "death_3b_sora"},
+              4: {"505": "death_4_haruka"}, 5: {"서고": "death_5_nana"}}
 # 사건 CG : 그 장 첫 수사 현장에 들어갈 때
 INCIDENT_CG = {1: "event_1_incident", 2: "event_2_headphones", 3: "event_3_theater_case", 4: "event_4_latch", 5: "event_5_crossbow"}
 CARD = re.compile(r"(증거|증언|규칙|마법|메모|노트)\s*카드\s*[:：]?\s*(.*?)\s*\(?([ETMNR]\d?-\d+(?:-[a-z])?)\)?")
 OPTION = re.compile(r"^-?\s*([A-F])\.\s*(.*)$")
 REACT = re.compile(r"\[([^\]]+)\]\s*\"([^\"]+)\"(?:\s*\{([^}]*)\})?")
 
+KOTO = json.load(open(os.path.join(ROOT, "data", "kotodama.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "data", "kotodama.json")) else {}  # build_trial.py 가 만든 언령 이름
 backgrounds = sorted(os.path.splitext(f)[0] for f in os.listdir(os.path.join(ROOT, "bg")) if f.endswith(".webp"))
 
 
 def background(text, night=False):
-    for word, prefixes in PLACES:
-        if word in text:
-            for p in prefixes:
-                hits = [b for b in backgrounds if b.startswith(p)]
-                if hits:
-                    pick = [b for b in hits if ("night" in b) == night] or hits
-                    return pick[0]
+    """장소 낱말 → 배경. 여러 낱말이 맞으면 가장 긴(구체적인) 낱말, 같으면 앞에 나온 것."""
+    found = sorted(((-len(w), text.index(w), w, prefixes) for w, prefixes in PLACES if w in text))
+    for _, _, word, prefixes in found:
+        for p in prefixes:
+            hits = [b for b in backgrounds if b.startswith(p)]
+            if hits:
+                pick = [b for b in hits if ("night" in b) == night] or hits
+                return pick[0]
     return None
 
 
@@ -189,6 +194,9 @@ def scene_beat(s, file_key):
     uid = f"{file_key}:{s['id']}"
     evs = convert(s["events"], uid, s["title"])
     cg = EVENT_CG.get(uid)
+    if not cg and ("아침 방송" in s["title"] or "밤 방송" in s["title"]):  # 모니터 속 래피 방송 (V3 : 차임 → 모니터)
+        evs.insert(1 if evs and evs[0]["type"] == "bg" else 0, {"type": "bg", "bg": "ui:broadcast_" + ("morning" if "아침" in s["title"] else "night")})
+        shift(evs, 1 if evs and evs[0]["type"] == "bg" else 0)
     m = re.match(r"I_(\d)_([124])_", s["id"]) if file_key == "17" else None
     if m:
         cg = f"interlude_{m.group(1)}_" + INTERLUDE_CG[int(m.group(1))][{"1": 0, "2": 1, "4": 2}[m.group(2)]]
@@ -213,7 +221,11 @@ def shift(events, at):
 def room_of(beat, ch):
     """수사 장면 → 방 : 들어갈 때 대사(첫 break 전) + 조사 대상들. 이벤트 번호는 장면 안 그대로라 goto 가 유지된다."""
     evs = beat["events"]
-    bg = next((e["bg"] for e in evs if e["type"] == "bg" and not e["bg"].startswith("cg:")), None)
+    # 현장 이름 → 배경. 이름에 장소가 없으면(증언 수집 등) 그 장 기본 장소
+    CH_DEFAULT = {1: "hotel_lobby", 2: "hotel_lobby", 3: "theater_lobby", 4: "vip_lounge", 5: "castle_hall", 6: "core_shelter"}
+    bg = background(beat.get("spot", "")) or CH_DEFAULT.get(ch)
+    if any(w in beat.get("spot", "") for w in CRIME_ROOM.get(ch, {})):  # 범죄 현장 : 시체가 있는 사망 CG 를 방으로
+        bg = "cg:" + next(v for w, v in CRIME_ROOM[ch].items() if w in beat["spot"])
     cuts = [i for i, e in enumerate(evs) if e["type"] == "break"]
     objects = []
     for n, at in enumerate(cuts):
@@ -221,9 +233,20 @@ def room_of(beat, ch):
         name = evs[at]["name"].strip()
         if not any(evs[k]["type"] in ("say", "stage", "card") for k in range(at, end)):
             continue
-        who = NAMES.get(name.split("(")[0].split("·")[0].strip().split(" ")[0])
+        head = name.split("(")[0].split("·")[0].strip().split(" ")[0]
+        who = NAMES.get(head) or (NAMES.get(head[:-1]) if head.endswith("의") and "방" not in name else None)  # 「쇼의 소매」 → 쇼를 조사
         objects.append({"name": name, "from": at, "to": end, "who": who if who and who != "mio" else ""})
-    if not objects:  # 나뉘지 않은 장면 : 장면 전체가 조사 대상 하나
+    cards = [i for i, e in enumerate(evs) if e["type"] == "card"]
+    if len(objects) <= 1 and len(cards) >= 2:  # 나뉘지 않은 장면 : 언령 하나 = 조사 지점 하나(V3)
+        objects, start = [], (cuts[0] if cuts else 0)
+        for n, c in enumerate(cards):
+            end = c + 1 if n + 1 < len(cards) else len(evs)
+            nm = KOTO.get(evs[c]["id"], {}).get("name") or evs[c]["name"]
+            who = NAMES.get(nm[:-4]) if nm.endswith("의 증언") else None  # 「코토의 증언」 → 코토에게 말을 걸어 듣는다
+            objects.append({"name": nm, "from": start, "to": end, "who": who if who and who != "mio" else ""})
+            start = end
+        intro = cuts[0] if cuts else 0
+    elif not objects:  # 장면 전체가 조사 대상 하나
         objects.append({"name": beat.get("spot", "조사"), "from": 0, "to": len(evs), "who": ""})
         intro = 0
     else:

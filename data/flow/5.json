@@ -358,6 +358,10 @@
    "events": [
     {
      "type": "bg",
+     "bg": "castle_armor"
+    },
+    {
+     "type": "bg",
      "bg": "hotel_corridor"
     },
     {
@@ -394,7 +398,7 @@
     },
     {
      "type": "bg",
-     "bg": "hotel_corridor"
+     "bg": "castle_vault"
     },
     {
      "type": "stage",
@@ -430,7 +434,7 @@
     },
     {
      "type": "bg",
-     "bg": "hotel_corridor"
+     "bg": "castle_armor"
     },
     {
      "type": "stage",
@@ -850,14 +854,14 @@
     {
      "who": "ai",
      "place": "대연회장 주방",
-     "bg": "food_kitchen_day",
+     "bg": "castle_hall",
      "t": "scene",
      "id": "15a:B-3",
      "title": "B-3 아이 ③ 「마지막 식사」 (대연회장 주방)",
      "events": [
       {
        "type": "bg",
-       "bg": "food_kitchen_day"
+       "bg": "castle_hall"
       },
       {
        "type": "stage",
@@ -926,10 +930,6 @@
     {
      "type": "bg",
      "bg": "cg:event_5_clock_tower"
-    },
-    {
-     "type": "bg",
-     "bg": "hotel_stairs_day"
     },
     {
      "type": "stage",
@@ -1052,7 +1052,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "food_kitchen_day"
+     "bg": "castle_hall"
     },
     {
      "type": "stage",
@@ -1200,7 +1200,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "castle_hall"
     },
     {
      "type": "stage",
@@ -1477,12 +1477,30 @@
       }
      ],
      "spot": "서고 현장",
-     "bg": "castle_library",
+     "bg": "cg:death_5_nana",
      "intro": 2,
      "objects": [
       {
-       "name": "서고 현장",
+       "name": "석궁 고정 장치",
        "from": 0,
+       "to": 7,
+       "who": ""
+      },
+      {
+       "name": "서고 탁상시계",
+       "from": 7,
+       "to": 14,
+       "who": ""
+      },
+      {
+       "name": "알람 설정",
+       "from": 14,
+       "to": 17,
+       "who": ""
+      },
+      {
+       "name": "입퇴실 장부",
+       "from": 17,
        "to": 25,
        "who": ""
       }
@@ -1696,20 +1714,20 @@
       }
      ],
      "spot": "사츠키 · 나나 개별 조사",
-     "bg": "waterpark_day",
+     "bg": "castle_hall",
      "intro": 0,
      "objects": [
       {
        "name": "사츠키의 토시",
        "from": 0,
        "to": 4,
-       "who": ""
+       "who": "satsuki"
       },
       {
        "name": "나나의 손목 리본",
        "from": 4,
        "to": 10,
-       "who": ""
+       "who": "nana"
       }
      ],
      "people": [
@@ -1868,7 +1886,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "food_kitchen_day"
+     "bg": "foodcourt"
     },
     {
      "type": "bg",

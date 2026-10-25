@@ -21,6 +21,10 @@
      "bg": "hotel_dining"
     },
     {
+     "type": "bg",
+     "bg": "ui:broadcast_morning"
+    },
+    {
      "type": "stage",
      "text": "식당. 아침 햇살. 테이블에는 자리가 비어 있다. 아이가 습관적으로 접시를 두 개 더 놓다가 멈춘다."
     },
@@ -450,11 +454,15 @@
     {
      "who": "rei",
      "place": "호텔 조식 식당",
-     "bg": "hotel_dining",
+     "bg": "hotel_lobby",
      "t": "scene",
      "id": "12a:B-1",
      "title": "B-1 레이 ② 「홍차 한 잔」 (호텔 조식 식당)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "hotel_lobby"
+      },
       {
        "type": "bg",
        "bg": "hotel_dining"
@@ -640,11 +648,15 @@
     {
      "who": "ken",
      "place": "퍼레이드 스트리트 의상실",
-     "bg": "shop_costume_day",
+     "bg": "parade_street_day",
      "t": "scene",
      "id": "12a:B-3",
      "title": "B-3 켄 ② 「거울 앞」 (퍼레이드 스트리트 의상실)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "parade_street_day"
+      },
       {
        "type": "bg",
        "bg": "shop_costume_day"
@@ -1178,14 +1190,14 @@
     {
      "who": "rin",
      "place": "워터파크 기계실 · 펌프실",
-     "bg": "carousel_machine_day",
+     "bg": "waterpark_day",
      "t": "scene",
      "id": "12a:B-10",
      "title": "B-10 린 ② 「공원 구석구석 탐험」 (워터파크 기계실 · 펌프실)",
      "events": [
       {
        "type": "bg",
-       "bg": "carousel_machine_day"
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -1256,14 +1268,14 @@
     {
      "who": "ai",
      "place": "푸드코트 뒷문",
-     "bg": "food_backdoor_day",
+     "bg": "foodcourt",
      "t": "scene",
      "id": "12a:B-11",
      "title": "B-11 아이 ② 「레시피 교환」 (푸드코트 뒷문)",
      "events": [
       {
        "type": "bg",
-       "bg": "food_backdoor_day"
+       "bg": "foodcourt"
       },
       {
        "type": "stage",
@@ -1465,10 +1477,6 @@
     {
      "type": "bg",
      "bg": "cg:event_2_performance"
-    },
-    {
-     "type": "bg",
-     "bg": "shop_costume_day"
     },
     {
      "type": "stage",
@@ -1780,11 +1788,15 @@
     {
      "who": "rei",
      "place": "호텔 조식 식당",
-     "bg": "hotel_dining",
+     "bg": "hotel_lobby",
      "t": "scene",
      "id": "12a:B-1",
      "title": "B-1 레이 ② 「홍차 한 잔」 (호텔 조식 식당)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "hotel_lobby"
+      },
       {
        "type": "bg",
        "bg": "hotel_dining"
@@ -1970,11 +1982,15 @@
     {
      "who": "ken",
      "place": "퍼레이드 스트리트 의상실",
-     "bg": "shop_costume_day",
+     "bg": "parade_street_day",
      "t": "scene",
      "id": "12a:B-3",
      "title": "B-3 켄 ② 「거울 앞」 (퍼레이드 스트리트 의상실)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "parade_street_day"
+      },
       {
        "type": "bg",
        "bg": "shop_costume_day"
@@ -2508,14 +2524,14 @@
     {
      "who": "rin",
      "place": "워터파크 기계실 · 펌프실",
-     "bg": "carousel_machine_day",
+     "bg": "waterpark_day",
      "t": "scene",
      "id": "12a:B-10",
      "title": "B-10 린 ② 「공원 구석구석 탐험」 (워터파크 기계실 · 펌프실)",
      "events": [
       {
        "type": "bg",
-       "bg": "carousel_machine_day"
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -2586,14 +2602,14 @@
     {
      "who": "ai",
      "place": "푸드코트 뒷문",
-     "bg": "food_backdoor_day",
+     "bg": "foodcourt",
      "t": "scene",
      "id": "12a:B-11",
      "title": "B-11 아이 ② 「레시피 교환」 (푸드코트 뒷문)",
      "events": [
       {
        "type": "bg",
-       "bg": "food_backdoor_day"
+       "bg": "foodcourt"
       },
       {
        "type": "stage",
@@ -2976,11 +2992,15 @@
     {
      "who": "rei",
      "place": "호텔 조식 식당",
-     "bg": "hotel_dining",
+     "bg": "hotel_lobby",
      "t": "scene",
      "id": "12a:B-1",
      "title": "B-1 레이 ② 「홍차 한 잔」 (호텔 조식 식당)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "hotel_lobby"
+      },
       {
        "type": "bg",
        "bg": "hotel_dining"
@@ -3166,11 +3186,15 @@
     {
      "who": "ken",
      "place": "퍼레이드 스트리트 의상실",
-     "bg": "shop_costume_day",
+     "bg": "parade_street_day",
      "t": "scene",
      "id": "12a:B-3",
      "title": "B-3 켄 ② 「거울 앞」 (퍼레이드 스트리트 의상실)",
      "events": [
+      {
+       "type": "bg",
+       "bg": "parade_street_day"
+      },
       {
        "type": "bg",
        "bg": "shop_costume_day"
@@ -3704,14 +3728,14 @@
     {
      "who": "rin",
      "place": "워터파크 기계실 · 펌프실",
-     "bg": "carousel_machine_day",
+     "bg": "waterpark_day",
      "t": "scene",
      "id": "12a:B-10",
      "title": "B-10 린 ② 「공원 구석구석 탐험」 (워터파크 기계실 · 펌프실)",
      "events": [
       {
        "type": "bg",
-       "bg": "carousel_machine_day"
+       "bg": "waterpark_day"
       },
       {
        "type": "stage",
@@ -3782,14 +3806,14 @@
     {
      "who": "ai",
      "place": "푸드코트 뒷문",
-     "bg": "food_backdoor_day",
+     "bg": "foodcourt",
      "t": "scene",
      "id": "12a:B-11",
      "title": "B-11 아이 ② 「레시피 교환」 (푸드코트 뒷문)",
      "events": [
       {
        "type": "bg",
-       "bg": "food_backdoor_day"
+       "bg": "foodcourt"
       },
       {
        "type": "stage",
@@ -4560,7 +4584,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "hotel_lobby"
+     "bg": "foodcourt"
     },
     {
      "type": "bg",
@@ -4752,7 +4776,7 @@
       }
      ],
      "spot": "웨이브 풀 · 시체",
-     "bg": "waterpark_day",
+     "bg": "cg:death_2_yuu",
      "intro": 2,
      "objects": [
       {
@@ -4899,10 +4923,6 @@
        "bg": "infirmary"
       },
       {
-       "type": "bg",
-       "bg": "clinic_pharmacy_day"
-      },
-      {
        "type": "stage",
        "text": "의무실. 약품 보관함 앞에서 나나가 재고표를 들고 있다."
       },
@@ -4977,9 +4997,27 @@
      "intro": 0,
      "objects": [
       {
-       "name": "의무실",
+       "name": "약품 재고",
        "from": 0,
-       "to": 14,
+       "to": 4,
+       "who": ""
+      },
+      {
+       "name": "코토의 증언",
+       "from": 4,
+       "to": 6,
+       "who": "koto"
+      },
+      {
+       "name": "나나의 증언",
+       "from": 6,
+       "to": 8,
+       "who": "nana"
+      },
+      {
+       "name": "약제 설명서",
+       "from": 8,
+       "to": 13,
        "who": ""
       }
      ],
@@ -5118,8 +5156,14 @@
      "intro": 0,
      "objects": [
       {
-       "name": "호텔 · 유우의 방",
+       "name": "유우의 봉투",
        "from": 0,
+       "to": 6,
+       "who": ""
+      },
+      {
+       "name": "유우의 쪽지",
+       "from": 6,
        "to": 12,
        "who": ""
       }

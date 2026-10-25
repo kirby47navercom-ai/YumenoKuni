@@ -1,0 +1,16 @@
+{
+ "_doc": "00 문서 §6-3 스킬표 중 이 게임의 재판 규칙에 실제 효과를 붙인 것만. level = 인연 Lv 이 이만큼이면 익힌다. sp = 장착 비용(시작 6, 장마다 +2, 최대 16). effect 는 Source/TrialRunner.hpp skillOn() 이 읽는다.",
+ "items": [
+  {"id": "kaede1", "who": "kaede", "level": 2, "sp": 2, "name": "시간 관리", "text": "모든 제한 시간 +5%", "effect": "time_pct_5"},
+  {"id": "taiga1", "who": "taiga", "level": 2, "sp": 2, "name": "내가 지킨다!", "text": "발언력 최대치 +1", "effect": "max_heart"},
+  {"id": "sora1", "who": "sora", "level": 2, "sp": 2, "name": "괜찮아, 맡겨!", "text": "정답 3번마다 발언력 1 회복", "effect": "heal_every_3"},
+  {"id": "sho1", "who": "sho", "level": 2, "sp": 2, "name": "응급 지식", "text": "정답 2번마다 발언력 1 회복", "effect": "heal_every_2"},
+  {"id": "sora2", "who": "sora", "level": 4, "sp": 3, "name": "구급 대기", "text": "발언력이 바닥나도 한 번은 그 자리에서 다시 일어선다(재판당 1회)", "effect": "revive"},
+  {"id": "nana2", "who": "nana", "level": 4, "sp": 3, "name": "응급 처치", "text": "발언력이 바닥나도 한 번은 다시 일어선다(재판당 1회)", "effect": "revive"},
+  {"id": "ken2", "who": "ken", "level": 4, "sp": 4, "name": "무대 위의 진실", "text": "반론 쇼다운 시간 +30%", "effect": "showdown_time"},
+  {"id": "koto2", "who": "koto", "level": 4, "sp": 4, "name": "최후의 중재", "text": "반론 쇼다운 실패 1회 면제", "effect": "showdown_guard"},
+  {"id": "riku2", "who": "riku", "level": 4, "sp": 4, "name": "마술사의 손", "text": "논의에서 틀린 탄환 1회는 발언력을 잃지 않는다", "effect": "miss_guard"},
+  {"id": "yuu2", "who": "yuu", "level": 4, "sp": 3, "name": "앙코르", "text": "논의 제한 시간 +10초", "effect": "debate_time"},
+  {"id": "haruka2", "who": "haruka", "level": 4, "sp": 3, "name": "활기찬 목소리", "text": "논의 제한 시간 +10초", "effect": "debate_time"}
+ ]
+}

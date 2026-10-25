@@ -42,7 +42,7 @@ try{
   if(s.error&&s.error!==lastErr){lastErr=s.error;console.log('GAME ERROR',s.error,JSON.stringify(s.stage));}
   if(s.mode!=='trial')break;
   const st=s.stage;
-  if(st.index!==last){last=st.index;log.push({index:st.index,kind:st.kind,hearts:st.hearts});console.log('stage',st.index,st.kind);if(!seen.has(st.kind)){seen.set(st.kind,st.index);await delay(500);try{await probe.capture(`${String(st.index).padStart(2,'0')}-${st.kind}.png`);}catch(e){console.log('capture skipped',st.kind,e.message);}}}
+  if(st.index!==last){last=st.index;log.push({index:st.index,kind:st.kind,hearts:st.hearts});console.log('stage',st.index,st.kind);if(!seen.has(st.kind)){seen.set(st.kind,st.index);await delay(['panic','scrum','armament','vote'].includes(st.kind)?2500:500);try{await probe.capture(`${String(st.index).padStart(2,'0')}-${st.kind}.png`);}catch(e){console.log('capture skipped',st.kind,e.message);}}}
   const a=s.auto;
   if(a.kind==='debate'){
    const t=s.trial;

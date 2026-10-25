@@ -84,8 +84,12 @@ void Yumeno::startDebate(const hb::Json& d){
  bullets.clear();for(auto& b:d["bullets"])bullets.emplace_back(b.value("id",""),b.value("name",""));
  bullet=0;shownLine=-1;shownHearts=-1;shownNoise=-1;clearTimer=0;holdTime=-1;lie=false;
  playingDebate=true;dialogVisible(false);debateHud(true);sclear();
- debateTime=180;showBullet();
- bool panic=d.value("kind","")=="panic";UI::SetTexture(this,UI_ID,"StartBand",panic?"Assets/Art/ui/start_panic.svg":"Assets/Art/ui/start_nonstop.svg");UI::SetVisible(this,UI_ID,"StartBand",true);startBandTimer=1.6f;
+ debateTime=180*(skillOn("time_pct_5")?1.05f:1.f)+(skillOn("debate_time")?10.f:0.f);showBullet();
+ bool panic=d.value("kind","")=="panic";
+ if(panic){std::vector<std::string> who;for(auto& l:debate.lines){auto sl=slugs.count(l.speaker)?slugs.at(l.speaker):"";if(!sl.empty()&&std::find(who.begin(),who.end(),sl)==who.end()&&who.size()<3)who.push_back(sl);}
+  for(int i=0;i<3;i++){bool on=i<int(who.size());for(auto id:{"PanicFig","PanicFrame","PanicName"})svis(id+std::to_string(i),on);if(!on)continue;
+   UI::SetTexture(this,"stage","PanicFig"+std::to_string(i),"Assets/Art/cutin/"+who[i]+"_1.webp");stext("PanicName"+std::to_string(i),nameOf(who[i]));}
+  panicWho=who;UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);}else panicWho.clear();UI::SetTexture(this,UI_ID,"StartBand",panic?"Assets/Art/ui/start_panic.svg":"Assets/Art/ui/start_nonstop.svg");UI::SetVisible(this,UI_ID,"StartBand",true);startBandTimer=1.6f;
  UI::SetVisible(this,UI_ID,"Lens",true);
 }
 
@@ -149,6 +153,7 @@ void Yumeno::styleLine(){
  text("TrialSpeaker",l.speaker);
  portrait=slug.empty()?"":"Assets/Art/sprites/"+slug+"/"+slug+"_"+(slug=="lappy"?"L04":weak?"T02":l.kind=="agree"?"T03":"C02")+".webp";
  speakerSeat=-1; // 같은 화자라도 줄마다 카메라가 다시 잡는다(V3)
+ if(!panicWho.empty()){for(int i=0;i<int(panicWho.size());i++)UI::SetOpacity(this,"stage","PanicFig"+std::to_string(i),panicWho[i]==slug?1.f:.45f);return;}
  focusSpeaker(slug,portrait);
 }
 
@@ -162,7 +167,7 @@ void Yumeno::updateDebate(float delta){
  bool turning=cameraTime<1;
  if(!turning)debateTime-=delta*(Input::IsKeyDown("Shift")&&debate.focus>0?.35f:1);
  {int ms=std::max(0,int(debateTime*1000));char t[16];std::snprintf(t,sizeof t,"%02d:%02d:%03d",ms/60000,ms/1000%60,ms%1000);text("Timer",t);}
- if(debateTime<=0){message("시간 초과… 처음부터!",2.f);debateTime=180;debate.hearts=5;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;retries++;}
+ if(debateTime<=0){message("시간 초과… 처음부터!",2.f);debateTime=180;debate.hearts=maxHearts;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;retries++;}
  bool changed=(!turning&&debate.tick(delta*(focusing?.35f:1)))||shownLine!=debate.index;
  if(changed){shownLine=debate.index;styleLine();}
  drawGlyphs("M",48,turning?std::vector<debate::Glyph>{}:debate.current());
@@ -192,7 +197,7 @@ void Yumeno::updateDebate(float delta){
  auto& l=debate.line();
  bool correct=bullets[bullet].first==l.answer&&lieShot==l.lie;
  if(correct){
-  sfx("sfx_break");
+  sfx("sfx_break");onCorrect();
   float px=0,py=0;bool v=debate.vpoint(px,py)&&std::hypot(aimX-px,aimY-py)<16;
   if(lieShot&&lieCost)++debate.hearts;
   debate.broken[debate.index]=true;vBreaks+=v;
@@ -200,7 +205,9 @@ void Yumeno::updateDebate(float delta){
   if(debate.cleared()){message(v?"V논파! 논의 종료!":"논파 완료!",2.2f);clearTimer=2.4f;}
   else{message(lieShot?"위증!":v?"V논파!":"논파!",1.0f);debate.next();}
  }else{
-  if(--debate.hearts<=0){message("발언력이 바닥났어요… 처음부터!",2.f);debate.hearts=5;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;debateTime=180;retries++;}
+  if(skillOn("miss_guard")&&!missGuardUsed){missGuardUsed=true;message("마술사의 손! 빗나간 탄환을 되돌렸다",1.2f);return;}
+  if(--debate.hearts<=0&&skillOn("revive")&&!reviveUsed){reviveUsed=true;debate.hearts=2;message("다시 일어선다!",1.4f);return;}
+  if(debate.hearts<=0){message("발언력이 바닥났어요… 처음부터!",2.f);debate.hearts=maxHearts;debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;debateTime=180;retries++;}
   else message("아야! 틀렸어요~!",1.2f);
  }
 }
@@ -211,7 +218,7 @@ void Yumeno::Update(float delta){
   story=Data::Get("Assets/Data/story.json");
   emotions=Data::Get("Assets/Data/emotion.json");
   rules=Data::Get("Assets/Data/rules.json");
-  art=Data::Get("Assets/Data/art.json");giftData=Data::Get("Assets/Data/gifts.json");kotodama=Data::Get("Assets/Data/kotodama.json");reactions=Data::Get("Assets/Data/reactions.json");
+  art=Data::Get("Assets/Data/art.json");giftData=Data::Get("Assets/Data/gifts.json");kotodama=Data::Get("Assets/Data/kotodama.json");reactions=Data::Get("Assets/Data/reactions.json");hotspotData=Data::Get("Assets/Data/hotspots.json");skillData=Data::Get("Assets/Data/skills.json");
   UI::Show(this,"Assets/UI/Main.hbwidget.json",UI_ID);
   UI::Show(this,"Assets/UI/Explore.hbwidget.json","explore");
   UI::Show(this,"Assets/UI/Flow.hbwidget.json","flow");

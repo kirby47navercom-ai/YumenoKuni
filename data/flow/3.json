@@ -23,6 +23,10 @@
      "bg": "hotel_dining"
     },
     {
+     "type": "bg",
+     "bg": "ui:broadcast_morning"
+    },
+    {
      "type": "stage",
      "text": "식당. 테이블 12개 중 절반이 비어 있다. 아이가 말없이 접시를 일곱 장 덜 준비해 놓는다."
     },
@@ -359,10 +363,6 @@
        "bg": "ferris_boarding"
       },
       {
-       "type": "bg",
-       "bg": "ferris_gondola"
-      },
-      {
        "type": "stage",
        "text": "해 질 녘. 대관람차 승강장. 소라가 곤돌라를 올려다보고 있다."
       },
@@ -433,14 +433,14 @@
     {
      "who": "ken",
      "place": "극장 객석",
-     "bg": "theater_seats_1f",
+     "bg": "theater_lobby",
      "t": "scene",
      "id": "13a:B-2",
      "title": "B-2 켄 ③ 「침묵」 (극장 객석)",
      "events": [
       {
        "type": "bg",
-       "bg": "theater_seats_1f"
+       "bg": "theater_lobby"
       },
       {
        "type": "stage",
@@ -662,10 +662,6 @@
     {
      "type": "bg",
      "bg": "cg:event_3_gondola"
-    },
-    {
-     "type": "bg",
-     "bg": "ferris_gondola"
     },
     {
      "type": "stage",
@@ -1234,10 +1230,6 @@
        "bg": "ferris_boarding"
       },
       {
-       "type": "bg",
-       "bg": "ferris_gondola"
-      },
-      {
        "type": "stage",
        "text": "해 질 녘. 대관람차 승강장. 소라가 곤돌라를 올려다보고 있다."
       },
@@ -1308,14 +1300,14 @@
     {
      "who": "ken",
      "place": "극장 객석",
-     "bg": "theater_seats_1f",
+     "bg": "theater_lobby",
      "t": "scene",
      "id": "13a:B-2",
      "title": "B-2 켄 ③ 「침묵」 (극장 객석)",
      "events": [
       {
        "type": "bg",
-       "bg": "theater_seats_1f"
+       "bg": "theater_lobby"
       },
       {
        "type": "stage",
@@ -1619,6 +1611,10 @@
      "bg": "hotel_lobby"
     },
     {
+     "type": "bg",
+     "bg": "theater_lobby"
+    },
+    {
      "type": "stage",
      "text": "오후 5시. 극장 로비. 사람들이 흩어진다. 소라가 리쿠를 부른다."
     },
@@ -1750,6 +1746,10 @@
      "bg": "hotel_lobby"
     },
     {
+     "type": "bg",
+     "bg": "theater_rigging"
+    },
+    {
      "type": "stage",
      "text": "로비 열쇠함. 카드키 3장 : #1 장치실 / #2 음향실 / #3 분장실. 반출 장부."
     },
@@ -1814,7 +1814,7 @@
     },
     {
      "type": "bg",
-     "bg": "theater_seats_1f"
+     "bg": "theater_lobby"
     },
     {
      "type": "stage",
@@ -1833,7 +1833,7 @@
    "events": [
     {
      "type": "bg",
-     "bg": "theater_seats_1f"
+     "bg": "theater_lobby"
     },
     {
      "type": "stage",
@@ -2264,12 +2264,18 @@
       }
      ],
      "spot": "장치실 · 리쿠",
-     "bg": "theater_rigging",
+     "bg": "cg:death_3a_riku",
      "intro": 2,
      "objects": [
       {
-       "name": "장치실 · 리쿠",
+       "name": "낙하 장치",
        "from": 0,
+       "to": 4,
+       "who": ""
+      },
+      {
+       "name": "리쿠 주머니 쪽지",
+       "from": 4,
        "to": 13,
        "who": ""
       }
@@ -2322,12 +2328,18 @@
       }
      ],
      "spot": "음향실 · 소라",
-     "bg": "theater_sound",
+     "bg": "cg:death_3b_sora",
      "intro": 0,
      "objects": [
       {
-       "name": "음향실 · 소라",
+       "name": "음향실 밀실",
        "from": 0,
+       "to": 3,
+       "who": ""
+      },
+      {
+       "name": "음향실 영상 모니터",
+       "from": 3,
        "to": 7,
        "who": ""
       }
@@ -2385,7 +2397,7 @@
      "events": [
       {
        "type": "bg",
-       "bg": "hotel_lobby"
+       "bg": "theater_emergency"
       },
       {
        "type": "stage",
@@ -2430,12 +2442,24 @@
       }
      ],
      "spot": "비상 장비 보관함 · 로비",
-     "bg": "hotel_lobby",
+     "bg": "theater_emergency",
      "intro": 0,
      "objects": [
       {
-       "name": "비상 장비 보관함 · 로비",
+       "name": "보관함 개봉 로그",
        "from": 0,
+       "to": 3,
+       "who": ""
+      },
+      {
+       "name": "카드 반출 장부",
+       "from": 3,
+       "to": 6,
+       "who": ""
+      },
+      {
+       "name": "좌석표",
+       "from": 6,
        "to": 9,
        "who": ""
       }
@@ -2499,8 +2523,14 @@
      "intro": 0,
      "objects": [
       {
-       "name": "후문 · 호텔",
+       "name": "후문 열림",
        "from": 0,
+       "to": 6,
+       "who": ""
+      },
+      {
+       "name": "호텔 직원 통로 로그",
+       "from": 6,
        "to": 9,
        "who": ""
       }
@@ -2588,7 +2618,7 @@
       }
      ],
      "spot": "켄의 최면 시연 (필수 이벤트)",
-     "bg": "hotel_lobby",
+     "bg": "theater_lobby",
      "intro": 0,
      "objects": [
       {

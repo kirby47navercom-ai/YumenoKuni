@@ -30,7 +30,7 @@ MOOD = [("waterpark", "summer, bright aqua and white, sunlight through glass roo
         ("theater", "dark theater, deep red and black, spotlight, dusty"), ("rollercoaster", "overcast, grey and teal, muted colors, abandoned feel"),
         ("vip", "muted grey-beige luxury, cold fluorescent light, uneasy"), ("castle", "dusk, muted gold and dark wine red, candlelight, gloomy"),
         ("core", "underground, cold dark blue, sterile, glowing machine, ominous"), ("trial", "dark industrial, red warning light, iron, ominous"),
-        ("", "soft pastel colors, gentle daylight, slightly desaturated")]
+        ("", "cheerful pastel pink, mint and cream colors, bright warm daylight, lively and cozy, rich color")]
 
 
 def mood(name):
@@ -147,8 +147,24 @@ def cutout(src):
         _session = new_session("isnet-anime")
     im = remove(Image.open(src).convert("RGB"), session=_session).convert("RGBA")
     # 반투명 잔여(바닥 그림자·흰 테두리)를 걷어 낸다
-    a = im.getchannel("A").point(lambda v: 0 if v < 120 else min(255, int((v - 120) * 255 / 100)))
+    a = im.getchannel("A").point(lambda v: 0 if v < 170 else min(255, int((v - 170) * 255 / 60)))
     im.putalpha(a)
+    # 가장자리와 이어진 흰 바닥(그림자 포함)은 배경 : 밝고 채도 낮은 영역을 가장자리에서 채워 지운다
+    import numpy as np
+    from collections import deque
+    px = np.asarray(im.convert("RGB")).astype(int)
+    white = (px.min(axis=2) > 200) & ((px.max(axis=2) - px.min(axis=2)) < 28)
+    h, w = white.shape
+    bg = np.zeros_like(white)
+    q = deque([(y, x) for y in range(h) for x in (0, w - 1)] + [(y, x) for x in range(w) for y in (0, h - 1)])
+    while q:
+        y, x = q.popleft()
+        if 0 <= y < h and 0 <= x < w and white[y, x] and not bg[y, x]:
+            bg[y, x] = True
+            q.extend(((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)))
+    alpha = np.asarray(im.getchannel("A")).copy()
+    alpha[bg] = 0
+    im.putalpha(Image.fromarray(alpha))
     return im
 
 
