@@ -284,8 +284,8 @@ void Yumeno::setupPlay(){
  if(k=="anagram"){
   anaChars=debate::glyphs(stage.value("answer",""));orbs.clear();
   std::vector<std::string> pool=anaChars;
-  for(auto d:trialui::DECOYS){if(pool.size()>=10)break;if(std::find(anaChars.begin(),anaChars.end(),d)==anaChars.end())pool.push_back(d);}
-  for(size_t i=0;i<pool.size()&&i<10;i++){Orb b;b.ch=pool[i];b.x=150+debate::hash(int(i),1)*980;b.y=140+debate::hash(int(i),2)*400;b.vx=(debate::hash(int(i),3)-.5f)*160;b.vy=(debate::hash(int(i),4)-.5f)*120;orbs.push_back(b);stext("Orb"+std::to_string(i),b.ch);svis("Orb"+std::to_string(i),true);}
+  for(auto d:trialui::DECOYS){if(pool.size()>=std::max<size_t>(10,anaChars.size()+2))break;if(std::find(anaChars.begin(),anaChars.end(),d)==anaChars.end())pool.push_back(d);}
+  for(size_t i=0;i<pool.size()&&i<14;i++){Orb b;b.ch=pool[i];b.x=150+debate::hash(int(i),1)*980;b.y=140+debate::hash(int(i),2)*400;b.vx=(debate::hash(int(i),3)-.5f)*160;b.vy=(debate::hash(int(i),4)-.5f)*120;orbs.push_back(b);stext("Orb"+std::to_string(i),b.ch);svis("Orb"+std::to_string(i),true);}
   stext("Question",stage.value("question",""));svis("QPlate",true);svis("Question",true);svis("Slots",true);svis("Light",true);lightX=-300;anaSlots();
  }
  if(k=="mindmine"){

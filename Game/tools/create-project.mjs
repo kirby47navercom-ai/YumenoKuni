@@ -200,7 +200,7 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  for(let i=0;i<72;i++){const c=i%12,r=Math.floor(i/12);put('Image','Cell'+i,[160+c*80,130+r*70,80,70],{texture:'Assets/Art/ui/mine_w.svg',imageFit:'fill'});}
  // 섬광 애너그램 : 글자 구슬 10, 빈칸 줄, 빛
  put('Panel','Light',[0,0,260,720],{background:'#fff6c840'});
- for(let i=0;i<10;i++){const n=put('Text','Orb'+i,[0,0,84,84],{font:head,fontSize:40,align:'center',background:'#2b2140',radius:42,color:'#2b2140'});n.slot.alignment=[.5,.5];}
+ for(let i=0;i<14;i++){const n=put('Text','Orb'+i,[0,0,84,84],{font:head,fontSize:40,align:'center',background:'#2b2140',radius:42,color:'#2b2140'});n.slot.alignment=[.5,.5];}
  put('Text','Slots',[240,600,800,70],{font:head,fontSize:46,align:'center',color:'#ffe9a8'});
  // 브레인 드라이브 : 차선 3, 차
  put('Image','Road',[0,0,1280,720],{texture:'Assets/Art/ui/taxi_road.svg',imageFit:'fill'});
