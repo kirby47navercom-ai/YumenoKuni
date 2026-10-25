@@ -29,11 +29,32 @@ MOTIONS = {"흐름": "slide", "날아듦": "fly", "회전": "swirl", "쾅": "sla
 NAME = {v: k for k, v in SLUG.items()} if "SLUG" in globals() else {}
 
 
+def card_name(c):
+    """evidence.json 한 장 → 화면에 쓸 짧은 이름. (ID) 꼬리·「해금」 같은 원문 메모를 걷어 낸다."""
+    cid, label = c["id"], (c.get("label") or "").strip()
+    m = re.search(r"「([^」]+)」", label)
+    if cid.startswith("M") and m:
+        return "마법 「" + m.group(1) + "」"
+    m = re.match(re.escape(cid) + r"\s*\(([^)]+)\)", label)
+    if m:
+        inner = m.group(1).strip()
+        return inner + "의 증언" if cid.startswith("T") and len(inner) <= 4 else inner
+    label = re.sub(r"\s*\(" + re.escape(cid) + r"\)\s*$", "", label).strip()
+    if label and not label.startswith(cid):
+        return label
+    cells = c.get("cells") or []
+    return (cells[0] + "의 증언") if cid.startswith("T") and cells else (cells[0] if cells else cid)
+
+
+def card_text(c):
+    cells = c.get("cells") or []
+    return cells[1].strip('"') if len(cells) > 1 else ""
+
+
 def known_cards():
     ids, names = set(), {}
     for c in json.load(open(os.path.join(ROOT, "data", "evidence.json"), encoding="utf-8")):
-        label = c.get("label") or (c.get("cells") or [c["id"]])[0]
-        names[c["id"]] = re.sub(r"\s*\(" + re.escape(c["id"]) + r"\)\s*$", "", label).strip()
+        names[c["id"]] = card_name(c)
         ids.add(c["id"])
     for f in glob.glob(os.path.join(ROOT, "docs", "design", "1*.md")):
         ids |= set(CARD.findall(open(f, encoding="utf-8").read()))
@@ -221,7 +242,16 @@ def build(path, ids, names):
     return chapter, stages, debates
 
 
+def write_kotodama():
+    out = {}
+    for c in json.load(open(os.path.join(ROOT, "data", "evidence.json"), encoding="utf-8")):
+        out[c["id"]] = {"name": card_name(c), "text": card_text(c), "kind": c.get("kind", "")}
+    with open(os.path.join(ROOT, "data", "kotodama.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+
+
 def main():
+    write_kotodama()
     ids, names = known_cards()
     out = os.path.join(ROOT, "data", "trials")
     os.makedirs(out, exist_ok=True)

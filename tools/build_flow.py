@@ -25,7 +25,7 @@ PLACES = [("재판장", ["trial_room"]), ("엘리베이터", ["trial_elevator"])
           ("세탁", ["hotel_laundry", "hotel_corridor"]), ("옥상", ["roof_garden"]), ("별관", ["annex_hall"]), ("계단", ["hotel_stairs"]),
           ("505", ["vip_505"]), ("리넨", ["vip_linen"]), ("갤러리", ["vip_gallery"]), ("5층", ["vip_hall_a", "hotel_corridor"]),
           ("복도", ["hotel_corridor"]), ("호텔", ["hotel_lobby"]), ("인포메이션", ["info_center"]),
-          ("제어반", ["carousel_control"]), ("매표소", ["carousel_ticket", "carousel_control"]), ("기계실", ["carousel_machine", "waterpark_machine"]),
+          ("파도", ["waterpark_pump"]), ("제어반", ["carousel_control"]), ("매표소", ["carousel_ticket", "carousel_control"]), ("기계실", ["carousel_machine", "waterpark_machine"]),
           ("회전목마", ["carousel_day"]), ("탑승장", ["carousel_day"]), ("기념품", ["souvenir_shop"]), ("의상", ["shop_costume", "parade_costume"]),
           ("약품", ["clinic_pharmacy", "infirmary"]), ("의무실", ["infirmary"]), ("뒷문", ["food_backdoor"]), ("서비스 복도", ["food_service_corridor"]),
           ("주방", ["food_kitchen", "foodcourt"]), ("창고", ["food_storage"]), ("푸드코트", ["foodcourt"]),
@@ -87,10 +87,12 @@ def convert(events, scene_id, title):
         elif t == "ui":
             m = CARD.search(e["text"])
             if m and "획득" in e["text"]:
-                out.append({"type": "card", "id": m.group(3), "name": m.group(2).strip(" :") or m.group(3), "text": e["text"]})
+                seen_text = [x["text"] for x in out if x["type"] in ("stage", "say")][-2:]
+                out.append({"type": "card", "id": m.group(3), "name": m.group(2).strip(" :") or m.group(3), "text": e["text"], "desc": " ".join(t.strip("()") for t in seen_text)})
             else:
                 out.append({"type": "ui", "text": e["text"]})
         elif t == "break":
+            out.append({"type": "break", "name": e["text"]})
             bg = background(e["text"], is_night(title))
             if bg:
                 out.append({"type": "bg", "bg": bg})
@@ -188,6 +190,36 @@ def shift(events, at):
                     o["to"] += 1
 
 
+def room_of(beat, ch):
+    """수사 장면 → 방 : 들어갈 때 대사(첫 break 전) + 조사 대상들. 이벤트 번호는 장면 안 그대로라 goto 가 유지된다."""
+    evs = beat["events"]
+    bg = next((e["bg"] for e in evs if e["type"] == "bg" and not e["bg"].startswith("cg:")), None)
+    cuts = [i for i, e in enumerate(evs) if e["type"] == "break"]
+    objects = []
+    for n, at in enumerate(cuts):
+        end = cuts[n + 1] if n + 1 < len(cuts) else len(evs)
+        name = evs[at]["name"].strip()
+        if not any(evs[k]["type"] in ("say", "stage", "card") for k in range(at, end)):
+            continue
+        who = NAMES.get(name.split("(")[0].split("·")[0].strip().split(" ")[0])
+        objects.append({"name": name, "from": at, "to": end, "who": who if who and who != "mio" else None})
+    if not objects:  # 나뉘지 않은 장면 : 장면 전체가 조사 대상 하나
+        objects.append({"name": beat.get("spot", "조사"), "from": 0, "to": len(evs), "who": None})
+        intro = 0
+    else:
+        intro = cuts[0]
+    people = sorted({NAMES[e["speaker"]] for e in evs if e["type"] == "say" and NAMES.get(e["speaker"]) not in (None, "mio", "lappy")})
+    beat.update({"bg": bg or "hotel_lobby", "intro": intro, "objects": objects, "people": people})
+    return beat
+
+
+def place_of(title, night=False):
+    """프리타임 이벤트 제목 (장소) → 장소 이름 · 배경"""
+    m = re.search(r"\(([^)]+)\)\s*$", title)
+    name = m.group(1) if m else "중앙 광장"
+    return name, background(name, night or is_night(title)) or "plaza_day"
+
+
 def who_of(title):
     m = re.match(r"[BCD]-\d+\s+(\S+)", title)
     return NAMES.get(m.group(1)) if m else None
@@ -211,7 +243,8 @@ def daily(ch, key):
             beats.append({"t": "freetime", "slots": 2})
         elif re.match(r"B-\d+$", sid):
             if sid != "B-0" and who_of(s["title"]):
-                pool.append({"who": who_of(s["title"]), **scene_beat(s, key)})
+                place, bg = place_of(s["title"])
+                pool.append({"who": who_of(s["title"]), "place": place, "bg": bg, **scene_beat(s, key)})
         elif re.match(r"[CD]-\d+$", sid) and "유품" in s["title"]:
             b = scene_beat(s, key)
             b["need"] = {"who": who_of(s["title"]), "level": 3}
@@ -245,7 +278,7 @@ def investigation(key, ch):
                 after.append(b)
             else:
                 b["spot"] = re.sub(r"^(C-\d+(-b)?|I \d+)\s*", "", title)
-                spots.append(b)
+                spots.append(room_of(b, ch))
         elif "-X-" in sid:
             execution.append(scene_beat(s, key))
         elif "-E-" in sid or sid.startswith("F_"):
@@ -276,7 +309,7 @@ def chapter(ch):
                     after.append(b)
                 else:
                     b["spot"] = re.sub(r"^I \d+\s*", "", s["title"])
-                    spots.append(b)
+                    spots.append(room_of(b, 6))
             else:
                 beats.append(scene_beat(s, "16a"))
     beats += found
@@ -351,11 +384,30 @@ def gifts():
         json.dump({"items": items, "likes": likes}, f, ensure_ascii=False, indent=1)
 
 
+def describe_cards(flows):
+    """언령 설명이 비어 있으면 획득 직전 대사·무대 설명으로 채운다 (data/kotodama.json, build_trial.py 가 만든 것)"""
+    path = os.path.join(ROOT, "data", "kotodama.json")
+    cards = json.load(open(path, encoding="utf-8"))
+    def walk(evs):
+        for e in evs:
+            if e["type"] == "card" and e["id"] in cards and not cards[e["id"]]["text"] and e.get("desc"):
+                cards[e["id"]]["text"] = e["desc"]
+    for f in flows:
+        for b in f["beats"]:
+            walk(b.get("events", []))
+            for x in b.get("spots", []) + b.get("pool", []):
+                walk(x["events"])
+    json.dump(cards, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return sum(1 for c in cards.values() if not c["text"])
+
+
 def main():
     gifts()
     os.makedirs(os.path.join(ROOT, "data", "flow"), exist_ok=True)
     errors, summary = [], []
-    for flow in [prologue()] + [chapter(c) for c in range(1, 7)]:
+    flows = [prologue()] + [chapter(c) for c in range(1, 7)]
+    print("언령 설명 없음:", describe_cards(flows))
+    for flow in flows:
         errors += check(flow)
         kinds = [b["t"] for b in flow["beats"]]
         summary.append(f"{flow['chapter']}: {len(kinds)} beats, freetime {kinds.count('freetime')}, spots {sum(len(b.get('spots', [])) for b in flow['beats'])}, cards {sum(1 for b in flow['beats'] for e in b.get('events', []) if e['type'] == 'card')}")

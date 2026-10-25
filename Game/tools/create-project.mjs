@@ -27,9 +27,7 @@ await write('Assets/Data/story.json',{chapters:['P','1','2','3','4','5','6'],tri
 // 장 진행표 (tools/build_flow.py) · 선물 · 언령 이름
 for(const f of (await fs.readdir(path.join(repo,'data/flow'))).filter(f=>f.endsWith('.json')))await copy('data/flow/'+f,'Assets/Data/flow/'+f);
 await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/reactions.json','Assets/Data/reactions.json');
-{const ev=JSON.parse(await fs.readFile(path.join(repo,'data/evidence.json'),'utf8')),names={};
- for(const e of ev)names[e.id]=e.cells?`${e.cells[0]} : ${String(e.cells[1]).replace(/^"|"$/g,'').slice(0,28)}`:String(e.label||e.id).replace(/\s*\([A-Z]\d?-[\w-]+\)\s*/,'').trim();
- await write('Assets/Data/kotodama.json',names);}
+await copy('data/kotodama.json','Assets/Data/kotodama.json'); // 이름·설명 : tools/build_trial.py · build_flow.py
 for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
 // 2) 교칙 : docs/spec/11 §2·§3 표
@@ -44,6 +42,9 @@ for(const f of ['dialog/frame.png','dialog/nameplate.png','trial/heart_full.png'
 await write('Assets/Art/ui/aim.svg','<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="#ff4fa3" stroke-width="4"/><circle cx="32" cy="32" r="3" fill="#ffffff"/><path d="M32 2v14M32 48v14M2 32h14M48 32h14" stroke="#ffffff" stroke-width="3"/></svg>');
 await write('Assets/Art/ui/vpoint.svg','<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" fill="#ff2040" stroke="#ffffff" stroke-width="2"/></svg>');
 
+// V3 논의 렌즈 : 가운데 투명, 가장자리 어둡게 + 동심원 + 흰·빨강 사각 조각 (docs/spec/16 §5-2)
+await write('Assets/Art/ui/lens.svg','<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><defs><radialGradient id="v" cx="50%" cy="50%" r="62%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#05020a" stop-opacity=".92"/></radialGradient></defs><rect width="1280" height="720" fill="url(#v)"/>'+[360,430,520].map((r,i)=>`<circle cx="640" cy="360" r="${r}" fill="none" stroke="#ffffff" stroke-opacity="${.22-i*.05}" stroke-width="${2+i}"/>`).join('')+[[40,70,34,'#fff'],[88,150,22,'#d81f2a'],[1180,120,30,'#fff'],[1210,200,44,'#d81f2a'],[60,520,26,'#fff'],[1150,560,20,'#fff'],[130,610,40,'#d81f2a'],[1220,470,24,'#fff']].map(([x,y,w,c])=>`<rect x="${x}" y="${y}" width="${w}" height="${w}" fill="none" stroke="${c}" stroke-opacity=".7" stroke-width="3"/><rect x="${x+6}" y="${y+6}" width="${w-12}" height="${w-12}" fill="${c}" fill-opacity=".35"/>`).join('')+'</svg>');
+for(const [k,t,c] of [['nonstop','NON-STOP DEBATE','#ffe36e'],['panic','MASS PANIC DEBATE','#ff4fa3']])await write(`Assets/Art/ui/start_${k}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="200"><path d="M0 40L1280 0V160L0 200Z" fill="#0b0812" fill-opacity=".9"/><path d="M0 40L1280 0M0 200L1280 160" stroke="${c}" stroke-width="6"/><text x="640" y="128" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-style="italic" font-size="96" fill="#ffffff" stroke="${c}" stroke-width="4" transform="rotate(-1.8 640 100)">${t}</text></svg>`);
 const hudSvg={
  name:'<svg xmlns="http://www.w3.org/2000/svg" width="420" height="80"><path d="M28 6H414L392 74H6Z" fill="#0b1018" fill-opacity=".82" stroke="#36e3ff" stroke-width="2"/><path d="M40 12H300" stroke="#36e3ff" stroke-opacity=".6"/>'+Array.from({length:9},(_,i)=>`<circle cx="${48+i*12}" cy="62" r="2.6" fill="#ffffff" fill-opacity="${.9-i*.08}"/>`).join('')+'</svg>',
  status:'<svg xmlns="http://www.w3.org/2000/svg" width="330" height="116"><path d="M40 4H326L292 112H6Z" fill="#0b1018" fill-opacity=".8" stroke="#36e3ff" stroke-width="2"/><path d="M52 30H306" stroke="#ffffff" stroke-opacity=".35"/></svg>',
@@ -65,8 +66,9 @@ for(const [dir,files] of Object.entries(fontFiles))for(const f of files)await co
 let bgs=[];try{bgs=(await fs.readdir(path.join(repo,'bg'))).filter(f=>f.endsWith('.webp'));}catch(e){if(e.code!=='ENOENT')throw e;}
 for(const f of bgs)await copy('bg/'+f,'Assets/Art/bg/'+f);
 // 언령 카드 그림 (있는 것만)
-let icons=[];try{icons=(await fs.readdir(path.join(repo,'ui/kotodama'))).filter(f=>/^[ETMN]\d-\d+.*\.png$/.test(f));}catch(e){if(e.code!=='ENOENT')throw e;}
+let icons=[];try{icons=(await fs.readdir(path.join(repo,'ui/kotodama'))).filter(f=>/^[ETMNR]\d?-\d+.*\.png$/.test(f));}catch(e){if(e.code!=='ENOENT')throw e;}
 for(const f of icons)await copy('ui/kotodama/'+f,'Assets/Art/kotodama/'+f);
+for(const f of ['frame_evidence','frame_testimony','frame_rule_magic','frame_memo'])await copy(`ui/kotodama/${f}.png`,`Assets/Art/ui/kotodama/${f}.png`);
 // CG(사망·처형·이벤트)·선물·패드·장 제목 카드 (있는 것만)
 const list=async(dir,re)=>{try{return (await fs.readdir(path.join(repo,dir))).filter(f=>re.test(f));}catch(e){if(e.code==='ENOENT')return [];throw e;}};
 const cgs=(await list('art/cg',/\.webp$/)).filter(f=>!/_(bg|fg)\.webp$/.test(f));for(const f of cgs)await copy('art/cg/'+f,'Assets/Art/cg/'+f);
@@ -87,16 +89,21 @@ add('Panel','Backdrop',[0,0,1280,720],{background:'#17121f'});
 add('Image','Background',[-40,-24,1360,768],{texture:'',imageFit:'cover',visible:false});
 // 논의 글자 : 글자 하나 = Text 하나. 정렬점 중심(.5,.5)이라 SetPosition 이 글자 중심, 배율·회전도 중심 기준
 const glyph=(id,parent,size)=>{const n=add('Text',id,[0,0,size*1.6,size*1.6],{fontSize:size,align:'center',visible:false,wrap:false},parent);n.slot.alignment=[.5,.5];};
+add('Panel','CourtDim',[0,0,1280,720],{background:'#12051f80',visible:false}); // V3 법정은 어둡고 보라빛 : 3D 위·화자 입상 아래
 add('Panel','TrialBack',[0,0,1280,720],{visible:false});
 for(let i=0;i<MAIN_GLYPHS;i++)glyph('MB'+i,'TrialBack',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NB'+i,'TrialBack',34);
 add('Image','Portrait',[290,0,700,700],{texture:'',imageFit:'contain',visible:false});
 add('Image','SpeakerPodium',[478,431,323,351],{texture:'',imageFit:'fill',visible:false}); // 화자 앞 증언대(3D 증언대와 같은 자리, 입상 위에 그림)
 add('Image','DialogFrame',[80,512,1120,170],{texture:'Assets/Art/ui/frame.png',imageFit:'fill'});
 add('Image','Nameplate',[104,486,220,44],{texture:'Assets/Art/ui/nameplate.png',imageFit:'fill'});
-add('Text','Name',[118,490,196,36],{font:head,fontSize:26,align:'center',color:'#ffffff'});
+add('Text','Name',[126,490,190,36],{font:head,fontSize:26,color:'#ffffff'});
+add('Text','NameHead',[126,490,40,36],{font:head,fontSize:26,color:'#ff8fc8'}); // V3 : 이름 첫 글자만 인물 색
+add('Text','Next',[1136,640,40,32],{text:'≫',font:head,fontSize:30,color:'#ffd21f',visible:false}); // 다 읽으면 깜빡이는 넘김 표시
 add('Text','Body',[136,548,1010,120],{fontSize:25,wrap:true});
 // 논스톱 논의 (V3) HUD + 화자 앞쪽 글자층
 add('Panel','Trial',[0,0,1280,720],{visible:false});
+add('Image','Lens',[0,0,1280,720],{texture:'Assets/Art/ui/lens.svg',imageFit:'fill',visible:false},'Trial');
+for(let i=0;i<MAIN_GLYPHS;i++){const n=add('Text','MS'+i,[0,0,80,80],{fontSize:50,align:'center',visible:false,wrap:false,color:'#05020a'},'Trial');n.slot.alignment=[.5,.5];}
 for(let i=0;i<MAIN_GLYPHS;i++)glyph('MF'+i,'Trial',50);for(let i=0;i<NOISE_GLYPHS;i++)glyph('NF'+i,'Trial',34);
 add('Image','NamePanel',[22,12,420,80],{texture:hud('name'),imageFit:'fill'},'Trial');
 add('Text','TrialSpeaker',[66,20,300,34],{font:head,fontSize:24,color:'#ffffff'},'Trial');
@@ -111,6 +118,7 @@ add('Text','BulletLabel',[220,612,160,20],{text:'언령',font:body,fontSize:15,c
 add('Image','TimerPanel',[938,644,330,64],{texture:hud('timer'),imageFit:'fill'},'Trial');
 add('Text','Timer',[1004,652,240,48],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:42,color:'#ffb21f',align:'right'},'Trial');
 add('Image','VPoint',[0,0,22,22],{texture:'Assets/Art/ui/vpoint.svg',imageFit:'contain',visible:false},'Trial').slot.alignment=[.5,.5];
+add('Image','StartBand',[0,250,1280,200],{texture:'Assets/Art/ui/start_nonstop.svg',imageFit:'fill',visible:false},'Trial');
 add('Text','TrialMsg',[0,300,1280,80],{font:head,fontSize:60,align:'center',color:'#ff8fc8',visible:false},'Trial');
 add('Image','Cutin',[128,200,1024,342],{texture:'Assets/Art/ui/cutin_objection.png',imageFit:'contain',visible:false},'Trial');
 add('Image','Aim',[608,328,64,64],{texture:'Assets/Art/ui/aim.svg',imageFit:'contain'},'Trial');
@@ -132,8 +140,56 @@ await write('Assets/UI/Main.hbwidget.json',w);
  put('Panel','Shade',[0,0,1280,720],{background:'#05030acc'});
  put('Image','QPlate',[140,28,1000,64],{texture:hud('bullet'),imageFit:'fill'});
  put('Text','Question',[180,38,930,46],{font:head,fontSize:28,align:'center'});
- // 보기 8칸 (객관식·언령·인물·지점·투표·스크럼 키워드·클라이맥스 조각)
- for(let i=0;i<8;i++){put('Panel','OptP'+i,[290,118+i*64,700,56],{background:'#0b1018e6',borderWidth:2,borderColor:'#36e3ff',radius:4});put('Text','OptT'+i,[316,128+i*64,650,38],{fontSize:24});}
+ // V3 선택 화면 장식 (docs/spec/16 §5-2 재판) : 문장·ANSWER·모래시계·화자 이름표·아래 질문·조작 안내
+ const svg=(name,body,w,h)=>write(`Assets/Art/ui/${name}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">${body}</svg>`);
+ const black='font-family="Arial Black,Arial" font-weight="900" font-style="italic"';
+ await svg('cls_emblem',`<path d="M10 92L46 8h34L44 92z" fill="#ff4fa3"/><text x="58" y="56" ${black} font-size="30" fill="#36e3ff">CLASS</text><text x="58" y="88" ${black} font-size="30" fill="#36e3ff">TRIAL</text>`,200,100);
+ await svg('answer',`<text x="6" y="48" ${black} font-size="50" fill="none" stroke="#b6ff3d" stroke-width="3">ANSWER</text><text x="6" y="48" ${black} font-size="50" fill="#e9ffcf" opacity=".35">ANSWER</text>`,260,60);
+ await svg('band_off','<path d="M14 2H1000V40H0z" fill="#0b1018" fill-opacity=".78"/><path d="M14 2H1000" stroke="#ffffff" stroke-opacity=".25"/>',1000,42);
+ await svg('band_on','<path d="M14 2H1000V40H0z" fill="#1c6fd6" fill-opacity=".92"/><path d="M14 2H1000M0 40H1000" stroke="#9fe0ff" stroke-width="2"/>',1000,42);
+ await svg('hourglass','<path d="M10 6h100M10 234h100" stroke="#36e3ff" stroke-width="8"/><path d="M20 12c0 70 80 70 80 108s-80 38-80 108" fill="none" stroke="#36e3ff" stroke-width="6"/><path d="M100 12c0 70-80 70-80 108s80 38 80 108" fill="none" stroke="#36e3ff" stroke-width="6"/><path d="M34 40h52c-6 30-26 44-26 70c0-26-20-40-26-70z" fill="#ff4fa3"/><path d="M60 150c-20 12-30 40-32 72h64c-2-32-12-60-32-72z" fill="#ff4fa3"/>',120,240);
+ await svg('spk_tag','<path d="M18 0H300L282 56H0z" fill="#0b1018" fill-opacity=".9"/><path d="M18 0H300" stroke="#ff4fa3" stroke-width="4"/>',300,56);
+ await svg('q_band','<path d="M0 0H1280V96H0z" fill="#05070c" fill-opacity=".86"/><path d="M0 1H1280" stroke="#36e3ff" stroke-opacity=".6" stroke-width="2"/>',1280,96);
+ await svg('bul_line','<path d="M30 0V460" stroke="#ffffff" stroke-opacity=".7" stroke-width="3"/><circle cx="30" cy="8" r="7" fill="#ffffff"/><circle cx="30" cy="452" r="7" fill="#ff4fa3"/>',60,460);
+ await svg('bul_cyl','<g fill="none" stroke="#36e3ff" stroke-opacity=".55" stroke-width="10"><circle cx="230" cy="230" r="200"/><circle cx="230" cy="230" r="60"/></g>'+[0,1,2,3,4,5].map(k=>{const a=k*Math.PI/3;return `<circle cx="${230+130*Math.cos(a)}" cy="${230+130*Math.sin(a)}" r="52" fill="#36e3ff" fill-opacity=".18" stroke="#36e3ff" stroke-opacity=".6" stroke-width="6"/>`;}).join(''),460,460);
+ await svg('card_frame','<path d="M0 0H400V250H0z" fill="#0b1018" fill-opacity=".9"/><path d="M2 2H398V248H2z" fill="none" stroke="#ffffff" stroke-width="3"/>',400,250);
+ await svg('desc_box','<path d="M20 0H440V260H0V20z" fill="#05070c" fill-opacity=".88"/><path d="M20 40H420" stroke="#36e3ff" stroke-width="2"/>',440,260);
+ await svg('accuse',`<text x="40" y="64" ${black} font-size="58" fill="#ffffff" stroke="#ff2a6d" stroke-width="3">ACCUSE</text><path d="M4 78L30 10" stroke="#ff2a6d" stroke-width="10"/>`,320,90);
+ await svg('acc_ring','<ellipse cx="240" cy="70" rx="230" ry="62" fill="none" stroke="#ff4fa3" stroke-width="14"/><ellipse cx="240" cy="70" rx="170" ry="40" fill="#ff4fa3" fill-opacity=".25"/>',480,140);
+ await svg('acc_name','<path d="M20 0H560L540 80H0z" fill="#0b1018" fill-opacity=".85"/><path d="M20 0H560M0 80H540" stroke="#ffe36e" stroke-width="3"/>',560,80);
+ await svg('spot_title',`<text x="30" y="58" ${black} font-size="44" fill="#ffffff">SPOT</text><text x="150" y="58" ${black} font-size="30" fill="#ff4fa3">SELECTION</text>`,380,80);
+ await svg('spot_frame','<rect x="3" y="3" width="894" height="514" fill="none" stroke="#bfe6ff" stroke-width="6"/>',900,520);
+ await svg('spot_mark','<circle cx="30" cy="30" r="22" fill="none" stroke="#7dff5a" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#7dff5a"/><path d="M30 0v14M30 46v14M0 30h14M46 30h14" stroke="#7dff5a" stroke-width="3"/>',60,60);
+ put('Image','Emblem',[18,26,200,100],{texture:'Assets/Art/ui/cls_emblem.svg',imageFit:'contain'});
+ put('Image','AnswerLbl',[236,176,260,60],{texture:'Assets/Art/ui/answer.svg',imageFit:'contain'});
+ put('Image','Hourglass',[110,236,120,240],{texture:'Assets/Art/ui/hourglass.svg',imageFit:'contain'});
+ put('Image','SpkTag',[30,470,300,56],{texture:'Assets/Art/ui/spk_tag.svg',imageFit:'fill'});
+ put('Text','SpkName',[52,478,250,40],{font:head,fontSize:26,color:'#ffffff'});
+ put('Image','QBand',[0,604,1280,96],{texture:'Assets/Art/ui/q_band.svg',imageFit:'fill'});
+ put('Text','QText',[110,616,1060,76],{fontSize:26,color:'#9fe6ff',wrap:true});
+ put('Text','Hint',[900,560,360,30],{fontSize:18,color:'#ffffff',align:'right'});
+ put('Image','BulCyl',[-140,190,460,460],{texture:'Assets/Art/ui/bul_cyl.svg',imageFit:'contain'});
+ put('Image','BulLine',[40,136,60,440],{texture:'Assets/Art/ui/bul_line.svg',imageFit:'fill'});
+ put('Image','CardFrame',[840,92,400,250],{texture:'Assets/Art/ui/card_frame.svg',imageFit:'fill'});
+ put('Image','CardImg',[846,98,388,238],{texture:'',imageFit:'contain'});
+ put('Image','DescBox',[820,350,440,250],{texture:'Assets/Art/ui/desc_box.svg',imageFit:'fill'});
+ put('Text','CardTitle',[850,356,400,34],{font:head,fontSize:26,color:'#ffffff'});
+ put('Text','CardText',[846,400,400,190],{fontSize:19,color:'#e6f2ff',wrap:true});
+ put('Image','AccLbl',[20,20,320,90],{texture:'Assets/Art/ui/accuse.svg',imageFit:'contain'});
+ put('Image','AccRing',[270,520,380,110],{texture:'Assets/Art/ui/acc_ring.svg',imageFit:'contain'});
+ put('Image','AccFig',[210,40,500,600],{texture:'',imageFit:'contain'});
+ put('Image','AccTag',[680,270,560,80],{texture:'Assets/Art/ui/acc_name.svg',imageFit:'fill'});
+ put('Text','AccNo',[700,276,90,66],{font:'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf',fontSize:58,color:'#ffe36e'});
+ put('Text','AccName',[790,282,430,60],{font:head,fontSize:40,color:'#ffffff'});
+ put('Text','AccArrows',[150,300,80,80],{text:'◀',font:head,fontSize:56,align:'center',color:'#ff4fa3'});put('Text','AccArrowR',[690,300,80,80],{text:'▶',font:head,fontSize:56,align:'center',color:'#ff4fa3'});
+ put('Image','SpotTitle',[18,20,380,80],{texture:'Assets/Art/ui/spot_title.svg',imageFit:'contain'});
+ put('Image','SpotImg',[190,90,900,520],{texture:'',imageFit:'cover'});
+ put('Image','SpotFrame',[190,90,900,520],{texture:'Assets/Art/ui/spot_frame.svg',imageFit:'fill'});
+ put('Panel','CrossH',[190,0,900,2],{background:'#7dff5a'});put('Panel','CrossV',[0,90,2,520],{background:'#7dff5a'});
+ for(let i=0;i<6;i++){const n=put('Image','Mark'+i,[0,0,60,60],{texture:'Assets/Art/ui/spot_mark.svg',imageFit:'contain'});n.slot.alignment=[.5,.5];}
+ put('Text','MarkName',[190,560,900,44],{font:head,fontSize:28,align:'center',color:'#16121c',background:'#ffe36ee8'});
+ // 보기 8칸 : V3 번호 띠(오른쪽 끝까지), 고른 띠만 파랗게. 좌표는 TrialRunner showOptions 가 정한다
+ for(let i=0;i<8;i++){put('Image','OptP'+i,[300,250+i*46,980,42],{texture:'Assets/Art/ui/band_off.svg',imageFit:'fill'});put('Text','OptT'+i,[330,254+i*46,900,34],{fontSize:24});}
  // 클라이맥스 만화 칸 8 (4×2)
  for(let i=0;i<8;i++){const c=i%4,r=Math.floor(i/4);put('Panel','PanP'+i,[24+c*310,102+r*150,298,142],{background:'#f4f0e8',borderWidth:4,borderColor:'#16121c'});put('Text','PanT'+i,[36+c*310,110+r*150,274,126],{fontSize:15,color:'#16121c',wrap:true});}
  // 발굴 이매지네이션 블록 12×6 아래에 보물 3개
@@ -183,7 +239,10 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  put('Image','FCard',[0,0,1280,720],{texture:'',imageFit:'cover'});
  put('Text','FCardT',[0,250,1280,120],{font:head,fontSize:84,align:'center',color:'#ff8fc8'});
  put('Text','FCardS',[0,380,1280,50],{font:head,fontSize:30,align:'center',color:'#efe6f4'});
- put('Text','FHud',[900,14,360,34],{font:head,fontSize:22,align:'right',color:'#ffe9a8',background:'#0b1018b0',visible:true});
+ await write('Assets/Art/ui/hud_chapter.svg','<svg xmlns="http://www.w3.org/2000/svg" width="300" height="76"><path d="M40 6H296L282 40H26z" fill="#ffd21f"/><path d="M26 40H282" stroke="#16121c" stroke-width="2"/><path d="M60 50H290L282 70H52z" fill="#16121c" fill-opacity=".8"/><circle cx="34" cy="26" r="22" fill="#ffd21f" stroke="#16121c" stroke-width="3"/><path d="M22 10l6 10M46 10l-6 10" stroke="#ff4fa3" stroke-width="5" stroke-linecap="round"/><circle cx="28" cy="28" r="3" fill="#16121c"/><circle cx="40" cy="28" r="3" fill="#d81f2a"/></svg>');
+ put('Image','FHudImg',[966,10,300,76],{texture:'Assets/Art/ui/hud_chapter.svg',imageFit:'fill',visible:true});
+ put('Text','FHud',[1000,14,250,30],{font:head,fontSize:22,align:'right',color:'#16121c',visible:true});
+ put('Text','FHudSub',[1030,58,220,22],{fontSize:15,align:'right',color:'#ffe9a8',visible:true});
  put('Panel','FShade',[0,0,1280,720],{background:'#05030a99'});
  put('Text','FMenuQ',[200,120,880,56],{font:head,fontSize:30,align:'center',background:'#0b1018e6'});
  for(let i=0;i<9;i++){put('Panel','FOptP'+i,[340,200+i*58,600,50],{background:'#0b1018e6',borderWidth:2,borderColor:'#ff4fa3',radius:6});put('Text','FOptT'+i,[360,208+i*58,560,36],{fontSize:22});}
@@ -193,6 +252,66 @@ for(let i=0;i<3;i++){put('Image','MineIcon'+i,[180+i*320,272,280,136],{texture:'
  put('Text','FToast',[340,24,600,46],{font:head,fontSize:24,align:'center',color:'#16121c',background:'#ffe36ee8',radius:8});
  put('Text','FCredits',[140,60,1000,600],{fontSize:26,align:'center',wrap:true,color:'#efe6f4'});
  await write('Assets/UI/Flow.hbwidget.json',f);
+}
+// 4-4) 탐색 위젯 W_Explore (docs/spec/16 §1-1·§5-2) : 1인칭 방 시점·조준점·이름표·장소 띠·미니맵 / 지도(이동) / 예·아니오 / 언령 획득 / 띠 연출
+{
+ const e=createWidgetAsset('W_Explore');e.scaleMode='scale';e.scaleRule='fit';
+ const put=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:24,color:'#ffffff',background:'#00000000',padding:0,focusable:false,visible:false,...props});e.nodes.push(n);return n;};
+ const svg=(name,b,w,h)=>write(`Assets/Art/ui/${name}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">${b}</svg>`);
+ await svg('ex_cross','<circle cx="40" cy="40" r="16" fill="none" stroke="#ffd21f" stroke-width="4"/><circle cx="40" cy="40" r="3" fill="#ffd21f"/>',80,80);
+ await svg('ex_cross_on','<circle cx="40" cy="40" r="28" fill="#ffd21f" fill-opacity=".18" stroke="#ffd21f" stroke-width="5"/><path d="M40 4v16M40 60v16M4 40h16M60 40h16" stroke="#ffd21f" stroke-width="4"/><circle cx="40" cy="40" r="5" fill="#ffd21f"/>',80,80);
+ await svg('ex_label','<path d="M24 0H560L536 50H0z" fill="#ffd21f"/><path d="M30 6H548" stroke="#16121c" stroke-opacity=".35" stroke-width="2"/>',560,50);
+ await svg('ex_area','<path d="M0 0H430L400 52H0z" fill="#ffd21f"/><path d="M0 52H400" stroke="#16121c" stroke-width="3"/>',430,56);
+ await svg('ex_area_icon','<path d="M14 92V48h18V30h34v18h18v44z" fill="#16121c"/><path d="M48 4v18M24 14l8 12M72 14l-8 12" stroke="#ff7a1a" stroke-width="6" stroke-linecap="round"/><circle cx="48" cy="34" r="10" fill="#ff7a1a"/><path d="M22 60h12M44 60h12M66 60h12M22 76h12M44 76h12M66 76h12" stroke="#ffd21f" stroke-width="5"/>',96,96);
+ await svg('ex_mini','<path d="M100 4L196 100L100 196L4 100z" fill="#0b1018" fill-opacity=".72" stroke="#ffffff" stroke-width="3"/><path d="M100 30L170 100L100 170L30 100z" fill="none" stroke="#36e3ff" stroke-opacity=".5" stroke-width="2"/>',200,200);
+ await svg('ex_arrow','<path d="M4 30L40 4V56z" fill="#ffffff" fill-opacity=".55"/>',44,60);
+ await svg('map_item','<path d="M16 0H520L504 54H0z" fill="#0b1018" fill-opacity=".86"/><path d="M16 1H520" stroke="#ff4fa3" stroke-width="3"/>',520,56);
+ await svg('map_item_on','<path d="M16 0H520L504 54H0z" fill="#ff4fa3" fill-opacity=".92"/><path d="M16 1H520M0 53H504" stroke="#ffffff" stroke-width="3"/>',520,56);
+ await svg('confirm','<path d="M30 0H720L690 200H0z" fill="#0b1018" fill-opacity=".94"/><path d="M30 2H718" stroke="#ffd21f" stroke-width="4"/><path d="M0 198H690" stroke="#ffd21f" stroke-width="2"/>',720,200);
+ await svg('kget_glow','<defs><radialGradient id="g"><stop offset="0" stop-color="#fff6c8" stop-opacity=".9"/><stop offset=".6" stop-color="#ffd21f" stop-opacity=".25"/><stop offset="1" stop-color="#ffd21f" stop-opacity="0"/></radialGradient></defs><circle cx="300" cy="300" r="300" fill="url(#g)"/>'+Array.from({length:16},(_,i)=>{const a=i*Math.PI/8;return `<path d="M300 300L${300+300*Math.cos(a-.05)} ${300+300*Math.sin(a-.05)}L${300+300*Math.cos(a+.05)} ${300+300*Math.sin(a+.05)}z" fill="#fff6c8" fill-opacity=".25"/>`;}).join(''),600,600);
+ await svg('kget_band','<path d="M0 0H1280V110H0z" fill="#0b1018" fill-opacity=".9"/><path d="M0 2H1280M0 108H1280" stroke="#ffd21f" stroke-width="4"/>',1280,110);
+ for(const [k,t,c] of [['free','自由行動  ·  자유행동','#36e3ff'],['inv','捜査開始  ·  수사 개시','#ff2a6d'],['invend','捜査終了  ·  수사 종료','#ff2a6d'],['body','死体発見  ·  시체 발견','#d81f2a']])
+  await svg('band_'+k,`<path d="M0 30L1280 0V130L0 160Z" fill="#05020a" fill-opacity=".92"/><path d="M0 30L1280 0M0 160L1280 130" stroke="${c}" stroke-width="6"/><text x="640" y="104" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="64" fill="#ffffff" stroke="${c}" stroke-width="2" transform="rotate(-1.4 640 80)">${t}</text>`,1280,160);
+ put('Image','ExBg',[-160,-90,1600,900],{texture:'',imageFit:'cover'});
+ for(let i=0;i<6;i++){const n=put('Image','Fig'+i,[0,0,240,520],{texture:'',imageFit:'contain'});n.slot.alignment=[.5,1];}
+ for(let i=0;i<10;i++){const n=put('Image','Spark'+i,[0,0,30,30],{texture:'Assets/Art/ui/vpoint.svg',imageFit:'contain',opacity:.0});n.slot.alignment=[.5,.5];}
+ put('Image','ArL',[8,330,44,60],{texture:'Assets/Art/ui/ex_arrow.svg',imageFit:'contain'});
+ {const n=put('Image','ArR',[1228,330,44,60],{texture:'Assets/Art/ui/ex_arrow.svg',imageFit:'contain',rotation:180});}
+ put('Image','AreaBand',[0,20,430,56],{texture:'Assets/Art/ui/ex_area.svg',imageFit:'fill'});
+ put('Image','AreaIcon',[8,4,90,90],{texture:'Assets/Art/ui/ex_area_icon.svg',imageFit:'contain'});
+ put('Text','AreaName',[104,28,300,40],{font:head,fontSize:26,color:'#16121c'});
+ put('Image','Mini',[1080,500,180,180],{texture:'Assets/Art/ui/ex_mini.svg',imageFit:'contain'});
+ for(let i=0;i<10;i++){const n=put('Panel','MiniDot'+i,[0,0,12,12],{background:'#ffd21f',radius:6});n.slot.alignment=[.5,.5];}
+ put('Text','ExHint',[24,676,700,30],{fontSize:18,color:'#ffffff'});
+ put('Image','LblBand',[360,610,560,50],{texture:'Assets/Art/ui/ex_label.svg',imageFit:'fill'});
+ put('Text','LblText',[390,616,500,38],{font:head,fontSize:26,align:'center',color:'#16121c'});
+ {const n=put('Image','Cross',[0,0,80,80],{texture:'Assets/Art/ui/ex_cross.svg',imageFit:'contain'});n.slot.alignment=[.5,.5];}
+ // 지도 : 왼쪽 지도 그림, 오른쪽 장소 목록(얼굴 아이콘)
+ put('Panel','MapBack',[0,0,1280,720],{background:'#08122af2'});
+ put('Image','MapImg',[30,90,640,560],{texture:'',imageFit:'contain'});
+ put('Text','MapHead',[30,24,700,56],{font:head,fontSize:40,color:'#ff4fa3',text:'MAP'});
+ put('Text','MapSub',[700,40,560,36],{fontSize:20,color:'#cfe8ff',align:'right'});
+ for(let i=0;i<9;i++){const y=96+i*62;put('Image','MapP'+i,[700,y,520,56],{texture:'Assets/Art/ui/map_item.svg',imageFit:'fill'});put('Text','MapT'+i,[728,y+10,300,36],{font:head,fontSize:24});
+  for(let k=0;k<4;k++)put('Image',`MapF${i}_${k}`,[1040+k*44,y+6,42,42],{texture:'',imageFit:'cover',radius:21});}
+ put('Text','MapHint',[700,668,560,30],{fontSize:18,color:'#ffffff',align:'right'});
+ // 예·아니오
+ put('Panel','CfShade',[0,0,1280,720],{background:'#05030a99'});
+ put('Image','CfBox',[280,240,720,200],{texture:'Assets/Art/ui/confirm.svg',imageFit:'fill'});
+ put('Text','CfText',[320,268,640,70],{font:head,fontSize:30,align:'center',wrap:true});
+ put('Image','CfYesP',[380,360,220,50],{texture:'Assets/Art/ui/map_item_on.svg',imageFit:'fill'});put('Text','CfYes',[380,366,220,38],{font:head,fontSize:26,align:'center',text:'예'});
+ put('Image','CfNoP',[660,360,220,50],{texture:'Assets/Art/ui/map_item.svg',imageFit:'fill'});put('Text','CfNo',[660,366,220,38],{font:head,fontSize:26,align:'center',text:'아니오'});
+ // 언령 획득 : 빛 + 카드 + 이름 띠
+ put('Panel','KShade',[0,0,1280,720],{background:'#05030acc'});
+ {const n=put('Image','KGlow',[340,60,600,600],{texture:'Assets/Art/ui/kget_glow.svg',imageFit:'contain'});}
+ put('Image','KFrame',[490,130,300,410],{texture:'Assets/Art/ui/kotodama/frame_evidence.png',imageFit:'fill'});
+ put('Image','KCard',[512,196,256,256],{texture:'',imageFit:'contain'});
+ put('Image','KBand',[0,560,1280,110],{texture:'Assets/Art/ui/kget_band.svg',imageFit:'fill'});
+ put('Text','KTitle',[0,570,1280,48],{font:head,fontSize:38,align:'center',color:'#ffd21f'});
+ put('Text','KMsg',[0,620,1280,36],{fontSize:22,align:'center',color:'#ffffff'});
+ // 띠 연출 (자유행동·수사 개시·수사 종료·시체 발견)
+ put('Image','Band',[0,280,1280,160],{texture:'Assets/Art/ui/band_free.svg',imageFit:'fill'});
+ put('Panel','Flash',[0,0,1280,720],{background:'#d81f2acc'});
+ await write('Assets/UI/Explore.hbwidget.json',e);
 }
 { // 브레인 드라이브·스크럼 그림 (원근 네온 도로, 차, 띠)
  await write('Assets/Art/ui/taxi_road.svg','<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07021a"/><stop offset=".45" stop-color="#2a0b45"/><stop offset="1" stop-color="#05020f"/></linearGradient></defs><rect width="1280" height="720" fill="url(#sky)"/>'+Array.from({length:60},(_,i)=>`<circle cx="${(i*197)%1280}" cy="${(i*71)%230}" r="${1+i%3*.6}" fill="#fff" opacity=".7"/>`).join('')+'<path d="M600 250H680L1260 720H20Z" fill="#12082a"/><path d="M600 250L20 720M680 250L1260 720" stroke="#ff4fa3" stroke-width="8"/><path d="M627 250L407 720M653 250L873 720" stroke="#36e3ff" stroke-width="2" opacity=".35"/>'+Array.from({length:10},(_,i)=>{const y=250+Math.pow(i/10,1.8)*470;return `<path d="M0 ${y}H1280" stroke="#a46bff" stroke-opacity="${.08+i*.02}"/>`;}).join('')+'</svg>');
@@ -222,15 +341,15 @@ const scene=makeStarterScene('유메노쿠니','3d');scene.objects=[];
 Object.assign(scene.environment,{skyEnabled:false,sunEnabled:false,cloudsEnabled:false,fogEnabled:false,shadowEnabled:false});
 const sprite=(id,texture,position,w,h,extra={},rotation=[0,0,0])=>({id,name:id,kind:'sprite',position,rotation,scale:[1,1,1],visible:true,components:[makeSceneComponent('SpriteRenderer',{texture,width:w,height:h,color:[1,1,1,1],shading:'unlit',toneMapping:'display',...extra})]});
 scene.objects.push({id:'Camera',name:'재판 카메라',kind:'camera',position:[0,1.5,-2.3],rotation:[0,180,0],scale:[1,1,1],visible:true,components:[makeSceneComponent('Camera',{projection:'perspective',fieldOfView:FOV,main:true,near:.05,far:200})]});
-scene.objects.push(sprite('Floor',prop.floor,[0,0,0],15,15,{},[-90,0,0]));
-for(let i=0;i<12;i++){const b=i*30*Math.PI/180;scene.objects.push(sprite('Wall'+i,prop.wall,[13*Math.sin(b),3.4,13*Math.cos(b)],7.2,9.6,{},[0,i*30+180,0]));}
+scene.objects.push(sprite('Floor',prop.floor,[0,0,0],15,15,{color:[.5,.42,.62,1]},[-90,0,0]));
+for(let i=0;i<12;i++){const b=i*30*Math.PI/180;scene.objects.push(sprite('Wall'+i,prop.wall,[13*Math.sin(b),3.4,13*Math.cos(b)],7.2,9.6,{color:[.42,.32,.52,1]},[0,i*30+180,0]));}
 // 왕좌는 증언대 머리 위로 높이 (V3 : 모노쿠마는 재판장을 내려다본다)
-scene.objects.push(sprite('Throne',prop.throne,[0,4.2,-(R+3.4)],4,4,{billboard:true}));
+scene.objects.push(sprite('Throne',prop.throne,[0,4.2,-(R+3.4)],4,4,{billboard:true,color:[.7,.6,.75,1]}));
 scene.objects.push(sprite('Host',`Assets/Art/sprites/lappy/lappy_L01.webp`,[0,4.6,-(R+2.4)],1.6,1.6,{billboard:true,sortingOrder:10})); // 왕좌보다 1m 앞
 SEATS.forEach((slug,i)=>{
  const a=i*22.5*Math.PI/180;
  scene.objects.push(sprite('Seat'+i,`Assets/Art/sprites/${slug}/${slug}_C01.webp`,[R*Math.sin(a),SPRITE_Y,R*Math.cos(a)],SPRITE,SPRITE,{billboard:true}));
- scene.objects.push(sprite('Podium'+i,prop.podium,[(R-PODIUM_INSET)*Math.sin(a),PODIUM_H/2,(R-PODIUM_INSET)*Math.cos(a)],PODIUM_W,PODIUM_H,{billboard:true}));
+ scene.objects.push(sprite('Podium'+i,prop.podium,[(R-PODIUM_INSET)*Math.sin(a),PODIUM_H/2,(R-PODIUM_INSET)*Math.cos(a)],PODIUM_W,PODIUM_H,{billboard:true,color:[.72,.66,.85,1]}));
 });
 const header=await fs.readFile(path.join(root,'Source/Yumeno.h'),'utf8'),source=await fs.readFile(path.join(root,'Source/Yumeno.cpp'),'utf8');
 const bp=createAsset('blueprint','BP_Yumeno');bp.settings.parentClass='Yumeno';bp.native={...parseNativeHeader(header),header,source,headerPath:'Source/Yumeno.h',sourcePath:'Source/Yumeno.cpp'};bp.nodes=[];bp.edges=[];

@@ -26,7 +26,8 @@ bool Yumeno::pressed(const std::string& key){bool now=Input::IsKeyDown(key),edge
 void Yumeno::text(const std::string& id,const std::string& value){if(texts.count(id)&&texts[id]==value)return;texts[id]=value;UI::SetText(this,UI_ID,id,value);}
 
 void Yumeno::dialogVisible(bool visible){
- for(auto id:{"DialogFrame","Nameplate","Name","Body"})UI::SetVisible(this,UI_ID,id,visible);
+ for(auto id:{"DialogFrame","Nameplate","Name","NameHead","Body"})UI::SetVisible(this,UI_ID,id,visible);
+ if(!visible)UI::SetVisible(this,UI_ID,"Next",false);
 }
 
 void Yumeno::message(const std::string& value,float seconds){text("TrialMsg",value);UI::SetVisible(this,UI_ID,"TrialMsg",true);messageTimer=seconds;}
@@ -83,7 +84,9 @@ void Yumeno::startDebate(const hb::Json& d){
  bullets.clear();for(auto& b:d["bullets"])bullets.emplace_back(b.value("id",""),b.value("name",""));
  bullet=0;shownLine=-1;shownHearts=-1;shownNoise=-1;clearTimer=0;holdTime=-1;lie=false;
  playingDebate=true;dialogVisible(false);debateHud(true);sclear();
- debateTime=180;showBullet();message(d.value("kind","")=="panic"?"패닉 논의 개시!":"논스톱 논의 개시!",1.6f);
+ debateTime=180;showBullet();
+ bool panic=d.value("kind","")=="panic";UI::SetTexture(this,UI_ID,"StartBand",panic?"Assets/Art/ui/start_panic.svg":"Assets/Art/ui/start_nonstop.svg");UI::SetVisible(this,UI_ID,"StartBand",true);startBandTimer=1.6f;
+ UI::SetVisible(this,UI_ID,"Lens",true);
 }
 
 // 인물별 논의 글꼴 (docs/spec/04 §4-3) : {평소, 감정 폭발}
@@ -108,12 +111,20 @@ void Yumeno::drawGlyphs(const std::string& prefix,int capacity,const std::vector
  for(int i=0;i<capacity;i++){
   auto front=prefix+"F"+std::to_string(i),back=prefix+"B"+std::to_string(i);
   auto& c=glyphCache[front];
-  if(i>=int(gs.size())){if(c.visible!=0){UI::SetVisible(this,UI_ID,front,false);UI::SetVisible(this,UI_ID,back,false);c.visible=0;}continue;}
+  if(i>=int(gs.size())){if(c.visible!=0){UI::SetVisible(this,UI_ID,front,false);UI::SetVisible(this,UI_ID,back,false);c.visible=0;}
+   if(prefix=="M"){auto& sc=glyphCache["MS"+std::to_string(i)];if(sc.visible){UI::SetVisible(this,UI_ID,"MS"+std::to_string(i),false);sc.visible=0;}}continue;}
   auto& g=gs[i];int vis=g.front?1:2;
   if(c.visible!=vis){UI::SetVisible(this,UI_ID,front,vis==1);UI::SetVisible(this,UI_ID,back,vis==2);c.visible=vis;}
   auto id=vis==1?front:back;
   if(c.text!=g.text){UI::SetText(this,UI_ID,front,g.text);UI::SetText(this,UI_ID,back,g.text);c.text=g.text;}
-  UI::SetPosition(this,UI_ID,id,{g.x,g.y});UI::SetScale(this,UI_ID,id,{g.scale,g.scale});
+  // 위치·배율도 바뀐 만큼만 보낸다 : 엔진은 Update 한 번에 명령 1000개까지
+  if(std::abs(c.x-g.x)>.6f||std::abs(c.y-g.y)>.6f||vis!=c.lastLayer){UI::SetPosition(this,UI_ID,id,{g.x,g.y});c.x=g.x;c.y=g.y;}
+  if(std::abs(c.s-g.scale)>.006f||vis!=c.lastLayer){UI::SetScale(this,UI_ID,id,{g.scale,g.scale});c.s=g.scale;}
+  c.lastLayer=vis;
+  if(prefix=="M"){auto sh="MS"+std::to_string(i);auto& sc=glyphCache[sh];bool on=vis==1;
+   if(sc.visible!=int(on)){UI::SetVisible(this,UI_ID,sh,on);sc.visible=on;}
+   if(on){if(sc.text!=g.text){UI::SetText(this,UI_ID,sh,g.text);sc.text=g.text;}if(std::abs(sc.x-g.x)>.6f||std::abs(sc.y-g.y)>.6f){UI::SetPosition(this,UI_ID,sh,{g.x+3*g.scale,g.y+4*g.scale});sc.x=g.x;sc.y=g.y;}if(std::abs(sc.s-g.scale)>.006f){UI::SetScale(this,UI_ID,sh,{g.scale*1.04f,g.scale*1.04f});sc.s=g.scale;}
+    if(std::abs(sc.rotation-g.rotation)>.2f){UI::SetRotation(this,UI_ID,sh,g.rotation);sc.rotation=g.rotation;}if(std::abs(sc.opacity-g.opacity*.8f)>.03f){UI::SetOpacity(this,UI_ID,sh,g.opacity*.8f);sc.opacity=g.opacity*.8f;}}}
   if(std::abs(c.rotation-g.rotation)>.2f){UI::SetRotation(this,UI_ID,front,g.rotation);UI::SetRotation(this,UI_ID,back,g.rotation);c.rotation=g.rotation;}
   if(std::abs(c.opacity-g.opacity)>.03f){UI::SetOpacity(this,UI_ID,front,g.opacity);UI::SetOpacity(this,UI_ID,back,g.opacity);c.opacity=g.opacity;}
  }
@@ -131,8 +142,8 @@ void Yumeno::styleLine(){
   Color c=w?Color{1,.6f,.15f,1}:l.kind=="agree"?Color{.42f,.78f,1,1}:Color{1,1,1,1};
   auto font=weak?fonts.second:fonts.first;
   for(auto side:{"F","B"}){auto id=std::string("M")+side+std::to_string(i);auto& st=glyphStyle[id];
-   if(st.font!=font){UI::SetFont(this,UI_ID,id,font);st.font=font;}
-   if(st.size!=debate.base()){UI::SetFontSize(this,UI_ID,id,debate.base());st.size=debate.base();}
+   if(st.font!=font){UI::SetFont(this,UI_ID,id,font);st.font=font;if(side==std::string("F")){UI::SetFont(this,UI_ID,"MS"+std::to_string(i),font);}}
+   if(st.size!=debate.base()){UI::SetFontSize(this,UI_ID,id,debate.base());st.size=debate.base();if(side==std::string("F"))UI::SetFontSize(this,UI_ID,"MS"+std::to_string(i),debate.base());}
    if(st.r!=c.r||st.g!=c.g||st.b!=c.b){UI::SetColor(this,UI_ID,id,c);st.r=c.r;st.g=c.g;st.b=c.b;}}
  }
  text("TrialSpeaker",l.speaker);
@@ -142,6 +153,7 @@ void Yumeno::styleLine(){
 }
 
 void Yumeno::updateDebate(float delta){
+ if(startBandTimer>0&&(startBandTimer-=delta)<=0)UI::SetVisible(this,UI_ID,"StartBand",false);
  if(clearTimer>0){if((clearTimer-=delta)<=0){playingDebate=false;debateHud(false);beginScript();}return;}
  // 집중 : Shift 를 누르는 동안 시간 0.35배, 게이지 소모. 놓으면 회복.
  bool focusing=Input::IsKeyDown("Shift")&&debate.focus>0;
@@ -200,13 +212,14 @@ void Yumeno::Update(float delta){
   rules=Data::Get("Assets/Data/rules.json");
   art=Data::Get("Assets/Data/art.json");giftData=Data::Get("Assets/Data/gifts.json");kotodama=Data::Get("Assets/Data/kotodama.json");reactions=Data::Get("Assets/Data/reactions.json");
   UI::Show(this,"Assets/UI/Main.hbwidget.json",UI_ID);
+  UI::Show(this,"Assets/UI/Explore.hbwidget.json","explore");
   UI::Show(this,"Assets/UI/Flow.hbwidget.json","flow");
   music("bgm_title");
   return;
  }
  if(mode==Mode::Trial){try{updateTrial(delta);}catch(const std::exception& e){lastError=std::string("stage ")+std::to_string(stageAt)+" "+stageKind+": "+e.what();}return;}
  bool click=pressed("mouse0"),next=pressed("Enter")|pressed("Space")|click;
- if(pressed("Tab")&&flowOn&&(mode==Mode::Story||mode==Mode::Pad||mode==Mode::Menu||mode==Mode::Grid)){
+ if(pressed("Tab")&&flowOn&&(mode==Mode::Story||mode==Mode::Pad||mode==Mode::Menu||mode==Mode::Grid||mode==Mode::Explore||mode==Mode::Map)){
   if(mode==Mode::Pad){mode=beforePad;UI::SetVisible(this,UI_ID,"Pad",false);}
   else{beforePad=mode;mode=Mode::Pad;padPage();UI::SetVisible(this,UI_ID,"Pad",true);}
   return;
@@ -222,11 +235,14 @@ void Yumeno::Update(float delta){
   if(next)newGame();
   return;
  }
+ if(mode==Mode::Explore||mode==Mode::Map||mode==Mode::Confirm||mode==Mode::Popup){try{updateExplore(delta,click);}catch(const std::exception& e){lastError=std::string("explore: ")+e.what();}return;}
+ if(bandTimer>0&&(bandTimer-=delta)<=0)evis("Band",false);
+ if(flashTimer>0&&(flashTimer-=delta)<=0)evis("Flash",false);
  try{updateFlow(delta,next,click);}catch(const std::exception& e){lastError=std::string("flow ")+std::to_string(chapterAt)+"/"+std::to_string(beat)+"/"+std::to_string(event)+": "+e.what();}
 }
 
 std::string Yumeno::Stats()const{
- const char* names[]{"title","story","pad","end","trial","menu","grid","card","credits"};
+ const char* names[]{"title","story","pad","end","trial","menu","grid","card","credits","explore","map","confirm","popup"};
  Json s{{"mode",names[int(mode)]},{"chapter",chapterAt},{"beat",beat},{"event",event},{"pool",ctxPool},{"spot",ctxSpot},{"speaker",speaker},{"portrait",portrait},{"line",line},{"coins",coins},{"cards",int(cards.size())},{"gifts",int(gifts.size())}};
  if(flowOn&&mode!=Mode::Trial){s["beatKind"]=currentBeat().value("t","");s["auto"]=autoFlow();}
  if(!lastError.empty())s["error"]=lastError;
@@ -243,6 +259,7 @@ std::string Yumeno::Stats()const{
 
 #include "TrialRunner.hpp"
 #include "Flow.hpp"
+#include "Explore.hpp"
 
 void Yumeno::DebugJump(int index){if(mode==Mode::Trial)enterStage(index);}
 void Yumeno::DebugChapter(int index){newGame();openChapter(index);enterBeat();}

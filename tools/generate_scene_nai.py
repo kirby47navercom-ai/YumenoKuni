@@ -25,25 +25,29 @@ STYLE = nai.STYLE_POSITIVE.replace("-3::empty eyes, artist collaboration,doll::,
 NEG = nai.NEGATIVE.replace("plants, grass, leaves, ", "").replace("empty eyes, ", "")
 PARK = "pastel pink and mint amusement park theme, rabbit motif decorations, danganronpa style background, highly detailed interior"
 
-# ---- 사망 CG : 분명히 죽어 있는 모습(자는 것처럼 보이지 않게). 피는 보라색, 상처 묘사 없음 ----
-DEAD = ("1.6::dead body, corpse, lifeless::, 1.4::limp, collapsed, unnatural sprawled pose::, 1.3::blank lifeless eyes, half-open empty eyes, pale skin::, "
-        "1.6::purple blood::, 1.4::pool of purple blood spreading on floor, purple blood splatter::, crime scene, murder scene, ominous dramatic lighting, "
-        "high contrast shadows, danganronpa style body discovery, from above, cinematic wide shot")
-DEAD_NEG = ("1.6::sleeping, asleep, peaceful, resting, closed eyes, smile::, red blood, 1.5::gore, guts, wound, injury, exposed organs::, "
-            "nsfw, cleavage, panties, underwear, upskirt, 1.2::alive, standing, looking at viewer::, ")
+# ---- 사망 CG : 배경 판(현장·보라 피 웅덩이, 사람 없음) + 인물(쓰러진 자세, 흰 배경) 을 따로 뽑아 합성 ----
+# 인물은 분명히 죽어 있는 모습(자는 것처럼 보이지 않게). 피는 보라색, 상처 묘사 없음.
+DEAD = ("1.8::corpse, dead, death::, 1.6::lying on back on the floor, motionless, arms limp, body sprawled flat::, "
+        "1.5::expressionless, slack face, mouth slightly open, dull glassy unfocused eyes, no highlight in eyes::, pale grey skin, "
+        "1.7::purple blood::, 1.6::purple blood on face, purple blood on clothes, purple blood pool under body::, purple blood splatter, "
+        "1.6::full body, whole body visible, head to toe::, 1.4::from directly above, overhead view, wide shot::, simple background, white background")
+DEAD_NEG = ("2::multiple people, 2boys, 2girls, multiple bodies, duplicate, another person, bystander::, 1.6::sleeping, asleep, peaceful, resting, closed eyes, smile, grimace, angry, teeth, clenched teeth, frown, alive expression::, 1.6::crawling, all fours, kneeling, sitting, reaching, fighting, action pose::, 2::red blood::, 1.5::cropped, out of frame, cut off legs, close-up::, red blood, 1.5::gore, guts, wound, injury, exposed organs::, "
+            "nsfw, cleavage, panties, underwear, upskirt, 1.2::alive, standing, looking at viewer::, scenery, background objects, ")
+PLATE = "1.5::no humans, scenery::, 1.5::large pool of purple blood on the floor in the center::, purple blood splatter, crime scene, ominous dramatic lighting, high contrast shadows, from above, cinematic wide shot"
+# 이름 : (인물, 인물 자세, 현장, 합성 위치 cx·cy(0~1) · 폭 비율)
 DEATHS = {
-    "death_1_taiga": ("taiga", "night, empty carousel platform under purple neon light, giant pink horse figure no.7 lowered and crushing down on him, "
-                      "lying face down under the carousel horse, arm stretched out, whistle on red cord fallen on the floor, twisted horse statue"),
-    "death_2_yuu": ("yuu", "evening poolside of an indoor water park, lying face down at the pool edge, half of the body in the water, "
-                    "headphones floating on the water, soda can rolled away, wet tiles"),
-    "death_3a_riku": ("riku", "theater rigging room, huge fallen sandbag on the floor, lying crushed beneath the sandbag, white gloved hand sticking out, "
-                      "scattered playing cards around, a single joker card, black mini top hat fallen"),
-    "death_3b_sora": ("sora", "dark theater sound control room with mixing consoles, slumped sitting against the wall, head drooping, red headband fallen, "
-                      "purple blood stain on wall behind him, shadow of an axe on the wall"),
-    "death_4_haruka": ("haruka", "luxury hotel room no.505, collapsed on the floor in front of the closed locked door, one hand still raised against the door, "
-                       "scratch marks on the door, camera dropped on the carpet, no injury, deathly pale skin, bluish lips"),
-    "death_5_nana": ("nana", "narrow aisle between tall bookshelves in a castle library, lying on her side on the floor, a crossbow bolt lying beside her, "
-                     "scattered herb leaves, fallen books, table clock visible on a nearby shelf"),
+    "death_1_taiga": ("taiga", "lying face down, arm stretched out",
+                      "night, empty carousel platform under purple neon light, giant pink horse figure no.7 lowered to the floor, whistle on red cord on the floor, twisted horse statue", (.52, .64, .5)),
+    "death_2_yuu": ("yuu", "lying face down, arms spread, soaking wet clothes",
+                    "evening poolside of an indoor water park, pool edge, headphones floating on the water, soda can rolled away, wet tiles", (.46, .64, .48)),
+    "death_3a_riku": ("riku", "lying on back, limbs bent, white gloved hand reaching out",
+                      "theater rigging room, huge fallen sandbag on the floor, scattered playing cards, a single joker card, black mini top hat fallen", (.5, .64, .46)),
+    "death_3b_sora": ("sora", "1.4::slumped sitting against a wall, head drooping, legs out::",
+                      "dark theater sound control room with mixing consoles, purple blood stain on the wall, shadow of an axe on the wall, red headband on the floor", (.62, .6, .34)),
+    "death_4_haruka": ("haruka", "collapsed on the floor on her side, one hand raised toward a door, deathly pale, bluish lips",
+                       "luxury hotel room no.505, closed locked door with scratch marks, camera dropped on the carpet", (.46, .66, .46)),
+    "death_5_nana": ("nana", "lying on her side, arm stretched",
+                     "narrow aisle between tall bookshelves in a castle library, crossbow bolt on the floor, scattered herb leaves, fallen books, table clock on a shelf", (.5, .64, .46)),
 }
 
 # ---- 배경 : 사람 없음, V3 「무대 세트」 같은 실내외 ----
@@ -117,7 +121,71 @@ def fit(src, dst):
     im.crop((l, t, l + tw, t + th)).save(dst)
 
 
-def run(token, name, positive, negative, dst, n):
+def cutout(src):
+    """흰 배경 인물 → 투명 (rembg, 애니 모델)"""
+    from rembg import new_session, remove
+    global _session
+    try:
+        _session
+    except NameError:
+        _session = new_session("isnet-anime")
+    return remove(Image.open(src).convert("RGB"), session=_session).convert("RGBA")
+
+
+def composite(plate, figure, place, dst):
+    """판 위에 인물 : 크기·위치, 판 평균색으로 살짝 물들이고, 바닥 접촉 그림자"""
+    from PIL import ImageFilter, ImageEnhance, ImageChops
+    bg = Image.open(plate).convert("RGB")
+    W, H = bg.size
+    fg = cutout(figure)
+    box = fg.getbbox()
+    fg = fg.crop(box)
+    cx, cy, frac = place
+    w = int(W * frac)
+    fg = fg.resize((w, int(fg.height * w / fg.width)), Image.LANCZOS)
+    if fg.height > H * .8:
+        fg = fg.resize((int(fg.width * H * .8 / fg.height), int(H * .8)), Image.LANCZOS)
+    x, y = int(W * cx - fg.width / 2), int(H * cy - fg.height / 2)
+    # 조명 맞추기 : 판 주변 평균색과 25% 섞고 밝기를 판에 맞춘다
+    region = bg.crop((max(0, x), max(0, y), min(W, x + fg.width), min(H, y + fg.height))).resize((1, 1), Image.BOX).getpixel((0, 0))
+    rgb, alpha = fg.convert("RGB"), fg.getchannel("A")
+    tint = Image.new("RGB", rgb.size, region)
+    rgb = Image.blend(rgb, ImageChops.multiply(rgb, tint), .35)
+    rgb = ImageEnhance.Brightness(rgb).enhance(.85)
+    # 그림자 : 알파를 흐리게 해 아래로 조금 민다
+    shadow = Image.new("RGBA", bg.size, (0, 0, 0, 0))
+    sa = alpha.filter(ImageFilter.GaussianBlur(18)).point(lambda v: int(v * .6))
+    shadow.paste(Image.new("RGBA", fg.size, (20, 0, 30, 255)), (x + 10, y + 18), sa)
+    out = Image.alpha_composite(bg.convert("RGBA"), shadow)
+    # 보라 피 웅덩이 : 몸 실루엣을 넓히고 흐리게 해 몸 아래로 번지게
+    rnd = random.Random(hash(dst) & 0xffff)
+    pool = alpha.filter(ImageFilter.MaxFilter(41)).filter(ImageFilter.GaussianBlur(14))
+    blobs = Image.new("L", fg.size, 0)
+    from PIL import ImageDraw
+    d = ImageDraw.Draw(blobs)
+    for _ in range(14):
+        r = rnd.randint(fg.width // 14, fg.width // 6)
+        px, py = rnd.randint(fg.width // 5, fg.width * 4 // 5), rnd.randint(fg.height // 3, fg.height)
+        d.ellipse((px - r, py - r * .55, px + r, py + r * .55), fill=235)
+    pool = ImageChops.multiply(pool, blobs.filter(ImageFilter.GaussianBlur(10)).point(lambda v: min(255, v * 2)))
+    out.paste(Image.new("RGBA", fg.size, (118, 22, 150, 255)), (x + 6, y + 14), pool.point(lambda v: int(v * .92)))
+    gloss = pool.filter(ImageFilter.GaussianBlur(6)).point(lambda v: 60 if v > 200 else 0)
+    out.paste(Image.new("RGBA", fg.size, (210, 150, 255, 255)), (x + 2, y + 8), gloss)
+    edge = alpha.filter(ImageFilter.GaussianBlur(1.2))  # 가장자리를 부드럽게
+    out.paste(rgb, (x, y), edge)
+    # 몸 위 핏자국 (옷·얼굴, 몸 실루엣 안에서만)
+    stain = Image.new("L", fg.size, 0)
+    d = ImageDraw.Draw(stain)
+    for _ in range(9):
+        r = rnd.randint(fg.width // 40, fg.width // 16)
+        px, py = rnd.randint(fg.width // 6, fg.width * 5 // 6), rnd.randint(fg.height // 6, fg.height * 5 // 6)
+        d.ellipse((px - r, py - r, px + r, py + r), fill=200)
+    stain = ImageChops.multiply(stain.filter(ImageFilter.GaussianBlur(5)), alpha.filter(ImageFilter.MinFilter(9)))
+    out.paste(Image.new("RGBA", fg.size, (96, 14, 128, 255)), (x, y), stain.point(lambda v: int(v * .75)))
+    out.convert("RGB").save(dst)
+
+
+def run(token, name, positive, negative, dst, n, raw=False):
     cand = os.path.join(ROOT, "art", "_candidates", "scene")
     os.makedirs(cand, exist_ok=True)
     for k in range(n):
@@ -128,7 +196,7 @@ def run(token, name, positive, negative, dst, n):
                 with open(p[:-4] + ".txt", "w", encoding="utf-8") as f:
                     f.write(f"model: {nai.MODEL}\nsize: {nai.WIDTH}x{nai.HEIGHT}\nseed: {seed}\n\n[positive]\n{positive}\n\n[negative]\n{negative}\n")
                 if k == 0:
-                    fit(p, dst)
+                    (Image.open(p).save(dst) if raw else fit(p, dst))
                     print("  →", os.path.relpath(dst, ROOT), flush=True)
         except Exception as e:
             print("  실패:", e, flush=True)
@@ -140,18 +208,25 @@ def main():
     ap.add_argument("--death", nargs="*", default=None)
     ap.add_argument("--bg", nargs="*", default=None)
     ap.add_argument("--n", type=int, default=1)
+    ap.add_argument("--replate", action="store_true", help="사망 CG 배경 판도 다시 뽑는다(기본 : 있으면 재사용)")
     a = ap.parse_args()
     token = os.environ.get("NAI_TOKEN") or os.environ.get("NOVELAI_API_KEY")
     if not token:
         sys.exit("환경변수 NAI_TOKEN 에 토큰을 설정하세요.")
     if a.death is not None:
+        cg = os.path.join(ROOT, "art", "cg")
+        os.makedirs(cg, exist_ok=True)
         for name in a.death or DEATHS:
-            who, scene = DEATHS[name]
-            look = nai.CHARACTERS[who].replace("solo, ", "")
-            positive = f"{STYLE} {look}, {DEAD}, {scene}, {PARK}"
-            negative = DEAD_NEG + (nai.MALE_NEG if "1boy" in look else "") + NEG
-            os.makedirs(os.path.join(ROOT, "art", "cg"), exist_ok=True)
-            run(token, name, positive, negative, os.path.join(ROOT, "art", "cg", name + ".png"), a.n)
+            who, pose, scene, place = DEATHS[name]
+            look = nai.CHARACTERS[who]  # solo 유지 : 시체가 둘 생기지 않게
+            plate = os.path.join(cg, name + "_bg.png")
+            if a.replate or not os.path.exists(plate):
+                run(token, name + "_bg", f"{STYLE} {PLATE}, {scene}, {PARK}", "1.5::1girl, 1boy, people, person, character::, red blood, " + NEG, plate, a.n)
+            fig = os.path.join(ROOT, "art", "_candidates", "scene", name + "_fg_src.png")
+            run(token, name + "_fg", f"{STYLE} {look}, {pose}, {DEAD}", DEAD_NEG + (nai.MALE_NEG if "1boy" in look else "") + NEG, fig, a.n, raw=True)
+            if os.path.exists(plate) and os.path.exists(fig):
+                composite(plate, fig, place, os.path.join(cg, name + ".png"))
+                print("  합성 →", name, flush=True)
     if a.bg is not None:
         for name in a.bg or BG:
             positive = f"{STYLE} 1.5::no humans, scenery::, {BG[name]}, {PARK}, wide angle, stage set like 3d background"

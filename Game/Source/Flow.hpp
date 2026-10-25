@@ -25,7 +25,9 @@ void Yumeno::addBond(const std::string& slug,int points){int before=level(slug);
 void Yumeno::toast(const std::string& v){ftext("FToast",v);fvis("FToast",true);toastTimer=2.2f;}
 void Yumeno::hud(){
  std::string ch=chapter.value("chapter","P");
- ftext("FHud",(ch=="P"?std::string("프롤로그"):ch+"장")+"   ◎ "+std::to_string(coins));
+ ftext("FHud",ch=="P"?std::string("프롤로그"):"제"+ch+"장");
+ int total=0;for(auto& [k,v]:bonds)total+=v;
+ ftext("FHudSub","Lv "+std::to_string(1+total/12)+"     ◎ "+std::to_string(coins));
 }
 
 // 저장 : 장·비트·이벤트·문맥 + 인연·코인·선물·언령·플래그
@@ -45,8 +47,8 @@ bool Yumeno::loadFlow(){
   openChapter(s.value("chapter",0));beat=s.value("beat",0);
   ctxPool=s.value("pool",-1);ctxSpot=s.value("spot",-1);ctxEnding=s.value("ending",-1);slots=s.value("slots",0);
   auto t=currentBeat().value("t","");
-  if(ctxPool>=0||ctxSpot>=0||ctxEnding>=0||t=="scene"||t=="execution"){event=s.value("event",0);showStory();flowPresent();}
-  else enterBeat();
+  if(t=="scene"||t=="execution"||ctxEnding>=0){event=s.value("event",0);showStory();flowPresent();}
+  else{ctxPool=ctxSpot=-1;enterBeat();}
   return true;
  }catch(const std::exception&){return false;}
 }
@@ -111,8 +113,8 @@ void Yumeno::enterBeat(){
   else if(id.find("-E-")!=std::string::npos)music("bgm_epilogue");
   showStory();event=0;flowPresent();return;
  }
- if(t=="freetime"){slots=b.value("slots",2);music("bgm_freetime");showFreeSelect();return;}
- if(t=="investigate"){music("bgm_investigation");showInvestigate();return;}
+ if(t=="freetime"){slots=b.value("slots",2);music("bgm_freetime");mapHover=0;showMap();band("free");return;}
+ if(t=="investigate"){music("bgm_investigation");mapHover=0;showMap();band("inv");return;}
  if(t=="trial"){
   trialKey=b.value("key","11c");trialDead.clear();for(auto& d:b["dead"])trialDead.push_back(d.get<std::string>());
   trials=Data::Get("Assets/Data/trials/"+trialKey+".json");hideFlow();fvis("FHud",false);music("bgm_trial_main");startTrial();return;
@@ -139,17 +141,18 @@ void Yumeno::toTitle(){
 void Yumeno::flowPresent(){
  while(true){
   auto& evs=flowEvents();
-  if(event>=int(evs.size())){eventsDone();return;}
+  if(event>=int(evs.size())||(eventEnd>=0&&event>=eventEnd)){eventsDone();return;}
   auto& e=evs[event];auto type=e.value("type","");
   if(type=="goto"){event=e.value("to",event+1);continue;}
   if(type=="bg"){
    auto bg=e.value("bg","");std::string path;
+   if(bg.rfind("cg:death",0)==0)band("body");
    if(bg.rfind("cg:",0)==0){auto want=bg.substr(3);if(art.contains("cg"))for(auto& c:art["cg"]){auto n=c.get<std::string>();if(n.rfind(want,0)==0){path="Assets/Art/cg/"+n+".webp";break;}}}
    else path=artPath("backgrounds",bg,"bg",".webp");
-   if(!path.empty()){UI::SetTexture(this,UI_ID,"Background",path);UI::SetVisible(this,UI_ID,"Background",true);}
+   if(!path.empty()){UI::SetTexture(this,UI_ID,"Background",path);UI::SetVisible(this,UI_ID,"Background",true);if(bg.rfind("cg:",0)!=0)lastBackground=path;if(ctxSpot>=0&&bg.rfind("cg:",0)!=0)sceneBackground=path;}
    ++event;continue;
   }
-  if(type=="card"){auto id=e.value("id","");if(cards.insert(id).second)toast("언령 획득 : "+kotodamaName(id));++event;continue;}
+  if(type=="card"){auto id=e.value("id","");if(cards.insert(id).second){showStory();kotodamaGet(id);return;}++event;continue;}
   if(type=="menu"){
    std::vector<std::string> o;for(auto& x:e["options"])o.push_back(x.value("label",""));
    showMenu(e.value("q",""),o,MenuKind::Event);return;
@@ -184,8 +187,9 @@ void Yumeno::flowPresent(){
 void Yumeno::showLine(){
  lineLength=u8len(line);shown=0;
  bool named=!speaker.empty();
- UI::SetVisible(this,UI_ID,"Nameplate",named);UI::SetVisible(this,UI_ID,"Name",named);
- text("Name",speaker);
+ UI::SetVisible(this,UI_ID,"Nameplate",named);UI::SetVisible(this,UI_ID,"Name",named);UI::SetVisible(this,UI_ID,"NameHead",named);UI::SetVisible(this,UI_ID,"Next",false);
+ text("Name",speaker);text("NameHead",u8prefix(speaker,1));
+ {auto slug=slugs.count(speaker)?slugs.at(speaker):"";UI::SetColor(this,UI_ID,"NameHead",nameColor(slug));}
  UI::SetVisible(this,UI_ID,"Portrait",!portrait.empty());
  if(!portrait.empty())UI::SetTexture(this,UI_ID,"Portrait",portrait);
  text("Body","");
@@ -201,14 +205,14 @@ void Yumeno::eventsDone(){
   auto who=b["pool"][ctxPool].value("who","");seen.insert(b["pool"][ctxPool].value("id",""));ctxPool=-1;
   addBond(who,2);coins+=2;giftTarget=who;showGifts();return;
  }
- if(ctxSpot>=0){seen.insert(b["spots"][ctxSpot].value("id",""));ctxSpot=-1;coins+=1;showInvestigate();return;}
+ if(ctxSpot>=0){segmentDone();return;}
  if(ctxEnding>=0){ctxEnding=-1;nextBeat();return;}
  coins+=1;nextBeat();
 }
 void Yumeno::advanceFlow(){
  if(int(shown)<lineLength){shown=float(lineLength);text("Body",line);return;}
  if(after!=After::None){auto a=after;after=After::None;
-  if(a==After::Gift)showGifts();else if(a==After::Slot)slotDone();
+  if(a==After::Gift)showGifts();else if(a==After::Slot)slotDone();else if(a==After::Explore)enterRoomBack();
   return;}
  ++event;flowPresent();
 }
@@ -305,8 +309,16 @@ void Yumeno::pullCapsule(){
 std::string Yumeno::reaction(const std::string& slug,const std::string& kind)const{
  return reactions.contains(slug)?reactions[slug].value(kind,std::string("…고마워.")):std::string("…고마워.");
 }
+// 이름표 첫 글자 색 : 인물 머리색 (docs/spec/06 §1-2)
+Color Yumeno::nameColor(const std::string& slug)const{
+ static const std::map<std::string,Color> c{{"rei",{.85f,.88f,.95f,1}},{"sora",{1,.8f,.2f,1}},{"ken",{.75f,.15f,.3f,1}},{"nana",{.78f,.65f,1,1}},{"riku",{1,.55f,.15f,1}},
+  {"akari",{.6f,.35f,.2f,1}},{"yuu",{.2f,.8f,.8f,1}},{"koto",{.95f,.75f,.4f,1}},{"satsuki",{.45f,.6f,.3f,1}},{"taiga",{.6f,.6f,.65f,1}},{"rin",{.55f,.3f,.85f,1}},
+  {"sho",{.65f,.55f,.45f,1}},{"ai",{.5f,1,.8f,1}},{"haruka",{1,.5f,.7f,1}},{"kaede",{.35f,.45f,.85f,1}},{"lappy",{1,.45f,.7f,1}}};
+ auto it=c.find(slug);return it==c.end()?Color{1,1,1,1}:it->second;
+}
 std::string Yumeno::giftName(const std::string& id)const{for(auto& g:giftData["items"])if(g.value("id","")==id)return g.value("name",id);return id;}
-std::string Yumeno::kotodamaName(const std::string& id)const{return kotodama.is_object()?kotodama.value(id,id):id;}
+std::string Yumeno::kotodamaName(const std::string& id)const{return kotodama.contains(id)?kotodama[id].value("name",id):id;}
+std::string Yumeno::kotodamaText(const std::string& id)const{return kotodama.contains(id)?kotodama[id].value("text",""):"";}
 // 선물 : 아이콘 칸 15 + 「주지 않는다」
 void Yumeno::showGifts(){
  giftOrder.clear();for(auto& [id,n]:gifts)if(n>0)giftOrder.push_back(id);
@@ -324,7 +336,7 @@ void Yumeno::showGifts(){
  ftext("FGridFoot","좋아하는 선물이면 인연이 크게 오른다");fvis("FGridFoot",true);
 }
 void Yumeno::slotDone(){
- if(--slots>0){saveFlow();showFreeSelect();return;}
+ if(--slots>0){saveFlow();showMap();return;}
  nextBeat();
 }
 
@@ -375,6 +387,7 @@ void Yumeno::updateFlow(float delta,bool next,bool click){
  }
  if(mode==Mode::Story){
   if(int(shown)<lineLength){shown=std::min(float(lineLength),shown+delta*40);text("Body",u8prefix(line,int(shown)));}
+  else{blink+=delta;bool on=std::fmod(blink,.8f)<.5f;if(on!=nextShown){nextShown=on;UI::SetVisible(this,UI_ID,"Next",on);}}
   if(Input::IsKeyDown("Control")){skipTimer+=delta;if(skipTimer>.05f){skipTimer=0;shown=float(lineLength);advanceFlow();}}
   if(next)advanceFlow();
  }
@@ -382,6 +395,7 @@ void Yumeno::updateFlow(float delta,bool next,bool click){
 
 // 자동 진행 검증용 : 지금 넣어야 할 입력 (tools/verify-flow.mjs)
 Json Yumeno::autoFlow()const{
+ if(mode==Mode::Explore||mode==Mode::Map||mode==Mode::Confirm||mode==Mode::Popup)return autoExplore();
  if(mode==Mode::Menu){
   int i=0;
   if(menuKind==MenuKind::Investigate){auto& b=currentBeat();i=menuCount-1;for(int k=0;k<int(spotOrder.size());k++)if(!seen.count(b["spots"][spotOrder[k]].value("id",""))){i=k;break;}}

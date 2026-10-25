@@ -25,6 +25,7 @@ std::string Yumeno::nameOf(const std::string& slug)const{for(auto& [k,v]:slugs)i
 void Yumeno::debateHud(bool on){
  for(auto id:{"NamePanel","TrialSpeaker","Cylinder","BulletPlate","Bullet","BulletLabel","TimerPanel","Timer","VPoint"})UI::SetVisible(this,UI_ID,id,on);
  UI::SetVisible(this,UI_ID,"TrialBack",on);
+ UI::SetVisible(this,UI_ID,"Lens",on);if(!on)UI::SetVisible(this,UI_ID,"StartBand",false);
  if(!on){drawGlyphs("M",48,{});drawGlyphs("N",26,{});}
 }
 void Yumeno::drawHearts(){
@@ -83,20 +84,21 @@ void Yumeno::startTrial(){
  debate=debate::State{};debate.hearts=5;shownHearts=-1;
  mode=Mode::Trial;dialogVisible(false);
  for(auto id:{"Title","Backdrop","Portrait"})UI::SetVisible(this,UI_ID,id,false);
- UI::SetVisible(this,UI_ID,"Trial",true);
+ UI::SetVisible(this,UI_ID,"Trial",true);UI::SetVisible(this,UI_ID,"CourtDim",true);
  if(!stageShown){UI::Show(this,"Assets/UI/Stage.hbwidget.json",trialui::ID);stageShown=true;}
  setupCourt();
  enterStage(0);
 }
 void Yumeno::endTrial(){
  mode=Mode::Title;debate=debate::State{};sclear();dialogVisible(false);
- for(auto id:{"Trial","TrialBack","SpeakerPodium","Portrait"})UI::SetVisible(this,UI_ID,id,false);
+ for(auto id:{"Trial","TrialBack","SpeakerPodium","Portrait","CourtDim"})UI::SetVisible(this,UI_ID,id,false);
  UI::SetVisible(this,UI_ID,"Backdrop",true);
  if(flowOn){trialDone();return;}
  UI::SetVisible(this,UI_ID,"Title",true);
 }
 void Yumeno::enterStage(int i){
  restartStage=false;sclear();dialogVisible(false);debateHud(false);playingDebate=false;
+ UI::SetPosition(this,trialui::ID,"StageTimer",{1040,656}); // 객관식은 모래시계 아래로 옮긴다
  stageAt=i;
  if(i>=int(stages.size())){endTrial();return;}
  stage=stages[i];stageKind=stage.value("kind","scene");stageTime=0;optStep=0;sdLine=0;scPair=0;mash=-1;armLine=0;armHits=0;armFinal=-1;taxiQ=0;taxiLane=1;taxiDist=0;anaFilled=0;
@@ -132,8 +134,8 @@ void Yumeno::nextScriptLine(){
  auto slug=slugs.count(base)?slugs.at(base):"";
  if(!slug.empty()&&!monologue)focusSpeaker(slug,poseTexture(slug,l.value("emo",""),l.value("pose","")));
  dialogVisible(true);
- bool named=!speaker.empty();UI::SetVisible(this,UI_ID,"Nameplate",named);UI::SetVisible(this,UI_ID,"Name",named);
- text("Name",speaker);text("Body","");lineLength=u8len(line);shown=0;
+ bool named=!speaker.empty();UI::SetVisible(this,UI_ID,"Nameplate",named);UI::SetVisible(this,UI_ID,"Name",named);UI::SetVisible(this,UI_ID,"NameHead",named);
+ text("Name",speaker);text("NameHead",u8prefix(speaker,1));UI::SetColor(this,UI_ID,"NameHead",nameColor(slug));text("Body","");lineLength=u8len(line);shown=0;
 }
 void Yumeno::updateScript(float delta,bool next){
  if(int(shown)<lineLength){shown=std::min(float(lineLength),shown+delta*45);text("Body",u8prefix(line,int(shown)));}
@@ -145,17 +147,64 @@ void Yumeno::updateScript(float delta,bool next){
 
 // ── 놀이 단계 준비 ───────────────────────────────────────────
 void Yumeno::showOptions(const std::string& question,const std::vector<std::string>& o){
- opts=o;stext("Question",question);svis("QPlate",!question.empty());svis("Question",!question.empty());
- bool comic=stageKind=="climax",chips=stageKind=="scrum";
- optRects.clear();
- for(int i=0;i<8;i++){bool on=i<int(o.size());auto p="OptP"+std::to_string(i),t="OptT"+std::to_string(i);svis(p,on);svis(t,on);
+ opts=o;optRects.clear();optHover=0;
+ auto& k=stageKind;
+ bool comic=k=="climax",chips=k=="scrum",bullet=k=="bullet",choice=k=="choice",person=k=="person"||k=="vote",spot=k=="spot";
+ // 공통 : 질문은 화면 아래 띠(V3 대사 자리), 화자 이름표, 조작 안내
+ bool v3=choice||bullet||person||spot;
+ if(v3){
+  svis("Shade",true);svis("Emblem",!person&&!spot);svis("QBand",true);stext("QText",question);svis("QText",true);
+  stext("Hint",person?"A/D 넘기기   Enter 지목":bullet?"W/S 고르기   Enter 제시":spot?"클릭 : 지목":"W/S 고르기   Enter 확인");svis("Hint",true);
+  auto who=speaker.empty()?std::string("미오"):speaker;stext("SpkName",who);svis("SpkTag",choice);svis("SpkName",choice);
+  svis("QPlate",false);svis("Question",false);
+ }else{stext("Question",question);svis("QPlate",!question.empty());svis("Question",!question.empty());}
+ if(choice){svis("AnswerLbl",true);svis("Hourglass",true);UI::SetPosition(this,trialui::ID,"StageTimer",{100,480});}
+ if(bullet){svis("BulCyl",true);svis("BulLine",true);for(auto id:{"CardFrame","CardImg","DescBox","CardTitle","CardText"})svis(id,true);}
+ for(int i=0;i<8;i++){bool on=i<int(o.size())&&!person&&!spot;auto p="OptP"+std::to_string(i),t="OptT"+std::to_string(i);svis(p,on);svis(t,on);
   if(!on)continue;
-  float x=trialui::OPT_X,y=comic?404+i*52.f:118+i*64.f,w=trialui::OPT_W,h=comic?46.f:56.f;
+  float x=300,y=250+i*46.f,w=980,h=42;
+  if(bullet){x=96;y=150+i*44.f;w=420;h=40;}
+  if(comic){x=290;y=404+i*52.f;w=700;h=46;}
   if(chips){w=236;h=56;x=24+i*(w+12);y=640;} // 스크럼 : 우리 편 키워드를 아래에 가로로 (V3 십자키 선택)
   optRects.push_back({x,y,w,h});
-  stext(t,chips?o[i]:std::to_string(i+1)+".  "+o[i]);
-  UI::SetPosition(this,trialui::ID,p,{x,y});UI::SetSize(this,trialui::ID,p,{w,h});
-  UI::SetPosition(this,trialui::ID,t,{x+(chips?10:26),y+(h-38)/2});UI::SetSize(this,trialui::ID,t,{w-(chips?20:40),38});UI::SetFontSize(this,trialui::ID,t,comic?19.f:chips?20.f:24.f);}
+  stext(t,chips||bullet?o[i]:std::to_string(i+1)+" /  "+o[i]);
+  UI::SetPosition(this,trialui::ID,p,{x,y});UI::SetSize(this,trialui::ID,p,{w,h});UI::SetTexture(this,trialui::ID,p,"Assets/Art/ui/band_off.svg");
+  UI::SetPosition(this,trialui::ID,t,{x+(chips?12:bullet?22:30),y+(h-34)/2});UI::SetSize(this,trialui::ID,t,{w-(chips?24:60),34});UI::SetFontSize(this,trialui::ID,t,comic?19.f:chips?20.f:bullet?22.f:24.f);}
+ if(person)personShow();
+ if(spot)spotShow();
+ optionHighlight();
+}
+// 고른 띠만 파랗게(V3). 언령 고르기는 오른쪽 카드·설명도 바꾼다
+void Yumeno::optionHighlight(){
+ auto& k=stageKind;
+ for(int i=0;i<int(optRects.size());i++)UI::SetTexture(this,trialui::ID,"OptP"+std::to_string(i),i==optHover?"Assets/Art/ui/band_on.svg":"Assets/Art/ui/band_off.svg");
+ if(k=="bullet"&&optHover<int(bladeIds.size())){
+  auto id=bladeIds[optHover];bool icon=false;for(auto& c:art["kotodama"])if(c.get<std::string>()==id)icon=true;
+  svis("CardImg",icon);if(icon)UI::SetTexture(this,trialui::ID,"CardImg","Assets/Art/kotodama/"+id+".png");
+  stext("CardTitle",kotodamaName(id));auto t=kotodamaText(id);stext("CardText",t.empty()?std::string(" "):t);
+ }
+ if(k=="person"||k=="vote")personShow();
+}
+// 인물 지목 : 가운데 한 명씩(전신), 번호·이름 장식, 발밑 고리
+void Yumeno::personShow(){
+ for(auto id:{"AccLbl","AccRing","AccFig","AccTag","AccNo","AccName","AccArrows","AccArrowR"})svis(id,true);
+ if(optHover>=int(personIds.size()))return;
+ auto& s=personIds[optHover];bool dead=std::find(trialDead.begin(),trialDead.end(),s)!=trialDead.end();
+ UI::SetTexture(this,trialui::ID,"AccFig",dead?seatTexture[court::seatOf(s)]:"Assets/Art/sprites/"+s+"/"+s+"_C01.webp");
+ stext("AccNo",std::to_string(court::seatOf(s)+1));stext("AccName",opts[optHover]);
+ UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
+}
+// 지점 선택 : 현장 사진 액자 + 표식. 표식 자리는 보기 순서로 고르게 흩는다
+void Yumeno::spotShow(){
+ for(auto id:{"SpotTitle","SpotImg","SpotFrame","CrossH","CrossV"})svis(id,true);
+ // 그 장 수사 현장 사진 : 수사 중 마지막 배경, 없으면 그 장 사망 CG
+ std::string bg=sceneBackground;
+ if(bg.empty()&&art.contains("cg"))for(auto& c:art["cg"]){auto n=c.get<std::string>();if(n.rfind("death_"+trialKey.substr(1,1),0)==0){bg="Assets/Art/cg/"+n+".webp";break;}}
+ if(bg.empty())bg="Assets/Art/bg/trial_room.webp";
+ UI::SetTexture(this,trialui::ID,"SpotImg",bg);
+ const float MX[6]{.22f,.5f,.78f,.32f,.66f,.5f},MY[6]{.42f,.3f,.45f,.72f,.7f,.55f};
+ for(int i=0;i<6;i++){bool on=i<int(opts.size());svis("Mark"+std::to_string(i),on);if(!on)continue;
+  float x=190+900*MX[i],y=90+520*MY[i];UI::SetPosition(this,trialui::ID,"Mark"+std::to_string(i),{x,y});optRects.push_back({x-34,y-34,68,68});}
 }
 int Yumeno::optionAt(float x,float y)const{
  for(size_t i=0;i<optRects.size();i++){auto& r=optRects[i];if(x>=r[0]&&x<=r[0]+r[2]&&y>=r[1]&&y<=r[1]+r[3])return int(i);}
@@ -401,10 +450,17 @@ void Yumeno::updateTrial(float delta){
  }
  // 키보드로도 고른다 : W/S 이동, Enter 확정
  if(!opts.empty()&&(k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="climax"||(k=="scrum"&&mash<0))){
-  if(pressed("w"))optHover=(optHover+int(opts.size())-1)%int(opts.size());
-  if(pressed("s"))optHover=(optHover+1)%int(opts.size());
-  for(int i=0;i<int(opts.size());i++)UI::SetColor(this,trialui::ID,"OptP"+std::to_string(i),i==optHover?Color{.2f,.5f,.62f,.95f}:Color{.04f,.06f,.09f,.9f});
-  int hit=click?optionAt(aimX,aimY):-1;if(hit>=0)optHover=hit;
+  int before=optHover;bool person=k=="person"||k=="vote";
+  if(pressed(person?"a":"w"))optHover=(optHover+int(opts.size())-1)%int(opts.size());
+  if(pressed(person?"d":"s"))optHover=(optHover+1)%int(opts.size());
+  if(k=="spot"){ // 십자선이 마우스를 따라가고, 표식 위면 이름표
+   UI::SetPosition(this,trialui::ID,"CrossH",{190,std::clamp(aimY,90.f,610.f)});UI::SetPosition(this,trialui::ID,"CrossV",{std::clamp(aimX,190.f,1090.f),90});
+   int over=optionAt(aimX,aimY);svis("MarkName",over>=0);if(over>=0)stext("MarkName",opts[over]);
+  }
+  int hit=click&&!person?optionAt(aimX,aimY):-1;if(hit>=0)optHover=hit;
+  if(person&&click&&aimX>210&&aimX<710)hit=optHover; // 가운데 인물을 클릭하면 지목
+  if(!person&&hit<0){int over=optionAt(aimX,aimY);if(over>=0&&k!="spot")optHover=over;}
+  if(optHover!=before)optionHighlight();
   if(hit>=0||enterPressed)optionPicked(hit>=0?hit:optHover);
   if(k=="scrum"&&mash<0&&stageTime>10){hurt();scrumNext();}
   return;
@@ -499,6 +555,7 @@ hb::Json Yumeno::autoAction()const{
  if(inScript)return {{"kind","key"},{"key","Enter"}};
  auto& k=stageKind;
  auto optClick=[&](int i){auto& r=optRects[i];return Json{{"kind","click"},{"x",r[0]+r[2]/2},{"y",r[1]+r[3]/2}};};
+ if((k=="person"||k=="vote")&&optAnswer>=0)return optHover!=optAnswer?Json{{"kind","key"},{"key","d"}}:Json{{"kind","key"},{"key","Enter"}};
  if((k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="climax"||(k=="scrum"&&mash<0&&scrumT>=1&&scrumWait<=0))&&optAnswer>=0&&optAnswer<int(optRects.size()))return optClick(optAnswer);
  if(k=="scrum")return scrumT<1||scrumWait>0?Json{{"kind","wait"}}:Json{{"kind","key"},{"key"," "}};
  if(k=="showdown"){

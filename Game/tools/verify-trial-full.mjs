@@ -36,10 +36,10 @@ try{
  const drag=async(x0,x1,y)=>{await move(x0,y);await press(x0,y,'mousePressed');for(let i=1;i<=6;i++){await move(x0+(x1-x0)*i/6,y);}await press(x1,y,'mouseReleased');await delay(60);};
  const which=process.argv[2]==='2'?'y':'t';await delay(800);await tap(which);await delay(500);
  if(process.argv[3])await probe.evaluate(`window.hbPlayerDebug.call("Driver","Yumeno.DebugJump",{index:${Number(process.argv[3])}})`);await delay(500);
- const seen=new Map(),log=[];let last=-1,steps=0,focused=false;
+ const seen=new Map(),log=[];let last=-1,steps=0,focused=false,lastErr='';
  while(steps++<6000){
   const t0=Date.now();const s=await stats();const dt=Date.now()-t0;if(steps%100===0)console.log('mem',dt,s.stage?.index,await probe.evaluate('JSON.stringify({heap:Math.round(performance.memory.usedJSHeapSize/1e6),dom:document.getElementsByTagName("*").length,img:document.images.length,canv:document.getElementsByTagName("canvas").length})'));
-  if(s.error){console.log('GAME ERROR',s.error);}
+  if(s.error&&s.error!==lastErr){lastErr=s.error;console.log('GAME ERROR',s.error,JSON.stringify(s.stage));}
   if(s.mode!=='trial')break;
   const st=s.stage;
   if(st.index!==last){last=st.index;log.push({index:st.index,kind:st.kind,hearts:st.hearts});console.log('stage',st.index,st.kind);if(!seen.has(st.kind)){seen.set(st.kind,st.index);await delay(500);try{await probe.capture(`${String(st.index).padStart(2,'0')}-${st.kind}.png`);}catch(e){console.log('capture skipped',st.kind,e.message);}}}

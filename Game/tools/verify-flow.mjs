@@ -27,7 +27,7 @@ try{
  await delay(800);for(let k=0;k<20&&(await stats()).mode==='title';k++){await tap('Enter');await delay(500);}
  if(from>0)await probe.evaluate(`window.hbPlayerDebug.call("Driver","Yumeno.DebugChapter",{index:${from}})`);await delay(500);
  const beats=new Map();
- const seen=new Map(),seenLines=new Set(),log=[];let last=-1,steps=0,focused=false,lastSig='',stall=0;
+ const seen=new Map(),seenLines=new Set(),seenModes=new Set(),log=[];let last=-1,steps=0,focused=false,lastSig='',stall=0;
  while(steps++<200000){
   const t0=Date.now();const s=await stats();const dt=Date.now()-t0;
   if(s.error){console.log('GAME ERROR',s.error);break;}
@@ -36,6 +36,7 @@ try{
   if(s.mode!=='trial'){
    const k=`${s.chapter}/${s.beat}`;if(!beats.has(k)){beats.set(k,s.beatKind);console.log('beat',k,s.beatKind,'coins',s.coins,'cards',s.cards,'gifts',s.gifts);if(['card','freetime','investigate','ending','end'].includes(s.beatKind)){await delay(400);try{await probe.capture(`${k.replace('/','-')}-${s.beatKind}.png`);}catch(e){}}}
    if(s.mode==='story'&&s.line&&!seenLines.has(k+s.event)){seenLines.add(k+s.event);if(seenLines.size%400===0){try{await probe.capture(`line-${seenLines.size}.png`);}catch(e){}}}
+   if(['explore','map','confirm','popup','grid'].includes(s.mode)&&!seenModes.has(s.mode+s.chapter)){seenModes.add(s.mode+s.chapter);await delay(700);try{await probe.capture(`mode-${s.chapter}-${s.mode}-${s.beat}.png`);}catch(e){}}
    const a=s.auto;if(!a){await delay(40);continue;}
    if(a.kind==='key')await tap(a.key);else if(a.kind==='click')await click(a.x,a.y);
    continue;

@@ -12,7 +12,7 @@ public:
  HB_FUNCTION(BlueprintCallable) void DebugJump(int index);
  HB_FUNCTION(BlueprintCallable) void DebugChapter(int index);
 private:
- enum class Mode{Title,Story,Pad,End,Trial,Menu,Grid,Card,Credits};
+ enum class Mode{Title,Story,Pad,End,Trial,Menu,Grid,Card,Credits,Explore,Map,Confirm,Popup};
  Mode mode=Mode::Title,beforePad=Mode::Story;
  bool ready=false;
  hb::Json story,emotions,rules,trials,chapter,art,giftData,kotodama,reactions;
@@ -25,13 +25,13 @@ private:
  std::vector<std::pair<std::string,std::string>> bullets;
  int debateAt=0,bullet=0,shownLine=-1,shownHearts=-1,shownNoise=-1,vBreaks=0;
  float messageTimer=0,cutinTimer=0,clearTimer=0,holdTime=-1,cameraFrom=0,cameraTo=0,cameraAngle=0,cameraTime=1;
- float cameraPitch=0,pitchFrom=0;
+ float cameraPitch=0,pitchFrom=0,startBandTimer=0;
  int speakerSeat=-1,retries=0,shownStars=-1;
  float debateTime=180;
  std::map<std::string,hb::Actor*> actors;
  float aimX=640,aimY=360;
  bool lie=false,lieCost=false,enterPressed=false,spacePressed=false;
- struct GlyphCache{int visible=0;std::string text;float rotation=1e9f,opacity=-1;};
+ struct GlyphCache{int visible=0;std::string text;float rotation=1e9f,opacity=-1,x=-1e9f,y=-1e9f,s=-1;int lastLayer=0;};
  std::map<std::string,GlyphCache> glyphCache;
  struct GlyphStyle{std::string font;float size=0,r=-1,g=-1,b=-1;};
  std::map<std::string,GlyphStyle> glyphStyle;bool noiseStyled=false;
@@ -40,11 +40,11 @@ private:
  bool pressed(const std::string& key);
  void text(const std::string& id,const std::string& value);
  // 장 진행 (Flow.hpp)
- enum class MenuKind{Event,Investigate,Ending,Gift};enum class GridKind{Free,Gift};enum class After{None,Gift,Slot};
+ enum class MenuKind{Event,Investigate,Ending,Gift};enum class GridKind{Free,Gift};enum class After{None,Gift,Slot,Explore};
  MenuKind menuKind=MenuKind::Event;GridKind gridKind=GridKind::Free;After after=After::None;
- bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0,padTab=0;float toastTimer=0;
+ bool flowOn=false;int chapterAt=0,beat=0,ctxPool=-1,ctxSpot=-1,ctxEnding=-1,slots=0,coins=0,pulls=0,menuCount=0,padTab=0;float toastTimer=0,blink=0;bool nextShown=false;
  std::map<std::string,int> bonds,gifts;std::set<std::string> cards,flags,seen;std::vector<std::string> gridSlugs,giftOrder,trialDead;std::vector<int> spotOrder;
- std::string giftTarget,musicCue;std::map<std::string,std::string> ftexts;std::map<std::string,bool> fvisible;
+ std::string giftTarget,musicCue,lastBackground,sceneBackground;std::map<std::string,std::string> ftexts;std::map<std::string,bool> fvisible;
  void ftext(const std::string& id,const std::string& v);void fvis(const std::string& id,bool v);
  std::string artPath(const std::string& group,const std::string& name,const std::string& dir,const std::string& ext)const;
  void music(const std::string& cue);int level(const std::string& slug)const;void addBond(const std::string& slug,int points);void toast(const std::string& v);void hud();
@@ -53,8 +53,18 @@ private:
  void sayOnce(const std::string& slug,const std::string& value,const std::string& pose,After then);void eventsDone();void advanceFlow();
  void showMenu(const std::string& q,const std::vector<std::string>& o,MenuKind kind);void hideMenu();int menuAt(float x,float y)const;void menuPicked(int i);
  void showFreeSelect();int poolOf(const std::string& slug)const;int gridAt(float x,float y)const;void gridPicked(int i);void pullCapsule();
- std::string giftName(const std::string& id)const;std::string reaction(const std::string& slug,const std::string& kind)const;std::string kotodamaName(const std::string& id)const;void showGifts();void giveGift(int i);void slotDone();void showInvestigate();void trialDone();void padPage();
+ std::string giftName(const std::string& id)const;hb::Color nameColor(const std::string& slug)const;std::string reaction(const std::string& slug,const std::string& kind)const;std::string kotodamaName(const std::string& id)const;std::string kotodamaText(const std::string& id)const;void showGifts();void giveGift(int i);void slotDone();void showInvestigate();void trialDone();void padPage();
  void updateFlow(float delta,bool next,bool click);hb::Json autoFlow()const;
+ // 탐색 (Explore.hpp)
+ struct Obj{std::string name;int from=0,to=0;std::string who;int index=0;};
+ struct Room{int spot=-1;std::string name,bg;std::vector<std::string> people;std::vector<Obj> objects;bool done=false;};
+ struct Hot{float u=0,v=0;bool person=false;int object=-1;std::string who;};
+ std::vector<Room> rooms;std::vector<Hot> hotspots;int roomAt=0,mapHover=0,crossOver=-1,eventEnd=-1;float panX=0,bandTimer=0,flashTimer=0,kspin=0;
+ std::string segmentKey,confirmWho;bool confirmYes=true;Mode popupFrom=Mode::Story;std::map<std::string,std::string> etexts;std::map<std::string,bool> evisible;
+ void etext(const std::string& id,const std::string& v);void evis(const std::string& id,bool v);void hideExplore();void showMap();bool roomDone(const Room& r)const;int mapAt(float x,float y)const;
+ void enterRoom(int i);void placeRoom();int hotspotAt(float x,float y)const;std::string hotspotLabel(int i)const;void playSegment(int spot,int from,int to);void interact(int i);
+ void showConfirm(const std::string& q);void confirmPicked(bool yes);void segmentDone();void enterRoomBack();void band(const std::string& kind);void kotodamaGet(const std::string& id);
+ void updateExplore(float delta,bool click);hb::Json autoExplore()const;
  void dialogVisible(bool visible);
  void startDebate(const hb::Json& d);
  void updateDebate(float delta);
@@ -78,7 +88,7 @@ private:
  void debateHud(bool on);void drawHearts();void hurt();void heal();void focusSpeaker(const std::string& slug,const std::string& texture);void updateCamera(float delta);
  void startTrial();void endTrial();void enterStage(int i);void finishStage();void beginScript();void nextScriptLine();void updateScript(float delta,bool next);
  void showOptions(const std::string& question,const std::vector<std::string>& o);int optionAt(float x,float y)const;std::vector<std::string> alive(bool withMio)const;
- void climaxOptions();void setupPlay();void optionPicked(int i);void scrumNext();void scrumPick(int i);void anaSlots();std::vector<int> mineGroup(int start)const;bool itemOpen(int item)const;void mineClick(int c);void taxiShow();
+ void climaxOptions();void optionHighlight();void personShow();void spotShow();void setupPlay();void optionPicked(int i);void scrumNext();void scrumPick(int i);void anaSlots();std::vector<int> mineGroup(int start)const;bool itemOpen(int item)const;void mineClick(int c);void taxiShow();
  void updateTrial(float delta);hb::Json autoAction()const;
  void scrumFormation(float t);void taxiQText();void updateTaxi(float delta);
  std::vector<std::array<float,4>> optRects;std::vector<std::string> taxiChars;

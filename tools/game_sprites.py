@@ -33,6 +33,29 @@ def main():
                 im.thumbnail((SIZE, SIZE), Image.LANCZOS)
             im.save(dst, "WEBP", quality=90, method=4)
             done += 1
+    # 탐색 화면 전신(방 안에 작게 서 있는 인물) : art/standing_hd → Assets/Art/figure/{slug}.webp, 높이 720
+    fig_dir = os.path.join(ROOT, "Game", "Assets", "Art", "figure")
+    os.makedirs(fig_dir, exist_ok=True)
+    for f in os.listdir(os.path.join(ROOT, "art", "standing_hd")):
+        if not f.endswith(".webp"):
+            continue
+        src, dst = os.path.join(ROOT, "art", "standing_hd", f), os.path.join(fig_dir, f)
+        if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
+            continue
+        im = Image.open(src).convert("RGBA")
+        im.thumbnail((1100, 1100), Image.LANCZOS)
+        if im.getpixel((4, 4))[3] > 200:  # 흰 배경 원본 → 배경 제거(애니 모델)
+            from rembg import new_session, remove
+            global _rembg
+            try:
+                _rembg
+            except NameError:
+                _rembg = new_session("isnet-anime")
+            im = remove(im.convert("RGB"), session=_rembg).convert("RGBA")
+        im = im.crop(im.getbbox())
+        im.thumbnail((720, 720), Image.LANCZOS)
+        im.save(dst, "WEBP", quality=90, method=4)
+        done += 1
     print(f"sprites converted: {done}")
 
 
