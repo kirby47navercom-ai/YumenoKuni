@@ -1,0 +1,4375 @@
+{
+  "as_of": "2026-10-29",
+  "status": "in_progress",
+  "method": "Count explicit [speaker] dialogue; include thoughts and all authored alternative branches. Do not count design-table examples as playable dialogue.",
+  "limitations": [
+    "All-branch totals are not the amount read on one playthrough.",
+    "No reading-speed, route-playtime or runtime claim is made.",
+    "A long design document does not satisfy manuscript length.",
+    "The full six-chapter rewrite and requested duration remain unfinished."
+  ],
+  "manuscript_files": 261,
+  "dialogue_lines_all_branches": 33960,
+  "dialogue_characters_without_whitespace_all_branches": 700870,
+  "files": [
+    {
+      "path": "docs/design/rewrite_v4/00_재작성_기준과_원고진단_스포주의.md",
+      "sha256": "f65496d953fabde741407e16759d59866ef9f444c92e7c97670dfa6fa99bb496",
+      "text_characters": 4721,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/01_인물의_욕망과_대화_스포주의.md",
+      "sha256": "35228a49c6817ca6e02c134f1b4d09703534ec13b9915ece8ac1b32b82a10c8e",
+      "text_characters": 4949,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/02_전편_새구조_스포주의.md",
+      "sha256": "6e7699267abfc97a32a6c8e937c12ed7a72f6bdc5223db3edd2bd3a895a704dc",
+      "text_characters": 8574,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/03_1장_사건원장_스포주의.md",
+      "sha256": "05cdadf62ac21e32c9c0508f8eab7b72ad3d349a37694d6cd8357ce81f0b196b",
+      "text_characters": 10886,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/04_연속성_점검과_남은집필_스포주의.md",
+      "sha256": "e64f9b7a97d51726e322f468086879a6f6c567f0c98b05705c7a98b100ea36d9",
+      "text_characters": 30121,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/05_2장_사건원장_스포주의.md",
+      "sha256": "b15bac6e96ea94047d5ca7a2d82713908f7b39f81df3558a326b27f996950866",
+      "text_characters": 10345,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/06_연속규칙과_과거시각_스포주의.md",
+      "sha256": "ddb2a776c6a492552da2905e1c187ef817a6ddb04af2ee972125165106884691",
+      "text_characters": 10890,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/07_3장_두사건_원장_스포주의.md",
+      "sha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+      "text_characters": 18740,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/08_4장_생성과_기억_경계_스포주의.md",
+      "sha256": "4d770edf7b5dfea60021056838268d3835bba8e3b5059444f4c4e094054115e0",
+      "text_characters": 4991,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/09_4장_사건원장_스포주의.md",
+      "sha256": "2b3c6a6b40df0a1083588849dc168a5688bb9fcaaef2478596f6a1041b445f8b",
+      "text_characters": 12831,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/100_5장_돌아온_잔_남아_있는_글_보강.md",
+      "sha256": "82242ce5447e196e533fcb49b5ceee810d6ea666e1db939267761f48908c0a93",
+      "text_characters": 7658,
+      "dialogue_lines_all_branches": 102,
+      "dialogue_characters_without_whitespace_all_branches": 2688,
+      "speakers": {
+        "사츠키": 27,
+        "미오": 30,
+        "린": 14,
+        "아카리": 11,
+        "쇼": 9,
+        "나나": 11
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/101_1장_같은_편이_고른_틀린_길_보강.md",
+      "sha256": "0d0edc7d08e2bd8797d226e8e4531b847a145c1af5e3c9c12c8c5046debc7035",
+      "text_characters": 8935,
+      "dialogue_lines_all_branches": 146,
+      "dialogue_characters_without_whitespace_all_branches": 2221,
+      "speakers": {
+        "하루카": 39,
+        "미오": 50,
+        "타이가": 27,
+        "소라": 30
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/102_3장_아직_그_목소리가_나는_자리_보강.md",
+      "sha256": "139cc7632fd673f18e5eef1da26ac817c7247d830c61bd5229aeaa38a06c71b3",
+      "text_characters": 6914,
+      "dialogue_lines_all_branches": 92,
+      "dialogue_characters_without_whitespace_all_branches": 2083,
+      "speakers": {
+        "쇼": 11,
+        "소라·켄의몸": 29,
+        "린": 4,
+        "미오": 20,
+        "하루카": 3,
+        "코토": 7,
+        "아카리": 3,
+        "사츠키": 6,
+        "래피": 4,
+        "나나": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/103_5장_네_이름보다_먼저_찾은_것_보강.md",
+      "sha256": "08e3a26cc328ad0e0566218349231e7ffd29644bf85916f4c92f6fd5e0208653",
+      "text_characters": 6292,
+      "dialogue_lines_all_branches": 67,
+      "dialogue_characters_without_whitespace_all_branches": 1528,
+      "speakers": {
+        "코토": 31,
+        "미오": 31,
+        "미오·속말": 2,
+        "나나": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/104_6장_서로_다른_날의_열다섯_보강.md",
+      "sha256": "51063deee9f4f04acaa6e4e24d6291189ce48112684d76ea231c6bcc65ea9ba9",
+      "text_characters": 7025,
+      "dialogue_lines_all_branches": 80,
+      "dialogue_characters_without_whitespace_all_branches": 2405,
+      "speakers": {
+        "린": 12,
+        "사츠키": 14,
+        "쇼": 10,
+        "미오": 26,
+        "래피": 7,
+        "나나": 11
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/105_2장_박수를_먼저_받은_사람_보강.md",
+      "sha256": "ff8d11e9c45e822d82621edb989f46c81a781fad05592476103a459f2acda73b",
+      "text_characters": 6373,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 1488,
+      "speakers": {
+        "켄": 21,
+        "리쿠": 13,
+        "유우": 29,
+        "소라": 12,
+        "미오": 18,
+        "린": 3,
+        "하루카": 12
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/106_4장_일등을_세우는_손_보강.md",
+      "sha256": "64630a4900ee2c8429bdd7a5573e459a599f17b94155fb6b72192ffbc734c911",
+      "text_characters": 7189,
+      "dialogue_lines_all_branches": 119,
+      "dialogue_characters_without_whitespace_all_branches": 1600,
+      "speakers": {
+        "린": 58,
+        "레이": 17,
+        "미오": 26,
+        "코토": 12,
+        "하루카": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/107_6장_한_사람을_고르면_편해지는_이름들_보강.md",
+      "sha256": "2c270ee53d5c1e364fd61fc1d2b1f6a617f0a356b9aab77b58892d6c2798ac76",
+      "text_characters": 8867,
+      "dialogue_lines_all_branches": 128,
+      "dialogue_characters_without_whitespace_all_branches": 3282,
+      "speakers": {
+        "사츠키": 43,
+        "래피": 17,
+        "린": 19,
+        "쇼": 19,
+        "미오": 26,
+        "나나": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/108_1장_셋이_웃으면_하나가_남는다_보강.md",
+      "sha256": "ac32ae1793e0167875bb6f093fc3e696469f4ff06e74c0bd6cb0a9bcdc809fef",
+      "text_characters": 6926,
+      "dialogue_lines_all_branches": 102,
+      "dialogue_characters_without_whitespace_all_branches": 1712,
+      "speakers": {
+        "켄": 32,
+        "미오": 28,
+        "리쿠": 19,
+        "타이가": 23
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/109_5장_네가_버려_주겠다고_했잖아_보강.md",
+      "sha256": "af1fee6966024040eb2381105759ae710b8e04e939c9c7e02e8b05ad5aed2549",
+      "text_characters": 6116,
+      "dialogue_lines_all_branches": 83,
+      "dialogue_characters_without_whitespace_all_branches": 2397,
+      "speakers": {
+        "아카리": 30,
+        "미오": 31,
+        "린": 6,
+        "나나": 2,
+        "쇼": 4,
+        "사츠키": 10
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/10_5장_정보와행위_원장_스포주의.md",
+      "sha256": "9aaca8496a2158794ef5ee92c7b46d7f403e953b2ce7885ee0a0ffa25d5582fb",
+      "text_characters": 15412,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/10_프롤로그_초고.md",
+      "sha256": "855c02ddfdc4ef3d35d9daba6b95fd8bccf6ef86e0a49970763fb09d99b4aec6",
+      "text_characters": 22538,
+      "dialogue_lines_all_branches": 480,
+      "dialogue_characters_without_whitespace_all_branches": 7284,
+      "speakers": {
+        "미오·속말": 10,
+        "미오": 112,
+        "하루카": 73,
+        "쇼": 26,
+        "아이": 22,
+        "나나": 15,
+        "타이가": 27,
+        "린": 13,
+        "코토": 20,
+        "켄": 16,
+        "소라": 10,
+        "리쿠": 16,
+        "카에데": 61,
+        "레이": 8,
+        "사츠키": 6,
+        "유우": 20,
+        "아카리": 7,
+        "래피": 18
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/110_3장_먼저_고개를_끄덕인_사람_보강.md",
+      "sha256": "585ad3788f58b66723e292e0f601eb4200d3a53a5e4f7e03cd2188cc8520b1f5",
+      "text_characters": 5776,
+      "dialogue_lines_all_branches": 75,
+      "dialogue_characters_without_whitespace_all_branches": 1563,
+      "speakers": {
+        "코토": 21,
+        "소라·켄의몸": 23,
+        "미오": 17,
+        "레이": 5,
+        "린": 5,
+        "나나": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/111_2장_모이지_않기로_모인_사람들_보강.md",
+      "sha256": "7789cde2f8db8e20c05d283384508f3ea523ce3c3ebcf385e1d491c3e392a21a",
+      "text_characters": 7407,
+      "dialogue_lines_all_branches": 111,
+      "dialogue_characters_without_whitespace_all_branches": 2297,
+      "speakers": {
+        "켄": 20,
+        "코토": 29,
+        "미오": 27,
+        "리쿠": 10,
+        "유우": 22,
+        "소라": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/112_1장_남은_사람부터_먹는다_보강.md",
+      "sha256": "df5d5e5892a71d53c50b3afd34b33f05a411293883d7b5a8efb1b08c79fe0160",
+      "text_characters": 4959,
+      "dialogue_lines_all_branches": 79,
+      "dialogue_characters_without_whitespace_all_branches": 924,
+      "speakers": {
+        "린": 13,
+        "아이": 13,
+        "유우": 17,
+        "쇼": 7,
+        "미오": 6,
+        "켄": 12,
+        "하루카": 3,
+        "나나": 2,
+        "소라": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/113_2장_한명만_내쪽에_서도_될텐데_보강.md",
+      "sha256": "88ee9744d66bfff587cfd6726ccb7a865a2e66ef49f5b0bf08497b9c99db6efb",
+      "text_characters": 8341,
+      "dialogue_lines_all_branches": 122,
+      "dialogue_characters_without_whitespace_all_branches": 3284,
+      "speakers": {
+        "유우": 65,
+        "코토": 5,
+        "미오": 32,
+        "하루카": 3,
+        "켄": 7,
+        "소라": 5,
+        "린": 2,
+        "나나": 1,
+        "레이": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/114_4장_같은_얼굴을_더_만들_수_있다면_보강.md",
+      "sha256": "80fed36f8788fb62fcc85a248f0bded3267c627764bfc95fc7d8c8040ddebe53",
+      "text_characters": 5590,
+      "dialogue_lines_all_branches": 74,
+      "dialogue_characters_without_whitespace_all_branches": 2006,
+      "speakers": {
+        "코토": 6,
+        "레이": 24,
+        "린": 8,
+        "아카리": 5,
+        "미오": 21,
+        "나나": 4,
+        "사츠키": 3,
+        "쇼": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/115_1장_나를_고른_적_있잖아_보강.md",
+      "sha256": "ce9938614b88e40a216599bea389a80bf618230969d103029377ac79400460c4",
+      "text_characters": 4732,
+      "dialogue_lines_all_branches": 70,
+      "dialogue_characters_without_whitespace_all_branches": 1620,
+      "speakers": {
+        "타이가": 33,
+        "미오": 24,
+        "코토": 2,
+        "켄": 1,
+        "린": 4,
+        "나나": 2,
+        "아카리": 1,
+        "아이": 2,
+        "유우": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/116_3장_다음에도_필요한_사람_보강.md",
+      "sha256": "cd035964f286d22249ae640749d9e138fad7f80b7e991392cb8a2f25a3c34eaa",
+      "text_characters": 4992,
+      "dialogue_lines_all_branches": 63,
+      "dialogue_characters_without_whitespace_all_branches": 1746,
+      "speakers": {
+        "소라·켄의몸": 37,
+        "린": 5,
+        "미오": 6,
+        "하루카": 7,
+        "나나": 6,
+        "코토": 1,
+        "사츠키": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/117_6장_아직_연결되지_않은_목소리_보강.md",
+      "sha256": "4d5d0829327cab49d3bb82efd150cb72b0ac8fe43eea1687dbf7582d2e3d6713",
+      "text_characters": 4503,
+      "dialogue_lines_all_branches": 80,
+      "dialogue_characters_without_whitespace_all_branches": 1295,
+      "speakers": {
+        "쇼": 20,
+        "린": 27,
+        "미오": 18,
+        "사츠키": 8,
+        "나나": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/118_6장_우리라고_말하면_빠지는_이름_보강.md",
+      "sha256": "a54225bde42738f3231b099e3afc94177fbdee12b8add49c5af8b52afe6b244a",
+      "text_characters": 4543,
+      "dialogue_lines_all_branches": 81,
+      "dialogue_characters_without_whitespace_all_branches": 1615,
+      "speakers": {
+        "쇼": 11,
+        "린": 19,
+        "사츠키": 22,
+        "미오": 19,
+        "나나": 10
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/119_5장_상처가_없다는_말을_믿었던_사람_보강.md",
+      "sha256": "a4653a12fbbd57f725db2d81e86d3c54c80c068d948719b890beaafdabd7a3be",
+      "text_characters": 3328,
+      "dialogue_lines_all_branches": 41,
+      "dialogue_characters_without_whitespace_all_branches": 1225,
+      "speakers": {
+        "아카리": 21,
+        "나나": 14,
+        "미오": 2,
+        "쇼": 1,
+        "린": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "sha256": "7dafc39ead4cac35be721adb56c74afadee770f8f2d92c7de0cb2cc13e9f769d",
+      "text_characters": 12936,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/11a2_1장_둘째날_초고.md",
+      "sha256": "3a29643042c9c63c37fcc4b0580afeaa1d707be78ad5894b342d815dfae19bc5",
+      "text_characters": 30111,
+      "dialogue_lines_all_branches": 460,
+      "dialogue_characters_without_whitespace_all_branches": 7349,
+      "speakers": {
+        "린": 50,
+        "미오": 89,
+        "타이가": 62,
+        "카에데": 76,
+        "하루카": 28,
+        "코토": 13,
+        "소라": 27,
+        "나나": 12,
+        "쇼": 11,
+        "유우": 16,
+        "켄": 16,
+        "아이": 15,
+        "미오·속말": 2,
+        "레이": 11,
+        "래피": 10,
+        "아카리": 9,
+        "사츠키": 9,
+        "리쿠": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11a3_1장_셋째날과_발견_초고.md",
+      "sha256": "254997daba6305cc28c7103795436f3cf48639bdae3454424042f1af967b4e16",
+      "text_characters": 23783,
+      "dialogue_lines_all_branches": 401,
+      "dialogue_characters_without_whitespace_all_branches": 6880,
+      "speakers": {
+        "유우": 25,
+        "아카리": 13,
+        "카에데": 69,
+        "켄": 6,
+        "소라": 14,
+        "린": 4,
+        "미오": 86,
+        "미오·속말": 7,
+        "타이가": 53,
+        "코토": 5,
+        "쇼": 9,
+        "하루카": 38,
+        "사츠키": 11,
+        "레이": 17,
+        "래피": 6,
+        "아이": 21,
+        "리쿠": 8,
+        "나나": 8,
+        "래피·방송": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11a_1장_일상_초고.md",
+      "sha256": "8cc59660fc0e15f669205ea38686da24656a330edd98f69dbf0c1d189743d00e",
+      "text_characters": 23735,
+      "dialogue_lines_all_branches": 406,
+      "dialogue_characters_without_whitespace_all_branches": 6486,
+      "speakers": {
+        "하루카": 32,
+        "미오": 81,
+        "타이가": 37,
+        "유우": 22,
+        "나나": 19,
+        "아이": 14,
+        "카에데": 32,
+        "쇼": 15,
+        "리쿠": 19,
+        "미오·속말": 5,
+        "코토": 16,
+        "린": 34,
+        "레이": 11,
+        "아카리": 12,
+        "소라": 30,
+        "켄": 22,
+        "사츠키": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "sha256": "380913610b608fa861e229632bf4cba3f42d4d26cd74b79f9295c854c163d546",
+      "text_characters": 21493,
+      "dialogue_lines_all_branches": 341,
+      "dialogue_characters_without_whitespace_all_branches": 5950,
+      "speakers": {
+        "쇼": 22,
+        "미오": 88,
+        "하루카": 26,
+        "나나": 21,
+        "아카리": 28,
+        "타이가": 21,
+        "래피": 4,
+        "유우": 11,
+        "코토": 16,
+        "린": 26,
+        "리쿠": 12,
+        "소라": 22,
+        "켄": 5,
+        "아이": 21,
+        "레이": 10,
+        "사츠키": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11c1_1장_재판_전반_초고.md",
+      "sha256": "e1cfeb55bdd6831c64d5ad48674e73753d7858da4588fefaf7eb4deb0ce624b3",
+      "text_characters": 23078,
+      "dialogue_lines_all_branches": 328,
+      "dialogue_characters_without_whitespace_all_branches": 8587,
+      "speakers": {
+        "하루카": 11,
+        "래피": 5,
+        "아이": 2,
+        "켄": 20,
+        "유우": 49,
+        "코토": 11,
+        "소라": 15,
+        "아카리": 26,
+        "미오·속말": 1,
+        "쇼": 27,
+        "미오": 69,
+        "레이": 11,
+        "린": 13,
+        "타이가": 31,
+        "사츠키": 12,
+        "나나": 12,
+        "리쿠": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11c2_1장_재판_후반_초고.md",
+      "sha256": "7dfa27eb90a830e7e3974ecd32ddf64112b4b4fe1382aad52e36b3e959b43dba",
+      "text_characters": 38441,
+      "dialogue_lines_all_branches": 509,
+      "dialogue_characters_without_whitespace_all_branches": 14398,
+      "speakers": {
+        "나나": 28,
+        "소라": 73,
+        "미오": 74,
+        "타이가": 184,
+        "아카리": 6,
+        "린": 20,
+        "켄": 13,
+        "레이": 14,
+        "리쿠": 11,
+        "하루카": 14,
+        "사츠키": 4,
+        "코토": 10,
+        "유우": 25,
+        "쇼": 12,
+        "아이": 18,
+        "래피": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/11d_1장_결과와_다음날_초고.md",
+      "sha256": "054b1395e4ca6c81dbb93a05defe0a356a6accd288a6ca9fb8f0b609946eafd1",
+      "text_characters": 15552,
+      "dialogue_lines_all_branches": 197,
+      "dialogue_characters_without_whitespace_all_branches": 3708,
+      "speakers": {
+        "래피": 5,
+        "유우": 5,
+        "타이가": 17,
+        "소라": 21,
+        "코토": 8,
+        "아카리": 16,
+        "미오": 56,
+        "나나": 2,
+        "린": 5,
+        "사츠키": 2,
+        "레이": 6,
+        "아이": 21,
+        "래피·방송": 8,
+        "쇼": 2,
+        "하루카": 22,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/120_1장_네명이면_끝까지_들을_수_있을까_보강.md",
+      "sha256": "8236ec50bc3ff7aeb31d3a5c4126bbcc196653744d14dcdfdee9a9c0ffba8d11",
+      "text_characters": 8445,
+      "dialogue_lines_all_branches": 160,
+      "dialogue_characters_without_whitespace_all_branches": 2649,
+      "speakers": {
+        "미오": 38,
+        "하루카": 32,
+        "유우": 53,
+        "켄": 37
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/121_5장_내일부터는_직접_해_보강.md",
+      "sha256": "a767490f2398af88cf8afb3d9c57c4c2c053a3f421b9dfd7f885ade598c6e3bc",
+      "text_characters": 4591,
+      "dialogue_lines_all_branches": 91,
+      "dialogue_characters_without_whitespace_all_branches": 1245,
+      "speakers": {
+        "아카리": 16,
+        "코토": 32,
+        "린": 8,
+        "나나": 8,
+        "쇼": 9,
+        "미오": 14,
+        "사츠키": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/122_6장_도와_달라고_말하는_순서_보강.md",
+      "sha256": "8f69726bc2be21eb5606a43ae4cc900dca0211d61b3e71a5e4c8b48e758245dc",
+      "text_characters": 3921,
+      "dialogue_lines_all_branches": 51,
+      "dialogue_characters_without_whitespace_all_branches": 594,
+      "speakers": {
+        "쇼": 8,
+        "현장확인자": 16,
+        "미오": 10,
+        "린": 6,
+        "사츠키": 5,
+        "나나": 5,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/123_1장_하나_쉬는_박자_보강.md",
+      "sha256": "f7cf9dcb351068274d132972abe2b86f8181434af79c421b9cb066e715c4e7ec",
+      "text_characters": 4555,
+      "dialogue_lines_all_branches": 78,
+      "dialogue_characters_without_whitespace_all_branches": 1140,
+      "speakers": {
+        "유우": 21,
+        "켄": 14,
+        "린": 11,
+        "카에데": 12,
+        "미오": 14,
+        "아이": 3,
+        "미오·속말": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/124_4장_씹고_있는_동안에는_보강.md",
+      "sha256": "2d756acdd3df1fffd699d9547d3ea21db8cafbca01c244481444c67a7cf79152",
+      "text_characters": 4268,
+      "dialogue_lines_all_branches": 55,
+      "dialogue_characters_without_whitespace_all_branches": 1265,
+      "speakers": {
+        "하루카": 30,
+        "미오": 18,
+        "나나": 4,
+        "미오·속말": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/125_2장_제목에_내_이름을_보강.md",
+      "sha256": "195ea5cbd5567a75b4992e8a90551b8950ec0b3749d3ecb00d79982434a33ca6",
+      "text_characters": 4099,
+      "dialogue_lines_all_branches": 65,
+      "dialogue_characters_without_whitespace_all_branches": 1105,
+      "speakers": {
+        "미오": 31,
+        "아이": 32,
+        "미오·속말": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/126_2장_멈출_수_있었을_거라는_말_보강.md",
+      "sha256": "f36b7597964071d952dcc83d6c74fcda32da4f531fa313b9e138bbb0e5b66de7",
+      "text_characters": 4005,
+      "dialogue_lines_all_branches": 53,
+      "dialogue_characters_without_whitespace_all_branches": 1551,
+      "speakers": {
+        "소라": 11,
+        "유우": 12,
+        "쇼": 3,
+        "미오": 16,
+        "켄": 5,
+        "린": 1,
+        "나나": 1,
+        "리쿠": 2,
+        "코토": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/127_4장_잠깐만_몰랐으면_보강.md",
+      "sha256": "122141bd9b58898cae4460d28547a55b27bb5372c90df289df739d037ca6ea22",
+      "text_characters": 4103,
+      "dialogue_lines_all_branches": 51,
+      "dialogue_characters_without_whitespace_all_branches": 977,
+      "speakers": {
+        "나나": 22,
+        "미오": 24,
+        "미오·속말": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/128_3장_내_이름이면_오는_사람들_보강.md",
+      "sha256": "2d73ea7471b9e6fc26169c5f232382bc436030ed902d2aeeae82667377bc3adc",
+      "text_characters": 3231,
+      "dialogue_lines_all_branches": 40,
+      "dialogue_characters_without_whitespace_all_branches": 894,
+      "speakers": {
+        "린": 9,
+        "미오": 10,
+        "리쿠": 16,
+        "나나": 4,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/129_6장_필요했다는_말을_빼고_보강.md",
+      "sha256": "871510e17cb52077eb33c31d044e6e24e959ff682a6dc9f1165a968de9c031aa",
+      "text_characters": 3306,
+      "dialogue_lines_all_branches": 65,
+      "dialogue_characters_without_whitespace_all_branches": 1043,
+      "speakers": {
+        "미오": 16,
+        "래피": 27,
+        "사츠키": 8,
+        "린": 9,
+        "나나": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12_자유시간_연속상태_원장_스포주의.md",
+      "sha256": "8d7861487fceefe555bb8da60f803dd6963f3528b5f20f1ae972430e6dcea238",
+      "text_characters": 41916,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a2_2장_다음날의_준비_초고.md",
+      "sha256": "267fa3afcd920c373e7b7e30e5f7d10a45b327585903ba0495b761d4d9c9f300",
+      "text_characters": 16262,
+      "dialogue_lines_all_branches": 247,
+      "dialogue_characters_without_whitespace_all_branches": 4242,
+      "speakers": {
+        "미오": 44,
+        "아이": 46,
+        "린": 22,
+        "코토": 9,
+        "유우": 57,
+        "나나": 18,
+        "켄": 26,
+        "소라": 11,
+        "레이": 4,
+        "유우·노래": 4,
+        "하루카": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a3_2장_작은공연_초고.md",
+      "sha256": "7e7af8b77de3c1690629455b9c423307fee27613635cecc96591a4549e4c56b6",
+      "text_characters": 26203,
+      "dialogue_lines_all_branches": 413,
+      "dialogue_characters_without_whitespace_all_branches": 7189,
+      "speakers": {
+        "린": 14,
+        "미오": 108,
+        "레이": 5,
+        "사츠키": 10,
+        "켄": 24,
+        "유우": 96,
+        "하루카": 55,
+        "리쿠": 13,
+        "유우·노래": 28,
+        "켄·노래": 7,
+        "아이": 38,
+        "소라": 6,
+        "나나": 6,
+        "쇼": 1,
+        "코토": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a4_2장_읽어버린_말_초고.md",
+      "sha256": "25961721439c198eed254ebe221c1a113a9d52420e1e8c8ea071406746a95fd5",
+      "text_characters": 15836,
+      "dialogue_lines_all_branches": 223,
+      "dialogue_characters_without_whitespace_all_branches": 4088,
+      "speakers": {
+        "아카리": 11,
+        "린": 7,
+        "아이": 20,
+        "레이": 5,
+        "쇼": 47,
+        "미오": 65,
+        "래피": 14,
+        "코토": 4,
+        "리쿠": 7,
+        "켄": 1,
+        "나나": 1,
+        "사츠키": 2,
+        "하루카": 3,
+        "유우": 34,
+        "소라": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a5_2장_기다린_저녁_초고.md",
+      "sha256": "6d56f5a2fe67dc490089684e05405f9af585bbeedc7e1149cb349832fc4ac4f5",
+      "text_characters": 14080,
+      "dialogue_lines_all_branches": 228,
+      "dialogue_characters_without_whitespace_all_branches": 4734,
+      "speakers": {
+        "유우": 51,
+        "미오": 89,
+        "유우·작은노래": 1,
+        "아이": 7,
+        "코토": 9,
+        "켄": 8,
+        "소라": 10,
+        "린": 27,
+        "쇼": 21,
+        "하루카": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a6_2장_두번째_무대_초고.md",
+      "sha256": "65f38b46cedf74fa22df85d633d71e16c1581a5e63d7111ef8317d095ec75eb7",
+      "text_characters": 21303,
+      "dialogue_lines_all_branches": 376,
+      "dialogue_characters_without_whitespace_all_branches": 6012,
+      "speakers": {
+        "미오": 71,
+        "린": 47,
+        "레이": 34,
+        "유우": 59,
+        "소라": 44,
+        "나나": 30,
+        "리쿠": 3,
+        "아이": 49,
+        "켄": 7,
+        "하루카": 2,
+        "유우·노래": 25,
+        "소라·노래": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a7_2장_정리와_발견_초고.md",
+      "sha256": "a01ad16dce8dd53b57b264fa077367c49b9dac0023cb3ca3930a8af34fdb6989",
+      "text_characters": 7111,
+      "dialogue_lines_all_branches": 85,
+      "dialogue_characters_without_whitespace_all_branches": 1168,
+      "speakers": {
+        "하루카": 6,
+        "유우": 15,
+        "미오": 17,
+        "소라": 13,
+        "나나": 9,
+        "아이": 3,
+        "린": 8,
+        "쇼": 10,
+        "래피·방송": 1,
+        "코토": 2,
+        "아카리": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12a_2장_일상_초고.md",
+      "sha256": "5d946f60f07bf151f36ea3cc61e05c632428f72aeda4367a4ea752ee62ceaa8b",
+      "text_characters": 15203,
+      "dialogue_lines_all_branches": 187,
+      "dialogue_characters_without_whitespace_all_branches": 3043,
+      "speakers": {
+        "미오": 41,
+        "아이": 36,
+        "유우": 63,
+        "코토": 3,
+        "린": 11,
+        "소라": 6,
+        "하루카": 8,
+        "사츠키": 5,
+        "아카리": 7,
+        "쇼": 2,
+        "나나": 4,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12b1_2장_호텔현장_초고.md",
+      "sha256": "474ab79585f7c31c3285d9bbbdd36751130d04ee4bbabee5c6d026e6ef4d2a25",
+      "text_characters": 6694,
+      "dialogue_lines_all_branches": 92,
+      "dialogue_characters_without_whitespace_all_branches": 1729,
+      "speakers": {
+        "레이": 2,
+        "린": 9,
+        "미오": 32,
+        "소라": 14,
+        "코토": 3,
+        "나나": 8,
+        "쇼": 6,
+        "하루카": 6,
+        "유우": 12
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12b2_2장_공연장_수사_초고.md",
+      "sha256": "76c952b34018933556e261f64d4b33f9943f29d18984def8883011826f2c0382",
+      "text_characters": 7258,
+      "dialogue_lines_all_branches": 96,
+      "dialogue_characters_without_whitespace_all_branches": 1895,
+      "speakers": {
+        "소라": 21,
+        "미오": 29,
+        "나나": 14,
+        "하루카": 3,
+        "레이": 6,
+        "아카리": 5,
+        "사츠키": 4,
+        "리쿠": 14
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12b3_2장_증언과_소지품_초고.md",
+      "sha256": "b7f60b091b7c69975d82e4977fd922e589cdc876d59624d8469a0de68e869c28",
+      "text_characters": 7119,
+      "dialogue_lines_all_branches": 83,
+      "dialogue_characters_without_whitespace_all_branches": 1922,
+      "speakers": {
+        "아카리": 2,
+        "미오": 30,
+        "레이": 3,
+        "사츠키": 3,
+        "리쿠": 3,
+        "쇼": 5,
+        "나나": 12,
+        "켄": 3,
+        "코토": 2,
+        "린": 3,
+        "하루카": 4,
+        "유우": 9,
+        "소라": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12b4_2장_겹치는_시간_초고.md",
+      "sha256": "81e1441bf396d1a991872067bc927f5478afbab99c227b2939ae7c8a3d6d2796",
+      "text_characters": 9160,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 2539,
+      "speakers": {
+        "미오": 47,
+        "유우": 10,
+        "사츠키": 9,
+        "아카리": 5,
+        "린": 1,
+        "레이": 1,
+        "소라": 31,
+        "나나": 2,
+        "하루카": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12c1_2장_재판_시작_초고.md",
+      "sha256": "751414dd077837a9952b26cd510e7bc70c7038eb561619a44796596dff435017",
+      "text_characters": 16790,
+      "dialogue_lines_all_branches": 232,
+      "dialogue_characters_without_whitespace_all_branches": 6908,
+      "speakers": {
+        "래피": 3,
+        "소라": 34,
+        "나나": 22,
+        "린": 13,
+        "미오": 37,
+        "리쿠": 28,
+        "쇼": 16,
+        "코토": 5,
+        "아카리": 4,
+        "유우": 43,
+        "켄": 12,
+        "하루카": 3,
+        "레이": 7,
+        "사츠키": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12c2_2장_재판_목소리_초고.md",
+      "sha256": "7adc7559f4d0574ae36df4d96673e33d79eb4c42ba3689e67afa11bf1d331945",
+      "text_characters": 23969,
+      "dialogue_lines_all_branches": 276,
+      "dialogue_characters_without_whitespace_all_branches": 9671,
+      "speakers": {
+        "미오": 61,
+        "유우": 77,
+        "사츠키": 3,
+        "켄": 21,
+        "리쿠": 27,
+        "쇼": 6,
+        "코토": 12,
+        "하루카": 7,
+        "린": 9,
+        "나나": 12,
+        "소라": 30,
+        "아카리": 5,
+        "레이": 1,
+        "미오·속말": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12c3_2장_재판_접촉과_투표_초고.md",
+      "sha256": "0774a3cff2f47322b20ea5885d311361a54fbdb639af2f8d9b13b130d48ed199",
+      "text_characters": 23592,
+      "dialogue_lines_all_branches": 266,
+      "dialogue_characters_without_whitespace_all_branches": 8005,
+      "speakers": {
+        "미오": 65,
+        "유우": 110,
+        "아카리": 5,
+        "리쿠": 3,
+        "레이": 4,
+        "린": 12,
+        "나나": 14,
+        "쇼": 13,
+        "소라": 23,
+        "하루카": 4,
+        "켄": 5,
+        "유우·노래": 6,
+        "사츠키": 1,
+        "래피": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/12d_2장_결과와_남은일_초고.md",
+      "sha256": "66022405615f6d4218e9a061230388b58a983c56d5f911e51e410a2e2799ed03",
+      "text_characters": 16465,
+      "dialogue_lines_all_branches": 193,
+      "dialogue_characters_without_whitespace_all_branches": 3306,
+      "speakers": {
+        "유우": 14,
+        "래피": 2,
+        "켄": 6,
+        "리쿠": 19,
+        "아카리": 5,
+        "소라": 33,
+        "나나": 13,
+        "사츠키": 5,
+        "린": 12,
+        "미오": 56,
+        "레이": 2,
+        "쇼": 10,
+        "하루카": 14,
+        "코토": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/130_1장_둘이서_말하면_보강.md",
+      "sha256": "623b114a580eaab47ba1061f219fb47400d70754fc10982c3a676556c75aae68",
+      "text_characters": 5476,
+      "dialogue_lines_all_branches": 101,
+      "dialogue_characters_without_whitespace_all_branches": 1772,
+      "speakers": {
+        "리쿠": 9,
+        "소라": 29,
+        "미오": 8,
+        "타이가": 11,
+        "린": 8,
+        "켄": 5,
+        "코토": 6,
+        "아카리": 2,
+        "하루카": 3,
+        "레이": 2,
+        "유우": 6,
+        "아이": 5,
+        "미오·속말": 5,
+        "사츠키": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/131_4장_이번에도_거짓말이라면_보강.md",
+      "sha256": "3b5ee38b417b60054dba53c53e8de851c664f5bca42a894c0aea6bdc4377a26b",
+      "text_characters": 5263,
+      "dialogue_lines_all_branches": 90,
+      "dialogue_characters_without_whitespace_all_branches": 2008,
+      "speakers": {
+        "레이": 35,
+        "미오": 16,
+        "래피": 2,
+        "나나": 9,
+        "사츠키": 3,
+        "코토": 8,
+        "쇼": 6,
+        "아카리": 4,
+        "린": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/132_2장_그냥_의자라고_하지_마_보강.md",
+      "sha256": "75b0b580b8fcec552fee0aec33e8bd682255b0c5f88e8c18219fcd1d3609f1c6",
+      "text_characters": 4019,
+      "dialogue_lines_all_branches": 104,
+      "dialogue_characters_without_whitespace_all_branches": 1321,
+      "speakers": {
+        "린": 56,
+        "미오": 48
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/133_5장_둘만_있을_때의_내_편_보강.md",
+      "sha256": "f771c3b88eac1a5f8e06c8c0f1114330decf070777e757703168bcb7c122857c",
+      "text_characters": 6300,
+      "dialogue_lines_all_branches": 131,
+      "dialogue_characters_without_whitespace_all_branches": 2151,
+      "speakers": {
+        "아카리": 64,
+        "사츠키": 67
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/134_4장_같이_들고_가는_사람_보강.md",
+      "sha256": "d3e5c3d84d89aafb6f0f14b963f996461541ca964eabc9507f93448b4ae897d8",
+      "text_characters": 3045,
+      "dialogue_lines_all_branches": 67,
+      "dialogue_characters_without_whitespace_all_branches": 813,
+      "speakers": {
+        "미오": 31,
+        "하루카": 36
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/135_1장_네가_또_장난을_치면_보강.md",
+      "sha256": "253feaf71481e7f15ec37c52e4227c517dbd2854da4e986769f142c082749c12",
+      "text_characters": 3779,
+      "dialogue_lines_all_branches": 78,
+      "dialogue_characters_without_whitespace_all_branches": 1223,
+      "speakers": {
+        "아이": 8,
+        "타이가": 12,
+        "리쿠": 17,
+        "린": 16,
+        "카에데": 4,
+        "아카리": 8,
+        "사츠키": 3,
+        "코토": 3,
+        "미오": 5,
+        "레이": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/136_3장_부르지_않은_아침_보강.md",
+      "sha256": "8cecc47841feeedb4d2e0502c942e79f976a37e306daebb4ab94eb728310e6f6",
+      "text_characters": 3522,
+      "dialogue_lines_all_branches": 69,
+      "dialogue_characters_without_whitespace_all_branches": 968,
+      "speakers": {
+        "나나": 12,
+        "소라": 37,
+        "미오": 20
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/137_1장_아무도_말하지_않으면_보강.md",
+      "sha256": "d8ba44732150fe936c1dcca8c1987bbba06fd1d6e1b7afaa92818170f5db4b92",
+      "text_characters": 3957,
+      "dialogue_lines_all_branches": 65,
+      "dialogue_characters_without_whitespace_all_branches": 1352,
+      "speakers": {
+        "유우": 22,
+        "타이가": 6,
+        "래피": 3,
+        "코토": 5,
+        "사츠키": 4,
+        "리쿠": 5,
+        "린": 3,
+        "아카리": 1,
+        "켄": 1,
+        "아이": 3,
+        "나나": 3,
+        "쇼": 3,
+        "레이": 2,
+        "미오": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/138_2장_돌아보게_하려던_손_보강.md",
+      "sha256": "313f902994946b23dd9ccc2198e30103d75d1ec1484cd112a9e8f9db8f4069d2",
+      "text_characters": 5614,
+      "dialogue_lines_all_branches": 107,
+      "dialogue_characters_without_whitespace_all_branches": 1867,
+      "speakers": {
+        "유우": 54,
+        "린": 6,
+        "소라": 10,
+        "미오": 11,
+        "나나": 5,
+        "아카리": 4,
+        "사츠키": 1,
+        "쇼": 5,
+        "켄": 2,
+        "하루카": 5,
+        "리쿠": 2,
+        "코토": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/139_1장_깨물지_않은_사탕_보강.md",
+      "sha256": "ac193a18b589b43d139b624c4ff573ac84f74c301bb3ddd14e9325198b839f08",
+      "text_characters": 5400,
+      "dialogue_lines_all_branches": 104,
+      "dialogue_characters_without_whitespace_all_branches": 1846,
+      "speakers": {
+        "카에데": 57,
+        "미오": 47
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a10_3장_남겨진_한줄_초고.md",
+      "sha256": "b2ec4389a15f48b30ee1ecf0b31833e4015481339bf721a02fbe3df4cdef6a0c",
+      "text_characters": 9334,
+      "dialogue_lines_all_branches": 140,
+      "dialogue_characters_without_whitespace_all_branches": 2076,
+      "speakers": {
+        "아카리": 14,
+        "미오": 30,
+        "사츠키": 2,
+        "린": 4,
+        "켄": 32,
+        "리쿠": 39,
+        "소라": 15,
+        "하루카": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a11_3장_확인하러_가는_사람들_초고.md",
+      "sha256": "7c2826dd855096b1d42b12eade737d038c0eb94ae84f1bc2ba9bd7aa4281f412",
+      "text_characters": 6736,
+      "dialogue_lines_all_branches": 96,
+      "dialogue_characters_without_whitespace_all_branches": 1622,
+      "speakers": {
+        "리쿠": 31,
+        "린": 21,
+        "미오": 25,
+        "나나": 3,
+        "켄": 6,
+        "레이": 3,
+        "사츠키": 2,
+        "하루카": 2,
+        "소라": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a12_3장_끝났다는_말_초고.md",
+      "sha256": "d42f3ee8d3880472e443abcdc8fef1fbdc43601e1963d07d3d5443c970528295",
+      "text_characters": 9174,
+      "dialogue_lines_all_branches": 122,
+      "dialogue_characters_without_whitespace_all_branches": 2272,
+      "speakers": {
+        "미오": 21,
+        "소라": 4,
+        "리쿠": 32,
+        "나나": 9,
+        "켄": 5,
+        "소라·켄의몸": 29,
+        "린": 15,
+        "레이": 2,
+        "사츠키": 3,
+        "하루카": 1,
+        "쇼": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a2_3장_거울앞의_시연_초고.md",
+      "sha256": "d4f81db7107859ee52e55ec10cd7f709c119f05545eb4150fefb1cbf1ec90930",
+      "text_characters": 8409,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 2901,
+      "speakers": {
+        "리쿠": 42,
+        "미오": 13,
+        "하루카": 11,
+        "소라": 32,
+        "켄": 9,
+        "쇼": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a3_3장_각자의_자료실_초고.md",
+      "sha256": "8e972e5c7c44f8c63586c02cfbde78ec55ce00165b5ba68876dc367de62ca07b",
+      "text_characters": 12126,
+      "dialogue_lines_all_branches": 201,
+      "dialogue_characters_without_whitespace_all_branches": 3212,
+      "speakers": {
+        "쇼": 9,
+        "리쿠": 12,
+        "레이": 9,
+        "켄": 14,
+        "소라": 8,
+        "미오": 72,
+        "하루카": 66,
+        "래피": 6,
+        "코토": 2,
+        "사츠키": 2,
+        "아카리": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a4_3장_저녁상영_초고.md",
+      "sha256": "b243798a2cb3dc5844fc691e90ad38e7111ab01d1349f74b5c47609d8242e2d2",
+      "text_characters": 11223,
+      "dialogue_lines_all_branches": 127,
+      "dialogue_characters_without_whitespace_all_branches": 2480,
+      "speakers": {
+        "아카리": 3,
+        "코토": 2,
+        "사츠키": 2,
+        "하루카": 11,
+        "미오": 23,
+        "켄": 22,
+        "리쿠": 11,
+        "소라": 48,
+        "나나": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a5_3장_공개를_부탁한_사람_초고.md",
+      "sha256": "af0346ae0a384cf94049c9ad6ff0f32fbc1ffdc09938c3a4376a7d080e7dc762",
+      "text_characters": 6848,
+      "dialogue_lines_all_branches": 102,
+      "dialogue_characters_without_whitespace_all_branches": 1887,
+      "speakers": {
+        "미오": 18,
+        "리쿠": 17,
+        "린": 14,
+        "켄": 30,
+        "나나": 6,
+        "소라": 10,
+        "하루카": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a6_3장_두몸의_기억_초고.md",
+      "sha256": "4aca1782918f1fcb85a127fcbb0256247ca0d23cb9a25d76e85e8f6f1504ba80",
+      "text_characters": 10655,
+      "dialogue_lines_all_branches": 127,
+      "dialogue_characters_without_whitespace_all_branches": 3171,
+      "speakers": {
+        "소라·켄의몸": 11,
+        "나나": 8,
+        "리쿠": 16,
+        "미오": 17,
+        "린": 7,
+        "소라": 19,
+        "켄": 43,
+        "하루카": 2,
+        "레이": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a7_3장_남는정보_초고.md",
+      "sha256": "2d84fdc6c86ccaab89d66e3cd3fe01b464591edee0ec5c2163ec43bf744a47a8",
+      "text_characters": 14022,
+      "dialogue_lines_all_branches": 184,
+      "dialogue_characters_without_whitespace_all_branches": 4041,
+      "speakers": {
+        "리쿠": 31,
+        "켄": 9,
+        "미오": 74,
+        "하루카": 22,
+        "소라": 13,
+        "나나": 3,
+        "린": 5,
+        "코토": 8,
+        "사츠키": 18,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a8_3장_거울의_모서리_초고.md",
+      "sha256": "6bf365cb08e841596ee4c43ffd9252fc284b554e42ce5cfc677370ead1ac0c47",
+      "text_characters": 5632,
+      "dialogue_lines_all_branches": 62,
+      "dialogue_characters_without_whitespace_all_branches": 1211,
+      "speakers": {
+        "린": 12,
+        "레이": 8,
+        "리쿠": 14,
+        "미오": 16,
+        "사츠키": 4,
+        "소라": 2,
+        "하루카": 2,
+        "쇼": 3,
+        "나나": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a9_3장_밤의_선긋기_초고.md",
+      "sha256": "268746a7ff1fe41e169435def49b1780d2c47b9a85376f793ef7898d9f09e52a",
+      "text_characters": 8042,
+      "dialogue_lines_all_branches": 89,
+      "dialogue_characters_without_whitespace_all_branches": 2282,
+      "speakers": {
+        "코토": 6,
+        "미오": 26,
+        "소라": 13,
+        "리쿠": 22,
+        "켄": 10,
+        "래피": 3,
+        "나나": 4,
+        "하루카": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13a_3장_일상_초고.md",
+      "sha256": "0d431314ded709ee9a748cbc70d1421ba682c6d8235649696341529ccc97cd3b",
+      "text_characters": 5834,
+      "dialogue_lines_all_branches": 82,
+      "dialogue_characters_without_whitespace_all_branches": 1220,
+      "speakers": {
+        "하루카": 14,
+        "미오": 16,
+        "래피·방송": 1,
+        "린": 5,
+        "레이": 2,
+        "쇼": 3,
+        "코토": 1,
+        "나나": 3,
+        "소라": 13,
+        "리쿠": 24
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13b1_3장_아직_살아있는_사람_초고.md",
+      "sha256": "c1ec9d751cbed8050d56f418944e6c4e24c6dc1d4165871634147ca30a3597ca",
+      "text_characters": 15174,
+      "dialogue_lines_all_branches": 245,
+      "dialogue_characters_without_whitespace_all_branches": 4666,
+      "speakers": {
+        "미오": 88,
+        "나나": 8,
+        "소라·켄의몸": 20,
+        "쇼": 34,
+        "코토": 9,
+        "린": 6,
+        "레이": 5,
+        "래피": 8,
+        "사츠키": 28,
+        "하루카": 35,
+        "아카리": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13b2_3장_두번째_이름_초고.md",
+      "sha256": "8ef70848c2b354c93edc7a688fad47f3570dc9f57ec2d4e92775a0106dbcd48a",
+      "text_characters": 8737,
+      "dialogue_lines_all_branches": 98,
+      "dialogue_characters_without_whitespace_all_branches": 1710,
+      "speakers": {
+        "코토": 8,
+        "소라·켄의몸": 20,
+        "나나": 26,
+        "미오": 11,
+        "레이": 5,
+        "쇼": 10,
+        "아카리": 8,
+        "사츠키": 3,
+        "린": 4,
+        "하루카": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13b3_3장_건네지_않은_말_초고.md",
+      "sha256": "e61ed9fe93193739d90c9af09245279a4ea26feb840b332a9cc47bf9a7b311ba",
+      "text_characters": 7155,
+      "dialogue_lines_all_branches": 93,
+      "dialogue_characters_without_whitespace_all_branches": 2659,
+      "speakers": {
+        "코토": 20,
+        "미오": 36,
+        "나나": 13,
+        "쇼": 5,
+        "래피": 6,
+        "소라·켄의몸": 4,
+        "린": 7,
+        "레이": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13b4_3장_아침에_쓴_기회_초고.md",
+      "sha256": "17ac543a80481fde99a7bd80376ae83a518298685e7ca7c40730e6d40e6834de",
+      "text_characters": 7071,
+      "dialogue_lines_all_branches": 84,
+      "dialogue_characters_without_whitespace_all_branches": 1842,
+      "speakers": {
+        "하루카": 7,
+        "미오": 25,
+        "코토": 13,
+        "린": 4,
+        "소라·켄의몸": 4,
+        "레이": 2,
+        "아카리": 11,
+        "아카리·회상": 1,
+        "사츠키": 2,
+        "나나": 4,
+        "래피": 3,
+        "쇼": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13c1_3장_재판_몸의_이름_초고.md",
+      "sha256": "630c24f7e3df205d2c9ca2cc7b0494bd260f9f04c82bbae040d5b9281f4c327a",
+      "text_characters": 28616,
+      "dialogue_lines_all_branches": 323,
+      "dialogue_characters_without_whitespace_all_branches": 10537,
+      "speakers": {
+        "소라·켄의몸": 70,
+        "린": 36,
+        "코토": 27,
+        "나나": 30,
+        "쇼": 22,
+        "아카리": 23,
+        "레이": 15,
+        "사츠키": 19,
+        "래피": 5,
+        "미오": 53,
+        "하루카": 14,
+        "미오·속말": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13c2_3장_재판_미오가_만든_거짓말_초고.md",
+      "sha256": "5d2482be46e1d0eccc16ffed4011092886c26bb33bebb04df0df7544de2d551b",
+      "text_characters": 16633,
+      "dialogue_lines_all_branches": 167,
+      "dialogue_characters_without_whitespace_all_branches": 5659,
+      "speakers": {
+        "미오": 45,
+        "나나": 34,
+        "소라·켄의몸": 37,
+        "미오·속말": 3,
+        "하루카": 12,
+        "코토": 11,
+        "린": 7,
+        "사츠키": 3,
+        "쇼": 7,
+        "아카리": 4,
+        "레이": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13c3_3장_재판_돌아가지_않은_사람_초고.md",
+      "sha256": "febaf0197e2e9620e64eb10db03659189c7dbae37300187f2249dd843032adb5",
+      "text_characters": 25470,
+      "dialogue_lines_all_branches": 337,
+      "dialogue_characters_without_whitespace_all_branches": 8812,
+      "speakers": {
+        "미오": 92,
+        "소라·켄의몸": 153,
+        "코토": 3,
+        "레이": 5,
+        "나나": 14,
+        "쇼": 21,
+        "린": 17,
+        "아카리": 12,
+        "사츠키": 6,
+        "하루카": 11,
+        "래피": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/13d_3장_결과와_남겨진_목소리_초고.md",
+      "sha256": "d6070b8f97937bd0f8ec753bdd060a6bd7f52d0cec3c147ccdedf2ca6b8f617b",
+      "text_characters": 13434,
+      "dialogue_lines_all_branches": 188,
+      "dialogue_characters_without_whitespace_all_branches": 3054,
+      "speakers": {
+        "소라·켄의몸": 17,
+        "나나": 18,
+        "린": 29,
+        "래피": 4,
+        "미오": 25,
+        "안내 녹음": 2,
+        "레이": 19,
+        "쇼": 17,
+        "하루카": 11,
+        "코토": 25,
+        "사츠키": 9,
+        "아카리": 12
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/140_2장_안에서_대답하지_않는_방_보강.md",
+      "sha256": "067f3892891600aee6a810eb8c672f61562d114e9a0dfeb0cd33345c812a8911",
+      "text_characters": 4703,
+      "dialogue_lines_all_branches": 84,
+      "dialogue_characters_without_whitespace_all_branches": 1123,
+      "speakers": {
+        "미오·속말": 1,
+        "미오": 36,
+        "리쿠": 20,
+        "켄": 9,
+        "린": 18
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/141_2장_다른_사람을_넣는_자리_보강.md",
+      "sha256": "d8b4ca19d534edb3ce95f0fb78805925d62662f57ecaf23a3a988ff8a6d47deb",
+      "text_characters": 5734,
+      "dialogue_lines_all_branches": 76,
+      "dialogue_characters_without_whitespace_all_branches": 2198,
+      "speakers": {
+        "유우": 14,
+        "미오": 26,
+        "코토": 3,
+        "린": 2,
+        "하루카": 10,
+        "쇼": 2,
+        "켄": 2,
+        "소라": 5,
+        "나나": 5,
+        "리쿠": 5,
+        "사츠키": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/142_4장_접어서_내놓은_이름_보강.md",
+      "sha256": "bb43c6df9b6f7491ff858cd17df9c0321fd102446061a3b769569fdfd00723cb",
+      "text_characters": 6880,
+      "dialogue_lines_all_branches": 81,
+      "dialogue_characters_without_whitespace_all_branches": 1950,
+      "speakers": {
+        "코토": 16,
+        "린": 8,
+        "아카리": 7,
+        "하루카": 7,
+        "쇼": 5,
+        "사츠키": 11,
+        "나나": 6,
+        "레이": 3,
+        "미오·속말": 5,
+        "미오": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/143_자유시간_린_2장_첫_수리.md",
+      "sha256": "a874a0b7cb05ce3c13097e971c2002017168af35c5fee43477403e249c1c7df2",
+      "text_characters": 3486,
+      "dialogue_lines_all_branches": 40,
+      "dialogue_characters_without_whitespace_all_branches": 637,
+      "speakers": {
+        "미오": 19,
+        "린": 21
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/144_자유시간_코토_2장_첫_표찰.md",
+      "sha256": "7ddf5d4c1d89746e4d2b67349f7aaf7b51dfbf3ff491a4a9f9a6452a2a72d085",
+      "text_characters": 4585,
+      "dialogue_lines_all_branches": 66,
+      "dialogue_characters_without_whitespace_all_branches": 1397,
+      "speakers": {
+        "미오": 27,
+        "코토": 30,
+        "유우": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/145_자유시간_아이_2장_첫_접시.md",
+      "sha256": "bf7c6fd6686c6b5b878f7f90f39a88a4745d1acc5e0a5b8e43d310cc5462eaa2",
+      "text_characters": 4877,
+      "dialogue_lines_all_branches": 39,
+      "dialogue_characters_without_whitespace_all_branches": 669,
+      "speakers": {
+        "아이": 20,
+        "미오": 19
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/146_자유시간_유우_2장_다시_듣는_시작.md",
+      "sha256": "dff1fd8b14657fd84b42445eea88845ef0fc0c2c0cc257015432916b5e52fe2b",
+      "text_characters": 3791,
+      "dialogue_lines_all_branches": 49,
+      "dialogue_characters_without_whitespace_all_branches": 943,
+      "speakers": {
+        "유우": 28,
+        "미오": 21
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/147_자유시간_레이_2장_먼지_남은_정원.md",
+      "sha256": "fded8fb1d2e02bb53359cf6a49049daa8864d2c860ed93cdf2cbefb8be692a82",
+      "text_characters": 3108,
+      "dialogue_lines_all_branches": 44,
+      "dialogue_characters_without_whitespace_all_branches": 731,
+      "speakers": {
+        "레이": 22,
+        "미오": 22
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/148_자유시간_쇼_2장_덮지_않은_책.md",
+      "sha256": "09a0c17928b747cce9691cc8a176bf6c9ae0c9e3a7df290e7d8099521ad2fe70",
+      "text_characters": 2866,
+      "dialogue_lines_all_branches": 33,
+      "dialogue_characters_without_whitespace_all_branches": 508,
+      "speakers": {
+        "미오": 16,
+        "쇼": 17
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/149_자유시간_사츠키_2장_안_부른_사람.md",
+      "sha256": "ebea4c61e7da3b6c4af5202170e1f4147cdc8d941c32495e3a9b64e63559efb6",
+      "text_characters": 3395,
+      "dialogue_lines_all_branches": 42,
+      "dialogue_characters_without_whitespace_all_branches": 611,
+      "speakers": {
+        "미오": 22,
+        "사츠키": 20
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a10_4장_밖으로_가져갈_것_초고.md",
+      "sha256": "a91270465d39a5559d044671412bb9ab8414d54858cbc7fc29aea08e65808292",
+      "text_characters": 7018,
+      "dialogue_lines_all_branches": 79,
+      "dialogue_characters_without_whitespace_all_branches": 2132,
+      "speakers": {
+        "린": 11,
+        "레이": 26,
+        "미오": 15,
+        "아카리": 4,
+        "사츠키": 1,
+        "하루카": 15,
+        "쇼": 4,
+        "코토": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a11_4장_조건이_남은_손_초고.md",
+      "sha256": "1d9374e3e80237e461d59c43a86e46e7d73152e6ae00f1622032be7a33e3ba56",
+      "text_characters": 14209,
+      "dialogue_lines_all_branches": 223,
+      "dialogue_characters_without_whitespace_all_branches": 4278,
+      "speakers": {
+        "린": 40,
+        "쇼": 21,
+        "레이": 18,
+        "아카리": 12,
+        "미오": 23,
+        "코토": 10,
+        "사츠키": 6,
+        "나나": 39,
+        "하루카": 54
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a12_4장_어제와_다른_방_초고.md",
+      "sha256": "923032287748af248292554a048be844af2ce511c4092c9c103dec6e03f18380",
+      "text_characters": 8253,
+      "dialogue_lines_all_branches": 116,
+      "dialogue_characters_without_whitespace_all_branches": 2112,
+      "speakers": {
+        "아카리": 2,
+        "쇼": 1,
+        "린": 16,
+        "레이": 15,
+        "미오": 31,
+        "하루카": 38,
+        "나나": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a13_4장_문을_연_뒤_초고.md",
+      "sha256": "343c931d5ddda64403f8ce20b65629979137d50fe537e24422670434306afad3",
+      "text_characters": 5258,
+      "dialogue_lines_all_branches": 43,
+      "dialogue_characters_without_whitespace_all_branches": 782,
+      "speakers": {
+        "미오": 17,
+        "하루카": 1,
+        "레이": 8,
+        "나나": 5,
+        "아카리": 5,
+        "쇼": 3,
+        "린": 3,
+        "사츠키": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a2_4장_작은_공원_초고.md",
+      "sha256": "514495925f1285e8846af2221f127a6b87a05412804e4b9fd9996de4003fbb32",
+      "text_characters": 9269,
+      "dialogue_lines_all_branches": 133,
+      "dialogue_characters_without_whitespace_all_branches": 2104,
+      "speakers": {
+        "하루카": 34,
+        "미오": 19,
+        "나나": 8,
+        "코토": 6,
+        "린": 31,
+        "레이": 16,
+        "쇼": 14,
+        "사츠키": 4,
+        "아카리": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a3_4장_없어진_받침_초고.md",
+      "sha256": "5cd1b02f224d5bbc9f24857c6d4e9d670146c3e530303110b624a220fd30bf16",
+      "text_characters": 5821,
+      "dialogue_lines_all_branches": 84,
+      "dialogue_characters_without_whitespace_all_branches": 1862,
+      "speakers": {
+        "린": 22,
+        "미오": 16,
+        "레이": 16,
+        "코토": 3,
+        "쇼": 6,
+        "래피": 13,
+        "나나": 1,
+        "아카리": 2,
+        "하루카": 3,
+        "사츠키": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a4_4장_함께_있을_조건_초고.md",
+      "sha256": "4f45297aec1a5b62914f7fd5179c09517b3998c24e8382dd1878e95cee4cecad",
+      "text_characters": 10425,
+      "dialogue_lines_all_branches": 131,
+      "dialogue_characters_without_whitespace_all_branches": 3613,
+      "speakers": {
+        "쇼": 9,
+        "레이": 23,
+        "아카리": 7,
+        "린": 14,
+        "사츠키": 26,
+        "코토": 9,
+        "미오": 15,
+        "나나": 5,
+        "하루카": 18,
+        "래피": 3,
+        "미오·속말": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a5_4장_읽었다는_대답_초고.md",
+      "sha256": "243f30027f67377ca3957153b1b58f0ffb6f5ebb07beb9722fe50f690df51a7f",
+      "text_characters": 6268,
+      "dialogue_lines_all_branches": 66,
+      "dialogue_characters_without_whitespace_all_branches": 1396,
+      "speakers": {
+        "하루카": 34,
+        "미오": 26,
+        "린": 4,
+        "미오·속말": 1,
+        "레이": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a6_4장_만든_사람_초고.md",
+      "sha256": "dd18d0a9468329c0b3f1639e9fa83014f2ad922eaa2accb1d9d374f28cc1ee5f",
+      "text_characters": 7929,
+      "dialogue_lines_all_branches": 123,
+      "dialogue_characters_without_whitespace_all_branches": 2597,
+      "speakers": {
+        "하루카": 67,
+        "레이": 19,
+        "린": 11,
+        "미오": 26
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a7_4장_내가_먼저_말할게_초고.md",
+      "sha256": "fcf2cd36846deeda78dff59eabdc2c1d2415d671529e430eb0d53108486846b8",
+      "text_characters": 11792,
+      "dialogue_lines_all_branches": 167,
+      "dialogue_characters_without_whitespace_all_branches": 3602,
+      "speakers": {
+        "하루카": 72,
+        "쇼": 12,
+        "레이": 4,
+        "사츠키": 26,
+        "아카리": 14,
+        "미오": 23,
+        "코토": 5,
+        "래피": 5,
+        "린": 3,
+        "나나": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a8_4장_같이_확인한_바닥_초고.md",
+      "sha256": "24ba058db25834fc5b2afff1c22423272275eff34953f520769246552d88c4cd",
+      "text_characters": 8048,
+      "dialogue_lines_all_branches": 91,
+      "dialogue_characters_without_whitespace_all_branches": 1943,
+      "speakers": {
+        "하루카": 30,
+        "린": 14,
+        "미오": 27,
+        "쇼": 4,
+        "아카리": 7,
+        "레이": 2,
+        "나나": 3,
+        "래피": 2,
+        "코토": 1,
+        "사츠키": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a9_4장_길을_가진_사람_초고.md",
+      "sha256": "c07b623b08593687db6cb0581b12b35d26755502789252e4b746149e24d68495",
+      "text_characters": 18790,
+      "dialogue_lines_all_branches": 247,
+      "dialogue_characters_without_whitespace_all_branches": 5479,
+      "speakers": {
+        "린": 30,
+        "코토": 54,
+        "하루카": 49,
+        "미오": 55,
+        "쇼": 22,
+        "레이": 23,
+        "아카리": 4,
+        "사츠키": 2,
+        "나나": 7,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14a_4장_일상_초고.md",
+      "sha256": "9d250fbe45771765af4a46d69f6bec911c82e40669b75da9ecc397adeac5a230",
+      "text_characters": 9555,
+      "dialogue_lines_all_branches": 121,
+      "dialogue_characters_without_whitespace_all_branches": 2461,
+      "speakers": {
+        "코토": 23,
+        "린": 8,
+        "레이": 5,
+        "쇼": 8,
+        "하루카": 15,
+        "미오": 35,
+        "나나": 6,
+        "아카리": 11,
+        "사츠키": 10
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14b1_4장_첫_수사_초고.md",
+      "sha256": "a6d335c13d1eabf793ddc73d111261f25d5a2863f1c0105d9ab635ef5d09798d",
+      "text_characters": 7313,
+      "dialogue_lines_all_branches": 74,
+      "dialogue_characters_without_whitespace_all_branches": 2335,
+      "speakers": {
+        "사츠키": 7,
+        "레이": 2,
+        "린": 4,
+        "미오": 28,
+        "쇼": 9,
+        "나나": 11,
+        "아카리": 12,
+        "코토": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14b2_4장_입구와_햇빛_초고.md",
+      "sha256": "ab51e5714bdf93a98780a637bb13ce60617caf533924666efcf384eb52f9304b",
+      "text_characters": 4350,
+      "dialogue_lines_all_branches": 57,
+      "dialogue_characters_without_whitespace_all_branches": 1504,
+      "speakers": {
+        "코토": 9,
+        "미오": 19,
+        "나나": 4,
+        "쇼": 3,
+        "린": 2,
+        "사츠키": 7,
+        "아카리": 4,
+        "래피": 2,
+        "레이": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14b3_4장_사진을_보는_사람_초고.md",
+      "sha256": "c51bd17fb2849eb0afc0327c4db1ab0320a5d2b06e56e6d5c1e914df782c487d",
+      "text_characters": 7140,
+      "dialogue_lines_all_branches": 81,
+      "dialogue_characters_without_whitespace_all_branches": 1959,
+      "speakers": {
+        "미오": 39,
+        "쇼": 3,
+        "나나": 5,
+        "레이": 12,
+        "린": 19,
+        "래피": 2,
+        "사츠키": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14b4_4장_조사에서_남긴_말_초고.md",
+      "sha256": "4ce0cd8b390172932359ad590db1c829dff4225aeba0d2a32c7b41fa15dcb2c4",
+      "text_characters": 6879,
+      "dialogue_lines_all_branches": 72,
+      "dialogue_characters_without_whitespace_all_branches": 2468,
+      "speakers": {
+        "미오": 25,
+        "코토": 7,
+        "레이": 8,
+        "쇼": 2,
+        "아카리": 4,
+        "나나": 14,
+        "래피": 2,
+        "린": 8,
+        "사츠키": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14c1_4장_재판_죽은_시간_초고.md",
+      "sha256": "72c5747dca71aa6e828622cb63635dbaa201482484b15bf074f003c29efb0226",
+      "text_characters": 17135,
+      "dialogue_lines_all_branches": 184,
+      "dialogue_characters_without_whitespace_all_branches": 6411,
+      "speakers": {
+        "래피": 7,
+        "미오": 44,
+        "쇼": 19,
+        "레이": 34,
+        "나나": 16,
+        "코토": 23,
+        "사츠키": 9,
+        "린": 21,
+        "아카리": 11
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14c2_4장_재판_남겨_두고_싶은_것_초고.md",
+      "sha256": "2268809a3f3fec6b47571460a93390d49a41c885c6edf4f0ee509330f06db974",
+      "text_characters": 14564,
+      "dialogue_lines_all_branches": 161,
+      "dialogue_characters_without_whitespace_all_branches": 5611,
+      "speakers": {
+        "레이": 42,
+        "미오": 50,
+        "나나": 14,
+        "코토": 16,
+        "아카리": 12,
+        "린": 16,
+        "사츠키": 7,
+        "래피": 1,
+        "쇼": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14c3_4장_재판_남의_선택을_닫은_사람_초고.md",
+      "sha256": "905e0320e1e239f50b813983aab116b1686abfe1e7e9017f52d8309be8de32e5",
+      "text_characters": 23809,
+      "dialogue_lines_all_branches": 278,
+      "dialogue_characters_without_whitespace_all_branches": 9516,
+      "speakers": {
+        "레이": 103,
+        "미오": 73,
+        "린": 46,
+        "나나": 8,
+        "아카리": 7,
+        "쇼": 9,
+        "사츠키": 6,
+        "코토": 18,
+        "래피": 5,
+        "미오·속말": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/14d_4장_결과와_남은_기록_초고.md",
+      "sha256": "81343103c953734de8293cee89916f0e0e91694fdcc9e4a93926f992d389bad2",
+      "text_characters": 16621,
+      "dialogue_lines_all_branches": 180,
+      "dialogue_characters_without_whitespace_all_branches": 2833,
+      "speakers": {
+        "레이": 13,
+        "래피": 5,
+        "안내 음성": 2,
+        "린": 24,
+        "미오": 42,
+        "쇼": 16,
+        "아카리": 21,
+        "나나": 24,
+        "코토": 14,
+        "사츠키": 13,
+        "미오·속말": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/150_자유시간_켄_2장_표정_다시_고르기.md",
+      "sha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+      "text_characters": 2402,
+      "dialogue_lines_all_branches": 39,
+      "dialogue_characters_without_whitespace_all_branches": 739,
+      "speakers": {
+        "켄": 22,
+        "미오": 17
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/151_자유시간_아카리_2장_내일의_첫줄.md",
+      "sha256": "b43ea1f8db4cd1c9a022aa5aff4fd17b45893f625c1ab6efce644fac6495b739",
+      "text_characters": 2200,
+      "dialogue_lines_all_branches": 15,
+      "dialogue_characters_without_whitespace_all_branches": 245,
+      "speakers": {
+        "미오": 6,
+        "아카리": 7,
+        "미오·속말": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/152_자유시간_타이가_1장_늦게_건넨_한바퀴.md",
+      "sha256": "4af21fa040fe227ee1e742263255bb4f1cc7351a9bc47d310811eb3af64894d4",
+      "text_characters": 2307,
+      "dialogue_lines_all_branches": 21,
+      "dialogue_characters_without_whitespace_all_branches": 313,
+      "speakers": {
+        "타이가": 12,
+        "미오": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/153_자유시간_카에데_1장_늦은_시식.md",
+      "sha256": "b4cb90305678983bf7765eb063ee7e0605fc53e74cc6ec1c54d6bc6fc6bdf826",
+      "text_characters": 2004,
+      "dialogue_lines_all_branches": 20,
+      "dialogue_characters_without_whitespace_all_branches": 254,
+      "speakers": {
+        "카에데": 11,
+        "미오": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/154_1장_먼저_찾으면_말해주기로_한_것_보강.md",
+      "sha256": "0a52eb6354bbd0301ff6ec757e1a8c6ceda4716ba82d6f75428596e8a701b8ed",
+      "text_characters": 6974,
+      "dialogue_lines_all_branches": 138,
+      "dialogue_characters_without_whitespace_all_branches": 2191,
+      "speakers": {
+        "미오": 61,
+        "카에데": 45,
+        "미오·속말": 2,
+        "리쿠": 30
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/155_2장_아직_안_맞는_뚜껑_보강.md",
+      "sha256": "713af869f708dced2421a2b25830a843cb57ef9adc1ee8bd1119936cfe40a037",
+      "text_characters": 5139,
+      "dialogue_lines_all_branches": 84,
+      "dialogue_characters_without_whitespace_all_branches": 1704,
+      "speakers": {
+        "아카리": 17,
+        "린": 20,
+        "미오": 35,
+        "코토": 10,
+        "나나": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/156_3장_내_차례에는_말하지_마_보강.md",
+      "sha256": "4b23726a1f6829ac1cbcca45ac1d1e054cf3e321b0dde75b4c0d153e403994c7",
+      "text_characters": 6907,
+      "dialogue_lines_all_branches": 123,
+      "dialogue_characters_without_whitespace_all_branches": 2152,
+      "speakers": {
+        "켄": 20,
+        "리쿠": 16,
+        "미오": 37,
+        "나나": 37,
+        "코토": 12,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/157_1장_재구성만화_슬롯과_실제문답.md",
+      "sha256": "6949299510a2795a164e43a5c80ce3aa4d5b0770753aa62d8a73e8ecc0b7aa1e",
+      "text_characters": 7238,
+      "dialogue_lines_all_branches": 71,
+      "dialogue_characters_without_whitespace_all_branches": 2026,
+      "speakers": {
+        "미오": 23,
+        "타이가": 14,
+        "린": 8,
+        "코토": 3,
+        "나나": 7,
+        "하루카": 3,
+        "아카리": 2,
+        "리쿠": 3,
+        "쇼": 3,
+        "소라": 3,
+        "레이": 1,
+        "아이": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/158_2장_재구성만화_슬롯과_실제문답.md",
+      "sha256": "1a4a284199cadd775ae330c3b42364c6591fbd37aa0a648d4af7f3739eb1d931",
+      "text_characters": 6425,
+      "dialogue_lines_all_branches": 66,
+      "dialogue_characters_without_whitespace_all_branches": 1958,
+      "speakers": {
+        "미오": 26,
+        "소라": 9,
+        "나나": 6,
+        "유우": 13,
+        "린": 3,
+        "하루카": 2,
+        "사츠키": 2,
+        "리쿠": 4,
+        "쇼": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/159_3장_재구성만화_슬롯과_실제문답.md",
+      "sha256": "2ade130b821867bfa7c7edf4347e42a9d3ab78bbaba6faaac10a2e3c2ff360e6",
+      "text_characters": 6409,
+      "dialogue_lines_all_branches": 66,
+      "dialogue_characters_without_whitespace_all_branches": 1976,
+      "speakers": {
+        "미오": 26,
+        "린": 7,
+        "나나": 9,
+        "소라·켄의몸": 16,
+        "하루카": 3,
+        "쇼": 4,
+        "레이": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a10_5장_없는_오후를_바라는_말_초고.md",
+      "sha256": "ad54c8564176cad4c99299b966e01bf6b9525ad0e83ec86193ec84457133d477",
+      "text_characters": 7325,
+      "dialogue_lines_all_branches": 75,
+      "dialogue_characters_without_whitespace_all_branches": 1096,
+      "speakers": {
+        "사츠키": 9,
+        "미오": 20,
+        "아카리": 21,
+        "코토": 21,
+        "나나": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a11_5장_남아있는_두장_초고.md",
+      "sha256": "fe331f65fd906816e3da64525732ddc0b61f4b49a39da1bbc0e711caea6e9cb0",
+      "text_characters": 8042,
+      "dialogue_lines_all_branches": 73,
+      "dialogue_characters_without_whitespace_all_branches": 1567,
+      "speakers": {
+        "사츠키": 13,
+        "코토": 3,
+        "아카리": 12,
+        "미오": 24,
+        "쇼": 9,
+        "나나": 6,
+        "린": 4,
+        "래피": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a2_5장_다시_맞는_부속_초고.md",
+      "sha256": "1368ee86d14b9357f4022847f436a36306adaa2dcdb0065e8aff78637bda7aca",
+      "text_characters": 11246,
+      "dialogue_lines_all_branches": 187,
+      "dialogue_characters_without_whitespace_all_branches": 3062,
+      "speakers": {
+        "나나": 21,
+        "미오": 25,
+        "쇼": 37,
+        "린": 55,
+        "코토": 18,
+        "아카리": 18,
+        "사츠키": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a3_5장_세번째_쪽_초고.md",
+      "sha256": "96cdaf7469f256a013208b6b7ded90f828086bc0b3682883063a7725b46a50bb",
+      "text_characters": 7976,
+      "dialogue_lines_all_branches": 102,
+      "dialogue_characters_without_whitespace_all_branches": 2465,
+      "speakers": {
+        "아카리": 50,
+        "사츠키": 13,
+        "아카리·속말": 1,
+        "코토": 36,
+        "미오": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a4_5장_일곱개의_잔_초고.md",
+      "sha256": "3bd414e836cd6c20ec9007c61d0fbd53c67423cf028e9f8f0c743396dc12d477",
+      "text_characters": 17599,
+      "dialogue_lines_all_branches": 322,
+      "dialogue_characters_without_whitespace_all_branches": 4090,
+      "speakers": {
+        "린": 45,
+        "쇼": 32,
+        "미오": 60,
+        "사츠키": 79,
+        "아카리": 72,
+        "나나": 19,
+        "미오·속말": 2,
+        "코토": 12,
+        "아카리·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a5_5장_아침의_확인창구_초고.md",
+      "sha256": "50152cd20eed09bd0d7d4311ebdc8f15fc45458d613b066b3e78395e5a05b9f5",
+      "text_characters": 13981,
+      "dialogue_lines_all_branches": 180,
+      "dialogue_characters_without_whitespace_all_branches": 4096,
+      "speakers": {
+        "미오": 28,
+        "나나": 21,
+        "사츠키": 41,
+        "아카리": 32,
+        "린": 22,
+        "쇼": 19,
+        "래피": 3,
+        "코토": 6,
+        "미오·속말": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a6_5장_손을_잡았던_사람_초고.md",
+      "sha256": "58a87e34b3548488d3ce923115621bce166ba5c60ef728420a316ba2d7f6a96e",
+      "text_characters": 9692,
+      "dialogue_lines_all_branches": 141,
+      "dialogue_characters_without_whitespace_all_branches": 2833,
+      "speakers": {
+        "미오": 36,
+        "나나": 63,
+        "래피": 3,
+        "코토": 9,
+        "쇼": 9,
+        "아카리": 4,
+        "사츠키": 10,
+        "린": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a7_5장_돌려받고_싶은_얼굴_초고.md",
+      "sha256": "6e299251055903616691d5bb65ad999ddeeddc6e2af67497bd575e446ca2f9c7",
+      "text_characters": 10340,
+      "dialogue_lines_all_branches": 129,
+      "dialogue_characters_without_whitespace_all_branches": 2175,
+      "speakers": {
+        "린": 36,
+        "미오": 32,
+        "나나": 22,
+        "쇼": 5,
+        "아카리": 14,
+        "사츠키": 8,
+        "코토": 3,
+        "미오·속말": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a8_5장_문을_막은_사람들_초고.md",
+      "sha256": "16cfa7ca37907d3f12a6141e0f9fdaea058338a7a6f411f4d4835d77cc31593a",
+      "text_characters": 7374,
+      "dialogue_lines_all_branches": 107,
+      "dialogue_characters_without_whitespace_all_branches": 1462,
+      "speakers": {
+        "코토": 37,
+        "미오": 25,
+        "사츠키": 17,
+        "미오·속말": 1,
+        "아카리": 22,
+        "쇼": 3,
+        "나나": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a9_5장_쓰지_않은_한번_초고.md",
+      "sha256": "61e243a4a0fc56681053072712de79edf8c6ec5902c3dd4db970c75a2f804955",
+      "text_characters": 12071,
+      "dialogue_lines_all_branches": 211,
+      "dialogue_characters_without_whitespace_all_branches": 2983,
+      "speakers": {
+        "아카리": 27,
+        "나나": 17,
+        "미오": 74,
+        "사츠키": 76,
+        "미오·속말": 1,
+        "린": 6,
+        "쇼": 7,
+        "래피": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15a_5장_일상_초고.md",
+      "sha256": "f9bcdeb588ae9feaa727c7ad22039bd53f0bc3011f4719ccf7b5e64028f976d6",
+      "text_characters": 10210,
+      "dialogue_lines_all_branches": 137,
+      "dialogue_characters_without_whitespace_all_branches": 3551,
+      "speakers": {
+        "코토": 33,
+        "사츠키": 21,
+        "쇼": 14,
+        "린": 17,
+        "아카리": 12,
+        "나나": 11,
+        "미오": 21,
+        "래피": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15b1_5장_잔과_몸의_수사_초고.md",
+      "sha256": "12fadaa9be9bf43bf78aa69dd736835f0d8ab9d92cd2a8663988570af983258d",
+      "text_characters": 5437,
+      "dialogue_lines_all_branches": 65,
+      "dialogue_characters_without_whitespace_all_branches": 1229,
+      "speakers": {
+        "사츠키": 8,
+        "미오": 18,
+        "쇼": 3,
+        "나나": 10,
+        "아카리": 18,
+        "린": 7,
+        "래피": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15b2_5장_돌아오지_않은_하나_초고.md",
+      "sha256": "e09dce136bc2d2d3b7f99d1778cc80a7b86852f65b6235baef3efaf6c1397f98",
+      "text_characters": 8094,
+      "dialogue_lines_all_branches": 106,
+      "dialogue_characters_without_whitespace_all_branches": 1994,
+      "speakers": {
+        "미오": 36,
+        "린": 19,
+        "나나": 13,
+        "래피": 1,
+        "쇼": 9,
+        "사츠키": 20,
+        "아카리": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15b3_5장_사라진_쪽의_행위_초고.md",
+      "sha256": "4e3337c94e54904534e27ff1c1e5ba77777c469c14b45715dcec27cb2d550c88",
+      "text_characters": 10793,
+      "dialogue_lines_all_branches": 135,
+      "dialogue_characters_without_whitespace_all_branches": 3293,
+      "speakers": {
+        "미오": 54,
+        "린": 8,
+        "사츠키": 20,
+        "아카리": 25,
+        "나나": 14,
+        "쇼": 12,
+        "래피": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15c1_5장_재판_빈잔의_자백_초고.md",
+      "sha256": "6570c1a69c43a5b8da8c45e315500b95e6694e21f4a335821d26441539804da6",
+      "text_characters": 17719,
+      "dialogue_lines_all_branches": 200,
+      "dialogue_characters_without_whitespace_all_branches": 6169,
+      "speakers": {
+        "래피": 1,
+        "쇼": 22,
+        "사츠키": 49,
+        "아카리": 35,
+        "나나": 16,
+        "린": 19,
+        "미오": 53,
+        "미오·속말": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15c2_5장_재판_열었던_손_초고.md",
+      "sha256": "51aea4c1622fe503cd3fc8c6d59ab803e94a4ccce300c1760c50f92881db28fc",
+      "text_characters": 28715,
+      "dialogue_lines_all_branches": 356,
+      "dialogue_characters_without_whitespace_all_branches": 10319,
+      "speakers": {
+        "미오": 77,
+        "사츠키": 59,
+        "쇼": 40,
+        "린": 30,
+        "아카리": 110,
+        "나나": 39,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15c3_5장_재판_남겨_두려던_사람_초고.md",
+      "sha256": "4ebea391757e84257137050018e4615995be62489d9ee3d4707def64021d42eb",
+      "text_characters": 24018,
+      "dialogue_lines_all_branches": 310,
+      "dialogue_characters_without_whitespace_all_branches": 8764,
+      "speakers": {
+        "사츠키": 70,
+        "아카리": 144,
+        "쇼": 13,
+        "미오": 38,
+        "린": 13,
+        "나나": 29,
+        "미오·속말": 1,
+        "래피": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/15d_5장_결과와_남은_다섯_초고.md",
+      "sha256": "6158231fa6c769e99b36bace40168cc1b5d00127f3aa9a1c7a4bbd94dec25704",
+      "text_characters": 12932,
+      "dialogue_lines_all_branches": 123,
+      "dialogue_characters_without_whitespace_all_branches": 1843,
+      "speakers": {
+        "아카리": 8,
+        "사츠키": 30,
+        "래피": 2,
+        "미오": 30,
+        "린": 15,
+        "쇼": 21,
+        "나나": 14,
+        "미오·속말": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/160_4장_재구성만화_슬롯과_실제문답.md",
+      "sha256": "ccedd8db571421c06bd4ed4db3a3d1dd094ba3fadec7d955ed6c68189eff46da",
+      "text_characters": 6039,
+      "dialogue_lines_all_branches": 60,
+      "dialogue_characters_without_whitespace_all_branches": 1855,
+      "speakers": {
+        "미오": 26,
+        "레이": 14,
+        "린": 6,
+        "나나": 5,
+        "아카리": 5,
+        "사츠키": 1,
+        "쇼": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/161_5장_재구성만화_슬롯과_실제문답.md",
+      "sha256": "95291cd90b8484e91cf2b408f69c45ac56b6d22e4819b2a1c5a7ba384960ce3b",
+      "text_characters": 6009,
+      "dialogue_lines_all_branches": 57,
+      "dialogue_characters_without_whitespace_all_branches": 1688,
+      "speakers": {
+        "미오": 25,
+        "쇼": 7,
+        "아카리": 14,
+        "나나": 6,
+        "린": 1,
+        "사츠키": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/162_6장_두_시간줄_재구성과_실제문답.md",
+      "sha256": "449b6b8e6e213f0ac2d7b4d26acad74c5058734301ce5508c57bd8869f30ca7d",
+      "text_characters": 11979,
+      "dialogue_lines_all_branches": 119,
+      "dialogue_characters_without_whitespace_all_branches": 3791,
+      "speakers": {
+        "미오": 55,
+        "린": 17,
+        "나나": 15,
+        "사츠키": 12,
+        "쇼": 11,
+        "래피": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/163_1장_재판_형식별_연속대본.md",
+      "sha256": "ea9e045dfc3b1042147adaa6c021e13b6e05913efdfaf922eb22fbcc3dcee69b",
+      "text_characters": 12592,
+      "dialogue_lines_all_branches": 115,
+      "dialogue_characters_without_whitespace_all_branches": 3997,
+      "speakers": {
+        "미오·속말": 21,
+        "미오": 23,
+        "린": 2,
+        "켄": 1,
+        "타이가": 21,
+        "아카리": 2,
+        "유우": 16,
+        "나나": 5,
+        "코토": 3,
+        "하루카": 2,
+        "소라": 9,
+        "레이": 1,
+        "사츠키": 2,
+        "리쿠": 4,
+        "쇼": 1,
+        "아이": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/164_2장_재판_형식별_연속대본.md",
+      "sha256": "fedabfc4c31d37055561c219934f901a06f4d6b5cff98c80e61f4167bb3266f7",
+      "text_characters": 14198,
+      "dialogue_lines_all_branches": 126,
+      "dialogue_characters_without_whitespace_all_branches": 4214,
+      "speakers": {
+        "리쿠": 28,
+        "미오": 17,
+        "유우": 29,
+        "미오·속말": 18,
+        "소라": 10,
+        "린": 5,
+        "나나": 8,
+        "코토": 2,
+        "레이": 4,
+        "쇼": 1,
+        "하루카": 1,
+        "사츠키": 1,
+        "아카리": 1,
+        "켄": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/165_3장_재판_형식별_연속대본.md",
+      "sha256": "e9c619cb70d8c0431188b6a5199251f8897816edb343e02589c64c3e6ad1661e",
+      "text_characters": 10523,
+      "dialogue_lines_all_branches": 77,
+      "dialogue_characters_without_whitespace_all_branches": 2789,
+      "speakers": {
+        "쇼": 4,
+        "아카리": 7,
+        "소라·켄의몸": 22,
+        "사츠키": 3,
+        "나나": 6,
+        "미오·속말": 12,
+        "미오": 15,
+        "래피": 1,
+        "린": 4,
+        "코토": 1,
+        "하루카": 1,
+        "레이": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/166_4장_재판_형식별_연속대본.md",
+      "sha256": "58051c5ce7db9f74ceb50bb5b46abc6937ec2eead9f0653b68b0072ace1dbf24",
+      "text_characters": 8644,
+      "dialogue_lines_all_branches": 66,
+      "dialogue_characters_without_whitespace_all_branches": 2682,
+      "speakers": {
+        "코토": 11,
+        "미오": 8,
+        "레이": 14,
+        "린": 3,
+        "미오·속말": 17,
+        "아카리": 3,
+        "나나": 6,
+        "쇼": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/167_5장_재판_형식별_연속대본.md",
+      "sha256": "7c72b1e949385cf6ee2a4182da09c134821eadbc46b82b3f0501054133430e0d",
+      "text_characters": 8750,
+      "dialogue_lines_all_branches": 70,
+      "dialogue_characters_without_whitespace_all_branches": 2298,
+      "speakers": {
+        "사츠키": 13,
+        "린": 7,
+        "미오": 9,
+        "미오·속말": 17,
+        "쇼": 4,
+        "나나": 5,
+        "아카리": 15
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/168_6장_재판_형식별_연속대본.md",
+      "sha256": "3fc6490c48c5af1c02096b3e67a7010302ff29f5c298352643e9fbb3fa44346f",
+      "text_characters": 8930,
+      "dialogue_lines_all_branches": 73,
+      "dialogue_characters_without_whitespace_all_branches": 2605,
+      "speakers": {
+        "사츠키": 11,
+        "쇼": 3,
+        "린": 6,
+        "나나": 3,
+        "미오·속말": 18,
+        "미오": 11,
+        "래피": 21
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/169_2_4_5_6장_우소다마와_후과_연속대본.md",
+      "sha256": "f5fbb029d2ab84c7dc96d64820fd53b86ee01693549913e1f6cd33c547bca4b7",
+      "text_characters": 12599,
+      "dialogue_lines_all_branches": 136,
+      "dialogue_characters_without_whitespace_all_branches": 4378,
+      "speakers": {
+        "유우": 11,
+        "소라": 1,
+        "하루카": 11,
+        "미오·속말": 8,
+        "미오": 51,
+        "리쿠": 4,
+        "코토": 5,
+        "레이": 5,
+        "나나": 16,
+        "아카리": 9,
+        "린": 2,
+        "래피": 4,
+        "사츠키": 4,
+        "쇼": 1,
+        "현장확인자": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16a2_6장_마지막_조건_초고.md",
+      "sha256": "66480e35c4c9982c21346d34b4029c98220d2277aaee49b20c2eb68389fff63e",
+      "text_characters": 9728,
+      "dialogue_lines_all_branches": 114,
+      "dialogue_characters_without_whitespace_all_branches": 2574,
+      "speakers": {
+        "미오": 40,
+        "래피": 16,
+        "쇼": 13,
+        "나나": 18,
+        "린": 18,
+        "사츠키": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16a3_6장_지금_쓰는_문장_초고.md",
+      "sha256": "c6572cb83d831601d203c1f741e5d5586e78161277473376e9bc1aa6dc9bf93f",
+      "text_characters": 6040,
+      "dialogue_lines_all_branches": 59,
+      "dialogue_characters_without_whitespace_all_branches": 1682,
+      "speakers": {
+        "래피": 20,
+        "미오": 16,
+        "린": 8,
+        "쇼": 6,
+        "나나": 8,
+        "사츠키": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16a4_6장_인형_안의_말_초고.md",
+      "sha256": "8b95c527829343331eb77cbff502264502592c6f85287b097e19adb01235de5c",
+      "text_characters": 7656,
+      "dialogue_lines_all_branches": 86,
+      "dialogue_characters_without_whitespace_all_branches": 1796,
+      "speakers": {
+        "미오": 30,
+        "린": 6,
+        "래피": 26,
+        "나나": 7,
+        "사츠키": 10,
+        "쇼": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16a5_6장_발에서_떨어진_그림자_초고.md",
+      "sha256": "358a2cbcbbdb37eaea2f282e80de86b2694840a81decd44261e70ce88eac3429",
+      "text_characters": 7906,
+      "dialogue_lines_all_branches": 91,
+      "dialogue_characters_without_whitespace_all_branches": 1946,
+      "speakers": {
+        "사츠키": 5,
+        "린": 9,
+        "미오": 30,
+        "래피": 4,
+        "쇼": 6,
+        "나나": 37
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16a_6장_내려가는_다섯_초고.md",
+      "sha256": "fc9d2265895e12b34cf2bb676ed2595b0360d2059194859f6e236a7e96ad8bd6",
+      "text_characters": 14839,
+      "dialogue_lines_all_branches": 187,
+      "dialogue_characters_without_whitespace_all_branches": 4418,
+      "speakers": {
+        "린": 29,
+        "쇼": 30,
+        "나나": 28,
+        "사츠키": 37,
+        "미오": 58,
+        "래피": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16b1_6장_전실과_통로의_수사_초고.md",
+      "sha256": "d9521701cdc7909363e256b02f7193b8f497871fa2e8febfca84b8342516b953",
+      "text_characters": 12965,
+      "dialogue_lines_all_branches": 130,
+      "dialogue_characters_without_whitespace_all_branches": 3613,
+      "speakers": {
+        "쇼": 17,
+        "미오": 35,
+        "나나": 31,
+        "린": 31,
+        "사츠키": 16
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16b2_6장_손을_놓은_뒤의_수사_초고.md",
+      "sha256": "00c3335ddc974117d52a88648fe31005b9404dd0392d06afe7da49a65a6fccf0",
+      "text_characters": 9965,
+      "dialogue_lines_all_branches": 114,
+      "dialogue_characters_without_whitespace_all_branches": 2942,
+      "speakers": {
+        "미오": 35,
+        "래피": 17,
+        "어린 하루카·복원 음성": 1,
+        "상대·복원 음성": 1,
+        "린": 16,
+        "쇼": 15,
+        "나나": 16,
+        "사츠키": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16c1_6장_재판_빈_자리의_이름_초고.md",
+      "sha256": "8fa620dade1182e499ce3cda784a46db85ba81e3d3c088b9b069c24d251f2f2e",
+      "text_characters": 10482,
+      "dialogue_lines_all_branches": 103,
+      "dialogue_characters_without_whitespace_all_branches": 2986,
+      "speakers": {
+        "린": 15,
+        "래피": 4,
+        "쇼": 17,
+        "미오": 33,
+        "나나": 13,
+        "사츠키": 21
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16c2_6장_재판_밀어낸_다음의_침묵_초고.md",
+      "sha256": "aecd5eae2114c8ae1adc9cc5465d42b4435816b6c97be0f5ceef85f201b8f930",
+      "text_characters": 32614,
+      "dialogue_lines_all_branches": 369,
+      "dialogue_characters_without_whitespace_all_branches": 12285,
+      "speakers": {
+        "쇼": 45,
+        "미오": 100,
+        "사츠키": 70,
+        "나나": 65,
+        "린": 58,
+        "미오·속말": 5,
+        "래피": 26
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16c3_6장_재판_같은_이름을_고른_사람들_초고.md",
+      "sha256": "444f7b5afaa4b29f01e430c525e5d373f81565491d3720f8c09d5713639edf3e",
+      "text_characters": 13304,
+      "dialogue_lines_all_branches": 170,
+      "dialogue_characters_without_whitespace_all_branches": 3730,
+      "speakers": {
+        "린": 28,
+        "래피": 24,
+        "쇼": 16,
+        "미오": 53,
+        "나나": 22,
+        "사츠키": 26,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16d1_6장_처음_연결된_목소리_초고.md",
+      "sha256": "26d1d3194fb062a17e85e256a4fe96a556d48fdf15c1e3118b2b943ece65e908",
+      "text_characters": 5800,
+      "dialogue_lines_all_branches": 41,
+      "dialogue_characters_without_whitespace_all_branches": 756,
+      "speakers": {
+        "린": 7,
+        "쇼": 9,
+        "외부접수원": 7,
+        "미오": 6,
+        "나나": 5,
+        "사츠키": 6,
+        "래피": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/16d2_6장_문_밖에_놓을_이름_초고.md",
+      "sha256": "09ac73547ae5e0bc2571f30a67f4926f509cc978641efacc8a1c612243b9e428",
+      "text_characters": 19092,
+      "dialogue_lines_all_branches": 213,
+      "dialogue_characters_without_whitespace_all_branches": 5165,
+      "speakers": {
+        "미오": 62,
+        "린": 23,
+        "래피": 38,
+        "사츠키": 12,
+        "나나": 35,
+        "외부접수원": 2,
+        "쇼": 10,
+        "미오·속말": 7,
+        "현장확인자": 24
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/170_1장_밤에_열어두라는_방_연속대본.md",
+      "sha256": "a5bcfa014ad4d386d8442085ffbd09523820a25113234ec55a017b7db37ed95f",
+      "text_characters": 10546,
+      "dialogue_lines_all_branches": 213,
+      "dialogue_characters_without_whitespace_all_branches": 3783,
+      "speakers": {
+        "미오": 56,
+        "코토": 36,
+        "리쿠": 39,
+        "나나": 11,
+        "린": 25,
+        "카에데": 19,
+        "아카리": 15,
+        "미오·속말": 3,
+        "유우": 7,
+        "켄": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/171_6장_먼저_내려갈_사람_연속대본.md",
+      "sha256": "8a3eab271c7a2b85eedf8d87e48bdaedf027e53755e90a2189eb0ec77e33202a",
+      "text_characters": 6541,
+      "dialogue_lines_all_branches": 110,
+      "dialogue_characters_without_whitespace_all_branches": 2007,
+      "speakers": {
+        "린": 17,
+        "미오": 37,
+        "나나": 14,
+        "사츠키": 28,
+        "쇼": 14
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/172_2장_네가_선생님이면_연속대본.md",
+      "sha256": "0e884f414a4d4d7d26e16fa6e1d335c08b0e7879d2105d80f7f237efa1bcf52a",
+      "text_characters": 6454,
+      "dialogue_lines_all_branches": 130,
+      "dialogue_characters_without_whitespace_all_branches": 2583,
+      "speakers": {
+        "켄": 43,
+        "미오": 49,
+        "하루카": 29,
+        "코토": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/173_3장_빌린_몸을_돌려놓는_손_연속대본.md",
+      "sha256": "e0b937d4b2319b24a121f6ab09900bf7f2da48855e0366ac8dce193897249040",
+      "text_characters": 4704,
+      "dialogue_lines_all_branches": 78,
+      "dialogue_characters_without_whitespace_all_branches": 1251,
+      "speakers": {
+        "린": 13,
+        "리쿠": 20,
+        "미오": 9,
+        "소라": 13,
+        "켄": 13,
+        "나나": 4,
+        "하루카": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/174_4장_쉬는_사람의_손_연속대본.md",
+      "sha256": "c780ab8fc83e4afffa4b725e741241e1f9b233aaa0ac7b314adc2eab8ac0d3da",
+      "text_characters": 4645,
+      "dialogue_lines_all_branches": 90,
+      "dialogue_characters_without_whitespace_all_branches": 1796,
+      "speakers": {
+        "하루카": 30,
+        "미오": 31,
+        "나나": 29
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/175_5장_여섯개의_새것_연속대본.md",
+      "sha256": "4804c47dd14b8772ac04ff3e69a0c0a9501042de644feecf843f47423be90935",
+      "text_characters": 3853,
+      "dialogue_lines_all_branches": 69,
+      "dialogue_characters_without_whitespace_all_branches": 1513,
+      "speakers": {
+        "나나": 9,
+        "린": 11,
+        "미오": 14,
+        "사츠키": 15,
+        "아카리": 13,
+        "쇼": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/176_1장_받는_사람이_끊는_전화_연속대본.md",
+      "sha256": "564a323137785884a13a6c3e1a180fddc91e5b8c837c00341aec93259bf03ff5",
+      "text_characters": 8460,
+      "dialogue_lines_all_branches": 163,
+      "dialogue_characters_without_whitespace_all_branches": 2904,
+      "speakers": {
+        "코토": 14,
+        "타이가": 10,
+        "유우": 12,
+        "켄": 38,
+        "린": 3,
+        "소라": 5,
+        "카에데": 15,
+        "아카리": 3,
+        "리쿠": 10,
+        "쇼": 6,
+        "나나": 2,
+        "미오": 31,
+        "하루카": 13,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/177_2장_아프지_않은_손_연속대본.md",
+      "sha256": "9fe63ef43c82b93c6c2d27b60d13690717803088e3e36a918bc82d41884f9a14",
+      "text_characters": 6656,
+      "dialogue_lines_all_branches": 124,
+      "dialogue_characters_without_whitespace_all_branches": 1798,
+      "speakers": {
+        "리쿠": 45,
+        "나나": 47,
+        "미오": 32
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/178_4장_문을_열_사람의_등_연속대본.md",
+      "sha256": "44ff30db7360e896c45777020a9a81e2e3e6d56a85d87306c91ca48333901ad1",
+      "text_characters": 7312,
+      "dialogue_lines_all_branches": 125,
+      "dialogue_characters_without_whitespace_all_branches": 2102,
+      "speakers": {
+        "린": 35,
+        "코토": 7,
+        "쇼": 11,
+        "하루카": 23,
+        "레이": 15,
+        "사츠키": 6,
+        "아카리": 7,
+        "미오": 21
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/179_2장_없는_사람의_목소리_연속대본.md",
+      "sha256": "8eafef9a345f63d229c768d7939065a6508a6647c5c583f284c01f3ab99bf3d6",
+      "text_characters": 6328,
+      "dialogue_lines_all_branches": 96,
+      "dialogue_characters_without_whitespace_all_branches": 1614,
+      "speakers": {
+        "켄": 18,
+        "린": 6,
+        "리쿠": 10,
+        "소라": 13,
+        "하루카": 7,
+        "유우": 20,
+        "미오": 21,
+        "나나": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/180_3장_세_장의_같은_숫자_연속대본.md",
+      "sha256": "8218a9b4951d4e5628d9e8241c6d3ff3660314625ba0279935d0a3dca3508629",
+      "text_characters": 7674,
+      "dialogue_lines_all_branches": 139,
+      "dialogue_characters_without_whitespace_all_branches": 1933,
+      "speakers": {
+        "켄": 32,
+        "코토": 13,
+        "나나": 22,
+        "소라": 29,
+        "리쿠": 24,
+        "미오": 19
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/181_1장_재판_반복논의와_지목_연속대본.md",
+      "sha256": "8c5c23ebced38ac4673085e16250648bd24baa31ef525cb34ef6211557222213",
+      "text_characters": 25403,
+      "dialogue_lines_all_branches": 140,
+      "dialogue_characters_without_whitespace_all_branches": 3027,
+      "speakers": {
+        "타이가": 20,
+        "리쿠": 8,
+        "유우": 11,
+        "소라": 12,
+        "린": 12,
+        "쇼": 5,
+        "아카리": 6,
+        "켄": 5,
+        "나나": 7,
+        "코토": 8,
+        "사츠키": 2,
+        "미오·속말": 26,
+        "미오": 10,
+        "레이": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/182_2장_재판_반복논의와_지목_연속대본.md",
+      "sha256": "813a0de8ff852bbfeb6252233c11c6f0e8a885ec890d73288263185501464f64",
+      "text_characters": 26286,
+      "dialogue_lines_all_branches": 149,
+      "dialogue_characters_without_whitespace_all_branches": 3065,
+      "speakers": {
+        "린": 6,
+        "소라": 11,
+        "유우": 30,
+        "쇼": 5,
+        "리쿠": 28,
+        "나나": 9,
+        "코토": 10,
+        "켄": 8,
+        "사츠키": 2,
+        "아카리": 3,
+        "미오·속말": 26,
+        "레이": 1,
+        "미오": 10
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/183_3장_재판_반복논의와_지목_연속대본.md",
+      "sha256": "904b0bf7b33583f1a8a982aaac47d8a80b24d5f66a5733f85e35560d23b2fbb7",
+      "text_characters": 28271,
+      "dialogue_lines_all_branches": 160,
+      "dialogue_characters_without_whitespace_all_branches": 3548,
+      "speakers": {
+        "소라·켄의몸": 24,
+        "린": 24,
+        "코토": 21,
+        "아카리": 10,
+        "하루카": 7,
+        "쇼": 11,
+        "나나": 16,
+        "사츠키": 4,
+        "미오·속말": 30,
+        "미오": 10,
+        "레이": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/184_4장_재판_반복논의와_지목_연속대본.md",
+      "sha256": "76ae6735f1906216b9c8bb04e0ba257ab87548a0cb5902a357c4ddff47862803",
+      "text_characters": 27055,
+      "dialogue_lines_all_branches": 146,
+      "dialogue_characters_without_whitespace_all_branches": 3203,
+      "speakers": {
+        "린": 15,
+        "코토": 17,
+        "레이": 21,
+        "쇼": 18,
+        "나나": 17,
+        "사츠키": 11,
+        "아카리": 11,
+        "미오·속말": 31,
+        "미오": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/185_5장_재판_반복논의와_지목_연속대본.md",
+      "sha256": "e15c2df443fa2af33a2a0ba9509d79c734c21da7c846e63b035c15a04486fef0",
+      "text_characters": 29258,
+      "dialogue_lines_all_branches": 163,
+      "dialogue_characters_without_whitespace_all_branches": 3615,
+      "speakers": {
+        "사츠키": 31,
+        "쇼": 24,
+        "린": 20,
+        "나나": 18,
+        "아카리": 28,
+        "미오": 9,
+        "미오·속말": 33
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/186_6장_재판_반복논의와_지목_연속대본.md",
+      "sha256": "135bbbbb5d71c7329f249298bd98a3ef81e31830777206ffca150665cd8e67b2",
+      "text_characters": 25121,
+      "dialogue_lines_all_branches": 136,
+      "dialogue_characters_without_whitespace_all_branches": 3026,
+      "speakers": {
+        "린": 25,
+        "나나": 14,
+        "사츠키": 28,
+        "쇼": 15,
+        "래피": 14,
+        "미오": 12,
+        "미오·속말": 28
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/20_자유시간_린_01.md",
+      "sha256": "52c6a48f577877b66bb417ed3428f912be5e40c52433255c82c5cf2141fedb55",
+      "text_characters": 7135,
+      "dialogue_lines_all_branches": 162,
+      "dialogue_characters_without_whitespace_all_branches": 2104,
+      "speakers": {
+        "미오": 75,
+        "린": 87
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/21_자유시간_코토_01.md",
+      "sha256": "654c23e28edd27f0a2bd6590a54f2e393bf1f4ead01afbe741b373664d7414ed",
+      "text_characters": 7103,
+      "dialogue_lines_all_branches": 149,
+      "dialogue_characters_without_whitespace_all_branches": 2235,
+      "speakers": {
+        "미오": 63,
+        "코토": 71,
+        "유우": 15
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/22_자유시간_카에데_01.md",
+      "sha256": "2b03c00edfe2fb6fd4e50bd7efeca32275927fe71b75a8980b0e14835d880c25",
+      "text_characters": 7409,
+      "dialogue_lines_all_branches": 145,
+      "dialogue_characters_without_whitespace_all_branches": 2180,
+      "speakers": {
+        "카에데": 72,
+        "미오": 63,
+        "아이": 4,
+        "유우": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/23_자유시간_쇼_01.md",
+      "sha256": "bd7ef7df4f0c5c03bccd4a46f92829cd06bbb9f51b98c35a6a35ce4b8413d9e6",
+      "text_characters": 9479,
+      "dialogue_lines_all_branches": 182,
+      "dialogue_characters_without_whitespace_all_branches": 2891,
+      "speakers": {
+        "쇼": 86,
+        "미오": 90,
+        "코토": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/24_자유시간_소라_01.md",
+      "sha256": "96a260ecc7db7472f149282d5a7b0427bdcaaca2592dc72a34def212593b7080",
+      "text_characters": 8629,
+      "dialogue_lines_all_branches": 166,
+      "dialogue_characters_without_whitespace_all_branches": 2097,
+      "speakers": {
+        "소라": 68,
+        "미오": 40,
+        "켄": 37,
+        "하루카": 21
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/25_자유시간_아이_01.md",
+      "sha256": "07009e6fe19bc6ac7eeab54b036ae4c7bb6a9e120fd7df2f3ef7f19927ab1a2b",
+      "text_characters": 11059,
+      "dialogue_lines_all_branches": 226,
+      "dialogue_characters_without_whitespace_all_branches": 3308,
+      "speakers": {
+        "아이": 116,
+        "미오": 110
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/26_자유시간_유우_01.md",
+      "sha256": "ef239c199688c3310bf563ac6c87fbcbb9fc83fd3e8f5ca5a3894517725029e6",
+      "text_characters": 10586,
+      "dialogue_lines_all_branches": 185,
+      "dialogue_characters_without_whitespace_all_branches": 3142,
+      "speakers": {
+        "미오": 84,
+        "유우": 99,
+        "유우·노래": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/27_자유시간_레이_01.md",
+      "sha256": "7d446eedd8f3d999edcef6243ebd594208c27da2b26e318ae0e6ba86c07cbe0e",
+      "text_characters": 7450,
+      "dialogue_lines_all_branches": 127,
+      "dialogue_characters_without_whitespace_all_branches": 1905,
+      "speakers": {
+        "미오": 65,
+        "레이": 62
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/28_자유시간_켄_01.md",
+      "sha256": "c5eae942b296258617f50504386ad645f7a806944b42055e55c03a912f8f2759",
+      "text_characters": 8330,
+      "dialogue_lines_all_branches": 157,
+      "dialogue_characters_without_whitespace_all_branches": 2647,
+      "speakers": {
+        "미오": 73,
+        "켄": 84
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/29_자유시간_나나_01.md",
+      "sha256": "617a2abceedceba429a7915fa9c6d625df7f0752f26fd6f95b85bbc903883b75",
+      "text_characters": 9116,
+      "dialogue_lines_all_branches": 155,
+      "dialogue_characters_without_whitespace_all_branches": 2026,
+      "speakers": {
+        "나나": 72,
+        "미오": 83
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/30_자유시간_리쿠_01.md",
+      "sha256": "65595a197b43612635f0badf7b0543abef6b693c5875bf9d92aa18178356d24a",
+      "text_characters": 8522,
+      "dialogue_lines_all_branches": 145,
+      "dialogue_characters_without_whitespace_all_branches": 2239,
+      "speakers": {
+        "미오": 73,
+        "리쿠": 72
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/31_자유시간_아카리_01.md",
+      "sha256": "3edee5bf3d7625546766a3c2d3974bee36524c7bda465c3b0bb54c768619cf8f",
+      "text_characters": 7451,
+      "dialogue_lines_all_branches": 111,
+      "dialogue_characters_without_whitespace_all_branches": 1859,
+      "speakers": {
+        "아카리": 55,
+        "미오": 56
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/32_자유시간_사츠키_01.md",
+      "sha256": "f5e954d6d59afd5d50195ffe8dca2aafb78db3ce0882ebad8e59e50245408268",
+      "text_characters": 7439,
+      "dialogue_lines_all_branches": 137,
+      "dialogue_characters_without_whitespace_all_branches": 1862,
+      "speakers": {
+        "사츠키": 64,
+        "미오": 73
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/33_자유시간_타이가_01.md",
+      "sha256": "9ccfbda2a76ea96e6c1f079a438fe432074bcb4ed3fd03cbabb763456bdf438e",
+      "text_characters": 10343,
+      "dialogue_lines_all_branches": 180,
+      "dialogue_characters_without_whitespace_all_branches": 2599,
+      "speakers": {
+        "타이가": 94,
+        "미오": 86
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/34_자유시간_하루카_01.md",
+      "sha256": "92ea1b42c067680b20063b1714c767d8b6ba1b66175c3d49da4aa4245cbbddce",
+      "text_characters": 10488,
+      "dialogue_lines_all_branches": 167,
+      "dialogue_characters_without_whitespace_all_branches": 2555,
+      "speakers": {
+        "하루카": 89,
+        "미오": 78
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/35_자유시간_린_02.md",
+      "sha256": "ca05f97e00b51fbcccf38716f67a386377fd4db83ed01152a0877478079bbc22",
+      "text_characters": 9296,
+      "dialogue_lines_all_branches": 123,
+      "dialogue_characters_without_whitespace_all_branches": 2306,
+      "speakers": {
+        "린": 58,
+        "미오": 59,
+        "코토": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/36_자유시간_코토_02.md",
+      "sha256": "f07a237caa91f94217249f48f6bf34b5fcf40ff067314ccd374a3d0590852edf",
+      "text_characters": 8154,
+      "dialogue_lines_all_branches": 88,
+      "dialogue_characters_without_whitespace_all_branches": 2126,
+      "speakers": {
+        "나나": 25,
+        "미오": 42,
+        "코토": 20,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/37_자유시간_하루카_02.md",
+      "sha256": "839aa6c955b6912aa5d1f5cb2f58a363befe8a69deb149bd19e756776177eeb6",
+      "text_characters": 7476,
+      "dialogue_lines_all_branches": 115,
+      "dialogue_characters_without_whitespace_all_branches": 1815,
+      "speakers": {
+        "미오": 51,
+        "하루카": 64
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/38_자유시간_나나_02.md",
+      "sha256": "f0816a9ee89add2ad59437684f9b45d8067619094accf8a0f52206f6aac6d7e6",
+      "text_characters": 9539,
+      "dialogue_lines_all_branches": 138,
+      "dialogue_characters_without_whitespace_all_branches": 2139,
+      "speakers": {
+        "미오": 73,
+        "나나": 65
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/39_자유시간_아카리_02.md",
+      "sha256": "d924a55131b3afff430c2239bd0677a54a94ee85bbde200247ee95d88df03c48",
+      "text_characters": 9295,
+      "dialogue_lines_all_branches": 149,
+      "dialogue_characters_without_whitespace_all_branches": 2358,
+      "speakers": {
+        "미오·속말": 3,
+        "미오": 68,
+        "아카리": 72,
+        "나나": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/40_자유시간_카에데_02.md",
+      "sha256": "c5ee6dbcafe082b519638f5e3608578232a5a5ed2d7922ca9480e83dac929091",
+      "text_characters": 12674,
+      "dialogue_lines_all_branches": 244,
+      "dialogue_characters_without_whitespace_all_branches": 4091,
+      "speakers": {
+        "미오": 118,
+        "카에데": 120,
+        "아이": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/41_자유시간_쇼_02.md",
+      "sha256": "a072f44bbe05fdc547e692317014592d5991eaf3669673f245c5d403a9c25c93",
+      "text_characters": 10543,
+      "dialogue_lines_all_branches": 211,
+      "dialogue_characters_without_whitespace_all_branches": 3200,
+      "speakers": {
+        "미오": 105,
+        "쇼": 106
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/42_자유시간_소라_02.md",
+      "sha256": "8ee662027f9354504903d2f60455be530763ad02b2ff355713c603c0d3e70f13",
+      "text_characters": 8383,
+      "dialogue_lines_all_branches": 150,
+      "dialogue_characters_without_whitespace_all_branches": 2031,
+      "speakers": {
+        "소라": 72,
+        "미오": 63,
+        "유우": 15
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/43_자유시간_아이_02.md",
+      "sha256": "915eb9502d13b6fde5f1624bc31011091e5e329d63ee2da0eae208c21ba138d5",
+      "text_characters": 8560,
+      "dialogue_lines_all_branches": 148,
+      "dialogue_characters_without_whitespace_all_branches": 2413,
+      "speakers": {
+        "미오": 69,
+        "아이": 75,
+        "소라": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/44_자유시간_유우_02.md",
+      "sha256": "1af22c6c0240cc9c2215d84133d92d5f546931a5a3011d0efb0d20cb76e83b75",
+      "text_characters": 10416,
+      "dialogue_lines_all_branches": 157,
+      "dialogue_characters_without_whitespace_all_branches": 3741,
+      "speakers": {
+        "유우": 71,
+        "미오": 57,
+        "리쿠": 5,
+        "유우·노래": 24
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/45_자유시간_레이_02.md",
+      "sha256": "3d9f415f69ca136a4c689852ecd59d41fd682bc0579621adc30b01fcfbfef0d1",
+      "text_characters": 7478,
+      "dialogue_lines_all_branches": 121,
+      "dialogue_characters_without_whitespace_all_branches": 2546,
+      "speakers": {
+        "미오": 57,
+        "레이": 60,
+        "린": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/46_자유시간_타이가_02.md",
+      "sha256": "72c4b6dd459b9b5f600afd0d55b266e7c5c383c1ce9989c3c17d38143722729b",
+      "text_characters": 8810,
+      "dialogue_lines_all_branches": 160,
+      "dialogue_characters_without_whitespace_all_branches": 2802,
+      "speakers": {
+        "타이가": 82,
+        "미오": 74,
+        "유우": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/47_자유시간_켄_02.md",
+      "sha256": "5d437a7952b484a3a97260b0092687167c9717b793baa20d534b7e72969fa97d",
+      "text_characters": 6767,
+      "dialogue_lines_all_branches": 102,
+      "dialogue_characters_without_whitespace_all_branches": 1951,
+      "speakers": {
+        "켄": 45,
+        "미오": 23,
+        "리쿠": 34
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/48_자유시간_리쿠_02.md",
+      "sha256": "dbb372d53660b87f37a2570b21d1e912bab04982e32ddf6b0852f901992089a6",
+      "text_characters": 9623,
+      "dialogue_lines_all_branches": 160,
+      "dialogue_characters_without_whitespace_all_branches": 3578,
+      "speakers": {
+        "리쿠": 82,
+        "미오": 78
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/49_자유시간_사츠키_02.md",
+      "sha256": "aed9b7019f77ef3d8824d85bbc3c644ee4179269e6e3962ab96559c8afd694d9",
+      "text_characters": 9090,
+      "dialogue_lines_all_branches": 146,
+      "dialogue_characters_without_whitespace_all_branches": 2070,
+      "speakers": {
+        "미오": 72,
+        "사츠키": 61,
+        "아카리": 12,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/50_자유시간_카에데_03.md",
+      "sha256": "4b98e3f44869b5950a4f60d908e73b60325846c2e977ba58cf7637d64623fc8d",
+      "text_characters": 11128,
+      "dialogue_lines_all_branches": 197,
+      "dialogue_characters_without_whitespace_all_branches": 3478,
+      "speakers": {
+        "카에데": 103,
+        "미오": 94
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/51_자유시간_타이가_03.md",
+      "sha256": "21d64f6c365472a30ec10d7a6f11d53149bf0efab69d99e742adc212bf386576",
+      "text_characters": 7317,
+      "dialogue_lines_all_branches": 122,
+      "dialogue_characters_without_whitespace_all_branches": 2238,
+      "speakers": {
+        "미오": 59,
+        "타이가": 60,
+        "린": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/52_자유시간_아이_03.md",
+      "sha256": "7dd4a7e83382d5b65618b75ab8c6aa8210a388edca7f8db3e06ebbce4da3e6ff",
+      "text_characters": 7395,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 2366,
+      "speakers": {
+        "미오": 44,
+        "아이": 57,
+        "나나": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/53_자유시간_유우_03.md",
+      "sha256": "5474c0350c3fadcf9d49ec94216bc9dceaa8cf7ad9b1274f58e5e4663c7482d5",
+      "text_characters": 8082,
+      "dialogue_lines_all_branches": 131,
+      "dialogue_characters_without_whitespace_all_branches": 2661,
+      "speakers": {
+        "미오": 65,
+        "유우": 66
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/54_자유시간_린_03.md",
+      "sha256": "dfc6a5fdafcfa8ccfeb983ccf6c59ad50739f6d51872c8231a5d928e6ad6fea0",
+      "text_characters": 10053,
+      "dialogue_lines_all_branches": 175,
+      "dialogue_characters_without_whitespace_all_branches": 2740,
+      "speakers": {
+        "미오": 77,
+        "린": 88,
+        "나나": 10
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/55_자유시간_코토_03.md",
+      "sha256": "2371cdf6530d323b14b9f35b46e72e18a1c5f5a70222a949276ed05470e4af4c",
+      "text_characters": 10631,
+      "dialogue_lines_all_branches": 173,
+      "dialogue_characters_without_whitespace_all_branches": 3099,
+      "speakers": {
+        "코토": 86,
+        "미오": 87
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/56_자유시간_쇼_03.md",
+      "sha256": "75796c649587c3607e890195155d105defdf251dc3ab1f32e35b9487475a2219",
+      "text_characters": 9293,
+      "dialogue_lines_all_branches": 147,
+      "dialogue_characters_without_whitespace_all_branches": 2989,
+      "speakers": {
+        "미오": 75,
+        "쇼": 72
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/57_자유시간_나나_03.md",
+      "sha256": "9ecd3d010e278e2892f387d26b7dc48375ea00b96bfc619d1640c565b5382cfa",
+      "text_characters": 8483,
+      "dialogue_lines_all_branches": 132,
+      "dialogue_characters_without_whitespace_all_branches": 2219,
+      "speakers": {
+        "미오": 59,
+        "나나": 62,
+        "하루카": 11
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/58_자유시간_레이_03.md",
+      "sha256": "c24328d2743681dd852acfecfcad0987845dbbfff5f3999ea0ab40e4df9c35a2",
+      "text_characters": 11475,
+      "dialogue_lines_all_branches": 200,
+      "dialogue_characters_without_whitespace_all_branches": 3875,
+      "speakers": {
+        "미오": 95,
+        "레이": 94,
+        "코토": 11
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/59_자유시간_소라_03.md",
+      "sha256": "800e038f2adeb0e4c9a3a52ccc34b6120748f2e2371f23d13906260adbf0dce3",
+      "text_characters": 9116,
+      "dialogue_lines_all_branches": 127,
+      "dialogue_characters_without_whitespace_all_branches": 2183,
+      "speakers": {
+        "미오": 60,
+        "소라": 54,
+        "리쿠": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/60_자유시간_켄_03.md",
+      "sha256": "8733e2117cf071aad66009daf775be2a4d0ded52803842c8f0c7da71d6519c0f",
+      "text_characters": 6766,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 2261,
+      "speakers": {
+        "미오": 51,
+        "나나": 9,
+        "켄": 48
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/61_자유시간_리쿠_03.md",
+      "sha256": "58366efc323f8b3e39bb8a5965cc5ea472d1c9de00191a232e90342d810f74d2",
+      "text_characters": 6751,
+      "dialogue_lines_all_branches": 122,
+      "dialogue_characters_without_whitespace_all_branches": 1906,
+      "speakers": {
+        "리쿠": 45,
+        "미오": 37,
+        "쇼": 40
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/62_자유시간_아카리_03.md",
+      "sha256": "9e182cea6b1b4e067fa2b506625684e62709f038ec1399299f51ed0ba5084372",
+      "text_characters": 7362,
+      "dialogue_lines_all_branches": 139,
+      "dialogue_characters_without_whitespace_all_branches": 2612,
+      "speakers": {
+        "미오": 63,
+        "아카리": 64,
+        "사츠키": 12
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/63_자유시간_사츠키_03.md",
+      "sha256": "d46f2e6f9497e072c30a7bb6a3d32c2c5597bfeb4980f735d4de4d815201588e",
+      "text_characters": 9235,
+      "dialogue_lines_all_branches": 149,
+      "dialogue_characters_without_whitespace_all_branches": 2165,
+      "speakers": {
+        "미오": 78,
+        "사츠키": 71
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/64_자유시간_하루카_03.md",
+      "sha256": "0ce0d5e3d68cf7c6775e4516631ae54cd4da6692a4ed4aa95e95d3bf8c04b989",
+      "text_characters": 8164,
+      "dialogue_lines_all_branches": 132,
+      "dialogue_characters_without_whitespace_all_branches": 2847,
+      "speakers": {
+        "미오": 64,
+        "하루카": 68
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/65_1장_저녁의_자리_보강.md",
+      "sha256": "b092f7547bf501d7e5ddd90960c2d4be5e73039c70888e28e82613ddacd99731",
+      "text_characters": 9632,
+      "dialogue_lines_all_branches": 151,
+      "dialogue_characters_without_whitespace_all_branches": 2744,
+      "speakers": {
+        "소라": 7,
+        "코토": 24,
+        "타이가": 8,
+        "미오·속말": 2,
+        "아이": 12,
+        "린": 5,
+        "카에데": 16,
+        "유우": 21,
+        "미오": 25,
+        "하루카": 6,
+        "레이": 3,
+        "켄": 8,
+        "리쿠": 5,
+        "쇼": 1,
+        "사츠키": 4,
+        "아카리": 1,
+        "나나": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/66_1장_재판_첫_질문의_보강.md",
+      "sha256": "6a46f7f9fa7cbd8f239530bfa2f3981b7c22934d35bc7bcb86e21a5b795d3b62",
+      "text_characters": 5538,
+      "dialogue_lines_all_branches": 87,
+      "dialogue_characters_without_whitespace_all_branches": 1901,
+      "speakers": {
+        "유우": 11,
+        "아카리": 3,
+        "켄": 6,
+        "타이가": 4,
+        "나나": 2,
+        "소라": 2,
+        "코토": 10,
+        "린": 7,
+        "아이": 3,
+        "하루카": 3,
+        "리쿠": 7,
+        "미오": 14,
+        "사츠키": 5,
+        "쇼": 6,
+        "레이": 1,
+        "래피": 2,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/67_1장_재판_살아_있었다는_말_보강.md",
+      "sha256": "e81f7962636f4fc153a6ac29d27cf9ae66a04e625316d1ea9187573c289841dc",
+      "text_characters": 4456,
+      "dialogue_lines_all_branches": 56,
+      "dialogue_characters_without_whitespace_all_branches": 1713,
+      "speakers": {
+        "소라": 11,
+        "쇼": 4,
+        "리쿠": 2,
+        "미오": 12,
+        "켄": 2,
+        "아카리": 3,
+        "린": 2,
+        "나나": 3,
+        "타이가": 5,
+        "레이": 1,
+        "유우": 4,
+        "아이": 3,
+        "하루카": 3,
+        "코토": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/68_2장_빈칸이_있는_노래_보강.md",
+      "sha256": "54cd7054f50010c2cac8d1695334697897fd87478f7fc7b177eaa279e6ebb1a8",
+      "text_characters": 4619,
+      "dialogue_lines_all_branches": 71,
+      "dialogue_characters_without_whitespace_all_branches": 1183,
+      "speakers": {
+        "유우": 27,
+        "린": 4,
+        "켄": 7,
+        "리쿠": 7,
+        "소라": 5,
+        "하루카": 4,
+        "유우·노래": 5,
+        "미오": 12
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/69_2장_다_식은_대답_보강.md",
+      "sha256": "a5c19e5b19e38e14eaf56b3f65c3370051aef54a11676e098be70b8eafac0ce0",
+      "text_characters": 3446,
+      "dialogue_lines_all_branches": 47,
+      "dialogue_characters_without_whitespace_all_branches": 1048,
+      "speakers": {
+        "미오": 22,
+        "아이": 25
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/70_3장_뒤로_미룬_사람_보강.md",
+      "sha256": "3e015b561d9a22c6406d24047c72845e48a1929e4754ed5d46eaf20b8f235438",
+      "text_characters": 5005,
+      "dialogue_lines_all_branches": 64,
+      "dialogue_characters_without_whitespace_all_branches": 1068,
+      "speakers": {
+        "하루카": 15,
+        "미오": 16,
+        "코토": 11,
+        "린": 5,
+        "레이": 2,
+        "소라·켄의몸": 4,
+        "사츠키": 2,
+        "나나": 8,
+        "아카리": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/71_4장_아홉_사람의_이름_보강.md",
+      "sha256": "f0fb8133c11eca2007ccbc5f4ccc47545d1903d0e8da96fddf48c193ffb4b21f",
+      "text_characters": 5884,
+      "dialogue_lines_all_branches": 77,
+      "dialogue_characters_without_whitespace_all_branches": 1884,
+      "speakers": {
+        "미오": 20,
+        "코토": 18,
+        "아카리": 12,
+        "사츠키": 7,
+        "쇼": 2,
+        "하루카": 15,
+        "린": 1,
+        "나나": 1,
+        "레이": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/72_5장_내민_손의_뜻_보강.md",
+      "sha256": "2d7fbc034334884c4fb937cb15ab23e64c63215a5d52ac19e9df7d3351a85823",
+      "text_characters": 3820,
+      "dialogue_lines_all_branches": 50,
+      "dialogue_characters_without_whitespace_all_branches": 1144,
+      "speakers": {
+        "쇼": 7,
+        "나나": 18,
+        "사츠키": 5,
+        "미오": 16,
+        "아카리": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/73_6장_수화기_너머의_한_사람_보강.md",
+      "sha256": "22337c6bcbb6f085126f85f34e6cbe296b05683638072dd57e1c6ed7c2d0206d",
+      "text_characters": 3902,
+      "dialogue_lines_all_branches": 52,
+      "dialogue_characters_without_whitespace_all_branches": 1093,
+      "speakers": {
+        "사츠키": 5,
+        "쇼": 4,
+        "미오": 20,
+        "린": 3,
+        "래피": 10,
+        "나나": 7,
+        "외부접수원": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/74_3장_읽어_주면_끝나는_질문_보강.md",
+      "sha256": "2bbebb4f86d15023487d168e8f1559db0ef9c1b677712d91f283ec8efca07a8b",
+      "text_characters": 3334,
+      "dialogue_lines_all_branches": 43,
+      "dialogue_characters_without_whitespace_all_branches": 1161,
+      "speakers": {
+        "소라·켄의몸": 13,
+        "아카리": 3,
+        "린": 2,
+        "쇼": 3,
+        "미오": 7,
+        "코토": 6,
+        "하루카": 4,
+        "레이": 2,
+        "나나": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/75_6장_그_마음으로_구하는_것_보강.md",
+      "sha256": "27947a3d9349c81d270aec9b6fddd175ca5db27751a2f2afc107e8960d767f0e",
+      "text_characters": 3239,
+      "dialogue_lines_all_branches": 46,
+      "dialogue_characters_without_whitespace_all_branches": 1050,
+      "speakers": {
+        "쇼": 6,
+        "미오": 17,
+        "린": 6,
+        "사츠키": 2,
+        "래피": 5,
+        "나나": 10
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/76_5장_믿지_않는_사람의_증언_보강.md",
+      "sha256": "6991aa2883152569f74632faf919675472cf1dbb57a6d033c4ef3391b3725a36",
+      "text_characters": 2882,
+      "dialogue_lines_all_branches": 34,
+      "dialogue_characters_without_whitespace_all_branches": 1066,
+      "speakers": {
+        "사츠키": 5,
+        "쇼": 5,
+        "린": 5,
+        "아카리": 2,
+        "나나": 10,
+        "미오": 7
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/77_4장_같이_있었다는_말_보강.md",
+      "sha256": "a92ff75a161003513488320ee0f0d9ae17426de3d8cd29f8bec6148c0bc38b96",
+      "text_characters": 3777,
+      "dialogue_lines_all_branches": 61,
+      "dialogue_characters_without_whitespace_all_branches": 1539,
+      "speakers": {
+        "린": 12,
+        "미오": 12,
+        "쇼": 3,
+        "레이": 3,
+        "사츠키": 15,
+        "아카리": 9,
+        "코토": 3,
+        "나나": 4
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/78_1장_아직_후보도_아닌_사람들_보강.md",
+      "sha256": "85e101caf0fcf44742e735c2ee394db97a4e9f9f33d814fa356f070e82b6fc1a",
+      "text_characters": 4729,
+      "dialogue_lines_all_branches": 90,
+      "dialogue_characters_without_whitespace_all_branches": 1351,
+      "speakers": {
+        "소라": 9,
+        "타이가": 9,
+        "하루카": 16,
+        "미오": 17,
+        "코토": 10,
+        "아카리": 9,
+        "사츠키": 3,
+        "리쿠": 9,
+        "켄": 8
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/79_2장_같은_것을_먹는_사람들_보강.md",
+      "sha256": "8be8fa4196fd983e0d5cbba0edaa0b7a84dbf15661535018e918941650477aa4",
+      "text_characters": 3498,
+      "dialogue_lines_all_branches": 57,
+      "dialogue_characters_without_whitespace_all_branches": 814,
+      "speakers": {
+        "아카리": 15,
+        "사츠키": 11,
+        "린": 15,
+        "레이": 4,
+        "쇼": 7,
+        "미오": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/80_4장_손님으로_온_하루_보강.md",
+      "sha256": "1ee7d549617f9e611749ea02388e2278dd5a2385589f17175edd4fd681fabc7b",
+      "text_characters": 6727,
+      "dialogue_lines_all_branches": 137,
+      "dialogue_characters_without_whitespace_all_branches": 2256,
+      "speakers": {
+        "하루카": 25,
+        "린": 28,
+        "쇼": 9,
+        "아카리": 14,
+        "사츠키": 13,
+        "나나": 11,
+        "코토": 13,
+        "레이": 8,
+        "미오": 16
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/81_5장_네가_미안하다면_보강.md",
+      "sha256": "58a8f3956602760430f4ccbadf787b732733532196fdab4a270116ec6b8442fa",
+      "text_characters": 3387,
+      "dialogue_lines_all_branches": 55,
+      "dialogue_characters_without_whitespace_all_branches": 955,
+      "speakers": {
+        "사츠키": 26,
+        "나나": 9,
+        "쇼": 6,
+        "린": 4,
+        "아카리": 4,
+        "미오": 6
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/82_1장_말하겠다고_한_사람_보강.md",
+      "sha256": "38e246b5124250a98fa36c48968747035c65be21697199019724d4a8cc6fb5e2",
+      "text_characters": 4115,
+      "dialogue_lines_all_branches": 73,
+      "dialogue_characters_without_whitespace_all_branches": 1273,
+      "speakers": {
+        "하루카": 21,
+        "미오": 30,
+        "나나": 9,
+        "아카리": 13
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/83_3장_먼저_나가_있는_사람_보강.md",
+      "sha256": "44a055248ae6db5123c069b25fd4e3bc4a907f6c36841cc280f56bae47aef086",
+      "text_characters": 5625,
+      "dialogue_lines_all_branches": 105,
+      "dialogue_characters_without_whitespace_all_branches": 1247,
+      "speakers": {
+        "미오": 47,
+        "리쿠": 20,
+        "하루카": 18,
+        "소라": 20
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/84_2장_네가_닦기로_했잖아_보강.md",
+      "sha256": "e568513aa41736b07224068d785429f7531c85a5ee13f47a1723eee9f6a81bfc",
+      "text_characters": 4363,
+      "dialogue_lines_all_branches": 63,
+      "dialogue_characters_without_whitespace_all_branches": 932,
+      "speakers": {
+        "유우": 17,
+        "린": 14,
+        "아이": 12,
+        "미오": 20
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/85_4장_아직_여기_있는_몸_보강.md",
+      "sha256": "40d139610623b7f7c01fa1c6f618c6d278f7ef08c951c1d56290c2632b0e4f04",
+      "text_characters": 3413,
+      "dialogue_lines_all_branches": 46,
+      "dialogue_characters_without_whitespace_all_branches": 624,
+      "speakers": {
+        "미오": 18,
+        "쇼": 3,
+        "나나": 5,
+        "사츠키": 7,
+        "린": 4,
+        "레이": 3,
+        "아카리": 4,
+        "코토": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/86_1장_자라고_걷는_사람들_보강.md",
+      "sha256": "3987f1d2b7a60936c809ce2a20656c8fc6f3769e1cdc35c82f2344d04f5a28bc",
+      "text_characters": 9008,
+      "dialogue_lines_all_branches": 172,
+      "dialogue_characters_without_whitespace_all_branches": 2294,
+      "speakers": {
+        "아카리": 29,
+        "사츠키": 26,
+        "미오": 55,
+        "타이가": 13,
+        "소라": 7,
+        "하루카": 42
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/87_자유시간_하루카_2장_첫_사진.md",
+      "sha256": "f407bc513594bbc9169f21ce6aea7eac4b14fa2604004fd234ff636bab6c516e",
+      "text_characters": 2960,
+      "dialogue_lines_all_branches": 36,
+      "dialogue_characters_without_whitespace_all_branches": 603,
+      "speakers": {
+        "하루카": 20,
+        "미오": 16
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/88_자유시간_나나_늦은_첫_놀이.md",
+      "sha256": "252fb87af744ed74b1f84ac68b12f38b320a9920e374b6729551bcf4f18d6eac",
+      "text_characters": 4467,
+      "dialogue_lines_all_branches": 55,
+      "dialogue_characters_without_whitespace_all_branches": 864,
+      "speakers": {
+        "미오": 26,
+        "나나": 29
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/89_자유시간_소라_2장_첫_모임.md",
+      "sha256": "cb0b99e25190cb88e8b2c6856c50360f05fd52503f87d956b04abb346c6bd0bd",
+      "text_characters": 2870,
+      "dialogue_lines_all_branches": 36,
+      "dialogue_characters_without_whitespace_all_branches": 572,
+      "speakers": {
+        "소라": 15,
+        "미오": 9,
+        "켄": 9,
+        "하루카": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/90_자유시간_리쿠_2장_첫_승부.md",
+      "sha256": "621ebdd1c3f6663e808decbd232d4ceb50bb59c9c1d170f4e2c2e62a4388c2fa",
+      "text_characters": 3036,
+      "dialogue_lines_all_branches": 34,
+      "dialogue_characters_without_whitespace_all_branches": 532,
+      "speakers": {
+        "리쿠": 18,
+        "미오": 16
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/91_1장_받는_사람이_없는_말_보강.md",
+      "sha256": "b5ee3eb164ecaebdb826c53a9e2ef7e6530b1fab936423b95b85a1d81a275054",
+      "text_characters": 6534,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 1740,
+      "speakers": {
+        "카에데": 51,
+        "미오": 48,
+        "하루카": 9
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/92_1장_어제_말한_내일_보강.md",
+      "sha256": "c61858aed928f5c6b1724aec1034aca8d05a4f07b6a015bc38a22fd607f25a07",
+      "text_characters": 6001,
+      "dialogue_lines_all_branches": 113,
+      "dialogue_characters_without_whitespace_all_branches": 1681,
+      "speakers": {
+        "린": 11,
+        "코토": 34,
+        "카에데": 22,
+        "아카리": 4,
+        "리쿠": 7,
+        "하루카": 9,
+        "켄": 6,
+        "미오": 18,
+        "유우": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/93_1장_마지막으로_빈_방_보강.md",
+      "sha256": "8e8b424b8a3b9e088aa1820c15a31b36ff36256110b93cef4bf80ed67c8d96cb",
+      "text_characters": 8862,
+      "dialogue_lines_all_branches": 148,
+      "dialogue_characters_without_whitespace_all_branches": 3094,
+      "speakers": {
+        "코토": 9,
+        "린": 39,
+        "미오": 20,
+        "타이가": 9,
+        "리쿠": 16,
+        "레이": 6,
+        "유우": 7,
+        "하루카": 4,
+        "나나": 5,
+        "켄": 23,
+        "아카리": 5,
+        "소라": 2,
+        "아이": 1,
+        "사츠키": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/94_2장_빌린_시간의_손잡이_보강.md",
+      "sha256": "ed4b93430df19d9c5526d0b4559a3c3de0a6240ed6a7ff649dab3317795e564b",
+      "text_characters": 3828,
+      "dialogue_lines_all_branches": 65,
+      "dialogue_characters_without_whitespace_all_branches": 888,
+      "speakers": {
+        "쇼": 32,
+        "미오": 30,
+        "하루카": 3
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/95_5장_받지_않는_쪽의_편지_보강.md",
+      "sha256": "0c878480e60a8132b51a8cb5101e5f499c926665e0b724dac9c4281fa3697d19",
+      "text_characters": 4290,
+      "dialogue_lines_all_branches": 80,
+      "dialogue_characters_without_whitespace_all_branches": 1008,
+      "speakers": {
+        "쇼": 44,
+        "미오": 24,
+        "코토": 12
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/96_6장_대답할_사람이_없는_반론_보강.md",
+      "sha256": "879f80087bf1261afecce7c41ba6a31087c8ba8a0b763148aa0f13b8b4785245",
+      "text_characters": 8411,
+      "dialogue_lines_all_branches": 130,
+      "dialogue_characters_without_whitespace_all_branches": 3700,
+      "speakers": {
+        "사츠키": 33,
+        "린": 14,
+        "미오": 43,
+        "쇼": 9,
+        "나나": 14,
+        "래피": 17
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/97_2장_뚜껑을_닫기_전의_사람들_보강.md",
+      "sha256": "72b37ce9bf88d81071062735d114a0f52f6042e030151bd44d581a3bfdaca04a",
+      "text_characters": 8680,
+      "dialogue_lines_all_branches": 136,
+      "dialogue_characters_without_whitespace_all_branches": 3072,
+      "speakers": {
+        "코토": 4,
+        "린": 14,
+        "소라": 27,
+        "유우": 16,
+        "미오": 30,
+        "리쿠": 7,
+        "나나": 21,
+        "켄": 5,
+        "하루카": 8,
+        "아카리": 2,
+        "쇼": 2
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/98_3장_손님_없는_매표소_보강.md",
+      "sha256": "45832202d3bd01e0684bab7bfff415461f06b4d7780a67937fa4dc6c5782ffd1",
+      "text_characters": 9190,
+      "dialogue_lines_all_branches": 182,
+      "dialogue_characters_without_whitespace_all_branches": 2587,
+      "speakers": {
+        "리쿠": 47,
+        "켄": 48,
+        "미오": 43,
+        "하루카": 43,
+        "미오·속말": 1
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/99_4장_문_밖이라고_부른_곳_보강.md",
+      "sha256": "89bf679b39905d02866bf972646f6437bed7cda6ad27afef2435ff33dbcac597",
+      "text_characters": 8246,
+      "dialogue_lines_all_branches": 108,
+      "dialogue_characters_without_whitespace_all_branches": 3292,
+      "speakers": {
+        "코토": 10,
+        "미오": 34,
+        "레이": 22,
+        "나나": 10,
+        "린": 11,
+        "사츠키": 9,
+        "아카리": 7,
+        "쇼": 5
+      }
+    },
+    {
+      "path": "docs/design/rewrite_v4/README.md",
+      "sha256": "d430654675d47ff5456905945ade6d5fc893866bd9ef4a41d671789d04f7869c",
+      "text_characters": 31606,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/재판_입력_회차_재편집_검수.md",
+      "sha256": "5de3e3b837b19d30cff0cfef3a9e38f1263748aec3f2f920c2465d0f3e30503c",
+      "text_characters": 7444,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/재판_형식별_집필배치.md",
+      "sha256": "ff1f8dfc614a11af2424ced19ae044e9afedf522cefd25a7ae32c64085d6ba4c",
+      "text_characters": 3272,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/전편_검수기록_2026-10-27.md",
+      "sha256": "2588c5b7f77427079188f56f5fe2976229808a22e8e32a99123ab10d05053e5b",
+      "text_characters": 238166,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/전편_대본_읽기안내.md",
+      "sha256": "b33df4fb6b041f3dc08ed229920149dc7c3244cc2ae1be4db02a6ec92ab0c791",
+      "text_characters": 11382,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/전편_독자경로_재검수_2026-10-29.md",
+      "sha256": "d9c21aaa14ef2cf058dbcf1f8aa3c03fcad715fc46d36b7e07e0a71b21de7013",
+      "text_characters": 6712,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    },
+    {
+      "path": "docs/design/rewrite_v4/전편_원고_정리와_검수결과.md",
+      "sha256": "59c613918b538551ac573c37957055917af4d45c3c957c151e34515755df6a14",
+      "text_characters": 6367,
+      "dialogue_lines_all_branches": 0,
+      "dialogue_characters_without_whitespace_all_branches": 0,
+      "speakers": {}
+    }
+  ]
+}

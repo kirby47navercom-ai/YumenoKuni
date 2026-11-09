@@ -1,0 +1,943 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-29",
+  "scope": "Existing REA documents vs all219 authored/native bundles and present repository consumers. No original/runtime/build execution. Bonus excluded; Brain Drive intentionally replaced.",
+  "sourceSnapshotSha256": {
+    "data/v4_story/tasks.json": "e09f67a2f1b5c9cc613ace402fc6494ffdbc970e8b06c02985bd23486e8e4265",
+    "data/v4_story/native_tasks.json": "8124c45c71c203ec9a0c2b85a3223ec9e0b46380ff7dd43abf0fc2cb626e1b39",
+    "Game/Source/Yumeno.cpp": "efd9262fed9dc6aa1da45d39cae82b6a8e3484fac2475bced357213804bafb2d",
+    "Game/Source/Debate.hpp": "b11789d2658b145b0665331f82158cb89cb0f4308b726d2d44e301e2e0dcfa19",
+    "Game/Source/TrialRunner.hpp": "e6a65fc2ab04157b5dbcbc064d53b8f28874eded2fd0113635cace4572c74a1a",
+    "Game/Source/V4Tasks.hpp": "1161bf945760465db014633f83963618ec9e8cdb0d95bf8b355131a60a0bc9af",
+    "Game/Source/TrialRulesV4.hpp": "f7b958d7f823f0a8bbacd7fd4ef437cb6d36eab80e3601f34f87e3a49c134ae4",
+    "tools/v4_native_tasks.py": "bfa82afa46f9b69100deb47f479ef6bdca023bc892c3465d1328bf87136e8175",
+    "docs/spec/18_V3_분석/04_재판.md": "29d4e2eba004978cb508ada59dde5a0516853671de3309e94ef3ba876a8f63e0",
+    "docs/spec/18_V3_분석/05_미니게임.md": "9322a02a6a22c3ac57b17817c9c051bcea7fe081d7bb6704f0fa128aa2f2f7a8"
+  },
+  "counts": {
+    "totalTasks": 219,
+    "ready": 219,
+    "taskKinds": {
+      "nonstop": 71,
+      "person": 16,
+      "bullet": 6,
+      "choice": 6,
+      "spot": 6,
+      "panic": 18,
+      "showdown": 18,
+      "mindmine": 18,
+      "anagram": 15,
+      "reasoning": 19,
+      "armament": 6,
+      "climax": 6,
+      "vote": 6,
+      "scrum": 7,
+      "lie": 1
+    },
+    "sourceTargetVerdicts": {
+      "refute": 101,
+      "agree": 6,
+      "lie": 4
+    },
+    "nativeDebateKinds": {
+      "plain": 437,
+      "weak": 83,
+      "agree": 6
+    },
+    "explicitVpointCharacters": 63,
+    "panicTasksWithThreeLanes": 18,
+    "wrongLastRowShowdowns": 3
+  },
+  "findings": [
+    {
+      "id": "ordinary-refutation",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "Actual evidence ID + actual weak substring resolves to graph success; wrong reactions and exact task return are separate.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 257
+        },
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 92
+        },
+        {
+          "file": "Game/Source/TaskGraphV4.hpp",
+          "line": 1
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-NS-A01",
+        "T1-NS-A02",
+        "T1-NS-A03",
+        "T1-NS-A05",
+        "T1-NS-A06",
+        "T1-NS-A07",
+        "T1-NS-A08",
+        "T1-NS-A09",
+        "T1-NS-A10",
+        "T2-NS-A01",
+        "T2-NS-A02",
+        "T2-NS-A03",
+        "T2-NS-A04",
+        "T2-NS-A05",
+        "T2-NS-A06",
+        "T2-NS-A07",
+        "T2-NS-A08",
+        "T2-NS-A09",
+        "T2-NS-A10",
+        "T3-NS-A01",
+        "T3-NS-A02",
+        "T3-NS-A03",
+        "T3-NS-A04",
+        "T3-NS-A05",
+        "T3-NS-A06",
+        "T3-NS-A07",
+        "T3-NS-A08",
+        "T3-NS-A09",
+        "T3-NS-A10",
+        "T4-NS-A01",
+        "T4-NS-A02",
+        "T4-NS-A03",
+        "T4-NS-A04",
+        "T4-NS-A05",
+        "T4-NS-A06",
+        "T4-NS-A07",
+        "T4-NS-A08",
+        "T4-NS-A09",
+        "T4-NS-A10",
+        "T5-NS-A01",
+        "T5-NS-A02",
+        "T5-NS-A03",
+        "T5-NS-A04",
+        "T5-NS-A05",
+        "T5-NS-A06",
+        "T5-NS-A07",
+        "T5-NS-A08",
+        "T5-NS-A09",
+        "T5-NS-A10",
+        "T6-NS-A01",
+        "T6-NS-A03",
+        "T6-NS-A04",
+        "T6-NS-A05",
+        "T6-NS-A06",
+        "T6-NS-A07",
+        "T6-NS-A08",
+        "T6-NS-A09",
+        "T6-NS-A10",
+        "T3-NS-A11",
+        "T5-NS-A11",
+        "T1-LIE-01",
+        "T1-NS-T05e",
+        "T2-LIE-01",
+        "T2-NS-01",
+        "T3-NS-01",
+        "T4-NS-01",
+        "T4-LIE-01",
+        "T5-NS-01",
+        "T5-LIE-01",
+        "T6-LIE-01",
+        "T6-NS-01",
+        "T1-PN-A02",
+        "T1-PN-A03",
+        "T2-PN-A02",
+        "T2-PN-A03",
+        "T3-PN-A02",
+        "T3-PN-A03",
+        "T4-PN-A02",
+        "T4-PN-A03",
+        "T5-PN-A02",
+        "T5-PN-A03",
+        "T6-PN-A02",
+        "T6-PN-A03",
+        "T1-PD-01",
+        "T2-PD-01",
+        "T3-PN-01",
+        "T4-PN-01",
+        "T5-PN-01",
+        "T6-PD-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:128"
+    },
+    {
+      "id": "agreement-substring",
+      "status": "source_backed_not_consumed",
+      "priority": "P1",
+      "summary": "Six authored agreement substrings exist, but loadDebate replaces word with entire statement. The source target range is widened.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 124
+        },
+        {
+          "file": "tools/v4_native_tasks.py",
+          "line": 156
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-NS-A03",
+        "T2-NS-A06",
+        "T3-NS-A03",
+        "T4-NS-A01",
+        "T5-NS-A09",
+        "T6-NS-A06"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:128"
+    },
+    {
+      "id": "intentional-lie",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "Normal/lie weak targets and exact A/B graph outcomes are consumed; separate held-card person task also exists.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 40
+        },
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 247
+        },
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 173
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-LIE-01",
+        "T2-LIE-01",
+        "T3-LIE-01",
+        "T4-LIE-01",
+        "T5-LIE-01",
+        "T6-LIE-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:143"
+    },
+    {
+      "id": "memory-absorption",
+      "status": "not_established_by_rea",
+      "priority": "P3",
+      "summary": "Existing REA explicitly leaves memory-bullet/absorption unconfirmed. No authored current task or runtime consumer found; do not label it a proved V3 requirement or invent it.",
+      "codeEvidence": [],
+      "affectedTaskIds": [],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:163"
+    },
+    {
+      "id": "noise-removal",
+      "status": "implemented_unassigned",
+      "priority": "P2",
+      "summary": "Noise placement/hit/right-click removal exists, but all current native debate lines are plain/weak/agree, with zero authored noise rows. Runtime path is dormant for these219 tasks; do not fabricate noise text.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Debate.hpp",
+          "line": 111
+        },
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 231
+        },
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 241
+        }
+      ],
+      "affectedTaskIds": [],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:165"
+    },
+    {
+      "id": "authored-vpoint-character",
+      "status": "source_backed_not_consumed",
+      "priority": "P1",
+      "summary": "63 authored V-point character choices are dropped by adapter. Runtime instead chooses center of currently front-facing weak glyphs, which can be another character.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Debate.hpp",
+          "line": 117
+        },
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 261
+        },
+        {
+          "file": "tools/build_v4_story.py",
+          "line": 575
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-NS-A01",
+        "T1-NS-A02",
+        "T1-NS-A03",
+        "T1-NS-A05",
+        "T1-NS-A06",
+        "T1-NS-A07",
+        "T1-NS-A08",
+        "T1-NS-A09",
+        "T1-NS-A10",
+        "T2-NS-A01",
+        "T2-NS-A02",
+        "T2-NS-A03",
+        "T2-NS-A04",
+        "T2-NS-A05",
+        "T2-NS-A06",
+        "T2-NS-A07",
+        "T2-NS-A08",
+        "T2-NS-A09",
+        "T2-NS-A10",
+        "T3-NS-A01",
+        "T3-NS-A02",
+        "T3-NS-A03",
+        "T3-NS-A04",
+        "T3-NS-A05",
+        "T3-NS-A06",
+        "T3-NS-A07",
+        "T3-NS-A08",
+        "T3-NS-A09",
+        "T3-NS-A10",
+        "T4-NS-A01",
+        "T4-NS-A02",
+        "T4-NS-A03",
+        "T4-NS-A04",
+        "T4-NS-A05",
+        "T4-NS-A06",
+        "T4-NS-A07",
+        "T4-NS-A08",
+        "T4-NS-A09",
+        "T4-NS-A10",
+        "T5-NS-A01",
+        "T5-NS-A02",
+        "T5-NS-A03",
+        "T5-NS-A04",
+        "T5-NS-A05",
+        "T5-NS-A06",
+        "T5-NS-A07",
+        "T5-NS-A08",
+        "T5-NS-A09",
+        "T5-NS-A10",
+        "T6-NS-A01",
+        "T6-NS-A03",
+        "T6-NS-A04",
+        "T6-NS-A05",
+        "T6-NS-A06",
+        "T6-NS-A07",
+        "T6-NS-A08",
+        "T6-NS-A09",
+        "T6-NS-A10",
+        "T3-NS-A11",
+        "T5-NS-A11",
+        "T1-NS-T05e",
+        "T2-NS-01",
+        "T6-NS-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:126"
+    },
+    {
+      "id": "focus",
+      "status": "partial_implementation",
+      "priority": "P2",
+      "summary": "Hold/slow/resource exhaustion/recovery is live; normalized continuous drain lacks the confirmed separate start cost. Runtime0.35 is its own implementation, not verified original wall-clock ratio.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 216
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 853
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-NS-A01",
+        "T1-NS-A02",
+        "T1-NS-A03",
+        "T1-NS-A05",
+        "T1-NS-A06",
+        "T1-NS-A07",
+        "T1-NS-A08",
+        "T1-NS-A09",
+        "T1-NS-A10",
+        "T2-NS-A01",
+        "T2-NS-A02",
+        "T2-NS-A03",
+        "T2-NS-A04",
+        "T2-NS-A05",
+        "T2-NS-A06",
+        "T2-NS-A07",
+        "T2-NS-A08",
+        "T2-NS-A09",
+        "T2-NS-A10",
+        "T3-NS-A01",
+        "T3-NS-A02",
+        "T3-NS-A03",
+        "T3-NS-A04",
+        "T3-NS-A05",
+        "T3-NS-A06",
+        "T3-NS-A07",
+        "T3-NS-A08",
+        "T3-NS-A09",
+        "T3-NS-A10",
+        "T4-NS-A01",
+        "T4-NS-A02",
+        "T4-NS-A03",
+        "T4-NS-A04",
+        "T4-NS-A05",
+        "T4-NS-A06",
+        "T4-NS-A07",
+        "T4-NS-A08",
+        "T4-NS-A09",
+        "T4-NS-A10",
+        "T5-NS-A01",
+        "T5-NS-A02",
+        "T5-NS-A03",
+        "T5-NS-A04",
+        "T5-NS-A05",
+        "T5-NS-A06",
+        "T5-NS-A07",
+        "T5-NS-A08",
+        "T5-NS-A09",
+        "T5-NS-A10",
+        "T6-NS-A01",
+        "T6-NS-A03",
+        "T6-NS-A04",
+        "T6-NS-A05",
+        "T6-NS-A06",
+        "T6-NS-A07",
+        "T6-NS-A08",
+        "T6-NS-A09",
+        "T6-NS-A10",
+        "T3-NS-A11",
+        "T5-NS-A11",
+        "T1-LIE-01",
+        "T1-NS-T05e",
+        "T2-LIE-01",
+        "T2-NS-01",
+        "T3-NS-01",
+        "T4-NS-01",
+        "T4-LIE-01",
+        "T5-NS-01",
+        "T5-LIE-01",
+        "T6-LIE-01",
+        "T6-NS-01",
+        "T1-PN-A02",
+        "T1-PN-A03",
+        "T2-PN-A02",
+        "T2-PN-A03",
+        "T3-PN-A02",
+        "T3-PN-A03",
+        "T4-PN-A02",
+        "T4-PN-A03",
+        "T5-PN-A02",
+        "T5-PN-A03",
+        "T6-PN-A02",
+        "T6-PN-A03",
+        "T1-PD-01",
+        "T2-PD-01",
+        "T3-PN-01",
+        "T4-PN-01",
+        "T5-PN-01",
+        "T6-PD-01",
+        "T1-FA-A03",
+        "T2-FA-A03",
+        "T3-FA-A02",
+        "T4-FA-A02",
+        "T4-FA-A03",
+        "T5-FA-A02",
+        "T5-FA-A03",
+        "T6-FA-A02",
+        "T6-FA-A03",
+        "T1-FA-01",
+        "T2-FA-01",
+        "T3-FA-01",
+        "T4-FA-01",
+        "T5-FA-01",
+        "T6-FA-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:179"
+    },
+    {
+      "id": "panic-three-independent-lanes",
+      "status": "source_backed_not_consumed",
+      "priority": "P1",
+      "summary": "All18 tasks supply three authored lanes, but loadDebate makes one linear lines/index stream plus three portraits. Lanes are not consumed as independent simultaneous streams.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 116
+        },
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 135
+        },
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 228
+        },
+        {
+          "file": "Game/Source/Debate.hpp",
+          "line": 104
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-PN-A02",
+        "T1-PN-A03",
+        "T2-PN-A02",
+        "T2-PN-A03",
+        "T3-PN-A02",
+        "T3-PN-A03",
+        "T4-PN-A02",
+        "T4-PN-A03",
+        "T5-PN-A02",
+        "T5-PN-A03",
+        "T6-PN-A02",
+        "T6-PN-A03",
+        "T1-PD-01",
+        "T2-PD-01",
+        "T3-PN-01",
+        "T4-PN-01",
+        "T5-PN-01",
+        "T6-PD-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:835"
+    },
+    {
+      "id": "panic-forced-lane-loudness",
+      "status": "implementation_missing",
+      "priority": "P1",
+      "summary": "No kind31 forced-lane/group selection or multi-hit loudness state is in the current controller. Current authored tasks do not specify fabricated loudness rows; structural runtime support should remain separate from assignments.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/Yumeno.cpp",
+          "line": 234
+        },
+        {
+          "file": "Game/Source/Debate.hpp",
+          "line": 104
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-PN-A02",
+        "T1-PN-A03",
+        "T2-PN-A02",
+        "T2-PN-A03",
+        "T3-PN-A02",
+        "T3-PN-A03",
+        "T4-PN-A02",
+        "T4-PN-A03",
+        "T5-PN-A02",
+        "T5-PN-A03",
+        "T6-PN-A02",
+        "T6-PN-A03",
+        "T1-PD-01",
+        "T2-PD-01",
+        "T3-PN-01",
+        "T4-PN-01",
+        "T5-PN-01",
+        "T6-PD-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:847"
+    },
+    {
+      "id": "showdown-real-target-row",
+      "status": "source_backed_not_consumed",
+      "priority": "P0",
+      "summary": "Three tasks have trailing ordinary lines after their actual weak target. Existing controller only permits blade verdict on the last array row, so it accepts on an authored non-weak sentence.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 801
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 814
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-RS-A02",
+        "T2-RS-A02",
+        "T2-RS-A03"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:566"
+    },
+    {
+      "id": "showdown-angle-hit-count-gauge",
+      "status": "implementation_missing",
+      "priority": "P1",
+      "summary": "18 showdown tasks use one horizontal drag per statement with no angle controller, per-glyph hit circles, repeated-hit counts, group gauge interpolation or tug-of-war. Source progression directions exist and can be preserved without new claims.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 803
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 808
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 813
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-RS-A02",
+        "T1-RS-A03",
+        "T2-RS-A02",
+        "T2-RS-A03",
+        "T3-RS-A02",
+        "T3-RS-A03",
+        "T4-RS-A02",
+        "T4-RS-A03",
+        "T5-RS-A02",
+        "T5-RS-A03",
+        "T6-RS-A02",
+        "T6-RS-A03",
+        "T1-RS-01",
+        "T2-RS-01",
+        "T3-RS-01",
+        "T4-RS-01",
+        "T5-RS-01",
+        "T6-RS-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:533-578"
+    },
+    {
+      "id": "scrum-pairs-and-direction-phases",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "All7 rounds consume actual pairs, confirmation/wrong requeue, teams, then five direction phases with retreat/failure. This is more than generic repeated button mashing.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 647
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 666
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 790
+        },
+        {
+          "file": "Game/Source/TrialRulesV4.hpp",
+          "line": 70
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-SD-01",
+        "T2-SD-01",
+        "T3-SD-01",
+        "T4-SD-01",
+        "T5-SD-02",
+        "T5-SD-03",
+        "T6-SD-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:607"
+    },
+    {
+      "id": "anagram-single-glyph-arrival",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "15 tasks use20 respawning orbs, one selection, flying arrival judgment, wrong current slot and successive answer slots. No same-letter pair-combination substitution.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 559
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 850
+        },
+        {
+          "file": "Game/Source/TrialRulesV4.hpp",
+          "line": 94
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-FA-A03",
+        "T2-FA-A03",
+        "T3-FA-A02",
+        "T4-FA-A02",
+        "T4-FA-A03",
+        "T5-FA-A02",
+        "T5-FA-A03",
+        "T6-FA-A02",
+        "T6-FA-A03",
+        "T1-FA-01",
+        "T2-FA-01",
+        "T3-FA-01",
+        "T4-FA-01",
+        "T5-FA-01",
+        "T6-FA-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:168"
+    },
+    {
+      "id": "anagram-authored-decoys-and-wrong",
+      "status": "source_backed_not_consumed",
+      "priority": "P1",
+      "summary": "T3-FA-01 has exact distractors and specific wrongText, but adapter omits them and runtime uses global DECOYS plus generic incorrect feedback.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 13
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 561
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 871
+        },
+        {
+          "file": "tools/v4_native_tasks.py",
+          "line": 124
+        }
+      ],
+      "affectedTaskIds": [
+        "T3-FA-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:228"
+    },
+    {
+      "id": "special-collectibles",
+      "status": "implemented_unassigned",
+      "priority": "P3",
+      "summary": "Mine/Anagram rules distinguish collectibles from wrong answers, but current tasks assign no collectible picture or zero glyph. Do not count dormant collection as actual campaign use or add an unprovided asset.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRulesV4.hpp",
+          "line": 57
+        },
+        {
+          "file": "Game/Source/TrialRulesV4.hpp",
+          "line": 114
+        }
+      ],
+      "affectedTaskIds": [],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:242"
+    },
+    {
+      "id": "mindmine",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "18 actual image/UV tasks use four-connected color group removal, boundary recolor once, no gravity, full region exposure and separate submit. Undo is skill-gated and does not refund clock/damage.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRulesV4.hpp",
+          "line": 28
+        },
+        {
+          "file": "Game/Source/TrialRulesV4.hpp",
+          "line": 46
+        },
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 109
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-MM-A02",
+        "T1-MM-A03",
+        "T2-MM-A02",
+        "T2-MM-A03",
+        "T3-MM-A02",
+        "T3-MM-A03",
+        "T4-MM-A02",
+        "T4-MM-A03",
+        "T5-MM-A02",
+        "T5-MM-A03",
+        "T6-MM-A02",
+        "T6-MM-A03",
+        "T1-MM-01",
+        "T2-MM-01",
+        "T3-MM-01",
+        "T4-MM-01",
+        "T5-MM-01",
+        "T6-MM-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:357"
+    },
+    {
+      "id": "armament-rhythm-and-final",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "Six tasks consume tap/hold/release/mash and tension/opponent HP, four final fragments+distractors and same-input wrong retry. AA3/4/5 charts are explicitly own authored charts, not original V3 score recovery.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 18
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 820
+        },
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 196
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-AA-01",
+        "T2-AA-01",
+        "T3-AA-01",
+        "T4-AA-01",
+        "T5-AA-01",
+        "T6-AA-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:448"
+    },
+    {
+      "id": "climax-three-images-per-slot",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "Six reconstructions consume actual candidate images and per-option source response. Correct prior slots are preserved on a wrong current slot.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 141
+        },
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 159
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-MG-01",
+        "T2-MG-01",
+        "T3-MG-01",
+        "T4-MG-01",
+        "T5-MG-01",
+        "T6-MG-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:753"
+    },
+    {
+      "id": "climax-page-board-and-complete-replay",
+      "status": "implementation_missing",
+      "priority": "P1",
+      "summary": "V4 only walks sequential three-picture choices. It lacks page navigation/free blank selection/candidate unlock board and completed-comic playback before return. Existing authored images/response remain usable; do not fabricate original layout.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 141
+        },
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 159
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-MG-01",
+        "T2-MG-01",
+        "T3-MG-01",
+        "T4-MG-01",
+        "T5-MG-01",
+        "T6-MG-01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/05_미니게임.md:730-777"
+    },
+    {
+      "id": "person-vote-evidence-spot",
+      "status": "source_backed_consumed",
+      "priority": "P2",
+      "summary": "Person/candidate overrides, dead selectable identities, final16-seat vote, acquired-evidence filtering and exact picture UV selection have dedicated controllers and source answers.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/TaskGraphV4.hpp",
+          "line": 1
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 774
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 621
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-PERSON-A01",
+        "T1-PERSON-A02",
+        "T1-CULPRIT-A01",
+        "T2-PERSON-A01",
+        "T2-PERSON-A02",
+        "T2-CULPRIT-A01",
+        "T3-PERSON-A01",
+        "T3-PERSON-A02",
+        "T3-CULPRIT-A01",
+        "T4-PERSON-A01",
+        "T4-CULPRIT-A01",
+        "T5-PERSON-A01",
+        "T5-PERSON-A02",
+        "T5-CULPRIT-A01",
+        "T6-PERSON-A02",
+        "T6-CULPRIT-A01",
+        "T1-VOTE-01",
+        "T2-VOTE-01",
+        "T3-VOTE-01",
+        "T4-VOTE-01",
+        "T5-VOTE-01",
+        "T6-VOTE-01",
+        "T1-SPOT-A01",
+        "T2-SPOT-A01",
+        "T3-SPOT-A01",
+        "T4-SPOT-A01",
+        "T5-SPOT-A01",
+        "T6-SPOT-A01",
+        "T1-EVIDENCE-A01",
+        "T2-EVIDENCE-A01",
+        "T3-EVIDENCE-A01",
+        "T4-EVIDENCE-A01",
+        "T5-EVIDENCE-A01",
+        "T6-EVIDENCE-A01"
+      ],
+      "reaReference": "docs/spec/18_V3_분석/04_재판.md:227-250"
+    },
+    {
+      "id": "reasoning-replacement",
+      "status": "intentional_replacement",
+      "priority": "P3",
+      "summary": "19 reasoning tasks are the user-authorized replacement for Brain Drive. No taxi/racing requirement is restored; source links and wrong current-question responses are consumed.",
+      "codeEvidence": [
+        {
+          "file": "Game/Source/V4Tasks.hpp",
+          "line": 100
+        },
+        {
+          "file": "Game/Source/TrialRunner.hpp",
+          "line": 601
+        }
+      ],
+      "affectedTaskIds": [
+        "T1-RL-A02",
+        "T1-RL-A03",
+        "T2-RL-A02",
+        "T2-RL-A03",
+        "T3-RL-A02",
+        "T3-RL-A03",
+        "T4-RL-A02",
+        "T4-RL-A03",
+        "T5-RL-A02",
+        "T5-RL-A03",
+        "T6-RL-A02",
+        "T1-RL-01",
+        "T2-RL-01",
+        "T3-RL-01",
+        "T3-RL-02",
+        "T3-RL-03",
+        "T4-RL-01",
+        "T5-RL-01",
+        "T6-RL-01"
+      ],
+      "reaReference": "User explicitly replaced Brain Drive; docs/spec/18_V3_분석/05_미니게임.md:261 is reference only"
+    }
+  ],
+  "limitations": [
+    "Static consumer presence is not a runtime pass. Native typedReady means schema/input binding, not all V3 submechanics implemented.",
+    "Game sources may be concurrently improved by root; compare snapshot SHA before treating a finding as current.",
+    "Source line numbers are one-based. Evidence IDs and native limitations are retained in linked existing REA documents.",
+    "No new weakness, noise row, collectible, V3 asset or original story text was invented."
+  ]
+}

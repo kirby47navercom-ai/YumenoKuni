@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "origin": "own-authored-additional-manuscript",
+  "policy": {
+    "textAuthorship": "이 파일의 text는 기존 자체 V4 원고 문맥과 실제 참여 화자의 말투를 참고하여 새로 작성한 추가 소음 원고예요. 원고 원문 인용이나 V3 원작 추출 문구가 아니에요.",
+    "sourceRefMeaning": "sourceEventId/sourceRef는 실제 참여·말투·감정 문맥의 참조이며 새 text가 해당 원고행에 존재한다는 뜻이 아니에요.",
+    "mainPreservation": "기존 main대사/순서/판정/정답/targets/vpoint/lieWeak/agreeTarget/증거/트릭/능력/시간추론/후속이야기는 변경하지 않아요. 별도 소음층으로만 사용해요.",
+    "rewardSeconds": "일반 소음47행은 각2초의 자체 보상, 큰 소음6행은 수동·자동 제거 모두0초예요. native record+0x14e 동일값 주장 없이 제거당1회·초기시간상한으로 적용해요.",
+    "nativeBehavior": "원본 소음기하/배치/빈도와 같다는 주장을 하지 않아요. 실제 표시/입력/같은 화자 중첩/스킬 작동은 root 어댑터에서 검증해요.",
+    "sameSourceGroup": "신규로작성한각noise.id가독립발언group이에요. sourceEventId는참여·문맥참조일뿐동일원문발언의ID가아니에요. 별도의원문복사를향후쓰면그때동일발언group의동시중복표시를막아요.",
+    "classification": "모든 행은 감정·태도·발언권 압박이에요. 새 사건 사실·능력·정답·시간추론·지목을 추가하지 않아요.",
+    "loudRoles": "기존 외침6행의 presentationmetadata만 큰 소음으로 지정해요. native+70/glyph31의 원고발생writer를 복원했다는 뜻이 아니에요. 활성·화면표시·논리elapsed30·한번검사·무보상제거는 명시적 자체 어댑터예요."
+  },
+  "tutorialAnchor": {
+    "taskId": "T1-NS-A01",
+    "purpose": "초반 반복논의의 소음 제거 입력 안내 후보예요. 실제 그래프상 최초 논스톱임은 주장하지 않아요. 안내 UI/입력문구는 소음 대사에 섞지 않아요.",
+    "earlierSourceTaskAlsoCovered": "T1-NS-T05e"
+  },
+  "tasks": {
+    "T1-NS-A01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T1-NS-A01:1",
+          "actor": "taiga",
+          "speaker": "타이가",
+          "text": "날 몰아세우지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:181:T1-NS-A01:e:1d6afde9c0b0:1",
+          "sourceRef": {
+            "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+            "line": 15,
+            "fileSha256": "f87ad577669a4e4bcfc4974b71e56b6000c491244ef21c205a7715099eccf733"
+          },
+          "reason": "압박을 받는 거친 화자의 방어적 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T1-NS-A01:2",
+          "actor": "riku",
+          "speaker": "리쿠",
+          "text": "벌써 목소리 커지네.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:181:T1-NS-A01:e:de33a528e958:1",
+          "sourceRef": {
+            "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+            "line": 17,
+            "fileSha256": "f87ad577669a4e4bcfc4974b71e56b6000c491244ef21c205a7715099eccf733"
+          },
+          "reason": "다른 화자의 열을 비스듬히 건드리는 빈정거림이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T1-NS-T05e": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T1-NS-T05e:1",
+          "actor": "taiga",
+          "speaker": "타이가",
+          "text": "그 표정 집어치워.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:11c1:h-37b313804d:e:86300ef0b5b8:1",
+          "sourceRef": {
+            "file": "11c1_1장_재판_전반_초고.md",
+            "line": 466,
+            "fileSha256": "75a9e6bafebe640009194eeeddba93f6d817c7509750045329fd9d734fe41714"
+          },
+          "reason": "몰리는 화자가 상대 시선에 신경질적으로 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T1-NS-T05e:2",
+          "actor": "haruka",
+          "speaker": "하루카",
+          "text": "말 좀 가려서 해.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:11c1:h-37b313804d:e:deb78cc2b47e:1",
+          "sourceRef": {
+            "file": "11c1_1장_재판_전반_초고.md",
+            "line": 464,
+            "fileSha256": "75a9e6bafebe640009194eeeddba93f6d817c7509750045329fd9d734fe41714"
+          },
+          "reason": "경박한 말투에 대한 직선적인 항의이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T1-PD-01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T1-PD-01:1",
+          "actor": "yuu",
+          "speaker": "유우",
+          "text": "나한테만 왜 그래!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:130:T1-PD-01:e:82c72819f4eb:1",
+          "sourceRef": {
+            "file": "130_1장_둘이서_말하면_보강.md",
+            "line": 139,
+            "fileSha256": "df1f40018d932cacaf054ef74280f8c78ea74db8606092c6f56b0f5385baad6d"
+          },
+          "reason": "겹치는 목소리 속 자신이 몰린다고 느끼는 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 0,
+          "noiseRole": "loud"
+        },
+        {
+          "id": "v4:noise:T1-PD-01:2",
+          "actor": "rin",
+          "speaker": "린",
+          "text": "목청 겨루러 왔어?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:130:T1-PD-01:e:f4adce243731:1",
+          "sourceRef": {
+            "file": "130_1장_둘이서_말하면_보강.md",
+            "line": 141,
+            "fileSha256": "df1f40018d932cacaf054ef74280f8c78ea74db8606092c6f56b0f5385baad6d"
+          },
+          "reason": "큰 소리를 잘라 받아치는 짧은 냉소이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T2-NS-A01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T2-NS-A01:1",
+          "actor": "riku",
+          "speaker": "리쿠",
+          "text": "어이쿠, 무서워라.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-NS-A01:e:72a9ea2b5d26:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 23,
+            "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486"
+          },
+          "reason": "서로 높아진 언성에 능청스럽게 빈정거리는 참여자이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T2-NS-A04": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T2-NS-A04:1",
+          "actor": "yuu",
+          "speaker": "유우",
+          "text": "왜 나만 붙잡아?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-NS-A04:e:612ac6c6ceb9:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 138,
+            "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486"
+          },
+          "reason": "자기 말을 되묻는 논의에 대한 답답함이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T2-NS-A04:2",
+          "actor": "riku",
+          "speaker": "리쿠",
+          "text": "숨 좀 돌리고 해.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-NS-A04:e:cf34d9c4fc70:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 142,
+            "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486"
+          },
+          "reason": "들뜬 상대를 느슨한 말투로 누르는 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T2-NS-A07": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T2-NS-A07:1",
+          "actor": "riku",
+          "speaker": "리쿠",
+          "text": "또 나부터야?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-NS-A07:e:6eb0f44857d8:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 263,
+            "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486"
+          },
+          "reason": "의심을 받는 화자가 능청스럽게 내는 불만이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T2-NS-A07:2",
+          "actor": "yuu",
+          "speaker": "유우",
+          "text": "웃는 건 뭐야?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-NS-A07:e:ef4952cd565f:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 261,
+            "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486"
+          },
+          "reason": "상대의 능청을 개인적 비웃음으로 받아치는 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T2-NS-A08": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T2-NS-A08:1",
+          "actor": "yuu",
+          "speaker": "유우",
+          "text": "관객처럼 보지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-NS-A08:e:27635f3be597:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 304,
+            "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486"
+          },
+          "reason": "자기 발언을 구경거리처럼 대하는 시선에 민감한 화자이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T2-PD-01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T2-PD-01:1",
+          "actor": "yuu",
+          "speaker": "유우",
+          "text": "야, 아직 말하잖아!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:164:T2-PN-01:e:b3902c3679a9:1",
+          "sourceRef": {
+            "file": "164_2장_재판_형식별_연속대본.md",
+            "line": 114,
+            "fileSha256": "743128d0d5fc46f6498fc5173e6107822e67e6b2fe03de03cf7c5dff6609fedc"
+          },
+          "reason": "말들이 겹치는 가운데 발언권을 빼앗기지 않으려는 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 0,
+          "noiseRole": "loud"
+        },
+        {
+          "id": "v4:noise:T2-PD-01:2",
+          "actor": "sora",
+          "speaker": "소라",
+          "text": "내 말도 좀 듣자.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:164:T2-PN-01:e:39417f646176:1",
+          "sourceRef": {
+            "file": "164_2장_재판_형식별_연속대본.md",
+            "line": 116,
+            "fileSha256": "743128d0d5fc46f6498fc5173e6107822e67e6b2fe03de03cf7c5dff6609fedc"
+          },
+          "reason": "거친 목소리 사이 자기 발언 공간을 요구이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T2-PN-A03": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T2-PN-A03:1",
+          "actor": "yuu",
+          "speaker": "유우",
+          "text": "입 아프게 만드네!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-PN-A03:e:d536c5c0ab62:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 639,
+            "fileSha256": "a818493aee5bec401973b48c19d7240789b8fad7392292ac7711cf10804ee8ff"
+          },
+          "reason": "계속되는 공방에 지친 날선 감정이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 0,
+          "noiseRole": "loud"
+        },
+        {
+          "id": "v4:noise:T2-PN-A03:2",
+          "actor": "riku",
+          "speaker": "리쿠",
+          "text": "소리로 덮으려고?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:182:T2-PN-A03:e:c738f23d756f:1",
+          "sourceRef": {
+            "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+            "line": 641,
+            "fileSha256": "a818493aee5bec401973b48c19d7240789b8fad7392292ac7711cf10804ee8ff"
+          },
+          "reason": "언성 높은 상대에게 장난기 섞인 도발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T3-NS-A01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T3-NS-A01:1",
+          "actor": "ken",
+          "speaker": "켄의 몸",
+          "text": "아주 신났네, 너희.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-NS-A01:e:15efccc46dd3:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 15,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "현재 발화 정체성의 공격적인 빈정거림이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2,
+          "voiceActor": "ken",
+          "physicalActor": "ken",
+          "authorSpeaker": "소라",
+          "preserveHistoricalDisplay": true
+        }
+      ]
+    },
+    "T3-NS-A09": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T3-NS-A09:1",
+          "actor": "ken",
+          "speaker": "켄의 몸",
+          "text": "표정들 볼 만하네.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-NS-A09:e:9e6af34da95d:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 343,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "참여자의 불편함을 건드리는 도발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2,
+          "voiceActor": "ken",
+          "physicalActor": "ken",
+          "authorSpeaker": "소라",
+          "preserveHistoricalDisplay": true
+        }
+      ]
+    },
+    "T3-NS-A11": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T3-NS-A11:1",
+          "actor": "ken",
+          "speaker": "켄의 몸",
+          "text": "그렇게 쳐다봐서 뭐.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-NS-A11:e:0a8a13f18391:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 936,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "상대의 시선을 비웃는 회피 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2,
+          "voiceActor": "ken",
+          "physicalActor": "ken",
+          "authorSpeaker": "소라",
+          "preserveHistoricalDisplay": true
+        },
+        {
+          "id": "v4:noise:T3-NS-A11:2",
+          "actor": "koto",
+          "speaker": "코토",
+          "text": "빈정댈 때는 아니야.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-NS-A11:e:bb7f9169336f:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 930,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "자극적인 말투를 건조하게 누르는 중재이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T3-PN-A02": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T3-PN-A02:1",
+          "actor": "ken",
+          "speaker": "켄의 몸",
+          "text": "눈에 힘 좀 빼.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-PN-A02:e:1a68636acabe:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 599,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "맞서는 참여자에게 위축되지 않겠다는 도발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2,
+          "voiceActor": "ken",
+          "physicalActor": "ken",
+          "authorSpeaker": "소라",
+          "preserveHistoricalDisplay": true
+        },
+        {
+          "id": "v4:noise:T3-PN-A02:2",
+          "actor": "rin",
+          "speaker": "린",
+          "text": "웃어넘길 생각 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-PN-A02:e:12feb942c9bd:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 601,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "상대의 가벼운 태도를 막는 강한 감정이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T3-PN-A03": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T3-PN-A03:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "그 잘난 말투 좀!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:183:T3-PN-A03:e:94d3fbe0dda4:1",
+          "sourceRef": {
+            "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+            "line": 639,
+            "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9"
+          },
+          "reason": "침착한 표현을 답답하게 여기는 거친 압박이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 0,
+          "noiseRole": "loud"
+        }
+      ]
+    },
+    "T4-NS-A03": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T4-NS-A03:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "사람 말 자르지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-NS-A03:e:b25e434b0a2f:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 97,
+            "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6"
+          },
+          "reason": "다른 참여자의 개입에 날카롭게 반발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T4-NS-A03:2",
+          "actor": "rei",
+          "speaker": "레이",
+          "text": "비난은 듣겠습니다.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-NS-A03:e:1912ec30f149:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 107,
+            "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6"
+          },
+          "reason": "거친 언성에도 격식을 유지하는 감정 방어이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T4-NS-A05": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T4-NS-A05:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "아, 답답해 죽겠네.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-NS-A05:e:9dc561e8a6ad:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 181,
+            "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6"
+          },
+          "reason": "자기 기대대로 진행되지 않는 공방에 드러나는 성급함이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T4-NS-A07": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T4-NS-A07:1",
+          "actor": "rei",
+          "speaker": "레이",
+          "text": "그 시선은 불편하군요.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-NS-A07:e:ec073ad0e542:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 261,
+            "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6"
+          },
+          "reason": "압박을 느끼면서도 격식적인 말투를 유지하는 화자이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T4-NS-A07:2",
+          "actor": "rin",
+          "speaker": "린",
+          "text": "점잖은 척하지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-NS-A07:e:f43d512c838d:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 269,
+            "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6"
+          },
+          "reason": "상대의 격식적인 태도에 직접 반발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T4-PN-A02": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T4-PN-A02:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "말 돌리지 마!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-PN-A02:e:e9d3abda7840:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 572,
+            "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996"
+          },
+          "reason": "논의의 흐름에 답답함을 느끼는 거친 반발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 0,
+          "noiseRole": "loud"
+        },
+        {
+          "id": "v4:noise:T4-PN-A02:2",
+          "actor": "sho",
+          "speaker": "쇼",
+          "text": "목소리부터 낮춰.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:184:T4-PN-A02:e:b478d6d085e7:1",
+          "sourceRef": {
+            "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+            "line": 576,
+            "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996"
+          },
+          "reason": "언성이 겹치는 가운데 낮고 직접적으로 제지이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T4-PN-01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T4-PN-01:1",
+          "actor": "koto",
+          "speaker": "코토",
+          "text": "흠, 그렇게 화낼 일인가.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:166:T4-PN-01:e:d0a8c22d2fdf:1",
+          "sourceRef": {
+            "file": "166_4장_재판_형식별_연속대본.md",
+            "line": 67,
+            "fileSha256": "205e772e4696836716a698bfa0e3d84f3025d87a1f9c3547140e2532460097bd"
+          },
+          "reason": "마찰을 가볍게 받는 건조한 화자의 압박이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T4-PN-01:2",
+          "actor": "akari",
+          "speaker": "아카리",
+          "text": "지금 웃을 때야?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:166:T4-PN-01:e:e016650f6afb:1",
+          "sourceRef": {
+            "file": "166_4장_재판_형식별_연속대본.md",
+            "line": 69,
+            "fileSha256": "205e772e4696836716a698bfa0e3d84f3025d87a1f9c3547140e2532460097bd"
+          },
+          "reason": "상대의 태도를 부적절하게 받아들이는 날선 감정이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T5-NS-A02": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T5-NS-A02:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "그래, 계속 쳐다봐.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-NS-A02:e:eca767bbff7e:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 56,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "자기에게 향한 시선에 맞서 버티는 자포자기 섞인 공격성이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T5-NS-A06": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T5-NS-A06:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "너는 꼭 그래야겠어?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-NS-A06:e:3514de106f3d:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 220,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "가까운 상대에게 거부감을 돌리는 짧은 압박이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T5-NS-A06:2",
+          "actor": "akari",
+          "speaker": "아카리",
+          "text": "나한테 화풀이하지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-NS-A06:e:87f45ee56be4:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 222,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "거친 압박을 받는 참여자가 개인적 경계를 세움이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T5-NS-A09": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T5-NS-A09:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "다들 참 다정하네.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-NS-A09:e:86a0de21903d:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 343,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "다른 참여자들의 태도에 고립감을 비꼬는 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T5-NS-A11": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T5-NS-A11:1",
+          "actor": "akari",
+          "speaker": "아카리",
+          "text": "내가 우습게 보여?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-NS-A11:e:bd5832498b95:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 959,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "자기에게 향한 질문을 비웃음으로 받아들이는 방어이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T5-NS-A11:2",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "이제 짜증 나?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-NS-A11:e:3c23f76bb489:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 963,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "상대의 감정 변화를 찌르는 짧은 도발이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T5-PN-A02": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T5-PN-A02:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "고개부터 끄덕이지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-PN-A02:e:604f495447c8:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 599,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "다른 사람의 호응을 못마땅해하며 끼어드는 압박이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T5-PN-A02:2",
+          "actor": "akari",
+          "speaker": "아카리",
+          "text": "그 웃음 보기 싫어.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-PN-A02:e:6f559f95c6c1:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 605,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "상대의 빈정거림을 거부하는 감정이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T5-PN-A02:3",
+          "actor": "nana",
+          "speaker": "나나",
+          "text": "제 말도 마저 들어 주세요.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:185:T5-PN-A02:e:10de911d18a6:1",
+          "sourceRef": {
+            "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+            "line": 601,
+            "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+          },
+          "reason": "겹치는 큰 소리 속 공손하게 자기 발언권을 지키는 화자이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T5-PN-01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T5-PN-01:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "그래서 잘났다고?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:167:T5-PN-01:e:be8b6785417f:1",
+          "sourceRef": {
+            "file": "167_5장_재판_형식별_연속대본.md",
+            "line": 61,
+            "fileSha256": "0bd5da3ec11b1fddc5ac5b6a2a91096f7152a42a91a0cc0dd6d5a5980f116c3a"
+          },
+          "reason": "여러 목소리의 반박에 자존심을 세우는 거친 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T5-PN-01:2",
+          "actor": "rin",
+          "speaker": "린",
+          "text": "사람 속을 긁네.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:167:T5-PN-01:e:52743dc5606b:1",
+          "sourceRef": {
+            "file": "167_5장_재판_형식별_연속대본.md",
+            "line": 63,
+            "fileSha256": "0bd5da3ec11b1fddc5ac5b6a2a91096f7152a42a91a0cc0dd6d5a5980f116c3a"
+          },
+          "reason": "상대의 자극적인 태도에 짧게 짜증을 드러냄이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T6-NS-A04": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T6-NS-A04:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "그 입으로 또!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-NS-A04:e:094bd3a0807f:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 97,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "격식적인 말투에 쌓인 분노가 튀어나오는 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T6-NS-A04:2",
+          "actor": "lappy",
+          "speaker": "래피",
+          "text": "아이, 화내지 마세요.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-NS-A04:e:376c85afeeaa:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 101,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "논의를 가볍게 달래려는 과하게 공손한 화자이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T6-NS-A08": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T6-NS-A08:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "얌전한 척하지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-NS-A08:e:e80d54bd0f0b:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 261,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "침착한 태도에 반발하는 날카로운 압박이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T6-NS-A10": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T6-NS-A10:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "이제 와서 웃어?",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-NS-A10:e:4e4f3e357632:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 347,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "후반 공방의 피로와 분노가 상대의 태도로 향함이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T6-NS-A10:2",
+          "actor": "lappy",
+          "speaker": "래피",
+          "text": "말씀이 좀 매섭네요.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-NS-A10:e:979fbf5a885f:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 349,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "직접적인 공격에 우회적인 존댓말로 반응이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T6-PD-01": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T6-PD-01:1",
+          "actor": "lappy",
+          "speaker": "래피",
+          "text": "목소리가 너무 크세요.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:168:T6-PN-01:e:e3b334818c55:1",
+          "sourceRef": {
+            "file": "168_6장_재판_형식별_연속대본.md",
+            "line": 96,
+            "fileSha256": "26b55854d20bc514ecad5d27bb5d0c24fa332c46f3e66e7ac3b075398967564c"
+          },
+          "reason": "세 목소리의 충돌을 공손한 불평으로 받음이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T6-PD-01:2",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "그 존댓말 집어치워!",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:168:T6-PN-01:e:27f1c07607f2:1",
+          "sourceRef": {
+            "file": "168_6장_재판_형식별_연속대본.md",
+            "line": 98,
+            "fileSha256": "26b55854d20bc514ecad5d27bb5d0c24fa332c46f3e66e7ac3b075398967564c"
+          },
+          "reason": "상대의 정중함을 오히려 도발로 느끼는 분노이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 0,
+          "noiseRole": "loud"
+        },
+        {
+          "id": "v4:noise:T6-PD-01:3",
+          "actor": "rin",
+          "speaker": "린",
+          "text": "능청 떨지 마.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:168:T6-PN-01:e:72506b13813d:1",
+          "sourceRef": {
+            "file": "168_6장_재판_형식별_연속대본.md",
+            "line": 100,
+            "fileSha256": "26b55854d20bc514ecad5d27bb5d0c24fa332c46f3e66e7ac3b075398967564c"
+          },
+          "reason": "과한 공손함에 짧고 낮게 제동을 거는 태도이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    },
+    "T6-PN-A03": {
+      "noiseSources": [
+        {
+          "id": "v4:noise:T6-PN-A03:1",
+          "actor": "satsuki",
+          "speaker": "사츠키",
+          "text": "끝까지 예쁜 말이네.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-PN-A03:e:ba16e73321ee:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 573,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "다른 참여자의 조심스러운 말투를 비꼬는 감정이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        },
+        {
+          "id": "v4:noise:T6-PN-A03:2",
+          "actor": "sho",
+          "speaker": "쇼",
+          "text": "비웃을 일 아니야.",
+          "origin": "own-authored-additional-manuscript",
+          "sourceEventId": "v4:186:T6-PN-A03:e:7b1757bcc5c2:1",
+          "sourceRef": {
+            "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+            "line": 571,
+            "fileSha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+          },
+          "reason": "겹치는 언성 속 과장 없이 짧게 항의이에요. 사건 사실·능력·정답·시점·증언을 추가하지 않아요.",
+          "rewardSeconds": 2
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "sourceTaskSha256": "e09f67a2f1b5c9cc613ace402fc6494ffdbc970e8b06c02985bd23486e8e4265",
+    "manuscriptShaConvention": "UTF-8 LF normalized, matching source.fileSha256",
+    "manuscripts": {
+      "181_1장_재판_반복논의와_지목_연속대본.md": {
+        "fileSha256": "f87ad577669a4e4bcfc4974b71e56b6000c491244ef21c205a7715099eccf733",
+        "workingTreeRawSha256": "31893fa3614ba279c0c75bfe37bdd5d2e9b9a72606b52505c229feabd354fa32"
+      },
+      "11c1_1장_재판_전반_초고.md": {
+        "fileSha256": "e1cfeb55bdd6831c64d5ad48674e73753d7858da4588fefaf7eb4deb0ce624b3",
+        "workingTreeRawSha256": "c0d344401f1462ec0e4a5e8ef235eee1039eddfa73b87a8230225e1ca6c0a100"
+      },
+      "130_1장_둘이서_말하면_보강.md": {
+        "fileSha256": "b28740364e6f1b3116b13e043d2946d76ce802c25c582dbe1262a5f1e2842cc4",
+        "workingTreeRawSha256": "6960056e15b4695bfef682bc4737e23bed09dcc1e047d7c29fdd87b61bec3125"
+      },
+      "182_2장_재판_반복논의와_지목_연속대본.md": {
+        "fileSha256": "bb5fc3251877709a626b6b677290fa0d84cd54d5d14c8088c546e02acbec1486",
+        "workingTreeRawSha256": "11ce899dd0622ee9d0b45f29ad0f7c55da986ad9650754433d63f78f1d631e15"
+      },
+      "164_2장_재판_형식별_연속대본.md": {
+        "fileSha256": "fedabfc4c31d37055561c219934f901a06f4d6b5cff98c80e61f4167bb3266f7",
+        "workingTreeRawSha256": "7e3f6ee9205af87f453302018cccf8fa0b5c59de75bf5fa5fd2bcf094bdd9890"
+      },
+      "183_3장_재판_반복논의와_지목_연속대본.md": {
+        "fileSha256": "904b0bf7b33583f1a8a982aaac47d8a80b24d5f66a5733f85e35560d23b2fbb7",
+        "workingTreeRawSha256": "af6ad36d8a48e20ac23b3aa0a379e91c70cb2fab0d69252294425a2b34d700eb"
+      },
+      "184_4장_재판_반복논의와_지목_연속대본.md": {
+        "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6",
+        "workingTreeRawSha256": "1271dd832ecb55086838ced72c6b845699a161c49ca94b7534e190986da1968a"
+      },
+      "166_4장_재판_형식별_연속대본.md": {
+        "fileSha256": "58051c5ce7db9f74ceb50bb5b46abc6937ec2eead9f0653b68b0072ace1dbf24",
+        "workingTreeRawSha256": "7e6909f10098c4e2ed0e590b68ff9a3bb19cd1d1e8e4a5001e27cefee520cf47"
+      },
+      "185_5장_재판_반복논의와_지목_연속대본.md": {
+        "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+        "workingTreeRawSha256": "5c92403332f0e57c5816f7de38c38c0f11c2cdc53d47d2ffc0ec41fc9e24009a"
+      },
+      "167_5장_재판_형식별_연속대본.md": {
+        "fileSha256": "7c72b1e949385cf6ee2a4182da09c134821eadbc46b82b3f0501054133430e0d",
+        "workingTreeRawSha256": "d4856a8a55caadc559bad7af086fb379aef02f2e5b9d485982878950f502abd6"
+      },
+      "186_6장_재판_반복논의와_지목_연속대본.md": {
+        "fileSha256": "135bbbbb5d71c7329f249298bd98a3ef81e31830777206ffca150665cd8e67b2",
+        "workingTreeRawSha256": "2a70d9d4f07b316e0f6118519f8dc2c751250387d4ecb19dfc353426bd222401"
+      },
+      "168_6장_재판_형식별_연속대본.md": {
+        "fileSha256": "26b55854d20bc514ecad5d27bb5d0c24fa332c46f3e66e7ac3b075398967564c",
+        "workingTreeRawSha256": "7be60a130fb180ce4d494720bc9c2bdd38092be20effdaf4fff92eb6bac28296"
+      }
+    },
+    "preservedOriginalWhitelistContract": "docs/analysis/v3_rebuild/v4_noise_source_candidates_contract.json"
+  },
+  "staticValidation": {
+    "tasks": 30,
+    "rows": 53,
+    "taskKinds": {
+      "nonstop": 19,
+      "panic": 11
+    },
+    "rowsByChapter": {
+      "1": 6,
+      "2": 10,
+      "3": 7,
+      "4": 9,
+      "5": 11,
+      "6": 10
+    },
+    "rowsByTask": {
+      "2": 19,
+      "1": 9,
+      "3": 2
+    },
+    "uniqueTextCount": 53,
+    "maxUtf16Length": 15,
+    "longerThan16Utf16": [],
+    "allActorsParticipateInTask": true,
+    "allContextRefsAreUntargetedEvents": true,
+    "sourceRefLineAndNormalizedSHAValidated": true,
+    "sourceMainEdits": 0,
+    "GameEdits": 0,
+    "originalRunsOrNewREAQueries": 0,
+    "notRun": [
+      "native gameplay",
+      "visual overlap/readability",
+      "input/skill/reward integration"
+    ],
+    "review": "각 선택 논의의 참여자·공방을 읽고 발언권·시선·말투에 대한 반응만 추가했어요. 새로운 정보 주장이나 단서를 전달하는 표현을 넣지 않았어요.",
+    "tasksByChapter": {
+      "1": 3,
+      "2": 6,
+      "3": 5,
+      "4": 5,
+      "5": 6,
+      "6": 5
+    }
+  },
+  "selectionReview": {
+    "policy": "장별 동일 수를 목표로 하지 않았어요. 기존 공방의 압박·말투 충돌·겹침이 뚜렷한 곳을 남기고 차분하거나 기존 반응만으로 충분한 곳은 제외했어요.",
+    "removedWeakContextTaskRefs": [
+      {
+        "taskId": "T1-NS-A02",
+        "sourceRef": {
+          "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+          "line": 50
+        },
+        "reason": "새 끼어들기가 포괄적 발언권 불평에 머물고 기존 공방에 충분한 마찰이 있어요."
+      },
+      {
+        "taskId": "T1-NS-A05",
+        "sourceRef": {
+          "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+          "line": 132
+        },
+        "reason": "기존 자기항의가 이미 충분하며 새 제지가 일반적 문구에 머물러요."
+      },
+      {
+        "taskId": "T1-NS-A07",
+        "sourceRef": {
+          "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+          "line": 214
+        },
+        "reason": "반복 설명 장면에 짧은 발언권 요청을 더할 필요가 약해요."
+      },
+      {
+        "taskId": "T3-NS-A06",
+        "sourceRef": {
+          "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "line": 214
+        },
+        "reason": "능력에 관한 문답을 끊는 신규 회피 반응은 긴장보다 정보 전달을 방해할 우려가 있어요."
+      },
+      {
+        "taskId": "T4-NS-A08",
+        "sourceRef": {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 296
+        },
+        "reason": "기존 불편함 표현이 충분하고 새 시선 항의의 문맥 특성이 약해요."
+      },
+      {
+        "taskId": "T6-NS-A01",
+        "sourceRef": {
+          "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+          "line": 9
+        },
+        "reason": "정리성 대화의 비교적 차분한 구간에 가벼운 표정 언급을 더할 필요가 약해요."
+      }
+    ],
+    "chapterContext": {
+      "1": "초반 안내 후보와 직접적인 압박·겹침이 필요한3곳만 남겼어요.",
+      "2": "의심과 발언권 다툼이 뚜렷한6곳을 남겼어요.",
+      "3": "도발과 반발이 뚜렷한5곳을 남기고 능력 문답 구간은 제외했어요.",
+      "4": "격식적인 태도와 거친 감정이 부딪히는5곳을 남겼어요.",
+      "5": "자기방어와 압박의 충돌이 강한6곳을 남겼어요.",
+      "6": "마지막 논의의 분노와 공손한 회피가 부딪히는5곳을 남겼어요."
+    }
+  }
+}

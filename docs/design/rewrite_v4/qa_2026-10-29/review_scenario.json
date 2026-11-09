@@ -1,0 +1,58 @@
+{
+  "kind": "manuscript_review_scenario",
+  "runtime_executed": false,
+  "source": "Current rewrite_v4, with previous full manuscript reading and new targeted sequential readback.",
+  "ordering": [
+    "prologue",
+    "chapter1 daily / investigation / trial / result",
+    "chapter2 daily / investigation / trial / result",
+    "chapter3 first discovery / living second body / second death / identity trial / result",
+    "chapter4 origin disclosure / incident / rescue / late death / trial / result",
+    "chapter5 agreement / claimed use / actual use / evidence disclosure / trial / result",
+    "chapter6 present conditions / past reconstruction / final vote / actual external contact / support choice / outside statement"
+  ],
+  "control_choices": "Use the A branch for ordinary choices and the normal correct route for optional lie inputs; retain chapter3 mandatory lie. Review optional FTE memories only under their own conditions; they do not enter mandatory evidence. Inspect both support endings separately.",
+  "no_claims": [
+    "No new 255-file full reading was completed in this single turn.",
+    "No human reading session or engine playtime was measured.",
+    "The trial text bounds include sibling branches and are not the selected scenario length."
+  ],
+  "state_checks": [
+    {
+      "chapter": 1,
+      "trial_present": 15,
+      "after_execution": 14,
+      "check": "Report16/17, retrieval before discovery, two independent witness scopes, wrist object custody."
+    },
+    {
+      "chapter": 2,
+      "trial_present": 13,
+      "after_execution": 12,
+      "check": "Public card versus private player, loaded chest versus closed handover, unknown wrong vote remains private."
+    },
+    {
+      "chapter": 3,
+      "trial_present": 10,
+      "after_execution": 9,
+      "check": "Sequential two deaths, sealed new message, first utterance before opening, current actor differs from body name."
+    },
+    {
+      "chapter": 4,
+      "trial_present": 8,
+      "after_execution": 7,
+      "check": "Origin known before murder, living rescue and later death, belief effect ends after execution while physical records stay."
+    },
+    {
+      "chapter": 5,
+      "trial_present": 6,
+      "after_execution": 5,
+      "check": "Claimed14:00 differs from actual16:52, full third statement ends only new pact, post-death retrieval differs from prior use."
+    },
+    {
+      "chapter": 6,
+      "trial_present": 5,
+      "after_resolution": 5,
+      "check": "No new death is required, old memory stays absent, control ends before support choice, separate A/B location and document custody."
+    }
+  ]
+}

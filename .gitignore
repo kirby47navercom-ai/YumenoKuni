@@ -25,3 +25,29 @@ dist/
 
 # 원작 음원(사용자 제공) : 저장소에 올리지 않는다. tools/import_audio.py 로 다시 만든다
 Game/Assets/Audio/*.ogg
+
+# v4 source PNGs stay local; lossless WebP and editable UI SVG stay in repository
+art/sprites_v4/**/*.png
+art/fx_v4/*.png
+ui/v4/**/*.png
+art/standing_v4/*.png
+art/sprites_nai_v4/**/*.png
+art/cg_v4/**/*.png
+art/space_v4/*.blend1
+art/sprites_derived_v4/**/*.png
+art/hd_v4/**/*.png
+art/inspection_v4/**/*.png
+art/masters_clean_v4/*.png
+
+# User requested reversible cleanup quarantine
+/_삭제대기_2026-10-29/
+/_삭제대기_2026-10-29_추가/
+/삭제 대기/
+
+# Local QA captures, exports, and restore points.
+/Saved/
+/삭제대기/
+/검토 영상/
+/연출 영상/
+/연출 모아보기/
+/sites/yumeno-audio-editor/

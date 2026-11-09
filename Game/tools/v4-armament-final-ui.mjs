@@ -1,0 +1,21 @@
+import fs from'node:fs/promises';import path from'node:path';import{createRequire}from'node:module';import{createHash}from'node:crypto';
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'../engineCreate/package.json')),{createCanvas,loadImage}=require('@napi-rs/canvas');
+// Authored SFL depth masks are applied before the two native blend passes.
+// Keeping glow separate preserves the original additive pixels over the world.
+export async function emitArmamentFinalUi({write,scene}){
+ const raw=JSON.parse(await fs.readFile(path.join(repo,'ui/v3_authorized/armament_final/frames.json'),'utf8')),cache=new Map(),bank={version:1,nodes:[],tracks:{},rects:{},source:{moving:'0x14033e310',initial:'0x14033ddf0',gates:'0x14033a560'}};
+ const colored=async row=>{const key=JSON.stringify([row.texture,row.colorMultiply,row.colorAdd]);if(cache.has(key))return cache.get(key);const im=await loadImage(path.join(repo,row.texture)),c=createCanvas(im.width,im.height),ctx=c.getContext('2d');ctx.drawImage(im,0,0);const p=ctx.getImageData(0,0,c.width,c.height);for(let i=0;i<p.data.length;i+=4)for(let k=0;k<3;k++)p.data[i+k]=Math.max(0,Math.min(255,p.data[i+k]*(row.colorMultiply?.[k]??1)+(row.colorAdd?.[k]??0)*255));ctx.putImageData(p,0,0);cache.set(key,c);return c;};
+ const draw=async(ctx,row)=>{const im=await colored(row),[x,y,w,h]=row.rect;ctx.save();ctx.translate(300+x+w/2,300+y+h/2);ctx.rotate(row.rotation*Math.PI/180);ctx.globalAlpha=row.opacity;ctx.drawImage(im,-w/2,-h/2,w,h);ctx.restore();};
+ for(const [type,name]of [['moving','t_riron_kakusi6'],['odd','t_riron_kakusi_s6_US']]){
+  bank.tracks[type]={waitLead:raw[name].waitLead,waitPeriod:raw[name].waitPeriod};for(const [phase,frames]of Object.entries(raw[name].tracks)){bank.tracks[type][phase]=[];
+   for(const rows of frames){const layers=[createCanvas(600,600),createCanvas(600,600)];
+    for(const row of rows){const leaf=createCanvas(600,600),l=leaf.getContext('2d');await draw(l,row);for(const group of row.clips||[]){const mask=createCanvas(600,600),m=mask.getContext('2d');for(const clip of group)await draw(m,clip);l.globalCompositeOperation='destination-in';l.drawImage(mask,0,0);}const glow=row.resource.includes('DXT1'),ctx=layers[glow?1:0].getContext('2d');ctx.globalCompositeOperation=glow?'lighter':'source-over';ctx.drawImage(leaf,0,0);}
+    const files=[];for(let i=0;i<2;i++){const ctx=layers[i].getContext('2d'),pixels=ctx.getImageData(0,0,600,600);let left=600,top=600,right=-1,bottom=-1;for(let y=0;y<600;y++)for(let x=0;x<600;x++){const at=(y*600+x)*4;if(i&&!(pixels.data[at]||pixels.data[at+1]||pixels.data[at+2]))pixels.data[at+3]=0;if(pixels.data[at+3]){left=Math.min(left,x);top=Math.min(top,y);right=Math.max(right,x);bottom=Math.max(bottom,y);}}if(right<0){left=top=0;right=bottom=0;}ctx.putImageData(pixels,0,0);const rect=[left-300,top-300,right-left+1,bottom-top+1],cropped=createCanvas(rect[2],rect[3]);cropped.getContext('2d').drawImage(layers[i],left,top,rect[2],rect[3],0,0,rect[2],rect[3]);const b=cropped.toBuffer('image/png'),file='Assets/Art/ui/armament_final/'+createHash('sha256').update(b).update(JSON.stringify(rect)).digest('hex').slice(0,24)+'.png';await write(file,b);bank.rects[file]=rect;files.push(file);}bank.tracks[type][phase].push(files);
+   }
+  }
+ }
+ const template=scene.objects.find(o=>o.id==='TrialGpu_ArRating');if(!template)throw Error('Missing existing native GPU sprite template');
+ scene.objects=scene.objects.filter(o=>!o.id.startsWith('TrialGpu_ArObscure'));
+ for(let slot=-1;slot<12;slot++)for(let pass=0;pass<2;pass++){const id='ArObscure'+(slot<0?'Moving':slot)+'_'+pass,o=structuredClone(template);o.id='TrialGpu_'+id;o.name='armament/'+id;Object.assign(o.components.find(c=>c.type==='SpriteRenderer').properties,{texture:'',visible:false,sortingOrder:slot<0?3900+pass:3526+pass,blendMode:pass?'additive':'translucent'});scene.objects.push(o);bank.nodes.push({id,parent:'ArmamentRoot',rect:[0,0,600,600],initiallyVisible:false});}
+ await write('Assets/Data/armament_final_ui.json',bank);await write('Assets/Scenes/ArmamentHud.hbscene.json',scene);return {nodes:bank.nodes.length,tracks:Object.fromEntries(Object.entries(bank.tracks).map(([k,v])=>[k,Object.fromEntries(Object.entries(v).map(([k,a])=>[k,Array.isArray(a)?a.length:a]))]))};
+}

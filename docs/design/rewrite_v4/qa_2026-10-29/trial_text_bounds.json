@@ -1,0 +1,744 @@
+{
+  "scope": "Explicit dialogue including thoughts in the trial parents and their designated inserts.",
+  "single_route": false,
+  "runtime_playtest": false,
+  "reading_rates_are_assumptions_not_measured_human_rates": [
+    250,
+    400
+  ],
+  "limitations": [
+    "All alternatives and authored failures are retained, so these are dialogue bounds, not route totals.",
+    "Do not add dialogue from daily setup, result callbacks or whole multi-chapter files.",
+    "No duration is assigned to animation, thinking, input, UI prompt reading, travel, failed attempts or forced waiting.",
+    "Character transitions count source blocks, not an executed path or the quality of an argument.",
+    "Without a repeat or reread, any supported normal route has no more explicit [speaker] dialogue than this bound. UI prompts and stage directions are outside this metric."
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "dialogue_characters_all_branches_upper_bound": 43342,
+      "dialogue_lines_all_branches": 1678,
+      "mio_share_of_spoken_corpus": 0.1709,
+      "npc_to_npc_speaker_changes_in_source_blocks": 982,
+      "all_branch_reading_minutes_under_assumptions": {
+        "250": 173.4,
+        "400": 108.4
+      },
+      "sources": [
+        {
+          "path": "11c1_1장_재판_전반_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "e1cfeb55bdd6831c64d5ad48674e73753d7858da4588fefaf7eb4deb0ce624b3",
+          "start_line": 1,
+          "end_line": 980,
+          "dialogue_lines_all_branches": 328
+        },
+        {
+          "path": "11c2_1장_재판_후반_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "7dfa27eb90a830e7e3974ecd32ddf64112b4b4fe1382aad52e36b3e959b43dba",
+          "start_line": 1,
+          "end_line": 1510,
+          "dialogue_lines_all_branches": 509
+        },
+        {
+          "path": "123_1장_하나_쉬는_박자_보강.md",
+          "begin": "## T-01P",
+          "end_exclusive": null,
+          "full_source_sha256": "f7cf9dcb351068274d132972abe2b86f8181434af79c421b9cb066e715c4e7ec",
+          "start_line": 225,
+          "end_line": 242,
+          "dialogue_lines_all_branches": 3
+        },
+        {
+          "path": "137_1장_아무도_말하지_않으면_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "d8ba44732150fe936c1dcca8c1987bbba06fd1d6e1b7afaa92818170f5db4b92",
+          "start_line": 1,
+          "end_line": 192,
+          "dialogue_lines_all_branches": 65
+        },
+        {
+          "path": "66_1장_재판_첫_질문의_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "6a46f7f9fa7cbd8f239530bfa2f3981b7c22934d35bc7bcb86e21a5b795d3b62",
+          "start_line": 1,
+          "end_line": 270,
+          "dialogue_lines_all_branches": 87
+        },
+        {
+          "path": "181_1장_재판_반복논의와_지목_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "8c5c23ebced38ac4673085e16250648bd24baa31ef525cb34ef6211557222213",
+          "start_line": 1,
+          "end_line": 882,
+          "dialogue_lines_all_branches": 140
+        },
+        {
+          "path": "163_1장_재판_형식별_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "ea9e045dfc3b1042147adaa6c021e13b6e05913efdfaf922eb22fbcc3dcee69b",
+          "start_line": 1,
+          "end_line": 481,
+          "dialogue_lines_all_branches": 115
+        },
+        {
+          "path": "93_1장_마지막으로_빈_방_보강.md",
+          "begin": null,
+          "end_exclusive": "## R-05b",
+          "full_source_sha256": "8e8b424b8a3b9e088aa1820c15a31b36ff36256110b93cef4bf80ed67c8d96cb",
+          "start_line": 1,
+          "end_line": 377,
+          "dialogue_lines_all_branches": 133
+        },
+        {
+          "path": "130_1장_둘이서_말하면_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "623b114a580eaab47ba1061f219fb47400d70754fc10982c3a676556c75aae68",
+          "start_line": 1,
+          "end_line": 294,
+          "dialogue_lines_all_branches": 101
+        },
+        {
+          "path": "67_1장_재판_살아_있었다는_말_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "e81f7962636f4fc153a6ac29d27cf9ae66a04e625316d1ea9187573c289841dc",
+          "start_line": 1,
+          "end_line": 170,
+          "dialogue_lines_all_branches": 56
+        },
+        {
+          "path": "157_1장_재구성만화_슬롯과_실제문답.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "6949299510a2795a164e43a5c80ce3aa4d5b0770753aa62d8a73e8ecc0b7aa1e",
+          "start_line": 1,
+          "end_line": 295,
+          "dialogue_lines_all_branches": 71
+        },
+        {
+          "path": "115_1장_나를_고른_적_있잖아_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "ce9938614b88e40a216599bea389a80bf618230969d103029377ac79400460c4",
+          "start_line": 1,
+          "end_line": 216,
+          "dialogue_lines_all_branches": 70
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "dialogue_characters_all_branches_upper_bound": 46609,
+      "dialogue_lines_all_branches": 1640,
+      "mio_share_of_spoken_corpus": 0.214,
+      "npc_to_npc_speaker_changes_in_source_blocks": 827,
+      "all_branch_reading_minutes_under_assumptions": {
+        "250": 186.4,
+        "400": 116.5
+      },
+      "sources": [
+        {
+          "path": "12c1_2장_재판_시작_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "751414dd077837a9952b26cd510e7bc70c7038eb561619a44796596dff435017",
+          "start_line": 1,
+          "end_line": 653,
+          "dialogue_lines_all_branches": 232
+        },
+        {
+          "path": "12c2_2장_재판_목소리_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "7adc7559f4d0574ae36df4d96673e33d79eb4c42ba3689e67afa11bf1d331945",
+          "start_line": 1,
+          "end_line": 839,
+          "dialogue_lines_all_branches": 276
+        },
+        {
+          "path": "12c3_2장_재판_접촉과_투표_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "0774a3cff2f47322b20ea5885d311361a54fbdb639af2f8d9b13b130d48ed199",
+          "start_line": 1,
+          "end_line": 864,
+          "dialogue_lines_all_branches": 266
+        },
+        {
+          "path": "182_2장_재판_반복논의와_지목_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "813a0de8ff852bbfeb6252233c11c6f0e8a885ec890d73288263185501464f64",
+          "start_line": 1,
+          "end_line": 925,
+          "dialogue_lines_all_branches": 149
+        },
+        {
+          "path": "97_2장_뚜껑을_닫기_전의_사람들_보강.md",
+          "begin": null,
+          "end_exclusive": "## R2-09b",
+          "full_source_sha256": "72b37ce9bf88d81071062735d114a0f52f6042e030151bd44d581a3bfdaca04a",
+          "start_line": 1,
+          "end_line": 347,
+          "dialogue_lines_all_branches": 123
+        },
+        {
+          "path": "164_2장_재판_형식별_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "fedabfc4c31d37055561c219934f901a06f4d6b5cff98c80e61f4167bb3266f7",
+          "start_line": 1,
+          "end_line": 512,
+          "dialogue_lines_all_branches": 126
+        },
+        {
+          "path": "169_2_4_5_6장_우소다마와_후과_연속대본.md",
+          "begin": "## T2-LIE-01",
+          "end_exclusive": "## R2-LIE-B",
+          "full_source_sha256": "f5fbb029d2ab84c7dc96d64820fd53b86ee01693549913e1f6cd33c547bca4b7",
+          "start_line": 6,
+          "end_line": 98,
+          "dialogue_lines_all_branches": 29
+        },
+        {
+          "path": "179_2장_없는_사람의_목소리_연속대본.md",
+          "begin": "## T2-18-W179",
+          "end_exclusive": null,
+          "full_source_sha256": "8eafef9a345f63d229c768d7939065a6508a6647c5c583f284c01f3ab99bf3d6",
+          "start_line": 213,
+          "end_line": 296,
+          "dialogue_lines_all_branches": 27
+        },
+        {
+          "path": "141_2장_다른_사람을_넣는_자리_보강.md",
+          "begin": null,
+          "end_exclusive": "## R2-09c",
+          "full_source_sha256": "d8b4ca19d534edb3ce95f0fb78805925d62662f57ecaf23a3a988ff8a6d47deb",
+          "start_line": 1,
+          "end_line": 181,
+          "dialogue_lines_all_branches": 64
+        },
+        {
+          "path": "126_2장_멈출_수_있었을_거라는_말_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "f36b7597964071d952dcc83d6c74fcda32da4f531fa313b9e138bbb0e5b66de7",
+          "start_line": 1,
+          "end_line": 158,
+          "dialogue_lines_all_branches": 53
+        },
+        {
+          "path": "138_2장_돌아보게_하려던_손_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "313f902994946b23dd9ccc2198e30103d75d1ec1484cd112a9e8f9db8f4069d2",
+          "start_line": 1,
+          "end_line": 294,
+          "dialogue_lines_all_branches": 107
+        },
+        {
+          "path": "113_2장_한명만_내쪽에_서도_될텐데_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "88ee9744d66bfff587cfd6726ccb7a865a2e66ef49f5b0bf08497b9c99db6efb",
+          "start_line": 1,
+          "end_line": 360,
+          "dialogue_lines_all_branches": 122
+        },
+        {
+          "path": "158_2장_재구성만화_슬롯과_실제문답.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "1a4a284199cadd775ae330c3b42364c6591fbd37aa0a648d4af7f3739eb1d931",
+          "start_line": 1,
+          "end_line": 276,
+          "dialogue_lines_all_branches": 66
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "dialogue_characters_all_branches_upper_bound": 39191,
+      "dialogue_lines_all_branches": 1359,
+      "mio_share_of_spoken_corpus": 0.2209,
+      "npc_to_npc_speaker_changes_in_source_blocks": 659,
+      "all_branch_reading_minutes_under_assumptions": {
+        "250": 156.8,
+        "400": 98.0
+      },
+      "sources": [
+        {
+          "path": "13c1_3장_재판_몸의_이름_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "630c24f7e3df205d2c9ca2cc7b0494bd260f9f04c82bbae040d5b9281f4c327a",
+          "start_line": 1,
+          "end_line": 1000,
+          "dialogue_lines_all_branches": 323
+        },
+        {
+          "path": "13c2_3장_재판_미오가_만든_거짓말_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "5d2482be46e1d0eccc16ffed4011092886c26bb33bebb04df0df7544de2d551b",
+          "start_line": 1,
+          "end_line": 544,
+          "dialogue_lines_all_branches": 167
+        },
+        {
+          "path": "13c3_3장_재판_돌아가지_않은_사람_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "febaf0197e2e9620e64eb10db03659189c7dbae37300187f2249dd843032adb5",
+          "start_line": 1,
+          "end_line": 1026,
+          "dialogue_lines_all_branches": 337
+        },
+        {
+          "path": "110_3장_먼저_고개를_끄덕인_사람_보강.md",
+          "begin": "## T3-02a",
+          "end_exclusive": null,
+          "full_source_sha256": "585ad3788f58b66723e292e0f601eb4200d3a53a5e4f7e03cd2188cc8520b1f5",
+          "start_line": 207,
+          "end_line": 246,
+          "dialogue_lines_all_branches": 13
+        },
+        {
+          "path": "165_3장_재판_형식별_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "e9c619cb70d8c0431188b6a5199251f8897816edb343e02589c64c3e6ad1661e",
+          "start_line": 1,
+          "end_line": 353,
+          "dialogue_lines_all_branches": 77
+        },
+        {
+          "path": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "904b0bf7b33583f1a8a982aaac47d8a80b24d5f66a5733f85e35560d23b2fbb7",
+          "start_line": 1,
+          "end_line": 972,
+          "dialogue_lines_all_branches": 160
+        },
+        {
+          "path": "74_3장_읽어_주면_끝나는_질문_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "2bbebb4f86d15023487d168e8f1559db0ef9c1b677712d91f283ec8efca07a8b",
+          "start_line": 1,
+          "end_line": 146,
+          "dialogue_lines_all_branches": 43
+        },
+        {
+          "path": "169_2_4_5_6장_우소다마와_후과_연속대본.md",
+          "begin": "## T3-F-T2-LIE-B",
+          "end_exclusive": "## T4-LIE-01",
+          "full_source_sha256": "f5fbb029d2ab84c7dc96d64820fd53b86ee01693549913e1f6cd33c547bca4b7",
+          "start_line": 124,
+          "end_line": 140,
+          "dialogue_lines_all_branches": 5
+        },
+        {
+          "path": "128_3장_내_이름이면_오는_사람들_보강.md",
+          "begin": "## T3-23P",
+          "end_exclusive": null,
+          "full_source_sha256": "2d73ea7471b9e6fc26169c5f232382bc436030ed902d2aeeae82667377bc3adc",
+          "start_line": 117,
+          "end_line": 126,
+          "dialogue_lines_all_branches": 1
+        },
+        {
+          "path": "102_3장_아직_그_목소리가_나는_자리_보강.md",
+          "begin": null,
+          "end_exclusive": "## R3-04a",
+          "full_source_sha256": "139cc7632fd673f18e5eef1da26ac817c7247d830c61bd5229aeaa38a06c71b3",
+          "start_line": 1,
+          "end_line": 271,
+          "dialogue_lines_all_branches": 83
+        },
+        {
+          "path": "116_3장_다음에도_필요한_사람_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "cd035964f286d22249ae640749d9e138fad7f80b7e991392cb8a2f25a3c34eaa",
+          "start_line": 1,
+          "end_line": 196,
+          "dialogue_lines_all_branches": 63
+        },
+        {
+          "path": "172_2장_네가_선생님이면_연속대본.md",
+          "begin": "## T3-39-F-172",
+          "end_exclusive": null,
+          "full_source_sha256": "0e884f414a4d4d7d26e16fa6e1d335c08b0e7879d2105d80f7f237efa1bcf52a",
+          "start_line": 277,
+          "end_line": 330,
+          "dialogue_lines_all_branches": 21
+        },
+        {
+          "path": "159_3장_재구성만화_슬롯과_실제문답.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "2ade130b821867bfa7c7edf4347e42a9d3ab78bbaba6faaac10a2e3c2ff360e6",
+          "start_line": 1,
+          "end_line": 276,
+          "dialogue_lines_all_branches": 66
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "dialogue_characters_all_branches_upper_bound": 38518,
+      "dialogue_lines_all_branches": 1240,
+      "mio_share_of_spoken_corpus": 0.246,
+      "npc_to_npc_speaker_changes_in_source_blocks": 575,
+      "all_branch_reading_minutes_under_assumptions": {
+        "250": 154.1,
+        "400": 96.3
+      },
+      "sources": [
+        {
+          "path": "14c1_4장_재판_죽은_시간_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "72c5747dca71aa6e828622cb63635dbaa201482484b15bf074f003c29efb0226",
+          "start_line": 1,
+          "end_line": 562,
+          "dialogue_lines_all_branches": 184
+        },
+        {
+          "path": "14c2_4장_재판_남겨_두고_싶은_것_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "2268809a3f3fec6b47571460a93390d49a41c885c6edf4f0ee509330f06db974",
+          "start_line": 1,
+          "end_line": 518,
+          "dialogue_lines_all_branches": 161
+        },
+        {
+          "path": "14c3_4장_재판_남의_선택을_닫은_사람_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "905e0320e1e239f50b813983aab116b1686abfe1e7e9017f52d8309be8de32e5",
+          "start_line": 1,
+          "end_line": 876,
+          "dialogue_lines_all_branches": 278
+        },
+        {
+          "path": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "76ae6735f1906216b9c8bb04e0ba257ab87548a0cb5902a357c4ddff47862803",
+          "start_line": 1,
+          "end_line": 923,
+          "dialogue_lines_all_branches": 146
+        },
+        {
+          "path": "166_4장_재판_형식별_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "58051c5ce7db9f74ceb50bb5b46abc6937ec2eead9f0653b68b0072ace1dbf24",
+          "start_line": 1,
+          "end_line": 317,
+          "dialogue_lines_all_branches": 66
+        },
+        {
+          "path": "169_2_4_5_6장_우소다마와_후과_연속대본.md",
+          "begin": "## T4-LIE-01",
+          "end_exclusive": "## R4-LIE-B",
+          "full_source_sha256": "f5fbb029d2ab84c7dc96d64820fd53b86ee01693549913e1f6cd33c547bca4b7",
+          "start_line": 140,
+          "end_line": 218,
+          "dialogue_lines_all_branches": 24
+        },
+        {
+          "path": "99_4장_문_밖이라고_부른_곳_보강.md",
+          "begin": null,
+          "end_exclusive": "## R4-07a",
+          "full_source_sha256": "89bf679b39905d02866bf972646f6437bed7cda6ad27afef2435ff33dbcac597",
+          "start_line": 1,
+          "end_line": 275,
+          "dialogue_lines_all_branches": 96
+        },
+        {
+          "path": "77_4장_같이_있었다는_말_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "a92ff75a161003513488320ee0f0d9ae17426de3d8cd29f8bec6148c0bc38b96",
+          "start_line": 1,
+          "end_line": 164,
+          "dialogue_lines_all_branches": 61
+        },
+        {
+          "path": "131_4장_이번에도_거짓말이라면_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "3b5ee38b417b60054dba53c53e8de851c664f5bca42a894c0aea6bdc4377a26b",
+          "start_line": 1,
+          "end_line": 264,
+          "dialogue_lines_all_branches": 90
+        },
+        {
+          "path": "114_4장_같은_얼굴을_더_만들_수_있다면_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "80fed36f8788fb62fcc85a248f0bded3267c627764bfc95fc7d8c8040ddebe53",
+          "start_line": 1,
+          "end_line": 228,
+          "dialogue_lines_all_branches": 74
+        },
+        {
+          "path": "160_4장_재구성만화_슬롯과_실제문답.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "ccedd8db571421c06bd4ed4db3a3d1dd094ba3fadec7d955ed6c68189eff46da",
+          "start_line": 1,
+          "end_line": 262,
+          "dialogue_lines_all_branches": 60
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "dialogue_characters_all_branches_upper_bound": 41662,
+      "dialogue_lines_all_branches": 1486,
+      "mio_share_of_spoken_corpus": 0.2052,
+      "npc_to_npc_speaker_changes_in_source_blocks": 764,
+      "all_branch_reading_minutes_under_assumptions": {
+        "250": 166.6,
+        "400": 104.2
+      },
+      "sources": [
+        {
+          "path": "15c1_5장_재판_빈잔의_자백_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "6570c1a69c43a5b8da8c45e315500b95e6694e21f4a335821d26441539804da6",
+          "start_line": 1,
+          "end_line": 678,
+          "dialogue_lines_all_branches": 200
+        },
+        {
+          "path": "15c2_5장_재판_열었던_손_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "51aea4c1622fe503cd3fc8c6d59ab803e94a4ccce300c1760c50f92881db28fc",
+          "start_line": 1,
+          "end_line": 1068,
+          "dialogue_lines_all_branches": 356
+        },
+        {
+          "path": "15c3_5장_재판_남겨_두려던_사람_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "4ebea391757e84257137050018e4615995be62489d9ee3d4707def64021d42eb",
+          "start_line": 1,
+          "end_line": 977,
+          "dialogue_lines_all_branches": 310
+        },
+        {
+          "path": "167_5장_재판_형식별_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "7c72b1e949385cf6ee2a4182da09c134821eadbc46b82b3f0501054133430e0d",
+          "start_line": 1,
+          "end_line": 319,
+          "dialogue_lines_all_branches": 70
+        },
+        {
+          "path": "185_5장_재판_반복논의와_지목_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "e15c2df443fa2af33a2a0ba9509d79c734c21da7c846e63b035c15a04486fef0",
+          "start_line": 1,
+          "end_line": 1003,
+          "dialogue_lines_all_branches": 163
+        },
+        {
+          "path": "100_5장_돌아온_잔_남아_있는_글_보강.md",
+          "begin": null,
+          "end_exclusive": "## R5-06a",
+          "full_source_sha256": "82242ce5447e196e533fcb49b5ceee810d6ea666e1db939267761f48908c0a93",
+          "start_line": 1,
+          "end_line": 281,
+          "dialogue_lines_all_branches": 92
+        },
+        {
+          "path": "76_5장_믿지_않는_사람의_증언_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "6991aa2883152569f74632faf919675472cf1dbb57a6d033c4ef3391b3725a36",
+          "start_line": 1,
+          "end_line": 120,
+          "dialogue_lines_all_branches": 34
+        },
+        {
+          "path": "109_5장_네가_버려_주겠다고_했잖아_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "af1fee6966024040eb2381105759ae710b8e04e939c9c7e02e8b05ad5aed2549",
+          "start_line": 1,
+          "end_line": 242,
+          "dialogue_lines_all_branches": 83
+        },
+        {
+          "path": "119_5장_상처가_없다는_말을_믿었던_사람_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "a4653a12fbbd57f725db2d81e86d3c54c80c068d948719b890beaafdabd7a3be",
+          "start_line": 1,
+          "end_line": 130,
+          "dialogue_lines_all_branches": 41
+        },
+        {
+          "path": "161_5장_재구성만화_슬롯과_실제문답.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "95291cd90b8484e91cf2b408f69c45ac56b6d22e4819b2a1c5a7ba384960ce3b",
+          "start_line": 1,
+          "end_line": 258,
+          "dialogue_lines_all_branches": 57
+        },
+        {
+          "path": "81_5장_네가_미안하다면_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "58a8f3956602760430f4ccbadf787b732733532196fdab4a270116ec6b8442fa",
+          "start_line": 1,
+          "end_line": 168,
+          "dialogue_lines_all_branches": 55
+        },
+        {
+          "path": "169_2_4_5_6장_우소다마와_후과_연속대본.md",
+          "begin": "## T5-LIE-01",
+          "end_exclusive": "## R5-LIE-B",
+          "full_source_sha256": "f5fbb029d2ab84c7dc96d64820fd53b86ee01693549913e1f6cd33c547bca4b7",
+          "start_line": 228,
+          "end_line": 308,
+          "dialogue_lines_all_branches": 25
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "dialogue_characters_all_branches_upper_bound": 39860,
+      "dialogue_lines_all_branches": 1404,
+      "mio_share_of_spoken_corpus": 0.2822,
+      "npc_to_npc_speaker_changes_in_source_blocks": 571,
+      "all_branch_reading_minutes_under_assumptions": {
+        "250": 159.4,
+        "400": 99.7
+      },
+      "sources": [
+        {
+          "path": "16c1_6장_재판_빈_자리의_이름_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "8fa620dade1182e499ce3cda784a46db85ba81e3d3c088b9b069c24d251f2f2e",
+          "start_line": 1,
+          "end_line": 366,
+          "dialogue_lines_all_branches": 103
+        },
+        {
+          "path": "16c2_6장_재판_밀어낸_다음의_침묵_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "aecd5eae2114c8ae1adc9cc5465d42b4435816b6c97be0f5ceef85f201b8f930",
+          "start_line": 1,
+          "end_line": 1126,
+          "dialogue_lines_all_branches": 369
+        },
+        {
+          "path": "16c3_6장_재판_같은_이름을_고른_사람들_초고.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "444f7b5afaa4b29f01e430c525e5d373f81565491d3720f8c09d5713639edf3e",
+          "start_line": 1,
+          "end_line": 554,
+          "dialogue_lines_all_branches": 170
+        },
+        {
+          "path": "186_6장_재판_반복논의와_지목_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "135bbbbb5d71c7329f249298bd98a3ef81e31830777206ffca150665cd8e67b2",
+          "start_line": 1,
+          "end_line": 838,
+          "dialogue_lines_all_branches": 136
+        },
+        {
+          "path": "168_6장_재판_형식별_연속대본.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "3fc6490c48c5af1c02096b3e67a7010302ff29f5c298352643e9fbb3fa44346f",
+          "start_line": 1,
+          "end_line": 311,
+          "dialogue_lines_all_branches": 73
+        },
+        {
+          "path": "104_6장_서로_다른_날의_열다섯_보강.md",
+          "begin": null,
+          "end_exclusive": "## R6-11a",
+          "full_source_sha256": "51063deee9f4f04acaa6e4e24d6291189ce48112684d76ea231c6bcc65ea9ba9",
+          "start_line": 1,
+          "end_line": 237,
+          "dialogue_lines_all_branches": 73
+        },
+        {
+          "path": "96_6장_대답할_사람이_없는_반론_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "879f80087bf1261afecce7c41ba6a31087c8ba8a0b763148aa0f13b8b4785245",
+          "start_line": 1,
+          "end_line": 372,
+          "dialogue_lines_all_branches": 130
+        },
+        {
+          "path": "107_6장_한_사람을_고르면_편해지는_이름들_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "2c270ee53d5c1e364fd61fc1d2b1f6a617f0a356b9aab77b58892d6c2798ac76",
+          "start_line": 1,
+          "end_line": 372,
+          "dialogue_lines_all_branches": 128
+        },
+        {
+          "path": "118_6장_우리라고_말하면_빠지는_이름_보강.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "a54225bde42738f3231b099e3afc94177fbdee12b8add49c5af8b52afe6b244a",
+          "start_line": 1,
+          "end_line": 228,
+          "dialogue_lines_all_branches": 81
+        },
+        {
+          "path": "169_2_4_5_6장_우소다마와_후과_연속대본.md",
+          "begin": "## T6-LIE-01",
+          "end_exclusive": "## R6-F-LIE-B",
+          "full_source_sha256": "f5fbb029d2ab84c7dc96d64820fd53b86ee01693549913e1f6cd33c547bca4b7",
+          "start_line": 330,
+          "end_line": 408,
+          "dialogue_lines_all_branches": 22
+        },
+        {
+          "path": "162_6장_두_시간줄_재구성과_실제문답.md",
+          "begin": null,
+          "end_exclusive": null,
+          "full_source_sha256": "449b6b8e6e213f0ac2d7b4d26acad74c5058734301ce5508c57bd8869f30ca7d",
+          "start_line": 1,
+          "end_line": 454,
+          "dialogue_lines_all_branches": 119
+        }
+      ]
+    }
+  ]
+}

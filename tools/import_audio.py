@@ -18,7 +18,7 @@ SE = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else pathlib.Path.home() / "D
 # 큐 → (원곡 파일 앞부분, 쓰는 곳). V3 에서 그 곡이 나오는 자리에 맞춰 고른 것(docs/spec/16 §5).
 # 단간론파답지 않은 곡(클래식 「Clair de Lune」, 성가풍 「Spirit, Praise, and Beauty」, 삽입곡 「Caged Child」, 「Pretitle」)은 쓰지 않는다(사용자 지시).
 BGM = {
- "bgm_title": ("1-01. DANGANRONPA V3.mp3", "타이틀"),
+ "bgm_title": ("1-02. Danganronpa! V3!.mp3", "타이틀 (V3 BGM002)"),
  "bgm_pretitle": ("2-01. Danganronpa V3 (Loop Version)", "오프닝 타이틀 장면(00-1)"),
  "bgm_pro_arrival": ("1-11. Nightmare in the Locker", "프롤로그 : 눈뜨기·정문"),
  "bgm_pro_intro": ("1-03. Rise of the Ultimates", "프롤로그 : 자기소개"),
@@ -41,10 +41,10 @@ BGM = {
  "bgm_sad": ("2-12. Moon on the Water", "유품·소멸"),
  "bgm_warm": ("2-17. Wonderful Story", "마지막 대화·약속"),
  "bgm_motive": ("1-23. Heaven of Almost Hell", "동기 발표 뒤"),
- "bgm_investigation": ("1-17. Despair Searching.mp3", "수사"),
- "bgm_investigation_final": ("2-08. Hope Searching", "6장 수사"),
+ "bgm_investigation": ("1-17. Despair Searching.mp3", "1~4장 수사 (V3 BGM009)"),
+ "bgm_investigation_final": ("2-08. Hope Searching", "5·6장 수사 (V3 BGM010)"),
  "bgm_trial_prep": ("3-04. Trial Preparation", "수사 종료 → 재판 준비"),
- "bgm_elevator": ("1-07. Our Class Trial", "재판장 엘리베이터"),
+ "bgm_elevator": ("1-07. Our Class Trial", "변론준비·재판장 진입 (V3 BGM032)"),
  "bgm_trial_main_1": ("1-13. Class Trial - Sun Edition V3.mp3", "1장 재판"),
  "bgm_trial_main_2": ("1-09. Class Trial - Space Edition", "2장 재판"),
  "bgm_trial_main_3": ("1-08. Class Trial - Dawn Edition", "3장 재판"),
@@ -68,6 +68,7 @@ BGM = {
  "bgm_trial_taxi": ("1-20. Psyche Taxi", "브레인 드라이브"),
  "bgm_trial_anagram": ("1-17. Hangman's Gambit", "섬광 애너그램"),
  "bgm_trial_climax": ("2-22. Closing Argument V3", "클라이맥스 추리"),
+ "bgm_trial_climax_replay": ("2-23. Climatic Re-Enactment V3", "클라이맥스 복기 (V3 BGM085)"),
  "bgm_trial_truth": ("2-15. Sing the Empty Truth", "투표 뒤 진상"),
  "bgm_trial_end": ("3-16. Trial END", "재판 결과"),
  "bgm_punishment_time": ("2-18. Destruction Of", "처형"),
@@ -102,7 +103,7 @@ SFX = {
  "sfx_footstep": (141, "걷는 발소리"), "sfx_run": (142, "달리는 발소리"), "sfx_room_move": (140, "장소 이동"),
  "sfx_hover_person": (18, "인물 위 커서"), "sfx_talk_in": (19, "말 걸기"), "sfx_talk_out": (20, "대화 끝"), "sfx_hotspot": (126, "조사 대상 표시"), "sfx_inspect": (116, "조사"),
  "sfx_card": (21, "언령·교칙 획득"), "sfx_note": (7, "노트에 적기"),
- "sfx_coin": (102, "코인"), "sfx_capsule": (103, "캡슐 레버"), "sfx_capsule_open": (105, "캡슐 열림"),
+ "sfx_coin": (102, "코인"), "sfx_capsule": (103, "캡슐 레버"), "sfx_capsule_open": (105, "캡슐 열림"), "sfx_capsule_bonus": (104, "추가 캡슐 연출"),
  "sfx_bond_up": (122, "인연 상승"), "sfx_wrong": (123, "오답·싫어하는 선물"), "sfx_correct": (2, "정답·제출"), "sfx_band": (23, "자유행동·수사 개시 띠"),
  "sfx_rappy": (133, "래피 등장·퇴장"), "sfx_shock": (31, "충격(시체 발견·결정적 발언)"), "sfx_flashback": (30, "회상 전환"),
  "emo_angry": (25, "호통"), "emo_basic": (26, "강조"), "emo_surprise": (27, "놀람·깨달음"), "emo_excited": (28, "주장·흥분"), "emo_shout": (29, "깜짝 외침"), "emo_gloomy": (37, "침울·난감"),
@@ -197,7 +198,7 @@ def decode_stereo(f):
     return np.frombuffer(raw, np.float32).reshape(-1, 2)
 
 def encode(pcm, out):
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-c:a", "libvorbis", "-q:a", "4", str(out)], input=np.ascontiguousarray(pcm, np.float32).tobytes(), check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-c:a", "libvorbis", "-q:a", "3", str(out)], input=np.ascontiguousarray(pcm, np.float32).tobytes(), check=True)
 
 def write_loop(st, s, L, out_body, out_intro):
     """반복 부분 st[s:s+L] : 끝 30ms 를 st[s-N:s] 와 섞어 끝→처음이 이어지게"""
@@ -220,19 +221,34 @@ def main():
     report = []
     for cue, (prefix, use) in BGM.items():
         f = find(prefix); st = decode_stereo(f); x = st.mean(1)
-        lp = loop_points(f.name, x, SR, research)
+        if cue == "bgm_title":
+            # OST cut-in uses the published title arrangement. The period is from BGM002.
+            lp = (round(774144 * SR / 44100), round(2972903 * SR / 48000), None, "V3 BGM002")
+        elif cue == "bgm_investigation":
+            lp = (round(810433 * SR / 48000), round(10440000 * SR / 48000), None, "V3 BGM009")
+        elif cue == "bgm_investigation_final":
+            # BGM010 carries the chapter 5 and 6 investigation loops.
+            lp = (round(4505433 * SR / 48000), round(17999999 * SR / 48000), 1, "V3 BGM010")
+        elif cue == "bgm_elevator":
+            lp = (round(1064833 * SR / 48000), round(2459076 * SR / 48000), 1, "V3 BGM032")
+        elif cue == "bgm_trial_climax_replay":
+            # BGM085 bank metadata, converted to the OST output sample rate.
+            lp = (round(1344605 * SR / 48000), round(8192000 * SR / 48000), 1, "V3 BGM085")
+        else:
+            lp = loop_points(f.name, x, SR, research)
         if lp:
             s, L, c, how = lp
             write_loop(st, s, L, bgm_dir / f"{cue}.ogg", bgm_dir / f"{cue}_intro.ogg")
             cues["bgm"][cue] = {"use": use, "src": f.name, "file": f"bgm/{cue}.ogg", "intro": f"bgm/{cue}_intro.ogg", "introLen": round(s / SR, 3), "loop": [round(s / SR, 3), round((s + L) / SR, 3)]}
-            report.append(f"{cue}: {how} 루프 {s / SR:.2f}~{(s + L) / SR:.2f}s 상관 {c:.3f}")
+            correlation = f" 상관 {c:.3f}" if c is not None else ""
+            report.append(f"{cue}: {how} 루프 {s / SR:.2f}~{(s + L) / SR:.2f}s{correlation}")
         else:
-            ffmpeg("-i", str(f), "-c:a", "libvorbis", "-q:a", "4", str(bgm_dir / f"{cue}.ogg"))
+            ffmpeg("-i", str(f), "-c:a", "libvorbis", "-q:a", "3", str(bgm_dir / f"{cue}.ogg"))
             cues["bgm"][cue] = {"use": use, "src": f.name, "file": f"bgm/{cue}.ogg"}
             report.append(f"{cue}: 루프 못 찾음 → 통째로 반복")
     for cue, (prefix, use) in JINGLE.items():
         f = find(prefix)
-        ffmpeg("-i", str(f), "-c:a", "libvorbis", "-q:a", "4", str(bgm_dir / f"{cue}.ogg"))
+        ffmpeg("-i", str(f), "-c:a", "libvorbis", "-q:a", "3", str(bgm_dir / f"{cue}.ogg"))
         cues["jingle"][cue] = {"use": use, "src": f.name, "file": f"bgm/{cue}.ogg", "len": round(len(decode(f, 8000)) / 8000, 2)}
     for cue, (no, use) in SFX.items():
         f = next(SE.rglob(f"HS_SE_{no:03d}*.wav"))

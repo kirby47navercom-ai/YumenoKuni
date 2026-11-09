@@ -8,6 +8,10 @@
 #   인물 대사 : 표정(emo)이 튀는 순간 강조 효과음(호통·놀람·흥분·침울), 무대 설명의 문·발소리·노크 등은 그 소리.
 import re
 
+# The V4 compiler uses stable manuscript blocks and state transitions.  Keep the
+# legacy scorer below for the old shipped flow; never infer V4 sounds from emo.
+from v4_presentation import score_v4, score_trials_v4, score_graph_v4, score_tasks_v4
+
 DAILY = {"P": "bgm_daily_pro", "1": "bgm_daily_pastel", "2": "bgm_daily_summer", "3": "bgm_daily_night", "4": "bgm_daily_grey", "5": "bgm_daily_mono", "6": "bgm_core"}
 # 사건 전야 : 동기 뒤 사건까지 (장면 UID)
 TENSE = {"12a:2-S8-a", "12a:2-S8-b", "12a:2-S8-c", "14a:4-S9", "14a:4-S10-a", "14a:4-S10-b", "14a:4-S10-c", "15a:5-S8-a", "15a:5-S8-b", "13a:3-M-02", "13a:3-M-03"}

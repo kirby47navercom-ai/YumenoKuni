@@ -214,6 +214,7 @@ def composite(plate, figure, place, dst, bleed=True):
 
 
 def run(token, name, positive, negative, dst, n, raw=False):
+    raise SystemExit('NAI generation disabled by current user instruction; no request sent.')
     cand = os.path.join(ROOT, "art", "_candidates", "scene")
     os.makedirs(cand, exist_ok=True)
     for k in range(n):

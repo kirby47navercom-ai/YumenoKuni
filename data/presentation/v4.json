@@ -1,0 +1,1635 @@
+{
+  "version": 1,
+  "contentVersion": "v4",
+  "actions": {
+    "ui_focus": {
+      "when": "focus key changed",
+      "sfx": [
+        {
+          "cue": "v3se_005",
+          "gain": 0.6,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 70,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "ui_confirm": {
+      "when": "valid choice accepted",
+      "sfx": [
+        {
+          "cue": "v3se_001",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "ui_cancel": {
+      "when": "back action accepted",
+      "sfx": [
+        {
+          "cue": "v3se_004",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "ui_reject": {
+      "when": "invalid request rejected without advancement",
+      "sfx": [
+        {
+          "cue": "v3se_000",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "pad_open": {
+      "when": "pad changed from closed to open",
+      "sfx": [
+        {
+          "cue": "ui_pad",
+          "gain": 0.65,
+          "bus": "ui"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "pad_close": {
+      "when": "pad changed from open to closed",
+      "sfx": [
+        {
+          "cue": "ui_pad_close",
+          "gain": 0.65,
+          "bus": "ui"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "page_turn": {
+      "when": "page index changed",
+      "sfx": [
+        {
+          "cue": "v4_paper_turn",
+          "gain": 0.6,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "room_enter": {
+      "when": "room transition committed, not every loading tick",
+      "sfx": [
+        {
+          "cue": "sfx_room_move",
+          "gain": 0.6,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "door_locked": {
+      "when": "locked door activation rejected",
+      "sfx": [
+        {
+          "cue": "sfx_locked",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "knock": {
+      "when": "actual authored knock occurred, not a failed intention or recollection",
+      "sfx": [
+        {
+          "cue": "sfx_knock",
+          "gain": 0.6,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "door_open": {
+      "when": "door hinge animation actually began",
+      "sfx": [
+        {
+          "cue": "v4_door_hinge",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "door_closed": {
+      "when": "door leaf reached closed contact",
+      "sfx": [
+        {
+          "cue": "v4_door_wood_close",
+          "gain": 0.75,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "latch_open": {
+      "when": "latch release contact occurred",
+      "sfx": [
+        {
+          "cue": "v4_metal_latch_release",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "latch_closed": {
+      "when": "latch seats at closed pose",
+      "sfx": [
+        {
+          "cue": "v4_metal_latch_close",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "talk_start": {
+      "when": "talk target accepted",
+      "sfx": [
+        {
+          "cue": "sfx_talk_in",
+          "gain": 0.65,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "talk_end": {
+      "when": "conversation returned to exploration",
+      "sfx": [
+        {
+          "cue": "sfx_talk_out",
+          "gain": 0.65,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "inspect": {
+      "when": "inspect target accepted",
+      "sfx": [
+        {
+          "cue": "sfx_inspect",
+          "gain": 0.65,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "evidence_acquired": {
+      "when": "new evidence id committed",
+      "sfx": [
+        {
+          "cue": "v4_evidence_acquired",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_evidence_reveal_r1"
+    },
+    "evidence_revised": {
+      "when": "existing evidence version changed",
+      "sfx": [
+        {
+          "cue": "v4_evidence_revised",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_evidence_reveal_r1"
+    },
+    "body_reveal": {
+      "when": "authored dead-body reveal reached; never unresponsive alone",
+      "sfx": [
+        {
+          "cue": "sfx_shock",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "stop",
+        "fade_seconds": 0.12
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_discovery_border_r1"
+    },
+    "body_announcement": {
+      "when": "authored announcement reached after required confirmations",
+      "sfx": [
+        {
+          "cue": "sfx_body_chime",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "refute": {
+      "when": "validated refutation accepted",
+      "sfx": [
+        {
+          "cue": "v3se_309",
+          "gain": 0.9,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_statement_fracture_r1"
+    },
+    "agree": {
+      "when": "validated agreement accepted",
+      "sfx": [
+        {
+          "cue": "v3se_310",
+          "gain": 0.85,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_argument_impact_r1"
+    },
+    "lie": {
+      "when": "validated perjury accepted after its cost, not charge alone",
+      "sfx": [
+        {
+          "cue": "v3se_308",
+          "gain": 0.85,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_argument_impact_r1"
+    },
+    "shot_fire": {
+      "when": "projectile created after input permitted",
+      "sfx": [
+        {
+          "cue": "sfx_gunshot",
+          "gain": 0.55,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "shot_miss": {
+      "when": "projectile expires or validated wrong target",
+      "sfx": [
+        {
+          "cue": "v3se_307",
+          "gain": 0.75,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_miss_deflection_r1"
+    },
+    "trial_wrong": {
+      "when": "logical wrong-answer outcome committed",
+      "sfx": [
+        {
+          "cue": "v3se_316",
+          "gain": 0.85,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "selection_correct": {
+      "when": "correct person/evidence/answer/region judgment committed",
+      "sfx": [
+        {
+          "cue": "v3se_310",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "slash_hit": {
+      "when": "showdown slice intersects a valid cuttable segment",
+      "sfx": [
+        {
+          "cue": "v3se_375",
+          "gain": 0.85,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_slash_trail_r1"
+    },
+    "scrum_link": {
+      "when": "correct opposing claim/evidence link committed",
+      "sfx": [
+        {
+          "cue": "v3se_361",
+          "gain": 0.85,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_scrum_link_sparks_r1"
+    },
+    "climax_insert": {
+      "when": "panel placement passed actual slot validation",
+      "sfx": [
+        {
+          "cue": "v3se_310",
+          "gain": 0.8,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "climax_page": {
+      "when": "comic page changed",
+      "sfx": [
+        {
+          "cue": "v3se_007",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "camera_whip": {
+      "when": "directed camera transition began",
+      "sfx": [
+        {
+          "cue": "sfx_flash",
+          "gain": 0.3,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_camera_whip_streak_r1"
+    },
+    "rewind_confirmed": {
+      "when": "script confirms actual ability use, not allegation or discussion",
+      "sfx": [
+        {
+          "cue": "v4_memory_scan",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "fx_rewind_scan_r1"
+    },
+    "camera_capture": {
+      "when": "story permits and actually takes a new photograph",
+      "sfx": [
+        {
+          "cue": "v4_camera_shutter",
+          "gain": 0.75,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "note_written": {
+      "when": "new note line committed",
+      "sfx": [
+        {
+          "cue": "sfx_note",
+          "gain": 0.65,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "coin_award": {
+      "when": "positive coin delta committed",
+      "sfx": [
+        {
+          "cue": "sfx_coin",
+          "gain": 0.65,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "bond_up": {
+      "when": "bond level actually crossed threshold",
+      "sfx": [
+        {
+          "cue": "sfx_bond_up",
+          "gain": 0.65,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "broadcast_on": {
+      "when": "actual monitor broadcast starts",
+      "sfx": [
+        {
+          "cue": "sfx_tv",
+          "gain": 0.6,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "broadcast_off": {
+      "when": "actual monitor switches off",
+      "sfx": [
+        {
+          "cue": "sfx_tv_off",
+          "gain": 0.6,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "elevator_start": {
+      "when": "elevator starts moving",
+      "sfx": [
+        {
+          "cue": "sfx_elevator",
+          "gain": 0.7,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "elevator_stop": {
+      "when": "elevator has stopped",
+      "sfx": [
+        {
+          "cue": "sfx_elevator_stop",
+          "gain": 0.75,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "scene_cover": {
+      "when": "transition owns input before scene replacement",
+      "sfx": [
+        {
+          "cue": "sfx_room_move",
+          "gain": 0.45,
+          "bus": "sfx"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "scene_ink_cover"
+    },
+    "scene_uncover": {
+      "when": "new scene ready; uncover does not advance story",
+      "sfx": [],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "scene_ink_uncover"
+    },
+    "concentration_on": {
+      "when": "focus active; keep or use reduced-motion static border",
+      "sfx": [],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "sequence": "concentration_border_native_r2"
+    },
+    "concentration_off": {
+      "when": "focus released; remove border without success feedback",
+      "sfx": [],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    },
+    "ending_choice": {
+      "when": "moral/support choice accepted; no right/wrong reward",
+      "sfx": [
+        {
+          "cue": "v4_ui_confirm",
+          "gain": 0.45,
+          "bus": "ui"
+        }
+      ],
+      "music": {
+        "operation": "keep"
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true,
+      "no_success_reward": true
+    },
+    "support_stopped": {
+      "when": "actual support state switched off; no execution/reward cue",
+      "sfx": [],
+      "music": {
+        "operation": "stop",
+        "fade_seconds": 0.4
+      },
+      "coalesce_ms": 0,
+      "repeat": "state-edge",
+      "cancel_on_mode_exit": true
+    }
+  },
+  "sequences": {
+    "fx_argument_impact_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_argument_impact_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_camera_whip_streak_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_camera_whip_streak_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_discovery_border_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_discovery_border_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_evidence_reveal_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_evidence_reveal_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_miss_deflection_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_miss_deflection_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_rewind_scan_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_rewind_scan_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_scene_ink_wipe_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scene_ink_wipe_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_scrum_link_sparks_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_scrum_link_sparks_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_slash_trail_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_slash_trail_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "fx_statement_fracture_r1": {
+      "frames": [
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_00.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_01.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_02.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_03.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_04.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_05.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_06.webp",
+        "art/completion_v4/fx_flipbook/cells/fx_statement_fracture_r1_07.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 0.5,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "concentration_border_native_r2": {
+      "frames": [
+        "ui/v4/motion_hd/concentration_border_native_r2_00.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_01.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_02.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_03.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_04.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_05.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_06.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_07.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_08.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_09.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_10.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_11.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_12.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_13.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_14.webp",
+        "ui/v4/motion_hd/concentration_border_native_r2_15.webp"
+      ],
+      "fps": 16,
+      "loop": true,
+      "seconds": 1.0,
+      "reduced_motion": "static-opacity-.12",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "panic_noise_native_r2": {
+      "frames": [
+        "ui/v4/motion_hd/panic_noise_native_r2_00.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_01.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_02.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_03.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_04.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_05.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_06.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_07.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_08.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_09.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_10.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_11.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_12.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_13.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_14.webp",
+        "ui/v4/motion_hd/panic_noise_native_r2_15.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 1.0,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "scene_ink_cover": {
+      "frames": [
+        "ui/v4/motion_hd/scene_ink_cover_00.webp",
+        "ui/v4/motion_hd/scene_ink_cover_01.webp",
+        "ui/v4/motion_hd/scene_ink_cover_02.webp",
+        "ui/v4/motion_hd/scene_ink_cover_03.webp",
+        "ui/v4/motion_hd/scene_ink_cover_04.webp",
+        "ui/v4/motion_hd/scene_ink_cover_05.webp",
+        "ui/v4/motion_hd/scene_ink_cover_06.webp",
+        "ui/v4/motion_hd/scene_ink_cover_07.webp",
+        "ui/v4/motion_hd/scene_ink_cover_08.webp",
+        "ui/v4/motion_hd/scene_ink_cover_09.webp",
+        "ui/v4/motion_hd/scene_ink_cover_10.webp",
+        "ui/v4/motion_hd/scene_ink_cover_11.webp",
+        "ui/v4/motion_hd/scene_ink_cover_12.webp",
+        "ui/v4/motion_hd/scene_ink_cover_13.webp",
+        "ui/v4/motion_hd/scene_ink_cover_14.webp",
+        "ui/v4/motion_hd/scene_ink_cover_15.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 1.0,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    },
+    "scene_ink_uncover": {
+      "frames": [
+        "ui/v4/motion_hd/scene_ink_uncover_00.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_01.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_02.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_03.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_04.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_05.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_06.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_07.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_08.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_09.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_10.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_11.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_12.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_13.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_14.webp",
+        "ui/v4/motion_hd/scene_ink_uncover_15.webp"
+      ],
+      "fps": 16,
+      "loop": false,
+      "seconds": 1.0,
+      "reduced_motion": "crossfade-.07-no-shake",
+      "input_owner": false,
+      "stop_on_mode_exit": true,
+      "completion": "hide-and-return-to-caller"
+    }
+  },
+  "original_cues": {
+    "v4_clock_tick": {
+      "file": "v4_original/clock_tick.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "quiet wall clock: trigger once per actual timer second, never use as universal BGM",
+      "len": 0.18,
+      "original_manifest_id": "clock_tick",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "63bfc22fa716eb714b117a98fb1af7b9a4b1dc823fbef67f5e7234c593232ab6"
+    },
+    "v4_clock_tock": {
+      "file": "v4_original/clock_tock.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "alternate clock tick, same clock source",
+      "len": 0.2,
+      "original_manifest_id": "clock_tock",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "d3024c661e33069eb7f4e392e78f6f387de872bf536083b5a88be882f778842b"
+    },
+    "v4_distant_bell": {
+      "file": "v4_original/distant_bell.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "single original offscreen bell resonance; no borrowed melody",
+      "len": 4.8,
+      "original_manifest_id": "distant_bell",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "f02176d4ae7ba4f2989a4b1fcdd61dae1370a1e81ededadf041148865eb0388e"
+    },
+    "v4_musicbox_single": {
+      "file": "v4_original/musicbox_single.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "one original toy-music-box pluck; authored sequence separate",
+      "len": 2.8,
+      "original_manifest_id": "musicbox_single",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "745d1751b42f7db075687cccecacaa8e9dc65af9647d79b5fb0842450894640a"
+    },
+    "v4_footstep_tile_1": {
+      "file": "v4_original/footstep_tile_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "tile footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_tile_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "540edc22c37d1d688fc362ef1032e1ab48b6bfa09bf6c9244ff09d76ebcf99ad"
+    },
+    "v4_footstep_tile_2": {
+      "file": "v4_original/footstep_tile_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "tile footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_tile_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "6c4f9d17cc02e2216b425b932d973fa17b182ea14417db2f66ca118f84f8552b"
+    },
+    "v4_footstep_wood_1": {
+      "file": "v4_original/footstep_wood_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "wood footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_wood_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "56152a693068307b25ff87a46776e3a5126e4f56be6f684ecd9ac66ad0cb5d19"
+    },
+    "v4_footstep_wood_2": {
+      "file": "v4_original/footstep_wood_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "wood footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_wood_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "6465fdb377cbff2f89b60b7c77f7472e307efefc19d3bb2b0d44934015bce1b0"
+    },
+    "v4_footstep_metal_1": {
+      "file": "v4_original/footstep_metal_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "metal footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_metal_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "1b64af691edfcfdaccb78ba388b4c09a450b2f17a73c84ef67f09f6820926d69"
+    },
+    "v4_footstep_metal_2": {
+      "file": "v4_original/footstep_metal_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "metal footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_metal_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "179db06c07d4259a80f4186b7a96db51b547a0d344dfffc2f05b5d86e5905238"
+    },
+    "v4_footstep_cloth_1": {
+      "file": "v4_original/footstep_cloth_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "cloth footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_cloth_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "46b9e57c86b121d4db01fbf4d8b52695cec2317a53538f22f67c1f62d9b27951"
+    },
+    "v4_footstep_cloth_2": {
+      "file": "v4_original/footstep_cloth_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "cloth footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_cloth_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "3fa21a59eb392851e876152bbf50b4ba24b1aa3f7955dae96bfbaa379d226d93"
+    },
+    "v4_ui_focus": {
+      "file": "v4_original/ui_focus.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "focus CHANGED event only, never every frame",
+      "len": 0.24,
+      "original_manifest_id": "ui_focus",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "cec4ee6c5ed8799eb7b1e2c01763d91fb4b7c577ff3a8edd05e903370dea3df9"
+    },
+    "v4_ui_confirm": {
+      "file": "v4_original/ui_confirm.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "accepted decision after permission check",
+      "len": 0.24,
+      "original_manifest_id": "ui_confirm",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "d0706b21b5886892784584af5c2b2f625717e368b8e4fd3f452452d60454e4fb"
+    },
+    "v4_ui_cancel": {
+      "file": "v4_original/ui_cancel.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "return/back accepted",
+      "len": 0.24,
+      "original_manifest_id": "ui_cancel",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "da2caa5fe71a372eda988a810cd7a36d5ad55a77ba3aa10cf534326a5fd1aa40"
+    },
+    "v4_ui_reject": {
+      "file": "v4_original/ui_reject.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "disabled/invalid request rejected, no state advance",
+      "len": 0.24,
+      "original_manifest_id": "ui_reject",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "34ae2b14ddde347aef3bc9ab851d5910333b476705194dba2f0d2da74c3e184e"
+    },
+    "v4_evidence_acquired": {
+      "file": "v4_original/evidence_acquired.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "first acquisition complete, not hover",
+      "len": 0.24,
+      "original_manifest_id": "evidence_acquired",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "068d80125c55fd5369ef0762e10bb6ef6985f4d70f7f456ac5cd661a80644f69"
+    },
+    "v4_evidence_revised": {
+      "file": "v4_original/evidence_revised.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "same evidence version updated, not duplicated acquisition",
+      "len": 0.24,
+      "original_manifest_id": "evidence_revised",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "844ce1ee02920d19ae6604ea9b4ed6cdd58f93708ca71136c2c1572d2ed51e8a"
+    },
+    "v4_paper_turn": {
+      "file": "v4_original/paper_turn.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "page-turn start; throttle on fast backlog scrolling",
+      "len": 0.48,
+      "original_manifest_id": "paper_turn",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "b449feef832d83dd67507e28d999cf78a0855983b9f8b103c9c07000e0ec72cc"
+    },
+    "v4_paper_insert": {
+      "file": "v4_original/paper_insert.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "comic piece successfully inserted after placement validation",
+      "len": 0.3,
+      "original_manifest_id": "paper_insert",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "be60ffb1626934ead9d5f3db8f55fc5c6c94bc4a35b70dbac5ce0ddc14a4c16e"
+    },
+    "v4_cloth_rustle": {
+      "file": "v4_original/cloth_rustle.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "clothing/brace handling; no gore implication",
+      "len": 0.65,
+      "original_manifest_id": "cloth_rustle",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "86c405f6a8c6ed06e2961aa99b84551d58ac17f3ec44057f3deea0fd6bf2b148"
+    },
+    "v4_metal_latch_release": {
+      "file": "v4_original/metal_latch_release.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "external latch-release animation contact",
+      "len": 0.27,
+      "original_manifest_id": "metal_latch_release",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "2ec52b01c18a0e21feb0475b96a05f208134b7da550a8bf0f0026ee466636ae6"
+    },
+    "v4_metal_latch_close": {
+      "file": "v4_original/metal_latch_close.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "latch seats, after closed pose actually reached",
+      "len": 0.3,
+      "original_manifest_id": "metal_latch_close",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "afa2a9646675ca2699b4d29edfcfa89e8d467b5f36f18e2ec1f2e9aa92651233"
+    },
+    "v4_door_wood_close": {
+      "file": "v4_original/door_wood_close.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "door-leaf close contact, not open permission event",
+      "len": 0.55,
+      "original_manifest_id": "door_wood_close",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "6f231c25407d9f04d83d83a7ba162d208031949d6d558b19fef799e102c2391e"
+    },
+    "v4_door_hinge": {
+      "file": "v4_original/door_hinge.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "quiet stylized hinge movement, trim/fade on interrupted animation",
+      "len": 1.1,
+      "original_manifest_id": "door_hinge",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "93b83cec4fb59ba36cca2d7b4106fcbf2bbf334d54846b637bfef3f48a359b15"
+    },
+    "v4_ink_impact": {
+      "file": "v4_original/ink_impact.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "single decisive hit feedback, never overwrite logical hit test",
+      "len": 0.55,
+      "original_manifest_id": "ink_impact",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "818daa56ab73dea2010b3f0a6c369022ce230782e243e40174e46f3394dde31a"
+    },
+    "v4_ink_slice": {
+      "file": "v4_original/ink_slice.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "single ink slash gesture, no real injury sound",
+      "len": 0.32,
+      "original_manifest_id": "ink_slice",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "534c415bcbf73e6026608ab94ebd8d6f68f8f7e6427e2992718d1927d8862e8a"
+    },
+    "v4_miss_brush": {
+      "file": "v4_original/miss_brush.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "non-hit deflection, distinct from successful impact",
+      "len": 0.35,
+      "original_manifest_id": "miss_brush",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "d5532aad5f2c021f2f52c1d1892582e677afb9e923c88f54a2d9ffc509f4e04b"
+    },
+    "v4_memory_scan": {
+      "file": "v4_original/memory_scan.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "one rewind/readback transition, no extra use or success claim",
+      "len": 0.95,
+      "original_manifest_id": "memory_scan",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "0a610bb4ae0d4587a2c58ac582cf391da48840cfbbfb5b37dd095ed7291daa9e"
+    },
+    "v4_camera_shutter": {
+      "file": "v4_original/camera_shutter.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "physical camera shutter only when story permits real capture",
+      "len": 0.16,
+      "original_manifest_id": "camera_shutter",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "ec1f52f97570f046e3a7cc62784e5508f63fa1813c89117987b0ae0e72cdfe72"
+    },
+    "v4_amb_room_air": {
+      "file": "v4_original/amb_room_air.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "quiet occupied interior air",
+      "len": 16.0,
+      "original_manifest_id": "amb_room_air",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.0008722840651602462
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "904e892e3709f05d902ad1edeec802b6fb59935e959d0112ddc632facc23f6ec"
+    },
+    "v4_amb_outside_wind": {
+      "file": "v4_original/amb_outside_wind.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "park air, no implied live machinery",
+      "len": 16.0,
+      "original_manifest_id": "amb_outside_wind",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.002857527930406385
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "27f5aa675e64691edac4a3342667594354033c3c20b5833b6a402c3f848a1b9c"
+    },
+    "v4_amb_machine_hum": {
+      "file": "v4_original/amb_machine_hum.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "powered maintenance equipment, stop when disconnected",
+      "len": 16.0,
+      "original_manifest_id": "amb_machine_hum",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.000521080343856388
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "a34340458d7d44db57cb69165e22fdd8eff518d49412d5750f012facd231ea88"
+    },
+    "v4_amb_water_flow": {
+      "file": "v4_original/amb_water_flow.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "actual running-water emitter only. Dry fountain MUST NOT receive this cue; use existing recorded fountain-speaker story cue separately.",
+      "len": 16.0,
+      "original_manifest_id": "amb_water_flow",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.005095966109923432
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "732dc8d08706691a8117690240fb7e1d57f83b412b740612014731554cc24bf4"
+    }
+  },
+  "trial_music": {
+    "panic": "bgm_trial_panic",
+    "scrum": "bgm_trial_scrum",
+    "showdown": "bgm_trial_showdown",
+    "mindmine": "bgm_trial_mindmine",
+    "anagram": "bgm_trial_anagram",
+    "reasoning": "bgm_trial_taxi",
+    "reasoning_link": "bgm_trial_taxi",
+    "taxi": "bgm_trial_taxi",
+    "climax": "bgm_trial_climax"
+  },
+  "music_policy": {
+    "same_cue": "keep-current-position",
+    "silence": "stop-and-clear-pending-chain",
+    "intro_end": "switch-to-authored-loop-file-once",
+    "modal_pad": "keep-playing",
+    "pause": "pause-is-distinct-from-stop; native support required",
+    "unavailable_cue": "report-missing; never silently mark as playing",
+    "restore": "restore-scene-bed-without-replaying-one-shot-reveal-or-jingle",
+    "loop_boundary": "supplied cue introLen/loop seconds retained; no claim of ACB sample identity"
+  },
+  "footsteps": {
+    "trigger": "movement-phase contact; no sounds for look-only or idle",
+    "surface_source": "explicit space material only, not room-name guess",
+    "fallback_surface": "tile",
+    "variants": {
+      "tile": [
+        "v3se_064",
+        "v3se_064_1",
+        "v3se_064_2"
+      ],
+      "wood": [
+        "v3se_064",
+        "v3se_064_1",
+        "v3se_064_2"
+      ],
+      "metal": [
+        "v3se_064",
+        "v3se_064_1",
+        "v3se_064_2"
+      ],
+      "cloth": [
+        "v3se_064",
+        "v3se_064_1",
+        "v3se_064_2"
+      ]
+    },
+    "selection": "alternate per contact, no random reseed",
+    "gain": 0.55,
+    "running_gain": 0.7
+  },
+  "ambience": {
+    "dry_fountain": [],
+    "unknown_space": [],
+    "interior_air": {
+      "cue": "v4_amb_room_air",
+      "gain": 0.2
+    },
+    "outside": {
+      "cue": "v4_amb_outside_wind",
+      "gain": 0.2
+    },
+    "powered_machine": {
+      "cue": "v4_amb_machine_hum",
+      "gain": 0.24,
+      "requires": "power_on"
+    },
+    "flowing_water": {
+      "cue": "v4_amb_water_flow",
+      "gain": 0.25,
+      "requires": "water_actually_flowing"
+    }
+  },
+  "evidence": {
+    "source": "docs/spec/18_V3_분석/07_소리.md",
+    "native_sound_same_cue": "ev_1c9a6b51e448d6bb21d39d15f33f2d8d1ac79b778c5ee3b5803fbc94b5d55d51",
+    "scope": "REA static control semantics plus original-project editing, not original runtime measurements"
+  },
+  "script_actions": [
+    {
+      "file_prefix": "10",
+      "section": "P-05",
+      "direction_prefix": "분수 소리가 끊긴다. 녹음이 멎자",
+      "action": "broadcast_on",
+      "music": null
+    },
+    {
+      "file_prefix": "11a3",
+      "section": "1-33",
+      "direction_prefix": "미오는 말을 끝내지 못한다. 목 부위에 남은 손상과",
+      "action": "body_reveal",
+      "music": "jingle_body_1>bgm_tense"
+    },
+    {
+      "file_prefix": "11a3",
+      "section": "1-33",
+      "direction_prefix": "공원의 음악이 멎는다. 발표음이 울린다.",
+      "action": "body_announcement",
+      "music": null
+    },
+    {
+      "file_prefix": "12a7",
+      "section": "2-69",
+      "direction_prefix": "아이는 무대에서 보던 밝은 색 천 위에",
+      "action": "body_reveal",
+      "music": "jingle_body_2>bgm_tense"
+    },
+    {
+      "file_prefix": "12a7",
+      "section": "2-71",
+      "direction_prefix": "래피의 방송이 시작된다.",
+      "action": "body_announcement",
+      "music": null
+    },
+    {
+      "file_prefix": "13a12",
+      "section": "3-132",
+      "direction_prefix": "발견 방송이 울린다. 리쿠의 몸 위에서",
+      "action": "body_reveal",
+      "music": "jingle_body_3>bgm_tense"
+    },
+    {
+      "file_prefix": "13b2",
+      "section": "I3-22",
+      "direction_prefix": "쇼가 부르는 이름에 답은 없다. 나나는 두 번째 발견 방송이",
+      "action": "body_reveal",
+      "music": "jingle_body_3>bgm_tense"
+    },
+    {
+      "file_prefix": "14a13",
+      "section": "4-195",
+      "direction_prefix": "사망 확인. 발견 방송이 울린다.",
+      "action": "body_reveal",
+      "music": "jingle_body_4>bgm_tense"
+    },
+    {
+      "file_prefix": "15a11",
+      "section": "5-199",
+      "direction_prefix": "코토의 눈과 입은 조금 열린 채 움직이지 않는다.",
+      "action": "body_reveal",
+      "music": "jingle_body_5>bgm_tense"
+    },
+    {
+      "file_prefix": "15a11",
+      "section": "5-199",
+      "direction_prefix": "그 뒤에야 발견 방송이 울린다.",
+      "action": "body_announcement",
+      "music": null
+    },
+    {
+      "file_prefix": "16d2",
+      "section": "R6-29A",
+      "direction_prefix": "지원 상태가 중단으로 바뀐다.래피의 입이",
+      "action": "support_stopped",
+      "music": "@silence"
+    },
+    {
+      "file_prefix": "11a",
+      "section": "1-01",
+      "direction_prefix": "호텔 복도. 아침 방송은 음악만 나오고 말은 없다.",
+      "action": "knock",
+      "music": null
+    },
+    {
+      "file_prefix": "11a2",
+      "section": "1-09",
+      "direction_prefix": "타이가가 문을 닫는다.",
+      "action": "door_closed",
+      "music": null
+    },
+    {
+      "file_prefix": "11a2",
+      "section": "1-15",
+      "direction_prefix": "소라가 안에 남고 타이가가 문을 닫는다.",
+      "action": "door_closed",
+      "music": null
+    },
+    {
+      "file_prefix": "11a3",
+      "section": "1-24",
+      "direction_prefix": "모니터가 꺼진다.",
+      "action": "broadcast_off",
+      "music": null
+    },
+    {
+      "file_prefix": "12a3",
+      "section": "2-26B-b",
+      "direction_prefix": "미오는 자기 방 쪽으로 가려다가 하루카 문 앞에서 멈춘다. 노크한다.",
+      "action": "knock",
+      "music": null
+    },
+    {
+      "file_prefix": "12a3",
+      "section": "2-26B-b",
+      "direction_prefix": "하루카가 잠깐 미오를 보고 방문을 닫는다.",
+      "action": "door_closed",
+      "music": null
+    },
+    {
+      "file_prefix": "14a13",
+      "section": "4-181",
+      "direction_prefix": "안에서 낮은 물건 소리가 난다. 미오가 노크한다.",
+      "action": "knock",
+      "music": null
+    }
+  ],
+  "verification": {
+    "runtime_integrated": false,
+    "audition_approved": false
+  }
+}

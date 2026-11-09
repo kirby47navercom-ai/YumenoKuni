@@ -1,0 +1,1393 @@
+{
+  "status": "pass",
+  "errors": [],
+  "observations": {
+    "cue_files": 256,
+    "sequence_frames": 144,
+    "wav_samples": 3949440
+  },
+  "runtime_played": false,
+  "audition_approved": false,
+  "limits": [
+    "File/sample/route checks do not prove audible mix or visual quality.",
+    "Native consumer hooks are required; contract generation is not runtime completion."
+  ],
+  "index_coverage": {
+    "blocks_including_nested_duplicates": 3705,
+    "unique_event_ids": 55658,
+    "unique_action_events": 18,
+    "runtime_frequency_claim": false
+  },
+  "authored_event_bindings": {
+    "v4:10:P-05:e:cdef5fc3ab73:1": {
+      "source": {
+        "file": "10_프롤로그_초고.md",
+        "line": 551,
+        "fileSha256": "fd6e1f7f48c7e1ec3542330f0a5303e43049cc56b377042116d0e48434ab3a8f",
+        "heading": "P-05 안내 방송",
+        "location": "P-05"
+      },
+      "action": "broadcast_on",
+      "once": "v4:10:P-05:broadcast_on",
+      "music": null
+    },
+    "v4:11a2:1-09:e:ba7a5faab53d:1": {
+      "source": {
+        "file": "11a2_1장_둘째날_초고.md",
+        "line": 144,
+        "fileSha256": "e18f1bd8fe699e94b1545e0b43c22fcd13e430e19b89ca53caab8d759129e1d0",
+        "heading": "1-09 누구 방에서 나는 소리",
+        "location": "1-09"
+      },
+      "action": "door_closed",
+      "once": "v4:11a2:1-09:door_closed",
+      "music": null
+    },
+    "v4:11a2:1-15:e:86c1ad96c74b:1": {
+      "source": {
+        "file": "11a2_1장_둘째날_초고.md",
+        "line": 780,
+        "fileSha256": "e18f1bd8fe699e94b1545e0b43c22fcd13e430e19b89ca53caab8d759129e1d0",
+        "heading": "1-15 닫힌 것과 비어 있는 것",
+        "location": "1-15"
+      },
+      "action": "door_closed",
+      "once": "v4:11a2:1-15:door_closed",
+      "music": null
+    },
+    "v4:11a3:1-24:e:5b6c8c4baf27:1": {
+      "source": {
+        "file": "11a3_1장_셋째날과_발견_초고.md",
+        "line": 430,
+        "fileSha256": "a7813759b225e0139399942eff0f80c2d5d2b23d698fb41bc9f93fe1a9f09eb6",
+        "heading": "1-24 안내하는 토끼",
+        "location": "1-24"
+      },
+      "action": "broadcast_off",
+      "once": "v4:11a3:1-24:broadcast_off",
+      "music": null
+    },
+    "v4:11a3:1-33:e:05808d8f5de5:1": {
+      "source": {
+        "file": "11a3_1장_셋째날과_발견_초고.md",
+        "line": 1168,
+        "fileSha256": "a7813759b225e0139399942eff0f80c2d5d2b23d698fb41bc9f93fe1a9f09eb6",
+        "heading": "1-33 첫 발견",
+        "location": "1-33"
+      },
+      "action": "body_reveal",
+      "once": "v4:11a3:1-33:body_reveal",
+      "music": "jingle_body_1>bgm_tense"
+    },
+    "v4:11a3:1-33:e:94aead3d2a53:1": {
+      "source": {
+        "file": "11a3_1장_셋째날과_발견_초고.md",
+        "line": 1202,
+        "fileSha256": "a7813759b225e0139399942eff0f80c2d5d2b23d698fb41bc9f93fe1a9f09eb6",
+        "heading": "1-33 첫 발견",
+        "location": "1-33"
+      },
+      "action": "body_announcement",
+      "once": "v4:11a3:1-33:body_announcement",
+      "music": null
+    },
+    "v4:11a:1-01:e:8b0e7ba9a6fa:1": {
+      "source": {
+        "file": "11a_1장_일상_초고.md",
+        "line": 8,
+        "fileSha256": "f5290f05430bab4d3e687b8046bc36bb41e61d0d14518f7ca25b7d9ba105766a",
+        "heading": "1-01 아침에 나오지 않은 사람",
+        "location": "1-01"
+      },
+      "action": "knock",
+      "once": "v4:11a:1-01:knock",
+      "music": null
+    },
+    "v4:12a3:2-26B-b:e:b1c0cb8f767c:1": {
+      "source": {
+        "file": "12a3_2장_작은공연_초고.md",
+        "line": 784,
+        "fileSha256": "789c081039f9a3afeab1404abc47e87728756a245bc78e276d73a26ea6dca539",
+        "heading": "2-26B-b 부르러 와 달라고 한 문",
+        "location": "2-26B-b"
+      },
+      "action": "knock",
+      "once": "v4:12a3:2-26B-b:knock",
+      "music": null
+    },
+    "v4:12a3:2-26B-b:e:50eba369481c:1": {
+      "source": {
+        "file": "12a3_2장_작은공연_초고.md",
+        "line": 814,
+        "fileSha256": "789c081039f9a3afeab1404abc47e87728756a245bc78e276d73a26ea6dca539",
+        "heading": "2-26B-b 부르러 와 달라고 한 문",
+        "location": "2-26B-b"
+      },
+      "action": "door_closed",
+      "once": "v4:12a3:2-26B-b:door_closed",
+      "music": null
+    },
+    "v4:12a7:2-69:e:de427fa7b6d4:1": {
+      "source": {
+        "file": "12a7_2장_정리와_발견_초고.md",
+        "line": 204,
+        "fileSha256": "a01ad16dce8dd53b57b264fa077367c49b9dac0023cb3ca3930a8af34fdb6989",
+        "heading": "2-69 걸쇠 두 개",
+        "location": "2-69"
+      },
+      "action": "body_reveal",
+      "once": "v4:12a7:2-69:body_reveal",
+      "music": "jingle_body_2>bgm_tense"
+    },
+    "v4:12a7:2-71:e:0029fb2e4b1e:1": {
+      "source": {
+        "file": "12a7_2장_정리와_발견_초고.md",
+        "line": 242,
+        "fileSha256": "a01ad16dce8dd53b57b264fa077367c49b9dac0023cb3ca3930a8af34fdb6989",
+        "heading": "2-71 발견한 사람",
+        "location": "2-71"
+      },
+      "action": "body_announcement",
+      "once": "v4:12a7:2-71:body_announcement",
+      "music": null
+    },
+    "v4:13a12:3-132:e:f5f6c6ec1f0e:1": {
+      "source": {
+        "file": "13a12_3장_끝났다는_말_초고.md",
+        "line": 354,
+        "fileSha256": "d42f3ee8d3880472e443abcdc8fef1fbdc43601e1963d07d3d5443c970528295",
+        "heading": "3-132 발견한 세 사람",
+        "location": "3-132"
+      },
+      "action": "body_reveal",
+      "once": "v4:13a12:3-132:body_reveal",
+      "music": "jingle_body_3>bgm_tense"
+    },
+    "v4:13b2:I3-24:e:b101f8ca7f30:1": {
+      "source": {
+        "file": "13b2_3장_두번째_이름_초고.md",
+        "line": 181,
+        "fileSha256": "6e58fe62898b563793310ce1b47643429659cb1e906a6e3b09a7dd7e49ddcdfe",
+        "heading": "I3-24 호흡을 확인한 순서",
+        "location": "I3-24"
+      },
+      "action": "body_reveal",
+      "once": "v4:13b2:I3-24:body_reveal",
+      "music": "jingle_body_3>bgm_tense"
+    },
+    "v4:14a13:4-181:e:56fe854c78bb:1": {
+      "source": {
+        "file": "14a13_4장_문을_연_뒤_초고.md",
+        "line": 7,
+        "fileSha256": "343c931d5ddda64403f8ce20b65629979137d50fe537e24422670434306afad3",
+        "heading": "4-181 대답을 들은 한 번",
+        "location": "4-181"
+      },
+      "action": "knock",
+      "once": "v4:14a13:4-181:knock",
+      "music": null
+    },
+    "v4:14a13:4-195:e:2e14f9254a78:1": {
+      "source": {
+        "file": "14a13_4장_문을_연_뒤_초고.md",
+        "line": 171,
+        "fileSha256": "343c931d5ddda64403f8ce20b65629979137d50fe537e24422670434306afad3",
+        "heading": "4-195 사망을 확인한 뒤",
+        "location": "4-195"
+      },
+      "action": "body_reveal",
+      "once": "v4:14a13:4-195:body_reveal",
+      "music": "jingle_body_4>bgm_tense"
+    },
+    "v4:15a11:5-199:e:c898a07a843b:1": {
+      "source": {
+        "file": "15a11_5장_남아있는_두장_초고.md",
+        "line": 187,
+        "fileSha256": "68d566b4ee7282f405519f65c7b778bbdd87103c52a3eb415d22085ad963dd5c",
+        "heading": "5-199 확인한 뒤의 침묵",
+        "location": "5-199"
+      },
+      "action": "body_reveal",
+      "once": "v4:15a11:5-199:body_reveal",
+      "music": "jingle_body_5>bgm_tense"
+    },
+    "v4:15a11:5-199:e:44e75946218e:1": {
+      "source": {
+        "file": "15a11_5장_남아있는_두장_초고.md",
+        "line": 189,
+        "fileSha256": "68d566b4ee7282f405519f65c7b778bbdd87103c52a3eb415d22085ad963dd5c",
+        "heading": "5-199 확인한 뒤의 침묵",
+        "location": "5-199"
+      },
+      "action": "body_announcement",
+      "once": "v4:15a11:5-199:body_announcement",
+      "music": null
+    },
+    "v4:16d2:R6-29A:e:d8518b6a37b3:1": {
+      "source": {
+        "file": "16d2_6장_문_밖에_놓을_이름_초고.md",
+        "line": 306,
+        "fileSha256": "efe1beb053d9b7d8edd76f9aafa94fdc8847f659aa087f2193b5907e429f34f2",
+        "heading": "R6-29A 대답이 멎은 뒤",
+        "location": "R6-29A"
+      },
+      "action": "support_stopped",
+      "once": "v4:16d2:R6-29A:support_stopped",
+      "music": "@silence"
+    }
+  },
+  "checks": [
+    {
+      "case": "numbered trial insert keeps court bed 1",
+      "pass": true
+    },
+    {
+      "case": "unnumbered trial section keeps court bed 1",
+      "pass": true
+    },
+    {
+      "case": "explicit freetime keeps priority over source location 1",
+      "pass": true
+    },
+    {
+      "case": "numbered trial insert keeps court bed 2",
+      "pass": true
+    },
+    {
+      "case": "unnumbered trial section keeps court bed 2",
+      "pass": true
+    },
+    {
+      "case": "explicit freetime keeps priority over source location 2",
+      "pass": true
+    },
+    {
+      "case": "numbered trial insert keeps court bed 3",
+      "pass": true
+    },
+    {
+      "case": "unnumbered trial section keeps court bed 3",
+      "pass": true
+    },
+    {
+      "case": "explicit freetime keeps priority over source location 3",
+      "pass": true
+    },
+    {
+      "case": "numbered trial insert keeps court bed 4",
+      "pass": true
+    },
+    {
+      "case": "unnumbered trial section keeps court bed 4",
+      "pass": true
+    },
+    {
+      "case": "explicit freetime keeps priority over source location 4",
+      "pass": true
+    },
+    {
+      "case": "numbered trial insert keeps court bed 5",
+      "pass": true
+    },
+    {
+      "case": "unnumbered trial section keeps court bed 5",
+      "pass": true
+    },
+    {
+      "case": "explicit freetime keeps priority over source location 5",
+      "pass": true
+    },
+    {
+      "case": "numbered trial insert keeps court bed 6",
+      "pass": true
+    },
+    {
+      "case": "unnumbered trial section keeps court bed 6",
+      "pass": true
+    },
+    {
+      "case": "explicit freetime keeps priority over source location 6",
+      "pass": true
+    },
+    {
+      "case": "non-trial T prefix does not override daily music",
+      "pass": true
+    },
+    {
+      "case": "living rescue / dialogue punctuation / declined knock emit no sound",
+      "pass": true
+    },
+    {
+      "case": "unresolved gate is not converted to presentation",
+      "pass": true
+    },
+    {
+      "case": "score is idempotent",
+      "pass": true
+    },
+    {
+      "case": "explicit evidence nodes distinguish acquisition and revision",
+      "pass": true
+    },
+    {
+      "case": "same cue never restarts",
+      "pass": true
+    },
+    {
+      "case": "interrupted reveal chain cannot overwrite later investigation",
+      "pass": true
+    },
+    {
+      "case": "silence cancels pending jingle and does not resurrect BGM",
+      "pass": true
+    },
+    {
+      "case": "save/restore preserves explicit silence",
+      "pass": true
+    },
+    {
+      "case": "compatibility sfx and action do not double fire",
+      "pass": true
+    },
+    {
+      "case": "reload during a jingle restores its bed without false old timer",
+      "pass": true
+    },
+    {
+      "case": "return/reload cannot replay a completed reveal",
+      "pass": true
+    },
+    {
+      "case": "C3 second death is a distinct event after first",
+      "pass": true
+    },
+    {
+      "case": "mode exit removes transient effect",
+      "pass": true
+    },
+    {
+      "case": "all trial modes select mode music and post-vote truth persists",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 10:P-05:broadcast_on",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 11a3:1-33:body_reveal",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 11a3:1-33:body_announcement",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 12a7:2-69:body_reveal",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 12a7:2-71:body_announcement",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 13a12:3-132:body_reveal",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 13b2:I3-24:body_reveal",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 14a13:4-195:body_reveal",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 15a11:5-199:body_reveal",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 15a11:5-199:body_announcement",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 16d2:R6-29A:support_stopped",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 11a:1-01:knock",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 11a2:1-09:door_closed",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 11a2:1-15:door_closed",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 11a3:1-24:broadcast_off",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 12a3:2-26B-b:knock",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 12a3:2-26B-b:door_closed",
+      "pass": true
+    },
+    {
+      "case": "authored source action matches exactly once: 14a13:4-181:knock",
+      "pass": true
+    },
+    {
+      "case": "original text/route fields remain unchanged",
+      "pass": true
+    },
+    {
+      "case": "task retry/return/answer/targets conserved",
+      "pass": true
+    },
+    {
+      "case": "empty spoken success still has accepted-input feedback",
+      "pass": true
+    },
+    {
+      "case": "all wrong returns keep music and exact caller return is restored",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 1",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 1",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 2",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 2",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 3",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 3",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 4",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 4",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 5",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 5",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 6",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 6",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: P",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: P",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 143",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 143",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 143",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 144",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 144",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 144",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 145",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 145",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 145",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 146",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 146",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 146",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 147",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 147",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 147",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 148",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 148",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 148",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 149",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 149",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 149",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 150",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 150",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 150",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 151",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 151",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 151",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 152",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 152",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 152",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 153",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 153",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 153",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 20",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 20",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 20",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 21",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 21",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 21",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 22",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 22",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 22",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 23",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 23",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 23",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 24",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 24",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 24",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 25",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 25",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 25",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 26",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 26",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 26",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 27",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 27",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 27",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 28",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 28",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 28",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 29",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 29",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 29",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 30",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 30",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 30",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 31",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 31",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 31",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 32",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 32",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 32",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 33",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 33",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 33",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 34",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 34",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 34",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 35",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 35",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 35",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 36",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 36",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 36",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 37",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 37",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 37",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 38-late",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 38-late",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 38-late",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 38",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 38",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 38",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 39",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 39",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 39",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 40",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 40",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 40",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 41",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 41",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 41",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 42",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 42",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 42",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 43",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 43",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 43",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 44",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 44",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 44",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 45",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 45",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 45",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 46",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 46",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 46",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 47",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 47",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 47",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 48",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 48",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 48",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 49",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 49",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 49",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 50",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 50",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 50",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 51",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 51",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 51",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 52",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 52",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 52",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 53",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 53",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 53",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 54",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 54",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 54",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 55",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 55",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 55",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 56",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 56",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 56",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 57",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 57",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 57",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 58",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 58",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 58",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 59",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 59",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 59",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 60",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 60",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 60",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 61",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 61",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 61",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 62",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 62",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 62",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 63",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 63",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 63",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 64",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 64",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 64",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 87",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 87",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 87",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 88",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 88",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 88",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 89",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 89",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 89",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: 90",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: 90",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: 90",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: AI02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: AI02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: AI02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: AI03Late6PM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: AI03Late6PM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: AI03Late6PM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: AK02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: AK02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: AK02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: RE02Late6PM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: RE02Late6PM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: RE02Late6PM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: RI02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: RI02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: RI02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: RIN02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: RIN02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: RIN02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: RIN03Late7",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: RIN03Late7",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: RIN03Late7",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: SA02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: SA02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: SA02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: SA03Late6PM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: SA03Late6PM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: SA03Late6PM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: SHO02Late7",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: SHO02Late7",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: SHO02Late7",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: YU02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: YU02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: YU02Late6AM",
+      "pass": true
+    },
+    {
+      "case": "freetime keeps its own bed: YU03Late7",
+      "pass": true
+    },
+    {
+      "case": "compiled graph route conserved: YU03Late7",
+      "pass": true
+    },
+    {
+      "case": "compiled graph does not issue BGM on every dialogue: YU03Late7",
+      "pass": true
+    }
+  ]
+}

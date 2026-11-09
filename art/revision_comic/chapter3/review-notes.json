@@ -1,0 +1,152 @@
+{
+  "source": "docs/design/rewrite_v5/07_1_3_4_5_6장_클라이맥스_콘티와_낭독.md",
+  "chapter": 3,
+  "method": "built-in imagegen; inspected before import; sheet crops and WebP import only",
+  "reviewed": [
+    "A: Riku takes his own communal tool",
+    "B: mirror and physical corridor distinct",
+    "C: blindfold and four correct identities",
+    "D: Sora asleep / Ken awake / Nana support",
+    "I: first workbay body and correct two investigators",
+    "J: living bench body and gray-suited Sho",
+    "K: separate protectors and investigators",
+    "L: different second room/body, contact obscured",
+    "M: unchanged Ken body and absent original person",
+    "N: closed envelope before speaking / opened after",
+    "P: Sora name and portrait distinct from physical Ken",
+    "E: closed envelope handed to Mio after both departed",
+    "F: Ken body claims return while orange body remains asleep",
+    "H: Mio and green-ponytailed Satsuki see same body along real corridor",
+    "clock: neutral oblique clock: no readable unsupported exact time",
+    "recap: alive original body observation contrasted with unchanged Ken body and absent owner",
+    "O: two distinct attacks connected by same continuous physical body; no loan substituted",
+    "verdict01: training set behind transparent partition",
+    "verdict02: wooden rescue dummy differs from person and exit",
+    "verdict03: same Ken body lowers with jacket against smoke",
+    "verdict04: same physical body remains after ventilation, jacket on floor",
+    "G: first workbay attack, correct two people, no extra eyewitness"
+  ],
+  "imports": {
+    "E": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-df46c59f-928d-4f40-8208-d0ae9ad60dfa.png",
+      "sourceSha256": "be899933a85571edd61d79a716bbff30a5ea30e1d9ac7d3a5818b509f9cab83a",
+      "bounds": [
+        4,
+        4,
+        623,
+        623
+      ],
+      "review": "closed envelope handed to Mio after both departed"
+    },
+    "F": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-df46c59f-928d-4f40-8208-d0ae9ad60dfa.png",
+      "sourceSha256": "be899933a85571edd61d79a716bbff30a5ea30e1d9ac7d3a5818b509f9cab83a",
+      "bounds": [
+        631,
+        4,
+        1250,
+        623
+      ],
+      "review": "Ken body claims return while orange body remains asleep"
+    },
+    "H": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-df46c59f-928d-4f40-8208-d0ae9ad60dfa.png",
+      "sourceSha256": "be899933a85571edd61d79a716bbff30a5ea30e1d9ac7d3a5818b509f9cab83a",
+      "bounds": [
+        631,
+        631,
+        1250,
+        1250
+      ],
+      "review": "Mio and green-ponytailed Satsuki see same body along real corridor"
+    },
+    "clock": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-4445e735-afe7-4609-83a8-43b63cc2c96a.png",
+      "sourceSha256": "fabd6048d54090ce3c87686f1b75a5bd21bcd2e9559f041bfbd55bee41aec428",
+      "bounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "review": "neutral oblique clock: no readable unsupported exact time"
+    },
+    "recap": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-ce880acb-0e81-4948-9289-03bfe4f4111d.png",
+      "sourceSha256": "c66985b4f1b4ed88a3d0f68aa2ea3f5143a058f7d8da476b04fe41df64adfa23",
+      "bounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "review": "alive original body observation contrasted with unchanged Ken body and absent owner"
+    },
+    "O": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-a928a415-e466-4cf6-8506-879f78343db7.png",
+      "sourceSha256": "6ba265d926c08e37c14254c1ffa0cd29e407453e56fa2acf5e24af3d2584732f",
+      "bounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "review": "two distinct attacks connected by same continuous physical body; no loan substituted"
+    },
+    "G": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-6e19a973-e6e5-4eaf-8e99-74ad806c496e.png",
+      "sourceSha256": "b4f36f7e85f944fca42e8447de10fd86aa0ee0132cf5c39690437f9748d1955f",
+      "review": "correct two characters and first workbay attack, no added eyewitness"
+    },
+    "verdict-01": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-caf9f3d6-bd5d-4396-9f2d-9fccc1d3e26d.png",
+      "sourceSha256": "1005f6a6e3407f86a1d7f8ad26bdb36ac141d87af0a4ce719f8358b5d38352fe",
+      "bounds": [
+        4,
+        4,
+        623,
+        623
+      ],
+      "review": "training set behind transparent partition"
+    },
+    "verdict-02": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-caf9f3d6-bd5d-4396-9f2d-9fccc1d3e26d.png",
+      "sourceSha256": "1005f6a6e3407f86a1d7f8ad26bdb36ac141d87af0a4ce719f8358b5d38352fe",
+      "bounds": [
+        631,
+        4,
+        1250,
+        623
+      ],
+      "review": "wooden rescue dummy differs from person and exit"
+    },
+    "verdict-03": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-caf9f3d6-bd5d-4396-9f2d-9fccc1d3e26d.png",
+      "sourceSha256": "1005f6a6e3407f86a1d7f8ad26bdb36ac141d87af0a4ce719f8358b5d38352fe",
+      "bounds": [
+        4,
+        631,
+        623,
+        1250
+      ],
+      "review": "same Ken body lowers with jacket against smoke"
+    },
+    "verdict-04": {
+      "source": "C:\\Users\\kirby\\.codex\\generated_images\\01a173a2-a942-7360-924c-2c61eb0d9924\\exec-caf9f3d6-bd5d-4396-9f2d-9fccc1d3e26d.png",
+      "sourceSha256": "1005f6a6e3407f86a1d7f8ad26bdb36ac141d87af0a4ce719f8358b5d38352fe",
+      "bounds": [
+        631,
+        631,
+        1250,
+        1250
+      ],
+      "review": "same physical body remains after ventilation, jacket on floor"
+    }
+  },
+  "rejected": {
+    "G-sheet": "unwanted Mio at doorway implied witnessing first attack; single-panel replacement requested",
+    "O-original-sheet": "depicted tool loan instead of first attack"
+  },
+  "verdict": "four source anchors reviewed; identical physical body, no replacement",
+  "limitations": "still panels and timed shots, not skeletal animation"
+}

@@ -214,6 +214,7 @@ def build_payload(positive: str, negative: str, seed: int):
 
 
 def generate(token: str, positive: str, negative: str, seed: int):
+    raise SystemExit('NAI generation disabled by current user instruction; no request sent.')
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     payload = build_payload(positive, negative, seed)
     for attempt in range(4):
@@ -241,6 +242,7 @@ def save_zip(content: bytes, out_dir: str, name: str, seed: int):
 
 
 def main():
+    raise SystemExit('NAI generation disabled by current user instruction; no request sent.')
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", nargs="*", choices=list(CHARACTERS.keys()))
     parser.add_argument("--n", type=int, default=1, help="캐릭터당 장수")

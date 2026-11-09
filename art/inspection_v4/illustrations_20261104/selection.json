@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "tool": "builtin image_gen",
+  "entries": {
+    "c4_hatch_hand_observation": {
+      "title": "닫혀 있던 때의 관찰",
+      "image": "art/inspection_v4/illustrations_20261104/c4_hatch_hand_observation.png",
+      "sha256": "8a5449ad7a5b791395158ee14b00bf8e6f2bd247bdc84b0e979354b58fdf48f7",
+      "svg": "ui/v4/investigation_diagrams_v4/c4_hatch_hand_observation.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "hand-edge",
+          "label": "손이 보인 덮개 가장자리",
+          "polygon": [
+            [
+              0.431,
+              0.706
+            ],
+            [
+              0.44,
+              0.699
+            ],
+            [
+              0.456,
+              0.699
+            ],
+            [
+              0.474,
+              0.708
+            ],
+            [
+              0.487,
+              0.724
+            ],
+            [
+              0.499,
+              0.749
+            ],
+            [
+              0.496,
+              0.762
+            ],
+            [
+              0.487,
+              0.762
+            ],
+            [
+              0.481,
+              0.752
+            ],
+            [
+              0.478,
+              0.768
+            ],
+            [
+              0.469,
+              0.77
+            ],
+            [
+              0.459,
+              0.756
+            ],
+            [
+              0.452,
+              0.75
+            ],
+            [
+              0.444,
+              0.736
+            ],
+            [
+              0.437,
+              0.729
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "front-door",
+          "label": "정면 출입문",
+          "polygon": [
+            [
+              0.228,
+              0.831
+            ],
+            [
+              0.374,
+              0.831
+            ],
+            [
+              0.383,
+              0.871
+            ],
+            [
+              0.224,
+              0.871
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "storage-end",
+          "label": "안쪽 끝난 구획",
+          "polygon": [
+            [
+              0.70625,
+              0.28
+            ],
+            [
+              0.9125,
+              0.28
+            ],
+            [
+              0.9125,
+              0.55
+            ],
+            [
+              0.70625,
+              0.55
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cover",
+          "label": "덮개 가운데",
+          "polygon": [
+            [
+              0.15625,
+              0.36
+            ],
+            [
+              0.40625,
+              0.36
+            ],
+            [
+              0.40625,
+              0.66
+            ],
+            [
+              0.15625,
+              0.66
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 55,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-04 밖에서 걸린 상태",
+          "location": "I4-04",
+          "quote": "(미오는 원래 덮개가 어떤 기능이었는지와,구조 때문에 지금 열어 둔 상태를 나눠 그린다. 현재 열린 사진만으로 처음부터 열려 있었다는 결론을 만들지 않는다.)"
+        },
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 59,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-05 닫힌 가장자리의 손",
+          "location": "I4-05",
+          "quote": "(손의 손상과 덮개 가장자리를 대조한다. 손이 걸렸던 구간과 현재의 보라색 흔적을 각각 남긴다.)"
+        },
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 67,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-05 닫힌 가장자리의 손",
+          "location": "I4-05",
+          "quote": "(아카리가 고개를 끄덕인다. 정상 점검에서 미리 지적했던 시야와 발견 때 실제 위치가 연결된다. 손 하나로 범인 이름을 읽는 장치로 쓰지 않는다.)"
+        },
+        {
+          "file": "14b3_4장_사진을_보는_사람_초고.md",
+          "line": 7,
+          "fileSha256": "0b07d49b5e9bb0bbcd1133ff7248244beb4fde975a794967105aded8bedae8e8",
+          "heading": "I4-33 닫기 전에 보였을 것",
+          "location": "I4-33",
+          "quote": "(미오/쇼/나나는 덮개 가장자리의 손 위치를 다시 짚는다. 레이가 잡았다고 말한 바깥 위치와 실제 시야를 비교한다. 사람의 손을 다시 끼워 실험하지 않는다.)"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 544,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-SPOT-A01 닫힌 때 보인 자리 — SPOT",
+          "location": "T4-SPOT-A01",
+          "quote": "- 후보/표시 그림: 수사 점검구 도면/개방 전 관찰 표시.영역A=손이 보인 덮개 가장자리/영역B=외부 정면 출입문/영역C=안쪽 끝난 구획/영역0=기타.새로운 최초 촬영 사진으로 표시하지 않아요."
+        }
+      ],
+      "inspectionScope": "v4:4:knowledge:first-hand",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "Unscaled observation diagram. No exact injury/hand size, hinge side or native hatch coordinate is claimed."
+      ],
+      "rasterSize": [
+        1586,
+        992
+      ],
+      "visualReview": "Directly inspected original built-in illustration: closed cover with exposed hand at boundary, outside threshold and separately terminated compartment. Unscaled ink observation sketch; no new photograph, exact injury, fastening or actor. Native visual review pending separately.",
+      "replaces": "ui/v4/investigation_diagrams_v4/c4_hatch_hand_observation.webp"
+    }
+  },
+  "scope": "Selected original bitmap pixels unchanged. Hit polygons traced on the selected illustration; facts and answer roles unchanged. Original old SVG/WebP retained."
+}

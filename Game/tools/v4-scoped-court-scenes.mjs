@@ -1,0 +1,27 @@
+import {applyKotodamaScene} from './v4-kotodama-flight.mjs';
+import {emitNonstopSolidType} from './v4-nonstop-solid-type.mjs';
+// Keep only the graphics owned by the active court mode; actors remain separate.
+import fs from'node:fs/promises';import path from'node:path';import assert from'node:assert/strict';import{pathToFileURL}from'node:url';
+const game=path.resolve(import.meta.dirname,'..'),modes=['basic','debate','panic','anagram','showdown'],shared=id=>['Aim','TimerPanel','Whip'].includes(id)||/^Timer\d+$/.test(id),scopes=id=>id==='CourtDim'?modes:id.startsWith('Panic')?['panic']:shared(id)||/^N[FB]\d+$/.test(id)?['debate','panic']:['debate'];
+export async function emitPanicNoiseScope({output,write}){
+ const read=async file=>JSON.parse(await fs.readFile(path.join(output,file),'utf8')),layout=await read('Assets/Data/gpu_trial_layout.json'),debate=await read('Assets/Scenes/DebateHud.hbscene.json'),panic=await read('Assets/Scenes/PanicHud.hbscene.json');
+ for(const n of layout.nodes)if(/^N[FB]\d+$/.test(n.id))n.renderScopes=scopes(n.id);
+ const actors=debate.objects.filter(o=>/^TrialGpu_NF\d+$/.test(o.id)).map(o=>({...o,parent:'Camera'}));assert.equal(actors.length,26);
+ panic.objects=panic.objects.filter(o=>!/^TrialGpu_N[FB]\d+$/.test(o.id));panic.objects.push(...actors);assert.equal(panic.objects.filter(o=>/^Podium\d+$/.test(o.id)).length,16);
+ await write('Assets/Scenes/PanicHud.hbscene.json',panic);await write('Assets/Data/gpu_trial_layout.json',layout);return{panicNoiseActors:actors.length,independentPodiums:16};
+}
+function speakerDepthRoot(scene){
+ scene.objects=scene.objects.filter(o=>o.id!=='TrialSpeakerDepth');scene.objects.push({id:'TrialSpeakerDepth',name:'화자 평면 깊이',kind:'empty',parent:'Camera',position:[0,0,0],rotation:[0,0,0],scale:[1,1,1],visible:true,components:[]});
+ for(const o of scene.objects)if(o.id==='TrialGlyphMotion'||/^TrialBatch_M[FSB]\d+$/.test(o.id)||/^TrialGpu_N[FB]\d+$/.test(o.id))o.parent='TrialSpeakerDepth';
+ return scene;
+}
+export async function emitScopedCourtScenes({output,write}){
+ const read=async file=>JSON.parse(await fs.readFile(path.join(output,file),'utf8')),layout=await read('Assets/Data/gpu_trial_layout.json'),court=await read('Assets/Scenes/Court.hbscene.json');assert(court.objects.some(o=>o.id==='TrialGpu_MF0'),'Scope the fully generated base; run the GPU emitters before this finalizer');
+ const clock=await read('Assets/Data/gpu_stage_clock_layout.json'),owned=new Map(layout.nodes.map(n=>['TrialGpu_'+n.id,scopes(n.id)]));for(const n of layout.nodes)n.renderScopes=scopes(n.id);for(const n of clock.nodes){n.renderScopes=['basic','showdown'];owned.set('TrialGpu_'+n.id,n.renderScopes);}
+ for(const o of court.objects)if(o.id==='TrialGlyphMotion'||/^TrialBatch_(MF|MS|MB)/.test(o.id))owned.set(o.id,['debate']);else if(o.id.startsWith('TrialBatch_Panic'))owned.set(o.id,['panic']);
+ const filter=(scene,mode,marker)=>({...scene,sceneName:marker,objects:scene.objects.filter(o=>!owned.has(o.id)||owned.get(o.id).includes(mode)).map(o=>o.id==='CourtScene'?{...o,id:marker+'Scene'}:{...o})});
+ const outputs=[['basic','Court','Court'],['debate','DebateHud','CourtDebate'],['panic','PanicHud','CourtPanic'],['anagram','AnagramHud','CourtAnagram'],['showdown','ShowdownHud','CourtShowdown']],summary=[];
+ for(const[mode,name,marker]of outputs){const source=mode==='anagram'||mode==='showdown'?await read('Assets/Scenes/'+name+'.hbscene.json'):court,scene=filter(source,mode,marker);if(mode==='panic')applyKotodamaScene(scene,court);if(mode==='debate'){speakerDepthRoot(scene);applyKotodamaScene(scene);scene.objects=scene.objects.filter(o=>!o.id.startsWith('TrialBatch_'));}assert.equal(scene.objects.filter(o=>/^Podium\d+$/.test(o.id)).length,16,'Every mode keeps all actual independent podium actors');assert(!scene.objects.some(o=>o.parent&&!scene.objects.some(p=>p.id===o.parent)),'Scoped graphics must not leave orphaned children');for(const o of scene.objects)if(owned.has(o.id))assert(owned.get(o.id).includes(mode));await write('Assets/Scenes/'+name+'.hbscene.json',scene);summary.push({mode,scene:name,objects:scene.objects.length,graphics:scene.objects.filter(o=>o.components?.some(c=>['SpriteRenderer','MeshRenderer'].includes(c.type))).length});}
+ await write('Assets/Data/gpu_trial_layout.json',layout);await write('Assets/Data/gpu_stage_clock_layout.json',clock);await emitNonstopSolidType({output,write});return{scenes:summary,independentPodiums:16,unneededGraphicsRemoved:true};
+}
+if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){const index=path.join(game,'Saved/game-trial-work-20261102/gpu-chapter-batches/overrides.json'),o=JSON.parse(await fs.readFile(index,'utf8')),write=async(name,value)=>{const file=path.join(game,name);await fs.mkdir(path.dirname(file),{recursive:true});await fs.writeFile(file,Buffer.isBuffer(value)?value:JSON.stringify(value));o['Content/'+name]=file;};const result=process.argv.includes('--speaker-depth-only')?await(async()=>{const file='Assets/Scenes/DebateHud.hbscene.json',scene=speakerDepthRoot(JSON.parse(await fs.readFile(path.join(game,file),'utf8')));assert.equal(scene.objects.filter(o=>/^Podium\d+$/.test(o.id)).length,16);await write(file,scene);return{speakerDepthRoot:true,scene:file,independentPodiums:16};})():await emitScopedCourtScenes({output:game,write});await fs.writeFile(index,JSON.stringify(o));await fs.writeFile(path.join(game,'Saved/game-trial-work-20261102/scoped-court-scenes.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));}

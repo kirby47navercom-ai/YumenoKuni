@@ -234,7 +234,8 @@ def build(path, ids, names):
     for s in stages:
         if s["kind"] not in ("nonstop", "panic"):
             continue
-        answers = list(dict.fromkeys(l["weak"]["answer"] for l in s["lines"] if l["kind"] == "weak"))
+        answers = list(dict.fromkeys([l["weak"]["answer"] for l in s["lines"] if l["kind"] == "weak"] + [l["agree"] for l in s["lines"] if l.get("agree")]))
+        assert len(answers) <= 5, f'{s["id"]}: more answers than ammunition slots'
         same = [c for c in sorted(names) if c[:2] in (f"E{chapter[1]}", f"T{chapter[1]}") and c not in answers]
         bullets = (answers + same)[:5]
         debates.append({"id": s["id"], "title": s["title"], "kind": s["kind"], "lines": s["lines"],

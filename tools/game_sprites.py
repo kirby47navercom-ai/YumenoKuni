@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-게임용 스프라이트 : art/sprites/{slug}/*.webp (2048²) → Game/Assets/Art/sprites/{slug}/*.webp (1024²).
+게임용 스프라이트 : curated V4 delivery → 모든 runtime 인물 경로.
 화면에는 700px 이하로만 나오므로 절반으로 줄여 WebView 텍스처 메모리를 1/4로 줄인다. 바뀐 것만 변환.
   python tools/game_sprites.py
 """
@@ -48,63 +48,9 @@ def normalize(im, scale):
 
 
 def main():
-    done = 0
-    tall = heights(); top = max(v for k, v in tall.items() if k != "lappy")
-    src_root = os.path.join(ROOT, "art", "sprites")
-    for slug in sorted(os.listdir(src_root)):
-        src_dir = os.path.join(src_root, slug)
-        if not os.path.isdir(src_dir):
-            continue
-        dst_dir = os.path.join(ROOT, "Game", "Assets", "Art", "sprites", slug)
-        os.makedirs(dst_dir, exist_ok=True)
-        scale = .62 if slug == "lappy" else tall.get(slug, top) / top
-        stamp = os.path.join(dst_dir, ".norm")
-        fresh = os.path.exists(stamp) and open(stamp).read() == f"{NORM} {scale:.4f}"
-        for f in os.listdir(src_dir):
-            if not f.endswith(".webp") or f.startswith("sheet"):
-                continue
-            src, dst = os.path.join(src_dir, f), os.path.join(dst_dir, f)
-            if fresh and os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
-                continue
-            im = Image.open(src)
-            if max(im.size) > SIZE:
-                im.thumbnail((SIZE, SIZE), Image.LANCZOS)
-            normalize(im, scale).save(dst, "WEBP", quality=90, method=4)
-            done += 1
-        open(stamp, "w").write(f"{NORM} {scale:.4f}")
-    # 탐색 화면 전신(방 안에 작게 서 있는 인물) : art/standing_hd → Assets/Art/figure/{slug}.webp, 높이 720
-    fig_dir = os.path.join(ROOT, "Game", "Assets", "Art", "figure")
-    os.makedirs(fig_dir, exist_ok=True)
-    for f in os.listdir(os.path.join(ROOT, "art", "standing_hd")):
-        if not f.endswith(".webp"):
-            continue
-        src, dst = os.path.join(ROOT, "art", "standing_hd", f), os.path.join(fig_dir, f)
-        fstamp = os.path.join(fig_dir, ".norm")
-        if os.path.exists(fstamp) and open(fstamp).read() == NORM and os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
-            continue
-        im = Image.open(src).convert("RGBA")
-        im.thumbnail((1100, 1100), Image.LANCZOS)
-        if im.getpixel((4, 4))[3] > 200:  # 흰 배경 원본 → 배경 제거(애니 모델)
-            from rembg import new_session, remove
-            global _rembg
-            try:
-                _rembg
-            except NameError:
-                _rembg = new_session("isnet-anime")
-            im = remove(im.convert("RGB"), session=_rembg).convert("RGBA")
-        im = im.crop(im.getbbox())
-        # 같은 캔버스(위젯 240×520 의 두 배), 발끝 = 아래, 키 비율로 (래피는 실제 키 80cm)
-        slug = f[:-5]
-        hh = round(1000 * tall.get(slug, top) / top)
-        im = im.resize((max(1, round(im.width * hh / im.height)), hh), Image.LANCZOS)
-        if im.width > 480:
-            im = im.resize((480, round(im.height * 480 / im.width)), Image.LANCZOS)
-        canvas = Image.new("RGBA", (480, 1040))
-        canvas.paste(im, ((480 - im.width) // 2, 1040 - 10 - im.height), im)
-        canvas.save(dst, "WEBP", quality=90, method=4)
-        done += 1
-    open(os.path.join(fig_dir, ".norm"), "w").write(NORM)
-    print(f"sprites converted: {done}")
+    # Compatibility command now publishes only the curated V4 art family.
+    from export_v4_runtime_characters import main as publish
+    return publish()
 
 
 if __name__ == "__main__":

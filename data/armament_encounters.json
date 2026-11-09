@@ -1,0 +1,834 @@
+{
+ "schema": "yumeno-armament-encounters-v2-readable",
+ "provenance": "Own authored rhythm arrangements requested by the user; original V3 numeric reference bank remains separate and unchanged.",
+ "patterns": {
+  "call": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1,
+    "d"
+   ],
+   [
+    2,
+    "s"
+   ],
+   [
+    3,
+    "a"
+   ]
+  ],
+  "answer": [
+   [
+    0,
+    "a"
+   ],
+   [
+    1,
+    "s"
+   ],
+   [
+    3,
+    "d"
+   ]
+  ],
+  "echo": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1,
+    "w"
+   ],
+   [
+    2,
+    "d"
+   ],
+   [
+    4,
+    "s"
+   ],
+   [
+    5,
+    "s"
+   ],
+   [
+    6,
+    "a"
+   ]
+  ],
+  "reverse": [
+   [
+    0,
+    "d"
+   ],
+   [
+    1,
+    "w"
+   ],
+   [
+    2,
+    "a"
+   ],
+   [
+    4,
+    "s"
+   ],
+   [
+    5,
+    "d"
+   ],
+   [
+    6,
+    "w"
+   ]
+  ],
+  "cadence": [
+   [
+    0,
+    "w",
+    "hold",
+    1.5
+   ],
+   [
+    2,
+    "d"
+   ],
+   [
+    3,
+    "s"
+   ]
+  ],
+  "bass_w": [
+   [
+    0,
+    "w",
+    "hold",
+    3
+   ],
+   [
+    1,
+    "d"
+   ],
+   [
+    2,
+    "s"
+   ],
+   [
+    3,
+    "a"
+   ]
+  ],
+  "bass_s": [
+   [
+    0,
+    "s",
+    "hold",
+    3
+   ],
+   [
+    1,
+    "a"
+   ],
+   [
+    2,
+    "w"
+   ],
+   [
+    3,
+    "d"
+   ]
+  ],
+  "two_voices": [
+   [
+    0,
+    "w",
+    "hold",
+    2
+   ],
+   [
+    1,
+    "a"
+   ],
+   [
+    2,
+    "s",
+    "hold",
+    1
+   ],
+   [
+    3,
+    "d"
+   ]
+  ],
+  "bass_answer": [
+   [
+    0,
+    "a",
+    "hold",
+    2
+   ],
+   [
+    1,
+    "w"
+   ],
+   [
+    2,
+    "d",
+    "hold",
+    1
+   ],
+   [
+    3,
+    "s"
+   ]
+  ],
+  "offbeat": [
+   [
+    0.5,
+    "w"
+   ],
+   [
+    1.5,
+    "s"
+   ],
+   [
+    2.5,
+    "d"
+   ],
+   [
+    4.5,
+    "a"
+   ],
+   [
+    5.5,
+    "s"
+   ],
+   [
+    6.5,
+    "d"
+   ]
+  ],
+  "late_answer": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1.5,
+    "d"
+   ],
+   [
+    3,
+    "s"
+   ]
+  ],
+  "triplet": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1.3333333333333333,
+    "d"
+   ],
+   [
+    2.6666666666666665,
+    "s"
+   ]
+  ],
+  "cut_reply": [
+   [
+    0,
+    "a"
+   ],
+   [
+    1,
+    "s"
+   ],
+   [
+    2.5,
+    "w"
+   ]
+  ],
+  "silent_answer": [
+   [
+    0.5,
+    "s",
+    "hold",
+    1
+   ],
+   [
+    2,
+    "a"
+   ],
+   [
+    3,
+    "d"
+   ]
+  ],
+  "relay": [
+   [
+    0,
+    "w",
+    "hold",
+    1.5
+   ],
+   [
+    1,
+    "d"
+   ],
+   [
+    2,
+    "s",
+    "hold",
+    1
+   ],
+   [
+    3,
+    "a"
+   ]
+  ],
+  "long_anchor": [
+   [
+    0,
+    "w",
+    "hold",
+    3
+   ],
+   [
+    1,
+    "s"
+   ],
+   [
+    2,
+    "d"
+   ],
+   [
+    3,
+    "a"
+   ]
+  ],
+  "release_steps": [
+   [
+    0,
+    "w",
+    "hold",
+    1
+   ],
+   [
+    1.5,
+    "d",
+    "hold",
+    1
+   ],
+   [
+    3,
+    "s",
+    "hold",
+    1
+   ],
+   [
+    4.5,
+    "a",
+    "hold",
+    1
+   ]
+  ],
+  "anchor_answer": [
+   [
+    0,
+    "a",
+    "hold",
+    2
+   ],
+   [
+    1,
+    "d"
+   ],
+   [
+    2,
+    "w",
+    "hold",
+    1
+   ],
+   [
+    3,
+    "s"
+   ]
+  ],
+  "clockwise": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1,
+    "d"
+   ],
+   [
+    2,
+    "s"
+   ],
+   [
+    3,
+    "a"
+   ],
+   [
+    4,
+    "w"
+   ],
+   [
+    5,
+    "d"
+   ],
+   [
+    6,
+    "s"
+   ],
+   [
+    7,
+    "a"
+   ]
+  ],
+  "anticlockwise": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1,
+    "a"
+   ],
+   [
+    2,
+    "s"
+   ],
+   [
+    3,
+    "d"
+   ],
+   [
+    4,
+    "w"
+   ],
+   [
+    5,
+    "a"
+   ],
+   [
+    6,
+    "s"
+   ],
+   [
+    7,
+    "d"
+   ]
+  ],
+  "mash_break": [
+   [
+    0,
+    "w"
+   ],
+   [
+    2,
+    "d",
+    "mash",
+    4
+   ],
+   [
+    4,
+    "a"
+   ],
+   [
+    6,
+    "s"
+   ]
+  ],
+  "mash_return": [
+   [
+    0,
+    "a"
+   ],
+   [
+    2,
+    "w",
+    "mash",
+    4
+   ],
+   [
+    4,
+    "s"
+   ],
+   [
+    5,
+    "d"
+   ]
+  ],
+  "roll_stop": [
+   [
+    0,
+    "w"
+   ],
+   [
+    1,
+    "d"
+   ],
+   [
+    2,
+    "s"
+   ],
+   [
+    3,
+    "a"
+   ],
+   [
+    4,
+    "w",
+    "hold",
+    2
+   ]
+  ],
+  "split_roll": [
+   [
+    0.0,
+    "a"
+   ],
+   [
+    1.5,
+    "w"
+   ],
+   [
+    3.0,
+    "d"
+   ],
+   [
+    4.5,
+    "s"
+   ],
+   [
+    6.0,
+    "d"
+   ],
+   [
+    7.5,
+    "s"
+   ],
+   [
+    9.0,
+    "a"
+   ],
+   [
+    10.5,
+    "w"
+   ]
+  ]
+ },
+ "encounters": [
+  {
+   "chapter": 1,
+   "identity": "교대 응수",
+   "mechanic": "두 손 교대의 짧은 질문과 반전 응답을 읽고, 반복되는 응답 끝을 예상한다.",
+   "layout": "fixed-focus",
+   "phases": [
+    {
+     "bpm": 92,
+     "lead": 2.2,
+     "bars": [
+      "call",
+      "answer",
+      "call",
+      "answer",
+      "call",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 100,
+     "lead": 2.2,
+     "bars": [
+      "echo",
+      "answer",
+      "reverse",
+      "cadence",
+      "echo",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 108,
+     "lead": 2.2,
+     "bars": [
+      "reverse",
+      "echo",
+      "mash_break",
+      "cadence",
+      "echo",
+      "cadence"
+     ]
+    }
+   ]
+  },
+  {
+   "chapter": 2,
+   "identity": "두 성부",
+   "mechanic": "한 키의 유지와 다른 키의 멜로디를 번갈아 처리한다. 동시 HOLD는 요구하지 않는다.",
+   "layout": "fixed-focus",
+   "phases": [
+    {
+     "bpm": 92,
+     "lead": 2.2,
+     "bars": [
+      "bass_w",
+      "call",
+      "bass_s",
+      "answer",
+      "bass_w",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 96,
+     "lead": 2.2,
+     "bars": [
+      "bass_w",
+      "bass_answer",
+      "two_voices",
+      "bass_s",
+      "bass_answer",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 104,
+     "lead": 2.2,
+     "bars": [
+      "two_voices",
+      "bass_answer",
+      "bass_w",
+      "two_voices",
+      "bass_s",
+      "cadence"
+     ]
+    }
+   ]
+  },
+  {
+   "chapter": 3,
+   "identity": "빈 박의 반박",
+   "mechanic": "정박의 빈틈을 기다리고, 엇박과 셋잇단음의 서로 다른 간격을 구별한다.",
+   "layout": "fixed-focus",
+   "phases": [
+    {
+     "bpm": 92,
+     "lead": 2.2,
+     "bars": [
+      "offbeat",
+      "late_answer",
+      "offbeat",
+      "silent_answer",
+      "late_answer",
+      "silent_answer"
+     ]
+    },
+    {
+     "bpm": 100,
+     "lead": 2.2,
+     "bars": [
+      "triplet",
+      "offbeat",
+      "triplet",
+      "cut_reply",
+      "offbeat",
+      "late_answer"
+     ]
+    },
+    {
+     "bpm": 108,
+     "lead": 2.2,
+     "bars": [
+      "cut_reply",
+      "triplet",
+      "offbeat",
+      "silent_answer",
+      "triplet",
+      "silent_answer"
+     ]
+    }
+   ]
+  },
+  {
+   "chapter": 4,
+   "identity": "해제 릴레이",
+   "mechanic": "누르는 시점만큼 해제 시점을 읽고, 해제와 다음 키의 진입을 한 흐름으로 잇는다.",
+   "layout": "fixed-focus",
+   "phases": [
+    {
+     "bpm": 92,
+     "lead": 2.2,
+     "bars": [
+      "relay",
+      "cadence",
+      "release_steps",
+      "relay",
+      "long_anchor",
+      "anchor_answer"
+     ]
+    },
+    {
+     "bpm": 96,
+     "lead": 2.2,
+     "bars": [
+      "long_anchor",
+      "relay",
+      "anchor_answer",
+      "release_steps",
+      "relay",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 104,
+     "lead": 2.2,
+     "bars": [
+      "release_steps",
+      "anchor_answer",
+      "long_anchor",
+      "relay",
+      "anchor_answer",
+      "cadence"
+     ]
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "identity": "회전과 폭발",
+   "mechanic": "시계·반시계 회전 입력을 바꾸고, 회전이 끊기는 연타 뒤에 다시 정박을 잡는다.",
+   "layout": "fixed-focus",
+   "phases": [
+    {
+     "bpm": 96,
+     "lead": 2.2,
+     "bars": [
+      "clockwise",
+      "call",
+      "mash_break",
+      "roll_stop",
+      "anticlockwise",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 104,
+     "lead": 2.2,
+     "bars": [
+      "clockwise",
+      "answer",
+      "anticlockwise",
+      "mash_break",
+      "clockwise",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 112,
+     "lead": 2.2,
+     "bars": [
+      "split_roll",
+      "mash_break",
+      "anticlockwise",
+      "cadence",
+      "clockwise",
+      "cadence"
+     ]
+    }
+   ]
+  },
+  {
+   "chapter": 6,
+   "identity": "네 악장의 총반론",
+   "mechanic": "앞선 응수·유지·엇박·회전 패턴을 차례로 조합하되 입력은 고정된 중앙에서 읽는다.",
+   "layout": "fixed-focus",
+   "phases": [
+    {
+     "bpm": 96,
+     "lead": 2.2,
+     "bars": [
+      "call",
+      "reverse",
+      "offbeat",
+      "echo",
+      "triplet",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 100,
+     "lead": 2.2,
+     "bars": [
+      "bass_w",
+      "relay",
+      "two_voices",
+      "bass_answer",
+      "long_anchor",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 108,
+     "lead": 2.2,
+     "bars": [
+      "triplet",
+      "clockwise",
+      "cut_reply",
+      "mash_break",
+      "anticlockwise",
+      "cadence"
+     ]
+    },
+    {
+     "bpm": 112,
+     "lead": 2.2,
+     "bars": [
+      "two_voices",
+      "split_roll",
+      "mash_break",
+      "anchor_answer",
+      "triplet",
+      "cadence"
+     ]
+    }
+   ]
+  }
+ ],
+ "pattern_beats": {
+  "call": 4,
+  "answer": 4,
+  "echo": 8,
+  "reverse": 8,
+  "cadence": 4,
+  "bass_w": 4,
+  "bass_s": 4,
+  "two_voices": 4,
+  "bass_answer": 4,
+  "offbeat": 8,
+  "late_answer": 4,
+  "triplet": 4,
+  "cut_reply": 4,
+  "silent_answer": 4,
+  "relay": 4,
+  "long_anchor": 4,
+  "release_steps": 8,
+  "anchor_answer": 4,
+  "clockwise": 8,
+  "anticlockwise": 8,
+  "mash_break": 8,
+  "mash_return": 8,
+  "roll_stop": 8,
+  "split_roll": 12
+ }
+}

@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "scope": "V4 chapters 1,3,4,5 source-specific spot/mindmine: existing delivery review plus new source-bound resolutions",
+  "reviewedImages": [
+    {
+      "file": "art/inspection_v4/delivery/furniture_frost_detail.webp",
+      "sha256": "bf6ff65a7032e0e29d2123629f31327000c20cfbf51633c19870e1455ec1b5cd",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "보이는 서리는 테이블/의자 위이며 바닥 결빙이 아님."
+    },
+    {
+      "file": "art/cg_v4/delivery/incident_c1_forensic_r2.webp",
+      "sha256": "21f698e0b9ff58826501367cb861edad39f462581ef3546f3fe4b2163de4d338",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "바닥과 몸이 보이지만 정답으로 식별할 실제 결빙 패치가 보이지 않음."
+    },
+    {
+      "file": "art/inspection_v4/delivery/mirror_fixed_edge.webp",
+      "sha256": "a1a27f0a0cf1f2017764987c285586e13cfe8d7360fef6a48f032bdd0bff0705",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "거울과 모퉁이는 있으나 원문의 A/B/H/D 공용관찰평면이나 겹치는 H출구 시선이 없음."
+    },
+    {
+      "file": "art/cg_v4/delivery/c3_mirror_demonstration_builtin_r1.webp",
+      "sha256": "a78652d29e59778e9324ae968bfa98d620c3dd6c00f668bd6271c7632af47ea7",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "두 사람의 거울 시연 장면이며 지정 미로 수사 도면이 아님."
+    },
+    {
+      "file": "art/inspection_v4/delivery/opposed_benches.webp",
+      "sha256": "e0cfac691991142f3918ed36f34995077f60901c1f7a912c416460a882d142dc",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "두 벤치가 모두 비어 있어 본체의 실제 위치/방향을 선택할 수 없고 입구 바깥 선반도 없음."
+    },
+    {
+      "file": "art/cg_v4/delivery/incident_c3b_forensic_r5.webp",
+      "sha256": "d911664cd110d57fd377e2f7d1cc69a3c9cd68ce20cd6020f295d358d212442b",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "사후 몸 한 개의 벤치 접사이며 오른쪽 벤치/입구 기준을 보여주지 않아 이전 생존확인 배치에 재사용할 수 없음."
+    },
+    {
+      "file": "art/inspection_v4/delivery/work_knife.webp",
+      "sha256": "05d1d4963d513d9254afb01bb58962460f2962cbba590b695072ddf986a7792d",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "도구와 조각의 트레이 접사로 대기실 바깥 선반의 보관 위치가 아님."
+    },
+    {
+      "file": "art/forensic_v4/details/incident_c4_hatch_edge.webp",
+      "sha256": "b85431a573b796c4aee7a02fba0d81838b0fe2088653124c8828dec1bbc06d70",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "사후 개방된 가장자리이며 개방 전 손의 위치를 관찰 도면으로 제공하지 않음."
+    },
+    {
+      "file": "art/inspection_v4/delivery/normal_hatch_latch.webp",
+      "sha256": "b91d7ea64a4a18aba6a8949ecf09f71490584521b88d0643b6ab66a91248b1d5",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "열린 덮개/일반 손잡이/배관은 보이나 닫힌 모임전 사진·별도 외부 고정구·개방전 손의 경계가 없음."
+    },
+    {
+      "file": "art/cg_v4/delivery/c4_remaining_photograph_builtin_r2.webp",
+      "sha256": "c4a9524c51e4481dab0a40d9ecdc8b0ed393a385ab9e565ea84e3f590cccea78",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "카메라를 든 인물 일러스트이며 카메라에 남은 닫힌 점검구 사진을 실제로 표시하지 않음."
+    },
+    {
+      "file": "art/inspection_v4/delivery/blind_second_storage.webp",
+      "sha256": "105ba7d30941d5f2fcf74e9799d6ff1a8f0652d8600cc8d6303a6d5ca5c2dfff",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "막힌 수납공간은 보이지만 기존 외벽과 다른 장소 사진/도면 관계를 보이지 않아 단독 대체 불가."
+    },
+    {
+      "file": "art/inspection_v4/delivery/normal_fixed_utility_window.webp",
+      "sha256": "59ba648aa710d142a4e3407c4a6ff65f7d85217391e271f850cfd9fb9218dafb",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "배관 뒤 고정 창만으로 안쪽 문 뒤의 실제 수납 끝과 원래 외벽의 관계를 입증할 수 없음."
+    },
+    {
+      "file": "art/inspection_v4/delivery/sealed_fictional_sample.webp",
+      "sha256": "27eb6e2f73f75ce11d2df8734dc6401d089477203a75a9264e628122e88e3eb3",
+      "review": "directly viewed existing delivery image",
+      "rejectionReason": "무표지 지퍼 봉투와 닫힌 일반병. D칸/찢긴 식별 포장/식용금지/인쇄 봉함띠나 끊긴 끝이 없음."
+    }
+  ],
+  "contracts": [
+    {
+      "taskId": "T1-MM-A02",
+      "source": {
+        "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+        "line": 716,
+        "fileSha256": "5c0ae1ae5d941aaddb0a3de0f14f7255353c5e9919811ad2cfe6151361e68a8a",
+        "heading": "T1-MM-A02 얼음이 남은 실제 위치 — MM",
+        "location": "T1-MM-A02"
+      },
+      "sourceQuote": "- 가린 그림: 수사 때의 현장 바닥 사진",
+      "assetGroup": "floor-ice",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "수사에서 확인한 같은 직원 휴게실 바닥의 실제 국소 결빙을 보이고 테이블·고정창·목 부위와 구별할 것.",
+        "가구 위 서리를 바닥 결빙으로 옮겨 표시하지 말고 얼음으로 목을 누른 새 흔적/인물 손·얼굴을 추가하지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/furniture_frost_detail.webp",
+        "art/cg_v4/delivery/incident_c1_forensic_r2.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c1_floor_ice"
+    },
+    {
+      "taskId": "T3-SPOT-A01",
+      "source": {
+        "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+        "line": 573,
+        "fileSha256": "904b0bf7b33583f1a8a982aaac47d8a80b24d5f66a5733f85e35560d23b2fbb7",
+        "heading": "T3-SPOT-A01 거울에서 나온 몸의 자리 — SPOT",
+        "location": "T3-SPOT-A01"
+      },
+      "sourceQuote": "- 후보/표시 그림: 미로 관찰 도면.영역A=거울B와모퉁이에서몸이이어져보이는구간/영역B=홈H의안쪽/영역C=대기실D문/영역0=기타.",
+      "assetGroup": "maze-observation",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "원문 공용 관찰 도면의 A입구/B관찰모퉁이/H작업홈/D대기실과 실제 거울면·통로·막힌 뒤벽을 함께 표시할 것.",
+        "B옆 관찰 자리에서 반사 속 머리와 H출구 실제 어깨가 겹쳐 보이는 경계를 실제 시선과 구별해 읽을 수 있게 할 것.새 문/카메라/공격 영상을 만들지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/mirror_fixed_edge.webp",
+        "art/cg_v4/delivery/c3_mirror_demonstration_builtin_r1.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c3_observation_plan"
+    },
+    {
+      "taskId": "T3-MM-01",
+      "source": {
+        "file": "165_3장_재판_형식별_연속대본.md",
+        "line": 61,
+        "fileSha256": "e9c619cb70d8c0431188b6a5199251f8897816edb343e02589c64c3e6ad1661e",
+        "heading": "T3-MM-01 반사에서 바깥으로 — 발굴 이매지네이션",
+        "location": "T3-MM-01"
+      },
+      "sourceQuote": "**찾을 부분:** B의 옆자리에서 H 출구를 볼 때,거울 속 머리와 실제 어깨가 한동안 동시에 보이는 경계.",
+      "assetGroup": "maze-observation",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "T3-SPOT-A01과 같은 수사 관찰 도면을 사용하되 반사/직접시야 겹침을 실제 그림 영역으로 선택하게 할 것.",
+        "H뒤벽을 탈출통로로 그리지 말고 공격한 첫 손잡이의 미관찰 한계는 유지할 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/mirror_fixed_edge.webp",
+        "art/cg_v4/delivery/c3_mirror_demonstration_builtin_r1.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c3_observation_plan"
+    },
+    {
+      "taskId": "T3-MM-A02",
+      "source": {
+        "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+        "line": 757,
+        "fileSha256": "904b0bf7b33583f1a8a982aaac47d8a80b24d5f66a5733f85e35560d23b2fbb7",
+        "heading": "T3-MM-A02 두 번째 몸이 놓였던 방향 — MM",
+        "location": "T3-MM-A02"
+      },
+      "sourceQuote": "- 노출되는 영역: 왼쪽 벤치 머리 안쪽/오른쪽 빈 벤치/중앙 통로/바깥 선반",
+      "assetGroup": "waiting-room-placement",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "입구를 기준으로 왼쪽 벤치·비어 있는 오른쪽 벤치·중앙 통로·바깥 선반이 서로 구분되는 수사 배치 그림을 만들 것.",
+        "왼쪽 벤치의 본체는 머리가 안쪽인 실제 놓임을 보일 것.사후 사건CG를 살아 있던 확인 전 그림으로 바꾸지 말고 이전 손/몸을 새로 복원하지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/opposed_benches.webp",
+        "art/cg_v4/delivery/incident_c3b_forensic_r5.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c3_waiting_position"
+    },
+    {
+      "taskId": "T3-MM-A03",
+      "source": {
+        "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+        "line": 785,
+        "fileSha256": "904b0bf7b33583f1a8a982aaac47d8a80b24d5f66a5733f85e35560d23b2fbb7",
+        "heading": "T3-MM-A03 칼을 빼앗은 뒤 남긴 곳 — MM",
+        "location": "T3-MM-A03"
+      },
+      "sourceQuote": "- 노출되는 영역: 바깥 선반/왼쪽 벤치 머리맡/미오 가방/몸 안쪽",
+      "assetGroup": "waiting-room-shelf",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "같은 대기실 입구와 바깥 선반의 관계를 한 화면에서 보여줄 것.칼을 빼앗은 뒤 둔 실제 바깥 선반을 지목할 수 있어야 함.",
+        "도구 트레이 접사만으로 선반의 실내외 위치를 입증하지 말고 칼을 미오 가방/본체 안쪽에 새로 놓지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/work_knife.webp",
+        "art/inspection_v4/delivery/opposed_benches.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c3_knife_custody"
+    },
+    {
+      "taskId": "T4-SPOT-A01",
+      "source": {
+        "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+        "line": 544,
+        "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6",
+        "heading": "T4-SPOT-A01 닫힌 때 보인 자리 — SPOT",
+        "location": "T4-SPOT-A01"
+      },
+      "sourceQuote": "- 후보/표시 그림: 수사 점검구 도면/개방 전 관찰 표시.영역A=손이 보인 덮개 가장자리/영역B=외부 정면 출입문/영역C=안쪽 끝난 구획/영역0=기타.새로운 최초 촬영 사진으로 표시하지 않아요.",
+      "assetGroup": "hatch-observation-plan",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "개방 전 관찰을 나타낸 수사 도면으로 닫힌 덮개 가장자리에서 손이 보인 부분·정면 출입문·안쪽 끝난 구획을 구별할 것.",
+        "최초 손 사진을 새로 만들어 당시 촬영물이라고 부르지 말 것.사후 열린 가장자리 사진을 개방 전 상태로 바꾸지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/forensic_v4/details/incident_c4_hatch_edge.webp",
+        "art/inspection_v4/delivery/normal_hatch_latch.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c4_hatch_hand_observation"
+    },
+    {
+      "taskId": "T4-MM-A02",
+      "source": {
+        "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+        "line": 728,
+        "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6",
+        "heading": "T4-MM-A02 안에서 닿지 않는 고정 — MM",
+        "location": "T4-MM-A02"
+      },
+      "sourceQuote": "- 노출되는 영역: 외부 고정구/수면/안쪽 벽/정면 출입문",
+      "assetGroup": "hatch-external-fastener",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "수사에서 확인한 점검구 안팎 비교 그림에 별도 외부 고정구와 안쪽 벽·수면·정면 출입문을 표시할 것.",
+        "안에서 닿지 않는 외부 고정구의 실제 위치/접근 관계가 보여야 하며 열린 일반 덮개 손잡이를 그 별도 고정구라고 읽지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/normal_hatch_latch.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c4_external_fastening"
+    },
+    {
+      "taskId": "T4-MM-A03",
+      "source": {
+        "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+        "line": 754,
+        "fileSha256": "3c71856c9b710291bda8f74fc93c56a4c34847008a58fcc063630041251cebd6",
+        "heading": "T4-MM-A03 사진의 닫힌 시점 — MM",
+        "location": "T4-MM-A03"
+      },
+      "sourceQuote": "- 가린 그림: 99와 수사에서 확인한 모임 전 점검구 사진.손이 처음 나온 때의 새 촬영으로 바꾸지 않아요.",
+      "assetGroup": "closed-hatch-earlier-photo",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "99원고와 수사에 실제 남긴 모임 전 사진의 닫힌 덮개면을 보여줄 것.",
+        "개방 뒤 내부·최초 손 사진·새 범행장면을 추가하지 말 것.현재 열린 덮개 inspection 이미지는 해당 과거 사진이 아님."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/normal_hatch_latch.webp",
+        "art/cg_v4/delivery/c4_remaining_photograph_builtin_r2.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c4_closed_hatch_photo"
+    },
+    {
+      "taskId": "T4-MM-01",
+      "source": {
+        "file": "166_4장_재판_형식별_연속대본.md",
+        "line": 114,
+        "fileSha256": "58051c5ce7db9f74ceb50bb5b46abc6937ec2eead9f0653b68b0072ace1dbf24",
+        "heading": "T4-MM-01 끝이라고 적힌 안쪽 — 발굴 이매지네이션",
+        "location": "T4-MM-01"
+      },
+      "sourceQuote": "- B 막힌 수납 구획과 그 뒤에 남아 있는 기존 외벽.",
+      "assetGroup": "storage-ending-plan",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "공용 도면/14일차 보호 기록/두 장소 사진/직접 확인한 수납 구획을 근거로 안쪽 문 뒤 막힌 수납구획과 원래 외벽의 관계를 한 평면에서 보일 것.",
+        "벽의 안쪽과 건물 바깥의 빈 공간을 구별하고 존재하지 않는 외부통로를 만들지 말 것.현재 레이 방을 새로 여는 촬영물로 제시하지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/blind_second_storage.webp",
+        "art/inspection_v4/delivery/normal_fixed_utility_window.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c4_storage_boundary"
+    },
+    {
+      "taskId": "T5-SPOT-A01",
+      "source": {
+        "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+        "line": 573,
+        "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+        "heading": "T5-SPOT-A01 원래 조각이 남은 칸 — SPOT",
+        "location": "T5-SPOT-A01"
+      },
+      "sourceQuote": "- 후보/표시 그림: 보관실 재고 사진.영역A~F=개별 용기 칸의 실제 잔편/물건.정답 마스크는 D칸의 포장 잔편.칸 전체 빈 배경 클릭과 잔편 클릭을 구별해요.",
+      "assetGroup": "sample-six-cell-inventory",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "수사에서 확인한 여섯 개별 용기 A~F칸을 보이고 D칸 가장자리의 이미 찢긴 식별 종이 잔편을 배경과 구별할 것.",
+        "D칸 전체 빈칸을 정답면적으로 쓰지 말 것.다른 다섯 칸 봉함/물건은 원문 상태를 유지하며 새 화학물질·복용·양 정보를 넣지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/sealed_fictional_sample.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c5_inventory_fragment"
+    },
+    {
+      "taskId": "T5-MM-A02",
+      "source": {
+        "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+        "line": 757,
+        "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+        "heading": "T5-MM-A02 경고를 읽을 방향 — MM",
+        "location": "T5-MM-A02"
+      },
+      "sourceQuote": "- 가린 그림: 수사에서 이미 회수·확인한 D 포장 기록 그림",
+      "assetGroup": "sample-packaging-comparison",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "이미 회수한 D포장 기록 그림에 현재 실제로 읽는 식용 금지 경고를 정확한 한글 벡터/텍스트층으로 보일 것.",
+        "미오가 준비대에서 그 경고를 읽었다는 과거 관찰로 바꾸지 말고 접힌 빈 종이/가방전체/컵손잡이와 구분할 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/sealed_fictional_sample.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c5_packaging_warning"
+    },
+    {
+      "taskId": "T5-MM-A03",
+      "source": {
+        "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+        "line": 785,
+        "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+        "heading": "T5-MM-A03 마개와 몸체 사이 — MM",
+        "location": "T5-MM-A03"
+      },
+      "sourceQuote": "- 가린 그림: 수사에서 확인한 회수D의 마개/몸체/봉함띠 대조 그림",
+      "assetGroup": "sample-cap-strip-comparison",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "회수D의 마개와 몸체를 잇던 실제 인쇄 봉함띠의 끊긴 끝을 양쪽 접합 비교로 보여줄 것.",
+        "마개/병바닥/가방지퍼/컵테두리를 구별하고 별도 파손이나 재접착 흔적이 생긴 것처럼 그리지 말 것.닫힌 일반병 목선만으로 끊긴 띠를 대신하지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/sealed_fictional_sample.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c5_cap_strip"
+    },
+    {
+      "taskId": "T5-MM-01",
+      "source": {
+        "file": "167_5장_재판_형식별_연속대본.md",
+        "line": 105,
+        "fileSha256": "7c72b1e949385cf6ee2a4182da09c134821eadbc46b82b3f0501054133430e0d",
+        "heading": "T5-MM-01 비슷한 병이 아니라 이어지는 끝 — 발굴 이매지네이션",
+        "location": "T5-MM-01"
+      },
+      "sourceQuote": "**찾을 부분:** 가방의 포장/보관 D칸의 조각과 회수D 마개의 띠가 각각 이어지는 두 경계.",
+      "assetGroup": "sample-two-joining-boundaries",
+      "status": "bound-new-source-inspection",
+      "bindingReady": true,
+      "requiredVisibleContent": [
+        "가방 포장과 D칸 조각의 이어지는 인쇄/찢긴 경계 및 회수D 마개에 남은 띠의 끊긴 끝을 서로 다른 두 쌍으로 비교할 것.",
+        "두 실제 접합 경계가 모두 읽혀야 하고 병 실루엣/사후 탁자/빈잔 바닥으로 바꾸지 말 것.이 비교를 실제 투입 순간 목격으로 만들지 말 것."
+      ],
+      "rejectedExistingAssets": [
+        "art/inspection_v4/delivery/sealed_fictional_sample.webp"
+      ],
+      "coordinatePolicy": "No UV until an actual source-correct final picture is inspected; no option-index geometry, answer labels or evidence grants.",
+      "initialExistingPictureStatus": "missing-exact-inspected-picture",
+      "resolutionContract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "resolutionEntry": "c5_two_joining_boundaries"
+    }
+  ],
+  "newPicturesCreated": true,
+  "newSourceExtraction": false,
+  "gameOrCentralOutputsChanged": false,
+  "approvedBindings": [
+    {
+      "taskId": "T1-MM-A02",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c1_floor_ice",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T3-SPOT-A01",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c3_observation_plan",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T3-MM-01",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c3_observation_plan",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T3-MM-A02",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c3_waiting_position",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T3-MM-A03",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c3_knife_custody",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T4-SPOT-A01",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c4_hatch_hand_observation",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T4-MM-A02",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c4_external_fastening",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T4-MM-01",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c4_storage_boundary",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T5-SPOT-A01",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c5_inventory_fragment",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T5-MM-A02",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c5_packaging_warning",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T5-MM-A03",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c5_cap_strip",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T5-MM-01",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c5_two_joining_boundaries",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    },
+    {
+      "taskId": "T4-MM-A03",
+      "contract": "ui/v4/investigation_diagrams_v4/manifest.json",
+      "entry": "c4_closed_hatch_photo",
+      "acceptance": "source/picture/UV/static return; native visual acceptance pending"
+    }
+  ],
+  "notes": [
+    "Existing broad map SVGs show room walls/props without authored B/H observation or character placement. They are useful geometry references, not source-complete clue pictures.",
+    "Reconstruction hypotheses/candidates are never repurposed as discovered investigation photos.",
+    "The same exact illustration must be introduced at its authored investigation scope before trial use; merely loading a picture cannot acquire an evidence card.",
+    "Ten source-exact vector diagrams and two root-generated original inspection illustrations bind thirteen tasks. All are first introduced at the authored investigation scope; native runtime visual acceptance remains pending."
+  ]
+}

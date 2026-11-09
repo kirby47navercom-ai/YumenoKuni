@@ -1,1047 +1,1929 @@
 {
- "_doc": "tools/import_audio.py 가 만든다. bgm = 반복(들어가는 부분은 <큐>_intro), jingle = 한 번(len 초 뒤 다음 곡), sfx = 효과음. src = 원본 파일.",
- "bgm": {
-  "bgm_title": {
-   "use": "타이틀",
-   "src": "1-01. DANGANRONPA V3.mp3",
-   "file": "bgm/bgm_title.ogg"
+  "_doc": "tools/import_audio.py 가 만든다. bgm = 반복(들어가는 부분은 <큐>_intro), jingle = 한 번(len 초 뒤 다음 곡), sfx = 효과음. src = 원본 파일.",
+  "bgm": {
+    "bgm_title": {
+      "use": "타이틀 (V3 BGM002)",
+      "src": "1-02. Danganronpa! V3!.mp3",
+      "file": "bgm/bgm_title.ogg",
+      "intro": "bgm/bgm_title_intro.ogg",
+      "introLen": 17.554,
+      "loop": [
+        17.554,
+        79.49
+      ]
+    },
+    "bgm_pretitle": {
+      "use": "오프닝 타이틀 장면(00-1)",
+      "src": "2-01. Danganronpa V3 (Loop Version).mp3",
+      "file": "bgm/bgm_pretitle.ogg",
+      "intro": "bgm/bgm_pretitle_intro.ogg",
+      "introLen": 88.475,
+      "loop": [
+        88.475,
+        191.332
+      ]
+    },
+    "bgm_pro_arrival": {
+      "use": "프롤로그 : 눈뜨기·정문",
+      "src": "1-11. Nightmare in the Locker.mp3",
+      "file": "bgm/bgm_pro_arrival.ogg",
+      "intro": "bgm/bgm_pro_arrival_intro.ogg",
+      "introLen": 43.635,
+      "loop": [
+        43.635,
+        223.635
+      ]
+    },
+    "bgm_pro_intro": {
+      "use": "프롤로그 : 자기소개",
+      "src": "1-03. Rise of the Ultimates.mp3",
+      "file": "bgm/bgm_pro_intro.ogg",
+      "intro": "bgm/bgm_pro_intro_intro.ogg",
+      "introLen": 34.39,
+      "loop": [
+        34.39,
+        214.39
+      ]
+    },
+    "bgm_killing_game": {
+      "use": "프롤로그 : 래피 등장·규칙 선언",
+      "src": "2-18. Let's Start the Killing Game.mp3",
+      "file": "bgm/bgm_killing_game.ogg",
+      "intro": "bgm/bgm_killing_game_intro.ogg",
+      "introLen": 26.437,
+      "loop": [
+        26.437,
+        99.544
+      ]
+    },
+    "bgm_rappy_theme": {
+      "use": "래피가 나와 떠드는 동안",
+      "src": "2-10. Mr. Monokuma's Lesson V3.mp3",
+      "file": "bgm/bgm_rappy_theme.ogg",
+      "intro": "bgm/bgm_rappy_theme_intro.ogg",
+      "introLen": 42.147,
+      "loop": [
+        42.147,
+        155.481
+      ]
+    },
+    "bgm_rappy_after": {
+      "use": "밤 방송",
+      "src": "2-15. Mr. Monokuma After Class V3.mp3",
+      "file": "bgm/bgm_rappy_after.ogg",
+      "intro": "bgm/bgm_rappy_after_intro.ogg",
+      "introLen": 59.141,
+      "loop": [
+        59.141,
+        151.301
+      ]
+    },
+    "bgm_morning": {
+      "use": "아침 방송(모니터)",
+      "src": "1-07. Rise and Shine, Ursine!.mp3",
+      "file": "bgm/bgm_morning.ogg",
+      "intro": "bgm/bgm_morning_intro.ogg",
+      "introLen": 25.306,
+      "loop": [
+        25.306,
+        157.989
+      ]
+    },
+    "bgm_morning_calm": {
+      "use": "아침 모임",
+      "src": "1-18. Cool Morning.mp3",
+      "file": "bgm/bgm_morning_calm.ogg",
+      "intro": "bgm/bgm_morning_calm_intro.ogg",
+      "introLen": 17.292,
+      "loop": [
+        17.292,
+        167.88
+      ]
+    },
+    "bgm_daily_pro": {
+      "use": "프롤로그 일상·탐색",
+      "src": "1-04. Beautiful Lie (Ver.B).mp3",
+      "file": "bgm/bgm_daily_pro.ogg",
+      "intro": "bgm/bgm_daily_pro_intro.ogg",
+      "introLen": 28.755,
+      "loop": [
+        28.755,
+        226.302
+      ]
+    },
+    "bgm_daily_pastel": {
+      "use": "1장 일상",
+      "src": "1-12. Beautiful Lie.mp3",
+      "file": "bgm/bgm_daily_pastel.ogg",
+      "intro": "bgm/bgm_daily_pastel_intro.ogg",
+      "introLen": 37.059,
+      "loop": [
+        37.059,
+        234.606
+      ]
+    },
+    "bgm_daily_summer": {
+      "use": "2장 일상",
+      "src": "1-16. Living in a Lazy Parallel World.mp3",
+      "file": "bgm/bgm_daily_summer.ogg",
+      "intro": "bgm/bgm_daily_summer_intro.ogg",
+      "introLen": 39.985,
+      "loop": [
+        39.985,
+        199.985
+      ]
+    },
+    "bgm_daily_night": {
+      "use": "3장 일상",
+      "src": "3-05. Beautiful Lie in the Virtual World.mp3",
+      "file": "bgm/bgm_daily_night.ogg",
+      "intro": "bgm/bgm_daily_night_intro.ogg",
+      "introLen": 6.502,
+      "loop": [
+        6.502,
+        88.415
+      ]
+    },
+    "bgm_daily_grey": {
+      "use": "4장 일상",
+      "src": "2-13. Heartless Journey.mp3",
+      "file": "bgm/bgm_daily_grey.ogg",
+      "intro": "bgm/bgm_daily_grey_intro.ogg",
+      "introLen": 51.459,
+      "loop": [
+        51.459,
+        108.6
+      ]
+    },
+    "bgm_daily_mono": {
+      "use": "5장 일상(V3 도 일상은 대부분 Beautiful Lie)",
+      "src": "1-12. Beautiful Lie.mp3",
+      "file": "bgm/bgm_daily_mono.ogg",
+      "intro": "bgm/bgm_daily_mono_intro.ogg",
+      "introLen": 37.059,
+      "loop": [
+        37.059,
+        234.606
+      ]
+    },
+    "bgm_core": {
+      "use": "6장",
+      "src": "2-14. Real - Fiction.mp3",
+      "file": "bgm/bgm_core.ogg",
+      "intro": "bgm/bgm_core_intro.ogg",
+      "introLen": 16.756,
+      "loop": [
+        16.756,
+        222.47
+      ]
+    },
+    "bgm_freetime": {
+      "use": "자유행동",
+      "src": "1-10. Become Friends.mp3",
+      "file": "bgm/bgm_freetime.ogg",
+      "intro": "bgm/bgm_freetime_intro.ogg",
+      "introLen": 73.353,
+      "loop": [
+        73.353,
+        199.668
+      ]
+    },
+    "bgm_comedy": {
+      "use": "막간 식사·서비스 장면",
+      "src": "2-03. Finding Peace Party.mp3",
+      "file": "bgm/bgm_comedy.ogg",
+      "intro": "bgm/bgm_comedy_intro.ogg",
+      "introLen": 7.477,
+      "loop": [
+        7.477,
+        167.477
+      ]
+    },
+    "bgm_night": {
+      "use": "저녁·밤·혼자 있는 장면",
+      "src": "2-04. Hope of Autumn.mp3",
+      "file": "bgm/bgm_night.ogg",
+      "intro": "bgm/bgm_night_intro.ogg",
+      "introLen": 3.901,
+      "loop": [
+        3.901,
+        48.901
+      ]
+    },
+    "bgm_tense": {
+      "use": "사건 직전·시체 발견 뒤",
+      "src": "1-21. Darkness Time.mp3",
+      "file": "bgm/bgm_tense.ogg",
+      "intro": "bgm/bgm_tense_intro.ogg",
+      "introLen": 44.501,
+      "loop": [
+        44.501,
+        166.95
+      ]
+    },
+    "bgm_sad": {
+      "use": "유품·소멸",
+      "src": "2-12. Moon on the Water.mp3",
+      "file": "bgm/bgm_sad.ogg",
+      "intro": "bgm/bgm_sad_intro.ogg",
+      "introLen": 9.427,
+      "loop": [
+        9.427,
+        138.658
+      ]
+    },
+    "bgm_warm": {
+      "use": "마지막 대화·약속",
+      "src": "2-17. Wonderful Story.mp3",
+      "file": "bgm/bgm_warm.ogg",
+      "intro": "bgm/bgm_warm_intro.ogg",
+      "introLen": 13.728,
+      "loop": [
+        13.728,
+        108.728
+      ]
+    },
+    "bgm_motive": {
+      "use": "동기 발표 뒤",
+      "src": "1-23. Heaven of Almost Hell.mp3",
+      "file": "bgm/bgm_motive.ogg",
+      "intro": "bgm/bgm_motive_intro.ogg",
+      "introLen": 8.499,
+      "loop": [
+        8.499,
+        128.499
+      ]
+    },
+    "bgm_investigation": {
+      "use": "1~4장 수사 (V3 BGM009)",
+      "src": "1-17. Despair Searching.mp3",
+      "file": "bgm/bgm_investigation.ogg",
+      "intro": "bgm/bgm_investigation_intro.ogg",
+      "introLen": 16.884,
+      "loop": [
+        16.884,
+        234.384
+      ]
+    },
+    "bgm_investigation_final": {
+      "use": "5·6장 수사 (V3 BGM010)",
+      "src": "2-08. Hope Searching.mp3",
+      "file": "bgm/bgm_investigation_final.ogg",
+      "intro": "bgm/bgm_investigation_final_intro.ogg",
+      "introLen": 93.863,
+      "loop": [
+        93.863,
+        468.863
+      ]
+    },
+    "bgm_trial_prep": {
+      "use": "수사 종료 → 재판 준비",
+      "src": "3-04. Trial Preparation.mp3",
+      "file": "bgm/bgm_trial_prep.ogg",
+      "intro": "bgm/bgm_trial_prep_intro.ogg",
+      "introLen": 4.988,
+      "loop": [
+        4.988,
+        52.988
+      ]
+    },
+    "bgm_elevator": {
+      "use": "변론준비·재판장 진입 (V3 BGM032)",
+      "src": "1-07. Our Class Trial.mp3",
+      "file": "bgm/bgm_elevator.ogg",
+      "intro": "bgm/bgm_elevator_intro.ogg",
+      "introLen": 22.184,
+      "loop": [
+        22.184,
+        73.415
+      ]
+    },
+    "bgm_trial_main_1": {
+      "use": "1장 재판",
+      "src": "1-13. Class Trial - Sun Edition V3.mp3",
+      "file": "bgm/bgm_trial_main_1.ogg",
+      "intro": "bgm/bgm_trial_main_1_intro.ogg",
+      "introLen": 32.529,
+      "loop": [
+        32.529,
+        176.89
+      ]
+    },
+    "bgm_trial_main_2": {
+      "use": "2장 재판",
+      "src": "1-09. Class Trial - Space Edition.mp3",
+      "file": "bgm/bgm_trial_main_2.ogg",
+      "intro": "bgm/bgm_trial_main_2_intro.ogg",
+      "introLen": 50.127,
+      "loop": [
+        50.127,
+        326.217
+      ]
+    },
+    "bgm_trial_main_3": {
+      "use": "3장 재판",
+      "src": "1-08. Class Trial - Dawn Edition Vol.3.mp3",
+      "file": "bgm/bgm_trial_main_3.ogg",
+      "intro": "bgm/bgm_trial_main_3_intro.ogg",
+      "introLen": 32.306,
+      "loop": [
+        32.306,
+        209.537
+      ]
+    },
+    "bgm_trial_main_4": {
+      "use": "4장 재판",
+      "src": "1-10. Class Trial - Resurrection Edition.mp3",
+      "file": "bgm/bgm_trial_main_4.ogg",
+      "intro": "bgm/bgm_trial_main_4_intro.ogg",
+      "introLen": 69.087,
+      "loop": [
+        69.087,
+        182.23
+      ]
+    },
+    "bgm_trial_main_5": {
+      "use": "5장 재판",
+      "src": "1-19. Class Trial - Sun Edition V3 (Ver.B).mp3",
+      "file": "bgm/bgm_trial_main_5.ogg",
+      "intro": "bgm/bgm_trial_main_5_intro.ogg",
+      "introLen": 19.758,
+      "loop": [
+        19.758,
+        164.119
+      ]
+    },
+    "bgm_trial_main_6": {
+      "use": "6장 재판",
+      "src": "2-09. Class Trial - Resurrection Edition (No Intro).mp3",
+      "file": "bgm/bgm_trial_main_6.ogg",
+      "intro": "bgm/bgm_trial_main_6_intro.ogg",
+      "introLen": 52.067,
+      "loop": [
+        52.067,
+        165.21
+      ]
+    },
+    "bgm_trial_nonstop": {
+      "use": "논스톱 의논(재판 앞쪽)",
+      "src": "1-11. V3 Argument -Break-.mp3",
+      "file": "bgm/bgm_trial_nonstop.ogg",
+      "intro": "bgm/bgm_trial_nonstop_intro.ogg",
+      "introLen": 2.096,
+      "loop": [
+        2.096,
+        137.207
+      ]
+    },
+    "bgm_trial_nonstop_b": {
+      "use": "논스톱 의논(재판 뒤쪽)",
+      "src": "1-14. V3 Argument -Turn Up the Heat-.mp3",
+      "file": "bgm/bgm_trial_nonstop_b.ogg",
+      "intro": "bgm/bgm_trial_nonstop_b_intro.ogg",
+      "introLen": 17.323,
+      "loop": [
+        17.323,
+        209.323
+      ]
+    },
+    "bgm_trial_nonstop_lie": {
+      "use": "논스톱 의논(4·5장 뒤쪽)",
+      "src": "1-20. V3 Argument -Perjury-.mp3",
+      "file": "bgm/bgm_trial_nonstop_lie.ogg",
+      "intro": "bgm/bgm_trial_nonstop_lie_intro.ogg",
+      "introLen": 14.692,
+      "loop": [
+        14.692,
+        135.581
+      ]
+    },
+    "bgm_trial_nonstop_final": {
+      "use": "6장 의논",
+      "src": "1-16. V3 Argument -Hope vs Despair-.mp3",
+      "file": "bgm/bgm_trial_nonstop_final.ogg",
+      "intro": "bgm/bgm_trial_nonstop_final_intro.ogg",
+      "introLen": 72.681,
+      "loop": [
+        72.681,
+        119.025
+      ]
+    },
+    "bgm_trial_panic": {
+      "use": "패닉 의논",
+      "src": "1-15. V3 Argument -Panic-.mp3",
+      "file": "bgm/bgm_trial_panic.ogg",
+      "intro": "bgm/bgm_trial_panic_intro.ogg",
+      "introLen": 17.351,
+      "loop": [
+        17.351,
+        152.462
+      ]
+    },
+    "bgm_trial_scrum": {
+      "use": "의논 스크럼",
+      "src": "1-12. Debate Scrum.mp3",
+      "file": "bgm/bgm_trial_scrum.ogg",
+      "intro": "bgm/bgm_trial_scrum_intro.ogg",
+      "introLen": 74.293,
+      "loop": [
+        74.293,
+        258.043
+      ]
+    },
+    "bgm_trial_showdown": {
+      "use": "반론 쇼다운",
+      "src": "1-18. V3 Argument -Blade Lock-.mp3",
+      "file": "bgm/bgm_trial_showdown.ogg",
+      "intro": "bgm/bgm_trial_showdown_intro.ogg",
+      "introLen": 133.724,
+      "loop": [
+        133.724,
+        265.381
+      ]
+    },
+    "bgm_trial_armament_1": {
+      "use": "1장 이론 무장",
+      "src": "2-14. Hyper Ultra New a.A. (Ch. 1).mp3",
+      "file": "bgm/bgm_trial_armament_1.ogg",
+      "intro": "bgm/bgm_trial_armament_1_intro.ogg",
+      "introLen": 9.827,
+      "loop": [
+        9.827,
+        105.827
+      ]
+    },
+    "bgm_trial_armament_2": {
+      "use": "2장 이론 무장",
+      "src": "1-14. New a.A.mp3",
+      "file": "bgm/bgm_trial_armament_2.ogg",
+      "intro": "bgm/bgm_trial_armament_2_intro.ogg",
+      "introLen": 16.254,
+      "loop": [
+        16.254,
+        160.254
+      ]
+    },
+    "bgm_trial_armament_3": {
+      "use": "3장 이론 무장",
+      "src": "2-19. Hyper New a.A.mp3",
+      "file": "bgm/bgm_trial_armament_3.ogg",
+      "intro": "bgm/bgm_trial_armament_3_intro.ogg",
+      "introLen": 9.752,
+      "loop": [
+        9.752,
+        124.952
+      ]
+    },
+    "bgm_trial_armament_4": {
+      "use": "4장 이론 무장",
+      "src": "1-21. Final a.A.mp3",
+      "file": "bgm/bgm_trial_armament_4.ogg",
+      "intro": "bgm/bgm_trial_armament_4_intro.ogg",
+      "introLen": 87.249,
+      "loop": [
+        87.249,
+        143.267
+      ]
+    },
+    "bgm_trial_armament_5": {
+      "use": "5장 이론 무장",
+      "src": "2-10. Hyper Final a.A.mp3",
+      "file": "bgm/bgm_trial_armament_5.ogg",
+      "intro": "bgm/bgm_trial_armament_5_intro.ogg",
+      "introLen": 9.17,
+      "loop": [
+        9.17,
+        127.57
+      ]
+    },
+    "bgm_trial_armament_6": {
+      "use": "6장 이론 무장",
+      "src": "2-17. Hyper Final Ultra a.A.mp3",
+      "file": "bgm/bgm_trial_armament_6.ogg",
+      "intro": "bgm/bgm_trial_armament_6_intro.ogg",
+      "introLen": 28.705,
+      "loop": [
+        28.705,
+        126.038
+      ]
+    },
+    "bgm_trial_mindmine": {
+      "use": "발굴 이매지네이션",
+      "src": "2-05. Mind Mine.mp3",
+      "file": "bgm/bgm_trial_mindmine.ogg",
+      "intro": "bgm/bgm_trial_mindmine_intro.ogg",
+      "introLen": 150.651,
+      "loop": [
+        150.651,
+        210.651
+      ]
+    },
+    "bgm_trial_taxi": {
+      "use": "브레인 드라이브",
+      "src": "1-20. Psyche Taxi.mp3",
+      "file": "bgm/bgm_trial_taxi.ogg",
+      "intro": "bgm/bgm_trial_taxi_intro.ogg",
+      "introLen": 38.034,
+      "loop": [
+        38.034,
+        188.891
+      ]
+    },
+    "bgm_trial_anagram": {
+      "use": "섬광 애너그램",
+      "src": "1-17. Hangman's Gambit Ver 3.0.mp3",
+      "file": "bgm/bgm_trial_anagram.ogg",
+      "intro": "bgm/bgm_trial_anagram_intro.ogg",
+      "introLen": 3.901,
+      "loop": [
+        3.901,
+        123.901
+      ]
+    },
+    "bgm_trial_climax": {
+      "use": "클라이맥스 추리",
+      "src": "2-22. Closing Argument V3.mp3",
+      "file": "bgm/bgm_trial_climax.ogg",
+      "intro": "bgm/bgm_trial_climax_intro.ogg",
+      "introLen": 24.803,
+      "loop": [
+        24.803,
+        291.469
+      ]
+    },
+    "bgm_trial_truth": {
+      "use": "투표 뒤 진상",
+      "src": "2-15. Sing the Empty Truth.mp3",
+      "file": "bgm/bgm_trial_truth.ogg",
+      "intro": "bgm/bgm_trial_truth_intro.ogg",
+      "introLen": 37.941,
+      "loop": [
+        37.941,
+        123.275
+      ]
+    },
+    "bgm_trial_end": {
+      "use": "재판 결과",
+      "src": "3-16. Trial END.mp3",
+      "file": "bgm/bgm_trial_end.ogg",
+      "intro": "bgm/bgm_trial_end_intro.ogg",
+      "introLen": 9.517,
+      "loop": [
+        9.517,
+        238.608
+      ]
+    },
+    "bgm_punishment_time": {
+      "use": "처형",
+      "src": "2-18. Destruction Of.mp3",
+      "file": "bgm/bgm_punishment_time.ogg"
+    },
+    "bgm_epilogue_1": {
+      "use": "1장 재판 뒤",
+      "src": "1-26. Hope of Spring.mp3",
+      "file": "bgm/bgm_epilogue_1.ogg",
+      "intro": "bgm/bgm_epilogue_1_intro.ogg",
+      "introLen": 4.876,
+      "loop": [
+        4.876,
+        50.59
+      ]
+    },
+    "bgm_epilogue_2": {
+      "use": "2장 재판 뒤",
+      "src": "2-09. Hope of Summer.mp3",
+      "file": "bgm/bgm_epilogue_2.ogg",
+      "intro": "bgm/bgm_epilogue_2_intro.ogg",
+      "introLen": 31.018,
+      "loop": [
+        31.018,
+        75.326
+      ]
+    },
+    "bgm_epilogue_3": {
+      "use": "3장 재판 뒤",
+      "src": "2-04. Hope of Autumn.mp3",
+      "file": "bgm/bgm_epilogue_3.ogg",
+      "intro": "bgm/bgm_epilogue_3_intro.ogg",
+      "introLen": 3.901,
+      "loop": [
+        3.901,
+        48.901
+      ]
+    },
+    "bgm_epilogue_4": {
+      "use": "4장 재판 뒤",
+      "src": "2-05. Hope of Winter.mp3",
+      "file": "bgm/bgm_epilogue_4.ogg",
+      "intro": "bgm/bgm_epilogue_4_intro.ogg",
+      "introLen": 11.301,
+      "loop": [
+        11.301,
+        59.304
+      ]
+    },
+    "bgm_epilogue_5": {
+      "use": "5장 재판 뒤",
+      "src": "2-12. Moon on the Water.mp3",
+      "file": "bgm/bgm_epilogue_5.ogg",
+      "intro": "bgm/bgm_epilogue_5_intro.ogg",
+      "introLen": 9.427,
+      "loop": [
+        9.427,
+        138.658
+      ]
+    },
+    "bgm_ending_choice": {
+      "use": "마지막 선택",
+      "src": "1-22. New World Order V3.mp3",
+      "file": "bgm/bgm_ending_choice.ogg",
+      "intro": "bgm/bgm_ending_choice_intro.ogg",
+      "introLen": 119.319,
+      "loop": [
+        119.319,
+        243.763
+      ]
+    },
+    "bgm_ending_a": {
+      "use": "엔딩·크레딧",
+      "src": "2-12. New Space Journey.mp3",
+      "file": "bgm/bgm_ending_a.ogg"
+    },
+    "bgm_ending_b": {
+      "use": "엔딩 B",
+      "src": "2-21. Immersive Picture Scrolls.mp3",
+      "file": "bgm/bgm_ending_b.ogg"
+    },
+    "bgm_trial_climax_replay": {
+      "use": "클라이맥스 복기 (V3 BGM085)",
+      "src": "2-23. Climatic Re-Enactment V3.mp3",
+      "file": "bgm/bgm_trial_climax_replay.ogg",
+      "intro": "bgm/bgm_trial_climax_replay_intro.ogg",
+      "introLen": 28.013,
+      "loop": [
+        28.013,
+        198.679
+      ]
+    }
   },
-  "bgm_pretitle": {
-   "use": "오프닝 타이틀 장면(00-1)",
-   "src": "2-01. Danganronpa V3 (Loop Version).mp3",
-   "file": "bgm/bgm_pretitle.ogg",
-   "intro": "bgm/bgm_pretitle_intro.ogg",
-   "introLen": 88.475,
-   "loop": [
-    88.475,
-    191.332
-   ]
+  "jingle": {
+    "jingle_chapter": {
+      "use": "장 시작 표지",
+      "src": "1-08. Chapter A.mp3",
+      "file": "bgm/jingle_chapter.ogg",
+      "len": 12.44
+    },
+    "jingle_chapter_p": {
+      "use": "프롤로그 표지",
+      "src": "1-25. Chapter C.mp3",
+      "file": "bgm/jingle_chapter_p.ogg",
+      "len": 18.56
+    },
+    "jingle_chapter_end": {
+      "use": "장 끝(막간 들어갈 때)",
+      "src": "1-03. Chapter B.mp3",
+      "file": "bgm/jingle_chapter_end.ogg",
+      "len": 11.75
+    },
+    "jingle_body_1": {
+      "use": "1장 시체 발견",
+      "src": "1-13. Dead Body Found A.mp3",
+      "file": "bgm/jingle_body_1.ogg",
+      "len": 20.48
+    },
+    "jingle_body_2": {
+      "use": "2장 시체 발견",
+      "src": "2-20. Dead Body Found B.mp3",
+      "file": "bgm/jingle_body_2.ogg",
+      "len": 14.65
+    },
+    "jingle_body_3": {
+      "use": "3장 시체 발견",
+      "src": "2-13. Dead Body Found C.mp3",
+      "file": "bgm/jingle_body_3.ogg",
+      "len": 15.35
+    },
+    "jingle_body_4": {
+      "use": "4장 시체 발견",
+      "src": "1-05. Dead Body Found D.mp3",
+      "file": "bgm/jingle_body_4.ogg",
+      "len": 20.29
+    },
+    "jingle_body_5": {
+      "use": "5장 시체 발견",
+      "src": "2-07. Dead Body Found E.mp3",
+      "file": "bgm/jingle_body_5.ogg",
+      "len": 11.95
+    },
+    "jingle_rappy": {
+      "use": "래피 등장",
+      "src": "1-09. Mr. Monokuma Appearance.mp3",
+      "file": "bgm/jingle_rappy.ogg",
+      "len": 17.92
+    },
+    "jingle_vote": {
+      "use": "투표 슬롯",
+      "src": "3-03. Vote Slot.mp3",
+      "file": "bgm/jingle_vote.ogg",
+      "len": 24.44
+    },
+    "jingle_flashback": {
+      "use": "회상",
+      "src": "3-02. Flashback Light.mp3",
+      "file": "bgm/jingle_flashback.ogg",
+      "len": 35.4
+    }
   },
-  "bgm_pro_arrival": {
-   "use": "프롤로그 : 눈뜨기·정문",
-   "src": "1-11. Nightmare in the Locker.mp3",
-   "file": "bgm/bgm_pro_arrival.ogg",
-   "intro": "bgm/bgm_pro_arrival_intro.ogg",
-   "introLen": 43.635,
-   "loop": [
-    43.635,
-    223.635
-   ]
-  },
-  "bgm_pro_intro": {
-   "use": "프롤로그 : 자기소개",
-   "src": "1-03. Rise of the Ultimates.mp3",
-   "file": "bgm/bgm_pro_intro.ogg",
-   "intro": "bgm/bgm_pro_intro_intro.ogg",
-   "introLen": 34.39,
-   "loop": [
-    34.39,
-    214.39
-   ]
-  },
-  "bgm_killing_game": {
-   "use": "프롤로그 : 래피 등장·규칙 선언",
-   "src": "2-18. Let's Start the Killing Game.mp3",
-   "file": "bgm/bgm_killing_game.ogg",
-   "intro": "bgm/bgm_killing_game_intro.ogg",
-   "introLen": 26.437,
-   "loop": [
-    26.437,
-    99.544
-   ]
-  },
-  "bgm_rappy_theme": {
-   "use": "래피가 나와 떠드는 동안",
-   "src": "2-10. Mr. Monokuma's Lesson V3.mp3",
-   "file": "bgm/bgm_rappy_theme.ogg",
-   "intro": "bgm/bgm_rappy_theme_intro.ogg",
-   "introLen": 42.147,
-   "loop": [
-    42.147,
-    155.481
-   ]
-  },
-  "bgm_rappy_after": {
-   "use": "밤 방송",
-   "src": "2-15. Mr. Monokuma After Class V3.mp3",
-   "file": "bgm/bgm_rappy_after.ogg",
-   "intro": "bgm/bgm_rappy_after_intro.ogg",
-   "introLen": 59.141,
-   "loop": [
-    59.141,
-    151.301
-   ]
-  },
-  "bgm_morning": {
-   "use": "아침 방송(모니터)",
-   "src": "1-07. Rise and Shine, Ursine!.mp3",
-   "file": "bgm/bgm_morning.ogg",
-   "intro": "bgm/bgm_morning_intro.ogg",
-   "introLen": 25.306,
-   "loop": [
-    25.306,
-    157.989
-   ]
-  },
-  "bgm_morning_calm": {
-   "use": "아침 모임",
-   "src": "1-18. Cool Morning.mp3",
-   "file": "bgm/bgm_morning_calm.ogg",
-   "intro": "bgm/bgm_morning_calm_intro.ogg",
-   "introLen": 17.292,
-   "loop": [
-    17.292,
-    167.88
-   ]
-  },
-  "bgm_daily_pro": {
-   "use": "프롤로그 일상·탐색",
-   "src": "1-04. Beautiful Lie (Ver.B).mp3",
-   "file": "bgm/bgm_daily_pro.ogg",
-   "intro": "bgm/bgm_daily_pro_intro.ogg",
-   "introLen": 28.755,
-   "loop": [
-    28.755,
-    226.302
-   ]
-  },
-  "bgm_daily_pastel": {
-   "use": "1장 일상",
-   "src": "1-12. Beautiful Lie.mp3",
-   "file": "bgm/bgm_daily_pastel.ogg",
-   "intro": "bgm/bgm_daily_pastel_intro.ogg",
-   "introLen": 37.059,
-   "loop": [
-    37.059,
-    234.606
-   ]
-  },
-  "bgm_daily_summer": {
-   "use": "2장 일상",
-   "src": "1-16. Living in a Lazy Parallel World.mp3",
-   "file": "bgm/bgm_daily_summer.ogg",
-   "intro": "bgm/bgm_daily_summer_intro.ogg",
-   "introLen": 39.985,
-   "loop": [
-    39.985,
-    199.985
-   ]
-  },
-  "bgm_daily_night": {
-   "use": "3장 일상",
-   "src": "3-05. Beautiful Lie in the Virtual World.mp3",
-   "file": "bgm/bgm_daily_night.ogg",
-   "intro": "bgm/bgm_daily_night_intro.ogg",
-   "introLen": 6.502,
-   "loop": [
-    6.502,
-    88.415
-   ]
-  },
-  "bgm_daily_grey": {
-   "use": "4장 일상",
-   "src": "2-13. Heartless Journey.mp3",
-   "file": "bgm/bgm_daily_grey.ogg",
-   "intro": "bgm/bgm_daily_grey_intro.ogg",
-   "introLen": 51.459,
-   "loop": [
-    51.459,
-    108.6
-   ]
-  },
-  "bgm_daily_mono": {
-   "use": "5장 일상(V3 도 일상은 대부분 Beautiful Lie)",
-   "src": "1-12. Beautiful Lie.mp3",
-   "file": "bgm/bgm_daily_mono.ogg",
-   "intro": "bgm/bgm_daily_mono_intro.ogg",
-   "introLen": 37.059,
-   "loop": [
-    37.059,
-    234.606
-   ]
-  },
-  "bgm_core": {
-   "use": "6장",
-   "src": "2-14. Real - Fiction.mp3",
-   "file": "bgm/bgm_core.ogg",
-   "intro": "bgm/bgm_core_intro.ogg",
-   "introLen": 16.756,
-   "loop": [
-    16.756,
-    222.47
-   ]
-  },
-  "bgm_freetime": {
-   "use": "자유행동",
-   "src": "1-10. Become Friends.mp3",
-   "file": "bgm/bgm_freetime.ogg",
-   "intro": "bgm/bgm_freetime_intro.ogg",
-   "introLen": 73.353,
-   "loop": [
-    73.353,
-    199.668
-   ]
-  },
-  "bgm_comedy": {
-   "use": "막간 식사·서비스 장면",
-   "src": "2-03. Finding Peace Party.mp3",
-   "file": "bgm/bgm_comedy.ogg",
-   "intro": "bgm/bgm_comedy_intro.ogg",
-   "introLen": 7.477,
-   "loop": [
-    7.477,
-    167.477
-   ]
-  },
-  "bgm_night": {
-   "use": "저녁·밤·혼자 있는 장면",
-   "src": "2-04. Hope of Autumn.mp3",
-   "file": "bgm/bgm_night.ogg",
-   "intro": "bgm/bgm_night_intro.ogg",
-   "introLen": 3.901,
-   "loop": [
-    3.901,
-    48.901
-   ]
-  },
-  "bgm_tense": {
-   "use": "사건 직전·시체 발견 뒤",
-   "src": "1-21. Darkness Time.mp3",
-   "file": "bgm/bgm_tense.ogg",
-   "intro": "bgm/bgm_tense_intro.ogg",
-   "introLen": 44.501,
-   "loop": [
-    44.501,
-    166.95
-   ]
-  },
-  "bgm_sad": {
-   "use": "유품·소멸",
-   "src": "2-12. Moon on the Water.mp3",
-   "file": "bgm/bgm_sad.ogg",
-   "intro": "bgm/bgm_sad_intro.ogg",
-   "introLen": 9.427,
-   "loop": [
-    9.427,
-    138.658
-   ]
-  },
-  "bgm_warm": {
-   "use": "마지막 대화·약속",
-   "src": "2-17. Wonderful Story.mp3",
-   "file": "bgm/bgm_warm.ogg",
-   "intro": "bgm/bgm_warm_intro.ogg",
-   "introLen": 13.728,
-   "loop": [
-    13.728,
-    108.728
-   ]
-  },
-  "bgm_motive": {
-   "use": "동기 발표 뒤",
-   "src": "1-23. Heaven of Almost Hell.mp3",
-   "file": "bgm/bgm_motive.ogg",
-   "intro": "bgm/bgm_motive_intro.ogg",
-   "introLen": 8.499,
-   "loop": [
-    8.499,
-    128.499
-   ]
-  },
-  "bgm_investigation": {
-   "use": "수사",
-   "src": "1-17. Despair Searching.mp3",
-   "file": "bgm/bgm_investigation.ogg",
-   "intro": "bgm/bgm_investigation_intro.ogg",
-   "introLen": 94.553,
-   "loop": [
-    94.553,
-    252.053
-   ]
-  },
-  "bgm_investigation_final": {
-   "use": "6장 수사",
-   "src": "2-08. Hope Searching.mp3",
-   "file": "bgm/bgm_investigation_final.ogg",
-   "intro": "bgm/bgm_investigation_final_intro.ogg",
-   "introLen": 114.091,
-   "loop": [
-    114.091,
-    489.091
-   ]
-  },
-  "bgm_trial_prep": {
-   "use": "수사 종료 → 재판 준비",
-   "src": "3-04. Trial Preparation.mp3",
-   "file": "bgm/bgm_trial_prep.ogg",
-   "intro": "bgm/bgm_trial_prep_intro.ogg",
-   "introLen": 4.988,
-   "loop": [
-    4.988,
-    52.988
-   ]
-  },
-  "bgm_elevator": {
-   "use": "재판장 엘리베이터",
-   "src": "1-07. Our Class Trial.mp3",
-   "file": "bgm/bgm_elevator.ogg",
-   "intro": "bgm/bgm_elevator_intro.ogg",
-   "introLen": 14.003,
-   "loop": [
-    14.003,
-    65.234
-   ]
-  },
-  "bgm_trial_main_1": {
-   "use": "1장 재판",
-   "src": "1-13. Class Trial - Sun Edition V3.mp3",
-   "file": "bgm/bgm_trial_main_1.ogg",
-   "intro": "bgm/bgm_trial_main_1_intro.ogg",
-   "introLen": 32.529,
-   "loop": [
-    32.529,
-    176.89
-   ]
-  },
-  "bgm_trial_main_2": {
-   "use": "2장 재판",
-   "src": "1-09. Class Trial - Space Edition.mp3",
-   "file": "bgm/bgm_trial_main_2.ogg",
-   "intro": "bgm/bgm_trial_main_2_intro.ogg",
-   "introLen": 50.127,
-   "loop": [
-    50.127,
-    326.217
-   ]
-  },
-  "bgm_trial_main_3": {
-   "use": "3장 재판",
-   "src": "1-08. Class Trial - Dawn Edition Vol.3.mp3",
-   "file": "bgm/bgm_trial_main_3.ogg",
-   "intro": "bgm/bgm_trial_main_3_intro.ogg",
-   "introLen": 32.306,
-   "loop": [
-    32.306,
-    209.537
-   ]
-  },
-  "bgm_trial_main_4": {
-   "use": "4장 재판",
-   "src": "1-10. Class Trial - Resurrection Edition.mp3",
-   "file": "bgm/bgm_trial_main_4.ogg",
-   "intro": "bgm/bgm_trial_main_4_intro.ogg",
-   "introLen": 69.087,
-   "loop": [
-    69.087,
-    182.23
-   ]
-  },
-  "bgm_trial_main_5": {
-   "use": "5장 재판",
-   "src": "1-19. Class Trial - Sun Edition V3 (Ver.B).mp3",
-   "file": "bgm/bgm_trial_main_5.ogg",
-   "intro": "bgm/bgm_trial_main_5_intro.ogg",
-   "introLen": 19.758,
-   "loop": [
-    19.758,
-    164.119
-   ]
-  },
-  "bgm_trial_main_6": {
-   "use": "6장 재판",
-   "src": "2-09. Class Trial - Resurrection Edition (No Intro).mp3",
-   "file": "bgm/bgm_trial_main_6.ogg",
-   "intro": "bgm/bgm_trial_main_6_intro.ogg",
-   "introLen": 52.067,
-   "loop": [
-    52.067,
-    165.21
-   ]
-  },
-  "bgm_trial_nonstop": {
-   "use": "논스톱 의논(재판 앞쪽)",
-   "src": "1-11. V3 Argument -Break-.mp3",
-   "file": "bgm/bgm_trial_nonstop.ogg",
-   "intro": "bgm/bgm_trial_nonstop_intro.ogg",
-   "introLen": 2.096,
-   "loop": [
-    2.096,
-    137.207
-   ]
-  },
-  "bgm_trial_nonstop_b": {
-   "use": "논스톱 의논(재판 뒤쪽)",
-   "src": "1-14. V3 Argument -Turn Up the Heat-.mp3",
-   "file": "bgm/bgm_trial_nonstop_b.ogg",
-   "intro": "bgm/bgm_trial_nonstop_b_intro.ogg",
-   "introLen": 17.323,
-   "loop": [
-    17.323,
-    209.323
-   ]
-  },
-  "bgm_trial_nonstop_lie": {
-   "use": "논스톱 의논(4·5장 뒤쪽)",
-   "src": "1-20. V3 Argument -Perjury-.mp3",
-   "file": "bgm/bgm_trial_nonstop_lie.ogg",
-   "intro": "bgm/bgm_trial_nonstop_lie_intro.ogg",
-   "introLen": 14.692,
-   "loop": [
-    14.692,
-    135.581
-   ]
-  },
-  "bgm_trial_nonstop_final": {
-   "use": "6장 의논",
-   "src": "1-16. V3 Argument -Hope vs Despair-.mp3",
-   "file": "bgm/bgm_trial_nonstop_final.ogg",
-   "intro": "bgm/bgm_trial_nonstop_final_intro.ogg",
-   "introLen": 72.681,
-   "loop": [
-    72.681,
-    119.025
-   ]
-  },
-  "bgm_trial_panic": {
-   "use": "패닉 의논",
-   "src": "1-15. V3 Argument -Panic-.mp3",
-   "file": "bgm/bgm_trial_panic.ogg",
-   "intro": "bgm/bgm_trial_panic_intro.ogg",
-   "introLen": 17.351,
-   "loop": [
-    17.351,
-    152.462
-   ]
-  },
-  "bgm_trial_scrum": {
-   "use": "의논 스크럼",
-   "src": "1-12. Debate Scrum.mp3",
-   "file": "bgm/bgm_trial_scrum.ogg",
-   "intro": "bgm/bgm_trial_scrum_intro.ogg",
-   "introLen": 74.293,
-   "loop": [
-    74.293,
-    258.043
-   ]
-  },
-  "bgm_trial_showdown": {
-   "use": "반론 쇼다운",
-   "src": "1-18. V3 Argument -Blade Lock-.mp3",
-   "file": "bgm/bgm_trial_showdown.ogg",
-   "intro": "bgm/bgm_trial_showdown_intro.ogg",
-   "introLen": 133.724,
-   "loop": [
-    133.724,
-    265.381
-   ]
-  },
-  "bgm_trial_armament_1": {
-   "use": "1장 이론 무장",
-   "src": "2-14. Hyper Ultra New a.A. (Ch. 1).mp3",
-   "file": "bgm/bgm_trial_armament_1.ogg",
-   "intro": "bgm/bgm_trial_armament_1_intro.ogg",
-   "introLen": 9.827,
-   "loop": [
-    9.827,
-    105.827
-   ]
-  },
-  "bgm_trial_armament_2": {
-   "use": "2장 이론 무장",
-   "src": "1-14. New a.A.mp3",
-   "file": "bgm/bgm_trial_armament_2.ogg",
-   "intro": "bgm/bgm_trial_armament_2_intro.ogg",
-   "introLen": 16.254,
-   "loop": [
-    16.254,
-    160.254
-   ]
-  },
-  "bgm_trial_armament_3": {
-   "use": "3장 이론 무장",
-   "src": "2-19. Hyper New a.A.mp3",
-   "file": "bgm/bgm_trial_armament_3.ogg",
-   "intro": "bgm/bgm_trial_armament_3_intro.ogg",
-   "introLen": 9.752,
-   "loop": [
-    9.752,
-    124.952
-   ]
-  },
-  "bgm_trial_armament_4": {
-   "use": "4장 이론 무장",
-   "src": "1-21. Final a.A.mp3",
-   "file": "bgm/bgm_trial_armament_4.ogg",
-   "intro": "bgm/bgm_trial_armament_4_intro.ogg",
-   "introLen": 87.249,
-   "loop": [
-    87.249,
-    143.267
-   ]
-  },
-  "bgm_trial_armament_5": {
-   "use": "5장 이론 무장",
-   "src": "2-10. Hyper Final a.A.mp3",
-   "file": "bgm/bgm_trial_armament_5.ogg",
-   "intro": "bgm/bgm_trial_armament_5_intro.ogg",
-   "introLen": 9.17,
-   "loop": [
-    9.17,
-    127.57
-   ]
-  },
-  "bgm_trial_armament_6": {
-   "use": "6장 이론 무장",
-   "src": "2-17. Hyper Final Ultra a.A.mp3",
-   "file": "bgm/bgm_trial_armament_6.ogg",
-   "intro": "bgm/bgm_trial_armament_6_intro.ogg",
-   "introLen": 28.705,
-   "loop": [
-    28.705,
-    126.038
-   ]
-  },
-  "bgm_trial_mindmine": {
-   "use": "발굴 이매지네이션",
-   "src": "2-05. Mind Mine.mp3",
-   "file": "bgm/bgm_trial_mindmine.ogg",
-   "intro": "bgm/bgm_trial_mindmine_intro.ogg",
-   "introLen": 150.651,
-   "loop": [
-    150.651,
-    210.651
-   ]
-  },
-  "bgm_trial_taxi": {
-   "use": "브레인 드라이브",
-   "src": "1-20. Psyche Taxi.mp3",
-   "file": "bgm/bgm_trial_taxi.ogg",
-   "intro": "bgm/bgm_trial_taxi_intro.ogg",
-   "introLen": 38.034,
-   "loop": [
-    38.034,
-    188.891
-   ]
-  },
-  "bgm_trial_anagram": {
-   "use": "섬광 애너그램",
-   "src": "1-17. Hangman's Gambit Ver 3.0.mp3",
-   "file": "bgm/bgm_trial_anagram.ogg",
-   "intro": "bgm/bgm_trial_anagram_intro.ogg",
-   "introLen": 3.901,
-   "loop": [
-    3.901,
-    123.901
-   ]
-  },
-  "bgm_trial_climax": {
-   "use": "클라이맥스 추리",
-   "src": "2-22. Closing Argument V3.mp3",
-   "file": "bgm/bgm_trial_climax.ogg",
-   "intro": "bgm/bgm_trial_climax_intro.ogg",
-   "introLen": 24.803,
-   "loop": [
-    24.803,
-    291.469
-   ]
-  },
-  "bgm_trial_truth": {
-   "use": "투표 뒤 진상",
-   "src": "2-15. Sing the Empty Truth.mp3",
-   "file": "bgm/bgm_trial_truth.ogg",
-   "intro": "bgm/bgm_trial_truth_intro.ogg",
-   "introLen": 37.941,
-   "loop": [
-    37.941,
-    123.275
-   ]
-  },
-  "bgm_trial_end": {
-   "use": "재판 결과",
-   "src": "3-16. Trial END.mp3",
-   "file": "bgm/bgm_trial_end.ogg",
-   "intro": "bgm/bgm_trial_end_intro.ogg",
-   "introLen": 9.517,
-   "loop": [
-    9.517,
-    238.608
-   ]
-  },
-  "bgm_punishment_time": {
-   "use": "처형",
-   "src": "2-18. Destruction Of.mp3",
-   "file": "bgm/bgm_punishment_time.ogg"
-  },
-  "bgm_epilogue_1": {
-   "use": "1장 재판 뒤",
-   "src": "1-26. Hope of Spring.mp3",
-   "file": "bgm/bgm_epilogue_1.ogg",
-   "intro": "bgm/bgm_epilogue_1_intro.ogg",
-   "introLen": 4.876,
-   "loop": [
-    4.876,
-    50.59
-   ]
-  },
-  "bgm_epilogue_2": {
-   "use": "2장 재판 뒤",
-   "src": "2-09. Hope of Summer.mp3",
-   "file": "bgm/bgm_epilogue_2.ogg",
-   "intro": "bgm/bgm_epilogue_2_intro.ogg",
-   "introLen": 31.018,
-   "loop": [
-    31.018,
-    75.326
-   ]
-  },
-  "bgm_epilogue_3": {
-   "use": "3장 재판 뒤",
-   "src": "2-04. Hope of Autumn.mp3",
-   "file": "bgm/bgm_epilogue_3.ogg",
-   "intro": "bgm/bgm_epilogue_3_intro.ogg",
-   "introLen": 3.901,
-   "loop": [
-    3.901,
-    48.901
-   ]
-  },
-  "bgm_epilogue_4": {
-   "use": "4장 재판 뒤",
-   "src": "2-05. Hope of Winter.mp3",
-   "file": "bgm/bgm_epilogue_4.ogg",
-   "intro": "bgm/bgm_epilogue_4_intro.ogg",
-   "introLen": 11.301,
-   "loop": [
-    11.301,
-    59.304
-   ]
-  },
-  "bgm_epilogue_5": {
-   "use": "5장 재판 뒤",
-   "src": "2-12. Moon on the Water.mp3",
-   "file": "bgm/bgm_epilogue_5.ogg",
-   "intro": "bgm/bgm_epilogue_5_intro.ogg",
-   "introLen": 9.427,
-   "loop": [
-    9.427,
-    138.658
-   ]
-  },
-  "bgm_ending_choice": {
-   "use": "마지막 선택",
-   "src": "1-22. New World Order V3.mp3",
-   "file": "bgm/bgm_ending_choice.ogg",
-   "intro": "bgm/bgm_ending_choice_intro.ogg",
-   "introLen": 119.319,
-   "loop": [
-    119.319,
-    243.763
-   ]
-  },
-  "bgm_ending_a": {
-   "use": "엔딩·크레딧",
-   "src": "2-12. New Space Journey.mp3",
-   "file": "bgm/bgm_ending_a.ogg"
-  },
-  "bgm_ending_b": {
-   "use": "엔딩 B",
-   "src": "2-21. Immersive Picture Scrolls.mp3",
-   "file": "bgm/bgm_ending_b.ogg"
+  "sfx": {
+    "ui_select": {
+      "use": "커서 이동",
+      "src": "V3 game_resident/V3_SE_005.ogg",
+      "file": "v3se/V3_SE_005.ogg",
+      "len": 1.109
+    },
+    "ui_confirm": {
+      "use": "결정",
+      "src": "V3 game_resident/V3_SE_001.ogg",
+      "file": "v3se/V3_SE_001.ogg",
+      "len": 1.109
+    },
+    "ui_cancel": {
+      "use": "취소·돌아가기",
+      "src": "V3 game_resident/V3_SE_004.ogg",
+      "file": "v3se/V3_SE_004.ogg",
+      "len": 1.109
+    },
+    "ui_locked": {
+      "use": "고를 수 없음",
+      "src": "V3 game_resident/V3_SE_000.ogg",
+      "file": "v3se/V3_SE_000.ogg",
+      "len": 1.109
+    },
+    "ui_pad": {
+      "use": "패드 열기",
+      "src": "V3 game_resident/V3_SE_015.ogg",
+      "file": "v3se/V3_SE_015.ogg",
+      "len": 1.109
+    },
+    "ui_pad_close": {
+      "use": "패드 닫기",
+      "src": "V3 game_resident/V3_SE_016.ogg",
+      "file": "v3se/V3_SE_016.ogg",
+      "len": 1.109
+    },
+    "ui_page": {
+      "use": "패드 쪽 넘김",
+      "src": "HS_SE_007_학생수첩_페이지전환_효과A.wav",
+      "file": "sfx/ui_page.ogg"
+    },
+    "ui_page_b": {
+      "use": "지도·층 넘김",
+      "src": "HS_SE_236_학생수첩_지도층과페이지전환_효과B.wav",
+      "file": "sfx/ui_page_b.ogg"
+    },
+    "sfx_ding": {
+      "use": "방송 차임",
+      "src": "HS_SE_156_교내방송차임.wav",
+      "file": "sfx/sfx_ding.ogg"
+    },
+    "sfx_body_chime": {
+      "use": "시체 발견 방송 차임",
+      "src": "HS_SE_157_시체발견방송차임.wav",
+      "file": "sfx/sfx_body_chime.ogg"
+    },
+    "sfx_tv": {
+      "use": "모니터 켜짐",
+      "src": "HS_SE_164_방송화면켜짐.wav",
+      "file": "sfx/sfx_tv.ogg"
+    },
+    "sfx_tv_off": {
+      "use": "모니터 꺼짐",
+      "src": "HS_SE_165_방송화면꺼짐.wav",
+      "file": "sfx/sfx_tv_off.ogg"
+    },
+    "sfx_tv_noise": {
+      "use": "방송 잡음",
+      "src": "HS_SE_257_방송_영상잡음.wav",
+      "file": "sfx/sfx_tv_noise.ogg"
+    },
+    "sfx_door": {
+      "use": "방 문",
+      "src": "HS_SE_145_방_출입문.wav",
+      "file": "sfx/sfx_door.ogg"
+    },
+    "sfx_door_slam": {
+      "use": "문 세게 닫기",
+      "src": "HS_SE_146_문_세게닫기.wav",
+      "file": "sfx/sfx_door_slam.ogg"
+    },
+    "sfx_door_creak": {
+      "use": "문 삐걱",
+      "src": "HS_SE_233_문을천천히여닫는_삐걱임.wav",
+      "file": "sfx/sfx_door_creak.ogg"
+    },
+    "sfx_knock": {
+      "use": "노크",
+      "src": "HS_SE_150_문_노크.wav",
+      "file": "sfx/sfx_knock.ogg"
+    },
+    "sfx_bang_door": {
+      "use": "문 두드리기",
+      "src": "HS_SE_151_문_세게두드리기.wav",
+      "file": "sfx/sfx_bang_door.ogg"
+    },
+    "sfx_locked": {
+      "use": "잠긴 문",
+      "src": "HS_SE_153_잠긴문덜컥거림.wav",
+      "file": "sfx/sfx_locked.ogg"
+    },
+    "sfx_footstep": {
+      "use": "걷는 발소리",
+      "src": "HS_SE_141_걷는발소리.wav",
+      "file": "sfx/sfx_footstep.ogg"
+    },
+    "sfx_run": {
+      "use": "달리는 발소리",
+      "src": "HS_SE_142_달리는발소리.wav",
+      "file": "sfx/sfx_run.ogg"
+    },
+    "sfx_room_move": {
+      "use": "장소 이동",
+      "src": "HS_SE_140_방이동.wav",
+      "file": "sfx/sfx_room_move.ogg"
+    },
+    "sfx_hover_person": {
+      "use": "인물 위 커서",
+      "src": "V3 game_resident/V3_SE_050.ogg",
+      "file": "v3se/V3_SE_050.ogg",
+      "len": 0.597
+    },
+    "sfx_talk_in": {
+      "use": "말 걸기",
+      "src": "V3 game_resident/V3_SE_051.ogg",
+      "file": "v3se/V3_SE_051.ogg",
+      "len": 1.109
+    },
+    "sfx_talk_out": {
+      "use": "대화 끝",
+      "src": "V3 game_resident/V3_SE_052.ogg",
+      "file": "v3se/V3_SE_052.ogg",
+      "len": 1.109
+    },
+    "sfx_hotspot": {
+      "use": "조사 대상 표시",
+      "src": "V3 game_resident/V3_SE_050.ogg",
+      "file": "v3se/V3_SE_050.ogg",
+      "len": 0.597
+    },
+    "sfx_inspect": {
+      "use": "조사",
+      "src": "V3 game_resident/V3_SE_051.ogg",
+      "file": "v3se/V3_SE_051.ogg",
+      "len": 1.109
+    },
+    "sfx_card": {
+      "use": "언령·교칙 획득",
+      "src": "HS_SE_021_교칙추가.wav",
+      "file": "sfx/sfx_card.ogg"
+    },
+    "sfx_note": {
+      "use": "노트에 적기",
+      "src": "HS_SE_007_학생수첩_페이지전환_효과A.wav",
+      "file": "sfx/sfx_note.ogg"
+    },
+    "sfx_coin": {
+      "use": "코인",
+      "src": "HS_SE_102_모노모노머신_투입코인수량늘리기.wav",
+      "file": "sfx/sfx_coin.ogg"
+    },
+    "sfx_capsule": {
+      "use": "캡슐 레버",
+      "src": "HS_SE_103_모노모노머신_손잡이작동_캡슐배출.wav",
+      "file": "sfx/sfx_capsule.ogg"
+    },
+    "sfx_capsule_open": {
+      "use": "캡슐 열림",
+      "src": "HS_SE_105_모노모노머신_캡슐개봉후_선물이미지등장.wav",
+      "file": "sfx/sfx_capsule_open.ogg"
+    },
+    "sfx_bond_up": {
+      "use": "인연 상승",
+      "src": "HS_SE_122_자유시간_친밀도상승.wav",
+      "file": "sfx/sfx_bond_up.ogg"
+    },
+    "sfx_wrong": {
+      "use": "오답·싫어하는 선물",
+      "src": "HS_SE_123_자유시간_오답.wav",
+      "file": "sfx/sfx_wrong.ogg"
+    },
+    "sfx_correct": {
+      "use": "정답·제출",
+      "src": "HS_SE_002_제출_입력확정.wav",
+      "file": "sfx/sfx_correct.ogg"
+    },
+    "sfx_band": {
+      "use": "자유행동·수사 개시 띠",
+      "src": "HS_SE_023_전환_자유시간_조사_미니게임시작.wav",
+      "file": "sfx/sfx_band.ogg"
+    },
+    "sfx_rappy": {
+      "use": "래피 등장·퇴장",
+      "src": "HS_SE_133_모노쿠마등장_퇴장.wav",
+      "file": "sfx/sfx_rappy.ogg"
+    },
+    "sfx_shock": {
+      "use": "충격(시체 발견·결정적 발언)",
+      "src": "HS_SE_031_결정적발언_충격강조.wav",
+      "file": "sfx/sfx_shock.ogg"
+    },
+    "sfx_flashback": {
+      "use": "회상 전환",
+      "src": "HS_SE_030_회상전환.wav",
+      "file": "sfx/sfx_flashback.ogg"
+    },
+    "emo_angry": {
+      "use": "호통",
+      "src": "HS_SE_025_호통_분노강조.wav",
+      "file": "sfx/emo_angry.ogg"
+    },
+    "emo_basic": {
+      "use": "강조",
+      "src": "HS_SE_026_기본대사강조.wav",
+      "file": "sfx/emo_basic.ogg"
+    },
+    "emo_surprise": {
+      "use": "놀람·깨달음",
+      "src": "HS_SE_027_놀람_깨달음강조.wav",
+      "file": "sfx/emo_surprise.ogg"
+    },
+    "emo_excited": {
+      "use": "주장·흥분",
+      "src": "HS_SE_028_주장_흥분강조.wav",
+      "file": "sfx/emo_excited.ogg"
+    },
+    "emo_shout": {
+      "use": "깜짝 외침",
+      "src": "HS_SE_029_깜짝놀람_외침강조.wav",
+      "file": "sfx/emo_shout.ogg"
+    },
+    "emo_gloomy": {
+      "use": "침울·난감",
+      "src": "HS_SE_037_침울_난감강조.wav",
+      "file": "sfx/emo_gloomy.ogg"
+    },
+    "sfx_fall": {
+      "use": "쓰러짐",
+      "src": "HS_SE_216_몸이날아가거나떨어지는충격.wav",
+      "file": "sfx/sfx_fall.ogg"
+    },
+    "sfx_glass": {
+      "use": "유리 깨짐",
+      "src": "HS_SE_217_컵_병깨짐.wav",
+      "file": "sfx/sfx_glass.ogg"
+    },
+    "sfx_punch": {
+      "use": "주먹",
+      "src": "HS_SE_210_주먹타격_인물충돌.wav",
+      "file": "sfx/sfx_punch.ogg"
+    },
+    "sfx_slap": {
+      "use": "뺨",
+      "src": "HS_SE_224_뺨때리기.wav",
+      "file": "sfx/sfx_slap.ogg"
+    },
+    "sfx_explode": {
+      "use": "폭발",
+      "src": "HS_SE_214_모노쿠마폭발.wav",
+      "file": "sfx/sfx_explode.ogg"
+    },
+    "sfx_gunshot": {
+      "use": "총성",
+      "src": "HS_SE_035_총성.wav",
+      "file": "sfx/sfx_gunshot.ogg"
+    },
+    "sfx_machine": {
+      "use": "기계 조작",
+      "src": "HS_SE_166_모노쿠마룸_제어패널조작.wav",
+      "file": "sfx/sfx_machine.ogg"
+    },
+    "sfx_elevator": {
+      "use": "엘리베이터 작동",
+      "src": "HS_SE_161_엘리베이터작동.wav",
+      "file": "sfx/sfx_elevator.ogg"
+    },
+    "sfx_elevator_stop": {
+      "use": "엘리베이터 정지",
+      "src": "HS_SE_162_재판장_엘리베이터_정지.wav",
+      "file": "sfx/sfx_elevator_stop.ogg"
+    },
+    "sfx_elevator_door": {
+      "use": "엘리베이터 문",
+      "src": "HS_SE_163_재판장_엘리베이터_문닫힘.wav",
+      "file": "sfx/sfx_elevator_door.ogg"
+    },
+    "sfx_typing": {
+      "use": "타이핑",
+      "src": "HS_SE_208_노트북타이핑.wav",
+      "file": "sfx/sfx_typing.ogg"
+    },
+    "sfx_break": {
+      "use": "논파",
+      "src": "HS_SE_032_논파성공_V3논의무장_격파연출.wav",
+      "file": "sfx/sfx_break.ogg"
+    },
+    "sfx_timeup": {
+      "use": "제한 시간 끝",
+      "src": "HS_SE_160_제한시간종료.wav",
+      "file": "sfx/sfx_timeup.ogg"
+    },
+    "sfx_heart_slow": {
+      "use": "느린 심장",
+      "src": "HS_SE_033_느린심장박동.wav",
+      "file": "sfx/sfx_heart_slow.ogg"
+    },
+    "sfx_heart_fast": {
+      "use": "빠른 심장",
+      "src": "HS_SE_034_빠른심장박동_BTB.wav",
+      "file": "sfx/sfx_heart_fast.ogg"
+    },
+    "sfx_slash": {
+      "use": "베기",
+      "src": "HS_SE_229_클라이맥스추리_사야카의_칼공격.wav",
+      "file": "sfx/sfx_slash.ogg"
+    },
+    "sfx_climax_flip": {
+      "use": "클라이맥스 칸 넘김",
+      "src": "HS_SE_006_클라이맥스추리_후보컷_좌우넘기기.wav",
+      "file": "sfx/sfx_climax_flip.ogg"
+    },
+    "sfx_flash": {
+      "use": "흰 섬광",
+      "src": "HS_SE_202_준코얼굴_흰섬광과연기연출.wav",
+      "file": "sfx/sfx_flash.ogg"
+    },
+    "sfx_chapter_end": {
+      "use": "장 끝",
+      "src": "HS_SE_251_챕터_END_공통도입부.wav",
+      "file": "sfx/sfx_chapter_end.ogg"
+    },
+    "sfx_prologue": {
+      "use": "프롤로그 시작",
+      "src": "HS_SE_244_프롤로그시작.wav",
+      "file": "sfx/sfx_prologue.ogg"
+    },
+    "v4_clock_tick": {
+      "file": "v4_original/clock_tick.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "quiet wall clock: trigger once per actual timer second, never use as universal BGM",
+      "len": 0.18,
+      "original_manifest_id": "clock_tick",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "63bfc22fa716eb714b117a98fb1af7b9a4b1dc823fbef67f5e7234c593232ab6"
+    },
+    "v4_clock_tock": {
+      "file": "v4_original/clock_tock.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "alternate clock tick, same clock source",
+      "len": 0.2,
+      "original_manifest_id": "clock_tock",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "d3024c661e33069eb7f4e392e78f6f387de872bf536083b5a88be882f778842b"
+    },
+    "v4_distant_bell": {
+      "file": "v4_original/distant_bell.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "single original offscreen bell resonance; no borrowed melody",
+      "len": 4.8,
+      "original_manifest_id": "distant_bell",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "f02176d4ae7ba4f2989a4b1fcdd61dae1370a1e81ededadf041148865eb0388e"
+    },
+    "v4_musicbox_single": {
+      "file": "v4_original/musicbox_single.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "one original toy-music-box pluck; authored sequence separate",
+      "len": 2.8,
+      "original_manifest_id": "musicbox_single",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "745d1751b42f7db075687cccecacaa8e9dc65af9647d79b5fb0842450894640a"
+    },
+    "v4_footstep_tile_1": {
+      "file": "v4_original/footstep_tile_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "tile footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_tile_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "540edc22c37d1d688fc362ef1032e1ab48b6bfa09bf6c9244ff09d76ebcf99ad"
+    },
+    "v4_footstep_tile_2": {
+      "file": "v4_original/footstep_tile_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "tile footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_tile_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "6c4f9d17cc02e2216b425b932d973fa17b182ea14417db2f66ca118f84f8552b"
+    },
+    "v4_footstep_wood_1": {
+      "file": "v4_original/footstep_wood_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "wood footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_wood_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "56152a693068307b25ff87a46776e3a5126e4f56be6f684ecd9ac66ad0cb5d19"
+    },
+    "v4_footstep_wood_2": {
+      "file": "v4_original/footstep_wood_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "wood footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_wood_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "6465fdb377cbff2f89b60b7c77f7472e307efefc19d3bb2b0d44934015bce1b0"
+    },
+    "v4_footstep_metal_1": {
+      "file": "v4_original/footstep_metal_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "metal footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_metal_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "1b64af691edfcfdaccb78ba388b4c09a450b2f17a73c84ef67f09f6820926d69"
+    },
+    "v4_footstep_metal_2": {
+      "file": "v4_original/footstep_metal_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "metal footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_metal_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "179db06c07d4259a80f4186b7a96db51b547a0d344dfffc2f05b5d86e5905238"
+    },
+    "v4_footstep_cloth_1": {
+      "file": "v4_original/footstep_cloth_1.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "cloth footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_cloth_1",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "46b9e57c86b121d4db01fbf4d8b52695cec2317a53538f22f67c1f62d9b27951"
+    },
+    "v4_footstep_cloth_2": {
+      "file": "v4_original/footstep_cloth_2.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "cloth footstep variation; trigger foot-contact event, alternate without machine-gun repetition",
+      "len": 0.36,
+      "original_manifest_id": "footstep_cloth_2",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "3fa21a59eb392851e876152bbf50b4ba24b1aa3f7955dae96bfbaa379d226d93"
+    },
+    "v4_ui_focus": {
+      "file": "v4_original/ui_focus.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "focus CHANGED event only, never every frame",
+      "len": 0.24,
+      "original_manifest_id": "ui_focus",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "cec4ee6c5ed8799eb7b1e2c01763d91fb4b7c577ff3a8edd05e903370dea3df9"
+    },
+    "v4_ui_confirm": {
+      "file": "v4_original/ui_confirm.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "accepted decision after permission check",
+      "len": 0.24,
+      "original_manifest_id": "ui_confirm",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "d0706b21b5886892784584af5c2b2f625717e368b8e4fd3f452452d60454e4fb"
+    },
+    "v4_ui_cancel": {
+      "file": "v4_original/ui_cancel.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "return/back accepted",
+      "len": 0.24,
+      "original_manifest_id": "ui_cancel",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "da2caa5fe71a372eda988a810cd7a36d5ad55a77ba3aa10cf534326a5fd1aa40"
+    },
+    "v4_ui_reject": {
+      "file": "v4_original/ui_reject.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "disabled/invalid request rejected, no state advance",
+      "len": 0.24,
+      "original_manifest_id": "ui_reject",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "34ae2b14ddde347aef3bc9ab851d5910333b476705194dba2f0d2da74c3e184e"
+    },
+    "v4_evidence_acquired": {
+      "file": "v3se/V3_SE_045.ogg",
+      "src": "V3 game_resident/V3_SE_045.ogg",
+      "use": "언령 획득 표시"
+    },
+    "v4_evidence_revised": {
+      "file": "v4_original/evidence_revised.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "same evidence version updated, not duplicated acquisition",
+      "len": 0.24,
+      "original_manifest_id": "evidence_revised",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "844ce1ee02920d19ae6604ea9b4ed6cdd58f93708ca71136c2c1572d2ed51e8a"
+    },
+    "v4_paper_turn": {
+      "file": "v4_original/paper_turn.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "page-turn start; throttle on fast backlog scrolling",
+      "len": 0.48,
+      "original_manifest_id": "paper_turn",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "b449feef832d83dd67507e28d999cf78a0855983b9f8b103c9c07000e0ec72cc"
+    },
+    "v4_paper_insert": {
+      "file": "v4_original/paper_insert.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "comic piece successfully inserted after placement validation",
+      "len": 0.3,
+      "original_manifest_id": "paper_insert",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "be60ffb1626934ead9d5f3db8f55fc5c6c94bc4a35b70dbac5ce0ddc14a4c16e"
+    },
+    "v4_cloth_rustle": {
+      "file": "v4_original/cloth_rustle.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "clothing/brace handling; no gore implication",
+      "len": 0.65,
+      "original_manifest_id": "cloth_rustle",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "86c405f6a8c6ed06e2961aa99b84551d58ac17f3ec44057f3deea0fd6bf2b148"
+    },
+    "v4_metal_latch_release": {
+      "file": "v4_original/metal_latch_release.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "external latch-release animation contact",
+      "len": 0.27,
+      "original_manifest_id": "metal_latch_release",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "2ec52b01c18a0e21feb0475b96a05f208134b7da550a8bf0f0026ee466636ae6"
+    },
+    "v4_metal_latch_close": {
+      "file": "v4_original/metal_latch_close.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "latch seats, after closed pose actually reached",
+      "len": 0.3,
+      "original_manifest_id": "metal_latch_close",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "afa2a9646675ca2699b4d29edfcfa89e8d467b5f36f18e2ec1f2e9aa92651233"
+    },
+    "v4_door_wood_close": {
+      "file": "v4_original/door_wood_close.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "door-leaf close contact, not open permission event",
+      "len": 0.55,
+      "original_manifest_id": "door_wood_close",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "6f231c25407d9f04d83d83a7ba162d208031949d6d558b19fef799e102c2391e"
+    },
+    "v4_door_hinge": {
+      "file": "v4_original/door_hinge.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "quiet stylized hinge movement, trim/fade on interrupted animation",
+      "len": 1.1,
+      "original_manifest_id": "door_hinge",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "93b83cec4fb59ba36cca2d7b4106fcbf2bbf334d54846b637bfef3f48a359b15"
+    },
+    "v4_ink_impact": {
+      "file": "v4_original/ink_impact.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "single decisive hit feedback, never overwrite logical hit test",
+      "len": 0.55,
+      "original_manifest_id": "ink_impact",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "818daa56ab73dea2010b3f0a6c369022ce230782e243e40174e46f3394dde31a"
+    },
+    "v4_ink_slice": {
+      "file": "v4_original/ink_slice.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "single ink slash gesture, no real injury sound",
+      "len": 0.32,
+      "original_manifest_id": "ink_slice",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "534c415bcbf73e6026608ab94ebd8d6f68f8f7e6427e2992718d1927d8862e8a"
+    },
+    "v4_miss_brush": {
+      "file": "v4_original/miss_brush.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "non-hit deflection, distinct from successful impact",
+      "len": 0.35,
+      "original_manifest_id": "miss_brush",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "d5532aad5f2c021f2f52c1d1892582e677afb9e923c88f54a2d9ffc509f4e04b"
+    },
+    "v4_memory_scan": {
+      "file": "v4_original/memory_scan.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "one rewind/readback transition, no extra use or success claim",
+      "len": 0.95,
+      "original_manifest_id": "memory_scan",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "0a610bb4ae0d4587a2c58ac582cf391da48840cfbbfb5b37dd095ed7291daa9e"
+    },
+    "v4_camera_shutter": {
+      "file": "v4_original/camera_shutter.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "physical camera shutter only when story permits real capture",
+      "len": 0.16,
+      "original_manifest_id": "camera_shutter",
+      "loop_samples": null,
+      "sample_rate": 48000,
+      "wav_sha256": "ec1f52f97570f046e3a7cc62784e5508f63fa1813c89117987b0ae0e72cdfe72"
+    },
+    "v4_amb_room_air": {
+      "file": "v4_original/amb_room_air.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "quiet occupied interior air",
+      "len": 16.0,
+      "original_manifest_id": "amb_room_air",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.0008722840651602462
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "904e892e3709f05d902ad1edeec802b6fb59935e959d0112ddc632facc23f6ec"
+    },
+    "v4_amb_outside_wind": {
+      "file": "v4_original/amb_outside_wind.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "park air, no implied live machinery",
+      "len": 16.0,
+      "original_manifest_id": "amb_outside_wind",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.002857527930406385
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "27f5aa675e64691edac4a3342667594354033c3c20b5833b6a402c3f848a1b9c"
+    },
+    "v4_amb_machine_hum": {
+      "file": "v4_original/amb_machine_hum.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "powered maintenance equipment, stop when disconnected",
+      "len": 16.0,
+      "original_manifest_id": "amb_machine_hum",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.000521080343856388
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "a34340458d7d44db57cb69165e22fdd8eff518d49412d5750f012facd231ea88"
+    },
+    "v4_amb_water_flow": {
+      "file": "v4_original/amb_water_flow.ogg",
+      "src": "original deterministic synthesis in tools/make_v4_original_audio.py",
+      "use": "actual running-water emitter only. Dry fountain MUST NOT receive this cue; use existing recorded fountain-speaker story cue separately.",
+      "len": 16.0,
+      "original_manifest_id": "amb_water_flow",
+      "loop_samples": {
+        "start_sample": 0,
+        "end_sample_exclusive": 768000,
+        "seam_delta": 0.005095966109923432
+      },
+      "sample_rate": 48000,
+      "wav_sha256": "732dc8d08706691a8117690240fb7e1d57f83b412b740612014731554cc24bf4"
+    },
+    "sfx_capsule_bonus": {
+      "use": "추가 캡슐 연출",
+      "src": "HS_SE_104_모노모노머신_캡슐튀어오름_회전연출.wav",
+      "file": "sfx/sfx_capsule_bonus.ogg"
+    },
+    "v3se_000": {
+      "src": "V3 game_resident/V3_SE_000.ogg",
+      "file": "v3se/V3_SE_000.ogg",
+      "use": "고를 수 없음",
+      "len": 1.109
+    },
+    "v3se_001": {
+      "src": "V3 game_resident/V3_SE_001.ogg",
+      "file": "v3se/V3_SE_001.ogg",
+      "use": "결정",
+      "len": 1.109
+    },
+    "v3se_003": {
+      "src": "V3 game_resident/V3_SE_003.ogg",
+      "file": "v3se/V3_SE_003.ogg",
+      "use": "대사 넘김",
+      "len": 0.32
+    },
+    "v3se_004": {
+      "src": "V3 game_resident/V3_SE_004.ogg",
+      "file": "v3se/V3_SE_004.ogg",
+      "use": "취소",
+      "len": 1.109
+    },
+    "v3se_005": {
+      "src": "V3 game_resident/V3_SE_005.ogg",
+      "file": "v3se/V3_SE_005.ogg",
+      "use": "커서 이동",
+      "len": 1.109
+    },
+    "v3se_034": {
+      "src": "V3 game_resident/V3_SE_034.ogg",
+      "file": "v3se/V3_SE_034.ogg",
+      "use": "자유행동 초대 시작",
+      "len": 1.109
+    },
+    "v3se_007": {
+      "src": "V3 game_resident/V3_SE_007.ogg",
+      "file": "v3se/V3_SE_007.ogg",
+      "use": "클라이맥스 쪽 넘김",
+      "len": 1.109
+    },
+    "v3se_010": {
+      "src": "V3 game_resident/V3_SE_010.ogg",
+      "file": "v3se/V3_SE_010.ogg",
+      "use": "후보 목록 펼침",
+      "len": 1.109
+    },
+    "v3se_011": {
+      "src": "V3 game_resident/V3_SE_011.ogg",
+      "file": "v3se/V3_SE_011.ogg",
+      "use": "후보 목록 접기",
+      "len": 1.109
+    },
+    "v3se_015": {
+      "src": "V3 game_resident/V3_SE_015.ogg",
+      "file": "v3se/V3_SE_015.ogg",
+      "use": "패드 열기",
+      "len": 1.109
+    },
+    "v3se_021": {
+      "src": "V3 game_resident/V3_SE_021.ogg",
+      "file": "v3se/V3_SE_021.ogg",
+      "use": "이론 무장 조각 등장",
+      "len": 1.109
+    },
+    "v3se_032": {
+      "src": "V3 game_resident/V3_SE_032.ogg",
+      "file": "v3se/V3_SE_032.ogg",
+      "use": "이론 무장 마지막 조각 완성",
+      "len": 3.008
+    },
+    "v3se_302": {
+      "src": "V3 trial_resident/V3_SE_302.ogg",
+      "file": "v3se/V3_SE_302.ogg",
+      "use": "언령·칼 바꾸기 (3f0500·3f69c0)",
+      "len": 1.131
+    },
+    "v3se_305": {
+      "src": "V3 trial_resident/V3_SE_305.ogg",
+      "file": "v3se/V3_SE_305.ogg",
+      "use": "발사·인물 결정 (3f0500 case10·3c44c0)",
+      "len": 2.005
+    },
+    "v3se_307": {
+      "src": "V3 trial_resident/V3_SE_307.ogg",
+      "file": "v3se/V3_SE_307.ogg",
+      "use": "발언에 맞음(약점 아님) (3efcf0)",
+      "len": 1.109
+    },
+    "v3se_308": {
+      "src": "V3 trial_resident/V3_SE_308.ogg",
+      "file": "v3se/V3_SE_308.ogg",
+      "use": "위증 탄환 약점 명중 (3f0500)",
+      "len": 1.152
+    },
+    "v3se_309": {
+      "src": "V3 trial_resident/V3_SE_309.ogg",
+      "file": "v3se/V3_SE_309.ogg",
+      "use": "논파 약점 명중 + Ronpa (3f0500)",
+      "len": 1.984
+    },
+    "v3se_310": {
+      "src": "V3 trial_resident/V3_SE_310.ogg",
+      "file": "v3se/V3_SE_310.ogg",
+      "use": "동의 명중·정답 (3f0500·38d970)",
+      "len": 1.877
+    },
+    "v3se_311": {
+      "src": "V3 trial_resident/V3_SE_311.ogg",
+      "file": "v3se/V3_SE_311.ogg",
+      "use": "틀린 명중·오답 (3f0500·38d970)",
+      "len": 2.752
+    },
+    "v3se_315": {
+      "src": "V3 trial_resident/V3_SE_315.ogg",
+      "file": "v3se/V3_SE_315.ogg",
+      "use": "반론 헛베기 Hanron_Miss (3f6510)",
+      "len": 1.109
+    },
+    "v3se_316": {
+      "src": "V3 trial_resident/V3_SE_316.ogg",
+      "file": "v3se/V3_SE_316.ogg",
+      "use": "피해 (공통 Damage)",
+      "len": 1.109
+    },
+    "v3se_317": {
+      "src": "V3 trial_resident/V3_SE_317.ogg",
+      "file": "v3se/V3_SE_317.ogg",
+      "use": "반론 피해 (3f6510)",
+      "len": 1.109
+    },
+    "v3se_318": {
+      "src": "V3 trial_resident/V3_SE_318.ogg",
+      "file": "v3se/V3_SE_318.ogg",
+      "use": "반론 칼 맞물림 시작 (3f7e10)",
+      "len": 2.389
+    },
+    "v3se_327": {
+      "src": "V3 trial_resident/V3_SE_327.ogg",
+      "file": "v3se/V3_SE_327.ogg",
+      "use": "깨짐 (정답 컷인 뒤 파괴 단계)",
+      "len": 2.965
+    },
+    "v3se_330": {
+      "src": "V3 trial_resident/V3_SE_330.ogg",
+      "file": "v3se/V3_SE_330.ogg",
+      "use": "논파 정답 컷인",
+      "len": 3.797
+    },
+    "v3se_331": {
+      "src": "V3 trial_resident/V3_SE_331.ogg",
+      "file": "v3se/V3_SE_331.ogg",
+      "use": "동의 정답 컷인",
+      "len": 1.835
+    },
+    "v3se_332": {
+      "src": "V3 trial_resident/V3_SE_332.ogg",
+      "file": "v3se/V3_SE_332.ogg",
+      "use": "시간 끝",
+      "len": 1.579
+    },
+    "v3se_339": {
+      "src": "V3 trial_resident/V3_SE_339.ogg",
+      "file": "v3se/V3_SE_339.ogg",
+      "use": "소음 맞음(안 깨짐) (3efcf0)",
+      "len": 1.109
+    },
+    "v3se_341": {
+      "src": "V3 trial_resident/V3_SE_341.ogg",
+      "file": "v3se/V3_SE_341.ogg",
+      "use": "집중 시작",
+      "len": 4.203
+    },
+    "v3se_342": {
+      "src": "V3 trial_resident/V3_SE_342.ogg",
+      "file": "v3se/V3_SE_342.ogg",
+      "use": "집중 반복",
+      "len": 15.083
+    },
+    "v3se_343": {
+      "src": "V3 trial_resident/V3_SE_343.ogg",
+      "file": "v3se/V3_SE_343.ogg",
+      "use": "패닉 발언 끼어듦 (48b350)",
+      "len": 1.835
+    },
+    "v3se_345": {
+      "src": "V3 trial_resident/V3_SE_345.ogg",
+      "file": "v3se/V3_SE_345.ogg",
+      "use": "패닉 큰소리 깨기 Panic_OgoeBreak (3efcf0)",
+      "len": 2.048
+    },
+    "v3se_346": {
+      "src": "V3 trial_resident/V3_SE_346.ogg",
+      "file": "v3se/V3_SE_346.ogg",
+      "use": "위증 정답 컷인",
+      "len": 2.347
+    },
+    "v3se_347": {
+      "src": "V3 trial_resident/V3_SE_347.ogg",
+      "file": "v3se/V3_SE_347.ogg",
+      "use": "스크럼 전원 논파 Sc_AllRonpa (3fa430)",
+      "len": 4.459
+    },
+    "v3se_348": {
+      "src": "V3 trial_resident/V3_SE_348.ogg",
+      "file": "v3se/V3_SE_348.ogg",
+      "use": "패닉 깨짐",
+      "len": 4.011
+    },
+    "v3se_349": {
+      "src": "V3 trial_resident/V3_SE_349.ogg",
+      "file": "v3se/V3_SE_349.ogg",
+      "use": "위증 정답 마무리",
+      "len": 3.243
+    },
+    "v3se_351": {
+      "src": "V3 trial_resident/V3_SE_351.ogg",
+      "file": "v3se/V3_SE_351.ogg",
+      "use": "사일런서 반복 (3efcf0)",
+      "len": 2.56
+    },
+    "v3se_356": {
+      "src": "V3 trial_resident/V3_SE_356.ogg",
+      "file": "v3se/V3_SE_356.ogg",
+      "use": "스크럼 시작 4",
+      "len": 2.197
+    },
+    "v3se_359": {
+      "src": "V3 trial_resident/V3_SE_359.ogg",
+      "file": "v3se/V3_SE_359.ogg",
+      "use": "스크럼 시작 5",
+      "len": 1.109
+    },
+    "v3se_360": {
+      "src": "V3 trial_resident/V3_SE_360.ogg",
+      "file": "v3se/V3_SE_360.ogg",
+      "use": "스크럼 짝 결정·마지막 통과",
+      "len": 2.752
+    },
+    "v3se_361": {
+      "src": "V3 trial_resident/V3_SE_361.ogg",
+      "file": "v3se/V3_SE_361.ogg",
+      "use": "스크럼 정답",
+      "len": 1.109
+    },
+    "v3se_362": {
+      "src": "V3 trial_resident/V3_SE_362.ogg",
+      "file": "v3se/V3_SE_362.ogg",
+      "use": "스크럼 오답",
+      "len": 1.109
+    },
+    "v3se_363": {
+      "src": "V3 trial_resident/V3_SE_363.ogg",
+      "file": "v3se/V3_SE_363.ogg",
+      "use": "스크럼 시작 1",
+      "len": 2.837
+    },
+    "v3se_364": {
+      "src": "V3 trial_resident/V3_SE_364.ogg",
+      "file": "v3se/V3_SE_364.ogg",
+      "use": "스크럼 시작 2·단계 통과",
+      "len": 2.709
+    },
+    "v3se_365": {
+      "src": "V3 trial_resident/V3_SE_365.ogg",
+      "file": "v3se/V3_SE_365.ogg",
+      "use": "스크럼 시작 3",
+      "len": 3.307
+    },
+    "v3se_366": {
+      "src": "V3 trial_resident/V3_SE_366.ogg",
+      "file": "v3se/V3_SE_366.ogg",
+      "use": "스크럼 마지막 단계 시작",
+      "len": 5.099
+    },
+    "v3se_367": {
+      "src": "V3 trial_resident/V3_SE_367.ogg",
+      "file": "v3se/V3_SE_367.ogg",
+      "use": "투표 커서",
+      "len": 1.109
+    },
+    "v3se_368": {
+      "src": "V3 trial_resident/V3_SE_368.ogg",
+      "file": "v3se/V3_SE_368.ogg",
+      "use": "투표 결정",
+      "len": 1.131
+    },
+    "v3se_369_d": {
+      "src": "V3 trial_resident/V3_SE_369_d.ogg",
+      "file": "v3se/V3_SE_369_d.ogg",
+      "use": "투표 결과",
+      "len": 3.243
+    },
+    "v3se_374": {
+      "src": "V3 trial_resident/V3_SE_374.ogg",
+      "file": "v3se/V3_SE_374.ogg",
+      "use": "반론 시작 (3f69c0 case9)",
+      "len": 1.429
+    },
+    "v3se_375": {
+      "src": "V3 trial_resident/V3_SE_375.ogg",
+      "file": "v3se/V3_SE_375.ogg",
+      "use": "반론 베기 명중 Hanron_Hit (3f6000)",
+      "len": 1.259
+    },
+    "v3se_376": {
+      "src": "V3 trial_resident/V3_SE_376.ogg",
+      "file": "v3se/V3_SE_376.ogg",
+      "use": "반론 마무리 Hanron_Finish (3f69c0)",
+      "len": 1.493
+    },
+    "v3se_377": {
+      "src": "V3 trial_resident/V3_SE_377.ogg",
+      "file": "v3se/V3_SE_377.ogg",
+      "use": "반론 발언 넘어감 (3f69c0)",
+      "len": 1.536
+    },
+    "v3se_378": {
+      "src": "V3 trial_resident/V3_SE_378.ogg",
+      "file": "v3se/V3_SE_378.ogg",
+      "use": "반론 칼 맞물림 반복 Hanron_Tsuba (3f7e10)",
+      "len": 2.091
+    },
+    "v3se_384": {
+      "src": "V3 trial_resident/V3_SE_384.ogg",
+      "file": "v3se/V3_SE_384.ogg",
+      "use": "애너그램 글자 날아감",
+      "len": 1.301
+    },
+    "v3se_394": {
+      "src": "V3 minigame_resident/V3_SE_394.ogg",
+      "file": "v3se/V3_SE_394.ogg",
+      "use": "발굴 잘 지움",
+      "len": 2.517
+    },
+    "v3se_395": {
+      "src": "V3 minigame_resident/V3_SE_395.ogg",
+      "file": "v3se/V3_SE_395.ogg",
+      "use": "발굴 실패",
+      "len": 2.219
+    },
+    "v3se_400": {
+      "src": "V3 minigame_resident/V3_SE_400.ogg",
+      "file": "v3se/V3_SE_400.ogg",
+      "use": "발굴 정답",
+      "len": 3.413
+    },
+    "v3se_402": {
+      "src": "V3 minigame_resident/V3_SE_402.ogg",
+      "file": "v3se/V3_SE_402.ogg",
+      "use": "이론 무장 누르기",
+      "len": 2.517
+    },
+    "v3se_403": {
+      "src": "V3 minigame_resident/V3_SE_403.ogg",
+      "file": "v3se/V3_SE_403.ogg",
+      "use": "이론 무장 명중",
+      "len": 2.005
+    },
+    "v3se_404": {
+      "src": "V3 minigame_resident/V3_SE_404.ogg",
+      "file": "v3se/V3_SE_404.ogg",
+      "use": "이론 무장 놓침",
+      "len": 1.109
+    },
+    "v3se_442": {
+      "src": "V3 minigame_resident/V3_SE_442.ogg",
+      "file": "v3se/V3_SE_442.ogg",
+      "use": "이론 무장 마지막 크리티컬",
+      "len": 2.517
+    },
+    "v3se_443": {
+      "src": "V3 minigame_resident/V3_SE_443.ogg",
+      "file": "v3se/V3_SE_443.ogg",
+      "use": "이론 무장 마지막 명중",
+      "len": 2.005
+    },
+    "v3se_447": {
+      "src": "V3 trial_resident/V3_SE_447.ogg",
+      "file": "v3se/V3_SE_447.ogg",
+      "use": "클라이맥스 시작",
+      "len": 2.944
+    },
+    "v3se_448": {
+      "src": "V3 trial_resident/V3_SE_448.ogg",
+      "file": "v3se/V3_SE_448.ogg",
+      "use": "클라이맥스 완성",
+      "len": 1.835
+    },
+    "v3se_064": {
+      "src": "V3 game_resident/V3_SE_064.ogg",
+      "file": "v3se/V3_SE_064.ogg",
+      "use": "걷기 발소리 (40b000 index0)",
+      "len": 1.109
+    },
+    "v3se_064_1": {
+      "src": "V3 game_resident/V3_SE_064_1.ogg",
+      "file": "v3se/V3_SE_064_1.ogg",
+      "use": "걷기 발소리 변형",
+      "len": 1.109
+    },
+    "v3se_064_2": {
+      "src": "V3 game_resident/V3_SE_064_2.ogg",
+      "file": "v3se/V3_SE_064_2.ogg",
+      "use": "걷기 발소리 변형",
+      "len": 1.109
+    },
+    "v3se_051": {
+      "src": "V3 game_resident/V3_SE_051.ogg",
+      "file": "v3se/V3_SE_051.ogg",
+      "use": "말 걸기·조사 시작 (40a6a0)",
+      "len": 1.109
+    },
+    "v3se_052": {
+      "src": "V3 game_resident/V3_SE_052.ogg",
+      "file": "v3se/V3_SE_052.ogg",
+      "use": "말 걸기 끝·복귀 (40a6a0)",
+      "len": 1.109
+    },
+    "v3se_016": {
+      "src": "V3 game_resident/V3_SE_016.ogg",
+      "file": "v3se/V3_SE_016.ogg",
+      "use": "패드 top 닫기 (4208b0)",
+      "len": 1.109
+    },
+    "v3se_050": {
+      "src": "V3 game_resident/V3_SE_050.ogg",
+      "file": "v3se/V3_SE_050.ogg",
+      "use": "탐색 조준 대상 바뀜 (8tick 간격)",
+      "len": 0.597
+    },
+    "v3se_464": {
+      "src": "V3 minigame_resident/V3_SE_464.ogg",
+      "file": "v3se/V3_SE_464.ogg",
+      "use": "클라이맥스 후보 해제 (390b20 fl_rock 진입)",
+      "len": 1.109
+    },
+    "v3se_002": {
+      "src": "V3 game_resident/V3_SE_002.ogg",
+      "file": "v3se/V3_SE_002.ogg",
+      "use": "애너그램 글자 정답 (e96c0)",
+      "len": 1.451
+    },
+    "v3se_328": {
+      "src": "V3 minigame_resident/V3_SE_328.ogg",
+      "file": "v3se/V3_SE_328.ogg",
+      "use": "발굴·드라이브 시간 종료 (1571a0·fa690)",
+      "len": 1.109
+    },
+    "v3se_418": {
+      "src": "V3 minigame_resident/V3_SE_418.ogg",
+      "file": "v3se/V3_SE_418.ogg",
+      "use": "이론 무장 방어구 전환",
+      "len": 1.109
+    },
+    "v3se_446": {
+      "src": "V3 minigame_resident/V3_SE_446.ogg",
+      "file": "v3se/V3_SE_446.ogg",
+      "use": "이론 무장 피버 시작",
+      "len": 2.517
+    },
+    "v3se_465": {
+      "src": "V3 trial_resident/V3_SE_465.ogg",
+      "file": "v3se/V3_SE_465.ogg",
+      "use": "특수 투표 결과 (4420a0)",
+      "len": 6.827
+    },
+    "v3se_075": {
+      "src": "V3 game_resident/V3_SE_075.ogg",
+      "file": "v3se/V3_SE_075.ogg",
+      "use": "탐색 물체 반응 시작 (40c470)",
+      "len": 1.109
+    },
+    "v3se_076": {
+      "src": "V3 game_resident/V3_SE_076.ogg",
+      "file": "v3se/V3_SE_076.ogg",
+      "use": "탐색 물체 반응 적중 (40c470)",
+      "len": 2.005
+    },
+    "v3se_320": {
+      "src": "V3 trial_resident/V3_SE_320.ogg",
+      "file": "v3se/V3_SE_320.ogg",
+      "use": "재판 결과 등급 공개",
+      "len": 1.259
+    },
+    "v3se_321": {
+      "src": "V3 trial_resident/V3_SE_321.ogg",
+      "file": "v3se/V3_SE_321.ogg",
+      "use": "재판 결과 합산 시작",
+      "len": 1.131
+    },
+    "v3se_322": {
+      "src": "V3 trial_resident/V3_SE_322.ogg",
+      "file": "v3se/V3_SE_322.ogg",
+      "use": "재판 결과 메달 합산",
+      "len": 1.173
+    }
   }
- },
- "jingle": {
-  "jingle_chapter": {
-   "use": "장 시작 표지",
-   "src": "1-08. Chapter A.mp3",
-   "file": "bgm/jingle_chapter.ogg",
-   "len": 12.44
-  },
-  "jingle_chapter_p": {
-   "use": "프롤로그 표지",
-   "src": "1-25. Chapter C.mp3",
-   "file": "bgm/jingle_chapter_p.ogg",
-   "len": 18.56
-  },
-  "jingle_chapter_end": {
-   "use": "장 끝(막간 들어갈 때)",
-   "src": "1-03. Chapter B.mp3",
-   "file": "bgm/jingle_chapter_end.ogg",
-   "len": 11.75
-  },
-  "jingle_body_1": {
-   "use": "1장 시체 발견",
-   "src": "1-13. Dead Body Found A.mp3",
-   "file": "bgm/jingle_body_1.ogg",
-   "len": 20.48
-  },
-  "jingle_body_2": {
-   "use": "2장 시체 발견",
-   "src": "2-20. Dead Body Found B.mp3",
-   "file": "bgm/jingle_body_2.ogg",
-   "len": 14.65
-  },
-  "jingle_body_3": {
-   "use": "3장 시체 발견",
-   "src": "2-13. Dead Body Found C.mp3",
-   "file": "bgm/jingle_body_3.ogg",
-   "len": 15.35
-  },
-  "jingle_body_4": {
-   "use": "4장 시체 발견",
-   "src": "1-05. Dead Body Found D.mp3",
-   "file": "bgm/jingle_body_4.ogg",
-   "len": 20.29
-  },
-  "jingle_body_5": {
-   "use": "5장 시체 발견",
-   "src": "2-07. Dead Body Found E.mp3",
-   "file": "bgm/jingle_body_5.ogg",
-   "len": 11.95
-  },
-  "jingle_rappy": {
-   "use": "래피 등장",
-   "src": "1-09. Mr. Monokuma Appearance.mp3",
-   "file": "bgm/jingle_rappy.ogg",
-   "len": 17.92
-  },
-  "jingle_vote": {
-   "use": "투표 슬롯",
-   "src": "3-03. Vote Slot.mp3",
-   "file": "bgm/jingle_vote.ogg",
-   "len": 24.44
-  },
-  "jingle_flashback": {
-   "use": "회상",
-   "src": "3-02. Flashback Light.mp3",
-   "file": "bgm/jingle_flashback.ogg",
-   "len": 35.4
-  }
- },
- "sfx": {
-  "ui_select": {
-   "use": "커서 이동",
-   "src": "HS_SE_005_메뉴커서이동.wav",
-   "file": "sfx/ui_select.ogg"
-  },
-  "ui_confirm": {
-   "use": "결정",
-   "src": "HS_SE_001_메뉴선택.wav",
-   "file": "sfx/ui_confirm.ogg"
-  },
-  "ui_cancel": {
-   "use": "취소·돌아가기",
-   "src": "HS_SE_004_메뉴취소_뒤로가기.wav",
-   "file": "sfx/ui_cancel.ogg"
-  },
-  "ui_locked": {
-   "use": "고를 수 없음",
-   "src": "HS_SE_000_선택불가_잠긴메뉴항목.wav",
-   "file": "sfx/ui_locked.ogg"
-  },
-  "ui_pad": {
-   "use": "패드 열기",
-   "src": "HS_SE_015_전자학생수첩_열기.wav",
-   "file": "sfx/ui_pad.ogg"
-  },
-  "ui_pad_close": {
-   "use": "패드 닫기",
-   "src": "HS_SE_016_학생수첩_증거창닫기.wav",
-   "file": "sfx/ui_pad_close.ogg"
-  },
-  "ui_page": {
-   "use": "패드 쪽 넘김",
-   "src": "HS_SE_007_학생수첩_페이지전환_효과A.wav",
-   "file": "sfx/ui_page.ogg"
-  },
-  "ui_page_b": {
-   "use": "지도·층 넘김",
-   "src": "HS_SE_236_학생수첩_지도층과페이지전환_효과B.wav",
-   "file": "sfx/ui_page_b.ogg"
-  },
-  "sfx_ding": {
-   "use": "방송 차임",
-   "src": "HS_SE_156_교내방송차임.wav",
-   "file": "sfx/sfx_ding.ogg"
-  },
-  "sfx_body_chime": {
-   "use": "시체 발견 방송 차임",
-   "src": "HS_SE_157_시체발견방송차임.wav",
-   "file": "sfx/sfx_body_chime.ogg"
-  },
-  "sfx_tv": {
-   "use": "모니터 켜짐",
-   "src": "HS_SE_164_방송화면켜짐.wav",
-   "file": "sfx/sfx_tv.ogg"
-  },
-  "sfx_tv_off": {
-   "use": "모니터 꺼짐",
-   "src": "HS_SE_165_방송화면꺼짐.wav",
-   "file": "sfx/sfx_tv_off.ogg"
-  },
-  "sfx_tv_noise": {
-   "use": "방송 잡음",
-   "src": "HS_SE_257_방송_영상잡음.wav",
-   "file": "sfx/sfx_tv_noise.ogg"
-  },
-  "sfx_door": {
-   "use": "방 문",
-   "src": "HS_SE_145_방_출입문.wav",
-   "file": "sfx/sfx_door.ogg"
-  },
-  "sfx_door_slam": {
-   "use": "문 세게 닫기",
-   "src": "HS_SE_146_문_세게닫기.wav",
-   "file": "sfx/sfx_door_slam.ogg"
-  },
-  "sfx_door_creak": {
-   "use": "문 삐걱",
-   "src": "HS_SE_233_문을천천히여닫는_삐걱임.wav",
-   "file": "sfx/sfx_door_creak.ogg"
-  },
-  "sfx_knock": {
-   "use": "노크",
-   "src": "HS_SE_150_문_노크.wav",
-   "file": "sfx/sfx_knock.ogg"
-  },
-  "sfx_bang_door": {
-   "use": "문 두드리기",
-   "src": "HS_SE_151_문_세게두드리기.wav",
-   "file": "sfx/sfx_bang_door.ogg"
-  },
-  "sfx_locked": {
-   "use": "잠긴 문",
-   "src": "HS_SE_153_잠긴문덜컥거림.wav",
-   "file": "sfx/sfx_locked.ogg"
-  },
-  "sfx_footstep": {
-   "use": "걷는 발소리",
-   "src": "HS_SE_141_걷는발소리.wav",
-   "file": "sfx/sfx_footstep.ogg"
-  },
-  "sfx_run": {
-   "use": "달리는 발소리",
-   "src": "HS_SE_142_달리는발소리.wav",
-   "file": "sfx/sfx_run.ogg"
-  },
-  "sfx_room_move": {
-   "use": "장소 이동",
-   "src": "HS_SE_140_방이동.wav",
-   "file": "sfx/sfx_room_move.ogg"
-  },
-  "sfx_hover_person": {
-   "use": "인물 위 커서",
-   "src": "HS_SE_018_인물커서호버.wav",
-   "file": "sfx/sfx_hover_person.ogg"
-  },
-  "sfx_talk_in": {
-   "use": "말 걸기",
-   "src": "HS_SE_019_인물대화진입.wav",
-   "file": "sfx/sfx_talk_in.ogg"
-  },
-  "sfx_talk_out": {
-   "use": "대화 끝",
-   "src": "HS_SE_020_인물대화종료.wav",
-   "file": "sfx/sfx_talk_out.ogg"
-  },
-  "sfx_hotspot": {
-   "use": "조사 대상 표시",
-   "src": "HS_SE_126_관찰_조사대상표시.wav",
-   "file": "sfx/sfx_hotspot.ogg"
-  },
-  "sfx_inspect": {
-   "use": "조사",
-   "src": "HS_SE_116_조사물음표표시.wav",
-   "file": "sfx/sfx_inspect.ogg"
-  },
-  "sfx_card": {
-   "use": "언령·교칙 획득",
-   "src": "HS_SE_021_교칙추가.wav",
-   "file": "sfx/sfx_card.ogg"
-  },
-  "sfx_note": {
-   "use": "노트에 적기",
-   "src": "HS_SE_007_학생수첩_페이지전환_효과A.wav",
-   "file": "sfx/sfx_note.ogg"
-  },
-  "sfx_coin": {
-   "use": "코인",
-   "src": "HS_SE_102_모노모노머신_투입코인수량늘리기.wav",
-   "file": "sfx/sfx_coin.ogg"
-  },
-  "sfx_capsule": {
-   "use": "캡슐 레버",
-   "src": "HS_SE_103_모노모노머신_손잡이작동_캡슐배출.wav",
-   "file": "sfx/sfx_capsule.ogg"
-  },
-  "sfx_capsule_open": {
-   "use": "캡슐 열림",
-   "src": "HS_SE_105_모노모노머신_캡슐개봉후_선물이미지등장.wav",
-   "file": "sfx/sfx_capsule_open.ogg"
-  },
-  "sfx_bond_up": {
-   "use": "인연 상승",
-   "src": "HS_SE_122_자유시간_친밀도상승.wav",
-   "file": "sfx/sfx_bond_up.ogg"
-  },
-  "sfx_wrong": {
-   "use": "오답·싫어하는 선물",
-   "src": "HS_SE_123_자유시간_오답.wav",
-   "file": "sfx/sfx_wrong.ogg"
-  },
-  "sfx_correct": {
-   "use": "정답·제출",
-   "src": "HS_SE_002_제출_입력확정.wav",
-   "file": "sfx/sfx_correct.ogg"
-  },
-  "sfx_band": {
-   "use": "자유행동·수사 개시 띠",
-   "src": "HS_SE_023_전환_자유시간_조사_미니게임시작.wav",
-   "file": "sfx/sfx_band.ogg"
-  },
-  "sfx_rappy": {
-   "use": "래피 등장·퇴장",
-   "src": "HS_SE_133_모노쿠마등장_퇴장.wav",
-   "file": "sfx/sfx_rappy.ogg"
-  },
-  "sfx_shock": {
-   "use": "충격(시체 발견·결정적 발언)",
-   "src": "HS_SE_031_결정적발언_충격강조.wav",
-   "file": "sfx/sfx_shock.ogg"
-  },
-  "sfx_flashback": {
-   "use": "회상 전환",
-   "src": "HS_SE_030_회상전환.wav",
-   "file": "sfx/sfx_flashback.ogg"
-  },
-  "emo_angry": {
-   "use": "호통",
-   "src": "HS_SE_025_호통_분노강조.wav",
-   "file": "sfx/emo_angry.ogg"
-  },
-  "emo_basic": {
-   "use": "강조",
-   "src": "HS_SE_026_기본대사강조.wav",
-   "file": "sfx/emo_basic.ogg"
-  },
-  "emo_surprise": {
-   "use": "놀람·깨달음",
-   "src": "HS_SE_027_놀람_깨달음강조.wav",
-   "file": "sfx/emo_surprise.ogg"
-  },
-  "emo_excited": {
-   "use": "주장·흥분",
-   "src": "HS_SE_028_주장_흥분강조.wav",
-   "file": "sfx/emo_excited.ogg"
-  },
-  "emo_shout": {
-   "use": "깜짝 외침",
-   "src": "HS_SE_029_깜짝놀람_외침강조.wav",
-   "file": "sfx/emo_shout.ogg"
-  },
-  "emo_gloomy": {
-   "use": "침울·난감",
-   "src": "HS_SE_037_침울_난감강조.wav",
-   "file": "sfx/emo_gloomy.ogg"
-  },
-  "sfx_fall": {
-   "use": "쓰러짐",
-   "src": "HS_SE_216_몸이날아가거나떨어지는충격.wav",
-   "file": "sfx/sfx_fall.ogg"
-  },
-  "sfx_glass": {
-   "use": "유리 깨짐",
-   "src": "HS_SE_217_컵_병깨짐.wav",
-   "file": "sfx/sfx_glass.ogg"
-  },
-  "sfx_punch": {
-   "use": "주먹",
-   "src": "HS_SE_210_주먹타격_인물충돌.wav",
-   "file": "sfx/sfx_punch.ogg"
-  },
-  "sfx_slap": {
-   "use": "뺨",
-   "src": "HS_SE_224_뺨때리기.wav",
-   "file": "sfx/sfx_slap.ogg"
-  },
-  "sfx_explode": {
-   "use": "폭발",
-   "src": "HS_SE_214_모노쿠마폭발.wav",
-   "file": "sfx/sfx_explode.ogg"
-  },
-  "sfx_gunshot": {
-   "use": "총성",
-   "src": "HS_SE_035_총성.wav",
-   "file": "sfx/sfx_gunshot.ogg"
-  },
-  "sfx_machine": {
-   "use": "기계 조작",
-   "src": "HS_SE_166_모노쿠마룸_제어패널조작.wav",
-   "file": "sfx/sfx_machine.ogg"
-  },
-  "sfx_elevator": {
-   "use": "엘리베이터 작동",
-   "src": "HS_SE_161_엘리베이터작동.wav",
-   "file": "sfx/sfx_elevator.ogg"
-  },
-  "sfx_elevator_stop": {
-   "use": "엘리베이터 정지",
-   "src": "HS_SE_162_재판장_엘리베이터_정지.wav",
-   "file": "sfx/sfx_elevator_stop.ogg"
-  },
-  "sfx_elevator_door": {
-   "use": "엘리베이터 문",
-   "src": "HS_SE_163_재판장_엘리베이터_문닫힘.wav",
-   "file": "sfx/sfx_elevator_door.ogg"
-  },
-  "sfx_typing": {
-   "use": "타이핑",
-   "src": "HS_SE_208_노트북타이핑.wav",
-   "file": "sfx/sfx_typing.ogg"
-  },
-  "sfx_break": {
-   "use": "논파",
-   "src": "HS_SE_032_논파성공_V3논의무장_격파연출.wav",
-   "file": "sfx/sfx_break.ogg"
-  },
-  "sfx_timeup": {
-   "use": "제한 시간 끝",
-   "src": "HS_SE_160_제한시간종료.wav",
-   "file": "sfx/sfx_timeup.ogg"
-  },
-  "sfx_heart_slow": {
-   "use": "느린 심장",
-   "src": "HS_SE_033_느린심장박동.wav",
-   "file": "sfx/sfx_heart_slow.ogg"
-  },
-  "sfx_heart_fast": {
-   "use": "빠른 심장",
-   "src": "HS_SE_034_빠른심장박동_BTB.wav",
-   "file": "sfx/sfx_heart_fast.ogg"
-  },
-  "sfx_slash": {
-   "use": "베기",
-   "src": "HS_SE_229_클라이맥스추리_사야카의_칼공격.wav",
-   "file": "sfx/sfx_slash.ogg"
-  },
-  "sfx_climax_flip": {
-   "use": "클라이맥스 칸 넘김",
-   "src": "HS_SE_006_클라이맥스추리_후보컷_좌우넘기기.wav",
-   "file": "sfx/sfx_climax_flip.ogg"
-  },
-  "sfx_flash": {
-   "use": "흰 섬광",
-   "src": "HS_SE_202_준코얼굴_흰섬광과연기연출.wav",
-   "file": "sfx/sfx_flash.ogg"
-  },
-  "sfx_chapter_end": {
-   "use": "장 끝",
-   "src": "HS_SE_251_챕터_END_공통도입부.wav",
-   "file": "sfx/sfx_chapter_end.ogg"
-  },
-  "sfx_prologue": {
-   "use": "프롤로그 시작",
-   "src": "HS_SE_244_프롤로그시작.wav",
-   "file": "sfx/sfx_prologue.ogg"
-  }
- }
 }

@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "rasterSize": [
+    3200,
+    2000
+  ],
+  "safety": {
+    "image": "ui/v4/documents_case6_runtime_v1/safety_four_documents.webp",
+    "coordinateSystem": "normalized-image-uv",
+    "answerRegionId": "final-normal-field",
+    "regions": [
+      {
+        "id": "review",
+        "label": "옛 검토 의견",
+        "polygon": [
+          [
+            0.0625,
+            0.295
+          ],
+          [
+            0.4625,
+            0.295
+          ],
+          [
+            0.4625,
+            0.47
+          ],
+          [
+            0.0625,
+            0.47
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "revision",
+        "label": "수정 접수의 확인",
+        "polygon": [
+          [
+            0.5375,
+            0.295
+          ],
+          [
+            0.9375,
+            0.295
+          ],
+          [
+            0.9375,
+            0.47
+          ],
+          [
+            0.5375,
+            0.47
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "final-normal-field",
+        "label": "최종본의 승인 대상 항목",
+        "polygon": [
+          [
+            0.0625,
+            0.66
+          ],
+          [
+            0.4625,
+            0.66
+          ],
+          [
+            0.4625,
+            0.835
+          ],
+          [
+            0.0625,
+            0.835
+          ]
+        ],
+        "correct": true
+      },
+      {
+        "id": "next-handover",
+        "label": "다음 점검 인수 목록",
+        "polygon": [
+          [
+            0.5375,
+            0.66
+          ],
+          [
+            0.9375,
+            0.66
+          ],
+          [
+            0.9375,
+            0.835
+          ],
+          [
+            0.5375,
+            0.835
+          ]
+        ],
+        "correct": false
+      }
+    ],
+    "source": [
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 369,
+        "quote": "살의 입력 제한 확인:미완료.해당 항목 인계 유보.",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 370,
+        "quote": "동일 안전 항목을 완료로 수정.최종본에 반영.",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 371,
+        "quote": "살의 입력 제한 확인:정상.",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 372,
+        "quote": "동일 안전 항목:미해결.유보 상태로 인수.",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+        "line": 690,
+        "quote": "최종본의 살의 입력 제한 확인 칸",
+        "sha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+      }
+    ],
+    "evidenceId": "v4:E6-05",
+    "title": "안전 항목의 네 기록",
+    "notNewEvidence": true,
+    "layoutRole": "inspection comparison of four separate existing records; no new parent names, signatures, dates or safety-item code",
+    "sha256": "aa967b006c61ba34da584f79a90fa0e8d0a890bfc3fbc749089a61ca9546472a",
+    "visualReview": "Directly viewed full 3200x2000 rendered WebP: all Korean fields readable, four safety states separate, four statement lines intact, summary explicitly a reading explanation. No new date, signature name, item code, confession or official report wording."
+  },
+  "statement": {
+    "image": "ui/v4/documents_case6_runtime_v1/statement_summary_comparison.webp",
+    "coordinateSystem": "normalized-image-uv",
+    "answerRegionId": "companion-and-arm-contact",
+    "regions": [
+      {
+        "id": "companion-and-arm-contact",
+        "label": "원문의 동행과 팔 접촉",
+        "polygon": [
+          [
+            0.0625,
+            0.31
+          ],
+          [
+            0.49375,
+            0.31
+          ],
+          [
+            0.49375,
+            0.5
+          ],
+          [
+            0.0625,
+            0.5
+          ]
+        ],
+        "correct": true
+      },
+      {
+        "id": "later-statement-lines",
+        "label": "그 뒤 진술 두 줄",
+        "polygon": [
+          [
+            0.0625,
+            0.515
+          ],
+          [
+            0.49375,
+            0.515
+          ],
+          [
+            0.49375,
+            0.705
+          ],
+          [
+            0.0625,
+            0.705
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "summary-description",
+        "label": "요약 보고의 열람 설명",
+        "polygon": [
+          [
+            0.55,
+            0.365
+          ],
+          [
+            0.93125,
+            0.365
+          ],
+          [
+            0.93125,
+            0.585
+          ],
+          [
+            0.55,
+            0.585
+          ]
+        ],
+        "correct": false
+      }
+    ],
+    "source": [
+      {
+        "file": "16b2_6장_손을_놓은_뒤의_수사_초고.md",
+        "line": 83,
+        "quote": "하루카와 같이 점검 통로로 갔다.",
+        "sha256": "7c21e8c05339d824aee447ea5decc953974f27a369e48f9bbb681d611ccedb4e"
+      },
+      {
+        "file": "16b2_6장_손을_놓은_뒤의_수사_초고.md",
+        "line": 85,
+        "quote": "하루카가 내 팔을 잡았다.",
+        "sha256": "7c21e8c05339d824aee447ea5decc953974f27a369e48f9bbb681d611ccedb4e"
+      },
+      {
+        "file": "16b2_6장_손을_놓은_뒤의_수사_초고.md",
+        "line": 87,
+        "quote": "손을 뿌리쳤다.",
+        "sha256": "7c21e8c05339d824aee447ea5decc953974f27a369e48f9bbb681d611ccedb4e"
+      },
+      {
+        "file": "16b2_6장_손을_놓은_뒤의_수사_초고.md",
+        "line": 89,
+        "quote": "하루카가 떨어지는 것을 봤다.",
+        "sha256": "7c21e8c05339d824aee447ea5decc953974f27a369e48f9bbb681d611ccedb4e"
+      },
+      {
+        "file": "16b2_6장_손을_놓은_뒤의_수사_초고.md",
+        "line": 101,
+        "quote": "하루카가 혼자 홀 쪽으로 가 추락한 것으로 정리돼 있다.",
+        "sha256": "7c21e8c05339d824aee447ea5decc953974f27a369e48f9bbb681d611ccedb4e"
+      },
+      {
+        "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+        "line": 718,
+        "quote": "원문의 동행과 팔 접촉 부분",
+        "sha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+      }
+    ],
+    "evidenceId": "v4:E6-09",
+    "title": "당시 진술과 요약 보고 대조",
+    "notNewEvidence": true,
+    "layoutRole": "left four lines are exact source quotations; right is explicitly labeled source-described reading explanation, not a forged full document or a new confession",
+    "sha256": "729489476ec6a0c7ce151729eedd2b95dac0b8d710222881979247afcd3a1e28",
+    "visualReview": "Directly viewed full 3200x2000 rendered WebP: all Korean fields readable, four safety states separate, four statement lines intact, summary explicitly a reading explanation. No new date, signature name, item code, confession or official report wording."
+  },
+  "topology": {
+    "image": "ui/v4/documents_case6_runtime_v1/old_access_sight_relations.webp",
+    "coordinateSystem": "normalized-image-uv",
+    "answerRegionId": "side-maintenance-observer",
+    "regions": [
+      {
+        "id": "side-maintenance-observer",
+        "label": "옆 관리 출입의 관찰 자리",
+        "polygon": [
+          [
+            0.4375,
+            0.62
+          ],
+          [
+            0.95,
+            0.62
+          ],
+          [
+            0.95,
+            0.83
+          ],
+          [
+            0.4375,
+            0.83
+          ]
+        ],
+        "correct": true
+      },
+      {
+        "id": "main-entry-camera",
+        "label": "주출입 영상 카메라",
+        "polygon": [
+          [
+            0.05,
+            0.43
+          ],
+          [
+            0.33125,
+            0.43
+          ],
+          [
+            0.33125,
+            0.56
+          ],
+          [
+            0.05,
+            0.56
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "fall-lower-floor",
+        "label": "추락 아래 바닥",
+        "polygon": [
+          [
+            0.05,
+            0.68
+          ],
+          [
+            0.33125,
+            0.68
+          ],
+          [
+            0.33125,
+            0.83
+          ],
+          [
+            0.05,
+            0.83
+          ]
+        ],
+        "correct": false,
+        "wrongVariant": "floor"
+      }
+    ],
+    "source": [
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 49,
+        "quote": "옆 관리 통로의 위치",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 51,
+        "quote": "문틈으로",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 77,
+        "quote": "주 통로 바깥의 옆 출입",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 113,
+        "quote": "정확한 발자국이 있었다는 표시는 하지 않는다",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "16b1_6장_전실과_통로의_수사_초고.md",
+        "line": 201,
+        "quote": "밀침 자체나 홀 내부는 찍히지 않았다",
+        "sha256": "1f9606f1aa1d0f464ba3dbfe82eb5a725afbf9dd7a908b9a4f4e6d4e7b19861a"
+      },
+      {
+        "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+        "line": 505,
+        "quote": "추락 아래 바닥",
+        "sha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+      },
+      {
+        "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+        "line": 506,
+        "quote": "옆 유지보수문 쪽 나나 관찰 자리",
+        "sha256": "96df7291d701240ba3fd19fb6b2302d939acba465daf2bf300d82f9dcccf6898"
+      }
+    ],
+    "evidenceId": "v4:E6-02",
+    "title": "옛 출입과 목격 범위의 대조",
+    "notNewEvidence": true,
+    "layoutRole": "source-exact nonmetric topology. No actual hall perimeter, door coordinates, distances, child footprints or 3D-world position is asserted. Nana's statement and the entry camera's separate recorded scope are labeled separately.",
+    "presentationPrompt": "수사 때 맞춘 출입·시야 관계에서 나나가 뒤의 두 손을 본 관찰 자리를 가리키자.",
+    "sha256": "f9c36bef73f3e4f2a537c130fc437aad47606403470f635baccaac27df443014",
+    "visualReview": "Directly viewed full3200x2000 relation diagram. Nonmetric notice and the separate entry recording/Nana statement scopes are readable. Side observation is outside the main passage; no real wall perimeter, child footprint, distance, angle or door-world position is asserted."
+  },
+  "preservedOriginals": [
+    "ui/v4/documents_hd/document_original.webp",
+    "ui/v4/documents_hd/document_summary.webp"
+  ],
+  "vectorText": "Pretendard glyph outlines with original editable data-label strings; edit source and regenerate"
+}

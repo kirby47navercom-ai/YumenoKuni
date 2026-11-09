@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "scope": "New original-project forensic/historical art only. No original game extraction, current memorial substitution or undisclosed runtime completion.",
+  "briefs": [
+    {
+      "id": "c6_old_entry_pair",
+      "tasks": [
+        "T6-MM-01",
+        "T6-PERSON-A02"
+      ],
+      "type": "single old-entrance evidence frame plus identity crop derived from that same frame",
+      "source": [
+        {
+          "file": "16b1_6장_전실과_통로의_수사_초고.md",
+          "line": 201,
+          "fileSha256": "d9521701cdc7909363e256b02f7193b8f497871fa2e8febfca84b8342516b953",
+          "quote": "(주 통로 입구의 당시 자료에서 어린 코토와 하루카가 함께 안쪽으로 가는 장면을 확인한다.밀침 자체나 홀 내부는 찍히지 않았다.둘의 얼굴/복장과 진행 방향은 볼 수 있다.)"
+        },
+        {
+          "file": "16b1_6장_전실과_통로의_수사_초고.md",
+          "line": 211,
+          "fileSha256": "d9521701cdc7909363e256b02f7193b8f497871fa2e8febfca84b8342516b953",
+          "quote": "(입구 영상의 표시는 현장 장치 시각이고,전실 접수의 기록은 중앙 접수 시각이다. 자료 설명에 원래 시각 기준이 각각 적혀 있다. 미오가 두 화면 아래에 일반 메모를 놓는다.)"
+        },
+        {
+          "file": "186_6장_재판_반복논의와_지목_연속대본.md",
+          "line": 389,
+          "fileSha256": "135bbbbb5d71c7329f249298bd98a3ef81e31830777206ffca150665cd8e67b2",
+          "quote": "- 후보/표시 그림: 참가자16인 전체: 미오/레이/소라/켄/나나/리쿠/아카리/유우/코토/사츠키/타이가/린/쇼/아이/하루카/카에데.사망자는 영정 표시만 하고 원형 지목 목록에 남겨요. 이 질문에서 하루카 얼굴은 수사 때의 옛 행사일 사진/날짜로 표시하고 생성 하루카의 현재 영정을 같은 사건 사진으로 대체하지 않아요."
+        },
+        {
+          "file": "168_6장_재판_형식별_연속대본.md",
+          "line": 66,
+          "fileSha256": "3fc6490c48c5af1c02096b3e67a7010302ff29f5c298352643e9fbb3fa44346f",
+          "quote": "- B 화면 밖 홀의 추정 위치."
+        }
+      ],
+      "references": [
+        "art/character_delivery_v4/portraits/koto.webp",
+        "art/character_delivery_v4/portraits/haruka.webp"
+      ],
+      "mustShow": [
+        "Two clearly distinguishable children: past Koto and actual past Haruka, consistent younger identities from approved masters.",
+        "Both identifiable faces, ordinary fully clothed bodies and their common inward direction through the main passage entrance.",
+        "Only entrance coverage; compose the hall interior completely outside the camera view.",
+        "A dedicated Haruka candidate picture may be a literal crop of the actual same evidence frame, with provenance to the full frame.",
+        "Use editable UI caption only: old event day / five years before. No authored exact calendar date exists in this brief."
+      ],
+      "mustNotInvent": [
+        "No push/fall/railing injury/weapon/other child or new observer.",
+        "No exact local clock time, timestamp, calendar date, numerical offset, recovered missing video or inner-hall view.",
+        "No current created Haruka memorial, death cross or current body relabeled as the historical victim.",
+        "No clothing detail becomes an additional exclusive identity/clue rule; source does not specify a unique garment design.",
+        "Do not assign a numerical child age or unprovided uniform insignia."
+      ],
+      "bindingAfterReview": [
+        "Directly inspect generated pixels; derive normalized face/clothing/common-direction polygon from actual frame.",
+        "Show full frame during I6-09 source scope before first E6-03 acquisition.",
+        "Show candidate crop with old-event identityScope; remove historicalVictimPortrait binding only after actual inspected crop and caption are present."
+      ]
+    },
+    {
+      "id": "c2_personal_strap_fracture_pair",
+      "tasks": [
+        "T2-MM-A03"
+      ],
+      "type": "original forensic comparison of two actual recovered matching boundaries",
+      "source": [
+        {
+          "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+          "line": 787,
+          "fileSha256": "813a0de8ff852bbfeb6252233c11c6f0e8a885ec890d73288263185501464f64",
+          "quote": "- 가린 그림: 아이 손 고리/개인 재생기 끈의 파단면 대조 그림"
+        },
+        {
+          "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+          "line": 789,
+          "fileSha256": "813a0de8ff852bbfeb6252233c11c6f0e8a885ec890d73288263185501464f64",
+          "quote": "- 노출되는 영역: 이어지는 파단면/공용 녹음 카드/소매 전체/함 손잡이"
+        },
+        {
+          "file": "182_2장_재판_반복논의와_지목_연속대본.md",
+          "line": 790,
+          "fileSha256": "813a0de8ff852bbfeb6252233c11c6f0e8a885ec890d73288263185501464f64",
+          "quote": "- 정답 영역: 고리와 개인 끈의 이어지는 파단면"
+        },
+        {
+          "file": "12c3_2장_재판_접촉과_투표_초고.md",
+          "line": 13,
+          "fileSha256": "0774a3cff2f47322b20ea5885d311361a54fbdb639af2f8d9b13b130d48ed199",
+          "quote": "[미오] 같은 모양이라서만이 아니야. 부러진 모서리가 이어져. 아이 손에 있던 건 유우 끈에서 떨어진 부분으로 볼 수 있어."
+        }
+      ],
+      "references": [
+        "art/forensic_v4/details/incident_c2_connector_and_cord.webp",
+        "art/inspection_v4/delivery/sleeve_broken_loop.webp",
+        "art/inspection_v4/delivery/player_and_card.webp"
+      ],
+      "referenceLimit": "These existing views establish object/material context but do not prove a full matched edge pair. The recorder/card still life must not redefine the personal player as the public recorder.",
+      "mustShow": [
+        "Recovered tiny black plastic loop/connector fragment with its short attached cord.",
+        "The corresponding broken remainder on Yuu personal-player strap, both actual fracture boundaries legible together.",
+        "A visible close comparison where the two irregular boundaries continue; the exact rendered matching area must support one truthful UV mask.",
+        "No hand or living actor is needed. A neutral object-comparison surface is sufficient."
+      ],
+      "mustNotInvent": [
+        "No metal chain, complete new loop replacing the broken piece, invented missing part, knife, fingerprint or numerical dimensions.",
+        "No fracture timing, death timing, final grab or culprit identity is established by this picture alone.",
+        "No new blood pattern or precise tool/force diagnosis.",
+        "Do not claim that the sleeve/strap generic old illustration already contains an inspected unique join."
+      ],
+      "bindingAfterReview": [
+        "Inspect actual generated join before assigning polygon.",
+        "Show comparison during the actual personal-player/recovered-piece matching source scope before trial; no early evidence or earlier-clause leak.",
+        "Keep source wrong card reaction only on an actual pictured public recording-card distractor; otherwise preserve it as non-dispatched source metadata."
+      ]
+    }
+  ]
+}
