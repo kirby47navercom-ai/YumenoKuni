@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "approval": "2026-11-04 user approved five separate themed park levels, chapter expansion, required story/presentation/map/save changes, and prior Blender/PBR/environment standards.",
+  "style": "Original YumenoKuni amusement park. Strong readable silhouettes, textured modest geometry, real apertures and roof thickness, restrained sun shadows, continuous distant landscape. No decorative cube piles, copied original-game assets or new story clues.",
+  "districts": [
+    {
+      "id": "fairytale",
+      "name": "동화 정원",
+      "scene": "ParkFairytale",
+      "chapter": 0,
+      "hub": "plaza",
+      "originBlender": [
+        0,
+        0
+      ],
+      "spawn": [
+        0,
+        1.55,
+        13
+      ],
+      "bounds": [
+        -85,
+        -115,
+        85,
+        80
+      ],
+      "landmarks": [
+        "castle_gateway",
+        "garden_carousel"
+      ],
+      "routeCharacter": "Looping garden paths, sheltered resort wing, low hedges, landmark glimpses through planted arches."
+    },
+    {
+      "id": "carnival",
+      "name": "축제의 거리",
+      "scene": "ParkCarnival",
+      "chapter": 2,
+      "hub": "carnival_midway",
+      "originBlender": [
+        70,
+        18
+      ],
+      "spawn": [
+        -30,
+        1.6,
+        46
+      ],
+      "bounds": [
+        -80,
+        -85,
+        80,
+        75
+      ],
+      "landmarks": [
+        "grand_circus_canopy",
+        "festival_proscenium"
+      ],
+      "routeCharacter": "Long parade avenue, open audience court and narrow screened service lanes behind the actual stage."
+    },
+    {
+      "id": "mirrors",
+      "name": "거울·가면 공원",
+      "scene": "ParkMirrors",
+      "chapter": 3,
+      "hub": "mirror_midway",
+      "originBlender": [
+        104,
+        24
+      ],
+      "spawn": [
+        -28,
+        1.6,
+        44
+      ],
+      "bounds": [
+        -85,
+        -85,
+        85,
+        75
+      ],
+      "landmarks": [
+        "illusion_arcade",
+        "masked_rotunda"
+      ],
+      "routeCharacter": "Offset courts and curved arcades with clear wayfinding. Existing mirror-room group transforms remain rigidly related."
+    },
+    {
+      "id": "clockwork",
+      "name": "태엽·기계 공원",
+      "scene": "ParkClockwork",
+      "chapter": 4,
+      "hub": "clockwork_midway",
+      "originBlender": [
+        -76,
+        16
+      ],
+      "spawn": [
+        -30,
+        1.6,
+        45
+      ],
+      "bounds": [
+        -85,
+        -100,
+        85,
+        75
+      ],
+      "landmarks": [
+        "clock_tower",
+        "coaster_circuit"
+      ],
+      "routeCharacter": "Large mechanical skyline, grounded track supports, different public and workshop approaches. Inspection variants remain the same physical location."
+    },
+    {
+      "id": "starlight",
+      "name": "별빛·미래 공원",
+      "scene": "ParkStarlight",
+      "chapter": 5,
+      "hub": "starlight_midway",
+      "originBlender": [
+        110,
+        55
+      ],
+      "spawn": [
+        -24,
+        1.6,
+        44
+      ],
+      "bounds": [
+        -85,
+        -85,
+        85,
+        75
+      ],
+      "landmarks": [
+        "planetarium_dome",
+        "observation_wheel"
+      ],
+      "routeCharacter": "Broad curved promenade and open sightlines toward the wheel and planetarium. Real day/evening/night sky, no blank black background."
+    },
+    {
+      "id": "perimeter",
+      "name": "외곽 연결로",
+      "scene": "ParkPerimeter",
+      "chapter": 6,
+      "hub": "outside_threshold",
+      "originBlender": [
+        -70,
+        112
+      ],
+      "spawn": [
+        0,
+        1.6,
+        6
+      ],
+      "bounds": [
+        -25,
+        -35,
+        25,
+        30
+      ],
+      "landmarks": [],
+      "routeCharacter": "Existing service exit and continuing road. A separate later environment, not a sixth invented amusement theme."
+    }
+  ],
+  "residence": [
+    "hotel_lobby",
+    "hotel_corridor",
+    "management_office",
+    "service_lounge",
+    "electrical_room",
+    "dining_room",
+    "kitchen",
+    "laundry_room",
+    "clinic",
+    "supply_store",
+    "hotel_multiuse",
+    "staff_passage",
+    "hotel_indoor_garden",
+    "garden_rest_area",
+    "hotel_rest_lounge",
+    "hotel_washroom",
+    "guest_room",
+    "trial_elevator"
+  ],
+  "rooms": {
+    "fairytale": [
+      "plaza",
+      "park_garden",
+      "park_main_gate",
+      "ticket_booth",
+      "souvenir_shop",
+      "souvenir_forecourt",
+      "can_toss_booth"
+    ],
+    "carnival": [
+      "performance_stage",
+      "theatre_preparation",
+      "cold_store",
+      "refreshment_store",
+      "pool_edge"
+    ],
+    "mirrors": [
+      "mirror_maze",
+      "mirror_workbay",
+      "mirror_waiting",
+      "record_room",
+      "dream_lobby",
+      "screening_room"
+    ],
+    "clockwork": [
+      "coaster_platform",
+      "maintenance_workshop",
+      "exhibition_room",
+      "inspection_hall_normal",
+      "inspection_hall_changed",
+      "reading_room",
+      "archive_room",
+      "loading_gate"
+    ],
+    "starlight": [
+      "ferris_platform",
+      "ferris_cabin",
+      "central_control"
+    ],
+    "perimeter": [
+      "outside_threshold"
+    ],
+    "depths": [
+      "lower_stairway",
+      "lower_corridor",
+      "shelter_reception",
+      "shelter_inner",
+      "operating_archive",
+      "core_external_inspection"
+    ]
+  },
+  "placementsBlender": {
+    "record_room": [
+      36,
+      29
+    ],
+    "dream_lobby": [
+      -34,
+      38
+    ],
+    "screening_room": [
+      -34,
+      54
+    ],
+    "reading_room": [
+      -36,
+      26
+    ],
+    "archive_room": [
+      -36,
+      44
+    ]
+  },
+  "lockedGeometryGroups": [
+    [
+      "mirror_maze",
+      "mirror_workbay",
+      "mirror_waiting"
+    ],
+    [
+      "inspection_hall_normal",
+      "inspection_hall_changed"
+    ],
+    [
+      "management_office",
+      "service_lounge"
+    ],
+    [
+      "hotel_corridor",
+      "guest_01",
+      "guest_02",
+      "guest_03",
+      "guest_04",
+      "guest_05",
+      "guest_06",
+      "guest_07",
+      "guest_08",
+      "guest_09",
+      "guest_10",
+      "guest_11",
+      "guest_12",
+      "guest_13",
+      "guest_14",
+      "guest_15",
+      "guest_16"
+    ]
+  ],
+  "preservation": [
+    "Stable room IDs and local poses for old saves",
+    "Authored clue/target IDs, interior meshes, evidence conclusions and character identities",
+    "No chapter unlock inferred from merely rendering a historical scene",
+    "Opened parks remain reachable unless the authored investigation controls access",
+    "Only the selected outdoor level and its sky load; indoor scenes do not retain the park mesh"
+  ],
+  "status": "implementation-in-progress; not runtime or visual acceptance",
+  "placementsEngine": {
+    "ferris_cabin": [
+      2,
+      16.8,
+      -26.9
+    ]
+  },
+  "cabinPlacementReason": "Retained ride rotor=(0,3,10), radius8; upper gondola floor16.8 and forward offset. Preserves cabin-local save/camera; keeps hub spokes outside the viewing window."
+}
