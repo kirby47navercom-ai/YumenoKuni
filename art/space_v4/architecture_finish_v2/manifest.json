@@ -1,0 +1,188 @@
+{
+  "source": "art/space_v4/full_v2/park_exterior_r2_source.blend",
+  "policy": "Reuse original own finished park with source world transforms. Shared context and six replaceable landmarks; current local interactive set remains the evidence/collision owner. No V3 extraction or engine edits.",
+  "context": {
+    "file": "art/space_v4/architecture_finish_v2/context.glb",
+    "runtime": "Assets/Art/explore3d/finish_context.glb",
+    "vertices": 87792,
+    "material_slots": 13,
+    "bytes": 17183820,
+    "sha256": "ba5e23e15b63f59ba2751dcbcf742d0e4cc45b9244dfd58273832442c341cea1"
+  },
+  "landmarks": {
+    "plaza": {
+      "file": "art/space_v4/outdoor_finish_v1/plaza.glb",
+      "runtime": "Assets/Art/explore3d/finish_plaza.glb",
+      "vertices": 10520,
+      "material_slots": 9,
+      "bytes": 5087552,
+      "sha256": "d69c266479ff0af387e3275b8b3138f55b960b3c46e87e1ee9b249a3f9f36afe"
+    },
+    "park_garden": {
+      "file": "art/space_v4/outdoor_finish_v1/park_garden.glb",
+      "runtime": "Assets/Art/explore3d/finish_park_garden.glb",
+      "vertices": 2240,
+      "material_slots": 5,
+      "bytes": 1940908,
+      "sha256": "d0f2346d83cd7c1afb7b9b3dc654bacf43566998ef1d4cfb93a4951d7d499dfa"
+    },
+    "pool_edge": {
+      "file": "art/space_v4/outdoor_finish_v1/pool_edge.glb",
+      "runtime": "Assets/Art/explore3d/finish_pool_edge.glb",
+      "vertices": 1024,
+      "material_slots": 4,
+      "bytes": 612640,
+      "sha256": "4ef78d2f36edf00cbeb4da7186613f5ece9d20278dbef598f64b3cc3ad2696fe"
+    },
+    "ferris_platform": {
+      "file": "art/space_v4/outdoor_finish_v1/ferris_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_ferris_platform.glb",
+      "vertices": 2992,
+      "material_slots": 7,
+      "bytes": 3036212,
+      "sha256": "54835f39b4257b0efad598de898df40b1439c70bad0fe1e166780000851bc86c"
+    },
+    "coaster_platform": {
+      "file": "art/space_v4/outdoor_finish_v1/coaster_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_coaster_platform.glb",
+      "vertices": 1608,
+      "material_slots": 4,
+      "bytes": 4225144,
+      "sha256": "f0b0af8245495a4fcb564b2cdcba4626e9342e3dd753c983d9e3ac0dc28ea502"
+    },
+    "park_main_gate": {
+      "file": "art/space_v4/outdoor_finish_v1/park_main_gate.glb",
+      "runtime": "Assets/Art/explore3d/finish_park_main_gate.glb",
+      "vertices": 760,
+      "material_slots": 2,
+      "bytes": 83352,
+      "sha256": "a327e837824841f8a4a786889494a75785c52d57e93725f0d7bee33903e1efbd"
+    }
+  },
+  "local": {
+    "pool_edge": {
+      "file": "art/space_v4/outdoor_finish_v1/local_pool_edge.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_pool_edge.glb",
+      "vertices": 4609,
+      "material_slots": 4,
+      "bytes": 11902648,
+      "sha256": "a95d606329a51b01f09763eac8c82ae7de052a9bd1e611a4330b82a08eac46d4",
+      "changed_ground_nodes": []
+    },
+    "ferris_platform": {
+      "file": "art/space_v4/outdoor_finish_v1/local_ferris_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_ferris_platform.glb",
+      "vertices": 13212,
+      "material_slots": 8,
+      "bytes": 43209624,
+      "sha256": "7434e05e4770fa69eab0f826ee9c9168602468a03e31fe8f1355c166b55b02d0",
+      "changed_ground_nodes": [
+        "ferris_platform_floor.001"
+      ]
+    },
+    "ferris_cabin": {
+      "file": "art/space_v4/outdoor_finish_v1/local_ferris_cabin.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_ferris_cabin.glb",
+      "vertices": 5786,
+      "material_slots": 11,
+      "bytes": 74591576,
+      "sha256": "6b9d39ac9954984c88132318968214fef4c23ecca3ccf03c41c049e44ea69b99",
+      "changed_ground_nodes": [
+        "ferris_cabin_floor.001"
+      ]
+    },
+    "coaster_platform": {
+      "file": "art/space_v4/outdoor_finish_v1/local_coaster_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_coaster_platform.glb",
+      "vertices": 6012,
+      "material_slots": 4,
+      "bytes": 62877420,
+      "sha256": "950145277174f6c3daaebcc527bac6d2e552f6a2e6515fb3e2973aa370deefbd",
+      "changed_ground_nodes": [
+        "coaster_platform_floor.001"
+      ]
+    },
+    "loading_gate": {
+      "file": "art/space_v4/outdoor_finish_v1/local_loading_gate.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_loading_gate.glb",
+      "vertices": 8319,
+      "material_slots": 11,
+      "bytes": 74696728,
+      "sha256": "06e3ab492a7bf1c8e61166d128c8fb934c63aba1fc18e6e59d82aca8634d9cd8",
+      "changed_ground_nodes": [
+        "loading_gate_floor.001"
+      ]
+    },
+    "outside_threshold": {
+      "file": "art/space_v4/outdoor_finish_v1/local_outside_threshold.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_outside_threshold.glb",
+      "vertices": 904,
+      "material_slots": 3,
+      "bytes": 1780648,
+      "sha256": "2099ee3012741bd5d7eb2c72ecbdf026cb9e7dd1920dbc0c368943eec28455b9",
+      "changed_ground_nodes": [
+        "outside_threshold_floor.001"
+      ]
+    },
+    "park_main_gate": {
+      "file": "art/space_v4/outdoor_finish_v1/local_park_main_gate.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_park_main_gate.glb",
+      "vertices": 2808,
+      "material_slots": 3,
+      "bytes": 1851520,
+      "sha256": "671f28194c94b165af12d520c25aa4c0edf9d1cf35fe3fa09bc7b0d20cff5cda",
+      "changed_ground_nodes": [
+        "park_main_gate_floor.001"
+      ]
+    },
+    "ticket_booth": {
+      "file": "art/space_v4/outdoor_finish_v1/local_ticket_booth.glb",
+      "runtime": "Assets/Art/explore3d/finish_local_ticket_booth.glb",
+      "vertices": 8959,
+      "material_slots": 10,
+      "bytes": 74712952,
+      "sha256": "b22f0cddc7d8033bb1e74a490830a951b789ab5d3e175db83c5f7f5bc993765d",
+      "changed_ground_nodes": [
+        "ticket_booth_floor.001"
+      ]
+    }
+  },
+  "architecture": {
+    "facades": [
+      "hotel_lobby",
+      "hotel_corridor",
+      "management_office",
+      "service_lounge",
+      "electrical_room",
+      "dining_room",
+      "kitchen",
+      "laundry_room",
+      "clinic",
+      "supply_store",
+      "hotel_multiuse",
+      "ticket_booth",
+      "performance_stage",
+      "theatre_preparation",
+      "staff_passage",
+      "cold_store",
+      "refreshment_store",
+      "dream_lobby",
+      "screening_room",
+      "reading_room",
+      "archive_room",
+      "mirror_maze",
+      "mirror_workbay",
+      "mirror_waiting",
+      "central_control",
+      "maintenance_workshop",
+      "exhibition_room",
+      "record_room",
+      "inspection_hall_normal",
+      "loading_gate",
+      "outside_threshold"
+    ],
+    "addedMeshParts": 837,
+    "bakedBevelParts": 651,
+    "policy": "Existing facade-local architectural relief only; original geometry, portals, target positions and collision untouched; existing materials reused; joined context export."
+  }
+}

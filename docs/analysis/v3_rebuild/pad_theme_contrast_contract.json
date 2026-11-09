@@ -1,0 +1,5514 @@
+{
+  "scope": "Bounded static contrast question: source local dark-panel geometry on report pages and representative theme background states. No full38-theme glyph/palette reproduction.",
+  "target_sha256": "1a012357f54076ef7fbe6a63f19f055bbe1ce71792b8c0719e7dc51d2a5affeb",
+  "base_evidence_cache": {
+    "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+    "sha256": "200f3c4626b1b37e70b891421e664ff9fb1c9641122775682bcb7ee02156f11b"
+  },
+  "coordinate_method": "Sequential SFL display-list replay through named rootwait; child first local frame; full affine times actual shape bounds.1280x720 =1920x1080 *2/3. Parent origins are not leaf rectangles. No runtime mutation replay.",
+  "observed": {
+    "local_panels": "Report message carrier has real i_black_000/001/003 source tile shapes behind its body region. These are local page shapes, not an invented full-screen tint.",
+    "theme_background": "On cachedUS type000/014/015, root i_bg RGBmultiply1 and alpha1 at both report/system topwait and corresponding okwait. Background childTable5entry0 is a static two-sequence wrapper with its one shape; no child darkening animation is present there.",
+    "theme_gradient": "type014/015 additionally have i_gra source gradient quad[-41.33333,333.33333,1333.33333,400], alpha0.8515625, at both topwait and okwait. It exists before entering the subpage; do not relabel it an entry-only dim effect.",
+    "palette": "Cached40d210 reads current Kisekae tsushinbo color and passes it through40d160 to25 message-resource named handles and16 strip-resource named handles on each active report update. Cached420710 similarly passes system color through4205b0. This establishes palette application but not that every white body text becomes that color.",
+    "source_text_colors": "The report source field headers are mixed: profile labels p_c*/p_title use0x000000ff, answers and p_setumei use0xffffffff. White-body and header-label handling must not be collapsed to one color. Native selectedpalette may override selected named instances."
+  },
+  "evidence_ids": {
+    "top420b40": "ev_e3862d3e0e991a7daadcea68f1cdcaac28bb7f4ad2f7f1099f2b4f9380caa77e",
+    "report40c820": "ev_bc298d5e017703eede11ea790a43ec4235e856f845f22b6195b9ee9560fdd284",
+    "report40d210": "ev_57e86ab1a3afe02fd1b2a162289cecf7ff7ca3ed15ba4f20e571aacef21cda5d",
+    "report40ea90": "ev_a10fb72a037cedcfa59a604312da424f7eea82cf79857b05b53fc99baf7fef17",
+    "system420710": "ev_e6bf98e396635a818a7ee105bbeaf68575b86680527db8f295425b58094e6aa1"
+  },
+  "report_message_source": {
+    "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\e8d6f508590300b88b5c8049009e329458435991f36a1f9adbbace8f9b484a0b.json",
+    "sfl_sha256": "e8d6f508590300b88b5c8049009e329458435991f36a1f9adbbace8f9b484a0b",
+    "shape_ref": [
+      3,
+      1
+    ],
+    "shape_entry_offset": 19344,
+    "shape_image_id": 17,
+    "shape_local_lrtb": [
+      0,
+      16,
+      0,
+      16
+    ],
+    "shape_unknown_word": "80808080",
+    "image_table_ref": [
+      2,
+      17
+    ],
+    "image_table_offset": 17408,
+    "source_texture_dimensions": [
+      16,
+      16
+    ],
+    "source_texture_type": "raster tile mapped by SFL shape; compression/pixel format/resource filename not in the cachedSFL metadata",
+    "source_timeline_alpha_default": 0.80078125,
+    "material_limit": "Timeline alpha multiplier is independent of image pixel alpha, blend mode and native overrides. SFL instance name i_black strongly indicates intended dark panel but does not prove all RGBA pixel bytes. Exact carrier textures are not in authorizedbank; if reusing an existing uniform black tile, label it as own material adaptation."
+  },
+  "report_page_panels": {
+    "fl_wait_0": {
+      "root_sequence_offset": 38260,
+      "root_record": 21,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            36272,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            381.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              254.0
+            ],
+            [
+              1280.0,
+              254.0
+            ],
+            [
+              1280.0,
+              316.66667
+            ],
+            [
+              0.0,
+              316.66667
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            254.0,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            254.0,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            36292,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            34.68731689453125,
+            202.0,
+            475.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              316.66667
+            ],
+            [
+              1414.66667,
+              316.66667
+            ],
+            [
+              1414.66667,
+              686.66471
+            ],
+            [
+              134.66667,
+              686.66471
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            316.66667,
+            1280.0,
+            369.99804
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            316.66667,
+            1145.33333,
+            369.99804
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_c_000/_f_c_000",
+          "ref": [
+            4,
+            0
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20536
+        },
+        {
+          "path": "p_c_001/_f_c_001",
+          "ref": [
+            4,
+            1
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20592
+        },
+        {
+          "path": "p_c_002/_f_c_002",
+          "ref": [
+            4,
+            2
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20648
+        },
+        {
+          "path": "p_c_003/_f_c_003",
+          "ref": [
+            4,
+            3
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20704
+        },
+        {
+          "path": "p_c_004/_f_c_004",
+          "ref": [
+            4,
+            4
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20760
+        },
+        {
+          "path": "p_c_005/_f_c_005",
+          "ref": [
+            4,
+            5
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20816
+        },
+        {
+          "path": "p_c_006/_f_c_006",
+          "ref": [
+            4,
+            6
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20872
+        },
+        {
+          "path": "p_c_007/_f_c_007",
+          "ref": [
+            4,
+            7
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20928
+        },
+        {
+          "path": "p_a_000/_f_a_000",
+          "ref": [
+            4,
+            8
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 20984
+        },
+        {
+          "path": "p_a_001/_f_a_001",
+          "ref": [
+            4,
+            9
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21040
+        },
+        {
+          "path": "p_a_002/_f_a_002",
+          "ref": [
+            4,
+            10
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21096
+        },
+        {
+          "path": "p_a_003/_f_a_003",
+          "ref": [
+            4,
+            11
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21152
+        },
+        {
+          "path": "p_a_004/_f_a_004",
+          "ref": [
+            4,
+            12
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21208
+        },
+        {
+          "path": "p_a_005/_f_a_005",
+          "ref": [
+            4,
+            13
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21264
+        },
+        {
+          "path": "p_a_006/_f_a_006",
+          "ref": [
+            4,
+            14
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21320
+        },
+        {
+          "path": "p_a_007/_f_a_007",
+          "ref": [
+            4,
+            15
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21376
+        }
+      ]
+    },
+    "fl_wait_1": {
+      "root_sequence_offset": 38320,
+      "root_record": 22,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            38544,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            474.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              316.0
+            ],
+            [
+              1280.0,
+              316.0
+            ],
+            [
+              1280.0,
+              378.66667
+            ],
+            [
+              0.0,
+              378.66667
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            316.0,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            316.0,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            38564,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            28.875091552734375,
+            202.0,
+            568.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              378.66667
+            ],
+            [
+              1414.66667,
+              378.66667
+            ],
+            [
+              1414.66667,
+              686.66764
+            ],
+            [
+              134.66667,
+              686.66764
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            378.66667,
+            1280.0,
+            308.00097
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            378.66667,
+            1145.33333,
+            308.00097
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            38584,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            202.0,
+            380.1
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.4
+            ],
+            [
+              1414.66667,
+              253.4
+            ],
+            [
+              1414.66667,
+              316.06667
+            ],
+            [
+              134.66667,
+              316.06667
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.4,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.4,
+            1145.33333,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_title/_f_title",
+          "ref": [
+            4,
+            16
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 21432
+        },
+        {
+          "path": "p_title_a/_f_title_a",
+          "ref": [
+            4,
+            17
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21488
+        },
+        {
+          "path": "p_setumei/_f_setumei",
+          "ref": [
+            4,
+            18
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21544
+        }
+      ]
+    },
+    "fl_wait_2": {
+      "root_sequence_offset": 38968,
+      "root_record": 23,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39000,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            566.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              377.33333
+            ],
+            [
+              1280.0,
+              377.33333
+            ],
+            [
+              1280.0,
+              440.0
+            ],
+            [
+              0.0,
+              440.0
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            377.33333,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            377.33333,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39020,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            23.12579345703125,
+            202.0,
+            660.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              440.0
+            ],
+            [
+              1414.66667,
+              440.0
+            ],
+            [
+              1414.66667,
+              686.67513
+            ],
+            [
+              134.66667,
+              686.67513
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            440.0,
+            1280.0,
+            246.67513
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            440.0,
+            1145.33333,
+            246.67513
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39040,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            11.624801635742188,
+            202.0,
+            380.1
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.4
+            ],
+            [
+              1414.66667,
+              253.4
+            ],
+            [
+              1414.66667,
+              377.39788
+            ],
+            [
+              134.66667,
+              377.39788
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.4,
+            1280.0,
+            123.99788
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.4,
+            1145.33333,
+            123.99788
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_title/_f_title",
+          "ref": [
+            4,
+            16
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 21432
+        },
+        {
+          "path": "p_title_a/_f_title_a",
+          "ref": [
+            4,
+            17
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21488
+        },
+        {
+          "path": "p_setumei/_f_setumei",
+          "ref": [
+            4,
+            18
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21544
+        }
+      ]
+    },
+    "fl_wait_3": {
+      "root_sequence_offset": 39204,
+      "root_record": 24,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39236,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            660.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              440.0
+            ],
+            [
+              1280.0,
+              440.0
+            ],
+            [
+              1280.0,
+              502.66667
+            ],
+            [
+              0.0,
+              502.66667
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            440.0,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            440.0,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39256,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            17.250991821289062,
+            202.0,
+            754.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              502.66667
+            ],
+            [
+              1414.66667,
+              502.66667
+            ],
+            [
+              1414.66667,
+              686.67725
+            ],
+            [
+              134.66667,
+              686.67725
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            502.66667,
+            1280.0,
+            184.01058
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            502.66667,
+            1145.33333,
+            184.01058
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39276,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            17.49951171875,
+            202.0,
+            380.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              439.99479
+            ],
+            [
+              134.66667,
+              439.99479
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.33333,
+            1280.0,
+            186.66146
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.33333,
+            1145.33333,
+            186.66146
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_title/_f_title",
+          "ref": [
+            4,
+            16
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 21432
+        },
+        {
+          "path": "p_title_a/_f_title_a",
+          "ref": [
+            4,
+            17
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21488
+        },
+        {
+          "path": "p_setumei/_f_setumei",
+          "ref": [
+            4,
+            18
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21544
+        }
+      ]
+    },
+    "fl_wait_4": {
+      "root_sequence_offset": 39440,
+      "root_record": 25,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39472,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            752.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              501.33333
+            ],
+            [
+              1280.0,
+              501.33333
+            ],
+            [
+              1280.0,
+              564.0
+            ],
+            [
+              0.0,
+              564.0
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            501.33333,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            501.33333,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39492,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            11.563079833984375,
+            202.0,
+            846.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              564.0
+            ],
+            [
+              1414.66667,
+              564.0
+            ],
+            [
+              1414.66667,
+              687.33952
+            ],
+            [
+              134.66667,
+              687.33952
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            564.0,
+            1280.0,
+            123.33952
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            564.0,
+            1145.33333,
+            123.33952
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39512,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            23.24920654296875,
+            202.0,
+            380.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              501.32487
+            ],
+            [
+              134.66667,
+              501.32487
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.33333,
+            1280.0,
+            247.99154
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.33333,
+            1145.33333,
+            247.99154
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_title/_f_title",
+          "ref": [
+            4,
+            16
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 21432
+        },
+        {
+          "path": "p_title_a/_f_title_a",
+          "ref": [
+            4,
+            17
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21488
+        },
+        {
+          "path": "p_setumei/_f_setumei",
+          "ref": [
+            4,
+            18
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21544
+        }
+      ]
+    },
+    "fl_wait_5": {
+      "root_sequence_offset": 39676,
+      "root_record": 26,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39708,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            844.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              562.66667
+            ],
+            [
+              1280.0,
+              562.66667
+            ],
+            [
+              1280.0,
+              625.33333
+            ],
+            [
+              0.0,
+              625.33333
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            562.66667,
+            1280.0,
+            62.66666
+          ],
+          "viewport_intersection_1280": [
+            0,
+            562.66667,
+            1280,
+            62.66666
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39728,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.8128662109375,
+            202.0,
+            938.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              625.33333
+            ],
+            [
+              1414.66667,
+              625.33333
+            ],
+            [
+              1414.66667,
+              687.33724
+            ],
+            [
+              134.66667,
+              687.33724
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            625.33333,
+            1280.0,
+            62.00391
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            625.33333,
+            1145.33333,
+            62.00391
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39748,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            28.998458862304688,
+            202.0,
+            380.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              562.65023
+            ],
+            [
+              134.66667,
+              562.65023
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.33333,
+            1280.0,
+            309.3169
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.33333,
+            1145.33333,
+            309.3169
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_title/_f_title",
+          "ref": [
+            4,
+            16
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 21432
+        },
+        {
+          "path": "p_title_a/_f_title_a",
+          "ref": [
+            4,
+            17
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21488
+        },
+        {
+          "path": "p_setumei/_f_setumei",
+          "ref": [
+            4,
+            18
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21544
+        }
+      ]
+    },
+    "fl_wait_max": {
+      "root_sequence_offset": 39912,
+      "root_record": 27,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39952,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            936.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              624.0
+            ],
+            [
+              1280.0,
+              624.0
+            ],
+            [
+              1280.0,
+              686.66667
+            ],
+            [
+              0.0,
+              686.66667
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            624.0,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            624.0,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39972,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.8128662109375,
+            202.0,
+            938.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              625.33333
+            ],
+            [
+              1414.66667,
+              625.33333
+            ],
+            [
+              1414.66667,
+              687.33724
+            ],
+            [
+              134.66667,
+              687.33724
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            625.33333,
+            1280.0,
+            62.00391
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            625.33333,
+            1145.33333,
+            62.00391
+          ],
+          "alpha_product": 0.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": false
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            39984,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            34.74853515625,
+            202.0,
+            380.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              253.33333
+            ],
+            [
+              1414.66667,
+              623.98438
+            ],
+            [
+              134.66667,
+              623.98438
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.33333,
+            1280.0,
+            370.65105
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.33333,
+            1145.33333,
+            370.65105
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_title/_f_title",
+          "ref": [
+            4,
+            16
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 21432
+        },
+        {
+          "path": "p_title_a/_f_title_a",
+          "ref": [
+            4,
+            17
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21488
+        },
+        {
+          "path": "p_setumei/_f_setumei",
+          "ref": [
+            4,
+            18
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21544
+        }
+      ]
+    },
+    "fl_shuzinko_wait_0": {
+      "root_sequence_offset": 65700,
+      "root_record": 93,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            64804,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            381.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              254.0
+            ],
+            [
+              1280.0,
+              254.0
+            ],
+            [
+              1280.0,
+              316.66667
+            ],
+            [
+              0.0,
+              316.66667
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            254.0,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            254.0,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            64824,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            34.68731689453125,
+            202.0,
+            475.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              316.66667
+            ],
+            [
+              1414.66667,
+              316.66667
+            ],
+            [
+              1414.66667,
+              686.66471
+            ],
+            [
+              134.66667,
+              686.66471
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            316.66667,
+            1280.0,
+            369.99804
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            316.66667,
+            1145.33333,
+            369.99804
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_c_000/_f_c_000",
+          "ref": [
+            4,
+            0
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20536
+        },
+        {
+          "path": "p_c_001/_f_c_001",
+          "ref": [
+            4,
+            1
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20592
+        },
+        {
+          "path": "p_c_002/_f_c_002",
+          "ref": [
+            4,
+            2
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20648
+        },
+        {
+          "path": "p_c_003/_f_c_003",
+          "ref": [
+            4,
+            3
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20704
+        },
+        {
+          "path": "p_c_004/_f_c_004",
+          "ref": [
+            4,
+            4
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20760
+        },
+        {
+          "path": "p_c_005/_f_c_005",
+          "ref": [
+            4,
+            5
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20816
+        },
+        {
+          "path": "p_c_006/_f_c_006",
+          "ref": [
+            4,
+            6
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20872
+        },
+        {
+          "path": "p_c_007/_f_c_007",
+          "ref": [
+            4,
+            7
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20928
+        },
+        {
+          "path": "p_a_000/_f_a_000",
+          "ref": [
+            4,
+            8
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 20984
+        },
+        {
+          "path": "p_a_001/_f_a_001",
+          "ref": [
+            4,
+            9
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21040
+        },
+        {
+          "path": "p_a_002/_f_a_002",
+          "ref": [
+            4,
+            10
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21096
+        },
+        {
+          "path": "p_a_003/_f_a_003",
+          "ref": [
+            4,
+            11
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21152
+        },
+        {
+          "path": "p_a_004/_f_a_004",
+          "ref": [
+            4,
+            12
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21208
+        },
+        {
+          "path": "p_a_005/_f_a_005",
+          "ref": [
+            4,
+            13
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21264
+        },
+        {
+          "path": "p_a_006/_f_a_006",
+          "ref": [
+            4,
+            14
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21320
+        },
+        {
+          "path": "p_a_007/_f_a_007",
+          "ref": [
+            4,
+            15
+          ],
+          "source_color_u32": 4294967295,
+          "source_color_hex": "0xffffffff",
+          "header_offset": 21376
+        }
+      ]
+    },
+    "fl_shuzinko_wait_1": {
+      "root_sequence_offset": 68468,
+      "root_record": 101,
+      "panels": [
+        {
+          "path": "i_black_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            68668,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            0.0,
+            474.0
+          ],
+          "quad_1280": [
+            [
+              0.0,
+              316.0
+            ],
+            [
+              1280.0,
+              316.0
+            ],
+            [
+              1280.0,
+              378.66667
+            ],
+            [
+              0.0,
+              378.66667
+            ]
+          ],
+          "rect_1280": [
+            0.0,
+            316.0,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            0,
+            316.0,
+            1280,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            68692,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            28.875091552734375,
+            202.0,
+            568.0
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              378.66667
+            ],
+            [
+              1414.66667,
+              378.66667
+            ],
+            [
+              1414.66667,
+              686.66764
+            ],
+            [
+              134.66667,
+              686.66764
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            378.66667,
+            1280.0,
+            308.00097
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            378.66667,
+            1145.33333,
+            308.00097
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        },
+        {
+          "path": "i_black_003/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 19344,
+          "operation_offsets": [
+            68716,
+            21824
+          ],
+          "affine_design": [
+            120.0,
+            0.0,
+            0.0,
+            5.875,
+            202.0,
+            380.1
+          ],
+          "quad_1280": [
+            [
+              134.66667,
+              253.4
+            ],
+            [
+              1414.66667,
+              253.4
+            ],
+            [
+              1414.66667,
+              316.06667
+            ],
+            [
+              134.66667,
+              316.06667
+            ]
+          ],
+          "rect_1280": [
+            134.66667,
+            253.4,
+            1280.0,
+            62.66667
+          ],
+          "viewport_intersection_1280": [
+            134.66667,
+            253.4,
+            1145.33333,
+            62.66667
+          ],
+          "alpha_product": 0.800781,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 17,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "source_visible": true
+        }
+      ],
+      "text_field_base_colors": [
+        {
+          "path": "p_c_004/_f_c_004",
+          "ref": [
+            4,
+            4
+          ],
+          "source_color_u32": 255,
+          "source_color_hex": "0x000000ff",
+          "header_offset": 20760
+        }
+      ]
+    }
+  },
+  "report_nameplate_source": {
+    "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\a009dbb2debcdf2ea1a59535fc4e801eb561925099f760b828ebd79b674d6221.json",
+    "sfl_sha256": "a009dbb2debcdf2ea1a59535fc4e801eb561925099f760b828ebd79b674d6221",
+    "label": "fl_wait",
+    "root_sequence_offset": 24780,
+    "leaves": [
+      {
+        "path": "i_bg/d1",
+        "ref": [
+          3,
+          1
+        ],
+        "entry_offset": 1856,
+        "operation_offsets": [
+          24808,
+          2276
+        ],
+        "affine_design": [
+          120.0,
+          0.0,
+          0.0,
+          8.125030517578125,
+          0.0,
+          244.0
+        ],
+        "quad_1280": [
+          [
+            0.0,
+            162.66667
+          ],
+          [
+            1280.0,
+            162.66667
+          ],
+          [
+            1280.0,
+            249.33366
+          ],
+          [
+            0.0,
+            249.33366
+          ]
+        ],
+        "rect_1280": [
+          0.0,
+          162.66667,
+          1280.0,
+          86.66699
+        ],
+        "viewport_intersection_1280": [
+          0,
+          162.66667,
+          1280,
+          86.66699
+        ],
+        "alpha_product": 0.601562,
+        "clip_metadata": [],
+        "kind": "raster_quad",
+        "image_id": 19,
+        "local_lrtb": [
+          0,
+          16,
+          0,
+          16
+        ]
+      },
+      {
+        "path": "i_beta_000/d1",
+        "ref": [
+          3,
+          1
+        ],
+        "entry_offset": 1856,
+        "operation_offsets": [
+          24828,
+          2276
+        ],
+        "affine_design": [
+          120.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          239.0
+        ],
+        "quad_1280": [
+          [
+            0.0,
+            159.33333
+          ],
+          [
+            1280.0,
+            159.33333
+          ],
+          [
+            1280.0,
+            170.0
+          ],
+          [
+            0.0,
+            170.0
+          ]
+        ],
+        "rect_1280": [
+          0.0,
+          159.33333,
+          1280.0,
+          10.66667
+        ],
+        "viewport_intersection_1280": [
+          0,
+          159.33333,
+          1280,
+          10.66667
+        ],
+        "alpha_product": 1,
+        "clip_metadata": [],
+        "kind": "raster_quad",
+        "image_id": 19,
+        "local_lrtb": [
+          0,
+          16,
+          0,
+          16
+        ]
+      },
+      {
+        "path": "i_beta_001/d1",
+        "ref": [
+          3,
+          1
+        ],
+        "entry_offset": 1856,
+        "operation_offsets": [
+          24844,
+          2276
+        ],
+        "affine_design": [
+          120.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          361.0
+        ],
+        "quad_1280": [
+          [
+            0.0,
+            240.66667
+          ],
+          [
+            1280.0,
+            240.66667
+          ],
+          [
+            1280.0,
+            251.33333
+          ],
+          [
+            0.0,
+            251.33333
+          ]
+        ],
+        "rect_1280": [
+          0.0,
+          240.66667,
+          1280.0,
+          10.66666
+        ],
+        "viewport_intersection_1280": [
+          0,
+          240.66667,
+          1280,
+          10.66666
+        ],
+        "alpha_product": 1,
+        "clip_metadata": [],
+        "kind": "raster_quad",
+        "image_id": 19,
+        "local_lrtb": [
+          0,
+          16,
+          0,
+          16
+        ]
+      }
+    ],
+    "limit": "Source image19 nameplate tile raster/material is not a proved pixel identity match to another carrier."
+  },
+  "representative_theme_states": [
+    {
+      "type_id": 0,
+      "locale": "US",
+      "sfl_sha256": "8b8f5c71e67e0b6724d5d9bcd667c76383b27c9c63769b5d6e4ecd57298f04fa",
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\8b8f5c71e67e0b6724d5d9bcd667c76383b27c9c63769b5d6e4ecd57298f04fa.json",
+      "states": {
+        "fl_tsusinbo_wait": {
+          "root_record": 297,
+          "sequence_offset": 100072,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 97444
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 5
+              },
+              "matrix": {
+                "scale_x": 50.49951171875,
+                "scale_y": 10.937515258789062,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 144.0,
+                "translate_y": 117.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 67240
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2544,
+              "operation_offsets": [
+                97444,
+                3960
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                5
+              ],
+              "entry_offset": 2704,
+              "operation_offsets": [
+                67240,
+                9860
+              ],
+              "affine_design": [
+                50.49951171875,
+                0.0,
+                0.0,
+                10.937515258789062,
+                144.0,
+                117.0
+              ],
+              "quad_1280": [
+                [
+                  96.0,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  311.33366
+                ],
+                [
+                  96.0,
+                  311.33366
+                ]
+              ],
+              "rect_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "viewport_intersection_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 31,
+                  "clip_depth": 37
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 1,
+              "local_lrtb": [
+                0,
+                32,
+                0,
+                32
+              ]
+            }
+          ]
+        },
+        "fl_tsusinbo_ok_wait": {
+          "root_record": 356,
+          "sequence_offset": 107204,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 103424
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 5
+              },
+              "matrix": {
+                "scale_x": 50.49951171875,
+                "scale_y": 10.937515258789062,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 144.0,
+                "translate_y": 117.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 67240
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2544,
+              "operation_offsets": [
+                103424,
+                3960
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                5
+              ],
+              "entry_offset": 2704,
+              "operation_offsets": [
+                67240,
+                9860
+              ],
+              "affine_design": [
+                50.49951171875,
+                0.0,
+                0.0,
+                10.937515258789062,
+                144.0,
+                117.0
+              ],
+              "quad_1280": [
+                [
+                  96.0,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  311.33366
+                ],
+                [
+                  96.0,
+                  311.33366
+                ]
+              ],
+              "rect_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "viewport_intersection_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 31,
+                  "clip_depth": 37
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 1,
+              "local_lrtb": [
+                0,
+                32,
+                0,
+                32
+              ]
+            }
+          ]
+        },
+        "fl_system_wait": {
+          "root_record": 500,
+          "sequence_offset": 123664,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 121060
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 5
+              },
+              "matrix": {
+                "scale_x": 50.49951171875,
+                "scale_y": 10.937515258789062,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 144.0,
+                "translate_y": 117.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 67240
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2544,
+              "operation_offsets": [
+                121060,
+                3960
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                5
+              ],
+              "entry_offset": 2704,
+              "operation_offsets": [
+                67240,
+                9860
+              ],
+              "affine_design": [
+                50.49951171875,
+                0.0,
+                0.0,
+                10.937515258789062,
+                144.0,
+                117.0
+              ],
+              "quad_1280": [
+                [
+                  96.0,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  311.33366
+                ],
+                [
+                  96.0,
+                  311.33366
+                ]
+              ],
+              "rect_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "viewport_intersection_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 31,
+                  "clip_depth": 37
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 1,
+              "local_lrtb": [
+                0,
+                32,
+                0,
+                32
+              ]
+            }
+          ]
+        },
+        "fl_system_ok_wait": {
+          "root_record": 558,
+          "sequence_offset": 130648,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 127000
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 5
+              },
+              "matrix": {
+                "scale_x": 50.49951171875,
+                "scale_y": 10.937515258789062,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 144.0,
+                "translate_y": 117.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 67240
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2544,
+              "operation_offsets": [
+                127000,
+                3960
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                5
+              ],
+              "entry_offset": 2704,
+              "operation_offsets": [
+                67240,
+                9860
+              ],
+              "affine_design": [
+                50.49951171875,
+                0.0,
+                0.0,
+                10.937515258789062,
+                144.0,
+                117.0
+              ],
+              "quad_1280": [
+                [
+                  96.0,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  78.0
+                ],
+                [
+                  1173.32292,
+                  311.33366
+                ],
+                [
+                  96.0,
+                  311.33366
+                ]
+              ],
+              "rect_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "viewport_intersection_1280": [
+                96.0,
+                78.0,
+                1077.32292,
+                233.33366
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 31,
+                  "clip_depth": 37
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 1,
+              "local_lrtb": [
+                0,
+                32,
+                0,
+                32
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type_id": 14,
+      "locale": "US",
+      "sfl_sha256": "7fb4c092bac662e2e929d974bb844fd5fa67808a63b3e4b4394118596cc916f9",
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\7fb4c092bac662e2e929d974bb844fd5fa67808a63b3e4b4394118596cc916f9.json",
+      "states": {
+        "fl_tsusinbo_wait": {
+          "root_record": 274,
+          "sequence_offset": 129804,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 127112
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 8
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50050354003906,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 760.0,
+                "translate_y": 116.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 102564
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 21
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 99112
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2884,
+              "operation_offsets": [
+                127112,
+                4100
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                6
+              ],
+              "entry_offset": 3084,
+              "operation_offsets": [
+                102564,
+                21076
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50050354003906,
+                760.0,
+                116.0
+              ],
+              "quad_1280": [
+                [
+                  506.66667,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  309.33602
+                ],
+                [
+                  506.66667,
+                  309.33602
+                ]
+              ],
+              "rect_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "viewport_intersection_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 19,
+                  "clip_depth": 23
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                13
+              ],
+              "entry_offset": 3364,
+              "operation_offsets": [
+                99112,
+                50432
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        },
+        "fl_tsusinbo_ok_wait": {
+          "root_record": 319,
+          "sequence_offset": 135104,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 134504
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 8
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50050354003906,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 760.0,
+                "translate_y": 116.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 102564
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 21
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 99112
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2884,
+              "operation_offsets": [
+                134504,
+                4100
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                6
+              ],
+              "entry_offset": 3084,
+              "operation_offsets": [
+                102564,
+                21076
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50050354003906,
+                760.0,
+                116.0
+              ],
+              "quad_1280": [
+                [
+                  506.66667,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  309.33602
+                ],
+                [
+                  506.66667,
+                  309.33602
+                ]
+              ],
+              "rect_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "viewport_intersection_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 19,
+                  "clip_depth": 23
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                13
+              ],
+              "entry_offset": 3364,
+              "operation_offsets": [
+                99112,
+                50432
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        },
+        "fl_system_wait": {
+          "root_record": 457,
+          "sequence_offset": 150424,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 147768
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 8
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50050354003906,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 760.0,
+                "translate_y": 116.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 102564
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 21
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 99112
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2884,
+              "operation_offsets": [
+                147768,
+                4100
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                6
+              ],
+              "entry_offset": 3084,
+              "operation_offsets": [
+                102564,
+                21076
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50050354003906,
+                760.0,
+                116.0
+              ],
+              "quad_1280": [
+                [
+                  506.66667,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  309.33602
+                ],
+                [
+                  506.66667,
+                  309.33602
+                ]
+              ],
+              "rect_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "viewport_intersection_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 19,
+                  "clip_depth": 23
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                13
+              ],
+              "entry_offset": 3364,
+              "operation_offsets": [
+                99112,
+                50432
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        },
+        "fl_system_ok_wait": {
+          "root_record": 505,
+          "sequence_offset": 156160,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 153452
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 8
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50050354003906,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 760.0,
+                "translate_y": 116.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 102564
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 21
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 99112
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 2884,
+              "operation_offsets": [
+                153452,
+                4100
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                6
+              ],
+              "entry_offset": 3084,
+              "operation_offsets": [
+                102564,
+                21076
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50050354003906,
+                760.0,
+                116.0
+              ],
+              "quad_1280": [
+                [
+                  506.66667,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  77.33333
+                ],
+                [
+                  1173.33333,
+                  309.33602
+                ],
+                [
+                  506.66667,
+                  309.33602
+                ]
+              ],
+              "rect_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "viewport_intersection_1280": [
+                506.66667,
+                77.33333,
+                666.66666,
+                232.00269
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 19,
+                  "clip_depth": 23
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                13
+              ],
+              "entry_offset": 3364,
+              "operation_offsets": [
+                99112,
+                50432
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type_id": 15,
+      "locale": "US",
+      "sfl_sha256": "7c2a67e6a90ed404c04b3a90cef54d2172a4c2b608e01308f71a274fd9a5f4e2",
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\7c2a67e6a90ed404c04b3a90cef54d2172a4c2b608e01308f71a274fd9a5f4e2.json",
+      "states": {
+        "fl_tsusinbo_wait": {
+          "root_record": 274,
+          "sequence_offset": 134344,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 131652
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 9
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50080871582031,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 756.5,
+                "translate_y": 117.5,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 107104
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 22
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 103632
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 3088,
+              "operation_offsets": [
+                131652,
+                4344
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                7
+              ],
+              "entry_offset": 3328,
+              "operation_offsets": [
+                107104,
+                25596
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50080871582031,
+                756.5,
+                117.5
+              ],
+              "quad_1280": [
+                [
+                  504.33333,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  310.33765
+                ],
+                [
+                  504.33333,
+                  310.33765
+                ]
+              ],
+              "rect_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "viewport_intersection_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 27,
+                  "clip_depth": 31
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                14
+              ],
+              "entry_offset": 3608,
+              "operation_offsets": [
+                103632,
+                54952
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        },
+        "fl_tsusinbo_ok_wait": {
+          "root_record": 319,
+          "sequence_offset": 139644,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 139044
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 9
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50080871582031,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 756.5,
+                "translate_y": 117.5,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 107104
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 22
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 103632
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 3088,
+              "operation_offsets": [
+                139044,
+                4344
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                7
+              ],
+              "entry_offset": 3328,
+              "operation_offsets": [
+                107104,
+                25596
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50080871582031,
+                756.5,
+                117.5
+              ],
+              "quad_1280": [
+                [
+                  504.33333,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  310.33765
+                ],
+                [
+                  504.33333,
+                  310.33765
+                ]
+              ],
+              "rect_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "viewport_intersection_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 27,
+                  "clip_depth": 31
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                14
+              ],
+              "entry_offset": 3608,
+              "operation_offsets": [
+                103632,
+                54952
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        },
+        "fl_system_wait": {
+          "root_record": 457,
+          "sequence_offset": 154964,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 152308
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 9
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50080871582031,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 756.5,
+                "translate_y": 117.5,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 107104
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 22
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 103632
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 3088,
+              "operation_offsets": [
+                152308,
+                4344
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                7
+              ],
+              "entry_offset": 3328,
+              "operation_offsets": [
+                107104,
+                25596
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50080871582031,
+                756.5,
+                117.5
+              ],
+              "quad_1280": [
+                [
+                  504.33333,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  310.33765
+                ],
+                [
+                  504.33333,
+                  310.33765
+                ]
+              ],
+              "rect_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "viewport_intersection_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 27,
+                  "clip_depth": 31
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                14
+              ],
+              "entry_offset": 3608,
+              "operation_offsets": [
+                103632,
+                54952
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        },
+        "fl_system_ok_wait": {
+          "root_record": 505,
+          "sequence_offset": 160700,
+          "background_root_placements": [
+            {
+              "instance_name": "i_bg",
+              "character_reference": {
+                "table": 5,
+                "entry": 0
+              },
+              "matrix": {
+                "scale_x": 1.0,
+                "scale_y": 1.0,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 0.0,
+                "translate_y": 0.0,
+                "component_mask": 0,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 0,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 157992
+            },
+            {
+              "instance_name": "i_mask",
+              "character_reference": {
+                "table": 5,
+                "entry": 9
+              },
+              "matrix": {
+                "scale_x": 125.0,
+                "scale_y": 43.50080871582031,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": 756.5,
+                "translate_y": 117.5,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "operation_offset": 107104
+            },
+            {
+              "instance_name": "i_gra",
+              "character_reference": {
+                "table": 5,
+                "entry": 22
+              },
+              "matrix": {
+                "scale_x": 15.625,
+                "scale_y": 2.34375,
+                "rotate_skew0": 0.0,
+                "rotate_skew1": 0.0,
+                "translate_x": -62.0,
+                "translate_y": 500.0,
+                "component_mask": 53,
+                "native_evidence": "ev_9727aa40a4dd39983bcac9e37dfdd2fcbb72fba69b0c159f3e46e1df86fe3f97",
+                "native_translation_scale": 0.05
+              },
+              "color_transform": {
+                "multiply_rgba": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.8515625
+                ],
+                "add_rgba": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "component_mask": 8,
+                "native_evidence": "ev_281438cc2ac8158986ff07dd7b5267901d5e759d25511a208a1dc980cc222d8d"
+              },
+              "operation_offset": 103632
+            }
+          ],
+          "background_leaves": [
+            {
+              "path": "i_bg/d1",
+              "ref": [
+                3,
+                1
+              ],
+              "entry_offset": 3088,
+              "operation_offsets": [
+                157992,
+                4344
+              ],
+              "affine_design": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "quad_1280": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  0.0
+                ],
+                [
+                  1280.0,
+                  725.33333
+                ],
+                [
+                  0.0,
+                  725.33333
+                ]
+              ],
+              "rect_1280": [
+                0.0,
+                0.0,
+                1280.0,
+                725.33333
+              ],
+              "viewport_intersection_1280": [
+                0,
+                0,
+                1280,
+                720
+              ],
+              "alpha_product": 1.0,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 0,
+              "local_lrtb": [
+                0,
+                1920,
+                0,
+                1088
+              ]
+            },
+            {
+              "path": "i_mask/d1",
+              "ref": [
+                3,
+                7
+              ],
+              "entry_offset": 3328,
+              "operation_offsets": [
+                107104,
+                25596
+              ],
+              "affine_design": [
+                125.0,
+                0.0,
+                0.0,
+                43.50080871582031,
+                756.5,
+                117.5
+              ],
+              "quad_1280": [
+                [
+                  504.33333,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  78.33333
+                ],
+                [
+                  1171.0,
+                  310.33765
+                ],
+                [
+                  504.33333,
+                  310.33765
+                ]
+              ],
+              "rect_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "viewport_intersection_1280": [
+                504.33333,
+                78.33333,
+                666.66667,
+                232.00432
+              ],
+              "alpha_product": 1,
+              "clip_metadata": [
+                {
+                  "depth": 27,
+                  "clip_depth": 31
+                }
+              ],
+              "kind": "raster_quad",
+              "image_id": 24,
+              "local_lrtb": [
+                0,
+                8,
+                0,
+                8
+              ]
+            },
+            {
+              "path": "i_gra/d1",
+              "ref": [
+                3,
+                14
+              ],
+              "entry_offset": 3608,
+              "operation_offsets": [
+                103632,
+                54952
+              ],
+              "affine_design": [
+                15.625,
+                0.0,
+                0.0,
+                2.34375,
+                -62.0,
+                500.0
+              ],
+              "quad_1280": [
+                [
+                  -41.33333,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  333.33333
+                ],
+                [
+                  1292.0,
+                  733.33333
+                ],
+                [
+                  -41.33333,
+                  733.33333
+                ]
+              ],
+              "rect_1280": [
+                -41.33333,
+                333.33333,
+                1333.33333,
+                400.0
+              ],
+              "viewport_intersection_1280": [
+                0,
+                333.33333,
+                1280,
+                386.66667
+              ],
+              "alpha_product": 0.851562,
+              "clip_metadata": [],
+              "kind": "raster_quad",
+              "image_id": 25,
+              "local_lrtb": [
+                0,
+                128,
+                0,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "provided_gradient_pixel_metadata": [
+    {
+      "container": "data/win/flash/techou/techou_type_014_JP.spc",
+      "resource": "grade.png",
+      "size": [
+        128,
+        256
+      ],
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_authorized_20261029\\68bf0cbc3f075ae0\\21f6aaa8659869cf3ba2.png",
+      "pixel_sha256": "21f6aaa8659869cf3ba2d315a4b9a8ac3c8f5f668265fa6ee1c491c4a6b22599",
+      "rgba_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "sample_top_middle_bottom": [
+        [
+          255,
+          255,
+          255,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          128
+        ],
+        [
+          0,
+          0,
+          0,
+          254
+        ]
+      ],
+      "pixel_identity_limit": "Existing authorizedJP grade pixels; cachedUS image25 ->thisfilename parity is not proven solely by image index or dimensions."
+    },
+    {
+      "container": "data/win/flash/techou/techou_type_015_JP.spc",
+      "resource": "grade.png",
+      "size": [
+        128,
+        256
+      ],
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_authorized_20261029\\7f02e0d63698196a\\21f6aaa8659869cf3ba2.png",
+      "pixel_sha256": "21f6aaa8659869cf3ba2d315a4b9a8ac3c8f5f668265fa6ee1c491c4a6b22599",
+      "rgba_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "sample_top_middle_bottom": [
+        [
+          255,
+          255,
+          255,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          128
+        ],
+        [
+          0,
+          0,
+          0,
+          254
+        ]
+      ],
+      "pixel_identity_limit": "Existing authorizedJP grade pixels; cachedUS image25 ->thisfilename parity is not proven solely by image index or dimensions."
+    }
+  ],
+  "provided_bank": {
+    "manifest": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_authorized_20261029\\manifest.json",
+    "sha256": "6d594a03841d43f3336cdb321715b924bb74c4523c9029233191cb61b8099826",
+    "exact_report_message_carrier_texture_count": 0,
+    "exact_report_chara_carrier_texture_count": 0
+  },
+  "inference": {
+    "preferred_reconstruction": "Restore the source local page panels and name strip before evaluating text contrast on bright themes; a blanket whole-screenblack tint is not established by these representative source states.",
+    "page_visibility": "Choose the i_black leaves of the currently active named page label only; fl_wait_max i_black001 hasalpha0 and must stay invisible. Preserve viewport clipping of the intentionally oversized local panels.",
+    "color_handling": "Keep Kisekae six_menu_colors as category palette values. Do not promote them to a universal bodyfont color without resolving40d160/namedhandle mapping."
+  },
+  "unknown": [
+    "Exact40d160/4205b0 per-handle native setter implementation and DAT140c25b40..ba0/c18..c54 named-handle associations were not newly queried. Palette mapping is bounded here.",
+    "No global-dim absence claim across every native setter or all38skins. Representative source states show no i_bg dim, and known local panels answer the immediate reconstruction defect.",
+    "Image17 exact resource name/compression/internalpixelalpha and source material blend are not provided by SFL metadata. No originalpixelparity claim.",
+    "Other skin-specific decorative gradients/animation and runtime finalglyph rendering remain outside this narrow question."
+  ],
+  "execution_scope": {
+    "new_native_questions": 0,
+    "target_opened": false,
+    "original_execution": false,
+    "process_read": false,
+    "new_extraction": false,
+    "restored_exe_execution": false,
+    "Game_edits": false,
+    "provided_png_pixel_reads_only": true
+  },
+  "validation": {
+    "profile_page_labels": 7,
+    "protagonist_page_labels": 2,
+    "all_panel_shapes_use_image17": true,
+    "fl_wait_max_hidden_i_black001_retained": true,
+    "base_cache_hash_unchanged": true
+  }
+}

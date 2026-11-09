@@ -1,0 +1,958 @@
+{
+  "policy": "Original continuous surface prop bodies + real pierced facade wall/roof shells. No original-game extraction, engine edits, gameplay metadata or placement changes.",
+  "assets": [
+    {
+      "file": "art/space_v4/sculpted_v1/finish_context.glb",
+      "runtime": "Assets/Art/explore3d/finish_context.glb",
+      "bytes": 21256324,
+      "sha256": "0d3b2818ba52799e3fdd70f558c550362dfc0165d843deea626cc602965e3024"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/finish_plaza.glb",
+      "runtime": "Assets/Art/explore3d/finish_plaza.glb",
+      "bytes": 7950328,
+      "sha256": "bad9a92ecf01e8e6a6edba6f29a74f49fb7d9481e0f405e280053dffe2979290"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/finish_park_garden.glb",
+      "runtime": "Assets/Art/explore3d/finish_park_garden.glb",
+      "bytes": 1615040,
+      "sha256": "d47d7337a4c33913cb612676e5d110fadea72127176af0ef4aeb45df75793212"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/finish_pool_edge.glb",
+      "runtime": "Assets/Art/explore3d/finish_pool_edge.glb",
+      "bytes": 912876,
+      "sha256": "cfd3df62803ac752663466c4d29edf82adfe5f23679f796ba1600755035407f5"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/finish_ferris_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_ferris_platform.glb",
+      "bytes": 4031704,
+      "sha256": "646303bd1f883fb5ecb0b986d56db4988ddfc5c119bf9936e81646519ad85deb"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/finish_coaster_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_coaster_platform.glb",
+      "bytes": 3980828,
+      "sha256": "110890185d6a10f73c482416b2ede118470ccc3a4c4925b5a0166e347d3af08f"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/finish_park_main_gate.glb",
+      "runtime": "Assets/Art/explore3d/finish_park_main_gate.glb",
+      "bytes": 201640,
+      "sha256": "f40fb9c30653dc2603328692988389c57e1786626c427697cf6c46cd60fad1c5"
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/service_lounge.glb",
+      "runtime": "Assets/Art/explore3d/service_lounge.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/service_lounge.glb",
+      "bytes": 58763364,
+      "sha256": "441d7b627bac22a7ecb3ba15ed3781cee75af82683ef3279beb27ed221d9caac",
+      "replacements": [
+        {
+          "root": "service_lounge_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "service_lounge_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "service_lounge_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/dining_room.glb",
+      "runtime": "Assets/Art/explore3d/dining_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/dining_room.glb",
+      "bytes": 36222520,
+      "sha256": "3277111862ecbaddcee8ade0bbbcb44f20cf8a2c6f7897a32774310cf1839cfe",
+      "replacements": [
+        {
+          "root": "dining_room_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.003",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.004",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.005",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.006",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.007",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.008",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.009",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.010",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.011",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.012",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.013",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.014",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_chair.015",
+          "kind": "chair"
+        },
+        {
+          "root": "dining_room_meeting_table",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "dining_room_meeting_table.001",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "dining_room_meeting_table.002",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "dining_room_meeting_table.003",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/theatre_preparation.glb",
+      "runtime": "Assets/Art/explore3d/theatre_preparation.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/theatre_preparation.glb",
+      "bytes": 59777812,
+      "sha256": "64f62d78aa0e2776d9069f59bdd09e6005714f643a73ca8940f7dd59557dff74",
+      "replacements": [
+        {
+          "root": "theatre_preparation_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "theatre_preparation_chair.001",
+          "kind": "chair"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/archive_room.glb",
+      "runtime": "Assets/Art/explore3d/archive_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/archive_room.glb",
+      "bytes": 64180156,
+      "sha256": "206475a1aa9455f820260468d6d1e1165e7804be26e1ec6913709fdd0047f467",
+      "replacements": [
+        {
+          "root": "archive_room_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/central_control.glb",
+      "runtime": "Assets/Art/explore3d/central_control.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/central_control.glb",
+      "bytes": 58404580,
+      "sha256": "a4011602e03085a3644e4ca79e0195c1f62db73eb56204f2b9dcad504ca9879e",
+      "replacements": [
+        {
+          "root": "central_control_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/plaza.glb",
+      "runtime": "Assets/Art/explore3d/plaza.glb",
+      "source": "art/space_v4/reactions_v1/plaza_base.glb",
+      "bytes": 59687912,
+      "sha256": "dd560f67dcd62054b5d3702af99585cc68263847eca06b378a6e760f9f697340",
+      "replacements": [
+        {
+          "root": "plaza_detail_fountain_dry",
+          "kind": "detail_fountain_dry"
+        },
+        {
+          "root": "plaza_detail_planter.002",
+          "kind": "detail_planter"
+        },
+        {
+          "root": "plaza_detail_planter.003",
+          "kind": "detail_planter"
+        },
+        {
+          "root": "plaza_park_bench",
+          "kind": "park_bench"
+        },
+        {
+          "root": "plaza_park_bench.001",
+          "kind": "park_bench"
+        },
+        {
+          "root": "plaza_park_bench.002",
+          "kind": "park_bench"
+        },
+        {
+          "root": "plaza_park_bench.003",
+          "kind": "park_bench"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reaction_plaza_0.glb",
+      "runtime": "Assets/Art/explore3d/reaction_plaza_0.glb",
+      "source": "art/space_v4/reactions_v1/plaza_0.glb",
+      "bytes": 475284,
+      "sha256": "cea6a1fa35f7a57df4d464007d5d373e15a42a9b4bcbca494c45afc589204659",
+      "replacements": [
+        {
+          "root": "plaza_detail_planter",
+          "kind": "detail_planter"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reaction_plaza_1.glb",
+      "runtime": "Assets/Art/explore3d/reaction_plaza_1.glb",
+      "source": "art/space_v4/reactions_v1/plaza_1.glb",
+      "bytes": 475292,
+      "sha256": "19b287d2e738cf2dc250a343a82b6bf9de25a2174785e38c97f2ddbe26086167",
+      "replacements": [
+        {
+          "root": "plaza_detail_planter.001",
+          "kind": "detail_planter"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/hotel_lobby.glb",
+      "runtime": "Assets/Art/explore3d/hotel_lobby.glb",
+      "source": "art/space_v4/reactions_v1/hotel_lobby_base.glb",
+      "bytes": 60452948,
+      "sha256": "198f76c26eb4616fac2e472a94d1f7c1c1d5a43f3faa2de0b6984b8906e989f7",
+      "replacements": [
+        {
+          "root": "hotel_lobby_park_bench",
+          "kind": "park_bench"
+        },
+        {
+          "root": "hotel_lobby_park_bench.001",
+          "kind": "park_bench"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reaction_hotel_lobby_0.glb",
+      "runtime": "Assets/Art/explore3d/reaction_hotel_lobby_0.glb",
+      "source": "art/space_v4/reactions_v1/hotel_lobby_0.glb",
+      "bytes": 475296,
+      "sha256": "d56aee5c11e35bcb1affaa9bf3cd5587fbb27c97d97080e03bb792de90500437",
+      "replacements": [
+        {
+          "root": "hotel_lobby_detail_planter",
+          "kind": "detail_planter"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reaction_hotel_lobby_1.glb",
+      "runtime": "Assets/Art/explore3d/reaction_hotel_lobby_1.glb",
+      "source": "art/space_v4/reactions_v1/hotel_lobby_1.glb",
+      "bytes": 475304,
+      "sha256": "c90df871ac88c6a39f80efb82f629cb22142b761b4bf560d26fd311cf40680ac",
+      "replacements": [
+        {
+          "root": "hotel_lobby_detail_planter.001",
+          "kind": "detail_planter"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/guest_room.glb",
+      "runtime": "Assets/Art/explore3d/guest_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "bytes": 33527124,
+      "sha256": "ee79492a8a6639ca7479202966411e00025304e8db7f0cc116191cd2336a3322",
+      "replacements": [
+        {
+          "root": "guest_room_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "guest_room_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/clinic.glb",
+      "runtime": "Assets/Art/explore3d/clinic.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/clinic.glb",
+      "bytes": 35046720,
+      "sha256": "acb316d179c5e4440c08fd2e86f0c98088a309b2e9940756701cf24a8aec1b18",
+      "replacements": [
+        {
+          "root": "clinic_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "clinic_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/laundry_room.glb",
+      "runtime": "Assets/Art/explore3d/laundry_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/laundry_room.glb",
+      "bytes": 34038412,
+      "sha256": "2cf615e61fdd4d59b348feef61ad050fadadef925a0fdf4543efade67fc09dd1",
+      "replacements": [
+        {
+          "root": "laundry_room_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/management_office.glb",
+      "runtime": "Assets/Art/explore3d/management_office.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/management_office.glb",
+      "bytes": 34161516,
+      "sha256": "2b53018378981d2b46a718ac1d19f7609511a0fdaac69a82f6127c62b659ae0f",
+      "replacements": [
+        {
+          "root": "management_office_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "management_office_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "management_office_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "management_office_chair.003",
+          "kind": "chair"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/hotel_multiuse.glb",
+      "runtime": "Assets/Art/explore3d/hotel_multiuse.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/hotel_multiuse.glb",
+      "bytes": 33118580,
+      "sha256": "1a0f43bc7cdfbf7efd8be72a68d045cace07ec586d14ad35192f80cf3afc9bea",
+      "replacements": [
+        {
+          "root": "hotel_multiuse_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "hotel_multiuse_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "hotel_multiuse_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "hotel_multiuse_chair.003",
+          "kind": "chair"
+        },
+        {
+          "root": "hotel_multiuse_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/performance_stage.glb",
+      "runtime": "Assets/Art/explore3d/performance_stage.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/performance_stage.glb",
+      "bytes": 58134140,
+      "sha256": "4ae3be335229fff596d07cba4bc3ffad609193708e2ee4c897bc3357ef723ac1",
+      "replacements": [
+        {
+          "root": "performance_stage_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.003",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.004",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.005",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.006",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.007",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.008",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.009",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.010",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.011",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.012",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.013",
+          "kind": "chair"
+        },
+        {
+          "root": "performance_stage_chair.014",
+          "kind": "chair"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/mirror_workbay.glb",
+      "runtime": "Assets/Art/explore3d/mirror_workbay.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/mirror_workbay.glb",
+      "bytes": 32574484,
+      "sha256": "a1e6e37c314968291152af5ec6dde6bc543ed3aa5571540202a839405a8710f1",
+      "replacements": [
+        {
+          "root": "mirror_workbay_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/mirror_waiting.glb",
+      "runtime": "Assets/Art/explore3d/mirror_waiting.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/mirror_waiting.glb",
+      "bytes": 32849696,
+      "sha256": "30270cd62ac3d5b98a55499ae6067ddc54bc2caeaefa4e7ac7123756694dc7a7",
+      "replacements": [
+        {
+          "root": "mirror_waiting_park_bench",
+          "kind": "park_bench"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/dream_lobby.glb",
+      "runtime": "Assets/Art/explore3d/dream_lobby.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/dream_lobby.glb",
+      "bytes": 33813840,
+      "sha256": "f3acf0004b6e2e40e504c177fab84414e90aa473aa8a864d0df50a4c6ef39b2a",
+      "replacements": [
+        {
+          "root": "dream_lobby_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "dream_lobby_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "dream_lobby_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "dream_lobby_chair.003",
+          "kind": "chair"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/screening_room.glb",
+      "runtime": "Assets/Art/explore3d/screening_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/screening_room.glb",
+      "bytes": 34034948,
+      "sha256": "03e655d897b14075d15660224bbd0dc34c28e45410d14474041076a84ae6395c",
+      "replacements": [
+        {
+          "root": "screening_room_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.003",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.004",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.005",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.006",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.007",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.008",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.009",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.010",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.011",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.012",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.013",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.014",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.015",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.016",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.017",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.018",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.019",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.020",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.021",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.022",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.023",
+          "kind": "chair"
+        },
+        {
+          "root": "screening_room_chair.024",
+          "kind": "chair"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reading_room.glb",
+      "runtime": "Assets/Art/explore3d/reading_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/reading_room.glb",
+      "bytes": 59963456,
+      "sha256": "8ac5c9c4378f369cf51ee7b205ace4d018c8e0cb12ef7c9f5b403e3e4e980856",
+      "replacements": [
+        {
+          "root": "reading_room_chair",
+          "kind": "chair"
+        },
+        {
+          "root": "reading_room_chair.001",
+          "kind": "chair"
+        },
+        {
+          "root": "reading_room_chair.002",
+          "kind": "chair"
+        },
+        {
+          "root": "reading_room_chair.003",
+          "kind": "chair"
+        },
+        {
+          "root": "reading_room_chair.004",
+          "kind": "chair"
+        },
+        {
+          "root": "reading_room_chair.005",
+          "kind": "chair"
+        },
+        {
+          "root": "reading_room_meeting_table",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "reading_room_meeting_table.001",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "reading_room_meeting_table.002",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/exhibition_room.glb",
+      "runtime": "Assets/Art/explore3d/exhibition_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/exhibition_room.glb",
+      "bytes": 33777324,
+      "sha256": "3b1c5402cf2795d26af24d9abcdf1666b91a8ac4a4117c40ef663c18181046f2",
+      "replacements": [
+        {
+          "root": "exhibition_room_detail_fountain_dry",
+          "kind": "detail_fountain_dry"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/record_room.glb",
+      "runtime": "Assets/Art/explore3d/record_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/record_room.glb",
+      "bytes": 62020328,
+      "sha256": "c88b29c4b9694bb155c5d4d5166456e1d298bd9f140abf37041b67641bbf5717",
+      "replacements": [
+        {
+          "root": "record_room_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/maintenance_workshop.glb",
+      "runtime": "Assets/Art/explore3d/maintenance_workshop.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/maintenance_workshop.glb",
+      "bytes": 58571652,
+      "sha256": "b281a379254553c0e33b0897e2e0704d0196e4f657d62596655c32e8b57e1143",
+      "replacements": [
+        {
+          "root": "maintenance_workshop_meeting_table",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "maintenance_workshop_meeting_table.001",
+          "kind": "meeting_table"
+        },
+        {
+          "root": "maintenance_workshop_meeting_table.002",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/shelter_reception.glb",
+      "runtime": "Assets/Art/explore3d/shelter_reception.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/shelter_reception.glb",
+      "bytes": 58453840,
+      "sha256": "9afe93392c957809e29169e159640622f580f79d13090b8d1c2ec10b6daf9ba2",
+      "replacements": [
+        {
+          "root": "shelter_reception_park_bench",
+          "kind": "park_bench"
+        },
+        {
+          "root": "shelter_reception_park_bench.001",
+          "kind": "park_bench"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/operating_archive.glb",
+      "runtime": "Assets/Art/explore3d/operating_archive.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/operating_archive.glb",
+      "bytes": 59640528,
+      "sha256": "443245e6a8ac69e568f0ede010d2ac20503dc12ef611aa3a797fa297ffcc6a8c",
+      "replacements": [
+        {
+          "root": "operating_archive_meeting_table",
+          "kind": "meeting_table"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/park_garden.glb",
+      "runtime": "Assets/Art/explore3d/park_garden.glb",
+      "source": "art/space_v4/reactions_v1/park_garden_base.glb",
+      "bytes": 1359712,
+      "sha256": "01021c475409b2c82b3c24f17335a56f99a7c115cdfd725e911c2c2b199f511a",
+      "replacements": [
+        {
+          "root": "park_garden_detail_planter.002",
+          "kind": "detail_planter"
+        },
+        {
+          "root": "park_garden_detail_planter.003",
+          "kind": "detail_planter"
+        },
+        {
+          "root": "park_garden_detail_planter.004",
+          "kind": "detail_planter"
+        },
+        {
+          "root": "park_garden_detail_planter.005",
+          "kind": "detail_planter"
+        },
+        {
+          "root": "park_garden_park_bench",
+          "kind": "park_bench"
+        },
+        {
+          "root": "park_garden_park_bench.001",
+          "kind": "park_bench"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reaction_park_garden_0.glb",
+      "runtime": "Assets/Art/explore3d/reaction_park_garden_0.glb",
+      "source": "art/space_v4/reactions_v1/park_garden_0.glb",
+      "bytes": 475296,
+      "sha256": "b3c9f5840f34d1a9c5af1663361453d50950219628a9f60003bb65b6d35a1377",
+      "replacements": [
+        {
+          "root": "park_garden_detail_planter",
+          "kind": "detail_planter"
+        }
+      ]
+    },
+    {
+      "file": "art/space_v4/sculpted_v1/reaction_park_garden_1.glb",
+      "runtime": "Assets/Art/explore3d/reaction_park_garden_1.glb",
+      "source": "art/space_v4/reactions_v1/park_garden_1.glb",
+      "bytes": 475304,
+      "sha256": "3a11462530a006777cbb4692606d0036429efe0731431cb37f8e380c05a6f0c9",
+      "replacements": [
+        {
+          "root": "park_garden_detail_planter.001",
+          "kind": "detail_planter"
+        }
+      ]
+    }
+  ],
+  "replacements": [],
+  "facades": [
+    {
+      "parent": "facade_hotel_lobby",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_hotel_corridor",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_management_office",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_service_lounge",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_electrical_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_dining_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_kitchen",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_laundry_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_clinic",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_supply_store",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_hotel_multiuse",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_ticket_booth",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_performance_stage",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_theatre_preparation",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_staff_passage",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_cold_store",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_refreshment_store",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_dream_lobby",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_screening_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_reading_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_archive_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_mirror_maze",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_mirror_workbay",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_mirror_waiting",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_central_control",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_maintenance_workshop",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_exhibition_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_record_room",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_inspection_hall_normal",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_loading_gate",
+      "reusedEditableSource": true
+    },
+    {
+      "parent": "facade_outside_threshold",
+      "reusedEditableSource": true
+    }
+  ],
+  "seatCorrections": [
+    {
+      "root": "exterior_park_garden_park_bench",
+      "oldYaw": -1.5707963705062866,
+      "newYaw": 1.5707963267948966,
+      "reason": "backrest outside, seat opening toward owning path centre"
+    },
+    {
+      "root": "exterior_park_garden_park_bench.001",
+      "oldYaw": 1.5707963705062866,
+      "newYaw": -1.5707963267948966,
+      "reason": "backrest outside, seat opening toward owning path centre"
+    }
+  ]
+}

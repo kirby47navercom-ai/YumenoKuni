@@ -1,0 +1,5130 @@
+{
+  "assets": [
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__service_lounge.glb",
+      "runtime": "Assets/Art/explore3d/service_lounge.glb",
+      "source": "art/space_v4/sculpted_v1/service_lounge.glb",
+      "bytes": 14819552,
+      "sha256": "f7d9c2ef829aa1673c3f2f02e25e30d6e186517a175eef13d514b09115ddaef6",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "plaster"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "service_lounge_chair",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            1,
+            0
+          ],
+          "position": [
+            -1.399999976158142,
+            0,
+            -0.20000000298023224
+          ]
+        },
+        {
+          "node": "service_lounge_chair.001",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            -1,
+            0
+          ],
+          "position": [
+            1.399999976158142,
+            0,
+            -0.20000000298023224
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 1464
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__hotel_corridor.glb",
+      "runtime": "Assets/Art/explore3d/hotel_corridor.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/hotel_corridor.glb",
+      "bytes": 15340412,
+      "sha256": "cb6c8def157fd5b8e829d10c659768724351d74172f5ec2b9283e9390259eb43",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "carpet"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "carpet"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 4862
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__dining_room.glb",
+      "runtime": "Assets/Art/explore3d/dining_room.glb",
+      "source": "art/space_v4/sculpted_v1/dining_room.glb",
+      "bytes": 16625068,
+      "sha256": "ddc1594e06b8ea98690360acc8e4d7783af3c83f7829db9ca3747a16ee97e19d",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "dining_room_chair",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            -3.5,
+            0,
+            2.75
+          ]
+        },
+        {
+          "node": "dining_room_chair.001",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            -1.7000000476837158,
+            0,
+            2.75
+          ]
+        },
+        {
+          "node": "dining_room_chair.002",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            -3.5,
+            0,
+            1.25
+          ]
+        },
+        {
+          "node": "dining_room_chair.003",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            -1.7000000476837158,
+            0,
+            1.25
+          ]
+        },
+        {
+          "node": "dining_room_chair.004",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            -3.5,
+            0,
+            -0.8500000238418579
+          ]
+        },
+        {
+          "node": "dining_room_chair.005",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            -1.7000000476837158,
+            0,
+            -0.8500000238418579
+          ]
+        },
+        {
+          "node": "dining_room_chair.006",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            -3.5,
+            0,
+            -2.3499999046325684
+          ]
+        },
+        {
+          "node": "dining_room_chair.007",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            -1.7000000476837158,
+            0,
+            -2.3499999046325684
+          ]
+        },
+        {
+          "node": "dining_room_chair.008",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            1.7000000476837158,
+            0,
+            2.75
+          ]
+        },
+        {
+          "node": "dining_room_chair.009",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            3.5,
+            0,
+            2.75
+          ]
+        },
+        {
+          "node": "dining_room_chair.010",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            1.7000000476837158,
+            0,
+            1.25
+          ]
+        },
+        {
+          "node": "dining_room_chair.011",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            3.5,
+            0,
+            1.25
+          ]
+        },
+        {
+          "node": "dining_room_chair.012",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            1.7000000476837158,
+            0,
+            -0.8500000238418579
+          ]
+        },
+        {
+          "node": "dining_room_chair.013",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            3.5,
+            0,
+            -0.8500000238418579
+          ]
+        },
+        {
+          "node": "dining_room_chair.014",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            1.7000000476837158,
+            0,
+            -2.3499999046325684
+          ]
+        },
+        {
+          "node": "dining_room_chair.015",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714601,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            3.5,
+            0,
+            -2.3499999046325684
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 3423
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__theatre_preparation.glb",
+      "runtime": "Assets/Art/explore3d/theatre_preparation.glb",
+      "source": "art/space_v4/sculpted_v1/theatre_preparation.glb",
+      "bytes": 13891012,
+      "sha256": "c5fb26783bbdfda42c1dde1b03b0cb747025e4852e6260090c2d79ce2e4215e0",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_blue",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "theatre_preparation_chair",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -1.5,
+            0,
+            0.5
+          ]
+        },
+        {
+          "node": "theatre_preparation_chair.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            1.5,
+            0,
+            0.5
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 2068
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__archive_room.glb",
+      "runtime": "Assets/Art/explore3d/archive_room.glb",
+      "source": "art/space_v4/sculpted_v1/archive_room.glb",
+      "bytes": 18309984,
+      "sha256": "6b456aebdc5df9797a933295d25d99f85d3cbfa025f2bb69ebbd51f1a7fff8bb",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 4300
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__central_control.glb",
+      "runtime": "Assets/Art/explore3d/central_control.glb",
+      "source": "art/space_v4/sculpted_v1/central_control.glb",
+      "bytes": 12536772,
+      "sha256": "858ce724fe9c3e618b62fc75b5af09dea63957b8b3f4aed16070e8950fd6bdac",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1415
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__plaza.glb",
+      "runtime": "Assets/Art/explore3d/plaza.glb",
+      "source": "art/space_v4/sculpted_v1/plaza.glb",
+      "bytes": 16162660,
+      "sha256": "9a24724fd6ed31ad33eef384702dd370a16cb6123be48a251693323ee67056b0",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "runtime_paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "plaza_park_bench",
+          "oldRotation": [
+            0,
+            -1,
+            0,
+            4.371138828673793e-8
+          ],
+          "newRotation": [
+            0,
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -8.742277657347586e-8,
+          "desiredDirectionXZ": [
+            1,
+            0
+          ],
+          "position": [
+            -5,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "plaza_park_bench.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": 0,
+          "desiredDirectionXZ": [
+            1,
+            0
+          ],
+          "position": [
+            -5,
+            0,
+            -5
+          ]
+        },
+        {
+          "node": "plaza_park_bench.002",
+          "oldRotation": [
+            0,
+            -1,
+            0,
+            4.371138828673793e-8
+          ],
+          "newRotation": [
+            0,
+            -0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": 8.742277657347586e-8,
+          "desiredDirectionXZ": [
+            -1,
+            0
+          ],
+          "position": [
+            5,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "plaza_park_bench.003",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            -0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": 0,
+          "desiredDirectionXZ": [
+            -1,
+            0
+          ],
+          "position": [
+            5,
+            0,
+            -5
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 1475
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reaction_plaza_0.glb",
+      "runtime": "Assets/Art/explore3d/reaction_plaza_0.glb",
+      "source": "art/space_v4/sculpted_v1/reaction_plaza_0.glb",
+      "bytes": 5436336,
+      "sha256": "9a3e396b33820c1656261715b22aecb7de40a92cbc85ed243a6d459848e62316",
+      "materialMappings": [
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 75
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reaction_plaza_1.glb",
+      "runtime": "Assets/Art/explore3d/reaction_plaza_1.glb",
+      "source": "art/space_v4/sculpted_v1/reaction_plaza_1.glb",
+      "bytes": 5436344,
+      "sha256": "ae47ed99f7e9d6832efd6de718eb3e8398b8186a258044fc7f712e23d00ede74",
+      "materialMappings": [
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 75
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__hotel_lobby.glb",
+      "runtime": "Assets/Art/explore3d/hotel_lobby.glb",
+      "source": "art/space_v4/sculpted_v1/hotel_lobby.glb",
+      "bytes": 18598380,
+      "sha256": "3f441ed7b6267aed5758bb73cfe72133ab0a2ea50ddc8da337a562b756df76da",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "runtime_paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "carpet"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "carpet"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "hotel_lobby_park_bench",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            1,
+            0
+          ],
+          "position": [
+            -4.5,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "hotel_lobby_park_bench.001",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            -1,
+            0
+          ],
+          "position": [
+            4.5,
+            0,
+            0
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 3503
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reaction_hotel_lobby_0.glb",
+      "runtime": "Assets/Art/explore3d/reaction_hotel_lobby_0.glb",
+      "source": "art/space_v4/sculpted_v1/reaction_hotel_lobby_0.glb",
+      "bytes": 5436348,
+      "sha256": "772efb16f24af8037243a77e459a297ce03ec445266be92bee5d894253aa5b2c",
+      "materialMappings": [
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 75
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reaction_hotel_lobby_1.glb",
+      "runtime": "Assets/Art/explore3d/reaction_hotel_lobby_1.glb",
+      "source": "art/space_v4/sculpted_v1/reaction_hotel_lobby_1.glb",
+      "bytes": 5436356,
+      "sha256": "a6053433f171ebb9ef83505b14602fbd54e07d6029e91b44370fcee48427e894",
+      "materialMappings": [
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 75
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__kitchen.glb",
+      "runtime": "Assets/Art/explore3d/kitchen.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/kitchen.glb",
+      "bytes": 12319252,
+      "sha256": "7d68c236ad58747b8a705a6d708ab203ad68229da23be80aef29ff4c8bf663c0",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1406
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__laundry_room.glb",
+      "runtime": "Assets/Art/explore3d/laundry_room.glb",
+      "source": "art/space_v4/sculpted_v1/laundry_room.glb",
+      "bytes": 12598756,
+      "sha256": "080de36ad6fbc1b1a33d9896b811a5adfa52d5a73d09c787e3a276bc7560d344",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1333
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__management_office.glb",
+      "runtime": "Assets/Art/explore3d/management_office.glb",
+      "source": "art/space_v4/sculpted_v1/management_office.glb",
+      "bytes": 12622224,
+      "sha256": "4b89fe76524601a7fcf3b3dbbbd5ebc2426bc5ab9b1034ef0cab330b758ce8c9",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1458
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__electrical_room.glb",
+      "runtime": "Assets/Art/explore3d/electrical_room.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/electrical_room.glb",
+      "bytes": 9084808,
+      "sha256": "51dc9d27e133aafb56a02218d08f6983914a9ef920b3dd9abbe0bcc8c50eb089",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 466
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__supply_store.glb",
+      "runtime": "Assets/Art/explore3d/supply_store.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/supply_store.glb",
+      "bytes": 12502616,
+      "sha256": "20ba40dc2c93f0cc29526d5607e3a04dc50729892f8457eb55bb86be2fdd99bd",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1383
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__hotel_multiuse.glb",
+      "runtime": "Assets/Art/explore3d/hotel_multiuse.glb",
+      "source": "art/space_v4/sculpted_v1/hotel_multiuse.glb",
+      "bytes": 11580048,
+      "sha256": "c831f6ed30f8a18e42572c866be6d85c1158a160558edf465d442fae118aad5e",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_blue",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "hotel_multiuse_chair",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -3,
+            0,
+            2
+          ]
+        },
+        {
+          "node": "hotel_multiuse_chair.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -1,
+            0,
+            2
+          ]
+        },
+        {
+          "node": "hotel_multiuse_chair.002",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "node": "hotel_multiuse_chair.003",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            3,
+            0,
+            2
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 978
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__refreshment_store.glb",
+      "runtime": "Assets/Art/explore3d/refreshment_store.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/refreshment_store.glb",
+      "bytes": 11781436,
+      "sha256": "80fdd477e3cec1f4b12a0f641e5341657144338826f695ec3d90e94727ae9ed6",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 986
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__cold_store.glb",
+      "runtime": "Assets/Art/explore3d/cold_store.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/cold_store.glb",
+      "bytes": 11809368,
+      "sha256": "25228e11c7206798b7284aaf4118c9d4da89d901fcada97bdef41e16e68a5e42",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 936
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__staff_passage.glb",
+      "runtime": "Assets/Art/explore3d/staff_passage.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/staff_passage.glb",
+      "bytes": 9096808,
+      "sha256": "831cd1d74b695955ceba8b457cfba81b2c418a8f71e6947984e9e6875b351950",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 596
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__performance_stage.glb",
+      "runtime": "Assets/Art/explore3d/performance_stage.glb",
+      "source": "art/space_v4/sculpted_v1/performance_stage.glb",
+      "bytes": 12246852,
+      "sha256": "70fb4db817857b291b349f340c501ffe2466f0fd3676b632035018ce7b1a61ad",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "performance_stage_chair",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4,
+            0,
+            4.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4,
+            0,
+            2.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.002",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4,
+            0,
+            0.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.003",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2,
+            0,
+            4.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.004",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2,
+            0,
+            2.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.005",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2,
+            0,
+            0.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.006",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            4.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.007",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            2.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.008",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.009",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2,
+            0,
+            4.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.010",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2,
+            0,
+            2.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.011",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2,
+            0,
+            0.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.012",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4,
+            0,
+            4.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.013",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4,
+            0,
+            2.5
+          ]
+        },
+        {
+          "node": "performance_stage_chair.014",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4,
+            0,
+            0.5
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 1715
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__pool_edge.glb",
+      "runtime": "Assets/Art/explore3d/pool_edge.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_pool_edge.glb",
+      "bytes": 3608932,
+      "sha256": "0af04de3d392e3d7ce6c43320a225db34fba86acc36adae95a47d366848ee2e2",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ink.002",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory.002",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_paper.002",
+          "family": "plaster"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 16
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__mirror_maze.glb",
+      "runtime": "Assets/Art/explore3d/mirror_maze.glb",
+      "source": "art/space_v4/full_v2/mirror_maze.glb",
+      "bytes": 8990988,
+      "sha256": "534367d43318e19f12ef9dc98c7238d2c2f1fcf964f9cc1cd17bec2ca7299999",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 276
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__mirror_workbay.glb",
+      "runtime": "Assets/Art/explore3d/mirror_workbay.glb",
+      "source": "art/space_v4/sculpted_v1/mirror_workbay.glb",
+      "bytes": 9192080,
+      "sha256": "a6864f0b4e38434fa35cc7549caed067205ade76bda24f5b2fd757baf4e7f1b2",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 649
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__mirror_waiting.glb",
+      "runtime": "Assets/Art/explore3d/mirror_waiting.glb",
+      "source": "art/space_v4/sculpted_v1/mirror_waiting.glb",
+      "bytes": 9467288,
+      "sha256": "3a716fd8636c5ecef09f3d1ac4be403bfbb88c3fa025c3472b4d8c7dd7ba108d",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 781
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__ferris_platform.glb",
+      "runtime": "Assets/Art/explore3d/ferris_platform.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_ferris_platform.glb",
+      "bytes": 8181912,
+      "sha256": "12928deff604b74049af965c9080e31119c1b81e44e3ee92957b9a01fc5b8ef3",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold.002",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink.003",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ivory.003",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple.002",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose.002",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel.001",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 32
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__ferris_cabin.glb",
+      "runtime": "Assets/Art/explore3d/ferris_cabin.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_ferris_cabin.glb",
+      "bytes": 10798032,
+      "sha256": "cb9310e0aaaa47e4eefb9a143b0224c31363fb94e4b993dbc7fe90a48fb13258",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold.003",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose.003",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ivory.004",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple.003",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper.003",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink.004",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel.002",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood.002",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 44
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__dream_lobby.glb",
+      "runtime": "Assets/Art/explore3d/dream_lobby.glb",
+      "source": "art/space_v4/sculpted_v1/dream_lobby.glb",
+      "bytes": 12272752,
+      "sha256": "075eeff76fa8979606f3747c69daafb87eac44eca15791152b8173e760a8c432",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "dream_lobby_chair",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "dream_lobby_chair.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "dream_lobby_chair.002",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "dream_lobby_chair.003",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4,
+            0,
+            1
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 2263
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reading_room.glb",
+      "runtime": "Assets/Art/explore3d/reading_room.glb",
+      "source": "art/space_v4/sculpted_v1/reading_room.glb",
+      "bytes": 14074348,
+      "sha256": "50c2dd0bddae6cc61a23152a063584dfcb5091adcaff83a870ae45062a377e6e",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "reading_room_chair",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -1.3435886108395827e-7,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            -3.799999952316284,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "reading_room_chair.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": 1.3435886108395827e-7,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            -2.200000047683716,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "reading_room_chair.002",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -1.3435886108395827e-7,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            -0.800000011920929,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "reading_room_chair.003",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": 1.3435886108395827e-7,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            0.800000011920929,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "reading_room_chair.004",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -1.3435886108395827e-7,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            2.200000047683716,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "reading_room_chair.005",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            -0.7071067336835151,
+            0,
+            0.7071068286895767
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": 1.3435886108395827e-7,
+          "desiredDirectionXZ": [
+            -0.9999999999999909,
+            1.3435886108395827e-7
+          ],
+          "position": [
+            3.799999952316284,
+            0,
+            0
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 2875
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__exhibition_room.glb",
+      "runtime": "Assets/Art/explore3d/exhibition_room.glb",
+      "source": "art/space_v4/sculpted_v1/exhibition_room.glb",
+      "bytes": 12445356,
+      "sha256": "fe3243947b1c9d5247399e1d75d597bb13299092539a089e3660b068eca523f4",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 2497
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__record_room.glb",
+      "runtime": "Assets/Art/explore3d/record_room.glb",
+      "source": "art/space_v4/sculpted_v1/record_room.glb",
+      "bytes": 16150096,
+      "sha256": "dfd85d6e72056d2fd276b4bb047f89d8dba65f64eaffe659e083191f5c06524d",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 3258
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__coaster_platform.glb",
+      "runtime": "Assets/Art/explore3d/coaster_platform.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_coaster_platform.glb",
+      "bytes": 7560068,
+      "sha256": "cafc98d1be8ad5c609fe51bfeaea58fca60b432085f1fcf995b9dc9ffcb4d948",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_steel.003",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose.004",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_wood.003",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 16
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__maintenance_workshop.glb",
+      "runtime": "Assets/Art/explore3d/maintenance_workshop.glb",
+      "source": "art/space_v4/sculpted_v1/maintenance_workshop.glb",
+      "bytes": 12703208,
+      "sha256": "20882f67205042a6a52d5cf2908dfa452efad337880898791af01272e07d1705",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1516
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__inspection_hall_normal.glb",
+      "runtime": "Assets/Art/explore3d/inspection_hall_normal.glb",
+      "source": "art/space_v4/full_v2/inspection_hall_normal.glb",
+      "bytes": 8888628,
+      "sha256": "d80ff5739b45b41a0f8be1d931759e4ab0eac8f597439924a6c49ee4476cda30",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 241
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__inspection_hall_changed.glb",
+      "runtime": "Assets/Art/explore3d/inspection_hall_changed.glb",
+      "source": "art/space_v4/full_v2/inspection_hall_changed.glb",
+      "bytes": 8987984,
+      "sha256": "a85d78ed2de9c98fa5861a60348908f22cd91fc8ef2847883e9783c99f4a21f2",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 303
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__lower_stairway.glb",
+      "runtime": "Assets/Art/explore3d/lower_stairway.glb",
+      "source": "art/space_v4/full_v2/lower_stairway.glb",
+      "bytes": 3590784,
+      "sha256": "979446a1140cb24b64acb98564484f73ebc8afc558107fdaa443e24872e67a71",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 104
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__lower_corridor.glb",
+      "runtime": "Assets/Art/explore3d/lower_corridor.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/lower_corridor.glb",
+      "bytes": 9165116,
+      "sha256": "bfaf498f24d920282953e0dc978623ac49455f1cbda25e277060c15dda7b21b6",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 552
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__operating_archive.glb",
+      "runtime": "Assets/Art/explore3d/operating_archive.glb",
+      "source": "art/space_v4/sculpted_v1/operating_archive.glb",
+      "bytes": 13772028,
+      "sha256": "1cf5684d9ca07e95386fda37e1fcd56474793032ce95f6fc5aef8f05dce5258a",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1991
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__loading_gate.glb",
+      "runtime": "Assets/Art/explore3d/loading_gate.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_loading_gate.glb",
+      "bytes": 9695252,
+      "sha256": "210684e4b71662e83c26892278f5a3fede020dac4397cdaf900433746cbe0eae",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ivory.005",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple.004",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_gold.004",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper.004",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink.006",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_steel.004",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood.004",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_rose.005",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 44
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__outside_threshold.glb",
+      "runtime": "Assets/Art/explore3d/outside_threshold.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_outside_threshold.glb",
+      "bytes": 4166996,
+      "sha256": "098426ab459452d41fa92d73f68854f50171633f42de51b993d3ac17c0d92956",
+      "materialMappings": [
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_steel.005",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ivory.006",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 12
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__park_garden.glb",
+      "runtime": "Assets/Art/explore3d/park_garden.glb",
+      "source": "art/space_v4/sculpted_v1/park_garden.glb",
+      "bytes": 11935524,
+      "sha256": "bc4520457f497e3bcb7cf28e1fb041174a72d6baccfebd1dee67e5d36c744572",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "runtime_paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "park_garden_park_bench",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            1,
+            0
+          ],
+          "position": [
+            -7,
+            0,
+            -3
+          ]
+        },
+        {
+          "node": "park_garden_park_bench.001",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            -1,
+            0
+          ],
+          "position": [
+            7,
+            0,
+            -3
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 431
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reaction_park_garden_0.glb",
+      "runtime": "Assets/Art/explore3d/reaction_park_garden_0.glb",
+      "source": "art/space_v4/sculpted_v1/reaction_park_garden_0.glb",
+      "bytes": 5436348,
+      "sha256": "9db28de75be9ca97999a57fd4aef1ccdc9dac6a66272a17c81b6279bf7dbef79",
+      "materialMappings": [
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 75
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__reaction_park_garden_1.glb",
+      "runtime": "Assets/Art/explore3d/reaction_park_garden_1.glb",
+      "source": "art/space_v4/sculpted_v1/reaction_park_garden_1.glb",
+      "bytes": 5436356,
+      "sha256": "897c6c9acb1602f460f422d5f713be3bd1570ef8ff505937751df8a6bda69744",
+      "materialMappings": [
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 75
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__park_main_gate.glb",
+      "runtime": "Assets/Art/explore3d/park_main_gate.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_park_main_gate.glb",
+      "bytes": 3685740,
+      "sha256": "6bc02369d740611286d9c7b27b0f8dda13b89b29bbcc9b40be4f8c18b67da0e9",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ink.009",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_gold.006",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 12
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__ticket_booth.glb",
+      "runtime": "Assets/Art/explore3d/ticket_booth.glb",
+      "source": "art/space_v4/outdoor_finish_v1/local_ticket_booth.glb",
+      "bytes": 10823936,
+      "sha256": "ee15a3587281d2214c5c48e9d7b5ead51f8440007e0e2bb6bb9f596df4e1c7d2",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold.007",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood.006",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_ink.010",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory.008",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_purple.005",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper.005",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_steel.006",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose.006",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 40
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__trial_elevator.glb",
+      "runtime": "Assets/Art/explore3d/trial_elevator.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/trial_elevator.glb",
+      "bytes": 8892956,
+      "sha256": "2df353e396b9ff6bfa2e74e896d0c7b57a7978fb26925b27a0cbfa520798b660",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 439
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_plaza.glb",
+      "runtime": "Assets/Art/explore3d/finish_plaza.glb",
+      "source": "art/space_v4/sculpted_v1/finish_plaza.glb",
+      "bytes": 14379808,
+      "sha256": "79fa22fa4b14003a1b68c40c92596b172463665b1c0585bd2621c9f338b3e824",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 65
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_park_garden.glb",
+      "runtime": "Assets/Art/explore3d/finish_park_garden.glb",
+      "source": "art/space_v4/sculpted_v1/finish_park_garden.glb",
+      "bytes": 10800220,
+      "sha256": "6574643a4bedf6d2fd91f261c8ff2501e5e872193a9d704189e443dd0d43e8c8",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_leaf",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 35
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_pool_edge.glb",
+      "runtime": "Assets/Art/explore3d/finish_pool_edge.glb",
+      "source": "art/space_v4/sculpted_v1/finish_pool_edge.glb",
+      "bytes": 3842968,
+      "sha256": "c3229ddfbc96f191549acdab78c7b878fda77dbd10092f5dc59e441dd578c800",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 20
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_ferris_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_ferris_platform.glb",
+      "source": "art/space_v4/sculpted_v1/finish_ferris_platform.glb",
+      "bytes": 6771072,
+      "sha256": "7cfa57e24bfa40e5c77fb87f177a432e6fcf9bc15e75393880bcd6f9c2404fa5",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 35
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_coaster_platform.glb",
+      "runtime": "Assets/Art/explore3d/finish_coaster_platform.glb",
+      "source": "art/space_v4/sculpted_v1/finish_coaster_platform.glb",
+      "bytes": 5633956,
+      "sha256": "61d9f47a6a12d1dbad3980e7fe6442becd2469dc874e70b41fb64dcb0ea362ea",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 20
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_park_main_gate.glb",
+      "runtime": "Assets/Art/explore3d/finish_park_main_gate.glb",
+      "source": "art/space_v4/sculpted_v1/finish_park_main_gate.glb",
+      "bytes": 1592648,
+      "sha256": "2124cac72d022ce94ca56617343a938faf6dee457a2f9d8a3941864eaba24f92",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 10
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__finish_context.glb",
+      "runtime": "Assets/Art/explore3d/finish_context.glb",
+      "source": "art/space_v4/sculpted_v1/finish_context.glb",
+      "bytes": 28360096,
+      "sha256": "1e9f16447ae1fdcb205ae405bb688f55b227049376dbd41ae30963ff88dca944",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sage",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "paving",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "leaf_dark",
+          "family": "leaf"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "sculpt_stone",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 85
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__guest_room.glb",
+      "runtime": "Assets/Art/explore3d/guest_room.glb",
+      "source": "art/space_v4/sculpted_v1/guest_room.glb",
+      "bytes": 15951856,
+      "sha256": "4f9fe88e183f7f26acbd35034b0bdb1b3a32ec2cfdb6f94e773accb4487f02e4",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "linen"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "guest_room_chair",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071068286895769,
+            0,
+            0.7071067336835151
+          ],
+          "reason": "face associated table edge",
+          "forwardBefore": -0.9999999657714239,
+          "desiredDirectionXZ": [
+            0.9999999999999909,
+            -1.3435886108395827e-7
+          ],
+          "position": [
+            0.6000000238418579,
+            0,
+            -1.600000023841858
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 936
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__clinic.glb",
+      "runtime": "Assets/Art/explore3d/clinic.glb",
+      "source": "art/space_v4/sculpted_v1/clinic.glb",
+      "bytes": 17470996,
+      "sha256": "5965f521b32ffba0c5681aa5d2a51ce091dc16861ef17a8afca6880191dc4681",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "linen"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "limestone"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "limestone"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 1861
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__screening_room.glb",
+      "runtime": "Assets/Art/explore3d/screening_room.glb",
+      "source": "art/space_v4/sculpted_v1/screening_room.glb",
+      "bytes": 14516164,
+      "sha256": "edd553c8b63b7aee073943dfe4700e0b1f4b42565fc5bb82ecb1d14c1e50d809",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "linen"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_cloth",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "screening_room_chair",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4.5,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "screening_room_chair.001",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4.5,
+            0,
+            3
+          ]
+        },
+        {
+          "node": "screening_room_chair.002",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4.5,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "screening_room_chair.003",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4.5,
+            0,
+            -1
+          ]
+        },
+        {
+          "node": "screening_room_chair.004",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -4.5,
+            0,
+            -3
+          ]
+        },
+        {
+          "node": "screening_room_chair.005",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2.200000047683716,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "screening_room_chair.006",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2.200000047683716,
+            0,
+            3
+          ]
+        },
+        {
+          "node": "screening_room_chair.007",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2.200000047683716,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "screening_room_chair.008",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2.200000047683716,
+            0,
+            -1
+          ]
+        },
+        {
+          "node": "screening_room_chair.009",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            -2.200000047683716,
+            0,
+            -3
+          ]
+        },
+        {
+          "node": "screening_room_chair.010",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "screening_room_chair.011",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "node": "screening_room_chair.012",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "screening_room_chair.013",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "node": "screening_room_chair.014",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            -3
+          ]
+        },
+        {
+          "node": "screening_room_chair.015",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2.200000047683716,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "screening_room_chair.016",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2.200000047683716,
+            0,
+            3
+          ]
+        },
+        {
+          "node": "screening_room_chair.017",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2.200000047683716,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "screening_room_chair.018",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2.200000047683716,
+            0,
+            -1
+          ]
+        },
+        {
+          "node": "screening_room_chair.019",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            2.200000047683716,
+            0,
+            -3
+          ]
+        },
+        {
+          "node": "screening_room_chair.020",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4.5,
+            0,
+            5
+          ]
+        },
+        {
+          "node": "screening_room_chair.021",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4.5,
+            0,
+            3
+          ]
+        },
+        {
+          "node": "screening_room_chair.022",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4.5,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "screening_room_chair.023",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4.5,
+            0,
+            -1
+          ]
+        },
+        {
+          "node": "screening_room_chair.024",
+          "oldRotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "newRotation": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ],
+          "reason": "face stage/screen/counter at north of room",
+          "forwardBefore": -1,
+          "desiredDirectionXZ": [
+            0,
+            -1
+          ],
+          "position": [
+            4.5,
+            0,
+            -3
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 1835
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__shelter_reception.glb",
+      "runtime": "Assets/Art/explore3d/shelter_reception.glb",
+      "source": "art/space_v4/sculpted_v1/shelter_reception.glb",
+      "bytes": 14606068,
+      "sha256": "4b5f79f42efe1e288a056500b78495345c3ad2919fcaa00047bd6fd1db2ca21e",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_rose",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "sculpt_iron",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_brass",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "sculpt_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "linen"
+        }
+      ],
+      "seatCorrections": [
+        {
+          "node": "shelter_reception_park_bench",
+          "oldRotation": [
+            0,
+            -0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            1,
+            0
+          ],
+          "position": [
+            -4.5,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "shelter_reception_park_bench.001",
+          "oldRotation": [
+            0,
+            0.7071068286895752,
+            0,
+            0.7071067094802856
+          ],
+          "newRotation": [
+            0,
+            -0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "reason": "face room/path centre",
+          "forwardBefore": -0.9999999657714511,
+          "desiredDirectionXZ": [
+            -1,
+            0
+          ],
+          "position": [
+            4.5,
+            0,
+            1
+          ]
+        }
+      ],
+      "geometryAccessorsUnchanged": 1496
+    },
+    {
+      "file": "art/space_v4/materials_v2/models/explore3d__shelter_inner.glb",
+      "runtime": "Assets/Art/explore3d/shelter_inner.glb",
+      "source": "art/space_v4/full_v2/interior_art_r4/shelter_inner.glb",
+      "bytes": 13271148,
+      "sha256": "331a4823a62836f82d4d1f4951e1ec41f95fc9fdef7fc85fe9e5a739f495403e",
+      "materialMappings": [
+        {
+          "sourceMaterial": "yk_wood",
+          "family": "walnut"
+        },
+        {
+          "sourceMaterial": "yk_gold",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ivory",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "lacquer"
+        },
+        {
+          "sourceMaterial": "yk_paper",
+          "family": "plaster"
+        },
+        {
+          "sourceMaterial": "yk_steel",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "metal"
+        },
+        {
+          "sourceMaterial": "yk_ink",
+          "family": "paving"
+        },
+        {
+          "sourceMaterial": "yk_purple",
+          "family": "velvet"
+        },
+        {
+          "sourceMaterial": "yk_white",
+          "family": "linen"
+        }
+      ],
+      "seatCorrections": [],
+      "geometryAccessorsUnchanged": 788
+    },
+    {
+      "runtime": "Assets/Art/court3d/courtroom_stage.glb",
+      "file": "art/space_v4/materials_v2/models/court3d__courtroom_stage.glb",
+      "bytes": 3445472,
+      "sha256": "88e4ff0bfdb26c8d5c6b5a41881385874917f17a382f092f2921ad8a812b857b",
+      "source": "art/space_v4/court_intro_v1/courtroom_stage.glb",
+      "materialMappings": [
+        {
+          "sourceMaterial": "material_palette",
+          "family": "generated metal/limestone atlas"
+        }
+      ],
+      "seatCorrections": [],
+      "positionNormalIndexBytesUnchanged": true,
+      "materials": 1,
+      "primitives": 1
+    },
+    {
+      "runtime": "Assets/Art/court3d/trial_podium.glb",
+      "file": "art/space_v4/materials_v2/models/court3d__trial_podium.glb",
+      "bytes": 464792,
+      "sha256": "1ebb87605b78c13f289f9fa8ad8020e70fa696d2101319743225234e6907a956",
+      "source": "art/space_v4/court_intro_v1/debate_podium.glb",
+      "materialMappings": [
+        {
+          "sourceMaterial": "material_palette",
+          "family": "generated metal/limestone atlas"
+        }
+      ],
+      "seatCorrections": [],
+      "positionNormalIndexBytesUnchanged": true,
+      "materials": 1,
+      "primitives": 1
+    }
+  ],
+  "preservedOpticalOrGraphicOnlyModels": [
+    "Assets/Art/court3d/scrum_backdrop.glb"
+  ],
+  "policy": "Generated albedo + Blender-baked shallow normal and roughness, geometry/IDs preserved; declared seating yaw corrections only"
+}

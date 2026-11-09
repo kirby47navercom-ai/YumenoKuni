@@ -1,0 +1,4423 @@
+{
+  "schema": "v3-main-gift-machine-remaining-contract-v1",
+  "created_utc": "2026-10-30T04:28:25.362148+00:00",
+  "scope": "R31 본편 선물 머신의 최소 구현 계약이에요. 카지노/보너스와 모든 원작·자체 실행은 제외예요. 현재 Game 구현 차이를 새로 검사하지 않고 이전22의 fan_game_gap을 최신source판정으로 승계하지 않아요.",
+  "identity": {
+    "cache_path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+    "cache_sha256": "200f3c4626b1b37e70b891421e664ff9fb1c9641122775682bcb7ee02156f11b",
+    "cache_records": 2354,
+    "target_sha256": "1a012357f54076ef7fbe6a63f19f055bbe1ce71792b8c0719e7dc51d2a5affeb",
+    "profile_digest": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+    "selected_evidence_identity_verified": true,
+    "new_REA_queries": 0,
+    "new_extractions": 0,
+    "new_original_or_own_game_execution": 0,
+    "new_cache_fetch_or_dump": 0
+  },
+  "source_inputs": [
+    {
+      "path": "C:\\Users\\kirby\\OneDrive\\바탕 화면\\git\\YumenoKuni\\docs\\spec\\18_V3_분석\\22_선물추첨.md",
+      "sha256": "f258b644290b65b3826b56d852896c6a3ee99e5c14b0de09d1b6a11e037e2127"
+    },
+    {
+      "path": "C:\\Users\\kirby\\OneDrive\\바탕 화면\\git\\YumenoKuni\\docs\\spec\\18_V3_분석\\numbers.json",
+      "sha256": "b5fd0186d04100a2d8339ab5668a28042676eecf3da76d2c9c2c294bcf238599"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_findings.json",
+      "sha256": "0a93aa0da63f327eb5bdca8e9134e23062aed8c9bccd9c116cc8babd3256df92"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_native_index.json",
+      "sha256": "e25279706d06ef86613464b72119f7e235e01f7c30d83c20344b3da294c4e05c"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_raw_validation.json",
+      "sha256": "300554af6dce1336aee992581f5a9d1746faba95f3aecf6aad66ee952bbb2fab"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_state_contract_validation.json",
+      "sha256": "162d03480f0f41ed44842eeb881a9c0074888b656434578db99b3f33781cc9fc"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_item_manifest.json",
+      "sha256": "11b8e28ccd91384f4ec3628329c4c5c30ce369b99d1e60c1ba2406c25423186c"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_script_calls007.json",
+      "sha256": "a83cdf92aa786f412b9b8794648b4267a803df021b6de36e8c87c2b513b641c1"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\machine_static_findings.json",
+      "sha256": "55dd25ccb7aaa5bfc8d53ea2fb0a465df89c9704662061a19929788d29e3dca8"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\growth_machine_presentation_findings.json",
+      "sha256": "919e2a30a7c177da06c97efb5a42a8529ac5c0016fe2759b8d82aee7862e206d"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\growth_machine_presentation_sfl_contract.json",
+      "sha256": "bd3f1f0d656769cbd1d04df072d91942af31bd9df6334d0274d2cf7060024cab"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\normal_growth_connection_review.json",
+      "sha256": "cbdb569cad33fa1f893916e9d2d738e0555c4568400774ddfa3979c66c5176c8"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\mode_menu_save_findings.json",
+      "sha256": "ff22c681855f57b7b774bbff4e334f8597a0a01711cef4cc4df58a9986f2226f"
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_authorized_20261029\\manifest.json",
+      "sha256": "6d594a03841d43f3336cdb321715b924bb74c4523c9029233191cb61b8099826"
+    }
+  ],
+  "native_evidence": {
+    "15e390": {
+      "evidence_id": "ev_442b1d2d74105ade11868df99bda801fabfa9573d6ed21653e953f49f360057a",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15e590": {
+      "evidence_id": "ev_a3da19df1373d84a4102d350b8522aee397c4427a8e490bd56fb36ce40d64eb2",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15e5e0": {
+      "evidence_id": "ev_0c3b6d25601dbed2a55ff9a749ce32f8a0e5b63039242320c02a25c4101361d3",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15eb30": {
+      "evidence_id": "ev_a2729923c6f61ab40ca600ae7807c63e1158da4f9d280a02a4d04ee20b291bae",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15f390": {
+      "evidence_id": "ev_e050f9f670490da1682a08cbdcd883e81def2c934a8b896e6dff6b73282aef0d",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15f700": {
+      "evidence_id": "ev_7bf5c908573e540adacf1957060ae9158bef6ec4b0ff772c2b523a333e634286",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15fab0": {
+      "evidence_id": "ev_5fff195a6650fb729c19d4698afbb76696878b75bd501f23392d80cea029aa4d",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15fb00": {
+      "evidence_id": "ev_50efa4afdaa6039fc03d79d2fb863a4d837d31a9ecf93712d6d2ba3acc2e488b",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15fbe0": {
+      "evidence_id": "ev_dcff0449b9a9b8e168d0f2ca41e4f1acf590efc3a369de4fe67d7e2d824f9f5a",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15ff9d": {
+      "evidence_id": "ev_3a1f39b3451b20de179cdc531d21ed9d02c4f3e2429f492630e3913d72edff9c",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "458f00": {
+      "evidence_id": "ev_2c84b305bda2eccad24b77630b5f195bc7092170fca9601be15cdc9bd810da8d",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "45a5b0": {
+      "evidence_id": "ev_27648a8f302470c10455fd9a77106792787deff00defdff9ce1906a126a9d089",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "46cd40": {
+      "evidence_id": "ev_80f0ac4deaf9101b80ca25727017df8fc4df324a21b1d5e90ce3bfbbd22aeea2",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "456d80": {
+      "evidence_id": "ev_23d247969dbd7a0b9da1eb6889fecf67cdc863969eaa28a85aa9331c16020782",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "4598f0": {
+      "evidence_id": "ev_b0648987c5347946373018fe3229b9b83ccba60f00b09ef1bd51e75e52873294",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "535cb0": {
+      "evidence_id": "ev_2299584154f265c9cd764acfb0d778e76edbb1288f897f9c05b5c4cf06b3ff16",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "52ccd0": {
+      "evidence_id": "ev_f2666ad50511c1de54d6804d8cc1f48b5359823af9c21fb1f2e94143ed132602",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "52c040": {
+      "evidence_id": "ev_edf457c920a611f47b3777c3b061c07fc646c505dca2f6d6f1461aa6d1548148",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "459140": {
+      "evidence_id": "ev_d813cdb58f0d9a81f6282d513a2bb10f83fb4fe0ddc48d471573d79b8f8e6e2c",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "536130": {
+      "evidence_id": "ev_2ffae0f79fc14a366afb84376b1b60e2c6734e8c53c3ddeadbcbdd50cc8f52b7",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "53eb20": {
+      "evidence_id": "ev_f8948cb96e58684696f9031b2ebbb1ff8dd90f58d7356545b7aaf98cf10b8ba7",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "539c50": {
+      "evidence_id": "ev_ef2ea30c4953dbb1fc75d2aebc0765a8cbb76e922efaadf6037c80118be48973",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "52db70": {
+      "evidence_id": "ev_7d54ae7742e4c455ee86f2726ae285a4fd92a0219076c14dc974fc0ef495341c",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "160160": {
+      "evidence_id": "ev_374df80db2aff57b13cdbc8ed8920153f720955acf8cd1f9a3f21387ec857fb6",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "3c70f0": {
+      "evidence_id": "ev_55899b6c0444fe050f0e704c3de7d268f65242e237a5e37d533cb5a9af6d0017",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "3c3c80": {
+      "evidence_id": "ev_ca08c82ba2e588f60dd340a861c5657fa792dbd7a070396a625247a4b1749904",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "410380": {
+      "evidence_id": "ev_240ab2a7bdfcb228219be89bf3c5438022e8190d3cbb16db612cbca4a91035a1",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "4109c0": {
+      "evidence_id": "ev_922d7ceda70f4b5cf03924acd9732da863bc3cd98800dcfde3e7b1e0c4482e48",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "53de00": {
+      "evidence_id": "ev_176c66a6f8dcaf0ea53c123e96fb25aa24adf868d23dd57636eb76420feb2e7f",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15e640": {
+      "evidence_id": "ev_394696f5a70aba40f759b041c746c3092e82c8bc3c9df3cc1c02bb389faa504a",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15e780": {
+      "evidence_id": "ev_1e7087ee794e1918de08bcf3b1c73fd0cff7d8e9d09d81434be3c5d52989b691",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "15e980": {
+      "evidence_id": "ev_3875ab07b0c1ff6c1564b273673471e2e597ead1cb97d1be4f8347816607a389",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "539bc0": {
+      "evidence_id": "ev_b38b52e07a5fdd85c85163fef25deec725b2218d95dac5ca9002bb85b734d563",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "normal_save_payload": {
+      "evidence_id": "ev_4cefccdfb956fe00045fe5bba06990c991cc6a7e72e3956685475481c3e007bb",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "save_relay": {
+      "evidence_id": "ev_1d7f91a67a296b4defd14d4b715f06674d8bc56e7764df9fa42cfeb3f6995f21",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    },
+    "disk_payload": {
+      "evidence_id": "ev_fdafeeeb4c24b884dba8657e3b20ae4dfa3aa949076cf98c3b44c9b8f9472eab",
+      "kind": "retained_static",
+      "source_bundle": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "subject_profile_verified": true
+    }
+  },
+  "numbers_main_gift_draw": {
+    "scope": "Mainmonomono acquisition consumer; no story/dialogue/assets/game/save/processwrites",
+    "artifact_sha256": "1a012357f54076ef7fbe6a63f19f055bbe1ce71792b8c0719e7dc51d2a5affeb",
+    "counts": {
+      "effective_scripts": 2716,
+      "literal_MOD_calls": 7,
+      "production_MOD_calls": 6,
+      "test_MOD_calls": 1,
+      "Item_rows": 143,
+      "candidate_rows": 83,
+      "native_functions": 29,
+      "raw_function_roots": 21,
+      "raw_ranges": 36
+    },
+    "unknowns": [
+      "No live machineplay/seedfrequencymeasurement; screenlayout/assetsoranimationdurationnotclaimed.",
+      "No fullglobalconcurrency/Flashnativecallbackinterleavingproof; extra-cycleclaimisexactlocalnativecallergraph.",
+      "Ifownedpoolisemptyandlow15RNGzero,thecomparisontakesemptyownedpooldivisor; normal-saveinvariantandactualreachabilityunproved. Notreportedobservedcrash.",
+      "FullsaveUIavailabilitywithinmode2padandexternaldiskwritercompletionareseparatescope.",
+      "Emptycandidate/malformedtable/allocationfailuresandallplatformversionsnotproved."
+    ],
+    "document": "22_선물추첨.md",
+    "runtime_play_observed": false,
+    "source": "external native/monomono_findings.json",
+    "inventory_quantity_cap": 999,
+    "local_extra_cycle": "counter resets before each cycle, so local graph does not establish a maximum of4 extra draws",
+    "free_extra_cost": "selected amount reset0 after first award; repeated charge request0 in local extra cycle",
+    "disk_writer": "not called directly by machine in traced path; UI result request is not proof of disk write"
+  },
+  "entry_and_return": {
+    "status": "answered_static",
+    "source": "MODE6 modMonomonoMachine→46cd40;normalmode1 request5;mode3 request10;456d80/4598f0 wait15f700 independentUIloop.",
+    "literal_calls": [
+      {
+        "script": "chap1/c01_000_014",
+        "source_sha256": "c70ac99bc121114c42cd5c6cf034c3b0809888396489b022affced38cb609f03",
+        "offset": 568,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": false
+      },
+      {
+        "script": "chap2/c02_000_014",
+        "source_sha256": "1a964ea73ee5bdab448fcb993cc4677a1306bf56883114f562f9d11fedbe1ed8",
+        "offset": 608,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": false
+      },
+      {
+        "script": "chap2/c02_003_014",
+        "source_sha256": "2bbc80456cd3047728b5d6219ae8326cc9e539c481aa5aaf8c762c44bdaa6b1c",
+        "offset": 548,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": false
+      },
+      {
+        "script": "chap3/c03_000_014",
+        "source_sha256": "dc81af7be56eb39b1a9405503b780c410858607f793b64c82b6499f622ef9a03",
+        "offset": 566,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": false
+      },
+      {
+        "script": "chap4/c04_000_014",
+        "source_sha256": "a7b0dfc57343a8bedd8df286a52d5cf3b6cb70113334ea81e382d4117db8bbb2",
+        "offset": 562,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": false
+      },
+      {
+        "script": "chap5/c05_000_014",
+        "source_sha256": "6addddb8b1d53c7662fc6884448c2b35c4eddc87316ef73be25da6f2b9411be0",
+        "offset": 556,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": false
+      },
+      {
+        "script": "test/Testmenu",
+        "source_sha256": "43dd508e1157d5592f24a64ce5aeb6a9edf97b633ba4d476f1e6ad09e44ba095",
+        "offset": 520,
+        "args": [
+          "modMonomonoMachine",
+          "non",
+          "non",
+          "non"
+        ],
+        "is_test": true
+      }
+    ],
+    "call_limit": "6production+1test;chapter6literalabsence is not proof dynamic/menuentry unavailable.",
+    "completion": "controllerreturn sets ModeMonomonoMachine1 even nopullcancel and restores callerUI/WRDwait; thisflag is not drawsuccess/rewardclaim."
+  },
+  "state_and_fields": {
+    "permanent": {
+      "wallet": "+2636u16,53a090getter,53eb20debit",
+      "quantity": "+2b6c ItemSaveNo u16;536b50grantcap999",
+      "acquisition_history": "+2d6c ItemSaveNobit;1missing/0everacquired;539c50getter"
+    },
+    "local": {
+      "+6f8": "candidatecountN",
+      "+6fc": "machinephase",
+      "+704": "pendingC;reset0afterfirstaward",
+      "+710": "extraq;keepshalvingacrossfreeloops",
+      "+714": "counter;reset0eachstateC",
+      "+718": "chosenItem",
+      "+720": "historybitBEFOREgrant forNEW",
+      "+724": "capsule/resultactivity",
+      "+728/+72c": "amountup/downvisibility"
+    },
+    "minimal_own": "Separate phase/pendingC/q/drawID/debitApplied/chosenID/grantApplied/historyBefore/any pending result; bind existing catalog, wallet,quantity andknown/newsets. Neverderive everacquired fromcurrentquantity."
+  },
+  "amount_payment_cancel": {
+    "C_range": "0..min(100,wallet),initial0",
+    "priority": [
+      "cancel",
+      "confirm",
+      "help",
+      "pad",
+      "adjustamount"
+    ],
+    "adjust": "selectiononly; ordinaryrepeat delta=(acceptedrepeatcounter+14)//15;freshdirectionpress resetscounter. Modifierheld logical0x10/allowedmiddlemouse plusdirection uses10. Timing is acceptedinput events, not proven15frames.",
+    "confirm": "wallet>0 && C>0 accepted atstateB→stateC;zero rejects withSE000 and stays.",
+    "selection_display": "15e640 displays wallet-C, whileactualwalletunchanged;15e980 displays C;numberdigits3each.",
+    "payment": "stateC once calls53eb20(C),floor0;normalgate alreadylimitsC tobalance. Source monetarydebit precedes stateD outcome/grant.",
+    "cancel_before_payment": "stateBcancel returns-1,SE004/exit;no actualmoneychanged,so refund0.",
+    "cancel_after_payment": "stateC..11 lack stateBcancelbranch; Escape can be commonresultnewinput, not refund. Grantedquantity/history andwalletdebit are not reversedonexit.",
+    "help_pad": "stateBreturn-2/-3→12/13→0→outerwaitclose→14→B;Cpreserved, no debit. Commonpadmode2 is not gift-only nor proof allmenus/save alwaysopen."
+  },
+  "candidate_data": {
+    "source_item_sha256": "9755478cd67556c0b5b53c00eddb3d724a769aed11a733867cc50ce5aa721615",
+    "rows": 143,
+    "stride": 16,
+    "data_offset": 192,
+    "filter": "52db70 nativefield/row+12u16!=0;83ones/60zeros;nativecapacity200",
+    "selection_weight": "eligibilityflag includes/excludes, not rarityweight",
+    "candidates": [
+      {
+        "row": 0,
+        "row_byte_offset": 192,
+        "save_no": 0,
+        "eligibility": 1
+      },
+      {
+        "row": 1,
+        "row_byte_offset": 208,
+        "save_no": 1,
+        "eligibility": 1
+      },
+      {
+        "row": 2,
+        "row_byte_offset": 224,
+        "save_no": 2,
+        "eligibility": 1
+      },
+      {
+        "row": 3,
+        "row_byte_offset": 240,
+        "save_no": 3,
+        "eligibility": 1
+      },
+      {
+        "row": 4,
+        "row_byte_offset": 256,
+        "save_no": 4,
+        "eligibility": 1
+      },
+      {
+        "row": 5,
+        "row_byte_offset": 272,
+        "save_no": 5,
+        "eligibility": 1
+      },
+      {
+        "row": 6,
+        "row_byte_offset": 288,
+        "save_no": 6,
+        "eligibility": 1
+      },
+      {
+        "row": 7,
+        "row_byte_offset": 304,
+        "save_no": 7,
+        "eligibility": 1
+      },
+      {
+        "row": 8,
+        "row_byte_offset": 320,
+        "save_no": 8,
+        "eligibility": 1
+      },
+      {
+        "row": 9,
+        "row_byte_offset": 336,
+        "save_no": 9,
+        "eligibility": 1
+      },
+      {
+        "row": 10,
+        "row_byte_offset": 352,
+        "save_no": 10,
+        "eligibility": 1
+      },
+      {
+        "row": 11,
+        "row_byte_offset": 368,
+        "save_no": 11,
+        "eligibility": 1
+      },
+      {
+        "row": 12,
+        "row_byte_offset": 384,
+        "save_no": 12,
+        "eligibility": 1
+      },
+      {
+        "row": 13,
+        "row_byte_offset": 400,
+        "save_no": 13,
+        "eligibility": 1
+      },
+      {
+        "row": 14,
+        "row_byte_offset": 416,
+        "save_no": 14,
+        "eligibility": 1
+      },
+      {
+        "row": 15,
+        "row_byte_offset": 432,
+        "save_no": 15,
+        "eligibility": 1
+      },
+      {
+        "row": 16,
+        "row_byte_offset": 448,
+        "save_no": 16,
+        "eligibility": 1
+      },
+      {
+        "row": 19,
+        "row_byte_offset": 496,
+        "save_no": 19,
+        "eligibility": 1
+      },
+      {
+        "row": 22,
+        "row_byte_offset": 544,
+        "save_no": 22,
+        "eligibility": 1
+      },
+      {
+        "row": 24,
+        "row_byte_offset": 576,
+        "save_no": 24,
+        "eligibility": 1
+      },
+      {
+        "row": 25,
+        "row_byte_offset": 592,
+        "save_no": 25,
+        "eligibility": 1
+      },
+      {
+        "row": 26,
+        "row_byte_offset": 608,
+        "save_no": 26,
+        "eligibility": 1
+      },
+      {
+        "row": 27,
+        "row_byte_offset": 624,
+        "save_no": 27,
+        "eligibility": 1
+      },
+      {
+        "row": 28,
+        "row_byte_offset": 640,
+        "save_no": 28,
+        "eligibility": 1
+      },
+      {
+        "row": 29,
+        "row_byte_offset": 656,
+        "save_no": 29,
+        "eligibility": 1
+      },
+      {
+        "row": 31,
+        "row_byte_offset": 688,
+        "save_no": 31,
+        "eligibility": 1
+      },
+      {
+        "row": 35,
+        "row_byte_offset": 752,
+        "save_no": 35,
+        "eligibility": 1
+      },
+      {
+        "row": 37,
+        "row_byte_offset": 784,
+        "save_no": 37,
+        "eligibility": 1
+      },
+      {
+        "row": 38,
+        "row_byte_offset": 800,
+        "save_no": 38,
+        "eligibility": 1
+      },
+      {
+        "row": 39,
+        "row_byte_offset": 816,
+        "save_no": 39,
+        "eligibility": 1
+      },
+      {
+        "row": 40,
+        "row_byte_offset": 832,
+        "save_no": 40,
+        "eligibility": 1
+      },
+      {
+        "row": 41,
+        "row_byte_offset": 848,
+        "save_no": 41,
+        "eligibility": 1
+      },
+      {
+        "row": 46,
+        "row_byte_offset": 928,
+        "save_no": 46,
+        "eligibility": 1
+      },
+      {
+        "row": 48,
+        "row_byte_offset": 960,
+        "save_no": 48,
+        "eligibility": 1
+      },
+      {
+        "row": 50,
+        "row_byte_offset": 992,
+        "save_no": 50,
+        "eligibility": 1
+      },
+      {
+        "row": 51,
+        "row_byte_offset": 1008,
+        "save_no": 51,
+        "eligibility": 1
+      },
+      {
+        "row": 52,
+        "row_byte_offset": 1024,
+        "save_no": 52,
+        "eligibility": 1
+      },
+      {
+        "row": 53,
+        "row_byte_offset": 1040,
+        "save_no": 53,
+        "eligibility": 1
+      },
+      {
+        "row": 54,
+        "row_byte_offset": 1056,
+        "save_no": 54,
+        "eligibility": 1
+      },
+      {
+        "row": 56,
+        "row_byte_offset": 1088,
+        "save_no": 56,
+        "eligibility": 1
+      },
+      {
+        "row": 57,
+        "row_byte_offset": 1104,
+        "save_no": 57,
+        "eligibility": 1
+      },
+      {
+        "row": 58,
+        "row_byte_offset": 1120,
+        "save_no": 58,
+        "eligibility": 1
+      },
+      {
+        "row": 59,
+        "row_byte_offset": 1136,
+        "save_no": 59,
+        "eligibility": 1
+      },
+      {
+        "row": 60,
+        "row_byte_offset": 1152,
+        "save_no": 60,
+        "eligibility": 1
+      },
+      {
+        "row": 61,
+        "row_byte_offset": 1168,
+        "save_no": 61,
+        "eligibility": 1
+      },
+      {
+        "row": 62,
+        "row_byte_offset": 1184,
+        "save_no": 62,
+        "eligibility": 1
+      },
+      {
+        "row": 63,
+        "row_byte_offset": 1200,
+        "save_no": 63,
+        "eligibility": 1
+      },
+      {
+        "row": 64,
+        "row_byte_offset": 1216,
+        "save_no": 64,
+        "eligibility": 1
+      },
+      {
+        "row": 65,
+        "row_byte_offset": 1232,
+        "save_no": 65,
+        "eligibility": 1
+      },
+      {
+        "row": 69,
+        "row_byte_offset": 1296,
+        "save_no": 69,
+        "eligibility": 1
+      },
+      {
+        "row": 71,
+        "row_byte_offset": 1328,
+        "save_no": 71,
+        "eligibility": 1
+      },
+      {
+        "row": 72,
+        "row_byte_offset": 1344,
+        "save_no": 72,
+        "eligibility": 1
+      },
+      {
+        "row": 73,
+        "row_byte_offset": 1360,
+        "save_no": 73,
+        "eligibility": 1
+      },
+      {
+        "row": 74,
+        "row_byte_offset": 1376,
+        "save_no": 74,
+        "eligibility": 1
+      },
+      {
+        "row": 75,
+        "row_byte_offset": 1392,
+        "save_no": 75,
+        "eligibility": 1
+      },
+      {
+        "row": 77,
+        "row_byte_offset": 1424,
+        "save_no": 77,
+        "eligibility": 1
+      },
+      {
+        "row": 78,
+        "row_byte_offset": 1440,
+        "save_no": 78,
+        "eligibility": 1
+      },
+      {
+        "row": 79,
+        "row_byte_offset": 1456,
+        "save_no": 79,
+        "eligibility": 1
+      },
+      {
+        "row": 80,
+        "row_byte_offset": 1472,
+        "save_no": 80,
+        "eligibility": 1
+      },
+      {
+        "row": 81,
+        "row_byte_offset": 1488,
+        "save_no": 81,
+        "eligibility": 1
+      },
+      {
+        "row": 82,
+        "row_byte_offset": 1504,
+        "save_no": 82,
+        "eligibility": 1
+      },
+      {
+        "row": 83,
+        "row_byte_offset": 1520,
+        "save_no": 83,
+        "eligibility": 1
+      },
+      {
+        "row": 84,
+        "row_byte_offset": 1536,
+        "save_no": 84,
+        "eligibility": 1
+      },
+      {
+        "row": 85,
+        "row_byte_offset": 1552,
+        "save_no": 85,
+        "eligibility": 1
+      },
+      {
+        "row": 87,
+        "row_byte_offset": 1584,
+        "save_no": 87,
+        "eligibility": 1
+      },
+      {
+        "row": 93,
+        "row_byte_offset": 1680,
+        "save_no": 93,
+        "eligibility": 1
+      },
+      {
+        "row": 94,
+        "row_byte_offset": 1696,
+        "save_no": 94,
+        "eligibility": 1
+      },
+      {
+        "row": 96,
+        "row_byte_offset": 1728,
+        "save_no": 96,
+        "eligibility": 1
+      },
+      {
+        "row": 97,
+        "row_byte_offset": 1744,
+        "save_no": 97,
+        "eligibility": 1
+      },
+      {
+        "row": 98,
+        "row_byte_offset": 1760,
+        "save_no": 98,
+        "eligibility": 1
+      },
+      {
+        "row": 99,
+        "row_byte_offset": 1776,
+        "save_no": 99,
+        "eligibility": 1
+      },
+      {
+        "row": 100,
+        "row_byte_offset": 1792,
+        "save_no": 100,
+        "eligibility": 1
+      },
+      {
+        "row": 101,
+        "row_byte_offset": 1808,
+        "save_no": 101,
+        "eligibility": 1
+      },
+      {
+        "row": 102,
+        "row_byte_offset": 1824,
+        "save_no": 102,
+        "eligibility": 1
+      },
+      {
+        "row": 103,
+        "row_byte_offset": 1840,
+        "save_no": 103,
+        "eligibility": 1
+      },
+      {
+        "row": 104,
+        "row_byte_offset": 1856,
+        "save_no": 104,
+        "eligibility": 1
+      },
+      {
+        "row": 106,
+        "row_byte_offset": 1888,
+        "save_no": 106,
+        "eligibility": 1
+      },
+      {
+        "row": 107,
+        "row_byte_offset": 1904,
+        "save_no": 107,
+        "eligibility": 1
+      },
+      {
+        "row": 108,
+        "row_byte_offset": 1920,
+        "save_no": 108,
+        "eligibility": 1
+      },
+      {
+        "row": 109,
+        "row_byte_offset": 1936,
+        "save_no": 109,
+        "eligibility": 1
+      },
+      {
+        "row": 110,
+        "row_byte_offset": 1952,
+        "save_no": 110,
+        "eligibility": 1
+      },
+      {
+        "row": 111,
+        "row_byte_offset": 1968,
+        "save_no": 111,
+        "eligibility": 1
+      },
+      {
+        "row": 112,
+        "row_byte_offset": 1984,
+        "save_no": 112,
+        "eligibility": 1
+      }
+    ],
+    "new_vs_duplicate": "A=eligible everacquired(539c50==0);B=eligiblemissing(539c50!=0);U=len(A),N=len(A)+len(B). Consumedquantity0 remainsA.",
+    "own_adaptation": "Own110 gifts must use explicit stablecatalog eligibility/IDs and ownart. N followsactualeligibleownrows;do not fabricate83aliases,rarityweights or15pullguarantee. Originalrow/SaveNo are reference data, no claimed original→ownone-to-one map."
+  },
+  "duplicate_formula": {
+    "status": "answered_raw_supported",
+    "semantic": "U==N?100:C<=1?100*U/N:C==100?0:max(0,100*U/N-100*C/N)",
+    "exact_float32_order": [
+      "n=f32(N);u=f32(U);c=f32(C)",
+      "if U==N:returnf32(100)",
+      "base=f32(f32(u*f32(100))/n)",
+      "if C<=1:returnbase",
+      "if C==100:returnf32(0)",
+      "step=f32(f32(f32(1)/n)*f32(100))",
+      "returnmax(f32(0),f32(base-f32(step*c)))"
+    ],
+    "raw_boundary": "160160pseudocodeomitstail;use retainedraw160160..160295inclusive/SSErounding. Algebraicallycombining(U-C)/N canrounddifferently.",
+    "selection": [
+      "p=f32(displayPercent/f32(100));if Aempty p=0;if Bempty p=1",
+      "threshold=f32(p*f32(32768));r1=nextNative31()&0x7fff",
+      "A if threshold>=r1 elseB;selectedindex=nextNative31()%chosenpoolsize"
+    ],
+    "not_guarantees": [
+      "C100 withnonemptyA andB hasdisplay0 yetr1==0selectsA.",
+      "AllownedU==N returns100evenC100;thereisnonewitem.",
+      "This is displayedrate and integerdomainmapping, not measuredPRNGfairfrequency."
+    ],
+    "empty_pool_source_limit": "Aempty+r1zero canselect emptyA beforemodulo0;normal-saveprecondition/reachabilityunproved, not observedcrash. N0/malformedtables also unresolved.",
+    "own_safety_adaptation": "Validate nonemptycatalog beforepayment; ifonepoolempty selectnonemptypool explicitly. Do not addfakeinitialgift or deliberatelydivide0. Preserve RNGcallconsumption asdeclaredownpolicy."
+  },
+  "grant_and_result": {
+    "stateD": "Wait readyanimation;selectchosenID,store539c50historyBefore(+720),536b50quantity=min999(old+1)andclearmissingbit;updatecurrentheldratio;C=0;SE109/resultin;thenstateE.",
+    "timing": "Grant is before resultshowcomplete/userack, not onack. Animationreadywait doesnotmintmultipleitems.",
+    "quantity999": "No quantityincreasebeyond999,no reroll/refund;acquisitionhistorysetandresultstilloccur.",
+    "NEW": "Use historyBefore, not quantity==0 or recomputedaftergrant.",
+    "stateE": "waitresultresourcecompletion→F",
+    "stateF": "anypermittednewinput via3c34a0→resultout→10",
+    "state10": "secondnewinput canskipout OR waitoutcomplete;onlythen evaluateextra",
+    "own_once": "drawID+debitApplied+chosenID+grantApplied serializewithsamependingoperation. Restore/refresh/resultack no newdebit/nornewgrant.",
+    "quantity_cap_raw_confirmation": {
+      "status": "confirmed_for_normal_quantity0_to999",
+      "cap": 999,
+      "retained_raw_file": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\monomono_raw_validation.json",
+      "retained_raw_file_sha256": "300554af6dce1336aee992581f5a9d1746faba95f3aecf6aad66ee952bbb2fab",
+      "function_range": [
+        "0x140536b50",
+        "0x140536d61"
+      ],
+      "range_sha256": "e63f9437e73238230ea54fda2b33d741715b2cf43d0a705a5082f1d8787b4a1e",
+      "operation_addresses": {
+        "increment_u16_quantity": "0x140536c0e",
+        "load999": "0x140536c27",
+        "compare_incremented_quantity999": "0x140536c2f",
+        "below999_skip_clamp": "0x140536c37",
+        "write999": "0x140536c4d",
+        "test_missing_historybit": "0x140536c71"
+      },
+      "observation": "Existingraw incrementsItemSaveNo u16 quantity+2b6c,usesunsignedbelow999test,andwrites999otherwise. History+2d6cseparate.",
+      "evidence_boundary": "Exact536b50pseudocodedefinitionEVnotpresentinretained2354bundle;theexistingrawvalidationrangeandpriorfindingsprovidecapproof.No freshREAneeded. Corruptu16input65535wrapisnotgeneralizedasmathematicalunboundedclamp."
+    }
+  },
+  "extra_draw": {
+    "initial_q": "C==100?1:clamp(f32(f32(f32(C)*f32(.009))+f32(.1)),0,1)",
+    "predicate": "15e5e0 counter714<4 &&f32(q*32768)>=next31low15",
+    "normal_cycle": [
+      "C:debitC,counter=0",
+      "D:selectvia15f390,grant,C=0",
+      "Ewaitdisplay",
+      "Fnewinput",
+      "10waitout/skipthenextrapredicate",
+      "success:SE108+luckyphase→11waitcompletion",
+      "11:counter+=1;q=f32(q*.5);gotoC;counterreset0again"
+    ],
+    "cost": "firstpaidC,subsequentstateCcharges0;wallet0doesnotcancelalreadycommittedresult/freeextras.",
+    "pool": "normalfreeloopDseescounter0 andcalls15f390withC0andupdatedeveracquired. It doesnotkeepinitialCdiscount; uniformwholeN branch forcounter!=0existsbutnormalcyclehasnopreservingedge.",
+    "no_four_cap": "counter>=4guardexists butnormalcycle resetscountereachC,so do not impose fixed4extra maximum. qhalves and persists;sourceexternalcallbackinterleavingsnotfullyproven.",
+    "failure": "state10extrafailure recomputesqfromC0 andreturnsB. NextpaidselectionsetsqfromnewC.",
+    "endpoint_domain": "q1 passes32768/32768low15values;q.5 passes16385;q0passes1. Theseareintegerdomaincounts,notmeasuredfrequencies.",
+    "own_boundary": "Anyadditionalmaxcycle/catchupcap must be explicitownpolicy, notsourcefact. PersistentRNGseed/diskstate exactsourcecontractunproved."
+  },
+  "RNG": {
+    "source": "5d7ba0fourglobalu32 xor/shift11/11/8transform;31bitnonnegative result,notCRTrand. Sharedglobalstate/seedGetTickCountsitesknownfrom09;exactresumeseedandempiricaldistributionunverified.",
+    "own_adapter": "Inject deterministicnext31 into pureselection fortests andstableownRNGstate. OwnRNG/seeding/savepolicy is adaptation; do not promise exactoriginalrandomsequence.",
+    "modulo": "Second31bitvalue%selectedsize;do not silentlyreplacewithrarityweights/guaranteeuniformprobability."
+  },
+  "save_boundary": {
+    "source": "machineupdatesRAMwallet/quantity/history;15f700536130and535cb0areUIstate,52ccd0/52c040resourceBGMtransitions,notdiskwrites. Directmachinepathnotshowncalling540200.",
+    "normal_save": "Systempublicgate→savebranch477a00snapshot→53ccb0request→53cc50completed→53c3f0success. Mode2isnotblanketsaveban afterbranchreached,norproofallmachinephasescangetthere.",
+    "payload": "global[+20,+43e70) serializednormalpayload containswallet2636,quantity2b6c,history2d6c. Machineexit/resultack not automaticfilesuccess.",
+    "own_minimum": "Keepcurrency/quantity/everknown andpendingdraw receipt inexistingV4/legacy saveowner;oldsaveknownmigrationexplicit. Ifsavingduringmachine isallowed,serializepaid/grantedphase andchosenID/q/C/RNG/returncontext so reloadcannotrepayorreaward. A chosenownautosaveboundarymustbespecifiedasownpolicy.",
+    "unknown": "SourceexactPRNG/localmachinephasepersistencenotproven. Do notreportdiskfailure/recoveryasverifiedwithoutactualtest."
+  },
+  "UI_reference": {
+    "native_loading": "15fbe0eightfamilies plus15fb00fifteendependentcoinclones,allready→BGM018→in→input.15fab0phaseenum→retainedlabels;selection/result/lucky/outwaitcompletion.",
+    "families": [
+      {
+        "family": "flash/machine/m_bg.spc",
+        "sfl_sha256": "5839527e2d60bebf78a99aa80dd55d76a9d94654103314591648a2a06e57d793",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\5839527e2d60bebf78a99aa80dd55d76a9d94654103314591648a2a06e57d793.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_wait",
+            "record": 13
+          },
+          {
+            "name": "fl_out",
+            "record": 14
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/machine/m_coin.spc",
+        "sfl_sha256": "3a46d1dfb1c8894999e4dc42d90f55ca436d6873770dfff095e7f57cc1399053",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\3a46d1dfb1c8894999e4dc42d90f55ca436d6873770dfff095e7f57cc1399053.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_out",
+            "record": 19
+          },
+          {
+            "name": "fl_in_10",
+            "record": 35
+          },
+          {
+            "name": "fl_out_10",
+            "record": 56
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/machine/m_right.spc",
+        "sfl_sha256": "0bd5bfa1309fd04d4c22be13bd0b2b64203b817e671d38d528bb4f962fd3df1b",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\0bd5bfa1309fd04d4c22be13bd0b2b64203b817e671d38d528bb4f962fd3df1b.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_wait",
+            "record": 13
+          },
+          {
+            "name": "fl_out",
+            "record": 14
+          },
+          {
+            "name": "fl_coin",
+            "record": 24
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/event/m_get_US.spc",
+        "sfl_sha256": "fad7bf25e7cbafef3973165fe66f520e40524c3fac12430aecf3964ea38be286",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\fad7bf25e7cbafef3973165fe66f520e40524c3fac12430aecf3964ea38be286.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_wait",
+            "record": 26
+          },
+          {
+            "name": "fl_out",
+            "record": 27
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/machine/m_guide_US.spc",
+        "sfl_sha256": "4d47e0f97afda52246c34c308874943bc62196f5a9a48c1b5223f4eaa529a31a",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\4d47e0f97afda52246c34c308874943bc62196f5a9a48c1b5223f4eaa529a31a.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_wait",
+            "record": 14
+          },
+          {
+            "name": "fl_out",
+            "record": 15
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/machine/m_left_US.spc",
+        "sfl_sha256": "08179a16786106de1f3d34f36d35cff32946c85db27ead06823550e57ab44d6d",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\08179a16786106de1f3d34f36d35cff32946c85db27ead06823550e57ab44d6d.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_wait",
+            "record": 28
+          },
+          {
+            "name": "fl_out",
+            "record": 29
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/machine/m_lucky_US.spc",
+        "sfl_sha256": "8d730085abdd007eb51f8213f57a844a24a927cdf072671a417bd3118c32800b",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\8d730085abdd007eb51f8213f57a844a24a927cdf072671a417bd3118c32800b.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in",
+            "record": 2
+          },
+          {
+            "name": "fl_in_1",
+            "record": 84
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      },
+      {
+        "family": "flash/machine/m_machine_US.spc",
+        "sfl_sha256": "3944a70a14cd74cac207db96703e71dfe41babeb2f5d45d7a24af99aeeff9361",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\3944a70a14cd74cac207db96703e71dfe41babeb2f5d45d7a24af99aeeff9361.json",
+        "root_labels": [
+          {
+            "name": "fl_stop",
+            "record": 1
+          },
+          {
+            "name": "fl_in_1",
+            "record": 2
+          },
+          {
+            "name": "fl_wait_1",
+            "record": 14
+          },
+          {
+            "name": "fl_out_1",
+            "record": 15
+          },
+          {
+            "name": "fl_gacha_1",
+            "record": 25
+          },
+          {
+            "name": "fl_1_2",
+            "record": 127
+          },
+          {
+            "name": "fl_wait_2",
+            "record": 140
+          },
+          {
+            "name": "fl_2_1",
+            "record": 141
+          },
+          {
+            "name": "fl_gacha_2",
+            "record": 156
+          },
+          {
+            "name": "fl_2_3",
+            "record": 260
+          },
+          {
+            "name": "fl_wait_3",
+            "record": 273
+          },
+          {
+            "name": "fl_3_2",
+            "record": 274
+          },
+          {
+            "name": "fl_out_2",
+            "record": 285
+          },
+          {
+            "name": "fl_gacha_3",
+            "record": 295
+          },
+          {
+            "name": "fl_3_4",
+            "record": 406
+          },
+          {
+            "name": "fl_wait_4",
+            "record": 434
+          },
+          {
+            "name": "fl_out_4",
+            "record": 435
+          },
+          {
+            "name": "fl_4_3",
+            "record": 445
+          },
+          {
+            "name": "fl_out_3",
+            "record": 465
+          },
+          {
+            "name": "fl_gacha_4",
+            "record": 476
+          },
+          {
+            "name": "fl_4_1",
+            "record": 592
+          },
+          {
+            "name": "fl_3_1",
+            "record": 609
+          }
+        ],
+        "provided_PNG_container_matches": 0
+      }
+    ],
+    "geometry": {
+      "right_amount_wallet": {
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\0bd5bfa1309fd04d4c22be13bd0b2b64203b817e671d38d528bb4f962fd3df1b.json",
+        "metadata_sha256": "280bdc61356d537d33b14e6027243148c07067c07786aceffdfbb078908779ec",
+        "sfl_sha256": "0bd5bfa1309fd04d4c22be13bd0b2b64203b817e671d38d528bb4f962fd3df1b",
+        "root_label": "fl_wait",
+        "root_record": 13,
+        "root_sequence_offset": 6680,
+        "leaves": [
+          {
+            "path": "p_shoji/i_number_kakeru/d1",
+            "ref": [
+              3,
+              4
+            ],
+            "entry_offset": 1848,
+            "operation_offsets": [
+              6744,
+              2720,
+              2496
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.3199902344495058,
+              0.0,
+              0.0,
+              0.0,
+              0.3199902344495058,
+              0.0,
+              1687.9599609375,
+              78.4599609375,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1125.30664,
+                52.30664
+              ],
+              [
+                1138.95956,
+                52.30664
+              ],
+              [
+                1138.95956,
+                65.95956
+              ],
+              [
+                1125.30664,
+                65.95956
+              ]
+            ],
+            "rect1280": [
+              1125.30664,
+              52.30664,
+              13.65292,
+              13.65292
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 12
+          },
+          {
+            "path": "p_shoji/p_shoji_0/d1",
+            "ref": [
+              3,
+              5
+            ],
+            "entry_offset": 1888,
+            "operation_offsets": [
+              6744,
+              2756,
+              2552
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.5119794923812151,
+              0.0,
+              0.0,
+              0.0,
+              0.5119794923812151,
+              0.0,
+              1777.5185943603517,
+              70.70007934570313,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1185.0124,
+                47.13339
+              ],
+              [
+                1206.85685,
+                47.13339
+              ],
+              [
+                1206.85685,
+                68.97784
+              ],
+              [
+                1185.0124,
+                68.97784
+              ]
+            ],
+            "rect1280": [
+              1185.0124,
+              47.13339,
+              21.84446,
+              21.84446
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 2
+          },
+          {
+            "path": "p_shoji/p_shoji_1/d1",
+            "ref": [
+              3,
+              6
+            ],
+            "entry_offset": 1928,
+            "operation_offsets": [
+              6744,
+              2788,
+              2608
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.5119794923812151,
+              0.0,
+              0.0,
+              0.0,
+              0.5119794923812151,
+              0.0,
+              1744.999090576172,
+              70.70007934570313,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1163.33273,
+                47.13339
+              ],
+              [
+                1185.17719,
+                47.13339
+              ],
+              [
+                1185.17719,
+                68.97784
+              ],
+              [
+                1163.33273,
+                68.97784
+              ]
+            ],
+            "rect1280": [
+              1163.33273,
+              47.13339,
+              21.84446,
+              21.84446
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 3
+          },
+          {
+            "path": "p_shoji/p_shoji_2/d1",
+            "ref": [
+              3,
+              7
+            ],
+            "entry_offset": 1968,
+            "operation_offsets": [
+              6744,
+              2820,
+              2664
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.5119794923812151,
+              0.0,
+              0.0,
+              0.0,
+              0.5119794923812151,
+              0.0,
+              1712.5195861816408,
+              70.70007934570313,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1141.67972,
+                47.13339
+              ],
+              [
+                1163.52418,
+                47.13339
+              ],
+              [
+                1163.52418,
+                68.97784
+              ],
+              [
+                1141.67972,
+                68.97784
+              ]
+            ],
+            "rect1280": [
+              1141.67972,
+              47.13339,
+              21.84446,
+              21.84446
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 4
+          },
+          {
+            "path": "p_bet/p_bet_0/d1",
+            "ref": [
+              3,
+              8
+            ],
+            "entry_offset": 2008,
+            "operation_offsets": [
+              6764,
+              3064,
+              2896
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.639984130859375,
+              0.0,
+              0.0,
+              0.0,
+              0.639984130859375,
+              0.0,
+              1780.15,
+              148.25,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1186.76667,
+                98.83333
+              ],
+              [
+                1214.07266,
+                98.83333
+              ],
+              [
+                1214.07266,
+                126.13932
+              ],
+              [
+                1186.76667,
+                126.13932
+              ]
+            ],
+            "rect1280": [
+              1186.76667,
+              98.83333,
+              27.30599,
+              27.30599
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 13
+          },
+          {
+            "path": "p_bet/p_bet_1/d1",
+            "ref": [
+              3,
+              9
+            ],
+            "entry_offset": 2048,
+            "operation_offsets": [
+              6764,
+              3092,
+              2952
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.639984130859375,
+              0.0,
+              0.0,
+              0.0,
+              0.639984130859375,
+              0.0,
+              1739.5,
+              148.25,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1159.66667,
+                98.83333
+              ],
+              [
+                1186.97266,
+                98.83333
+              ],
+              [
+                1186.97266,
+                126.13932
+              ],
+              [
+                1159.66667,
+                126.13932
+              ]
+            ],
+            "rect1280": [
+              1159.66667,
+              98.83333,
+              27.30599,
+              27.30599
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 14
+          },
+          {
+            "path": "p_bet/p_bet_2/d1",
+            "ref": [
+              3,
+              10
+            ],
+            "entry_offset": 2088,
+            "operation_offsets": [
+              6764,
+              3120,
+              3008
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.639984130859375,
+              0.0,
+              0.0,
+              0.0,
+              0.639984130859375,
+              0.0,
+              1698.9,
+              148.25,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1132.6,
+                98.83333
+              ],
+              [
+                1159.90599,
+                98.83333
+              ],
+              [
+                1159.90599,
+                126.13932
+              ],
+              [
+                1132.6,
+                126.13932
+              ]
+            ],
+            "rect1280": [
+              1132.6,
+              98.83333,
+              27.30599,
+              27.30599
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 15
+          },
+          {
+            "path": "p_bet_text_00/_f_m_bet_text_00",
+            "ref": [
+              4,
+              0
+            ],
+            "entry_offset": 2184,
+            "operation_offsets": [
+              6780,
+              3192
+            ],
+            "local_lrtb": [
+              -2,
+              298,
+              -2,
+              62
+            ],
+            "affine_design": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1390.0,
+              151.0,
+              1.0
+            ],
+            "quad1280": [
+              [
+                925.33333,
+                99.33333
+              ],
+              [
+                1125.33333,
+                99.33333
+              ],
+              [
+                1125.33333,
+                142.0
+              ],
+              [
+                925.33333,
+                142.0
+              ]
+            ],
+            "rect1280": [
+              925.33333,
+              99.33333,
+              200.0,
+              42.66667
+            ],
+            "multiply_alpha": 1,
+            "kind": "text",
+            "image_id": null
+          },
+          {
+            "path": "p_yazirusi_up/d1",
+            "ref": [
+              3,
+              11
+            ],
+            "entry_offset": 2128,
+            "operation_offsets": [
+              6796,
+              3272
+            ],
+            "local_lrtb": [
+              0,
+              32,
+              0,
+              32
+            ],
+            "affine_design": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1744.5,
+              125.0,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1163.0,
+                83.33333
+              ],
+              [
+                1184.33333,
+                83.33333
+              ],
+              [
+                1184.33333,
+                104.66667
+              ],
+              [
+                1163.0,
+                104.66667
+              ]
+            ],
+            "rect1280": [
+              1163.0,
+              83.33333,
+              21.33333,
+              21.33333
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 26
+          },
+          {
+            "path": "p_yazirusi_down/d1",
+            "ref": [
+              3,
+              11
+            ],
+            "entry_offset": 2128,
+            "operation_offsets": [
+              6812,
+              3272
+            ],
+            "local_lrtb": [
+              0,
+              32,
+              0,
+              32
+            ],
+            "affine_design": [
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              1776.5,
+              218.5,
+              1.0
+            ],
+            "quad1280": [
+              [
+                1184.33333,
+                145.66667
+              ],
+              [
+                1163.0,
+                145.66667
+              ],
+              [
+                1163.0,
+                124.33333
+              ],
+              [
+                1184.33333,
+                124.33333
+              ]
+            ],
+            "rect1280": [
+              1163.0,
+              124.33333,
+              21.33333,
+              21.33333
+            ],
+            "multiply_alpha": 1,
+            "kind": "raster_carrier",
+            "image_id": 26
+          }
+        ],
+        "boundary": "Replay root through namedlabel, descendants atfirstlocalframe; nativevisibility/texture overrides/childplayback/wallclock unobserved. rowvector local*parent then1920x1080to1280x720*2/3; no invented clipping."
+      },
+      "result_item": {
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\fad7bf25e7cbafef3973165fe66f520e40524c3fac12430aecf3964ea38be286.json",
+        "metadata_sha256": "698cabe43655a3c233671fa0b257859054f6ba6f5ee751ec03dbd7488ce4d9f0",
+        "sfl_sha256": "fad7bf25e7cbafef3973165fe66f520e40524c3fac12430aecf3964ea38be286",
+        "root_label": "fl_wait",
+        "root_record": 26,
+        "root_sequence_offset": 30800,
+        "leaves": [
+          {
+            "path": "i_black/d1",
+            "ref": [
+              3,
+              6
+            ],
+            "entry_offset": 1664,
+            "operation_offsets": [
+              30552,
+              12948
+            ],
+            "local_lrtb": [
+              0,
+              16,
+              0,
+              16
+            ],
+            "affine_design": [
+              62.50050354003906,
+              0.0,
+              0.0,
+              0.0,
+              4.375,
+              0.0,
+              458.0,
+              814.0,
+              1.0
+            ],
+            "quad1280": [
+              [
+                305.33333,
+                542.66667
+              ],
+              [
+                972.00537,
+                542.66667
+              ],
+              [
+                972.00537,
+                589.33333
+              ],
+              [
+                305.33333,
+                589.33333
+              ]
+            ],
+            "rect1280": [
+              305.33333,
+              542.66667,
+              666.67204,
+              46.66667
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 7
+          },
+          {
+            "path": "p_present_name/_f_present_name",
+            "ref": [
+              4,
+              0
+            ],
+            "entry_offset": 1920,
+            "operation_offsets": [
+              30572,
+              13004
+            ],
+            "local_lrtb": [
+              -2,
+              998,
+              -2,
+              58
+            ],
+            "affine_design": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              460.35,
+              832.2,
+              1.0
+            ],
+            "quad1280": [
+              [
+                305.56667,
+                553.46667
+              ],
+              [
+                972.23333,
+                553.46667
+              ],
+              [
+                972.23333,
+                593.46667
+              ],
+              [
+                305.56667,
+                593.46667
+              ]
+            ],
+            "rect1280": [
+              305.56667,
+              553.46667,
+              666.66667,
+              40.0
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "text",
+            "image_id": null
+          },
+          {
+            "path": "p_present_icon/d1",
+            "ref": [
+              3,
+              8
+            ],
+            "entry_offset": 1744,
+            "operation_offsets": [
+              30616,
+              13136
+            ],
+            "local_lrtb": [
+              0,
+              128,
+              0,
+              128
+            ],
+            "affine_design": [
+              2.100006103515625,
+              0.0,
+              0.0,
+              0.0,
+              2.100006103515625,
+              0.0,
+              826.8000000000001,
+              396.75,
+              1.0
+            ],
+            "quad1280": [
+              [
+                551.2,
+                264.5
+              ],
+              [
+                730.40052,
+                264.5
+              ],
+              [
+                730.40052,
+                443.70052
+              ],
+              [
+                551.2,
+                443.70052
+              ]
+            ],
+            "rect1280": [
+              551.2,
+              264.5,
+              179.20052,
+              179.20052
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 0
+          },
+          {
+            "path": "p_new/i_new/d1",
+            "ref": [
+              3,
+              9
+            ],
+            "entry_offset": 1784,
+            "operation_offsets": [
+              30636,
+              13252,
+              13192
+            ],
+            "local_lrtb": [
+              0,
+              256,
+              0,
+              64
+            ],
+            "affine_design": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              842.0,
+              324.0,
+              1.0
+            ],
+            "quad1280": [
+              [
+                561.33333,
+                216.0
+              ],
+              [
+                732.0,
+                216.0
+              ],
+              [
+                732.0,
+                258.66667
+              ],
+              [
+                561.33333,
+                258.66667
+              ]
+            ],
+            "rect1280": [
+              561.33333,
+              216.0,
+              170.66667,
+              42.66667
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 8
+          }
+        ],
+        "boundary": "Replay root through namedlabel, descendants atfirstlocalframe; nativevisibility/texture overrides/childplayback/wallclock unobserved. rowvector local*parent then1920x1080to1280x720*2/3; no invented clipping."
+      },
+      "left_duplicate_percentage": {
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\08179a16786106de1f3d34f36d35cff32946c85db27ead06823550e57ab44d6d.json",
+        "metadata_sha256": "b8dc52780cff59d70af28b00ac72d049205faa8e99145b458b7a29c4d75f86ed",
+        "sfl_sha256": "08179a16786106de1f3d34f36d35cff32946c85db27ead06823550e57ab44d6d",
+        "root_label": "fl_wait",
+        "root_record": 28,
+        "root_sequence_offset": 25416,
+        "leaves": [
+          {
+            "path": "p_juhuku_number/p_juhuku_number_0/d1",
+            "ref": [
+              3,
+              2
+            ],
+            "entry_offset": 1940,
+            "operation_offsets": [
+              24372,
+              2888,
+              2496
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              491.8230926513672,
+              128.6,
+              1.0
+            ],
+            "quad1280": [
+              [
+                327.88206,
+                85.73333
+              ],
+              [
+                355.61513,
+                85.73333
+              ],
+              [
+                355.61513,
+                113.46641
+              ],
+              [
+                327.88206,
+                113.46641
+              ]
+            ],
+            "rect1280": [
+              327.88206,
+              85.73333,
+              27.73307,
+              27.73307
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 15
+          },
+          {
+            "path": "p_juhuku_number/p_juhuku_number_1/d1",
+            "ref": [
+              3,
+              3
+            ],
+            "entry_offset": 1980,
+            "operation_offsets": [
+              24372,
+              2920,
+              2552
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              448.5334991455078,
+              128.6,
+              1.0
+            ],
+            "quad1280": [
+              [
+                299.02233,
+                85.73333
+              ],
+              [
+                326.75541,
+                85.73333
+              ],
+              [
+                326.75541,
+                113.46641
+              ],
+              [
+                299.02233,
+                113.46641
+              ]
+            ],
+            "rect1280": [
+              299.02233,
+              85.73333,
+              27.73307,
+              27.73307
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 16
+          },
+          {
+            "path": "p_juhuku_number/i_par/d1",
+            "ref": [
+              3,
+              4
+            ],
+            "entry_offset": 2020,
+            "operation_offsets": [
+              24372,
+              2952,
+              2608
+            ],
+            "local_lrtb": [
+              0,
+              128,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              534.3976928710938,
+              129.24999389648437,
+              1.0
+            ],
+            "quad1280": [
+              [
+                356.26513,
+                86.16666
+              ],
+              [
+                411.73127,
+                86.16666
+              ],
+              [
+                411.73127,
+                113.89974
+              ],
+              [
+                356.26513,
+                113.89974
+              ]
+            ],
+            "rect1280": [
+              356.26513,
+              86.16666,
+              55.46615,
+              27.73307
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 2
+          },
+          {
+            "path": "p_juhuku_number/i_num_parts_dot/d1",
+            "ref": [
+              3,
+              5
+            ],
+            "entry_offset": 2060,
+            "operation_offsets": [
+              24372,
+              2976,
+              2664
+            ],
+            "local_lrtb": [
+              0,
+              32,
+              0,
+              32
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              427.47369689941405,
+              153.00727081298828,
+              1.0
+            ],
+            "quad1280": [
+              [
+                284.98246,
+                102.00485
+              ],
+              [
+                298.849,
+                102.00485
+              ],
+              [
+                298.849,
+                115.87138
+              ],
+              [
+                284.98246,
+                115.87138
+              ]
+            ],
+            "rect1280": [
+              284.98246,
+              102.00485,
+              13.86654,
+              13.86654
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 0
+          },
+          {
+            "path": "p_juhuku_number/p_juhuku_number_2/d1",
+            "ref": [
+              3,
+              6
+            ],
+            "entry_offset": 2100,
+            "operation_offsets": [
+              24372,
+              3008,
+              2720
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              389.1890563964844,
+              128.6,
+              1.0
+            ],
+            "quad1280": [
+              [
+                259.45937,
+                85.73333
+              ],
+              [
+                287.19244,
+                85.73333
+              ],
+              [
+                287.19244,
+                113.46641
+              ],
+              [
+                259.45937,
+                113.46641
+              ]
+            ],
+            "rect1280": [
+              259.45937,
+              85.73333,
+              27.73307,
+              27.73307
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 17
+          },
+          {
+            "path": "p_juhuku_number/p_juhuku_number_3/d1",
+            "ref": [
+              3,
+              7
+            ],
+            "entry_offset": 2140,
+            "operation_offsets": [
+              24372,
+              3040,
+              2776
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              346.2894592285156,
+              128.6,
+              1.0
+            ],
+            "quad1280": [
+              [
+                230.85964,
+                85.73333
+              ],
+              [
+                258.59271,
+                85.73333
+              ],
+              [
+                258.59271,
+                113.46641
+              ],
+              [
+                230.85964,
+                113.46641
+              ]
+            ],
+            "rect1280": [
+              230.85964,
+              85.73333,
+              27.73307,
+              27.73307
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 18
+          },
+          {
+            "path": "p_juhuku_number/p_juhuku_number_4/d1",
+            "ref": [
+              3,
+              8
+            ],
+            "entry_offset": 2180,
+            "operation_offsets": [
+              24372,
+              3072,
+              2832
+            ],
+            "local_lrtb": [
+              0,
+              64,
+              0,
+              64
+            ],
+            "affine_design": [
+              0.649993896484375,
+              0.0,
+              0.0,
+              0.0,
+              0.649993896484375,
+              0.0,
+              303.3898620605469,
+              128.6,
+              1.0
+            ],
+            "quad1280": [
+              [
+                202.25991,
+                85.73333
+              ],
+              [
+                229.99298,
+                85.73333
+              ],
+              [
+                229.99298,
+                113.46641
+              ],
+              [
+                202.25991,
+                113.46641
+              ]
+            ],
+            "rect1280": [
+              202.25991,
+              85.73333,
+              27.73307,
+              27.73307
+            ],
+            "multiply_alpha": 1.0,
+            "kind": "raster_carrier",
+            "image_id": 19
+          }
+        ],
+        "boundary": "Replay root through namedlabel, descendants atfirstlocalframe; nativevisibility/texture overrides/childplayback/wallclock unobserved. rowvector local*parent then1920x1080to1280x720*2/3; no invented clipping."
+      },
+      "machine_body_normal_wait": {
+        "family": "flash/machine/m_machine_US.spc",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\3944a70a14cd74cac207db96703e71dfe41babeb2f5d45d7a24af99aeeff9361.json",
+        "metadata_sha256": "1fa5f595e0cf831a0e3853e1aa289a613be9860872f56989260e399f2ab4f329",
+        "sfl_sha256": "3944a70a14cd74cac207db96703e71dfe41babeb2f5d45d7a24af99aeeff9361",
+        "root_label": "fl_wait_1",
+        "root_record": 14,
+        "root_has_Stop_action": true,
+        "child_policy": "Each retainedchild begins atitsfirstlocalrecord. This isthestaticnormalwait snapshot; literalfl_stop isbootstrap/removal andnotvisiblemachineposition.",
+        "leaves": [
+          {
+            "path": "d3",
+            "depth_chain": [
+              3
+            ],
+            "quad1280": [
+              [
+                551.33333,
+                165.33333
+              ],
+              [
+                722.0,
+                165.33333
+              ],
+              [
+                722.0,
+                336.0
+              ],
+              [
+                551.33333,
+                336.0
+              ]
+            ],
+            "rect1280": [
+              551.33333,
+              165.33333,
+              170.66667,
+              170.66667
+            ]
+          },
+          {
+            "path": "d23",
+            "depth_chain": [
+              23
+            ],
+            "quad1280": [
+              [
+                531.33333,
+                379.33333
+              ],
+              [
+                746.3724,
+                379.33333
+              ],
+              [
+                746.3724,
+                594.3724
+              ],
+              [
+                531.33333,
+                594.3724
+              ]
+            ],
+            "rect1280": [
+              531.33333,
+              379.33333,
+              215.03906,
+              215.03906
+            ]
+          },
+          {
+            "path": "p_machine_front/d1",
+            "depth_chain": [
+              26,
+              1
+            ],
+            "quad1280": [
+              [
+                301.33333,
+                16.0
+              ],
+              [
+                984.0,
+                16.0
+              ],
+              [
+                984.0,
+                698.66667
+              ],
+              [
+                301.33333,
+                698.66667
+              ]
+            ],
+            "rect1280": [
+              301.33333,
+              16.0,
+              682.66667,
+              682.66667
+            ]
+          },
+          {
+            "path": "i_rever/d1",
+            "depth_chain": [
+              32,
+              1
+            ],
+            "quad1280": [
+              [
+                614.66667,
+                449.0
+              ],
+              [
+                657.33333,
+                449.0
+              ],
+              [
+                657.33333,
+                491.66667
+              ],
+              [
+                614.66667,
+                491.66667
+              ]
+            ],
+            "rect1280": [
+              614.66667,
+              449.0,
+              42.66667,
+              42.66667
+            ]
+          }
+        ],
+        "boundary": "Carrierquads only, noPNG/rasterextraction andnoink/opaqueoccupancyassertion. local*parent then2/3viewport. Repeatedbackgroundinstance namesare disambiguatedbydepth_chain.",
+        "role_boundary": {
+          "p_machine_front/d1": "namedfrontbodycarrier",
+          "i_rever/d1": "namedlevercarrier,source spellingpreserved",
+          "d23": "anonymousrootdepth23lowercarrier;pixelmeaningasexitnotconfirmed",
+          "d3": "anonymousrootdepth3uppercarrier;pixelmeaningunconfirmed"
+        }
+      },
+      "background_normal_wait": {
+        "family": "flash/machine/m_bg.spc",
+        "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\5839527e2d60bebf78a99aa80dd55d76a9d94654103314591648a2a06e57d793.json",
+        "metadata_sha256": "3799d0827ae864581390bf5010084fbf705e5b3eeab5b99ffdb3c922f2e4f8fb",
+        "sfl_sha256": "5839527e2d60bebf78a99aa80dd55d76a9d94654103314591648a2a06e57d793",
+        "root_label": "fl_wait",
+        "root_record": 13,
+        "root_has_Stop_action": true,
+        "child_policy": "Each retainedchild begins atitsfirstlocalrecord. This isthestaticnormalwait snapshot; literalfl_stop isbootstrap/removal andnotvisiblemachineposition.",
+        "leaves": [
+          {
+            "path": "i_bg/i_001_00/d1",
+            "depth_chain": [
+              1,
+              1,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                -10.83333
+              ],
+              [
+                341.33333,
+                -10.83333
+              ],
+              [
+                341.33333,
+                71.56657
+              ],
+              [
+                0.0,
+                71.56657
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              -10.83333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_01/d1",
+            "depth_chain": [
+              1,
+              3,
+              1
+            ],
+            "quad1280": [
+              [
+                340.0,
+                -10.83333
+              ],
+              [
+                681.33333,
+                -10.83333
+              ],
+              [
+                681.33333,
+                71.56657
+              ],
+              [
+                340.0,
+                71.56657
+              ]
+            ],
+            "rect1280": [
+              340.0,
+              -10.83333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_02/d1",
+            "depth_chain": [
+              1,
+              5,
+              1
+            ],
+            "quad1280": [
+              [
+                680.0,
+                -10.83333
+              ],
+              [
+                1021.33333,
+                -10.83333
+              ],
+              [
+                1021.33333,
+                71.56657
+              ],
+              [
+                680.0,
+                71.56657
+              ]
+            ],
+            "rect1280": [
+              680.0,
+              -10.83333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_03/d1",
+            "depth_chain": [
+              1,
+              7,
+              1
+            ],
+            "quad1280": [
+              [
+                1020.0,
+                -10.83333
+              ],
+              [
+                1361.33333,
+                -10.83333
+              ],
+              [
+                1361.33333,
+                71.56657
+              ],
+              [
+                1020.0,
+                71.56657
+              ]
+            ],
+            "rect1280": [
+              1020.0,
+              -10.83333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_04/d1",
+            "depth_chain": [
+              1,
+              9,
+              1
+            ],
+            "quad1280": [
+              [
+                1361.33333,
+                -10.83333
+              ],
+              [
+                1702.66667,
+                -10.83333
+              ],
+              [
+                1702.66667,
+                71.56657
+              ],
+              [
+                1361.33333,
+                71.56657
+              ]
+            ],
+            "rect1280": [
+              1361.33333,
+              -10.83333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_00/d1",
+            "depth_chain": [
+              1,
+              11,
+              1
+            ],
+            "quad1280": [
+              [
+                -424.0,
+                71.56667
+              ],
+              [
+                -82.66667,
+                71.56667
+              ],
+              [
+                -82.66667,
+                153.96657
+              ],
+              [
+                -424.0,
+                153.96657
+              ]
+            ],
+            "rect1280": [
+              -424.0,
+              71.56667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_01/d1",
+            "depth_chain": [
+              1,
+              13,
+              1
+            ],
+            "quad1280": [
+              [
+                -82.66667,
+                71.56667
+              ],
+              [
+                258.66667,
+                71.56667
+              ],
+              [
+                258.66667,
+                153.96657
+              ],
+              [
+                -82.66667,
+                153.96657
+              ]
+            ],
+            "rect1280": [
+              -82.66667,
+              71.56667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_02/d1",
+            "depth_chain": [
+              1,
+              15,
+              1
+            ],
+            "quad1280": [
+              [
+                258.66667,
+                71.56667
+              ],
+              [
+                600.0,
+                71.56667
+              ],
+              [
+                600.0,
+                153.96657
+              ],
+              [
+                258.66667,
+                153.96657
+              ]
+            ],
+            "rect1280": [
+              258.66667,
+              71.56667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_03/d1",
+            "depth_chain": [
+              1,
+              17,
+              1
+            ],
+            "quad1280": [
+              [
+                600.0,
+                71.56667
+              ],
+              [
+                941.33333,
+                71.56667
+              ],
+              [
+                941.33333,
+                153.96657
+              ],
+              [
+                600.0,
+                153.96657
+              ]
+            ],
+            "rect1280": [
+              600.0,
+              71.56667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_04/d1",
+            "depth_chain": [
+              1,
+              19,
+              1
+            ],
+            "quad1280": [
+              [
+                941.33333,
+                71.56667
+              ],
+              [
+                1282.66667,
+                71.56667
+              ],
+              [
+                1282.66667,
+                153.96657
+              ],
+              [
+                941.33333,
+                153.96657
+              ]
+            ],
+            "rect1280": [
+              941.33333,
+              71.56667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_00/d1",
+            "depth_chain": [
+              1,
+              21,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                153.96667
+              ],
+              [
+                341.33333,
+                153.96667
+              ],
+              [
+                341.33333,
+                236.36657
+              ],
+              [
+                0.0,
+                236.36657
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              153.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_01/d1",
+            "depth_chain": [
+              1,
+              23,
+              1
+            ],
+            "quad1280": [
+              [
+                341.33333,
+                153.96667
+              ],
+              [
+                682.66667,
+                153.96667
+              ],
+              [
+                682.66667,
+                236.36657
+              ],
+              [
+                341.33333,
+                236.36657
+              ]
+            ],
+            "rect1280": [
+              341.33333,
+              153.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_02/d1",
+            "depth_chain": [
+              1,
+              25,
+              1
+            ],
+            "quad1280": [
+              [
+                682.66667,
+                153.96667
+              ],
+              [
+                1024.0,
+                153.96667
+              ],
+              [
+                1024.0,
+                236.36657
+              ],
+              [
+                682.66667,
+                236.36657
+              ]
+            ],
+            "rect1280": [
+              682.66667,
+              153.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_03/d1",
+            "depth_chain": [
+              1,
+              27,
+              1
+            ],
+            "quad1280": [
+              [
+                1024.0,
+                153.96667
+              ],
+              [
+                1365.33333,
+                153.96667
+              ],
+              [
+                1365.33333,
+                236.36657
+              ],
+              [
+                1024.0,
+                236.36657
+              ]
+            ],
+            "rect1280": [
+              1024.0,
+              153.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_04/d1",
+            "depth_chain": [
+              1,
+              29,
+              1
+            ],
+            "quad1280": [
+              [
+                1365.33333,
+                153.96667
+              ],
+              [
+                1706.66667,
+                153.96667
+              ],
+              [
+                1706.66667,
+                236.36657
+              ],
+              [
+                1365.33333,
+                236.36657
+              ]
+            ],
+            "rect1280": [
+              1365.33333,
+              153.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_00/d1",
+            "depth_chain": [
+              1,
+              31,
+              1
+            ],
+            "quad1280": [
+              [
+                -341.33333,
+                236.36667
+              ],
+              [
+                0.0,
+                236.36667
+              ],
+              [
+                0.0,
+                318.76657
+              ],
+              [
+                -341.33333,
+                318.76657
+              ]
+            ],
+            "rect1280": [
+              -341.33333,
+              236.36667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_01/d1",
+            "depth_chain": [
+              1,
+              33,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                236.36667
+              ],
+              [
+                341.33333,
+                236.36667
+              ],
+              [
+                341.33333,
+                318.76657
+              ],
+              [
+                0.0,
+                318.76657
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              236.36667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_02/d1",
+            "depth_chain": [
+              1,
+              35,
+              1
+            ],
+            "quad1280": [
+              [
+                341.33333,
+                236.36667
+              ],
+              [
+                682.66667,
+                236.36667
+              ],
+              [
+                682.66667,
+                318.76657
+              ],
+              [
+                341.33333,
+                318.76657
+              ]
+            ],
+            "rect1280": [
+              341.33333,
+              236.36667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_03/d1",
+            "depth_chain": [
+              1,
+              37,
+              1
+            ],
+            "quad1280": [
+              [
+                682.66667,
+                236.36667
+              ],
+              [
+                1024.0,
+                236.36667
+              ],
+              [
+                1024.0,
+                318.76657
+              ],
+              [
+                682.66667,
+                318.76657
+              ]
+            ],
+            "rect1280": [
+              682.66667,
+              236.36667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_04/d1",
+            "depth_chain": [
+              1,
+              39,
+              1
+            ],
+            "quad1280": [
+              [
+                1024.0,
+                236.36667
+              ],
+              [
+                1365.33333,
+                236.36667
+              ],
+              [
+                1365.33333,
+                318.76657
+              ],
+              [
+                1024.0,
+                318.76657
+              ]
+            ],
+            "rect1280": [
+              1024.0,
+              236.36667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_00_DXT1_00/d1",
+            "depth_chain": [
+              1,
+              41,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                318.76667
+              ],
+              [
+                341.33333,
+                318.76667
+              ],
+              [
+                341.33333,
+                401.16657
+              ],
+              [
+                0.0,
+                401.16657
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              318.76667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_00_DXT1_01/d1",
+            "depth_chain": [
+              1,
+              43,
+              1
+            ],
+            "quad1280": [
+              [
+                341.33333,
+                318.76667
+              ],
+              [
+                682.66667,
+                318.76667
+              ],
+              [
+                682.66667,
+                401.16657
+              ],
+              [
+                341.33333,
+                401.16657
+              ]
+            ],
+            "rect1280": [
+              341.33333,
+              318.76667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_00_DXT1_02/d1",
+            "depth_chain": [
+              1,
+              45,
+              1
+            ],
+            "quad1280": [
+              [
+                682.66667,
+                318.76667
+              ],
+              [
+                1024.0,
+                318.76667
+              ],
+              [
+                1024.0,
+                401.16657
+              ],
+              [
+                682.66667,
+                401.16657
+              ]
+            ],
+            "rect1280": [
+              682.66667,
+              318.76667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_00_DXT1_03/d1",
+            "depth_chain": [
+              1,
+              47,
+              1
+            ],
+            "quad1280": [
+              [
+                1024.0,
+                318.76667
+              ],
+              [
+                1365.33333,
+                318.76667
+              ],
+              [
+                1365.33333,
+                401.16657
+              ],
+              [
+                1024.0,
+                401.16657
+              ]
+            ],
+            "rect1280": [
+              1024.0,
+              318.76667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_00_DXT1_04/d1",
+            "depth_chain": [
+              1,
+              49,
+              1
+            ],
+            "quad1280": [
+              [
+                1365.33333,
+                318.76667
+              ],
+              [
+                1706.66667,
+                318.76667
+              ],
+              [
+                1706.66667,
+                401.16657
+              ],
+              [
+                1365.33333,
+                401.16657
+              ]
+            ],
+            "rect1280": [
+              1365.33333,
+              318.76667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_00/d1",
+            "depth_chain": [
+              1,
+              51,
+              1
+            ],
+            "quad1280": [
+              [
+                -341.33333,
+                401.33333
+              ],
+              [
+                0.0,
+                401.33333
+              ],
+              [
+                0.0,
+                486.20516
+              ],
+              [
+                -341.33333,
+                486.20516
+              ]
+            ],
+            "rect1280": [
+              -341.33333,
+              401.33333,
+              341.33333,
+              84.87183
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_01/d1",
+            "depth_chain": [
+              1,
+              53,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                401.33333
+              ],
+              [
+                341.33333,
+                401.33333
+              ],
+              [
+                341.33333,
+                486.20516
+              ],
+              [
+                0.0,
+                486.20516
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              401.33333,
+              341.33333,
+              84.87183
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_02/d1",
+            "depth_chain": [
+              1,
+              55,
+              1
+            ],
+            "quad1280": [
+              [
+                341.33333,
+                401.33333
+              ],
+              [
+                682.66667,
+                401.33333
+              ],
+              [
+                682.66667,
+                486.20516
+              ],
+              [
+                341.33333,
+                486.20516
+              ]
+            ],
+            "rect1280": [
+              341.33333,
+              401.33333,
+              341.33333,
+              84.87183
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_03/d1",
+            "depth_chain": [
+              1,
+              57,
+              1
+            ],
+            "quad1280": [
+              [
+                682.66667,
+                401.33333
+              ],
+              [
+                1024.0,
+                401.33333
+              ],
+              [
+                1024.0,
+                486.20516
+              ],
+              [
+                682.66667,
+                486.20516
+              ]
+            ],
+            "rect1280": [
+              682.66667,
+              401.33333,
+              341.33333,
+              84.87183
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_02_DXT1_04/d1",
+            "depth_chain": [
+              1,
+              59,
+              1
+            ],
+            "quad1280": [
+              [
+                1024.0,
+                401.33333
+              ],
+              [
+                1365.33333,
+                401.33333
+              ],
+              [
+                1365.33333,
+                486.20516
+              ],
+              [
+                1024.0,
+                486.20516
+              ]
+            ],
+            "rect1280": [
+              1024.0,
+              401.33333,
+              341.33333,
+              84.87183
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_00/d1",
+            "depth_chain": [
+              1,
+              61,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                485.63333
+              ],
+              [
+                341.33333,
+                485.63333
+              ],
+              [
+                341.33333,
+                568.03324
+              ],
+              [
+                0.0,
+                568.03324
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              485.63333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_01/d1",
+            "depth_chain": [
+              1,
+              63,
+              1
+            ],
+            "quad1280": [
+              [
+                341.33333,
+                485.63333
+              ],
+              [
+                682.66667,
+                485.63333
+              ],
+              [
+                682.66667,
+                568.03324
+              ],
+              [
+                341.33333,
+                568.03324
+              ]
+            ],
+            "rect1280": [
+              341.33333,
+              485.63333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_02/d1",
+            "depth_chain": [
+              1,
+              65,
+              1
+            ],
+            "quad1280": [
+              [
+                682.66667,
+                485.63333
+              ],
+              [
+                1024.0,
+                485.63333
+              ],
+              [
+                1024.0,
+                568.03324
+              ],
+              [
+                682.66667,
+                568.03324
+              ]
+            ],
+            "rect1280": [
+              682.66667,
+              485.63333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_03/d1",
+            "depth_chain": [
+              1,
+              67,
+              1
+            ],
+            "quad1280": [
+              [
+                1024.0,
+                485.63333
+              ],
+              [
+                1365.33333,
+                485.63333
+              ],
+              [
+                1365.33333,
+                568.03324
+              ],
+              [
+                1024.0,
+                568.03324
+              ]
+            ],
+            "rect1280": [
+              1024.0,
+              485.63333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_03_DXT1_04/d1",
+            "depth_chain": [
+              1,
+              69,
+              1
+            ],
+            "quad1280": [
+              [
+                1365.33333,
+                485.63333
+              ],
+              [
+                1706.66667,
+                485.63333
+              ],
+              [
+                1706.66667,
+                568.03324
+              ],
+              [
+                1365.33333,
+                568.03324
+              ]
+            ],
+            "rect1280": [
+              1365.33333,
+              485.63333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_00/d1",
+            "depth_chain": [
+              1,
+              71,
+              1
+            ],
+            "quad1280": [
+              [
+                -424.0,
+                565.96667
+              ],
+              [
+                -82.66667,
+                565.96667
+              ],
+              [
+                -82.66667,
+                648.36657
+              ],
+              [
+                -424.0,
+                648.36657
+              ]
+            ],
+            "rect1280": [
+              -424.0,
+              565.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_01/d1",
+            "depth_chain": [
+              1,
+              73,
+              1
+            ],
+            "quad1280": [
+              [
+                -82.66667,
+                565.96667
+              ],
+              [
+                258.66667,
+                565.96667
+              ],
+              [
+                258.66667,
+                648.36657
+              ],
+              [
+                -82.66667,
+                648.36657
+              ]
+            ],
+            "rect1280": [
+              -82.66667,
+              565.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_02/d1",
+            "depth_chain": [
+              1,
+              75,
+              1
+            ],
+            "quad1280": [
+              [
+                258.66667,
+                565.96667
+              ],
+              [
+                600.0,
+                565.96667
+              ],
+              [
+                600.0,
+                648.36657
+              ],
+              [
+                258.66667,
+                648.36657
+              ]
+            ],
+            "rect1280": [
+              258.66667,
+              565.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_03/d1",
+            "depth_chain": [
+              1,
+              77,
+              1
+            ],
+            "quad1280": [
+              [
+                600.0,
+                565.96667
+              ],
+              [
+                941.33333,
+                565.96667
+              ],
+              [
+                941.33333,
+                648.36657
+              ],
+              [
+                600.0,
+                648.36657
+              ]
+            ],
+            "rect1280": [
+              600.0,
+              565.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_bg_01_DXT_04/d1",
+            "depth_chain": [
+              1,
+              79,
+              1
+            ],
+            "quad1280": [
+              [
+                941.33333,
+                565.96667
+              ],
+              [
+                1282.66667,
+                565.96667
+              ],
+              [
+                1282.66667,
+                648.36657
+              ],
+              [
+                941.33333,
+                648.36657
+              ]
+            ],
+            "rect1280": [
+              941.33333,
+              565.96667,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_00/d1",
+            "depth_chain": [
+              1,
+              81,
+              1
+            ],
+            "quad1280": [
+              [
+                0.0,
+                647.73333
+              ],
+              [
+                341.33333,
+                647.73333
+              ],
+              [
+                341.33333,
+                730.13324
+              ],
+              [
+                0.0,
+                730.13324
+              ]
+            ],
+            "rect1280": [
+              0.0,
+              647.73333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_01/d1",
+            "depth_chain": [
+              1,
+              83,
+              1
+            ],
+            "quad1280": [
+              [
+                340.0,
+                647.73333
+              ],
+              [
+                681.33333,
+                647.73333
+              ],
+              [
+                681.33333,
+                730.13324
+              ],
+              [
+                340.0,
+                730.13324
+              ]
+            ],
+            "rect1280": [
+              340.0,
+              647.73333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_02/d1",
+            "depth_chain": [
+              1,
+              85,
+              1
+            ],
+            "quad1280": [
+              [
+                680.0,
+                647.73333
+              ],
+              [
+                1021.33333,
+                647.73333
+              ],
+              [
+                1021.33333,
+                730.13324
+              ],
+              [
+                680.0,
+                730.13324
+              ]
+            ],
+            "rect1280": [
+              680.0,
+              647.73333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_03/d1",
+            "depth_chain": [
+              1,
+              87,
+              1
+            ],
+            "quad1280": [
+              [
+                1020.0,
+                647.73333
+              ],
+              [
+                1361.33333,
+                647.73333
+              ],
+              [
+                1361.33333,
+                730.13324
+              ],
+              [
+                1020.0,
+                730.13324
+              ]
+            ],
+            "rect1280": [
+              1020.0,
+              647.73333,
+              341.33333,
+              82.3999
+            ]
+          },
+          {
+            "path": "i_bg/i_001_04/d1",
+            "depth_chain": [
+              1,
+              89,
+              1
+            ],
+            "quad1280": [
+              [
+                1361.33333,
+                647.73333
+              ],
+              [
+                1702.66667,
+                647.73333
+              ],
+              [
+                1702.66667,
+                730.13324
+              ],
+              [
+                1361.33333,
+                730.13324
+              ]
+            ],
+            "rect1280": [
+              1361.33333,
+              647.73333,
+              341.33333,
+              82.3999
+            ]
+          }
+        ],
+        "boundary": "Carrierquads only, noPNG/rasterextraction andnoink/opaqueoccupancyassertion. local*parent then2/3viewport. Repeatedbackgroundinstance namesare disambiguatedbydepth_chain.",
+        "role_boundary": "45firstframebackgroundtiles;severalextendoutsideviewport,notclippingevidence."
+      }
+    },
+    "number_sources": {
+      "wallet_pending_difference": {
+        "native": "15e640",
+        "handle_offset": "+0xc=m_right",
+        "DAT_symbols": [
+          "140a1d260",
+          "140a1d264",
+          "140a1d268"
+        ],
+        "resource": "number_%d.png",
+        "role": "wallet-C;threeunits-firstnativewrites",
+        "field_geometry": "right_amount_wallet:p_shoji/p_shoji_0..2",
+        "mapping_boundary": "semanticroleandright-to-leftorder-derived;internedDATsymboltoexactinstancenameinitializer notdecodedhere"
+      },
+      "selected_C": {
+        "native": "15e980",
+        "handle_offset": "+0xc=m_right",
+        "DAT_symbols": [
+          "140a1d26c",
+          "140a1d270",
+          "140a1d274"
+        ],
+        "resource": "number_waku_%d.png",
+        "field_geometry": "right_amount_wallet:p_bet/p_bet_0..2"
+      },
+      "duplicate_percent": {
+        "native": "15fda0owner/queried15ff9d",
+        "handle_offset": "+0x10=m_left_US",
+        "DAT_symbols": [
+          "140a1d280",
+          "140a1d284",
+          "140a1d288",
+          "140a1d28c",
+          "140a1d290"
+        ],
+        "resource": "number_waku_%d.png",
+        "display": "positiveint(f32(displayPercent*100)),5digits/twofractionalplaces;topdigitsvisibilityadjusted",
+        "field_geometry": "left_duplicate_percentage:p_juhuku_number/*"
+      },
+      "currentheld_ratio": {
+        "native": "15e780reads539bc0quantity>0,not539c50history",
+        "handle_offset": "+0x10",
+        "DAT_symbols": [
+          "140a1d294",
+          "140a1d298",
+          "140a1d29c"
+        ],
+        "resource": "number_%d.png",
+        "formula": "counteligiblequantity>0 /N*100 then6ae608roundinghelper;integer0withpositivecountforced1",
+        "unresolved": "exacthelperrounding andanonymousDAT-to-namedcarriergeometry are notestablished;do notinvent anotherpanel orconflatewithduplicatepercent"
+      },
+      "result": {
+        "native": "15fda0",
+        "name": "p_present_name/_f_present_name",
+        "icon": "p_present_icon/d1;present_icon_%03d.png fromflash/common/program/present texture.srd",
+        "NEW": "p_new/i_new/d1,visibilityhistoryBeforemissing=1",
+        "art": "ownstablegiftID/icon/nameadapter;providedoriginalpresentbankisnotmachinePNGevidence"
+      }
+    },
+    "provided_PNG_check": {
+      "manifest_path": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_authorized_20261029\\manifest.json",
+      "sha256": "6d594a03841d43f3336cdb321715b924bb74c4523c9029233191cb61b8099826",
+      "container_count": 127,
+      "exact_machine_or_m_get_containers": [],
+      "result": "0matches inthisauthorizedbank;cachedSFLgeometry exists butmatchingmachinePNGpixelavailability isabsenthere. No originalnewextractionperformed."
+    },
+    "adaptation_boundary": "Reuse retainedfamilies,rootstates,fullhierarchytransforms andconfirmedfieldquads. MissingPNGs/materialalpha/Koreanink/digittextures needdeclaredownassetadapter;notarbitrarynewcards/panels. Childfirstframe snapshots andSFLrecordcountsarenotwallclockduration/runtimepixels.",
+    "sounds": {
+      "selection": "SE101callbacks",
+      "reject": "SE000",
+      "prepaycancel": "SE004",
+      "draw": "SE107+Monomono_Gatya",
+      "award": "SE109",
+      "extra": "SE108",
+      "BGM": "BGM018"
+    },
+    "result_UI_order": "animationready→grant→m_getin→completed→newinput→m_getout→complete/skip→extra;do notreplacewithinstanttoast."
+  },
+  "implementation_acceptance": {
+    "pure_cases": [
+      "C0/wallet0reject",
+      "selectedCchangesnotwallet",
+      "prepaycancelnocharge",
+      "confirmedonepayment",
+      "savedpendingrestore_no_doublepayment",
+      "U=Nallowned100",
+      "C100/U<N display0butr0duplicate",
+      "emptyA/Bownsafeguard",
+      "quantity999nooverflow/refund",
+      "NEWfromprehistory",
+      "freeextrasC0/updateU/qhalve/counterreset",
+      "help/padCpreservation",
+      "ackdoesnotgrantagain",
+      "saveatomicwallet/quantity/history/receipt"
+    ],
+    "source_adaptations_to_declare": [
+      "own110eligiblefilterandgiftIDmapping",
+      "ownRNG/seed/persistence",
+      "empty-poolguard",
+      "ownUIinkwherePNGabsent",
+      "ownadmittedupdate/animationtiming",
+      "ownautosave/pendingrestorepolicy"
+    ],
+    "native_QA": "postponedbyuser;noactualmachine/pixel/audio/wholecampaignclaim"
+  },
+  "static_validation": {
+    "status": "PASS_static_contract",
+    "selected_evidence_count": 36,
+    "cache2354SHA_subject_profile": true,
+    "83unique_candidates": true,
+    "6production_1test": true,
+    "eightSFLidentities": true,
+    "selected_geometry_leaf_counts": {
+      "right_amount_wallet": 10,
+      "result_item": 4,
+      "left_duplicate_percentage": 7,
+      "machine_body_normal_wait": 4,
+      "background_normal_wait": 45
+    },
+    "providedPNGmatches": 0,
+    "formula_examples": [
+      {
+        "N": 83,
+        "U": 20,
+        "C": 0,
+        "display_percent_f32": 24.096385955810547,
+        "display_hundredths_integer": 2409,
+        "extra_initial_q_f32": 0.10000000149011612
+      },
+      {
+        "N": 83,
+        "U": 20,
+        "C": 1,
+        "display_percent_f32": 24.096385955810547,
+        "display_hundredths_integer": 2409,
+        "extra_initial_q_f32": 0.10899999737739563
+      },
+      {
+        "N": 83,
+        "U": 20,
+        "C": 2,
+        "display_percent_f32": 21.686748504638672,
+        "display_hundredths_integer": 2168,
+        "extra_initial_q_f32": 0.11800000071525574
+      },
+      {
+        "N": 83,
+        "U": 20,
+        "C": 20,
+        "display_percent_f32": 1.9073486328125e-06,
+        "display_hundredths_integer": 0,
+        "extra_initial_q_f32": 0.2800000011920929
+      },
+      {
+        "N": 83,
+        "U": 20,
+        "C": 100,
+        "display_percent_f32": 0.0,
+        "display_hundredths_integer": 0,
+        "extra_initial_q_f32": 1.0
+      },
+      {
+        "N": 83,
+        "U": 82,
+        "C": 100,
+        "display_percent_f32": 0.0,
+        "display_hundredths_integer": 0,
+        "extra_initial_q_f32": 1.0
+      },
+      {
+        "N": 83,
+        "U": 83,
+        "C": 100,
+        "display_percent_f32": 100.0,
+        "display_hundredths_integer": 10000,
+        "extra_initial_q_f32": 1.0
+      },
+      {
+        "N": 83,
+        "U": 0,
+        "C": 1,
+        "display_percent_f32": 0.0,
+        "display_hundredths_integer": 0,
+        "extra_initial_q_f32": 0.10899999737739563
+      }
+    ],
+    "inclusive_low15domain_passes": {
+      "0": 1,
+      "0.5": 16385,
+      "1": 32768
+    },
+    "conditional_extra_trace_reused": [
+      {
+        "conditional_draw_ordinal": 0,
+        "state_c_counter": 0,
+        "state_c_charge": 100,
+        "state_d_counter": 0,
+        "state_d_branch": "15f390 (counter==0)",
+        "chance_before_check": 1.0,
+        "forced_extra_success_for_next_trace": true
+      },
+      {
+        "conditional_draw_ordinal": 1,
+        "state_c_counter": 0,
+        "state_c_charge": 0,
+        "state_d_counter": 0,
+        "state_d_branch": "15f390 (counter==0)",
+        "chance_before_check": 0.5,
+        "forced_extra_success_for_next_trace": true
+      },
+      {
+        "conditional_draw_ordinal": 2,
+        "state_c_counter": 0,
+        "state_c_charge": 0,
+        "state_d_counter": 0,
+        "state_d_branch": "15f390 (counter==0)",
+        "chance_before_check": 0.25,
+        "forced_extra_success_for_next_trace": true
+      },
+      {
+        "conditional_draw_ordinal": 3,
+        "state_c_counter": 0,
+        "state_c_charge": 0,
+        "state_d_counter": 0,
+        "state_d_branch": "15f390 (counter==0)",
+        "chance_before_check": 0.125,
+        "forced_extra_success_for_next_trace": true
+      },
+      {
+        "conditional_draw_ordinal": 4,
+        "state_c_counter": 0,
+        "state_c_charge": 0,
+        "state_d_counter": 0,
+        "state_d_branch": "15f390 (counter==0)",
+        "chance_before_check": 0.0625,
+        "forced_extra_success_for_next_trace": true
+      },
+      {
+        "conditional_draw_ordinal": 5,
+        "state_c_counter": 0,
+        "state_c_charge": 0,
+        "state_d_counter": 0,
+        "state_d_branch": "15f390 (counter==0)",
+        "chance_before_check": 0.03125,
+        "forced_extra_success_for_next_trace": true
+      }
+    ],
+    "validation_kind": "purearithmetic/retainedmetadata/conditionalstatetrace,notactualgameorRNGseedrun",
+    "machine_body_background_followup": {
+      "status": "PASS_static",
+      "machine_root14_Stop": true,
+      "background_root13_Stop": true,
+      "body_leaves": 4,
+      "background_leaves": 45,
+      "normal_quantity_cap999_raw_confirmed": true,
+      "new_REA": 0,
+      "raster_extractions": 0,
+      "Game_edits": false
+    }
+  },
+  "unknowns": [
+    "No live machineplay/seedfrequencymeasurement; screenlayout/assetsoranimationdurationnotclaimed.",
+    "No fullglobalconcurrency/Flashnativecallbackinterleavingproof; extra-cycleclaimisexactlocalnativecallergraph.",
+    "Ifownedpoolisemptyandlow15RNGzero,thecomparisontakesemptyownedpooldivisor; normal-saveinvariantandactualreachabilityunproved. Notreportedobservedcrash.",
+    "FullsaveUIavailabilitywithinmode2padandexternaldiskwritercompletionareseparatescope.",
+    "Emptycandidate/malformedtable/allocationfailuresandallplatformversionsnotproved.",
+    "ExactsourcePRNGseedresumeboundary andallcrosscallbacks.",
+    "Currentheldratio6ae608roundinghelper/namedcarrierbinding.",
+    "AllmachinePNG/material/Koreaninkandactualwallclock/pixel/audio.",
+    "OriginalItem143→own110 mapping isexplicitadaptation,notdirectreuse."
+  ],
+  "completion": {
+    "boundedstatic_contract": "complete",
+    "new_REA": 0,
+    "new_extraction": 0,
+    "Game_edits": false,
+    "common_index_edits": false,
+    "actual_game_tests": 0,
+    "only_new_file": "C:\\Users\\kirby\\OneDrive\\바탕 화면\\git\\YumenoKuni\\docs\\analysis\\v3_rebuild\\gift_machine_remaining_contract.json",
+    "claim": "기존 근거의 구현 가능 최소 계약만 정리했어요. 실제 머신 구현·시각·저장 실행 합격이 아니에요."
+  },
+  "updated_utc": "2026-10-30T04:33:35.699975+00:00"
+}

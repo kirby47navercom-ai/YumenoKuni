@@ -1,0 +1,2823 @@
+{
+  "scope": "선물 9×3 아이콘의 복제·부착·표시·수량 연결을 기존 REA/SFL 정적 근거로 확인해요.",
+  "target_sha256": "1a012357f54076ef7fbe6a63f19f055bbe1ce71792b8c0719e7dc51d2a5affeb",
+  "required_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+  "bundle_identity": [
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-restored-evidence.json",
+      "sha256": "200f3c4626b1b37e70b891421e664ff9fb1c9641122775682bcb7ee02156f11b",
+      "record_count": 2354
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-pad-followup-ui-20261030.json",
+      "sha256": "0c64dbf218c7186e66fd770ca7ff4957537043c91e9a04d42b5d1c365f5d115f",
+      "record_count": 56
+    }
+  ],
+  "evidence": [
+    {
+      "procedure": "0x14041ca30",
+      "evidence_id": "ev_6e794d33d0388cce00004169cd6fd3b16c8dc52acb5da3b10ca3688812077639",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nundefined8 FUN_14041ca30(longlong param_1)\r\n\r\n{\r\n  int iVar1;\r\n  undefined8 uVar2;\r\n  int *piVar3;\r\n  longlong lVar4;\r\n  int *piVar5;\r\n  \r\n  piVar5 = (int *)(param_1 + 0x7c);\r\n  lVar4 = 0x1b;\r\n  piVar3 = piVar5;\r\n  do {\r\n    if (*piVar3 == 1) {\r\n      uVar2 = FUN_1404aa500();\r\n      iVar1 = FUN_1404a9730(uVar2,*(undefined4 *)(param_1 + 4),0,0xffffffff);\r\n      *piVar3 = 2;\r\n      piVar3[-0x1b] = iVar1;\r\n    }\r\n    else if (*piVar3 == 2) {\r\n      uVar2 = FUN_1404aa500();\r\n      iVar1 = FUN_1404aa890(uVar2,piVar3[-0x1b]);\r\n      if (iVar1 != 0) {\r\n        *piVar3 = 3;\r\n      }\r\n    }\r\n    piVar3 = piVar3 + 1;\r\n    lVar4 = lVar4 + -1;\r\n  } while (lVar4 != 0);\r\n  lVar4 = 0;\r\n  do {\r\n    if (*piVar5 != 3) {\r\n      return 0;\r\n    }\r\n    lVar4 = lVar4 + 1;\r\n    piVar5 = piVar5 + 1;\r\n  } while (lVar4 < 0x1b);\r\n  return 1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x14041cd70",
+      "evidence_id": "ev_7aaf573c83be4067e4369385b2d9560e0ee2eb3116f268b265c6805f68b855af",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\n/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */\r\n\r\nvoid FUN_14041cd70(int *param_1)\r\n\r\n{\r\n  int iVar1;\r\n  float fVar2;\r\n  float fVar3;\r\n  int iVar4;\r\n  undefined8 uVar5;\r\n  longlong lVar6;\r\n  undefined8 uVar7;\r\n  undefined8 uVar8;\r\n  uint uVar9;\r\n  undefined4 *puVar10;\r\n  int *piVar11;\r\n  int iVar12;\r\n  undefined4 *puVar13;\r\n  undefined4 *puVar14;\r\n  ulonglong uVar15;\r\n  int *piVar16;\r\n  int iVar17;\r\n  bool bVar18;\r\n  undefined1 auStack_f8 [32];\r\n  longlong local_d8 [2];\r\n  char local_c8 [128];\r\n  ulonglong local_48;\r\n  \r\n  local_48 = DAT_140907f60 ^ (ulonglong)auStack_f8;\r\n  if ((-1 < *param_1) && (4 < param_1[0x3c])) {\r\n    puVar13 = &DAT_140c26780;\r\n    puVar10 = &DAT_140c26780;\r\n    do {\r\n      local_d8[0] = -0x3b5fffff3b600000;\r\n      uVar5 = FUN_1404aa500();\r\n      lVar6 = FUN_1404aa3f0(uVar5,*param_1);\r\n      if ((lVar6 != 0) && (lVar6 = FUN_1404a7ab0(lVar6,*puVar10), lVar6 != 0)) {\r\n        FUN_1404adc90(lVar6,local_d8);\r\n      }\r\n      uVar5 = FUN_1404aa500();\r\n      FUN_1404ab240(uVar5,*(undefined4 *)((longlong)puVar10 + (longlong)(param_1 + -0x503099dc)),\r\n                    local_d8);\r\n      puVar10 = puVar10 + 1;\r\n    } while ((longlong)puVar10 < 0x140c267ec);\r\n    if (5 < param_1[0x3c]) {\r\n      do {\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,*puVar13,0);\r\n        puVar13 = puVar13 + 1;\r\n      } while ((longlong)puVar13 < 0x140c267ec);\r\n      FUN_14041e070(param_1);\r\n      uVar5 = DAT_140d1fc90;\r\n      iVar12 = (int)(((float)param_1[0x3f] + (float)param_1[0x3e]) * 9.0 + (float)param_1[0x3d]);\r\n      if (*(int *)(*(longlong *)(param_1 + 0x42) + 0x10 + (longlong)iVar12 * 0x18) == 0) {\r\n        uVar7 = FUN_1404aa500();\r\n        uVar5 = FUN_140527960(uVar5,0xf,6);\r\n        FUN_1404aaeb0(uVar7,*param_1,DAT_140c2682c,uVar5);\r\n        uVar5 = DAT_140d1fc90;\r\n        uVar7 = FUN_1404aa500();\r\n        uVar5 = FUN_140527960(uVar5,0xf,6);\r\n      }\r\n      else {\r\n        uVar5 = FUN_1404aa500();\r\n        uVar7 = FUN_14052d960(local_d8,*(undefined8 *)\r\n                                        (*(longlong *)(param_1 + 0x42) + (longlong)iVar12 * 0x18));\r\n        uVar7 = FUN_14052da80(uVar7);\r\n        FUN_1404aaeb0(uVar5,*param_1,DAT_140c2682c,uVar7);\r\n        iVar12 = param_1[0x3f];\r\n        fVar2 = (float)param_1[0x3e];\r\n        fVar3 = (float)param_1[0x3d];\r\n        uVar7 = FUN_1404aa500();\r\n        uVar5 = FUN_14052d960(local_d8,*(undefined8 *)\r\n                                        (*(longlong *)(param_1 + 0x42) +\r\n                                        (longlong)(int)(((float)iVar12 + fVar2) * 9.0 + fVar3) *\r\n                                        0x18));\r\n        uVar5 = FUN_14052db30(uVar5);\r\n      }\r\n      FUN_1404aaeb0(uVar7,*param_1,DAT_140c26830,uVar5);\r\n      piVar16 = param_1 + 4;\r\n      iVar12 = 0;\r\n      lVar6 = 0x1b;\r\n      iVar17 = 0;\r\n      local_d8[0] = 0x1b;\r\n      piVar11 = piVar16;\r\n      do {\r\n        iVar1 = iVar17 + param_1[0x3f] * 9;\r\n        iVar4 = param_1[0x44];\r\n        if (iVar1 < iVar4) {\r\n          uVar5 = FUN_1404aa500();\r\n        }\r\n        else {\r\n          uVar5 = FUN_1404aa500();\r\n        }\r\n        FUN_1404abdb0(uVar5,*piVar11,iVar1 < iVar4);\r\n        bVar18 = *(int *)(*(longlong *)(param_1 + 0x42) + 8 + (longlong)iVar1 * 0x18) == 0;\r\n        if (bVar18) {\r\n          uVar5 = FUN_1404aa500();\r\n        }\r\n        else {\r\n          uVar5 = FUN_1404aa500();\r\n        }\r\n        FUN_1404abd40(uVar5,*piVar11,DAT_140c26820,!bVar18);\r\n        iVar17 = iVar17 + 1;\r\n        piVar11 = piVar11 + 1;\r\n        lVar6 = lVar6 + -1;\r\n      } while (lVar6 != 0);\r\n      puVar10 = &DAT_140c267f8;\r\n      puVar13 = &DAT_140c26804;\r\n      puVar14 = &DAT_140c267f8;\r\n      iVar17 = (int)(((float)param_1[0x3f] + (float)param_1[0x3e]) * 9.0 + (float)param_1[0x3d]) + 1\r\n      ;\r\n      do {\r\n        uVar5 = FUN_1404aa500();\r\n        uVar5 = FUN_1404aa570(uVar5,*param_1,1);\r\n        uVar7 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar7,*param_1,*puVar14,uVar5);\r\n        puVar14 = puVar14 + 1;\r\n      } while ((longlong)puVar14 < 0x140c26804);\r\n      do {\r\n        iVar1 = iVar17 / 10;\r\n        uVar5 = FUN_1404aa500();\r\n        uVar5 = FUN_1404aa570(uVar5,*param_1,iVar17 % 10 + 1);\r\n        uVar7 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar7,*param_1,*puVar10,uVar5);\r\n        puVar10 = puVar10 + 1;\r\n        iVar17 = iVar1;\r\n      } while (0 < iVar1);\r\n      lVar6 = (longlong)\r\n              (int)(((float)param_1[0x3f] + (float)param_1[0x3e]) * 9.0 + (float)param_1[0x3d]);\r\n      iVar17 = *(int *)(*(longlong *)(param_1 + 0x42) + 0xc + lVar6 * 0x18);\r\n      bVar18 = *(int *)(*(longlong *)(param_1 + 0x42) + 0x10 + lVar6 * 0x18) != 0;\r\n      if (bVar18) {\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,DAT_140c26834,1);\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,DAT_140c26804,1);\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,DAT_140c26808,1);\r\n        uVar5 = FUN_1404aa500();\r\n      }\r\n      else {\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,DAT_140c26834,0);\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,DAT_140c26804,0);\r\n        uVar5 = FUN_1404aa500();\r\n        FUN_1404abd40(uVar5,*param_1,DAT_140c26808,0);\r\n        uVar5 = FUN_1404aa500();\r\n      }\r\n      FUN_1404abd40(uVar5,*param_1,DAT_140c2680c,bVar18);\r\n      puVar14 = &DAT_140c26804;\r\n      puVar10 = &DAT_140c26810;\r\n      do {\r\n        uVar5 = FUN_1404aa500();\r\n        uVar5 = FUN_1404aa570(uVar5,*param_1,1);\r\n        uVar7 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar7,*param_1,*puVar14,uVar5);\r\n        puVar14 = puVar14 + 1;\r\n      } while ((longlong)puVar14 < 0x140c26810);\r\n      do {\r\n        iVar1 = iVar17 / 10;\r\n        uVar5 = FUN_1404aa500();\r\n        uVar5 = FUN_1404aa570(uVar5,*param_1,iVar17 % 10 + 1);\r\n        uVar7 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar7,*param_1,*puVar13,uVar5);\r\n        puVar13 = puVar13 + 1;\r\n        iVar17 = iVar1;\r\n      } while (0 < iVar1);\r\n      iVar17 = param_1[0x41];\r\n      puVar13 = &DAT_140c26810;\r\n      do {\r\n        uVar5 = FUN_1404aa500();\r\n        uVar5 = FUN_1404aa570(uVar5,*param_1,1);\r\n        uVar7 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar7,*param_1,*puVar13,uVar5);\r\n        puVar13 = puVar13 + 1;\r\n      } while ((longlong)puVar13 < 0x140c2681c);\r\n      do {\r\n        iVar1 = iVar17 / 10;\r\n        uVar5 = FUN_1404aa500();\r\n        uVar5 = FUN_1404aa570(uVar5,*param_1,iVar17 % 10 + 1);\r\n        uVar7 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar7,*param_1,*puVar10,uVar5);\r\n        puVar10 = puVar10 + 1;\r\n        iVar17 = iVar1;\r\n      } while (0 < iVar1);\r\n      iVar17 = param_1[0x41];\r\n      if (iVar17 < 100) {\r\n        uVar5 = FUN_1404aa500();\r\n      }\r\n      else {\r\n        uVar5 = FUN_1404aa500();\r\n      }\r\n      FUN_1404abd40(uVar5,*param_1,DAT_140c267f0,iVar17 >= 100);\r\n      uVar5 = FUN_140532ec0();\r\n      uVar5 = FUN_140532e60(uVar5,PTR_s_flash_common_program_present_pre_1408d00b8);\r\n      uVar5 = FUN_140532fe0(uVar5,\"texture.srd\");\r\n      do {\r\n        uVar9 = param_1[0x3f] * 9 + iVar12;\r\n        uVar15 = (ulonglong)uVar9;\r\n        iVar17 = *(int *)(*(longlong *)(param_1 + 0x42) + 0xc + (longlong)(int)uVar9 * 0x18);\r\n        if (*(int *)(*(longlong *)(param_1 + 0x42) + 0x10 + (longlong)(int)uVar9 * 0x18) == 0) {\r\n          uVar15 = 999;\r\n          iVar17 = -1;\r\n        }\r\n        sprintf(local_c8,\"present_icon_%03d.png\",uVar15);\r\n        uVar7 = FUN_140552300(uVar5,local_c8);\r\n        uVar8 = FUN_1404aa500();\r\n        FUN_1404abb80(uVar8,*piVar16,DAT_140c2681c,uVar7);\r\n        uVar7 = FUN_1404aa500();\r\n        if (iVar17 == -1) {\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c26834,0);\r\n          uVar7 = FUN_1404aa500();\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c26838,0);\r\n          uVar7 = FUN_1404aa500();\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c2683c,0);\r\n          uVar7 = FUN_1404aa500();\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c26840,0);\r\n        }\r\n        else {\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c26834,1);\r\n          uVar7 = FUN_1404aa500();\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c26838,1);\r\n          uVar7 = FUN_1404aa500();\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c2683c,1);\r\n          uVar7 = FUN_1404aa500();\r\n          FUN_1404abd40(uVar7,*piVar16,DAT_140c26840,1);\r\n          puVar10 = &DAT_140c26838;\r\n          do {\r\n            uVar7 = FUN_1404aa500();\r\n            uVar7 = FUN_1404aa570(uVar7,*param_1,1);\r\n            uVar8 = FUN_1404aa500();\r\n            FUN_1404abb80(uVar8,*piVar16,*puVar10,uVar7);\r\n            puVar10 = puVar10 + 1;\r\n          } while ((longlong)puVar10 < 0x140c26844);\r\n          puVar10 = &DAT_140c26838;\r\n          do {\r\n            iVar1 = iVar17 / 10;\r\n            uVar7 = FUN_1404aa500();\r\n            uVar7 = FUN_1404aa570(uVar7,*param_1,iVar17 % 10 + 1);\r\n            uVar8 = FUN_1404aa500();\r\n            FUN_1404abb80(uVar8,*piVar16,*puVar10,uVar7);\r\n            puVar10 = puVar10 + 1;\r\n            iVar17 = iVar1;\r\n          } while (0 < iVar1);\r\n        }\r\n        iVar12 = iVar12 + 1;\r\n        piVar16 = piVar16 + 1;\r\n        local_d8[0] = local_d8[0] + -1;\r\n      } while (local_d8[0] != 0);\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x14041cae0",
+      "evidence_id": "ev_15297fcf5aa5a4ac4d2ec0713604ec71866d694b67ef6da9d428786a44ead54a",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\n/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */\r\n\r\nundefined8 FUN_14041cae0(longlong param_1)\r\n\r\n{\r\n  int iVar1;\r\n  undefined8 uVar2;\r\n  longlong lVar3;\r\n  int *piVar4;\r\n  undefined **ppuVar5;\r\n  int *piVar6;\r\n  undefined1 auStack_c8 [32];\r\n  char local_a8 [128];\r\n  ulonglong local_28;\r\n  \r\n  local_28 = DAT_140907f60 ^ (ulonglong)auStack_c8;\r\n  piVar6 = (int *)(param_1 + 8);\r\n  ppuVar5 = &PTR_s_flash_techou_techou_present__s_s_1408d00a8;\r\n  piVar4 = piVar6;\r\n  do {\r\n    if (*piVar4 == 1) {\r\n      sprintf(local_a8,*ppuVar5,(&PTR_s_OTHER_1408de238)[*(int *)(DAT_1409fed38 + 0xea4)]);\r\n      uVar2 = FUN_1404aa500();\r\n      iVar1 = FUN_1404aab80(uVar2,local_a8,9);\r\n      *piVar4 = 2;\r\n      piVar4[-2] = iVar1;\r\n    }\r\n    else if (*piVar4 == 2) {\r\n      uVar2 = FUN_1404aa500();\r\n      iVar1 = FUN_1404aa890(uVar2,piVar4[-2]);\r\n      if (iVar1 != 0) {\r\n        *piVar4 = 3;\r\n      }\r\n    }\r\n    ppuVar5 = ppuVar5 + 1;\r\n    piVar4 = piVar4 + 1;\r\n  } while ((longlong)ppuVar5 < 0x1408d00b8);\r\n  lVar3 = 0;\r\n  do {\r\n    if (*piVar6 != 3) {\r\n      return 0;\r\n    }\r\n    lVar3 = lVar3 + 1;\r\n    piVar6 = piVar6 + 1;\r\n  } while (lVar3 < 2);\r\n  return 1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x14041cbf0",
+      "evidence_id": "ev_3fbe0e7313ee4ffa75044bddd9ba24974277ce80c1c4cbc478ffb786da26965d",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_14041cbf0(undefined4 *param_1)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  longlong lVar2;\r\n  \r\n  uVar1 = FUN_1404aa500();\r\n  FUN_1404ab0c0(uVar1,*param_1,0xfffffffe);\r\n  uVar1 = FUN_1404aa500();\r\n  FUN_1404ab2a0(uVar1,*param_1,0x18a88);\r\n  uVar1 = FUN_1404aa500();\r\n  FUN_1404ab600(uVar1,*param_1,100);\r\n  uVar1 = FUN_1404aa500();\r\n  FUN_1404a9900(uVar1,*param_1,2);\r\n  param_1 = param_1 + 4;\r\n  lVar2 = 0x1b;\r\n  do {\r\n    uVar1 = FUN_1404aa500();\r\n    FUN_1404ab0c0(uVar1,*param_1,0xfffffffe);\r\n    uVar1 = FUN_1404aa500();\r\n    FUN_1404ab2a0(uVar1,*param_1,0x18a89);\r\n    uVar1 = FUN_1404aa500();\r\n    FUN_1404ab600(uVar1,*param_1,0x32);\r\n    param_1 = param_1 + 1;\r\n    lVar2 = lVar2 + -1;\r\n  } while (lVar2 != 0);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x14041c750",
+      "evidence_id": "ev_b8f70e0a1abcde934d887662394b867a7c9a136f524cd81d264a0348c1029fc9",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_14041c750(longlong param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  undefined4 uVar2;\r\n  int iVar3;\r\n  undefined8 uVar4;\r\n  int iVar5;\r\n  ulonglong uVar6;\r\n  ulonglong uVar7;\r\n  longlong local_18;\r\n  ulonglong local_10;\r\n  \r\n  uVar6 = 0;\r\n  iVar3 = 0;\r\n  FUN_14052d9b0(&local_18);\r\n  uVar7 = uVar6;\r\n  do {\r\n    if (local_10 == 0) break;\r\n    lVar1 = *(longlong *)(param_1 + 0x108);\r\n    *(undefined4 *)(uVar6 + 8 + lVar1) = 0;\r\n    *(undefined4 *)(uVar6 + 0xc + lVar1) = 0xffffffff;\r\n    *(undefined8 *)(uVar6 + lVar1) = 0;\r\n    *(undefined4 *)(uVar6 + 0x10 + lVar1) = 0;\r\n    uVar4 = FUN_14052da40(&local_18);\r\n    *(undefined8 *)(uVar6 + *(longlong *)(param_1 + 0x108)) = uVar4;\r\n    uVar4 = FUN_14052da40(&local_18);\r\n    uVar2 = FUN_140539bc0(uVar4);\r\n    *(undefined4 *)(*(longlong *)(param_1 + 0x108) + 0xc + uVar6) = uVar2;\r\n    uVar4 = FUN_14052da40(&local_18);\r\n    iVar3 = FUN_140539c50(uVar4);\r\n    *(uint *)(*(longlong *)(param_1 + 0x108) + 0x10 + uVar6) = (uint)(iVar3 == 0);\r\n    uVar4 = FUN_14052da40(&local_18);\r\n    uVar2 = FUN_140539c00(uVar4);\r\n    *(undefined4 *)(*(longlong *)(param_1 + 0x108) + 8 + uVar6) = uVar2;\r\n    if (*(int *)(*(longlong *)(param_1 + 0x108) + 0x10 + uVar6) == 0) {\r\n      *(undefined4 *)(*(longlong *)(param_1 + 0x108) + 8 + uVar6) = 0;\r\n    }\r\n    else {\r\n      uVar7 = (ulonglong)((int)uVar7 + 1);\r\n    }\r\n    iVar3 = (int)uVar7;\r\n    uVar6 = uVar6 + 0x18;\r\n    local_10 = *(uint *)(local_18 + 0x18) + local_10;\r\n  } while (local_10 <\r\n           (ulonglong)(*(uint *)(local_18 + 0x18) * *(int *)(local_18 + 0x10)) +\r\n           *(longlong *)(local_18 + 0x38));\r\n  iVar5 = (int)(((float)iVar3 / (float)*(int *)(param_1 + 0x110)) * 100.0);\r\n  *(int *)(param_1 + 0x104) = iVar5;\r\n  if (iVar5 == 0) {\r\n    if (0 < iVar3) {\r\n      *(undefined4 *)(param_1 + 0x104) = 1;\r\n      return;\r\n    }\r\n  }\r\n  else {\r\n    if (99 < iVar5) {\r\n      iVar5 = 100;\r\n    }\r\n    *(int *)(param_1 + 0x104) = iVar5;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x14041d660",
+      "evidence_id": "ev_51aff1cddd6def7f8134cced39702f0eef6ffff473394199222af578c8dab124",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_14041d660(longlong param_1)\r\n\r\n{\r\n  int *piVar1;\r\n  float fVar2;\r\n  int iVar3;\r\n  undefined8 uVar4;\r\n  undefined8 uVar5;\r\n  longlong lVar6;\r\n  float fVar7;\r\n  undefined1 local_48 [64];\r\n  \r\n  uVar4 = FUN_1403c19d0();\r\n  iVar3 = FUN_1403c6750(uVar4);\r\n  if (iVar3 == 0) {\r\n    iVar3 = FUN_1403c66f0(uVar4);\r\n    if (iVar3 != 0) {\r\n      fVar7 = *(float *)(param_1 + 0xf8);\r\n      fVar2 = *(float *)(param_1 + 0xf4);\r\n      uVar4 = FUN_1404aa500();\r\n      FUN_1404aa850(uVar4,*(undefined4 *)(param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4)\r\n                    ,DAT_140c26770,1);\r\n      FUN_14041dfd0(param_1);\r\n      uVar4 = FUN_140540610();\r\n      FUN_140543660(uVar4,\"V3_SE_005\",0x3f800000);\r\n      fVar7 = *(float *)(param_1 + 0xf4) + 1.0;\r\n      *(float *)(param_1 + 0xf4) = fVar7;\r\n      if (9.0 <= fVar7) {\r\n        *(undefined4 *)(param_1 + 0xf4) = 0;\r\n        if (*(float *)(param_1 + 0xf8) < 2.0) {\r\n          *(float *)(param_1 + 0xf8) = *(float *)(param_1 + 0xf8) + 1.0;\r\n        }\r\n        else {\r\n          *(int *)(param_1 + 0xfc) = *(int *)(param_1 + 0xfc) + 1;\r\n          if (*(int *)(param_1 + 0x100) <= *(int *)(param_1 + 0xfc)) {\r\n            *(undefined8 *)(param_1 + 0xf8) = 0;\r\n          }\r\n        }\r\n      }\r\n      if (*(int *)(param_1 + 0x110) <=\r\n          (int)(((float)*(int *)(param_1 + 0xfc) + *(float *)(param_1 + 0xf8)) * 9.0 +\r\n               *(float *)(param_1 + 0xf4))) {\r\n        *(undefined8 *)(param_1 + 0xf4) = 0;\r\n        *(undefined4 *)(param_1 + 0xfc) = 0;\r\n      }\r\n      fVar7 = *(float *)(param_1 + 0xf8) * 9.0 + *(float *)(param_1 + 0xf4);\r\n      goto LAB_14041da5b;\r\n    }\r\n    iVar3 = FUN_1403c3c80(uVar4);\r\n    if (iVar3 != 0) {\r\n      FUN_14041dfd0(param_1);\r\n      uVar4 = FUN_140540610();\r\n      FUN_140543660(uVar4,\"V3_SE_004\",0x3f800000);\r\n      FUN_14041c9b0(param_1,2);\r\n      *(undefined4 *)(param_1 + 0xf0) = 9;\r\n      return;\r\n    }\r\n    iVar3 = FUN_1403c7fc0(uVar4,0);\r\n    if ((iVar3 == 0) ||\r\n       (((9.0 <= *(float *)(param_1 + 0xf4) + 1.0 ||\r\n         (*(int *)(param_1 + 0x110) <=\r\n          (int)(((float)*(int *)(param_1 + 0xfc) + *(float *)(param_1 + 0xf8)) * 9.0 +\r\n               *(float *)(param_1 + 0xf4)) + 1)) && (iVar3 = FUN_1403c7ca0(uVar4,0), iVar3 == 0))))\r\n    {\r\n      iVar3 = FUN_1403c7ed0(uVar4,0);\r\n      if ((iVar3 == 0) ||\r\n         ((*(float *)(param_1 + 0xf4) <= 0.0 && (iVar3 = FUN_1403c7bb0(uVar4,0), iVar3 == 0)))) {\r\n        iVar3 = FUN_1403c8060(uVar4,1);\r\n        if ((iVar3 == 0) ||\r\n           (((*(float *)(param_1 + 0xf8) <= 0.0 && (*(int *)(param_1 + 0xfc) < 1)) &&\r\n            (iVar3 = FUN_1403c7d40(uVar4,1), iVar3 == 0)))) {\r\n          iVar3 = FUN_1403c7de0(uVar4,1);\r\n          if ((iVar3 == 0) ||\r\n             (((3.0 <= *(float *)(param_1 + 0xf8) + 1.0 &&\r\n               (*(int *)(param_1 + 0x100) <= *(int *)(param_1 + 0xfc) + 1)) &&\r\n              (iVar3 = FUN_1403c7ac0(uVar4,1), iVar3 == 0)))) {\r\n            iVar3 = FUN_1403c70f0(uVar4,1);\r\n            if (iVar3 == 0) {\r\n              return;\r\n            }\r\n            if (*(int *)(param_1 + 0x114) != 1) {\r\n              return;\r\n            }\r\n            lVar6 = (longlong)\r\n                    (int)(((float)*(int *)(param_1 + 0xfc) + *(float *)(param_1 + 0xf8)) * 9.0 +\r\n                         *(float *)(param_1 + 0xf4));\r\n            if ((0 < *(int *)(*(longlong *)(param_1 + 0x108) + 0xc + lVar6 * 0x18)) &&\r\n               (*(int *)(*(longlong *)(param_1 + 0x108) + 0x10 + lVar6 * 0x18) != 0)) {\r\n              uVar4 = FUN_140540610();\r\n              FUN_140543660(uVar4,\"V3_SE_001\",0x3f800000);\r\n              uVar4 = FUN_14052d960(local_48,*(undefined8 *)\r\n                                              (*(longlong *)(param_1 + 0x108) +\r\n                                              (longlong)\r\n                                              (int)(((float)*(int *)(param_1 + 0xfc) +\r\n                                                    *(float *)(param_1 + 0xf8)) * 9.0 +\r\n                                                   *(float *)(param_1 + 0xf4)) * 0x18));\r\n              iVar3 = FUN_14052daf0(uVar4);\r\n              if (iVar3 == 0) {\r\n                uVar4 = FUN_140527960(DAT_140d1fc90,0xf,5);\r\n                uVar5 = FUN_1403b9130();\r\n              }\r\n              else {\r\n                uVar4 = FUN_140527960(DAT_140d1fc90,0xf,4);\r\n                uVar5 = FUN_1403b9130();\r\n              }\r\n              FUN_1403b9700(uVar5,1,iVar3 != 0,uVar4,0xffffffff,1);\r\n              *(undefined4 *)(param_1 + 0xf0) = 8;\r\n              return;\r\n            }\r\n            uVar4 = FUN_140540610();\r\n            FUN_140543660(uVar4,\"V3_SE_000\",0x3f800000);\r\n            return;\r\n          }\r\n          fVar7 = *(float *)(param_1 + 0xf8);\r\n          fVar2 = *(float *)(param_1 + 0xf4);\r\n          uVar4 = FUN_1404aa500();\r\n          FUN_1404aa850(uVar4,*(undefined4 *)\r\n                               (param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4),\r\n                        DAT_140c26770,1);\r\n          FUN_14041dfd0(param_1);\r\n          uVar4 = FUN_140540610();\r\n          FUN_140543660(uVar4,\"V3_SE_005\",0x3f800000);\r\n          if (2.0 <= *(float *)(param_1 + 0xf8)) {\r\n            *(int *)(param_1 + 0xfc) = *(int *)(param_1 + 0xfc) + 1;\r\n            if (*(int *)(param_1 + 0x100) <= *(int *)(param_1 + 0xfc)) {\r\n              *(undefined8 *)(param_1 + 0xf8) = 0;\r\n            }\r\n            goto LAB_14041dd02;\r\n          }\r\n          fVar7 = *(float *)(param_1 + 0xf8) + 1.0;\r\n        }\r\n        else {\r\n          fVar7 = *(float *)(param_1 + 0xf8);\r\n          fVar2 = *(float *)(param_1 + 0xf4);\r\n          uVar4 = FUN_1404aa500();\r\n          FUN_1404aa850(uVar4,*(undefined4 *)\r\n                               (param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4),\r\n                        DAT_140c26770,1);\r\n          FUN_14041dfd0(param_1);\r\n          uVar4 = FUN_140540610();\r\n          FUN_140543660(uVar4,\"V3_SE_005\",0x3f800000);\r\n          if (*(float *)(param_1 + 0xf8) <= 0.0) {\r\n            piVar1 = (int *)(param_1 + 0xfc);\r\n            *piVar1 = *piVar1 + -1;\r\n            if (*piVar1 < 0) {\r\n              *(undefined4 *)(param_1 + 0xf8) = 0x40000000;\r\n              *(int *)(param_1 + 0xfc) = *(int *)(param_1 + 0x100) + -1;\r\n            }\r\n            goto LAB_14041dd02;\r\n          }\r\n          fVar7 = *(float *)(param_1 + 0xf8) - 1.0;\r\n        }\r\n        *(float *)(param_1 + 0xf8) = fVar7;\r\n      }\r\n      else {\r\n        fVar7 = *(float *)(param_1 + 0xf8);\r\n        fVar2 = *(float *)(param_1 + 0xf4);\r\n        uVar4 = FUN_1404aa500();\r\n        FUN_1404aa850(uVar4,*(undefined4 *)\r\n                             (param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4),\r\n                      DAT_140c26770,1);\r\n        FUN_14041dfd0(param_1);\r\n        uVar4 = FUN_140540610();\r\n        FUN_140543660(uVar4,\"V3_SE_005\",0x3f800000);\r\n        fVar7 = *(float *)(param_1 + 0xf4) - 1.0;\r\n        *(float *)(param_1 + 0xf4) = fVar7;\r\n        if (fVar7 < 0.0) {\r\n          *(undefined4 *)(param_1 + 0xf4) = 0x41000000;\r\n        }\r\n      }\r\nLAB_14041dd02:\r\n      fVar7 = *(float *)(param_1 + 0xf8);\r\n      if (*(int *)(param_1 + 0x110) <=\r\n          (int)(((float)*(int *)(param_1 + 0xfc) + fVar7) * 9.0 + *(float *)(param_1 + 0xf4))) {\r\n        *(float *)(param_1 + 0xf4) = (float)(*(int *)(param_1 + 0x110) % 9 + -1);\r\n      }\r\n      fVar2 = *(float *)(param_1 + 0xf4);\r\n      uVar4 = FUN_1404aa500();\r\n      FUN_1404aa850(uVar4,*(undefined4 *)(param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4)\r\n                    ,DAT_140c2676c,1);\r\n      return;\r\n    }\r\n    fVar7 = *(float *)(param_1 + 0xf8);\r\n    fVar2 = *(float *)(param_1 + 0xf4);\r\n    uVar4 = FUN_1404aa500();\r\n    FUN_1404aa850(uVar4,*(undefined4 *)(param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4),\r\n                  DAT_140c26770,1);\r\n    FUN_14041dfd0(param_1);\r\n    uVar4 = FUN_140540610();\r\n    FUN_140543660(uVar4,\"V3_SE_005\",0x3f800000);\r\n    fVar7 = *(float *)(param_1 + 0xf4) + 1.0;\r\n    *(float *)(param_1 + 0xf4) = fVar7;\r\n    if (9.0 <= fVar7) {\r\n      *(undefined4 *)(param_1 + 0xf4) = 0;\r\n    }\r\n    fVar7 = *(float *)(param_1 + 0xf8);\r\n    if (*(int *)(param_1 + 0x110) <=\r\n        (int)(((float)*(int *)(param_1 + 0xfc) + fVar7) * 9.0 + *(float *)(param_1 + 0xf4))) {\r\n      *(undefined4 *)(param_1 + 0xf4) = 0;\r\n    }\r\n  }\r\n  else {\r\n    fVar7 = *(float *)(param_1 + 0xf8);\r\n    fVar2 = *(float *)(param_1 + 0xf4);\r\n    uVar4 = FUN_1404aa500();\r\n    FUN_1404aa850(uVar4,*(undefined4 *)(param_1 + 0x10 + (longlong)(int)(fVar7 * 9.0 + fVar2) * 4),\r\n                  DAT_140c26770,1);\r\n    FUN_14041dfd0(param_1);\r\n    uVar4 = FUN_140540610();\r\n    FUN_140543660(uVar4,\"V3_SE_005\",0x3f800000);\r\n    fVar7 = *(float *)(param_1 + 0xf4) - 1.0;\r\n    *(float *)(param_1 + 0xf4) = fVar7;\r\n    if (fVar7 < 0.0) {\r\n      *(undefined4 *)(param_1 + 0xf4) = 0x41000000;\r\n      if (0.0 < *(float *)(param_1 + 0xf8)) {\r\n        *(float *)(param_1 + 0xf8) = *(float *)(param_1 + 0xf8) - 1.0;\r\n      }\r\n      else {\r\n        piVar1 = (int *)(param_1 + 0xfc);\r\n        *piVar1 = *piVar1 + -1;\r\n        if (*piVar1 < 0) {\r\n          *(undefined4 *)(param_1 + 0xf8) = 0x40000000;\r\n          *(int *)(param_1 + 0xfc) = *(int *)(param_1 + 0x100) + -1;\r\n        }\r\n      }\r\n    }\r\n    fVar7 = *(float *)(param_1 + 0xf8);\r\n    if (*(int *)(param_1 + 0x110) <=\r\n        (int)(((float)*(int *)(param_1 + 0xfc) + fVar7) * 9.0 + *(float *)(param_1 + 0xf4))) {\r\n      *(float *)(param_1 + 0xf4) = (float)(*(int *)(param_1 + 0x110) % 9 + -1);\r\n    }\r\n  }\r\n  fVar7 = fVar7 * 9.0 + *(float *)(param_1 + 0xf4);\r\nLAB_14041da5b:\r\n  uVar4 = FUN_1404aa500();\r\n  FUN_1404aa850(uVar4,*(undefined4 *)(param_1 + 0x10 + (longlong)(int)fVar7 * 4),DAT_140c2676c,1);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x14041e180",
+      "evidence_id": "ev_b34117f298ec9d2f34a6217c4b008ad3979d88ab45e5c6b350d288a8df344724",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_14041e180(int *param_1)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  undefined4 uVar2;\r\n  int *piVar3;\r\n  longlong lVar4;\r\n  undefined1 local_18 [16];\r\n  \r\n  if ((-1 < *param_1) && (5 < param_1[0x3c])) {\r\n    uVar1 = FUN_140539cd0();\r\n    FUN_14052dbf0(local_18,uVar1);\r\n    piVar3 = param_1 + 4;\r\n    lVar4 = 0x1b;\r\n    do {\r\n      uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n      FUN_14041ccc0(param_1,*piVar3,DAT_140c26824,uVar2);\r\n      uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n      FUN_14041ccc0(param_1,*piVar3,DAT_140c26828,uVar2);\r\n      piVar3 = piVar3 + 1;\r\n      lVar4 = lVar4 + -1;\r\n    } while (lVar4 != 0);\r\n    uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n    FUN_14041ccc0(param_1,*param_1,DAT_140c267ec,uVar2);\r\n    uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n    FUN_14041ccc0(param_1,*param_1,DAT_140c267f4,uVar2);\r\n    uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n    FUN_14041ccc0(param_1,*param_1,DAT_140c26810,uVar2);\r\n    uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n    FUN_14041ccc0(param_1,*param_1,DAT_140c26814,uVar2);\r\n    uVar2 = FUN_14052dcd0(local_18,\"present\");\r\n    FUN_14041ccc0(param_1,*param_1,DAT_140c26818,uVar2);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404b8620",
+      "evidence_id": "ev_4605bfa7e72c69c901b8d64f826448f118a5d38d7e6a866917233a461333251b",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\n/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */\r\n\r\nint FUN_1404b8620(longlong param_1,undefined4 param_2,undefined8 *param_3,int param_4)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined4 uVar2;\r\n  undefined4 uVar3;\r\n  undefined4 uVar4;\r\n  undefined8 uVar5;\r\n  undefined8 uVar6;\r\n  undefined8 uVar7;\r\n  undefined8 uVar8;\r\n  longlong lVar9;\r\n  undefined8 *puVar10;\r\n  undefined1 auStack_168 [32];\r\n  undefined4 local_148;\r\n  int local_144;\r\n  undefined8 local_140 [32];\r\n  undefined4 local_40;\r\n  ulonglong local_38;\r\n  \r\n  local_38 = DAT_140907f60 ^ (ulonglong)auStack_168;\r\n  if (param_4 == -1) {\r\n    uVar8 = FUN_1404aa500();\r\n    param_4 = FUN_1404aa4c0(uVar8);\r\n  }\r\n  FUN_1406b0e30(&local_148,0,0x10c);\r\n  local_40 = 0x12345678;\r\n  if (param_3 != (undefined8 *)0x0) {\r\n    lVar9 = 2;\r\n    puVar10 = local_140;\r\n    do {\r\n      uVar8 = param_3[1];\r\n      uVar5 = param_3[2];\r\n      uVar6 = param_3[3];\r\n      *puVar10 = *param_3;\r\n      puVar10[1] = uVar8;\r\n      uVar8 = param_3[4];\r\n      uVar7 = param_3[5];\r\n      puVar10[2] = uVar5;\r\n      puVar10[3] = uVar6;\r\n      uVar5 = param_3[6];\r\n      uVar6 = param_3[7];\r\n      puVar10[4] = uVar8;\r\n      puVar10[5] = uVar7;\r\n      uVar8 = param_3[8];\r\n      uVar7 = param_3[9];\r\n      puVar10[6] = uVar5;\r\n      puVar10[7] = uVar6;\r\n      uVar5 = param_3[10];\r\n      uVar6 = param_3[0xb];\r\n      puVar10[8] = uVar8;\r\n      puVar10[9] = uVar7;\r\n      uVar1 = *(undefined4 *)(param_3 + 0xc);\r\n      uVar2 = *(undefined4 *)((longlong)param_3 + 100);\r\n      uVar3 = *(undefined4 *)(param_3 + 0xd);\r\n      uVar4 = *(undefined4 *)((longlong)param_3 + 0x6c);\r\n      puVar10[10] = uVar5;\r\n      puVar10[0xb] = uVar6;\r\n      uVar8 = param_3[0xe];\r\n      uVar5 = param_3[0xf];\r\n      *(undefined4 *)(puVar10 + 0xc) = uVar1;\r\n      *(undefined4 *)((longlong)puVar10 + 100) = uVar2;\r\n      *(undefined4 *)(puVar10 + 0xd) = uVar3;\r\n      *(undefined4 *)((longlong)puVar10 + 0x6c) = uVar4;\r\n      puVar10[0xe] = uVar8;\r\n      puVar10[0xf] = uVar5;\r\n      lVar9 = lVar9 + -1;\r\n      puVar10 = puVar10 + 0x10;\r\n      param_3 = param_3 + 0x10;\r\n    } while (lVar9 != 0);\r\n  }\r\n  local_148 = param_2;\r\n  local_144 = param_4;\r\n  FUN_140495170(FUN_1404bc2d0,&local_148,0x10c);\r\n  *(int *)(param_1 + 8) = param_4;\r\n  return param_4;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404bc2d0",
+      "evidence_id": "ev_4605bfa7e72c69c901b8d64f826448f118a5d38d7e6a866917233a461333251b",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404bc2d0(undefined4 *param_1)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  char *pcVar2;\r\n  \r\n  if (param_1[0x42] == 0x12345678) {\r\n    pcVar2 = (char *)0x0;\r\n    if (*(char *)(param_1 + 2) != '\\0') {\r\n      pcVar2 = (char *)(param_1 + 2);\r\n    }\r\n    uVar1 = FUN_1404aa500();\r\n    FUN_1404a9b50(uVar1,*param_1,pcVar2,param_1[1]);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404b9820",
+      "evidence_id": "ev_4605bfa7e72c69c901b8d64f826448f118a5d38d7e6a866917233a461333251b",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404b9820(undefined8 param_1,undefined4 *param_2)\r\n\r\n{\r\n  if (param_2 != (undefined4 *)0x0) {\r\n    FUN_1404b9760(param_1,*param_2,param_2[1]);\r\n    return;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a9440",
+      "evidence_id": "ev_46df2829d456d94bafb72a6e0d5e6bc9f8133b101eea9fc36821f4703f4dd72f",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nundefined8 * FUN_1404a9440(undefined8 *param_1)\r\n\r\n{\r\n  FUN_1404af850();\r\n  *(uint *)(param_1 + 0x25) = *(uint *)(param_1 + 0x25) | 1;\r\n  *param_1 = &PTR_FUN_140774900;\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a9730",
+      "evidence_id": "ev_5063048db70257b2df2c49210080ac70d7a4bab2f2d6261f285300eaeb94a162",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nint FUN_1404a9730(longlong param_1,int param_2,undefined8 param_3,int param_4)\r\n\r\n{\r\n  longlong *plVar1;\r\n  undefined8 uVar2;\r\n  longlong lVar3;\r\n  undefined8 uVar4;\r\n  \r\n  uVar4 = 0xfffffffffffffffe;\r\n  if (((param_2 != -1) &&\r\n      (lVar3 = *(longlong *)(param_1 + 0x28 + (longlong)param_2 * 8), lVar3 != 0)) &&\r\n     (*(longlong *)(lVar3 + 0x110) != 0)) {\r\n    if (param_4 != -1) {\r\nLAB_1404a97af:\r\n      param_1 = param_1 + (longlong)param_4 * 8;\r\n      lVar3 = *(longlong *)(param_1 + 0x28);\r\n      if (lVar3 == 0) {\r\n        lVar3 = FUN_1405d4de0(0x158);\r\n        if (lVar3 == 0) {\r\n          lVar3 = 0;\r\n        }\r\n        else {\r\n          FUN_1406b0e30(lVar3,0,0x158);\r\n          *(undefined4 *)(lVar3 + 0x10c) = 0xffffffff;\r\n          *(undefined4 *)(lVar3 + 0x154) = 0xb;\r\n        }\r\n        *(longlong *)(param_1 + 0x28) = lVar3;\r\n      }\r\n      if (*(longlong *)(lVar3 + 0x128) == 0) {\r\n        lVar3 = FUN_1405d4de0(0x30);\r\n        uVar2 = 0;\r\n        if (lVar3 != 0) {\r\n          uVar2 = FUN_1404b85e0(lVar3);\r\n        }\r\n        *(undefined8 *)(*(longlong *)(param_1 + 0x28) + 0x128) = uVar2;\r\n      }\r\n      FUN_1404b8620(*(undefined8 *)(*(longlong *)(param_1 + 0x28) + 0x128),param_2,param_3,param_4,\r\n                    uVar4);\r\n      *(undefined4 *)(*(longlong *)(param_1 + 0x28) + 0x100) = 1;\r\n      *(undefined4 *)(*(longlong *)(param_1 + 0x28) + 0x104) = 0;\r\n      return param_4;\r\n    }\r\n    param_4 = 0;\r\n    lVar3 = 0;\r\n    plVar1 = (longlong *)(param_1 + 0x28);\r\n    do {\r\n      if (*plVar1 == 0) {\r\n        if (param_4 == -1) {\r\n          return -1;\r\n        }\r\n        goto LAB_1404a97af;\r\n      }\r\n      param_4 = param_4 + 1;\r\n      lVar3 = lVar3 + 1;\r\n      plVar1 = plVar1 + 1;\r\n    } while (lVar3 < 400);\r\n  }\r\n  return -1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404adc90",
+      "evidence_id": "ev_5063048db70257b2df2c49210080ac70d7a4bab2f2d6261f285300eaeb94a162",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404adc90(longlong param_1,float *param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  float fVar2;\r\n  float fVar3;\r\n  \r\n  lVar1 = *(longlong *)(param_1 + 0x10);\r\n  param_2[0] = 0.0;\r\n  param_2[1] = 0.0;\r\n  if (lVar1 != 0) {\r\n    fVar2 = 0.0;\r\n    do {\r\n      fVar3 = *(float *)(lVar1 + 0xb8) + *param_2;\r\n      *param_2 = fVar3;\r\n      fVar2 = fVar2 + *(float *)(lVar1 + 0xbc);\r\n      param_2[1] = fVar2;\r\n      if ((*(byte *)(lVar1 + 0x20) & 2) != 0) {\r\n        *param_2 = *(float *)(lVar1 + 0x30) + fVar3;\r\n        fVar2 = fVar2 + *(float *)(lVar1 + 0x34);\r\n        param_2[1] = fVar2;\r\n      }\r\n      lVar1 = *(longlong *)(lVar1 + 0x10);\r\n    } while (lVar1 != 0);\r\n  }\r\n  fVar2 = *(float *)(param_1 + 0xb8) + *param_2;\r\n  *param_2 = fVar2;\r\n  fVar3 = *(float *)(param_1 + 0xbc) + param_2[1];\r\n  param_2[1] = fVar3;\r\n  if ((*(byte *)(param_1 + 0x20) & 2) != 0) {\r\n    *param_2 = *(float *)(param_1 + 0x30) + fVar2;\r\n    param_2[1] = *(float *)(param_1 + 0x34) + fVar3;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404ab240",
+      "evidence_id": "ev_5063048db70257b2df2c49210080ac70d7a4bab2f2d6261f285300eaeb94a162",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404ab240(longlong param_1,uint param_2,undefined8 param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  \r\n  if (((param_2 < 400) &&\r\n      (lVar1 = *(longlong *)(param_1 + 0x28 + (longlong)(int)param_2 * 8), lVar1 != 0)) &&\r\n     (lVar1 = *(longlong *)(lVar1 + 0x128), lVar1 != 0)) {\r\n    FUN_1404b9820(lVar1,param_3);\r\n    return;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a89b0",
+      "evidence_id": "ev_6451ad6d35c652a3673813389c9c6d3daab027848336eaf7a64772375be21fac",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nundefined8 * FUN_1404a89b0(undefined8 *param_1)\r\n\r\n{\r\n  *param_1 = &PTR_FUN_1407748a8;\r\n  param_1[2] = 0;\r\n  *(undefined4 *)(param_1 + 3) = 0;\r\n  FUN_1404a7cb0();\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a84c0",
+      "evidence_id": "ev_aeb426ce0f01dcbeb30a18f8b6763dd1171e5ab17514abd2e5e98e8c7532adf1",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a84c0(longlong param_1,longlong param_2,undefined8 param_3,undefined8 param_4)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  longlong lVar2;\r\n  undefined8 uVar3;\r\n  \r\n  lVar2 = *(longlong *)(param_1 + 0x20);\r\n  if (lVar2 == 0) {\r\n    lVar2 = FUN_1405d4de0(0x150);\r\n    uVar3 = 0;\r\n    if (lVar2 != 0) {\r\n      uVar3 = FUN_1404b67a0(*(undefined8 *)(param_2 + 0x50),0);\r\n      uVar3 = FUN_1404a9440(lVar2,param_1,uVar3);\r\n    }\r\n  }\r\n  else {\r\n    uVar1 = FUN_1404b67a0(*(undefined8 *)(param_2 + 0x50),0,param_3,param_4,0xfffffffffffffffe);\r\n    lVar2 = FUN_14067abc0(0x150,lVar2);\r\n    uVar3 = 0;\r\n    if (lVar2 != 0) {\r\n      uVar3 = FUN_1404a9440(lVar2,param_1,uVar1);\r\n    }\r\n  }\r\n  *(undefined8 *)(param_1 + 0x48) = uVar3;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a8750",
+      "evidence_id": "ev_b25c7d2f67c4ec98fcb9477fb11f324f6a2b724e6eaeeb1b6d00f176386dd428",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a8750(longlong param_1,longlong param_2,undefined8 param_3,undefined8 param_4)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  longlong lVar2;\r\n  undefined8 uVar3;\r\n  undefined8 uVar4;\r\n  \r\n  uVar4 = 0xfffffffffffffffe;\r\n  if (*(longlong *)(param_1 + 0x20) == 0) {\r\n    lVar2 = FUN_1405d4de0(0x18);\r\n    uVar3 = 0;\r\n    if (lVar2 != 0) {\r\n      uVar3 = FUN_1404b5290(lVar2,param_1,\r\n                            *(undefined4 *)(*(longlong *)(*(longlong *)(param_2 + 0x40) + 8) + 8));\r\n    }\r\n  }\r\n  else {\r\n    uVar1 = *(undefined4 *)(*(longlong *)(*(longlong *)(param_2 + 0x40) + 8) + 8);\r\n    lVar2 = FUN_14067abc0();\r\n    uVar3 = 0;\r\n    if (lVar2 != 0) {\r\n      uVar3 = FUN_1404b5290(lVar2,param_1,uVar1,param_4,uVar4);\r\n    }\r\n  }\r\n  *(undefined8 *)(param_1 + 0x60) = uVar3;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a9b50",
+      "evidence_id": "ev_b3a24d71479a178917f6a732fe12d6232eba468aae2c6d0565f1e7ab9eb1d0fd",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nint FUN_1404a9b50(longlong param_1,int param_2,undefined8 param_3,int param_4)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong *plVar2;\r\n  ulonglong uVar3;\r\n  longlong lVar4;\r\n  ulonglong uVar5;\r\n  ulonglong uVar6;\r\n  undefined8 uVar7;\r\n  \r\n  uVar7 = 0xfffffffffffffffe;\r\n  if (((param_2 != -1) &&\r\n      (lVar1 = *(longlong *)(param_1 + 0x28 + (longlong)param_2 * 8), lVar1 != 0)) &&\r\n     (*(longlong *)(lVar1 + 0x110) != 0)) {\r\n    uVar5 = 0;\r\n    if (param_4 == -1) {\r\n      plVar2 = (longlong *)(param_1 + 0x28);\r\n      uVar6 = uVar5;\r\n      uVar3 = uVar5;\r\n      do {\r\n        param_4 = (int)uVar3;\r\n        if (*plVar2 == 0) {\r\n          if (param_4 == -1) {\r\n            return -1;\r\n          }\r\n          goto LAB_1404a9bd0;\r\n        }\r\n        uVar3 = (ulonglong)(param_4 + 1);\r\n        uVar6 = uVar6 + 1;\r\n        plVar2 = plVar2 + 1;\r\n      } while ((longlong)uVar6 < 400);\r\n    }\r\n    else {\r\nLAB_1404a9bd0:\r\n      uVar6 = *(ulonglong *)(param_1 + 0x28 + (longlong)param_4 * 8);\r\n      if (uVar6 == 0) {\r\n        uVar3 = FUN_1405d4de0(0x158);\r\n        uVar6 = uVar5;\r\n        if (uVar3 != 0) {\r\n          FUN_1406b0e30(uVar3,0,0x158);\r\n          *(undefined4 *)(uVar3 + 0x10c) = 0xffffffff;\r\n          *(undefined4 *)(uVar3 + 0x154) = 0xb;\r\n          uVar6 = uVar3;\r\n        }\r\n        *(ulonglong *)(param_1 + 0x28 + (longlong)param_4 * 8) = uVar6;\r\n        if (uVar6 == 0) {\r\n          return -1;\r\n        }\r\n      }\r\n      lVar4 = FUN_1405d4de0(0x260);\r\n      uVar3 = uVar5;\r\n      if (lVar4 != 0) {\r\n        uVar3 = FUN_1404a6800(lVar4,0,*(undefined8 *)(*(longlong *)(lVar1 + 0x110) + 0x28),\r\n                              *(undefined8 *)(*(longlong *)(lVar1 + 0x110) + 0x228),param_4,param_3,\r\n                              uVar7,lVar4);\r\n      }\r\n      *(ulonglong *)(uVar6 + 0x110) = uVar3;\r\n      if (uVar3 != 0) {\r\n        *(code **)(uVar3 + 0x158) = FUN_1404abee0;\r\n        *(undefined8 *)(uVar3 + 0x160) = 0;\r\n        FUN_1404a8170(*(undefined8 *)(uVar6 + 0x110),0);\r\n        *(undefined4 *)(uVar6 + 0x150) = 0;\r\n        FUN_1404a8200(*(undefined8 *)(uVar6 + 0x110));\r\n        lVar4 = FUN_1405d4de0(0x10);\r\n        uVar3 = uVar5;\r\n        if (lVar4 != 0) {\r\n          uVar3 = FUN_1404bd2e0(lVar4,0);\r\n        }\r\n        *(ulonglong *)(uVar6 + 0x120) = uVar3;\r\n        if (*(longlong *)(lVar1 + 0x130) != 0) {\r\n          lVar4 = FUN_1405d4de0(0x110);\r\n          if (lVar4 != 0) {\r\n            uVar5 = FUN_1404a5350(lVar4,*(undefined8 *)(uVar6 + 0x110));\r\n          }\r\n          *(ulonglong *)(uVar6 + 0x130) = uVar5;\r\n          if (uVar5 == 0) {\r\n            return 0;\r\n          }\r\n          FUN_1404a59e0(uVar5,*(undefined8 *)(*(longlong *)(lVar1 + 0x130) + 0x108));\r\n        }\r\n        *(int *)(uVar6 + 0x10c) = param_2;\r\n        *(undefined4 *)(uVar6 + 0x104) = 1;\r\n        *(int *)(param_1 + 0xca8) = *(int *)(param_1 + 0xca8) + 1;\r\n        return param_4;\r\n      }\r\n    }\r\n  }\r\n  return -1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404b9760",
+      "evidence_id": "ev_b3a24d71479a178917f6a732fe12d6232eba468aae2c6d0565f1e7ab9eb1d0fd",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\n/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */\r\n\r\nvoid FUN_1404b9760(longlong *param_1,undefined4 param_2,undefined4 param_3)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  longlong lVar2;\r\n  undefined1 auStack_78 [32];\r\n  longlong local_58 [3];\r\n  undefined4 local_40;\r\n  undefined4 uStack_3c;\r\n  undefined8 local_38;\r\n  ulonglong local_30;\r\n  \r\n  local_30 = DAT_140907f60 ^ (ulonglong)auStack_78;\r\n  local_58[0] = *param_1;\r\n  if (local_58[0] == 0) {\r\n    if ((int)param_1[1] != -1) {\r\n      uVar1 = FUN_1404aa500();\r\n      lVar2 = FUN_1404aa3f0(uVar1,(int)param_1[1]);\r\n      *param_1 = lVar2;\r\n    }\r\n    local_58[0] = *param_1;\r\n    if (local_58[0] == 0) {\r\n      return;\r\n    }\r\n  }\r\n  _local_40 = CONCAT44(param_3,param_2);\r\n  local_58[1] = 0;\r\n  local_58[2] = 0;\r\n  local_38 = 0x12345678;\r\n  FUN_140495170(FUN_1404bca70,local_58,0x28);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a7cb0",
+      "evidence_id": "ev_c460fd7aaa53a89099deab5ac76bb1b3e5e97db217686714c5efd3bbbb4b3a87",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a7cb0(longlong param_1)\r\n\r\n{\r\n  FUN_1406b0e30(param_1,0,0xf0);\r\n  *(undefined8 *)(param_1 + 0x30) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0x38) = 0;\r\n  *(undefined8 *)(param_1 + 0x40) = 0x3f80000000000000;\r\n  *(undefined8 *)(param_1 + 0x48) = 0;\r\n  *(undefined8 *)(param_1 + 0x50) = 0;\r\n  *(undefined8 *)(param_1 + 0x58) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0x60) = 0;\r\n  *(undefined8 *)(param_1 + 0x68) = 0x3f80000000000000;\r\n  *(undefined4 *)(param_1 + 0x20) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0x24) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0x28) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0x2c) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0x80) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0x88) = 0;\r\n  *(undefined8 *)(param_1 + 0x90) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0x98) = 0;\r\n  *(undefined4 *)(param_1 + 0xa0) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0xa4) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0xb4) = 0;\r\n  *(undefined4 *)(param_1 + 0xa8) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0xac) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 0xbc) = 0;\r\n  *(undefined4 *)(param_1 + 0xb0) = 0x3f800000;\r\n  *(undefined8 *)(param_1 + 200) = 0;\r\n  *(undefined4 *)(param_1 + 0xd0) = 0;\r\n  *(undefined4 *)(param_1 + 0xd4) = 0x3f000000;\r\n  *(undefined4 *)(param_1 + 0xd8) = 0xffffffff;\r\n  *(undefined4 *)(param_1 + 0xdc) = 0;\r\n  *(undefined1 *)(param_1 + 0xe0) = 0;\r\n  *(undefined8 *)(param_1 + 0xe8) = 0;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a7dd0",
+      "evidence_id": "ev_c9728af897698f72ace81b0e099b0279a33408d02c838643be0a35cdc53b0908",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a7dd0(longlong param_1,undefined8 param_2,longlong param_3)\r\n\r\n{\r\n  int iVar1;\r\n  longlong lVar2;\r\n  undefined8 uVar3;\r\n  ulonglong uVar4;\r\n  ulonglong uVar5;\r\n  \r\n  FUN_1404a87e0();\r\n  FUN_1404a8570(param_1,param_2);\r\n  FUN_1404a8750(param_1,param_2);\r\n  FUN_1404a8660(param_1,param_2);\r\n  FUN_1404a84c0(param_1,param_2);\r\n  if (*(longlong *)(param_1 + 0x20) == 0) {\r\n    lVar2 = FUN_1405d4de0(0x28);\r\n    uVar3 = 0;\r\n    if (lVar2 != 0) {\r\n      uVar3 = FUN_1404aebb0(lVar2,param_1);\r\n    }\r\n  }\r\n  else {\r\n    lVar2 = FUN_14067abc0();\r\n    uVar3 = 0;\r\n    if (lVar2 != 0) {\r\n      uVar3 = FUN_1404aebb0(lVar2,param_1);\r\n    }\r\n  }\r\n  uVar4 = 0;\r\n  *(undefined8 *)(param_1 + 0x68) = uVar3;\r\n  if (param_3 != 0) {\r\n    iVar1 = FUN_140552320(param_3);\r\n    uVar5 = uVar4;\r\n    if (0 < iVar1) {\r\n      do {\r\n        uVar3 = FUN_1405522f0(param_3,uVar4);\r\n        *(undefined8 *)(*(longlong *)(param_1 + 0x30) + uVar5 * 8) = uVar3;\r\n        uVar4 = (ulonglong)((int)uVar4 + 1);\r\n        uVar5 = uVar5 + 1;\r\n      } while ((longlong)uVar5 < (longlong)iVar1);\r\n    }\r\n  }\r\n  *(longlong *)(param_1 + 0x228) = param_3;\r\n  *(undefined4 *)(param_1 + 0x230) = 0;\r\n  *(undefined8 *)(param_1 + 0x238) = 0;\r\n  *(undefined8 *)(param_1 + 0x240) = 0;\r\n  *(undefined8 *)(param_1 + 0x248) = 0;\r\n  *(undefined8 *)(param_1 + 0x250) = 0;\r\n  *(undefined8 *)(param_1 + 600) = 0;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a8170",
+      "evidence_id": "ev_c9728af897698f72ace81b0e099b0279a33408d02c838643be0a35cdc53b0908",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a8170(longlong param_1,undefined4 param_2)\r\n\r\n{\r\n  *(undefined4 *)(*(longlong *)(param_1 + 0x48) + 0x144) = param_2;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a6800",
+      "evidence_id": "ev_d6eb0413dbeffe744ea51fca28a43ea16223a090df0995a474809733b309ad17",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nundefined8 *\r\nFUN_1404a6800(undefined8 *param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,\r\n             undefined4 param_5,char *param_6)\r\n\r\n{\r\n  char *_Dest;\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = 0xfffffffffffffffe;\r\n  FUN_14067a670(param_1 + 2);\r\n  *param_1 = &PTR_FUN_140774838;\r\n  *(undefined4 *)(param_1 + 3) = 0x12345678;\r\n  param_1[4] = param_2;\r\n  param_1[5] = param_3;\r\n  param_1[6] = 0;\r\n  *(undefined4 *)(param_1 + 7) = 0;\r\n  param_1[8] = 0;\r\n  param_1[9] = 0;\r\n  param_1[10] = 0;\r\n  param_1[0xb] = 0;\r\n  param_1[0xc] = 0;\r\n  param_1[0xd] = 0;\r\n  *(undefined1 *)(param_1 + 0x2a) = 1;\r\n  param_1[0x2b] = 0;\r\n  param_1[0x2c] = 0;\r\n  *(undefined4 *)(param_1 + 0x2d) = param_5;\r\n  *(undefined4 *)(param_1 + 0x3a) = 0;\r\n  *(undefined8 *)((longlong)param_1 + 0x1d4) = 1;\r\n  *(undefined8 *)((longlong)param_1 + 0x1dc) = 0;\r\n  *(undefined8 *)((longlong)param_1 + 0x1e4) = 0x3f000000;\r\n  *(undefined8 *)((longlong)param_1 + 0x1ec) = 0;\r\n  *(undefined8 *)((longlong)param_1 + 500) = 0;\r\n  *(undefined4 *)(param_1 + 0xe) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x74) = 0;\r\n  *(undefined4 *)(param_1 + 0xf) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x7c) = 0x3f800000;\r\n  param_1[0x10] = 0x3f8000003f800000;\r\n  param_1[0x11] = 0x3f800000;\r\n  param_1[0x12] = 0;\r\n  param_1[0x13] = 0;\r\n  *(undefined4 *)(param_1 + 0x14) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0xa4) = 0;\r\n  *(undefined4 *)(param_1 + 0x15) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0xac) = 0x3f800000;\r\n  param_1[0x16] = 0x3f8000003f800000;\r\n  param_1[0x17] = 0x3f800000;\r\n  param_1[0x18] = 0;\r\n  param_1[0x19] = 0;\r\n  param_1[0x22] = 0x3f800000;\r\n  param_1[0x23] = 0;\r\n  *(undefined4 *)(param_1 + 0x24) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x124) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0x25) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 300) = 0;\r\n  *(undefined4 *)(param_1 + 0x26) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x134) = 0;\r\n  *(undefined4 *)(param_1 + 0x27) = 0x3f800000;\r\n  *(undefined4 *)((longlong)param_1 + 0x13c) = 0;\r\n  *(undefined4 *)(param_1 + 0x28) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x144) = 0;\r\n  *(undefined4 *)(param_1 + 0x29) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x14c) = 0x3f800000;\r\n  _Dest = (char *)((longlong)param_1 + 0x16c);\r\n  if (param_6 == (char *)0x0) {\r\n    _snprintf(_Dest,100,\"Name Unknown\");\r\n  }\r\n  else {\r\n    strncpy(_Dest,param_6,100);\r\n  }\r\n  *(undefined4 *)(param_1 + 0x1c) = 0x3f800000;\r\n  *(undefined4 *)((longlong)param_1 + 0xe4) = 0x3f800000;\r\n  *(undefined4 *)(param_1 + 0x1d) = 0x3f800000;\r\n  *(undefined8 *)((longlong)param_1 + 0xec) = 0x3f800000;\r\n  *(undefined4 *)((longlong)param_1 + 0xf4) = 1;\r\n  *(undefined4 *)(param_1 + 0x1a) = 0;\r\n  param_1[0x1f] = 1;\r\n  *(undefined4 *)(param_1 + 0x20) = 0xffffffff;\r\n  *(undefined8 *)((longlong)param_1 + 0x1fc) = 0xffffffffffffffff;\r\n  *(undefined8 *)((longlong)param_1 + 0x204) = 0xffffffffffffffff;\r\n  *(undefined8 *)((longlong)param_1 + 0x20c) = 0xffffffffffffffff;\r\n  *(undefined8 *)((longlong)param_1 + 0x214) = 0xffffffffffffffff;\r\n  *(undefined8 *)((longlong)param_1 + 0x21c) = 0xffffffffffffffff;\r\n  FUN_1404a7dd0(param_1,param_3,param_4,_Dest,uVar1);\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404bca70",
+      "evidence_id": "ev_d6eb0413dbeffe744ea51fca28a43ea16223a090df0995a474809733b309ad17",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404bca70(longlong *param_1)\r\n\r\n{\r\n  longlong *plVar1;\r\n  int iVar2;\r\n  longlong *plVar3;\r\n  longlong lVar4;\r\n  int iVar5;\r\n  int iVar6;\r\n  \r\n  lVar4 = *param_1;\r\n  if ((lVar4 != 0) && ((int)param_1[4] == 0x12345678)) {\r\n    plVar1 = param_1 + 1;\r\n    if ((int)param_1[1] == 0) {\r\n      *(int *)(lVar4 + 0x70) = (int)param_1[3];\r\n      *(undefined4 *)(lVar4 + 0x74) = *(undefined4 *)((longlong)param_1 + 0x1c);\r\n      return;\r\n    }\r\n    iVar5 = 0;\r\n    if (plVar1 != (longlong *)0x0) {\r\n      iVar6 = 0;\r\n      plVar3 = plVar1;\r\n      do {\r\n        iVar2 = (int)*plVar3;\r\n        if (iVar2 == 0) break;\r\n        iVar6 = iVar6 + 1;\r\n        plVar3 = (longlong *)((longlong)plVar3 + 4);\r\n        iVar5 = iVar2;\r\n      } while (iVar6 < 4);\r\n    }\r\n    lVar4 = FUN_1404a7b00(lVar4,iVar5);\r\n    if (lVar4 != 0) {\r\n      FUN_1404af050(lVar4,param_1 + 3);\r\n    }\r\n    lVar4 = FUN_1404bc270(*param_1,plVar1);\r\n    if (lVar4 != 0) {\r\n      FUN_1404ae5d0(lVar4,param_1 + 3);\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a8200",
+      "evidence_id": "ev_d6eb0413dbeffe744ea51fca28a43ea16223a090df0995a474809733b309ad17",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a8200(longlong param_1)\r\n\r\n{\r\n  uint *puVar1;\r\n  \r\n  puVar1 = (uint *)(*(longlong *)(param_1 + 0x48) + 0x128);\r\n  *puVar1 = *puVar1 & 0xfffffffe;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404af850",
+      "evidence_id": "ev_e69be00eb3f2c05521aac24beeaef2db8500bc71aa4a5f85ee32161eb761d8d0",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nundefined8 *\r\nFUN_1404af850(undefined8 *param_1,undefined8 param_2,longlong param_3,undefined8 param_4)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong lVar2;\r\n  undefined8 uVar3;\r\n  undefined8 uVar4;\r\n  \r\n  uVar4 = 0xfffffffffffffffe;\r\n  FUN_1404a89b0();\r\n  *param_1 = &PTR_FUN_140774c58;\r\n  param_1[0x22] = param_2;\r\n  param_1[0x23] = param_3;\r\n  uVar3 = 0;\r\n  param_1[0x24] = 0;\r\n  param_1[0x25] = 0;\r\n  param_1[0x26] = 0;\r\n  param_1[0x27] = 0;\r\n  *(undefined4 *)(param_1 + 0x28) = 0;\r\n  *(undefined4 *)((longlong)param_1 + 0x144) = 0x3f800000;\r\n  lVar1 = *(longlong *)(param_3 + 8);\r\n  lVar2 = FUN_1405d4de0(0x20);\r\n  if (lVar2 != 0) {\r\n    uVar3 = FUN_1404a8940(lVar2,param_2,*(undefined2 *)(lVar1 + 0xc),param_4,uVar4);\r\n  }\r\n  param_1[0x24] = uVar3;\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "procedure": "0x1404a8660",
+      "evidence_id": "ev_ec31f8dc8b3c3507373b74106d56855a3182ca7c3dab5b7dc6dbb17216085ac8",
+      "analysis_profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "pseudocode": "\r\nvoid FUN_1404a8660(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)\r\n\r\n{\r\n  longlong lVar1;\r\n  undefined8 uVar2;\r\n  undefined8 uVar3;\r\n  \r\n  uVar3 = 0xfffffffffffffffe;\r\n  if (*(longlong *)(param_1 + 0x20) == 0) {\r\n    lVar1 = FUN_1405d4de0(0x28);\r\n    uVar2 = 0;\r\n    if (lVar1 != 0) {\r\n      uVar2 = FUN_1404acf20(lVar1,param_1,param_2);\r\n    }\r\n  }\r\n  else {\r\n    lVar1 = FUN_14067abc0();\r\n    uVar2 = 0;\r\n    if (lVar1 != 0) {\r\n      uVar2 = FUN_1404acf20(lVar1,param_1,param_2,param_4,uVar3);\r\n    }\r\n  }\r\n  *(undefined8 *)(param_1 + 0x50) = uVar2;\r\n  return;\r\n}\r\n\r\n"
+    }
+  ],
+  "previous_leaf_reference": "docs/analysis/v3_rebuild/pad_report_gift_leaf_followup.json",
+  "confirmed": {
+    "grid": [
+      9,
+      3
+    ],
+    "visible_clone_count": 27,
+    "clone_creator": "41ca30은 원형 icon handle(+4)로 4a9730(manager, handle, 0, -1)을 27회 요청하고 모든 복제 handle 준비를 기다려요.",
+    "clone_handle_array_offset": 16,
+    "clone_handle_stride": 4,
+    "clone_status_array_offset": 124,
+    "position_copy": "41cd70→4adc90은 조상/자신 translation만 더한 float2를 구해4ab240→4b9820→4b9760→4bca70에 넘겨 clone handle 위치(+0x70/+0x74)를 정해요. 배율은 부착점에서 물려받지 않아요.",
+    "attachment_anchor_x_design": [
+      64,
+      254,
+      444,
+      634,
+      824,
+      1014,
+      1204,
+      1394,
+      1584
+    ],
+    "attachment_anchor_y_design": [
+      77,
+      270,
+      463
+    ],
+    "pitch_design": [
+      190,
+      193
+    ],
+    "pitch_1280": [
+      126.6666666667,
+      128.6666666667
+    ],
+    "attachment_placeholders": [
+      {
+        "index": 0,
+        "path": "p_item_base_000/i_000/d1",
+        "placeholder_rect_1280": [
+          42.66667,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          7632,
+          4152,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 1,
+        "path": "p_item_base_001/i_001/d1",
+        "placeholder_rect_1280": [
+          169.33333,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          7648,
+          4216,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 2,
+        "path": "p_item_base_002/i_002/d1",
+        "placeholder_rect_1280": [
+          296.0,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          7664,
+          4280,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 3,
+        "path": "p_item_base_003/i_003/d1",
+        "placeholder_rect_1280": [
+          422.66667,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          7988,
+          4344,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 4,
+        "path": "p_item_base_004/i_004/d1",
+        "placeholder_rect_1280": [
+          549.33333,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          8004,
+          4408,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 5,
+        "path": "p_item_base_005/i_005/d1",
+        "placeholder_rect_1280": [
+          676.0,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          8020,
+          4472,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 6,
+        "path": "p_item_base_006/i_006/d1",
+        "placeholder_rect_1280": [
+          802.66667,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          8344,
+          4536,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 7,
+        "path": "p_item_base_007/i_007/d1",
+        "placeholder_rect_1280": [
+          929.33333,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          8360,
+          4600,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 8,
+        "path": "p_item_base_008/i_008/d1",
+        "placeholder_rect_1280": [
+          1056.0,
+          51.33333,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          8376,
+          4664,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 9,
+        "path": "p_item_base_009/i_009/d1",
+        "placeholder_rect_1280": [
+          42.66667,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          9072,
+          4728,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 10,
+        "path": "p_item_base_010/i_010/d1",
+        "placeholder_rect_1280": [
+          169.33333,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          9088,
+          4792,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 11,
+        "path": "p_item_base_011/i_011/d1",
+        "placeholder_rect_1280": [
+          296.0,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          9104,
+          4856,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 12,
+        "path": "p_item_base_012/i_012/d1",
+        "placeholder_rect_1280": [
+          422.66667,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          9628,
+          4920,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 13,
+        "path": "p_item_base_013/i_013/d1",
+        "placeholder_rect_1280": [
+          549.33333,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          9644,
+          4984,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 14,
+        "path": "p_item_base_014/i_014/d1",
+        "placeholder_rect_1280": [
+          676.0,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          9660,
+          5048,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 15,
+        "path": "p_item_base_015/i_015/d1",
+        "placeholder_rect_1280": [
+          802.66667,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          10028,
+          6068,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 16,
+        "path": "p_item_base_016/i_016/d1",
+        "placeholder_rect_1280": [
+          929.33333,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          10044,
+          6132,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 17,
+        "path": "p_item_base_017/i_017/d1",
+        "placeholder_rect_1280": [
+          1056.0,
+          180.0,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          10060,
+          6196,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 18,
+        "path": "p_item_base_018/i_018/d1",
+        "placeholder_rect_1280": [
+          42.66667,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          10748,
+          6260,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 19,
+        "path": "p_item_base_019/i_019/d1",
+        "placeholder_rect_1280": [
+          169.33333,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          10764,
+          6324,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 20,
+        "path": "p_item_base_020/i_020/d1",
+        "placeholder_rect_1280": [
+          296.0,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          10780,
+          6388,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 21,
+        "path": "p_item_base_021/i_021/d1",
+        "placeholder_rect_1280": [
+          422.66667,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          11456,
+          6728,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 22,
+        "path": "p_item_base_022/i_022/d1",
+        "placeholder_rect_1280": [
+          549.33333,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          11472,
+          6792,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 23,
+        "path": "p_item_base_023/i_023/d1",
+        "placeholder_rect_1280": [
+          676.0,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          11488,
+          6856,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 24,
+        "path": "p_item_base_024/i_024/d1",
+        "placeholder_rect_1280": [
+          802.66667,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          12036,
+          6920,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 25,
+        "path": "p_item_base_025/i_025/d1",
+        "placeholder_rect_1280": [
+          929.33333,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          12052,
+          6984,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      },
+      {
+        "index": 26,
+        "path": "p_item_base_026/i_026/d1",
+        "placeholder_rect_1280": [
+          1056.0,
+          308.66667,
+          42.66667,
+          42.66667
+        ],
+        "operation_offsets": [
+          12068,
+          7048,
+          4096
+        ],
+        "note": "64x64 placeholder in carrier; actual external icon handle transform is not established by this SFL."
+      }
+    ],
+    "indexing": "전체 항목 index=(scrollRow+selectedRow)*9+selectedCol. 표시 셀 i(0..26)는 scrollRow*9+i 항목을 써요.",
+    "texture_source": "기존 common program present 자원의 texture.srd에서 present_icon_%03d.png를 조회해요.",
+    "unknown_branch": {
+      "condition": "itemRecord+0x10 == 0",
+      "texture_index": 999,
+      "quantity_sentinel": -1,
+      "effect": "동일한 icon component에 999 그림을 연결하고 곱하기·수량 3자리를 숨겨요. 항목 제목과 설명에는 각각 메시지(0xf,6)를 써요.",
+      "ownership_warning": "수량 0과 미공개는 달라요. record+0x10 표시 여부와 record+0xC 수량을 나누어요."
+    },
+    "quantity_branch": {
+      "quantity_field": 12,
+      "display": "선택 항목 상세와 각 셀에 수량 3자리가 있어요. 먼저 texture lookup #1로 3자리를 채운 뒤 나머지+1 lookup으로 일·십·백 자리를 갱신해요. #1이 0 그림인지 빈 그림인지는 lookup 표 확인 전 단정하지 않아요.",
+      "hidden_condition": "미공개는 quantity=-1로 바꿔 곱하기와 3자리를 숨겨요.",
+      "new_field": 8,
+      "new_logic": "41c750은 539c00 반환값을 record+8에 쓰고, record+0x10이 0이면 NEW도 0으로 만들어요. 41cd70은 record+8이 0이 아닌지로 NEW component 표시를 정해요."
+    },
+    "selection": "41c3f0/41d660은 실제 clone index(row*9+col)에 DAT2676c(선택)/26770(비선택) 라벨을 요청해요. SFL에는 fl_wait_on/off가 있어요. 이 supplement에서 native interned ID→라벨 문자열을 직접 읽지는 않았어요.",
+    "skin_color": "41e180은 현재 스킨의 present 색을 각 clone의 component26824/26828에 적용해요. 임의로 선물마다 색을 고르는 구조가 아니에요."
+  },
+  "template_local_geometry": [
+    {
+      "path": "p_item_base/i_item_base_inside/d1",
+      "ref": [
+        3,
+        1
+      ],
+      "entry_offset": 1244,
+      "operation_offsets": [
+        11136,
+        1720,
+        1664
+      ],
+      "affine": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 13,
+      "local_lrtb": [
+        0,
+        256,
+        0,
+        256
+      ],
+      "rect_1280": [
+        0.66667,
+        0.66667,
+        170.66667,
+        170.66667
+      ],
+      "screen_intersection_1280": [
+        0.66667,
+        0.66667,
+        170.66667,
+        170.66667
+      ]
+    },
+    {
+      "path": "p_item_icon/i_present/d1",
+      "ref": [
+        3,
+        2
+      ],
+      "entry_offset": 1284,
+      "operation_offsets": [
+        11144,
+        1852,
+        1796
+      ],
+      "affine": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        65.0,
+        59.0,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 15,
+      "local_lrtb": [
+        0,
+        128,
+        0,
+        128
+      ],
+      "rect_1280": [
+        43.33333,
+        39.33333,
+        85.33333,
+        85.33333
+      ],
+      "screen_intersection_1280": [
+        43.33333,
+        39.33333,
+        85.33333,
+        85.33333
+      ]
+    },
+    {
+      "path": "p_item_new/i_new/i_new/d1",
+      "ref": [
+        3,
+        3
+      ],
+      "entry_offset": 1324,
+      "operation_offsets": [
+        11152,
+        3480,
+        1984,
+        1924
+      ],
+      "affine": [
+        0.79999,
+        0.0,
+        0.0,
+        0.0,
+        0.79999,
+        0.0,
+        78.5,
+        39.0,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 14,
+      "local_lrtb": [
+        0,
+        128,
+        0,
+        42
+      ],
+      "rect_1280": [
+        52.33333,
+        26.0,
+        68.26562,
+        22.39966
+      ],
+      "screen_intersection_1280": [
+        52.33333,
+        26.0,
+        68.26562,
+        22.39966
+      ]
+    },
+    {
+      "path": "p_item_new/i_new/_a_new/d1",
+      "ref": [
+        3,
+        3
+      ],
+      "entry_offset": 1324,
+      "operation_offsets": [
+        11152,
+        3480,
+        2004,
+        1924
+      ],
+      "affine": [
+        0.79999,
+        0.0,
+        0.0,
+        0.0,
+        0.79999,
+        0.0,
+        78.5,
+        39.0,
+        1.0
+      ],
+      "alpha_product": 0.0,
+      "image_id": 14,
+      "local_lrtb": [
+        0,
+        128,
+        0,
+        42
+      ],
+      "rect_1280": [
+        52.33333,
+        26.0,
+        68.26562,
+        22.39966
+      ],
+      "screen_intersection_1280": [
+        52.33333,
+        26.0,
+        68.26562,
+        22.39966
+      ]
+    },
+    {
+      "path": "p_waku_ef_base_000/d1",
+      "ref": [
+        3,
+        8
+      ],
+      "entry_offset": 1524,
+      "operation_offsets": [
+        11160,
+        3780
+      ],
+      "affine": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "alpha_product": 1,
+      "image_id": 11,
+      "local_lrtb": [
+        0,
+        256,
+        0,
+        256
+      ],
+      "rect_1280": [
+        0.0,
+        0.0,
+        170.66667,
+        170.66667
+      ],
+      "screen_intersection_1280": [
+        0.0,
+        0.0,
+        170.66667,
+        170.66667
+      ]
+    },
+    {
+      "path": "p_item_000/d1",
+      "ref": [
+        3,
+        4
+      ],
+      "entry_offset": 1364,
+      "operation_offsets": [
+        11192,
+        3552
+      ],
+      "affine": [
+        0.62999,
+        0.0,
+        0.0,
+        0.0,
+        0.62999,
+        0.0,
+        145.3,
+        188.1,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 0,
+      "local_lrtb": [
+        0,
+        32,
+        0,
+        32
+      ],
+      "rect_1280": [
+        96.86667,
+        125.4,
+        13.43978,
+        13.43978
+      ],
+      "screen_intersection_1280": [
+        96.86667,
+        125.4,
+        13.43978,
+        13.43978
+      ]
+    },
+    {
+      "path": "p_item_001/d1",
+      "ref": [
+        3,
+        5
+      ],
+      "entry_offset": 1404,
+      "operation_offsets": [
+        11212,
+        3608
+      ],
+      "affine": [
+        0.62999,
+        0.0,
+        0.0,
+        0.0,
+        0.62999,
+        0.0,
+        124.6,
+        188.1,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 1,
+      "local_lrtb": [
+        0,
+        32,
+        0,
+        32
+      ],
+      "rect_1280": [
+        83.06667,
+        125.4,
+        13.43978,
+        13.43978
+      ],
+      "screen_intersection_1280": [
+        83.06667,
+        125.4,
+        13.43978,
+        13.43978
+      ]
+    },
+    {
+      "path": "p_item_002/d1",
+      "ref": [
+        3,
+        6
+      ],
+      "entry_offset": 1444,
+      "operation_offsets": [
+        11232,
+        3664
+      ],
+      "affine": [
+        0.62999,
+        0.0,
+        0.0,
+        0.0,
+        0.62999,
+        0.0,
+        103.9,
+        188.1,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 2,
+      "local_lrtb": [
+        0,
+        32,
+        0,
+        32
+      ],
+      "rect_1280": [
+        69.26667,
+        125.4,
+        13.43978,
+        13.43978
+      ],
+      "screen_intersection_1280": [
+        69.26667,
+        125.4,
+        13.43978,
+        13.43978
+      ]
+    },
+    {
+      "path": "p_kakeru/d1",
+      "ref": [
+        3,
+        7
+      ],
+      "entry_offset": 1484,
+      "operation_offsets": [
+        11252,
+        3720
+      ],
+      "affine": [
+        0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.7,
+        0.0,
+        80.0,
+        187.0,
+        1.0
+      ],
+      "alpha_product": 1.0,
+      "image_id": 10,
+      "local_lrtb": [
+        0,
+        22,
+        7,
+        30
+      ],
+      "rect_1280": [
+        53.33333,
+        127.93332,
+        10.26662,
+        10.73329
+      ],
+      "screen_intersection_1280": [
+        53.33333,
+        127.93332,
+        10.26662,
+        10.73329
+      ]
+    }
+  ],
+  "parent_scale": {
+    "status": "confirmed_static_normal_creation_path",
+    "scale_xy": [
+      1,
+      1
+    ],
+    "rotation": 0,
+    "copy_source_current_transform": false,
+    "root_parent_pointer": 0,
+    "root_state_matrix_row_major": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "proof_chain": [
+      "41ca30→4a9730(original icon handle, null extra params, new free slot).",
+      "4a9730→4b8620→4bc2d0→4a9b50 creates a fresh Movie from source SFL and texture carriers; it does not copy source Movie current transform.",
+      "4a9b50→4a6800→4a7dd0→4a84c0→4a9440→4af850→4a89b0 constructs a fresh root display object.",
+      "4a89b0 passes this+0x20 to4a7cb0 (assembly confirmed);4a7cb0 zeros itsstate flags and sets matrix at state+0x80 to identity. Root display parent pointer is0.",
+      "41cd70→4adc90 sums ancestor/self translation+b8/bc and extra translation underflag2. It does not multiply or inherit ancestor scale/skew.",
+      "41cd70→4ab240→4b9820→4b9760→4bca70 writes external position x/y to handle record+0x70/+0x74.",
+      "41cbf0 groupvalue0x18a89 routes4ab2a0→4b9900→4bcb20, whose wholeleaf only writes handle record+0xf0. It does not resizeicons."
+    ],
+    "evidence_scope": "초기화/정상 표시 경로의 정적 계약이에요. 원작 픽셀을 실행 관찰하거나 모든 외부 엔진 변경 경로를 전수 증명한 것은 아니에요."
+  },
+  "parametric_quad": {
+    "assume_only_for_formula": "일반 변환식이에요. 이번에 확인한 정상 초기 root는 sx=sy=1, 회전0이에요. 합성한 design 사각형을 마지막에2/3로 바꾸어요.",
+    "frame_design": "[ax,ay,256*sx,256*sy]",
+    "base_design": "[ax+sx,ay+sy,256*sx,256*sy]",
+    "item_image_design": "[ax+65*sx,ay+59*sy,128*sx,128*sy]",
+    "new_initial_design": "[ax+78.5*sx,ay+39*sy,102.3984375*sx,33.5994873*sy]",
+    "ones_digit_design": "[ax+145.3*sx,ay+188.1*sy,20.15966797*sx,20.15966797*sy]"
+  },
+  "limits": [
+    "원작 실행을 관찰한 결과가 아닌 정적 근거예요.",
+    "원작 설치본 읽기·프로세스 probe·새 자산 추출·Game/source/assets 변경은 없어요.",
+    "공통 base 및 unknown999 그림은 제공 bank에 없어요. 없는 그림을 만들거나 있다고 하지 않아요.",
+    "27개 native 부착점 ID와 27개 SFL 부착 이름은 개수·순서로 연결했어요. interned ID→문자열 표를 직접 읽은 결과는 아니에요.",
+    "정상 clone의 초기 변환은 확인했어요. 별도의 미확인 native 엔진 callback이 어느 화면에서든 임의로 바꾸지 않는다는 전수 명제는 주장하지 않아요.",
+    "base/선택 효과는256 canvas의 알파 내용이 미제공이에요. 전체 canvas를 불투명 패널로 대체하면 원작 외형과 달라져요.",
+    "unknown999는 실제 source 분기이지만 제공 bank에 그 파일이 없어요. own unknown 표시는 자체 제작임을 구분해야 해요."
+  ],
+  "session_events": [
+    {
+      "operation": "batch_decompile",
+      "evidence_id": "ev_a9c193ac7b7ef2acfd4063823bdeaaf974930e3337f68853f4d3d445c6372ecf",
+      "targets": [
+        "4a9730",
+        "4adc90",
+        "4ab240"
+      ],
+      "outcome": "재연결 전 0/3 target_unavailable",
+      "retry_without_state_change": false
+    },
+    {
+      "operation": "authorizedreconnect",
+      "target_sha256": "1a012357f54076ef7fbe6a63f19f055bbe1ce71792b8c0719e7dc51d2a5affeb",
+      "profile": "249564812a8d83b9b3f461098fc485ccde60c516d4497547a124081c91d654bf",
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\derived\\Dangan3Win.static-code-restored.exe",
+      "scope": "동일한 기존 target과 profile에 재연결했어요. 원작 게임 실행은 없어요."
+    },
+    {
+      "operation": "close_binary",
+      "outcome": "질문 근거 export 완료 뒤 이 질문에서 재연결한 target을 닫았어요. 원본56record bundle 및 세션 설정을 바꾸지 않았어요."
+    }
+  ],
+  "supplement": {
+    "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-pad-gift-icon-scale-supplement-20261030.json",
+    "sha256": "ee8f431fb4ca3f7d45e63af2265697f1425c839c6bf5d39cc12601ac78dabde5",
+    "records": 14,
+    "new_successful_procedures": 20,
+    "original56record_bundle_overwritten": false
+  },
+  "derived_leaf_assembly": [
+    {
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\derived\\Dangan3Win.static-code-restored.exe",
+      "start": "0x1404a89b0",
+      "end_exclusive": "0x1404a89df",
+      "bytes_sha256": "7c9835280c8719675ef46936e8774c9ba54f5fd5acd4660c50b4dca713575317",
+      "instructions": [
+        {
+          "address": "0x1404a89b0",
+          "mnemonic": "push",
+          "operands": "rbx"
+        },
+        {
+          "address": "0x1404a89b2",
+          "mnemonic": "sub",
+          "operands": "rsp, 0x20"
+        },
+        {
+          "address": "0x1404a89b6",
+          "mnemonic": "lea",
+          "operands": "rax, [rip + 0x2cbeeb]"
+        },
+        {
+          "address": "0x1404a89bd",
+          "mnemonic": "mov",
+          "operands": "rbx, rcx"
+        },
+        {
+          "address": "0x1404a89c0",
+          "mnemonic": "add",
+          "operands": "rcx, 0x20"
+        },
+        {
+          "address": "0x1404a89c4",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx - 0x20], rax"
+        },
+        {
+          "address": "0x1404a89c8",
+          "mnemonic": "xor",
+          "operands": "eax, eax"
+        },
+        {
+          "address": "0x1404a89ca",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx - 0x10], rax"
+        },
+        {
+          "address": "0x1404a89ce",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rcx - 8], eax"
+        },
+        {
+          "address": "0x1404a89d1",
+          "mnemonic": "call",
+          "operands": "0x1404a7cb0"
+        },
+        {
+          "address": "0x1404a89d6",
+          "mnemonic": "mov",
+          "operands": "rax, rbx"
+        },
+        {
+          "address": "0x1404a89d9",
+          "mnemonic": "add",
+          "operands": "rsp, 0x20"
+        },
+        {
+          "address": "0x1404a89dd",
+          "mnemonic": "pop",
+          "operands": "rbx"
+        },
+        {
+          "address": "0x1404a89de",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ],
+      "authority": "동일한 기존 derived PE 바이트를 정적으로 읽었어요. REA 레코드와 구분해요."
+    },
+    {
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\derived\\Dangan3Win.static-code-restored.exe",
+      "start": "0x1404bcb20",
+      "end_exclusive": "0x1404bcb3b",
+      "bytes_sha256": "3fff8322a470bfb21cd1ca1a028621b3ee2b20c4ab049723da1089442dff6a95",
+      "instructions": [
+        {
+          "address": "0x1404bcb20",
+          "mnemonic": "mov",
+          "operands": "rdx, qword ptr [rcx]"
+        },
+        {
+          "address": "0x1404bcb23",
+          "mnemonic": "test",
+          "operands": "rdx, rdx"
+        },
+        {
+          "address": "0x1404bcb26",
+          "mnemonic": "je",
+          "operands": "0x1404bcb3a"
+        },
+        {
+          "address": "0x1404bcb28",
+          "mnemonic": "cmp",
+          "operands": "dword ptr [rcx + 0x1c], 0x12345678"
+        },
+        {
+          "address": "0x1404bcb2f",
+          "mnemonic": "jne",
+          "operands": "0x1404bcb3a"
+        },
+        {
+          "address": "0x1404bcb31",
+          "mnemonic": "mov",
+          "operands": "eax, dword ptr [rcx + 0x18]"
+        },
+        {
+          "address": "0x1404bcb34",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rdx + 0xf0], eax"
+        },
+        {
+          "address": "0x1404bcb3a",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ],
+      "authority": "동일한 기존 derived PE 바이트를 정적으로 읽었어요. REA 레코드와 구분해요."
+    }
+  ],
+  "actual_initialized_grid": [
+    {
+      "slot": 0,
+      "row": 0,
+      "column": 0,
+      "attachment_origin_design": [
+        64,
+        77
+      ],
+      "attachment_origin_1280": [
+        42.66667,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        42.66667,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        43.33333,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        86.0,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        139.53333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        125.73333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        111.93333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        96.0,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 1,
+      "row": 0,
+      "column": 1,
+      "attachment_origin_design": [
+        254,
+        77
+      ],
+      "attachment_origin_1280": [
+        169.33333,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        169.33333,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        170.0,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        212.66667,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        266.2,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        252.4,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        238.6,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        222.66667,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 2,
+      "row": 0,
+      "column": 2,
+      "attachment_origin_design": [
+        444,
+        77
+      ],
+      "attachment_origin_1280": [
+        296.0,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        296.0,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        296.66667,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        339.33333,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        392.86667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        379.06667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        365.26667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        349.33333,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 3,
+      "row": 0,
+      "column": 3,
+      "attachment_origin_design": [
+        634,
+        77
+      ],
+      "attachment_origin_1280": [
+        422.66667,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        422.66667,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        423.33333,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        466.0,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        519.53333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        505.73333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        491.93333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        476.0,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 4,
+      "row": 0,
+      "column": 4,
+      "attachment_origin_design": [
+        824,
+        77
+      ],
+      "attachment_origin_1280": [
+        549.33333,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        549.33333,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        550.0,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        592.66667,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        646.2,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        632.4,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        618.6,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        602.66667,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 5,
+      "row": 0,
+      "column": 5,
+      "attachment_origin_design": [
+        1014,
+        77
+      ],
+      "attachment_origin_1280": [
+        676.0,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        676.0,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        676.66667,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        719.33333,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        772.86667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        759.06667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        745.26667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        729.33333,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 6,
+      "row": 0,
+      "column": 6,
+      "attachment_origin_design": [
+        1204,
+        77
+      ],
+      "attachment_origin_1280": [
+        802.66667,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        802.66667,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        803.33333,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        846.0,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        899.53333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        885.73333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        871.93333,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        856.0,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 7,
+      "row": 0,
+      "column": 7,
+      "attachment_origin_design": [
+        1394,
+        77
+      ],
+      "attachment_origin_1280": [
+        929.33333,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        929.33333,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        930.0,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        972.66667,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        1026.2,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        1012.4,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        998.6,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        982.66667,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 8,
+      "row": 0,
+      "column": 8,
+      "attachment_origin_design": [
+        1584,
+        77
+      ],
+      "attachment_origin_1280": [
+        1056.0,
+        51.33333
+      ],
+      "frame_quad_1280": [
+        1056.0,
+        51.33333,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        1056.66667,
+        52.0,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        1099.33333,
+        90.66667,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        1152.86667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        1139.06667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        1125.26667,
+        176.73333,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        1109.33333,
+        179.26665,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 9,
+      "row": 1,
+      "column": 0,
+      "attachment_origin_design": [
+        64,
+        270
+      ],
+      "attachment_origin_1280": [
+        42.66667,
+        180.0
+      ],
+      "frame_quad_1280": [
+        42.66667,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        43.33333,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        86.0,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        139.53333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        125.73333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        111.93333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        96.0,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 10,
+      "row": 1,
+      "column": 1,
+      "attachment_origin_design": [
+        254,
+        270
+      ],
+      "attachment_origin_1280": [
+        169.33333,
+        180.0
+      ],
+      "frame_quad_1280": [
+        169.33333,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        170.0,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        212.66667,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        266.2,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        252.4,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        238.6,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        222.66667,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 11,
+      "row": 1,
+      "column": 2,
+      "attachment_origin_design": [
+        444,
+        270
+      ],
+      "attachment_origin_1280": [
+        296.0,
+        180.0
+      ],
+      "frame_quad_1280": [
+        296.0,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        296.66667,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        339.33333,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        392.86667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        379.06667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        365.26667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        349.33333,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 12,
+      "row": 1,
+      "column": 3,
+      "attachment_origin_design": [
+        634,
+        270
+      ],
+      "attachment_origin_1280": [
+        422.66667,
+        180.0
+      ],
+      "frame_quad_1280": [
+        422.66667,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        423.33333,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        466.0,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        519.53333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        505.73333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        491.93333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        476.0,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 13,
+      "row": 1,
+      "column": 4,
+      "attachment_origin_design": [
+        824,
+        270
+      ],
+      "attachment_origin_1280": [
+        549.33333,
+        180.0
+      ],
+      "frame_quad_1280": [
+        549.33333,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        550.0,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        592.66667,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        646.2,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        632.4,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        618.6,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        602.66667,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 14,
+      "row": 1,
+      "column": 5,
+      "attachment_origin_design": [
+        1014,
+        270
+      ],
+      "attachment_origin_1280": [
+        676.0,
+        180.0
+      ],
+      "frame_quad_1280": [
+        676.0,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        676.66667,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        719.33333,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        772.86667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        759.06667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        745.26667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        729.33333,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 15,
+      "row": 1,
+      "column": 6,
+      "attachment_origin_design": [
+        1204,
+        270
+      ],
+      "attachment_origin_1280": [
+        802.66667,
+        180.0
+      ],
+      "frame_quad_1280": [
+        802.66667,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        803.33333,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        846.0,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        899.53333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        885.73333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        871.93333,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        856.0,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 16,
+      "row": 1,
+      "column": 7,
+      "attachment_origin_design": [
+        1394,
+        270
+      ],
+      "attachment_origin_1280": [
+        929.33333,
+        180.0
+      ],
+      "frame_quad_1280": [
+        929.33333,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        930.0,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        972.66667,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        1026.2,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        1012.4,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        998.6,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        982.66667,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 17,
+      "row": 1,
+      "column": 8,
+      "attachment_origin_design": [
+        1584,
+        270
+      ],
+      "attachment_origin_1280": [
+        1056.0,
+        180.0
+      ],
+      "frame_quad_1280": [
+        1056.0,
+        180.0,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        1056.66667,
+        180.66667,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        1099.33333,
+        219.33333,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        1152.86667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        1139.06667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        1125.26667,
+        305.4,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        1109.33333,
+        307.93332,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 18,
+      "row": 2,
+      "column": 0,
+      "attachment_origin_design": [
+        64,
+        463
+      ],
+      "attachment_origin_1280": [
+        42.66667,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        42.66667,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        43.33333,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        86.0,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        139.53333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        125.73333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        111.93333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        96.0,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 19,
+      "row": 2,
+      "column": 1,
+      "attachment_origin_design": [
+        254,
+        463
+      ],
+      "attachment_origin_1280": [
+        169.33333,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        169.33333,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        170.0,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        212.66667,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        266.2,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        252.4,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        238.6,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        222.66667,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 20,
+      "row": 2,
+      "column": 2,
+      "attachment_origin_design": [
+        444,
+        463
+      ],
+      "attachment_origin_1280": [
+        296.0,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        296.0,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        296.66667,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        339.33333,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        392.86667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        379.06667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        365.26667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        349.33333,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 21,
+      "row": 2,
+      "column": 3,
+      "attachment_origin_design": [
+        634,
+        463
+      ],
+      "attachment_origin_1280": [
+        422.66667,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        422.66667,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        423.33333,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        466.0,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        519.53333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        505.73333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        491.93333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        476.0,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 22,
+      "row": 2,
+      "column": 4,
+      "attachment_origin_design": [
+        824,
+        463
+      ],
+      "attachment_origin_1280": [
+        549.33333,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        549.33333,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        550.0,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        592.66667,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        646.2,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        632.4,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        618.6,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        602.66667,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 23,
+      "row": 2,
+      "column": 5,
+      "attachment_origin_design": [
+        1014,
+        463
+      ],
+      "attachment_origin_1280": [
+        676.0,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        676.0,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        676.66667,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        719.33333,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        772.86667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        759.06667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        745.26667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        729.33333,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 24,
+      "row": 2,
+      "column": 6,
+      "attachment_origin_design": [
+        1204,
+        463
+      ],
+      "attachment_origin_1280": [
+        802.66667,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        802.66667,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        803.33333,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        846.0,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        899.53333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        885.73333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        871.93333,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        856.0,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 25,
+      "row": 2,
+      "column": 7,
+      "attachment_origin_design": [
+        1394,
+        463
+      ],
+      "attachment_origin_1280": [
+        929.33333,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        929.33333,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        930.0,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        972.66667,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        1026.2,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        1012.4,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        998.6,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        982.66667,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    },
+    {
+      "slot": 26,
+      "row": 2,
+      "column": 8,
+      "attachment_origin_design": [
+        1584,
+        463
+      ],
+      "attachment_origin_1280": [
+        1056.0,
+        308.66667
+      ],
+      "frame_quad_1280": [
+        1056.0,
+        308.66667,
+        170.66667,
+        170.66667
+      ],
+      "base_quad_1280": [
+        1056.66667,
+        309.33333,
+        170.66667,
+        170.66667
+      ],
+      "image_quad_1280": [
+        1099.33333,
+        348.0,
+        85.33333,
+        85.33333
+      ],
+      "ones_quad_1280": [
+        1152.86667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "tens_quad_1280": [
+        1139.06667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "hundreds_quad_1280": [
+        1125.26667,
+        434.06667,
+        13.43978,
+        13.43978
+      ],
+      "times_quad_1280": [
+        1109.33333,
+        436.59999,
+        10.26662,
+        10.73329
+      ]
+    }
+  ],
+  "actual_quad_summary": {
+    "frame_and_selection_canvas_design": [
+      256,
+      256
+    ],
+    "frame_canvas_1280": [
+      170.66667,
+      170.66667
+    ],
+    "base_canvas_1280": [
+      170.66667,
+      170.66667
+    ],
+    "gift_image_local_design": [
+      65,
+      59,
+      128,
+      128
+    ],
+    "gift_image_1280_size": [
+      85.33333,
+      85.33333
+    ],
+    "first_gift_image_1280": [
+      86.0,
+      90.66667,
+      85.33333,
+      85.33333
+    ],
+    "last_gift_image_1280": [
+      1099.33333,
+      348.0,
+      85.33333,
+      85.33333
+    ],
+    "ones_digit_1280_size": [
+      13.43978,
+      13.43978
+    ],
+    "pitch_1280": [
+      126.66667,
+      128.66667
+    ],
+    "bounds_warning": "256 canvas는190×193 pitch보다 커요. 실제 픽셀의 알파 내부 모양은 제공되지 않았으므로 canvas를 전부 불투명 네모로 그리거나85.333 gift image와 같은 크기로 취급하면 안 돼요."
+  },
+  "validation": {
+    "status": "PASS_static_normal_layout",
+    "checks": [
+      "target SHA and Ghidra profile match both old bundles and new helper records",
+      "original56record bundle SHA unchanged",
+      "27clone attachment origins, rowpitch193 and columnpitch190 checked",
+      "constructor initializes root identity and no parent",
+      "position getter excludes ancestor scale; setter changes onlyposition",
+      "all27imagequads fit1280x720physicalviewport",
+      "giftunknown999 vs quantity0 branches separated",
+      "no original game execution or new asset extraction"
+    ],
+    "helper_successes": 20,
+    "initial_missing_target_recovered": true,
+    "invalid_callback_decompile": "4bcb20 had no Ghidra procedure; no repeated same call. Its bounded leaf bytes were read from matching existingderived PE."
+  },
+  "supersedes": "pad_report_gift_leaf_followup.json의 gift native_parent_matrix 미확정만 이번 정상 생성 경로 근거로 보완해요. 기존 파일은 덮어쓰지 않았어요."
+}

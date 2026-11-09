@@ -1,0 +1,6754 @@
+{
+  "scope": "Static contract for the rules cover, published-rule illustrations, background and text overlay; five existing SFL caches only. No original runtime observation.",
+  "target_sha256": "1a012357f54076ef7fbe6a63f19f055bbe1ce71792b8c0719e7dc51d2a5affeb",
+  "evidence": {
+    "41e410": "ev_9e0aff36a77306e22702a450626f4ac35162f83903ac5c24fd87b0f45f41bf80",
+    "41f390": "ev_a099bf8bb31e90082913cde5f17656e057d51ba6fae493e45c2949dcac55d0a8",
+    "41f590": "ev_44d147355f791176e261addabc32a1db068bddb77119d118293df42cfcd2bd8d",
+    "41ecb0": "ev_2434e8e2dfca538d76bbdd76bdb671db87ec77c87231ff5a2305bac1793ea095",
+    "41eee0": "ev_088e11df314965e66ecea6b692ccf405a7fa164a529c12b84aaae5b8de984ada",
+    "41e6e0": "ev_c7bd46e1228fb41737b926be7ac0073438adc281961b064151454ac0bdee3a36",
+    "41e950": "ev_97fdbe1100facd34f4d3549f6b6a8c60a33353f0248217b4c89a9899787ef32e"
+  },
+  "coordinate_contract": {
+    "design": [
+      1920,
+      1080
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "scale": 0.6666666666666666,
+    "method": "Sequential root display list replay through named wait label, descendant first local frame; leaf local bounds transformed through all parents. No native mutations or timeline action execution.",
+    "matrix_form": "[a,b,c,d,tx,ty]: x=a*x+c*y+tx, y=b*x+d*y+ty",
+    "clip_limit": "Viewport intersection is not proof of a native scissor/mask or visible ink. Clip metadata is preserved when decoded."
+  },
+  "five_representative_carriers": {
+    "background": {
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\697703513c97033b37021ca0bc5ad4b6c576b52e7582e77e0bbdf562790a27ae.json",
+      "sfl_sha256": "697703513c97033b37021ca0bc5ad4b6c576b52e7582e77e0bbdf562790a27ae",
+      "root_entry_offset": 592,
+      "root_label": "fl_wait",
+      "root_record": 14,
+      "root_sequence_offset": 2632,
+      "labels": [
+        {
+          "name": "fl_stop",
+          "record": 1,
+          "offset": 636
+        },
+        {
+          "name": "fl_in",
+          "record": 2,
+          "offset": 676
+        },
+        {
+          "name": "fl_wait",
+          "record": 14,
+          "offset": 2632
+        },
+        {
+          "name": "fl_out",
+          "record": 15,
+          "offset": 2804
+        }
+      ],
+      "named_placements": [
+        {
+          "path": "p_gra_000",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            34.375,
+            159.0,
+            0.0
+          ],
+          "operation_offsets": [
+            2680
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_gra_001",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -34.3839111328125,
+            1761.0,
+            1097.0
+          ],
+          "operation_offsets": [
+            2696
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_beta",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            1.624969482421875,
+            0.0,
+            0.0,
+            51.87416076660156,
+            1766.0,
+            113.0
+          ],
+          "operation_offsets": [
+            2720
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_beta_base",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            1.125,
+            0.0,
+            0.0,
+            51.37428283691406,
+            1770.0,
+            117.0
+          ],
+          "operation_offsets": [
+            2748
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_scroll",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            1.125,
+            0.0,
+            0.0,
+            51.37428283691406,
+            1770.0,
+            117.0
+          ],
+          "operation_offsets": [
+            2776
+          ],
+          "alpha_product": 1.0
+        }
+      ],
+      "leaves": [
+        {
+          "path": "d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 312,
+          "operation_offsets": [
+            2660
+          ],
+          "affine_design": [
+            49.68714904785156,
+            0.0,
+            0.0,
+            34.375,
+            163.0,
+            0.0
+          ],
+          "quad_1280": [
+            [
+              108.66667,
+              0.0
+            ],
+            [
+              1168.65918,
+              0.0
+            ],
+            [
+              1168.65918,
+              733.33333
+            ],
+            [
+              108.66667,
+              733.33333
+            ]
+          ],
+          "rect_1280": [
+            108.66667,
+            0.0,
+            1059.99251,
+            733.33333
+          ],
+          "viewport_intersection_1280": [
+            108.66667,
+            0,
+            1059.99251,
+            720
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "p_gra_000/d1",
+          "ref": [
+            3,
+            2
+          ],
+          "entry_offset": 352,
+          "operation_offsets": [
+            2680,
+            492
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            34.375,
+            159.0,
+            0.0
+          ],
+          "quad_1280": [
+            [
+              106.0,
+              0.0
+            ],
+            [
+              127.33333,
+              0.0
+            ],
+            [
+              127.33333,
+              733.33333
+            ],
+            [
+              106.0,
+              733.33333
+            ]
+          ],
+          "rect_1280": [
+            106.0,
+            0.0,
+            21.33333,
+            733.33333
+          ],
+          "viewport_intersection_1280": [
+            106.0,
+            0,
+            21.33333,
+            720
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "p_gra_001/d1",
+          "ref": [
+            3,
+            2
+          ],
+          "entry_offset": 352,
+          "operation_offsets": [
+            2696,
+            492
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -34.3839111328125,
+            1761.0,
+            1097.0
+          ],
+          "quad_1280": [
+            [
+              1174.0,
+              731.33333
+            ],
+            [
+              1152.66667,
+              731.33333
+            ],
+            [
+              1152.66667,
+              -2.1901
+            ],
+            [
+              1174.0,
+              -2.1901
+            ]
+          ],
+          "rect_1280": [
+            1152.66667,
+            -2.1901,
+            21.33333,
+            733.52343
+          ],
+          "viewport_intersection_1280": [
+            1152.66667,
+            0,
+            21.33333,
+            720
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "i_beta/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 392,
+          "operation_offsets": [
+            2720,
+            548
+          ],
+          "affine_design": [
+            1.624969482421875,
+            0.0,
+            0.0,
+            51.87416076660156,
+            1766.0,
+            113.0
+          ],
+          "quad_1280": [
+            [
+              1177.33333,
+              75.33333
+            ],
+            [
+              1194.66634,
+              75.33333
+            ],
+            [
+              1194.66634,
+              628.65771
+            ],
+            [
+              1177.33333,
+              628.65771
+            ]
+          ],
+          "rect_1280": [
+            1177.33333,
+            75.33333,
+            17.33301,
+            553.32438
+          ],
+          "viewport_intersection_1280": [
+            1177.33333,
+            75.33333,
+            17.33301,
+            553.32438
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ]
+        },
+        {
+          "path": "i_beta_base/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 392,
+          "operation_offsets": [
+            2748,
+            548
+          ],
+          "affine_design": [
+            1.125,
+            0.0,
+            0.0,
+            51.37428283691406,
+            1770.0,
+            117.0
+          ],
+          "quad_1280": [
+            [
+              1180.0,
+              78.0
+            ],
+            [
+              1192.0,
+              78.0
+            ],
+            [
+              1192.0,
+              625.99235
+            ],
+            [
+              1180.0,
+              625.99235
+            ]
+          ],
+          "rect_1280": [
+            1180.0,
+            78.0,
+            12.0,
+            547.99235
+          ],
+          "viewport_intersection_1280": [
+            1180.0,
+            78.0,
+            12.0,
+            547.99235
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ]
+        },
+        {
+          "path": "p_scroll/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 392,
+          "operation_offsets": [
+            2776,
+            548
+          ],
+          "affine_design": [
+            1.125,
+            0.0,
+            0.0,
+            51.37428283691406,
+            1770.0,
+            117.0
+          ],
+          "quad_1280": [
+            [
+              1180.0,
+              78.0
+            ],
+            [
+              1192.0,
+              78.0
+            ],
+            [
+              1192.0,
+              625.99235
+            ],
+            [
+              1180.0,
+              625.99235
+            ]
+          ],
+          "rect_1280": [
+            1180.0,
+            78.0,
+            12.0,
+            547.99235
+          ],
+          "viewport_intersection_1280": [
+            1180.0,
+            78.0,
+            12.0,
+            547.99235
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            16,
+            0,
+            16
+          ]
+        }
+      ]
+    },
+    "text_overlay": {
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\b953ff6350550467033b869eef017edcfbd41ec457b39979ee15a0549d26f5a1.json",
+      "sfl_sha256": "b953ff6350550467033b869eef017edcfbd41ec457b39979ee15a0549d26f5a1",
+      "root_entry_offset": 4292,
+      "root_label": "fl_wait",
+      "root_record": 14,
+      "root_sequence_offset": 6680,
+      "labels": [
+        {
+          "name": "fl_stop",
+          "record": 1,
+          "offset": 4336
+        },
+        {
+          "name": "fl_in",
+          "record": 2,
+          "offset": 4376
+        },
+        {
+          "name": "fl_wait",
+          "record": 14,
+          "offset": 6680
+        },
+        {
+          "name": "fl_up",
+          "record": 15,
+          "offset": 6904
+        },
+        {
+          "name": "fl_down",
+          "record": 25,
+          "offset": 7664
+        },
+        {
+          "name": "fl_out",
+          "record": 35,
+          "offset": 8400
+        }
+      ],
+      "named_placements": [
+        {
+          "path": "i_base",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            177.0,
+            767.0
+          ],
+          "operation_offsets": [
+            6708
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_base/i_base_hasi_000",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            177.0,
+            767.0
+          ],
+          "operation_offsets": [
+            6708,
+            1872
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_base/i_base_hasi_001",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            1733.0,
+            1005.0
+          ],
+          "operation_offsets": [
+            6708,
+            1920
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_000",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            944.0
+          ],
+          "operation_offsets": [
+            6716
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_000",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            944.0
+          ],
+          "operation_offsets": [
+            6716,
+            2064
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_001",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            960.0
+          ],
+          "operation_offsets": [
+            6716,
+            2092
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_001",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            992.0,
+            828.0
+          ],
+          "operation_offsets": [
+            6732
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_000",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            992.0,
+            828.0
+          ],
+          "operation_offsets": [
+            6732,
+            2064
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_001",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            992.0,
+            812.0
+          ],
+          "operation_offsets": [
+            6732,
+            2092
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_kousoku_text",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            282.0,
+            835.0
+          ],
+          "operation_offsets": [
+            6752
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_kousoku_text/_f_kousoku_text",
+          "ref": [
+            4,
+            0
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            284.0,
+            837.0
+          ],
+          "operation_offsets": [
+            6752,
+            3812
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_page_base_color",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            10.625,
+            0.0,
+            0.0,
+            1.0,
+            778.0,
+            115.0
+          ],
+          "operation_offsets": [
+            6780
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_number_000",
+          "ref": [
+            5,
+            6
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            1014.0,
+            159.0
+          ],
+          "operation_offsets": [
+            6800
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_number_001",
+          "ref": [
+            5,
+            7
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            974.0,
+            159.0
+          ],
+          "operation_offsets": [
+            6820
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_number_slash",
+          "ref": [
+            5,
+            8
+          ],
+          "affine_design": [
+            1.1999969482421875,
+            0.0,
+            0.0,
+            1.1999969482421875,
+            934.0,
+            158.0
+          ],
+          "operation_offsets": [
+            6840
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_number_002",
+          "ref": [
+            5,
+            9
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            896.0,
+            159.0
+          ],
+          "operation_offsets": [
+            6860
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_number_003",
+          "ref": [
+            5,
+            10
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            856.0,
+            159.0
+          ],
+          "operation_offsets": [
+            6880
+          ],
+          "alpha_product": 1.0
+        }
+      ],
+      "leaves": [
+        {
+          "path": "i_base/i_base_hasi_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 1204,
+          "operation_offsets": [
+            6708,
+            1872,
+            1816
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            177.0,
+            767.0
+          ],
+          "quad_1280": [
+            [
+              118.0,
+              511.33333
+            ],
+            [
+              139.33333,
+              511.33333
+            ],
+            [
+              139.33333,
+              682.0
+            ],
+            [
+              118.0,
+              682.0
+            ]
+          ],
+          "rect_1280": [
+            118.0,
+            511.33333,
+            21.33333,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            118.0,
+            511.33333,
+            21.33333,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 3,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_base/d3",
+          "ref": [
+            3,
+            2
+          ],
+          "entry_offset": 1244,
+          "operation_offsets": [
+            6708,
+            1900
+          ],
+          "affine_design": [
+            46.62457275390625,
+            0.0,
+            0.0,
+            1.0,
+            209.0,
+            767.0
+          ],
+          "quad_1280": [
+            [
+              139.33333,
+              511.33333
+            ],
+            [
+              1133.99089,
+              511.33333
+            ],
+            [
+              1133.99089,
+              682.0
+            ],
+            [
+              139.33333,
+              682.0
+            ]
+          ],
+          "rect_1280": [
+            139.33333,
+            511.33333,
+            994.65756,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            139.33333,
+            511.33333,
+            994.65756,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 4,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_base/i_base_hasi_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 1204,
+          "operation_offsets": [
+            6708,
+            1920,
+            1816
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            1733.0,
+            1005.0
+          ],
+          "quad_1280": [
+            [
+              1155.33333,
+              670.0
+            ],
+            [
+              1134.0,
+              670.0
+            ],
+            [
+              1134.0,
+              499.33333
+            ],
+            [
+              1155.33333,
+              499.33333
+            ]
+          ],
+          "rect_1280": [
+            1134.0,
+            499.33333,
+            21.33333,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            1134.0,
+            499.33333,
+            21.33333,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 3,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_000/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1284,
+          "operation_offsets": [
+            6716,
+            2064,
+            2004
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            944.0
+          ],
+          "quad_1280": [
+            [
+              618.66667,
+              629.33333
+            ],
+            [
+              661.33333,
+              629.33333
+            ],
+            [
+              661.33333,
+              672.0
+            ],
+            [
+              618.66667,
+              672.0
+            ]
+          ],
+          "rect_1280": [
+            618.66667,
+            629.33333,
+            42.66666,
+            42.66667
+          ],
+          "viewport_intersection_1280": [
+            618.66667,
+            629.33333,
+            42.66666,
+            42.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_001/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1284,
+          "operation_offsets": [
+            6716,
+            2092,
+            2004
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            960.0
+          ],
+          "quad_1280": [
+            [
+              618.66667,
+              640.0
+            ],
+            [
+              661.33333,
+              640.0
+            ],
+            [
+              661.33333,
+              682.66667
+            ],
+            [
+              618.66667,
+              682.66667
+            ]
+          ],
+          "rect_1280": [
+            618.66667,
+            640.0,
+            42.66666,
+            42.66667
+          ],
+          "viewport_intersection_1280": [
+            618.66667,
+            640.0,
+            42.66666,
+            42.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_000/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1284,
+          "operation_offsets": [
+            6732,
+            2064,
+            2004
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            992.0,
+            828.0
+          ],
+          "quad_1280": [
+            [
+              661.33333,
+              552.0
+            ],
+            [
+              618.66667,
+              552.0
+            ],
+            [
+              618.66667,
+              509.33333
+            ],
+            [
+              661.33333,
+              509.33333
+            ]
+          ],
+          "rect_1280": [
+            618.66667,
+            509.33333,
+            42.66666,
+            42.66667
+          ],
+          "viewport_intersection_1280": [
+            618.66667,
+            509.33333,
+            42.66666,
+            42.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_001/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1284,
+          "operation_offsets": [
+            6732,
+            2092,
+            2004
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            992.0,
+            812.0
+          ],
+          "quad_1280": [
+            [
+              661.33333,
+              541.33333
+            ],
+            [
+              618.66667,
+              541.33333
+            ],
+            [
+              618.66667,
+              498.66667
+            ],
+            [
+              661.33333,
+              498.66667
+            ]
+          ],
+          "rect_1280": [
+            618.66667,
+            498.66667,
+            42.66666,
+            42.66666
+          ],
+          "viewport_intersection_1280": [
+            618.66667,
+            498.66667,
+            42.66666,
+            42.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_kousoku_text/_f_kousoku_text",
+          "ref": [
+            4,
+            0
+          ],
+          "entry_offset": 1620,
+          "operation_offsets": [
+            6752,
+            3812
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            284.0,
+            837.0
+          ],
+          "quad_1280": [
+            [
+              188.0,
+              556.66667
+            ],
+            [
+              1088.0,
+              556.66667
+            ],
+            [
+              1088.0,
+              630.0
+            ],
+            [
+              188.0,
+              630.0
+            ]
+          ],
+          "rect_1280": [
+            188.0,
+            556.66667,
+            900.0,
+            73.33333
+          ],
+          "viewport_intersection_1280": [
+            188.0,
+            556.66667,
+            900.0,
+            73.33333
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "text",
+          "local_xywh": [
+            -2,
+            -2,
+            1350,
+            110
+          ],
+          "header_offset": 1636,
+          "font_height_design": 45,
+          "font_axes_1280": [
+            30.0,
+            30.0
+          ],
+          "alignment": "center",
+          "line_gap_u16": 40
+        },
+        {
+          "path": "d18",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1324,
+          "operation_offsets": [
+            6760
+          ],
+          "affine_design": [
+            10.31256103515625,
+            0.0,
+            0.0,
+            1.0,
+            778.0,
+            112.0
+          ],
+          "quad_1280": [
+            [
+              518.66667,
+              74.66667
+            ],
+            [
+              738.66797,
+              74.66667
+            ],
+            [
+              738.66797,
+              160.0
+            ],
+            [
+              518.66667,
+              160.0
+            ]
+          ],
+          "rect_1280": [
+            518.66667,
+            74.66667,
+            220.0013,
+            85.33333
+          ],
+          "viewport_intersection_1280": [
+            518.66667,
+            74.66667,
+            220.0013,
+            85.33333
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            128
+          ]
+        },
+        {
+          "path": "p_page_base_color/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 1364,
+          "operation_offsets": [
+            6780,
+            3888
+          ],
+          "affine_design": [
+            10.625,
+            0.0,
+            0.0,
+            1.0,
+            778.0,
+            115.0
+          ],
+          "quad_1280": [
+            [
+              518.66667,
+              76.66667
+            ],
+            [
+              745.33333,
+              76.66667
+            ],
+            [
+              745.33333,
+              162.0
+            ],
+            [
+              518.66667,
+              162.0
+            ]
+          ],
+          "rect_1280": [
+            518.66667,
+            76.66667,
+            226.66666,
+            85.33333
+          ],
+          "viewport_intersection_1280": [
+            518.66667,
+            76.66667,
+            226.66666,
+            85.33333
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            128
+          ]
+        },
+        {
+          "path": "p_number_000/d1",
+          "ref": [
+            3,
+            6
+          ],
+          "entry_offset": 1404,
+          "operation_offsets": [
+            6800,
+            3944
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            1014.0,
+            159.0
+          ],
+          "quad_1280": [
+            [
+              676.0,
+              106.0
+            ],
+            [
+              699.46615,
+              106.0
+            ],
+            [
+              699.46615,
+              129.46615
+            ],
+            [
+              676.0,
+              129.46615
+            ]
+          ],
+          "rect_1280": [
+            676.0,
+            106.0,
+            23.46615,
+            23.46615
+          ],
+          "viewport_intersection_1280": [
+            676.0,
+            106.0,
+            23.46615,
+            23.46615
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 5,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "p_number_001/d1",
+          "ref": [
+            3,
+            7
+          ],
+          "entry_offset": 1444,
+          "operation_offsets": [
+            6820,
+            4000
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            974.0,
+            159.0
+          ],
+          "quad_1280": [
+            [
+              649.33333,
+              106.0
+            ],
+            [
+              672.79948,
+              106.0
+            ],
+            [
+              672.79948,
+              129.46615
+            ],
+            [
+              649.33333,
+              129.46615
+            ]
+          ],
+          "rect_1280": [
+            649.33333,
+            106.0,
+            23.46615,
+            23.46615
+          ],
+          "viewport_intersection_1280": [
+            649.33333,
+            106.0,
+            23.46615,
+            23.46615
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "p_number_slash/d1",
+          "ref": [
+            3,
+            8
+          ],
+          "entry_offset": 1484,
+          "operation_offsets": [
+            6840,
+            4056
+          ],
+          "affine_design": [
+            1.1999969482421875,
+            0.0,
+            0.0,
+            1.1999969482421875,
+            934.0,
+            158.0
+          ],
+          "quad_1280": [
+            [
+              622.66667,
+              105.33333
+            ],
+            [
+              648.2666,
+              105.33333
+            ],
+            [
+              648.2666,
+              130.93327
+            ],
+            [
+              622.66667,
+              130.93327
+            ]
+          ],
+          "rect_1280": [
+            622.66667,
+            105.33333,
+            25.59993,
+            25.59994
+          ],
+          "viewport_intersection_1280": [
+            622.66667,
+            105.33333,
+            25.59993,
+            25.59994
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 15,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "p_number_002/d1",
+          "ref": [
+            3,
+            9
+          ],
+          "entry_offset": 1524,
+          "operation_offsets": [
+            6860,
+            4112
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            896.0,
+            159.0
+          ],
+          "quad_1280": [
+            [
+              597.33333,
+              106.0
+            ],
+            [
+              620.79948,
+              106.0
+            ],
+            [
+              620.79948,
+              129.46615
+            ],
+            [
+              597.33333,
+              129.46615
+            ]
+          ],
+          "rect_1280": [
+            597.33333,
+            106.0,
+            23.46615,
+            23.46615
+          ],
+          "viewport_intersection_1280": [
+            597.33333,
+            106.0,
+            23.46615,
+            23.46615
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 7,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        },
+        {
+          "path": "p_number_003/d1",
+          "ref": [
+            3,
+            10
+          ],
+          "entry_offset": 1564,
+          "operation_offsets": [
+            6880,
+            4168
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            856.0,
+            159.0
+          ],
+          "quad_1280": [
+            [
+              570.66667,
+              106.0
+            ],
+            [
+              594.13281,
+              106.0
+            ],
+            [
+              594.13281,
+              129.46615
+            ],
+            [
+              570.66667,
+              129.46615
+            ]
+          ],
+          "rect_1280": [
+            570.66667,
+            106.0,
+            23.46614,
+            23.46615
+          ],
+          "viewport_intersection_1280": [
+            570.66667,
+            106.0,
+            23.46614,
+            23.46615
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 8,
+          "local_lrtb": [
+            0,
+            32,
+            0,
+            32
+          ]
+        }
+      ]
+    },
+    "cover_US": {
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\0bf756d3d988f0973807ba8a4933c12b64665940634c17a6ebad146ce8194dfe.json",
+      "sfl_sha256": "0bf756d3d988f0973807ba8a4933c12b64665940634c17a6ebad146ce8194dfe",
+      "root_entry_offset": 131308,
+      "root_label": "fl_wait",
+      "root_record": 14,
+      "root_sequence_offset": 132876,
+      "labels": [
+        {
+          "name": "fl_stop",
+          "record": 1,
+          "offset": 131352
+        },
+        {
+          "name": "fl_in",
+          "record": 2,
+          "offset": 131392
+        },
+        {
+          "name": "fl_wait",
+          "record": 14,
+          "offset": 132876
+        },
+        {
+          "name": "fl_out",
+          "record": 15,
+          "offset": 132992
+        },
+        {
+          "name": "fl_out_up",
+          "record": 28,
+          "offset": 134416
+        },
+        {
+          "name": "fl_out_down",
+          "record": 41,
+          "offset": 135976
+        },
+        {
+          "name": "fl_in_down",
+          "record": 55,
+          "offset": 137664
+        },
+        {
+          "name": "fl_in_up",
+          "record": 69,
+          "offset": 139248
+        }
+      ],
+      "named_placements": [
+        {
+          "path": "p_title_base",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            25.78106689453125,
+            0.0,
+            0.0,
+            1.250030517578125,
+            136.0,
+            860.0
+          ],
+          "operation_offsets": [
+            132904
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_title_base/_a_title_base_000_DXT1",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            25.78106689453125,
+            0.0,
+            0.0,
+            1.250030517578125,
+            136.0,
+            860.0
+          ],
+          "operation_offsets": [
+            132904,
+            2112
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou",
+          "ref": [
+            5,
+            6
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            585.0,
+            84.0
+          ],
+          "operation_offsets": [
+            132924
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_000",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1194.6229125976563,
+            479.635400390625
+          ],
+          "operation_offsets": [
+            132924,
+            2464
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_000/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1194.6229125976563,
+            479.635400390625
+          ],
+          "operation_offsets": [
+            132924,
+            2464,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_006",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            1.3999623619019985,
+            0.0,
+            0.0,
+            2.0999755859375,
+            1179.3455902099608,
+            463.8330841064453
+          ],
+          "operation_offsets": [
+            132924,
+            2492
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_006/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.3999623619019985,
+            0.0,
+            0.0,
+            2.0999755859375,
+            1179.3455902099608,
+            463.8330841064453
+          ],
+          "operation_offsets": [
+            132924,
+            2492,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_001",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            0.8043294856324792,
+            0.6749234888702631,
+            -0.5249778749421239,
+            0.9093186520040035,
+            588.0449645996093,
+            480.3178924560547
+          ],
+          "operation_offsets": [
+            132924,
+            2528
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_001/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            0.8043294856324792,
+            0.6749234888702631,
+            -0.5249778749421239,
+            0.9093186520040035,
+            588.0449645996093,
+            480.3178924560547
+          ],
+          "operation_offsets": [
+            132924,
+            2528,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_005",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.6799868773669004,
+            563.3702514648437,
+            477.27292785644534
+          ],
+          "operation_offsets": [
+            132924,
+            2564
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_005/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.6799868773669004,
+            563.3702514648437,
+            477.27292785644534
+          ],
+          "operation_offsets": [
+            132924,
+            2564,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_002",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.787491425871849,
+            0.0,
+            -0.8864559112116694,
+            1.5463672149926424,
+            777.3052642822265,
+            732.2624633789063
+          ],
+          "operation_offsets": [
+            132924,
+            2596
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_002/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.787491425871849,
+            0.0,
+            -0.8864559112116694,
+            1.5463672149926424,
+            777.3052642822265,
+            732.2624633789063
+          ],
+          "operation_offsets": [
+            132924,
+            2596,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_004",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            2.450014241039753,
+            0.0,
+            0.0,
+            3.04489410482347,
+            727.6408416748047,
+            695.8803863525391
+          ],
+          "operation_offsets": [
+            132924,
+            2632
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_004/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            2.450014241039753,
+            0.0,
+            0.0,
+            3.04489410482347,
+            727.6408416748047,
+            695.8803863525391
+          ],
+          "operation_offsets": [
+            132924,
+            2632,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_003",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            2.0999755859375,
+            0.0,
+            -0.7182457391172647,
+            1.9733252944424748,
+            1103.9039672851563,
+            695.9328857421875
+          ],
+          "operation_offsets": [
+            132924,
+            2668
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_003/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            2.0999755859375,
+            0.0,
+            -0.7182457391172647,
+            1.9733252944424748,
+            1103.9039672851563,
+            695.9328857421875
+          ],
+          "operation_offsets": [
+            132924,
+            2668,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_003",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            2.4499821979552507,
+            0.0,
+            0.0,
+            3.6750213615596294,
+            1069.7268646240234,
+            641.4910186767579
+          ],
+          "operation_offsets": [
+            132924,
+            2704
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_003/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            2.4499821979552507,
+            0.0,
+            0.0,
+            3.6750213615596294,
+            1069.7268646240234,
+            641.4910186767579
+          ],
+          "operation_offsets": [
+            132924,
+            2704,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_004",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1177.193115234375,
+            611.4613677978516
+          ],
+          "operation_offsets": [
+            132924,
+            2740
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_004/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1177.193115234375,
+            611.4613677978516
+          ],
+          "operation_offsets": [
+            132924,
+            2740,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_002",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            1171.5231811523438,
+            613.666342163086
+          ],
+          "operation_offsets": [
+            132924,
+            2768
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_002/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            1171.5231811523438,
+            613.666342163086
+          ],
+          "operation_offsets": [
+            132924,
+            2768,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_005",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            658.3941467285156,
+            497.4326934814453
+          ],
+          "operation_offsets": [
+            132924,
+            2804
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_005/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            658.3941467285156,
+            497.4326934814453
+          ],
+          "operation_offsets": [
+            132924,
+            2804,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_001",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            658.3941467285156,
+            499.63766784667973
+          ],
+          "operation_offsets": [
+            132924,
+            2832
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_001/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            658.3941467285156,
+            499.63766784667973
+          ],
+          "operation_offsets": [
+            132924,
+            2832,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_006",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1190.5279602050782,
+            497.4326934814453
+          ],
+          "operation_offsets": [
+            132924,
+            2864
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_006/_a_pent_000_DXT1",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1190.5279602050782,
+            497.4326934814453
+          ],
+          "operation_offsets": [
+            132924,
+            2864,
+            2248
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_000",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            1187.5879943847656,
+            496.0152099609375
+          ],
+          "operation_offsets": [
+            132924,
+            2892
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_koushou/i_pent_ef_000/_a_pent_ef_DXT1",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            1187.5879943847656,
+            496.0152099609375
+          ],
+          "operation_offsets": [
+            132924,
+            2892,
+            2376
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_000",
+          "ref": [
+            5,
+            8
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            931.0
+          ],
+          "operation_offsets": [
+            132944
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_000",
+          "ref": [
+            5,
+            7
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            931.0
+          ],
+          "operation_offsets": [
+            132944,
+            129496
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_001",
+          "ref": [
+            5,
+            7
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            947.0
+          ],
+          "operation_offsets": [
+            132944,
+            129524
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_001",
+          "ref": [
+            5,
+            8
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            993.0,
+            872.0
+          ],
+          "operation_offsets": [
+            132960
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_000",
+          "ref": [
+            5,
+            7
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            993.0,
+            872.0
+          ],
+          "operation_offsets": [
+            132960,
+            129496
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_001",
+          "ref": [
+            5,
+            7
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            993.0,
+            856.0
+          ],
+          "operation_offsets": [
+            132960,
+            129524
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_kousoku_title",
+          "ref": [
+            5,
+            9
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            289.0,
+            879.0
+          ],
+          "operation_offsets": [
+            132980
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "p_kousoku_title/_f_kousoku_title",
+          "ref": [
+            4,
+            0
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            433.9,
+            881.0
+          ],
+          "operation_offsets": [
+            132980,
+            131244
+          ],
+          "alpha_product": 1.0
+        }
+      ],
+      "leaves": [
+        {
+          "path": "p_title_base/_a_title_base_000_DXT1/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 1720,
+          "operation_offsets": [
+            132904,
+            2112,
+            2056
+          ],
+          "affine_design": [
+            25.78106689453125,
+            0.0,
+            0.0,
+            1.250030517578125,
+            136.0,
+            860.0
+          ],
+          "quad_1280": [
+            [
+              90.66667,
+              573.33333
+            ],
+            [
+              1190.65885,
+              573.33333
+            ],
+            [
+              1190.65885,
+              626.66797
+            ],
+            [
+              90.66667,
+              626.66797
+            ]
+          ],
+          "rect_1280": [
+            90.66667,
+            573.33333,
+            1099.99218,
+            53.33464
+          ],
+          "viewport_intersection_1280": [
+            90.66667,
+            573.33333,
+            1099.99218,
+            53.33464
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 3,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/d1",
+          "ref": [
+            3,
+            2
+          ],
+          "entry_offset": 1760,
+          "operation_offsets": [
+            132924,
+            2452
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            585.0,
+            84.0
+          ],
+          "quad_1280": [
+            [
+              390.0,
+              56.0
+            ],
+            [
+              879.9943,
+              56.0
+            ],
+            [
+              879.9943,
+              545.9943
+            ],
+            [
+              390.0,
+              545.9943
+            ]
+          ],
+          "rect_1280": [
+            390.0,
+            56.0,
+            489.9943,
+            489.9943
+          ],
+          "viewport_intersection_1280": [
+            390.0,
+            56.0,
+            489.9943,
+            489.9943
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 4,
+          "local_lrtb": [
+            0,
+            700,
+            0,
+            700
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_000/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2464,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1194.6229125976563,
+            479.635400390625
+          ],
+          "quad_1280": [
+            [
+              796.41528,
+              319.75693
+            ],
+            [
+              841.21475,
+              319.75693
+            ],
+            [
+              841.21475,
+              364.55641
+            ],
+            [
+              796.41528,
+              364.55641
+            ]
+          ],
+          "rect_1280": [
+            796.41528,
+            319.75693,
+            44.79947,
+            44.79948
+          ],
+          "viewport_intersection_1280": [
+            796.41528,
+            319.75693,
+            44.79947,
+            44.79948
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_006/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2492,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            1.3999623619019985,
+            0.0,
+            0.0,
+            2.0999755859375,
+            1179.3455902099608,
+            463.8330841064453
+          ],
+          "quad_1280": [
+            [
+              786.23039,
+              309.22206
+            ],
+            [
+              845.96212,
+              309.22206
+            ],
+            [
+              845.96212,
+              398.82101
+            ],
+            [
+              786.23039,
+              398.82101
+            ]
+          ],
+          "rect_1280": [
+            786.23039,
+            309.22206,
+            59.73173,
+            89.59895
+          ],
+          "viewport_intersection_1280": [
+            786.23039,
+            309.22206,
+            59.73173,
+            89.59895
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_001/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2528,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            0.8043294856324792,
+            0.6749234888702631,
+            -0.5249778749421239,
+            0.9093186520040035,
+            588.0449645996093,
+            480.3178924560547
+          ],
+          "quad_1280": [
+            [
+              392.02998,
+              320.21193
+            ],
+            [
+              426.34803,
+              349.00866
+            ],
+            [
+              403.94898,
+              387.80626
+            ],
+            [
+              369.63092,
+              359.00952
+            ]
+          ],
+          "rect_1280": [
+            369.63092,
+            320.21193,
+            56.71711,
+            67.59433
+          ],
+          "viewport_intersection_1280": [
+            369.63092,
+            320.21193,
+            56.71711,
+            67.59433
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_005/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2564,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.6799868773669004,
+            563.3702514648437,
+            477.27292785644534
+          ],
+          "quad_1280": [
+            [
+              375.58017,
+              318.18195
+            ],
+            [
+              420.37965,
+              318.18195
+            ],
+            [
+              420.37965,
+              389.86139
+            ],
+            [
+              375.58017,
+              389.86139
+            ]
+          ],
+          "rect_1280": [
+            375.58017,
+            318.18195,
+            44.79948,
+            71.67944
+          ],
+          "viewport_intersection_1280": [
+            375.58017,
+            318.18195,
+            44.79948,
+            71.67944
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_002/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2596,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            1.787491425871849,
+            0.0,
+            -0.8864559112116694,
+            1.5463672149926424,
+            777.3052642822265,
+            732.2624633789063
+          ],
+          "quad_1280": [
+            [
+              518.20351,
+              488.17498
+            ],
+            [
+              594.46981,
+              488.17498
+            ],
+            [
+              556.64769,
+              554.15331
+            ],
+            [
+              480.38139,
+              554.15331
+            ]
+          ],
+          "rect_1280": [
+            480.38139,
+            488.17498,
+            114.08842,
+            65.97833
+          ],
+          "viewport_intersection_1280": [
+            480.38139,
+            488.17498,
+            114.08842,
+            65.97833
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_004/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2632,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            2.450014241039753,
+            0.0,
+            0.0,
+            3.04489410482347,
+            727.6408416748047,
+            695.8803863525391
+          ],
+          "quad_1280": [
+            [
+              485.09389,
+              463.92026
+            ],
+            [
+              589.62784,
+              463.92026
+            ],
+            [
+              589.62784,
+              593.83574
+            ],
+            [
+              485.09389,
+              593.83574
+            ]
+          ],
+          "rect_1280": [
+            485.09389,
+            463.92026,
+            104.53395,
+            129.91548
+          ],
+          "viewport_intersection_1280": [
+            485.09389,
+            463.92026,
+            104.53395,
+            129.91548
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_003/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2668,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            2.0999755859375,
+            0.0,
+            -0.7182457391172647,
+            1.9733252944424748,
+            1103.9039672851563,
+            695.9328857421875
+          ],
+          "quad_1280": [
+            [
+              735.93598,
+              463.95526
+            ],
+            [
+              825.53494,
+              463.95526
+            ],
+            [
+              794.88978,
+              548.15047
+            ],
+            [
+              705.29083,
+              548.15047
+            ]
+          ],
+          "rect_1280": [
+            705.29083,
+            463.95526,
+            120.24411,
+            84.19521
+          ],
+          "viewport_intersection_1280": [
+            705.29083,
+            463.95526,
+            120.24411,
+            84.19521
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_003/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2704,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            2.4499821979552507,
+            0.0,
+            0.0,
+            3.6750213615596294,
+            1069.7268646240234,
+            641.4910186767579
+          ],
+          "quad_1280": [
+            [
+              713.15124,
+              427.66068
+            ],
+            [
+              817.68382,
+              427.66068
+            ],
+            [
+              817.68382,
+              584.46159
+            ],
+            [
+              713.15124,
+              584.46159
+            ]
+          ],
+          "rect_1280": [
+            713.15124,
+            427.66068,
+            104.53258,
+            156.80091
+          ],
+          "viewport_intersection_1280": [
+            713.15124,
+            427.66068,
+            104.53258,
+            156.80091
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_004/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2740,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1177.193115234375,
+            611.4613677978516
+          ],
+          "quad_1280": [
+            [
+              784.79541,
+              407.64091
+            ],
+            [
+              829.59489,
+              407.64091
+            ],
+            [
+              829.59489,
+              452.44039
+            ],
+            [
+              784.79541,
+              452.44039
+            ]
+          ],
+          "rect_1280": [
+            784.79541,
+            407.64091,
+            44.79948,
+            44.79948
+          ],
+          "viewport_intersection_1280": [
+            784.79541,
+            407.64091,
+            44.79948,
+            44.79948
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_002/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2768,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            1171.5231811523438,
+            613.666342163086
+          ],
+          "quad_1280": [
+            [
+              781.01545,
+              409.11089
+            ],
+            [
+              825.81493,
+              409.11089
+            ],
+            [
+              825.81493,
+              476.31011
+            ],
+            [
+              781.01545,
+              476.31011
+            ]
+          ],
+          "rect_1280": [
+            781.01545,
+            409.11089,
+            44.79948,
+            67.19922
+          ],
+          "viewport_intersection_1280": [
+            781.01545,
+            409.11089,
+            44.79948,
+            67.19922
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_005/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2804,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            658.3941467285156,
+            497.4326934814453
+          ],
+          "quad_1280": [
+            [
+              438.92943,
+              331.6218
+            ],
+            [
+              483.72891,
+              331.6218
+            ],
+            [
+              483.72891,
+              376.42127
+            ],
+            [
+              438.92943,
+              376.42127
+            ]
+          ],
+          "rect_1280": [
+            438.92943,
+            331.6218,
+            44.79948,
+            44.79947
+          ],
+          "viewport_intersection_1280": [
+            438.92943,
+            331.6218,
+            44.79948,
+            44.79947
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_001/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2832,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            658.3941467285156,
+            499.63766784667973
+          ],
+          "quad_1280": [
+            [
+              438.92943,
+              333.09178
+            ],
+            [
+              483.72891,
+              333.09178
+            ],
+            [
+              483.72891,
+              400.291
+            ],
+            [
+              438.92943,
+              400.291
+            ]
+          ],
+          "rect_1280": [
+            438.92943,
+            333.09178,
+            44.79948,
+            67.19922
+          ],
+          "viewport_intersection_1280": [
+            438.92943,
+            333.09178,
+            44.79948,
+            67.19922
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_006/_a_pent_000_DXT1/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 1800,
+          "operation_offsets": [
+            132924,
+            2864,
+            2248,
+            2192
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            1190.5279602050782,
+            497.4326934814453
+          ],
+          "quad_1280": [
+            [
+              793.68531,
+              331.6218
+            ],
+            [
+              838.48479,
+              331.6218
+            ],
+            [
+              838.48479,
+              376.42127
+            ],
+            [
+              793.68531,
+              376.42127
+            ]
+          ],
+          "rect_1280": [
+            793.68531,
+            331.6218,
+            44.79948,
+            44.79947
+          ],
+          "viewport_intersection_1280": [
+            793.68531,
+            331.6218,
+            44.79948,
+            44.79947
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 1,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_koushou/i_pent_ef_000/_a_pent_ef_DXT1/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 1840,
+          "operation_offsets": [
+            132924,
+            2892,
+            2376,
+            2320
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.574981689453125,
+            1187.5879943847656,
+            496.0152099609375
+          ],
+          "quad_1280": [
+            [
+              791.72533,
+              330.67681
+            ],
+            [
+              836.52481,
+              330.67681
+            ],
+            [
+              836.52481,
+              397.87603
+            ],
+            [
+              791.72533,
+              397.87603
+            ]
+          ],
+          "rect_1280": [
+            791.72533,
+            330.67681,
+            44.79948,
+            67.19922
+          ],
+          "viewport_intersection_1280": [
+            791.72533,
+            330.67681,
+            44.79948,
+            67.19922
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_000/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 1880,
+          "operation_offsets": [
+            132944,
+            129496,
+            129436
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            931.0
+          ],
+          "quad_1280": [
+            [
+              618.66667,
+              620.66667
+            ],
+            [
+              661.33333,
+              620.66667
+            ],
+            [
+              661.33333,
+              663.33333
+            ],
+            [
+              618.66667,
+              663.33333
+            ]
+          ],
+          "rect_1280": [
+            618.66667,
+            620.66667,
+            42.66666,
+            42.66666
+          ],
+          "viewport_intersection_1280": [
+            618.66667,
+            620.66667,
+            42.66666,
+            42.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_000/i_yazirusi_001/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 1880,
+          "operation_offsets": [
+            132944,
+            129524,
+            129436
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            928.0,
+            947.0
+          ],
+          "quad_1280": [
+            [
+              618.66667,
+              631.33333
+            ],
+            [
+              661.33333,
+              631.33333
+            ],
+            [
+              661.33333,
+              674.0
+            ],
+            [
+              618.66667,
+              674.0
+            ]
+          ],
+          "rect_1280": [
+            618.66667,
+            631.33333,
+            42.66666,
+            42.66667
+          ],
+          "viewport_intersection_1280": [
+            618.66667,
+            631.33333,
+            42.66666,
+            42.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_000/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 1880,
+          "operation_offsets": [
+            132960,
+            129496,
+            129436
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            993.0,
+            872.0
+          ],
+          "quad_1280": [
+            [
+              662.0,
+              581.33333
+            ],
+            [
+              619.33333,
+              581.33333
+            ],
+            [
+              619.33333,
+              538.66667
+            ],
+            [
+              662.0,
+              538.66667
+            ]
+          ],
+          "rect_1280": [
+            619.33333,
+            538.66667,
+            42.66667,
+            42.66666
+          ],
+          "viewport_intersection_1280": [
+            619.33333,
+            538.66667,
+            42.66667,
+            42.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_yazirusi_001/i_yazirusi_001/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 1880,
+          "operation_offsets": [
+            132960,
+            129524,
+            129436
+          ],
+          "affine_design": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            993.0,
+            856.0
+          ],
+          "quad_1280": [
+            [
+              662.0,
+              570.66667
+            ],
+            [
+              619.33333,
+              570.66667
+            ],
+            [
+              619.33333,
+              528.0
+            ],
+            [
+              662.0,
+              528.0
+            ]
+          ],
+          "rect_1280": [
+            619.33333,
+            528.0,
+            42.66667,
+            42.66667
+          ],
+          "viewport_intersection_1280": [
+            619.33333,
+            528.0,
+            42.66667,
+            42.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            64,
+            0,
+            64
+          ]
+        },
+        {
+          "path": "p_kousoku_title/_f_kousoku_title",
+          "ref": [
+            4,
+            0
+          ],
+          "entry_offset": 1936,
+          "operation_offsets": [
+            132980,
+            131244
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            433.9,
+            881.0
+          ],
+          "quad_1280": [
+            [
+              193.26667,
+              586.0
+            ],
+            [
+              1093.26667,
+              586.0
+            ],
+            [
+              1093.26667,
+              633.33333
+            ],
+            [
+              193.26667,
+              633.33333
+            ]
+          ],
+          "rect_1280": [
+            193.26667,
+            586.0,
+            900.0,
+            47.33333
+          ],
+          "viewport_intersection_1280": [
+            193.26667,
+            586.0,
+            900.0,
+            47.33333
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "text",
+          "local_xywh": [
+            -144,
+            -2,
+            1350,
+            71
+          ],
+          "header_offset": 1952,
+          "font_height_design": 45,
+          "font_axes_1280": [
+            30.0,
+            30.0
+          ],
+          "alignment": "center",
+          "line_gap_u16": 40
+        }
+      ]
+    },
+    "illustration_01": {
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\5f577d127794abafd4963994d0cf677a6d25d790054139793437a93b7b9ebb22.json",
+      "sfl_sha256": "5f577d127794abafd4963994d0cf677a6d25d790054139793437a93b7b9ebb22",
+      "root_entry_offset": 7500,
+      "root_label": "fl_wait",
+      "root_record": 22,
+      "root_sequence_offset": 8400,
+      "labels": [
+        {
+          "name": "fl_stop",
+          "record": 1,
+          "offset": 7544
+        },
+        {
+          "name": "fl_in_down",
+          "record": 2,
+          "offset": 7584
+        },
+        {
+          "name": "fl_wait",
+          "record": 22,
+          "offset": 8400
+        },
+        {
+          "name": "fl_out_up",
+          "record": 23,
+          "offset": 8448
+        },
+        {
+          "name": "fl_in_up",
+          "record": 37,
+          "offset": 9212
+        },
+        {
+          "name": "fl_out_down",
+          "record": 58,
+          "offset": 10028
+        },
+        {
+          "name": "fl_out",
+          "record": 72,
+          "offset": 10792
+        }
+      ],
+      "named_placements": [
+        {
+          "path": "i_book",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            710.45,
+            225.4
+          ],
+          "operation_offsets": [
+            8052
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_book/i_book_000_000",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            667.3859558105469,
+            226.88496704101564
+          ],
+          "operation_offsets": [
+            8052,
+            904
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_book/i_book_001_000",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            1.190845761448145,
+            -0.2101225946098566,
+            -1.6784295439720154e-05,
+            1.7599340826272964,
+            617.8870544433594,
+            208.35037841796876
+          ],
+          "operation_offsets": [
+            8052,
+            936
+          ],
+          "alpha_product": 0.0
+        },
+        {
+          "path": "i_batu",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            700.3000000000001,
+            226.35000000000002
+          ],
+          "operation_offsets": [
+            8428
+          ],
+          "alpha_product": 1.0
+        }
+      ],
+      "leaves": [
+        {
+          "path": "i_book/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 460,
+          "operation_offsets": [
+            8052,
+            892
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            710.45,
+            225.4
+          ],
+          "quad_1280": [
+            [
+              473.63333,
+              150.26667
+            ],
+            [
+              849.09167,
+              150.26667
+            ],
+            [
+              849.09167,
+              525.725
+            ],
+            [
+              473.63333,
+              525.725
+            ]
+          ],
+          "rect_1280": [
+            473.63333,
+            150.26667,
+            375.45834,
+            375.45833
+          ],
+          "viewport_intersection_1280": [
+            473.63333,
+            150.26667,
+            375.45834,
+            375.45833
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 0,
+          "local_lrtb": [
+            0,
+            512,
+            0,
+            512
+          ]
+        },
+        {
+          "path": "i_book/i_book_000_000/d1",
+          "ref": [
+            3,
+            2
+          ],
+          "entry_offset": 500,
+          "operation_offsets": [
+            8052,
+            904,
+            720
+          ],
+          "affine_design": [
+            1.0999755859375,
+            0.0,
+            0.0,
+            1.0999755859375,
+            667.3859558105469,
+            226.88496704101564
+          ],
+          "quad_1280": [
+            [
+              444.92397,
+              151.25664
+            ],
+            [
+              820.3823,
+              151.25664
+            ],
+            [
+              820.3823,
+              526.71498
+            ],
+            [
+              444.92397,
+              526.71498
+            ]
+          ],
+          "rect_1280": [
+            444.92397,
+            151.25664,
+            375.45833,
+            375.45834
+          ],
+          "viewport_intersection_1280": [
+            444.92397,
+            151.25664,
+            375.45833,
+            375.45834
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 3,
+          "local_lrtb": [
+            0,
+            512,
+            0,
+            512
+          ]
+        },
+        {
+          "path": "i_book/i_book_001_000/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 540,
+          "operation_offsets": [
+            8052,
+            936,
+            776
+          ],
+          "affine_design": [
+            1.190845761448145,
+            -0.2101225946098566,
+            -1.6784295439720154e-05,
+            1.7599340826272964,
+            617.8870544433594,
+            208.35037841796876
+          ],
+          "quad_1280": [
+            [
+              411.9247,
+              138.90025
+            ],
+            [
+              818.40006,
+              67.17841
+            ],
+            [
+              818.39719,
+              367.54049
+            ],
+            [
+              411.92184,
+              439.26234
+            ]
+          ],
+          "rect_1280": [
+            411.92184,
+            67.17841,
+            406.47822,
+            372.08393
+          ],
+          "viewport_intersection_1280": [
+            411.92184,
+            67.17841,
+            406.47822,
+            372.08393
+          ],
+          "alpha_product": 0.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            512,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_batu/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 620,
+          "operation_offsets": [
+            8428,
+            5784
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            700.3000000000001,
+            226.35000000000002
+          ],
+          "quad_1280": [
+            [
+              466.86667,
+              150.9
+            ],
+            [
+              808.2,
+              150.9
+            ],
+            [
+              808.2,
+              492.23333
+            ],
+            [
+              466.86667,
+              492.23333
+            ]
+          ],
+          "rect_1280": [
+            466.86667,
+            150.9,
+            341.33333,
+            341.33333
+          ],
+          "viewport_intersection_1280": [
+            466.86667,
+            150.9,
+            341.33333,
+            341.33333
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 4,
+          "local_lrtb": [
+            0,
+            512,
+            0,
+            512
+          ]
+        }
+      ]
+    },
+    "illustration_02_05_US": {
+      "metadata_path": "C:\\Users\\kirby\\Downloads\\v3_re\\scan_sfl_stage2\\sfl\\96c78b6ddd637c0e1a9a387aa4f06a4a5d166fc00ebc09844eddf22bffda6df4.json",
+      "sfl_sha256": "96c78b6ddd637c0e1a9a387aa4f06a4a5d166fc00ebc09844eddf22bffda6df4",
+      "root_entry_offset": 76564,
+      "root_label": "fl_wait_02",
+      "root_record": 53,
+      "root_sequence_offset": 82204,
+      "labels": [
+        {
+          "name": "fl_in_02_down",
+          "record": 2,
+          "offset": 76644
+        },
+        {
+          "name": "fl_wait_02",
+          "record": 53,
+          "offset": 82204
+        },
+        {
+          "name": "fl_out_02",
+          "record": 54,
+          "offset": 82368
+        },
+        {
+          "name": "fl_out_02_03",
+          "record": 64,
+          "offset": 84720
+        },
+        {
+          "name": "fl_wait_03",
+          "record": 186,
+          "offset": 92248
+        },
+        {
+          "name": "fl_out_03",
+          "record": 187,
+          "offset": 92284
+        },
+        {
+          "name": "fl_03_04",
+          "record": 197,
+          "offset": 95316
+        },
+        {
+          "name": "fl_wait_04",
+          "record": 329,
+          "offset": 104268
+        },
+        {
+          "name": "fl_out_04",
+          "record": 330,
+          "offset": 104304
+        },
+        {
+          "name": "fl_04_05",
+          "record": 340,
+          "offset": 108080
+        },
+        {
+          "name": "fl_wait_05",
+          "record": 408,
+          "offset": 116976
+        },
+        {
+          "name": "fl_out_05",
+          "record": 409,
+          "offset": 117012
+        },
+        {
+          "name": "fl_out_up_05",
+          "record": 420,
+          "offset": 119100
+        },
+        {
+          "name": "fl_in_up_05",
+          "record": 436,
+          "offset": 122896
+        },
+        {
+          "name": "fl_05_04",
+          "record": 452,
+          "offset": 126520
+        },
+        {
+          "name": "fl_04_03",
+          "record": 470,
+          "offset": 132356
+        },
+        {
+          "name": "fl_03_02",
+          "record": 485,
+          "offset": 137204
+        },
+        {
+          "name": "fl_02_01",
+          "record": 500,
+          "offset": 140808
+        }
+      ],
+      "named_placements": [
+        {
+          "path": "i_shitai_blood_000",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            0.5039825439453125,
+            0.0,
+            0.0,
+            0.5039825439453125,
+            788.95,
+            592.6
+          ],
+          "operation_offsets": [
+            78212
+          ],
+          "alpha_product": 1
+        },
+        {
+          "path": "i_shitai_blood_001",
+          "ref": [
+            5,
+            0
+          ],
+          "affine_design": [
+            -0.5039825439453125,
+            0.0,
+            0.0,
+            -0.5039825439453125,
+            1073.45,
+            718.9000000000001
+          ],
+          "operation_offsets": [
+            78232
+          ],
+          "alpha_product": 1
+        },
+        {
+          "path": "i_shitai_body",
+          "ref": [
+            5,
+            1
+          ],
+          "affine_design": [
+            0.5039825439453125,
+            0.0,
+            0.0,
+            0.5039825439453125,
+            850.35,
+            526.0500000000001
+          ],
+          "operation_offsets": [
+            78252
+          ],
+          "alpha_product": 1
+        },
+        {
+          "path": "i_koma_girl_000",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            196.0,
+            400.0
+          ],
+          "operation_offsets": [
+            82236
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_boy_000",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            360.0,
+            362.0
+          ],
+          "operation_offsets": [
+            82252
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_girl_001",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            511.0,
+            318.0
+          ],
+          "operation_offsets": [
+            82268
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_boy_001",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            675.0,
+            280.0
+          ],
+          "operation_offsets": [
+            82284
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_girl_003",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1609.0,
+            399.0
+          ],
+          "operation_offsets": [
+            82300
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_boy_003",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1447.0,
+            361.0
+          ],
+          "operation_offsets": [
+            82316
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_girl_002",
+          "ref": [
+            5,
+            2
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1292.0,
+            317.0
+          ],
+          "operation_offsets": [
+            82332
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_boy_002",
+          "ref": [
+            5,
+            3
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1128.0,
+            279.0
+          ],
+          "operation_offsets": [
+            82348
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_000",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            185.0,
+            493.0
+          ],
+          "operation_offsets": [
+            79520
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_001",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            342.0,
+            457.0
+          ],
+          "operation_offsets": [
+            80236
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_002",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            500.0,
+            414.0
+          ],
+          "operation_offsets": [
+            80596
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_003",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            660.0,
+            373.0
+          ],
+          "operation_offsets": [
+            80828
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_004",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1594.0,
+            493.0
+          ],
+          "operation_offsets": [
+            79568
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_005",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1435.0,
+            453.0
+          ],
+          "operation_offsets": [
+            80284
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_006",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1279.0,
+            412.0
+          ],
+          "operation_offsets": [
+            80628
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_saku_007",
+          "ref": [
+            5,
+            4
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1115.0,
+            371.0
+          ],
+          "operation_offsets": [
+            80844
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_monokuma_chair_000",
+          "ref": [
+            5,
+            5
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            825.6,
+            263.6
+          ],
+          "operation_offsets": [
+            81116
+          ],
+          "alpha_product": 1.0
+        },
+        {
+          "path": "i_koma_monokuma",
+          "ref": [
+            5,
+            6
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            894.0,
+            250.0
+          ],
+          "operation_offsets": [
+            81136
+          ],
+          "alpha_product": 1.0
+        }
+      ],
+      "leaves": [
+        {
+          "path": "i_shitai_blood_000/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 3608,
+          "operation_offsets": [
+            78212,
+            4348
+          ],
+          "affine_design": [
+            0.5039825439453125,
+            0.0,
+            0.0,
+            0.5039825439453125,
+            788.95,
+            592.6
+          ],
+          "quad_1280": [
+            [
+              525.96667,
+              395.06667
+            ],
+            [
+              697.99271,
+              395.06667
+            ],
+            [
+              697.99271,
+              481.07969
+            ],
+            [
+              525.96667,
+              481.07969
+            ]
+          ],
+          "rect_1280": [
+            525.96667,
+            395.06667,
+            172.02604,
+            86.01302
+          ],
+          "viewport_intersection_1280": [
+            525.96667,
+            395.06667,
+            172.02604,
+            86.01302
+          ],
+          "alpha_product": 1,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 3,
+          "local_lrtb": [
+            0,
+            512,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_shitai_blood_001/d1",
+          "ref": [
+            3,
+            1
+          ],
+          "entry_offset": 3608,
+          "operation_offsets": [
+            78232,
+            4348
+          ],
+          "affine_design": [
+            -0.5039825439453125,
+            0.0,
+            0.0,
+            -0.5039825439453125,
+            1073.45,
+            718.9000000000001
+          ],
+          "quad_1280": [
+            [
+              715.63333,
+              479.26667
+            ],
+            [
+              543.60729,
+              479.26667
+            ],
+            [
+              543.60729,
+              393.25365
+            ],
+            [
+              715.63333,
+              393.25365
+            ]
+          ],
+          "rect_1280": [
+            543.60729,
+            393.25365,
+            172.02604,
+            86.01302
+          ],
+          "viewport_intersection_1280": [
+            543.60729,
+            393.25365,
+            172.02604,
+            86.01302
+          ],
+          "alpha_product": 1,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 3,
+          "local_lrtb": [
+            0,
+            512,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_shitai_body/d1",
+          "ref": [
+            3,
+            2
+          ],
+          "entry_offset": 3648,
+          "operation_offsets": [
+            78252,
+            4404
+          ],
+          "affine_design": [
+            0.5039825439453125,
+            0.0,
+            0.0,
+            0.5039825439453125,
+            850.35,
+            526.0500000000001
+          ],
+          "quad_1280": [
+            [
+              566.9,
+              350.7
+            ],
+            [
+              802.09185,
+              350.7
+            ],
+            [
+              802.09185,
+              522.72604
+            ],
+            [
+              566.9,
+              522.72604
+            ]
+          ],
+          "rect_1280": [
+            566.9,
+            350.7,
+            235.19185,
+            172.02604
+          ],
+          "viewport_intersection_1280": [
+            566.9,
+            350.7,
+            235.19185,
+            172.02604
+          ],
+          "alpha_product": 1,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 2,
+          "local_lrtb": [
+            0,
+            700,
+            0,
+            512
+          ]
+        },
+        {
+          "path": "i_koma_girl_000/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 3688,
+          "operation_offsets": [
+            82236,
+            4460
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            196.0,
+            400.0
+          ],
+          "quad_1280": [
+            [
+              130.66667,
+              266.66667
+            ],
+            [
+              216.0,
+              266.66667
+            ],
+            [
+              216.0,
+              437.33333
+            ],
+            [
+              130.66667,
+              437.33333
+            ]
+          ],
+          "rect_1280": [
+            130.66667,
+            266.66667,
+            85.33333,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            130.66667,
+            266.66667,
+            85.33333,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 13,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_boy_000/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 3728,
+          "operation_offsets": [
+            82252,
+            4516
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            360.0,
+            362.0
+          ],
+          "quad_1280": [
+            [
+              240.0,
+              241.33333
+            ],
+            [
+              325.33333,
+              241.33333
+            ],
+            [
+              325.33333,
+              412.0
+            ],
+            [
+              240.0,
+              412.0
+            ]
+          ],
+          "rect_1280": [
+            240.0,
+            241.33333,
+            85.33333,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            240.0,
+            241.33333,
+            85.33333,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 14,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_girl_001/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 3688,
+          "operation_offsets": [
+            82268,
+            4460
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            511.0,
+            318.0
+          ],
+          "quad_1280": [
+            [
+              340.66667,
+              212.0
+            ],
+            [
+              426.0,
+              212.0
+            ],
+            [
+              426.0,
+              382.66667
+            ],
+            [
+              340.66667,
+              382.66667
+            ]
+          ],
+          "rect_1280": [
+            340.66667,
+            212.0,
+            85.33333,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            340.66667,
+            212.0,
+            85.33333,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 13,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_boy_001/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 3728,
+          "operation_offsets": [
+            82284,
+            4516
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            675.0,
+            280.0
+          ],
+          "quad_1280": [
+            [
+              450.0,
+              186.66667
+            ],
+            [
+              535.33333,
+              186.66667
+            ],
+            [
+              535.33333,
+              357.33333
+            ],
+            [
+              450.0,
+              357.33333
+            ]
+          ],
+          "rect_1280": [
+            450.0,
+            186.66667,
+            85.33333,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            450.0,
+            186.66667,
+            85.33333,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 14,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_girl_003/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 3688,
+          "operation_offsets": [
+            82300,
+            4460
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1609.0,
+            399.0
+          ],
+          "quad_1280": [
+            [
+              1072.66667,
+              266.0
+            ],
+            [
+              1158.0,
+              266.0
+            ],
+            [
+              1158.0,
+              436.66667
+            ],
+            [
+              1072.66667,
+              436.66667
+            ]
+          ],
+          "rect_1280": [
+            1072.66667,
+            266.0,
+            85.33333,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            1072.66667,
+            266.0,
+            85.33333,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 13,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_boy_003/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 3728,
+          "operation_offsets": [
+            82316,
+            4516
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1447.0,
+            361.0
+          ],
+          "quad_1280": [
+            [
+              964.66667,
+              240.66667
+            ],
+            [
+              1050.0,
+              240.66667
+            ],
+            [
+              1050.0,
+              411.33333
+            ],
+            [
+              964.66667,
+              411.33333
+            ]
+          ],
+          "rect_1280": [
+            964.66667,
+            240.66667,
+            85.33333,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            964.66667,
+            240.66667,
+            85.33333,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 14,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_girl_002/d1",
+          "ref": [
+            3,
+            3
+          ],
+          "entry_offset": 3688,
+          "operation_offsets": [
+            82332,
+            4460
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1292.0,
+            317.0
+          ],
+          "quad_1280": [
+            [
+              861.33333,
+              211.33333
+            ],
+            [
+              946.66667,
+              211.33333
+            ],
+            [
+              946.66667,
+              382.0
+            ],
+            [
+              861.33333,
+              382.0
+            ]
+          ],
+          "rect_1280": [
+            861.33333,
+            211.33333,
+            85.33334,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            861.33333,
+            211.33333,
+            85.33334,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 13,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_boy_002/d1",
+          "ref": [
+            3,
+            4
+          ],
+          "entry_offset": 3728,
+          "operation_offsets": [
+            82348,
+            4516
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1128.0,
+            279.0
+          ],
+          "quad_1280": [
+            [
+              752.0,
+              186.0
+            ],
+            [
+              837.33333,
+              186.0
+            ],
+            [
+              837.33333,
+              356.66667
+            ],
+            [
+              752.0,
+              356.66667
+            ]
+          ],
+          "rect_1280": [
+            752.0,
+            186.0,
+            85.33333,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            752.0,
+            186.0,
+            85.33333,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 14,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_000/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            79520,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            185.0,
+            493.0
+          ],
+          "quad_1280": [
+            [
+              123.33333,
+              328.66667
+            ],
+            [
+              223.33333,
+              328.66667
+            ],
+            [
+              223.33333,
+              499.33333
+            ],
+            [
+              123.33333,
+              499.33333
+            ]
+          ],
+          "rect_1280": [
+            123.33333,
+            328.66667,
+            100.0,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            123.33333,
+            328.66667,
+            100.0,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_001/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            80236,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            342.0,
+            457.0
+          ],
+          "quad_1280": [
+            [
+              228.0,
+              304.66667
+            ],
+            [
+              328.0,
+              304.66667
+            ],
+            [
+              328.0,
+              475.33333
+            ],
+            [
+              228.0,
+              475.33333
+            ]
+          ],
+          "rect_1280": [
+            228.0,
+            304.66667,
+            100.0,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            228.0,
+            304.66667,
+            100.0,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_002/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            80596,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            500.0,
+            414.0
+          ],
+          "quad_1280": [
+            [
+              333.33333,
+              276.0
+            ],
+            [
+              433.33333,
+              276.0
+            ],
+            [
+              433.33333,
+              446.66667
+            ],
+            [
+              333.33333,
+              446.66667
+            ]
+          ],
+          "rect_1280": [
+            333.33333,
+            276.0,
+            100.0,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            333.33333,
+            276.0,
+            100.0,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_003/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            80828,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            660.0,
+            373.0
+          ],
+          "quad_1280": [
+            [
+              440.0,
+              248.66667
+            ],
+            [
+              540.0,
+              248.66667
+            ],
+            [
+              540.0,
+              419.33333
+            ],
+            [
+              440.0,
+              419.33333
+            ]
+          ],
+          "rect_1280": [
+            440.0,
+            248.66667,
+            100.0,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            440.0,
+            248.66667,
+            100.0,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_004/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            79568,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1594.0,
+            493.0
+          ],
+          "quad_1280": [
+            [
+              1062.66667,
+              328.66667
+            ],
+            [
+              1162.66667,
+              328.66667
+            ],
+            [
+              1162.66667,
+              499.33333
+            ],
+            [
+              1062.66667,
+              499.33333
+            ]
+          ],
+          "rect_1280": [
+            1062.66667,
+            328.66667,
+            100.0,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            1062.66667,
+            328.66667,
+            100.0,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_005/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            80284,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1435.0,
+            453.0
+          ],
+          "quad_1280": [
+            [
+              956.66667,
+              302.0
+            ],
+            [
+              1056.66667,
+              302.0
+            ],
+            [
+              1056.66667,
+              472.66667
+            ],
+            [
+              956.66667,
+              472.66667
+            ]
+          ],
+          "rect_1280": [
+            956.66667,
+            302.0,
+            100.0,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            956.66667,
+            302.0,
+            100.0,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_006/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            80628,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1279.0,
+            412.0
+          ],
+          "quad_1280": [
+            [
+              852.66667,
+              274.66667
+            ],
+            [
+              952.66667,
+              274.66667
+            ],
+            [
+              952.66667,
+              445.33333
+            ],
+            [
+              852.66667,
+              445.33333
+            ]
+          ],
+          "rect_1280": [
+            852.66667,
+            274.66667,
+            100.0,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            852.66667,
+            274.66667,
+            100.0,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_saku_007/d1",
+          "ref": [
+            3,
+            5
+          ],
+          "entry_offset": 3768,
+          "operation_offsets": [
+            80844,
+            4572
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1115.0,
+            371.0
+          ],
+          "quad_1280": [
+            [
+              743.33333,
+              247.33333
+            ],
+            [
+              843.33333,
+              247.33333
+            ],
+            [
+              843.33333,
+              418.0
+            ],
+            [
+              743.33333,
+              418.0
+            ]
+          ],
+          "rect_1280": [
+            743.33333,
+            247.33333,
+            100.0,
+            170.66667
+          ],
+          "viewport_intersection_1280": [
+            743.33333,
+            247.33333,
+            100.0,
+            170.66667
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 6,
+          "local_lrtb": [
+            0,
+            150,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_monokuma_chair_000/d1",
+          "ref": [
+            3,
+            6
+          ],
+          "entry_offset": 3808,
+          "operation_offsets": [
+            81116,
+            4628
+          ],
+          "affine_design": [
+            1.04998779296875,
+            0.0,
+            0.0,
+            1.04998779296875,
+            825.6,
+            263.6
+          ],
+          "quad_1280": [
+            [
+              550.4,
+              175.73333
+            ],
+            [
+              729.59792,
+              175.73333
+            ],
+            [
+              729.59792,
+              354.93125
+            ],
+            [
+              550.4,
+              354.93125
+            ]
+          ],
+          "rect_1280": [
+            550.4,
+            175.73333,
+            179.19792,
+            179.19792
+          ],
+          "viewport_intersection_1280": [
+            550.4,
+            175.73333,
+            179.19792,
+            179.19792
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 7,
+          "local_lrtb": [
+            0,
+            256,
+            0,
+            256
+          ]
+        },
+        {
+          "path": "i_koma_monokuma/d1",
+          "ref": [
+            3,
+            7
+          ],
+          "entry_offset": 3848,
+          "operation_offsets": [
+            81136,
+            4684
+          ],
+          "affine_design": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            894.0,
+            250.0
+          ],
+          "quad_1280": [
+            [
+              596.0,
+              166.66667
+            ],
+            [
+              681.33333,
+              166.66667
+            ],
+            [
+              681.33333,
+              337.33333
+            ],
+            [
+              596.0,
+              337.33333
+            ]
+          ],
+          "rect_1280": [
+            596.0,
+            166.66667,
+            85.33333,
+            170.66666
+          ],
+          "viewport_intersection_1280": [
+            596.0,
+            166.66667,
+            85.33333,
+            170.66666
+          ],
+          "alpha_product": 1.0,
+          "clip_metadata": [],
+          "kind": "raster_quad",
+          "image_id": 12,
+          "local_lrtb": [
+            0,
+            128,
+            0,
+            256
+          ]
+        }
+      ]
+    }
+  },
+  "published_pages": {
+    "function": "41f590",
+    "initial_cover_row": {
+      "identifier": null,
+      "illustration_code": -1
+    },
+    "append_condition": "539f10(identifier)!=0 OR identifier exactly kousokuLast",
+    "order": "Original52e480 iterator order, filtered and compacted, after cover row",
+    "stored_rule_identifier": "record+0x00 (pointer)",
+    "stored_illustration_code": "record+0x08 from52e520",
+    "stride_bytes": 16,
+    "count_offset": "0x8c",
+    "first_record_offset": "0x90",
+    "limit": "The special end identifier is an explicit native exception. Do not treat it as proof that every rule is publicly unlocked."
+  },
+  "navigation": {
+    "active_input_state": 5,
+    "page_index_offset": "0x88",
+    "previous_index_offset": "0x84",
+    "page_count_offset": "0x8c",
+    "previous_command": "3c8060(input,1)",
+    "next_command": "3c7de0(input,1)",
+    "physical_keys": "not decoded or assumed",
+    "boundary": "Previous at0 and next atcount-1 return unchanged without page sound. No wrap.",
+    "previous_success": {
+      "direction_field_plus_0x1a0": 1,
+      "page_sound": "V3_SE_005",
+      "old_page": "current saved toprevious_index",
+      "new_page": "max(current-1,0)",
+      "next_state": 6
+    },
+    "next_success": {
+      "direction_field_plus_0x1a0": 2,
+      "page_sound": "V3_SE_005",
+      "old_page": "current saved toprevious_index",
+      "new_page": "min(current+1,count-1)",
+      "next_state": 6
+    },
+    "cancel": {
+      "command": "3c3c80",
+      "sound": "V3_SE_004",
+      "next_state": 10,
+      "exit_result": -1
+    },
+    "transition_input_gate": "41e410 calls41f390 only in state5. States6,7,8,9 run transition progression and wait selected clip completion, without invoking page/cancel input handler.",
+    "transition_sequence": [
+      "6 ->7",
+      "7 waits4aa8c0(handle indexed by+0x1a4) ->8",
+      "8 calls41e6e0 ->9",
+      "9 ->5"
+    ],
+    "entry_gate": "State2 waits all16 resources ready; state4 waits main clip completion before state5.",
+    "exit_gate": "State11 waits main clip completion, releases via41f6b0, returns-1",
+    "gate_limit": "This is a controller-state gate, not proof that every decorative/child animation must finish before input. Only the selected clip checked in state7 is awaited. Physical key repeat and queued input semantics are outside the inspected functions."
+  },
+  "native_presentation": {
+    "evidence_id": "ev_088e11df314965e66ecea6b692ccf405a7fa164a529c12b84aaae5b8de984ada",
+    "gate": "state at+0x80 >2",
+    "roles": {
+      "handle_index_0": "common background",
+      "handle_index_1": "current/old body + number badge + navigation arrows text carrier",
+      "handle_index_2": "cover title/graphic carrier"
+    },
+    "cover": {
+      "condition": "current row illustration_code==-1",
+      "title_setter": "4aaeb0(handle[2],DAT_c268e8,527960(global_text,0xf,0x28))",
+      "one_arrow_hidden": "4abd40(handle[2],DAT_c268c4,0)"
+    },
+    "current_body": {
+      "condition": "current row identifier non-null",
+      "getter_chain": [
+        "52e430(current_identifier)",
+        "52e590(row)"
+      ],
+      "setter": "4aaeb0(handle[1],DAT_c268e0,current_body)",
+      "source_field": "p_kousoku_text/_f_kousoku_text"
+    },
+    "old_body": {
+      "condition": "previous row identifier non-null",
+      "getter_chain": [
+        "52e430(previous_identifier)",
+        "52e590(row)"
+      ],
+      "setter": "4aaeb0(handle[1],DAT_c268e4,previous_body)",
+      "source_field": "p_kousoku_text_old",
+      "visibility_limit": "The old field is not present in the normal wait display list; it is used for source transitions."
+    },
+    "number_badge": {
+      "total": "page_count-1, excluding cover",
+      "current": "page_index only if index>0",
+      "total_symbol_group": [
+        "DAT_c268c8",
+        "DAT_c268cc"
+      ],
+      "current_symbol_group": [
+        "DAT_c268d0",
+        "DAT_c268d4"
+      ],
+      "digit_texture_lookup": "remainder10+5",
+      "leading_zero_policy": "hide digit group first then show least-significant-to-most-significant populated digits",
+      "source_groups": "p_number_000 throughp_number_003 and p_number_slash",
+      "mapping_limit": "Exact DAT group-to-named left/right digit pairing is not directly decoded; current/total arithmetic is confirmed."
+    },
+    "next_arrow": {
+      "source_gate": "4abd40(handle[1],DAT_c268c0,current_illustration_code!=0xf)",
+      "meaning": "derived down/next arrow by source geometry and end-rule behavior",
+      "bound": "Input next still independently checks page_index<page_count-1."
+    },
+    "theme": {
+      "getter_chain": [
+        "539cd0(selected_theme)",
+        "52dbf0(theme)",
+        "52dcd0(theme,DAT_1407648e0)"
+      ],
+      "apply": "41ee30 to named background/text/cover objects",
+      "limit": "Exact material, RGB and DAT field name are not decoded; avoid claiming fixed source ink from bounding boxes."
+    },
+    "remaining": "Figure handle/action selection is now provided in native_figure_transition. Exact41e680 action-to-label dispatch bytes, animated child playback and material pixels remain outside the queried scope."
+  },
+  "provided_raster_availability": {
+    "manifest": "C:/Users/kirby/Downloads/v3_re/ui_authorized_20261029/manifest.json",
+    "matched_containers_for_bg_text_coverJP_page01": 0,
+    "meaning": "No decoded pixel bank entries for these four exact containers were found in the supplied manifest; source geometry does not authorize new asset extraction."
+  },
+  "limitations": [
+    "techou_rule.spc is the pad home landing, not the full rule-reading view.",
+    "Five representative cached SFLs do not establish every later illustration or every animation frame.",
+    "No arbitrary left/right text cards are inferred from the term book. Named i_book and image leaves below define only the supplied static geometry.",
+    "Source coordinates are carrier-root local. No extra translation/scale setter appears in the three newly inspected presentation/transition functions; resource-construction/global root offsets and all child timeline frames were not re-investigated.",
+    "Rules graphic/material pixels are not present in the four exact-container matches checked against the supplied bank. Native action dispatch, bitmaps, every later illustration and exact wall-clock timing remain bounded unknowns."
+  ],
+  "validation": {
+    "status": "PASS_static_major_normal_rules_reader_contract",
+    "original_runtime_observed": false,
+    "game_files_modified": false,
+    "representative_sfl_count": 5,
+    "new_procedures": [
+      "0x14041eee0",
+      "0x14041e6e0",
+      "0x14041e950"
+    ],
+    "repeated_successful_queries": 0,
+    "rea_target_closed_after_export": true,
+    "figure_codes_mapped": 17,
+    "source_ui_shape": "single illustration + bottom body, not two-page text spread",
+    "protected_bundles_unchanged": {
+      "rea-restored-evidence.json": "200f3c4626b1b37e70b891421e664ff9fb1c9641122775682bcb7ee02156f11b",
+      "rea-pad-followup-ui-20261030.json": "0c64dbf218c7186e66fd770ca7ff4957537043c91e9a04d42b5d1c365f5d115f",
+      "rea-pad-gift-icon-scale-supplement-20261030.json": "ee8f431fb4ca3f7d45e63af2265697f1425c839c6bf5d39cc12601ac78dabde5",
+      "rea-pad-report-card-supplement-20261030.json": "e4ec0bdf9f33df39f248f4efa1d019b3a0d63a24df59e2bf63aba402100f0e43",
+      "rea-pad-equipped-offset-supplement-20261030.json": "f1737b55da0ef8ffba972ba0f0a61daea09a27f0cf85525d6c43f5fb82cf31e1",
+      "rea-pad-skill-parent-layout-supplement-20261030.json": "bf91ad374194423ffb633f5932f55e54a2bce63aa4cbcc1f86c1ea4412050fc8"
+    },
+    "figure_filename_matching": "derived; native handle index and action selection observed"
+  },
+  "supplements": [
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-pad-rules-book-supplement-20261030.json",
+      "sha256": "6ecc7a2fb81c23d5d2adc7dedac37322b207ee0e7d4804574766871050f025ec",
+      "records": 1
+    },
+    {
+      "path": "C:\\Users\\kirby\\Downloads\\v3_re\\native\\rea-pad-rules-transition-supplement-20261030.json",
+      "sha256": "25c394ff0593ff77c6b80bb90f81d86ced3379447ff9a4b93d49b44ffde8d495",
+      "records": 2
+    }
+  ],
+  "book_interpretation": {
+    "confirmed": "The rule reader is background + page-number badge + one animated rule illustration + centered bottom body.",
+    "book_graphic_boundary": "i_book and its overlapping component leaves occur in illustration_01. They are not evidence for a general two-page spread layout.",
+    "left_right_body": "No left/right split body text fields exist in the five inspected representative SFLs.",
+    "component_visibility": "illustration_01 i_book/i_book_001_000 has source alpha0 in the chosen first-child-frame snapshot, so do not paint all component bounding rectangles."
+  },
+  "native_figure_transition": {
+    "evidence_ids": [
+      "ev_c7bd46e1228fb41737b926be7ac0073438adc281961b064151454ac0bdee3a36",
+      "ev_97fdbe1100facd34f4d3549f6b6a8c60a33353f0248217b4c89a9899787ef32e"
+    ],
+    "code_source": "record illustration_code at+0x98+page_index*16",
+    "direction_source": "field+0x1a0:1 previous,2 next",
+    "wait_handle_field": "0x1a4",
+    "carrier_mapping": [
+      {
+        "rule_code": -1,
+        "handle_index": 2,
+        "carrier": "techou_kousoku_00_%s.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 0,
+        "handle_index": 3,
+        "carrier": "techou_kousoku_01.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 1,
+        "handle_index": 4,
+        "carrier": "techou_kousoku_02_05_%s.spc",
+        "source_wait": "fl_wait_02"
+      },
+      {
+        "rule_code": 2,
+        "handle_index": 4,
+        "carrier": "techou_kousoku_02_05_%s.spc",
+        "source_wait": "fl_wait_03"
+      },
+      {
+        "rule_code": 3,
+        "handle_index": 4,
+        "carrier": "techou_kousoku_02_05_%s.spc",
+        "source_wait": "fl_wait_04"
+      },
+      {
+        "rule_code": 4,
+        "handle_index": 4,
+        "carrier": "techou_kousoku_02_05_%s.spc",
+        "source_wait": "fl_wait_05"
+      },
+      {
+        "rule_code": 5,
+        "handle_index": 5,
+        "carrier": "techou_kousoku_06.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 6,
+        "handle_index": 6,
+        "carrier": "techou_kousoku_07.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 7,
+        "handle_index": 7,
+        "carrier": "techou_kousoku_08.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 8,
+        "handle_index": 8,
+        "carrier": "techou_kousoku_09.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 9,
+        "handle_index": 9,
+        "carrier": "techou_kousoku_10.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 10,
+        "handle_index": 10,
+        "carrier": "techou_kousoku_11.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 11,
+        "handle_index": 11,
+        "carrier": "techou_kousoku_12.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 12,
+        "handle_index": 12,
+        "carrier": "techou_kousoku_13.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 13,
+        "handle_index": 13,
+        "carrier": "techou_kousoku_14_%s.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 14,
+        "handle_index": 14,
+        "carrier": "techou_kousoku_15.spc",
+        "source_wait": "fl_wait"
+      },
+      {
+        "rule_code": 15,
+        "handle_index": 15,
+        "carrier": "techou_kousoku_16.spc",
+        "source_wait": "fl_wait"
+      }
+    ],
+    "enter_41e6e0": [
+      {
+        "rule_code": -1,
+        "target_handle": 2,
+        "wait_handle_after_entry": 2,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 0,
+        "target_handle": 3,
+        "wait_handle_after_entry": 3,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 1,
+        "target_handle": 4,
+        "wait_handle_after_entry": 1,
+        "previous_action": 14,
+        "previous_label_derived": "fl_03_02",
+        "next_action": 8,
+        "next_label_derived": "fl_in_02_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 2,
+        "target_handle": 4,
+        "wait_handle_after_entry": 1,
+        "previous_action": 15,
+        "previous_label_derived": "fl_04_03",
+        "next_action": 11,
+        "next_label_derived": "fl_out_02_03",
+        "reset_argument": "not recovered in pseudocode"
+      },
+      {
+        "rule_code": 3,
+        "target_handle": 4,
+        "wait_handle_after_entry": 1,
+        "previous_action": 16,
+        "previous_label_derived": "fl_05_04",
+        "next_action": 12,
+        "next_label_derived": "fl_03_04",
+        "reset_argument": "not recovered in pseudocode"
+      },
+      {
+        "rule_code": 4,
+        "target_handle": 4,
+        "wait_handle_after_entry": 1,
+        "previous_action": 10,
+        "previous_label_derived": "fl_in_up_05",
+        "next_action": 13,
+        "next_label_derived": "fl_04_05",
+        "reset_argument": "not recovered in pseudocode"
+      },
+      {
+        "rule_code": 5,
+        "target_handle": 5,
+        "wait_handle_after_entry": 5,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 6,
+        "target_handle": 6,
+        "wait_handle_after_entry": 6,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 7,
+        "target_handle": 7,
+        "wait_handle_after_entry": 7,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 8,
+        "target_handle": 8,
+        "wait_handle_after_entry": 8,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 9,
+        "target_handle": 9,
+        "wait_handle_after_entry": 9,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 10,
+        "target_handle": 10,
+        "wait_handle_after_entry": 10,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 11,
+        "target_handle": 11,
+        "wait_handle_after_entry": 11,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 12,
+        "target_handle": 12,
+        "wait_handle_after_entry": 12,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 13,
+        "target_handle": 13,
+        "wait_handle_after_entry": 13,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 14,
+        "target_handle": 14,
+        "wait_handle_after_entry": 14,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      },
+      {
+        "rule_code": 15,
+        "target_handle": 15,
+        "wait_handle_after_entry": 15,
+        "previous_action": 6,
+        "previous_label_derived": "fl_in_up",
+        "next_action": 4,
+        "next_label_derived": "fl_in_down",
+        "reset_argument": 1
+      }
+    ],
+    "leave_41e950": [
+      {
+        "rule_code": -1,
+        "target_handle": 2,
+        "wait_handle_after_leave_setup": 2,
+        "previous_action": null,
+        "previous_label_derived": null,
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 0,
+        "target_handle": 3,
+        "wait_handle_after_leave_setup": 3,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 1,
+        "target_handle": 4,
+        "wait_handle_after_leave_setup": "unchanged from prior entry",
+        "previous_action": 7,
+        "previous_label_derived": "fl_02_01",
+        "next_action": null,
+        "next_label_derived": null,
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 2,
+        "target_handle": 4,
+        "wait_handle_after_leave_setup": "unchanged from prior entry",
+        "previous_action": null,
+        "previous_label_derived": null,
+        "next_action": null,
+        "next_label_derived": null,
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 3,
+        "target_handle": 4,
+        "wait_handle_after_leave_setup": "unchanged from prior entry",
+        "previous_action": null,
+        "previous_label_derived": null,
+        "next_action": null,
+        "next_label_derived": null,
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 4,
+        "target_handle": 4,
+        "wait_handle_after_leave_setup": 4,
+        "previous_action": null,
+        "previous_label_derived": null,
+        "next_action": 9,
+        "next_label_derived": "fl_out_up_05",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 5,
+        "target_handle": 5,
+        "wait_handle_after_leave_setup": 5,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 6,
+        "target_handle": 6,
+        "wait_handle_after_leave_setup": 6,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 7,
+        "target_handle": 7,
+        "wait_handle_after_leave_setup": 7,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 8,
+        "target_handle": 8,
+        "wait_handle_after_leave_setup": 8,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 9,
+        "target_handle": 9,
+        "wait_handle_after_leave_setup": 9,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 10,
+        "target_handle": 10,
+        "wait_handle_after_leave_setup": 10,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 11,
+        "target_handle": 11,
+        "wait_handle_after_leave_setup": 11,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 12,
+        "target_handle": 12,
+        "wait_handle_after_leave_setup": 12,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 13,
+        "target_handle": 13,
+        "wait_handle_after_leave_setup": 13,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 14,
+        "target_handle": 14,
+        "wait_handle_after_leave_setup": 14,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": "ordinary or not recovered",
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      },
+      {
+        "rule_code": 15,
+        "target_handle": 15,
+        "wait_handle_after_leave_setup": 15,
+        "previous_action": 5,
+        "previous_label_derived": "fl_out_down",
+        "next_action": 3,
+        "next_label_derived": "fl_out_up",
+        "code15_last_argument": 0,
+        "null_action_meaning": "no illustration leave action in this helper; body transition and later enter action still run"
+      }
+    ],
+    "action_label_mapping_derived": {
+      "1": "fl_in",
+      "2": "fl_out",
+      "3": "fl_out_up",
+      "4": "fl_in_down",
+      "5": "fl_out_down",
+      "6": "fl_in_up",
+      "7": "fl_02_01",
+      "8": "fl_in_02_down",
+      "9": "fl_out_up_05",
+      "10": "fl_in_up_05",
+      "11": "fl_out_02_03",
+      "12": "fl_03_04",
+      "13": "fl_04_05",
+      "14": "fl_03_02",
+      "15": "fl_04_03",
+      "16": "fl_05_04",
+      "21": "fl_up",
+      "22": "fl_down"
+    },
+    "label_mapping_boundary": "Native action numbers are directly observed. Label strings are matched by direction, unique source labels and contiguous02_05 transitions.41e680 dispatch table itself was not queried, so the string mapping is derived.",
+    "important_normal_behavior": [
+      "Codes1..4 share one02_05 illustration carrier, with distinct wait states and forward/reverse timeline segments. They are not four independently reset images.",
+      "The wait target for codes1..4 is normally body-text handle1; case4 leave setup sets wait handle4. Do not wait all decorative child animations by assumption.",
+      "After the controller gate, state8 starts the new illustration, state9 returns to5; no extra generic wait for all new illustration animations is visible in the inspected state machine.",
+      "The code0xf final illustration has a distinct reset argument0 onleave; its exact rendering effect remains unqueried.",
+      "Boundary inputs are rejected before these transition helpers run."
+    ],
+    "carrier_filename_boundary": "Native resource handle indices are observed in41e6e0/41e950. Carrier filename matches follow cached16-resource inventory, cover/text roles and the unique02_05 grouped timeline; the resource pointer-array string bytes were not queried again."
+  }
+}

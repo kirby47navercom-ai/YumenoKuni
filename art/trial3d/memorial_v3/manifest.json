@@ -1,0 +1,456 @@
+{
+  "purpose": "Per-character courtroom memorials, regardless of current survival status; runtime selects only actual dead seats",
+  "frame_art": "built-in image_gen edit, locally Real-ESRGAN4x; original ribbons removed, purple blood X, transparent opening",
+  "portrait_policy": "16 full COLOR formal ID masters, built-in image_gen reference edits and local Real-ESRGAN4x. Student IDs use these same color files unchanged; memorial export derives grayscale ONLY at composition time. Colored frame and purple blood mark retained.",
+  "special_marks": "No ability-based exception invented without a story-specific reason. Each character has an independent editable source.",
+  "characters": {
+    "mio": {
+      "portrait_sha256": "ab74cd958f3e586120d950f9bf76e2f7702844926e9b27bf3b6b88a213285dd9",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "15275c863c3284e5d1efddff0956d86ef5177da0b0ad6985f5dc39617c699f89",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "mio",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/mio.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/mio.svg",
+      "texture": "Assets/Art/memorials/mio.webp",
+      "back": "Assets/Art/memorials/mio_back.webp",
+      "file": "art/trial3d/memorial_v3/mio.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "a3445a05e10332313df67d53f58fc01c60a79c704c54191fc920ec86badc73bf"
+    },
+    "rin": {
+      "portrait_sha256": "a3f4eb6effa4e7d90bff0aa09777a4e8f2dd3220410841db6646442e6ffaffd4",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "54ca8afce066c51669cc4614986d33c5493e0100c2eb00138af50e7a14f35028",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "rin",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/rin.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/rin.svg",
+      "texture": "Assets/Art/memorials/rin.webp",
+      "back": "Assets/Art/memorials/rin_back.webp",
+      "file": "art/trial3d/memorial_v3/rin.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "b32e0bdbd1bb98e69dbad82fb2d8efb28f60cf132faca18213a0fdec80d1e001"
+    },
+    "ken": {
+      "portrait_sha256": "b058f340abbe7b17143ce191063bbe869304565232c2fb822233fc69f7c8aa06",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "0687541fe73318620fb92bad320c518f83326a61c247c11ee5c342fad56c02eb",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "ken",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/ken.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/ken.svg",
+      "texture": "Assets/Art/memorials/ken.webp",
+      "back": "Assets/Art/memorials/ken_back.webp",
+      "file": "art/trial3d/memorial_v3/ken.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "bd49e41b7be64b68b724504e39df82f1053d20f8e504aa2d624f3a79412607e3"
+    },
+    "nana": {
+      "portrait_sha256": "a25298e226499598a6951ae5c168726d08763cd46faf47a645c204c871d2f31a",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "b794fe2c037361ef3449630a575371e637973578e11ea11844bf3a7e938d7c34",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "nana",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/nana.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/nana.svg",
+      "texture": "Assets/Art/memorials/nana.webp",
+      "back": "Assets/Art/memorials/nana_back.webp",
+      "file": "art/trial3d/memorial_v3/nana.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "cc2816dffcf294c59d5464a359300ae10e86824b75b5f82d53aa4d2053f5693f"
+    },
+    "taiga": {
+      "portrait_sha256": "dc09729d91bcbaf2f46dd0a2705394da5ab1cdc1f283418e3e724698639198e3",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "08fe41c70faa91e0167f15e1a4d3fd640825672d9736eb700b5cb97fa3242172",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "taiga",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/taiga.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/taiga.svg",
+      "texture": "Assets/Art/memorials/taiga.webp",
+      "back": "Assets/Art/memorials/taiga_back.webp",
+      "file": "art/trial3d/memorial_v3/taiga.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "fb891beeb3485e105de40935468850c3c60cdc9b35c6d39fad5073a121e9d336"
+    },
+    "ai": {
+      "portrait_sha256": "be15dc4d53c1946230791f8816050ae7a61109932fe3b0ae0157e2acb52182b6",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "1b8bfbc3e0df6cdc8d8e5fc6ec50eaedbf6fd1fe171079535614ca5c22347399",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "ai",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/ai.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/ai.svg",
+      "texture": "Assets/Art/memorials/ai.webp",
+      "back": "Assets/Art/memorials/ai_back.webp",
+      "file": "art/trial3d/memorial_v3/ai.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "ae03ccb572fe1c6407b4195c80d4ceead1c655f8fb2eebbdbf7a298c5347685b"
+    },
+    "rei": {
+      "portrait_sha256": "07a15c3eadae62df6ca0f8edc9147365dda42eb027f96ffbf160b841012cf299",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "c3d8a2a1523ecd5c61094ea7aa797dc4185724931c070e4e4ced85fceb1f3cfb",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "rei",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/rei.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/rei.svg",
+      "texture": "Assets/Art/memorials/rei.webp",
+      "back": "Assets/Art/memorials/rei_back.webp",
+      "file": "art/trial3d/memorial_v3/rei.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "2ad6a6ecf1f7a65fb8cd0876e1aebc94efb4f90db15c6931aef3d1fdb5261b6c"
+    },
+    "sora": {
+      "portrait_sha256": "49a817fefe80fe167f1fe24bbe514fe36b0ec5e2cfde8821d07c4a94d8d8228a",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "c6d0133e809216609e980ae75904221badfb0d6b9700c927a81feadf34de6f8d",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "sora",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/sora.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/sora.svg",
+      "texture": "Assets/Art/memorials/sora.webp",
+      "back": "Assets/Art/memorials/sora_back.webp",
+      "file": "art/trial3d/memorial_v3/sora.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "8df15eec3f94231d43df869f00d40b92895eefbc631168f4538bb109a9c58193"
+    },
+    "haruka": {
+      "portrait_sha256": "3ac5f1abbc2135d14c7668768268f123e863a27ab02cfb4e16473fd086cc8af0",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "06040cb77a6f5b7eaff218f9106d27c2a2c3376bfd4ae04c1cb7dbfdea87be23",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "haruka",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/haruka.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/haruka.svg",
+      "texture": "Assets/Art/memorials/haruka.webp",
+      "back": "Assets/Art/memorials/haruka_back.webp",
+      "file": "art/trial3d/memorial_v3/haruka.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "2edac0074416a855bd57710f5ca34b4527ed3047790721d0b0300aedb2f2fbf8"
+    },
+    "sho": {
+      "portrait_sha256": "4fd8ae86c4d51c929e1eb59a019d44bd095a1b9cc1e98b62105452db7bf80733",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "f1808877adc6a0cf3d2b1e752eee2be55d91fd3fed1a68ba940222c7adb26c4c",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "sho",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/sho.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/sho.svg",
+      "texture": "Assets/Art/memorials/sho.webp",
+      "back": "Assets/Art/memorials/sho_back.webp",
+      "file": "art/trial3d/memorial_v3/sho.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "84182c6ad6485d66be3465ed9a430e20a7944cb498c8c6f86fe2fc7e6aac0cc3"
+    },
+    "koto": {
+      "portrait_sha256": "7966a0b65be35bb2b90c9f7553d70d5e0fd6509abac87fc66235dc33d4a8a504",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "61a729f915b6573ef35ee03784329dec0af6664a3853ee17c8f6b88aeda22026",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "koto",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/koto.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/koto.svg",
+      "texture": "Assets/Art/memorials/koto.webp",
+      "back": "Assets/Art/memorials/koto_back.webp",
+      "file": "art/trial3d/memorial_v3/koto.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "7ab7ef2373f2d3ca62ff67ccb829aea1739cc60580c3be63b7abb6eacd2be539"
+    },
+    "akari": {
+      "portrait_sha256": "6aaafec5f2db2ccf7bd17ef2ffbcfaab265502eecba85f23ffeba73ac83f2143",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "cdbce42ad840f977b435a15075d85e5dae128736c4ecd7682b3e6c8d7eb965eb",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "akari",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/akari.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/akari.svg",
+      "texture": "Assets/Art/memorials/akari.webp",
+      "back": "Assets/Art/memorials/akari_back.webp",
+      "file": "art/trial3d/memorial_v3/akari.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "369b0d174dcfe376b68a20b8adce7b61f3bd530780c4e4d8e29417dc8a6ae8a4"
+    },
+    "riku": {
+      "portrait_sha256": "0a76a7c8557d38b0b006a1822b191a0ff475468caaca4ee28cd9063eda9c666a",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "11ebf11520626b51c8f2c8fe5a8fdf01b99decec2ac73db6e7d23b76de612b93",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "riku",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/riku.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/riku.svg",
+      "texture": "Assets/Art/memorials/riku.webp",
+      "back": "Assets/Art/memorials/riku_back.webp",
+      "file": "art/trial3d/memorial_v3/riku.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "55ddd3789c464e702e7dc28d7dc63285f798cc0155c53872eb8633f43b2e9559"
+    },
+    "satsuki": {
+      "portrait_sha256": "4c7cdaaf666b7698fd6244c6d2b09cd493d0ae579227f3f6bee4b2998062f84a",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "4b26a6a35ec2ff14448c04edc6a00ad2881577e9f76b4e362984420eab890c28",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "satsuki",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/satsuki.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/satsuki.svg",
+      "texture": "Assets/Art/memorials/satsuki.webp",
+      "back": "Assets/Art/memorials/satsuki_back.webp",
+      "file": "art/trial3d/memorial_v3/satsuki.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "d461a1fa982acb2ffbc78a311d2f0d2438be4fcd77e9aa6c38f6b67ea1ce37fc"
+    },
+    "yuu": {
+      "portrait_sha256": "13db5529b9f993bf44f91cf6c65b2f266b740736c6351c6654997f5862a186f9",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "b8c9666e5230115c2ea2afa3b7f66188f4c49591ed792860065f28e2b4ff4dc7",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "yuu",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/yuu.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/yuu.svg",
+      "texture": "Assets/Art/memorials/yuu.webp",
+      "back": "Assets/Art/memorials/yuu_back.webp",
+      "file": "art/trial3d/memorial_v3/yuu.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "b441e70efad6bacbfa26919c2cdfbc12bc11db3fd0890c756f3da8dfc1f21c50"
+    },
+    "kaede": {
+      "portrait_sha256": "40f957740959c02995785a6727a4b32d68384483b25005cb4bbc6d80a72e852d",
+      "frame_sha256": "5c0dc22391553d69f83f9ce811f4e231f4bc29e895d69b668d7274bbba35cf2c",
+      "svg_sha256": "3f34e25b2026b1ff6c5faa8085e464b7f4eed4dbfbd914089c60fa596196953c",
+      "renderer": "sharp-buffer-layer-composite-v1-neutral-photo",
+      "character": "kaede",
+      "portrait_source": "art/hd_v4/id_portraits_color_v1/kaede.webp",
+      "frame_source": "art/hd_v4/memorial/frame_blood_x.webp",
+      "editable_source": "art/trial3d/memorial_v3/kaede.svg",
+      "texture": "Assets/Art/memorials/kaede.webp",
+      "back": "Assets/Art/memorials/kaede_back.webp",
+      "file": "art/trial3d/memorial_v3/kaede.webp",
+      "size": [
+        2048,
+        2048
+      ],
+      "mark": "purple_blood_x",
+      "width": 1.2,
+      "height": 1.2,
+      "center": 1.85,
+      "photo_alpha_bbox": [
+        0,
+        0,
+        5016,
+        5016
+      ],
+      "output_sha256": "4037a090a2e73b71c421ae26e8b8b54bd5a38734fc9c4507bf2df961e6769fd8"
+    }
+  }
+}
