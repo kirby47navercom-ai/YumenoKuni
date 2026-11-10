@@ -3,7 +3,7 @@
 // node tools/claude-scrum-text.mjs
 import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';import assert from 'node:assert/strict';
 const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game);
-const {createCanvas,GlobalFonts}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+const {createCanvas,GlobalFonts}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
 const W=700,H=330,S=2;
 const draw=(text,kw)=>{
  const c=createCanvas(W*S,H*S),g=c.getContext('2d');g.scale(S,S);let size,lines;

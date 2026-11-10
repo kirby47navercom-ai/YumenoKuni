@@ -237,6 +237,7 @@ await write('Assets/Data/story.json',{chapters:['P','1','2','3','4','5','6'],tri
 for(const f of (await fs.readdir(path.join(repo,'data/flow'))).filter(f=>f.endsWith('.json')))await copy('data/flow/'+f,'Assets/Data/flow/'+f);
 await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/hotspots.json','Assets/Data/hotspots.json');await copy('data/skills.json','Assets/Data/skills.json');await copy('data/reactions.json','Assets/Data/reactions.json');
 await copy('data/kotodama.json','Assets/Data/kotodama.json'); // 이름·설명 : tools/build_trial.py · build_flow.py
+for(const file of ['showdown_extra.json','showdown_pre.json','scrum_v3.json','scrum_v3text.json'])await copy('data/'+file,'Assets/Data/'+file);
 for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
 // 2) 교칙 : docs/spec/11 §2·§3 표
