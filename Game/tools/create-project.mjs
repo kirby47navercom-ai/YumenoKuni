@@ -846,7 +846,6 @@ SEATS.forEach((slug,i)=>{
 console.log(JSON.stringify(await emitExtraV4({repo,root,write,body,head})));
 await emitV4PhaseStartSource({repo,write});
 await emitTrialEntryUI({write});
-await emitCenteredSourceCanvases({root,write});
 console.log(JSON.stringify(await emitDifficultyV4({repo,write})));
 const header=await fs.readFile(path.join(root,'Source/Yumeno.h'),'utf8'),source=await fs.readFile(path.join(root,'Source/Yumeno.cpp'),'utf8');
 const bp=createAsset('blueprint','BP_Yumeno');bp.settings.parentClass='Yumeno';bp.native={...parseNativeHeader(header),header,source,headerPath:'Source/Yumeno.h',sourcePath:'Source/Yumeno.cpp'};bp.nodes=[];bp.edges=[];
@@ -863,6 +862,7 @@ const titleIds=new Set(['root','Title']);let changed=true;while(changed){changed
 titleSource.nodes=titleSource.nodes.filter(n=>titleIds.has(n.id));titleSource.name='TitleShellV4';
 for(const n of titleSource.nodes){if(n.id==='TitleLogo')n.slot.offset=[650,30,580,200];if(n.id==='TitleSub')n.properties.visible=false;}
 await write('Assets/UI/TitleShellV4.hbwidget.json',titleSource);
+await emitCenteredSourceCanvases({root,write});
 // Publishing validates generated fonts and actor art even on the first build.
 await publishV4Data({repo,copy,write});
 // 패키지 줄이기 : PNG → WebP, 글꼴 서브셋 (tools/optimize_assets.py)
