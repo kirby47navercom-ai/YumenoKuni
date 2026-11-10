@@ -1,4 +1,4 @@
-import {createWidgetAsset,createWidgetNode} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode} from '../engineCreate/prototype/ui-assets.js';
 
 export async function installV4StoryUI({write,copy,body,head}){
  const widget=createWidgetAsset('W_V4Story');widget.scaleMode='scale';widget.scaleRule='fit';

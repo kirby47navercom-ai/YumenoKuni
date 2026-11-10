@@ -3,8 +3,8 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
 export async function emitDifficultyV4({repo,write}){
  const contract=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/difficulty_remaining_contract.json'),'utf8')),g=contract.UI_reference.geometry;
  const children=new Map(g.child_table5_samples.map(x=>[x.entry,x.children])),shapes=new Map(g.shape_table3_rects.map(x=>[x.entry,x.rects])),textures=new Map(),receipts=[];

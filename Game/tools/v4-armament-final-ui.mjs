@@ -1,5 +1,5 @@
 import fs from'node:fs/promises';import path from'node:path';import{createRequire}from'node:module';import{createHash}from'node:crypto';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'../engineCreate/package.json')),{createCanvas,loadImage}=require('@napi-rs/canvas');
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'Game/engineCreate/package.json')),{createCanvas,loadImage}=require('@napi-rs/canvas');
 // Authored SFL depth masks are applied before the two native blend passes.
 // Keeping glow separate preserves the original additive pixels over the world.
 export async function emitArmamentFinalUi({write,scene}){

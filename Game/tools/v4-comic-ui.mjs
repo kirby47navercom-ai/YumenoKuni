@@ -1,8 +1,8 @@
 // Climax HUD: original supplied/recovered SFL pixels and affine-baked UI.
 import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';
 import {fileURLToPath}from'node:url';
-import{createWidgetAsset,createWidgetNode,validWidgetAsset}from'../../../engineCreate/prototype/ui-assets.js';
-import{validGameJson}from'../../../engineCreate/prototype/game-json.js';
+import{createWidgetAsset,createWidgetNode,validWidgetAsset}from'../engineCreate/prototype/ui-assets.js';
+import{validGameJson}from'../engineCreate/prototype/game-json.js';
 const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 export const comicV4Layout={viewport:[1280,720],caption:[275,520,520,98]};
 export const comicV4Textures={};

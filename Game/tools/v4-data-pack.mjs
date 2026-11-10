@@ -2,8 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
-import {createPersistentQueries} from '../../../engineCreate/prototype/runtime-storage.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
+import {createPersistentQueries} from '../engineCreate/prototype/runtime-storage.js';
 
 // Logical hash buckets and stable IDs stay unchanged. Only physical reads shrink.
 export const V4_DATA_PACKS={native_tasks:32,gallery_map:4,gallery_records:5};

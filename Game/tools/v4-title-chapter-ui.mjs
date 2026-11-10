@@ -3,7 +3,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {sourceRows,sourceSvg} from './v3-source-svg.mjs';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 
 export async function emitTitleChapterUI({repo,write,copy,body,head}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/title_chapter_remaining_contract.json'),'utf8'));

@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 const repoRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 async function mineSource(){
  const manifest=JSON.parse(await fs.readFile(path.join(repoRoot,'ui/v4/mine_source/manifest.json'),'utf8'));

@@ -2,7 +2,7 @@ import{applyPadDetailSource}from'../../tools/render_pad_detail_source_ui.mjs';
 // Static V3 clone geometry, not a guessed grid or 256px opaque card.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitV4PadGiftUI({repo,write,body}){
  const source=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/pad_gift_icon_scale_followup.json'),'utf8'));
  const leaf=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/pad_report_gift_leaf_followup.json'),'utf8'));

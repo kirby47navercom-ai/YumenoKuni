@@ -1,30 +1,18 @@
 // node tools/build.mjs [--check] [--release]
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import os from 'node:os';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {installBuildSharing} from './build-share.mjs';
 import {validateV4DataBudget} from './v4-data-pack.mjs';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const engineArgument=process.argv.find(v=>v.startsWith('--engine-root='))?.slice(14);
-if(engineArgument&&!path.isAbsolute(engineArgument))throw Error('--engine-root는 절대 경로여야 해요.');
-let selectedEngine=engineArgument;
-if(!selectedEngine){
- const versions=path.join(os.homedir(),'HBEngine/Versions');
- const installed=[];
- for(const entry of await fs.readdir(versions,{withFileTypes:true}).catch(error=>{if(error.code==='ENOENT')return [];throw error;}))if(entry.isDirectory()&&!entry.isSymbolicLink()){
-  const candidate=path.join(versions,entry.name);if(await fs.stat(path.join(candidate,'HBEngine.install.json')).then(s=>s.isFile(),error=>{if(error.code==='ENOENT')return false;throw error;}))installed.push(candidate);
- }
- if(installed.length>1)throw Error('설치 SDK가 여러 개예요. --engine-root=절대경로 로 선택하세요.');
- selectedEngine=installed[0]||path.resolve(root,'../../engineCreate');
-}
-const engineRoot=await fs.realpath(selectedEngine);
+const engineRoot=await fs.realpath(path.resolve(root,engineArgument||'engineCreate'));
 // Panic uses the already approved three-camera bridge. A newer SDK without
 // that extension must fail here rather than ship an empty single-camera view.
 const viewRunner=await fs.readFile(path.join(engineRoot,'tools/native-game-runner.mjs'),'utf8');
 const viewRenderer=await fs.readFile(path.join(engineRoot,'prototype/native-scene-renderer.js'),'utf8');
-if(!viewRunner.includes('gameRenderViews')||!viewRenderer.includes('renderer.hbViews'))throw Error('이 SDK에는 패닉 3카메라 연결이 없어요. 승인된 렌더 기능을 포함한 엔진을 --engine-root=절대경로로 지정하세요.');
+if(!viewRunner.includes('gameRenderViews')||!viewRenderer.includes('renderer.hbViews'))throw Error('SDK에 패닉 3카메라 연결이 없어요. 프로젝트의 prepare-collaborator-sdk.mjs로 준비한 SDK를 사용하세요.');
 const playerArgument=process.argv.find(v=>v.startsWith('--native-player='))?.slice(16);
 const nativeSnapshotArgument=process.argv.find(v=>v.startsWith('--native-snapshot='))?.slice(18);
 const compileMs=Number(process.argv.find(v=>v.startsWith('--native-compile-ms='))?.slice(20)||0);

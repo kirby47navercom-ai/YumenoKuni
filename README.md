@@ -4,9 +4,13 @@
 
 - `docs/` 설정집(스포일러 주의), 공원·캐릭터·진행 설계서
 - `tools/generate_tpose_nai.py` NovelAI T자 일러스트 생성
-- `art/standing/` 기준 입상 일러스트 17장(16명 + 래피)
+- `art/character_delivery_v4/manifest.json` 인물 이미지 원본 목록
 - `docs/design/` 게임 기획서(시스템 + 프롤로그~6장 시나리오, ⚠ 전체 스포일러)
 - `HANDOFF.md` 인수인계서
+
+## Windows 개발 빌드
+
+Windows x64에서 [개발 도구 설치 안내](docs/design/rewrite_v5/BUILD.md)를 따른 뒤 저장소 루트에서 `node Game/tools/build-checkout.mjs`를 실행한다.
 
 ## T자 일러스트 생성
 ```

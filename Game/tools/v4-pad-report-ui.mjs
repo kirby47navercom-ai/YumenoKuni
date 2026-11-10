@@ -2,7 +2,7 @@ import{applyPadDetailSource}from'../../tools/render_pad_detail_source_ui.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitV4PadReportUI({repo,write,body}){
  const ref=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/pad_report_gift_leaf_followup.json'),'utf8')).report;
  const contrast=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/pad_theme_contrast_contract.json'),'utf8'));

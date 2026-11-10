@@ -2,7 +2,7 @@ import fs from'node:fs/promises';
 import path from'node:path';
 import{applyPadDetailSource}from'../../tools/render_pad_detail_source_ui.mjs';
 // Composed techou_kotodama SFL bounds; supplied artwork is not re-extracted.
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitV4PadEvidenceUI({repo,write,body}){
  const w=createWidgetAsset('PadEvidenceV4');w.scaleMode='scale';w.scaleRule='fit';
  const add=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:31.25,color:'#ffffff',background:'#00000000',padding:0,focusable:false,visible:true,...props});w.nodes.push(n);return n;};

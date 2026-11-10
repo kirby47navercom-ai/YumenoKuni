@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
-import {editorWindowProbe} from '../../../engineCreate/tools/editor-window-probe.mjs';
+import {editorWindowProbe} from '../engineCreate/tools/editor-window-probe.mjs';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const built=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'utf8'));
 const runtime=JSON.parse(await fs.readFile(path.join(path.dirname(built.executable),'game.hbpack.json'),'utf8')).windowsRuntime;

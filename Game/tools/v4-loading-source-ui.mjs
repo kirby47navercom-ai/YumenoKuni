@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import {sourceRows,sourceSvg} from './v3-source-svg.mjs';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitLoadingSourceUI({write}){
  const rows=await sourceRows('loading_s','fl_wait','loading_source'),base='Assets/Art/ui/v3/loading/';
  await write(base+'base.svg',await sourceSvg(rows.filter(r=>/^(p_black|p_base)/.test(r.path))));

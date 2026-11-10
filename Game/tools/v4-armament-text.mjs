@@ -1,7 +1,7 @@
 // Native-size text ink, including V3-style black outlines. This avoids a host
 // that accepts outline metadata but paints only the white fill. No menu panel.
 import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';import {createRequire} from 'node:module';import assert from 'node:assert/strict';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'../engineCreate/package.json')),{createCanvas,GlobalFonts}=require('@napi-rs/canvas');
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'Game/engineCreate/package.json')),{createCanvas,GlobalFonts}=require('@napi-rs/canvas');
 export async function emitArmamentText({write,revisionTasks,source=game}){
  const font=await fs.readFile(path.join(source,'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf'));assert(GlobalFonts.register(font,'ArmamentInk'));
  const tasks=revisionTasks||JSON.parse(await fs.readFile(path.join(repo,'data/v4_story/native_tasks.json'),'utf8')).tasks;

@@ -3,7 +3,7 @@ import {publishTrialGlyphHeader} from './publish-trial-glyph-header.mjs';
 // The same per-letter transforms and alpha still come from the debate model.
 import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';import assert from 'node:assert/strict';
 import {archiveGpuTrialArtifacts} from './prune-gpu-trial-artifacts.mjs';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'../engineCreate'),require=createRequire(path.resolve(repo,'../engineCreate/package.json'));
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'Game/engineCreate'),require=createRequire(path.resolve(repo,'Game/engineCreate/package.json'));
 const {createCanvas,loadImage}=require('@napi-rs/canvas'),{makeSceneComponent}=await import(pathToFileURL(path.join(sdk,'prototype/scene-components.js'))),{validSpriteRig}=await import(pathToFileURL(path.join(sdk,'prototype/sprite-rig-assets.js')));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const hash=s=>{let h=2166136261;for(const b of Buffer.from(s))h=Math.imul(h^b,16777619);return 'g_'+(h>>>0).toString(16).padStart(8,'0');};

@@ -1,7 +1,7 @@
 import{applyPadDetailSource}from'../../tools/render_pad_detail_source_ui.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitV4PadSkillUI({repo,write,body}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/report_card_ui_contract.json'),'utf8'));
  // 401010 attaches the two independent list roots to these window anchors;

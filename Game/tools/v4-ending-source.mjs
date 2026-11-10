@@ -4,7 +4,7 @@ import path from 'node:path';
 import {createRequire} from 'node:module';
 import {createHash} from 'node:crypto';
 const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game);
-const require=createRequire(path.join(repo,'../engineCreate/package.json'));
+const require=createRequire(path.join(repo,'Game/engineCreate/package.json'));
 const {createCanvas,loadImage}=require('@napi-rs/canvas');
 
 // Crack and final lettering are distinct original timelines. The scene-pixel
@@ -129,7 +129,7 @@ export async function emitEndingSource({write}){
  const black=createCanvas(8,8),ink=black.getContext('2d');ink.fillStyle='#000';ink.fillRect(0,0,8,8);
  await write('Assets/Art/ui/ending_source/black.png',black.toBuffer('image/png'));
  widget.nodes[1].properties.texture='Assets/Art/ui/ending_source/black.png';
- const {validWidgetAsset}=await import('../../../engineCreate/prototype/ui-assets.js');
+ const {validWidgetAsset}=await import('../engineCreate/prototype/ui-assets.js');
  centerEndingSourceCanvas(widget);
  if(!validWidgetAsset(widget))throw Error('Invalid ending widget');
  await write('Assets/UI/EndingSourceV4.hbwidget.json',widget);

@@ -1,3 +1,7 @@
+<!-- COLLABORATOR_BUILD_20261110 -->
+팀 체크아웃의 표준 빌드는 저장소 루트에서 `node Game/tools/build-checkout.mjs`를 사용한다. 고정 엔진 원본과 호환 런타임을 `Game/tools/collaborator-sdk/`에 보관하고 `Game/engineCreate/`에 설치한다. 승인 UI와 연결 음원은 프로젝트의 `ui/`와 `audio/`에서 읽는다. 아래 예전 환경의 개인 다운로드·설치 SDK 경로는 과거 검사 기록이다. 새 작업 절차는 `docs/design/rewrite_v5/BUILD.md`를 따른다.
+<!-- COLLABORATOR_BUILD_20261110_END -->
+
 <!-- SELECTOR_VOTE_SHUTTER_AND_QUESTION_20261107 -->
 09 16:9 투표 전체 화면, 은색 외곽 제거·와이드 월드 노출을 가리는 root matte, 기존 컬러 증명사진 16종×16 슬롯 재합성·우측 승인 profile. 좌하단 카드가 이름띠 뒤에 들어가던 z/배치 조정. 확정 press22→원본 fl_ok 87frame 카드 flip/셔터→원본 PLEASE WAIT→기존 집계→원본 fl_happyo 색종이3종. 색종이는 기존 외부 reference-only 파일을 SHA 일치 확인 후 선별 연결. 원작 게임 실행·설치 변경 없음.
 10·11·12 문제 표시를 기존 소스 파란 띠와 원본 fl_open/fl_close 폭 시간표에 연결. 사진·선택 영역 위 검은 대화 박스를 낮은 띠로 교체했고 닫힘과 함께 텍스트 해제. 13 기존 도입/결정/복귀 재검증. 모든 원본 연출 및 GPU 효과 일치 판정은 아님.

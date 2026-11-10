@@ -1,9 +1,9 @@
 import {createRequire} from 'node:module';
-import fs from'node:fs/promises';import path from'node:path';import{createWidgetAsset,createWidgetNode,validWidgetAsset}from'../../../engineCreate/prototype/ui-assets.js';
+import fs from'node:fs/promises';import path from'node:path';import{createWidgetAsset,createWidgetNode,validWidgetAsset}from'../engineCreate/prototype/ui-assets.js';
 export async function emitNonstopSourceHud({repo,root,write}){
  await write('Assets/Fonts/pretendard/Pretendard-Regular.otf',await fs.readFile(path.join(repo,'fonts/pretendard/Pretendard-Regular.otf')));
  const folder=path.join(repo,'ui/v4/nonstop_hud_source'),data=JSON.parse(await fs.readFile(path.join(folder,'layout.json'),'utf8')),prefix='Assets/Art/ui/nonstop_source/';
- const {createCanvas,loadImage}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+ const {createCanvas,loadImage}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
  for(const name of await fs.readdir(folder))if(name.endsWith('.png')){
   const png=await fs.readFile(path.join(folder,name));
   await write(prefix+name,png);

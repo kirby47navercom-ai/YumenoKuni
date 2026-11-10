@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash,randomUUID} from 'node:crypto';
-import {hashBuildFile} from '../../../engineCreate/tools/build-content.mjs';
+import {hashBuildFile} from '../engineCreate/tools/build-content.mjs';
 const inside=(base,file)=>{const r=path.relative(base,file);return r&&!r.startsWith('..'+path.sep)&&r!=='..'&&!path.isAbsolute(r);};
 // Packages are immutable outputs. Share only verified identical packaged bytes,
 // never editable Game/Assets or source files. No previous file is removed.

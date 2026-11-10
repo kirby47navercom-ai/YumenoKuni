@@ -2,7 +2,7 @@ import {solutionCutin} from './v4-solution-cutin.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 import {emitAnagramTransitions} from './v4-anagram-transition-ui.mjs';
 import {trialModeSource} from './v4-panic-showdown-source.mjs';
 const repo=path.dirname(path.dirname(path.dirname(fileURLToPath(import.meta.url))));

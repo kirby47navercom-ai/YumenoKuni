@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game);
-const {createCanvas,GlobalFonts}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+const {createCanvas,GlobalFonts}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
 export async function emitScrumText({write}){
  const font=await fs.readFile(path.join(game,'Assets/Fonts/dohyeon/DoHyeon-Regular.ttf'));
  assert(GlobalFonts.register(font,'ScrumClaim'));

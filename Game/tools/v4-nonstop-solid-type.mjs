@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game);
-const {makeSceneComponent}=await import(pathToFileURL(path.resolve(repo,'../engineCreate/prototype/scene-components.js')));
+const {makeSceneComponent}=await import(pathToFileURL(path.resolve(repo,'Game/engineCreate/prototype/scene-components.js')));
 export async function emitNonstopSolidType({output,write}){
  const bank=path.join(repo,'art/nonstop_solid_type'),manifest=JSON.parse(await fs.readFile(path.join(bank,'manifest.json'),'utf8'));
  for(const g of manifest.glyphs)for(const color of ['w','y','b']){

@@ -2,7 +2,7 @@ import{applyPadDetailSource}from'../../tools/render_pad_detail_source_ui.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitV4PadRulesUI({repo,write,body,legacyRules}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/rules_book_ui_contract.json'),'utf8'));
  const leaves=c.five_representative_carriers.text_overlay.leaves,cover=c.five_representative_carriers.cover_US.leaves;

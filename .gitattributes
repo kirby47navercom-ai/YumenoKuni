@@ -1,3 +1,6 @@
 # The story compiler compares the authored manuscript's raw SHA-256.
 docs/design/rewrite_v4/** -text
 docs/design/rewrite_v5/** -text
+
+# The dedicated set manifest records the builder's exact SHA-256.
+tools/build_v4_dedicated_spaces.py text eol=lf

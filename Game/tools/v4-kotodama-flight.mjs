@@ -1,4 +1,4 @@
-import {makeSceneComponent} from '../../../engineCreate/prototype/scene-components.js';
+import {makeSceneComponent} from '../engineCreate/prototype/scene-components.js';
 // HUD capsules stay in the HUD. The projectile uses closed letter meshes.
 export function applyKotodamaFlight(widget){
  widget.nodes=widget.nodes.filter(n=>!n.id.startsWith('KotodamaFlight'));

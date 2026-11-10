@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
 export async function emitMineObjects({repo,write}){
  const bank=path.join(repo,'art/v4_production/mine_objects_20261104');
  const entries=JSON.parse(await fs.readFile(path.join(bank,'banks.json'),'utf8'));

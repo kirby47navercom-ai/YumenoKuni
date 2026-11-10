@@ -1,7 +1,7 @@
 // Agreement owns its art/pivots. Never replace the generic T03 used by other modes.
 import fs from'node:fs/promises';import path from'node:path';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{createRequire}from'node:module';
-import{createWidgetNode}from'../../../engineCreate/prototype/ui-assets.js';
-const require=createRequire(new URL('../../../engineCreate/package.json',import.meta.url)),{createCanvas,loadImage}=require('@napi-rs/canvas');
+import{createWidgetNode}from'../engineCreate/prototype/ui-assets.js';
+const require=createRequire(new URL('../engineCreate/package.json',import.meta.url)),{createCanvas,loadImage}=require('@napi-rs/canvas');
 export function centerEndingSourceCanvas(widget){
  widget.nodes=widget.nodes.filter(n=>n.id!=='EndingContent');
  const template=widget.nodes.find(n=>n.id==='EndingLeaf0');

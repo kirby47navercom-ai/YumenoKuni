@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';import {createHash} from 'node:crypto';
 import {emitGpuTrialBatches} from './v4-gpu-trial-batches.mjs';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'../engineCreate');
-const require=createRequire(path.resolve(repo,'../engineCreate/package.json')),{createCanvas,GlobalFonts}=require('@napi-rs/canvas');
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'Game/engineCreate');
+const require=createRequire(path.resolve(repo,'Game/engineCreate/package.json')),{createCanvas,GlobalFonts}=require('@napi-rs/canvas');
 const {paintWidgetText}=await import(pathToFileURL(path.join(sdk,'tools/native-widget-paint.mjs'))),{makeSceneComponent}=await import(pathToFileURL(path.join(sdk,'prototype/scene-components.js')));
 const hash=s=>{let h=2166136261;for(const b of Buffer.from(s))h=Math.imul(h^b,16777619);return 'g_'+(h>>>0).toString(16).padStart(8,'0');};
 function projectiveGlyphRoot(scene){scene.objects=scene.objects.filter(o=>o.id!=='TrialGlyphMotion');scene.objects.push({id:'TrialGlyphMotion',name:'발언 원근 이동',kind:'empty',parent:'Camera',position:[0,0,0],rotation:[0,0,0],scale:[1,1,1],visible:true,components:[]});for(const o of scene.objects)if(/^TrialGpu_M[FSB]\d+$/.test(o.id))o.parent='TrialGlyphMotion';}

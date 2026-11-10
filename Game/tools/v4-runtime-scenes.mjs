@@ -5,7 +5,7 @@ import {emitParkScenes} from './v4-park-levels.mjs';
 // One authored object definition feeds both editor scenes and runtime instances.
 import assert from 'node:assert/strict';
 import {applyExplorationMaterialLight} from './v4-exploration-material-light.mjs';
-import {createWidgetAsset,createWidgetNode} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode} from '../engineCreate/prototype/ui-assets.js';
 import {emitCulpritWorldOrbit} from './v4-culprit-orbit.mjs';
 import {emitArmamentScene} from './v4-armament-scene.mjs';
 export async function emitRuntimeScenes(scene,write){

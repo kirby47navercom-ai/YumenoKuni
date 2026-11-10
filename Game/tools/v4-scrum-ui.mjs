@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {emitScrumText} from './v4-scrum-text.mjs';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 const repo=path.dirname(path.dirname(path.dirname(fileURLToPath(import.meta.url))));
 export async function emitV4ScrumUI({write,body,head}){
  await emitScrumText({write});

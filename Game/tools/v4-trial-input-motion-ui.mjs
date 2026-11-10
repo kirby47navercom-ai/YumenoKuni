@@ -1,9 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createRequire} from 'node:module';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 import {emitCulpritOrbit} from './v4-culprit-orbit.mjs';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
 export function centerInputFrame(w,stage=false){
  let frame=w.nodes.find(n=>n.id==='InputSourceFrame');if(!frame){frame=createWidgetNode('Canvas','InputSourceFrame','root');frame.name=frame.id;w.nodes.push(frame);}const positionalFrame=stage||w.name==='TrialVitalsV4';frame.slot.anchors=positionalFrame?[0,0,0,0]:[.5,.5,.5,.5];frame.slot.offset=positionalFrame?[0,0,1280,720]:[-640,-360,1280,720];frame.slot.alignment=[0,0];Object.assign(frame.properties,{padding:0,focusable:false,background:'#00000000'});
  for(const n of w.nodes)if(n.id!==frame.id&&n.parent==='root'&&(!stage||/^(Opt[NTC]\d+|Ta[A-Z].*|Spot.*|Cross[HV]|Mark\d+|MarkName|QBand|QText)$/.test(n.id)))n.parent=frame.id;
@@ -92,7 +92,7 @@ export async function emitTrialInputMotionUI({repo,write,read}){
   rows.find(r=>r.resource==='t_ktdm_detail_img_frame.png')?.opacity||0,
  ]);
  const nomination=original.t_sub_jinbutu_kettei_US,nominationAssets=new Map();
- const {createCanvas,loadImage}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+ const {createCanvas,loadImage}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
  bank.culpritOrbit=await emitCulpritOrbit({repo,write,base,createCanvas,loadImage,
   focus:original.t_sub_jinbutu_focus,plate:original.t_sub_jinbutu_pl});
  bank.personConfirm=[];

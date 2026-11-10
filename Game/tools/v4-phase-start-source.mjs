@@ -1,5 +1,5 @@
 // Override only the two actual StartBand paths; all mode-specific intros stay owned.
-import fs from'node:fs/promises';import path from'node:path';import{createWidgetAsset,createWidgetNode,validWidgetAsset}from'../../../engineCreate/prototype/ui-assets.js';
+import fs from'node:fs/promises';import path from'node:path';import{createWidgetAsset,createWidgetNode,validWidgetAsset}from'../engineCreate/prototype/ui-assets.js';
 export async function emitV4PhaseStartSource({repo,write}){
  const dir=path.join(repo,'ui/v4/phase_start_source'),manifest=JSON.parse(await fs.readFile(path.join(dir,'manifest.json'),'utf8'));
  const wrap=async(file,rect)=>{const b=await fs.readFile(file);return`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"><image x="${rect[0]}" y="${rect[1]}" width="${rect[2]}" height="${rect[3]}" href="data:image/png;base64,${b.toString('base64')}"/></svg>`;};

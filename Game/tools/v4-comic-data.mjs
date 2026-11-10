@@ -3,7 +3,7 @@ import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
 export async function publishComicPagesOnly({repo,root,write}){
  const code='import json,sys;sys.path.insert(0,"tools");from v4_comic_presentation import build_comic,bind_task;from pathlib import Path;n=json.loads(Path("data/v4_story/native_tasks.json").read_text(encoding="utf-8"))["tasks"];c=build_comic();print(json.dumps({k:{"presentation":bind_task(n[k],c)["stage"]["comicPresentation"],"slots":bind_task(n[k],c)["stage"]["slots"]} for k in c["tasks"]},ensure_ascii=False))';
  const metadata=JSON.parse(execFileSync('python',['-X','utf8','-c',code],{cwd:repo,encoding:'utf8',maxBuffer:4*1024*1024})),assets=new Set();

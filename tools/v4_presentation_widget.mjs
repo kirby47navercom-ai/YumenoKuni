@@ -1,7 +1,7 @@
 // Imported by the project generator; this module never runs a game or build.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {createWidgetAsset,createWidgetNode} from '../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode} from '../Game/engineCreate/prototype/ui-assets.js';
 
 export async function emitPresentationV4({repo,copy,write}) {
   const contract=JSON.parse(await fs.readFile(path.join(repo,'data/presentation/v4.json'),'utf8'));

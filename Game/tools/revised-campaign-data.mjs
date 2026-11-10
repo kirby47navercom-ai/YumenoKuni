@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import assert from 'node:assert/strict';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
 import {v4Bucket} from './v4-data.mjs';
 import {emitArmamentWordTextures,emitRevisedArmamentFigures} from './v4-armament-presentation.mjs';
 import {emitArmamentText} from './v4-armament-text.mjs';

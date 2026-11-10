@@ -28,19 +28,19 @@ import {emitDifficultyV4} from './v4-difficulty-ui.mjs';
 import {emitTrialVitals} from './v4-trial-vitals.mjs';
 import {applyTrialHudStyle,emitTrialHudStyleOnly,emitTrialNameOnly,emitTrialTimerOnly} from './v4-trial-hud-style.mjs';
 // 유메노쿠니 HBEngine 프로젝트 생성기 : 각본 데이터·스프라이트·UI·장면·블루프린트를 Assets/ 아래에 만든다.
-// node tools/create-project.mjs   (엔진 원본은 ../../../engineCreate 를 읽기만 한다)
+// node tools/create-project.mjs   (엔진 원본은 ../engineCreate 를 읽기만 한다)
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {randomUUID} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
-import {makeStarterScene} from '../../../engineCreate/prototype/scene-templates.js';
-import {makeSceneComponent} from '../../../engineCreate/prototype/scene-components.js';
-import {environmentActorPreset} from '../../../engineCreate/prototype/scene-environment.js';
-import {createAsset} from '../../../engineCreate/prototype/asset-documents.js';
-import {makeNode,connect} from '../../../engineCreate/prototype/blueprint-model.js';
-import {parseNativeHeader} from '../../../engineCreate/prototype/native-model.js';
-import {createWidgetAsset,createWidgetNode} from '../../../engineCreate/prototype/ui-assets.js';
+import {makeStarterScene} from '../engineCreate/prototype/scene-templates.js';
+import {makeSceneComponent} from '../engineCreate/prototype/scene-components.js';
+import {environmentActorPreset} from '../engineCreate/prototype/scene-environment.js';
+import {createAsset} from '../engineCreate/prototype/asset-documents.js';
+import {makeNode,connect} from '../engineCreate/prototype/blueprint-model.js';
+import {parseNativeHeader} from '../engineCreate/prototype/native-model.js';
+import {createWidgetAsset,createWidgetNode} from '../engineCreate/prototype/ui-assets.js';
 import {emitOptionsV4} from '../../tools/v4_options_widget.mjs';
 import {installV4StoryUI} from './v4-story-ui.mjs';
 import {publishV4Data} from './v4-data.mjs';
@@ -225,6 +225,8 @@ const suppliedUi=JSON.parse(await fs.readFile(path.join(repo,'ui/v3_authorized/m
 for(const c of Object.values(suppliedUi.components))await copy(c.file,c.runtime);
 const suppliedPad=JSON.parse(await fs.readFile(path.join(repo,'ui/v3_authorized/pad_home/manifest.json'),'utf8'));
 for(const c of suppliedPad.files)await copy(c.file,c.runtime);
+// V4 runtime preparation reads the court figure manifest on a fresh checkout.
+execFileSync('python',['-X','utf8',path.join(repo,'tools/court_figures.py')],{stdio:'inherit'});
 await publishV4Data({repo,copy,write});
 
 // 1) 각본 데이터 : data/scenes/{접두}_*.json → Assets/Data/scenes/{접두}.json
@@ -776,7 +778,6 @@ const placeholder={
  wall:'<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024"><rect width="768" height="1024" fill="#0c1f27"/><rect x="0" y="880" width="768" height="144" fill="#081419"/><path d="M164 820V300a220 220 0 0 1 440 0v520z" fill="#2a1030" stroke="#3fb8b0" stroke-width="10"/>'+Array.from({length:18},(_,i)=>`<rect x="${190+(i%6)*66}" y="${330+Math.floor(i/6)*150}" width="60" height="140" fill="${['#ff6fb5','#a46bff','#ffd0f0','#6fd3ff','#ff9fd0','#c58bff'][i%6]}" fill-opacity=".55"/>`).join('')+'</svg>',
  throne:'<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700"><rect x="80" y="430" width="540" height="270" fill="#2a1a20" stroke="#c9a24c" stroke-width="8"/><rect x="250" y="120" width="200" height="320" rx="20" fill="#9b1c2e" stroke="#c9a24c" stroke-width="8"/><rect x="230" y="380" width="240" height="70" fill="#7a1222"/><rect x="90" y="60" width="90" height="360" fill="#b3172f"/><rect x="520" y="60" width="90" height="360" fill="#b3172f"/><circle cx="135" cy="200" r="28" fill="#f2d27a"/><circle cx="565" cy="200" r="28" fill="#f2d27a"/></svg>',
  dead:'<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"><rect x="70" y="40" width="260" height="320" fill="#2c2c34" stroke="#d9d9e0" stroke-width="10"/><path d="M110 80l180 240M290 80L110 320" stroke="#ff4fa3" stroke-width="26" stroke-linecap="round"/></svg>'};
-execFileSync('python',['-X','utf8',path.join(repo,'tools/court_figures.py')],{stdio:'inherit'});
 execFileSync('python',['-X','utf8',path.join(repo,'tools/scrum_faces.py')],{stdio:'inherit'}); // 스크럼 탭 속 얼굴(옆모습 입상에서 머리만)
 const figures=JSON.parse(await fs.readFile(path.join(root,'Assets/Art/court_figures/manifest.json'),'utf8'));
 execFileSync('python',['-X','utf8',path.join(repo,'tools/build_court_memorials.py')],{stdio:'inherit'});

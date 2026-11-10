@@ -1,4 +1,4 @@
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 
 export async function emitTrialEntryUI({write}){
  const widget=createWidgetAsset('TrialEntryV4');

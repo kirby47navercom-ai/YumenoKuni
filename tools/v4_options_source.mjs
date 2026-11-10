@@ -1,7 +1,7 @@
 import{applyMapOptionsSource}from'./render_map_options_source_ui.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../Game/engineCreate/prototype/ui-assets.js';
 
 // Static SFL row ink/RGBA and supplied Korean raster substitutions, with the
 // original PC kind order0..9,12. The project has no optional voice packs.

@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import {createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 export async function emitReasoningVisuals({write}){
  const manifest=JSON.parse(await fs.readFile(new URL('../../ui/v4/trial_inputs_source/manifest.json',import.meta.url),'utf8'));
  const raster=async key=>'data:image/png;base64,'+(await fs.readFile(new URL('../../'+manifest.records[key].file,import.meta.url))).toString('base64');

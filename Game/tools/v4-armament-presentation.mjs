@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 // Reference: user supplied Korean PC footage pMRvvdS6XmI, 1:05:15–1:07:50.
 // Original supplied/authorized UI with source SFL transforms; own manuscript and portraits.
 import fs from 'node:fs/promises';import path from 'node:path';import {createRequire} from 'node:module';import {createHash} from 'node:crypto';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'../engineCreate/package.json')),{createCanvas,loadImage,GlobalFonts}=require('@napi-rs/canvas');
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'Game/engineCreate/package.json')),{createCanvas,loadImage,GlobalFonts}=require('@napi-rs/canvas');
 // Pure presentation patch for retained packages; preserves charts/transcripts and actors.
 export function applyArmamentFinalButtonSourceRects(nodes,sourceLayout){
  for(let i=0;i<4;i++){const n=nodes.find(n=>n.id==='ArmPieceKey'+i),shape=['triangle','circle','cross','square'][i],container='t_riron_todome_'+shape;
@@ -202,7 +202,7 @@ export async function emitArmamentPresentation({write}){
  const nativeTemplate=stage.nodes.find(n=>n.id==='MineResultBand');if(!nativeTemplate)throw Error('Missing Mind Mine UI image template');
  const nativeFile='Assets/UI/MineHUDV4.hbwidget.json',nativeHUD=JSON.parse(await fs.readFile(path.join(game,nativeFile),'utf8'));nativeHUD.nodes=nativeHUD.nodes.filter(n=>!n.id.startsWith('SolutionNative'));
  for(let i=-1;i<20;i++){const n=structuredClone(nativeTemplate);n.id='SolutionNative'+(i<0?'Back':i);n.name=n.id;n.parent='root';n.slot.offset=[0,0,1280,720];n.slot.zIndex=900+i+1;Object.assign(n.properties,{texture:'',visible:false,opacity:1,rotation:0,color:'#ffffffff'});nativeHUD.nodes.push(n);}
- const {validWidgetAsset}=await import(pathToFileURL(path.join(repo,'../engineCreate/prototype/ui-assets.js')));
+ const {validWidgetAsset}=await import(pathToFileURL(path.join(repo,'Game/engineCreate/prototype/ui-assets.js')));
  if(!validWidgetAsset(nativeHUD)||!validWidgetAsset(stage))throw Error('Invalid native solution widget ownership, node budget, name or z-order');
  await write(nativeFile,nativeHUD);await write('Assets/UI/Stage.hbwidget.json',stage);
  add('ArFinishBackdrop',[0,0,1280,720],textures.finishBackdrop,4000);nodes.at(-1).parent='ArmIntroRoot';

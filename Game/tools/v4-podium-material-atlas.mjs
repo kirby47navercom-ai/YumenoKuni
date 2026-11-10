@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
-const require=createRequire(path.resolve(import.meta.dirname,'../../../engineCreate/package.json'));
+const require=createRequire(path.resolve(import.meta.dirname,'../engineCreate/package.json'));
 const {Matrix4,Quaternion,Vector3}=require('three'),{createCanvas,loadImage}=require('@napi-rs/canvas');
 const srgb=v=>v<=.0031308?v*12.92:1.055*Math.pow(v,1/2.4)-.055;
 const linear=v=>v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4);

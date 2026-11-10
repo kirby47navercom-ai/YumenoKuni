@@ -2,7 +2,7 @@ import {emitSourceFamily} from './v3-source-svg.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 
 export async function emitTrialResultUI({repo,write,body}){
  const head='Assets/Fonts/dohyeon/DoHyeon-Regular.ttf';

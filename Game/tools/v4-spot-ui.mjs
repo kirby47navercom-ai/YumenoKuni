@@ -12,7 +12,7 @@ if(SPOT_RECT.length!==4||SPOT_RECT.some(v=>!Number.isFinite(v)))throw Error('Inv
 // Original spot cursor/axis raster and display-list transform.
 export async function emitSpotVisuals({write}){
  const repo=fileURLToPath(new URL('../../',import.meta.url));
- const {loadImage}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+ const {loadImage}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
  const {tasks}=JSON.parse(await fs.readFile(path.join(repo,'data/v4_story/native_tasks.json'),'utf8'));
  const aspects={};
  for(const [id,task] of Object.entries(tasks)){

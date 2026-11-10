@@ -2,13 +2,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 
 export async function emitTrialPickerUI({repo,write,body,head}){
  const personSelection=JSON.parse(await fs.readFile(path.join(repo,'ui/v4/v3_reference/person_picker/selection.json'),'utf8'));
  const source=JSON.parse(await fs.readFile(path.join(repo,'ui/v4/trial_inputs_source/manifest.json'),'utf8'));
  const base='Assets/Art/ui/v3/trial_picker/';
- const {createCanvas,loadImage}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+ const {createCanvas,loadImage}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
  const wrap=(bytes,w,h)=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><image href="data:image/png;base64,${bytes.toString('base64')}" width="${w}" height="${h}" preserveAspectRatio="none"/></svg>`;
  const raster=async(name,target,w=1280,h=720)=>{
   const row=source.records[name];if(!row)throw Error('Missing original picker UI '+name);

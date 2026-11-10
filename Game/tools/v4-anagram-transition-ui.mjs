@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createRequire} from 'node:module';
 import {trialModeSource} from './v4-panic-showdown-source.mjs';
-const repo=path.resolve(import.meta.dirname,'../..'),sdk=path.resolve(repo,'../engineCreate');
+const repo=path.resolve(import.meta.dirname,'../..'),sdk=path.resolve(repo,'Game/engineCreate');
 const {createCanvas,loadImage,GlobalFonts}=createRequire(path.join(sdk,'package.json'))('@napi-rs/canvas');
 export async function emitAnagramTransitions(write,add){
  const svg=(w,h,b)=>`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${b}</svg>`;

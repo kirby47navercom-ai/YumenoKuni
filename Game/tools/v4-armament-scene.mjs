@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
-import {validScene} from '../../../engineCreate/prototype/model.js';
+import {validScene} from '../engineCreate/prototype/model.js';
 const repo=path.resolve(import.meta.dirname,'../..');
 // Own scene: the real court and its sixteen moving podiums remain untouched.
 export async function emitArmamentScene(court,write){

@@ -4,7 +4,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {pathToFileURL} from 'node:url';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'../engineCreate');
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'Game/engineCreate');
 const require=createRequire(path.join(sdk,'package.json')),{createCanvas,loadImage}=require('@napi-rs/canvas');
 const {validSpriteRig}=await import(pathToFileURL(path.join(sdk,'prototype/sprite-rig-assets.js')));
 const {makeSceneComponent}=await import(pathToFileURL(path.join(sdk,'prototype/scene-components.js')));

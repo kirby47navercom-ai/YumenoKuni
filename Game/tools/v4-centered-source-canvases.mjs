@@ -1,5 +1,5 @@
 // Center the original fixed-aspect UI surface, preserving its authored child coordinates.
-import fs from'node:fs/promises';import path from'node:path';import{createWidgetNode,validWidgetAsset}from'../../../engineCreate/prototype/ui-assets.js';
+import fs from'node:fs/promises';import path from'node:path';import{createWidgetNode,validWidgetAsset}from'../engineCreate/prototype/ui-assets.js';
 const widgets=['Pad','PadEvidenceV4','PadGiftV4','PadReportV4','PadSkillV4','PadRulesV4','PadMapV4','PadMapAtlasV4','PadSystemV4','CommonConfirmV4','BacklogV4','SaveSlotsV4','LoadDetailV4','PadThemeV4','ChapterSelectV4','TitleMenuV4','GalleryV4','MachineV4','DifficultyV4'];
 function centered(w,parent='root',ids=null){if(w.nodes.some(n=>n.id==='SourceCanvas'))return;const c=createWidgetNode('Panel','SourceCanvas',parent);c.name=c.id;c.slot.anchors=[.5,.5,.5,.5];c.slot.offset=[-640,-360,1280,720];Object.assign(c.properties,{visible:true,focusable:false,padding:0,radius:0,borderWidth:0,background:'#00000000'});for(const n of w.nodes)if(n.parent===parent&&(!ids||ids(n.id)))n.parent=c.id;w.nodes.splice(1,0,c);}
 export async function emitCenteredSourceCanvases({root,write}){

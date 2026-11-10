@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import {createRequire} from 'node:module';
 import path from 'node:path';
-import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../../../engineCreate/prototype/ui-assets.js';
+import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCreate/prototype/ui-assets.js';
 import {emitVoteTally} from './v4-vote-tally.mjs';
 import {emitVoteVerdict} from './v4-vote-verdict.mjs';
 import {centerInputFrame} from './v4-trial-input-motion-ui.mjs';
@@ -62,7 +62,7 @@ export async function finalizeVoteTVUI({repo,write,read}){
  const vote=await read('Assets/UI/Vote.hbwidget.json'),bank=await read('Assets/Data/v4_story/trial_input_motion.json');
  const cardRect=([x,y,w,h])=>[x,40+(y-40)*.93,w,h*.93];
  bank.voteCards=bank.voteCards.map(cardRect);
- const {createCanvas,loadImage,GlobalFonts}=createRequire(path.join(repo,'../engineCreate/package.json'))('@napi-rs/canvas');
+ const {createCanvas,loadImage,GlobalFonts}=createRequire(path.join(repo,'Game/engineCreate/package.json'))('@napi-rs/canvas');
  // Eye midpoint and chin height measured on each source at 220×220.
  // Keep the entire pose proportional and pin facial scale independently of padding and props.
  const landmarks={

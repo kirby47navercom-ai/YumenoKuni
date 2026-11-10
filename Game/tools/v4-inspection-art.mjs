@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {validGameJson} from '../../../engineCreate/prototype/game-json.js';
+import {validGameJson} from '../engineCreate/prototype/game-json.js';
 import {nativeWidgetPng} from './native-png-runtime.mjs';
 
 // The same reviewed geometry/image adapter used by prepare_v4_runtime.py,

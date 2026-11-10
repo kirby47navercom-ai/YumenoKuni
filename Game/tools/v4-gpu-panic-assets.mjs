@@ -1,6 +1,6 @@
 // Preserve the authored sine wave with four shared translation bones per lane.
 import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'../engineCreate'),require=createRequire(path.join(sdk,'package.json'));
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),sdk=path.resolve(repo,'Game/engineCreate'),require=createRequire(path.join(sdk,'package.json'));
 const {createCanvas,loadImage,GlobalFonts}=require('@napi-rs/canvas'),{paintWidgetText}=await import(pathToFileURL(path.join(sdk,'tools/native-widget-paint.mjs'))),{makeSceneComponent}=await import(pathToFileURL(path.join(sdk,'prototype/scene-components.js'))),{validSpriteRig}=await import(pathToFileURL(path.join(sdk,'prototype/sprite-rig-assets.js')));
 const sha=b=>createHash('sha256').update(b).digest('hex'),hash=s=>{let h=2166136261;for(const b of Buffer.from(s))h=Math.imul(h^b,16777619);return 'g_'+(h>>>0).toString(16).padStart(8,'0');};
 export async function emitGpuPanicAssets({output,write,revisedTasks}){

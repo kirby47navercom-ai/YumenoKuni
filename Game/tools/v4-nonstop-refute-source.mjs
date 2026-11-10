@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';import path from 'node:path';import {createRequire} from 'node:module';
-const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'../engineCreate/package.json')),{createCanvas,loadImage}=require('@napi-rs/canvas');
+const game=path.resolve(import.meta.dirname,'..'),repo=path.dirname(game),require=createRequire(path.join(repo,'Game/engineCreate/package.json')),{createCanvas,loadImage}=require('@napi-rs/canvas');
 // Supplied Korean UI, source display-list transforms. No original protagonist art.
 export async function emitNonstopRefuteSource({write,widget:target}){
  const bank=JSON.parse(await fs.readFile(path.join(repo,'ui/v3_authorized/armament/layout.json'),'utf8')).t_ronpa_cutin_JP;
