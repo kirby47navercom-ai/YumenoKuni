@@ -1,0 +1,1229 @@
+{
+  "source": "authored game-space candidates",
+  "spaces": [
+    {
+      "space": "service_lounge",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/service_lounge.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 2.72,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "hotel_corridor",
+      "control_mode": "free_walk",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/hotel_corridor.glb",
+      "camera": {
+        "eye_height": 1.55,
+        "manual_translation": true,
+        "spawn_blender": [
+          0,
+          -27.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "courtroom",
+      "control_mode": "scripted_court",
+      "model": "art/space_v4/full_v2/courtroom.glb",
+      "camera": {
+        "manual_translation": false,
+        "purpose": "authored speaker-relative shots; preserve 16 standing positions"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "dining_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/dining_room.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 3.4000000000000004,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -3.4000000000000004,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "theatre_preparation",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/theatre_preparation.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 2.72,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "archive_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/archive_room.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 3.4000000000000004,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -3.4000000000000004,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "central_control",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/central_control.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 3.06,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -3.06,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "plaza",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/plaza.glb",
+      "camera": {
+        "eye_height": 1.55,
+        "manual_translation": true,
+        "spawn_blender": [
+          0,
+          -13.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "hotel_lobby",
+      "control_mode": "free_walk",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/hotel_lobby.glb",
+      "camera": {
+        "eye_height": 1.55,
+        "manual_translation": true,
+        "spawn_blender": [
+          0,
+          -5.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "guest_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/guest_room.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 2.04,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -2.04,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "clinic",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/clinic.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 3.06,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -3.06,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "kitchen",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/kitchen.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 3.4000000000000004,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -3.4000000000000004,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "laundry_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/laundry_room.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 2.72,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "management_office",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/management_office.glb",
+      "camera": {
+        "center_blender": [
+          0,
+          0,
+          1.25
+        ],
+        "radius": 2.72,
+        "pitch_limits_degrees": [
+          -10,
+          7
+        ],
+        "manual_translation": false,
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ],
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "legacy_radius_role": "initial framing distance only; never orbit eye position"
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "electrical_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/electrical_room.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -2.3800000000000003,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 2.3800000000000003,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "supply_store",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/supply_store.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 2.72,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "hotel_multiuse",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/hotel_multiuse.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -3.4000000000000004,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 3.4000000000000004,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "refreshment_store",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/refreshment_store.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 2.72,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "cold_store",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/cold_store.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 2.72,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "staff_passage",
+      "control_mode": "free_walk",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/staff_passage.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -8.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "performance_stage",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/performance_stage.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -6.12,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 6.12,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "pool_edge",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/pool_edge.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -5.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "mirror_maze",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/mirror_maze.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          5,
+          -8.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "mirror_workbay",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/mirror_workbay.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -3.06,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 3.06,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "mirror_waiting",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/mirror_waiting.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -3.06,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 3.06,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "ferris_platform",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/ferris_platform.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -6.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "ferris_cabin",
+      "control_mode": "fixed_pan",
+      "model": "art/space_v4/full_v2/ferris_cabin.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -1.02,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 1.02,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "dream_lobby",
+      "control_mode": "free_walk",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/dream_lobby.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -4.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "screening_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/screening_room.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -6.12,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 6.12,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "reading_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/reading_room.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -3.4000000000000004,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 3.4000000000000004,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "exhibition_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/exhibition_room.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -4.08,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 4.08,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "record_room",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/record_room.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -4.08,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 4.08,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "coaster_platform",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/coaster_platform.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -6.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "maintenance_workshop",
+      "control_mode": "free_walk",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/maintenance_workshop.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -5.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "inspection_hall_normal",
+      "control_mode": "fixed_pan",
+      "model": "art/space_v4/full_v2/inspection_hall_normal.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -4.08,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 4.08,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "inspection_hall_changed",
+      "control_mode": "fixed_pan",
+      "model": "art/space_v4/full_v2/inspection_hall_changed.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -4.08,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 4.08,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "lower_stairway",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/lower_stairway.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -4.5,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "lower_corridor",
+      "control_mode": "free_walk",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/lower_corridor.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -10.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "shelter_reception",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/shelter_reception.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -4.08,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 4.08,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "shelter_inner",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/shelter_inner.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -4.08,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 4.08,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "operating_archive",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/operating_archive.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -3.4000000000000004,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 3.4000000000000004,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "loading_gate",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/loading_gate.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -5.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "outside_threshold",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/outside_threshold.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -6.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "park_garden",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/park_garden.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -9.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "park_main_gate",
+      "control_mode": "free_walk",
+      "model": "art/space_v4/full_v2/park_main_gate.glb",
+      "camera": {
+        "manual_translation": true,
+        "eye_height": 1.6,
+        "spawn_blender": [
+          0,
+          -4.0,
+          0
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "ticket_booth",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/ticket_booth.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -2.04,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 2.04,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    },
+    {
+      "space": "trial_elevator",
+      "control_mode": "fixed_pan",
+      "model": "_삭제대기_2026-10-29/제작참조확인필요/art/space_v4/full_v2/trial_elevator.glb",
+      "camera": {
+        "manual_translation": false,
+        "eye_blender": [
+          0,
+          -2.72,
+          1.6
+        ],
+        "center_blender": [
+          0,
+          0,
+          1.35
+        ],
+        "radius": 2.72,
+        "rotation": "yaw_pitch_about_fixed_eye",
+        "pitch_limits_degrees": [
+          -22,
+          18
+        ],
+        "yaw_limits_degrees": [
+          -155,
+          155
+        ]
+      },
+      "coordinate_contract": "Blender source (x,y,z) -> standard glTF (x,z,-y)",
+      "evidence": "own authored geometry, adapted from V3 mode 1/0 consumption in docs/spec/18_V3_분석/01_탐색.md",
+      "not_claimed": "original V3 map mode assignment or completed game integration"
+    }
+  ]
+}

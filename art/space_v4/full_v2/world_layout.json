@@ -1,0 +1,1807 @@
+{
+  "status": "authored complete catalogue arrangement/connection draft; not runtime accepted",
+  "source_manifest_sha256": "adf5a3a2c7e9713aa4ec3bc9c084ac7cd2599a0bfcd7a2abf2869ae624a4713e",
+  "axes": "Blender Z-up authored meters, not measured V3 coordinates",
+  "instances": [
+    {
+      "id": "plaza",
+      "asset_id": "plaza",
+      "asset": "art/space_v4/full_v2/plaza.glb",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "hotel_lobby",
+      "asset_id": "hotel_lobby",
+      "asset": "art/space_v4/full_v2/interior_art_r4/hotel_lobby.glb",
+      "position_blender": [
+        0,
+        24,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "hotel_corridor",
+      "asset_id": "hotel_corridor",
+      "asset": "art/space_v4/full_v2/interior_art_r4/hotel_corridor.glb",
+      "position_blender": [
+        -4,
+        58,
+        3.2
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "management_office",
+      "asset_id": "management_office",
+      "asset": "art/space_v4/full_v2/interior_art_r4/management_office.glb",
+      "position_blender": [
+        20,
+        24,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "service_lounge",
+      "asset_id": "service_lounge",
+      "asset": "art/space_v4/full_v2/interior_art_r4/service_lounge.glb",
+      "position_blender": [
+        22.6,
+        32,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "electrical_room",
+      "asset_id": "electrical_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/electrical_room.glb",
+      "position_blender": [
+        34,
+        24,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "dining_room",
+      "asset_id": "dining_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/dining_room.glb",
+      "position_blender": [
+        -38,
+        24,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "kitchen",
+      "asset_id": "kitchen",
+      "asset": "art/space_v4/full_v2/interior_art_r4/kitchen.glb",
+      "position_blender": [
+        -24,
+        24,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "laundry_room",
+      "asset_id": "laundry_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/laundry_room.glb",
+      "position_blender": [
+        -24,
+        36,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "clinic",
+      "asset_id": "clinic",
+      "asset": "art/space_v4/full_v2/interior_art_r4/clinic.glb",
+      "position_blender": [
+        -38,
+        36,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "supply_store",
+      "asset_id": "supply_store",
+      "asset": "art/space_v4/full_v2/interior_art_r4/supply_store.glb",
+      "position_blender": [
+        -24,
+        48,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "hotel_multiuse",
+      "asset_id": "hotel_multiuse",
+      "asset": "art/space_v4/full_v2/interior_art_r4/hotel_multiuse.glb",
+      "position_blender": [
+        -38,
+        48,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "park_garden",
+      "asset_id": "park_garden",
+      "asset": "art/space_v4/full_v2/park_garden.glb",
+      "position_blender": [
+        -24,
+        -8,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "park_main_gate",
+      "asset_id": "park_main_gate",
+      "asset": "art/space_v4/full_v2/park_main_gate.glb",
+      "position_blender": [
+        0,
+        -42,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "ticket_booth",
+      "asset_id": "ticket_booth",
+      "asset": "art/space_v4/full_v2/interior_art_r4/ticket_booth.glb",
+      "position_blender": [
+        -10,
+        -34,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "performance_stage",
+      "asset_id": "performance_stage",
+      "asset": "art/space_v4/full_v2/interior_art_r4/performance_stage.glb",
+      "position_blender": [
+        70,
+        0,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "theatre_preparation",
+      "asset_id": "theatre_preparation",
+      "asset": "art/space_v4/full_v2/interior_art_r4/theatre_preparation.glb",
+      "position_blender": [
+        70,
+        13,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "staff_passage",
+      "asset_id": "staff_passage",
+      "asset": "art/space_v4/full_v2/interior_art_r4/staff_passage.glb",
+      "position_blender": [
+        70,
+        26,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "cold_store",
+      "asset_id": "cold_store",
+      "asset": "art/space_v4/full_v2/interior_art_r4/cold_store.glb",
+      "position_blender": [
+        70,
+        39,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "refreshment_store",
+      "asset_id": "refreshment_store",
+      "asset": "art/space_v4/full_v2/interior_art_r4/refreshment_store.glb",
+      "position_blender": [
+        58,
+        39,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "pool_edge",
+      "asset_id": "pool_edge",
+      "asset": "art/space_v4/full_v2/pool_edge.glb",
+      "position_blender": [
+        84,
+        26,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "dream_lobby",
+      "asset_id": "dream_lobby",
+      "asset": "art/space_v4/full_v2/interior_art_r4/dream_lobby.glb",
+      "position_blender": [
+        70,
+        64,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "screening_room",
+      "asset_id": "screening_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/screening_room.glb",
+      "position_blender": [
+        70,
+        78,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "reading_room",
+      "asset_id": "reading_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/reading_room.glb",
+      "position_blender": [
+        83,
+        64,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "archive_room",
+      "asset_id": "archive_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/archive_room.glb",
+      "position_blender": [
+        98,
+        64,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "ferris_platform",
+      "asset_id": "ferris_platform",
+      "asset": "art/space_v4/full_v2/ferris_platform.glb",
+      "position_blender": [
+        112,
+        78,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "ferris_cabin",
+      "asset_id": "ferris_cabin",
+      "asset": "art/space_v4/full_v2/ferris_cabin.glb",
+      "position_blender": [
+        112,
+        78,
+        10
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "attraction_interior",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "mirror_maze",
+      "asset_id": "mirror_maze",
+      "asset": "art/space_v4/full_v2/mirror_maze.glb",
+      "position_blender": [
+        98,
+        14,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "mirror_workbay",
+      "asset_id": "mirror_workbay",
+      "asset": "art/space_v4/full_v2/interior_art_r4/mirror_workbay.glb",
+      "position_blender": [
+        103,
+        27.5,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "mirror_waiting",
+      "asset_id": "mirror_waiting",
+      "asset": "art/space_v4/full_v2/interior_art_r4/mirror_waiting.glb",
+      "position_blender": [
+        118,
+        27.5,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "central_control",
+      "asset_id": "central_control",
+      "asset": "art/space_v4/full_v2/interior_art_r4/central_control.glb",
+      "position_blender": [
+        118,
+        42,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "coaster_platform",
+      "asset_id": "coaster_platform",
+      "asset": "art/space_v4/full_v2/coaster_platform.glb",
+      "position_blender": [
+        -70,
+        0,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "maintenance_workshop",
+      "asset_id": "maintenance_workshop",
+      "asset": "art/space_v4/full_v2/interior_art_r4/maintenance_workshop.glb",
+      "position_blender": [
+        -70,
+        16,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "exhibition_room",
+      "asset_id": "exhibition_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/exhibition_room.glb",
+      "position_blender": [
+        -88,
+        16,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "record_room",
+      "asset_id": "record_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/record_room.glb",
+      "position_blender": [
+        -88,
+        32,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "inspection_hall_normal",
+      "asset_id": "inspection_hall_normal",
+      "asset": "art/space_v4/full_v2/inspection_hall_normal.glb",
+      "position_blender": [
+        -70,
+        34,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": "inspection_hall_state"
+    },
+    {
+      "id": "inspection_hall_changed",
+      "asset_id": "inspection_hall_changed",
+      "asset": "art/space_v4/full_v2/inspection_hall_changed.glb",
+      "position_blender": [
+        -70,
+        34,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "surface",
+      "mutually_exclusive_group": "inspection_hall_state"
+    },
+    {
+      "id": "loading_gate",
+      "asset_id": "loading_gate",
+      "asset": "art/space_v4/full_v2/loading_gate.glb",
+      "position_blender": [
+        -70,
+        90,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "outside_threshold",
+      "asset_id": "outside_threshold",
+      "asset": "art/space_v4/full_v2/outside_threshold.glb",
+      "position_blender": [
+        -70,
+        112,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "surface",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "lower_stairway",
+      "asset_id": "lower_stairway",
+      "asset": "art/space_v4/full_v2/lower_stairway.glb",
+      "position_blender": [
+        0,
+        -4,
+        0
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "lower_corridor",
+      "asset_id": "lower_corridor",
+      "asset": "art/space_v4/full_v2/interior_art_r4/lower_corridor.glb",
+      "position_blender": [
+        0,
+        20,
+        -5.76
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "free_walk",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "shelter_reception",
+      "asset_id": "shelter_reception",
+      "asset": "art/space_v4/full_v2/interior_art_r4/shelter_reception.glb",
+      "position_blender": [
+        0,
+        40,
+        -5.76
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "shelter_inner",
+      "asset_id": "shelter_inner",
+      "asset": "art/space_v4/full_v2/interior_art_r4/shelter_inner.glb",
+      "position_blender": [
+        0,
+        54,
+        -5.76
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "operating_archive",
+      "asset_id": "operating_archive",
+      "asset": "art/space_v4/full_v2/interior_art_r4/operating_archive.glb",
+      "position_blender": [
+        18,
+        40,
+        -5.76
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "trial_elevator",
+      "asset_id": "trial_elevator",
+      "asset": "art/space_v4/full_v2/interior_art_r4/trial_elevator.glb",
+      "position_blender": [
+        0,
+        -18,
+        -6
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "fixed_pan",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "courtroom",
+      "asset_id": "courtroom",
+      "asset": "art/space_v4/full_v2/courtroom.glb",
+      "position_blender": [
+        0,
+        0,
+        -16
+      ],
+      "rotation_z_degrees": 0,
+      "mode": "scripted_court",
+      "tier": "subterranean",
+      "mutually_exclusive_group": null
+    },
+    {
+      "id": "guest_01",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        33.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_02",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        33.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_03",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        40.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_04",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        40.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_05",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        47.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_06",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        47.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_07",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        54.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_08",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        54.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_09",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        61.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_10",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        61.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_11",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        68.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_12",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        68.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_13",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        75.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_14",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        75.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_15",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        -9.6,
+        82.5,
+        3.2
+      ],
+      "rotation_z_degrees": 90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    },
+    {
+      "id": "guest_16",
+      "asset_id": "guest_room",
+      "asset": "art/space_v4/full_v2/interior_art_r4/guest_room.glb",
+      "position_blender": [
+        1.5999999999999996,
+        82.5,
+        3.2
+      ],
+      "rotation_z_degrees": -90,
+      "mode": "fixed_pan",
+      "tier": "hotel_upper",
+      "occupant": "story assignment pending"
+    }
+  ],
+  "connections": [
+    {
+      "id": "plaza__hotel_lobby",
+      "a": "plaza",
+      "b": "hotel_lobby",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__park_main_gate",
+      "a": "plaza",
+      "b": "park_main_gate",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "park_main_gate__ticket_booth",
+      "a": "park_main_gate",
+      "b": "ticket_booth",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__park_garden",
+      "a": "plaza",
+      "b": "park_garden",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "hotel_lobby__management_office",
+      "a": "hotel_lobby",
+      "b": "management_office",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "management_office__electrical_room",
+      "a": "management_office",
+      "b": "electrical_room",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "management_office__service_lounge",
+      "a": "management_office",
+      "b": "service_lounge",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.6,
+        4,
+        0
+      ],
+      "b_local": [
+        0,
+        -4,
+        0
+      ],
+      "world": [
+        22.6,
+        28.0,
+        0
+      ],
+      "shared_frame_owner": "service_lounge"
+    },
+    {
+      "id": "hotel_lobby__dining_room",
+      "a": "hotel_lobby",
+      "b": "dining_room",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "dining_room__kitchen",
+      "a": "dining_room",
+      "b": "kitchen",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "hotel_lobby__laundry_room",
+      "a": "hotel_lobby",
+      "b": "laundry_room",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "hotel_lobby__clinic",
+      "a": "hotel_lobby",
+      "b": "clinic",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "hotel_lobby__supply_store",
+      "a": "hotel_lobby",
+      "b": "supply_store",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "hotel_lobby__hotel_multiuse",
+      "a": "hotel_lobby",
+      "b": "hotel_multiuse",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__performance_stage",
+      "a": "plaza",
+      "b": "performance_stage",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "performance_stage__theatre_preparation",
+      "a": "performance_stage",
+      "b": "theatre_preparation",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        0,
+        9,
+        0
+      ],
+      "b_local": [
+        0,
+        -4,
+        0
+      ],
+      "world": [
+        70.0,
+        9.0,
+        0
+      ],
+      "shared_frame_owner": "theatre_preparation"
+    },
+    {
+      "id": "theatre_preparation__staff_passage",
+      "a": "theatre_preparation",
+      "b": "staff_passage",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        0,
+        4,
+        0
+      ],
+      "b_local": [
+        0,
+        -9,
+        0
+      ],
+      "world": [
+        70.0,
+        17.0,
+        0
+      ],
+      "shared_frame_owner": "staff_passage"
+    },
+    {
+      "id": "staff_passage__cold_store",
+      "a": "staff_passage",
+      "b": "cold_store",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        0,
+        9,
+        0
+      ],
+      "b_local": [
+        0,
+        -4,
+        0
+      ],
+      "world": [
+        70.0,
+        35.0,
+        0
+      ],
+      "shared_frame_owner": "cold_store"
+    },
+    {
+      "id": "cold_store__refreshment_store",
+      "a": "cold_store",
+      "b": "refreshment_store",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__pool_edge",
+      "a": "plaza",
+      "b": "pool_edge",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__dream_lobby",
+      "a": "plaza",
+      "b": "dream_lobby",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "dream_lobby__screening_room",
+      "a": "dream_lobby",
+      "b": "screening_room",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        0,
+        5,
+        0
+      ],
+      "b_local": [
+        0,
+        -9,
+        0
+      ],
+      "world": [
+        70.0,
+        69.0,
+        0
+      ],
+      "shared_frame_owner": "screening_room"
+    },
+    {
+      "id": "dream_lobby__reading_room",
+      "a": "dream_lobby",
+      "b": "reading_room",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        7,
+        0,
+        0
+      ],
+      "b_local": [
+        -6,
+        0,
+        0
+      ],
+      "world": [
+        77.0,
+        64.0,
+        0
+      ],
+      "shared_frame_owner": "reading_room"
+    },
+    {
+      "id": "reading_room__archive_room",
+      "a": "reading_room",
+      "b": "archive_room",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__ferris_platform",
+      "a": "plaza",
+      "b": "ferris_platform",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "ferris_platform__ferris_cabin",
+      "a": "ferris_platform",
+      "b": "ferris_cabin",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__mirror_maze",
+      "a": "plaza",
+      "b": "mirror_maze",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "mirror_maze__mirror_workbay",
+      "a": "mirror_maze",
+      "b": "mirror_workbay",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "mirror_maze__mirror_waiting",
+      "a": "mirror_maze",
+      "b": "mirror_waiting",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "dream_lobby__central_control",
+      "a": "dream_lobby",
+      "b": "central_control",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__coaster_platform",
+      "a": "plaza",
+      "b": "coaster_platform",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "coaster_platform__maintenance_workshop",
+      "a": "coaster_platform",
+      "b": "maintenance_workshop",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "maintenance_workshop__exhibition_room",
+      "a": "maintenance_workshop",
+      "b": "exhibition_room",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "exhibition_room__record_room",
+      "a": "exhibition_room",
+      "b": "record_room",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "maintenance_workshop__inspection_hall_normal",
+      "a": "maintenance_workshop",
+      "b": "inspection_hall_normal",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "maintenance_workshop__inspection_hall_changed",
+      "a": "maintenance_workshop",
+      "b": "inspection_hall_changed",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "maintenance_workshop__loading_gate",
+      "a": "maintenance_workshop",
+      "b": "loading_gate",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "loading_gate__outside_threshold",
+      "a": "loading_gate",
+      "b": "outside_threshold",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "maintenance_workshop__lower_stairway",
+      "a": "maintenance_workshop",
+      "b": "lower_stairway",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "lower_stairway__lower_corridor",
+      "a": "lower_stairway",
+      "b": "lower_corridor",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "lower_corridor__shelter_reception",
+      "a": "lower_corridor",
+      "b": "shelter_reception",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "shelter_reception__shelter_inner",
+      "a": "shelter_reception",
+      "b": "shelter_inner",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "shelter_reception__operating_archive",
+      "a": "shelter_reception",
+      "b": "operating_archive",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "plaza__trial_elevator",
+      "a": "plaza",
+      "b": "trial_elevator",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "trial_elevator__courtroom",
+      "a": "trial_elevator",
+      "b": "courtroom",
+      "bidirectional": true,
+      "kind": "scene_portal",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false
+    },
+    {
+      "id": "hotel_lobby__hotel_corridor",
+      "a": "hotel_lobby",
+      "b": "hotel_corridor",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -4,
+        6,
+        3.2
+      ],
+      "b_local": [
+        0,
+        -28,
+        0
+      ],
+      "world": [
+        -4.0,
+        30.0,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_01",
+      "a": "hotel_corridor",
+      "b": "guest_01",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        -24.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        33.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_02",
+      "a": "hotel_corridor",
+      "b": "guest_02",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        -24.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        33.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_03",
+      "a": "hotel_corridor",
+      "b": "guest_03",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        -17.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        40.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_04",
+      "a": "hotel_corridor",
+      "b": "guest_04",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        -17.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        40.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_05",
+      "a": "hotel_corridor",
+      "b": "guest_05",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        -10.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        47.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_06",
+      "a": "hotel_corridor",
+      "b": "guest_06",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        -10.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        47.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_07",
+      "a": "hotel_corridor",
+      "b": "guest_07",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        -3.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        54.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_08",
+      "a": "hotel_corridor",
+      "b": "guest_08",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        -3.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        54.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_09",
+      "a": "hotel_corridor",
+      "b": "guest_09",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        3.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        61.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_10",
+      "a": "hotel_corridor",
+      "b": "guest_10",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        3.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        61.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_11",
+      "a": "hotel_corridor",
+      "b": "guest_11",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        10.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        68.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_12",
+      "a": "hotel_corridor",
+      "b": "guest_12",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        10.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        68.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_13",
+      "a": "hotel_corridor",
+      "b": "guest_13",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        17.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        75.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_14",
+      "a": "hotel_corridor",
+      "b": "guest_14",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        17.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        75.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_15",
+      "a": "hotel_corridor",
+      "b": "guest_15",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        -2.1,
+        24.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -6.1,
+        82.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    },
+    {
+      "id": "hotel_corridor__guest_16",
+      "a": "hotel_corridor",
+      "b": "guest_16",
+      "bidirectional": true,
+      "kind": "paired_boundary",
+      "access": "source/story flags must be wired; not unlocked by this file",
+      "runtime_implemented": false,
+      "a_local": [
+        2.1,
+        24.5,
+        0
+      ],
+      "b_local": [
+        0,
+        -3.5,
+        0
+      ],
+      "world": [
+        -1.9,
+        82.5,
+        3.2
+      ],
+      "shared_frame_owner": "hotel_corridor"
+    }
+  ],
+  "checks": {
+    "all_instances_reachable_in_design_graph": true,
+    "explicitly_paired_boundaries": 23,
+    "no_waiting_control_direct_door": true,
+    "no_pool_staff_shortcut": true
+  },
+  "limits": [
+    "paired boundary alignment does not prove engine collision or doorway clearance",
+    "other edges are explicit loading transitions, not claims of coincident global geometry",
+    "duplicate boundary trim visibility ownership must be applied by importer",
+    "guest occupant allocation and exact chapter locks pending",
+    "normal/changed hall is mutually exclusive, never duplicate live rooms"
+  ]
+}
