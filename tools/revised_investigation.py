@@ -9,7 +9,8 @@ CHOICE = re.compile(r'^- \*\*([^*]+)\*\*')
 SPEECH = re.compile(r'^\s*\*\*[^*]+\*\*　')
 
 
-def select_observation(graph, scene, start, end, question, responses, following, correct=None):
+def select_observation(graph, scene, start, end, question, responses, following, correct=None, require_all=False,
+                       remember=False):
     offsets = [i for i in range(start, end) if CHOICE.match(scene.body[i])]
     assert len(offsets) == len(responses), scene.id
     resume = next((i for i in range(offsets[-1] + 1, end)
@@ -17,16 +18,127 @@ def select_observation(graph, scene, start, end, question, responses, following,
     common = graph.lines(scene, resume, end, following)
     menu = f'rev:{scene.id}:observation:{start}'
     options = []
+    observed = {}
     for index, (offset, (speaker, text, mono)) in enumerate(zip(offsets, responses, strict=True)):
         flag = chr(65 + index)
         reference = scene.source(scene.line + offset + 1)
-        next_node = common if correct is None or index == correct else menu
+        next_node = menu if require_all or correct not in (None, index) else common
         response = graph.add(f'{menu}:{flag}', type='say', actor=SPEAKERS[speaker], speaker=speaker,
                              text=text, mono=mono, source=reference, next=next_node)
-        options.append({'id': flag, 'label': CHOICE.match(scene.body[offset])[1], 'to': response})
+        option = {'id': flag, 'label': CHOICE.match(scene.body[offset])[1], 'to': response}
+        if remember:
+            option['set'] = {scene.id:flag}
+        if require_all:
+            key = f'{menu}:{flag}:observed'
+            observed[key] = True
+            option['requires'] = {key: False}
+            graph.nodes[response]['set'] = {key: True}
+        options.append(option)
+    if require_all:
+        options.append({'id': 'continue', 'label': '세 위치를 비교한다', 'to': common, 'requires': observed})
     choice = graph.add(menu, type='menu', q=question, options=options,
                        source=scene.source(scene.line + offsets[0] + 1))
     return graph.lines(scene, start, offsets[0], choice)
+
+
+SIXTH_INVESTIGATION_CHECKS = {
+    '06-I02': (
+        ('same-report', '기존 수사의 보류 의견', '접수된 진술과 나중 요약이 같은 사건의 문서라는 근거는?', (
+            ('두 문서에서 같은 사람을 언급한다', '쇼', '사람이 같아도 다른 일을 기록할 수 있습니다. 번호부터 확인하십시오.'),
+            ('같은 접수 번호가 원본과 요약에 남아 있다', '미오', '접수된 원문과 인계된 요약을 같은 번호로 나눠 놓을게.'),
+            ('같은 때에 내가 두 문서를 펼쳤다', '사츠키', '오늘 우리가 읽은 차례를 그때 받은 차례로 쓰지 마.'),
+        ), 1),
+    ),
+    '06-I02a': (
+        ('inspection-order', '플레이어는 ‘처음 보류 의견’', '같은 항목이 기록에 남은 차례는?', (
+            ('보류 의견 → 정상 표기 → 미해결로 인계', '쇼', '인수 목록에는 새 고장으로 접수한 날이 없습니다. 앞서 남은 항목을 받았군요.'),
+            ('정상 표기 → 처음 보류 의견 → 인계', '쇼', '정상으로 제출하기 전에 작성된 보류 의견을 다시 보십시오.'),
+            ('인수 목록에 보류가 있으니 최종본도 보류였다', '미오', '받은 사람의 기록 옆에 최종본도 열어 봐. 여기에는 정상이라고 써 있어.'),
+        ), 0),
+    ),
+    '06-I03': (
+        ('clock-boundary', '플레이어가 **현장 시각 숫자', '아직 시계 두 개를 맞출 근거가 없을 때 무엇을 비교할까?', (
+            ('현장 시각과 중앙 접수 숫자를 빼서 통로에 머문 시간을 구한다', '쇼', '같은 순간을 두 번 적은 자료부터 있어야 그 계산을 할 수 있습니다.'),
+            ('시계가 다를 수 있으므로 두 자료 모두 순서를 읽을 수 없다', '사츠키', '같은 접수표에서는 어느 이름이 먼저 적혔는지 볼 수 있잖아.'),
+            ('영상 안의 선후와 접수표 안의 선후를 각각 남긴다', '미오', '두 줄을 따로 둘게. 접수 전에 어디 있었는지는 이 숫자로 정하지 못해.'),
+        ), 2),
+    ),
+    '06-I03b': (
+        ('sightline', '플레이어가 옛 문턱의', '문턱에서 본 범위를 시간순으로 놓으면?', (
+            ('얼굴과 손을 같은 순간에 봤다', '나나', '얼굴을 보았을 때와 몸이 돌아간 뒤 손을 본 때는 달라요.'),
+            ('두 얼굴 → 몸이 돈 뒤 보인 손 → 가려진 영역', '미오', '거기까지는 이어져. 가려진 쪽에 누가 있었는지는 비워 둘게.'),
+            ('지금 문을 열었을 때 보이는 방향을 그대로 쓴다', '사츠키', '지금 문 말고 그날 사진에서 문틀이 가렸던 쪽부터 봐.'),
+        ), 1),
+    ),
+    '06-I04c': (
+        ('intake-count', '플레이어는 **요청 인원 서식', '같은 이름으로 확인한 두 숫자를 어느 칸에 남길까?', (
+            ('열다섯은 실제 입소, 열여섯은 내부 등록 뒤의 현재 인원', '미오', '두 숫자 옆에 확인한 때를 각각 둘게. 누굴 먼저 알고 있었는지는 이 표에 없어.'),
+            ('둘 다 실제 입소 인원이며 뒷값으로 앞값을 바꾼다', '쇼', '두 기록을 확인한 분은 같습니다. 다만 입소 수와 현재 인원은 별도 항목입니다.'),
+            ('한 명이 나중에 문을 지나 들어왔다는 뜻이다', '나나', '늦게 입소한 행과 내부에서 등록된 행을 먼저 비교해 주세요.'),
+        ), 0),
+    ),
+    '06-I05': (
+        ('remaining-effect', '플레이어는 ‘이미 지워진 기억', '현재 작용하는 것과 이미 끝난 일을 어떻게 나눌까?', (
+            ('이미 사라진 기억을 현재 중단할 효과로 놓는다', '미오', '그때 없어진 내용을 지금 다시 써서 돌릴 수는 없어.'),
+            ('지금 정상인 호흡을 끝낼 마법으로 놓는다', '쇼', '호흡은 지금 몸의 상태입니다. 무엇이 그 상태를 방해하는지 따로 보십시오.'),
+            ('기억은 과거 결과, 맹세는 남은 효과, 호흡은 현재 몸 상태', '나나', '어떤 효과가 남았는지 표시해 주세요. 제가 무엇을 말씀드릴지는 나중에 정할게요.'),
+        ), 2),
+    ),
+    '06-I06': (
+        ('sound-fragment', '선택 ‘점검표 제목', '첫 번째 단편에서 실제로 들린 것은?', (
+            ('점검표 제목', '래피', '제목은 소리에 없어요. 옆에 놓인 문서에서 읽으신 거예요.'),
+            ('어떤 서류를 두고 두 의견이 갈리는 짧은 부분', '미오', '서류 얘기만 들었어. 제목은 다른 데에 남겨 둘게.'),
+            ('두 사람의 처음부터 끝까지 이어진 대화', '쇼', '두 구간 사이에 남지 않은 말이 있습니다.'),
+        ), 1),
+        ('contact-fragment', '플레이어가 팔을 놓은 때', '두 번째 단편은 어디까지 확인해 줄까?', (
+            ('팔이 닿았다가 떨어졌다. 추락과 같은 동작인지는 남겨 둔다', '쇼', '옛 진술과 단편에서 공통으로 보이는 것은 이 접촉까지입니다.'),
+            ('팔을 놓은 순간에 이미 떨어졌다', '나나', '제가 문턱에서 보았던 때는 그보다 뒤예요. 먼저 놓은 때와 한 칸으로 묶지 말아 주세요.'),
+            ('손이 보였으니 두 사람의 얼굴 각도도 확인됐다', '미오', '팔을 놓는 느낌은 남았는데 두 얼굴을 같은 각도에서 본 화면은 없어.'),
+        ), 0),
+        ('force-fragment', '플레이어가 ‘팔 접촉 종료', '세 번째 단편을 두 번째와 합치지 않고 읽으면?', (
+            ('등에 힘이 닿았으므로 그 사람 얼굴도 확인했다', '미오', '등 뒤에서 누가 손을 댔는지 이쪽 눈으로는 못 봤어.'),
+            ('팔을 놓는 힘이 그대로 난간까지 이어졌다', '쇼', '첫 접촉이 끝나고 몸의 방향이 바뀐 부분을 다시 보십시오.'),
+            ('팔을 놓은 뒤 몸이 돌고, 별개의 힘 뒤에 난간에 닿았다', '나나', '제가 본 위치와 그분이 느끼신 힘은 별도로 적어 주세요.'),
+        ), 2),
+    ),
+    '06-I07a': (
+        ('approval-history', '플레이어는 최초 운영 승인', '기원을 확인한 뒤 실제로 같은 상태를 다시 고른 행은?', (
+            ('자동 상태 전송', '쇼', '이 행에는 조작한 쪽이 없습니다. 화면에 상태가 뜬 겁니다.'),
+            ('선택 확인 칸에서 유지에 답한 행', '사츠키', '같은 값이어도 직접 유지하겠다고 눌렀어. 그때 본 내용도 옆에 둬.'),
+            ('처음 운영을 시작하기 전 승인 행', '미오', '그건 처음 켠 때야. 나중에 무엇을 알고도 유지했는지는 뒤의 행을 봐.'),
+        ), 1),
+    ),
+    '06-I07c': (
+        ('live-response', '화면에는 **자동으로 돌아온 값', '창구 화면의 표시와 현재 답변을 어떤 기록으로 나눌까?', (
+            ('자동으로 돌아온 값 / 사람이 고른 상태 / 지금 질문에 들은 답', '쇼', '세 기록을 나눴습니다. 아직 외부 통화의 응답은 듣지 않았습니다.'),
+            ('정상 응답 표시가 있으므로 밖의 누군가가 우리에게 답했다', '유우', '표에서 값이 들어온 건 봤어. 바깥에서 사람 목소리가 들린 건 아니잖아.'),
+            ('지금 래피가 말했으므로 과거에도 같은 상태를 골랐다', '래피', '지금 제가 한 말은 그때 선택을 남긴 행에 쓰이지 않아요.'),
+        ), 0),
+    ),
+}
+
+
+def checked_investigation(graph, scene, start, end, following):
+    entry = graph.lines(scene, start, end, following)
+    checks = SIXTH_INVESTIGATION_CHECKS.get(scene.id, ())
+    for key, anchor, question, options, answer in reversed(checks):
+        offset, = (i for i, row in enumerate(scene.body) if row.startswith(anchor))
+        if not start <= offset < end:
+            continue
+        source = scene.source(scene.line + offset + 1)
+        menu = f'rev:{scene.id}:check:{key}'
+
+        def build(resume):
+            choices = []
+            for index, (label, speaker, text) in enumerate(options):
+                ident = str(index)
+                response = graph.add(menu+':'+ident,type='say',actor=SPEAKERS[speaker],speaker=speaker,
+                                     text=text,source=source,next=resume if index==answer else menu)
+                choices.append({'id':ident,'label':label,'to':response})
+            return graph.add(menu,type='menu',q=question,options=choices,source=source)
+
+        entry = graph.insert_before_source_line(entry, source, build, end_node=following)
+    return entry
 
 
 def examine_placements(graph, scene, following):
@@ -148,7 +260,8 @@ def supplemental_inspection(graph, scenes, ids, following):
         elif ident in COMPARISONS:
             question, responses = COMPARISONS[ident]
             correct = {'02-I07n': 2, '03-I00f': 2}.get(ident)
-            following = select_observation(graph, scene, 0, len(scene.body), question, responses, following, correct)
+            following = select_observation(graph, scene, 0, len(scene.body), question, responses, following, correct,
+                                           require_all=ident in ('05-I01b','06-I03e'),remember=ident == '05-I05d')
         elif ident == '04-I05a':
             following = graph.lines(scene, 2, len(scene.body), following)
             quotes = re.findall(r'“([^”]+)”', scene.body[1])
@@ -159,8 +272,31 @@ def supplemental_inspection(graph, scenes, ids, following):
                                    text=text, source=scene.source(scene.line + 2), next=following)
                 cases.append({'flag': '04-F06', 'equals': flag, 'to': target})
             following = graph.add(f'rev:{ident}:memory', type='branch', cases=cases, default=following)
+        elif ident == '06-I07d':
+            offset = next(i for i, row in enumerate(scene.body) if row.startswith('쇼가 연락 카드에'))
+            labels = re.search(r'\*\*([^*]+)\*\*', scene.body[offset])[1].split(' / ')
+            source = scene.source(scene.line + offset + 1)
+            menu = f'rev:{ident}:choice'
+            resume = graph.lines(scene, 0, len(scene.body), following)
+            previous = None
+            target = resume
+            while graph.nodes[target]['source']['line'] < source['line']:
+                previous, target = target, graph.nodes[target]['next']
+            options = []
+            for flag, label, speaker, line in zip('AB', labels, ('사츠키', '나나'), (
+                '그럼 여기서 지금 보이는 사람만 세. 나갈 사람 수까지 미리 넣지 말고.',
+                '제가 어디에 있는지 누가 먼저 들었으면 좋을지 생각해 볼게요.',
+            ), strict=True):
+                response = graph.add(f'{menu}:{flag}', type='say', actor=SPEAKERS[speaker],
+                                     speaker=speaker, text=line, source=source, next=target)
+                options.append({'id':flag,'label':label,'to':response,'set':{ident:flag}})
+            choice = graph.add(menu, type='menu', q='연락이 닿으면 무슨 말부터 할까?',
+                               source=source, options=options)
+            if previous is not None:
+                graph.nodes[previous]['next'] = choice
+            following = resume if previous is not None else choice
         else:
-            following = graph.lines(scene, 0, len(scene.body), following)
+            following = checked_investigation(graph, scene, 0, len(scene.body), following)
     return following
 
 
@@ -170,12 +306,20 @@ def examine_document_bundles(graph, scene, following):
     menu = 'rev:06:overview-bundles'
     flags = [f'{menu}:{i}' for i in range(3)]
     options = []
+    common = next(i for i, row in enumerate(scene.body) if row.startswith('세 묶음이 모두 열린 뒤에만'))
+    resume = following
     for label, flag, start, end in zip(labels, flags, starts, [*starts[1:], len(scene.body)], strict=True):
         done = graph.add(flag + ':read', type='stage', set={flag: True}, next=menu)
-        entry = graph.lines(scene, start + 1, end, done)
+        entry = graph.lines(scene, start + 1, end, following if start == starts[-1] else done)
+        if start == starts[-1]:
+            # Keep the existing dialogue addresses and move only the joint discussion after the gate.
+            previous, resume = None, entry
+            while graph.nodes[resume]['source']['line'] < scene.line + common + 1:
+                previous, resume = resume, graph.nodes[resume]['next']
+            graph.nodes[previous]['next'] = done
         options.append({'id': flag, 'label': label, 'requires': {flag: False}, 'to': entry})
     options.append({'id': 'continue', 'label': '세 묶음의 시점을 따로 기록한다',
-                    'requires': {flag: True for flag in flags}, 'to': following})
+                    'requires': {flag: True for flag in flags}, 'to': resume})
     return graph.add(menu, type='menu', q='어느 자료부터 펼칠까?', options=options,
                      source=scene.source(scene.line))
 

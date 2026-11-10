@@ -78,12 +78,22 @@ inline float floorAt(const State& s,float x,float z){
   if(x>=p[0].get<float>()-.02f&&x<=p[2].get<float>()+.02f&&z>=p[1].get<float>()-.02f&&z<=p[3].get<float>()+.02f&&p[4].get<float>()<=current+.28f)height=std::max(height,p[4].get<float>());
  return height>-1e5f?height:s.spec().value("floor",0.f);
 }
+constexpr float HEDGE_HALF_WIDTH=.36f;
+struct HedgeFootprint {
+ float x,z,ux,uz,length;
+ explicit HedgeFootprint(const J& c):x(c[6].get<float>()),z(c[7].get<float>()),ux(c[8].get<float>()-x),uz(c[9].get<float>()-z),length(std::hypot(ux,uz)){ux/=length;uz/=length;}
+ std::array<float,2> local(float px,float pz)const{return{(px-x)*ux+(pz-z)*uz,(pz-z)*ux-(px-x)*uz};}
+ bool contains(float px,float pz,float radius)const{
+  auto p=local(px,pz);float along=p[0]-std::clamp(p[0],0.f,length),w=HEDGE_HALF_WIDTH+radius;
+  return along*along+p[1]*p[1]<w*w;
+ }
+};
 inline bool solid(const State& s,float x,float z,float radius=RADIUS){
  if(!s.active)return false;auto& d=s.spec();auto& b=d["bounds"];
  if(x<b[0].get<float>()+radius||x>b[2].get<float>()-radius||z<b[1].get<float>()+radius||z>b[3].get<float>()-radius)return true;
  if(s.id=="plaza"&&s.data.contains("parkLevels"))for(const auto& gate:s.data["connections"])if(gate.value("kind",std::string())=="park_gate"&&gate.value("minimumChapter",0)>s.accessChapter){auto p=point(gate["a_p"]);if(std::abs(x-p.x)<3.5f+radius&&std::abs(z-p.z)<.25f+radius)return true;}
  float floor=s.pose.y-d.value("eye_height",1.6f);
- for(auto& c:d["collision"])if((c.size()<6||(c[4].get<float>()<floor+1.6f&&c[5].get<float>()>floor+.34f))&&x>c[0].get<float>()-radius&&x<c[2].get<float>()+radius&&z>c[1].get<float>()-radius&&z<c[3].get<float>()+radius)return true;
+ for(auto& c:d["collision"])if((c.size()<6||(c[4].get<float>()<floor+1.6f&&c[5].get<float>()>floor+.34f))&&x>c[0].get<float>()-radius&&x<c[2].get<float>()+radius&&z>c[1].get<float>()-radius&&z<c[3].get<float>()+radius&&(c.size()!=10||HedgeFootprint(c).contains(x,z,radius)))return true;
  return false;
 }
 inline Point stand(const State& s,Point p){
@@ -186,8 +196,16 @@ inline bool project(const State& s,Point p,float& x,float& y,float& depth){
 inline bool occluded(const State& s,Point target){
  // Eye-to-point segment against the authored obstruction boxes, not screen-radius selection.
  float dx=target.x-s.pose.x,dz=target.z-s.pose.z,dist=std::hypot(dx,dz);
- for(auto& c:s.spec()["collision"]){if(c.size()>=6&&(c[4].get<float>()>std::max(s.pose.y,target.y)||c[5].get<float>()<std::min(s.pose.y,target.y)))continue;if(target.x>=c[0].get<float>()-.01f&&target.x<=c[2].get<float>()+.01f&&target.z>=c[1].get<float>()-.01f&&target.z<=c[3].get<float>()+.01f)continue;float lo=0,hi=1;bool hit=true;
-  for(int k=0;k<2;k++){float start=k?s.pose.z:s.pose.x,step=k?dz:dx,a=c[k].get<float>(),b=c[k+2].get<float>();
+ for(auto& c:s.spec()["collision"]){if(c.size()>=6&&(c[4].get<float>()>std::max(s.pose.y,target.y)||c[5].get<float>()<std::min(s.pose.y,target.y)))continue;
+  std::array<float,2> origin{s.pose.x,s.pose.z},end{target.x,target.z},lower{c[0].get<float>(),c[1].get<float>()},upper{c[2].get<float>(),c[3].get<float>()};
+  if(c.size()==10){
+   if(std::max(origin[0],end[0])<lower[0]||std::min(origin[0],end[0])>upper[0]||std::max(origin[1],end[1])<lower[1]||std::min(origin[1],end[1])>upper[1])continue;
+   HedgeFootprint hedge(c);origin=hedge.local(origin[0],origin[1]);end=hedge.local(end[0],end[1]);
+   lower={0,-HEDGE_HALF_WIDTH};upper={hedge.length,HEDGE_HALF_WIDTH};
+  }
+  if(end[0]>=lower[0]-.01f&&end[0]<=upper[0]+.01f&&end[1]>=lower[1]-.01f&&end[1]<=upper[1]+.01f)continue;
+  float lo=0,hi=1;bool hit=true;
+  for(int k=0;k<2;k++){float start=origin[k],step=end[k]-start,a=lower[k],b=upper[k];
    if(std::abs(step)<.0001f){if(start<a||start>b){hit=false;break;}}
    else{float t0=(a-start)/step,t1=(b-start)/step;if(t0>t1)std::swap(t0,t1);lo=std::max(lo,t0);hi=std::min(hi,t1);if(lo>hi){hit=false;break;}}}
   // Last .38m contains the selected object's own collision box. Do not hide its face.

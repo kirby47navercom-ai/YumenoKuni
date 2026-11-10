@@ -527,9 +527,13 @@ void Yumeno::resolveDebateShot(float x,float y,const std::string& evidence,bool 
   if(debate.hearts<=0){shotRecoveryV4.reset();v4NoiseReset();message("발언력이 바닥났어요… 처음부터!",2.f);v4ResetHearts(maxHearts);if(v4TaskActive){debate.restartRows();aimSwayV4.reset();aimPointerV4={};aimAssistV4.active=false;}else{debate.broken.assign(debate.lines.size(),false);debate.index=0;debate.time=0;}debateTime=(v4TaskActive&&stageKind=="panic"?300.f:180.f)*trialTimeFactor()+(skillOn("debate_time")?10.f:0.f);retries++;}
   else if(stageKind!="nonstop")message("아야! 틀렸어요~!",1.2f);
   int wrongVariant=-1;
-  if(v4TaskActive&&stageKind=="nonstop")if(const auto* cards=stage.contains("wrongCards")?&stage.at("wrongCards"):trialdirection::find("nonstopWrongCards",v4Task.value("taskId",std::string()));cards&&cards->contains(evidence)){
+  const Json* wrongCards=nullptr;
+  if(v4TaskActive&&stage.contains("wrongCards"))wrongCards=&stage.at("wrongCards");
+  else if(v4TaskActive&&stageKind=="nonstop")wrongCards=trialdirection::find("nonstopWrongCards",v4Task.value("taskId",std::string()));
+  if(wrongCards&&wrongCards->contains(evidence)){
    auto variants=v4Task["queues"].value("wrongVariants",Json::array());
-   for(int n=0;n<int(variants.size());++n)if(variants[n].value("cause",std::string())==(*cards)[evidence].get<std::string>()){wrongVariant=n;break;}
+   const auto& cause=wrongCards->at(evidence);
+   for(int n=0;n<int(variants.size());++n)if(variants[n].value("cause",std::string())==cause){wrongVariant=n;break;}
   }
   v4TaskWrong(wrongVariant);
  }

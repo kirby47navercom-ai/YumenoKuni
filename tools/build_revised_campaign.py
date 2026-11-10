@@ -13,7 +13,7 @@ from build_v4_story import SPEAKERS
 from build_revised_mine_assets import ART as MINE_ART, archive_package_comparison, archive_slot, corridor_sightlines, door_comparison, inspection_latch_section, inspection_mines, mirror_comparison, mirror_knife_sequence, paper_comparison, theatre_pedestal, theatre_ring, theatre_section
 from revised_comic import chapter_two_comic_stage, chapter_three_comic_stage, chapter_four_comic_stage, chapter_five_comic_stage, chapter_six_comic_stage, comic_stage
 from revised_life import life_route
-from revised_investigation import examine_document_bundles, first_investigation_close, first_photo_investigation, supplemental_inspection
+from revised_investigation import checked_investigation, examine_document_bundles, first_investigation_close, first_photo_investigation, supplemental_inspection
 from revised_voice_polish import speech_address
 
 
@@ -179,7 +179,7 @@ HEADING_BRANCHES = {
     'P07d': ('문 앞에 두고 갈 말', '다들 방으로 갈 때'),
     'P08': ('불을 끄기 전에 치운 것', '공통'),
 }
-NARRATION = {'P01': ('미오가 눈을 뜬 곳은',), 'P08': ('(마지막으로 창 밖을 보려다',)}
+NARRATION = {'P01': ('미오가 눈을 뜬 곳은',), 'P08': ('(창 밖을 한 번 더 보려다가',)}
 INTRODUCTIONS = {
     'haruka': '하루카. 아사노 하루카.', 'sho': '저는 쇼입니다.',
     'kaede': '카에데가 선을 지우던 코토를 본다. 펜을 받아 들고 자기 이름을 쓴다.',
@@ -266,6 +266,36 @@ class CampaignGraph:
             options.append({'id': flag, 'label': label, 'to': to, 'set': {scene.id: flag}})
         return self.add(f'rev:{scene.id}:choice', type='menu', q=question, options=options)
 
+    def share_choice_tail(self, menu, end, first_shared_line):
+        options = self.nodes[menu]['options']
+        shared = options[-1]['to']
+        while shared != end and self.nodes[shared]['source']['line'] < first_shared_line:
+            shared = self.nodes[shared]['next']
+        if shared == end:
+            raise ValueError(f'Missing shared dialogue after {menu}')
+        # Keep the existing final-option nodes so saves inside the shared dialogue still load.
+        for option in options[:-1]:
+            node = option['to']
+            if node == end:
+                option['to'] = shared
+                continue
+            while self.nodes[node]['next'] != end:
+                node = self.nodes[node]['next']
+            self.nodes[node]['next'] = shared
+
+    def insert_before_source_line(self, entry, source, build, end_node=None):
+        previous = None
+        following = entry
+        while following != end_node and self.nodes[following].get('source', {}).get('location') == source['location']:
+            if self.nodes[following]['source']['line'] >= source['line']:
+                break
+            previous, following = following, self.nodes[following]['next']
+        inserted = build(following)
+        if previous is None:
+            return inserted
+        self.nodes[previous]['next'] = inserted
+        return entry
+
     def scene(self, scene, next_scene):
         body = scene.body
         end = len(body)
@@ -306,6 +336,34 @@ class CampaignGraph:
                 target = self.lines(scene, 0, choices[0][0], target)
             else:
                 target = self.lines(scene, 0, end, next_scene)
+        if scene.id in ('P04c', 'P08'):
+            offset, = (i for i, row in enumerate(body) if row.startswith('> '))
+            source = scene.source(scene.line + offset + 1)
+            previous = None
+            following = target
+            while self.nodes[following]['source']['line'] < source['line']:
+                previous, following = following, self.nodes[following]['next']
+            if scene.id == 'P04c':
+                menu = 'rev:P04c:rules'
+                options = []
+                read_flags = {}
+                for index, rule in enumerate(body[offset][2:].split(' / '), 1):
+                    title, row = rule.split(' — ', 1)
+                    flag = f'{menu}:{index}'
+                    read_flags[flag] = True
+                    doc = self.add(flag, type='document', title=title, rows=[row], next=menu,
+                                   source=source, set={flag: True})
+                    options.append({'id': str(index), 'label': title, 'to': doc, 'requires': {flag: False}})
+                options.append({'id': 'continue', 'label': '안내를 덮는다', 'to': following, 'requires': read_flags})
+                inserted = self.add(menu, type='menu', q='어느 규칙부터 읽을까?', options=options, source=source)
+            else:
+                title, row = body[offset][2:].split(' — ', 1)
+                inserted = self.add('rev:P08:private-note', type='document', title=title, rows=[row],
+                                    private=True, source=source, next=following)
+            if previous is None:
+                target = inserted
+            else:
+                self.nodes[previous]['next'] = inserted
         space, music = PROLOGUE_SPACES[scene.id]
         if scene.id in PROLOGUE_CALLBACKS:
             earlier, anchor, actor, name = PROLOGUE_CALLBACKS[scene.id]
@@ -377,6 +435,41 @@ def debate_statement(task, ident, speaker, raw, source, kind='plain', answer='',
                 raise ValueError('The authored V-point shifted')
             row['vpoint'] = {'glyphIndex': weak['start'] + point}
     return row
+
+
+def apply_authored_vpoints(scenes, tasks):
+    rows_by_source = {}
+    for task in tasks.values():
+        if task['stage']['kind']!='nonstop':
+            continue
+        for rows in (task['stage']['lines'],task['debate']['lines']):
+            for row in rows:
+                if 'weak' in row:
+                    ref = row['source']
+                    rows_by_source.setdefault((ref['file'],ref['line']),[]).append(row)
+    pattern = re.compile(r'^선택 V포인트는 (\d+)번 약점의 「([^」]+)」 안에 있는 ‘(.)’이다.*?(\d+)번째 글자')
+    for scene in scenes.values():
+        statements = {}
+        for offset, raw in enumerate(scene.body):
+            if raw.startswith('#'):
+                statements.clear()
+            if match := STMT.match(raw):
+                statements[match[1]] = (scene.line+offset+1,match[3])
+            if not (point := pattern.match(raw)):
+                continue
+            number, word, glyph, position = point.groups()
+            line, marked = statements[number]
+            weak, = re.findall(r'\*\*([^*]+)\*\*',marked)
+            index = int(position)-1
+            if word not in weak or weak[index]!=glyph:
+                raise ValueError(f'Invalid authored V-point: {scene.file}:{scene.line+offset+1}')
+            rows = rows_by_source.get((scene.file,line))
+            if not rows:
+                raise ValueError(f'Missing authored V-point target: {scene.file}:{line}')
+            for row in rows:
+                if row['weak']['word']!=weak:
+                    raise ValueError(f'Compiled V-point target differs from manuscript: {scene.file}:{line}')
+                row['vpoint'] = {'glyphIndex':row['weak']['start']+index}
 
 
 def chapter_verdict(graph, scene, tail, chapter):
@@ -1361,6 +1454,27 @@ def reviewed_trial(scenes, door_objects, paper_objects):
     entry = graph.lines(scene, 0, ns, ns_node)
     opening=scenes['01-T00']
     entry=graph.lines(opening,0,len(opening.body),entry)
+    opening_round = opening.body.index('#### 첫 논의 — 앞과 뒤가 바뀐 증언')
+    opening_rule = next(i for i, raw in enumerate(opening.body) if raw.startswith('수사에서 얻은 두 목격자의 시야 대조'))
+    opening_source = opening.source(opening.line + opening_rule + 1)
+    before, resume = None, entry
+    while graph.nodes[resume]['source']['line'] < opening_source['line']:
+        before, resume = resume, graph.nodes[resume]['next']
+    verified = graph.add('rev:01:opening-observation-scope', type='document', title='목격 사이에 남은 빈 시간',
+        rows=['입실은 나나가 보았다.', '입실과 발견 사이를 계속 본 사람은 확인되지 않았다.',
+              '발견 때 미오와 하루카가 현장에 있었다.'], source=opening_source, next=resume)
+    opening_id = 'T1-NS-REV00'
+    # The revised investigation already gives the sightline card. The legacy E1-10 ID belongs to a TV record.
+    patrol_reply, print_reply = re.findall(r'“([^”]+)”', opening.body[opening_rule])
+    first_debate = hearing_task(opening_id, opening_round, opening_rule, 4, 'v4:E1-SIGHT',
+        ['v4:E1-SIGHT', 'v4:E1-07', 'v4:E1-04'], (opening_rule, 'v4:E1-07', '소라', patrol_reply),
+        verified, source_scene=opening)
+    opening_task = tasks[opening_id]
+    opening_task['stage']['wrongCards']['v4:E1-04'] = 'printed-record'
+    opening_task['queues']['wrongVariants'].append({'cause': 'printed-record', 'script': [
+        {'id': opening_id + ':wrong:print', 'type': 'say', 'actor': 'koto', 'speaker': '코토',
+         'text': print_reply, 'source': opening_source}]})
+    graph.nodes[before]['next'] = first_debate
     court_entry = graph.add('rev:01:court-entry', type='stage', enterCourt=True, next=entry)
     placements = (
         ('01-I04', 'v4:E1-07', 'staff_passage', '', [0, 1.25, 6]),
@@ -4993,9 +5107,57 @@ def chapter_four_entry(scenes,visibility_objects,end_objects):
     tail = graph.add('rev:04:meeting-timing-nonstop',type='task',taskId=timing_id,trialDead=dead,seats=seats,
                      source=timing_source,success=tail,next=tail)
     tail = graph.lines(timing,0,timing_round,tail)
-    for key in ('04-T00b','04-T00a'):
-        link = scenes[key]
-        tail = graph.lines(link,0,len(link.body),tail)
+    link = scenes['04-T00b']
+    tail = graph.lines(link,0,len(link.body),tail)
+    link = scenes['04-T00a']
+    tail = graph.lines(link,0,len(link.body),tail)
+    photo_panic = link.body.index('#### 패닉 — 동시에 가리킨 사람')
+    photo_rule = next(i for i,row in enumerate(link.body) if row.startswith('04-I01의 **하루카 카메라'))
+    photo_ref = link.source(link.line + photo_rule + 1)
+    photo_id = 'T4-PN-REV03'
+    comparison = 'v4:V5-4:photo-limits'
+    source_photo, wrist_photo = 'v4:V5-4:photos', 'v4:E4-13'
+    cards = [{'id':key,'name':evidence[key][0],'text':evidence[key][1]} for key in (source_photo,wrist_photo)]
+    cards.append({'id':comparison,'name':'장소 사진과 수습 사진',
+                  'text':'하루카가 찍은 두 장소 사진과 나나가 수습 뒤 찍은 손목 사진은 촬영자와 시점이 다르다.'})
+    lanes = [{'id':label,'actor':SPEAKERS[speaker],'speaker':speaker,'lines':[]}
+             for label,speaker in zip(('왼쪽','가운데','오른쪽'),('유우','코토','나나'),strict=True)]
+    rows = []
+    for offset in range(photo_panic + 1, photo_rule):
+        cells = [cell.strip() for cell in link.body[offset].strip('|').split('|')]
+        if len(cells)!=4 or not cells[0].isdigit():
+            continue
+        for index,(lane,raw) in enumerate(zip(lanes,cells[1:],strict=True)):
+            weak = '[약점]' in raw
+            raw = raw.replace('[약점] ','')
+            ref = link.source(link.line + offset + 1)
+            row = debate_statement(photo_id,f'{index}:{cells[0]}',lane['speaker'],raw,ref,
+                                   'weak' if weak else 'plain',comparison if weak else '')
+            rows.append(row)
+            lane['lines'].append(row['id'])
+            if '[큰 소리]' in raw:
+                noise = debate_statement(photo_id,'noise',lane['speaker'],raw,ref,'noise')
+                rows.append(dict(noise,noiseRole='loud',noiseDurability=2,hostStatement=row['id']))
+    assert all(len(lane['lines'])==7 for lane in lanes) and len(rows)==22
+    wrongs = (
+        (source_photo,'location-only','나나','제가 찍은 건 꺼낸 뒤 사진이에요. 장소가 같은지부터 묻는 건 아니에요.'),
+        (wrist_photo,'wrist-only','코토','그 손목 사진은 알겠어요. 그전에 홀을 찍은 분은 누구예요?'),
+    )
+    tasks[photo_id] = {'taskId':photo_id,'ready':True,'requiresEvidence':[card['id'] for card in cards],
+        'stage':{'id':photo_id,'kind':'panic','v4':True,'title':'동시에 가리킨 사람','lines':rows,
+                 'options':cards,'filterOwnedEvidence':True,'wrongCards':{key:cause for key,cause,_,_ in wrongs}},
+        'debate':{'id':photo_id,'kind':'panic','lines':rows,'bullets':cards,'lanes':lanes,'synchronizedBeats':True},
+        'queues':{'wrongVariants':[{'cause':cause,'script':[{'id':photo_id+':'+cause,'type':'say',
+            'actor':SPEAKERS[speaker],'speaker':speaker,'text':text,'source':photo_ref}]}
+            for _,cause,speaker,text in wrongs]}}
+
+    def compare_photos(following):
+        discussion = graph.add('rev:04:'+photo_id,type='task',taskId=photo_id,trialDead=dead,seats=seats,
+                               source=photo_ref,next=following,success=following)
+        return graph.add('rev:04:photo-limits',type='evidence',evidenceId=comparison,
+                         name=cards[-1]['name'],text=cards[-1]['text'],source=photo_ref,next=discussion)
+
+    tail = graph.insert_before_source_line(tail,photo_ref,compare_photos)
     handover_at = trial.body.index('### 대면 — 앞문을 맡았던 순간')
     tail = graph.lines(trial,handover_at+1,len(trial.body),tail)
     for index,(question,answer_label,wrong_label,actor,reply) in reversed(list(enumerate((
@@ -5262,7 +5424,8 @@ def chapter_four_entry(scenes,visibility_objects,end_objects):
 
 
 def late_case_trial(graph, scenes, chapter, scene_id, title, rule_start, target, records, ammo,
-                    wrong_speaker, next_node, dead, seats, *, round_number=1, include_intro=False, correction=None):
+                    wrong_speaker, next_node, dead, seats, *, round_number=1, include_intro=False, correction=None,
+                    include_conclusion=True):
     scene = scenes[scene_id]
     heading = scene.body.index('#### 논스톱 — ' + title)
     rule = next(i for i in range(heading, len(scene.body)) if scene.body[i].startswith(rule_start))
@@ -5289,7 +5452,7 @@ def late_case_trial(graph, scenes, chapter, scene_id, title, rule_start, target,
             'queues': {'wrongVariants': [{'cause': 'different-observation', 'script': [
                 {'id': ident + ':wrong', 'type': 'say', 'actor': SPEAKERS[wrong_speaker],
                  'speaker': wrong_speaker, 'text': correction, 'source': source}]}]}}
-    tail = graph.lines(scene, rule + 1, stop, next_node)
+    tail = graph.lines(scene, rule + 1, stop, next_node) if include_conclusion else next_node
     node_id = f'rev:0{chapter}:first-nonstop' if round_number==1 else f'rev:0{chapter}:{ident}'
     tail = graph.add(node_id, type='task', taskId=ident, trialDead=dead, seats=seats,
                      source=source, success=tail, next=tail)
@@ -5309,7 +5472,7 @@ def late_case_investigation(graph, scenes, chapter, room, records, following, *,
                            source=scene.source(scene.line), next=done)
         record = supplemental_inspection(graph, scenes, (supplemental or {}).get(key, ()), record)
         route = (routes or {}).get(key)
-        entry = route(scene, record) if route else graph.lines(scene, 0, len(scene.body), record)
+        entry = route(scene, record) if route else checked_investigation(graph, scene, 0, len(scene.body), record)
         spot = {'id': key, 'label': name, 'neutralLabel': name, 'space_id': space, 'world_pos': pos, 'entry': entry}
         if required := (prerequisites or {}).get(key):
             spot['requiresCards'] = required
@@ -5664,7 +5827,18 @@ def chapter_five_final_hearing(graph, scenes, tasks, records, dead, seats, tail)
         '쇼',tail,dead,seats,round_number=14)
     tasks.update(more)
     opening = next(i for i,row in enumerate(scene.body) if row.startswith('**사츠키**　복도에서 둘이 만난'))
+    oath_open = next(i for i,row in enumerate(scene.body) if row.startswith('미오가 현재 맹세 사본을 다시'))
     tail = graph.lines(scene,opening,scene.body.index('#### 논스톱 — 사망 확인에 줄을 그으면'),tail)
+    ref = scene.source(scene.line + oath_open + 1)
+
+    def recall_stock_perjury(following):
+        response = graph.add('rev:05:stock-perjury-memory:reply',type='say',actor='nana',speaker='나나',
+            text='아까 보지 않은 걸 봤다고 하지 말아 달라고 했어요. 미오 씨가 적으신 줄에도 빼 주세요.',
+            source=ref,next=following)
+        return graph.add('rev:05:stock-perjury-memory',type='branch',
+            cases=[{'flag':'05-T00:perjury','equals':True,'to':response}],default=following)
+
+    tail = graph.insert_before_source_line(tail,ref,recall_stock_perjury)
     matches = []
     for i,row in enumerate(scene.body):
         if not (match := re.match(r'- \*\*05-D03a ([ABC])\.\*\* 아카리 “([^”]+)” 미오 “([^”]+)”',row)):
@@ -5716,6 +5890,24 @@ def chapter_five_late_hearing(graph, scenes, tasks, records, dead, seats, tail):
                     for i,(speaker,_) in enumerate(options) if i!=answer]}}
             target = graph.add('rev:05:'+ident,type='task',taskId=ident,trialDead=dead,seats=seats,
                                source=ref,success=target,next=target)
+        if scene.id=='05-T02c':
+            context = scene.body.index('### 읽어 주는 사람이 달랐을 때')
+            entry = graph.lines(scene,0,at,target)
+            source = scene.source(scene.line+context+1)
+
+            def recall_reader(first):
+                second = graph.nodes[first]['next']
+                third = graph.nodes[second]['next']
+                assert [graph.nodes[node]['actor'] for node in (first,second,third)]==['sho','nana','satsuki']
+                assert graph.nodes[third]['next']==target
+                cases = []
+                for key, response in zip('ABC',(first,second,third),strict=True):
+                    graph.nodes[response]['next'] = target
+                    cases.append({'flag':'05-I05d','equals':key,'to':response})
+                return graph.add('rev:05:reading-order-memory',type='branch',cases=cases,
+                                 source=source,default=target)
+
+            return graph.insert_before_source_line(entry,source,recall_reader,end_node=target)
         return graph.lines(scene,0,at,target)
 
     def paper_witness(target):
@@ -5958,6 +6150,13 @@ def daily_scene_route(graph,scene,space,tail):
         '05-D03f':('#### 먼저 코토의 종이를 돌려준다','#### 문 앞을 떠날 때'),
         '06-D01d':('### 낮은 유리에 비치는 좌석을 살핀다','### 통로로 돌아온 뒤'),
     }
+    shared_tails = {
+        '05-D02n':'선택이 끝나면 쇼가 자기 열쇠를 주머니에 넣는다.',
+        '05-D02m':'(유우는 자기 몫을 보이는 곳에서 챙긴다.',
+        '05-D03h':'(라운지 입구에서 두 사람은 먼저 한쪽으로 비킨다.',
+        '06-D03f':'(어느 자리를 골라도 다섯은 같은 자료를 읽는다.',
+        '06-D03g':'합류 뒤 유우는 자신이 들은 말을 대신 전하지 않는다.',
+    }
     if scene.id=='05-D02b':
         a = next(i for i,row in enumerate(scene.body) if row.startswith('05-F03 A라면'))
         b = next(i for i,row in enumerate(scene.body) if row.startswith('05-F03 B라면'))
@@ -6006,15 +6205,70 @@ def daily_scene_route(graph,scene,space,tail):
         tail = graph.menu(scene,scene.title,[(scene.body[at].removeprefix(depth),at+1,stop,'')
             for at,stop in zip(starts,[*starts[1:],join],strict=True)],tail)
         tail = graph.lines(scene,0,first,tail)
-    elif scene.id in ('05-D02n','05-D02m','05-D03h','06-D03f','06-D03g'):
+    elif scene.id in shared_tails:
         options = [i for i,row in enumerate(scene.body) if row.startswith('- **')]
         assert len(options) in (2,3)
         first = options[0]
-        tail = graph.menu(scene,scene.title,[(scene.body[at].split('**')[1],at+1,stop,'')
+        shared = next(i for i,row in enumerate(scene.body) if row.startswith(shared_tails[scene.id]))
+        menu = graph.menu(scene,scene.title,[(scene.body[at].split('**')[1],at+1,stop,'')
             for at,stop in zip(options,[*options[1:],len(scene.body)],strict=True)],tail)
-        tail = graph.lines(scene,0,first,tail)
+        graph.share_choice_tail(menu,tail,scene.line+shared+1)
+        tail = graph.lines(scene,0,first,menu)
     else:
         tail = graph.lines(scene,0,len(scene.body),tail)
+    if scene.id in ('06-D01a','06-D02a','06-D02b'):
+        anchors = {
+            '06-D01a':'05-D02l에서 한 땀만 만졌다면',
+            '06-D02a':'쇼는 송화구를 가렸다가 손을 뗀다.',
+            '06-D02b':'플레이어는 아직 송신하지 않은 세 문장 중',
+        }
+        at = next(i for i,row in enumerate(scene.body) if row.startswith(anchors[scene.id]))
+        ref = scene.source(scene.line+at+1)
+        previous, following = None, tail
+        while graph.nodes[following]['source']['line'] < ref['line']:
+            previous, following = following, graph.nodes[following]['next']
+        if scene.id=='06-D02b':
+            inserted = 'rev:06:unsent-contact-check'
+            options = []
+            for flag,label,speaker,text in [
+                ('A','전화가 바깥에 연결됐다','쇼','안쪽에서 시험한 것뿐입니다. 바깥에서 대답한 사람은 없습니다.'),
+                ('B','사츠키가 철문을 열었다','사츠키','여기, 문 아래 홈만 봤어. 아직 안 열었어.'),
+                ('C','다섯 명이 이 관리 구역에 있다','미오','손 든 사람을 한 명씩 셌어. 지금 적을 수 있는 건 그 숫자야.'),
+            ]:
+                response = graph.add(inserted+':'+flag,type='say',actor=SPEAKERS[speaker],speaker=speaker,
+                    text=text,source=ref,next=following if flag=='C' else inserted)
+                options.append({'id':flag,'label':label,'to':response})
+            graph.add(inserted,type='menu',q='지금 확인한 사실은 뭐지?',options=options,source=ref)
+        else:
+            if scene.id=='06-D01a':
+                flag_key = '05-D02l'
+                inserted = 'rev:06:stair-bag-memory'
+                speaker = '미오'
+                answers = [
+                    '내 가방에 쇼가 눌러 둔 자리가 보였다. 그쪽을 손등으로 가리켰다.',
+                    '가방 먼저 보여 주고 싶다고 했어. 지금까지 메고 내려왔네.',
+                    '가방 끈을 당기니 끼워 둔 종이가 빠졌다. 주워서 내 가방에 다시 넣었다.',
+                ]
+            else:
+                flag_key = '05-F06'
+                inserted = 'rev:06:last-sound-memory'
+                speaker = '유우'
+                answers = re.findall(r'“([^”]+)”',scene.body[at])
+                assert len(answers)==3,scene.id
+            cases = []
+            for flag,text in zip('ABC',answers,strict=True):
+                next_node = following
+                if scene.id=='06-D01a' and flag=='B':
+                    next_node = graph.add(inserted+':B:reply',type='say',actor='sho',speaker='쇼',
+                        text='그때는 실제로 만날 분의 상태까지는 몰랐습니다.',source=ref,next=following)
+                response = graph.add(inserted+':'+flag,type='say',actor=SPEAKERS[speaker],speaker=speaker,
+                    text=text,mono=scene.id=='06-D01a' and flag!='B',source=ref,next=next_node)
+                cases.append({'flag':flag_key,'equals':flag,'to':response})
+            graph.add(inserted,type='branch',cases=cases,default=following)
+        if previous is None:
+            tail = inserted
+        else:
+            graph.nodes[previous]['next'] = inserted
     if scene.id=='06-D03e':
         at = next(i for i,row in enumerate(scene.body) if row.startswith('05-F05에서'))
         before = None
@@ -6129,7 +6383,7 @@ def chapter_five_entry(scenes, archive_objects, package_objects):
         'v4:V5-5:window-witness': ('05-I05a','lower_stairway','준비 중 창가와 운영동의 동시 위치',
                           '준비 중 미오와 사츠키는 창가에 있었다. 쇼와 유우는 운영동에 있었다. 사츠키가 나중에 자료대에 용기를 내려놓은 일은 다른 시점이며, 두 기록을 하나의 연속 관찰로 보지 않는다.',[-1.15,1.2,1.75]),
         'v4:V5-5:oath-closure': ('05-I04','operating_archive','사망과 전문 공개 전후의 표시',
-                           '17일 저녁 아홉 시가 오거나 제삼자에게 세 번째 쪽 전문을 직접 보여 주면 종료된다. 코토 사망 뒤 남았던 선은 사츠키가 전문을 본 뒤 사라졌다. 나나의 선은 그대로다.',[0,1.2,-1.4]),
+                           '이 맹세의 대가는 손목 통증이다. 17일 저녁 아홉 시가 오거나 제삼자에게 세 번째 쪽 전문을 직접 보여 주면 종료된다. 코토 사망 뒤 남았던 선은 사츠키가 전문을 본 뒤 사라졌다. 나나의 선은 그대로다.',[0,1.2,-1.4]),
         'v4:V5-5:conversation-scope': ('05-I06b','operating_archive','기록과 회수, 직접 나눈 말의 범위',
                            '남은 글, 별도로 보관한 두 조각, 미오가 복도에서 직접 한 말은 서로 다른 자료다. 먼저 대화를 시작한 묶음 외의 필수 관찰도 확인했지만 듣지 않은 사적인 문답까지 옮겨 적지 않았다.',[-1.45,1.2,-1.3]),
     }
@@ -6274,6 +6528,38 @@ def chapter_five_entry(scenes, archive_objects, package_objects):
     tail=graph.lines(refusal,0,offsets[0],tail)
     opening = scenes['05-T0A']
     tail = graph.lines(opening, 0, len(opening.body), tail)
+    opening_rule = next(i for i,row in enumerate(opening.body) if row.startswith('현재 맹세의 대가와 검안'))
+    opening_ref = opening.source(opening.line + opening_rule + 1)
+
+    def compare_cause(following):
+        menu = 'rev:05:opening-medical-check'
+        options = []
+        for key,label,speaker,reply in (
+            ('injury','먼저 다친 팔을 사망 원인으로 놓는다','쇼',
+             '팔을 살핀 뒤에도 직접 걸으셨습니다. 나중에 확인한 사인은 그 상처가 아닙니다.'),
+            ('oath','손목의 맹세가 호흡 곤란을 일으켰다','나나',
+             '조건 사본에는 손목이 아프다고만 돼 있어요. 숨을 못 쉬게 된다는 줄은 없어요.'),
+            ('exam','검안에서 확인한 R-7과 앞서 확인한 부상을 나눈다','미오',
+             '먼저 난 상처하고 죽게 만든 물질을 나눠 놓을게. 그게 어디서 들어왔는지는 이제부터 봐야 해.'),
+        ):
+            reply_id = graph.add(f'{menu}:{key}',type='say',actor=SPEAKERS[speaker],speaker=speaker,text=reply,
+                                 source=opening_ref,next=following if key=='exam' else menu)
+            options.append({'id':key,'label':label,'to':reply_id})
+        verify = graph.add(menu,type='menu',q='검안에서 확인한 사망 원인을 어디에 놓을까?',
+                           options=options,source=opening_ref)
+        verify = graph.add('rev:05:opening-medical-record',type='document',title='검안과 맹세의 조건',
+                           rows=['검안에서 사인으로 확인한 물질은 R-7이다. 앞선 팔 상처나 손목의 맹세 대가와 다르다.',
+                                 '이 결과로 무엇을 통해 물질이 들어갔는지나 누가 건넸는지까지 확정할 수 없다.'],
+                           source=opening_ref,next=verify)
+        debate, more = late_case_trial(graph,scenes,5,opening.id,'쓰러진 장면부터 떠올리면',
+            '현재 맹세의 대가와 검안',4,records,
+            ['v4:V5-5:injury','v4:V5-5:cup','v4:V5-5:oath-closure'],'나나',verify,dead,seats,
+            round_number=15,correction='그건 제가 말씀드린 호흡 곤란이 어떤 대가였는지 적은 종이가 아니에요.',
+            include_conclusion=False)
+        tasks.update(more)
+        return debate
+
+    tail = graph.insert_before_source_line(tail,opening_ref,compare_cause)
     tail = graph.add('rev:05:court-entry', type='stage', enterCourt=True, next=tail)
 
     def inspect_papers(scene, record):
@@ -6755,6 +7041,32 @@ def chapter_six_transition_hearing(graph,scenes,tasks,records,dead,seats,tail):
     return graph.lines(scene,0,len(scene.body),tail)
 
 
+def hearing_insertion(graph, scene, heading, tail):
+    at = scene.body.index(heading)
+    after = next(i for i in range(at+1,len(scene.body)) if SAY.match(scene.body[i]))
+    entry = graph.lines(scene,0,len(scene.body),tail)
+    previous = graph.nodes[entry]
+    while graph.nodes[previous['next']]['source']['line'] != scene.line+after+1:
+        previous = graph.nodes[previous['next']]
+    return at, entry, previous
+
+
+def hearing_check(graph, tasks, scene, at, dead, seats, tail, ident, evidence, question, answers):
+    ref = scene.source(scene.line+at+1)
+    tasks[ident] = {
+        'taskId':ident,'ready':True,'requiresEvidence':['v4:V5-6:'+key for key in evidence],
+        'stage':{'id':ident,'kind':'choice','v4':True,'question':question,
+                 'options':[label for label,_ in answers],
+                 'answer':next(i for i,(_,reply) in enumerate(answers) if reply is None)},
+        'queues':{'wrongVariants':[
+            {'optionIndex':i,'script':[{'id':f'{ident}:wrong:{i}','type':'say',
+                'actor':SPEAKERS[reply[0]],'speaker':reply[0],'text':reply[1],'source':ref}]}
+            for i,(_,reply) in enumerate(answers) if reply is not None]},
+    }
+    return graph.add('rev:06:'+ident,type='task',taskId=ident,trialDead=dead,seats=seats,
+                     source=ref,next=tail,success=tail)
+
+
 def chapter_six_post_operating(graph,scenes,tasks,records,dead,seats,tail):
     root = 'v4:V5-6:'
     scene = scenes['06-T02j']
@@ -6776,7 +7088,36 @@ def chapter_six_post_operating(graph,scenes,tasks,records,dead,seats,tail):
     tail = graph.lines(scene,0,at,tail)
     for key in reversed(('06-T02b','06-T02g','06-T02c','06-T02a')):
         scene = scenes[key]
-        tail = graph.lines(scene,0,len(scene.body),tail)
+        if key!='06-T02g':
+            tail = graph.lines(scene,0,len(scene.body),tail)
+            continue
+        at, entry, previous = hearing_insertion(graph,scene,'### 나중에 다르게 할 수 있었던 일',tail)
+        tail = previous['next']
+        menu = 'rev:06:operating-decisions'
+        options = []
+        for i,(title,evidence,question,answers) in enumerate((
+            ('입소 전 차폐',('first-approval',),'기본값과 별도로 운영자가 고른 일은?',[
+                ('초기 설정이 그대로 실행됐다',('래피','안내에서 읽은 값과 제가 승인한 줄이 따로 있어요.')),
+                ('입소 전에 관계 차폐를 승인했다',None),
+                ('광장에 모인 참가자가 차폐를 승인했다',('쇼','광장에 모인 것은 승인 행이 남은 뒤입니다.'))]),
+            ('첫 판정 뒤 집행',(),'판정이 끝난 뒤 운영자가 따로 한 일은?',[
+                ('범행을 한 사람과 같은 행동을 했다',('사츠키','걔가 한 건 걔 일로 먼저 놔. 그 뒤에 네가 그 애한테 한 일도 있잖아.')),
+                ('모든 참가자의 표를 대신 눌렀다',('유우','내가 낸 표는 내가 눌렀어. 네가 다음에 한 일하고 같이 쓰지 마.')),
+                ('집계 뒤 집행 장치를 작동시켰다',None)]),
+            ('마지막 구역 해금',('separate-connections',),'마지막 구역이 열린 일에서 무엇을 확인했지?',[
+                ('운영자가 그때 구역과 자료를 열었다',None),
+                ('앞선 죽음이 해금의 기술적 조건이었다',('미오','처음 받은 확장 설명에 그런 조건은 없었어. 열린 순서만으로는 몰라.')),
+                ('방송 장치가 자료를 읽고 해금을 결정했다',('쇼','장치가 내보낸 말로 결정한 사람까지 특정할 수는 없습니다.'))]),
+        )):
+            flag = f'{menu}:{i}'
+            done = graph.add(flag,type='stage',set={flag:True},next=menu)
+            task_node = hearing_check(graph,tasks,scene,at,dead,seats,done,f'T6-QA-REV{12+i}',evidence,question,answers)
+            options.append({'id':str(i),'label':title,'requires':{flag:False},'to':task_node})
+        options.append({'id':'finish','label':'세 결정의 기록을 따로 남긴다','to':tail,
+                        'requires':{f'{menu}:{i}':True for i in range(3)}})
+        previous['next'] = graph.add(menu,type='menu',q='어느 때의 기록부터 대조할까?',options=options,
+                                     source=scene.source(scene.line+at+1))
+        tail = entry
     scene = scenes['06-T02h']
     at = scene.body.index('#### 섬광 애너그램 — 돌아가서 또 승인할 수 있었나')
     after = next(i for i in range(at+1,len(scene.body)) if SAY.match(scene.body[i]))
@@ -6862,7 +7203,27 @@ def chapter_six_personal_hearing(graph,scenes,tasks,records,dead,seats,tail):
     tasks.update(more)
     for key in reversed(('06-T01a','06-T01b','06-T01i','06-T01h','06-T01f','06-T01e')):
         scene = scenes[key]
-        if key=='06-T01b':
+        if key=='06-T01e':
+            at, entry, previous = hearing_insertion(graph,scene,'### 같은 자리에 있었다는 세 가지',tail)
+            tail = previous['next']
+            for ident,evidence,question,answers in reversed((
+                ('T6-QA-REV09',('old-intake-scope',),'나나가 미오를 처음 본 위치는 무엇으로 확인하지?',[
+                    ('현재 재판장의 자리',('쇼','지금 서 계신 위치와 당시 전실에서 본 자리는 다릅니다.')),
+                    ('전실 목격과 당시 위치를 대조한다',None),
+                    ('이름이 적힌 모든 사람이 같은 자리였다',('유우','같은 표에 이름 올렸다고 같은 데 서 있었던 건 아니잖아.'))]),
+                ('T6-QA-REV10',('memory-scope',),'나나가 그때 한 일을 무엇으로 확인하지?',[
+                    ('방금 들은 나나의 직접 증언',None),
+                    ('지금 나나에게 시험 발동을 부탁한다',('나나','저는 지금 하지 않을래요. 아까 말씀드린 것은 그때 제가 한 일이에요.')),
+                    ('지금 닿은 손의 모습',('나나','지금 손이 닿는다고 그때 제가 잡았던 일이 다시 보이지는 않아요.'))]),
+                ('T6-QA-REV11',('memory-scope',),'당시 미오가 돌아가려던 이유는 어디에 적을까?',[
+                    ('전실에 갔으니 정해진 이유가 있었다고 적는다',('쇼','접수표는 당시 어디에 있었는지 대조할 수 있습니다. 이유를 대신 말해 주지는 않습니다.')),
+                    ('손을 빼던 동작으로 이유까지 확정한다',('나나','손을 빼신 건 봤어요. 어디로 가려 하셨는지까지는 모르겠어요.')),
+                    ('확인되지 않은 이유는 빈칸으로 둔다',None)]),
+            )):
+                tail = hearing_check(graph,tasks,scene,at,dead,seats,tail,ident,evidence,question,answers)
+            previous['next'] = tail
+            tail = entry
+        elif key=='06-T01b':
             at = scene.body.index('#### 정답 선택 — 조용해진 사람을 세는 기준')
             after = next(i for i in range(at+1,len(scene.body)) if SAY.match(scene.body[i]))
             tail = graph.lines(scene,after,len(scene.body),tail)
@@ -6907,6 +7268,41 @@ def chapter_six_ending(graph, scenes):
         outside = next(i for i,row in enumerate(branch.body) if row.startswith('문 바깥.' if support=='ended' else '### 밖에서 다시 불러 보는 사람'))
         tail = illustrated(branch,outside,len(branch.body),after,'ending-outside')
         if support=='ended':
+            first_lie = next(i for i,row in enumerate(branch.body) if row.startswith('첫 재판에서 01-T04a의'))
+            first_normal = next(i for i,row in enumerate(branch.body) if row.startswith('첫 재판에서 일반 대조를'))
+            final_lie = next(i for i,row in enumerate(branch.body) if row.startswith('06-T02f에서 공개 합의를'))
+            final_normal = next(i for i,row in enumerate(branch.body) if row.startswith('이 대화는 미오가 준비한'))
+            # Keep the original confession nodes addressable by older saves.
+            current = tail
+            while graph.nodes[current]['source']['line'] < branch.line + first_lie + 1:
+                before, current = current, graph.nodes[current]['next']
+            previous_normal = None
+            for key, flag, skip, replies in (
+                ('first','01-T04a:perjury',first_normal,(
+                    ('나나','쓰던 보호대에서 조각이 먼저 나왔어요. 새 봉투를 뜯은 건 그 뒤예요.'),
+                    ('미오','저는 조각을 꺼낼 때 거기 없었어요. 그 순서는 나나한테 들었고요.'),
+                )),
+                ('final','06-T02f:perjury',final_normal,(
+                    ('미오','안에서 같은 기록을 펼쳐 보기는 했어요. 제가 가져온 건 제 종이예요.'),
+                )),
+            ):
+                last = current
+                while graph.nodes[last]['source']['line'] < branch.line + skip + 1:
+                    previous, last = last, graph.nodes[last]['next']
+                ordinary = last
+                for index, (speaker, line) in reversed(list(enumerate(replies))):
+                    ordinary = graph.add(f'rev:06:ending-perjury:{key}:normal:{index}',type='say',
+                        actor=SPEAKERS[speaker],speaker=speaker,text=line,
+                        source=branch.source(branch.line+skip+1),next=ordinary,
+                        shot={'image':'Assets/Art/revision_comic/chapter6/ending-outside.webp'})
+                gate = graph.add(f'rev:06:ending-perjury:{key}',type='branch',
+                                 cases=[{'flag':flag,'equals':True,'to':current}],default=ordinary)
+                graph.nodes[before]['next'] = gate
+                if previous_normal:
+                    graph.nodes[previous_normal]['next'] = gate
+                previous_normal = f'rev:06:ending-perjury:{key}:normal:{len(replies)-1}'
+                before, current = previous, last
+            assert first_normal < final_lie < final_normal
             confirmed = next(i for i,row in enumerate(branch.body) if row.startswith('미오가 확인을 누른다.'))
             tail = illustrated(branch,confirmed+1,outside,tail,'ending-ended')
             tail = graph.add('rev:06:support-ended',type='stage',set={'06:support':'ended'},
@@ -6941,6 +7337,17 @@ def chapter_six_ending(graph, scenes):
     branch = [{'flag':'06-T02e','equals':key,'to':graph.add('rev:06:outside-record:'+key,
         type='say',actor=actor,speaker=speaker,text=text,source=ref(preference),next=tail)} for key,actor,speaker,text in callbacks]
     tail = graph.add('rev:06:outside-record',type='branch',cases=branch,default=tail)
+    contact_memory = next(i for i,row in enumerate(scene.body) if row.startswith('06-I07d에서 사람 수를'))
+    contact_cases = []
+    for key, speaker, line in (
+        ('A', '쇼', '여기서 직접 대답하실 수 있는 분부터 확인하겠습니다. 유우 씨, 잠시만 기다려 주십시오.'),
+        ('B', '사츠키', '난 철문 옆이야. 유우, 다른 애들까지 나왔다고 하지 마.'),
+    ):
+        response = graph.add(f'rev:06:contact-order-memory:{key}', type='say', actor=SPEAKERS[speaker],
+                             speaker=speaker, text=line, source=ref(contact_memory), next=tail)
+        contact_cases.append({'flag':'06-I07d','equals':key,'to':response})
+    tail = graph.add('rev:06:contact-order-memory', type='branch', cases=contact_cases,
+                     source=ref(contact_memory), default=tail)
     control = scene.body.index('### 지금 끌 수 있는 것')
     desk = scene.body.index('### 창구에 가서 확인한다')
     manual = next(i for i,row in enumerate(scene.body) if row.startswith('사츠키가 철제 상자에서'))
@@ -7403,6 +7810,23 @@ def chapter_six_entry(scenes, sill_objects, motion_objects):
     alternatives = [i for i,row in enumerate(order.body) if row.startswith(('### A. ','### B. ','### C. '))]
     join = order.body.index('### 합류')
     tail = graph.lines(order,join+1,len(order.body),tail)
+    rest = {
+        'A': (('쇼','접수된 진술과 공개 요약을 둘 다 가져갑니다. 안 나온 문장을 옛 진술에 넣지는 않겠습니다.'),
+              ('사츠키','통제하고 지원은 따로 둘 거야. 실제로 문 건너 본 사람은 아직 없어.')),
+        'B': (('나나','제가 본 건 몸이 돌고 난 다음이에요. 앞에서 팔을 잡았을 때는 제가 못 봤어요.'),
+              ('쇼','통행 점검표와 응답 지원 점검표를 따로 가져가겠습니다.')),
+        'C': (('나나','제가 본 손의 움직임은 제가 가져갈게요. 처음에 팔을 잡으신 때는 못 봤고요.'),
+              ('미오','원본을 받은 행하고 보고서에서 빠진 행도 챙길게. 처음부터 혼자였다고 쓴 원본은 아니야.')),
+    }
+    cases = []
+    for key, replies in rest.items():
+        source = next(i for i,row in enumerate(order.body) if row.startswith(f'- **{key} 뒤.**'))
+        target = tail
+        for index,(speaker,line) in reversed(list(enumerate(replies))):
+            target = graph.add(f'rev:06:unselected-records:{key}:{index}',type='say',actor=SPEAKERS[speaker],
+                               speaker=speaker,text=line,source=order.source(order.line+source+1),next=target)
+        cases.append({'flag':order.id,'equals':key,'to':target})
+    tail = graph.add('rev:06:unselected-records',type='branch',cases=cases,default=tail)
     tail = graph.menu(order,'어느 기록부터 증언대에 놓을까?',[
         (order.body[at][7:],at+1,stop,'') for at,stop in zip(alternatives,[*alternatives[1:],join],strict=True)],tail)
     tail = graph.lines(order,0,alternatives[0],tail)
@@ -7443,7 +7867,7 @@ def chapter_six_entry(scenes, sill_objects, motion_objects):
         first = next(i for i in range(write,len(scene.body)) if scene.body[i].startswith('**미오**　네가 멈춘 거야?'))
         second = next(i for i in range(first,len(scene.body)) if scene.body[i].startswith('세 번째 분리에서는'))
         ref = scene.source(scene.line+write+1)
-        tail = graph.lines(scene,second+1,len(scene.body),target)
+        tail = checked_investigation(graph,scene,second+1,len(scene.body),target)
         tail = graph.add('rev:06:shadow-third-observation',type='say',actor='mio',speaker='미오',mono=True,
             text='새 글을 쓰지 않은 세 번째 시도에서는 그림자가 다시 발 앞으로 움직였다. 사츠키가 스스로 거뒀다.',
             source=scene.source(scene.line+second+1),next=tail)
@@ -7514,9 +7938,9 @@ def chapter_six_entry(scenes, sill_objects, motion_objects):
 
     tail = late_case_investigation(graph, scenes, 6, 'lower_corridor', records, tail,
         routes={'v4:V5-6:document-order':compare_documents,
-                'v4:V5-6:signature':lambda scene,target:graph.lines(scene,0,initial_approval(scene),target),
+                'v4:V5-6:signature':lambda scene,target:checked_investigation(graph,scene,0,initial_approval(scene),target),
                 'v4:V5-6:first-approval':lambda scene,target:graph.lines(scene,initial_approval(scene),len(scene.body),target),
-                'v4:V5-6:operation-screen':lambda scene,target:graph.lines(scene,0,approve_again(scene),target),
+                'v4:V5-6:operation-screen':lambda scene,target:checked_investigation(graph,scene,0,approve_again(scene),target),
                 'v4:V5-6:reapprove':lambda scene,target:graph.lines(scene,approve_again(scene),len(scene.body),target),
                 'v4:V5-6:harm-separation':lambda scene,target:graph.lines(scene,0,emergency(scene),target),
                 'v4:V5-6:emergency-open':lambda scene,target:graph.lines(scene,emergency(scene),len(scene.body),target),
@@ -7528,7 +7952,10 @@ def chapter_six_entry(scenes, sill_objects, motion_objects):
             'v4:V5-6:separate-connections':['06-I07b'],'v4:V5-6:live-response':['06-I07d','06-I07e']},
         prerequisites={'v4:V5-6:document-order':['v4:V5-6:signature'],
                        'v4:V5-6:document-edit':['v4:V5-6:document-order'],
+                       'v4:V5-6:operation-screen':['v4:V5-6:first-approval'],
                        'v4:V5-6:reapprove':['v4:V5-6:operation-screen','v4:V5-6:first-approval'],
+                       'v4:V5-6:voice-window':['v4:V5-6:document-order','v4:V5-6:motion'],
+                       'v4:V5-6:harm-separation':['v4:V5-6:safety-hold','v4:V5-6:voice-window'],
                        'v4:V5-6:emergency-open':['v4:V5-6:harm-separation'],
                        'v4:V5-6:alarm-order':['v4:V5-6:safety-hold','v4:V5-6:emergency-open'],
                        'v4:V5-6:inspection-order':['v4:V5-6:safety-hold','v4:V5-6:document-edit'],
@@ -7620,6 +8047,7 @@ def main():
     tasks.update(more_tasks)
     sixth, more_tasks = chapter_six_entry(scenes,sill_objects,motion_objects)
     tasks.update(more_tasks)
+    apply_authored_vpoints(scenes,tasks)
     chapters = {'P': CampaignGraph().compile_prologue(scenes), '1': trial, '2': second, '3': third,
                 '4': fourth, '5': fifth, '6': sixth}
     free_entries = {

@@ -10,6 +10,18 @@ from v4_park_levels import apply
 O=R/'art/space_v4/park_levels_v1';W=R/'Game/Saved/park-levels-20261104'
 base=json.loads((R/'art/space_v4/runtime_v1/world.json').read_text(encoding='utf8'));apply_world(base);ft(base);w=json.loads(json.dumps(base));apply(w)
 m=json.loads((O/'manifest.json').read_text(encoding='utf8'));rows=[];errors=[]
+
+def blocks_player(box,x,z,radius=.28):
+    if not ((len(box)<6 or box[4]<1.6 and box[5]>.34) and
+            box[0]-radius<x<box[2]+radius and box[1]-radius<z<box[3]+radius):
+        return False
+    if len(box)!=10:
+        return True
+    x0,z0,x1,z1=box[6:]
+    dx,dz=x1-x0,z1-z0
+    t=max(0,min(1,((x-x0)*dx+(z-z0)*dz)/(dx*dx+dz*dz)))
+    return math.hypot(x-x0-dx*t,z-z0-dz*t)<.36+radius
+
 for ident,s in base['spaces'].items():
     if s.get('outdoor'):continue
     for k in ['mesh','spawn','collision','bounds','targets','mode','walk_surfaces']:
@@ -23,8 +35,15 @@ for a in m['assets']:
             area=np.linalg.norm(np.cross(pos[ids[:,1]]-pos[ids[:,0]],pos[ids[:,2]]-pos[ids[:,0]]),axis=1);assert np.all(area>1e-12),(a['id'],'Degenerate geometry')
             tri+=len(ids);normal_maps+=int('normalTexture'in j['materials'][p['material']])
     assert normal_maps>0;assert tri==a['triangles'];d=w['parkLevels']['districts'][a['id']];hub=d['hub'];s=w['spaces'][w['instances'][hub]['space']];bounds=s['bounds'];boxes=s['collision'];step=.5
+    assert [c[:6] for c in boxes]==a['collision'],('Unexpected collision change',a['id'])
+    for c in boxes:
+        if len(c)==10:
+            assert blocks_player(c,(c[6]+c[8])/2,(c[7]+c[9])/2),('Walk-through hedge',a['id'],c)
+    if a['id']=='fairytale':
+        assert any(blocks_player(c,15,18.95) for c in a['collision'])
+        assert not any(blocks_player(c,15,18.95) for c in boxes)
     def blocked(x,z):
-        return x<bounds[0]+.28 or x>bounds[2]-.28 or z<bounds[1]+.28 or z>bounds[3]-.28 or any((len(c)<6 or c[4]<1.6 and c[5]>.34)and c[0]-.28<x<c[2]+.28 and c[1]-.28<z<c[3]+.28 for c in boxes)
+        return x<bounds[0]+.28 or x>bounds[2]-.28 or z<bounds[1]+.28 or z>bounds[3]-.28 or any(blocks_player(c,x,z) for c in boxes)
     spawn=s['spawn'];assert not blocked(spawn[0],spawn[2]),(hub,'Blocked spawn');start=(round(spawn[0]/step),round(spawn[2]/step));q=collections.deque([start]);seen={start}
     while q:
         x,z=q.popleft()

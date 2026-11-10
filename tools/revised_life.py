@@ -256,7 +256,17 @@ def second_large_meeting(graph,scene,tail):
         tail=choice(scene.id,'첫 세 번의 규칙을 어떻게 정할까?',starts[:3],common,tail)
         return graph.lines(scene,0,body.index('### 선택 SORA-02A — 첫 세 번'),tail)
     end=body.index('### 마지막에 자리를 떠날 때')
-    tail=graph.lines(scene,end+1,len(body),tail)
+    puzzle_end=graph.lines(scene,end+1,len(body),tail)
+    book_end=tail
+    for i,(speaker,text) in reversed(list(enumerate((
+        ('아이','책갈피는 제가 끼워 둘게요. 다음에 오시면 오늘 보던 데부터 봐요.'),
+        ('미오','내가 먼저 오면 네가 보던 데는 넘기지 않을게.'),
+        ('아이','미오 씨가 보고 싶은 데는 보셔도 돼요. 저는 여기서 다시 찾을 수 있으니까요.'),
+    )))):
+        book_end=graph.add(f'rev:02-F05:book-end:{i}',type='say',actor=SPEAKERS[speaker],speaker=speaker,
+                           text=text,source=scene.source(scene.line+end+1),next=book_end)
+    tail=graph.add('rev:02-F05:closing-activity',type='branch',cases=[
+        {'flag':scene.id,'equals':'B','to':book_end}],default=puzzle_end)
     second=body.index('### 선택 F-AI02-B — 남은 시간의 약속')
     starts=[body.index(title) for title in ('### B1. 같이 주방으로 가자고 한다',
         '### B2. 여기서 하던 일을 끝낸다','### B3. 미오가 먼저 다른 곳으로 간다')]
@@ -281,7 +291,26 @@ def second_large_meeting(graph,scene,tail):
     starts=[body.index(title) for title in ('### A1. 퍼즐을 하며 다른 이야기를 한다',
         '### A2. 퍼즐 대신 사진집을 같이 본다','### A3. 각자 말없이 한다')]
     tail=choice(scene.id,'지금은 어느 쪽을 보고 있을까?',starts,common,tail)
-    return graph.lines(scene,0,first,tail)
+    entry=graph.lines(scene,0,first,tail)
+    boundaries=[next(i for i,row in enumerate(body) if row.startswith(marker)) for marker in (
+        '02-F02에서 그릇을 비워 두라고','그릇을 받을 사람에게 다시 묻기로','### 사진 속 물고기')]
+    previous=graph.nodes[entry]
+    while graph.nodes[previous['next']]['source']['line'] <= scene.line+boundaries[0]+1:
+        previous=graph.nodes[previous['next']]
+    a=previous['next']
+    last_a=graph.nodes[a]
+    while graph.nodes[last_a['next']]['source']['line'] <= scene.line+boundaries[1]+1:
+        last_a=graph.nodes[last_a['next']]
+    b=last_a['next']
+    last_b=graph.nodes[b]
+    while graph.nodes[last_b['next']]['source']['line'] <= scene.line+boundaries[2]+1:
+        last_b=graph.nodes[last_b['next']]
+    after=last_b['next']
+    last_a['next']=after
+    previous['next']=graph.add('rev:02-F05:previous-bowl',type='branch',cases=[
+        {'flag':'02-F02','equals':'A','to':a},{'flag':'02-F02','equals':'B','to':b}],default=after,
+        source=scene.source(scene.line+boundaries[0]+1))
+    return entry
 
 
 def fourth_large_meeting(graph,scene,tail):
@@ -444,6 +473,50 @@ def first_scene(graph, scene, tail):
                 speaker=speaker,text=text,source=scene.source(scene.line+at+1),next=tail)
             cases.append({'flag':flag,'equals':key,'to':to})
         tail=graph.add(f'rev:{scene.id}:memory:{flag}',type='branch',cases=cases,default=tail)
+    if scene.id=='02-F06':
+        at, = (i for i,row in enumerate(body) if row.startswith('01-F06 A에서'))
+        source = scene.source(scene.line+at+1)
+        quotes = re.findall(r'“([^”]+)”',body[at])
+        cases = []
+        for key,text in zip('ABC',quotes,strict=True):
+            next_node = tail
+            if key=='A':
+                next_node = graph.add('rev:02-F06:first-visit-memory:A:reply',type='say',actor='mio',speaker='미오',
+                    text='같이 보겠다고 했어. 네가 쓸 말을 내가 먼저 골라 준다고는 안 했고.',source=source,next=tail)
+            to = graph.add(f'rev:02-F06:first-visit-memory:{key}',type='say',actor='rin',speaker='린',
+                           text=text,source=source,next=next_node)
+            cases.append({'flag':'01-F06','equals':key,'to':to})
+        first = graph.add('rev:02-F06:first-visit-memory:new',type='say',actor='rin',speaker='린',
+                          text='종이 보러 왔어? 아직 안 쓴 데가 있어.',source=source,next=tail)
+        tail = graph.add('rev:02-F06:first-visit-memory',type='branch',cases=cases,default=first)
+    if scene.id=='03-F02':
+        at, = (i for i,row in enumerate(body) if row.startswith('02-F08에서 관객을 맡았다면'))
+        source = scene.source(scene.line+at+1)
+        cases = []
+        for key,text in zip('AB',re.findall(r'“([^”]+)”',body[at]),strict=True):
+            response = graph.add(f'rev:03-F02:audience-memory:{key}',type='say',actor='ken',speaker='켄',
+                                 text=text,source=source,next=tail)
+            cases.append({'flag':'02-F08','equals':key,'to':response})
+        tail = graph.add('rev:03-F02:audience-memory',type='branch',cases=cases,default=tail,source=source)
+    if scene.id=='04-D00j':
+        positions = []
+        for marker in ('04-F02 A를 봤다면','B를 봤다면','만남을 건너뛰었으면'):
+            at, = (i for i,row in enumerate(body) if row.startswith(marker))
+            positions.append(scene.line+at+1)
+        previous = graph.nodes[tail]
+        while graph.nodes[previous['next']]['source']['line'] < positions[0]:
+            previous = graph.nodes[previous['next']]
+        a = previous['next']
+        b = graph.nodes[a]['next']
+        last_b = graph.nodes[b]['next']
+        common = graph.nodes[last_b]['next']
+        assert positions[0]<graph.nodes[a]['source']['line']<positions[1]
+        assert positions[1]<graph.nodes[b]['source']['line']<graph.nodes[last_b]['source']['line']<positions[2]
+        assert positions[2]<graph.nodes[common]['source']['line']
+        graph.nodes[a]['next'] = common
+        previous['next'] = graph.add('rev:04-D00j:bench-memory',type='branch',cases=[
+            {'flag':'04-F02','equals':'A','to':a},{'flag':'04-F02','equals':'B','to':b}],default=common,
+            source=scene.source(positions[0]))
     for ident,previous,speaker in [('04-D00c','04-F04:next','레이'),('04-D01c','04-D00m','하루카')]:
         if scene.id==ident:
             text=re.findall(r'“([^”]+)”',body[1])[0]

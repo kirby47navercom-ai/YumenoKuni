@@ -7,10 +7,19 @@ def plan():return json.loads((O/'plan.json').read_text(encoding='utf8'))
 def membership(p):
     out={room:district for district,rooms in p['rooms'].items()for room in rooms}
     out.update({room:'residence'for room in p['residence']});return out
+def hedge_collision(boxes, centerlines):
+    """Attach the centerline to the existing bounds of diagonal hedges."""
+    segments={}
+    for x,z,xx,zz,height in centerlines:
+        bounds=(min(x,xx)-.36,min(z,zz)-.36,max(x,xx)+.36,max(z,zz)+.36,0,height)
+        segments[tuple(round(n,5) for n in bounds)]=[x,z,xx,zz]
+    return [box+segments.get(tuple(round(n,5) for n in box),[]) for box in boxes]
+
 def apply(world,require_art=True):
-    p=plan();groups=membership(p);districts={d['id']:d for d in p['districts']};before=deepcopy(world['instances']);specs=world['spaces'];assets={}
+    p=plan();groups=membership(p);districts={d['id']:d for d in p['districts']};before=deepcopy(world['instances']);specs=world['spaces'];assets={};hedges={}
     if require_art:
         m=json.loads((O/'manifest.json').read_text(encoding='utf8'));assert m['geometryComplete'];assets={a['id']:a for a in m['assets']}
+        hedges=json.loads((R/'data/park_hedge_centerlines.json').read_text(encoding='utf8'))['districts']
     header={'version':1,'districts':{},'minimumChapter':{'residence':0,'depths':6},'stableInteriorSaveCoordinates':True}
     for d in p['districts']:
         row={k:d[k]for k in ['name','scene','chapter','hub']};row['mesh']=f"Assets/Art/park_levels/{d['id']}.glb";header['districts'][d['id']]=row;header['minimumChapter'][d['id']]=d['chapter']
@@ -37,7 +46,7 @@ def apply(world,require_art=True):
             if hub=='plaza':s.update(bounds=d['bounds'],spawn=d['spawn'],walk_surfaces=[[*d['bounds'],0]])
             world['instances'][hub]['p']=[0,0,0];world['instances'][hub]['label']=d['name']
         if require_art:
-            a=assets[d['id']];s['collision']=deepcopy(a['collision']);s['walk_surfaces']=deepcopy(a['walkSurfaces'])
+            a=assets[d['id']];s['collision']=hedge_collision(a['collision'],hedges.get(d['id'],[]));s['walk_surfaces']=deepcopy(a['walkSurfaces'])
         s.update(district=d['id'],levelScene=d['scene'],outdoor=True)
     # Existing room-to-room door anchors remain intact, including case-critical
     # paired boundaries. Chapter gates apply to traversal, not historical shots.
