@@ -4600,10 +4600,11 @@ def chapter_four_last_hearing(graph,scenes,tasks,evidence,dead,seats,tail,nonsto
         (2,'쇼','시각과 시야는 별도 질문입니다. 실제 조작 위치와 손의 높이를 비교하십시오.')])
     guard=scene.body.index('#### 정답 선택 — 문을 봤다는 말의 시작')
     compare=next(i for i in range(guard,visibility) if scene.body[i].startswith('문이 감시되기 시작한 때를'))
+    correction, = re.findall(r'“([^”]+)”', scene.body[compare])
     tail=graph.lines(scene,compare+1,visibility,tail)
     tail=task('T4-QA-REV06',{'kind':'choice','question':'앞문의 시야를 이어받은 기준은?',
         'options':['미오가 앞문을 봐 달라고 했을 때','덮개에 손이 있다고 부른 때','유우가 계단에서 레이와 만났을 때'],'answer':0},
-        compare,tail,['v4:V5-4:handover'],[(1,'사츠키','그때는 이미 문 보고 있었어. 아카리 옆에서 같이 일어났을 때부터'),
+        compare,tail,['v4:V5-4:handover'],[(1,'사츠키',correction),
         (2,'유우','나는 계단에서 만났어. 거기서 문 뒤까지 볼 수 있었던 건 아니야.')])
     tail=graph.lines(scene,guard+1,compare,tail)
     lie=scene.body.index('#### 04-T03c　우소다마 — 아무도 보지 않았다고 하면')
