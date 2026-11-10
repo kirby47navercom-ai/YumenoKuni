@@ -1,0 +1,2392 @@
+{
+  "schemaVersion": 1,
+  "worldSource": "art/space_v4/runtime_v1/world.json",
+  "worldSha256": "cddbae8db22a49859df0f883e809d438a85190af98d5df81417f6660f815bcdc",
+  "sourceHashes": {
+    "11b_1장_수사_초고.md": "f8d045e001f974f3f9e191ff9148a6f16e7a19bcb519027f96013dffd348b440",
+    "181_1장_재판_반복논의와_지목_연속대본.md": "5c0ae1ae5d941aaddb0a3de0f14f7255353c5e9919811ad2cfe6151361e68a8a",
+    "07_3장_두사건_원장_스포주의.md": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+    "13b1_3장_아직_살아있는_사람_초고.md": "ac8f9cd2ddd3908425f49e98b1e89f0e85df340cdfca2ed29e526e94e00e566d",
+    "13b2_3장_두번째_이름_초고.md": "3bb9488ba2b30aa141958250965d2599ceb4d60f295d2ec00b038d9887e5687a",
+    "14b1_4장_첫_수사_초고.md": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+    "14b3_4장_사진을_보는_사람_초고.md": "0b07d49b5e9bb0bbcd1133ff7248244beb4fde975a794967105aded8bedae8e8",
+    "15b2_5장_돌아오지_않은_하나_초고.md": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+    "165_3장_재판_형식별_연속대본.md": "0d9b7bf79e3484d89885a34773c306c890509f3d7c871d3ab93d382c4fd2bbd3",
+    "166_4장_재판_형식별_연속대본.md": "205e772e4696836716a698bfa0e3d84f3025d87a1f9c3547140e2532460097bd",
+    "183_3장_재판_반복논의와_지목_연속대본.md": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9",
+    "184_4장_재판_반복논의와_지목_연속대본.md": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+    "185_5장_재판_반복논의와_지목_연속대본.md": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075"
+  },
+  "entries": {
+    "c3_observation_plan": {
+      "title": "반사와 통로",
+      "image": "ui/v4/investigation_diagrams_v4/c3_observation_plan.webp",
+      "sha256": "5326d11698f373188c1593b009111e62e809c4c5a09cca8cc16aefe316490f88",
+      "svg": "ui/v4/investigation_diagrams_v4/c3_observation_plan.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "overlap",
+          "label": "반사와 직접 시야의 겹침",
+          "polygon": [
+            [
+              0.61875,
+              0.475
+            ],
+            [
+              0.7,
+              0.475
+            ],
+            [
+              0.7,
+              0.64
+            ],
+            [
+              0.61875,
+              0.64
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "work-inside",
+          "label": "작업 홈 안쪽",
+          "polygon": [
+            [
+              0.534375,
+              0.705
+            ],
+            [
+              0.746875,
+              0.705
+            ],
+            [
+              0.746875,
+              0.84
+            ],
+            [
+              0.534375,
+              0.84
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "waiting-door",
+          "label": "대기실 문",
+          "polygon": [
+            [
+              0.075,
+              0.65
+            ],
+            [
+              0.2875,
+              0.65
+            ],
+            [
+              0.2875,
+              0.84
+            ],
+            [
+              0.075,
+              0.84
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "entrance",
+          "label": "미로 앞 통로",
+          "polygon": [
+            [
+              0.15,
+              0.435
+            ],
+            [
+              0.30625,
+              0.435
+            ],
+            [
+              0.30625,
+              0.565
+            ],
+            [
+              0.15,
+              0.565
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 140,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "첫 현장 기능 평면과 목격 범위 — 원고 고정",
+          "location": "h-14b139b383",
+          "quote": "정비 대기실 문 D       미로 앞 직선 통로                굽이 B"
+        },
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 150,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "첫 현장 기능 평면과 목격 범위 — 원고 고정",
+          "location": "h-14b139b383",
+          "quote": "- A에서H로 바로 걸으면 거울에 닿는 착시다. 실제 경로는A→B→H이며B에서 한 번 꺾는다. 전체 미로의 다른 굽이를 이 사건의 출입 사이에 끼우지 않는다."
+        },
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 151,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "첫 현장 기능 평면과 목격 범위 — 원고 고정",
+          "location": "h-14b139b383",
+          "quote": "- M은B 바깥 벽의 고정된 평면 거울이다. A에서 반사된H의 상체와B 안쪽 접근을 본다. B에서 방향을 바꾸는 몸은 반사된 머리/어깨가 남아 있는 동안 직접 어깨가 보이는 영역을 지난다. 반사상이 끝난 뒤 불투명 구간을 통과해 다시 나오는 구조가 아니다."
+        },
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 152,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "첫 현장 기능 평면과 목격 범위 — 원고 고정",
+          "location": "h-14b139b383",
+          "quote": "- A 두 자리는 나란하다. 린이 미오 앞에 서는 배치를 금지한다. 길을 막는 기둥, 바닥부터 세운 표식, 이동식 판넬이나 다른 참가자를A와B 사이에 새로 넣지 않는다. 새 표식은 바닥 안내 수선이지 시야 차폐물이 아니다."
+        },
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 153,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "첫 현장 기능 평면과 목격 범위 — 원고 고정",
+          "location": "h-14b139b383",
+          "quote": "- 이 시야는 모든 손동작을 보여 주지 않는다. 첫 손잡이는 두 사람 몸에 가려진다. 미오는 칼을 향한 손 움직임/충돌/칼 든 팔/퇴각을 말한다. 사후 사진도 공격 당시 손의 영상이 아니다. 리쿠가 주저앉은 뒤 바닥과 전신을 모두 본 것처럼 확대하지 않는다."
+        },
+        {
+          "file": "13b1_3장_아직_살아있는_사람_초고.md",
+          "line": 555,
+          "fileSha256": "ac8f9cd2ddd3908425f49e98b1e89f0e85df340cdfca2ed29e526e94e00e566d",
+          "heading": "I3-12 반사면의 끝",
+          "location": "I3-12",
+          "quote": "(하루카가 미오가 서 있던 모퉁이로 간다. 사츠키는 시신 곁에 남고, 쇼가 하루카와 함께 반사 각도를 본다. 미오는 공격을 본 위치를 가리킨다.)"
+        },
+        {
+          "file": "165_3장_재판_형식별_연속대본.md",
+          "line": 59,
+          "fileSha256": "0d9b7bf79e3484d89885a34773c306c890509f3d7c871d3ab93d382c4fd2bbd3",
+          "heading": "T3-MM-01 반사에서 바깥으로 — 발굴 이매지네이션",
+          "location": "T3-MM-01",
+          "quote": "(실제 통로와 거울을 따로 그린 기존 평면이 블록에 가려진다.공격 영상이 아니다.구역은 A 입구/B 관찰 모퉁이/H 작업 홈/D 대기실.구역을 찾는 동안 현장에 없던 문을 열거나 새 카메라를 돌리지 않는다.)"
+        },
+        {
+          "file": "165_3장_재판_형식별_연속대본.md",
+          "line": 61,
+          "fileSha256": "0d9b7bf79e3484d89885a34773c306c890509f3d7c871d3ab93d382c4fd2bbd3",
+          "heading": "T3-MM-01 반사에서 바깥으로 — 발굴 이매지네이션",
+          "location": "T3-MM-01",
+          "quote": "**찾을 부분:** B의 옆자리에서 H 출구를 볼 때,거울 속 머리와 실제 어깨가 한동안 동시에 보이는 경계."
+        },
+        {
+          "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "line": 573,
+          "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9",
+          "heading": "T3-SPOT-A01 거울에서 나온 몸의 자리 — SPOT",
+          "location": "T3-SPOT-A01",
+          "quote": "- 후보/표시 그림: 미로 관찰 도면.영역A=거울B와모퉁이에서몸이이어져보이는구간/영역B=홈H의안쪽/영역C=대기실D문/영역0=기타."
+        }
+      ],
+      "inspectionScope": "v4:3:knowledge:reflection-geometry",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [
+        {
+          "space": "mirror_workbay",
+          "node": "fixed_mirror",
+          "p": [
+            -4.85,
+            1.4,
+            -1.4
+          ],
+          "box": [
+            [
+              -4.8625,
+              0.1,
+              0.35
+            ],
+            [
+              -4.8375,
+              2.7,
+              -3.15
+            ]
+          ],
+          "role": "existing physical mirror/partition reference, not metric A/B/H mapping"
+        },
+        {
+          "space": "mirror_workbay",
+          "node": "work_partition",
+          "p": [
+            1.0,
+            1.6,
+            -1.5
+          ],
+          "box": [
+            [
+              0.9,
+              0.0,
+              1.2
+            ],
+            [
+              1.1,
+              3.2,
+              -4.2
+            ]
+          ],
+          "role": "existing physical mirror/partition reference, not metric A/B/H mapping"
+        }
+      ],
+      "limitations": [
+        "Canonical source topology only; no new metric position/angle or full native ray/occlusion validation."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c3_waiting_position": {
+      "title": "대기실의 두 벤치",
+      "image": "ui/v4/investigation_diagrams_v4/c3_waiting_position.webp",
+      "sha256": "b2c136e5423cd05bb7f1aa2d7594ee60ff7d444b4e7909c7176500c13829f81a",
+      "svg": "ui/v4/investigation_diagrams_v4/c3_waiting_position.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "left-body",
+          "label": "왼쪽 벤치 본체",
+          "polygon": [
+            [
+              0.33692361111111113,
+              0.37825
+            ],
+            [
+              0.3680486111111111,
+              0.37825
+            ],
+            [
+              0.3680486111111111,
+              0.50575
+            ],
+            [
+              0.33692361111111113,
+              0.50575
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "right-empty",
+          "label": "오른쪽 빈 벤치",
+          "polygon": [
+            [
+              0.6250763888888888,
+              0.36525
+            ],
+            [
+              0.6699513888888888,
+              0.36525
+            ],
+            [
+              0.6699513888888888,
+              0.51475
+            ],
+            [
+              0.6250763888888888,
+              0.51475
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "middle",
+          "label": "가운데 통로",
+          "polygon": [
+            [
+              0.41875,
+              0.39
+            ],
+            [
+              0.58125,
+              0.39
+            ],
+            [
+              0.58125,
+              0.69
+            ],
+            [
+              0.41875,
+              0.69
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 163,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "두 번째 공격의 실내 배치와 회수 — 원고 고정",
+          "location": "h-fd48d6d90d",
+          "quote": "- 문에서 왼쪽 벽을 따라 소라 본체 벤치가 있고 발치가 문 쪽, 머리맡이 안쪽이다. 반대편은 켄이 처음 잠들었던 빈 벤치다. 가운데 사람이 움직일 통로가 있다. 두 벤치가 문을 가로막거나 한 벤치를 들어야 출입할 수 있는 방이 아니다."
+        },
+        {
+          "file": "13b2_3장_두번째_이름_초고.md",
+          "line": 95,
+          "fileSha256": "3bb9488ba2b30aa141958250965d2599ceb4d60f295d2ec00b038d9887e5687a",
+          "heading": "I3-20 잠깐의 허락",
+          "location": "I3-20",
+          "quote": "(나나가 고개를 끄덕인다. 쇼가 문턱을 지나 가운데 통로로 들어간다. 소라 본체의 벤치는 문에서 보아 왼쪽 벽을 따라 있고 발치가 문에 가깝다. 켄 몸은 그 발치 옆, 나나는 안쪽 머리맡이다. 쇼는 칼 든 몸과 벽 사이로 비집고 들어가지 않고 통로 쪽에서 어깨를 받칠 자리에 선다.)"
+        },
+        {
+          "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "line": 755,
+          "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9",
+          "heading": "T3-MM-A02 두 번째 몸이 놓였던 방향 — MM",
+          "location": "T3-MM-A02",
+          "quote": "- 가린 그림: 수사 때의 대기실 벤치 배치 그림"
+        },
+        {
+          "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "line": 757,
+          "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9",
+          "heading": "T3-MM-A02 두 번째 몸이 놓였던 방향 — MM",
+          "location": "T3-MM-A02",
+          "quote": "- 노출되는 영역: 왼쪽 벤치 머리 안쪽/오른쪽 빈 벤치/중앙 통로/바깥 선반"
+        }
+      ],
+      "inspectionScope": "v4:3:knowledge:file-second",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [
+        {
+          "space": "mirror_waiting",
+          "bounds": [
+            -4.5,
+            -4.5,
+            4.5,
+            4.5
+          ],
+          "projection": "top-down native x/z; entrance at +z, head points toward -z",
+          "nodes": [
+            {
+              "id": "mirror_waiting_seat_slats",
+              "p": [
+                -2.6,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  -2.6525,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  -2.5475,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats.001",
+              "p": [
+                -2.73,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  -2.7825,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  -2.6775,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats.002",
+              "p": [
+                -2.86,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  -2.9125,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  -2.8075,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats.003",
+              "p": [
+                -2.99,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  -3.0425,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  -2.9375,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats.001_second",
+              "p": [
+                2.73,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  2.6775,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  2.7825,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats.002_second",
+              "p": [
+                2.86,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  2.8075,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  2.9125,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats.003_second",
+              "p": [
+                2.99,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  2.9375,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  3.0425,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            },
+            {
+              "id": "mirror_waiting_seat_slats_second",
+              "p": [
+                2.6,
+                0.48,
+                -1.5
+              ],
+              "box": [
+                [
+                  2.5475,
+                  0.455,
+                  -0.575
+                ],
+                [
+                  2.6525,
+                  0.505,
+                  -2.425
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Historical living-body placement only. No injury/attack or cause inferred from this neutral silhouette."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c3_knife_custody": {
+      "title": "따로 둔 물건",
+      "image": "ui/v4/investigation_diagrams_v4/c3_knife_custody.webp",
+      "sha256": "4d616d551b2e928030580d9c1f2b88789a4a4019526aed2ef465a2d2a99a3871",
+      "svg": "ui/v4/investigation_diagrams_v4/c3_knife_custody.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "outside-shelf",
+          "label": "대기실 바깥 선반",
+          "polygon": [
+            [
+              0.640625,
+              0.78
+            ],
+            [
+              0.85,
+              0.78
+            ],
+            [
+              0.85,
+              0.88
+            ],
+            [
+              0.640625,
+              0.88
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "left-head",
+          "label": "왼쪽 벤치 머리맡",
+          "polygon": [
+            [
+              0.29375,
+              0.34
+            ],
+            [
+              0.36875,
+              0.34
+            ],
+            [
+              0.36875,
+              0.42
+            ],
+            [
+              0.29375,
+              0.42
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "middle",
+          "label": "방 안 통로",
+          "polygon": [
+            [
+              0.3875,
+              0.4
+            ],
+            [
+              0.58125,
+              0.4
+            ],
+            [
+              0.58125,
+              0.67
+            ],
+            [
+              0.3875,
+              0.67
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "13b2_3장_두번째_이름_초고.md",
+          "line": 203,
+          "fileSha256": "3bb9488ba2b30aa141958250965d2599ceb4d60f295d2ec00b038d9887e5687a",
+          "heading": "I3-25 누워 있지 않은 쪽의 자백",
+          "location": "I3-25",
+          "quote": "(레이가 린과 함께 켄 몸을 반대편 벤치에 앉힌다. 쇼가 소라 본체의 사망을 확인한 뒤 문밖으로 나와, 사츠키가 밀어 두고 지키던 칼을 집는다. 사람이 밟지 않는 바깥 선반에 따로 놓고, 사츠키는 출입 쪽에서 그 물건과 방 안을 본다. 누르던 중 자리를 비워 칼부터 정리한 것으로 바꾸지 않는다. 무기를 되돌려 주거나 켄 몸을 잠깐 혼자 있게 하지 않는다.)"
+        },
+        {
+          "file": "07_3장_두사건_원장_스포주의.md",
+          "line": 167,
+          "fileSha256": "b1edfc7e7ae33647240f71f4c3bb6ee8a8ae27bcab32d33cc84ff8f5248326e7",
+          "heading": "두 번째 공격의 실내 배치와 회수 — 원고 고정",
+          "location": "h-fd48d6d90d",
+          "quote": "- I3-24의 사망 확인 뒤 I3-25에서 쇼가 문밖 칼을 선반에 분리한다. 이 선반은 새 사건 물증/몰래 숨긴 물건이 아니라 현재 안전 회수 위치다. 린·레이는 반대편 벤치의 켄 몸을 계속 붙잡고, I3-29 손 교대는 레이의 관찰을 먼저 확인한다."
+        },
+        {
+          "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "line": 783,
+          "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9",
+          "heading": "T3-MM-A03 칼을 빼앗은 뒤 남긴 곳 — MM",
+          "location": "T3-MM-A03",
+          "quote": "- 가린 그림: 수사에서 확인한 대기실 입구/바깥 선반 그림"
+        },
+        {
+          "file": "183_3장_재판_반복논의와_지목_연속대본.md",
+          "line": 785,
+          "fileSha256": "5f8fadabc65270e4dec16a4bedcefca654a8f7acde9a389ee3eaf4ebef7638e9",
+          "heading": "T3-MM-A03 칼을 빼앗은 뒤 남긴 곳 — MM",
+          "location": "T3-MM-A03",
+          "quote": "- 노출되는 영역: 바깥 선반/왼쪽 벤치 머리맡/미오 가방/몸 안쪽"
+        }
+      ],
+      "inspectionScope": "v4:3:knowledge:restraint-awake",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [
+        {
+          "space": "mirror_waiting",
+          "doorP": [
+            0,
+            1.18,
+            4.5
+          ],
+          "doorNode": "front.022_leaf"
+        }
+      ],
+      "limitations": [
+        "Outside shelf has source-exact relation only; native world has no dedicated shelf anchor, so no fabricated numeric shelf position."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c4_hatch_hand_observation": {
+      "title": "닫혀 있던 때의 관찰",
+      "image": "art/inspection_v4/illustrations_20261104/c4_hatch_hand_observation.png",
+      "sha256": "8a5449ad7a5b791395158ee14b00bf8e6f2bd247bdc84b0e979354b58fdf48f7",
+      "svg": null,
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "hand-edge",
+          "label": "손이 보인 덮개 가장자리",
+          "polygon": [
+            [
+              0.431,
+              0.706
+            ],
+            [
+              0.44,
+              0.699
+            ],
+            [
+              0.456,
+              0.699
+            ],
+            [
+              0.474,
+              0.708
+            ],
+            [
+              0.487,
+              0.724
+            ],
+            [
+              0.499,
+              0.749
+            ],
+            [
+              0.496,
+              0.762
+            ],
+            [
+              0.487,
+              0.762
+            ],
+            [
+              0.481,
+              0.752
+            ],
+            [
+              0.478,
+              0.768
+            ],
+            [
+              0.469,
+              0.77
+            ],
+            [
+              0.459,
+              0.756
+            ],
+            [
+              0.452,
+              0.75
+            ],
+            [
+              0.444,
+              0.736
+            ],
+            [
+              0.437,
+              0.729
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "front-door",
+          "label": "정면 출입문",
+          "polygon": [
+            [
+              0.228,
+              0.831
+            ],
+            [
+              0.374,
+              0.831
+            ],
+            [
+              0.383,
+              0.871
+            ],
+            [
+              0.224,
+              0.871
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "storage-end",
+          "label": "안쪽 끝난 구획",
+          "polygon": [
+            [
+              0.70625,
+              0.28
+            ],
+            [
+              0.9125,
+              0.28
+            ],
+            [
+              0.9125,
+              0.55
+            ],
+            [
+              0.70625,
+              0.55
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cover",
+          "label": "덮개 가운데",
+          "polygon": [
+            [
+              0.15625,
+              0.36
+            ],
+            [
+              0.40625,
+              0.36
+            ],
+            [
+              0.40625,
+              0.66
+            ],
+            [
+              0.15625,
+              0.66
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 55,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-04 밖에서 걸린 상태",
+          "location": "I4-04",
+          "quote": "(미오는 원래 덮개가 어떤 기능이었는지와,구조 때문에 지금 열어 둔 상태를 나눠 그린다. 현재 열린 사진만으로 처음부터 열려 있었다는 결론을 만들지 않는다.)"
+        },
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 59,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-05 닫힌 가장자리의 손",
+          "location": "I4-05",
+          "quote": "(손의 손상과 덮개 가장자리를 대조한다. 손이 걸렸던 구간과 현재의 보라색 흔적을 각각 남긴다.)"
+        },
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 67,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-05 닫힌 가장자리의 손",
+          "location": "I4-05",
+          "quote": "(아카리가 고개를 끄덕인다. 정상 점검에서 미리 지적했던 시야와 발견 때 실제 위치가 연결된다. 손 하나로 범인 이름을 읽는 장치로 쓰지 않는다.)"
+        },
+        {
+          "file": "14b3_4장_사진을_보는_사람_초고.md",
+          "line": 7,
+          "fileSha256": "0b07d49b5e9bb0bbcd1133ff7248244beb4fde975a794967105aded8bedae8e8",
+          "heading": "I4-33 닫기 전에 보였을 것",
+          "location": "I4-33",
+          "quote": "(미오/쇼/나나는 덮개 가장자리의 손 위치를 다시 짚는다. 레이가 잡았다고 말한 바깥 위치와 실제 시야를 비교한다. 사람의 손을 다시 끼워 실험하지 않는다.)"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 544,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-SPOT-A01 닫힌 때 보인 자리 — SPOT",
+          "location": "T4-SPOT-A01",
+          "quote": "- 후보/표시 그림: 수사 점검구 도면/개방 전 관찰 표시.영역A=손이 보인 덮개 가장자리/영역B=외부 정면 출입문/영역C=안쪽 끝난 구획/영역0=기타.새로운 최초 촬영 사진으로 표시하지 않아요."
+        }
+      ],
+      "inspectionScope": "v4:4:knowledge:first-hand",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "Unscaled observation diagram. No exact injury/hand size, hinge side or native hatch coordinate is claimed."
+      ],
+      "rasterSize": [
+        1586,
+        992
+      ],
+      "visualReview": "Directly inspected original built-in illustration: closed cover with exposed hand at boundary, outside threshold and separately terminated compartment. Unscaled ink observation sketch; no new photograph, exact injury, fastening or actor. Native visual review pending separately.",
+      "authoredIllustration": true,
+      "nativeResolutionPreserved": true
+    },
+    "c4_external_fastening": {
+      "title": "점검구 안팎의 구조",
+      "image": "ui/v4/investigation_diagrams_v4/c4_external_fastening.webp",
+      "sha256": "6e034b3e2ed971f679fafdd0bdc7b3697dfcf8811177effda0b8f7c9e2a74230",
+      "svg": "ui/v4/investigation_diagrams_v4/c4_external_fastening.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "external-fastener",
+          "label": "외부 고정 부분",
+          "polygon": [
+            [
+              0.446875,
+              0.325
+            ],
+            [
+              0.609375,
+              0.325
+            ],
+            [
+              0.609375,
+              0.405
+            ],
+            [
+              0.446875,
+              0.405
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "water",
+          "label": "물",
+          "polygon": [
+            [
+              0.2625,
+              0.655
+            ],
+            [
+              0.7625,
+              0.655
+            ],
+            [
+              0.7625,
+              0.785
+            ],
+            [
+              0.2625,
+              0.785
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "inner-wall",
+          "label": "안쪽 벽",
+          "polygon": [
+            [
+              0.1875,
+              0.455
+            ],
+            [
+              0.24375,
+              0.455
+            ],
+            [
+              0.24375,
+              0.785
+            ],
+            [
+              0.1875,
+              0.785
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cover",
+          "label": "덮개",
+          "polygon": [
+            [
+              0.1875,
+              0.39
+            ],
+            [
+              0.83125,
+              0.39
+            ],
+            [
+              0.83125,
+              0.455
+            ],
+            [
+              0.1875,
+              0.455
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 55,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-04 밖에서 걸린 상태",
+          "location": "I4-04",
+          "quote": "(미오는 원래 덮개가 어떤 기능이었는지와,구조 때문에 지금 열어 둔 상태를 나눠 그린다. 현재 열린 사진만으로 처음부터 열려 있었다는 결론을 만들지 않는다.)"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 726,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-MM-A02 안에서 닿지 않는 고정 — MM",
+          "location": "T4-MM-A02",
+          "quote": "- 가린 그림: 수사에서 확인한 점검구 안팎 대조 그림"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 728,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-MM-A02 안에서 닿지 않는 고정 — MM",
+          "location": "T4-MM-A02",
+          "quote": "- 노출되는 영역: 외부 고정구/수면/안쪽 벽/정면 출입문"
+        }
+      ],
+      "inspectionScope": "v4:4:knowledge:external-fastening",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "Relational section only. Rectangle denotes confirmed external fastening, not a newly specified physical lock, bolt count or construction recipe. Native world has no exact hatch anchor."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c4_storage_boundary": {
+      "title": "안쪽 문 뒤에서 끝난 곳",
+      "image": "ui/v4/investigation_diagrams_v4/c4_storage_boundary.webp",
+      "sha256": "846cdefafbc5e1d3ca7777d633d2e46e2d6e4d83d7e4d2b45fd3fd75d8ff7550",
+      "svg": "ui/v4/investigation_diagrams_v4/c4_storage_boundary.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "storage-and-wall",
+          "label": "막힌 수납 구획과 기존 외벽",
+          "polygon": [
+            [
+              0.61875,
+              0.26
+            ],
+            [
+              0.9125,
+              0.26
+            ],
+            [
+              0.9125,
+              0.81
+            ],
+            [
+              0.61875,
+              0.81
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "hatch",
+          "label": "점검구",
+          "polygon": [
+            [
+              0.2125,
+              0.56
+            ],
+            [
+              0.375,
+              0.56
+            ],
+            [
+              0.375,
+              0.73
+            ],
+            [
+              0.2125,
+              0.73
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "front-hall",
+          "label": "홀",
+          "polygon": [
+            [
+              0.09375,
+              0.275
+            ],
+            [
+              0.5,
+              0.275
+            ],
+            [
+              0.5,
+              0.525
+            ],
+            [
+              0.09375,
+              0.525
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "inside-door",
+          "label": "안쪽 문",
+          "polygon": [
+            [
+              0.6,
+              0.435
+            ],
+            [
+              0.6375,
+              0.435
+            ],
+            [
+              0.6375,
+              0.635
+            ],
+            [
+              0.6,
+              0.635
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 107,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-09 안쪽 문의 실제 끝",
+          "location": "I4-09",
+          "quote": "(미오와 나나가 안쪽 문을 다시 연다. 코토가 입구에서 보고 쇼가 안을 살핀다. 작은 수납 구획이며 바깥으로 나가는 길은 없다. 뒤의 벽과 모서리,사람이 지나갈 다른 틈을 확인한다.)"
+        },
+        {
+          "file": "14b1_4장_첫_수사_초고.md",
+          "line": 121,
+          "fileSha256": "3f15d267d63e3590b86548b34476a8a930fc19bccc8b795d971ec87d1c889242",
+          "heading": "I4-10 원래 건물의 벽",
+          "location": "I4-10",
+          "quote": "(새 벽과 원래 건물의 외벽을 나누어 본다. 높은 설비창의 고정 망과 원래 한 출입구,점검구 위치를 13일차 점검 때 본 공용 도면과14일차에 남긴 미오의 보호 기록을 대조한다.)"
+        },
+        {
+          "file": "14b3_4장_사진을_보는_사람_초고.md",
+          "line": 195,
+          "fileSha256": "0b07d49b5e9bb0bbcd1133ff7248244beb4fde975a794967105aded8bedae8e8",
+          "heading": "I4-40 두 사진 사이의 공간",
+          "location": "I4-40",
+          "quote": "(세 경로 모두 장소 사진을 나란히 확인한다.13일차에는 한 홀과 원래 금속 덮개,15일차에는 같은 위치의 바닥과 새 벽/천장/문이 있다. 기존 외벽의 모서리/덮개 위치를 맞춰 본다.)"
+        },
+        {
+          "file": "14b3_4장_사진을_보는_사람_초고.md",
+          "line": 205,
+          "fileSha256": "0b07d49b5e9bb0bbcd1133ff7248244beb4fde975a794967105aded8bedae8e8",
+          "heading": "I4-41 닫혀 있던 때의 사진",
+          "location": "I4-41",
+          "quote": "(15일차의 바닥 사진을 본다. 면담 전 금속 덮개는 닫혀 있었다. 손은 걸려 있지 않다.)"
+        },
+        {
+          "file": "166_4장_재판_형식별_연속대본.md",
+          "line": 109,
+          "fileSha256": "205e772e4696836716a698bfa0e3d84f3025d87a1f9c3547140e2532460097bd",
+          "heading": "T4-MM-01 끝이라고 적힌 안쪽 — 발굴 이매지네이션",
+          "location": "T4-MM-01",
+          "quote": "(이미 본 자료를 바탕으로 한 평면이다.블록을 걷으면 바깥으로 나가는 문처럼 그려진 선 뒤의 실제 수납 구획과 기존 외벽이 드러난다.이 그림이 마법을 무효화하거나 레이의 방을 현재 열어 보는 것은 아니다.)"
+        },
+        {
+          "file": "166_4장_재판_형식별_연속대본.md",
+          "line": 114,
+          "fileSha256": "205e772e4696836716a698bfa0e3d84f3025d87a1f9c3547140e2532460097bd",
+          "heading": "T4-MM-01 끝이라고 적힌 안쪽 — 발굴 이매지네이션",
+          "location": "T4-MM-01",
+          "quote": "- B 막힌 수납 구획과 그 뒤에 남아 있는 기존 외벽."
+        }
+      ],
+      "inspectionScope": "v4:4:knowledge:photo-comparison",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "Source topology only. No invented external passage, metric room proportions, new room opening or interior photographic coverage."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c5_inventory_fragment": {
+      "title": "보관실에서 기록한 칸",
+      "image": "ui/v4/investigation_diagrams_v4/c5_inventory_fragment.webp",
+      "sha256": "398209d5360957f8b31f33416b81ca13262e7083a9ce53e8f7b73b92f948bb7d",
+      "svg": "ui/v4/investigation_diagrams_v4/c5_inventory_fragment.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "cell-A",
+          "label": "A칸",
+          "polygon": [
+            [
+              0.159375,
+              0.315
+            ],
+            [
+              0.253125,
+              0.315
+            ],
+            [
+              0.253125,
+              0.465
+            ],
+            [
+              0.159375,
+              0.465
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cell-B",
+          "label": "B칸",
+          "polygon": [
+            [
+              0.453125,
+              0.315
+            ],
+            [
+              0.546875,
+              0.315
+            ],
+            [
+              0.546875,
+              0.465
+            ],
+            [
+              0.453125,
+              0.465
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cell-C",
+          "label": "C칸",
+          "polygon": [
+            [
+              0.746875,
+              0.315
+            ],
+            [
+              0.840625,
+              0.315
+            ],
+            [
+              0.840625,
+              0.465
+            ],
+            [
+              0.746875,
+              0.465
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "D-fragment",
+          "label": "D칸 가장자리 잔편",
+          "polygon": [
+            [
+              0.084375,
+              0.665
+            ],
+            [
+              0.140625,
+              0.665
+            ],
+            [
+              0.13625,
+              0.68
+            ],
+            [
+              0.14625,
+              0.694
+            ],
+            [
+              0.13875,
+              0.71
+            ],
+            [
+              0.145,
+              0.724
+            ],
+            [
+              0.08125,
+              0.724
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "cell-D",
+          "label": "D칸",
+          "polygon": [
+            [
+              0.159375,
+              0.59
+            ],
+            [
+              0.253125,
+              0.59
+            ],
+            [
+              0.253125,
+              0.74
+            ],
+            [
+              0.159375,
+              0.74
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cell-E",
+          "label": "E칸",
+          "polygon": [
+            [
+              0.453125,
+              0.59
+            ],
+            [
+              0.546875,
+              0.59
+            ],
+            [
+              0.546875,
+              0.74
+            ],
+            [
+              0.453125,
+              0.74
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cell-F",
+          "label": "F칸",
+          "polygon": [
+            [
+              0.746875,
+              0.59
+            ],
+            [
+              0.840625,
+              0.59
+            ],
+            [
+              0.840625,
+              0.74
+            ],
+            [
+              0.746875,
+              0.74
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 17,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-20 가운데의 빈칸",
+          "location": "I5-20",
+          "quote": "(R-7상자를 연다.용기 다섯 개가 남아 있다.D칸이 비어 있다.나나가 자기 표를 책상에 놓고 하나씩 맞춘다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 29,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-21 찢어진 식별 종이",
+          "location": "I5-21",
+          "quote": "(D칸 가장자리에 얇은 식별 포장 종이의 일부가 남아 있다.원래 개별 용기 주변에 둘러져 있던 것으로,현재 다른 다섯 칸의 온전한 종이와 비교할 수 있다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 31,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-21 찢어진 식별 종이",
+          "location": "I5-21",
+          "quote": "(남은 부분에는 R-7의 일부 인쇄와 식별 띠가 있다.나나는 손으로 떼지 않고 먼저 현재 모양을 기록하게 한다.린은 그 위치를 그린다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 37,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-21 찢어진 식별 종이",
+          "location": "I5-21",
+          "quote": "(세 사람이 위치와 인쇄를 남긴 뒤,린이 이미 찢겨 떨어져 있는 D칸의 조각을 새로 찢지 않고 분리해 일반 종이 봉투에 담는다.나나가 발견 위치와 함께 확인한 세 사람의 이름을 쓰고,미오가 봉투를 가방 바깥 주머니에 넣는다.다른 다섯 칸의 포장은 건드리지 않는다.호텔로 돌아가 대조할 현재 실물은 이 조각이다.)"
+        },
+        {
+          "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+          "line": 573,
+          "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+          "heading": "T5-SPOT-A01 원래 조각이 남은 칸 — SPOT",
+          "location": "T5-SPOT-A01",
+          "quote": "- 후보/표시 그림: 보관실 재고 사진.영역A~F=개별 용기 칸의 실제 잔편/물건.정답 마스크는 D칸의 포장 잔편.칸 전체 빈 배경 클릭과 잔편 클릭을 구별해요."
+        }
+      ],
+      "inspectionScope": "v4:E5-10",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "Inventory comparison layout, not a newly taken photograph. The 3x2 UI arrangement is not asserted as metric shelf/case geometry. Only the actual fragment polygon is the answer, not the empty D cell."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c5_packaging_warning": {
+      "title": "회수한 포장의 표시",
+      "image": "ui/v4/investigation_diagrams_v4/c5_packaging_warning.webp",
+      "sha256": "c0b219780a40c1c872e1de23a425beb80ae2ec33653aff330b22a190fcab6284",
+      "svg": "ui/v4/investigation_diagrams_v4/c5_packaging_warning.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "warning",
+          "label": "식용 금지 경고",
+          "polygon": [
+            [
+              0.146875,
+              0.44
+            ],
+            [
+              0.334375,
+              0.44
+            ],
+            [
+              0.334375,
+              0.525
+            ],
+            [
+              0.146875,
+              0.525
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "fold",
+          "label": "접힌 빈 부분",
+          "polygon": [
+            [
+              0.125,
+              0.535
+            ],
+            [
+              0.3375,
+              0.535
+            ],
+            [
+              0.3375,
+              0.575
+            ],
+            [
+              0.125,
+              0.575
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "D-paper",
+          "label": "D칸 조각",
+          "polygon": [
+            [
+              0.4375,
+              0.35
+            ],
+            [
+              0.7,
+              0.35
+            ],
+            [
+              0.7,
+              0.575
+            ],
+            [
+              0.43125,
+              0.575
+            ],
+            [
+              0.44375,
+              0.53
+            ],
+            [
+              0.425,
+              0.485
+            ],
+            [
+              0.440625,
+              0.44
+            ],
+            [
+              0.421875,
+              0.395
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 285,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "(가방 안감의 접힌 부분에 작은 식별 종이 조각이 끼어 있다.린은 잡아당겨 찢지 않고 있는 상태를 먼저 보인다.인쇄 띠/찢어진 가장자리가 보관실D칸에 남은 조각과 맞물린다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 327,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "(가방 쪽 조각에는「식용 금지」문구가 읽히고,용기를 감싸고 있던 접힌 선이 남아 있다.찢어진 가장자리는 D칸의 나머지와 이어진다.미오는 준비대에서 아카리가 풀어 가방에 넣던 얇은 포장을 떠올린다.그때는 자기 방향에서 문구를 읽지 못했다.)"
+        },
+        {
+          "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+          "line": 757,
+          "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+          "heading": "T5-MM-A02 경고를 읽을 방향 — MM",
+          "location": "T5-MM-A02",
+          "quote": "- 가린 그림: 수사에서 이미 회수·확인한 D 포장 기록 그림"
+        },
+        {
+          "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+          "line": 759,
+          "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+          "heading": "T5-MM-A02 경고를 읽을 방향 — MM",
+          "location": "T5-MM-A02",
+          "quote": "- 노출되는 영역: 식용 금지 경고/포장 접힌 빈 부분/가방 전체/컵 손잡이"
+        }
+      ],
+      "inspectionScope": "v4:E5-16",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "The label is the exact already-read phrase only; paper contours/fold drawing are illustrative, not a new microscopic identification measurement."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c5_cap_strip": {
+      "title": "마개와 몸체 사이",
+      "image": "ui/v4/investigation_diagrams_v4/c5_cap_strip.webp",
+      "sha256": "35697155c1182a61650cf17e7bb22b6d7f0b49cad3e1c9b0ea56fde377cc18f8",
+      "svg": "ui/v4/investigation_diagrams_v4/c5_cap_strip.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "strip-end",
+          "label": "마개와 몸체를 잇던 띠의 끊긴 끝",
+          "polygon": [
+            [
+              0.705,
+              0.345
+            ],
+            [
+              0.73125,
+              0.345
+            ],
+            [
+              0.73125,
+              0.415
+            ],
+            [
+              0.705,
+              0.415
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "bottle-bottom",
+          "label": "병 바닥",
+          "polygon": [
+            [
+              0.65625,
+              0.675
+            ],
+            [
+              0.79375,
+              0.675
+            ],
+            [
+              0.79375,
+              0.725
+            ],
+            [
+              0.65625,
+              0.725
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cap-top",
+          "label": "마개 윗면",
+          "polygon": [
+            [
+              0.640625,
+              0.29
+            ],
+            [
+              0.809375,
+              0.29
+            ],
+            [
+              0.809375,
+              0.35
+            ],
+            [
+              0.640625,
+              0.35
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "recovered-strip",
+          "label": "따로 회수한 띠",
+          "polygon": [
+            [
+              0.2625,
+              0.345
+            ],
+            [
+              0.34375,
+              0.345
+            ],
+            [
+              0.34375,
+              0.415
+            ],
+            [
+              0.2625,
+              0.415
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 335,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "(안감에 함께 끼어 있던 좁은 마개 띠 조각도 확인한다.회수된 D마개에 남은 인쇄/찢어진 끝과 이어진다.린과 쇼가 실제 용기의 몸체와 마개를 같이 본다.몸체의 별도 뚫림/파손,끊긴 띠를 다시 이어 붙인 흔적은 없다.투명한 내용물이 언제 줄었는지 추측해 시간을 정하는 검사는 아니다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 337,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "[미오] 이 띠, 뚜껑 열면서 끊는 것도 봤어. 포장 풀고 바로. 나나가 떠난 뒤였어."
+        },
+        {
+          "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+          "line": 785,
+          "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+          "heading": "T5-MM-A03 마개와 몸체 사이 — MM",
+          "location": "T5-MM-A03",
+          "quote": "- 가린 그림: 수사에서 확인한 회수D의 마개/몸체/봉함띠 대조 그림"
+        },
+        {
+          "file": "185_5장_재판_반복논의와_지목_연속대본.md",
+          "line": 787,
+          "fileSha256": "c0d5728b2ac6884a5c0a65e17d58ad69ee5ad28d166f2f7027833262c74df075",
+          "heading": "T5-MM-A03 마개와 몸체 사이 — MM",
+          "location": "T5-MM-A03",
+          "quote": "- 노출되는 영역: 마개와 몸체를 잇는 끊긴 띠/컵 테두리/가방 지퍼/병 바닥"
+        }
+      ],
+      "inspectionScope": "v4:E5-17",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "Schematic joint only; bottle form, motif and torn outline do not add dose/quantity, manufacturing details, new hole or repair."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c5_two_joining_boundaries": {
+      "title": "서로 이어지는 두 경계",
+      "image": "ui/v4/investigation_diagrams_v4/c5_two_joining_boundaries.webp",
+      "sha256": "c19035d14668415f203ca5f90d32aaf056bdbb3c63c81847b5ba0da78c13ff37",
+      "svg": "ui/v4/investigation_diagrams_v4/c5_two_joining_boundaries.svg",
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "paper-left-edge",
+          "label": "포장 종이의 찢긴 경계",
+          "polygon": [
+            [
+              0.395,
+              0.328
+            ],
+            [
+              0.408125,
+              0.328
+            ],
+            [
+              0.3925,
+              0.375
+            ],
+            [
+              0.41125,
+              0.42
+            ],
+            [
+              0.395625,
+              0.465
+            ],
+            [
+              0.414375,
+              0.51
+            ],
+            [
+              0.401875,
+              0.557
+            ],
+            [
+              0.391875,
+              0.557
+            ],
+            [
+              0.404375,
+              0.51
+            ],
+            [
+              0.385625,
+              0.465
+            ],
+            [
+              0.40125,
+              0.42
+            ],
+            [
+              0.3825,
+              0.375
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "paper-right-edge",
+          "label": "D칸 종이의 찢긴 경계",
+          "polygon": [
+            [
+              0.4325,
+              0.328
+            ],
+            [
+              0.4425,
+              0.328
+            ],
+            [
+              0.426875,
+              0.375
+            ],
+            [
+              0.445625,
+              0.42
+            ],
+            [
+              0.43,
+              0.465
+            ],
+            [
+              0.44875,
+              0.51
+            ],
+            [
+              0.43625,
+              0.557
+            ],
+            [
+              0.42625,
+              0.557
+            ],
+            [
+              0.43875,
+              0.51
+            ],
+            [
+              0.42,
+              0.465
+            ],
+            [
+              0.435625,
+              0.42
+            ],
+            [
+              0.416875,
+              0.375
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "strip-left-edge",
+          "label": "회수 띠의 찢긴 경계",
+          "polygon": [
+            [
+              0.358125,
+              0.677
+            ],
+            [
+              0.366875,
+              0.677
+            ],
+            [
+              0.385625,
+              0.698
+            ],
+            [
+              0.37,
+              0.717
+            ],
+            [
+              0.38875,
+              0.737
+            ],
+            [
+              0.38,
+              0.737
+            ],
+            [
+              0.36125,
+              0.717
+            ],
+            [
+              0.376875,
+              0.698
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "strip-right-edge",
+          "label": "남은 띠의 찢긴 경계",
+          "polygon": [
+            [
+              0.43625,
+              0.677
+            ],
+            [
+              0.445,
+              0.677
+            ],
+            [
+              0.46375,
+              0.698
+            ],
+            [
+              0.448125,
+              0.717
+            ],
+            [
+              0.466875,
+              0.737
+            ],
+            [
+              0.458125,
+              0.737
+            ],
+            [
+              0.439375,
+              0.717
+            ],
+            [
+              0.455,
+              0.698
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "whole-paper",
+          "label": "종이 전체 모양",
+          "polygon": [
+            [
+              0.1125,
+              0.33
+            ],
+            [
+              0.33125,
+              0.33
+            ],
+            [
+              0.33125,
+              0.555
+            ],
+            [
+              0.1125,
+              0.555
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "right-paper",
+          "label": "D칸 조각 전체",
+          "polygon": [
+            [
+              0.49375,
+              0.33
+            ],
+            [
+              0.7,
+              0.33
+            ],
+            [
+              0.7,
+              0.555
+            ],
+            [
+              0.49375,
+              0.555
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "cap-strip-other",
+          "label": "띠의 가운데",
+          "polygon": [
+            [
+              0.16875,
+              0.68
+            ],
+            [
+              0.3125,
+              0.68
+            ],
+            [
+              0.3125,
+              0.735
+            ],
+            [
+              0.16875,
+              0.735
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 285,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "(가방 안감의 접힌 부분에 작은 식별 종이 조각이 끼어 있다.린은 잡아당겨 찢지 않고 있는 상태를 먼저 보인다.인쇄 띠/찢어진 가장자리가 보관실D칸에 남은 조각과 맞물린다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 327,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "(가방 쪽 조각에는「식용 금지」문구가 읽히고,용기를 감싸고 있던 접힌 선이 남아 있다.찢어진 가장자리는 D칸의 나머지와 이어진다.미오는 준비대에서 아카리가 풀어 가방에 넣던 얇은 포장을 떠올린다.그때는 자기 방향에서 문구를 읽지 못했다.)"
+        },
+        {
+          "file": "15b2_5장_돌아오지_않은_하나_초고.md",
+          "line": 335,
+          "fileSha256": "a827fd9f8d2fe2165f5859544b97ffa959fa889eee191faf1075f4c43728c4a7",
+          "heading": "I5-36 맞물리는 쪽",
+          "location": "I5-36",
+          "quote": "(안감에 함께 끼어 있던 좁은 마개 띠 조각도 확인한다.회수된 D마개에 남은 인쇄/찢어진 끝과 이어진다.린과 쇼가 실제 용기의 몸체와 마개를 같이 본다.몸체의 별도 뚫림/파손,끊긴 띠를 다시 이어 붙인 흔적은 없다.투명한 내용물이 언제 줄었는지 추측해 시간을 정하는 검사는 아니다.)"
+        },
+        {
+          "file": "167_5장_재판_형식별_연속대본.md",
+          "line": 103,
+          "fileSha256": "0bd5da3ec11b1fddc5ac5b6a2a91096f7152a42a91a0cc0dd6d5a5980f116c3a",
+          "heading": "T5-MM-01 비슷한 병이 아니라 이어지는 끝 — 발굴 이매지네이션",
+          "location": "T5-MM-01",
+          "quote": "(블록 밑은 이미 수사에서 확인한 포장과 띠의 비교 도식이다.실물 병을 새로 개봉하지 않는다.그림의 글씨는 알려진 식별 인쇄이며 지금 아카리의 이름을 발견하는 것이 아니다.)"
+        },
+        {
+          "file": "167_5장_재판_형식별_연속대본.md",
+          "line": 105,
+          "fileSha256": "0bd5da3ec11b1fddc5ac5b6a2a91096f7152a42a91a0cc0dd6d5a5980f116c3a",
+          "heading": "T5-MM-01 비슷한 병이 아니라 이어지는 끝 — 발굴 이매지네이션",
+          "location": "T5-MM-01",
+          "quote": "**찾을 부분:** 가방의 포장/보관 D칸의 조각과 회수D 마개의 띠가 각각 이어지는 두 경계."
+        }
+      ],
+      "inspectionScope": "v4:E5-17",
+      "newEvidence": false,
+      "presentation": "Source-confirmed inspection aid, not a newly discovered document/photo. Diagram distances and edge motifs are illustrative, not new measured clue values.",
+      "worldAnchors": [],
+      "limitations": [
+        "One selectable comparison unit covers both joined pairs, not an invented requirement for two simultaneous inputs. No new trace or material is granted."
+      ],
+      "rasterSize": [
+        4800,
+        3000
+      ],
+      "visualReview": "directly inspected 2026-10-29; legible source text, no correctness border, correct temporal scope; runtime not yet exercised"
+    },
+    "c1_floor_ice": {
+      "title": "현장 바닥의 결빙",
+      "image": "art/inspection_v4/delivery/floor_ice_builtin_r1.webp",
+      "sha256": "f5702b8da42a518e8d92efc760370ae2fbfb79cf9917fce52f417b6da9f6f5c6",
+      "svg": null,
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "floor-ice",
+          "label": "바닥의 실제 결빙",
+          "polygon": [
+            [
+              0.267,
+              0.594
+            ],
+            [
+              0.34,
+              0.54
+            ],
+            [
+              0.385,
+              0.495
+            ],
+            [
+              0.475,
+              0.454
+            ],
+            [
+              0.529,
+              0.45
+            ],
+            [
+              0.589,
+              0.479
+            ],
+            [
+              0.644,
+              0.512
+            ],
+            [
+              0.696,
+              0.532
+            ],
+            [
+              0.672,
+              0.557
+            ],
+            [
+              0.766,
+              0.586
+            ],
+            [
+              0.812,
+              0.623
+            ],
+            [
+              0.797,
+              0.67
+            ],
+            [
+              0.809,
+              0.727
+            ],
+            [
+              0.803,
+              0.762
+            ],
+            [
+              0.739,
+              0.783
+            ],
+            [
+              0.679,
+              0.816
+            ],
+            [
+              0.626,
+              0.818
+            ],
+            [
+              0.586,
+              0.791
+            ],
+            [
+              0.524,
+              0.789
+            ],
+            [
+              0.461,
+              0.762
+            ],
+            [
+              0.404,
+              0.726
+            ],
+            [
+              0.366,
+              0.69
+            ],
+            [
+              0.312,
+              0.658
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "table",
+          "label": "테이블 위",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              0.38,
+              0.075
+            ],
+            [
+              0.38,
+              0.15
+            ],
+            [
+              0,
+              0.075
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "sill",
+          "label": "고정 창턱",
+          "polygon": [
+            [
+              0.453,
+              0.073
+            ],
+            [
+              0.768,
+              0.073
+            ],
+            [
+              0.768,
+              0.104
+            ],
+            [
+              0.453,
+              0.104
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "chair",
+          "label": "의자 다리",
+          "polygon": [
+            [
+              0.015,
+              0.315
+            ],
+            [
+              0.083,
+              0.315
+            ],
+            [
+              0.083,
+              0.618
+            ],
+            [
+              0.045,
+              0.626
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "11b_1장_수사_초고.md",
+          "line": 613,
+          "fileSha256": "f8d045e001f974f3f9e191ff9148a6f16e7a19bcb519027f96013dffd348b440",
+          "heading": "I-10 사고가 놓일 자리",
+          "location": "I-10",
+          "quote": "## I-10 사고가 놓일 자리"
+        },
+        {
+          "file": "11b_1장_수사_초고.md",
+          "line": 639,
+          "fileSha256": "f8d045e001f974f3f9e191ff9148a6f16e7a19bcb519027f96013dffd348b440",
+          "heading": "I-10 사고가 놓일 자리",
+          "location": "I-10",
+          "quote": "(E1-11. 낙상·문 사고·서리만으로 사인을 설명하는 가설을 배제할 근거를 플레이어에게 먼저 준다. 이후 재판에서 갑자기 새로운 상처 형태를 공개하지 않는다.)"
+        },
+        {
+          "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+          "line": 716,
+          "fileSha256": "5c0ae1ae5d941aaddb0a3de0f14f7255353c5e9919811ad2cfe6151361e68a8a",
+          "heading": "T1-MM-A02 얼음이 남은 실제 위치 — MM",
+          "location": "T1-MM-A02",
+          "quote": "- 가린 그림: 수사 때의 현장 바닥 사진"
+        },
+        {
+          "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+          "line": 718,
+          "fileSha256": "5c0ae1ae5d941aaddb0a3de0f14f7255353c5e9919811ad2cfe6151361e68a8a",
+          "heading": "T1-MM-A02 얼음이 남은 실제 위치 — MM",
+          "location": "T1-MM-A02",
+          "quote": "- 노출되는 영역: 바닥 결빙/목 부위/테이블 위/고정 창"
+        }
+      ],
+      "inspectionScope": "v4:E1-11",
+      "newEvidence": false,
+      "presentation": "New original-project inspection illustration, same confirmed floor ice and room materials; no actor/time/injury evidence added.",
+      "worldAnchors": [],
+      "limitations": [
+        "No identity, freezing time or neck-ice mechanism inferred. Outside ice is not a neck choice and does not play that source-specific wrong line."
+      ],
+      "rasterSize": [
+        6688,
+        3764
+      ],
+      "visualReview": "Directly inspected HD floor-local ice, dry floor boundary, table/chair/window distinction; no people/new wounds."
+    },
+    "c4_closed_hatch_photo": {
+      "title": "모임 전의 닫힌 점검구 사진",
+      "image": "art/inspection_v4/delivery/closed_hatch_earlier_builtin_r1.webp",
+      "sha256": "77e4115093c6ec37629e25625ad34e08c4c8e2cc876da830494c153438d8fc9f",
+      "svg": null,
+      "coordinateSystem": "normalized-image-uv",
+      "regions": [
+        {
+          "id": "closed-cover",
+          "label": "완전히 닫힌 금속 덮개",
+          "polygon": [
+            [
+              0.475,
+              0.247
+            ],
+            [
+              0.874,
+              0.374
+            ],
+            [
+              0.773,
+              0.903
+            ],
+            [
+              0.229,
+              0.591
+            ]
+          ],
+          "correct": true
+        },
+        {
+          "id": "floor",
+          "label": "덮개 바깥 바닥",
+          "polygon": [
+            [
+              0.13,
+              0.34
+            ],
+            [
+              0.29,
+              0.25
+            ],
+            [
+              0.4,
+              0.33
+            ],
+            [
+              0.24,
+              0.43
+            ]
+          ],
+          "correct": false
+        },
+        {
+          "id": "outer-frame",
+          "label": "바깥 프레임",
+          "polygon": [
+            [
+              0.89,
+              0.4
+            ],
+            [
+              0.91,
+              0.415
+            ],
+            [
+              0.818,
+              0.87
+            ],
+            [
+              0.795,
+              0.87
+            ]
+          ],
+          "correct": false
+        }
+      ],
+      "source": [
+        {
+          "file": "14b3_4장_사진을_보는_사람_초고.md",
+          "line": 205,
+          "fileSha256": "0b07d49b5e9bb0bbcd1133ff7248244beb4fde975a794967105aded8bedae8e8",
+          "heading": "I4-41 닫혀 있던 때의 사진",
+          "location": "I4-41",
+          "quote": "(15일차의 바닥 사진을 본다. 면담 전 금속 덮개는 닫혀 있었다. 손은 걸려 있지 않다.)"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 754,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-MM-A03 사진의 닫힌 시점 — MM",
+          "location": "T4-MM-A03",
+          "quote": "- 가린 그림: 99와 수사에서 확인한 모임 전 점검구 사진.손이 처음 나온 때의 새 촬영으로 바꾸지 않아요."
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 755,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-MM-A03 사진의 닫힌 시점 — MM",
+          "location": "T4-MM-A03",
+          "quote": "- 지목 질문: 모임 전 사진에서 실제 확인할 수 있는 부분은?"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 756,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-MM-A03 사진의 닫힌 시점 — MM",
+          "location": "T4-MM-A03",
+          "quote": "- 노출되는 영역: 닫힌 덮개면/개방 뒤 내부/최초 손 사진이라는 가상 영역/정면문"
+        },
+        {
+          "file": "184_4장_재판_반복논의와_지목_연속대본.md",
+          "line": 757,
+          "fileSha256": "9e030c8db34b1960efe0e9619d69f516a5a5901794ce480150f04438935ef996",
+          "heading": "T4-MM-A03 사진의 닫힌 시점 — MM",
+          "location": "T4-MM-A03",
+          "quote": "- 정답 영역: 사진에 실제 찍힌 닫힌 덮개면"
+        }
+      ],
+      "inspectionScope": "v4:4:knowledge:closed-photo",
+      "newEvidence": false,
+      "presentation": "The same authored meeting-before closed-hatch photo, introduced during investigation before the later comparison.",
+      "worldAnchors": [],
+      "limitations": [
+        "No dawn or other new exact capture time, hand, body, opened interior, new fastening or extra photo is implied. The actual face of the closed cover is selectable; generic misses do not pretend a nonexistent first-hand photograph was selected."
+      ],
+      "rasterSize": [
+        6688,
+        3764
+      ],
+      "visualReview": "Directly inspected HD closed cover, matching frame/hinges/handle, no interior/people/new fastener/number; neutral lighting does not define dawn. Native display not yet exercised."
+    }
+  },
+  "unresolved": {},
+  "hiddenInformation": [
+    "No culprit names, votes, private phrase, attack image, precise missing time, dose or source-unread document content.",
+    "Internal region IDs/correctness are runtime-only and never baked as answer borders or labels."
+  ],
+  "reviewStatus": "Ten full-page diagrams directly inspected; run verify_v4_investigation_diagrams.py for source/UV/return and binding validation. Native visual acceptance remains separate."
+}

@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "comparison": {
+    "image": "ui/v4/documents_v4_runtime/contact_state_comparison.webp",
+    "coordinateSystem": "normalized-image-uv",
+    "answerRegionId": "normal-report",
+    "regions": [
+      {
+        "id": "operation-check",
+        "label": "작동 확인 칸",
+        "polygon": [
+          [
+            0.05,
+            0.195
+          ],
+          [
+            0.475,
+            0.195
+          ],
+          [
+            0.475,
+            0.465
+          ],
+          [
+            0.05,
+            0.465
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "normal-report",
+        "label": "정상 보고 칸",
+        "polygon": [
+          [
+            0.525,
+            0.195
+          ],
+          [
+            0.95,
+            0.195
+          ],
+          [
+            0.95,
+            0.465
+          ],
+          [
+            0.525,
+            0.465
+          ]
+        ],
+        "correct": true
+      },
+      {
+        "id": "private-appendix",
+        "label": "개인 질문 부록",
+        "polygon": [
+          [
+            0.525,
+            0.51
+          ],
+          [
+            0.95,
+            0.51
+          ],
+          [
+            0.95,
+            0.9
+          ],
+          [
+            0.525,
+            0.9
+          ]
+        ],
+        "correct": false,
+        "wrongVariant": "appendix"
+      },
+      {
+        "id": "paper-number",
+        "label": "종이 번호",
+        "polygon": [
+          [
+            0.059375,
+            0.735
+          ],
+          [
+            0.134375,
+            0.735
+          ],
+          [
+            0.134375,
+            0.82
+          ],
+          [
+            0.059375,
+            0.82
+          ]
+        ],
+        "correct": false
+      }
+    ],
+    "source": [
+      {
+        "file": "11a3_1장_셋째날과_발견_초고.md",
+        "line": 360,
+        "quote": "접속 시험 미완료",
+        "sha256": "c3200df86335f79300633615f561dfa9f983a2672bf6acab391bd4cebe843fc0"
+      },
+      {
+        "file": "11a3_1장_셋째날과_발견_초고.md",
+        "line": 374,
+        "quote": "통신 준비 완료",
+        "sha256": "c3200df86335f79300633615f561dfa9f983a2672bf6acab391bd4cebe843fc0"
+      },
+      {
+        "file": "11a3_1장_셋째날과_발견_초고.md",
+        "line": 454,
+        "quote": "통신 확인 안 됨, 원인 조사 중",
+        "sha256": "c3200df86335f79300633615f561dfa9f983a2672bf6acab391bd4cebe843fc0"
+      },
+      {
+        "file": "11b_1장_수사_초고.md",
+        "line": 579,
+        "quote": "작동 확인 불가",
+        "sha256": "f8d045e001f974f3f9e191ff9148a6f16e7a19bcb519027f96013dffd348b440"
+      },
+      {
+        "file": "181_1장_재판_반복논의와_지목_연속대본.md",
+        "line": 746,
+        "quote": "작동 확인 칸/정상 보고 칸/개인 질문 부록/종이 번호",
+        "sha256": "5c0ae1ae5d941aaddb0a3de0f14f7255353c5e9919811ad2cfe6151361e68a8a"
+      }
+    ],
+    "notNewEvidence": true,
+    "privateContentsShown": false,
+    "notes": "Only verbatim already-observed fields. Comparison arrangement is UI, not an invented in-world original or a disclosed private question."
+  },
+  "accessPlan": {
+    "image": "ui/v4/documents_v4_runtime/service_lounge_access_plan.webp",
+    "coordinateSystem": "normalized-image-uv",
+    "answerRegionId": "door_A",
+    "regions": [
+      {
+        "id": "door_A",
+        "label": "전면 문 A",
+        "polygon": [
+          [
+            0.403125,
+            0.785
+          ],
+          [
+            0.534375,
+            0.785
+          ],
+          [
+            0.534375,
+            0.845
+          ],
+          [
+            0.403125,
+            0.845
+          ]
+        ],
+        "correct": true
+      },
+      {
+        "id": "door_B",
+        "label": "뒤 보수문 B",
+        "polygon": [
+          [
+            0.5609375,
+            0.235
+          ],
+          [
+            0.7015625,
+            0.235
+          ],
+          [
+            0.7015625,
+            0.295
+          ],
+          [
+            0.5609375,
+            0.295
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "fixed_window",
+        "label": "고정 창",
+        "polygon": [
+          [
+            0.4140625,
+            0.235
+          ],
+          [
+            0.5234375,
+            0.235
+          ],
+          [
+            0.5234375,
+            0.295
+          ],
+          [
+            0.4140625,
+            0.295
+          ]
+        ],
+        "correct": false
+      },
+      {
+        "id": "printer",
+        "label": "프린터",
+        "polygon": [
+          [
+            0.384375,
+            0.499
+          ],
+          [
+            0.478125,
+            0.499
+          ],
+          [
+            0.478125,
+            0.559
+          ],
+          [
+            0.384375,
+            0.559
+          ]
+        ],
+        "correct": false
+      }
+    ],
+    "sourceWorld": "art/space_v4/runtime_v1/world.json",
+    "worldSha256": "cddbae8db22a49859df0f883e809d438a85190af98d5df81417f6660f815bcdc",
+    "sourceTargets": {
+      "door_A": [
+        0,
+        1.2,
+        4
+      ],
+      "door_B": [
+        2.6,
+        1.2,
+        -3.8
+      ],
+      "printer": [
+        -0.6,
+        1.1,
+        -0.2
+      ],
+      "fixed_window": [
+        0,
+        1.6,
+        -3.8
+      ]
+    },
+    "notNewEvidence": true,
+    "worldProjection": "x/z, exact existing room bounds and four existing targets; no witness positions or new opening"
+  },
+  "preservedOriginals": [
+    "ui/v4/documents_hd/report_16_excerpt.webp",
+    "ui/v4/documents_hd/report_17_excerpt.webp"
+  ],
+  "rasterSize": [
+    3200,
+    2000
+  ],
+  "vectorText": "real Pretendard glyph outlines; editable source script and SVG data-label strings"
+}

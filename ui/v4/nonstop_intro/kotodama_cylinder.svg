@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs>
+ <mask id="body"><circle cx="300" cy="300" r="278" fill="white"/><g fill="black"><circle cx="300" cy="133" r="66"/><circle cx="459" cy="248" r="66"/><circle cx="398" cy="435" r="66"/><circle cx="202" cy="435" r="66"/><circle cx="141" cy="248" r="66"/><circle cx="300" cy="300" r="48"/></g></mask>
+ <pattern id="scan" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-32)"><path d="M0 0V12" stroke="#e5ffff" stroke-opacity=".32" stroke-width="3"/></pattern>
+ <radialGradient id="blue"><stop stop-color="#086baf" stop-opacity=".45"/><stop offset=".8" stop-color="#52e5ff" stop-opacity=".74"/><stop offset="1" stop-color="#aefcff" stop-opacity=".8"/></radialGradient>
+</defs>
+<g mask="url(#body)"><circle cx="300" cy="300" r="280" fill="url(#blue)"/><circle cx="300" cy="300" r="280" fill="url(#scan)"/><path d="M10 314H590M300 10V590M64 130L536 470M64 470L536 130" fill="none" stroke="#bafaff" stroke-opacity=".22" stroke-width="9"/></g>
+<g fill="none" stroke="#b8faff"><circle cx="300" cy="300" r="277" stroke-width="5"/><circle cx="300" cy="300" r="268" stroke-width="2"/><circle cx="300" cy="300" r="52" stroke-width="4"/><g stroke-width="3"><circle cx="300" cy="133" r="66"/><circle cx="459" cy="248" r="66"/><circle cx="398" cy="435" r="66"/><circle cx="202" cy="435" r="66"/><circle cx="141" cy="248" r="66"/></g></g>
+<g fill="none" stroke="#0a264c" stroke-width="8"><circle cx="300" cy="133" r="70"/><circle cx="459" cy="248" r="70"/><circle cx="398" cy="435" r="70"/><circle cx="202" cy="435" r="70"/><circle cx="141" cy="248" r="70"/></g>
+<path d="M282 10H318L300 43Z" fill="#f4ffff"/>
+</svg>

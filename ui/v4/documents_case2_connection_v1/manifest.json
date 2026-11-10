@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "image": "ui/v4/documents_case2_connection_v1/audio_connection.webp",
+  "sha256": "a7dcc8b4a40adfca1eb440eba006783e6dc562d900aae4f9ba8e46a25d03c397",
+  "coordinateSystem": "normalized-image-uv",
+  "answerRegionId": "recorder-separate-input-end",
+  "regions": [
+    {
+      "id": "microphone-switch",
+      "label": "마이크 전원 스위치",
+      "polygon": [
+        [
+          0.06875,
+          0.34
+        ],
+        [
+          0.24375,
+          0.34
+        ],
+        [
+          0.24375,
+          0.42
+        ],
+        [
+          0.06875,
+          0.42
+        ]
+      ],
+      "correct": false,
+      "wrongVariant": "microphone-switch"
+    },
+    {
+      "id": "recorder-separate-input-end",
+      "label": "녹음기 선의 별도 입력 끝",
+      "polygon": [
+        [
+          0.415625,
+          0.53
+        ],
+        [
+          0.578125,
+          0.53
+        ],
+        [
+          0.578125,
+          0.61
+        ],
+        [
+          0.415625,
+          0.61
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "id": "recorder-card-slot",
+      "label": "녹음기 저장 카드 칸",
+      "polygon": [
+        [
+          0.06875,
+          0.75
+        ],
+        [
+          0.24375,
+          0.75
+        ],
+        [
+          0.24375,
+          0.83
+        ],
+        [
+          0.06875,
+          0.83
+        ]
+      ],
+      "correct": false,
+      "wrongVariant": "card-slot"
+    },
+    {
+      "id": "speaker-output",
+      "label": "스피커로 나가는 쪽",
+      "polygon": [
+        [
+          0.7125,
+          0.425
+        ],
+        [
+          0.95625,
+          0.425
+        ],
+        [
+          0.95625,
+          0.575
+        ],
+        [
+          0.7125,
+          0.575
+        ]
+      ],
+      "correct": false,
+      "wrongVariant": "speaker-output"
+    }
+  ],
+  "evidenceId": "v4:E2-06",
+  "title": "낮의 시험과 수사에서 확인한 기기 연결",
+  "notNewEvidence": true,
+  "source": [
+    {
+      "file": "12a6_2장_두번째_무대_초고.md",
+      "line": 371,
+      "quote": "음향 탁자의 별도 입력으로 소리가 나온다",
+      "sha256": "e2794a83fcaa6de23b1e406ffde54a19bda6aa597957eb5cebbc3c3200979e19"
+    },
+    {
+      "file": "12b2_2장_공연장_수사_초고.md",
+      "line": 195,
+      "quote": "선이 꽂혀 있다",
+      "sha256": "48dba905bad9722c1797509f9aff4dece869658ee9a23f48fd0499e99d60046c"
+    },
+    {
+      "file": "12b2_2장_공연장_수사_초고.md",
+      "line": 197,
+      "quote": "카드 칸이 비었다",
+      "sha256": "48dba905bad9722c1797509f9aff4dece869658ee9a23f48fd0499e99d60046c"
+    },
+    {
+      "file": "12c2_2장_재판_목소리_초고.md",
+      "line": 179,
+      "quote": "기존 기기를 바탕으로 한 연결 도식",
+      "sha256": "8295c2003ed3b906de18c34f12b8286d289ced3de428fd1a007a27f7cd246674"
+    },
+    {
+      "file": "12c2_2장_재판_목소리_초고.md",
+      "line": 183,
+      "quote": "없던 분배기/무선 장치/새 카메라를 더하지 않는다",
+      "sha256": "8295c2003ed3b906de18c34f12b8286d289ced3de428fd1a007a27f7cd246674"
+    },
+    {
+      "file": "12c2_2장_재판_목소리_초고.md",
+      "line": 188,
+      "quote": "녹음기에서 음향 탁자의 별도 입력으로 가는 선 끝",
+      "sha256": "8295c2003ed3b906de18c34f12b8286d289ced3de428fd1a007a27f7cd246674"
+    }
+  ],
+  "layoutRole": "Topology of the explicitly authored microphone, public recorder, separate desk input, card slot and speaker output. No exact hardware socket shape, device-brand, live power/card state or new splitter/wireless device is asserted.",
+  "visualReview": "Directly viewed full3200x2000 WebP. Four different selectable elements and both separate input connections are legible. No live switch/card status is painted and no added splitter, radio or camera appears."
+}
