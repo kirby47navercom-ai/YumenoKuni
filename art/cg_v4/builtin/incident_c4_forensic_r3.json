@@ -1,0 +1,55 @@
+{
+  "id": "incident_c4_forensic_r3",
+  "logical_id": "incident_c4",
+  "kind": "incident",
+  "use_case": "precise-object-edit",
+  "source": "docs/design/rewrite_v4/14b1_4장_첫_수사_초고.md",
+  "source_sha256": "aa1a326ee46a588899233c7958d1358f4d4f5ac8482d939439044aa0df12e6a7",
+  "previous_selected": {
+    "logical_id": "incident_c4",
+    "kind": "incident",
+    "selected_id": "incident_c4_builtin_r2",
+    "metadata": "art/cg_v4/builtin/incident_c4_builtin_r2.json",
+    "source": "art/cg_v4/builtin/incident_c4_builtin_r2.webp",
+    "raw_4x": "art/hd_v4/cg/builtin/incident_c4_builtin_r2.webp",
+    "delivery": "art/cg_v4/delivery/incident_c4_builtin_r2.webp",
+    "webp": "art/cg_v4/delivery/incident_c4_builtin_r2.webp",
+    "size": [
+      6688,
+      3762
+    ],
+    "manuscript": "docs/design/rewrite_v4/14b1_4장_첫_수사_초고.md",
+    "manuscript_sha256": "62ac9a5ad497569eddaf18ed2194afc6fb7565137e3a06caa1aa92dc8ed28d22",
+    "source_review": "see builtin_visual_review.json; source inspection is distinct from runtime import",
+    "panel_grid": null,
+    "panel_uv_rectangles": null,
+    "runtime_integrated": false
+  },
+  "references": [
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c4_forensic_r2.webp"
+  ],
+  "reference_sha256": {
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c4_forensic_r2.webp": "d6fb92c9f403e7e75ffad7646d7f6f20755386ae581c324f40744967b61ff7a3"
+  },
+  "prompt": "Use case: precise-object-edit. EDIT this original project WIDE16:9 fictional mystery investigation illustration. This is a NON-GRAPHIC art-readability correction after confirmed death, fully clothed nonsexual, no attack/attacker. Change ONLY the readability/color/continuity of ALREADY EXISTING PURPLE BLOOD residue described below. Keep exact character/room/ink-cel style, camera, and ALL unaffected props/anatomy unchanged. Purple blood only; no red blood, exposed organs/bones/tissue, dismemberment, severe open wounds, labels, text, UI or new evidence. The EXISTING injury on the FOREGROUND LOWER-LEFT HAND must show a limited clearly visible vivid VIOLET blood trace (#B400D6) over the existing small superficial abrasion, with a correspondingly small clearly visible VIOLET contact stain at the EXISTING hatch-edge mark. Not merely a faint bruise or purple reflected light. Do not open or deform the hand, no gash/exposed tissue, new injury, massive bleeding, new neck/chest wound or blood pool. Keep foreground hand anatomically unchanged. KEEP OTHER hand on center-right cloth completely UNMARKED as corrected. Keep forehead bruise, wet closed camera bag, floor contact/body identity/current open hatch, all WATER colorless/clear with highlights. Purple liquid only at the injured hand and matching existing hatch-edge contact mark, not tinting the whole water.",
+  "evidence_contract": "forehead injury and caught-hand/edge trace, water distinct from blood, post-rescue location not original submerged body",
+  "side_policy": "unspecified anatomical side/angle/dimensions remain unspecified; preserve prior visible region for visual continuity, never treat new illustrative side as deduction proof",
+  "runtime_integrated": false,
+  "manuscript_sha256": "5e8a6578410c0e1e33fadc24836685b92e13d0a19275c61fdd3da99a0e2ff21f",
+  "tool": "built-in image_gen",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-5ac0aad5-0e80-42b5-b8ae-1cebc83c16ba.png",
+  "source_file": "art/cg_v4/builtin/incident_c4_forensic_r3.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "art/hd_v4/cg/builtin/incident_c4_forensic_r3.webp",
+  "delivery_file": "art/cg_v4/delivery/incident_c4_forensic_r3.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "8d9824359f4730cf35006b7061173f43d2ed7b0927eb6fd6cd120dc9340e86dc",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "visual_status": "generated; individual scene and HD acceptance pending"
+}

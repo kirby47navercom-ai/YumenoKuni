@@ -1,0 +1,132 @@
+{
+  "scope": "six selected scene sources individually opened;14actual incident crops+2object views inspected on3contact pages;6actual1:1HDsamples inspected",
+  "scenes": [
+    {
+      "logical_id": "incident_c1",
+      "selected_id": "incident_c1_forensic_r2",
+      "checks": {
+        "injury_region": "PASS: visible above collar, not obscured by hair",
+        "purple_trace": "PASS: non-bleeding bruise; no invented blood",
+        "posture": "PASS: hand relaxed instead of active chest grip, weight on floor",
+        "surroundings": "PASS: missing strip remains missing; printer/window kept"
+      },
+      "source": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "source_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+      "limits": "원고는 멍의 손가락 개수·정밀 각도·좌우를 확정하지 않았다. 그림 모양을 새 정답으로 쓰지 않는다.",
+      "regions": [
+        "incident_c1_neck_pressure",
+        "incident_c1_torn_report"
+      ]
+    },
+    {
+      "logical_id": "incident_c2",
+      "selected_id": "incident_c2_forensic_r3",
+      "checks": {
+        "injury_region": "PASS: head region checked at enlarged view; exposed skin near visible ear, no extra injury",
+        "purple_trace": "PASS: visible saturated violet flow at existing head/temple injury, apron colors retained as decoration",
+        "posture": "PASS: heavy supported body inside chest, same loosely caught fragment",
+        "surroundings": "PASS: two lid stays/two outside latches/ordinary weights, no rod/weapon inside chest"
+      },
+      "source": "docs/design/rewrite_v4/12b1_2장_호텔현장_초고.md",
+      "source_sha256": "d9ddcc640610f3fc9cb155e1fac8b2225152a59828ef6651b059b1f894f15f83",
+      "limits": "원고는 머리 타격을 확정한다. 피부 손상의 깊이/정확 좌우/각도/도구 단독 확정은 하지 않는다. 확대는 실제 보이는 머리/관자 흔적만 보여준다.",
+      "regions": [
+        "incident_c2_head_region",
+        "incident_c2_connector_and_cord"
+      ]
+    },
+    {
+      "logical_id": "incident_c3a",
+      "selected_id": "incident_c3a_forensic_r3",
+      "checks": {
+        "injury_region": "PASS: visible neck/collar origin rather than chest-only stain",
+        "purple_trace": "PASS: latest user-directed coherent violet pool below contact torso/shoulder and clothing, no anatomical gore",
+        "posture": "PASS: slumped wall/floor contact, slack fingers/open unresponsive eyes",
+        "surroundings": "PASS: fallen top hat/marker offcuts/mirror geometry retained"
+      },
+      "source": "docs/design/rewrite_v4/13b1_3장_아직_살아있는_사람_초고.md",
+      "source_sha256": "db4390b23b3ab291ea98768304d5ab53397ec9261de3edd6d03f8ce1d8ba1297",
+      "limits": "피부 손상은 비고어 표현이다. 살해 도구 치수·상처 깊이/방향을 그림으로 확정하지 않는다.",
+      "regions": [
+        "incident_c3a_neck_and_collar",
+        "incident_c3a_floor_offcuts"
+      ]
+    },
+    {
+      "logical_id": "incident_c3b",
+      "selected_id": "incident_c3b_forensic_r5",
+      "checks": {
+        "injury_region": "PASS: closer camera shows neck above original brown crewneck",
+        "purple_trace": "PASS: latest user-directed purple blood from neck/collar to bench edge and floor beneath head side; separate response cloth retained",
+        "posture": "PASS: open unfocused eyes/slack jaw/dropped hand, original body on left bench",
+        "surroundings": "PASS: removed invented white collar flap; no second body or attacker"
+      },
+      "source": "docs/design/rewrite_v4/13b2_3장_두번째_이름_초고.md",
+      "source_sha256": "40cbaee1f8c540e08c74d884b4c50c75fac199ba28c1563a18c6c53ee15be992",
+      "limits": "새 카메라 구도이며 이전 화면 픽셀 좌표를 핫스폿으로 재사용하지 않는다. 화면 밖으로 나간 인물을 사진 속 증인으로 발명하지 않는다.",
+      "regions": [
+        "incident_c3b_neck_response_cloth",
+        "incident_c3b_slack_hand",
+        "incident_c3b_bench_to_floor"
+      ]
+    },
+    {
+      "logical_id": "incident_c4",
+      "selected_id": "incident_c4_forensic_r3",
+      "checks": {
+        "injury_region": "PASS: forehead and foreground hand remain visible, gray cloth does not cover hand",
+        "purple_trace": "PASS: visible violet surface trace and small floor/edge contact at caught forehand, other hand unmarked, clear water separate",
+        "posture": "PASS: post-rescue body resting directly on wet floor, closed wet bag present",
+        "surroundings": "PASS: hatch currently open after rescue, no new injury to Nana or loose camera"
+      },
+      "source": "docs/design/rewrite_v4/14b1_4장_첫_수사_초고.md",
+      "source_sha256": "5e8a6578410c0e1e33fadc24836685b92e13d0a19275c61fdd3da99a0e2ff21f",
+      "limits": "주사인은 익사이며 이마/손 손상과 구분한다. 현재 사진을 최초 발견 자세/닫힌 덮개의 직접 사진으로 바꾸지 않는다.",
+      "regions": [
+        "incident_c4_forehead",
+        "incident_c4_caught_hand",
+        "incident_c4_hatch_edge"
+      ]
+    },
+    {
+      "logical_id": "incident_c5",
+      "selected_id": "incident_c5_forensic_r2",
+      "checks": {
+        "injury_region": "PASS: localized trace at cream sleeve elbow bend",
+        "purple_trace": "PASS: localized dried violet elbow transfer remains minor/old and separate from fatal poisoning",
+        "posture": "PASS: slack fallen body/relaxed hands/pale unresponsive face",
+        "surroundings": "PASS: plain new glass and papers preserved, no new poison-bottle/weapon prop"
+      },
+      "source": "docs/design/rewrite_v4/15b1_5장_잔과_몸의_수사_초고.md",
+      "source_sha256": "bf70e2322760748bc181c3ed9ba79654bece84cc3edbe73d531ec93665a6198d",
+      "limits": "겉상처와 중독은 다른 사실이다. 보이는 얼룩만으로 R7 검사를 대체하거나 독극물의 현실 조제법/투입시각을 발명하지 않는다.",
+      "regions": [
+        "incident_c5_old_elbow",
+        "incident_c5_unwashed_glass"
+      ]
+    }
+  ],
+  "object_review": "two-view floor/base source inspected; first version rejected for invented wall hole; second has shallow scuff and separate floor chip, rod absent",
+  "retained_rejected": [
+    "incident_c1_forensic_r1:missing report strip wrongly in room",
+    "incident_c3b_forensic_r1:sleep look/old camera",
+    "incident_c3b_forensic_r2:invented white collar flap",
+    "incident_c4_forensic_r1:duplicate ambiguous mark on second hand",
+    "evidence_c2_original_site_forensic_r1:invented wall hole"
+  ],
+  "detail_view_count": 16,
+  "blood_policy": "Purple only; latest explicit user direction includes coherent visible floor pools for existing bleeding neck-injury scenes. No new open anatomical injury or cleanup excuse. Pressure bruise stays distinct, old elbow trace not cause of death.",
+  "uncertainty": "anatomical side/precise depth/angle/dimensions/individual stain physics are not newly established facts; source-silent illustration detail cannot be a sole-answer clue",
+  "runtime_integrated": false,
+  "date": "2026-10-29",
+  "hd_contact_review": {
+    "status": "INSPECTED",
+    "files": [
+      "Game/Saved/v4-forensic-repair/details_01.jpg",
+      "Game/Saved/v4-forensic-repair/details_02.jpg",
+      "Game/Saved/v4-forensic-repair/details_03.jpg",
+      "Game/Saved/v4-forensic-repair/injury_native_samples.jpg"
+    ],
+    "limit": "sampled native regions and full actual crops; not every image pixel or game screen"
+  }
+}

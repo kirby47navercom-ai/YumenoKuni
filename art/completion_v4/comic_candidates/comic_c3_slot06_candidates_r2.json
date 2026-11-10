@@ -1,0 +1,140 @@
+{
+  "id": "comic_c3_slot06_candidates_r2",
+  "kind": "comic_candidates",
+  "chapter": 3,
+  "slot": 6,
+  "source": "docs/design/rewrite_v4/159_3장_재구성만화_슬롯과_실제문답.md",
+  "source_sha256": "5ff83d7626d301edd3244e77f381b0a1e9d250d3f585671459344d80f48f6fe4",
+  "references": [
+    "art/standing_v4/mio_color_v2.webp",
+    "art/standing_v4/ken.webp",
+    "art/standing_v4/sora.webp"
+  ],
+  "characters": [
+    "미오",
+    "소라"
+  ],
+  "options": [
+    {
+      "key": "A",
+      "description": "재판에서 봉투를 먼저 펼친 뒤 그 글자를 따라 읽는 현재 몸",
+      "correct": false,
+      "source_line": 207
+    },
+    {
+      "key": "B",
+      "description": "미오의 거짓 모욕 뒤 현재 몸이 먼저 실제 문장을 말하고,그뒤 원문을 열어 대조하는 순서",
+      "correct": true,
+      "source_line": 208
+    },
+    {
+      "key": "C",
+      "description": "아버지 말에 화난 표정만 보고 얼굴 인식 장치가 소라로 바꾸는 장면",
+      "correct": false,
+      "source_line": 209
+    }
+  ],
+  "correct_key": "B",
+  "option_uv": {
+    "A": [
+      0,
+      0,
+      0.5,
+      0.5
+    ],
+    "B": [
+      0.5,
+      0,
+      1,
+      0.5
+    ],
+    "C": [
+      0,
+      0.5,
+      0.5,
+      1
+    ]
+  },
+  "prompt": "Original mystery visual-novel comic candidate atlas. Clean angular variable-width ink, hard cel shadows and original reference-character identities. EXACT2x2 equal quadrants: TOPLEFT A, TOPRIGHT B, BOTTOMLEFT C, BOTTOMRIGHT completely BLANK ivory. No text, labels, numbers, watermark, extra quadrant or image spilling across gutters. Each option is a DIFFERENT hypothetical sequence, so wrong alternatives intentionally contradict truth. Draw all three options, NO correctness icons. Fully clothed nonsexual characters, no graphic injury, wound closeup, exposed flesh, gore or red blood. Attachment1=MIO original physical character. Attachment2=KEN original physical character. Attachment3=SORA original physical character. AUTHORITATIVE per-panel staging overrides generic inference: CURRENT BODY in A/B is ALWAYS Ken BURGUNDY HAIR/GREEN UNIFORM/CAPE, never original BLOND Sora. A: WRONG Mio opens paper FIRST and Ken reads visible sheet AFTER. B: CORRECT two small chronological moments: Ken speaks while Mio holds OPAQUE envelope still CLOSED; THEN Mio opens envelope and compares same small page, Ken remains same physical body. NO floating magical writing. C: WRONG invented facial-recognition gadget re-labels current Ken body as Sora based ONLY on upset expression; any Sora blond face is confined INSIDE gadget screen as false icon, never a living person standing beside Mio. No such device in A/B. Never add any other people from a reference into a panel where absent. Source option semantics: A: 재판에서 봉투를 먼저 펼친 뒤 그 글자를 따라 읽는 현재 몸 B: 미오의 거짓 모욕 뒤 현재 몸이 먼저 실제 문장을 말하고,그뒤 원문을 열어 대조하는 순서 C: 아버지 말에 화난 표정만 보고 얼굴 인식 장치가 소라로 바꾸는 장면",
+  "transparent_background": false,
+  "runtime_integrated": false,
+  "supersedes": "comic_c3_slot06_candidates_r1",
+  "revision_reason": "Manual review found incorrect living/dead staging, physical-body identity, omitted action/evidence or cross-panel cast contamination; old version excluded.",
+  "tool": "built-in image_gen",
+  "source_file": "art/completion_v4/comic_candidates/comic_c3_slot06_candidates_r2.webp",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-4ec64c04-8092-4f68-a7c7-60e3462142f4.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "source_image_sha256": "bf341b5179529975cab8c623dc8a0275ecb7f252977ce6d229c7d27190b9ace5",
+  "hd_file": "art/hd_v4/completion/comic_candidates/comic_c3_slot06_candidates_r2.webp",
+  "hd_size": [
+    6144,
+    4096
+  ],
+  "cells": [
+    {
+      "key": "A",
+      "file": "art/completion_v4/comic_candidates/cells/comic_c3_slot06_candidates_r2_A.webp",
+      "webp": "art/completion_v4/comic_candidates/cells/comic_c3_slot06_candidates_r2_A.webp",
+      "size": [
+        3072,
+        1728
+      ],
+      "uv": [
+        0,
+        0,
+        0.5,
+        0.5
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "source": "technical cell export from complete4x atlas; no semantic painting"
+    },
+    {
+      "key": "B",
+      "file": "art/completion_v4/comic_candidates/cells/comic_c3_slot06_candidates_r2_B.webp",
+      "webp": "art/completion_v4/comic_candidates/cells/comic_c3_slot06_candidates_r2_B.webp",
+      "size": [
+        3072,
+        1728
+      ],
+      "uv": [
+        0.5,
+        0,
+        1,
+        0.5
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "source": "technical cell export from complete4x atlas; no semantic painting"
+    },
+    {
+      "key": "C",
+      "file": "art/completion_v4/comic_candidates/cells/comic_c3_slot06_candidates_r2_C.webp",
+      "webp": "art/completion_v4/comic_candidates/cells/comic_c3_slot06_candidates_r2_C.webp",
+      "size": [
+        3072,
+        1728
+      ],
+      "uv": [
+        0,
+        0.5,
+        0.5,
+        1
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "source": "technical cell export from complete4x atlas; no semantic painting"
+    }
+  ],
+  "upscale": "complete",
+  "visual_status": "source/temporal/candidate inspection pending"
+}

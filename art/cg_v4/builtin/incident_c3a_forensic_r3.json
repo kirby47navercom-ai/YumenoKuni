@@ -1,0 +1,55 @@
+{
+  "id": "incident_c3a_forensic_r3",
+  "logical_id": "incident_c3a",
+  "kind": "incident",
+  "use_case": "precise-object-edit",
+  "source": "docs/design/rewrite_v4/13b1_3장_아직_살아있는_사람_초고.md",
+  "source_sha256": "a6a4416cfbdfccb907c76a93d3ae578d453cd30bb25c25e10338b555d711fe11",
+  "previous_selected": {
+    "logical_id": "incident_c3a",
+    "kind": "incident",
+    "selected_id": "incident_c3a_builtin_r1",
+    "metadata": "art/cg_v4/builtin/incident_c3a_builtin_r1.json",
+    "source": "art/cg_v4/builtin/incident_c3a_builtin_r1.webp",
+    "raw_4x": "art/hd_v4/cg/builtin/incident_c3a_builtin_r1.webp",
+    "delivery": "art/cg_v4/delivery/incident_c3a_builtin_r1.webp",
+    "webp": "art/cg_v4/delivery/incident_c3a_builtin_r1.webp",
+    "size": [
+      6688,
+      3762
+    ],
+    "manuscript": "docs/design/rewrite_v4/13a12_3장_끝났다는_말_초고.md",
+    "manuscript_sha256": "6ec040b6ad2622a6c03155fc3c5a2a570a94a5f43df145339d75fd1a9aac2e37",
+    "source_review": "see builtin_visual_review.json; source inspection is distinct from runtime import",
+    "panel_grid": null,
+    "panel_uv_rectangles": null,
+    "runtime_integrated": false
+  },
+  "references": [
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c3a_forensic_r2.webp"
+  ],
+  "reference_sha256": {
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c3a_forensic_r2.webp": "8eeb9acddc0fdcbe1de2a69a33ec4679cbd7545990d50828de8fbff35ec055eb"
+  },
+  "prompt": "Use case: precise-object-edit. EDIT this original project fully clothed fictional mystery investigation CG in wide16:9. Latest user requests readable spilled purple blood reaching floor, not only a faint injury mark. NON-GRAPHIC stylized ink/cel illustration; no attack in progress. Change ONLY purple surface residue/pooled blood at existing injury-contact regions. Do not intensify anatomy or add red blood, exposed tissue/organs/bones, dismemberment, captions/UI or new objects. Keep the existing neck/collar purple mark and closed non-graphic anatomy unchanged. The purple BLOOD must have reached the FLOOR: make the already present pooled violet contact stain beneath the shoulder/neck and alongside slumped torso clearly visible as one coherent medium localized pool, with a continuous stain from adjacent collar/shoulder clothing down to that floor contact. The pool should read immediately against dark floor and red cape: opaque saturated violet #B400D6, irregular settled liquid edge, not separate decorative polka dots, light glow or purple shadow. Do not flood the whole room, add high wall splatter, new attack/wound or expose tissue. Preserve face, all fingers, slumped body/fallen hat, work offcuts and mirror geometry. Do not move evidence into the pool or turn offcuts into new numbered markers.",
+  "evidence_contract": "neck injury location visible instead of chest-only paint; marker offcuts and grounded slumped posture; no inferable invented attack angle",
+  "side_policy": "unspecified anatomical side/angle/dimensions remain unspecified; preserve prior visible region for visual continuity, never treat new illustrative side as deduction proof",
+  "runtime_integrated": false,
+  "manuscript_sha256": "db4390b23b3ab291ea98768304d5ab53397ec9261de3edd6d03f8ce1d8ba1297",
+  "tool": "built-in image_gen",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-5daacae3-d3bb-4257-9310-8b79a04ca070.png",
+  "source_file": "art/cg_v4/builtin/incident_c3a_forensic_r3.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "art/hd_v4/cg/builtin/incident_c3a_forensic_r3.webp",
+  "delivery_file": "art/cg_v4/delivery/incident_c3a_forensic_r3.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "6ea037df7a448a13399a725a90bd040a367434f5498163de84102680e6a1d786",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "visual_status": "generated; individual scene and HD acceptance pending"
+}

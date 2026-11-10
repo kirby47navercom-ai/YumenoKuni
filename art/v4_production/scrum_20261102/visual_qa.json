@@ -1,0 +1,145 @@
+{
+  "scope": "Only the 32 selected scrum sprites. Individual image_gen outputs plus all 16 master/SR/SL HD comparison sheets actually viewed; final ken and rei sheets rechecked after revisions.",
+  "passed_ids": [
+    "mio_SR",
+    "mio_SL",
+    "rin_SR",
+    "rin_SL",
+    "ken_SR",
+    "ken_SL",
+    "nana_SR",
+    "nana_SL",
+    "taiga_SR",
+    "taiga_SL",
+    "ai_SR",
+    "ai_SL",
+    "rei_SR",
+    "rei_SL",
+    "sora_SR",
+    "sora_SL",
+    "haruka_SR",
+    "haruka_SL",
+    "sho_SR",
+    "sho_SL",
+    "koto_SR",
+    "koto_SL",
+    "akari_SR",
+    "akari_SL",
+    "riku_SR",
+    "riku_SL",
+    "satsuki_SR",
+    "satsuki_SL",
+    "yuu_SR",
+    "yuu_SL",
+    "kaede_SR",
+    "kaede_SL"
+  ],
+  "tool": "built-in image_gen",
+  "generation_count": 48,
+  "additional_passes": 16,
+  "reworked_pose_count": 9,
+  "rework": [
+    {
+      "id": "mio_SR_r2",
+      "reason": "background extraction follow-up",
+      "supersedes": "mio_SR"
+    },
+    {
+      "id": "mio_SR_r3",
+      "reason": "sleeve insignia moved to anatomical right arm",
+      "supersedes": "mio_SR_r2"
+    },
+    {
+      "id": "rin_SL_r2",
+      "reason": "bead bracelet and palm mark moved to anatomical right hand",
+      "supersedes": "rin_SL"
+    },
+    {
+      "id": "nana_SR_r2",
+      "reason": "white wrist ribbon moved to anatomical right wrist",
+      "supersedes": "nana_SR"
+    },
+    {
+      "id": "ken_SL_r2",
+      "reason": "torso and feet insufficiently turned screen left",
+      "supersedes": "ken_SL"
+    },
+    {
+      "id": "haruka_SL_r2",
+      "reason": "shoe directions remained screen right",
+      "supersedes": "haruka_SL"
+    },
+    {
+      "id": "satsuki_SR_r2",
+      "reason": "side braid and feather moved to anatomical right",
+      "supersedes": "satsuki_SR"
+    },
+    {
+      "id": "yuu_SR_r2",
+      "reason": "ear piercings moved to anatomical right ear",
+      "supersedes": "yuu_SR"
+    },
+    {
+      "id": "ken_SL_r3",
+      "reason": "facial mole moved to anatomical left cheek",
+      "supersedes": "ken_SL_r2"
+    },
+    {
+      "id": "rei_SR_r2",
+      "reason": "small forehead scar missing",
+      "supersedes": "rei_SR"
+    },
+    {
+      "id": "rei_SL_r2",
+      "reason": "small forehead scar missing",
+      "supersedes": "rei_SL"
+    },
+    {
+      "id": "ken_SL_r4",
+      "reason": "previous small-dot edit did not remove incorrect near-cheek mole",
+      "supersedes": "ken_SL_r3"
+    },
+    {
+      "id": "rei_SR_r3",
+      "reason": "previous forehead-mark edit did not visibly restore scar",
+      "supersedes": "rei_SR_r2"
+    },
+    {
+      "id": "rei_SL_r3",
+      "reason": "previous forehead-mark edit did not visibly restore scar",
+      "supersedes": "rei_SL_r2"
+    },
+    {
+      "id": "ken_SL_r5",
+      "reason": "alpha extraction retained opaque background at canvas edge",
+      "supersedes": "ken_SL_r4"
+    },
+    {
+      "id": "rei_SL_r4",
+      "reason": "alpha extraction retained opaque background at canvas edge",
+      "supersedes": "rei_SL_r3"
+    }
+  ],
+  "character_notes": {
+    "mio": "Amber eyes, anatomical left tied lock/blue streak and chest badge retained; corrected misplaced SR sleeve insignia. Pencil/notebook hands readable.",
+    "rin": "Cat mask, keys, original mismatched socks retained; SL bracelet/star restored to anatomical left hand.",
+    "ken": "Wavy hair part, cape, gloves, watch and belt mask retained. SL body/feet turned left; incorrect near-cheek mole removed. Final alpha extraction checked.",
+    "nana": "Side ponytail and blue hairclips retained; SR wrist ribbon restored to left wrist. Long striped skirt and boots intact.",
+    "taiga": "Left red armband and right gold sleeve emblem retained in both views; crossed hands and build checked.",
+    "ai": "Mint hair, pink eyes, kerchief, apron stains and single ladle retained; hands and hem coverage checked.",
+    "rei": "Left-eye-covering bangs and left chest chain retained; forehead scar restored in both views. Final SL alpha extraction and crossed gloves checked.",
+    "sora": "Left lapel pin/right waist tools and headband retained; hands checked.",
+    "haruka": "Left blue clip/right-hand single camera retained; SL torso/knees/shoes reoriented left.",
+    "sho": "Cheek dressings, left hand bandage and left breast pen retained; explanatory right hand checked.",
+    "koto": "Left bun/flower, armband and red wrist cord retained; clipboard supported by left hand, long skirt intact.",
+    "akari": "Left orbital hair ornament/right wristwatch retained; ponytail and uniform checked.",
+    "riku": "Left tilted top hat/right-hand card fan retained; glove anatomy and cape checked.",
+    "satsuki": "Left braid/feather restored on far side in SR; guards/scarf/tights/boots retained.",
+    "yuu": "Left piercings and left chain bag retained; incorrect near-right ear jewelry removed in SR. Headphones and shoe panels checked.",
+    "kaede": "Right white hair lock/left snowflake hairclip and left bracelet retained; crossed hands, coat and skirt coverage checked."
+  },
+  "technical_checks": "See structural_qa.json. Original image_gen PNGs preserved, existing Real-ESRGAN 4x used, final HD only similarity-aligned to actual master alpha>32 geometry; no mirroring.",
+  "runtime_review": "Not run; only court_figures.py export is requested. Build/package/gameplay capture belongs to requester.",
+  "all_project_art_complete": false,
+  "remaining_sprite_issues": []
+}

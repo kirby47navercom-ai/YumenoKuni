@@ -1,0 +1,40 @@
+{
+  "source": "docs/design/rewrite_v4/10_프롤로그_초고.md",
+  "source_sha256": "6018820611d495120f500d91ccf54af0f27c758ce3cf571ab284b5b7bfc24ee9",
+  "tool": "built-in image_gen",
+  "visual_status": "generated; individual scene and HD acceptance pending",
+  "id": "p01_notebook_boundary_builtin_r2",
+  "references": [
+    "art/cg_v4/builtin/p01_notebook_boundary_builtin_r1.webp",
+    "art/standing_v4/mio_color_v2.webp",
+    "art/masters_clean_v4/haruka_r2.webp"
+  ],
+  "prompt": "Use case: precise-object-edit / identity-preserve. Image1 is the EDIT TARGET, later images are exact original character reference(s). Preserve everything unless specifically corrected. Change ONLY framing: widen camera enough so Mio entire curved ahoge and both hair silhouettes have at least5% canvas headroom. Preserve both identities, hand ownership, closed notebook, separate air gap, expressions, exact costume and rendered ink/cel style. Keep exact16:9 fullbleed, do not add border, do not stretch. Essential hands/notebook above y70%; bottom25% only clothing/bench. Same dry-fountain park.",
+  "review": {
+    "eyes_costumes": "matched source review",
+    "hands_notebook": "clear separate ownership",
+    "limits": [
+      "top ahoge touches border",
+      "park architecture must align with final exterior"
+    ]
+  },
+  "kind": "targeted_revision",
+  "revision_of": "p01_notebook_boundary_builtin_r1",
+  "manuscript_sha256": "d2bef6cab93c0f0580859785f93be900b46ae31363aa8d037e85a55584833436",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-b64e54e2-35b5-4191-a53b-1ded1299aa2e.png",
+  "source_file": "art/cg_v4/builtin/p01_notebook_boundary_builtin_r2.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "_삭제대기_2026-10-29/제작참조확인필요/art/hd_v4/cg/builtin/p01_notebook_boundary_builtin_r2.webp",
+  "delivery_file": "art/cg_v4/delivery/p01_notebook_boundary_builtin_r2.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "d23743591a6b899c976b6b8eb64ccd04637fa612cf8d13ef03778e1027320ab6",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "runtime_integrated": false,
+  "upscale": "complete"
+}

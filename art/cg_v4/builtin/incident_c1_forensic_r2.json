@@ -1,0 +1,55 @@
+{
+  "id": "incident_c1_forensic_r2",
+  "logical_id": "incident_c1",
+  "kind": "incident",
+  "use_case": "precise-object-edit",
+  "source": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+  "source_sha256": "25c9eb4c7b48bd0d19c729d485c907e2783a949e13ef00cdd618d2aff4c2edcb",
+  "previous_selected": {
+    "logical_id": "incident_c1",
+    "kind": "incident",
+    "selected_id": "incident_c1_builtin_r2",
+    "metadata": "art/cg_v4/builtin/incident_c1_builtin_r2.json",
+    "source": "art/cg_v4/builtin/incident_c1_builtin_r2.webp",
+    "raw_4x": "art/hd_v4/cg/builtin/incident_c1_builtin_r2.webp",
+    "delivery": "art/cg_v4/delivery/incident_c1_builtin_r2.webp",
+    "webp": "art/cg_v4/delivery/incident_c1_builtin_r2.webp",
+    "size": [
+      6688,
+      3762
+    ],
+    "manuscript": "docs/design/rewrite_v4/11a3_1장_셋째날과_발견_초고.md",
+    "manuscript_sha256": "05c33b456edeb3b75769f489e0c5493f03dcc15ee1557f7648dfa88e70b790a9",
+    "source_review": "see builtin_visual_review.json; source inspection is distinct from runtime import",
+    "panel_grid": null,
+    "panel_uv_rectangles": null,
+    "runtime_integrated": false
+  },
+  "references": [
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c1_forensic_r1.webp"
+  ],
+  "reference_sha256": {
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c1_forensic_r1.webp": "b94cf46cf749d4e1cc10849e36ab2ce4aaf2b83934b6fc9c07e69d0073f87933"
+  },
+  "prompt": "Use case: precise-object-edit. EDIT this original-project wide16:9 ink/cel illustration. Change ONLY the paper on floor at bottom-right. REMOVE the small SEPARATE narrow loose paper strip lying to the RIGHT of the large damaged report. KEEP the empty irregular notch in the larger report: the missing strip is NOT in this room. Do NOT fill the missing notch or replace it with a whole sheet. Keep large torn report, every character/hand, readable non-bleeding purple neck bruise, clothing, room, color and all composition unchanged. No added object/word/label. This precise evidence correction is an object edit, no new injury or violence.",
+  "evidence_contract": "neck pressure bruising visible; no external bleeding; missing report fragment not magically present",
+  "side_policy": "unspecified anatomical side/angle/dimensions remain unspecified; preserve prior visible region for visual continuity, never treat new illustrative side as deduction proof",
+  "runtime_integrated": false,
+  "manuscript_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+  "tool": "built-in image_gen",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-1a8f0e25-b100-464e-8519-115277478c68.png",
+  "source_file": "art/cg_v4/builtin/incident_c1_forensic_r2.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "art/hd_v4/cg/builtin/incident_c1_forensic_r2.webp",
+  "delivery_file": "art/cg_v4/delivery/incident_c1_forensic_r2.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "21f698e0b9ff58826501367cb861edad39f462581ef3546f3fe4b2163de4d338",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "visual_status": "generated; individual scene and HD acceptance pending"
+}

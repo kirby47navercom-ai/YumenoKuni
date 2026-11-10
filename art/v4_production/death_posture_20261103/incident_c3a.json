@@ -1,0 +1,26 @@
+{
+  "selected_id": "incident_c3a_posture_20261103",
+  "metadata": "art/v4_production/death_posture_20261103/incident_c3a.json",
+  "source": "art/v4_production/death_posture_20261103/incident_c3a_r3.png",
+  "delivery": "art/cg_v4/delivery/incident_c3a_posture_20261103.png",
+  "webp": "art/cg_v4/delivery/incident_c3a_posture_20261103.png",
+  "size": [
+    1672,
+    941
+  ],
+  "manuscript": "docs/design/rewrite_v4/13b1_3장_아직_살아있는_사람_초고.md",
+  "manuscript_sha256": "db4390b23b3ab291ea98768304d5ab53397ec9261de3edd6d03f8ce1d8ba1297",
+  "source_review": "art/v4_production/death_posture_20261103/review.json",
+  "completion_revision": "User rejected lively/sleeping posture; rebuilt gravity, inert expression and gaze while preserving incident facts.",
+  "runtime_integrated": false,
+  "format": "PNG",
+  "resolutionPolicy": "Native built-in output retained byte-for-byte; no upscale or claim of former 6688x3762 detail.",
+  "forensicCropPolicy": "Old normalized crop coordinates are not approved for this changed pose. Re-review before any new hotspot/detail binding.",
+  "sha256": "cbfa5e2ff79958193ba68c876f60d585a289922081420f4866d3cf7ca50c0638",
+  "mode": "RGB",
+  "visualChecks": [
+    "Head fallen forward onto shoulder, asymmetric collapsed shoulders, dull gaze and slack gloved fingers.",
+    "Neck/collar trace and connected purple pool, fallen hat and work offcuts retained.",
+    "R2 anatomy candidate erased the existing neck trace and was rejected. R3 restores it while retaining coherent shoulders/waist and relaxed five-finger gloved hands."
+  ]
+}

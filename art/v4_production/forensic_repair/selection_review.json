@@ -1,0 +1,246 @@
+{
+  "assets": {
+    "incident_c1": {
+      "id": "incident_c1_forensic_r2",
+      "regions": [
+        [
+          "neck_pressure",
+          [
+            0.64,
+            0.25,
+            0.84,
+            0.49
+          ],
+          "목 압박 흔적. 절창/출혈과 구별하며 범인의 손 모양이나 이름까지 판독하지 않는다."
+        ],
+        [
+          "torn_report",
+          [
+            0.72,
+            0.76,
+            0.95,
+            0.95
+          ],
+          "현장 보고서의 결손. 별도 회수 조각은 현장에 없다. 인쇄·절취 정밀 대조는 documents_hd의 실제 동일 원본을 사용한다."
+        ]
+      ],
+      "proof": [
+        "11b I1file:neck sustained pressure",
+        "03 E1-05/06:field report vs separately recovered fragment"
+      ],
+      "checks": {
+        "injury_region": "PASS: visible above collar, not obscured by hair",
+        "purple_trace": "PASS: non-bleeding bruise; no invented blood",
+        "posture": "PASS: hand relaxed instead of active chest grip, weight on floor",
+        "surroundings": "PASS: missing strip remains missing; printer/window kept"
+      },
+      "limits": "원고는 멍의 손가락 개수·정밀 각도·좌우를 확정하지 않았다. 그림 모양을 새 정답으로 쓰지 않는다."
+    },
+    "incident_c2": {
+      "id": "incident_c2_forensic_r3",
+      "regions": [
+        [
+          "head_region",
+          [
+            0.3,
+            0.15,
+            0.5,
+            0.43
+          ],
+          "머리카락 경계와 관자 부근 노출 피부의 손상/보라색 흔적. 머리 타격 부위의 시각화이며 상처만으로 도구·시각을 확정하지 않는다."
+        ],
+        [
+          "connector_and_cord",
+          [
+            0.43,
+            0.46,
+            0.57,
+            0.61
+          ],
+          "손가락 사이의 검은 플라스틱 고리 조각과 끈. 금속 고리나 사슬이 아니다."
+        ]
+      ],
+      "proof": [
+        "05 E2-01:head impact",
+        "12b1 I2-03/04:two stays/weights/fragment+cord",
+        "12b3 I2-30:tool compatibility does not alone prove cause time/person"
+      ],
+      "checks": {
+        "injury_region": "PASS: head region checked at enlarged view; exposed skin near visible ear, no extra injury",
+        "purple_trace": "PASS: visible saturated violet flow at existing head/temple injury, apron colors retained as decoration",
+        "posture": "PASS: heavy supported body inside chest, same loosely caught fragment",
+        "surroundings": "PASS: two lid stays/two outside latches/ordinary weights, no rod/weapon inside chest"
+      },
+      "limits": "원고는 머리 타격을 확정한다. 피부 손상의 깊이/정확 좌우/각도/도구 단독 확정은 하지 않는다. 확대는 실제 보이는 머리/관자 흔적만 보여준다."
+    },
+    "incident_c3a": {
+      "id": "incident_c3a_forensic_r3",
+      "regions": [
+        [
+          "neck_and_collar",
+          [
+            0.51,
+            0.22,
+            0.65,
+            0.43
+          ],
+          "목 부위 손상과 바로 이어진 옷깃의 보라색 흔적. 가슴만 다친 것으로 오해하지 않게 한다."
+        ],
+        [
+          "floor_offcuts",
+          [
+            0.4,
+            0.69,
+            0.8,
+            0.99
+          ],
+          "몸이 닿은 바닥의 보라색 혈흔과 작업 표식 조각. 장식 점이 아닌 고인 흔적을 보이되 양/각도/패턴을 새 단독 정답으로 쓰지 않는다."
+        ]
+      ],
+      "proof": [
+        "13b1 I3-05:neck blade damage",
+        "13a12 3-129..132:slumped by wall/marker work offcuts"
+      ],
+      "checks": {
+        "injury_region": "PASS: visible neck/collar origin rather than chest-only stain",
+        "purple_trace": "PASS: latest user-directed coherent violet pool below contact torso/shoulder and clothing, no anatomical gore",
+        "posture": "PASS: slumped wall/floor contact, slack fingers/open unresponsive eyes",
+        "surroundings": "PASS: fallen top hat/marker offcuts/mirror geometry retained"
+      },
+      "limits": "피부 손상은 비고어 표현이다. 살해 도구 치수·상처 깊이/방향을 그림으로 확정하지 않는다."
+    },
+    "incident_c3b": {
+      "id": "incident_c3b_forensic_r5",
+      "regions": [
+        [
+          "neck_response_cloth",
+          [
+            0.035,
+            0.16,
+            0.36,
+            0.53
+          ],
+          "목 위쪽 흔적과 벤치 옆의 별도 응급 천. 갈색 라운드티이며 흰 천을 옷깃으로 착각하지 않게 한다."
+        ],
+        [
+          "slack_hand",
+          [
+            0.25,
+            0.66,
+            0.41,
+            0.99
+          ],
+          "벤치 밖으로 힘없이 떨어진 손. 앞선 생존/수면 장면과 다른 확인 이후 상태다."
+        ],
+        [
+          "bench_to_floor",
+          [
+            0,
+            0.35,
+            0.3,
+            0.95
+          ],
+          "목/어깨 아래 벤치에서 가장자리를 따라 내려와 같은 쪽 바닥에 고인 보라색 피. 몸/천의 위치와 연결해 본다."
+        ]
+      ],
+      "proof": [
+        "13b2 I3-21..28:second neck injury/emergency cloth/death after alive confirmation",
+        "13b4:cloth laid without hiding injury"
+      ],
+      "checks": {
+        "injury_region": "PASS: closer camera shows neck above original brown crewneck",
+        "purple_trace": "PASS: latest user-directed purple blood from neck/collar to bench edge and floor beneath head side; separate response cloth retained",
+        "posture": "PASS: open unfocused eyes/slack jaw/dropped hand, original body on left bench",
+        "surroundings": "PASS: removed invented white collar flap; no second body or attacker"
+      },
+      "limits": "새 카메라 구도이며 이전 화면 픽셀 좌표를 핫스폿으로 재사용하지 않는다. 화면 밖으로 나간 인물을 사진 속 증인으로 발명하지 않는다."
+    },
+    "incident_c4": {
+      "id": "incident_c4_forensic_r3",
+      "regions": [
+        [
+          "forehead",
+          [
+            0.19,
+            0.4,
+            0.28,
+            0.55
+          ],
+          "이마의 손상. 원고가 특정하지 않은 충돌 도구나 행동으로 확정하지 않는다."
+        ],
+        [
+          "caught_hand",
+          [
+            0.12,
+            0.76,
+            0.3,
+            0.99
+          ],
+          "걸렸던 손의 국소 보라색 손상. 다른 손의 근거 없는 중복 얼룩은 제거했다."
+        ],
+        [
+          "hatch_edge",
+          [
+            0.48,
+            0.33,
+            0.65,
+            0.45
+          ],
+          "현재 열린 덮개 가장자리 국소 흔적. 구조 전에는 닫혀 외부 고정되어 있었다는 증언과 구별한다."
+        ]
+      ],
+      "proof": [
+        "14b1 I4-02/03/05/08:forehead+hand+edge/current post-rescue position",
+        "14b1 I4-06:current Nana uninjured"
+      ],
+      "checks": {
+        "injury_region": "PASS: forehead and foreground hand remain visible, gray cloth does not cover hand",
+        "purple_trace": "PASS: visible violet surface trace and small floor/edge contact at caught forehand, other hand unmarked, clear water separate",
+        "posture": "PASS: post-rescue body resting directly on wet floor, closed wet bag present",
+        "surroundings": "PASS: hatch currently open after rescue, no new injury to Nana or loose camera"
+      },
+      "limits": "주사인은 익사이며 이마/손 손상과 구분한다. 현재 사진을 최초 발견 자세/닫힌 덮개의 직접 사진으로 바꾸지 않는다."
+    },
+    "incident_c5": {
+      "id": "incident_c5_forensic_r2",
+      "regions": [
+        [
+          "old_elbow",
+          [
+            0.39,
+            0.5,
+            0.48,
+            0.68
+          ],
+          "팔꿈치 굽힘 부근의 기존 겉상처/마른 보라색 흔적. 소매 끝의 임의 얼룩과 구별한다."
+        ],
+        [
+          "unwashed_glass",
+          [
+            0.73,
+            0.11,
+            0.84,
+            0.24
+          ],
+          "아직 치우거나 씻지 않은 새 유리잔. 개인 소유 꽃무늬 머그로 바꾸지 않는다."
+        ]
+      ],
+      "proof": [
+        "15a8 5-133:elbow shelf injury with small purple blood",
+        "15b1 I5-01:nonfatal elbow;fictional R7 poisoning",
+        "15a11 5-203:glass unchanged/unwashed"
+      ],
+      "checks": {
+        "injury_region": "PASS: localized trace at cream sleeve elbow bend",
+        "purple_trace": "PASS: localized dried violet elbow transfer remains minor/old and separate from fatal poisoning",
+        "posture": "PASS: slack fallen body/relaxed hands/pale unresponsive face",
+        "surroundings": "PASS: plain new glass and papers preserved, no new poison-bottle/weapon prop"
+      },
+      "limits": "겉상처와 중독은 다른 사실이다. 보이는 얼룩만으로 R7 검사를 대체하거나 독극물의 현실 조제법/투입시각을 발명하지 않는다."
+    }
+  },
+  "object_atlas": "evidence_c2_original_site_forensic_r2",
+  "review_scope": "selected original images individually opened; exact HD crops are checked next, not a claim about every pixel of all prior assets",
+  "runtime_integrated": false,
+  "latest_user_direction": "Visible purple bleeding and floor pooling for existing bleeding injury scenes; no invented cleanup excuse, new cause or gore"
+}

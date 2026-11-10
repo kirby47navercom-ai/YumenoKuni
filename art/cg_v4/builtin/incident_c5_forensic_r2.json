@@ -1,0 +1,56 @@
+{
+  "id": "incident_c5_forensic_r2",
+  "logical_id": "incident_c5",
+  "kind": "incident",
+  "use_case": "precise-object-edit",
+  "source": "docs/design/rewrite_v4/15b1_5장_잔과_몸의_수사_초고.md",
+  "source_sha256": "9b58599772fc3566df420d89eb55d6927150a83fd05d05d688168f27cf9d2209",
+  "previous_selected": {
+    "logical_id": "incident_c5",
+    "kind": "incident",
+    "selected_id": "incident_c5_builtin_r2",
+    "metadata": "art/cg_v4/builtin/incident_c5_builtin_r2.json",
+    "source": "art/completion_v4/cg_correction/incident_c5_cup_correction_r3.webp",
+    "raw_4x": "art/hd_v4/completion/cg_correction/incident_c5_cup_correction_r3.webp",
+    "delivery": "art/completion_v4/cg_correction/incident_c5_cup_correction_delivery.webp",
+    "webp": "art/completion_v4/cg_correction/incident_c5_cup_correction_delivery.webp",
+    "size": [
+      6688,
+      3762
+    ],
+    "manuscript": "docs/design/rewrite_v4/15a11_5장_남아있는_두장_초고.md",
+    "manuscript_sha256": "686dc49c5400ddb63d9b2b0794a34b14baf7c12136cc61f3b334db4fd30c620c",
+    "source_review": "see builtin_visual_review.json; source inspection is distinct from runtime import",
+    "panel_grid": null,
+    "panel_uv_rectangles": null,
+    "runtime_integrated": false,
+    "completion_revision": "see completion incident_c5 override"
+  },
+  "references": [
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c5_forensic_r1.webp"
+  ],
+  "reference_sha256": {
+    "_삭제대기_2026-10-29/바로삭제가능/art/cg_v4/builtin/incident_c5_forensic_r1.webp": "076d357b94e154f5071d06477e89ade8eb5aec7cd7de236ab68e6c96732d5d03"
+  },
+  "prompt": "Use case: precise-object-edit. EDIT this original project WIDE16:9 fictional mystery investigation illustration. This is a NON-GRAPHIC art-readability correction after confirmed death, fully clothed nonsexual, no attack/attacker. Change ONLY the readability/color/continuity of ALREADY EXISTING PURPLE BLOOD residue described below. Keep exact character/room/ink-cel style, camera, and ALL unaffected props/anatomy unchanged. Purple blood only; no red blood, exposed organs/bones/tissue, dismemberment, severe open wounds, labels, text, UI or new evidence. At the existing minor ELBOW bend injury on the cream sleeve make the small dry purple BLOOD transfer clearly readable as localized vivid violet (#B400D6) with an uneven dried edge and darker center, not an arbitrary pale purple watercolor dab. Keep amount SMALL and OLD/SUPERFICIAL, confined to existing elbow region; not fresh widespread bleeding. This injury is NOT cause of death. No blood on mouth/neck/chest/floor, no large pool, new wound, poison-props or skin exposure. Preserve glass cup with tea, paper, pallid unresponsive face, relaxed hands, exact fallen posture/costume/room and all composition unchanged.",
+  "evidence_contract": "old ELBOW minor purple trace distinct from fatal fictional poisoning; no invented bleeding sign of poison",
+  "side_policy": "unspecified anatomical side/angle/dimensions remain unspecified; preserve prior visible region for visual continuity, never treat new illustrative side as deduction proof",
+  "runtime_integrated": false,
+  "manuscript_sha256": "bf70e2322760748bc181c3ed9ba79654bece84cc3edbe73d531ec93665a6198d",
+  "tool": "built-in image_gen",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-fd98d2fa-16bd-4ac8-9e50-e440b35bba74.png",
+  "source_file": "art/cg_v4/builtin/incident_c5_forensic_r2.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "art/hd_v4/cg/builtin/incident_c5_forensic_r2.webp",
+  "delivery_file": "art/cg_v4/delivery/incident_c5_forensic_r2.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "e8768745434b79fec09b243f5dfe2ae2dfa79f401b23f4ceb9961cb791837397",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "visual_status": "generated; individual scene and HD acceptance pending"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "c1_room_exchange_builtin_r2",
+  "source": "docs/design/rewrite_v4/11a2_1장_둘째날_초고.md",
+  "source_sha256": "e1732bac92475666c8be4db61d029109ac1586ebd3f18d20d526eaffa7bdc5dd",
+  "references": [
+    "art/cg_v4/builtin/c1_room_exchange_builtin_r1.webp",
+    "art/masters_clean_v4/taiga.webp",
+    "art/standing_v4/nana_fullbody.webp"
+  ],
+  "characters": [
+    "taiga",
+    "nana"
+  ],
+  "prompt": "Use case: precise-object-edit / identity-preserve. Image1 is the EDIT TARGET, later images are exact original character reference(s). Preserve everything unless specifically corrected. Correct ONLY Taiga arm/prop arrangement: RIGHT ANATOMICAL forearm, on VIEWER LEFT, must be RAISED at chest height with the plain wrist SUPPORT BRACE. LEFT ANATOMICAL arm, on VIEWER RIGHT, must be LOWERED holding the folded carrying cloth. Remove support brace from left wrist. Do NOT mirror the full image or Nana; Nana white bow stays ONLY on her own LEFT wrist. Keep exact characters/expressions and hallway. Entire head safe margin, hands/brace and cloth action above bottom25% dialogue region. Frame a medium shot to ensure both props clear. Same16:9 angular ink/cel.",
+  "visual_status": "generated; individual scene and HD acceptance pending",
+  "scope": "event CG; not whole-project completion",
+  "kind": "targeted_revision",
+  "revision_of": "c1_room_exchange_builtin_r1",
+  "manuscript_sha256": "f257fd15f3f3f8718951d26ba95376eefa89c5067195a8b124d2032e3f6bd71d",
+  "tool": "built-in image_gen",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-0221ff17-a7d3-4789-b510-acb607bd28f2.png",
+  "source_file": "art/cg_v4/builtin/c1_room_exchange_builtin_r2.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "_삭제대기_2026-10-29/제작참조확인필요/art/hd_v4/cg/builtin/c1_room_exchange_builtin_r2.webp",
+  "delivery_file": "art/cg_v4/delivery/c1_room_exchange_builtin_r2.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "bf57bacd2c6eba3317c67883e804b60411bc628ba819883d4e8ee78233a30023",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "runtime_integrated": false,
+  "upscale": "complete"
+}

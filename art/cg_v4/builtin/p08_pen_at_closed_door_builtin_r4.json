@@ -1,0 +1,38 @@
+{
+  "source": "docs/design/rewrite_v4/10_프롤로그_초고.md",
+  "source_sha256": "5603fac0f7405b7d8928639289a296fd781ae4889d021f2028bb7f2acce44908",
+  "tool": "built-in image_gen",
+  "visual_status": "generated; individual scene and HD acceptance pending",
+  "id": "p08_pen_at_closed_door_builtin_r4",
+  "references": [
+    "art/cg_v4/builtin/p08_pen_at_closed_door_builtin_r3.webp",
+    "art/standing_v4/mio_color_v2.webp"
+  ],
+  "prompt": "Image1 EDIT TARGET. Image2 exact character identity. Preserve this high diagonal desk composition and all hands, closed notebook, paused pen, closed door, lighting, angular ink/cel style and16:9 full bleed. ONLY zoom camera OUT12% around the scene center near y40%, adding real room content at edges. Entire curved ahoge must be INSIDE the canvas with at least6% EMPTY ROOM HEADROOM ABOVE it, no strand may touch top. Keep all notebook/hand action above y65%. Empty foreground wood tabletop remains lower30%. Do not use a border, crop, stretch, new character or written text.",
+  "review": {
+    "identity": "source matched",
+    "limits": [
+      "notebook is inside dialogue overlay area",
+      "city beyond window requires environment correction"
+    ]
+  },
+  "kind": "targeted_revision",
+  "revision_of": "p08_pen_at_closed_door_builtin_r3",
+  "manuscript_sha256": "d2bef6cab93c0f0580859785f93be900b46ae31363aa8d037e85a55584833436",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-46ccf57c-f42d-453b-8109-142667ba437d.png",
+  "source_file": "art/cg_v4/builtin/p08_pen_at_closed_door_builtin_r4.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "_삭제대기_2026-10-29/제작참조확인필요/art/hd_v4/cg/builtin/p08_pen_at_closed_door_builtin_r4.webp",
+  "delivery_file": "art/cg_v4/delivery/p08_pen_at_closed_door_builtin_r4.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "7c33f0eb600a8ffea367ba9f007f400fc233ed3228653776b5b8aab2e1b9aed6",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "runtime_integrated": false,
+  "upscale": "complete"
+}

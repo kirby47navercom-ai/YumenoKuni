@@ -1,0 +1,138 @@
+{
+  "id": "comic_c2_slot03_candidates_r1",
+  "kind": "comic_candidates",
+  "chapter": 2,
+  "slot": 3,
+  "source": "docs/design/rewrite_v4/158_2장_재구성만화_슬롯과_실제문답.md",
+  "source_sha256": "dbad87e555459b46ef51ae9a5453193f4c8b168337b83707ebdcb68b09a29fd6",
+  "references": [
+    "art/standing_v4/ai.webp",
+    "art/masters_clean_v4/yuu.webp",
+    "Game/Saved/v4-world-full-v2/theatre_preparation_center.png"
+  ],
+  "characters": [
+    "아이",
+    "유우"
+  ],
+  "options": [
+    {
+      "key": "A",
+      "description": "통로에서 받침대를 든 유우와 이후 남은 끈 조각·옷감의 별도 대조",
+      "correct": true,
+      "source_line": 99
+    },
+    {
+      "key": "B",
+      "description": "소품함을 문턱에 내려놓는 충격만으로 모든 손상이 생기는 장면",
+      "correct": false,
+      "source_line": 100
+    },
+    {
+      "key": "C",
+      "description": "아이가 유우를 영원히 경직시켰고 도구는 혼자 움직이는 장면",
+      "correct": false,
+      "source_line": 101
+    }
+  ],
+  "correct_key": "A",
+  "option_uv": {
+    "A": [
+      0,
+      0,
+      0.5,
+      0.5
+    ],
+    "B": [
+      0.5,
+      0,
+      1,
+      0.5
+    ],
+    "C": [
+      0,
+      0.5,
+      0.5,
+      1
+    ]
+  },
+  "prompt": "One ORIGINAL mystery visual novel illustration atlas,16:9 fullbleed. Angular fine variable-width INK outlines, detailed thin hair strands, hard clean CEL shadows, subdued ivory/violet/walnut palette, original reference-character continuity. Never imitate an existing franchise character or logo. NO text, lettering, numbers, UI, labels, watermark, gore, exposed wounds, dismemberment, red blood, sexualization or nudity. All figures fully clothed. ONE 2x2 ATLAS of THREE ALTERNATIVE versions of the SAME reconstruction slot. TOP-LEFT is A, TOP-RIGHT is B, BOTTOM-LEFT is C. Bottom-right is COMPLETELY BLANK ivory paper, no fourth illustration. Exact straight equal quadrants, thin dark gutters. Every drawn quadrant is an independent16:9 narrative panel, never spill a figure into adjacent panel. This is an illustrated reasoning puzzle, not discovered photographic evidence. A wrong option intentionally contradicts the true story; DRAW THAT WRONG ALTERNATIVE as requested, never silently fix it or mark it wrong. No baked correctness symbol or caption. Attachment1 is 아이: EXACT present-body physical identity/hair/eye/costume reference. Attachment2 is 유우: EXACT present-body physical identity/hair/eye/costume reference. Visualize these exact Korean source descriptions, do not invent a clue: A: 통로에서 받침대를 든 유우와 이후 남은 끈 조각·옷감의 별도 대조. B: 소품함을 문턱에 내려놓는 충격만으로 모든 손상이 생기는 장면. C: 아이가 유우를 영원히 경직시켰고 도구는 혼자 움직이는 장면. Safety/art staging: OMIT violent bodily contact, penetration, choking method and any injured body detail. Represent violent action by non-graphic off-panel transition, separated figures, object/evidence aftermath or shadow composition; never replace the intended chronology or actor identity. No chemical ingredient, poison preparation, dosing or recipe: personal cup / sealed fictional sample only. Purple stains only where story already calls for them. Physical continuity: Rin LAVENDER bob/cat mask; Nana dusty-pink short hair, long skirt, LEFT wrist ribbon; Sora BLOND/orange jacket; Ken BURGUNDY hair/green uniform/cape. Haruka pink bob/brown eyes. Akari RIGHT watch; Koto longblonde hair. No floating documents or actual magic unless explicitly part of a WRONG candidate. Blue equipment chest has wheels, TWO external latches, two lid stays, no inside lock. No extra chest replacing the same chest except explicit wrong candidate. Attachment3 is AUTHORED environment reference ONLY, use its simple actual geometry and props in relevant panels, redraw in ink/cel style. Do not add lavish new architecture or an unmentioned chest.",
+  "transparent_background": false,
+  "runtime_integrated": false,
+  "tool": "built-in image_gen",
+  "source_file": "art/completion_v4/comic_candidates/comic_c2_slot03_candidates_r1.webp",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-d8f81b33-49c3-4cc1-aa9e-8c4ccd375c00.png",
+  "source_size": [
+    1672,
+    941
+  ],
+  "source_image_sha256": "f07745beff9755cc702328640328d0c7f15fa480e7867fe71b8e29951957109c",
+  "hd_file": "art/hd_v4/completion/comic_candidates/comic_c2_slot03_candidates_r1.webp",
+  "hd_size": [
+    6688,
+    3764
+  ],
+  "cells": [
+    {
+      "key": "A",
+      "file": "art/completion_v4/comic_candidates/cells/comic_c2_slot03_candidates_r1_A.webp",
+      "webp": "art/completion_v4/comic_candidates/cells/comic_c2_slot03_candidates_r1_A.webp",
+      "size": [
+        3344,
+        1881
+      ],
+      "uv": [
+        0,
+        0,
+        0.5,
+        0.5
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "source": "technical cell export from complete4x atlas; no semantic painting"
+    },
+    {
+      "key": "B",
+      "file": "art/completion_v4/comic_candidates/cells/comic_c2_slot03_candidates_r1_B.webp",
+      "webp": "art/completion_v4/comic_candidates/cells/comic_c2_slot03_candidates_r1_B.webp",
+      "size": [
+        3344,
+        1881
+      ],
+      "uv": [
+        0.5,
+        0,
+        1,
+        0.5
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "source": "technical cell export from complete4x atlas; no semantic painting"
+    },
+    {
+      "key": "C",
+      "file": "art/completion_v4/comic_candidates/cells/comic_c2_slot03_candidates_r1_C.webp",
+      "webp": "art/completion_v4/comic_candidates/cells/comic_c2_slot03_candidates_r1_C.webp",
+      "size": [
+        3344,
+        1881
+      ],
+      "uv": [
+        0,
+        0.5,
+        0.5,
+        1
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "source": "technical cell export from complete4x atlas; no semantic painting"
+    }
+  ],
+  "upscale": "complete",
+  "visual_status": "source/temporal/candidate inspection pending"
+}

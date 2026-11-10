@@ -1,0 +1,42 @@
+{
+  "id": "c5_lines_not_answers_builtin_r1",
+  "source": "docs/design/rewrite_v4/15a_5장_일상_초고.md",
+  "source_sha256": "62ca90825371d11c8c726c4d2290af970b6717853f53888bca2b8e57b014a3b2",
+  "references": [
+    "art/standing_v4/koto.webp"
+  ],
+  "characters": [
+    "koto"
+  ],
+  "prompt": "One original mystery visual novel CG, full bleed16:9. Supplied image is exact Koto identity and crisp angular ink/cel style reference. Long blonde hair, pale grey eyes, cream cardigan over navy long sailor uniform, red armband and existing hairpins exactly as reference. Seated in muted ivory/violet/walnut hotel lounge, Koto looks warily down toward her own LEFT wrist while holding the CLOSED sleeve cuff with other hand. BOTH forearms and wrists FULLY covered by normal uniform sleeves; do not show skin on wrist, any markings, or a weapon. Fully clothed calm physical scene, tense thoughtful expression, no physical danger or injury. One plain closed clipboard on table, no text. Deliberately crop at upper torso so hands at center above bottom25% dialogue-safe area. Entire head with safe margin, no other people, no UI or watermark. Match fine varied black ink contours and firm cel shadows, not soft generic anime. This is a reaction shot; wrist information is provided separately by game dialogue, not pictured.",
+  "visual_status": "not generated",
+  "scope": "event CG; not whole-project completion",
+  "generation_failure": {
+    "type": "output moderation rejection",
+    "categories": [
+      "violence",
+      "self-harm"
+    ],
+    "request_id": "4d447e42-d0d4-4a28-9119-a4c4013dca73",
+    "action": "change to fully covered wrist and character reaction; no skin markings in raster"
+  },
+  "composition_note": "Covered-wrist reaction framing; this raster does not render the narrative marks. Do not use as a forensic mark closeup.",
+  "manuscript_sha256": "22ffeaa1b09d5d44d92817d896c8063ebba381d42357721d1293098b7c7c2c84",
+  "tool": "built-in image_gen",
+  "original_generated_file": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-4c17b878-d950-4422-a7d1-846b1ba7d969.png",
+  "source_file": "art/cg_v4/builtin/c5_lines_not_answers_builtin_r1.webp",
+  "source_size": [
+    1672,
+    941
+  ],
+  "hd_file": "_삭제대기_2026-10-29/제작참조확인필요/art/hd_v4/cg/builtin/c5_lines_not_answers_builtin_r1.webp",
+  "delivery_file": "art/cg_v4/delivery/c5_lines_not_answers_builtin_r1.webp",
+  "delivery_size": [
+    6688,
+    3762
+  ],
+  "delivery_sha256": "040c11c86043d1d52dfe675b2686ad52277a7d079b7b106d343be5c712f7f7de",
+  "aspect_normalization": "full frame resampling only, no crop; original and raw 4x preserved",
+  "runtime_integrated": false,
+  "upscale": "complete"
+}
