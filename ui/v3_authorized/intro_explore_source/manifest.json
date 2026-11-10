@@ -1,0 +1,1463 @@
+{
+  "schema": "v3-trial-inputs-original-ui-v1",
+  "authorization": "User20261107 allUI source-equivalent request, focused Intro/Explore/PadHome followup: exact7 UI carriers only, provided Korean t_nonstop_start_JP preferred; no original execution, installation/save change, story/character extraction.",
+  "containers": [
+    {
+      "name": "adv_search_target",
+      "member": "flash/adv/adv_search_target.spc",
+      "archive": "partition_data_win.cpk",
+      "sha256": "8beab520c122e7a81cefca17e402840a6db479433d8370b5cf01e7aa532be94c",
+      "bytes": 178752,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_intro_explore_source_20261107\\partition_data_win\\flash\\adv\\adv_search_target.spc",
+      "providedKoreanCarrier": false
+    },
+    {
+      "name": "adv_search_3d",
+      "member": "flash/adv/adv_search_3d.spc",
+      "archive": "partition_data_win.cpk",
+      "sha256": "35e3b15d4f872289107988d9a45cf4109d7f94c5d81a8a4eb7cc98c7ac96d482",
+      "bytes": 14480,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_intro_explore_source_20261107\\partition_data_win\\flash\\adv\\adv_search_3d.spc",
+      "providedKoreanCarrier": false
+    },
+    {
+      "name": "adv_map_base",
+      "member": "flash/adv/adv_map_base.spc",
+      "archive": "partition_data_win.cpk",
+      "sha256": "513c82dd89b9af9c075104ba5c093fdd9b71a4178f552358e33adc170f96e9d7",
+      "bytes": 45488,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_intro_explore_source_20261107\\partition_data_win\\flash\\adv\\adv_map_base.spc",
+      "providedKoreanCarrier": false
+    },
+    {
+      "name": "adv_search_name",
+      "member": "flash/adv/adv_search_name.spc",
+      "archive": "partition_data_win.cpk",
+      "sha256": "f77b6491c473cc051c202f570ad26410156284b87caa673663834917a0d8f02c",
+      "bytes": 27520,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_intro_explore_source_20261107\\partition_data_win\\flash\\adv\\adv_search_name.spc",
+      "providedKoreanCarrier": false
+    },
+    {
+      "name": "techou_top",
+      "member": "flash/techou/techou_top.spc",
+      "archive": "partition_data_win.cpk",
+      "sha256": "0f85ffdd30430b4b1ed11f8158a2b0a318d26ee3f8b9a529397c94f930e18126",
+      "bytes": 141936,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_intro_explore_source_20261107\\partition_data_win\\flash\\techou\\techou_top.spc",
+      "providedKoreanCarrier": false
+    },
+    {
+      "name": "adv_map_north_US",
+      "member": "flash/adv/adv_map_north_US.spc",
+      "archive": "partition_data_win_us.cpk",
+      "sha256": "c8e1d622970dc313b61b72b7262ac37e5dde2ead7fccd7e06147e3ffb31f6055",
+      "bytes": 8128,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_intro_explore_source_20261107\\partition_data_win_us\\flash\\adv\\adv_map_north_US.spc",
+      "providedKoreanCarrier": false
+    },
+    {
+      "name": "t_nonstop_start_US",
+      "member": "flash/event/t_nonstop_start_US.spc",
+      "archive": "partition_data_win_us.cpk",
+      "sha256": "6dfa2b8b6c8e33f81c4da94394582ba6f0eb8b2a24d511754dc07db973b4ea94",
+      "bytes": 2234768,
+      "source": "C:\\Users\\kirby\\Downloads\\v3_re\\ui_import_20261029\\ui-containers\\data\\win\\flash\\event\\t_nonstop_start_JP.spc",
+      "providedKoreanCarrier": true
+    }
+  ],
+  "textures": [
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "kibo_base.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_000_kibo_base.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "26a2996f3ef4e14e69e648454a0fbdd26380f1782dd9758d4a5bea05b32527c9",
+      "pixelSHA256": "d41637ca813f3288acce00d0bb590a2ff170a1111312c203cf474b1d53dfcf59",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 1,
+      "resource": "kibo_ef_cir_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_001_kibo_ef_cir_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "eef2de855e4a410edc85c3cdd7751fefdbe18fc6a4fb717c28b413af391ac688",
+      "pixelSHA256": "e19e7d730237e123be17518cb74a008ccd7e0e1bb260c0e75086106db3a94e87",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 2,
+      "resource": "kibo_guage_base.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_002_kibo_guage_base.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "bbfbf6eb42ce024adf36bef7aa661cb159358a8368730c51529729a29815e143",
+      "pixelSHA256": "7dc9256f60598060534de88859cb2244779a252374acde29b071d6d550bb7a40",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 3,
+      "resource": "kibo_logo.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_003_kibo_logo.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "f8906a7d94d35dc5caed4583c9b49b3d3f2ffdb414e5745c2c45f35f99bc05e6",
+      "pixelSHA256": "3a760dbba6f44cee52904062b19d9c6a5ed481f216cce0f009fe768c903fa64f",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 4,
+      "resource": "kibo_logo_base.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_004_kibo_logo_base.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "b9414c328045c103d67efb4f9074c5d6f48ea9cc24d7c24212b4edfc873fbafb",
+      "pixelSHA256": "c8c3a858e15235409745c234829808cb12366394f9f745fd905d424c93bbaff7",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 5,
+      "resource": "material_close.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_005_material_close.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "244d51bdd64efe0c331973b9aba695faca381fcedfb6807b2eb2a776f9dcb2a2",
+      "pixelSHA256": "a92a51ca16d24dd143c8c5cf4484a11dd8ac6bf0b1a2d2d39048edfe5aff3516",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 6,
+      "resource": "material_close_act.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_006_material_close_act.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "648d7ad823c9fcaf795b331f84f63fc6a0b00bc45c0f9697d43a230617f8c103",
+      "pixelSHA256": "a4eb1633f915cef692248195937e7218d5b19d3927aa2d255d8d5f1b5e7f1a2b",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 7,
+      "resource": "material_close_item.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_007_material_close_item.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "1c1638c26fe00f037e2a2651170dcddf45f7a2deb8673ed40e97a52f65e614d9",
+      "pixelSHA256": "1dafeea76cb68f3bc22082fda021222aa48c07bdb9e6ae6a1971985239f7a125",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 8,
+      "resource": "material_close_move.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_008_material_close_move.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "8d384a3d30f995194f7f796e340bd17b00c128c6f225b5119edcad2a6ef10702",
+      "pixelSHA256": "f2abcfd473799fb95fd84eac1a3e3384fb9011d980bec135472e8ebe740417f8",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 9,
+      "resource": "material_close_on.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_009_material_close_on.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "a5cdc3837911690d7919518bbde4c5d9eebaabadd73506fd103cf9669b903d82",
+      "pixelSHA256": "62ebd1fa90ed0a250ab5581f1244c3dc7e10b25f73f7f021ea756875e7aa1d5c",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 10,
+      "resource": "material_close_sarch.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_010_material_close_sarch.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "376d9ab015e136e112eee205ec61902b6c08fa96e4dd910fe1d9f25f2fd41e9d",
+      "pixelSHA256": "f742ebc330c41c68d596a47cdbca2591a90c9ceb49317851d261cbf5f56557ae",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 11,
+      "resource": "material_close_talk.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_011_material_close_talk.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "0e6c229659cb8565d46bd8d7c6cd6a5867392b73af8f43a0edb14a63f07afa6b",
+      "pixelSHA256": "1243a5eb840f67ce1c0943788195730a83cbaf6eb443d8f52cde2a5ce979a1ad",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 12,
+      "resource": "material_day.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_012_material_day.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "3d42d641c7b4fa605d9db29968dd0298a7b10efdbfc66bc019955e180fd7fa43",
+      "pixelSHA256": "c5a4cd261d02abcfb047e8140e660ca7c1c0dc5cccce0befd681817d3c99c2d6",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 13,
+      "resource": "material_day_act.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_013_material_day_act.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "648d7ad823c9fcaf795b331f84f63fc6a0b00bc45c0f9697d43a230617f8c103",
+      "pixelSHA256": "a4eb1633f915cef692248195937e7218d5b19d3927aa2d255d8d5f1b5e7f1a2b",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 14,
+      "resource": "material_day_item.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_014_material_day_item.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "5a023fb25933fd713ed21678aa38f18d1c8cd6a90c9754a44e88ff51ca8f41d0",
+      "pixelSHA256": "5b8f355712c0adf49105b40c30cdaf545a235d743ce640d2f3af01eb45924534",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 15,
+      "resource": "material_day_move.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_015_material_day_move.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "8d384a3d30f995194f7f796e340bd17b00c128c6f225b5119edcad2a6ef10702",
+      "pixelSHA256": "f2abcfd473799fb95fd84eac1a3e3384fb9011d980bec135472e8ebe740417f8",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 16,
+      "resource": "material_day_on.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_016_material_day_on.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "6301cec4edf5c07bd37c7c63019a7bb67f2798f32b6f0cdc1bfdbb376d000e47",
+      "pixelSHA256": "268f6540fbd5cdc6f7d307c93c964a0a4b628d166b11fe5212625ac3eb76ee6d",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 17,
+      "resource": "material_day_sarch.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_017_material_day_sarch.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "f37fff3c00a46e6be6f2c0dfc70c1572caecc3152a385689949ee3ccdb85775b",
+      "pixelSHA256": "8a349c991440305062f3a6272f3da04311f1d29a38361e1ac7193efe27b76cf4",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 18,
+      "resource": "material_day_talk.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_018_material_day_talk.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "049c50da751dcbe6c7586b625b962f542d9bc35074383c569bbe15c5b3f422de",
+      "pixelSHA256": "6022caa9935cafd1022057233006789ed73ca592bdc2ba2fc6aec24d0b41b0dd",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 19,
+      "resource": "material_night.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_019_material_night.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "dd4cb5f2b73e0079b1e18df829e2dfca143e1fe6530107c34196e04f5bb66e7b",
+      "pixelSHA256": "93d941489d881e7327c25084ea7d6eca83f1806a55d7ba29b9d02eabb29a1e6a",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 20,
+      "resource": "material_night_act.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_020_material_night_act.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "648d7ad823c9fcaf795b331f84f63fc6a0b00bc45c0f9697d43a230617f8c103",
+      "pixelSHA256": "a4eb1633f915cef692248195937e7218d5b19d3927aa2d255d8d5f1b5e7f1a2b",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 21,
+      "resource": "material_night_item.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_021_material_night_item.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "33c8a3bfb277ee55e3b0a369767047f34b4bb496e0fdcedda83b270be5b3c96a",
+      "pixelSHA256": "53f9075a5e909a788ab88da0c16d4820aeff77e5c0db5c3814ee0c91b75162de",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 22,
+      "resource": "material_night_move.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_022_material_night_move.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "8d384a3d30f995194f7f796e340bd17b00c128c6f225b5119edcad2a6ef10702",
+      "pixelSHA256": "f2abcfd473799fb95fd84eac1a3e3384fb9011d980bec135472e8ebe740417f8",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 23,
+      "resource": "material_night_on.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_023_material_night_on.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "0282e8713b95def7367e8726acf0f00db465644f7bb36e9d710e0a896c490474",
+      "pixelSHA256": "fc21ae2e63bcd1c70bf194098871fb27287a121d21aea633e267a2ac0b447e5f",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 24,
+      "resource": "material_night_sarch.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_024_material_night_sarch.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "4cff011a94dfe79b41e1b3e49d0bd06f1e61cfb6e81ca56fbf9c26dd3d726933",
+      "pixelSHA256": "d5268ca5ef5500c3f0b6fa67335dcc63c82e44145e97b7b56c99cfbf9b52bbf4",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 25,
+      "resource": "material_night_talk.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_025_material_night_talk.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "e16a408e5d24c2956d2b09dff57bfc5f678f8d68cdf91db08bff06346942292b",
+      "pixelSHA256": "bc1c2a0c9a48e48ed78c0944c3043baba96af44b1af796089d280df3d6bf1fbb",
+      "size": [
+        100,
+        100
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 26,
+      "resource": "ten.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_026_ten.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "a23b3c090d545e4abff80995e136097e274efd27e9c4947d0f4627853ca00dab",
+      "pixelSHA256": "e00bd628a2afe366d4374e62326b614831b669fab353bb4bd7a3b86a5656ba7a",
+      "size": [
+        16,
+        16
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 27,
+      "resource": "tex_kakko.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_027_tex_kakko.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "ca7ef347c161831f440ac6b0d4220ce89015d96fb9e572dff64fa571ed94937a",
+      "pixelSHA256": "b477443f25ab4225358d8194c2ca92864bba3dad40ea075b2ea1fff18f7c2b1b",
+      "size": [
+        200,
+        200
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_target",
+      "member": "texture.srd",
+      "imageIndex": 28,
+      "resource": "tex_kakko_act_ef.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_target/texture_028_tex_kakko_act_ef.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "acdec7387e96541ac32ae0ed79e0e5cda5e491f82426413965941ad678c3fd90",
+      "pixelSHA256": "4dad6b79de53bc6c4fee203db452d498bb706c3d7b713d5710c8579352c2b208",
+      "size": [
+        300,
+        300
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "cursol_000_000.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_000_cursol_000_000.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "60d1f0ab03733884465d9dfdb4acd051bc20750166ca7103bb58599acadf1f88",
+      "pixelSHA256": "38deb663b42fe228b43e762826df0a9176d3e91043d7b4d5ffbc77702093efb2",
+      "size": [
+        56,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 1,
+      "resource": "on_line_close.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_001_on_line_close.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "59b2a510067a79c551de927cff6c8b95091139d5bb246a4a570f90eb73c21ddf",
+      "pixelSHA256": "6b66e7f31614fc7f03215b584c63620efbdb41b931663bb6117b10040292da50",
+      "size": [
+        256,
+        32
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 2,
+      "resource": "on_line_day.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_002_on_line_day.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "db0934c29dcda0295e84639615018e9a4d47eae8aacff17680026c21c9587b08",
+      "pixelSHA256": "a7017f230bc101d4abb712f0f1570a6e2feba5a6e71bcafb7757f286a5510429",
+      "size": [
+        256,
+        32
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 3,
+      "resource": "on_line_night.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_003_on_line_night.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "83845df01048406c461e26eea088db026fc2edb22be0faa938df4d0a94ca54d1",
+      "pixelSHA256": "8e63f6aacbdf54c6544a08bb5f8303eee072311e6a5f7a54c90e4951e64f125c",
+      "size": [
+        256,
+        32
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 4,
+      "resource": "on_sankaku_close_ef.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_004_on_sankaku_close_ef.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "8c3da50f47cfee0a60f7175013c76aa427742bae57ad9d4eab3de1f2d6394fe8",
+      "pixelSHA256": "a0baaa99f16cd1cc57e38b9f3ee51c2e56568b52ae06610d68ad0c6de24d2815",
+      "size": [
+        128,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 5,
+      "resource": "on_sankaku_day_ef.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_005_on_sankaku_day_ef.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "ed10f8e0aaf64bbe6301b4ca20527d081bf0b855f6fc5272c1b5e612fc0db9c8",
+      "pixelSHA256": "22146136841fc17fb31649224e299f4ed35e527678d63dda3b1783829af29eb5",
+      "size": [
+        128,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_3d",
+      "member": "texture.srd",
+      "imageIndex": 6,
+      "resource": "on_sankaku_night_ef.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_3d/texture_006_on_sankaku_night_ef.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "13070d5990665cdfb29cffdd098c706359a9e25337727f3faf8a8f933f942d17",
+      "pixelSHA256": "83a8de4b636c873dc839be0cbe046c25bc1461ff62a2443ee4b206006f8cc79e",
+      "size": [
+        128,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_map_base",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "map_kazari.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_map_base/texture_000_map_kazari.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "3133e06a2d4972a74532ecac614426761e431a2fc11269e67cf7fda57653f1ad",
+      "pixelSHA256": "88cd5fde1191ed1e531c7836294b84a5609fe5a9d0161bc81ce5b069eb018739",
+      "size": [
+        415,
+        185
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_map_base",
+      "member": "texture.srd",
+      "imageIndex": 1,
+      "resource": "map_tx_bg.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_map_base/texture_001_map_tx_bg.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "96cb67db1e174f4eb7e09eb95cd72a2bc5069c5633390131c8bfb346733d6f72",
+      "pixelSHA256": "9f091c98ce1dcf3ee4986ce0a4a1a76b1b8dd99ecfe80e7198b616672998d4b9",
+      "size": [
+        32,
+        32
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_map_base",
+      "member": "texture.srd",
+      "imageIndex": 2,
+      "resource": "map_base.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_map_base/texture_002_map_base.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "32a9d1775d5923b1ad0eb99cd68725414df4e87b25a9fc33bc4d537fa85b765c",
+      "pixelSHA256": "63a9188e9a2aabd512d47de83d88c21fb64303131789fd49c190bbde2967c56f",
+      "size": [
+        512,
+        512
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_map_base",
+      "member": "texture.srd",
+      "imageIndex": 3,
+      "resource": "mask.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_map_base/texture_003_mask.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "04eb226ceaab1c57fe7c648f8611710fc6897494967a32dcc8273516e1fd3b00",
+      "pixelSHA256": "bd188920db5f8a3f9f17543fb7b56c740d40b714315c1364a6df77de8bd457a7",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_name",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "beta_000.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_name/texture_000_beta_000.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "310333fab0e34b9c50c3a33205e39fad825a7c1cdea0645896ed883634689108",
+      "pixelSHA256": "413a3bd3504c736d72468367d2b896516ac51a26d11e70d5bc29c2eb27e3078d",
+      "size": [
+        749,
+        84
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_name",
+      "member": "texture.srd",
+      "imageIndex": 1,
+      "resource": "beta_night.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_name/texture_001_beta_night.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "8e87662fb9855091d5dee84997a07a43029c85a3f2fbb12e07a3b24b3f534d92",
+      "pixelSHA256": "adefa2f0f315e0095446edbc86d7710fc13187699dcc371548bff2b0b0fcc8e9",
+      "size": [
+        749,
+        84
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_name",
+      "member": "texture.srd",
+      "imageIndex": 2,
+      "resource": "beta_close.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_name/texture_002_beta_close.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "0d66c96c40710136c3788faec45675d3e695a376f2197d527f7c9f545c8d8ffd",
+      "pixelSHA256": "7a12da2279cc4aed0a526989ffd944e5c801f6e0bf5748647859567d4ed7879f",
+      "size": [
+        749,
+        84
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_name",
+      "member": "texture.srd",
+      "imageIndex": 3,
+      "resource": "line_000.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_name/texture_003_line_000.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "5984354fe352ef46e38406f35fe51e3a413c3b64dba1978a00c6c295fbd3dd06",
+      "pixelSHA256": "6e79b9365aff2ea3bdcd148d9091e9c8eeeb34172c19c6bcce9d8a1e22251eee",
+      "size": [
+        59,
+        84
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_name",
+      "member": "texture.srd",
+      "imageIndex": 4,
+      "resource": "line_night.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_name/texture_004_line_night.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "a1411120770c80eb9869058b4ac4612993928e70528ed832479442d3fccef67f",
+      "pixelSHA256": "a2c30a4384e16a1451e1f6da956e1b93c4f2e0a99c3afe3af71246efcb8e1ab9",
+      "size": [
+        59,
+        84
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_search_name",
+      "member": "texture.srd",
+      "imageIndex": 5,
+      "resource": "line_close.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_search_name/texture_005_line_close.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "c6bd37c9e98e218a4c599827041c520acd132078acd6ea0fd78bc56111ee69ff",
+      "pixelSHA256": "139ad604669910691a9b52b6e99eb312e2f8f7ed4487c830085dd80cdc9b8977",
+      "size": [
+        59,
+        84
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "category_kotodama_base_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_000_category_kotodama_base_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "a7c4498793a8bbbf5eda584d0245c76675499d3964ed90f740cc63fddf13c7f5",
+      "pixelSHA256": "9563d879d825fd9bdb78b8dfba42b2f8727d538a0e7e97fb041d8df8d1655a93",
+      "size": [
+        198,
+        204
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 1,
+      "resource": "category_kotodama_poiny_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_001_category_kotodama_poiny_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "b809d4f5ab156e268896a1f266b5e5576c0ae455e4effd8e493d1790888712b2",
+      "pixelSHA256": "a30c2205396e6e62f3d2d19daef8592502f749bd4a1e8c2b81a4bf1848ff6044",
+      "size": [
+        95,
+        93
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 2,
+      "resource": "category_map_base_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_002_category_map_base_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "822bc8097d6a4931353413e1f6526cfaa7a38b0cd6951a139c6c3ad82f3ebbf9",
+      "pixelSHA256": "2add96dfcdac2fe24ee1258f7fec5c53b47bfa1733918ebed7fc3da13d9fc7b7",
+      "size": [
+        198,
+        204
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 3,
+      "resource": "category_map_point_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_003_category_map_point_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "5a2e02f1e34aeabdf1a2c16eb7772538967b4ca0eb3688c4a17669a34d801236",
+      "pixelSHA256": "4fd6fc66989bdc899967e278d8316efacf66baae3fcd82fcded3f4c341b7ff0f",
+      "size": [
+        40,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 4,
+      "resource": "category_present_base_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_004_category_present_base_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "9166f44cdfb3493a2152ac673a8a6767962c5d20c5a7f81d9defd35cb756aafb",
+      "pixelSHA256": "999aba95a104384553cbfd0979a6a4e416851a9efb92b750639b7c910bba68d2",
+      "size": [
+        198,
+        204
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 5,
+      "resource": "category_present_point_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_005_category_present_point_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "126352e97d769952cf39a3f46c405d633d7bc1006de0dd629be69f7590ebaff9",
+      "pixelSHA256": "2dbc87c58659f5173e6c44aaed3f3e40bfeab743bf56c6df180cd13c5b39ca29",
+      "size": [
+        105,
+        174
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 6,
+      "resource": "category_rules_base_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_006_category_rules_base_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "5555806c6e46de313c2facedf9e258fbd6a7f20c20a54587ef07ad6faec756b3",
+      "pixelSHA256": "eee80d4c86921893607a2897288dd14282d527b0f3ade3efed9ce953ee0a522b",
+      "size": [
+        198,
+        204
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 7,
+      "resource": "category_rules_point_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_007_category_rules_point_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "b60fba13bc1927fd26eef02d619c6137e76f45edef276f04bc744fd505a3a7fc",
+      "pixelSHA256": "f20d76531d14cf6061a4ae18dea6a18828b70cb0daa937e2b7fe955fcd714ae4",
+      "size": [
+        108,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 8,
+      "resource": "category_system_base_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_008_category_system_base_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "a49c54ca8f03b454e4320c4cc8dc6f381b447503c7e829d1dd61746e3f3ab6d1",
+      "pixelSHA256": "3fe41a372016e40b682f8db11d68d9e640b5464cd4ec86e85d2b4fdffb870f8c",
+      "size": [
+        198,
+        204
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 9,
+      "resource": "category_system_point_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_009_category_system_point_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "5ee3daaa2b9a3a85ab35a7b83be4604fcb89a2558024dc8c568bbf875e55e9e1",
+      "pixelSHA256": "84d2b420f35195ab7178c3e892220a36717ce6696eb951a9785ec05e94acf5e6",
+      "size": [
+        123,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 10,
+      "resource": "category_tsusinbo_base_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_010_category_tsusinbo_base_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "48169a9657679b0fea6aee5b405674a67d041c5394030a8afc1f68a953f3bc0f",
+      "pixelSHA256": "144ea339e2f48ee62297ab9b46b9b0587b13bd3350b1ab76fd8a584617402147",
+      "size": [
+        198,
+        204
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 11,
+      "resource": "category_tsusinbo_point_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_011_category_tsusinbo_point_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "bd8c63dba8642ef11b5d8642253cf4789e8c433d1533d0995d58fa868f74762c",
+      "pixelSHA256": "d68f7a562b9756a5e4019c88c3140c3aec9c375c08aa9ade7c81fdb7cf316db1",
+      "size": [
+        64,
+        82
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 12,
+      "resource": "ef_s_000_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_012_ef_s_000_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "ac0a058c87d693692da8f22355e3b6e92f61a918eb06b0c100772f62b2c94f78",
+      "pixelSHA256": "ec560c5a58cdea5d76c59d843dd3a832492f5591baba82105ead8e30fbc907af",
+      "size": [
+        106,
+        166
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 13,
+      "resource": "ef_s_000_b_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_013_ef_s_000_b_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "677cd85159a8fe6b60401e0fb109ab7dd6098297d663c83333e65317434de5f4",
+      "pixelSHA256": "1188c4b395186f47083ad2ba14826476ca30dd019193773d80d9fb7af34a549c",
+      "size": [
+        106,
+        166
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 14,
+      "resource": "ef_s_001_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_014_ef_s_001_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "cb3563ced37bb6030e3089609022d9ebcf163f5c2b66868ae573dc183e181cde",
+      "pixelSHA256": "ef74211d5e6250340a41bc4a9fde868373f9933c30e58e8a57c8ad33e5e9dd40",
+      "size": [
+        106,
+        166
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 15,
+      "resource": "ef_s_001_b_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_015_ef_s_001_b_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "8ef0dbddabd780733d27bff0d9a808e2eaff9a80fcd5f154e5e470f837a66b15",
+      "pixelSHA256": "68f3a356039d69fd4acb1afc2ca185fcfd83d7cf0a24bb020b135a6eb19114e1",
+      "size": [
+        106,
+        166
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 16,
+      "resource": "grade_gra.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_016_grade_gra.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "9a1a71576f6b322fa6f3668a9d405e466c9784d803f6109f82fde1d77fd76b4e",
+      "pixelSHA256": "d302bc58e2bc905fcd1d2db4d6d9d80a03f25740e24df153216b2135de9ad912",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 17,
+      "resource": "icon_base.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_017_icon_base.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "410d5a98a1409025ce7db0271f05c310b9d8a45e2772d1e99c0b5f4f462ac1a2",
+      "pixelSHA256": "17ee3a178898bfcacc5f1ce07430817b95d447b30ff0d5a3e39ccfe8e3cdef4a",
+      "size": [
+        237,
+        250
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 18,
+      "resource": "new_hukidasi.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_018_new_hukidasi.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "03671852adc3b6b12bd59e3a255943ddea526003c92a217f3fb498503a6ba3ca",
+      "pixelSHA256": "611325f22ce7e5f411a53726c07d3989cc3b788b5c5ad046a1f47799641d8244",
+      "size": [
+        65,
+        80
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "techou_top",
+      "member": "texture.srd",
+      "imageIndex": 19,
+      "resource": "shadow_000.png",
+      "file": "ui/v3_authorized/intro_explore_source/techou_top/texture_019_shadow_000.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "396bb8b3b055f920234475dc2d2767fe15e87a4cbe20f280f4245eaf8408a42d",
+      "pixelSHA256": "d4776d5411cbb8fbc9f797605d031e9dd091836d1e560f57cf53e51f1ff67eee",
+      "size": [
+        256,
+        172
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "adv_map_north_US",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "n_US.png",
+      "file": "ui/v3_authorized/intro_explore_source/adv_map_north_US/texture_000_n_US.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "b865fbcc12d7d8f5abf07cd3c3d73ebdef4e11b2e3ca07baf65865f2d0d8ae1f",
+      "pixelSHA256": "ea1952dd9977ce4afd83db4a1fe1ea6b80625031ccc3b7efd3ca63824a38caa5",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 0,
+      "resource": "t_nonstop_tx_xs_004_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_000_t_nonstop_tx_xs_004_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "f764ef384ea1bc2070ec796be67a9c2d1d5e42f7e6746442c0a99231a3911288",
+      "pixelSHA256": "141f15a1790fdb06502147306e1f0b5fb30ef8301ac6bc1b176e4661be1cf651",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 1,
+      "resource": "t_nonstop_tx_s_006_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_001_t_nonstop_tx_s_006_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "3d07bfa3373a11f3a63581a82ca823862c0b82a611ca0e68d416c3b4e7ec9845",
+      "pixelSHA256": "98500e9f1c0a76c5dc84beef8d3393f465a6f1d3c51f940c27c108caf6c74fa9",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 2,
+      "resource": "t_nonstop_tx_s_005_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_002_t_nonstop_tx_s_005_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "7f71b9db84609211e5604ae02ff4590933afb52115af3a24a93d7289c3d66350",
+      "pixelSHA256": "deebf57fad866b38cb6a56e3a0d1d25cbed5daef5f68e46028ebef7371c89b29",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 3,
+      "resource": "t_nonstop_tx_s_003_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_003_t_nonstop_tx_s_003_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "14a9262da7516a54c3486b3def2451fc0fbcdc0c63fd956c7c4a52d7d8aae3ca",
+      "pixelSHA256": "fa77d4c27fd070dca17ab8d3bf85cfede9b9e50ba4697a2dd7ccdc03578f18c0",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 4,
+      "resource": "t_nonstop_tx_s_002_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_004_t_nonstop_tx_s_002_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "0d4a15f244753b378aa33c2c4b4d99027df0c9c3b779299c653726cd2e6012e6",
+      "pixelSHA256": "087d47bcc089d3f2c7ee84e65d022d646d56031dd078dd353e57a38674eee331",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 5,
+      "resource": "t_nonstop_tx_s_001_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_005_t_nonstop_tx_s_001_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "7f71b9db84609211e5604ae02ff4590933afb52115af3a24a93d7289c3d66350",
+      "pixelSHA256": "deebf57fad866b38cb6a56e3a0d1d25cbed5daef5f68e46028ebef7371c89b29",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 6,
+      "resource": "t_nonstop_tx_l_a_000_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_006_t_nonstop_tx_l_a_000_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "cbd142cc37df1f62a35b0c02dc3a4879a9374bc1797a4a5b705b657edf944e0b",
+      "pixelSHA256": "57421dc30cb33a21842baf6f7c9557bd2aeef3d6e0999729c4e5fd3dae2eec0d",
+      "size": [
+        512,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 7,
+      "resource": "t_nonstop_tx_l_000_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_007_t_nonstop_tx_l_000_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "482c5d91123650b330321925633a5f554d7d4595718f7715b5e2a4f1cd9d104c",
+      "pixelSHA256": "8e21941c84063bad304ad4d04fabd763eddbf48a6228670eda6743cb135f4b84",
+      "size": [
+        1024,
+        512
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 8,
+      "resource": "t_nonstop_tx_a_s_004_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_008_t_nonstop_tx_a_s_004_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "acf548744b89fc028affe4fe678220433c8731f9eff0d741012d6f1391f8786a",
+      "pixelSHA256": "49f6ff9b24c008dc281f9b5e78644c12d9398ed5af3a3160620a88edbb117b00",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 9,
+      "resource": "t_nonstop_tx_a_s_002_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_009_t_nonstop_tx_a_s_002_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "3b51511d84fcf9dbc4bda41e418f73d468f37c6ae43770a025d5ea2b139d7f31",
+      "pixelSHA256": "9a569895a6c96f3b3050eda0b73370122e8e7cc8504f4d4323d1b255270f17a2",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 10,
+      "resource": "t_nonstop_tx_a_s_001_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_010_t_nonstop_tx_a_s_001_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "acf548744b89fc028affe4fe678220433c8731f9eff0d741012d6f1391f8786a",
+      "pixelSHA256": "49f6ff9b24c008dc281f9b5e78644c12d9398ed5af3a3160620a88edbb117b00",
+      "size": [
+        128,
+        128
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 11,
+      "resource": "t_nonstop_tx_a_007_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_011_t_nonstop_tx_a_007_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "2936754e56d063a42a81ce7229ecf3ae0c74e618787e100f645d459b2715148e",
+      "pixelSHA256": "50d05fe05247090efd8ca990d73a5cf322f66a5fc66503e8368d211c9832e8c2",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 12,
+      "resource": "t_nonstop_tx_a_006_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_012_t_nonstop_tx_a_006_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "d968a9f90c65b7a9ec42d0fa42ba5cc7c122d626852ee42905ed5262e8aa880e",
+      "pixelSHA256": "93b0df344d997dd7dd9785515e142356c244e3f76b7b234283090054ece29580",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 13,
+      "resource": "t_nonstop_tx_a_005_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_013_t_nonstop_tx_a_005_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "42c7d7a412f704e9468d9ba58292b23e1d659ddb4e839345ad08bb37b44ee2e5",
+      "pixelSHA256": "b7997c60612a8f60f104b19583162aaac7dde1f1ab2e8ef7c9b935550e2b0aa8",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 14,
+      "resource": "t_nonstop_tx_a_003_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_014_t_nonstop_tx_a_003_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "5870af2380c19039a3ad797fef2708968c2546e083ccc40c0fad55b76cb86532",
+      "pixelSHA256": "ac4e3bbc0423b2274573d8c690320396482582f00fb01d9c6b616aabeeb958fd",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 15,
+      "resource": "t_nonstop_tx_a_000_DXT1_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_015_t_nonstop_tx_a_000_DXT1_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "0f0937f7e851c8c27577465468511a1682839882a5922f469e485f30aa563b50",
+      "pixelSHA256": "d76fd70b3c951dd42f9874ec53dcb6fc4f4b1b13aeb1f18fac4d76d75b39fe96",
+      "size": [
+        256,
+        256
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 16,
+      "resource": "t_nonstop_tx_007_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_016_t_nonstop_tx_007_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "dcf44aa142a23813c16e2093acf8c262542ebf155ce44d90b7cef3eba232090c",
+      "pixelSHA256": "f8a2c2c97468f1d007965aa5668ce26816ec673f6e39e40944da456646387d5c",
+      "size": [
+        512,
+        512
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 17,
+      "resource": "t_nonstop_tx_000_JP.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_017_t_nonstop_tx_000_JP.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "78054d127ce7a1a074c8f6099894ea501a79d5bed82318515615d38ad01008cf",
+      "pixelSHA256": "19480470a6490f2d41890656225a8baf5babee7b3f7dc2c55ca0b0907c8bbae5",
+      "size": [
+        512,
+        512
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 18,
+      "resource": "t_nonstop_line_yg_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_018_t_nonstop_line_yg_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "bc7bc55c233f281031cdac939333fc36965cfd58f6afbce23177f547101b8071",
+      "pixelSHA256": "e2a0a536c792297d915c1f347de1d9608e15e6ce732ecf1f6667d16c2cfb99d3",
+      "size": [
+        64,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 19,
+      "resource": "t_nonstop_line_pk_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_019_t_nonstop_line_pk_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "2531cbdeeaaee4828d76f100f170e48d6ce85138ea8ead23aafeef6646ed4db5",
+      "pixelSHA256": "d0ea50bcab7f2863731f285302551b7359136129a396718990cefb2d42a23c30",
+      "size": [
+        64,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 20,
+      "resource": "t_nonstop_line_lbl_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_020_t_nonstop_line_lbl_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "39531e98e0d69b60741391063ce9c1901f7cdeb8a942036242649a3709a264fd",
+      "pixelSHA256": "ec0e289dd62ad494f32bca37da6ba38d0d2e040985ae7efcd010bc85dba468f2",
+      "size": [
+        64,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 21,
+      "resource": "t_nonstop_line_gr_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_021_t_nonstop_line_gr_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "d7edcf9f3a78d2e346cb49ce79d5c826b56b5b23d16546cd9f48a39b7dfb0ee5",
+      "pixelSHA256": "44accaf8ee94cd4ea8f6ab251ca48c0767404bbee34f29305735fb454a9a6718",
+      "size": [
+        64,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 22,
+      "resource": "t_nonstop_line_bl_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_022_t_nonstop_line_bl_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "d458644c82fde15091a65c28b8418419091496c9821ab320de0fd925194b9f82",
+      "pixelSHA256": "2230c20a552bf68dd3eaac78935250637f283162d50b5a49b8e165b74645c591",
+      "size": [
+        64,
+        64
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 23,
+      "resource": "t_nonstop_hoop_000_DXT1.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_023_t_nonstop_hoop_000_DXT1.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "ed08d6579cb6b83613c69be716e2bd8a6f03e4f7051de1278966f1a7cdc48ab6",
+      "pixelSHA256": "2c4ade29caa633460516f7e73e0b7760a574e75676eee793790f765f617eee23",
+      "size": [
+        1024,
+        1024
+      ],
+      "runtimeSelected": false
+    },
+    {
+      "container": "t_nonstop_start_US",
+      "member": "texture.srd",
+      "imageIndex": 24,
+      "resource": "t_nonstop_ball_000.png",
+      "file": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/texture_024_t_nonstop_ball_000.png.png",
+      "ownPortraitRequired": false,
+      "sha256": "334f239a3677b567abb9594a8b8b3bbe4b9808ca4158cd1a9c7914c8363fe5a7",
+      "pixelSHA256": "b0ccba698cb4cdaddb4eb7e63e5ab789ffbc54bd47ce600bfa04dc3dc79af288",
+      "size": [
+        128,
+        64
+      ],
+      "runtimeSelected": false
+    }
+  ],
+  "timelines": {
+    "adv_search_target": "ui/v3_authorized/intro_explore_source/adv_search_target/flash-animation.json",
+    "adv_search_3d": "ui/v3_authorized/intro_explore_source/adv_search_3d/flash-animation.json",
+    "adv_map_base": "ui/v3_authorized/intro_explore_source/adv_map_base/flash-animation.json",
+    "adv_search_name": "ui/v3_authorized/intro_explore_source/adv_search_name/flash-animation.json",
+    "techou_top": "ui/v3_authorized/intro_explore_source/techou_top/flash-animation.json",
+    "adv_map_north_US": "ui/v3_authorized/intro_explore_source/adv_map_north_US/flash-animation.json",
+    "t_nonstop_start_US": "ui/v3_authorized/intro_explore_source/t_nonstop_start_US/flash-animation.json"
+  },
+  "errors": [],
+  "executedOriginalGame": false,
+  "modifiedInstallation": false
+}
