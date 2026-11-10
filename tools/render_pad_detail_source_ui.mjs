@@ -1,7 +1,7 @@
 // Embed exact family RGBA composition; do not introduce a second UI controller.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import{createWidgetNode}from'../../engineCreate/prototype/ui-assets.js';
+import{createWidgetNode}from'../Game/engineCreate/prototype/ui-assets.js';
 export async function applyPadDetailSource({repo,write,w,screen}){
  const dir=path.join(repo,'ui/v4/pad_detail_source'),m=JSON.parse(await fs.readFile(path.join(dir,'layout.json'),'utf8'));
  const prefix='Assets/Art/ui/pad_detail_source/',states={};

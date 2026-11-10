@@ -10,7 +10,7 @@ import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../engineCrea
 // This file does not reinterpret native TechouMapX/Y as this game's GLB units.
 export async function emitV4PadMapUI({repo,write,body,preparedWorld=null}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/pad_map_ui_contract.json'),'utf8'));
- if(!preparedWorld){const manifest=await fs.readFile(path.join(repo,'art/space_v4/park_levels_v1/manifest.json'),'utf8').then(JSON.parse,e=>{if(e.code!=='ENOENT')throw e;return null;});if(manifest?.geometryComplete)preparedWorld=JSON.parse(execFileSync('C:/python/python.exe',['-X','utf8',path.join(repo,'tools/v4_park_levels.py')],{encoding:'utf8',maxBuffer:32*1024*1024,windowsHide:true}));}
+ if(!preparedWorld){const manifest=await fs.readFile(path.join(repo,'art/space_v4/park_levels_v1/manifest.json'),'utf8').then(JSON.parse,e=>{if(e.code!=='ENOENT')throw e;return null;});if(manifest?.geometryComplete)preparedWorld=JSON.parse(execFileSync('python',['-X','utf8',path.join(repo,'tools/v4_park_levels.py')],{encoding:'utf8',maxBuffer:32*1024*1024,windowsHide:true}));}
  const worldBytes=preparedWorld?Buffer.from(JSON.stringify(preparedWorld)):await fs.readFile(path.join(repo,'art/space_v4/runtime_v1/world.json')),world=preparedWorld||JSON.parse(worldBytes);
  // The older separately baked atlas no longer matches its recorded world hash.
  // Derive each map footprint from the actual runtime catalog instead of hiding
@@ -40,7 +40,7 @@ export async function emitV4PadMapUI({repo,write,body,preparedWorld=null}){
  // engine's Panel has no clipping flag; no engine or DOM changes are needed.
  add(map,'Image','MpOutsideMask',[0,0,1280,720],{texture:'Assets/Art/ui/v3/map_mask/type_000.svg',imageFit:'fill'});
  const themes=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/pad_system_connection_contract.json'),'utf8')).provided_bank_check.theme_backgrounds.resources;
- for(const theme of themes){const png=(await fs.readFile(theme.path)).toString('base64'),id=String(theme.type_id).padStart(3,'0');await write('Assets/Art/ui/v3/map_mask/type_'+id+'.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"><defs><clipPath id="outside"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H1280V720H0ZM${viewport[0]} ${viewport[1]}V${viewport[1]+viewport[3]}H${viewport[0]+viewport[2]}V${viewport[1]}Z"/></clipPath></defs><image href="data:image/png;base64,${png}" width="1280" height="725.333333" preserveAspectRatio="none" clip-path="url(#outside)"/></svg>`);}
+ for(const theme of themes){const png=(await fs.readFile(path.join(repo,theme.path))).toString('base64'),id=String(theme.type_id).padStart(3,'0');await write('Assets/Art/ui/v3/map_mask/type_'+id+'.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"><defs><clipPath id="outside"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H1280V720H0ZM${viewport[0]} ${viewport[1]}V${viewport[1]+viewport[3]}H${viewport[0]+viewport[2]}V${viewport[1]}Z"/></clipPath></defs><image href="data:image/png;base64,${png}" width="1280" height="725.333333" preserveAspectRatio="none" clip-path="url(#outside)"/></svg>`);}
  await emitOwnThemeMasks({repo,write});
  const structure=c.place_list.structural_leaves;
  add(map,'Panel','MpListShade',ref(structure,'i_dammy/depth1'),{background:'#08080ddd'});
@@ -68,7 +68,7 @@ export async function emitV4PadMapUI({repo,write,body,preparedWorld=null}){
  const floor=c.floor_controls.variants[0].leaves;
  const floorBank=c.provided_texture_bank.floor_textures;
  for(const [id,p,resource]of[['MpFloorTitle','p_title_text/depth1','s_titile_floor_JP.png'],['MpFloorBase','i_floor_off_000/depth1','floor_non.png'],['MpFloorActive','p_floor_on_000/depth1','floor_act.png']]){
-  const raw=(await fs.readFile(floorBank.find(x=>x.resource===resource).path)).toString('base64'),r=ref(floor,p),asset=await ownSvg(id,`<image href="data:image/png;base64,${raw}" width="128" height="128" preserveAspectRatio="none"/>`);
+  const raw=(await fs.readFile(path.join(repo,floorBank.find(x=>x.resource===resource).path))).toString('base64'),r=ref(floor,p),asset=await ownSvg(id,`<image href="data:image/png;base64,${raw}" width="128" height="128" preserveAspectRatio="none"/>`);
   add(map,'Image',id,r,{texture:asset,imageFit:'fill'});
  }
  add(map,'Text','MpFloor',ref(floor,'p_floor_000/depth1'),{text:'',fontSize:24,color:'#000000',align:'center'});

@@ -10,7 +10,7 @@ export async function emitTrialResultUI({repo,write,body}){
  const base='Assets/Art/ui/v3/trial_result/',assets={};
  for(const [family,f] of Object.entries(c.families))if(family.includes('t_resultt_')){
   const images=new Map();
-  for(const r of f.provided_rasters){const bytes=await fs.readFile(r.path);if(createHash('sha256').update(bytes).digest('hex')!==r.png_sha256)throw Error('Result raster changed '+r.resource);
+  for(const r of f.provided_rasters){const bytes=await fs.readFile(path.join(repo,r.path));if(createHash('sha256').update(bytes).digest('hex')!==r.png_sha256)throw Error('Result raster changed '+r.resource);
    const dest=base+r.resource;await write(dest,bytes);assets[r.resource]=dest;
    if(r.exact_name_dimension_candidates.length===1)images.set(r.exact_name_dimension_candidates[0].image_id,'data:image/png;base64,'+bytes.toString('base64'));
   }

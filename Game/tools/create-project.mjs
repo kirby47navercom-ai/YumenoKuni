@@ -225,9 +225,6 @@ const suppliedUi=JSON.parse(await fs.readFile(path.join(repo,'ui/v3_authorized/m
 for(const c of Object.values(suppliedUi.components))await copy(c.file,c.runtime);
 const suppliedPad=JSON.parse(await fs.readFile(path.join(repo,'ui/v3_authorized/pad_home/manifest.json'),'utf8'));
 for(const c of suppliedPad.files)await copy(c.file,c.runtime);
-// V4 runtime preparation reads the court figure manifest on a fresh checkout.
-execFileSync('python',['-X','utf8',path.join(repo,'tools/court_figures.py')],{stdio:'inherit'});
-await publishV4Data({repo,copy,write});
 
 // 1) 각본 데이터 : data/scenes/{접두}_*.json → Assets/Data/scenes/{접두}.json
 const sceneFiles=(await fs.readdir(path.join(repo,'data/scenes'))).filter(f=>f.endsWith('.json')).sort();
@@ -778,6 +775,7 @@ const placeholder={
  wall:'<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024"><rect width="768" height="1024" fill="#0c1f27"/><rect x="0" y="880" width="768" height="144" fill="#081419"/><path d="M164 820V300a220 220 0 0 1 440 0v520z" fill="#2a1030" stroke="#3fb8b0" stroke-width="10"/>'+Array.from({length:18},(_,i)=>`<rect x="${190+(i%6)*66}" y="${330+Math.floor(i/6)*150}" width="60" height="140" fill="${['#ff6fb5','#a46bff','#ffd0f0','#6fd3ff','#ff9fd0','#c58bff'][i%6]}" fill-opacity=".55"/>`).join('')+'</svg>',
  throne:'<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700"><rect x="80" y="430" width="540" height="270" fill="#2a1a20" stroke="#c9a24c" stroke-width="8"/><rect x="250" y="120" width="200" height="320" rx="20" fill="#9b1c2e" stroke="#c9a24c" stroke-width="8"/><rect x="230" y="380" width="240" height="70" fill="#7a1222"/><rect x="90" y="60" width="90" height="360" fill="#b3172f"/><rect x="520" y="60" width="90" height="360" fill="#b3172f"/><circle cx="135" cy="200" r="28" fill="#f2d27a"/><circle cx="565" cy="200" r="28" fill="#f2d27a"/></svg>',
  dead:'<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"><rect x="70" y="40" width="260" height="320" fill="#2c2c34" stroke="#d9d9e0" stroke-width="10"/><path d="M110 80l180 240M290 80L110 320" stroke="#ff4fa3" stroke-width="26" stroke-linecap="round"/></svg>'};
+execFileSync('python',['-X','utf8',path.join(repo,'tools/court_figures.py')],{stdio:'inherit'});
 execFileSync('python',['-X','utf8',path.join(repo,'tools/scrum_faces.py')],{stdio:'inherit'}); // 스크럼 탭 속 얼굴(옆모습 입상에서 머리만)
 const figures=JSON.parse(await fs.readFile(path.join(root,'Assets/Art/court_figures/manifest.json'),'utf8'));
 execFileSync('python',['-X','utf8',path.join(repo,'tools/build_court_memorials.py')],{stdio:'inherit'});
@@ -865,6 +863,8 @@ const titleIds=new Set(['root','Title']);let changed=true;while(changed){changed
 titleSource.nodes=titleSource.nodes.filter(n=>titleIds.has(n.id));titleSource.name='TitleShellV4';
 for(const n of titleSource.nodes){if(n.id==='TitleLogo')n.slot.offset=[650,30,580,200];if(n.id==='TitleSub')n.properties.visible=false;}
 await write('Assets/UI/TitleShellV4.hbwidget.json',titleSource);
+// Publishing validates generated fonts and actor art even on the first build.
+await publishV4Data({repo,copy,write});
 // 패키지 줄이기 : PNG → WebP, 글꼴 서브셋 (tools/optimize_assets.py)
 execFileSync('python',['-X','utf8',path.join(repo,'tools/optimize_assets.py')],{stdio:'inherit'});
 // Register raster fonts only after the optimizer has finished writing them.

@@ -9,10 +9,10 @@ export async function emitTitleChapterUI({repo,write,copy,body,head}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/title_chapter_remaining_contract.json'),'utf8'));
  const base='Assets/Art/ui/v3/title_chapter/',pngs=new Map(),receipts=[];
  for(const g of c.geometry)for(const t of g.texture_table2)if(t.authorized_png&&!pngs.has(t.source_name)){
-  const bytes=await fs.readFile(t.authorized_png);if(bytes.readUInt32BE(16)!==t.provided_size[0]||bytes.readUInt32BE(20)!==t.provided_size[1])throw Error('Title PNG dimensions changed '+t.source_name);
+  const bytes=await fs.readFile(path.join(repo,t.authorized_png));if(bytes.readUInt32BE(16)!==t.provided_size[0]||bytes.readUInt32BE(20)!==t.provided_size[1])throw Error('Title PNG dimensions changed '+t.source_name);
   pngs.set(t.source_name,'data:image/png;base64,'+bytes.toString('base64'));receipts.push({name:t.source_name,path:t.authorized_png,sha256:createHash('sha256').update(bytes).digest('hex')});
  }
- const alphaInput=c.geometry[0].texture_table2.filter(t=>/^kanban_(new|load|chapter|system|extra)_US\.png$/.test(t.source_name)).map(t=>[t.source_name,t.authorized_png]);
+ const alphaInput=c.geometry[0].texture_table2.filter(t=>/^kanban_(new|load|chapter|system|extra)_US\.png$/.test(t.source_name)).map(t=>[t.source_name,path.join(repo,t.authorized_png)]);
  const alphaBounds=JSON.parse(execFileSync('python',['-X','utf8','-c',"import json,sys;from PIL import Image; print(json.dumps({n:Image.open(p).convert('RGBA').getchannel('A').getbbox() for n,p in json.load(sys.stdin)}))"],{input:JSON.stringify(alphaInput),encoding:'utf8'}));
  const svg=s=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="none">${s}</svg>`;
  // Flash row-vector local*parent becomes SVG column-vector parent*local.

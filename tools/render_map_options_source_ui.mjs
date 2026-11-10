@@ -1,4 +1,4 @@
-import fs from'node:fs/promises';import path from'node:path';import{createWidgetNode}from'../../engineCreate/prototype/ui-assets.js';
+import fs from'node:fs/promises';import path from'node:path';import{createWidgetNode}from'../Game/engineCreate/prototype/ui-assets.js';
 export async function applyMapOptionsSource({repo,write,w,screen}){
  const dir=path.join(repo,'ui/v4/map_options_source'),m=JSON.parse(await fs.readFile(path.join(dir,'layout.json'),'utf8'));
  const emit=async(name,row)=>{const asset='Assets/Art/ui/map_options_source/'+name+'.svg',b=await fs.readFile(path.join(dir,row.file)),r=row.rect;await write(asset,`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${r[2]} ${r[3]}"><image width="${r[2]}" height="${r[3]}" href="data:image/png;base64,${b.toString('base64')}"/></svg>`);return asset;};

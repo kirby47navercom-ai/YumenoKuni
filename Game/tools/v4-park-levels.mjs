@@ -43,7 +43,7 @@ export async function emitParkScenes({repo,explore,write}){
 
 export async function emitParkLevels({root,repo,write}){
  const manifest=JSON.parse(await fs.readFile(path.join(repo,'art/space_v4/park_levels_v1/manifest.json'),'utf8'));if(!manifest.geometryComplete)throw Error('Park geometry incomplete');
- const world=JSON.parse(execFileSync('C:/python/python.exe',['-X','utf8',path.join(repo,'tools/v4_park_levels.py')],{encoding:'utf8',maxBuffer:32*1024*1024,windowsHide:true}));
+ const world=JSON.parse(execFileSync('python',['-X','utf8',path.join(repo,'tools/v4_park_levels.py')],{encoding:'utf8',maxBuffer:32*1024*1024,windowsHide:true}));
  const paths=[],overrides={};const tracked=async(dest,value)=>{await write(dest,value);paths.push(dest);};
  for(const phase of ['day','evening','night'])await tracked('Assets/Art/environment/sky_'+phase+'.glb',await fs.readFile(path.join(repo,'art/environment_v5/sky_'+phase+'.glb')));
  const localNames=JSON.parse(await fs.readFile(path.join(repo,'art/space_v4/park_levels_v1/theme_park_v2/local-names-manifest.json'),'utf8'));

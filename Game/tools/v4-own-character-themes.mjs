@@ -4,7 +4,7 @@ import path from 'node:path';
 // Reuse V3's empty screen-wall theme and put this project's portraits in its wall.
 export async function ownCharacterThemes({repo,contract}){
  const bank=contract.provided_bank_check.theme_backgrounds.resources;
- const screen=await fs.readFile(bank.find(r=>r.type_id===22).path);
+ const screen=await fs.readFile(path.join(repo,bank.find(r=>r.type_id===22).path));
  const manifest=JSON.parse(await fs.readFile(path.join(repo,'art/character_delivery_v4/manifest.json'),'utf8'));
  const characters=JSON.parse(await fs.readFile(path.join(repo,'data/characters.json'),'utf8'));
  const cast=['mio','rei','sora','ken','nana','riku','akari','yuu','koto','satsuki','taiga','rin','sho','ai','haruka','kaede'],result=new Map();

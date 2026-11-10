@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 export async function emitLevelUp({repo,write}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/growth_remaining_contract.json'),'utf8'));
  const source=c.levelup_and_display_delay.source_UI.record_geometry_followup;
- const bytes=await fs.readFile(source.metadata_path);
+ const bytes=await fs.readFile(path.join(repo,source.metadata_path));
  if(createHash('sha256').update(bytes).digest('hex')!==source.metadata_file_sha256)throw Error('Level-up metadata changed');
  const roots=new Map(source.root_records.map(r=>[r.record,r])),children=source.child_loop.local_records;
  const mul=(p,q)=>[p[0]*q[0]+p[2]*q[1],p[1]*q[0]+p[3]*q[1],p[0]*q[2]+p[2]*q[3],p[1]*q[2]+p[3]*q[3],p[0]*q[4]+p[2]*q[5]+p[4],p[1]*q[4]+p[3]*q[5]+p[5]];

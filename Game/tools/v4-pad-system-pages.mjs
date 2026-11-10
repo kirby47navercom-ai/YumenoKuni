@@ -87,7 +87,7 @@ export async function emitV4PadSystemPages({repo,write,body}){
   const labels=['기본','기본 · 보라',...Array.from({length:16},(_,i)=>'인물 테마 '+String(i+1).padStart(2,'0')),'학급 재판','남국','모노쿠마','실루엣','스크린','우주','유적','색종이','흑백','하이테크','장미','네온 · 파랑','네온 · 분홍','네온 · 초록','종이 · 파랑','종이 · 분홍','종이 · 회색','노이즈 · 녹색','노이즈 · 노랑','고서'];
   const ownThemes=await ownCharacterThemes({repo,contract:c});
   for(const row of c.provided_bank_check.theme_backgrounds.resources.sort((a,b)=>a.table_row-b.table_row)){
-   const raw=await fs.readFile(row.path),name='type_'+String(row.type_id).padStart(3,'0');
+   const raw=await fs.readFile(path.join(repo,row.path)),name='type_'+String(row.type_id).padStart(3,'0');
    const own=ownThemes.get(row.type_id);
    await write('Assets/Art/ui/v3/themes/'+name+'.svg',own?.svg||`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><image href="data:image/png;base64,${raw.toString('base64')}" width="1920" height="1088" preserveAspectRatio="none"/></svg>`);
    layout.theme.entries.push({saveNo:row.save_no,type:row.type_id,name:own?.name||labels[row.type_id],image:'Assets/Art/ui/v3/themes/'+name+'.svg',available:true,...own?{ownContent:true,sourceCarrier:own.sourceCarrier??null}: {}});

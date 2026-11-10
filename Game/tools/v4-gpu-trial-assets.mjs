@@ -99,7 +99,6 @@ export async function emitGpuTrialAssets({output,source,prototypeTask,write}){
  for(const task of Object.values(JSON.parse(await fs.readFile(path.join(repo,'data/v4_story/native_tasks.json'),'utf8')).tasks))for(const l of task.debate?.lines||[])all+=l.text||'';
  // Noise may be injected from the packaged stock banks, outside task.debate.lines.
  const dataRoot=path.join(content,'Assets/Data');for(const f of await fs.readdir(dataRoot,{recursive:true}))if(f.endsWith('.json'))all+=JSON.stringify(JSON.parse(await fs.readFile(path.join(dataRoot,f),'utf8')));
- const expand=v=>{if(typeof v==='string'){all+=v;try{if(v[0]==='{'||v[0]==='[')expand(JSON.parse(v));}catch{}}else if(v&&typeof v==='object')for(const x of Object.values(v))expand(x);};expand(JSON.parse(await fs.readFile(path.join(game,'Saved/ui-checkpoints/normal-ch3-latest/savegames.json'),'utf8')));
  add('Assets/Fonts/gaegu/Gaegu-Regular.ttf',40,64,64,'center',all);
  add('Assets/Fonts/jua/Jua-Regular.ttf',40,64,64,'center',all); // 잡음은 굵은 주아(Claude 2026-11-05 : 가는 손글씨는 성의 없어 보임)
  const timer=main.nodes.find(n=>n.id==='Timer');add(timer.properties.font,34,80,38,'left','0123456789:'); /* 타이머 판 안에 들어가게(Claude 2026-11-05 : 숫자가 판 밖으로 나옴) */

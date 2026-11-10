@@ -10,7 +10,7 @@ export async function emitV4ExplorationHud({repo,write}){
  const bindings=contract.provided_raster.chapter_level_bindings.bindings;
  const images=new Map();
  for(const binding of bindings){
-  const bytes=await fs.readFile(binding.provided_PNG_path);
+  const bytes=await fs.readFile(path.join(repo,binding.provided_PNG_path));
   if(createHash('sha256').update(bytes).digest('hex')!==binding.provided_PNG_file_sha256)throw Error('Changed supplied HUD texture '+binding.source_image_id);
   images.set(binding.source_image_id,'data:image/png;base64,'+bytes.toString('base64'));
  }
