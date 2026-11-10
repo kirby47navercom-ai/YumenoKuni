@@ -360,7 +360,7 @@ add('Image','Portrait',[0,0,1280,1050],{texture:'',imageFit:'contain',visible:fa
 add('Image','SpeakerPodium',[478,431,323,351],{texture:'',imageFit:'fill',visible:false}); // 화자 앞 증언대(3D 증언대와 같은 자리, 입상 위에 그림)
 add('Image','DialogFrame',[80,512,1120,170],{texture:'Assets/Art/ui/frame.png',imageFit:'fill'});
 add('Image','Nameplate',dialogueLayout.namebase.normal,{texture:'Assets/Art/ui/v3/dialogue/namebase.svg',imageFit:'fill'});
-add('Image','DialogueOrnament',[0,0,1280,720],{texture:'Assets/Art/ui/v3/dialogue/trial_frame_1.svg',imageFit:'fill',visible:false});
+add('Image','DialogueOrnament',[0,0,1280,720],{texture:'Assets/Art/ui/v3/dialogue/source/frame1.png',imageFit:'fill',visible:false});
 add('Image','Name',dialogueLayout.names.normal,{texture:'',imageFit:'fill'});
 add('Text','NameHead',[0,0,0,0],{visible:false}); // Retained node ID for old hide paths; no first-letter layer.
 add('Image','Next',dialogueLayout.next,{texture:'Assets/Art/ui/v3/dialogue/next.svg',imageFit:'fill',visible:false});
