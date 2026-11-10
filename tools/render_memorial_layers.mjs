@@ -1,11 +1,11 @@
 // Deterministic raster export of the editable SVG's photo/frame layers.
 // Explicit neutral photo conversion and alpha compositing, without re-encoding large inline SVGs.
 import fs from 'node:fs/promises';
-import path from 'node:path';
-import os from 'node:os';
+
+
 import {createRequire} from 'node:module';
-const require=createRequire(import.meta.url);
-let sharp;try{sharp=require('sharp');}catch{sharp=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp'));}
+const require=createRequire(new URL('../Game/package.json',import.meta.url));
+const sharp=require('sharp');
 const [photo,frame,out]=process.argv.slice(2),size=2048,s=size/1254;
 const image=await sharp(photo).resize(Math.round(485*s),Math.round(660*s),{fit:'cover',position:'top'}).greyscale().png().toBuffer();
 const border=await sharp(frame).resize(size,size).png().toBuffer();

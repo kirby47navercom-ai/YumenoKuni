@@ -1,10 +1,10 @@
 // Technical SVG layer rendering using the already bundled workspace Sharp.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import os from 'node:os';
+
 import {createRequire} from 'node:module';
-const require=createRequire(import.meta.url);
-let sharp;try{sharp=require('sharp');}catch{sharp=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp'));}
+const require=createRequire(new URL('../Game/package.json',import.meta.url));
+const sharp=require('sharp');
 const source=path.resolve(process.argv[2]);let svg=await fs.readFile(source,'utf8');
 for(const match of [...svg.matchAll(/xlink:href="([^"]+)"/g)]){
  const file=path.resolve(path.dirname(source),match[1]);

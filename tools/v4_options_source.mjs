@@ -7,7 +7,7 @@ import {createWidgetAsset,createWidgetNode,validWidgetAsset} from '../Game/engin
 // original PC kind order0..9,12. The project has no optional voice packs.
 export async function emitSourceOptions({repo,write}){
  const c=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/options_ui_contract.json'),'utf8'));
- const raster=new Map();for(const r of c.provided_rasters.resources)raster.set(r.source_image_id,(await fs.readFile(r.path)).toString('base64'));
+ const raster=new Map();for(const r of c.provided_rasters.resources)raster.set(r.source_image_id,(await fs.readFile(path.join(repo,r.path))).toString('base64'));
  const canvas=[63.33333,79.33333,1153.34147,60];
  const render=async(style,on,value)=>{
   const template=c.row_templates[`fl_${(style==='fps'||style==='value')?'one':style.startsWith('two_')?'two':style}_${on?'on':'off'}`];let shapes='',filters='',i=0;

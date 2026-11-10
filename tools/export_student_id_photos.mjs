@@ -1,7 +1,8 @@
 // Lossless runtime sizes from the retained5016px color masters; never grayscale these files.
-import fs from 'node:fs/promises';import path from 'node:path';import os from 'node:os';import crypto from 'node:crypto';
+import fs from 'node:fs/promises';import path from 'node:path';import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';import {createRequire} from 'node:module';
-const require=createRequire(import.meta.url);let sharp;try{sharp=require('sharp');}catch{sharp=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp'));}
+const require=createRequire(new URL('../Game/package.json',import.meta.url));
+const sharp=require('sharp');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),out='art/trial3d/id_portraits_color_v1/runtime';await fs.mkdir(path.join(root,out),{recursive:true});
 const rows=[];
 for(const slug of 'mio rin ken nana taiga ai rei sora haruka sho koto akari riku satsuki yuu kaede'.split(' ')){
