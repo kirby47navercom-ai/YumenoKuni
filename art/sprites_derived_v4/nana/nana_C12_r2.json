@@ -1,0 +1,31 @@
+{
+  "id": "nana_C12_r2",
+  "character": "nana",
+  "pose": "C12",
+  "family": "derived_cleanup",
+  "reference": "art/sprites_derived_v4/nana/nana_C12.webp",
+  "output": "art/sprites_derived_v4/nana/nana_C12_r2.webp",
+  "prompt": "Use image 1 as the exact pose to edit and image 2 as the original costume reference. Correct ONLY wrist ribbon placement: remove white ribbon from raised RIGHT wrist / image left. Restore plain cream knitted cuff there. Place the SAME white cloth ribbon/bow onto lowered LEFT wrist / image right, matching the original master image 2. Ribbon must stay tied to the anatomical LEFT wrist across all poses. Preserve clenched hand at chest, other arm lowered, determined face, hair flower clips, pale pink eyes, hair tie, long ankle skirt, shoes, cream cardigan, body proportions, shading and full-body framing exactly. Do not mirror or redesign anything. Transparent alpha outside silhouette, no backdrop or lettering.",
+  "status": "generated; full-resolution individual review required",
+  "tool": "built-in image_gen",
+  "origin": "one NAI master per character; does not use rejected NAI pose candidates",
+  "references": [
+    "art/sprites_derived_v4/nana/nana_C12.webp",
+    "art/standing_v4/nana_fullbody.webp"
+  ],
+  "generated_source": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-fab39054-cbe8-4bfd-9018-6fdb4fd31828.png",
+  "sha256": "34e9faa44b8420af511a884840ac80a9b28a741b12983ab3dc3cea863f0ad5d4",
+  "size": [
+    1024,
+    1536
+  ],
+  "alpha_bbox": [
+    0,
+    30,
+    970,
+    1523
+  ],
+  "upscale": "complete",
+  "runtime_integrated": false,
+  "hd_file": "art/hd_v4/derived/nana/nana_C12_r2.webp"
+}

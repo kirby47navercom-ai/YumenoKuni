@@ -1,0 +1,44 @@
+{
+  "id": "kaede_SL",
+  "character": "kaede",
+  "pose": "SL",
+  "raw_id": "kaede_SL",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/kaede.webp",
+  "source": "art/sprites_derived_v4/kaede/kaede_SL.png",
+  "source_sha256": "c9961dd417d6c860b42f681f59c49cb170d9b4e2871a2fbcbeae5928b73a0854",
+  "hd_file": "art/hd_v4/derived/kaede/kaede_SL.webp",
+  "hd_sha256": "f6d902eb6753c20b11cde3cbd4e3292c1dce56466261f051dde8e8c3396c4eae",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9908304498269896,
+    "translation": [
+      286,
+      39
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      92,
+      287,
+      3741,
+      6014
+    ],
+    "output_bbox": [
+      754,
+      287,
+      3973,
+      6014
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

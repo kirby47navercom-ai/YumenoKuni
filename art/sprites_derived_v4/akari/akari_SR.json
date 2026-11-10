@@ -1,0 +1,44 @@
+{
+  "id": "akari_SR",
+  "character": "akari",
+  "pose": "SR",
+  "raw_id": "akari_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/akari.webp",
+  "source": "art/sprites_derived_v4/akari/akari_SR.png",
+  "source_sha256": "e4f2457b86a41e7f713e8f15fd94c9742ed33484db1e27e714013d92650f4c63",
+  "hd_file": "art/hd_v4/derived/akari/akari_SR.webp",
+  "hd_sha256": "55d826f1f6959749ec248dfa76dc20d808b8f457af7ef51a0ae68cd0533e9b19",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9730543933054393,
+    "translation": [
+      196,
+      119
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1132,
+      175,
+      2781,
+      5989
+    ],
+    "output_bbox": [
+      1260,
+      176,
+      2872,
+      5989
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

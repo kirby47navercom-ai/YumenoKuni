@@ -1,0 +1,42 @@
+{
+  "output": "art/environment_v5",
+  "source": "art/environment_v5",
+  "files": {
+    "day": "day.png",
+    "evening": "evening.png",
+    "night": "night.png"
+  },
+  "prompts": {
+    "day": "Use case: stylized-concept. Production game environment texture, seamless 360-degree equirectangular sky panorama, exact 2:1 aspect ratio. Horizon at vertical midpoint, full sky ONLY, lower half simple atmospheric continuation, no land, grass, scenery, buildings, rides, people, text, symbols, interface, borders, lens flare or artificial bloom. Intended for an unsettling closed amusement park mystery game with graphic anime characters and stylized 3D scenery. Restrained large coherent cloud forms and clean low-noise painting, no busy speckled photographic texture. Both left and right edges must join continuously, no foreground. Never turn this into a park illustration. Overcast daytime under a heavy cool slate-violet blue-grey cloud ceiling. Muted dusk-like daylight, unsettling stillness, soft weak pale sun behind thin cloud roughly 22 degrees above the front centre horizon, no huge white highlight or saturated cyan sky. Layered cloud undersides, readable midtones and restrained cool haze near horizon. Daylight remains clearly distinct from night. No cheerful sunny holiday mood, no black crushed areas.",
+    "evening": "Use case: stylized-concept. Production game environment texture, seamless 360-degree equirectangular sky panorama, exact 2:1 aspect ratio. Horizon at vertical midpoint, full sky ONLY, lower half simple atmospheric continuation, no land, grass, scenery, buildings, rides, people, text, symbols, interface, borders, lens flare or artificial bloom. Intended for an unsettling closed amusement park mystery game with graphic anime characters and stylized 3D scenery. Restrained large coherent cloud forms and clean low-noise painting, no busy speckled photographic texture. Both left and right edges must join continuously, no foreground. Never turn this into a park illustration. Late evening: deep dusty violet, desaturated wine and steel-blue layered storm clouds. A very small dim amber sun largely veiled by cloud about 12 degrees above the front centre horizon, narrow muted low horizon glow, absolutely no broad bright orange or peach sunset. Upper sky dark and ominously calm, readable large cloud layers. No luminous fog bank or star field.",
+    "night": "Use case: stylized-concept. Production game environment texture, seamless 360-degree equirectangular sky panorama, exact 2:1 aspect ratio. Horizon at vertical midpoint, full sky ONLY, lower half simple atmospheric continuation, no land, grass, scenery, buildings, rides, people, text, symbols, interface, borders, lens flare or artificial bloom. Intended for an unsettling closed amusement park mystery game with graphic anime characters and stylized 3D scenery. Restrained large coherent cloud forms and clean low-noise painting, no busy speckled photographic texture. Both left and right edges must join continuously, no foreground. Never turn this into a park illustration. Clouded night: deep ink-blue and indigo sky with sculptural charcoal-blue and muted violet clouds, a restrained small waxing gibbous moon around 22 degrees above front centre horizon, no bright halo. Sparse tiny stars only through breaks in cloud. Clearly visible moon and cloud layers but dark exposure; most atmosphere subdued to let the park's own lamps provide focal light. No nebulas or fantasy galaxy."
+  },
+  "generator": "built-in image_gen",
+  "scope": "User requested whole-level replacement including overbright sky; new original raster sky assets. No original game extraction.",
+  "runtimeVerified": false,
+  "discBoxes": {
+    "day": [
+      864,
+      345,
+      908,
+      388
+    ],
+    "evening": [
+      872,
+      404,
+      906,
+      432
+    ],
+    "night": [
+      878,
+      254,
+      940,
+      309
+    ]
+  },
+  "displayExposure": {
+    "day": 0.58,
+    "evening": 0.72,
+    "night": 0.85
+  }
+}

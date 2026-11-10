@@ -1,0 +1,44 @@
+{
+  "id": "koto_SR",
+  "character": "koto",
+  "pose": "SR",
+  "raw_id": "koto_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/koto.webp",
+  "source": "art/sprites_derived_v4/koto/koto_SR.png",
+  "source_sha256": "2ae7c1bcf35d855491d1ab3f5a02a7c619251dfd21a6a1f79462934e26cb4ff1",
+  "hd_file": "art/hd_v4/derived/koto/koto_SR.webp",
+  "hd_sha256": "2831769b29302346d87072cbbc468566377f707a93dbaf216b2769a025232e52",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9816095832630336,
+    "translation": [
+      26,
+      63
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      411,
+      187,
+      3493,
+      6005
+    ],
+    "output_bbox": [
+      400,
+      186,
+      3477,
+      6005
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

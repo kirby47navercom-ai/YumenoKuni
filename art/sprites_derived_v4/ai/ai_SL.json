@@ -1,0 +1,44 @@
+{
+  "id": "ai_SL",
+  "character": "ai",
+  "pose": "SL",
+  "raw_id": "ai_SL",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/ai.webp",
+  "source": "art/sprites_derived_v4/ai/ai_SL.png",
+  "source_sha256": "909c713a8bfd2c5f713531f4e2f3f6930b1781e6c60f8e607b4740f921596b92",
+  "hd_file": "art/hd_v4/derived/ai/ai_SL.webp",
+  "hd_sha256": "8ccc1d3334cade77030bd14af4708df5632146400d476cc2c44cbcbf4814c43a",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9707797628986475,
+    "translation": [
+      160,
+      45
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1043,
+      131,
+      3181,
+      5945
+    ],
+    "output_bbox": [
+      1113,
+      132,
+      3236,
+      5945
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

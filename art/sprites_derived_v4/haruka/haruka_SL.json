@@ -1,0 +1,44 @@
+{
+  "id": "haruka_SL",
+  "character": "haruka",
+  "pose": "SL",
+  "raw_id": "haruka_SL_r2",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/masters_clean_v4/haruka_r2.webp",
+  "source": "art/sprites_derived_v4/haruka/haruka_SL.png",
+  "source_sha256": "0839345d82a4649e37154173c1a248ccc5a19aa22f0e1cf2958514a6a6f23df6",
+  "hd_file": "art/hd_v4/derived/haruka/haruka_SL.webp",
+  "hd_sha256": "e4635cce2f14c09ae311124d75c77e51507992dae04572d7d9d4e7ced40f6128",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9723710649698594,
+    "translation": [
+      448,
+      159
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1018,
+      238,
+      2981,
+      6045
+    ],
+    "output_bbox": [
+      1496,
+      238,
+      3561,
+      6045
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

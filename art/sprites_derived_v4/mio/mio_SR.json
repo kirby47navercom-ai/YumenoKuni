@@ -1,0 +1,44 @@
+{
+  "id": "mio_SR",
+  "character": "mio",
+  "pose": "SR",
+  "raw_id": "mio_SR_r3",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/mio_color_v2.webp",
+  "source": "art/sprites_derived_v4/mio/mio_SR.png",
+  "source_sha256": "feba639fe33078ffd0f3a7174f528a9ccdbefb3ebeab311b68808a81deb0e580",
+  "hd_file": "art/hd_v4/derived/mio/mio_SR.webp",
+  "hd_sha256": "d93fe9d30da6937619390e185ea826ec8254728c9d5bbcd7fec74b59ad1e8fdb",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9866486395132669,
+    "translation": [
+      4,
+      42
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1155,
+      151,
+      3181,
+      5989
+    ],
+    "output_bbox": [
+      1269,
+      151,
+      2922,
+      5989
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

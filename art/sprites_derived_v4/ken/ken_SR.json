@@ -1,0 +1,44 @@
+{
+  "id": "ken_SR",
+  "character": "ken",
+  "pose": "SR",
+  "raw_id": "ken_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/ken.webp",
+  "source": "art/sprites_derived_v4/ken/ken_SR.png",
+  "source_sha256": "a4eb69019c019c2305e0b4ea7d0e24d5d252352034ec2e76ec0bae0a4d3107c6",
+  "hd_file": "art/hd_v4/derived/ken/ken_SR.webp",
+  "hd_sha256": "a80030a771eee5f16b134a07b175b43a9beb360838879590d92de6e21abd078d",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9928813559322034,
+    "translation": [
+      142,
+      19
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      264,
+      207,
+      3345,
+      6065
+    ],
+    "output_bbox": [
+      482,
+      207,
+      3679,
+      6065
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}
