@@ -1,0 +1,682 @@
+{
+  "status": "source components exported; engine integration pending",
+  "scale": 4,
+  "text_baked": false,
+  "assets": [
+    {
+      "id": "icon_map",
+      "source": "ui/v4/systems_hd/icon_map.svg",
+      "file": "ui/v4/systems_hd/icon_map.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_profile",
+      "source": "ui/v4/systems_hd/icon_profile.svg",
+      "file": "ui/v4/systems_hd/icon_profile.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_evidence",
+      "source": "ui/v4/systems_hd/icon_evidence.svg",
+      "file": "ui/v4/systems_hd/icon_evidence.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_save",
+      "source": "ui/v4/systems_hd/icon_save.svg",
+      "file": "ui/v4/systems_hd/icon_save.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_settings",
+      "source": "ui/v4/systems_hd/icon_settings.svg",
+      "file": "ui/v4/systems_hd/icon_settings.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_gift",
+      "source": "ui/v4/systems_hd/icon_gift.svg",
+      "file": "ui/v4/systems_hd/icon_gift.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_skills",
+      "source": "ui/v4/systems_hd/icon_skills.svg",
+      "file": "ui/v4/systems_hd/icon_skills.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "icon_backlog",
+      "source": "ui/v4/systems_hd/icon_backlog.svg",
+      "file": "ui/v4/systems_hd/icon_backlog.webp",
+      "logical_size": [
+        96,
+        96
+      ],
+      "texture_size": [
+        384,
+        384
+      ],
+      "text_rect": null,
+      "role": "패드/메뉴 기능 아이콘; 의미 라벨은 Text로 별도",
+      "motion": "64px 이상 권장; 초점 테두리는 상위 버튼이 제공",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "pad_shell",
+      "source": "ui/v4/systems_hd/pad_shell.svg",
+      "file": "ui/v4/systems_hd/pad_shell.webp",
+      "logical_size": [
+        1500,
+        880
+      ],
+      "texture_size": [
+        6000,
+        3520
+      ],
+      "text_rect": [
+        330,
+        108,
+        1100,
+        677
+      ],
+      "role": "패드 공용 외곽; 왼쪽 탭/본문/페이지 상태를 별도 합성",
+      "motion": "열기180ms, 닫기140ms; 최초 입력은 현재 페이지 상태를 참조",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "save_slot_idle",
+      "source": "ui/v4/systems_hd/save_slot_idle.svg",
+      "file": "ui/v4/systems_hd/save_slot_idle.webp",
+      "logical_size": [
+        1080,
+        154
+      ],
+      "texture_size": [
+        4320,
+        616
+      ],
+      "text_rect": [
+        260,
+        28,
+        770,
+        99
+      ],
+      "role": "저장 슬롯; 204×106 썸네일은 별도 텍스처, 실제 저장/호환 상태만 표시",
+      "motion": "포커스100ms; 저장 완료 표시는 파일 성공 응답 이후",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "save_slot_selected",
+      "source": "ui/v4/systems_hd/save_slot_selected.svg",
+      "file": "ui/v4/systems_hd/save_slot_selected.webp",
+      "logical_size": [
+        1080,
+        154
+      ],
+      "texture_size": [
+        4320,
+        616
+      ],
+      "text_rect": [
+        260,
+        28,
+        770,
+        99
+      ],
+      "role": "저장 슬롯; 204×106 썸네일은 별도 텍스처, 실제 저장/호환 상태만 표시",
+      "motion": "포커스100ms; 저장 완료 표시는 파일 성공 응답 이후",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "save_slot_empty",
+      "source": "ui/v4/systems_hd/save_slot_empty.svg",
+      "file": "ui/v4/systems_hd/save_slot_empty.webp",
+      "logical_size": [
+        1080,
+        154
+      ],
+      "texture_size": [
+        4320,
+        616
+      ],
+      "text_rect": [
+        260,
+        28,
+        770,
+        99
+      ],
+      "role": "저장 슬롯; 204×106 썸네일은 별도 텍스처, 실제 저장/호환 상태만 표시",
+      "motion": "포커스100ms; 저장 완료 표시는 파일 성공 응답 이후",
+      "state": "empty",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "save_slot_incompatible",
+      "source": "ui/v4/systems_hd/save_slot_incompatible.svg",
+      "file": "ui/v4/systems_hd/save_slot_incompatible.webp",
+      "logical_size": [
+        1080,
+        154
+      ],
+      "texture_size": [
+        4320,
+        616
+      ],
+      "text_rect": [
+        260,
+        28,
+        770,
+        99
+      ],
+      "role": "저장 슬롯; 204×106 썸네일은 별도 텍스처, 실제 저장/호환 상태만 표시",
+      "motion": "포커스100ms; 저장 완료 표시는 파일 성공 응답 이후",
+      "state": "incompatible",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "confirm_modal",
+      "source": "ui/v4/systems_hd/confirm_modal.svg",
+      "file": "ui/v4/systems_hd/confirm_modal.webp",
+      "logical_size": [
+        850,
+        430
+      ],
+      "texture_size": [
+        3400,
+        1720
+      ],
+      "text_rect": [
+        66,
+        70,
+        718,
+        200
+      ],
+      "role": "확인창 바탕; 본문/확인/취소 버튼 별도; 기본 초점은 취소",
+      "motion": "배경 입력 차단; 닫는 입력은 다음 화면에 전달하지 않음",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "map_marker_current",
+      "source": "ui/v4/systems_hd/map_marker_current.svg",
+      "file": "ui/v4/systems_hd/map_marker_current.webp",
+      "logical_size": [
+        88,
+        112
+      ],
+      "texture_size": [
+        352,
+        448
+      ],
+      "text_rect": null,
+      "role": "지도 위치/목표/잠김 표식; 맵 좌표는 별도 데이터",
+      "motion": "현재 위치만 600ms 완만 확대; 잠김 목적은 접근 전 라벨로 설명",
+      "state": "current",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "map_marker_available",
+      "source": "ui/v4/systems_hd/map_marker_available.svg",
+      "file": "ui/v4/systems_hd/map_marker_available.webp",
+      "logical_size": [
+        88,
+        112
+      ],
+      "texture_size": [
+        352,
+        448
+      ],
+      "text_rect": null,
+      "role": "지도 위치/목표/잠김 표식; 맵 좌표는 별도 데이터",
+      "motion": "현재 위치만 600ms 완만 확대; 잠김 목적은 접근 전 라벨로 설명",
+      "state": "available",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "map_marker_locked",
+      "source": "ui/v4/systems_hd/map_marker_locked.svg",
+      "file": "ui/v4/systems_hd/map_marker_locked.webp",
+      "logical_size": [
+        88,
+        112
+      ],
+      "texture_size": [
+        352,
+        448
+      ],
+      "text_rect": null,
+      "role": "지도 위치/목표/잠김 표식; 맵 좌표는 별도 데이터",
+      "motion": "현재 위치만 600ms 완만 확대; 잠김 목적은 접근 전 라벨로 설명",
+      "state": "locked",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "map_marker_objective",
+      "source": "ui/v4/systems_hd/map_marker_objective.svg",
+      "file": "ui/v4/systems_hd/map_marker_objective.webp",
+      "logical_size": [
+        88,
+        112
+      ],
+      "texture_size": [
+        352,
+        448
+      ],
+      "text_rect": null,
+      "role": "지도 위치/목표/잠김 표식; 맵 좌표는 별도 데이터",
+      "motion": "현재 위치만 600ms 완만 확대; 잠김 목적은 접근 전 라벨로 설명",
+      "state": "objective",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "map_location_card",
+      "source": "ui/v4/systems_hd/map_location_card.svg",
+      "file": "ui/v4/systems_hd/map_location_card.webp",
+      "logical_size": [
+        440,
+        170
+      ],
+      "texture_size": [
+        1760,
+        680
+      ],
+      "text_rect": [
+        32,
+        26,
+        375,
+        113
+      ],
+      "role": "위치 이름/이동 가능 이유/캐릭터 아이콘용 카드",
+      "motion": "실제 포털·해금 조건을 UI와 동기화",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "backlog_row_idle",
+      "source": "ui/v4/systems_hd/backlog_row_idle.svg",
+      "file": "ui/v4/systems_hd/backlog_row_idle.webp",
+      "logical_size": [
+        1110,
+        172
+      ],
+      "texture_size": [
+        4440,
+        688
+      ],
+      "text_rect": [
+        179,
+        44,
+        883,
+        105
+      ],
+      "role": "로그 대사 행; 화자/대사/음성 가능 상태 분리",
+      "motion": "음성 버튼은 실제 음성 있는 행에만 표시",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "backlog_row_focus",
+      "source": "ui/v4/systems_hd/backlog_row_focus.svg",
+      "file": "ui/v4/systems_hd/backlog_row_focus.webp",
+      "logical_size": [
+        1110,
+        172
+      ],
+      "texture_size": [
+        4440,
+        688
+      ],
+      "text_rect": [
+        179,
+        44,
+        883,
+        105
+      ],
+      "role": "로그 대사 행; 화자/대사/음성 가능 상태 분리",
+      "motion": "음성 버튼은 실제 음성 있는 행에만 표시",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "evidence_detail",
+      "source": "ui/v4/systems_hd/evidence_detail.svg",
+      "file": "ui/v4/systems_hd/evidence_detail.webp",
+      "logical_size": [
+        1110,
+        700
+      ],
+      "texture_size": [
+        4440,
+        2800
+      ],
+      "text_rect": [
+        440,
+        72,
+        605,
+        548
+      ],
+      "role": "증거 상세; 정사각 사진/제목/본문/분류/획득 시점 별도",
+      "motion": "증거 확정 후 표시; 고해상도 사진은 원본 비율 유지",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "profile_detail",
+      "source": "ui/v4/systems_hd/profile_detail.svg",
+      "file": "ui/v4/systems_hd/profile_detail.webp",
+      "logical_size": [
+        1110,
+        700
+      ],
+      "texture_size": [
+        4440,
+        2800
+      ],
+      "text_rect": [
+        466,
+        70,
+        580,
+        565
+      ],
+      "role": "인물 상세; 좌측 입상, 공개된 정보만 오른쪽 Text로 표시",
+      "motion": "미공개 능력은 데이터가 공개될 때까지 숨김",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "skill_card_idle",
+      "source": "ui/v4/systems_hd/skill_card_idle.svg",
+      "file": "ui/v4/systems_hd/skill_card_idle.webp",
+      "logical_size": [
+        740,
+        180
+      ],
+      "texture_size": [
+        2960,
+        720
+      ],
+      "text_rect": [
+        146,
+        29,
+        550,
+        116
+      ],
+      "role": "효과/비용/장착 상태를 별도 표시하는 스킬 카드",
+      "motion": "SP 초과/미해금 이유를 실제 상태로 제공",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "skill_card_equipped",
+      "source": "ui/v4/systems_hd/skill_card_equipped.svg",
+      "file": "ui/v4/systems_hd/skill_card_equipped.webp",
+      "logical_size": [
+        740,
+        180
+      ],
+      "texture_size": [
+        2960,
+        720
+      ],
+      "text_rect": [
+        146,
+        29,
+        550,
+        116
+      ],
+      "role": "효과/비용/장착 상태를 별도 표시하는 스킬 카드",
+      "motion": "SP 초과/미해금 이유를 실제 상태로 제공",
+      "state": "equipped",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "skill_card_unavailable",
+      "source": "ui/v4/systems_hd/skill_card_unavailable.svg",
+      "file": "ui/v4/systems_hd/skill_card_unavailable.webp",
+      "logical_size": [
+        740,
+        180
+      ],
+      "texture_size": [
+        2960,
+        720
+      ],
+      "text_rect": [
+        146,
+        29,
+        550,
+        116
+      ],
+      "role": "효과/비용/장착 상태를 별도 표시하는 스킬 카드",
+      "motion": "SP 초과/미해금 이유를 실제 상태로 제공",
+      "state": "unavailable",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "trial_health_track",
+      "source": "ui/v4/systems_hd/trial_health_track.svg",
+      "file": "ui/v4/systems_hd/trial_health_track.webp",
+      "logical_size": [
+        560,
+        58
+      ],
+      "texture_size": [
+        2240,
+        232
+      ],
+      "text_rect": null,
+      "role": "발언력 게이지 외곽; fill은 실제 값으로 clip",
+      "motion": "피해 확정시에만 짧은 충격; 텍스트 수치 별도",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "trial_health_fill",
+      "source": "ui/v4/systems_hd/trial_health_fill.svg",
+      "file": "ui/v4/systems_hd/trial_health_fill.webp",
+      "logical_size": [
+        492,
+        22
+      ],
+      "texture_size": [
+        1968,
+        88
+      ],
+      "text_rect": null,
+      "role": "발언력 내용; 왼쪽 기준 클립용",
+      "motion": "감소160ms; 감소 전 잔상은 엔진에서 별도",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "trial_timer",
+      "source": "ui/v4/systems_hd/trial_timer.svg",
+      "file": "ui/v4/systems_hd/trial_timer.webp",
+      "logical_size": [
+        240,
+        94
+      ],
+      "texture_size": [
+        960,
+        376
+      ],
+      "text_rect": [
+        40,
+        20,
+        161,
+        54
+      ],
+      "role": "남은 시간 바탕; 시간 글자는 엔진 Text",
+      "motion": "일시정지 때 수치 고정; 임계치 색 변화 엔진 처리",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "ammo_card",
+      "source": "ui/v4/systems_hd/ammo_card.svg",
+      "file": "ui/v4/systems_hd/ammo_card.webp",
+      "logical_size": [
+        510,
+        126
+      ],
+      "texture_size": [
+        2040,
+        504
+      ],
+      "text_rect": [
+        105,
+        24,
+        354,
+        77
+      ],
+      "role": "선택 증거/진술 제목 바탕; 실제 아이콘·제목 별도",
+      "motion": "전환120ms; 사용할 수 없는 증거는 실제 판정 상태로 표시",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "trial_result",
+      "source": "ui/v4/systems_hd/trial_result.svg",
+      "file": "ui/v4/systems_hd/trial_result.webp",
+      "logical_size": [
+        1200,
+        780
+      ],
+      "texture_size": [
+        4800,
+        3120
+      ],
+      "text_rect": [
+        83,
+        104,
+        1020,
+        575
+      ],
+      "role": "재판 결과 행 구분; 등급·성적·보상은 계산 결과만 표시",
+      "motion": "집계 이후 표시; 보상 반영은 한 번만",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    }
+  ],
+  "runtime_tested": false
+}

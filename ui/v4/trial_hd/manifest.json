@@ -1,0 +1,597 @@
+{
+  "status": "original trial/minigame art, runtime integration pending",
+  "scale": 4,
+  "text_baked": false,
+  "assets": [
+    {
+      "id": "letter_tile_idle",
+      "source": "ui/v4/trial_hd/letter_tile_idle.svg",
+      "file": "ui/v4/trial_hd/letter_tile_idle.webp",
+      "logical_size": [
+        110,
+        130
+      ],
+      "texture_size": [
+        440,
+        520
+      ],
+      "text_rect": [
+        20,
+        23,
+        70,
+        79
+      ],
+      "role": "글자 조립 타일; 실제 문자/정답은 Text와 판정 데이터",
+      "motion": "선택90ms; 확정/오답 판정 이후 상태 교체",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "letter_tile_focus",
+      "source": "ui/v4/trial_hd/letter_tile_focus.svg",
+      "file": "ui/v4/trial_hd/letter_tile_focus.webp",
+      "logical_size": [
+        110,
+        130
+      ],
+      "texture_size": [
+        440,
+        520
+      ],
+      "text_rect": [
+        20,
+        23,
+        70,
+        79
+      ],
+      "role": "글자 조립 타일; 실제 문자/정답은 Text와 판정 데이터",
+      "motion": "선택90ms; 확정/오답 판정 이후 상태 교체",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "letter_tile_confirmed",
+      "source": "ui/v4/trial_hd/letter_tile_confirmed.svg",
+      "file": "ui/v4/trial_hd/letter_tile_confirmed.webp",
+      "logical_size": [
+        110,
+        130
+      ],
+      "texture_size": [
+        440,
+        520
+      ],
+      "text_rect": [
+        20,
+        23,
+        70,
+        79
+      ],
+      "role": "글자 조립 타일; 실제 문자/정답은 Text와 판정 데이터",
+      "motion": "선택90ms; 확정/오답 판정 이후 상태 교체",
+      "state": "confirmed",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "letter_tile_wrong",
+      "source": "ui/v4/trial_hd/letter_tile_wrong.svg",
+      "file": "ui/v4/trial_hd/letter_tile_wrong.webp",
+      "logical_size": [
+        110,
+        130
+      ],
+      "texture_size": [
+        440,
+        520
+      ],
+      "text_rect": [
+        20,
+        23,
+        70,
+        79
+      ],
+      "role": "글자 조립 타일; 실제 문자/정답은 Text와 판정 데이터",
+      "motion": "선택90ms; 확정/오답 판정 이후 상태 교체",
+      "state": "wrong",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "statement_band_normal",
+      "source": "ui/v4/trial_hd/statement_band_normal.svg",
+      "file": "ui/v4/trial_hd/statement_band_normal.webp",
+      "logical_size": [
+        1040,
+        118
+      ],
+      "texture_size": [
+        4160,
+        472
+      ],
+      "text_rect": [
+        78,
+        24,
+        884,
+        70
+      ],
+      "role": "의논 발언 바탕; 약점 강조/선택 상태를 실제 발언에 연결",
+      "motion": "이동·회전은 엔진에서 텍스트와 함께 적용",
+      "state": "normal",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "statement_band_weak",
+      "source": "ui/v4/trial_hd/statement_band_weak.svg",
+      "file": "ui/v4/trial_hd/statement_band_weak.webp",
+      "logical_size": [
+        1040,
+        118
+      ],
+      "texture_size": [
+        4160,
+        472
+      ],
+      "text_rect": [
+        78,
+        24,
+        884,
+        70
+      ],
+      "role": "의논 발언 바탕; 약점 강조/선택 상태를 실제 발언에 연결",
+      "motion": "이동·회전은 엔진에서 텍스트와 함께 적용",
+      "state": "weak",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "statement_band_selected",
+      "source": "ui/v4/trial_hd/statement_band_selected.svg",
+      "file": "ui/v4/trial_hd/statement_band_selected.webp",
+      "logical_size": [
+        1040,
+        118
+      ],
+      "texture_size": [
+        4160,
+        472
+      ],
+      "text_rect": [
+        78,
+        24,
+        884,
+        70
+      ],
+      "role": "의논 발언 바탕; 약점 강조/선택 상태를 실제 발언에 연결",
+      "motion": "이동·회전은 엔진에서 텍스트와 함께 적용",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "scrum_endpoint_candidate",
+      "source": "ui/v4/trial_hd/scrum_endpoint_candidate.svg",
+      "file": "ui/v4/trial_hd/scrum_endpoint_candidate.webp",
+      "logical_size": [
+        92,
+        92
+      ],
+      "texture_size": [
+        368,
+        368
+      ],
+      "text_rect": null,
+      "role": "대립 의논 연결 끝점; 선은 엔진에서 두 점 사이에 생성",
+      "motion": "실제 대응 선택/판정 상태만 표시",
+      "state": "candidate",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "scrum_endpoint_target",
+      "source": "ui/v4/trial_hd/scrum_endpoint_target.svg",
+      "file": "ui/v4/trial_hd/scrum_endpoint_target.webp",
+      "logical_size": [
+        92,
+        92
+      ],
+      "texture_size": [
+        368,
+        368
+      ],
+      "text_rect": null,
+      "role": "대립 의논 연결 끝점; 선은 엔진에서 두 점 사이에 생성",
+      "motion": "실제 대응 선택/판정 상태만 표시",
+      "state": "target",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "scrum_endpoint_matched",
+      "source": "ui/v4/trial_hd/scrum_endpoint_matched.svg",
+      "file": "ui/v4/trial_hd/scrum_endpoint_matched.webp",
+      "logical_size": [
+        92,
+        92
+      ],
+      "texture_size": [
+        368,
+        368
+      ],
+      "text_rect": null,
+      "role": "대립 의논 연결 끝점; 선은 엔진에서 두 점 사이에 생성",
+      "motion": "실제 대응 선택/판정 상태만 표시",
+      "state": "matched",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "scrum_team_left",
+      "source": "ui/v4/trial_hd/scrum_team_left.svg",
+      "file": "ui/v4/trial_hd/scrum_team_left.webp",
+      "logical_size": [
+        670,
+        130
+      ],
+      "texture_size": [
+        2680,
+        520
+      ],
+      "text_rect": [
+        70,
+        28,
+        530,
+        75
+      ],
+      "role": "대립 의논 양 팀 제목; 소속/참가자 얼굴은 별도",
+      "motion": "팀 확정 후 진입180ms; 좌우 색 외에 문구로도 구분",
+      "state": "left",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "scrum_team_right",
+      "source": "ui/v4/trial_hd/scrum_team_right.svg",
+      "file": "ui/v4/trial_hd/scrum_team_right.webp",
+      "logical_size": [
+        670,
+        130
+      ],
+      "texture_size": [
+        2680,
+        520
+      ],
+      "text_rect": [
+        70,
+        28,
+        530,
+        75
+      ],
+      "role": "대립 의논 양 팀 제목; 소속/참가자 얼굴은 별도",
+      "motion": "팀 확정 후 진입180ms; 좌우 색 외에 문구로도 구분",
+      "state": "right",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "panic_lane_0",
+      "source": "ui/v4/trial_hd/panic_lane_0.svg",
+      "file": "ui/v4/trial_hd/panic_lane_0.webp",
+      "logical_size": [
+        760,
+        260
+      ],
+      "texture_size": [
+        3040,
+        1040
+      ],
+      "text_rect": [
+        77,
+        46,
+        599,
+        166
+      ],
+      "role": "다중 의논 화자 창; 마스크 안 얼굴·발언은 별도",
+      "motion": "현재 입력받는 창만 전면/강조; 음성 우선순위는 엔진에서 처리",
+      "state": "0",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "panic_lane_1",
+      "source": "ui/v4/trial_hd/panic_lane_1.svg",
+      "file": "ui/v4/trial_hd/panic_lane_1.webp",
+      "logical_size": [
+        760,
+        260
+      ],
+      "texture_size": [
+        3040,
+        1040
+      ],
+      "text_rect": [
+        77,
+        46,
+        599,
+        166
+      ],
+      "role": "다중 의논 화자 창; 마스크 안 얼굴·발언은 별도",
+      "motion": "현재 입력받는 창만 전면/강조; 음성 우선순위는 엔진에서 처리",
+      "state": "1",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "panic_lane_2",
+      "source": "ui/v4/trial_hd/panic_lane_2.svg",
+      "file": "ui/v4/trial_hd/panic_lane_2.webp",
+      "logical_size": [
+        760,
+        260
+      ],
+      "texture_size": [
+        3040,
+        1040
+      ],
+      "text_rect": [
+        77,
+        46,
+        599,
+        166
+      ],
+      "role": "다중 의논 화자 창; 마스크 안 얼굴·발언은 별도",
+      "motion": "현재 입력받는 창만 전면/강조; 음성 우선순위는 엔진에서 처리",
+      "state": "2",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "comic_slot_empty",
+      "source": "ui/v4/trial_hd/comic_slot_empty.svg",
+      "file": "ui/v4/trial_hd/comic_slot_empty.webp",
+      "logical_size": [
+        430,
+        330
+      ],
+      "texture_size": [
+        1720,
+        1320
+      ],
+      "text_rect": [
+        31,
+        30,
+        367,
+        264
+      ],
+      "role": "사건 재구성 만화 칸; 개별 사건 그림/정답은 별도",
+      "motion": "그림 배치 후 확정 결과를 전달받아 테두리 상태 교체",
+      "state": "empty",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "comic_slot_focus",
+      "source": "ui/v4/trial_hd/comic_slot_focus.svg",
+      "file": "ui/v4/trial_hd/comic_slot_focus.webp",
+      "logical_size": [
+        430,
+        330
+      ],
+      "texture_size": [
+        1720,
+        1320
+      ],
+      "text_rect": [
+        31,
+        30,
+        367,
+        264
+      ],
+      "role": "사건 재구성 만화 칸; 개별 사건 그림/정답은 별도",
+      "motion": "그림 배치 후 확정 결과를 전달받아 테두리 상태 교체",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "comic_slot_placed",
+      "source": "ui/v4/trial_hd/comic_slot_placed.svg",
+      "file": "ui/v4/trial_hd/comic_slot_placed.webp",
+      "logical_size": [
+        430,
+        330
+      ],
+      "texture_size": [
+        1720,
+        1320
+      ],
+      "text_rect": [
+        31,
+        30,
+        367,
+        264
+      ],
+      "role": "사건 재구성 만화 칸; 개별 사건 그림/정답은 별도",
+      "motion": "그림 배치 후 확정 결과를 전달받아 테두리 상태 교체",
+      "state": "placed",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "comic_slot_wrong",
+      "source": "ui/v4/trial_hd/comic_slot_wrong.svg",
+      "file": "ui/v4/trial_hd/comic_slot_wrong.webp",
+      "logical_size": [
+        430,
+        330
+      ],
+      "texture_size": [
+        1720,
+        1320
+      ],
+      "text_rect": [
+        31,
+        30,
+        367,
+        264
+      ],
+      "role": "사건 재구성 만화 칸; 개별 사건 그림/정답은 별도",
+      "motion": "그림 배치 후 확정 결과를 전달받아 테두리 상태 교체",
+      "state": "wrong",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "comic_caption",
+      "source": "ui/v4/trial_hd/comic_caption.svg",
+      "file": "ui/v4/trial_hd/comic_caption.webp",
+      "logical_size": [
+        600,
+        170
+      ],
+      "texture_size": [
+        2400,
+        680
+      ],
+      "text_rect": [
+        40,
+        30,
+        515,
+        89
+      ],
+      "role": "사건 재구성 말풍선; 글자는 별도",
+      "motion": "페이지 안 그림/문구를 같은 순서로 표시",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "rhythm_ring_waiting",
+      "source": "ui/v4/trial_hd/rhythm_ring_waiting.svg",
+      "file": "ui/v4/trial_hd/rhythm_ring_waiting.webp",
+      "logical_size": [
+        180,
+        180
+      ],
+      "texture_size": [
+        720,
+        720
+      ],
+      "text_rect": null,
+      "role": "리듬 판정 목표 원; 축소 접근 원/박자/키 라벨은 별도",
+      "motion": "판정 창 기준으로 상태 갱신; 수동 랜덤 점멸 없음",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "rhythm_ring_active",
+      "source": "ui/v4/trial_hd/rhythm_ring_active.svg",
+      "file": "ui/v4/trial_hd/rhythm_ring_active.webp",
+      "logical_size": [
+        180,
+        180
+      ],
+      "texture_size": [
+        720,
+        720
+      ],
+      "text_rect": null,
+      "role": "리듬 판정 목표 원; 축소 접근 원/박자/키 라벨은 별도",
+      "motion": "판정 창 기준으로 상태 갱신; 수동 랜덤 점멸 없음",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "rhythm_ring_hit",
+      "source": "ui/v4/trial_hd/rhythm_ring_hit.svg",
+      "file": "ui/v4/trial_hd/rhythm_ring_hit.webp",
+      "logical_size": [
+        180,
+        180
+      ],
+      "texture_size": [
+        720,
+        720
+      ],
+      "text_rect": null,
+      "role": "리듬 판정 목표 원; 축소 접근 원/박자/키 라벨은 별도",
+      "motion": "판정 창 기준으로 상태 갱신; 수동 랜덤 점멸 없음",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "rhythm_ring_miss",
+      "source": "ui/v4/trial_hd/rhythm_ring_miss.svg",
+      "file": "ui/v4/trial_hd/rhythm_ring_miss.webp",
+      "logical_size": [
+        180,
+        180
+      ],
+      "texture_size": [
+        720,
+        720
+      ],
+      "text_rect": null,
+      "role": "리듬 판정 목표 원; 축소 접근 원/박자/키 라벨은 별도",
+      "motion": "판정 창 기준으로 상태 갱신; 수동 랜덤 점멸 없음",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "route_prompt_left",
+      "source": "ui/v4/trial_hd/route_prompt_left.svg",
+      "file": "ui/v4/trial_hd/route_prompt_left.webp",
+      "logical_size": [
+        250,
+        120
+      ],
+      "texture_size": [
+        1000,
+        480
+      ],
+      "text_rect": [
+        90,
+        25,
+        125,
+        68
+      ],
+      "role": "질문 경로 선택 방향 HUD; 길/차량 3D는 별도",
+      "motion": "입력 유효 구간만 표시; 선택 확정 뒤 소거",
+      "state": "left",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "route_prompt_right",
+      "source": "ui/v4/trial_hd/route_prompt_right.svg",
+      "file": "ui/v4/trial_hd/route_prompt_right.webp",
+      "logical_size": [
+        250,
+        120
+      ],
+      "texture_size": [
+        1000,
+        480
+      ],
+      "text_rect": [
+        90,
+        25,
+        125,
+        68
+      ],
+      "role": "질문 경로 선택 방향 HUD; 길/차량 3D는 별도",
+      "motion": "입력 유효 구간만 표시; 선택 확정 뒤 소거",
+      "state": "right",
+      "text_baked": false,
+      "runtime_integrated": false
+    }
+  ],
+  "runtime_tested": false
+}

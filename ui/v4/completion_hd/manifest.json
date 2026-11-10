@@ -1,0 +1,4153 @@
+{
+  "scale": 4,
+  "text_baked": false,
+  "status": "original editable UI states, runtime integration separate",
+  "assets": [
+    {
+      "id": "control_auto_idle",
+      "source": "ui/v4/completion_hd/control_auto_idle.svg",
+      "file": "ui/v4/completion_hd/control_auto_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 auto; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=auto permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "auto permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_auto_focus",
+      "source": "ui/v4/completion_hd/control_auto_focus.svg",
+      "file": "ui/v4/completion_hd/control_auto_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 auto; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=auto permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "auto permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_auto_active",
+      "source": "ui/v4/completion_hd/control_auto_active.svg",
+      "file": "ui/v4/completion_hd/control_auto_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 auto; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=auto permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "auto permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_auto_disabled",
+      "source": "ui/v4/completion_hd/control_auto_disabled.svg",
+      "file": "ui/v4/completion_hd/control_auto_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 auto; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=auto permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "auto permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_skip_idle",
+      "source": "ui/v4/completion_hd/control_skip_idle.svg",
+      "file": "ui/v4/completion_hd/control_skip_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 skip; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=skip permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skip permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_skip_focus",
+      "source": "ui/v4/completion_hd/control_skip_focus.svg",
+      "file": "ui/v4/completion_hd/control_skip_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 skip; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=skip permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skip permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_skip_active",
+      "source": "ui/v4/completion_hd/control_skip_active.svg",
+      "file": "ui/v4/completion_hd/control_skip_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 skip; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=skip permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skip permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_skip_disabled",
+      "source": "ui/v4/completion_hd/control_skip_disabled.svg",
+      "file": "ui/v4/completion_hd/control_skip_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 skip; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=skip permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skip permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_log_idle",
+      "source": "ui/v4/completion_hd/control_log_idle.svg",
+      "file": "ui/v4/completion_hd/control_log_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 log; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=log permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "log permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_log_focus",
+      "source": "ui/v4/completion_hd/control_log_focus.svg",
+      "file": "ui/v4/completion_hd/control_log_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 log; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=log permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "log permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_log_active",
+      "source": "ui/v4/completion_hd/control_log_active.svg",
+      "file": "ui/v4/completion_hd/control_log_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 log; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=log permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "log permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_log_disabled",
+      "source": "ui/v4/completion_hd/control_log_disabled.svg",
+      "file": "ui/v4/completion_hd/control_log_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 log; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=log permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "log permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_help_idle",
+      "source": "ui/v4/completion_hd/control_help_idle.svg",
+      "file": "ui/v4/completion_hd/control_help_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 help; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=help permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "help permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_help_focus",
+      "source": "ui/v4/completion_hd/control_help_focus.svg",
+      "file": "ui/v4/completion_hd/control_help_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 help; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=help permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "help permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_help_active",
+      "source": "ui/v4/completion_hd/control_help_active.svg",
+      "file": "ui/v4/completion_hd/control_help_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 help; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=help permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "help permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_help_disabled",
+      "source": "ui/v4/completion_hd/control_help_disabled.svg",
+      "file": "ui/v4/completion_hd/control_help_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 help; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=help permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "help permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_confirm_idle",
+      "source": "ui/v4/completion_hd/control_confirm_idle.svg",
+      "file": "ui/v4/completion_hd/control_confirm_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 confirm; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=confirm permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "confirm permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_confirm_focus",
+      "source": "ui/v4/completion_hd/control_confirm_focus.svg",
+      "file": "ui/v4/completion_hd/control_confirm_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 confirm; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=confirm permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "confirm permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_confirm_active",
+      "source": "ui/v4/completion_hd/control_confirm_active.svg",
+      "file": "ui/v4/completion_hd/control_confirm_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 confirm; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=confirm permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "confirm permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_confirm_disabled",
+      "source": "ui/v4/completion_hd/control_confirm_disabled.svg",
+      "file": "ui/v4/completion_hd/control_confirm_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 confirm; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=confirm permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "confirm permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_cancel_idle",
+      "source": "ui/v4/completion_hd/control_cancel_idle.svg",
+      "file": "ui/v4/completion_hd/control_cancel_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 cancel; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=cancel permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "cancel permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_cancel_focus",
+      "source": "ui/v4/completion_hd/control_cancel_focus.svg",
+      "file": "ui/v4/completion_hd/control_cancel_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 cancel; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=cancel permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "cancel permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_cancel_active",
+      "source": "ui/v4/completion_hd/control_cancel_active.svg",
+      "file": "ui/v4/completion_hd/control_cancel_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 cancel; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=cancel permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "cancel permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_cancel_disabled",
+      "source": "ui/v4/completion_hd/control_cancel_disabled.svg",
+      "file": "ui/v4/completion_hd/control_cancel_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 cancel; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=cancel permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "cancel permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_next_idle",
+      "source": "ui/v4/completion_hd/control_next_idle.svg",
+      "file": "ui/v4/completion_hd/control_next_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 next; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=next permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "next permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_next_focus",
+      "source": "ui/v4/completion_hd/control_next_focus.svg",
+      "file": "ui/v4/completion_hd/control_next_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 next; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=next permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "next permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_next_active",
+      "source": "ui/v4/completion_hd/control_next_active.svg",
+      "file": "ui/v4/completion_hd/control_next_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 next; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=next permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "next permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_next_disabled",
+      "source": "ui/v4/completion_hd/control_next_disabled.svg",
+      "file": "ui/v4/completion_hd/control_next_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 next; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=next permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "next permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_previous_idle",
+      "source": "ui/v4/completion_hd/control_previous_idle.svg",
+      "file": "ui/v4/completion_hd/control_previous_idle.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 previous; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=previous permission/activation; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "previous permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_previous_focus",
+      "source": "ui/v4/completion_hd/control_previous_focus.svg",
+      "file": "ui/v4/completion_hd/control_previous_focus.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 previous; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=previous permission/activation; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "previous permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_previous_active",
+      "source": "ui/v4/completion_hd/control_previous_active.svg",
+      "file": "ui/v4/completion_hd/control_previous_active.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 previous; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=previous permission/activation; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "previous permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "control_previous_disabled",
+      "source": "ui/v4/completion_hd/control_previous_disabled.svg",
+      "file": "ui/v4/completion_hd/control_previous_disabled.webp",
+      "logical_size": [
+        176,
+        68
+      ],
+      "texture_size": [
+        704,
+        272
+      ],
+      "text_rect": [
+        61,
+        17,
+        93,
+        36
+      ],
+      "role": "진행 제어 previous; 허용/선택/작동/불가를 분리",
+      "motion": "enter120ms out90ms; event=previous permission/activation; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "previous permission/activation",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_header_1",
+      "source": "ui/v4/completion_hd/chapter_header_1.svg",
+      "file": "ui/v4/completion_hd/chapter_header_1.webp",
+      "logical_size": [
+        1120,
+        120
+      ],
+      "texture_size": [
+        4480,
+        480
+      ],
+      "text_rect": [
+        95,
+        24,
+        910,
+        68
+      ],
+      "role": "장 제목 헤더; 제목/번호는 별도 텍스트",
+      "motion": "enter120ms out90ms; event=chapter start; reduced motion=crossfade70ms",
+      "state": "1",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter start",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_header_2",
+      "source": "ui/v4/completion_hd/chapter_header_2.svg",
+      "file": "ui/v4/completion_hd/chapter_header_2.webp",
+      "logical_size": [
+        1120,
+        120
+      ],
+      "texture_size": [
+        4480,
+        480
+      ],
+      "text_rect": [
+        95,
+        24,
+        910,
+        68
+      ],
+      "role": "장 제목 헤더; 제목/번호는 별도 텍스트",
+      "motion": "enter120ms out90ms; event=chapter start; reduced motion=crossfade70ms",
+      "state": "2",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter start",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_header_3",
+      "source": "ui/v4/completion_hd/chapter_header_3.svg",
+      "file": "ui/v4/completion_hd/chapter_header_3.webp",
+      "logical_size": [
+        1120,
+        120
+      ],
+      "texture_size": [
+        4480,
+        480
+      ],
+      "text_rect": [
+        95,
+        24,
+        910,
+        68
+      ],
+      "role": "장 제목 헤더; 제목/번호는 별도 텍스트",
+      "motion": "enter120ms out90ms; event=chapter start; reduced motion=crossfade70ms",
+      "state": "3",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter start",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_header_4",
+      "source": "ui/v4/completion_hd/chapter_header_4.svg",
+      "file": "ui/v4/completion_hd/chapter_header_4.webp",
+      "logical_size": [
+        1120,
+        120
+      ],
+      "texture_size": [
+        4480,
+        480
+      ],
+      "text_rect": [
+        95,
+        24,
+        910,
+        68
+      ],
+      "role": "장 제목 헤더; 제목/번호는 별도 텍스트",
+      "motion": "enter120ms out90ms; event=chapter start; reduced motion=crossfade70ms",
+      "state": "4",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter start",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_header_5",
+      "source": "ui/v4/completion_hd/chapter_header_5.svg",
+      "file": "ui/v4/completion_hd/chapter_header_5.webp",
+      "logical_size": [
+        1120,
+        120
+      ],
+      "texture_size": [
+        4480,
+        480
+      ],
+      "text_rect": [
+        95,
+        24,
+        910,
+        68
+      ],
+      "role": "장 제목 헤더; 제목/번호는 별도 텍스트",
+      "motion": "enter120ms out90ms; event=chapter start; reduced motion=crossfade70ms",
+      "state": "5",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter start",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_header_6",
+      "source": "ui/v4/completion_hd/chapter_header_6.svg",
+      "file": "ui/v4/completion_hd/chapter_header_6.webp",
+      "logical_size": [
+        1120,
+        120
+      ],
+      "texture_size": [
+        4480,
+        480
+      ],
+      "text_rect": [
+        95,
+        24,
+        910,
+        68
+      ],
+      "role": "장 제목 헤더; 제목/번호는 별도 텍스트",
+      "motion": "enter120ms out90ms; event=chapter start; reduced motion=crossfade70ms",
+      "state": "6",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter start",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gift_slot_owned",
+      "source": "ui/v4/completion_hd/gift_slot_owned.svg",
+      "file": "ui/v4/completion_hd/gift_slot_owned.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gift_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gift_slot actual state; reduced motion=crossfade70ms",
+      "state": "owned",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gift_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gift_slot_unowned",
+      "source": "ui/v4/completion_hd/gift_slot_unowned.svg",
+      "file": "ui/v4/completion_hd/gift_slot_unowned.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gift_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gift_slot actual state; reduced motion=crossfade70ms",
+      "state": "unowned",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gift_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gift_slot_selected",
+      "source": "ui/v4/completion_hd/gift_slot_selected.svg",
+      "file": "ui/v4/completion_hd/gift_slot_selected.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gift_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gift_slot actual state; reduced motion=crossfade70ms",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gift_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gift_slot_disabled",
+      "source": "ui/v4/completion_hd/gift_slot_disabled.svg",
+      "file": "ui/v4/completion_hd/gift_slot_disabled.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gift_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gift_slot actual state; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gift_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "profile_slot_alive",
+      "source": "ui/v4/completion_hd/profile_slot_alive.svg",
+      "file": "ui/v4/completion_hd/profile_slot_alive.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "profile_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=profile_slot actual state; reduced motion=crossfade70ms",
+      "state": "alive",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "profile_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "profile_slot_unmet",
+      "source": "ui/v4/completion_hd/profile_slot_unmet.svg",
+      "file": "ui/v4/completion_hd/profile_slot_unmet.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "profile_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=profile_slot actual state; reduced motion=crossfade70ms",
+      "state": "unmet",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "profile_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "profile_slot_memorial",
+      "source": "ui/v4/completion_hd/profile_slot_memorial.svg",
+      "file": "ui/v4/completion_hd/profile_slot_memorial.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "profile_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=profile_slot actual state; reduced motion=crossfade70ms",
+      "state": "memorial",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "profile_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "profile_slot_focus",
+      "source": "ui/v4/completion_hd/profile_slot_focus.svg",
+      "file": "ui/v4/completion_hd/profile_slot_focus.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "profile_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=profile_slot actual state; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "profile_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_select_locked",
+      "source": "ui/v4/completion_hd/chapter_select_locked.svg",
+      "file": "ui/v4/completion_hd/chapter_select_locked.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "chapter_select 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=chapter_select actual state; reduced motion=crossfade70ms",
+      "state": "locked",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter_select actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_select_available",
+      "source": "ui/v4/completion_hd/chapter_select_available.svg",
+      "file": "ui/v4/completion_hd/chapter_select_available.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "chapter_select 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=chapter_select actual state; reduced motion=crossfade70ms",
+      "state": "available",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter_select actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_select_cleared",
+      "source": "ui/v4/completion_hd/chapter_select_cleared.svg",
+      "file": "ui/v4/completion_hd/chapter_select_cleared.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "chapter_select 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=chapter_select actual state; reduced motion=crossfade70ms",
+      "state": "cleared",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter_select actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_select_focus",
+      "source": "ui/v4/completion_hd/chapter_select_focus.svg",
+      "file": "ui/v4/completion_hd/chapter_select_focus.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "chapter_select 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=chapter_select actual state; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter_select actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gallery_slot_locked",
+      "source": "ui/v4/completion_hd/gallery_slot_locked.svg",
+      "file": "ui/v4/completion_hd/gallery_slot_locked.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gallery_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gallery_slot actual state; reduced motion=crossfade70ms",
+      "state": "locked",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gallery_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gallery_slot_available",
+      "source": "ui/v4/completion_hd/gallery_slot_available.svg",
+      "file": "ui/v4/completion_hd/gallery_slot_available.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gallery_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gallery_slot actual state; reduced motion=crossfade70ms",
+      "state": "available",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gallery_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gallery_slot_new",
+      "source": "ui/v4/completion_hd/gallery_slot_new.svg",
+      "file": "ui/v4/completion_hd/gallery_slot_new.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gallery_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gallery_slot actual state; reduced motion=crossfade70ms",
+      "state": "new",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gallery_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "gallery_slot_focus",
+      "source": "ui/v4/completion_hd/gallery_slot_focus.svg",
+      "file": "ui/v4/completion_hd/gallery_slot_focus.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "gallery_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=gallery_slot actual state; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "gallery_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "comic_candidate_available",
+      "source": "ui/v4/completion_hd/comic_candidate_available.svg",
+      "file": "ui/v4/completion_hd/comic_candidate_available.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "comic_candidate 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=comic_candidate actual state; reduced motion=crossfade70ms",
+      "state": "available",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "comic_candidate actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "comic_candidate_selected",
+      "source": "ui/v4/completion_hd/comic_candidate_selected.svg",
+      "file": "ui/v4/completion_hd/comic_candidate_selected.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "comic_candidate 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=comic_candidate actual state; reduced motion=crossfade70ms",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "comic_candidate actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "comic_candidate_used",
+      "source": "ui/v4/completion_hd/comic_candidate_used.svg",
+      "file": "ui/v4/completion_hd/comic_candidate_used.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "comic_candidate 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=comic_candidate actual state; reduced motion=crossfade70ms",
+      "state": "used",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "comic_candidate actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "comic_candidate_locked",
+      "source": "ui/v4/completion_hd/comic_candidate_locked.svg",
+      "file": "ui/v4/completion_hd/comic_candidate_locked.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "comic_candidate 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=comic_candidate actual state; reduced motion=crossfade70ms",
+      "state": "locked",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "comic_candidate actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "ammo_slot_normal",
+      "source": "ui/v4/completion_hd/ammo_slot_normal.svg",
+      "file": "ui/v4/completion_hd/ammo_slot_normal.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "ammo_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=ammo_slot actual state; reduced motion=crossfade70ms",
+      "state": "normal",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "ammo_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "ammo_slot_note",
+      "source": "ui/v4/completion_hd/ammo_slot_note.svg",
+      "file": "ui/v4/completion_hd/ammo_slot_note.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "ammo_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=ammo_slot actual state; reduced motion=crossfade70ms",
+      "state": "note",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "ammo_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "ammo_slot_magic",
+      "source": "ui/v4/completion_hd/ammo_slot_magic.svg",
+      "file": "ui/v4/completion_hd/ammo_slot_magic.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "ammo_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=ammo_slot actual state; reduced motion=crossfade70ms",
+      "state": "magic",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "ammo_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "ammo_slot_rule",
+      "source": "ui/v4/completion_hd/ammo_slot_rule.svg",
+      "file": "ui/v4/completion_hd/ammo_slot_rule.webp",
+      "logical_size": [
+        300,
+        218
+      ],
+      "texture_size": [
+        1200,
+        872
+      ],
+      "text_rect": [
+        31,
+        158,
+        237,
+        37
+      ],
+      "role": "ammo_slot 상태; 실제 그림·이름은 마스크/텍스트 별도",
+      "motion": "enter120ms out90ms; event=ammo_slot actual state; reduced motion=crossfade70ms",
+      "state": "rule",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "ammo_slot actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "setting_row_idle",
+      "source": "ui/v4/completion_hd/setting_row_idle.svg",
+      "file": "ui/v4/completion_hd/setting_row_idle.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "setting_row 보조 상태판",
+      "motion": "enter120ms out90ms; event=setting_row actual state; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "setting_row actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "setting_row_focus",
+      "source": "ui/v4/completion_hd/setting_row_focus.svg",
+      "file": "ui/v4/completion_hd/setting_row_focus.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "setting_row 보조 상태판",
+      "motion": "enter120ms out90ms; event=setting_row actual state; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "setting_row actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "setting_row_disabled",
+      "source": "ui/v4/completion_hd/setting_row_disabled.svg",
+      "file": "ui/v4/completion_hd/setting_row_disabled.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "setting_row 보조 상태판",
+      "motion": "enter120ms out90ms; event=setting_row actual state; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "setting_row actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "setting_row_conflict",
+      "source": "ui/v4/completion_hd/setting_row_conflict.svg",
+      "file": "ui/v4/completion_hd/setting_row_conflict.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "setting_row 보조 상태판",
+      "motion": "enter120ms out90ms; event=setting_row actual state; reduced motion=crossfade70ms",
+      "state": "conflict",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "setting_row actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "save_status_busy",
+      "source": "ui/v4/completion_hd/save_status_busy.svg",
+      "file": "ui/v4/completion_hd/save_status_busy.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "save_status 보조 상태판",
+      "motion": "enter120ms out90ms; event=save_status actual state; reduced motion=crossfade70ms",
+      "state": "busy",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "save_status actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "save_status_error",
+      "source": "ui/v4/completion_hd/save_status_error.svg",
+      "file": "ui/v4/completion_hd/save_status_error.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "save_status 보조 상태판",
+      "motion": "enter120ms out90ms; event=save_status actual state; reduced motion=crossfade70ms",
+      "state": "error",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "save_status actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "save_status_overwrite",
+      "source": "ui/v4/completion_hd/save_status_overwrite.svg",
+      "file": "ui/v4/completion_hd/save_status_overwrite.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "save_status 보조 상태판",
+      "motion": "enter120ms out90ms; event=save_status actual state; reduced motion=crossfade70ms",
+      "state": "overwrite",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "save_status actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "skill_capacity_available",
+      "source": "ui/v4/completion_hd/skill_capacity_available.svg",
+      "file": "ui/v4/completion_hd/skill_capacity_available.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "skill_capacity 보조 상태판",
+      "motion": "enter120ms out90ms; event=skill_capacity actual state; reduced motion=crossfade70ms",
+      "state": "available",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skill_capacity actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "skill_capacity_full",
+      "source": "ui/v4/completion_hd/skill_capacity_full.svg",
+      "file": "ui/v4/completion_hd/skill_capacity_full.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "skill_capacity 보조 상태판",
+      "motion": "enter120ms out90ms; event=skill_capacity actual state; reduced motion=crossfade70ms",
+      "state": "full",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skill_capacity actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "skill_capacity_focus",
+      "source": "ui/v4/completion_hd/skill_capacity_focus.svg",
+      "file": "ui/v4/completion_hd/skill_capacity_focus.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "skill_capacity 보조 상태판",
+      "motion": "enter120ms out90ms; event=skill_capacity actual state; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "skill_capacity actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "backlog_voice_playing",
+      "source": "ui/v4/completion_hd/backlog_voice_playing.svg",
+      "file": "ui/v4/completion_hd/backlog_voice_playing.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "backlog_voice 보조 상태판",
+      "motion": "enter120ms out90ms; event=backlog_voice actual state; reduced motion=crossfade70ms",
+      "state": "playing",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "backlog_voice actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "backlog_voice_paused",
+      "source": "ui/v4/completion_hd/backlog_voice_paused.svg",
+      "file": "ui/v4/completion_hd/backlog_voice_paused.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "backlog_voice 보조 상태판",
+      "motion": "enter120ms out90ms; event=backlog_voice actual state; reduced motion=crossfade70ms",
+      "state": "paused",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "backlog_voice actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "backlog_voice_unavailable",
+      "source": "ui/v4/completion_hd/backlog_voice_unavailable.svg",
+      "file": "ui/v4/completion_hd/backlog_voice_unavailable.webp",
+      "logical_size": [
+        950,
+        114
+      ],
+      "texture_size": [
+        3800,
+        456
+      ],
+      "text_rect": [
+        92,
+        25,
+        810,
+        59
+      ],
+      "role": "backlog_voice 보조 상태판",
+      "motion": "enter120ms out90ms; event=backlog_voice actual state; reduced motion=crossfade70ms",
+      "state": "unavailable",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "backlog_voice actual state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "slider_track",
+      "source": "ui/v4/completion_hd/slider_track.svg",
+      "file": "ui/v4/completion_hd/slider_track.webp",
+      "logical_size": [
+        640,
+        52
+      ],
+      "texture_size": [
+        2560,
+        208
+      ],
+      "text_rect": null,
+      "role": "음량/속도/감도 공용 슬라이더; fill은 왼쪽 기준 clip",
+      "motion": "enter120ms out90ms; event=actual option value; reduced motion=crossfade70ms",
+      "state": "track",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "slider_fill",
+      "source": "ui/v4/completion_hd/slider_fill.svg",
+      "file": "ui/v4/completion_hd/slider_fill.webp",
+      "logical_size": [
+        640,
+        52
+      ],
+      "texture_size": [
+        2560,
+        208
+      ],
+      "text_rect": null,
+      "role": "음량/속도/감도 공용 슬라이더; fill은 왼쪽 기준 clip",
+      "motion": "enter120ms out90ms; event=actual option value; reduced motion=crossfade70ms",
+      "state": "fill",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "slider_thumb_idle",
+      "source": "ui/v4/completion_hd/slider_thumb_idle.svg",
+      "file": "ui/v4/completion_hd/slider_thumb_idle.webp",
+      "logical_size": [
+        46,
+        66
+      ],
+      "texture_size": [
+        184,
+        264
+      ],
+      "text_rect": null,
+      "role": "음량/속도/감도 공용 슬라이더; fill은 왼쪽 기준 clip",
+      "motion": "enter120ms out90ms; event=actual option value; reduced motion=crossfade70ms",
+      "state": "thumb_idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "slider_thumb_focus",
+      "source": "ui/v4/completion_hd/slider_thumb_focus.svg",
+      "file": "ui/v4/completion_hd/slider_thumb_focus.webp",
+      "logical_size": [
+        46,
+        66
+      ],
+      "texture_size": [
+        184,
+        264
+      ],
+      "text_rect": null,
+      "role": "음량/속도/감도 공용 슬라이더; fill은 왼쪽 기준 clip",
+      "motion": "enter120ms out90ms; event=actual option value; reduced motion=crossfade70ms",
+      "state": "thumb_focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "toggle_off",
+      "source": "ui/v4/completion_hd/toggle_off.svg",
+      "file": "ui/v4/completion_hd/toggle_off.webp",
+      "logical_size": [
+        126,
+        62
+      ],
+      "texture_size": [
+        504,
+        248
+      ],
+      "text_rect": null,
+      "role": "옵션 toggle",
+      "motion": "enter120ms out90ms; event=actual option bool; reduced motion=crossfade70ms",
+      "state": "off",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option bool",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "toggle_on",
+      "source": "ui/v4/completion_hd/toggle_on.svg",
+      "file": "ui/v4/completion_hd/toggle_on.webp",
+      "logical_size": [
+        126,
+        62
+      ],
+      "texture_size": [
+        504,
+        248
+      ],
+      "text_rect": null,
+      "role": "옵션 toggle",
+      "motion": "enter120ms out90ms; event=actual option bool; reduced motion=crossfade70ms",
+      "state": "on",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option bool",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "toggle_disabled",
+      "source": "ui/v4/completion_hd/toggle_disabled.svg",
+      "file": "ui/v4/completion_hd/toggle_disabled.webp",
+      "logical_size": [
+        126,
+        62
+      ],
+      "texture_size": [
+        504,
+        248
+      ],
+      "text_rect": null,
+      "role": "옵션 toggle",
+      "motion": "enter120ms out90ms; event=actual option bool; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option bool",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "radio_off",
+      "source": "ui/v4/completion_hd/radio_off.svg",
+      "file": "ui/v4/completion_hd/radio_off.webp",
+      "logical_size": [
+        126,
+        62
+      ],
+      "texture_size": [
+        504,
+        248
+      ],
+      "text_rect": null,
+      "role": "옵션 radio",
+      "motion": "enter120ms out90ms; event=actual option bool; reduced motion=crossfade70ms",
+      "state": "off",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option bool",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "radio_on",
+      "source": "ui/v4/completion_hd/radio_on.svg",
+      "file": "ui/v4/completion_hd/radio_on.webp",
+      "logical_size": [
+        126,
+        62
+      ],
+      "texture_size": [
+        504,
+        248
+      ],
+      "text_rect": null,
+      "role": "옵션 radio",
+      "motion": "enter120ms out90ms; event=actual option bool; reduced motion=crossfade70ms",
+      "state": "on",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option bool",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "radio_disabled",
+      "source": "ui/v4/completion_hd/radio_disabled.svg",
+      "file": "ui/v4/completion_hd/radio_disabled.webp",
+      "logical_size": [
+        126,
+        62
+      ],
+      "texture_size": [
+        504,
+        248
+      ],
+      "text_rect": null,
+      "role": "옵션 radio",
+      "motion": "enter120ms out90ms; event=actual option bool; reduced motion=crossfade70ms",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "actual option bool",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "input_badge_key",
+      "source": "ui/v4/completion_hd/input_badge_key.svg",
+      "file": "ui/v4/completion_hd/input_badge_key.webp",
+      "logical_size": [
+        112,
+        82
+      ],
+      "texture_size": [
+        448,
+        328
+      ],
+      "text_rect": null,
+      "role": "논리 입력 안내; 실제 키명은 엔진에서 별도",
+      "motion": "enter120ms out90ms; event=input binding; reduced motion=crossfade70ms",
+      "state": "key",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "input binding",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "input_badge_gamepad",
+      "source": "ui/v4/completion_hd/input_badge_gamepad.svg",
+      "file": "ui/v4/completion_hd/input_badge_gamepad.webp",
+      "logical_size": [
+        112,
+        82
+      ],
+      "texture_size": [
+        448,
+        328
+      ],
+      "text_rect": null,
+      "role": "논리 입력 안내; 실제 키명은 엔진에서 별도",
+      "motion": "enter120ms out90ms; event=input binding; reduced motion=crossfade70ms",
+      "state": "gamepad",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "input binding",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "input_badge_unbound",
+      "source": "ui/v4/completion_hd/input_badge_unbound.svg",
+      "file": "ui/v4/completion_hd/input_badge_unbound.webp",
+      "logical_size": [
+        112,
+        82
+      ],
+      "texture_size": [
+        448,
+        328
+      ],
+      "text_rect": null,
+      "role": "논리 입력 안내; 실제 키명은 엔진에서 별도",
+      "motion": "enter120ms out90ms; event=input binding; reduced motion=crossfade70ms",
+      "state": "unbound",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "input binding",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "input_badge_hold",
+      "source": "ui/v4/completion_hd/input_badge_hold.svg",
+      "file": "ui/v4/completion_hd/input_badge_hold.webp",
+      "logical_size": [
+        112,
+        82
+      ],
+      "texture_size": [
+        448,
+        328
+      ],
+      "text_rect": null,
+      "role": "논리 입력 안내; 실제 키명은 엔진에서 별도",
+      "motion": "enter120ms out90ms; event=input binding; reduced motion=crossfade70ms",
+      "state": "hold",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "input binding",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "input_badge_release",
+      "source": "ui/v4/completion_hd/input_badge_release.svg",
+      "file": "ui/v4/completion_hd/input_badge_release.webp",
+      "logical_size": [
+        112,
+        82
+      ],
+      "texture_size": [
+        448,
+        328
+      ],
+      "text_rect": null,
+      "role": "논리 입력 안내; 실제 키명은 엔진에서 별도",
+      "motion": "enter120ms out90ms; event=input binding; reduced motion=crossfade70ms",
+      "state": "release",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "input binding",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "input_badge_repeat",
+      "source": "ui/v4/completion_hd/input_badge_repeat.svg",
+      "file": "ui/v4/completion_hd/input_badge_repeat.webp",
+      "logical_size": [
+        112,
+        82
+      ],
+      "texture_size": [
+        448,
+        328
+      ],
+      "text_rect": null,
+      "role": "논리 입력 안내; 실제 키명은 엔진에서 별도",
+      "motion": "enter120ms out90ms; event=input binding; reduced motion=crossfade70ms",
+      "state": "repeat",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "input binding",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "scrum_direction_up",
+      "source": "ui/v4/completion_hd/scrum_direction_up.svg",
+      "file": "ui/v4/completion_hd/scrum_direction_up.webp",
+      "logical_size": [
+        124,
+        124
+      ],
+      "texture_size": [
+        496,
+        496
+      ],
+      "text_rect": null,
+      "role": "대립 후반 방향 입력5종; 판정과 분리",
+      "motion": "enter120ms out90ms; event=scrum direction cue; reduced motion=crossfade70ms",
+      "state": "up",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "scrum direction cue",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "scrum_direction_down",
+      "source": "ui/v4/completion_hd/scrum_direction_down.svg",
+      "file": "ui/v4/completion_hd/scrum_direction_down.webp",
+      "logical_size": [
+        124,
+        124
+      ],
+      "texture_size": [
+        496,
+        496
+      ],
+      "text_rect": null,
+      "role": "대립 후반 방향 입력5종; 판정과 분리",
+      "motion": "enter120ms out90ms; event=scrum direction cue; reduced motion=crossfade70ms",
+      "state": "down",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "scrum direction cue",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "scrum_direction_left",
+      "source": "ui/v4/completion_hd/scrum_direction_left.svg",
+      "file": "ui/v4/completion_hd/scrum_direction_left.webp",
+      "logical_size": [
+        124,
+        124
+      ],
+      "texture_size": [
+        496,
+        496
+      ],
+      "text_rect": null,
+      "role": "대립 후반 방향 입력5종; 판정과 분리",
+      "motion": "enter120ms out90ms; event=scrum direction cue; reduced motion=crossfade70ms",
+      "state": "left",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "scrum direction cue",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "scrum_direction_right",
+      "source": "ui/v4/completion_hd/scrum_direction_right.svg",
+      "file": "ui/v4/completion_hd/scrum_direction_right.webp",
+      "logical_size": [
+        124,
+        124
+      ],
+      "texture_size": [
+        496,
+        496
+      ],
+      "text_rect": null,
+      "role": "대립 후반 방향 입력5종; 판정과 분리",
+      "motion": "enter120ms out90ms; event=scrum direction cue; reduced motion=crossfade70ms",
+      "state": "right",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "scrum direction cue",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "scrum_direction_center",
+      "source": "ui/v4/completion_hd/scrum_direction_center.svg",
+      "file": "ui/v4/completion_hd/scrum_direction_center.webp",
+      "logical_size": [
+        124,
+        124
+      ],
+      "texture_size": [
+        496,
+        496
+      ],
+      "text_rect": null,
+      "role": "대립 후반 방향 입력5종; 판정과 분리",
+      "motion": "enter120ms out90ms; event=scrum direction cue; reduced motion=crossfade70ms",
+      "state": "center",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "scrum direction cue",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_standard_waiting",
+      "source": "ui/v4/completion_hd/armor_note_standard_waiting.svg",
+      "file": "ui/v4/completion_hd/armor_note_standard_waiting.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 standard; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=standard note state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "standard note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_standard_active",
+      "source": "ui/v4/completion_hd/armor_note_standard_active.svg",
+      "file": "ui/v4/completion_hd/armor_note_standard_active.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 standard; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=standard note state; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "standard note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_standard_hit",
+      "source": "ui/v4/completion_hd/armor_note_standard_hit.svg",
+      "file": "ui/v4/completion_hd/armor_note_standard_hit.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 standard; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=standard note state; reduced motion=crossfade70ms",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "standard note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_standard_miss",
+      "source": "ui/v4/completion_hd/armor_note_standard_miss.svg",
+      "file": "ui/v4/completion_hd/armor_note_standard_miss.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 standard; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=standard note state; reduced motion=crossfade70ms",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "standard note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_head_waiting",
+      "source": "ui/v4/completion_hd/armor_note_hold_head_waiting.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_head_waiting.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_head; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_head note state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_head note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_head_active",
+      "source": "ui/v4/completion_hd/armor_note_hold_head_active.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_head_active.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_head; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_head note state; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_head note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_head_hit",
+      "source": "ui/v4/completion_hd/armor_note_hold_head_hit.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_head_hit.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_head; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_head note state; reduced motion=crossfade70ms",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_head note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_head_miss",
+      "source": "ui/v4/completion_hd/armor_note_hold_head_miss.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_head_miss.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_head; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_head note state; reduced motion=crossfade70ms",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_head note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_body_waiting",
+      "source": "ui/v4/completion_hd/armor_note_hold_body_waiting.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_body_waiting.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_body; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_body note state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_body note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_body_active",
+      "source": "ui/v4/completion_hd/armor_note_hold_body_active.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_body_active.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_body; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_body note state; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_body note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_body_hit",
+      "source": "ui/v4/completion_hd/armor_note_hold_body_hit.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_body_hit.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_body; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_body note state; reduced motion=crossfade70ms",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_body note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_body_miss",
+      "source": "ui/v4/completion_hd/armor_note_hold_body_miss.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_body_miss.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_body; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_body note state; reduced motion=crossfade70ms",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_body note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_tail_waiting",
+      "source": "ui/v4/completion_hd/armor_note_hold_tail_waiting.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_tail_waiting.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_tail; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_tail note state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_tail note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_tail_active",
+      "source": "ui/v4/completion_hd/armor_note_hold_tail_active.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_tail_active.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_tail; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_tail note state; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_tail note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_tail_hit",
+      "source": "ui/v4/completion_hd/armor_note_hold_tail_hit.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_tail_hit.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_tail; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_tail note state; reduced motion=crossfade70ms",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_tail note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_hold_tail_miss",
+      "source": "ui/v4/completion_hd/armor_note_hold_tail_miss.svg",
+      "file": "ui/v4/completion_hd/armor_note_hold_tail_miss.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 hold_tail; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=hold_tail note state; reduced motion=crossfade70ms",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "hold_tail note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_release_waiting",
+      "source": "ui/v4/completion_hd/armor_note_release_waiting.svg",
+      "file": "ui/v4/completion_hd/armor_note_release_waiting.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 release; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=release note state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "release note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_release_active",
+      "source": "ui/v4/completion_hd/armor_note_release_active.svg",
+      "file": "ui/v4/completion_hd/armor_note_release_active.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 release; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=release note state; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "release note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_release_hit",
+      "source": "ui/v4/completion_hd/armor_note_release_hit.svg",
+      "file": "ui/v4/completion_hd/armor_note_release_hit.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 release; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=release note state; reduced motion=crossfade70ms",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "release note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_release_miss",
+      "source": "ui/v4/completion_hd/armor_note_release_miss.svg",
+      "file": "ui/v4/completion_hd/armor_note_release_miss.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 release; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=release note state; reduced motion=crossfade70ms",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "release note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_repeat_waiting",
+      "source": "ui/v4/completion_hd/armor_note_repeat_waiting.svg",
+      "file": "ui/v4/completion_hd/armor_note_repeat_waiting.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 repeat; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=repeat note state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "repeat note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_repeat_active",
+      "source": "ui/v4/completion_hd/armor_note_repeat_active.svg",
+      "file": "ui/v4/completion_hd/armor_note_repeat_active.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 repeat; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=repeat note state; reduced motion=crossfade70ms",
+      "state": "active",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "repeat note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_repeat_hit",
+      "source": "ui/v4/completion_hd/armor_note_repeat_hit.svg",
+      "file": "ui/v4/completion_hd/armor_note_repeat_hit.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 repeat; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=repeat note state; reduced motion=crossfade70ms",
+      "state": "hit",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "repeat note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_note_repeat_miss",
+      "source": "ui/v4/completion_hd/armor_note_repeat_miss.svg",
+      "file": "ui/v4/completion_hd/armor_note_repeat_miss.webp",
+      "logical_size": [
+        132,
+        140
+      ],
+      "texture_size": [
+        528,
+        560
+      ],
+      "text_rect": null,
+      "role": "무장 노트 repeat; 입력 종류와 판정 시각을 분리",
+      "motion": "enter120ms out90ms; event=repeat note state; reduced motion=crossfade70ms",
+      "state": "miss",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "repeat note state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "showdown_power_track",
+      "source": "ui/v4/completion_hd/showdown_power_track.svg",
+      "file": "ui/v4/completion_hd/showdown_power_track.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "showdown_power 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=showdown_power actual value; reduced motion=crossfade70ms",
+      "state": "track",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "showdown_power actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "showdown_power_fill",
+      "source": "ui/v4/completion_hd/showdown_power_fill.svg",
+      "file": "ui/v4/completion_hd/showdown_power_fill.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "showdown_power 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=showdown_power actual value; reduced motion=crossfade70ms",
+      "state": "fill",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "showdown_power actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "lie_cost_track",
+      "source": "ui/v4/completion_hd/lie_cost_track.svg",
+      "file": "ui/v4/completion_hd/lie_cost_track.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "lie_cost 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=lie_cost actual value; reduced motion=crossfade70ms",
+      "state": "track",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "lie_cost actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "lie_cost_fill",
+      "source": "ui/v4/completion_hd/lie_cost_fill.svg",
+      "file": "ui/v4/completion_hd/lie_cost_fill.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "lie_cost 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=lie_cost actual value; reduced motion=crossfade70ms",
+      "state": "fill",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "lie_cost actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_tension_track",
+      "source": "ui/v4/completion_hd/armor_tension_track.svg",
+      "file": "ui/v4/completion_hd/armor_tension_track.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "armor_tension 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=armor_tension actual value; reduced motion=crossfade70ms",
+      "state": "track",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "armor_tension actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_tension_fill",
+      "source": "ui/v4/completion_hd/armor_tension_fill.svg",
+      "file": "ui/v4/completion_hd/armor_tension_fill.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "armor_tension 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=armor_tension actual value; reduced motion=crossfade70ms",
+      "state": "fill",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "armor_tension actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_fever_track",
+      "source": "ui/v4/completion_hd/armor_fever_track.svg",
+      "file": "ui/v4/completion_hd/armor_fever_track.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "armor_fever 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=armor_fever actual value; reduced motion=crossfade70ms",
+      "state": "track",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "armor_fever actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "armor_fever_fill",
+      "source": "ui/v4/completion_hd/armor_fever_fill.svg",
+      "file": "ui/v4/completion_hd/armor_fever_fill.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "armor_fever 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=armor_fever actual value; reduced motion=crossfade70ms",
+      "state": "fill",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "armor_fever actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "opponent_health_track",
+      "source": "ui/v4/completion_hd/opponent_health_track.svg",
+      "file": "ui/v4/completion_hd/opponent_health_track.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "opponent_health 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=opponent_health actual value; reduced motion=crossfade70ms",
+      "state": "track",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "opponent_health actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "opponent_health_fill",
+      "source": "ui/v4/completion_hd/opponent_health_fill.svg",
+      "file": "ui/v4/completion_hd/opponent_health_fill.webp",
+      "logical_size": [
+        540,
+        54
+      ],
+      "texture_size": [
+        2160,
+        216
+      ],
+      "text_rect": null,
+      "role": "opponent_health 실제값 게이지; fill을 clip",
+      "motion": "enter120ms out90ms; event=opponent_health actual value; reduced motion=crossfade70ms",
+      "state": "fill",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "opponent_health actual value",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "anagram_orb_normal",
+      "source": "ui/v4/completion_hd/anagram_orb_normal.svg",
+      "file": "ui/v4/completion_hd/anagram_orb_normal.webp",
+      "logical_size": [
+        164,
+        164
+      ],
+      "texture_size": [
+        656,
+        656
+      ],
+      "text_rect": [
+        41,
+        39,
+        82,
+        85
+      ],
+      "role": "글자 구슬; 실제 글자/특수 종류는 데이터",
+      "motion": "enter120ms out90ms; event=anagram ball state; reduced motion=crossfade70ms",
+      "state": "normal",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "anagram ball state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "anagram_orb_special",
+      "source": "ui/v4/completion_hd/anagram_orb_special.svg",
+      "file": "ui/v4/completion_hd/anagram_orb_special.webp",
+      "logical_size": [
+        164,
+        164
+      ],
+      "texture_size": [
+        656,
+        656
+      ],
+      "text_rect": [
+        41,
+        39,
+        82,
+        85
+      ],
+      "role": "글자 구슬; 실제 글자/특수 종류는 데이터",
+      "motion": "enter120ms out90ms; event=anagram ball state; reduced motion=crossfade70ms",
+      "state": "special",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "anagram ball state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "anagram_orb_selected",
+      "source": "ui/v4/completion_hd/anagram_orb_selected.svg",
+      "file": "ui/v4/completion_hd/anagram_orb_selected.webp",
+      "logical_size": [
+        164,
+        164
+      ],
+      "texture_size": [
+        656,
+        656
+      ],
+      "text_rect": [
+        41,
+        39,
+        82,
+        85
+      ],
+      "role": "글자 구슬; 실제 글자/특수 종류는 데이터",
+      "motion": "enter120ms out90ms; event=anagram ball state; reduced motion=crossfade70ms",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "anagram ball state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "anagram_orb_broken",
+      "source": "ui/v4/completion_hd/anagram_orb_broken.svg",
+      "file": "ui/v4/completion_hd/anagram_orb_broken.webp",
+      "logical_size": [
+        164,
+        164
+      ],
+      "texture_size": [
+        656,
+        656
+      ],
+      "text_rect": [
+        41,
+        39,
+        82,
+        85
+      ],
+      "role": "글자 구슬; 실제 글자/특수 종류는 데이터",
+      "motion": "enter120ms out90ms; event=anagram ball state; reduced motion=crossfade70ms",
+      "state": "broken",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "anagram ball state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "mindmine_cell_hidden",
+      "source": "ui/v4/completion_hd/mindmine_cell_hidden.svg",
+      "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+      "logical_size": [
+        190,
+        190
+      ],
+      "texture_size": [
+        760,
+        760
+      ],
+      "text_rect": null,
+      "role": "발굴 블록/노출/제출 상태; 노출은 정답과 별개",
+      "motion": "enter120ms out90ms; event=mindmine state; reduced motion=crossfade70ms",
+      "state": "hidden",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "mindmine state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "mindmine_cell_exposed",
+      "source": "ui/v4/completion_hd/mindmine_cell_exposed.svg",
+      "file": "ui/v4/completion_hd/mindmine_cell_exposed.webp",
+      "logical_size": [
+        190,
+        190
+      ],
+      "texture_size": [
+        760,
+        760
+      ],
+      "text_rect": null,
+      "role": "발굴 블록/노출/제출 상태; 노출은 정답과 별개",
+      "motion": "enter120ms out90ms; event=mindmine state; reduced motion=crossfade70ms",
+      "state": "exposed",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "mindmine state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "mindmine_cell_selected",
+      "source": "ui/v4/completion_hd/mindmine_cell_selected.svg",
+      "file": "ui/v4/completion_hd/mindmine_cell_selected.webp",
+      "logical_size": [
+        190,
+        190
+      ],
+      "texture_size": [
+        760,
+        760
+      ],
+      "text_rect": null,
+      "role": "발굴 블록/노출/제출 상태; 노출은 정답과 별개",
+      "motion": "enter120ms out90ms; event=mindmine state; reduced motion=crossfade70ms",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "mindmine state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "mindmine_cell_wrong",
+      "source": "ui/v4/completion_hd/mindmine_cell_wrong.svg",
+      "file": "ui/v4/completion_hd/mindmine_cell_wrong.webp",
+      "logical_size": [
+        190,
+        190
+      ],
+      "texture_size": [
+        760,
+        760
+      ],
+      "text_rect": null,
+      "role": "발굴 블록/노출/제출 상태; 노출은 정답과 별개",
+      "motion": "enter120ms out90ms; event=mindmine state; reduced motion=crossfade70ms",
+      "state": "wrong",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "mindmine state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_passenger_waiting",
+      "source": "ui/v4/completion_hd/drive_passenger_waiting.svg",
+      "file": "ui/v4/completion_hd/drive_passenger_waiting.webp",
+      "logical_size": [
+        300,
+        112
+      ],
+      "texture_size": [
+        1200,
+        448
+      ],
+      "text_rect": [
+        108,
+        26,
+        164,
+        55
+      ],
+      "role": "주행 질문 승객 상태; 실제 질문은 별도",
+      "motion": "enter120ms out90ms; event=passenger state; reduced motion=crossfade70ms",
+      "state": "waiting",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "passenger state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_passenger_picked",
+      "source": "ui/v4/completion_hd/drive_passenger_picked.svg",
+      "file": "ui/v4/completion_hd/drive_passenger_picked.webp",
+      "logical_size": [
+        300,
+        112
+      ],
+      "texture_size": [
+        1200,
+        448
+      ],
+      "text_rect": [
+        108,
+        26,
+        164,
+        55
+      ],
+      "role": "주행 질문 승객 상태; 실제 질문은 별도",
+      "motion": "enter120ms out90ms; event=passenger state; reduced motion=crossfade70ms",
+      "state": "picked",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "passenger state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_passenger_seated",
+      "source": "ui/v4/completion_hd/drive_passenger_seated.svg",
+      "file": "ui/v4/completion_hd/drive_passenger_seated.webp",
+      "logical_size": [
+        300,
+        112
+      ],
+      "texture_size": [
+        1200,
+        448
+      ],
+      "text_rect": [
+        108,
+        26,
+        164,
+        55
+      ],
+      "role": "주행 질문 승객 상태; 실제 질문은 별도",
+      "motion": "enter120ms out90ms; event=passenger state; reduced motion=crossfade70ms",
+      "state": "seated",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "passenger state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_passenger_missed",
+      "source": "ui/v4/completion_hd/drive_passenger_missed.svg",
+      "file": "ui/v4/completion_hd/drive_passenger_missed.webp",
+      "logical_size": [
+        300,
+        112
+      ],
+      "texture_size": [
+        1200,
+        448
+      ],
+      "text_rect": [
+        108,
+        26,
+        164,
+        55
+      ],
+      "role": "주행 질문 승객 상태; 실제 질문은 별도",
+      "motion": "enter120ms out90ms; event=passenger state; reduced motion=crossfade70ms",
+      "state": "missed",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "passenger state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_speed_dial",
+      "source": "ui/v4/completion_hd/drive_speed_dial.svg",
+      "file": "ui/v4/completion_hd/drive_speed_dial.webp",
+      "logical_size": [
+        280,
+        170
+      ],
+      "texture_size": [
+        1120,
+        680
+      ],
+      "text_rect": [
+        59,
+        43,
+        161,
+        79
+      ],
+      "role": "주행 speed_dial; 수치/질문/선택은 엔진 표시",
+      "motion": "enter120ms out90ms; event=drive state; reduced motion=crossfade70ms",
+      "state": "speed_dial",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "drive state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_speed_needle",
+      "source": "ui/v4/completion_hd/drive_speed_needle.svg",
+      "file": "ui/v4/completion_hd/drive_speed_needle.webp",
+      "logical_size": [
+        280,
+        170
+      ],
+      "texture_size": [
+        1120,
+        680
+      ],
+      "text_rect": null,
+      "role": "주행 speed_needle; 수치/질문/선택은 엔진 표시",
+      "motion": "enter120ms out90ms; event=drive state; reduced motion=crossfade70ms",
+      "state": "speed_needle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "drive state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_question_face",
+      "source": "ui/v4/completion_hd/drive_question_face.svg",
+      "file": "ui/v4/completion_hd/drive_question_face.webp",
+      "logical_size": [
+        280,
+        170
+      ],
+      "texture_size": [
+        1120,
+        680
+      ],
+      "text_rect": [
+        59,
+        43,
+        161,
+        79
+      ],
+      "role": "주행 question_face; 수치/질문/선택은 엔진 표시",
+      "motion": "enter120ms out90ms; event=drive state; reduced motion=crossfade70ms",
+      "state": "question_face",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "drive state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "drive_answer_marker",
+      "source": "ui/v4/completion_hd/drive_answer_marker.svg",
+      "file": "ui/v4/completion_hd/drive_answer_marker.webp",
+      "logical_size": [
+        280,
+        170
+      ],
+      "texture_size": [
+        1120,
+        680
+      ],
+      "text_rect": null,
+      "role": "주행 answer_marker; 수치/질문/선택은 엔진 표시",
+      "motion": "enter120ms out90ms; event=drive state; reduced motion=crossfade70ms",
+      "state": "answer_marker",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "drive state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "vote_portrait_idle",
+      "source": "ui/v4/completion_hd/vote_portrait_idle.svg",
+      "file": "ui/v4/completion_hd/vote_portrait_idle.webp",
+      "logical_size": [
+        250,
+        300
+      ],
+      "texture_size": [
+        1000,
+        1200
+      ],
+      "text_rect": [
+        25,
+        245,
+        199,
+        34
+      ],
+      "role": "투표 초상 슬롯; 실제 인물/생존/지목 대상은 별도",
+      "motion": "enter120ms out90ms; event=vote candidate state; reduced motion=crossfade70ms",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "vote candidate state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "vote_portrait_focus",
+      "source": "ui/v4/completion_hd/vote_portrait_focus.svg",
+      "file": "ui/v4/completion_hd/vote_portrait_focus.webp",
+      "logical_size": [
+        250,
+        300
+      ],
+      "texture_size": [
+        1000,
+        1200
+      ],
+      "text_rect": [
+        25,
+        245,
+        199,
+        34
+      ],
+      "role": "투표 초상 슬롯; 실제 인물/생존/지목 대상은 별도",
+      "motion": "enter120ms out90ms; event=vote candidate state; reduced motion=crossfade70ms",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "vote candidate state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "vote_portrait_selected",
+      "source": "ui/v4/completion_hd/vote_portrait_selected.svg",
+      "file": "ui/v4/completion_hd/vote_portrait_selected.webp",
+      "logical_size": [
+        250,
+        300
+      ],
+      "texture_size": [
+        1000,
+        1200
+      ],
+      "text_rect": [
+        25,
+        245,
+        199,
+        34
+      ],
+      "role": "투표 초상 슬롯; 실제 인물/생존/지목 대상은 별도",
+      "motion": "enter120ms out90ms; event=vote candidate state; reduced motion=crossfade70ms",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "vote candidate state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "vote_portrait_deceased",
+      "source": "ui/v4/completion_hd/vote_portrait_deceased.svg",
+      "file": "ui/v4/completion_hd/vote_portrait_deceased.webp",
+      "logical_size": [
+        250,
+        300
+      ],
+      "texture_size": [
+        1000,
+        1200
+      ],
+      "text_rect": [
+        25,
+        245,
+        199,
+        34
+      ],
+      "role": "투표 초상 슬롯; 실제 인물/생존/지목 대상은 별도",
+      "motion": "enter120ms out90ms; event=vote candidate state; reduced motion=crossfade70ms",
+      "state": "deceased",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "vote candidate state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "vote_portrait_hidden",
+      "source": "ui/v4/completion_hd/vote_portrait_hidden.svg",
+      "file": "ui/v4/completion_hd/vote_portrait_hidden.webp",
+      "logical_size": [
+        250,
+        300
+      ],
+      "texture_size": [
+        1000,
+        1200
+      ],
+      "text_rect": [
+        25,
+        245,
+        199,
+        34
+      ],
+      "role": "투표 초상 슬롯; 실제 인물/생존/지목 대상은 별도",
+      "motion": "enter120ms out90ms; event=vote candidate state; reduced motion=crossfade70ms",
+      "state": "hidden",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "vote candidate state",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "result_medal_s",
+      "source": "ui/v4/completion_hd/result_medal_s.svg",
+      "file": "ui/v4/completion_hd/result_medal_s.webp",
+      "logical_size": [
+        220,
+        236
+      ],
+      "texture_size": [
+        880,
+        944
+      ],
+      "text_rect": [
+        66,
+        73,
+        89,
+        82
+      ],
+      "role": "정산 등급 메달; 등급 문자는 별도",
+      "motion": "enter120ms out90ms; event=result rank; reduced motion=crossfade70ms",
+      "state": "s",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "result rank",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "result_medal_a",
+      "source": "ui/v4/completion_hd/result_medal_a.svg",
+      "file": "ui/v4/completion_hd/result_medal_a.webp",
+      "logical_size": [
+        220,
+        236
+      ],
+      "texture_size": [
+        880,
+        944
+      ],
+      "text_rect": [
+        66,
+        73,
+        89,
+        82
+      ],
+      "role": "정산 등급 메달; 등급 문자는 별도",
+      "motion": "enter120ms out90ms; event=result rank; reduced motion=crossfade70ms",
+      "state": "a",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "result rank",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "result_medal_b",
+      "source": "ui/v4/completion_hd/result_medal_b.svg",
+      "file": "ui/v4/completion_hd/result_medal_b.webp",
+      "logical_size": [
+        220,
+        236
+      ],
+      "texture_size": [
+        880,
+        944
+      ],
+      "text_rect": [
+        66,
+        73,
+        89,
+        82
+      ],
+      "role": "정산 등급 메달; 등급 문자는 별도",
+      "motion": "enter120ms out90ms; event=result rank; reduced motion=crossfade70ms",
+      "state": "b",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "result rank",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "result_medal_c",
+      "source": "ui/v4/completion_hd/result_medal_c.svg",
+      "file": "ui/v4/completion_hd/result_medal_c.webp",
+      "logical_size": [
+        220,
+        236
+      ],
+      "texture_size": [
+        880,
+        944
+      ],
+      "text_rect": [
+        66,
+        73,
+        89,
+        82
+      ],
+      "role": "정산 등급 메달; 등급 문자는 별도",
+      "motion": "enter120ms out90ms; event=result rank; reduced motion=crossfade70ms",
+      "state": "c",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "result rank",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "loading_spinner",
+      "source": "ui/v4/completion_hd/loading_spinner.svg",
+      "file": "ui/v4/completion_hd/loading_spinner.webp",
+      "logical_size": [
+        160,
+        160
+      ],
+      "texture_size": [
+        640,
+        640
+      ],
+      "text_rect": null,
+      "role": "전환/완료 loading_spinner; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=loading_spinner resolved event; reduced motion=crossfade70ms",
+      "state": "loading_spinner",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "loading_spinner resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "page_dots",
+      "source": "ui/v4/completion_hd/page_dots.svg",
+      "file": "ui/v4/completion_hd/page_dots.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 page_dots; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=page_dots resolved event; reduced motion=crossfade70ms",
+      "state": "page_dots",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "page_dots resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "new_badge",
+      "source": "ui/v4/completion_hd/new_badge.svg",
+      "file": "ui/v4/completion_hd/new_badge.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 new_badge; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=new_badge resolved event; reduced motion=crossfade70ms",
+      "state": "new_badge",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "new_badge resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "investigation_done",
+      "source": "ui/v4/completion_hd/investigation_done.svg",
+      "file": "ui/v4/completion_hd/investigation_done.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 investigation_done; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=investigation_done resolved event; reduced motion=crossfade70ms",
+      "state": "investigation_done",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "investigation_done resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "evidence_updated",
+      "source": "ui/v4/completion_hd/evidence_updated.svg",
+      "file": "ui/v4/completion_hd/evidence_updated.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 evidence_updated; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=evidence_updated resolved event; reduced motion=crossfade70ms",
+      "state": "evidence_updated",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "evidence_updated resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "free_time_end",
+      "source": "ui/v4/completion_hd/free_time_end.svg",
+      "file": "ui/v4/completion_hd/free_time_end.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 free_time_end; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=free_time_end resolved event; reduced motion=crossfade70ms",
+      "state": "free_time_end",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "free_time_end resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "chapter_end",
+      "source": "ui/v4/completion_hd/chapter_end.svg",
+      "file": "ui/v4/completion_hd/chapter_end.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 chapter_end; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=chapter_end resolved event; reduced motion=crossfade70ms",
+      "state": "chapter_end",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "chapter_end resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "trial_open",
+      "source": "ui/v4/completion_hd/trial_open.svg",
+      "file": "ui/v4/completion_hd/trial_open.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 trial_open; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=trial_open resolved event; reduced motion=crossfade70ms",
+      "state": "trial_open",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "trial_open resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "trial_close",
+      "source": "ui/v4/completion_hd/trial_close.svg",
+      "file": "ui/v4/completion_hd/trial_close.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 trial_close; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=trial_close resolved event; reduced motion=crossfade70ms",
+      "state": "trial_close",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "trial_close resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    },
+    {
+      "id": "discovery_banner",
+      "source": "ui/v4/completion_hd/discovery_banner.svg",
+      "file": "ui/v4/completion_hd/discovery_banner.webp",
+      "logical_size": [
+        700,
+        124
+      ],
+      "texture_size": [
+        2800,
+        496
+      ],
+      "text_rect": [
+        83,
+        27,
+        553,
+        65
+      ],
+      "role": "전환/완료 discovery_banner; 문구·진입 시점은 실제 이벤트에 연결",
+      "motion": "enter120ms out90ms; event=discovery_banner resolved event; reduced motion=crossfade70ms",
+      "state": "discovery_banner",
+      "text_baked": false,
+      "runtime_integrated": false,
+      "event": "discovery_banner resolved event",
+      "meaning_not_color_only": true,
+      "mask_owner": "engine widget"
+    }
+  ],
+  "runtime_tested": false
+}

@@ -1,0 +1,3805 @@
+{
+  "scope": "editable full-screen asset layouts and Korean text fixtures, NOT game screenshots or working menus",
+  "screens": [
+    {
+      "id": "title",
+      "source": "ui/v4/layouts_hd/title.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "yumeno_wordmark",
+          "file": "ui/v4/brand_hd/yumeno_wordmark.webp",
+          "rect": [
+            90,
+            145,
+            1200,
+            360
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "choice_idle",
+          "file": "ui/v4/hd/choice_idle.webp",
+          "rect": [
+            130,
+            510,
+            760,
+            79
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "choice_focus",
+          "file": "ui/v4/hd/choice_focus.webp",
+          "rect": [
+            130,
+            632,
+            760,
+            79
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "choice_idle",
+          "file": "ui/v4/hd/choice_idle.webp",
+          "rect": [
+            130,
+            754,
+            760,
+            79
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "choice_idle",
+          "file": "ui/v4/hd/choice_idle.webp",
+          "rect": [
+            130,
+            876,
+            760,
+            79
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            0
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "",
+          "dynamic_text": true
+        },
+        {
+          "id": "choice_idle_text_1",
+          "rect": [
+            213,
+            529,
+            601,
+            33
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 24,
+          "color": "#f3ead9",
+          "fixture_only": "처음부터",
+          "dynamic_text": true
+        },
+        {
+          "id": "choice_focus_text_2",
+          "rect": [
+            213,
+            651,
+            601,
+            33
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 24,
+          "color": "#f3ead9",
+          "fixture_only": "이어하기",
+          "dynamic_text": true
+        },
+        {
+          "id": "choice_idle_text_3",
+          "rect": [
+            213,
+            773,
+            601,
+            33
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 24,
+          "color": "#f3ead9",
+          "fixture_only": "기록 보기",
+          "dynamic_text": true
+        },
+        {
+          "id": "choice_idle_text_4",
+          "rect": [
+            213,
+            895,
+            601,
+            33
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 24,
+          "color": "#f3ead9",
+          "fixture_only": "설정",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/title.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "dialogue",
+      "source": "ui/v4/layouts_hd/dialogue.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "dialogue_daily",
+          "file": "ui/v4/hd/dialogue_daily.webp",
+          "rect": [
+            100,
+            825,
+            1720,
+            224
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "nameplate_daily",
+          "file": "ui/v4/hd/nameplate_daily.webp",
+          "rect": [
+            120,
+            760,
+            390,
+            68
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "control_auto_idle",
+          "file": "ui/v4/completion_hd/control_auto_idle.webp",
+          "rect": [
+            1050,
+            740,
+            176,
+            68
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "control_skip_idle",
+          "file": "ui/v4/completion_hd/control_skip_idle.webp",
+          "rect": [
+            1240,
+            740,
+            176,
+            68
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "control_log_idle",
+          "file": "ui/v4/completion_hd/control_log_idle.webp",
+          "rect": [
+            1430,
+            740,
+            176,
+            68
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "control_help_idle",
+          "file": "ui/v4/completion_hd/control_help_idle.webp",
+          "rect": [
+            1620,
+            740,
+            176,
+            68
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            0
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "",
+          "dynamic_text": true
+        },
+        {
+          "id": "nameplate_daily_text_1",
+          "rect": [
+            162,
+            775,
+            295,
+            32
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 23,
+          "color": "#f3ead9",
+          "fixture_only": "미오",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_2",
+          "rect": [
+            200,
+            865,
+            1480,
+            86
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#14131b",
+          "fixture_only": "같이 가겠다고 대답한 적은 없어.\n지금 내가 어디까지 들었는지부터 말할게.",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/dialogue.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "settings",
+      "source": "ui/v4/layouts_hd/settings.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "setting_row_idle",
+          "file": "ui/v4/completion_hd/setting_row_idle.webp",
+          "rect": [
+            130,
+            190,
+            1170,
+            140
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_track",
+          "file": "ui/v4/completion_hd/slider_track.webp",
+          "rect": [
+            900,
+            230,
+            300,
+            24
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_fill",
+          "file": "ui/v4/completion_hd/slider_fill.webp",
+          "rect": [
+            900,
+            230,
+            190,
+            15
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "setting_row_idle",
+          "file": "ui/v4/completion_hd/setting_row_idle.webp",
+          "rect": [
+            130,
+            334,
+            1170,
+            140
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_track",
+          "file": "ui/v4/completion_hd/slider_track.webp",
+          "rect": [
+            900,
+            374,
+            300,
+            24
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_fill",
+          "file": "ui/v4/completion_hd/slider_fill.webp",
+          "rect": [
+            900,
+            374,
+            190,
+            15
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "setting_row_focus",
+          "file": "ui/v4/completion_hd/setting_row_focus.webp",
+          "rect": [
+            130,
+            478,
+            1170,
+            140
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_track",
+          "file": "ui/v4/completion_hd/slider_track.webp",
+          "rect": [
+            900,
+            518,
+            300,
+            24
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_fill",
+          "file": "ui/v4/completion_hd/slider_fill.webp",
+          "rect": [
+            900,
+            518,
+            190,
+            15
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "setting_row_idle",
+          "file": "ui/v4/completion_hd/setting_row_idle.webp",
+          "rect": [
+            130,
+            622,
+            1170,
+            140
+          ],
+          "z": 10,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_track",
+          "file": "ui/v4/completion_hd/slider_track.webp",
+          "rect": [
+            900,
+            662,
+            300,
+            24
+          ],
+          "z": 11,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "slider_fill",
+          "file": "ui/v4/completion_hd/slider_fill.webp",
+          "rect": [
+            900,
+            662,
+            190,
+            15
+          ],
+          "z": 12,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "setting_row_idle",
+          "file": "ui/v4/completion_hd/setting_row_idle.webp",
+          "rect": [
+            130,
+            766,
+            1170,
+            140
+          ],
+          "z": 13,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "toggle_off",
+          "file": "ui/v4/completion_hd/toggle_off.webp",
+          "rect": [
+            1030,
+            801,
+            160,
+            79
+          ],
+          "z": 14,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "setting_row_idle",
+          "file": "ui/v4/completion_hd/setting_row_idle.webp",
+          "rect": [
+            130,
+            910,
+            1170,
+            140
+          ],
+          "z": 15,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "input_badge_key",
+          "file": "ui/v4/completion_hd/input_badge_key.webp",
+          "rect": [
+            1080,
+            945,
+            100,
+            73
+          ],
+          "z": 16,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "설정",
+          "dynamic_text": true
+        },
+        {
+          "id": "setting_row_idle_text_1",
+          "rect": [
+            243,
+            221,
+            998,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "전체 음량",
+          "dynamic_text": true
+        },
+        {
+          "id": "setting_row_idle_text_2",
+          "rect": [
+            243,
+            365,
+            998,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "배경음악",
+          "dynamic_text": true
+        },
+        {
+          "id": "setting_row_focus_text_3",
+          "rect": [
+            243,
+            509,
+            998,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "효과음",
+          "dynamic_text": true
+        },
+        {
+          "id": "setting_row_idle_text_4",
+          "rect": [
+            243,
+            653,
+            998,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "글자 표시 속도",
+          "dynamic_text": true
+        },
+        {
+          "id": "setting_row_idle_text_5",
+          "rect": [
+            243,
+            797,
+            998,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "화면 흔들림 줄이기",
+          "dynamic_text": true
+        },
+        {
+          "id": "setting_row_idle_text_6",
+          "rect": [
+            243,
+            941,
+            998,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "입력 설정",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/settings.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "save_load",
+      "source": "ui/v4/layouts_hd/save_load.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "save_slot_selected",
+          "file": "ui/v4/systems_hd/save_slot_selected.webp",
+          "rect": [
+            150,
+            200,
+            1510,
+            215
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "save_slot_empty",
+          "file": "ui/v4/systems_hd/save_slot_empty.webp",
+          "rect": [
+            150,
+            440,
+            1510,
+            215
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "save_slot_incompatible",
+          "file": "ui/v4/systems_hd/save_slot_incompatible.webp",
+          "rect": [
+            150,
+            680,
+            1510,
+            215
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "저장 · 불러오기",
+          "dynamic_text": true
+        },
+        {
+          "id": "save_slot_selected_text_1",
+          "rect": [
+            514,
+            239,
+            1077,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "선택한 기록을 불러와요",
+          "dynamic_text": true
+        },
+        {
+          "id": "save_slot_empty_text_2",
+          "rect": [
+            514,
+            479,
+            1077,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "비어 있는 저장 위치",
+          "dynamic_text": true
+        },
+        {
+          "id": "save_slot_incompatible_text_3",
+          "rect": [
+            514,
+            719,
+            1077,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "현재 버전과 맞지 않는 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/save_load.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "pad_home",
+      "source": "ui/v4/layouts_hd/pad_home.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "pad_shell",
+          "file": "ui/v4/systems_hd/pad_shell.webp",
+          "rect": [
+            170,
+            140,
+            1580,
+            927
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_map",
+          "file": "ui/v4/systems_hd/icon_map.webp",
+          "rect": [
+            220,
+            260,
+            150,
+            150
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_profile",
+          "file": "ui/v4/systems_hd/icon_profile.webp",
+          "rect": [
+            620,
+            260,
+            150,
+            150
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_evidence",
+          "file": "ui/v4/systems_hd/icon_evidence.webp",
+          "rect": [
+            1020,
+            260,
+            150,
+            150
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_gift",
+          "file": "ui/v4/systems_hd/icon_gift.webp",
+          "rect": [
+            1420,
+            260,
+            150,
+            150
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_skills",
+          "file": "ui/v4/systems_hd/icon_skills.webp",
+          "rect": [
+            220,
+            590,
+            150,
+            150
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_save",
+          "file": "ui/v4/systems_hd/icon_save.webp",
+          "rect": [
+            620,
+            590,
+            150,
+            150
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_settings",
+          "file": "ui/v4/systems_hd/icon_settings.webp",
+          "rect": [
+            1020,
+            590,
+            150,
+            150
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "icon_backlog",
+          "file": "ui/v4/systems_hd/icon_backlog.webp",
+          "rect": [
+            1420,
+            590,
+            150,
+            150
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "래피패드",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_1",
+          "rect": [
+            220,
+            430,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "지도",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_2",
+          "rect": [
+            620,
+            430,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "인물",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_3",
+          "rect": [
+            1020,
+            430,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "조사 기록",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_4",
+          "rect": [
+            1420,
+            430,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "선물",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_5",
+          "rect": [
+            220,
+            760,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "스킬",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_6",
+          "rect": [
+            620,
+            760,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "저장",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_7",
+          "rect": [
+            1020,
+            760,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "설정",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_8",
+          "rect": [
+            1420,
+            760,
+            280,
+            41
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 32,
+          "color": "#f3ead9",
+          "fixture_only": "대화 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/pad_home.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "profile",
+      "source": "ui/v4/layouts_hd/profile.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "profile_detail",
+          "file": "ui/v4/systems_hd/profile_detail.webp",
+          "rect": [
+            180,
+            180,
+            900,
+            568
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "인물 기록",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_1",
+          "rect": [
+            1140,
+            285,
+            650,
+            45
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 36,
+          "color": "#f3ead9",
+          "fixture_only": "아직 확인하지 않은 항목",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_2",
+          "rect": [
+            1140,
+            395,
+            650,
+            40
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 31,
+          "color": "#f3ead9",
+          "fixture_only": "공개된 정보와 직접 확인한 내용을 구분해 표시해요.",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/profile.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "evidence",
+      "source": "ui/v4/layouts_hd/evidence.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "evidence_detail",
+          "file": "ui/v4/systems_hd/evidence_detail.webp",
+          "rect": [
+            180,
+            180,
+            900,
+            568
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "조사 기록",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_1",
+          "rect": [
+            1140,
+            285,
+            650,
+            45
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 36,
+          "color": "#f3ead9",
+          "fixture_only": "아직 확인하지 않은 항목",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_2",
+          "rect": [
+            1140,
+            395,
+            650,
+            40
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 31,
+          "color": "#f3ead9",
+          "fixture_only": "공개된 정보와 직접 확인한 내용을 구분해 표시해요.",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/evidence.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "gifts",
+      "source": "ui/v4/layouts_hd/gifts.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "gift_slot_owned",
+          "file": "ui/v4/completion_hd/gift_slot_owned.webp",
+          "rect": [
+            170,
+            220,
+            365,
+            265
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_selected",
+          "file": "ui/v4/completion_hd/gift_slot_selected.webp",
+          "rect": [
+            600,
+            220,
+            365,
+            265
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_unowned",
+          "file": "ui/v4/completion_hd/gift_slot_unowned.webp",
+          "rect": [
+            1030,
+            220,
+            365,
+            265
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_owned",
+          "file": "ui/v4/completion_hd/gift_slot_owned.webp",
+          "rect": [
+            1460,
+            220,
+            365,
+            265
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_selected",
+          "file": "ui/v4/completion_hd/gift_slot_selected.webp",
+          "rect": [
+            170,
+            595,
+            365,
+            265
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_unowned",
+          "file": "ui/v4/completion_hd/gift_slot_unowned.webp",
+          "rect": [
+            600,
+            595,
+            365,
+            265
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_owned",
+          "file": "ui/v4/completion_hd/gift_slot_owned.webp",
+          "rect": [
+            1030,
+            595,
+            365,
+            265
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gift_slot_selected",
+          "file": "ui/v4/completion_hd/gift_slot_selected.webp",
+          "rect": [
+            1460,
+            595,
+            365,
+            265
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "선물",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/gifts.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "skills",
+      "source": "ui/v4/layouts_hd/skills.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "skill_card_idle",
+          "file": "ui/v4/systems_hd/skill_card_idle.webp",
+          "rect": [
+            170,
+            200,
+            750,
+            182
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_equipped",
+          "file": "ui/v4/systems_hd/skill_card_equipped.webp",
+          "rect": [
+            1010,
+            200,
+            750,
+            182
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_unavailable",
+          "file": "ui/v4/systems_hd/skill_card_unavailable.webp",
+          "rect": [
+            170,
+            405,
+            750,
+            182
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_idle",
+          "file": "ui/v4/systems_hd/skill_card_idle.webp",
+          "rect": [
+            1010,
+            405,
+            750,
+            182
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_equipped",
+          "file": "ui/v4/systems_hd/skill_card_equipped.webp",
+          "rect": [
+            170,
+            610,
+            750,
+            182
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_unavailable",
+          "file": "ui/v4/systems_hd/skill_card_unavailable.webp",
+          "rect": [
+            1010,
+            610,
+            750,
+            182
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_idle",
+          "file": "ui/v4/systems_hd/skill_card_idle.webp",
+          "rect": [
+            170,
+            815,
+            750,
+            182
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "skill_card_equipped",
+          "file": "ui/v4/systems_hd/skill_card_equipped.webp",
+          "rect": [
+            1010,
+            815,
+            750,
+            182
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "장착할 스킬",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/skills.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "gallery",
+      "source": "ui/v4/layouts_hd/gallery.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "gallery_slot_available",
+          "file": "ui/v4/completion_hd/gallery_slot_available.webp",
+          "rect": [
+            170,
+            220,
+            365,
+            265
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_focus",
+          "file": "ui/v4/completion_hd/gallery_slot_focus.webp",
+          "rect": [
+            600,
+            220,
+            365,
+            265
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_locked",
+          "file": "ui/v4/completion_hd/gallery_slot_locked.webp",
+          "rect": [
+            1030,
+            220,
+            365,
+            265
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_available",
+          "file": "ui/v4/completion_hd/gallery_slot_available.webp",
+          "rect": [
+            1460,
+            220,
+            365,
+            265
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_focus",
+          "file": "ui/v4/completion_hd/gallery_slot_focus.webp",
+          "rect": [
+            170,
+            595,
+            365,
+            265
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_locked",
+          "file": "ui/v4/completion_hd/gallery_slot_locked.webp",
+          "rect": [
+            600,
+            595,
+            365,
+            265
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_available",
+          "file": "ui/v4/completion_hd/gallery_slot_available.webp",
+          "rect": [
+            1030,
+            595,
+            365,
+            265
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "gallery_slot_focus",
+          "file": "ui/v4/completion_hd/gallery_slot_focus.webp",
+          "rect": [
+            1460,
+            595,
+            365,
+            265
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "장면 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/gallery.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "chapter_select",
+      "source": "ui/v4/layouts_hd/chapter_select.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "chapter_select_available",
+          "file": "ui/v4/completion_hd/chapter_select_available.webp",
+          "rect": [
+            170,
+            220,
+            365,
+            265
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_focus",
+          "file": "ui/v4/completion_hd/chapter_select_focus.webp",
+          "rect": [
+            600,
+            220,
+            365,
+            265
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_locked",
+          "file": "ui/v4/completion_hd/chapter_select_locked.webp",
+          "rect": [
+            1030,
+            220,
+            365,
+            265
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_available",
+          "file": "ui/v4/completion_hd/chapter_select_available.webp",
+          "rect": [
+            1460,
+            220,
+            365,
+            265
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_focus",
+          "file": "ui/v4/completion_hd/chapter_select_focus.webp",
+          "rect": [
+            170,
+            595,
+            365,
+            265
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_locked",
+          "file": "ui/v4/completion_hd/chapter_select_locked.webp",
+          "rect": [
+            600,
+            595,
+            365,
+            265
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_available",
+          "file": "ui/v4/completion_hd/chapter_select_available.webp",
+          "rect": [
+            1030,
+            595,
+            365,
+            265
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "chapter_select_focus",
+          "file": "ui/v4/completion_hd/chapter_select_focus.webp",
+          "rect": [
+            1460,
+            595,
+            365,
+            265
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "장 선택",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/chapter_select.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "backlog",
+      "source": "ui/v4/layouts_hd/backlog.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "backlog_row_idle",
+          "file": "ui/v4/systems_hd/backlog_row_idle.webp",
+          "rect": [
+            140,
+            190,
+            1580,
+            245
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "backlog_row_focus",
+          "file": "ui/v4/systems_hd/backlog_row_focus.webp",
+          "rect": [
+            140,
+            460,
+            1580,
+            245
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "backlog_row_idle",
+          "file": "ui/v4/systems_hd/backlog_row_idle.webp",
+          "rect": [
+            140,
+            730,
+            1580,
+            245
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "대화 기록",
+          "dynamic_text": true
+        },
+        {
+          "id": "backlog_row_idle_text_1",
+          "rect": [
+            395,
+            253,
+            1257,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "같이 봤다는 것과 전부 확인했다는 건 달라.",
+          "dynamic_text": true
+        },
+        {
+          "id": "backlog_row_focus_text_2",
+          "rect": [
+            395,
+            523,
+            1257,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "그 말은 내가 직접 들은 건 아니에요.",
+          "dynamic_text": true
+        },
+        {
+          "id": "backlog_row_idle_text_3",
+          "rect": [
+            395,
+            793,
+            1257,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "지금 고치면 이전에 쓴 말도 함께 남길게.",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/backlog.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "nonstop",
+      "source": "ui/v4/layouts_hd/nonstop.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            280,
+            290,
+            1200,
+            136
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_weak",
+          "file": "ui/v4/trial_hd/statement_band_weak.webp",
+          "rect": [
+            350,
+            460,
+            1200,
+            136
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            420,
+            630,
+            1200,
+            136
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "ammo_card",
+          "file": "ui/v4/systems_hd/ammo_card.webp",
+          "rect": [
+            110,
+            840,
+            760,
+            188
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "논의",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_normal_text_1",
+          "rect": [
+            370,
+            318,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "아직 확인하지 않은 전제",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_weak_text_2",
+          "rect": [
+            440,
+            488,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "그때 보았다는 말의 범위",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_normal_text_3",
+          "rect": [
+            510,
+            658,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "다른 가능성과 비교",
+          "dynamic_text": true
+        },
+        {
+          "id": "ammo_card_text_4",
+          "rect": [
+            266,
+            876,
+            528,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "확인한 조사 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/nonstop.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "panic",
+      "source": "ui/v4/layouts_hd/panic.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            280,
+            290,
+            1200,
+            136
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_weak",
+          "file": "ui/v4/trial_hd/statement_band_weak.webp",
+          "rect": [
+            350,
+            460,
+            1200,
+            136
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            420,
+            630,
+            1200,
+            136
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "ammo_card",
+          "file": "ui/v4/systems_hd/ammo_card.webp",
+          "rect": [
+            110,
+            840,
+            760,
+            188
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "동시 논의",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_normal_text_1",
+          "rect": [
+            370,
+            318,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "아직 확인하지 않은 전제",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_weak_text_2",
+          "rect": [
+            440,
+            488,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "그때 보았다는 말의 범위",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_normal_text_3",
+          "rect": [
+            510,
+            658,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "다른 가능성과 비교",
+          "dynamic_text": true
+        },
+        {
+          "id": "ammo_card_text_4",
+          "rect": [
+            266,
+            876,
+            528,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "확인한 조사 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/panic.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "showdown",
+      "source": "ui/v4/layouts_hd/showdown.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            280,
+            290,
+            1200,
+            136
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_weak",
+          "file": "ui/v4/trial_hd/statement_band_weak.webp",
+          "rect": [
+            350,
+            460,
+            1200,
+            136
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            420,
+            630,
+            1200,
+            136
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "ammo_card",
+          "file": "ui/v4/systems_hd/ammo_card.webp",
+          "rect": [
+            110,
+            840,
+            760,
+            188
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "반론",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_normal_text_1",
+          "rect": [
+            370,
+            318,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "아직 확인하지 않은 전제",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_weak_text_2",
+          "rect": [
+            440,
+            488,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "그때 보았다는 말의 범위",
+          "dynamic_text": true
+        },
+        {
+          "id": "statement_band_normal_text_3",
+          "rect": [
+            510,
+            658,
+            1020,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "다른 가능성과 비교",
+          "dynamic_text": true
+        },
+        {
+          "id": "ammo_card_text_4",
+          "rect": [
+            266,
+            876,
+            528,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "확인한 조사 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/showdown.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "scrum",
+      "source": "ui/v4/layouts_hd/scrum.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_endpoint_candidate",
+          "file": "ui/v4/trial_hd/scrum_endpoint_candidate.webp",
+          "rect": [
+            100,
+            285,
+            110,
+            110
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            230,
+            300,
+            570,
+            65
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            1120,
+            300,
+            570,
+            65
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_endpoint_target",
+          "file": "ui/v4/trial_hd/scrum_endpoint_target.webp",
+          "rect": [
+            1720,
+            285,
+            110,
+            110
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_endpoint_candidate",
+          "file": "ui/v4/trial_hd/scrum_endpoint_candidate.webp",
+          "rect": [
+            100,
+            505,
+            110,
+            110
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            230,
+            520,
+            570,
+            65
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            1120,
+            520,
+            570,
+            65
+          ],
+          "z": 10,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_endpoint_target",
+          "file": "ui/v4/trial_hd/scrum_endpoint_target.webp",
+          "rect": [
+            1720,
+            505,
+            110,
+            110
+          ],
+          "z": 11,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_endpoint_candidate",
+          "file": "ui/v4/trial_hd/scrum_endpoint_candidate.webp",
+          "rect": [
+            100,
+            725,
+            110,
+            110
+          ],
+          "z": 12,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            230,
+            740,
+            570,
+            65
+          ],
+          "z": 13,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "statement_band_normal",
+          "file": "ui/v4/trial_hd/statement_band_normal.webp",
+          "rect": [
+            1120,
+            740,
+            570,
+            65
+          ],
+          "z": 14,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_endpoint_target",
+          "file": "ui/v4/trial_hd/scrum_endpoint_target.webp",
+          "rect": [
+            1720,
+            725,
+            110,
+            110
+          ],
+          "z": 15,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "scrum_direction_up",
+          "file": "ui/v4/completion_hd/scrum_direction_up.webp",
+          "rect": [
+            860,
+            420,
+            150,
+            150
+          ],
+          "z": 16,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "대립",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/scrum.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "armor",
+      "source": "ui/v4/layouts_hd/armor.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_note_hold_head_waiting",
+          "file": "ui/v4/completion_hd/armor_note_hold_head_waiting.webp",
+          "rect": [
+            210,
+            300,
+            115,
+            122
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_note_standard_active",
+          "file": "ui/v4/completion_hd/armor_note_standard_active.webp",
+          "rect": [
+            470,
+            430,
+            115,
+            122
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_note_hold_head_waiting",
+          "file": "ui/v4/completion_hd/armor_note_hold_head_waiting.webp",
+          "rect": [
+            730,
+            560,
+            115,
+            122
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_note_standard_active",
+          "file": "ui/v4/completion_hd/armor_note_standard_active.webp",
+          "rect": [
+            990,
+            300,
+            115,
+            122
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_note_hold_head_waiting",
+          "file": "ui/v4/completion_hd/armor_note_hold_head_waiting.webp",
+          "rect": [
+            1250,
+            430,
+            115,
+            122
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_note_standard_active",
+          "file": "ui/v4/completion_hd/armor_note_standard_active.webp",
+          "rect": [
+            1510,
+            560,
+            115,
+            122
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_tension_track",
+          "file": "ui/v4/completion_hd/armor_tension_track.webp",
+          "rect": [
+            200,
+            820,
+            1150,
+            115
+          ],
+          "z": 10,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "armor_tension_fill",
+          "file": "ui/v4/completion_hd/armor_tension_fill.webp",
+          "rect": [
+            200,
+            820,
+            680,
+            68
+          ],
+          "z": 11,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "리듬 논박",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/armor.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "anagram",
+      "source": "ui/v4/layouts_hd/anagram.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "anagram_orb_normal",
+          "file": "ui/v4/completion_hd/anagram_orb_normal.webp",
+          "rect": [
+            180,
+            410,
+            160,
+            160
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "anagram_orb_normal",
+          "file": "ui/v4/completion_hd/anagram_orb_normal.webp",
+          "rect": [
+            450,
+            410,
+            160,
+            160
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "anagram_orb_selected",
+          "file": "ui/v4/completion_hd/anagram_orb_selected.webp",
+          "rect": [
+            720,
+            410,
+            160,
+            160
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "anagram_orb_normal",
+          "file": "ui/v4/completion_hd/anagram_orb_normal.webp",
+          "rect": [
+            990,
+            410,
+            160,
+            160
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "anagram_orb_normal",
+          "file": "ui/v4/completion_hd/anagram_orb_normal.webp",
+          "rect": [
+            1260,
+            410,
+            160,
+            160
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "anagram_orb_normal",
+          "file": "ui/v4/completion_hd/anagram_orb_normal.webp",
+          "rect": [
+            1530,
+            410,
+            160,
+            160
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "문자 조합",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_1",
+          "rect": [
+            230,
+            455,
+            70,
+            59
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 50,
+          "color": "#f3ead9",
+          "fixture_only": "가",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_2",
+          "rect": [
+            500,
+            455,
+            70,
+            59
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 50,
+          "color": "#f3ead9",
+          "fixture_only": "나",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_3",
+          "rect": [
+            770,
+            455,
+            70,
+            59
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 50,
+          "color": "#f3ead9",
+          "fixture_only": "다",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_4",
+          "rect": [
+            1040,
+            455,
+            70,
+            59
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 50,
+          "color": "#f3ead9",
+          "fixture_only": "라",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_5",
+          "rect": [
+            1310,
+            455,
+            70,
+            59
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 50,
+          "color": "#f3ead9",
+          "fixture_only": "마",
+          "dynamic_text": true
+        },
+        {
+          "id": "label_6",
+          "rect": [
+            1580,
+            455,
+            70,
+            59
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 50,
+          "color": "#f3ead9",
+          "fixture_only": "바",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/anagram.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "drive",
+      "source": "ui/v4/layouts_hd/drive.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "drive_question_face",
+          "file": "ui/v4/completion_hd/drive_question_face.webp",
+          "rect": [
+            660,
+            245,
+            600,
+            364
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "route_prompt_left",
+          "file": "ui/v4/trial_hd/route_prompt_left.webp",
+          "rect": [
+            150,
+            690,
+            600,
+            288
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "route_prompt_right",
+          "file": "ui/v4/trial_hd/route_prompt_right.webp",
+          "rect": [
+            1170,
+            690,
+            600,
+            288
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "drive_speed_dial",
+          "file": "ui/v4/completion_hd/drive_speed_dial.webp",
+          "rect": [
+            810,
+            820,
+            300,
+            182
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "질문과 경로",
+          "dynamic_text": true
+        },
+        {
+          "id": "drive_question_face_text_1",
+          "rect": [
+            786,
+            337,
+            345,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#f3ead9",
+          "fixture_only": "지금 확인해야 할 것은?",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/drive.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "mindmine",
+      "source": "ui/v4/layouts_hd/mindmine.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            370,
+            255,
+            160,
+            160
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            565,
+            255,
+            160,
+            160
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            760,
+            255,
+            160,
+            160
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            955,
+            255,
+            160,
+            160
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1150,
+            255,
+            160,
+            160
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1345,
+            255,
+            160,
+            160
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            370,
+            432,
+            160,
+            160
+          ],
+          "z": 10,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_selected",
+          "file": "ui/v4/completion_hd/mindmine_cell_selected.webp",
+          "rect": [
+            565,
+            432,
+            160,
+            160
+          ],
+          "z": 11,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            760,
+            432,
+            160,
+            160
+          ],
+          "z": 12,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            955,
+            432,
+            160,
+            160
+          ],
+          "z": 13,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1150,
+            432,
+            160,
+            160
+          ],
+          "z": 14,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1345,
+            432,
+            160,
+            160
+          ],
+          "z": 15,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            370,
+            609,
+            160,
+            160
+          ],
+          "z": 16,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            565,
+            609,
+            160,
+            160
+          ],
+          "z": 17,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            760,
+            609,
+            160,
+            160
+          ],
+          "z": 18,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            955,
+            609,
+            160,
+            160
+          ],
+          "z": 19,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1150,
+            609,
+            160,
+            160
+          ],
+          "z": 20,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1345,
+            609,
+            160,
+            160
+          ],
+          "z": 21,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            370,
+            786,
+            160,
+            160
+          ],
+          "z": 22,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            565,
+            786,
+            160,
+            160
+          ],
+          "z": 23,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            760,
+            786,
+            160,
+            160
+          ],
+          "z": 24,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            955,
+            786,
+            160,
+            160
+          ],
+          "z": 25,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1150,
+            786,
+            160,
+            160
+          ],
+          "z": 26,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "mindmine_cell_hidden",
+          "file": "ui/v4/completion_hd/mindmine_cell_hidden.webp",
+          "rect": [
+            1345,
+            786,
+            160,
+            160
+          ],
+          "z": 27,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "그림 발굴",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/mindmine.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "comic",
+      "source": "ui/v4/layouts_hd/comic.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_slot_empty",
+          "file": "ui/v4/trial_hd/comic_slot_empty.webp",
+          "rect": [
+            140,
+            245,
+            510,
+            391
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_slot_empty",
+          "file": "ui/v4/trial_hd/comic_slot_empty.webp",
+          "rect": [
+            710,
+            245,
+            510,
+            391
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_slot_focus",
+          "file": "ui/v4/trial_hd/comic_slot_focus.webp",
+          "rect": [
+            1280,
+            245,
+            510,
+            391
+          ],
+          "z": 6,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_slot_empty",
+          "file": "ui/v4/trial_hd/comic_slot_empty.webp",
+          "rect": [
+            140,
+            525,
+            510,
+            391
+          ],
+          "z": 7,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_slot_empty",
+          "file": "ui/v4/trial_hd/comic_slot_empty.webp",
+          "rect": [
+            710,
+            525,
+            510,
+            391
+          ],
+          "z": 8,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_slot_empty",
+          "file": "ui/v4/trial_hd/comic_slot_empty.webp",
+          "rect": [
+            1280,
+            525,
+            510,
+            391
+          ],
+          "z": 9,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "comic_caption",
+          "file": "ui/v4/trial_hd/comic_caption.webp",
+          "rect": [
+            540,
+            835,
+            840,
+            238
+          ],
+          "z": 10,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "사건 재구성",
+          "dynamic_text": true
+        },
+        {
+          "id": "comic_caption_text_1",
+          "rect": [
+            596,
+            877,
+            721,
+            43
+          ],
+          "font": "fonts/pretendard/Pretendard-Regular.otf",
+          "font_size": 34,
+          "color": "#14131b",
+          "fixture_only": "선택한 조각의 설명을 확인해 주세요",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/comic.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    },
+    {
+      "id": "result",
+      "source": "ui/v4/layouts_hd/result.svg",
+      "logical_size": [
+        1920,
+        1080
+      ],
+      "native_vector_size": [
+        7680,
+        4320
+      ],
+      "layers": [
+        {
+          "asset": "trial_health_track",
+          "file": "ui/v4/systems_hd/trial_health_track.webp",
+          "rect": [
+            100,
+            155,
+            400,
+            41
+          ],
+          "z": 1,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_health_fill",
+          "file": "ui/v4/systems_hd/trial_health_fill.webp",
+          "rect": [
+            100,
+            155,
+            300,
+            13
+          ],
+          "z": 2,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_timer",
+          "file": "ui/v4/systems_hd/trial_timer.webp",
+          "rect": [
+            1510,
+            130,
+            280,
+            110
+          ],
+          "z": 3,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "trial_result",
+          "file": "ui/v4/systems_hd/trial_result.webp",
+          "rect": [
+            250,
+            210,
+            1250,
+            812
+          ],
+          "z": 4,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        },
+        {
+          "asset": "result_medal_a",
+          "file": "ui/v4/completion_hd/result_medal_a.webp",
+          "rect": [
+            1510,
+            480,
+            270,
+            290
+          ],
+          "z": 5,
+          "aspect": "uniform scale",
+          "runtime_state": "provided by engine, not inferred by image"
+        }
+      ],
+      "text_fields": [
+        {
+          "id": "screen_title",
+          "rect": [
+            105,
+            60,
+            1600,
+            61
+          ],
+          "font": "fonts/blackhansans/BlackHanSans-Regular.ttf",
+          "font_size": 52,
+          "color": "#f3ead9",
+          "fixture_only": "재판 기록",
+          "dynamic_text": true
+        }
+      ],
+      "fixture_image": "Game/Saved/v4-ui-layouts/result.jpg",
+      "font_policy": "project OFL fonts, text separate from plates",
+      "runtime_integrated": false
+    }
+  ],
+  "runtime_integrated": false,
+  "claims_excluded": [
+    "HB widget creation",
+    "live input/masking",
+    "save interaction",
+    "actual trial decisions"
+  ],
+  "coordinate_system": "1920x1080 logical top-left pixels, SVG native4x; preserve actual engine layers"
+}

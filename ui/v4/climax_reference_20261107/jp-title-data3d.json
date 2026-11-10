@@ -1,0 +1,129 @@
+{
+  "format": "V3 typed DAT",
+  "sha256": "80124ace8f814be132953ba92c746cd1e0dc96356e0965fe8948d685789a20ec",
+  "size": 230,
+  "row_count": 1,
+  "bytes_per_row": 44,
+  "columns": [
+    {
+      "name": "Frame",
+      "type": "s32",
+      "count": 1,
+      "descriptor_offset": 12,
+      "row_offset": 0
+    },
+    {
+      "name": "PosX",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 24,
+      "row_offset": 4
+    },
+    {
+      "name": "PosY",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 35,
+      "row_offset": 8
+    },
+    {
+      "name": "PosZ",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 46,
+      "row_offset": 12
+    },
+    {
+      "name": "RotX",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 57,
+      "row_offset": 16
+    },
+    {
+      "name": "RotY",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 68,
+      "row_offset": 20
+    },
+    {
+      "name": "RotZ",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 79,
+      "row_offset": 24
+    },
+    {
+      "name": "ScaleX",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 90,
+      "row_offset": 28
+    },
+    {
+      "name": "ScaleY",
+      "type": "f32",
+      "count": 1,
+      "descriptor_offset": 103,
+      "row_offset": 32
+    },
+    {
+      "name": "Param",
+      "type": "s32",
+      "count": 1,
+      "descriptor_offset": 116,
+      "row_offset": 36
+    },
+    {
+      "name": "Label",
+      "type": "ascii",
+      "count": 1,
+      "descriptor_offset": 128,
+      "row_offset": 40
+    },
+    {
+      "name": "Next Label",
+      "type": "ascii",
+      "count": 1,
+      "descriptor_offset": 142,
+      "row_offset": 42
+    }
+  ],
+  "row_data_offset": 176,
+  "string_pool_offset": 220,
+  "utf8_count": 2,
+  "utf16_count": 0,
+  "trailing_bytes": 0,
+  "unknown_row_bytes": 0,
+  "rows": [
+    [
+      0,
+      -9.09000015258789,
+      5.242000102996826,
+      16.143999099731445,
+      0.024000000208616257,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0,
+      "Init",
+      ""
+    ]
+  ],
+  "string_indices": [
+    {
+      "10": [
+        0
+      ],
+      "11": [
+        1
+      ]
+    }
+  ],
+  "limitations": [
+    "Column names are authored metadata, not proof of runtime use.",
+    "wrd_data binary DAT variant is unsupported."
+  ]
+}

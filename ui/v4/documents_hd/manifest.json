@@ -1,0 +1,376 @@
+{
+  "scale": 4,
+  "assets": [
+    {
+      "id": "report_16_excerpt",
+      "source": "ui/v4/documents_hd/report_16_excerpt.svg",
+      "file": "ui/v4/documents_hd/report_16_excerpt.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "E1-04; print identity only, no invented full report",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "source_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+      "diegetic_status": "quoted excerpt only",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": [
+        "16"
+      ]
+    },
+    {
+      "id": "report_17_excerpt",
+      "source": "ui/v4/documents_hd/report_17_excerpt.svg",
+      "file": "ui/v4/documents_hd/report_17_excerpt.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "E1-04/05/06; confirmed printed fragment, NOT full fabricated report",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "source_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+      "diegetic_status": "quoted excerpt only",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": [
+        "17",
+        "작동 확인 불가"
+      ]
+    },
+    {
+      "id": "printer_order_excerpt",
+      "source": "ui/v4/documents_hd/printer_order_excerpt.svg",
+      "file": "ui/v4/documents_hd/printer_order_excerpt.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "E1-04; completion order only, no author/time field invented",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "source_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+      "diegetic_status": "quoted excerpt only",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "id": "observation_summary_excerpt",
+      "source": "ui/v4/documents_hd/observation_summary_excerpt.svg",
+      "file": "ui/v4/documents_hd/observation_summary_excerpt.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "E1-12; actual quoted heading, annotations remain separate",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "source_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+      "diegetic_status": "quoted excerpt only",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": [
+        "관찰",
+        "작동",
+        "일부 문"
+      ]
+    },
+    {
+      "id": "document_original",
+      "source": "ui/v4/documents_hd/document_original.svg",
+      "file": "ui/v4/documents_hd/document_original.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "inspection viewer heading, not physical historical document title",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "source_sha256": "f2b30e528a3c3b5b1b42f9b9c5b12809e36dc2b12bcf1aa848fc3626463dfb51",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": []
+    },
+    {
+      "id": "document_summary",
+      "source": "ui/v4/documents_hd/document_summary.svg",
+      "file": "ui/v4/documents_hd/document_summary.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "inspection viewer heading, different from original",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "source_sha256": "f2b30e528a3c3b5b1b42f9b9c5b12809e36dc2b12bcf1aa848fc3626463dfb51",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": []
+    },
+    {
+      "id": "entry_ledger",
+      "source": "ui/v4/documents_hd/entry_ledger.svg",
+      "file": "ui/v4/documents_hd/entry_ledger.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "distinct ledger form; record rows supplied by verified story data",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "source_sha256": "f2b30e528a3c3b5b1b42f9b9c5b12809e36dc2b12bcf1aa848fc3626463dfb51",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": []
+    },
+    {
+      "id": "allocation_grid",
+      "source": "ui/v4/documents_hd/allocation_grid.svg",
+      "file": "ui/v4/documents_hd/allocation_grid.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "distinct allocation form, NEVER interpreted as arrival list",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "source_sha256": "f2b30e528a3c3b5b1b42f9b9c5b12809e36dc2b12bcf1aa848fc3626463dfb51",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": []
+    },
+    {
+      "id": "statement_sheet",
+      "source": "ui/v4/documents_hd/statement_sheet.svg",
+      "file": "ui/v4/documents_hd/statement_sheet.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "statement body stays engine text; no invented confession",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "source_sha256": "f2b30e528a3c3b5b1b42f9b9c5b12809e36dc2b12bcf1aa848fc3626463dfb51",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": []
+    },
+    {
+      "id": "contract_three_pages",
+      "source": "ui/v4/documents_hd/contract_three_pages.svg",
+      "file": "ui/v4/documents_hd/contract_three_pages.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "three page tabs1..3, no unsupported legal terms/signatures",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/10_5장_정보와행위_원장_스포주의.md",
+      "source_sha256": "c465b8fc61b6f0ec823346073ddcb54af7fb6c582b4d1702c60bce5cdc6f42f4",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": []
+    },
+    {
+      "id": "control_separation",
+      "source": "ui/v4/documents_hd/control_separation.svg",
+      "file": "ui/v4/documents_hd/control_separation.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "player inspection overlay, separate fields and values",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11_6장_과거와현재_원장_스포주의.md",
+      "source_sha256": "f2b30e528a3c3b5b1b42f9b9c5b12809e36dc2b12bcf1aa848fc3626463dfb51",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": [
+        "출입·연락 통제",
+        "의식 지원"
+      ]
+    },
+    {
+      "id": "evidence_custody",
+      "source": "ui/v4/documents_hd/evidence_custody.svg",
+      "file": "ui/v4/documents_hd/evidence_custody.webp",
+      "logical_size": [
+        800,
+        1040
+      ],
+      "texture_size": [
+        3200,
+        4160
+      ],
+      "text_rect": [
+        70,
+        150,
+        650,
+        800
+      ],
+      "role": "viewer annotation fields: two different custodians, never merged record",
+      "motion": "document viewer fade100ms; text and pan stay stable",
+      "state": "base",
+      "text_baked": true,
+      "runtime_integrated": false,
+      "source_document": "docs/design/rewrite_v4/11b_1장_수사_초고.md",
+      "source_sha256": "6ce4f65bf1bc4c0e303736ae6f2dfd52783c403c706bd40536340113dbe69da9",
+      "diegetic_status": "player inspection overlay, NOT historical physical wording",
+      "body_policy": "Only explicitly supplied/quoted fields are filled; full prose is not invented. Engine binds verified manuscript text into text_rect.",
+      "printed_fields": [
+        "원본",
+        "조각"
+      ]
+    }
+  ],
+  "runtime_integrated": false,
+  "claims_excluded": [
+    "invented full legal/forensic document text",
+    "runtime dynamic text proof"
+  ]
+}

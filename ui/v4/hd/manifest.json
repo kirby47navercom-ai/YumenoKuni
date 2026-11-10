@@ -1,0 +1,461 @@
+{
+  "status": "authored source assets; runtime integration pending",
+  "palette": {
+    "ink": "#14131b",
+    "paper": "#f3ead9",
+    "red": "#d34c66",
+    "violet": "#9770cf"
+  },
+  "assets": [
+    {
+      "id": "dialogue_daily",
+      "source": "ui/v4/hd/dialogue_daily.svg",
+      "file": "ui/v4/hd/dialogue_daily.webp",
+      "logical_size": [
+        1720,
+        224
+      ],
+      "texture_size": [
+        6880,
+        896
+      ],
+      "text_rect": [
+        94,
+        42,
+        1528,
+        135
+      ],
+      "role": "대화 본문 바탕; 글자는 엔진 Text로 분리",
+      "motion": "진입 140ms 이동 14px/퇴장100ms; 대사 중 흔들지 않음",
+      "state": "daily",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "dialogue_thought",
+      "source": "ui/v4/hd/dialogue_thought.svg",
+      "file": "ui/v4/hd/dialogue_thought.webp",
+      "logical_size": [
+        1720,
+        224
+      ],
+      "texture_size": [
+        6880,
+        896
+      ],
+      "text_rect": [
+        94,
+        42,
+        1528,
+        135
+      ],
+      "role": "대화 본문 바탕; 글자는 엔진 Text로 분리",
+      "motion": "진입 140ms 이동 14px/퇴장100ms; 대사 중 흔들지 않음",
+      "state": "thought",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "dialogue_trial",
+      "source": "ui/v4/hd/dialogue_trial.svg",
+      "file": "ui/v4/hd/dialogue_trial.webp",
+      "logical_size": [
+        1720,
+        224
+      ],
+      "texture_size": [
+        6880,
+        896
+      ],
+      "text_rect": [
+        94,
+        42,
+        1528,
+        135
+      ],
+      "role": "대화 본문 바탕; 글자는 엔진 Text로 분리",
+      "motion": "진입 140ms 이동 14px/퇴장100ms; 대사 중 흔들지 않음",
+      "state": "trial",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "nameplate_daily",
+      "source": "ui/v4/hd/nameplate_daily.svg",
+      "file": "ui/v4/hd/nameplate_daily.webp",
+      "logical_size": [
+        390,
+        68
+      ],
+      "texture_size": [
+        1560,
+        272
+      ],
+      "text_rect": [
+        42,
+        15,
+        295,
+        40
+      ],
+      "role": "화자 이름; 긴 이름은 글자크기 축소보다 너비 조정",
+      "motion": "화자 변경시 90ms 교체; 본문과 별도 층",
+      "state": "daily",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "nameplate_trial",
+      "source": "ui/v4/hd/nameplate_trial.svg",
+      "file": "ui/v4/hd/nameplate_trial.webp",
+      "logical_size": [
+        390,
+        68
+      ],
+      "texture_size": [
+        1560,
+        272
+      ],
+      "text_rect": [
+        42,
+        15,
+        295,
+        40
+      ],
+      "role": "화자 이름; 긴 이름은 글자크기 축소보다 너비 조정",
+      "motion": "화자 변경시 90ms 교체; 본문과 별도 층",
+      "state": "trial",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "choice_idle",
+      "source": "ui/v4/hd/choice_idle.svg",
+      "file": "ui/v4/hd/choice_idle.webp",
+      "logical_size": [
+        920,
+        96
+      ],
+      "texture_size": [
+        3680,
+        384
+      ],
+      "text_rect": [
+        100,
+        23,
+        728,
+        50
+      ],
+      "role": "선택지; 번호/문장은 별도 텍스트",
+      "motion": "포커스100ms/누름70ms; disabled는 선택불가 상태와 연결",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "choice_focus",
+      "source": "ui/v4/hd/choice_focus.svg",
+      "file": "ui/v4/hd/choice_focus.webp",
+      "logical_size": [
+        920,
+        96
+      ],
+      "texture_size": [
+        3680,
+        384
+      ],
+      "text_rect": [
+        100,
+        23,
+        728,
+        50
+      ],
+      "role": "선택지; 번호/문장은 별도 텍스트",
+      "motion": "포커스100ms/누름70ms; disabled는 선택불가 상태와 연결",
+      "state": "focus",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "choice_pressed",
+      "source": "ui/v4/hd/choice_pressed.svg",
+      "file": "ui/v4/hd/choice_pressed.webp",
+      "logical_size": [
+        920,
+        96
+      ],
+      "texture_size": [
+        3680,
+        384
+      ],
+      "text_rect": [
+        100,
+        23,
+        728,
+        50
+      ],
+      "role": "선택지; 번호/문장은 별도 텍스트",
+      "motion": "포커스100ms/누름70ms; disabled는 선택불가 상태와 연결",
+      "state": "pressed",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "choice_disabled",
+      "source": "ui/v4/hd/choice_disabled.svg",
+      "file": "ui/v4/hd/choice_disabled.webp",
+      "logical_size": [
+        920,
+        96
+      ],
+      "texture_size": [
+        3680,
+        384
+      ],
+      "text_rect": [
+        100,
+        23,
+        728,
+        50
+      ],
+      "role": "선택지; 번호/문장은 별도 텍스트",
+      "motion": "포커스100ms/누름70ms; disabled는 선택불가 상태와 연결",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "reticle_idle",
+      "source": "ui/v4/hd/reticle_idle.svg",
+      "file": "ui/v4/hd/reticle_idle.webp",
+      "logical_size": [
+        100,
+        100
+      ],
+      "texture_size": [
+        400,
+        400
+      ],
+      "text_rect": null,
+      "role": "조준점; 실제 선택가능/잠김 상태에 연결",
+      "motion": "대상획득120ms 축소; 지속 점멸 없음",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "reticle_target",
+      "source": "ui/v4/hd/reticle_target.svg",
+      "file": "ui/v4/hd/reticle_target.webp",
+      "logical_size": [
+        100,
+        100
+      ],
+      "texture_size": [
+        400,
+        400
+      ],
+      "text_rect": null,
+      "role": "조준점; 실제 선택가능/잠김 상태에 연결",
+      "motion": "대상획득120ms 축소; 지속 점멸 없음",
+      "state": "target",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "reticle_locked",
+      "source": "ui/v4/hd/reticle_locked.svg",
+      "file": "ui/v4/hd/reticle_locked.webp",
+      "logical_size": [
+        100,
+        100
+      ],
+      "texture_size": [
+        400,
+        400
+      ],
+      "text_rect": null,
+      "role": "조준점; 실제 선택가능/잠김 상태에 연결",
+      "motion": "대상획득120ms 축소; 지속 점멸 없음",
+      "state": "locked",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "evidence_new",
+      "source": "ui/v4/hd/evidence_new.svg",
+      "file": "ui/v4/hd/evidence_new.webp",
+      "logical_size": [
+        980,
+        180
+      ],
+      "texture_size": [
+        3920,
+        720
+      ],
+      "text_rect": [
+        116,
+        37,
+        773,
+        112
+      ],
+      "role": "증거 획득/다시 보기; 실제 증거 그림과 제목/내용은 별도",
+      "motion": "획득상태 확정 뒤160ms 진입; 닫기 전 입력소비",
+      "state": "new",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "evidence_review",
+      "source": "ui/v4/hd/evidence_review.svg",
+      "file": "ui/v4/hd/evidence_review.webp",
+      "logical_size": [
+        980,
+        180
+      ],
+      "texture_size": [
+        3920,
+        720
+      ],
+      "text_rect": [
+        116,
+        37,
+        773,
+        112
+      ],
+      "role": "증거 획득/다시 보기; 실제 증거 그림과 제목/내용은 별도",
+      "motion": "획득상태 확정 뒤160ms 진입; 닫기 전 입력소비",
+      "state": "review",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "focus_track",
+      "source": "ui/v4/hd/focus_track.svg",
+      "file": "ui/v4/hd/focus_track.webp",
+      "logical_size": [
+        450,
+        48
+      ],
+      "texture_size": [
+        1800,
+        192
+      ],
+      "text_rect": null,
+      "role": "집중 게이지 외곽",
+      "motion": "fill만 실제 집중값으로 조절",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "focus_fill",
+      "source": "ui/v4/hd/focus_fill.svg",
+      "file": "ui/v4/hd/focus_fill.webp",
+      "logical_size": [
+        400,
+        20
+      ],
+      "texture_size": [
+        1600,
+        80
+      ],
+      "text_rect": null,
+      "role": "집중 게이지 내용; 왼쪽 기준 clip 필요",
+      "motion": "임의 점수 연출 금지; 소모/회복에만 반응",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "pad_tab_idle",
+      "source": "ui/v4/hd/pad_tab_idle.svg",
+      "file": "ui/v4/hd/pad_tab_idle.webp",
+      "logical_size": [
+        300,
+        76
+      ],
+      "texture_size": [
+        1200,
+        304
+      ],
+      "text_rect": [
+        51,
+        19,
+        205,
+        40
+      ],
+      "role": "패드 탭; 문구와 선택상태 분리",
+      "motion": "선택100ms; 실제 페이지 표시 후 확정",
+      "state": "idle",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "pad_tab_selected",
+      "source": "ui/v4/hd/pad_tab_selected.svg",
+      "file": "ui/v4/hd/pad_tab_selected.webp",
+      "logical_size": [
+        300,
+        76
+      ],
+      "texture_size": [
+        1200,
+        304
+      ],
+      "text_rect": [
+        51,
+        19,
+        205,
+        40
+      ],
+      "role": "패드 탭; 문구와 선택상태 분리",
+      "motion": "선택100ms; 실제 페이지 표시 후 확정",
+      "state": "selected",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "pad_tab_disabled",
+      "source": "ui/v4/hd/pad_tab_disabled.svg",
+      "file": "ui/v4/hd/pad_tab_disabled.webp",
+      "logical_size": [
+        300,
+        76
+      ],
+      "texture_size": [
+        1200,
+        304
+      ],
+      "text_rect": [
+        51,
+        19,
+        205,
+        40
+      ],
+      "role": "패드 탭; 문구와 선택상태 분리",
+      "motion": "선택100ms; 실제 페이지 표시 후 확정",
+      "state": "disabled",
+      "text_baked": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "continue_mark",
+      "source": "ui/v4/hd/continue_mark.svg",
+      "file": "ui/v4/hd/continue_mark.webp",
+      "logical_size": [
+        48,
+        36
+      ],
+      "texture_size": [
+        192,
+        144
+      ],
+      "text_rect": null,
+      "role": "본문 출력 완료 표시",
+      "motion": "타이핑 종료 뒤 표시; 자동 진행/스킵 입력과 별개",
+      "state": "base",
+      "text_baked": false,
+      "runtime_integrated": false
+    }
+  ]
+}

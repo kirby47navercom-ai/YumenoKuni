@@ -1,0 +1,96 @@
+{
+  "file": "CLIMAX_LOGIC_source_bright.png",
+  "sha256": "594f0633e12583fec43b9301402b48c02d5e4780ef33498b58d5c9a486de499e",
+  "pixelSHA256": "e83753750ac1db3c00320cd5b02d10cda03e8794d3ac30c4b532fcbbb3434819",
+  "size": [
+    833,
+    256
+  ],
+  "originalSource": "source/data/win/flash/climax/climax_title_JP.spc",
+  "sourceSHA256": "bbeba1c608062c1ce7879067473e8a3a0e9f4535a70f6ee20ee10aa38ec9ded8",
+  "layout": "layout.json",
+  "rootLabel": "fl_wait",
+  "rootFrame": 13,
+  "titleSymbol": 6,
+  "titleSymbolLabel": "fl_loop",
+  "titleDurationFrames": 171,
+  "titleSampledFrames": [
+    {
+      "atFrame": 0,
+      "sha256": "594f0633e12583fec43b9301402b48c02d5e4780ef33498b58d5c9a486de499e",
+      "titleGlowOpacity": 1
+    },
+    {
+      "atFrame": 3,
+      "sha256": "7c5d44473d54c5133f1c1ab7ff4baccfe09498facf7c4658cae8f5e567304786",
+      "titleGlowOpacity": 0.4296875
+    },
+    {
+      "atFrame": 6,
+      "sha256": "da3db70a88ff8d4e2457cfc2344ed2abf8568ced52e9203911c326778b852357",
+      "titleGlowOpacity": 1.0
+    },
+    {
+      "atFrame": 8,
+      "sha256": "f6e828d215d8719282f06d59864e6f572cc52afd12c923ce7f570cb31cf220aa",
+      "titleGlowOpacity": 0.0
+    },
+    {
+      "atFrame": 10,
+      "sha256": "06f4a4d2af0de4d5d1daaabab75c4b68d286b9c7a92c46935028b2de0d9fd0ff",
+      "titleGlowOpacity": 1.0
+    },
+    {
+      "atFrame": 100,
+      "sha256": "7738bb008d94f72bbcf14d07e5d321fe66809b541ec934fc00a264984628e733",
+      "titleGlowOpacity": 0.7734375
+    },
+    {
+      "atFrame": 120,
+      "sha256": "ed7c808e376488f4c2b3f78eb67c0646ff4c7e2eedb2cba520cf5fc8e8f90196",
+      "titleGlowOpacity": 1.0
+    },
+    {
+      "atFrame": 170,
+      "sha256": "355c94787126ad8543d82bed2db701142073a9099125d6edcca44b7b4bc697ea",
+      "titleGlowOpacity": 1.0
+    }
+  ],
+  "titlePlaybackRateProject": 60,
+  "titleRuntimeRateVerified": false,
+  "titleSymbolRootTranslation": [
+    92,
+    72
+  ],
+  "sourceCanvasCrop": [
+    -44,
+    -16,
+    833,
+    256
+  ],
+  "screenRect": [
+    30,
+    24,
+    470,
+    130
+  ],
+  "screenRectAuthority": "Supplied original YouTube5370 reference calibration, not claimed recovered camera FOV",
+  "textures": [
+    "ui/v4/climax_reference_20261107/jp_title/000_base_00.png.png",
+    "ui/v4/climax_reference_20261107/jp_title/000_base_00.png.png",
+    "ui/v4/climax_reference_20261107/jp_title/002_climax_JP.png.png",
+    "ui/v4/climax_reference_20261107/jp_title/001_splash_00.png.png",
+    "ui/v4/climax_reference_20261107/jp_title/003_title_JP.png.png",
+    "ui/v4/climax_reference_20261107/jp_title/004_title_JP_DXT1.png.png"
+  ],
+  "rawPixelsInvented": false,
+  "fontRenderingUsed": false,
+  "originalStoryIncluded": false,
+  "sourceGameExecuted": false,
+  "limits": [
+    "DXT1 additive-black effect is converted to ordinary RGBA with maximum-channel alpha; original GPU blend equation is not claimed.",
+    "Eight exact sampled phases of native171frame independent title loop, not all171 frame playback. Hold each phase until next source atFrame.",
+    "60FPS is the project playback rate, not an observed original runtime rate.",
+    "data3d camera remains unverified; runtime screen rect is source-video calibration."
+  ]
+}
