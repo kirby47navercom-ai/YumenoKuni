@@ -1,0 +1,5 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const root=path.resolve(import.meta.dirname,'..'),sourceFile=path.resolve(process.argv[2]),source=await fs.readFile(sourceFile,'utf8'),anchor="import {nativeGameStorage} from './native-game-storage.mjs';",start='try{\n  renderer=await createNativeSceneRenderer';assert(source.includes(anchor)&&source.includes(start));const work=path.join(root,'Saved/native-migration-runner-'+Date.now());await fs.mkdir(work,{recursive:true});const candidate=source.replace(anchor,anchor+"\nimport {migrateLegacyGameSaves} from './native-save-migration.mjs';").replace(start,'try{\n  stats.legacySaveMigration=await migrateLegacyGameSaves(stateDirectory,pack.manifest.id);\n  renderer=await createNativeSceneRenderer');const file=path.join(work,'native-game-runner.candidate.mjs');await fs.writeFile(file,candidate);await fs.writeFile(path.join(work,'report.json'),JSON.stringify({source:sourceFile,file,sha256:createHash('sha256').update(candidate).digest('hex'),engineOriginalModified:false},null,2));console.log(JSON.stringify({file}));

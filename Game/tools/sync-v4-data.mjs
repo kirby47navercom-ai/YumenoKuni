@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {randomUUID} from 'node:crypto';
+import {publishV4Data} from './v4-data.mjs';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),repo=path.dirname(root);
+const write=async(name,value)=>{const file=path.join(root,name),temporary=file+'.'+randomUUID()+'.tmp';await fs.mkdir(path.dirname(file),{recursive:true});try{await fs.writeFile(temporary,JSON.stringify(value,null,1)+'\n');await fs.rename(temporary,file);}finally{await fs.rm(temporary,{force:true});}};
+const copy=async(source,dest)=>{await fs.mkdir(path.dirname(path.join(root,dest)),{recursive:true});await fs.copyFile(path.join(repo,source),path.join(root,dest));};
+await publishV4Data({repo,write,copy});
+console.log('V4 authored runtime data published; source manuscripts untouched');

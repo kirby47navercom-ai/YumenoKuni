@@ -1,0 +1,18 @@
+// Reuse the already approved native player matching the packaged script protocol.
+// The verified 4GB content archive and compiled game module stay byte-identical.
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import{createHash}from'node:crypto';import{pathToFileURL}from'node:url';
+const game=path.resolve(import.meta.dirname,'..'),work=path.join(game,'Saved/nonstop-all-20261106'),read=async p=>JSON.parse(await fs.readFile(p,'utf8'));
+const built=await read(path.join(work,'full-build-result.json')),latest=await read(path.join(game,'build-result.json')),base=await read(path.join(work,'build.json'));
+const approved=latest.approvedPanicRuntime;assert(approved?.player&&latest.id!==built.id,'Use separately verified published runtime');
+const player=await fs.realpath(approved.player);assert(player.startsWith(path.join(game,'Saved')+path.sep));const bytes=await fs.readFile(player),hash=b=>createHash('sha256').update(b).digest('hex');assert.equal(hash(bytes),approved.playerSHA256);
+const file=path.join(built.output,'game.hbpack.json'),manifest=await read(file),before=structuredClone(manifest);
+const {windowsSigningSettings,finalizeWindowsPackage}=await import(pathToFileURL(path.join(base.engineSDKRoot,'tools/windows-package-signing.mjs')));
+const update=async(relative,bytes)=>{const target=path.join(built.output,relative);await fs.mkdir(path.dirname(target),{recursive:true});await fs.writeFile(target+'.runtime.tmp',bytes);await fs.rename(target+'.runtime.tmp',target);const entry={path:relative,bytes:bytes.length,sha256:hash(bytes)},old=manifest.files.find(f=>f.path===relative);if(old)Object.assign(old,entry);else manifest.files.push(entry);};
+await update(manifest.windowsApplication.executable,bytes);
+for(const entry of await fs.readdir(path.join(latest.output,'Shaders'),{withFileTypes:true}))if(entry.isFile()&&entry.name!=='.hb-shader-cache-lock')await update('Shaders/'+entry.name,await fs.readFile(path.join(latest.output,'Shaders',entry.name)));
+manifest.signing=await finalizeWindowsPackage({player,out:built.output,productName:base.profile.productName,executables:[manifest.windowsApplication.executable,...manifest.nativeModules.map(n=>n.binary)],artifacts:manifest.files,settings:windowsSigningSettings(base.profile)});
+await fs.writeFile(file,JSON.stringify(manifest,null,2));
+built.signing=manifest.signing;built.totalBytes=manifest.files.reduce((n,r)=>n+r.bytes,0);built.totalFiles=manifest.files.length;built.approvedPanicRuntime={...approved,reusedPublishedBuild:latest.id};
+await fs.writeFile(path.join(work,'full-build-result.json'),JSON.stringify(built,null,2));await fs.writeFile(path.join(built.output,'build-report.json'),JSON.stringify(built,null,2));
+const report={ok:true,build:built.id,approvedRuntimeFrom:latest.id,player,rawPlayerSHA256:hash(bytes),contentArchiveUnchanged:JSON.stringify(before.contentArchive)===JSON.stringify(manifest.contentArchive),nativeModuleUnchanged:manifest.nativeModules.every(n=>before.files.find(f=>f.path===n.binary).sha256===manifest.files.find(f=>f.path===n.binary).sha256),engineSourceModified:false,reason:'Old approved player lacked a platform operation now requested by packaged current scripts. Re-finalized through official Windows packager with already approved matching player, without another content copy.'};assert(report.contentArchiveUnchanged&&report.nativeModuleUnchanged);
+await fs.writeFile(path.join(work,'runtime-finalization.json'),JSON.stringify(report,null,2));await fs.writeFile(path.join(work,'runtime-selection.json'),JSON.stringify({player,sha256:hash(bytes),sourceBuild:latest.id},null,2));console.log(JSON.stringify(report));

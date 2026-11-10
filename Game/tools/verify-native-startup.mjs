@@ -1,0 +1,35 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {spawn,execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+import {createRequire} from 'node:module';
+import {pathToFileURL} from 'node:url';
+import {createOwnedNativePackage} from './native-owned-package.mjs';
+const root=path.resolve(import.meta.dirname,'..'),exec=promisify(execFile),require=createRequire(path.resolve(root,'../../engineCreate/package.json'));
+const {createCanvas,ImageData}=require('@napi-rs/canvas');
+const built=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'utf8'));
+const manifest=JSON.parse(await fs.readFile(path.join(built.output,'game.hbpack.json'),'utf8'));
+assert.equal(manifest.windowsRuntime,'native');assert.equal(manifest.windowsRenderer,'d3d11');
+for(const forbidden of ['WebView2Loader.dll','prototype/player.html','prototype/player.js','tools/player-server.mjs'])assert(!manifest.files.some(f=>f.path===forbidden));
+const work=path.join(root,'Saved/native-startup-'+Date.now());await fs.mkdir(work,{recursive:true});const reportFile=path.join(work,'runtime.json');
+const candidate=process.argv.find(v=>v.startsWith('--candidate='))?.slice(12);
+const rendererCandidate=process.argv.find(v=>v.startsWith('--renderer-candidate='))?.slice(21);
+const owned=candidate||rendererCandidate?await createOwnedNativePackage({source:built.output,work,candidate,rendererCandidate}):null;
+const env={...process.env,HB_NATIVE_TEST_STATE:path.join(work,'State')};for(const key of ['HB_USER_DATA_DIR','HB_PLAYER_ACCEPTANCE','HB_PLAYER_SMOKE','WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS'])delete env[key];
+env.YUMENO_NATIVE_QA_DIR=work;env.NODE_OPTIONS='--import='+pathToFileURL(path.join(root,'tools/native-ui-capture.mjs')).href;
+const spawnAt=Date.now();const child=spawn(owned?.executable||built.executable,['--hidden','--silent','--frames','60','--report',reportFile],{cwd:work,env,windowsHide:true,stdio:['ignore','pipe','pipe']});let output='',ended=false;
+child.stdout.on('data',b=>output+=b);child.stderr.on('data',b=>output+=b);const start=performance.now();
+const done=new Promise((resolve,reject)=>{child.once('error',reject);child.once('close',(code,signal)=>{ended=true;resolve({code,signal});});});
+const timer=setTimeout(()=>{if(!ended)void exec('taskkill.exe',['/PID',String(child.pid),'/T','/F'],{windowsHide:true}).catch(()=>{});},180000);
+let processes;
+try{
+ await new Promise(r=>setTimeout(r,900));
+ const script=`@(Get-CimInstance Win32_Process | Where-Object { $_.ProcessId -eq ${child.pid} -or $_.ParentProcessId -eq ${child.pid} } | Select-Object ProcessId,ParentProcessId,Name,WorkingSetSize)|ConvertTo-Json -Compress`;
+ processes=JSON.parse((await exec('powershell.exe',['-NoProfile','-NonInteractive','-Command',script],{windowsHide:true})).stdout||'[]');
+ const exit=await done;await fs.writeFile(path.join(work,'process-output.txt'),output);assert.equal(exit.code,0,output+'\n'+await fs.readFile(path.join(work,'State/native-runtime.log'),'utf8').catch(()=>''));
+ const report=JSON.parse(await fs.readFile(reportFile,'utf8').catch(async error=>{throw Error(error.message+'\n'+await fs.readFile(path.join(work,'State/native-runtime.log'),'utf8').catch(()=>''));}));assert.equal(report.webview,false);assert.equal(report.runtime,'win32-d3d11-v8');assert.equal(report.frames,60);assert.deepEqual(report.audio.errors,[]);assert(report.ui.instances>0);assert.equal(report.renderer.info.calls,0,"Cold title must not render a gameplay scene");assert(!JSON.stringify(processes).match(/msedgewebview|chrome|msedge\.exe/i));
+ const bytes=await fs.readFile(reportFile+'.rgba');assert.equal(bytes.length,manifest.width*manifest.height*4);const canvas=createCanvas(manifest.width,manifest.height);canvas.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(bytes),manifest.width,manifest.height),0,0);await fs.writeFile(path.join(work,'scene-only.png'),canvas.toBuffer('image/png'));const {loadImage}=require('@napi-rs/canvas');canvas.getContext('2d').drawImage(await loadImage(await fs.readFile(path.join(work,'ui.png'))),0,0);await fs.writeFile(path.join(work,'title.png'),canvas.toBuffer('image/png'));
+ const result={ok:true,work,executable:owned?.executable||built.executable,engineCandidate:candidate||null,rendererCandidate:rendererCandidate||null,build:built.id,profile:built.profile,elapsedMs:performance.now()-start,firstPhysicalFrameMs:(await fs.stat(reportFile+'.ready.json')).mtimeMs-spawnAt,processes,frames:report.frames,runtime:report.runtime,webview:report.webview,preparationMS:report.preparationMS,renderer:report.renderer,ui:report.ui,audio:report.audio,memory:report.memory,scope:(owned?'Owned QA package with declared engine candidates; engine original and shipping package unchanged. ':'Unmodified native package. ')+'Cold title, physical Win32/D3D11 frames/Skia UI and native decoded audio without browser processes. Silent audio sink; not full gameplay, physical listening or all UI acceptance.'};
+ await fs.writeFile(path.join(work,'report.json'),JSON.stringify(result,null,2));console.log(JSON.stringify({ok:true,work,frames:report.frames,elapsedMs:result.elapsedMs,firstPhysicalFrameMs:result.firstPhysicalFrameMs,ui:report.ui,audioErrors:report.audio.errors}));
+}catch(error){await fs.writeFile(path.join(work,'failure.json'),JSON.stringify({error:error.stack,output,processes,elapsedMs:performance.now()-start},null,2));throw error;}finally{clearTimeout(timer);if(!ended)await exec('taskkill.exe',['/PID',String(child.pid),'/T','/F'],{windowsHide:true}).catch(()=>{});}

@@ -1,0 +1,6 @@
+#include "../Game/Source/ComicLayoutV4.hpp"
+#include <cassert>
+#include <fstream>
+#include <iostream>
+#include <set>
+int main(){int tasks=0,holes=0,checks=0;for(int f=0;f<32;f++){hb::Json pack;std::ifstream("Game/Assets/Data/v4_story/native_tasks/pack_"+std::to_string(f)+".json")>>pack;for(const auto& bucket:pack["buckets"])for(const auto& t:bucket["tasks"]){const auto& stage=t["stage"];if(stage.value("kind",std::string())!="climax")continue;assert(comicv4ui::count(stage)==3);std::set<int> seen;for(int p=0;p<3;p++){auto slots=comicv4ui::slots(stage,p);for(int i:slots){assert(seen.insert(i).second);assert(comicv4ui::page(stage,i)==p);auto r=comicv4ui::rect(stage,i);float cx=r[0]+r[2]/2,cy=r[1]+r[3]/2;assert(comicv4ui::hit(stage,i,cx,cy));assert(!comicv4ui::hit(stage,i,0,0));for(int other:slots)if(other!=i)assert(!comicv4ui::hit(stage,other,cx,cy));for(int y=130;y<570;y+=3)for(int x=450;x<1210;x+=3){int hit=0;for(int j:slots)hit+=comicv4ui::hit(stage,j,float(x),float(y));assert(hit<=1);checks++;}holes++;}}assert(seen.size()==stage["slots"].size());tasks++;}}assert(tasks==6&&holes==38);std::cout<<"comic layout PASS: "<<checks<<" hit-grid checks, "<<tasks<<" tasks, "<<holes<<" holes, varied pages, no overlaps, all centres selectable\n";}

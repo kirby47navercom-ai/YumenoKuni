@@ -1,6 +1,10 @@
 #include "DialogueTextV4.hpp"
 namespace dialogueui {
-inline std::string piece(std::string file,const char* part){file.resize(file.size()-4);return file+"_"+part+".png";}
+inline std::string piece(const std::string& file,const char* part){
+ const auto dot=file.find_last_of('.'),slash=file.find_last_of("/\\");
+ if(dot==std::string::npos||(slash!=std::string::npos&&dot<slash))return file+"_"+part+".png";
+ return file.substr(0,dot)+"_"+part+file.substr(dot);
+}
 inline const hb::Json& layout(){static const hb::Json value=hb::Data::Get("Assets/Data/v4_story/dialogue_layout.json");return value;}
 }
 void Yumeno::dialogueSurface(bool trial){

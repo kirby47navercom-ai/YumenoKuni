@@ -1,0 +1,9 @@
+import fs from 'node:fs/promises';import path from 'node:path';
+import {mainWidgetParts,addMainPartOwners,routedMainOwnerSource} from './main-widget-parts.mjs';
+const root=path.resolve(import.meta.dirname,'..'),work=path.join(root,'Saved/game-trial-work-20261102'),project=path.join(work,'frozen-project');
+const out=path.join(work,'main-parts'),chunk=Number(process.argv.find(v=>v.startsWith('--chunk='))?.slice(8)||8);
+const widget=JSON.parse(await fs.readFile(path.join(project,'Assets/UI/Main.hbwidget.json'),'utf8')),plan=mainWidgetParts(widget,chunk),overrides={};
+for(const p of plan.parts){const file=path.join(out,p.asset);await fs.mkdir(path.dirname(file),{recursive:true});await fs.writeFile(file,JSON.stringify(p.data));overrides['Content/'+p.asset]=file;}
+const sceneFile=path.join(out,'Assets/Scenes/Main.hbscene.json');await fs.mkdir(path.dirname(sceneFile),{recursive:true});await fs.writeFile(sceneFile,JSON.stringify(addMainPartOwners(JSON.parse(await fs.readFile(path.join(project,'Assets/Scenes/Main.hbscene.json'),'utf8')),plan.parts)));overrides['Content/Assets/Scenes/Main.hbscene.json']=sceneFile;
+await fs.writeFile(path.join(out,'MainWidgetLayoutV4.hpp'),plan.header);await fs.writeFile(path.join(out,'WidgetOwnersV4.hpp'),routedMainOwnerSource(await fs.readFile(path.join(project,'Source/WidgetOwnersV4.hpp'),'utf8')));
+await fs.writeFile(path.join(out,'overrides.json'),JSON.stringify(overrides,null,2));await fs.writeFile(path.join(out,'plan.json'),JSON.stringify({chunk,parts:plan.parts.map(({instance,asset,data})=>({instance,asset,nodes:data.nodes.length})),routes:plan.routes,leaves:plan.leaves,paintOrderAndPropertiesExact:true,scope:'Game UI owner partition only. No skipped display, lower update rate, gameplay/audio/timer changes or engine changes.'},null,2));console.log(JSON.stringify({chunk,parts:plan.parts.length,leaves:plan.leaves}));

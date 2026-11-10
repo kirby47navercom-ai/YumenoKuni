@@ -1,0 +1,18 @@
+// Real loader regression; synthetic tiny geometry/texture callbacks, no game save writes.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import * as THREE from '../../../engineCreate/node_modules/three/build/three.module.js';
+import {loadHeadlessModel,disposeHeadlessModel} from '../../../engineCreate/tools/headless-model.mjs';
+const root=path.resolve(import.meta.dirname,'..'),work=path.join(root,'Saved/native-sampler-test-'+Date.now());await fs.mkdir(work,{recursive:true});
+const project={read:async name=>{const file=path.join(work,name);return {file,size:(await fs.stat(file)).size};}},filters={9728:THREE.NearestFilter,9729:THREE.LinearFilter,9984:THREE.NearestMipmapNearestFilter,9985:THREE.LinearMipmapNearestFilter,9986:THREE.NearestMipmapLinearFilter,9987:THREE.LinearMipmapLinearFilter},rows=[];
+const png='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aD1cAAAAASUVORK5CYII=',webp='UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAUAmJaQAA3AA/v89WAAAAA==';
+try{
+ for(const extension of [false,true])for(const min of [undefined,9728,9729,9984,9985,9986,9987]){
+  const sampler=min===undefined?{}:{minFilter:min,magFilter:min%2?9729:9728,wrapS:33648,wrapT:33071};
+  const positions=new Float32Array([0,0,0,1,0,0,0,1,0]),bytes=Buffer.from(positions.buffer),gltf={asset:{version:'2.0'},scene:0,scenes:[{nodes:[0]}],nodes:[{mesh:0}],meshes:[{primitives:[{attributes:{POSITION:0},material:0}]}],buffers:[{uri:'data:application/octet-stream;base64,'+bytes.toString('base64'),byteLength:bytes.length}],bufferViews:[{buffer:0,byteLength:bytes.length}],accessors:[{bufferView:0,componentType:5126,count:3,type:'VEC3',min:[0,0,0],max:[1,1,0]}],materials:[{pbrMetallicRoughness:{baseColorTexture:{index:0}}}],textures:[{sampler:0,...(extension?{extensions:{EXT_texture_webp:{source:0}}}:{source:0})}],samplers:[sampler],images:[{uri:'data:image/'+(extension?'webp':'png')+';base64,'+(extension?webp:png)}],...(extension?{extensionsUsed:['EXT_texture_webp'],extensionsRequired:['EXT_texture_webp']}:{})};
+  await fs.writeFile(path.join(work,'fixture.gltf'),JSON.stringify(gltf));const model=await loadHeadlessModel(project,'fixture.gltf',{geometry:true,loadTexture:async()=>new THREE.DataTexture(new Uint8Array([255,255,255,255]),1,1)});
+  try{let texture;model.object.traverse(n=>{if(n.material?.map)texture=n.material.map;});assert(texture);const expectedMin=filters[min]??THREE.LinearMipmapLinearFilter,expectedMag=filters[sampler.magFilter]??THREE.LinearFilter;assert.equal(texture.minFilter,expectedMin,'minFilter '+min);assert.equal(texture.magFilter,expectedMag,'magFilter '+sampler.magFilter);assert.equal(texture.generateMipmaps,![THREE.NearestFilter,THREE.LinearFilter].includes(expectedMin));assert.equal(texture.wrapS,min===undefined?THREE.RepeatWrapping:THREE.MirroredRepeatWrapping);assert.equal(texture.wrapT,min===undefined?THREE.RepeatWrapping:THREE.ClampToEdgeWrapping);rows.push({extension,min:min??'default',expectedMin,expectedMag,mipmaps:texture.generateMipmaps});}finally{disposeHeadlessModel(model.object);}
+ }
+ await fs.writeFile(path.join(work,'report.json'),JSON.stringify({ok:true,work,rows,scope:'Actual engine GLTF loader with14 tiny fixtures: PNG/WebP hooks, all glTF minification filters, default/explicit magnification, wrap and mip generation. Pixel decoding and visible native output are separate runtime checks.'},null,2));console.log(JSON.stringify({ok:true,work,cases:rows.length}));
+}catch(error){await fs.writeFile(path.join(work,'failure.json'),JSON.stringify({error:error.stack,rows},null,2));throw error;}

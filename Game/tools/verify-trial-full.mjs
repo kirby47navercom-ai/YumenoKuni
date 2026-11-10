@@ -9,7 +9,7 @@ const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const built=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'utf8'));
 const work=path.join(root,process.argv[2]==='2'?'Saved/verification-full2':'Saved/verification-full');await fs.mkdir(work,{recursive:true});
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
-const KEYS={y:[89,'KeyY'],Enter:[13,'Enter'],' ':[32,'Space'],e:[69,'KeyE'],q:[81,'KeyQ'],a:[65,'KeyA'],d:[68,'KeyD'],t:[84,'KeyT'],Shift:[16,'ShiftLeft'],1:[49,'Digit1'],2:[50,'Digit2'],3:[51,'Digit3'],4:[52,'Digit4']};
+const KEYS={w:[87,'KeyW'],s:[83,'KeyS'],y:[89,'KeyY'],Enter:[13,'Enter'],' ':[32,'Space'],e:[69,'KeyE'],q:[81,'KeyQ'],a:[65,'KeyA'],d:[68,'KeyD'],t:[84,'KeyT'],Shift:[16,'ShiftLeft'],1:[49,'Digit1'],2:[50,'Digit2'],3:[51,'Digit3'],4:[52,'Digit4']};
 // 플레이어 --smoke-test 는 180초 뒤 스스로 끝난다(엔진 수락 모드). 긴 검증은 소크 시간으로 늘린다.
 process.env.HB_PLAYER_SOAK_HOURS??='3';
 let probe;
@@ -63,4 +63,4 @@ try{
  assert.equal(end.mode,'title','27단계를 모두 지나 재판이 끝남 (마지막 : '+JSON.stringify(log.at(-1))+')');
  assert(log.length>=(process.argv[2]==='2'?29:27),'단계 수 '+log.length);
  console.log(JSON.stringify({ok:true,stages:log.length,kinds:[...seen.keys()],steps},null,1));
-}finally{await Promise.race([probe?.close?.(),delay(8000)]);try{(await import('node:child_process')).execSync('taskkill /F /FI "IMAGENAME eq HBGame*"',{stdio:'ignore'});}catch{}process.exit(process.exitCode??0);}
+}finally{await probe?.stop?.();}

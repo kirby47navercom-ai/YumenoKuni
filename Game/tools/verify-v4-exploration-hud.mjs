@@ -1,0 +1,43 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+import {editorWindowProbe} from '../../../engineCreate/tools/editor-window-probe.mjs';
+import {padSystemAction} from './v4-pad-test-input.mjs';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const {executable}=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'utf8'));
+const layout=JSON.parse(await fs.readFile(path.join(root,'Assets/Data/v4_story/exploration_hud_layout.json'),'utf8'));
+const sourceOptions=JSON.parse(await fs.readFile(path.join(root,'../docs/analysis/v3_rebuild/options_ui_contract.json'),'utf8'));
+const work=path.join(root,'Saved/v4-exploration-hud-'+Date.now());await fs.mkdir(work,{recursive:true});
+const delay=ms=>new Promise(r=>setTimeout(r,ms));const checks=[];let probe;process.env.HB_PLAYER_SOAK_HOURS='1';
+const keys={Enter:[13,'Enter'],Tab:[9,'Tab'],Backspace:[8,'Backspace'],w:[87,'KeyW'],s:[83,'KeyS'],a:[65,'KeyA'],d:[68,'KeyD'],m:[77,'KeyM'],c:[67,'KeyC']};
+try{
+ probe=await editorWindowProbe({work,mode:'player',executable});await probe.until(()=>probe.evaluate('window.hbPlayerDebug?.ready?.()'),'ready',60000);await delay(700);
+ const call=(name,args={})=>probe.evaluate(`window.hbPlayerDebug.call('Driver',${JSON.stringify('Yumeno.'+name)},${JSON.stringify(args)})`);
+ const stats=async()=>{const s=JSON.parse((await call('Stats')).outputs.result);assert(!s.error,JSON.stringify(s));return s;},progress=async()=>JSON.parse((await call('PlayerProgressStats')).outputs.result);
+ const sample=async()=>{const f=await probe.evaluate('window.hbPlayerDebug.lifecycle().frame');await delay(65);await probe.until(async()=>(await probe.evaluate('window.hbPlayerDebug.lifecycle().frame'))>=f+2,'sample',10000);};
+ const key=async(k,type)=>{const [windowsVirtualKeyCode,code]=keys[k];await probe.cdp('Input.dispatchKeyEvent',{type,key:k,code,windowsVirtualKeyCode});};
+ const tap=async k=>{await key(k,'keyDown');await sample();await key(k,'keyUp');await sample();if((await stats()).choice?.pending>=0)await probe.until(async()=>((await stats()).choice?.pending??-1)<0,'choice confirm wait',5000);};
+ const click=async(x,y)=>{for(const type of ['mouseMoved','mousePressed','mouseReleased']){await probe.cdp('Input.dispatchMouseEvent',{type,x,y,...(type==='mouseMoved'?{}:{button:'left',clickCount:1})});await sample();}};
+ const system=async()=>{await tap('Tab');assert.equal((await stats()).mode,'pad');await click(1047,480);assert.equal((await stats()).padPage,5);};
+ const ui=names=>probe.evaluate(`Object.fromEntries(${JSON.stringify(names)}.map(n=>{const e=document.querySelector('[data-widget-name="'+n+'"]'),r=e?.getBoundingClientRect(),i=e?.querySelector('img');return[n,{visible:!!r?.width&&getComputedStyle(e).visibility!=='hidden',rect:r?[r.x,r.y,r.width,r.height]:null,text:e?.textContent,font:e?parseFloat(getComputedStyle(e).fontSize):null,asset:i?.dataset.asset,loaded:!!i&&i.complete&&i.naturalWidth>0}];}))`);
+ const close=(a,b)=>a.forEach((v,i)=>assert(Math.abs(v-b[i])<.1,JSON.stringify({a,b})));
+ await call('DebugV4Chapter',{index:1});await delay(400);let l=await ui(['FHudImg','FHudGauge','FHudSub','Portrait']);close(l.FHudImg.rect,[0,0,1280,720]);close(l.FHudSub.rect,layout.level);assert.equal(l.FHudSub.text,'Level 1');assert(l.FHudImg.asset.endsWith('chapter_day_1.svg'));assert(l.FHudImg.loaded&&l.FHudGauge.loaded);close(l.Portrait.rect,[0,0,1280,1050]);let dialogue=JSON.parse((await call('DialogueStats')).outputs.result);if(dialogue.shown<dialogue.length)await tap('Enter');assert((await ui(['Portrait'])).Portrait.visible);await probe.capture('00-larger-standing-source-hud.png');checks.push('actual chapter1 Haruka standing1050 and composed source chapter/level field; old rabbit, bond-derived Lv and always-on coin label removed');
+ for(const [xp,level,fraction]of [[250,1,.5],[499,1,.998],[500,2,0],[168500,99,1]]){await call('DebugPlayerProgressFixture',{xp});let p=await progress();assert.equal(p.xp,xp);assert.equal(p.level,level);assert(Math.abs(p.fraction-fraction)<.0001);assert(p.gauge.endsWith('gauge_'+Math.round(fraction*100)+'.svg'));l=await ui(['FHudSub','FHudGauge']);assert.equal(l.FHudSub.text,'Level '+level);await probe.until(async()=>(await ui(['FHudGauge'])).FHudGauge.loaded,'gauge image loaded',10000);if(xp===250||xp===168500)await probe.capture(xp===250?'01-half-xp-mask.png':'02-level99-full-mask.png');}checks.push('native threshold500 moves actual Lv1 to2, source max168500 gives Lv99/full; gauge travels fixed silhouette inside source clip with1% sampling');
+ await call('DebugV4MapFixture');await system();await padSystemAction(stats,tap,'options');for(let i=0;i<5;i++)await tap('s');let optionState=(await stats()).options;assert.equal(optionState.row,5);await click(1080,108+(5-optionState.first)*sourceOptions.coordinate_contract.row_gap_1280);assert.equal(JSON.parse((await call('OptionsStats')).outputs.result).values.movementBob,false);await tap('Backspace');if((await stats()).mode==='pad')await tap('Tab');
+ await call('DebugPlayerProgressFixture',{xp:0});await key('w','keyDown');await delay(800);await key('w','keyUp');await sample();await delay(250);let walked=await progress();assert(walked.xp>0);const settled=walked.xp;await delay(500);assert.equal((await progress()).xp,settled);await probe.capture('03-walk-world-hud.png');checks.push('actual movement with camera bob OFF grants source Walk2 at own phase/stop events; standing still does not accumulate XP');
+ await tap('Tab');const paused=(await progress()).xp;await key('w','keyDown');await delay(400);await key('w','keyUp');await sample();assert.equal((await progress()).xp,paused);await tap('Tab');checks.push('Pad owns input: held movement while Pad is open cannot move or grant exploration XP');
+ // Select the first actual authored hub target: first confirmation may only travel.
+ const before=(await progress()).xp;await tap('m');await tap('Enter');if((await stats()).mode==='explore'){await tap('m');await tap('Enter');}assert.notEqual((await stats()).mode,'explore');assert.equal((await progress()).xp,before+10);await delay(400);assert.equal((await progress()).xp,before+10);checks.push('accepted authored investigation target grants one TalkCharacter/CheckObject10; room-only travel and waiting dialogue do not repeat the award');
+ // Save through the actual slot picker, then load in both content formats.
+ const roundtrip=async legacy=>{
+  if(legacy){await call('DebugChapter',{index:1});while((await stats()).mode==='card')await tap('Enter');}await call('DebugPlayerProgressFixture',{xp:1250});const original=(await stats()).node;
+  await system();const action=id=>padSystemAction(stats,tap,id);await action('save');
+  if(legacy){await call('DebugPlayerProgressFixture',{xp:0});await action('load');assert.equal((await stats()).padSystem.view,2);await tap('Enter');assert.equal((await stats()).padSystem.view,3);await tap('a');await tap('Enter');}
+  else{await action('title');await action('title_yes');assert.equal((await stats()).mode,'title');await tap('c');assert.equal((await stats()).node,original);}
+  assert.equal((await progress()).xp,1250);assert.equal((await progress()).level,3);assert((await ui(['FHudGauge'])).FHudGauge.loaded);
+ };
+ await roundtrip(false);await roundtrip(true);checks.push('actual V4 manual save/title/Continue and separate Legacy manual save/slot-load preserve independent player XP and derived level, rather than recomputing from bonds');
+ const missing=await probe.evaluate(`Array.from(document.images).filter(i=>i.offsetWidth>0&&i.src&&i.complete&&i.naturalWidth===0).map(i=>i.src)`);assert.deepEqual(missing,[]);assert.deepEqual(probe.errors,[]);
+ const report={ok:true,fixture:true,work,executable,checks,scope:'Own native source HUD/standing/threshold/walk/target/Pad/save checks. Explicit fixtures seed only boundary XP; actual walk/target input tested separately. Source full affine/provided rasters/p_guage extra-offset, own12px readable ink/1% samples/phase mapping/stride calibration. No full phase overrides/levelup60-update animation, all11 gain routes, source skill-capacity coupling, original target raster, original font pixels, normal campaign or whole UI acceptance.'};await fs.writeFile(path.join(work,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+}catch(error){await fs.writeFile(path.join(work,'failure.json'),JSON.stringify({error:error.stack,checks,probeErrors:probe?.errors},null,2));try{await probe?.capture('failure.png');}catch{}throw error;}finally{await probe?.stop?.();}

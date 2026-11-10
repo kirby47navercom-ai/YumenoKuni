@@ -1,0 +1,53 @@
+import {padSystemAction} from './v4-pad-test-input.mjs';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+import {editorWindowProbe} from '../../../engineCreate/tools/editor-window-probe.mjs';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const {executable}=JSON.parse(await fs.readFile(path.join(root,'build-result.json'),'utf8'));
+const source=JSON.parse(await fs.readFile(path.join(root,'../docs/analysis/v3_rebuild/report_card_ui_contract.json'),'utf8'));
+const profiles=JSON.parse(await fs.readFile(path.join(root,'Assets/Data/v4_story/report_profiles.json'),'utf8')).items;
+for(const row of Object.values(profiles)){
+ assert.equal(row.values.length,8);assert(row.fontSizes.every(n=>n>=20&&n<=30));
+ assert(/^(?:AB|A|B|O)형$|^미확인$/.test(row.values[3]),'blood field is a value, not a master-sheet annotation');
+ assert(row.values.every(v=>!/[`*]|\d장|스포일러|복선/.test(v)),'public profile excludes editorial annotations');
+}
+const work=path.join(root,'Saved/v4-pad-report-'+Date.now());await fs.mkdir(work,{recursive:true});
+const keys={Enter:[13,'Enter'],Tab:[9,'Tab'],Backspace:[8,'Backspace'],w:[87,'KeyW'],s:[83,'KeyS'],a:[65,'KeyA'],d:[68,'KeyD'],q:[81,'KeyQ'],e:[69,'KeyE'],c:[67,'KeyC']};
+const delay=ms=>new Promise(r=>setTimeout(r,ms));let probe;const checks=[];process.env.HB_PLAYER_SOAK_HOURS='1';
+try{
+ probe=await editorWindowProbe({work,mode:'player',executable});await probe.until(()=>probe.evaluate('window.hbPlayerDebug?.ready?.()'),'ready',60000);await delay(700);
+ const call=(name,args={})=>probe.evaluate(`window.hbPlayerDebug.call("Driver",${JSON.stringify('Yumeno.'+name)},${JSON.stringify(args)})`);
+ const stats=async()=>JSON.parse((await call('Stats')).outputs.result),growth=async()=>JSON.parse((await call('GrowthStats')).outputs.result);
+ const sample=async()=>{const f=await probe.evaluate('window.hbPlayerDebug.lifecycle().frame');await delay(60);await probe.until(async()=>(await probe.evaluate('window.hbPlayerDebug.lifecycle().frame'))>=f+2,'input sampled',10000);};
+ const tap=async k=>{const [windowsVirtualKeyCode,code]=keys[k];await probe.cdp('Input.dispatchKeyEvent',{type:'keyDown',key:k,code,windowsVirtualKeyCode});await sample();await probe.cdp('Input.dispatchKeyEvent',{type:'keyUp',key:k,code,windowsVirtualKeyCode});await sample();};
+ const click=async(x,y)=>{await probe.cdp('Input.dispatchMouseEvent',{type:'mouseMoved',x,y});await probe.cdp('Input.dispatchMouseEvent',{type:'mousePressed',x,y,button:'left',clickCount:1});await sample();await probe.cdp('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',clickCount:1});await sample();};
+ const layout=()=>probe.evaluate(`(()=>{const names=['PrName','PrStanding','PrSkillEntry','PrPageLabel','PrPageValue','PrMemoViewport','PrMemo','PrHint','PdHint','PdSide','PdLevel','PdPic','PdStand','PsBody','PsCapacity','PsPanelcatalog','PsPanelequipped','PsHint',...Array.from({length:14},(_,i)=>'PsFrame'+(i<7?'catalog':'equipped')+i%7),...Array.from({length:16},(_,i)=>'PrActor'+i),...Array.from({length:8},(_,i)=>['PrLabel'+i,'PrValue'+i]).flat(),...Array.from({length:7},(_,i)=>'PsRow'+i)];return Object.fromEntries(names.map(n=>{const e=document.querySelector('[data-widget-name="'+n+'"]'),r=e?.getBoundingClientRect(),i=e?.tagName==='IMG'?e:e?.querySelector('img');const range=document.createRange();if(e)range.selectNodeContents(e);const ink=e?range.getBoundingClientRect():null;return[n,{visible:!!r?.width&&getComputedStyle(e).visibility!=='hidden',rect:r?[r.x,r.y,r.width,r.height]:null,ink:ink?[ink.x,ink.y,ink.width,ink.height]:null,z:e?getComputedStyle(e).zIndex:null,text:e?.textContent,asset:i?.dataset.asset,loaded:!!i&&i.complete&&i.naturalWidth>0}];}));})()`);
+ const padAction=id=>padSystemAction(stats,tap,id);
+ await call('DebugV4ReportFixture');const initial=await growth();await tap('Tab');for(let i=0;i<3;i++)await tap('d');await tap('Enter');let s=await stats();assert.equal(s.padPage,3);assert.equal(s.padReportActor,'mio');assert.equal(s.padReportPage,0);assert.equal(s.padReportPages,2);
+ await probe.until(async()=>(await layout()).PrStanding.loaded,'approved standing loads',15000);let l=await layout();
+ for(const leaf of source.strip.leaves.filter(x=>x.path.startsWith('p_kirikae_chara_'))){const i=Number(leaf.path.match(/chara_(\d+)/)[1]);l['PrActor'+i].rect.forEach((v,j)=>assert(Math.abs(v-leaf.rect_1280[j])<.1));assert(l['PrActor'+i].visible);}
+ assert.deepEqual(l.PrName.rect.map(Math.round),[147,170,598,72]);assert.deepEqual(l.PrStanding.rect.map(Math.round),[589,0,724,724]);for(const id of ['PdSide','PdLevel','PdPic','PdStand'])assert(!l[id].visible,id);assert.equal(l.PrValue0.text.includes('17'),true);assert(!Object.values(l).some(n=>n.text?.includes('100%')));await probe.capture('01-source-profile.png');checks.push('sixteen nonuniform source strip slots, independent name and approved standing, eight physical fields; old ID card/skill panel hidden');
+ assert.equal(Number(l.PrStanding.z),10);assert(l.PrHint.visible&&!l.PdHint.visible);
+ const profileAudit=[];
+ for(let actor=0;actor<16;actor++){
+  l=await layout();const state=await stats();assert.equal(state.padReportPage,0);
+  for(let field=0;field<8;field++){const v=l['PrValue'+field];assert(v.visible);assert(v.ink[2]<=v.rect[2]+1,'profile value stays inside source field: '+actor+'/'+field);}
+  profileAudit.push({actor:state.padReportActor,fields:Array.from({length:8},(_,i)=>({rect:l['PrValue'+i].rect,ink:l['PrValue'+i].ink}))});
+  if(profiles[state.padReportActor].fontSizes.some(n=>n<25))await probe.capture('profile-fit-'+state.padReportActor+'.png');
+  await tap('d');
+ }
+ assert.equal((await stats()).padReportActor,'mio');await fs.writeFile(path.join(work,'profile-fit.json'),JSON.stringify(profileAudit,null,2));checks.push('all sixteen actual public profiles fit their source field widths, readable fonts, no master-sheet annotations; standing and hint layer correctly');
+ await tap('s');s=await stats();assert.equal(s.padReportPage,1);l=await layout();assert(l.PrSkillEntry.visible);assert(!l.PrMemoViewport.visible);assert.deepEqual(l.PrSkillEntry.rect.map(Math.round),[153,391,240,47]);await tap('Enter');s=await stats();assert(s.padSkillVisible&&!s.padReportVisible);l=await layout();assert.equal(Array.from({length:7},(_,i)=>l['PsRow'+i]).filter(n=>n.visible).length,7);
+ for(const side of ['catalog','equipped']){const r=source.skill_window_static.panel_background_and_frames.snapshots[side].leaves.find(x=>x.path==='i_black_beta/d1').rect_world_1280_derived;assert(l['PsPanel'+side].loaded);l['PsPanel'+side].rect.forEach((v,j)=>assert(Math.abs(v-r[j])<.1));for(let i=0;i<7;i++)assert(l['PsFrame'+side+i].loaded);}
+ assert(l.PsHint.visible&&!l.PdHint.visible);
+ for(let i=0;i<7;i++)l['PsRow'+i].rect.forEach((v,j)=>assert(Math.abs(v-source.skill_window_static.derived_world_layout.catalog.text_leaves[i].rect_1280[j])<.1));assert.deepEqual(l.PsBody.rect.map(Math.round),[295,528,800,100]);await probe.capture('02-separate-skills.png');checks.push('only protagonist page1 enters a distinct seven-row skill window at its composed parent origins; full-width lower description');
+ const beforeSkills=await growth();const skillData=beforeSkills.skillCatalog.map(id=>({id}));if(!beforeSkills.owned.includes(skillData[0].id)){await tap('Enter');assert.deepEqual((await growth()).owned,beforeSkills.owned);assert.deepEqual((await growth()).equipped,beforeSkills.equipped);}const ownedIndex=skillData.findIndex(row=>beforeSkills.owned.includes(row.id));assert(ownedIndex>=0,'fixture must own at least one actual skill');while((s=await stats()).padSkillRow!==ownedIndex)await tap('s');const chosen=skillData[ownedIndex].id;await tap('Enter');let current=await growth();assert.equal(current.equipped.includes(chosen),!beforeSkills.equipped.includes(chosen));await tap('Enter');assert.deepEqual((await growth()).equipped,beforeSkills.equipped);await tap('e');assert.equal((await stats()).padSkillRow,Math.min(skillData.length-1,ownedIndex+7));await tap('Backspace');s=await stats();assert(!s.padSkillVisible&&s.padReportVisible&&s.padReportPage===1);checks.push('locked skill cannot become owned/equipped; actual owned-skill equip/unequip and SP behavior, paging, return to same report page');
+ // Source character order puts Rin at11, whose fixture has exactly one real
+ // completion flag. It must not disclose unplayed second/third encounters.
+ const target=source.strip.leaves.find(x=>x.path.startsWith('p_kirikae_chara_011/')).rect_1280;await click(target[0]+target[2]/2,target[1]+target[3]/2);s=await stats();assert.equal(s.padReportActor,'rin');assert.equal(s.padReportPage,0);assert.equal(s.padReportPages,2);await tap('s');l=await layout();assert(l.PrMemoViewport.visible);assert(l.PrMemo.text.includes('안 열어 줄 권리'));assert(!l.PrMemo.text.includes('새 발을 붙이는 날'));await probe.capture('03-completed-record-only.png');await tap('s');assert.equal((await stats()).padReportPage,0);await tap('d');assert.equal((await stats()).padReportPage,0);assert.equal((await stats()).padReportPages,1);await tap('s');assert.equal((await stats()).padReportPage,0);checks.push('actual completed encounter only; per-character page counts, wrap and character-change reset');
+ await tap('Backspace');assert(!(await layout()).PrName.visible);await click(1046,480);assert.equal((await stats()).padPage,5);await padAction('save');await padAction('title');await padAction('title_yes');await tap('c');await delay(1000);const restored=await growth();for(const k of ['inventory','owned','equipped','pages','giftClaims'])assert.deepEqual(restored[k],initial[k],k+' unchanged by browsing and persisted');checks.push('report browsing and reversible equip do not grant encounters, rewards or inventory; actual Continue preserves growth');
+ assert.deepEqual(await probe.evaluate(`Array.from(document.images).filter(i=>i.offsetWidth>0&&i.src&&i.complete&&i.naturalWidth===0).map(i=>i.src)`),[]);assert.deepEqual(probe.errors,[]);
+ const report={ok:true,work,executable,checks,fixture:true,scope:'Own native report/skill UI fixture. Source SFL coordinates and separation, own physical profiles, real completion flags and existing project SP policy. No original body prose, FP purchase, source raster identity, all branches or campaign acceptance.'};await fs.writeFile(path.join(work,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+}catch(error){await fs.writeFile(path.join(work,'failure.json'),JSON.stringify({error:error.stack,checks,probeErrors:probe?.errors},null,2));try{await probe?.capture('failure.png');}catch{}throw error;}finally{await probe?.stop?.();}

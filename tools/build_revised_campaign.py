@@ -14,6 +14,7 @@ from build_revised_mine_assets import ART as MINE_ART, archive_package_compariso
 from revised_comic import chapter_two_comic_stage, chapter_three_comic_stage, chapter_four_comic_stage, chapter_five_comic_stage, chapter_six_comic_stage, comic_stage
 from revised_life import life_route
 from revised_investigation import examine_document_bundles, first_investigation_close, first_photo_investigation, supplemental_inspection
+from revised_voice_polish import speech_address
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -246,7 +247,7 @@ class CampaignGraph:
             reveal = self.introductions.get(event['actor'])
             if reveal is not None and event['source']['line'] < reveal:
                 event['speaker'] = '???'
-            address = hashlib.sha256(raw.strip().encode()).hexdigest()[:14]
+            address = speech_address(scene.id, raw)
             seen[address] += 1
             events.append((f'rev:{scene.id}:{start}:{address}:{seen[address]}', event))
         for ident, event in reversed(events):
