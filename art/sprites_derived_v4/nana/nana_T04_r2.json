@@ -1,0 +1,31 @@
+{
+  "id": "nana_T04_r2",
+  "character": "nana",
+  "pose": "T04",
+  "family": "derived_cleanup",
+  "reference": "art/sprites_derived_v4/nana/nana_T04.webp",
+  "references": [
+    "art/sprites_derived_v4/nana/nana_T04.webp",
+    "art/standing_v4/nana_fullbody.webp"
+  ],
+  "output": "art/sprites_derived_v4/nana/nana_T04_r2.webp",
+  "prompt": "Edit image 1 only to remove a duplicate wrist ribbon. There must be exactly ONE white wrist bow: preserve the bow on the RAISED anatomical LEFT wrist near her chest/hair (image right). Remove ONLY the second lower bow and its hanging white tails from the anatomical RIGHT wrist/forearm crossing her abdomen. Restore uninterrupted plain cream knitted sleeve and cuff on that lower arm; do not remove or move either hand. Keep the separate hair tie bow unchanged. Preserve fearful face, backing-away leg pose, long ankle skirt, cardigan, flower clips, eyes, shoes and proportions. Image 2 is original costume reference. No additional ribbon, jewelry, backdrop, lettering or glow; true transparent alpha, crisp cel linework.",
+  "tool": "built-in image_gen",
+  "status": "generated; full-resolution individual review required",
+  "origin": "same original NAI master; duplicate wrist ribbon correction",
+  "generated_source": "C:\\Users\\kirby\\.codex\\generated_images\\01a17b90-e079-75f1-95c2-c92b9f7ec03a\\exec-b1340817-da15-432f-b267-fc8abdadd10c.png",
+  "sha256": "29334fe3d2802b660690aacb7db7f0511d28862a01d48825dc79c91dbbcedc0a",
+  "size": [
+    1024,
+    1536
+  ],
+  "alpha_bbox": [
+    0,
+    38,
+    1006,
+    1526
+  ],
+  "upscale": "complete",
+  "runtime_integrated": false,
+  "hd_file": "art/hd_v4/derived/nana/nana_T04_r2.webp"
+}

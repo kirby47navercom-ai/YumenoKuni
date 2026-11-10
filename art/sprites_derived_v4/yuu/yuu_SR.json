@@ -1,0 +1,44 @@
+{
+  "id": "yuu_SR",
+  "character": "yuu",
+  "pose": "SR",
+  "raw_id": "yuu_SR_r2",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/masters_clean_v4/yuu.webp",
+  "source": "art/sprites_derived_v4/yuu/yuu_SR.png",
+  "source_sha256": "71336e96acaa7652df60fc6a3452f6df84ed0f99e92ad681755303d80ecd1b4e",
+  "hd_file": "art/hd_v4/derived/yuu/yuu_SR.webp",
+  "hd_sha256": "69e9e748e3b404fdae3712a6621fd10e694a2fd725ba601a5a228fcbfa2c8803",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9852916873244092,
+    "translation": [
+      -90,
+      29
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1127,
+      67,
+      2925,
+      6029
+    ],
+    "output_bbox": [
+      1013,
+      67,
+      2760,
+      6029
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

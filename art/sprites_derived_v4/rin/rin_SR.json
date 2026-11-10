@@ -1,0 +1,44 @@
+{
+  "id": "rin_SR",
+  "character": "rin",
+  "pose": "SR",
+  "raw_id": "rin_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/rin.webp",
+  "source": "art/sprites_derived_v4/rin/rin_SR.png",
+  "source_sha256": "871f762afb2344ff5f94d87d148ce9af0bd35c90c56c0b8a339d2932d716d869",
+  "hd_file": "art/hd_v4/derived/rin/rin_SR.webp",
+  "hd_sha256": "52df3097dc843562b55e5d6583d02154da4441400bc084ef78a3fa5dc37d5b8b",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9732952636882768,
+    "translation": [
+      64,
+      71
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      761,
+      187,
+      3764,
+      5982
+    ],
+    "output_bbox": [
+      913,
+      188,
+      3363,
+      5982
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

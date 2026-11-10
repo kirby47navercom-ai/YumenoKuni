@@ -1,0 +1,44 @@
+{
+  "id": "taiga_SR",
+  "character": "taiga",
+  "pose": "SR",
+  "raw_id": "taiga_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/masters_clean_v4/taiga.webp",
+  "source": "art/sprites_derived_v4/taiga/taiga_SR.png",
+  "source_sha256": "2de9d32636bec0205c65a5d69eb214f6dd0638788ddb1c6174b3e0c4894df2fe",
+  "hd_file": "art/hd_v4/derived/taiga/taiga_SR.webp",
+  "hd_sha256": "cf94dc60340b56b651f870b6e7e0f799c1895e372771144f30df90c2c95c34e9",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9445932373619016,
+    "translation": [
+      117,
+      209
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      823,
+      307,
+      3474,
+      5950
+    ],
+    "output_bbox": [
+      1068,
+      306,
+      3058,
+      5950
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

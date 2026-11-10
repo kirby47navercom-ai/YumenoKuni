@@ -1,0 +1,44 @@
+{
+  "id": "nana_SR",
+  "character": "nana",
+  "pose": "SR",
+  "raw_id": "nana_SR_r2",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/nana_fullbody.webp",
+  "source": "art/sprites_derived_v4/nana/nana_SR.png",
+  "source_sha256": "1b03cd5370c1f6045f26358be73c2cb0982b22146cd1e939087a7a8c62aa9887",
+  "hd_file": "art/hd_v4/derived/nana/nana_SR.webp",
+  "hd_sha256": "8a5d5c66bd74125013fc594d53cfa7002e3f3b7500dfc7c4f32980f6a3edb7c7",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9981447124304267,
+    "translation": [
+      142,
+      13
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1267,
+      184,
+      3065,
+      6102
+    ],
+    "output_bbox": [
+      1306,
+      183,
+      3333,
+      6102
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

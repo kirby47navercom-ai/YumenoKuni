@@ -1,0 +1,44 @@
+{
+  "id": "riku_SR",
+  "character": "riku",
+  "pose": "SR",
+  "raw_id": "riku_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/riku.webp",
+  "source": "art/sprites_derived_v4/riku/riku_SR.png",
+  "source_sha256": "6c16c532a4bfa0d24eb386d96848e4f6df624e21e071e9a5caef9c26e6be295e",
+  "hd_file": "art/hd_v4/derived/riku/riku_SR.webp",
+  "hd_sha256": "61c073427dda09504c605d421886c02f0ace9e3ce522f7ced8458d6693967b37",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9741148964595858,
+    "translation": [
+      -14,
+      117
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      283,
+      172,
+      3737,
+      6005
+    ],
+    "output_bbox": [
+      424,
+      172,
+      2884,
+      6005
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

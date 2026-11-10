@@ -1,0 +1,44 @@
+{
+  "id": "sho_SR",
+  "character": "sho",
+  "pose": "SR",
+  "raw_id": "sho_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/sho.webp",
+  "source": "art/sprites_derived_v4/sho/sho_SR.png",
+  "source_sha256": "27767f6adcd72ad949fb51c8a473fd90cfcec6a5ea953df55d8a174b22b023c7",
+  "hd_file": "art/hd_v4/derived/sho/sho_SR.webp",
+  "hd_sha256": "8064b48b33b241145e665a2ed5edd098a9b06bfb5f5370445abd5d1fdfabbe34",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9775815217391305,
+    "translation": [
+      -60,
+      106
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1079,
+      269,
+      2907,
+      6025
+    ],
+    "output_bbox": [
+      1104,
+      269,
+      2714,
+      6025
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

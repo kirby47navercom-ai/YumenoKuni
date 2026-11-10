@@ -1,0 +1,44 @@
+{
+  "id": "sora_SR",
+  "character": "sora",
+  "pose": "SR",
+  "raw_id": "sora_SR",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/sora.webp",
+  "source": "art/sprites_derived_v4/sora/sora_SR.png",
+  "source_sha256": "2c00b5296f88f9958303d84528414f668b8cc93952e998818860ad80b75f1a38",
+  "hd_file": "art/hd_v4/derived/sora/sora_SR.webp",
+  "hd_sha256": "5a4d07fa5219324fda1333ffa889dd979e0b386e2a3386afad24f3b7bdac4338",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9820198286002353,
+    "translation": [
+      40,
+      58
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      806,
+      112,
+      3229,
+      5956
+    ],
+    "output_bbox": [
+      1139,
+      112,
+      2999,
+      5956
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

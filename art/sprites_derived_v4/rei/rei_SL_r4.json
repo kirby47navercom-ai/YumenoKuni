@@ -1,0 +1,44 @@
+{
+  "id": "rei_SL",
+  "character": "rei",
+  "pose": "SL",
+  "raw_id": "rei_SL_r4",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/rei.webp",
+  "source": "art/sprites_derived_v4/rei/rei_SL_r4.png",
+  "source_sha256": "90b1b294b9367eef1faed3a90328114e05df2d4455fc2123e731f6b060efd3d8",
+  "hd_file": "art/hd_v4/derived/rei/rei_SL_r4.webp",
+  "hd_sha256": "0ebab15596b8976f3a174d9460b65a90d6c2fc462e9ff84f97101d71371c0942",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9855294518215867,
+    "translation": [
+      194,
+      27
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1207,
+      216,
+      3143,
+      6005
+    ],
+    "output_bbox": [
+      1312,
+      216,
+      3093,
+      6005
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}

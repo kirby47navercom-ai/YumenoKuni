@@ -1,0 +1,44 @@
+{
+  "id": "satsuki_SR",
+  "character": "satsuki",
+  "pose": "SR",
+  "raw_id": "satsuki_SR_r2",
+  "family": "scrum",
+  "tool": "built-in image_gen",
+  "reference": "art/standing_v4/satsuki.webp",
+  "source": "art/sprites_derived_v4/satsuki/satsuki_SR.png",
+  "source_sha256": "d6174cfb9b4778b5f0e4fa950babbdddb1f13d87401504c7888cd5779feb7888",
+  "hd_file": "art/hd_v4/derived/satsuki/satsuki_SR.webp",
+  "hd_sha256": "b4ecef1585e9c0cb87529c2a095fb8baaf5045a5a191b3001c87b8577d4ba0f1",
+  "size": [
+    1024,
+    1536
+  ],
+  "hd_size": [
+    4096,
+    6144
+  ],
+  "alignment": {
+    "scale": 0.9767206477732794,
+    "translation": [
+      180,
+      102
+    ],
+    "alpha_threshold": 32,
+    "master_bbox": [
+      1263,
+      251,
+      2931,
+      6041
+    ],
+    "output_bbox": [
+      1379,
+      250,
+      2842,
+      6041
+    ]
+  },
+  "upscale": "Real-ESRGAN 4x; raw 4x preserved in batch/upscaled",
+  "review": "passed; see art/v4_production/scrum_20261102/visual_qa.json",
+  "runtime_integrated": false
+}
