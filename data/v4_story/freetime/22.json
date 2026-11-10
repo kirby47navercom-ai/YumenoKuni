@@ -1,0 +1,4410 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:22:h-2c2caa6d82:e:3a6fb4ba4873:1",
+  "nodes": {
+    "v4:22:return": {
+      "id": "v4:22:return",
+      "type": "return"
+    },
+    "v4:22:h-e2c37203d8:e:7bdfbe0111eb:1": {
+      "id": "v4:22:h-e2c37203d8:e:7bdfbe0111eb:1",
+      "type": "stage",
+      "direction": "카에데가 또 웃는다. 이번에는 손으로 입을 가리지 않는다. 미오는 괜히 접시 뒷면까지 더 문지른다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 416,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:return"
+    },
+    "v4:22:h-e2c37203d8:e:cdc352de63bd:1": {
+      "id": "v4:22:h-e2c37203d8:e:cdc352de63bd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내 접시 정도는 씻고 갈게. 아래쪽도. 아까 뒤집어 썼잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 414,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:7bdfbe0111eb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:44a66ac29f11:1": {
+      "id": "v4:22:h-e2c37203d8:e:44a66ac29f11:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "이제 그만해도 돼.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 412,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:cdc352de63bd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:285bbce10029:1": {
+      "id": "v4:22:h-e2c37203d8:e:285bbce10029:1",
+      "type": "stage",
+      "direction": "카에데는 식은 과자를 용기에 옮긴다. 미오는 접시 두 개를 들고 세면대 쪽으로 간다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 410,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:44a66ac29f11:1"
+    },
+    "v4:22:h-e2c37203d8:e:5f87da730011:1": {
+      "id": "v4:22:h-e2c37203d8:e:5f87da730011:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "자기가 듣고 싶은 얘기를 할 땐 잘하겠지.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 408,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:285bbce10029:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:2a986b6d6ddd:1": {
+      "id": "v4:22:h-e2c37203d8:e:2a986b6d6ddd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "말 잘하는 줄 알았는데 아니네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 406,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:5f87da730011:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:0d3138fa42d3:1": {
+      "id": "v4:22:h-e2c37203d8:e:0d3138fa42d3:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "웃어. 들켰어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 404,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:2a986b6d6ddd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:5a3a2dcecc59:1": {
+      "id": "v4:22:h-e2c37203d8:e:5a3a2dcecc59:1",
+      "type": "stage",
+      "direction": "유우가 귀를 긁고 간다. 미오는 웃음을 참는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 402,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:0d3138fa42d3:1"
+    },
+    "v4:22:h-e2c37203d8:e:76bd7239510f:1": {
+      "id": "v4:22:h-e2c37203d8:e:76bd7239510f:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "아, 그게 아니라. 이런 건 먹는 사람도… 아, 됐다. 맛있다고. 그냥.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 400,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:5a3a2dcecc59:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:2c728e5d6cd0:1": {
+      "id": "v4:22:h-e2c37203d8:e:2c728e5d6cd0:1",
+      "type": "stage",
+      "direction": "카에데의 표정이 굳는다. 유우는 말을 잘못했음을 알아차리고 급히 덧붙인다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 398,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:76bd7239510f:1"
+    },
+    "v4:22:h-e2c37203d8:e:21a0cea1810a:1": {
+      "id": "v4:22:h-e2c37203d8:e:21a0cea1810a:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너 이런 거 하는 거 좋네. 시간 가지고 잔소리할 때보다.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 396,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:2c728e5d6cd0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:e217401a21ce:1": {
+      "id": "v4:22:h-e2c37203d8:e:e217401a21ce:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "내가 만들었어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 394,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:21a0cea1810a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:da9a48825c0a:1": {
+      "id": "v4:22:h-e2c37203d8:e:da9a48825c0a:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "누구 거야?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 392,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:e217401a21ce:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:5e87a9ab21f5:1": {
+      "id": "v4:22:h-e2c37203d8:e:5e87a9ab21f5:1",
+      "type": "stage",
+      "direction": "유우가 과자 하나를 더 달라고 한다. 카에데는 자기 봉투에서 골라 준다. 이번에는 모양이 가장 잘 나온 것을 찾지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 390,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:da9a48825c0a:1"
+    },
+    "v4:22:h-e2c37203d8:e:2c053e3acea2:1": {
+      "id": "v4:22:h-e2c37203d8:e:2c053e3acea2:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "응. 밤에 목마르겠네. 그래도 지금은 좋아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 388,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:5e87a9ab21f5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:5ec6df44342e:1": {
+      "id": "v4:22:h-e2c37203d8:e:5ec6df44342e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너무 단데 좋아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 386,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:2c053e3acea2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:e349da36c5a6:1": {
+      "id": "v4:22:h-e2c37203d8:e:e349da36c5a6:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "내 취향이다. 너무 달아서.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 384,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:5ec6df44342e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:5f1dd2b4be73:1": {
+      "id": "v4:22:h-e2c37203d8:e:5f1dd2b4be73:1",
+      "type": "stage",
+      "direction": "유우는 한 입 먹고 말을 하려다가, 입 안이 가득해서 손가락으로 잠깐 기다리라는 표시를 한다. 카에데가 물을 건넨다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 382,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:e349da36c5a6:1"
+    },
+    "v4:22:h-e2c37203d8:e:ae6d46bd6a0d:1": {
+      "id": "v4:22:h-e2c37203d8:e:ae6d46bd6a0d:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "응.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 380,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:5f1dd2b4be73:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:f91cc4c803f7:1": {
+      "id": "v4:22:h-e2c37203d8:e:f91cc4c803f7:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "먹어도 돼?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 378,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:ae6d46bd6a0d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-e2c37203d8:e:153410623c7c:1": {
+      "id": "v4:22:h-e2c37203d8:e:153410623c7c:1",
+      "type": "stage",
+      "direction": "정리하는 동안 유우가 식당을 지나간다. 봉투를 보더니 하나를 가리킨다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 376,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "끝 — 이름을 붙이지 않은 봉투",
+        "location": "h-e2c37203d8"
+      },
+      "next": "v4:22:h-e2c37203d8:e:f91cc4c803f7:1"
+    },
+    "v4:22:h-bb8e666f17:e:211c317ee02d:1": {
+      "id": "v4:22:h-bb8e666f17:e:211c317ee02d:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "알았어. 내가 너무 시키네.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 318,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-e2c37203d8:e:153410623c7c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:92f2cebd3863:1": {
+      "id": "v4:22:h-bb8e666f17:e:92f2cebd3863:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누가 만들었냐고 먼저 물으면 말할게. 그건 감추기 싫어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 316,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:211c317ee02d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:aba0e44f4813:1": {
+      "id": "v4:22:h-bb8e666f17:e:aba0e44f4813:1",
+      "type": "stage",
+      "direction": "결과: 미오는 만든 사람을 숨겨 달라는 부탁을 받지만, 먹는 사람에게 재료나 출처를 거짓말하겠다고 약속하지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 314,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:92f2cebd3863:1"
+    },
+    "v4:22:h-bb8e666f17:e:a49b633aa4da:1": {
+      "id": "v4:22:h-bb8e666f17:e:a49b633aa4da:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "내 이름 듣고 무슨 말을 해야 하나 고르는 건 싫으니까.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 312,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:aba0e44f4813:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:62f0dbc1e517:1": {
+      "id": "v4:22:h-bb8e666f17:e:62f0dbc1e517:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 310,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:a49b633aa4da:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:891dc9d39ef7:1": {
+      "id": "v4:22:h-bb8e666f17:e:891dc9d39ef7:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "…먹은 다음에 말해.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 308,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:62f0dbc1e517:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:45a605e5d3e5:1": {
+      "id": "v4:22:h-bb8e666f17:e:45a605e5d3e5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 이름 말해도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 306,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:891dc9d39ef7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:e6ac93af2574:1": {
+      "id": "v4:22:h-bb8e666f17:e:e6ac93af2574:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "네가 가져간 건 네가 정해.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 304,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:45a605e5d3e5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-bb8e666f17:e:5409b208558d:1": {
+      "id": "v4:22:h-bb8e666f17:e:5409b208558d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누가 먹으면 좋겠어? 내가 나눠 줄게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 302,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 같이 먹을 사람을 물어본다",
+        "location": "h-bb8e666f17"
+      },
+      "next": "v4:22:h-bb8e666f17:e:e6ac93af2574:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:475292551d49:1": {
+      "id": "v4:22:h-c86f2cda7c:e:475292551d49:1",
+      "type": "stage",
+      "direction": "미오는 카에데가 뒤돌아선 뒤 봉투를 한번 더 보는 것을 본다. 아이도 봉투를 치우거나 새로 재료를 섞지 않는다.현재공용식탁에한봉투를내놓았으며미오가자기몫을배달하거나아이의맛평가를받아온것은아니다.다음40의B후속에서처음질문받는것처럼같은대화를반복하지않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 358,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-e2c37203d8:e:153410623c7c:1"
+    },
+    "v4:22:h-c86f2cda7c:e:ca1234c54975:1": {
+      "id": "v4:22:h-c86f2cda7c:e:ca1234c54975:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "알았어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 356,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:475292551d49:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:4d50df57887f:1": {
+      "id": "v4:22:h-c86f2cda7c:e:4d50df57887f:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "여기 놓으시면 지나가다가 걸리지는 않을 거예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 354,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:ca1234c54975:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:4ecea7d68668:1": {
+      "id": "v4:22:h-c86f2cda7c:e:4ecea7d68668:1",
+      "type": "stage",
+      "direction": "아이가 봉투가 테이블 끝에 걸리지 않게 조금 안쪽 자리를 가리킨다. 카에데가 그 위치에 둔다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 352,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:4d50df57887f:1"
+    },
+    "v4:22:h-c86f2cda7c:e:a7ba2d6f5e69:1": {
+      "id": "v4:22:h-c86f2cda7c:e:a7ba2d6f5e69:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "나도 대답했어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 350,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:4ecea7d68668:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:4b6dbd4ea2fe:1": {
+      "id": "v4:22:h-c86f2cda7c:e:4b6dbd4ea2fe:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "재료 물은 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 348,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:a7ba2d6f5e69:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:462db93805e4:1": {
+      "id": "v4:22:h-c86f2cda7c:e:462db93805e4:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "지금 무슨 맛인지 묻지는 않았어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 346,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:4b6dbd4ea2fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:92f08600b50e:1": {
+      "id": "v4:22:h-c86f2cda7c:e:92f08600b50e:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "먹어 보라고 한 건 아니야. 먹고 싶으면 먹어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 344,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:462db93805e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:598c83d4e89e:1": {
+      "id": "v4:22:h-c86f2cda7c:e:598c83d4e89e:1",
+      "type": "stage",
+      "direction": "카에데가 봉투를 놓다가 아이 쪽을 본다. 아이는 아직 맛을 보지 않았다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 342,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:92f08600b50e:1"
+    },
+    "v4:22:h-c86f2cda7c:e:322324b49bf5:1": {
+      "id": "v4:22:h-c86f2cda7c:e:322324b49bf5:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "응. 구워 놓고 식힌 거야.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 340,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:598c83d4e89e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:3a082c23983a:1": {
+      "id": "v4:22:h-c86f2cda7c:e:3a082c23983a:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그럼 주방에서 쓰던 것하고 같은 재료네요. 오늘 만드신 거예요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 338,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:322324b49bf5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:8011dc3129e7:1": {
+      "id": "v4:22:h-c86f2cda7c:e:8011dc3129e7:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "밀가루, 버터, 설탕, 달걀. 다른 거 섞은 건 없어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 336,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:3a082c23983a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:23773d12aa0e:1": {
+      "id": "v4:22:h-c86f2cda7c:e:23773d12aa0e:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "뭐 넣으셨어요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 334,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:8011dc3129e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:a1ea637d4b10:1": {
+      "id": "v4:22:h-c86f2cda7c:e:a1ea637d4b10:1",
+      "type": "stage",
+      "direction": "카에데가 봉투 하나를 집어 식탁 쪽으로 간다. 미오도 따라간다. 아이가 놓이려는 봉투를 보고 묻는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 332,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:23773d12aa0e:1"
+    },
+    "v4:22:h-c86f2cda7c:e:10c7e4501c16:1": {
+      "id": "v4:22:h-c86f2cda7c:e:10c7e4501c16:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "괜찮을지 모르니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 330,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:a1ea637d4b10:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:21a883dafb79:1": {
+      "id": "v4:22:h-c86f2cda7c:e:21a883dafb79:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "거기서 괜찮다고 안 해 주네.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 328,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:10c7e4501c16:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:9108fbc4c982:1": {
+      "id": "v4:22:h-c86f2cda7c:e:9108fbc4c982:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 듣기 싫을 수는 있겠지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 326,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:21a883dafb79:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:2722f201a923:1": {
+      "id": "v4:22:h-c86f2cda7c:e:2722f201a923:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "누가 맛없다고 하면?",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 324,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:9108fbc4c982:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-c86f2cda7c:e:424fafdf0d8e:1": {
+      "id": "v4:22:h-c86f2cda7c:e:424fafdf0d8e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 그냥 내놓자. 먹고 싶은 사람만 먹게. 평가해 달라는 말은 안 하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 322,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 함께 식탁에 내놓자고 한다",
+        "location": "h-c86f2cda7c"
+      },
+      "next": "v4:22:h-c86f2cda7c:e:2722f201a923:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9ae02cc096:e:30fb275f2063:1": {
+      "id": "v4:22:h-9ae02cc096:e:30fb275f2063:1",
+      "type": "stage",
+      "direction": "미오는 그 말이 맞다고 생각하면서도 조금 기분이 나쁘다. 그 표정을 카에데에게 감추지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 372,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 미오 몫만 가져간다",
+        "location": "h-9ae02cc096"
+      },
+      "next": "v4:22:h-e2c37203d8:e:153410623c7c:1"
+    },
+    "v4:22:h-9ae02cc096:e:4543710cf42a:1": {
+      "id": "v4:22:h-9ae02cc096:e:4543710cf42a:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "싫었으면 봉투 안 줬어. 과자 하나 가져갈 때마다 내 기분까지 검사할 거야?",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 370,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 미오 몫만 가져간다",
+        "location": "h-9ae02cc096"
+      },
+      "next": "v4:22:h-9ae02cc096:e:30fb275f2063:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9ae02cc096:e:b5138ce8e19b:1": {
+      "id": "v4:22:h-9ae02cc096:e:b5138ce8e19b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "기분 나쁜 건 아니고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 368,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 미오 몫만 가져간다",
+        "location": "h-9ae02cc096"
+      },
+      "next": "v4:22:h-9ae02cc096:e:4543710cf42a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9ae02cc096:e:6663d87efc09:1": {
+      "id": "v4:22:h-9ae02cc096:e:6663d87efc09:1",
+      "type": "stage",
+      "direction": "대답이 너무 간단해 미오가 오히려 한 번 더 묻는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 366,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 미오 몫만 가져간다",
+        "location": "h-9ae02cc096"
+      },
+      "next": "v4:22:h-9ae02cc096:e:b5138ce8e19b:1"
+    },
+    "v4:22:h-9ae02cc096:e:ae6d46bd6a0d:1": {
+      "id": "v4:22:h-9ae02cc096:e:ae6d46bd6a0d:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "응.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 364,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 미오 몫만 가져간다",
+        "location": "h-9ae02cc096"
+      },
+      "next": "v4:22:h-9ae02cc096:e:6663d87efc09:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9ae02cc096:e:2f4d985da463:1": {
+      "id": "v4:22:h-9ae02cc096:e:2f4d985da463:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "남한테 주는 건 네가 해. 나는 내 것만 가져갈게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 362,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 미오 몫만 가져간다",
+        "location": "h-9ae02cc096"
+      },
+      "next": "v4:22:h-9ae02cc096:e:ae6d46bd6a0d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:KAEDE-01B:menu": {
+      "id": "v4:22:KAEDE-01B:menu",
+      "type": "menu",
+      "q": "다른 사람에게 줄까",
+      "options": [
+        {
+          "id": "A",
+          "label": "같이 먹을 사람을 물어본다",
+          "to": "v4:22:h-bb8e666f17:e:5409b208558d:1",
+          "set": {
+            "KAEDE-01B": "A"
+          }
+        },
+        {
+          "id": "B",
+          "label": "함께 식탁에 내놓자고 한다",
+          "to": "v4:22:h-c86f2cda7c:e:424fafdf0d8e:1",
+          "set": {
+            "KAEDE-01B": "B"
+          }
+        },
+        {
+          "id": "C",
+          "label": "미오 몫만 가져간다",
+          "to": "v4:22:h-9ae02cc096:e:2f4d985da463:1",
+          "set": {
+            "KAEDE-01B": "C"
+          }
+        }
+      ],
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 298,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "선택 KAEDE-01B — 다른 사람에게 줄까",
+        "location": "h-eb0e90bff8"
+      }
+    },
+    "v4:22:h-720d0cca28:e:cc78d1001c5f:1": {
+      "id": "v4:22:h-720d0cca28:e:cc78d1001c5f:1",
+      "type": "stage",
+      "direction": "카에데는 대답하지 않는다. 물컵만 조금 가까이 놓아 준다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 296,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:KAEDE-01B:menu"
+    },
+    "v4:22:h-720d0cca28:e:b47deba7daba:1": {
+      "id": "v4:22:h-720d0cca28:e:b47deba7daba:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "맛있기도 했어. 그런데 그것만 말했으면 믿었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 294,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:cc78d1001c5f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:7c7ccd775c21:1": {
+      "id": "v4:22:h-720d0cca28:e:7c7ccd775c21:1",
+      "type": "stage",
+      "direction": "미오는 과자를 다시 놓으려다가 한 입 먹는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 292,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:b47deba7daba:1"
+    },
+    "v4:22:h-720d0cca28:e:cc27e0d8495c:1": {
+      "id": "v4:22:h-720d0cca28:e:cc27e0d8495c:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그럼 그러지 마. 네가 억지로 먹으면 양을 잘못 정한 거잖아.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 290,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:7c7ccd775c21:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:64a928d1c9d1:1": {
+      "id": "v4:22:h-720d0cca28:e:64a928d1c9d1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "남은 걸 신경 쓰는 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 288,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:cc27e0d8495c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:dae7d16f8933:1": {
+      "id": "v4:22:h-720d0cca28:e:dae7d16f8933:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "세 개 먹었는데 더 먹어?",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 286,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:64a928d1c9d1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:cd3eba4b2fb6:1": {
+      "id": "v4:22:h-720d0cca28:e:cd3eba4b2fb6:1",
+      "type": "stage",
+      "direction": "카에데가 과자를 두 개 더 놓는다. 미오는 그중 가장 작게 부서진 것을 집는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 284,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:dae7d16f8933:1"
+    },
+    "v4:22:h-720d0cca28:e:469512e2fe4a:1": {
+      "id": "v4:22:h-720d0cca28:e:469512e2fe4a:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아니. 지금 웃겨서.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 282,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:cd3eba4b2fb6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:046b2cfa6676:1": {
+      "id": "v4:22:h-720d0cca28:e:046b2cfa6676:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "처음부터 웃을 생각이었네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 280,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:469512e2fe4a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:37aeab4f7f0a:1": {
+      "id": "v4:22:h-720d0cca28:e:37aeab4f7f0a:1",
+      "type": "stage",
+      "direction": "미오는 빛에 비춰 앞뒷면을 구별한다. 카에데가 먼저 웃는다. 웃음을 참으려다 어깨가 들썩인다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 278,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:046b2cfa6676:1"
+    },
+    "v4:22:h-720d0cca28:e:2aecf72254e4:1": {
+      "id": "v4:22:h-720d0cca28:e:2aecf72254e4:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "뒤집어 놨어. 등 쪽에 과자 올릴 거야?",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 276,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:37aeab4f7f0a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:07796a778d2c:1": {
+      "id": "v4:22:h-720d0cca28:e:07796a778d2c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "깨졌어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 274,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:2aecf72254e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:b6e3bed32726:1": {
+      "id": "v4:22:h-720d0cca28:e:b6e3bed32726:1",
+      "type": "stage",
+      "direction": "미오가 조심해서 꺼낸다. 조리대에 놓자 카에데가 그것을 뒤집는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 272,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:07796a778d2c:1"
+    },
+    "v4:22:h-720d0cca28:e:88a1848bdc08:1": {
+      "id": "v4:22:h-720d0cca28:e:88a1848bdc08:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그럼 하나 더 꺼내. 이번엔 천천히.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 270,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:b6e3bed32726:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:67ac7224d200:1": {
+      "id": "v4:22:h-720d0cca28:e:67ac7224d200:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "우리 둘 다 멀쩡한 걸 쓰면 되지. 접시 많아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 268,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:88a1848bdc08:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:1781b5f7db41:1": {
+      "id": "v4:22:h-720d0cca28:e:1781b5f7db41:1",
+      "type": "stage",
+      "direction": "미오는 깨진 접시를 선반 위에 따로 올린다. 전날 공구를 분리하던 자리가 떠올랐지만 그 이야기는 하지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 266,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:67ac7224d200:1"
+    },
+    "v4:22:h-720d0cca28:e:c07ebe98eede:1": {
+      "id": "v4:22:h-720d0cca28:e:c07ebe98eede:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "어디가 깨졌는지 아니까. 남한테 주기는 싫고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 264,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:1781b5f7db41:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:d9e510f8b10e:1": {
+      "id": "v4:22:h-720d0cca28:e:d9e510f8b10e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 네가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 262,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:c07ebe98eede:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:98c84c887910:1": {
+      "id": "v4:22:h-720d0cca28:e:98c84c887910:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "내가 쓸게. 멀쩡한 건 네가 쓰고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 260,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:d9e510f8b10e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:89e8b9f84f9a:1": {
+      "id": "v4:22:h-720d0cca28:e:89e8b9f84f9a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 못 쓰겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 258,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:98c84c887910:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:21a6738a8204:1": {
+      "id": "v4:22:h-720d0cca28:e:21a6738a8204:1",
+      "type": "stage",
+      "direction": "카에데가 선반을 잡아 준다. 미오는 접시 두 장을 나누어 꺼낸다. 하나는 끝이 조금 깨졌다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 256,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:89e8b9f84f9a:1"
+    },
+    "v4:22:h-720d0cca28:e:12a72093c210:1": {
+      "id": "v4:22:h-720d0cca28:e:12a72093c210:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 장 뺐는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 254,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:21a6738a8204:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:bb75691f0149:1": {
+      "id": "v4:22:h-720d0cca28:e:bb75691f0149:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "멈춰. 다 꺼내지 말고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 252,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:12a72093c210:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-720d0cca28:e:d743fae5658e:1": {
+      "id": "v4:22:h-720d0cca28:e:d743fae5658e:1",
+      "type": "stage",
+      "direction": "카에데가 선반 아래를 가리킨다. 미오가 작은 접시를 꺼낸다. 그릇장 안은 조용한데 한 장을 빼자 뒤의 접시가 차례로 부딪힌다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 250,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "움직이는 일",
+        "location": "h-720d0cca28"
+      },
+      "next": "v4:22:h-720d0cca28:e:bb75691f0149:1"
+    },
+    "v4:22:h-a4dcc30585:e:594b6ce8a5f6:1": {
+      "id": "v4:22:h-a4dcc30585:e:594b6ce8a5f6:1",
+      "type": "stage",
+      "direction": "미오는 대답하지 못한다. 카에데는 과자 부스러기를 모은다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 246,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-720d0cca28:e:d743fae5658e:1"
+    },
+    "v4:22:h-a4dcc30585:e:7e7bf19fee68:1": {
+      "id": "v4:22:h-a4dcc30585:e:7e7bf19fee68:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "응. 그런데 그렇게 말하면 네가 편하게 살아 줄 것도 아니잖아.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 244,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:594b6ce8a5f6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:6edb1951cf93:1": {
+      "id": "v4:22:h-a4dcc30585:e:6edb1951cf93:1",
+      "type": "stage",
+      "direction": "카에데가 손을 멈춘다. 미오는 곧바로 미안하다고 하려다 입을 다문다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 242,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:7e7bf19fee68:1"
+    },
+    "v4:22:h-a4dcc30585:e:7b85b73924c1:1": {
+      "id": "v4:22:h-a4dcc30585:e:7b85b73924c1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 진짜 피곤하게 사는구나.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 240,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:6edb1951cf93:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:a07abbbb84ed:1": {
+      "id": "v4:22:h-a4dcc30585:e:a07abbbb84ed:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "정해 놓고 만들면 못 줬을 때 더 신경 쓰여.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 238,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:7b85b73924c1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:e418bfac3447:1": {
+      "id": "v4:22:h-a4dcc30585:e:e418bfac3447:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 먹을 사람을 정하면 되겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 236,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:a07abbbb84ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:4c76e8262c31:1": {
+      "id": "v4:22:h-a4dcc30585:e:4c76e8262c31:1",
+      "type": "stage",
+      "direction": "미오는 과자를 다시 본다. 먹어도 된다는 것과 평가해도 된다는 것이 카에데에게는 다른 허락이었다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 234,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:e418bfac3447:1"
+    },
+    "v4:22:h-a4dcc30585:e:71b732bcaf32:1": {
+      "id": "v4:22:h-a4dcc30585:e:71b732bcaf32:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "네가 먹어 보겠다고 했지. 그냥 놓여 있는 걸 보고 다 같이 평가하는 건 싫어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 232,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:4c76e8262c31:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:c02a8263612e:1": {
+      "id": "v4:22:h-a4dcc30585:e:c02a8263612e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 먼저 물었는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 230,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:71b732bcaf32:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:df65f76c5950:1": {
+      "id": "v4:22:h-a4dcc30585:e:df65f76c5950:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "버릴 생각 없어. 다만 사람들 앞에 내놓으면 잘 만들었는지부터 떠들 거잖아.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 228,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:c02a8263612e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:89e2f4b2b8fa:1": {
+      "id": "v4:22:h-a4dcc30585:e:89e2f4b2b8fa:1",
+      "type": "stage",
+      "direction": "미오가 고개를 젓는다. 카에데는 봉투를 닫으려다 그대로 둔다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 226,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:df65f76c5950:1"
+    },
+    "v4:22:h-a4dcc30585:e:8f88b4027e01:1": {
+      "id": "v4:22:h-a4dcc30585:e:8f88b4027e01:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "왜. 아이한테 말하려고?",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 224,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:89e2f4b2b8fa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:5b99d72e2c98:1": {
+      "id": "v4:22:h-a4dcc30585:e:5b99d72e2c98:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 먹을 건 아니지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 222,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:8f88b4027e01:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:3ab622aa926e:1": {
+      "id": "v4:22:h-a4dcc30585:e:3ab622aa926e:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "먹을 순 있어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 220,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:5b99d72e2c98:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:014d6aa99bb3:1": {
+      "id": "v4:22:h-a4dcc30585:e:014d6aa99bb3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "저건 다 실패한 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 218,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:3ab622aa926e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:392f83e7e5d1:1": {
+      "id": "v4:22:h-a4dcc30585:e:392f83e7e5d1:1",
+      "type": "stage",
+      "direction": "미오는 벤치 위의 종이봉투를 본다. 봉투 안에도 같은 과자가 있다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 216,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:014d6aa99bb3:1"
+    },
+    "v4:22:h-a4dcc30585:e:8ea521ee1154:1": {
+      "id": "v4:22:h-a4dcc30585:e:8ea521ee1154:1",
+      "type": "stage",
+      "direction": "과자에새성분/표식/시험번호를붙이지않는다.현재그자리의시식차이이며필수사건증거나정밀한오븐사용시각이아니다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 214,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:392f83e7e5d1:1"
+    },
+    "v4:22:h-a4dcc30585:e:6f51c78a052d:1": {
+      "id": "v4:22:h-a4dcc30585:e:6f51c78a052d:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아까 거 다시 고르려고? 됐어. 내 눈치 보면서 먹으면 맛 차이는 누가 말해.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 212,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:8ea521ee1154:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:141fbac0a93c:1": {
+      "id": "v4:22:h-a4dcc30585:e:141fbac0a93c:1",
+      "type": "stage",
+      "direction": "미오가 카에데를 본다. 카에데는 과자를 도로 빼앗지 않고 접시를 놓는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 210,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:6f51c78a052d:1"
+    },
+    "v4:22:h-a4dcc30585:e:1cdd940c50c3:1": {
+      "id": "v4:22:h-a4dcc30585:e:1cdd940c50c3:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "응. 그 말은 나도 싫어할 수 있어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 208,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:141fbac0a93c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:ce49a45aa8c6:1": {
+      "id": "v4:22:h-a4dcc30585:e:ce49a45aa8c6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "모르지. 내가 계속 네 과자만 먹는 사람도 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 206,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:1cdd940c50c3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:ef82a4c15c94:1": {
+      "id": "v4:22:h-a4dcc30585:e:ef82a4c15c94:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "다음에도 네가 그걸 고를지는 모르겠지.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 204,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:ce49a45aa8c6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:44a72191647f:1": {
+      "id": "v4:22:h-a4dcc30585:e:44a72191647f:1",
+      "type": "stage",
+      "direction": "미오는 가장 조금 남은 조각을 가리킨다. 카에데는 그것을 따로 상자에 넣어 우승작으로 표시하지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 202,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:ef82a4c15c94:1"
+    },
+    "v4:22:h-a4dcc30585:e:2ffcdff09b4b:1": {
+      "id": "v4:22:h-a4dcc30585:e:2ffcdff09b4b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하나는 고를 수 있는데. 지금은.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 200,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:44a72191647f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:b787830203ba:1": {
+      "id": "v4:22:h-a4dcc30585:e:b787830203ba:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그러면 나머지 둘은 안 먹어 봐도 됐다고 할 것 같아서.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 198,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:2ffcdff09b4b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:e356b3834b4b:1": {
+      "id": "v4:22:h-a4dcc30585:e:e356b3834b4b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나한테는 셋 중에 제일 맛있는 거 고르라고 하지 그랬어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 196,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:b787830203ba:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:8883cc191aac:1": {
+      "id": "v4:22:h-a4dcc30585:e:8883cc191aac:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그래서 자리 바꿔 본 거야. 새 반죽만 바꾸면 뭐 때문에 달라졌는지 모르니까.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 194,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:e356b3834b4b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:3cbde375ea53:1": {
+      "id": "v4:22:h-a4dcc30585:e:3cbde375ea53:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같은 반죽인데 네가 고른 자리에 따라서 이렇게 다르네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 192,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:8883cc191aac:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:7306713eced8:1": {
+      "id": "v4:22:h-a4dcc30585:e:7306713eced8:1",
+      "type": "stage",
+      "direction": "카에데가 세 과자의 아랫면을 번갈아 보여 준다. 미오는 먼저 먹은 것과 덜 먹은 것을 구별하려고 손에 남은 조각을 접시 한쪽에 놓는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 190,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:3cbde375ea53:1"
+    },
+    "v4:22:h-a4dcc30585:e:a6bdc04ef80e:1": {
+      "id": "v4:22:h-a4dcc30585:e:a6bdc04ef80e:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "하나만 만들 땐. 여러 개 만들면 자리가 더 필요하니까.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 188,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:7306713eced8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:fbf4b392e7cc:1": {
+      "id": "v4:22:h-a4dcc30585:e:fbf4b392e7cc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가운데 놓으면 되지 않아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 186,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:a6bdc04ef80e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:01671cb2e5b0:1": {
+      "id": "v4:22:h-a4dcc30585:e:01671cb2e5b0:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "굽는 자리를 바꿔 봤어. 이 오븐은 한쪽이 먼저 익어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 184,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:fbf4b392e7cc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:f08d0a7fab77:1": {
+      "id": "v4:22:h-a4dcc30585:e:f08d0a7fab77:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 왜 세 개를 따로 골랐어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 182,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:01671cb2e5b0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a4dcc30585:e:4d4350752ee0:1": {
+      "id": "v4:22:h-a4dcc30585:e:4d4350752ee0:1",
+      "type": "stage",
+      "direction": "다른 두 개도 조금씩 맛본다. 미오는 세 과자가 다른 시도인 줄 알았는데 카에데는 같은 반죽이라고 말한다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 180,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "합류 — 실패작을 버리는 사람",
+        "location": "h-a4dcc30585"
+      },
+      "next": "v4:22:h-a4dcc30585:e:f08d0a7fab77:1"
+    },
+    "v4:22:h-9f78aca1d7:e:b25506e0bb4e:1": {
+      "id": "v4:22:h-9f78aca1d7:e:b25506e0bb4e:1",
+      "type": "stage",
+      "direction": "미오는 씹으며 웃지 않으려고 입을 다문다. 칭찬만으로 끝내고 싶었던 마음은 그대로지만, 손에 든 것을 버리지는 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 92,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-a4dcc30585:e:4d4350752ee0:1"
+    },
+    "v4:22:h-9f78aca1d7:e:d9a1a496d8c2:1": {
+      "id": "v4:22:h-9f78aca1d7:e:d9a1a496d8c2:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "네가 안 삼키면 말이 계속 늦어지니까.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 90,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:b25506e0bb4e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:7dcc3bc082e2:1": {
+      "id": "v4:22:h-9f78aca1d7:e:7dcc3bc082e2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이제 기다려 주네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 88,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:d9a1a496d8c2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:4ab22fba10b2:1": {
+      "id": "v4:22:h-9f78aca1d7:e:4ab22fba10b2:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "먹어. 삼키고 나서 말해.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 86,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:7dcc3bc082e2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:e7b528379cb3:1": {
+      "id": "v4:22:h-9f78aca1d7:e:e7b528379cb3:1",
+      "type": "stage",
+      "direction": "카에데가 웃을 듯 입을 벌렸다가 닫는다. 미오가 한 번 더 베어 물려고 과자를 들자 이번에는 손끝을 따라 보지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 84,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:4ab22fba10b2:1"
+    },
+    "v4:22:h-9f78aca1d7:e:65599712e50d:1": {
+      "id": "v4:22:h-9f78aca1d7:e:65599712e50d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잘 아네. 지금 조금 그러고 싶어졌어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 82,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:e7b528379cb3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:c07b284d0b09:1": {
+      "id": "v4:22:h-9f78aca1d7:e:c07b284d0b09:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아닐 수도 있지. 내가 좋아할 말만 골라서 그만 물어보게 만들 수도 있으니까.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 80,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:65599712e50d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:e8ffd337ec2e:1": {
+      "id": "v4:22:h-9f78aca1d7:e:e8ffd337ec2e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 두 번 물으면 두 번째가 더 맞는 말일 거라고 생각해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 78,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:c07b284d0b09:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:60d60bb37464:1": {
+      "id": "v4:22:h-9f78aca1d7:e:60d60bb37464:1",
+      "type": "stage",
+      "direction": "미오는 부스러기가 붙은 손끝을 접시 위에서 턴다. 입안의 것이 아직 남아 있어 대답이 늦어진다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 76,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:e8ffd337ec2e:1"
+    },
+    "v4:22:h-9f78aca1d7:e:dce99aa7c998:1": {
+      "id": "v4:22:h-9f78aca1d7:e:dce99aa7c998:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "맛있다고 해 주고 끝낼 수도 있잖아. 그러면 나도 고맙다고 하고, 다시 만들 땐 계속 같은 걸로 하고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 74,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:60d60bb37464:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:894c2614c69a:1": {
+      "id": "v4:22:h-9f78aca1d7:e:894c2614c69a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 먹기 전부터 내가 거짓말할 것 같았네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 72,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:dce99aa7c998:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:70f9f3a00d0a:1": {
+      "id": "v4:22:h-9f78aca1d7:e:70f9f3a00d0a:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아니. 표정이랑 말이 다르면 다시 물으려고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 70,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:894c2614c69a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:733ca22cab97:1": {
+      "id": "v4:22:h-9f78aca1d7:e:733ca22cab97:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 말 안 해도 알겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 68,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:70f9f3a00d0a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:23a178abf43c:1": {
+      "id": "v4:22:h-9f78aca1d7:e:23a178abf43c:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "삼키고 무슨 표정 하나 보려고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 66,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:733ca22cab97:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:e924a5bcf620:1": {
+      "id": "v4:22:h-9f78aca1d7:e:e924a5bcf620:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "씹는 동안에도 보고 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 64,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:23a178abf43c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:6b0551f4e250:1": {
+      "id": "v4:22:h-9f78aca1d7:e:6b0551f4e250:1",
+      "type": "stage",
+      "direction": "미오가 베어 문 단면을 본다. 카에데가 그쪽으로 고개를 조금 기울인다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 62,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:e924a5bcf620:1"
+    },
+    "v4:22:h-9f78aca1d7:e:0137771f2efb:1": {
+      "id": "v4:22:h-9f78aca1d7:e:0137771f2efb:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "…그것도 있겠지. 그런데 고칠 데도 있어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 60,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:6b0551f4e250:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:3e52254ef1a9:1": {
+      "id": "v4:22:h-9f78aca1d7:e:3e52254ef1a9:1",
+      "type": "stage",
+      "direction": "카에데가 미오를 본다. 답을 바로 하지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 58,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:0137771f2efb:1"
+    },
+    "v4:22:h-9f78aca1d7:e:f88e999126cd:1": {
+      "id": "v4:22:h-9f78aca1d7:e:f88e999126cd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "칭찬받고 싶어서 물은 건 아니고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 56,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:3e52254ef1a9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:88fd0acfdd3e:1": {
+      "id": "v4:22:h-9f78aca1d7:e:88fd0acfdd3e:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "고치려고 물은 거니까.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 54,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:f88e999126cd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:9d787ebee645:1": {
+      "id": "v4:22:h-9f78aca1d7:e:9d787ebee645:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 이유까지 있어야 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 52,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:88fd0acfdd3e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:56112e510769:1": {
+      "id": "v4:22:h-9f78aca1d7:e:56112e510769:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그건 맛 설명이고. 맛있다는 이유 말해 달라고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 50,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:9d787ebee645:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:e65e1ba6413c:1": {
+      "id": "v4:22:h-9f78aca1d7:e:e65e1ba6413c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "달고, 바삭하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 48,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:56112e510769:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:ddd63f005804:1": {
+      "id": "v4:22:h-9f78aca1d7:e:ddd63f005804:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "어디가.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 46,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:e65e1ba6413c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-9f78aca1d7:e:fb149ebc79a7:1": {
+      "id": "v4:22:h-9f78aca1d7:e:fb149ebc79a7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "맛있어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 44,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "A. 맛있다고 먼저 말한다",
+        "location": "h-9f78aca1d7"
+      },
+      "next": "v4:22:h-9f78aca1d7:e:ddd63f005804:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:592f71d1d683:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:592f71d1d683:1",
+      "type": "stage",
+      "direction": "미오는 다른 과자의 모서리만 조금 베어 문다. 카에데는 남은 부분을 다 먹으라고 재촉하지 않는다. 아직 원래 세 과자를 구별해 맛보는 중이며 새 과자를 더 굽는 과정은 없다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 130,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a4dcc30585:e:4d4350752ee0:1"
+    },
+    "v4:22:h-a38b4c3cd7:e:8dcd7f2addd8:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:8dcd7f2addd8:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "들었어. 그래서 한 입만 먹어 보랬고. 전부 먹어서 나 기분 풀어 줄 필요는 없어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 128,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:592f71d1d683:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:1b03cb509d16:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:1b03cb509d16:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방금도 좀 달다고 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 126,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:8dcd7f2addd8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:d8a0e95e9374:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:d8a0e95e9374:1",
+      "type": "stage",
+      "direction": "미오가 과자를 들다 말고 카에데를 본다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 124,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:1b03cb509d16:1"
+    },
+    "v4:22:h-a38b4c3cd7:e:5f094e98e150:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:5f094e98e150:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "네가 알아서 먹어. 그런데 다 먹어 놓고 먹기 싫었다고 하면, 다음에는 안 줄지도 몰라.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 122,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:d8a0e95e9374:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:1fb764f6c4b9:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:1fb764f6c4b9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 나한테 맛있게 먹으라고는 안 하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 120,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:5f094e98e150:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:5ae8ef18becf:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:5ae8ef18becf:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "지금은 그래. 오늘 만든 게 네 말 듣고 바뀌진 않아.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 118,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:1fb764f6c4b9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:eaed0391aeaf:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:eaed0391aeaf:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 먹을 때는 못 고치잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 116,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:5ae8ef18becf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:bd6643871e2c:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:bd6643871e2c:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "똑같다고 하면 다음에 덜 넣어 보겠지.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 114,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:eaed0391aeaf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:c75e14af9a26:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:c75e14af9a26:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이것도 똑같이 달면 네가 기분 나빠질 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 112,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:bd6643871e2c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:cf33b7817d5c:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:cf33b7817d5c:1",
+      "type": "stage",
+      "direction": "미오는 물컵을 내려놓는다. 카에데가 접시의 다른 과자 쪽을 손끝으로 돌려 놓는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 110,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:c75e14af9a26:1"
+    },
+    "v4:22:h-a38b4c3cd7:e:9cf6c976b5ec:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:9cf6c976b5ec:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "알아. 그래서 다음 것도 물었어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 108,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:cf33b7817d5c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:ee204f96043a:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:ee204f96043a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "먹기 싫다고 한 건 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 106,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:9cf6c976b5ec:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:7764cc5424b1:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:7764cc5424b1:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "알았어. 그럼 다음 건 한 입만 먹어 봐. 같은 쪽으로 단지.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 104,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:ee204f96043a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:9923c5af7166:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:9923c5af7166:1",
+      "type": "stage",
+      "direction": "카에데가 물컵을 가져온다. 미오는 그것을 보고 미안해지려다가 그냥 마신다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 102,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:7764cc5424b1:1"
+    },
+    "v4:22:h-a38b4c3cd7:e:72f52bec3f5c:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:72f52bec3f5c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "물 마시고 싶을 만큼.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 100,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:9923c5af7166:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:777b21dad488:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:777b21dad488:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "얼마나.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 98,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:72f52bec3f5c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-a38b4c3cd7:e:87062a4cddb4:1": {
+      "id": "v4:22:h-a38b4c3cd7:e:87062a4cddb4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내 입에는 좀 달아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 96,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "B. 달다는 말을 먼저 한다",
+        "location": "h-a38b4c3cd7"
+      },
+      "next": "v4:22:h-a38b4c3cd7:e:777b21dad488:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:0edcb4b0b1dc:1": {
+      "id": "v4:22:h-dfc587e5a5:e:0edcb4b0b1dc:1",
+      "type": "stage",
+      "direction": "미오가 입을 다문다. 카에데는 새 질문을 더 얹지 않고 다른 과자를 접시 가운데로 돌려 놓는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 176,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-a4dcc30585:e:4d4350752ee0:1"
+    },
+    "v4:22:h-dfc587e5a5:e:e835429d3dcb:1": {
+      "id": "v4:22:h-dfc587e5a5:e:e835429d3dcb:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그것까지 싫어하면 넌 오늘 어떤 대답 하고 싶었는데.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 174,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:0edcb4b0b1dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:c03bea58acd2:1": {
+      "id": "v4:22:h-dfc587e5a5:e:c03bea58acd2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 듣고 싶었던 말 한 거네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 172,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:e835429d3dcb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:c93b545ad31f:1": {
+      "id": "v4:22:h-dfc587e5a5:e:c93b545ad31f:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "응. 그거 들으려고 물은 건 맞아.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 170,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:c03bea58acd2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:57c0491ad356:1": {
+      "id": "v4:22:h-dfc587e5a5:e:57c0491ad356:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 말한 다음에도 다른 말 했어. 됐지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 168,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:c93b545ad31f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:acd6b3eb6716:1": {
+      "id": "v4:22:h-dfc587e5a5:e:acd6b3eb6716:1",
+      "type": "stage",
+      "direction": "카에데가 접시 옆 부스러기를 손끝으로 조금 모은다. 미오는 자기 말 때문에 누군가를 위한 새 과자가 만들어지기로 정해진 것처럼 기뻐하지 않는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 166,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:57c0491ad356:1"
+    },
+    "v4:22:h-dfc587e5a5:e:e21dcba4ca14:1": {
+      "id": "v4:22:h-dfc587e5a5:e:e21dcba4ca14:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "알아. 그런데 그쪽 생각도 났어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 164,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:acd6b3eb6716:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:aafe2d0b0d0c:1": {
+      "id": "v4:22:h-dfc587e5a5:e:aafe2d0b0d0c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 그냥 지금 접시 말한 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 162,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:e21dcba4ca14:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:08504cabb7b8:1": {
+      "id": "v4:22:h-dfc587e5a5:e:08504cabb7b8:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "들고 다니면서 먹을 사람도 있겠네.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 160,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:aafe2d0b0d0c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:f71b44856593:1": {
+      "id": "v4:22:h-dfc587e5a5:e:f71b44856593:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금. 그런데 바싹 부서지는 것만 있으면 부스러기 때문에 귀찮아. 여기서 먹을 때는 덜 떨어지잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 158,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:08504cabb7b8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:25c3db603841:1": {
+      "id": "v4:22:h-dfc587e5a5:e:25c3db603841:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "덜 익은 것 같진 않아?",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 156,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:f71b44856593:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:d8dffa44f305:1": {
+      "id": "v4:22:h-dfc587e5a5:e:d8dffa44f305:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기 물렁한 건 그렇게 싫지는 않은데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 154,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:25c3db603841:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:fbf318c677bd:1": {
+      "id": "v4:22:h-dfc587e5a5:e:fbf318c677bd:1",
+      "type": "stage",
+      "direction": "미오가 자기가 베어 문 가운데를 본다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 152,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:d8dffa44f305:1"
+    },
+    "v4:22:h-dfc587e5a5:e:cca7c3e5e0c1:1": {
+      "id": "v4:22:h-dfc587e5a5:e:cca7c3e5e0c1:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "나는 끝이 좀 더 씹히는 쪽이 좋아. 가운데는 무거워.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 150,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:fbf318c677bd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:fb241440babd:1": {
+      "id": "v4:22:h-dfc587e5a5:e:fb241440babd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 네 말도 하나 해. 나 따라 하는지 보려고 다 숨기지 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 148,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:cca7c3e5e0c1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:b0c94d702895:1": {
+      "id": "v4:22:h-dfc587e5a5:e:b0c94d702895:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 카에데도 조금 웃는다. 자기가 남에게 어떻게 보이는지 전혀 모르는 사람은 아니었다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 146,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:fb241440babd:1"
+    },
+    "v4:22:h-dfc587e5a5:e:1555b125108e:1": {
+      "id": "v4:22:h-dfc587e5a5:e:1555b125108e:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "다른 사람이 먼저 괜찮다고 하면, 내가 너무 따지나 생각해. 생각만 하는 거지 안 따지는 건 아니고.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 144,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:b0c94d702895:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:02aac9d7625f:1": {
+      "id": "v4:22:h-dfc587e5a5:e:02aac9d7625f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 142,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:1555b125108e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:08c0838564cf:1": {
+      "id": "v4:22:h-dfc587e5a5:e:08c0838564cf:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그럴 수도 있지. 나도 그래.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 140,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:02aac9d7625f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:a06e83e0fc06:1": {
+      "id": "v4:22:h-dfc587e5a5:e:a06e83e0fc06:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "먼저 말하면 따라 할 것 같아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 138,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:08c0838564cf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:d624ef17be31:1": {
+      "id": "v4:22:h-dfc587e5a5:e:d624ef17be31:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "그러면 네 대답이 내 뒤로 오잖아.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 136,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:a06e83e0fc06:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-dfc587e5a5:e:5509de826cd0:1": {
+      "id": "v4:22:h-dfc587e5a5:e:5509de826cd0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 어떻게 느꼈어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 134,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "C. 카에데의 답을 먼저 묻는다",
+        "location": "h-dfc587e5a5"
+      },
+      "next": "v4:22:h-dfc587e5a5:e:d624ef17be31:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:KAEDE-01A:menu": {
+      "id": "v4:22:KAEDE-01A:menu",
+      "type": "menu",
+      "q": "첫 대답",
+      "options": [
+        {
+          "id": "A",
+          "label": "맛있다고 먼저 말한다",
+          "to": "v4:22:h-9f78aca1d7:e:fb149ebc79a7:1",
+          "set": {
+            "KAEDE-01A": "A"
+          }
+        },
+        {
+          "id": "B",
+          "label": "달다는 말을 먼저 한다",
+          "to": "v4:22:h-a38b4c3cd7:e:87062a4cddb4:1",
+          "set": {
+            "KAEDE-01A": "B"
+          }
+        },
+        {
+          "id": "C",
+          "label": "카에데의 답을 먼저 묻는다",
+          "to": "v4:22:h-dfc587e5a5:e:5509de826cd0:1",
+          "set": {
+            "KAEDE-01A": "C"
+          }
+        }
+      ],
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 40,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "선택 KAEDE-01A — 첫 대답",
+        "location": "h-73d3def243"
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:04e3779edb6d:1": {
+      "id": "v4:22:h-2c2caa6d82:e:04e3779edb6d:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "어때.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 38,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:KAEDE-01A:menu",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:07263ac9f6f7:1": {
+      "id": "v4:22:h-2c2caa6d82:e:07263ac9f6f7:1",
+      "type": "stage",
+      "direction": "미오가 한 입 베어 문다. 겉은 단단하고 안쪽은 조금 덜 익은 듯한 식감이다. 나쁘지는 않은데 삼킨 뒤 입 안에 단맛이 오래 남는다. 카에데가 바로 묻는다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 36,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:04e3779edb6d:1"
+    },
+    "v4:22:h-2c2caa6d82:e:2db155965423:1": {
+      "id": "v4:22:h-2c2caa6d82:e:2db155965423:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아니. 아무거나. 골랐으면 먹어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 34,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:07263ac9f6f7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:9a2b8cc71ed0:1": {
+      "id": "v4:22:h-2c2caa6d82:e:9a2b8cc71ed0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이거 말고 다른 거?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 32,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:2db155965423:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:542b03feb59d:1": {
+      "id": "v4:22:h-2c2caa6d82:e:542b03feb59d:1",
+      "type": "stage",
+      "direction": "카에데가 접시를 밀어 준다. 미오는 제일 가까운 과자를 집는다. 카에데의 손이 잠깐 따라오다가 멈춘다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 30,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:9a2b8cc71ed0:1"
+    },
+    "v4:22:h-2c2caa6d82:e:60244636ae7d:1": {
+      "id": "v4:22:h-2c2caa6d82:e:60244636ae7d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "…먹을게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 28,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:542b03feb59d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:718b9f99fde6:1": {
+      "id": "v4:22:h-2c2caa6d82:e:718b9f99fde6:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "앉은 것 말고 먹겠다고 말하랬어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 26,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:60244636ae7d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:34462f269d1b:1": {
+      "id": "v4:22:h-2c2caa6d82:e:34462f269d1b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방금 앉으면 줄 것처럼 말했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 24,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:718b9f99fde6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:c6a3429a53d5:1": {
+      "id": "v4:22:h-2c2caa6d82:e:c6a3429a53d5:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아직.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 22,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:34462f269d1b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:c07c4ffeff66:1": {
+      "id": "v4:22:h-2c2caa6d82:e:c07c4ffeff66:1",
+      "type": "stage",
+      "direction": "미오가 의자를 당긴다. 카에데가 접시를 자기 쪽으로 끌어당긴다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 20,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:c6a3429a53d5:1"
+    },
+    "v4:22:h-2c2caa6d82:e:a7a26626259a:1": {
+      "id": "v4:22:h-2c2caa6d82:e:a7a26626259a:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "보고만 있는 사람 말고 먹고 말할 사람.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 18,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:c07c4ffeff66:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:2317160e31e1:1": {
+      "id": "v4:22:h-2c2caa6d82:e:2317160e31e1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 안 줘?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 16,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:a7a26626259a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:f854611e7f84:1": {
+      "id": "v4:22:h-2c2caa6d82:e:f854611e7f84:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "아니. 먹을 사람 찾고 있었어.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 14,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:2317160e31e1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:4b3a49d8527f:1": {
+      "id": "v4:22:h-2c2caa6d82:e:4b3a49d8527f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "먹어도 되는 거였어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 12,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:f854611e7f84:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:9e91d117c705:1": {
+      "id": "v4:22:h-2c2caa6d82:e:9e91d117c705:1",
+      "type": "say",
+      "speaker": "카에데",
+      "actor": "kaede",
+      "text": "보고만 있으면 안 줄 건데.",
+      "mono": false,
+      "delivery": "카에데",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 10,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:4b3a49d8527f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "카에데",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:22:h-2c2caa6d82:e:3a6fb4ba4873:1": {
+      "id": "v4:22:h-2c2caa6d82:e:3a6fb4ba4873:1",
+      "type": "stage",
+      "direction": "푸드코트의 사용하지 않는 조리대. 카에데가 접시 위에 작은 과자를 세 개 올린다. 두 개를 돌려 놓고 세 번째를 다시 뒤집는다. 미오는 한동안 보고 있다.",
+      "source": {
+        "file": "22_자유시간_카에데_01.md",
+        "line": 8,
+        "fileSha256": "46a13d290296eed9340118dcec08f946d07c66a1bd7f1aa066bb4b4a3c2131e3",
+        "heading": "시작 — 빈 접시 하나",
+        "location": "h-2c2caa6d82"
+      },
+      "next": "v4:22:h-2c2caa6d82:e:9e91d117c705:1"
+    }
+  },
+  "kind": "freetime",
+  "routingStatus": "authored_simple_convergence",
+  "sourceFile": "22_자유시간_카에데_01.md",
+  "completionFlag": "fte:22:complete",
+  "eligibility": "Caller must enforce the exact manuscript day/time and prior-meeting requirements. No caller may auto-play every library file.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "22_자유시간_카에데_01.md:h-e2c37203d8": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-bb8e666f17": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-c86f2cda7c": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-9ae02cc096": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-eb0e90bff8": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-720d0cca28": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-a4dcc30585": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-9f78aca1d7": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-a38b4c3cd7": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-dfc587e5a5": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-73d3def243": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "22_자유시간_카에데_01.md:h-2c2caa6d82": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

@@ -1,0 +1,4930 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:90:h-aad5ebee64:e:97538e091bcf:1",
+  "nodes": {
+    "v4:48:return:late:RI02Late6AM": {
+      "id": "v4:48:return:late:RI02Late6AM",
+      "type": "return"
+    },
+    "v4:48:h-0cd20d37db:e:5a435b23299a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-0cd20d37db:e:5a435b23299a:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가고개를끄덕인다.각질문A1~A3의답을보상처럼다시주고받지는않는다.미오는자기가들은답만가지고휴게실을나온다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 451,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3",
+        "location": "h-0cd20d37db"
+      },
+      "next": "v4:48:return:late:RI02Late6AM"
+    },
+    "v4:48:missing:current-reason-to-watch:late:RI02Late6AM": {
+      "id": "v4:48:missing:current-reason-to-watch:late:RI02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-RI02-B"
+    },
+    "v4:48:h-5b950e7794:e:915155cf7901:1:late:RI02Late6AM": {
+      "id": "v4:48:h-5b950e7794:e:915155cf7901:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알고 싶어서. 그리고 네가 알려 줬을 때 조금 이긴 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 441,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1",
+        "location": "h-5b950e7794"
+      },
+      "next": "v4:48:h-0cd20d37db:e:5a435b23299a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-abdbc2b5cc:e:1ec983dc1f43:1:late:RI02Late6AM": {
+      "id": "v4:48:h-abdbc2b5cc:e:1ec983dc1f43:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 이번에도 내 생각 바꾸는 걸 보고 싶어서. 두 번째 건 좀 얄미웠지만.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 445,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2",
+        "location": "h-abdbc2b5cc"
+      },
+      "next": "v4:48:h-0cd20d37db:e:5a435b23299a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-0cd20d37db:e:09113f35f220:1:late:RI02Late6AM": {
+      "id": "v4:48:h-0cd20d37db:e:09113f35f220:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 하면 얼마나 안 되는지도 보고 싶었어. 네가 앉아서 나를 보면 어떻게 말할지도.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 449,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3",
+        "location": "h-0cd20d37db"
+      },
+      "next": "v4:48:h-0cd20d37db:e:5a435b23299a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:current-reason-to-watch:late:RI02Late6AM": {
+      "id": "v4:48:current-reason-to-watch:late:RI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-RI02-B",
+          "equals": "B1",
+          "to": "v4:48:h-5b950e7794:e:915155cf7901:1:late:RI02Late6AM"
+        },
+        {
+          "flag": "F-RI02-B",
+          "equals": "B2",
+          "to": "v4:48:h-abdbc2b5cc:e:1ec983dc1f43:1:late:RI02Late6AM"
+        },
+        {
+          "flag": "F-RI02-B",
+          "equals": "B3",
+          "to": "v4:48:h-0cd20d37db:e:09113f35f220:1:late:RI02Late6AM"
+        }
+      ],
+      "default": "v4:48:missing:current-reason-to-watch:late:RI02Late6AM"
+    },
+    "v4:48:h-5badb47f2a:e:c07fdc4187e4:1:late:RI02Late6AM": {
+      "id": "v4:48:h-5badb47f2a:e:c07fdc4187e4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "지금 네가 가려니까 물은 건데. 내가 듣기 싫다고 붙잡으면 네가 더 오래 있겠냐.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 437,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "끝 — 돌아오지 않은 질문",
+        "location": "h-5badb47f2a"
+      },
+      "next": "v4:48:current-reason-to-watch:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-5badb47f2a:e:df07d66fa235:1:late:RI02Late6AM": {
+      "id": "v4:48:h-5badb47f2a:e:df07d66fa235:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 싫어할 만한 대답이어도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 435,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "끝 — 돌아오지 않은 질문",
+        "location": "h-5badb47f2a"
+      },
+      "next": "v4:48:h-5badb47f2a:e:c07fdc4187e4:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-5badb47f2a:e:aa8a6fd33d46:1:late:RI02Late6AM": {
+      "id": "v4:48:h-5badb47f2a:e:aa8a6fd33d46:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "너는 왜 계속 봤어?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 433,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "끝 — 돌아오지 않은 질문",
+        "location": "h-5badb47f2a"
+      },
+      "next": "v4:48:h-5badb47f2a:e:df07d66fa235:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-5badb47f2a:e:969468904706:1:late:RI02Late6AM": {
+      "id": "v4:48:h-5badb47f2a:e:969468904706:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가자리에서일어난다.리쿠가동전을주머니에넣는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 431,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "끝 — 돌아오지 않은 질문",
+        "location": "h-5badb47f2a"
+      },
+      "next": "v4:48:h-5badb47f2a:e:aa8a6fd33d46:1:late:RI02Late6AM"
+    },
+    "v4:48:missing:actual-previous-card-game:late:RI02Late6AM": {
+      "id": "v4:48:missing:actual-previous-card-game:late:RI02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-RI01-B"
+    },
+    "v4:48:F-RI01-B1:e:f98c5628c4bd:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B1:e:f98c5628c4bd:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알아. 그래도 내가 그 말 하는 건 지금 좀 좋아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 413,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B1:리쿠가못보고고른판에서틀렸다",
+        "location": "F-RI01-B1"
+      },
+      "next": "v4:48:h-5badb47f2a:e:969468904706:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-B1:e:13bdc859edac:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B1:e:13bdc859edac:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그건 못 봐서 틀린 거야.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 411,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B1:리쿠가못보고고른판에서틀렸다",
+        "location": "F-RI01-B1"
+      },
+      "next": "v4:48:F-RI01-B1:e:f98c5628c4bd:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-B1:e:658b79313de6:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B1:e:658b79313de6:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 지난번에는 틀렸잖아. 등 돌렸을 때.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 409,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B1:리쿠가못보고고른판에서틀렸다",
+        "location": "F-RI01-B1"
+      },
+      "next": "v4:48:F-RI01-B1:e:13bdc859edac:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-B2:e:af65451dae3d:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B2:e:af65451dae3d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그럼 오늘 하나는 맞혔네. 오른손.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 419,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B2:리쿠가직접보고맞혔다",
+        "location": "F-RI01-B2"
+      },
+      "next": "v4:48:h-5badb47f2a:e:969468904706:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-B2:e:ef4a414725bf:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B2:e:ef4a414725bf:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지난번엔 너무 잘 맞혀서 좀 싫었어. 내 손 보라고 했으니까 봤던 건데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 417,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B2:리쿠가직접보고맞혔다",
+        "location": "F-RI01-B2"
+      },
+      "next": "v4:48:F-RI01-B2:e:af65451dae3d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-B3:e:c1d983663931:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B3:e:c1d983663931:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "조금. 이번엔 질문부터 가지고 왔잖아.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 425,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B3:하트가없는판이었다",
+        "location": "F-RI01-B3"
+      },
+      "next": "v4:48:h-5badb47f2a:e:969468904706:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-B3:e:d6390512d57b:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-B3:e:d6390512d57b:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지난번엔 없는 하트를 고르라고 했지. 오늘도 내가 네가 못 이길 걸 골랐다고 생각했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 423,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-B3:하트가없는판이었다",
+        "location": "F-RI01-B3"
+      },
+      "next": "v4:48:F-RI01-B3:e:c1d983663931:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:actual-previous-card-game:late:RI02Late6AM": {
+      "id": "v4:48:actual-previous-card-game:late:RI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-RI01-B",
+          "equals": "B1",
+          "to": "v4:48:F-RI01-B1:e:658b79313de6:1:late:RI02Late6AM"
+        },
+        {
+          "flag": "F-RI01-B",
+          "equals": "B2",
+          "to": "v4:48:F-RI01-B2:e:ef4a414725bf:1:late:RI02Late6AM"
+        },
+        {
+          "flag": "F-RI01-B",
+          "equals": "B3",
+          "to": "v4:48:F-RI01-B3:e:d6390512d57b:1:late:RI02Late6AM"
+        }
+      ],
+      "default": "v4:48:missing:actual-previous-card-game:late:RI02Late6AM"
+    },
+    "v4:48:h-1f8ab0d7ff:e:8fde71d37905:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:8fde71d37905:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가그의카드판을떠올린다.그가모든행동을그이유하나로설명했다고받아들이지않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 405,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:actual-previous-card-game:late:RI02Late6AM"
+    },
+    "v4:48:h-1f8ab0d7ff:e:9bff088e9537:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:9bff088e9537:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "더 안 보여 주고 싶어져. 네가 못 본 게 남아 있으면 내가 안 진 것 같아서.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 403,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:8fde71d37905:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-1f8ab0d7ff:e:784e4b043d77:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:784e4b043d77:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "더 속여?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 401,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:9bff088e9537:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-1f8ab0d7ff:e:c18d1bebb874:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:c18d1bebb874:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "나는 안 보여서 놀라는 얼굴이 좋아. 속았다고 짜증 내면서 한 번 더 보자는 얼굴도. 근데 내가 틀렸다는 말 하려고 계속 보는 얼굴이면 나도 좀 다르게 해.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 399,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:784e4b043d77:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-1f8ab0d7ff:e:b92830c3eb60:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:b92830c3eb60:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가동전을탁자에내려놓는다.구르지않게손끝으로받친다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 397,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:c18d1bebb874:1:late:RI02Late6AM"
+    },
+    "v4:48:h-1f8ab0d7ff:e:e92c611e01e5:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:e92c611e01e5:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "말해 줬잖아. 그때 싫은 건 남아도. 네가 방금 내 손 보려고 할 때는 좋았고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 395,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:b92830c3eb60:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-1f8ab0d7ff:e:0d1c5259a1d4:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:0d1c5259a1d4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 다 말해 줄 것처럼 하더니.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 393,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:e92c611e01e5:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-1f8ab0d7ff:e:cf904f330646:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:cf904f330646:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "오늘은. 오른손 맞혔을 때는 조금 싫었어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 391,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:0d1c5259a1d4:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-1f8ab0d7ff:e:7f073b006ceb:1:late:RI02Late6AM": {
+      "id": "v4:48:h-1f8ab0d7ff:e:7f073b006ceb:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 내가 못 맞히면 좋았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 389,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "보고 싶었던 얼굴",
+        "location": "h-1f8ab0d7ff"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:cf904f330646:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:4f2f754a2ecb:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:4f2f754a2ecb:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 그럼 서로 바꾸면 돼. 내가 먼저 다른 거 할게.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 335,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:7f073b006ceb:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:7d1e5e2d3385:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:7d1e5e2d3385:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 아는 걸 매번 모른 척할 필요도 없지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 333,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:4f2f754a2ecb:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:14019af103f2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:14019af103f2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "다른 걸 해야지. 네가 모르는 걸로. 네가 오늘 알았다고 내일도 다 안다고 하면 좀 귀찮아질 거고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 331,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:7d1e5e2d3385:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:06300471fd0f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:06300471fd0f:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 내가 다음에 여기만 보면 못 하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 329,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:14019af103f2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:480d14b98ead:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:480d14b98ead:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "그가같은동작을천천히해보인다.미오는이번에는동전이방석옆에떨어지는것을본다.이방법을알았다고다른장면의대역/최면조건까지알게되지않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 327,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:06300471fd0f:1:late:RI02Late6AM"
+    },
+    "v4:48:h-bb32fa95e7:e:b61dd901ec01:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:b61dd901ec01:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그러니까 손이 비는 때를 네가 먼저 골랐다고 생각하게 해야지.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 325,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:480d14b98ead:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:22bbd3ef3b6a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:22bbd3ef3b6a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 내 눈 어디 있는지 보는 건 알았는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 323,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:b61dd901ec01:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:c8df4d75b29c:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:c8df4d75b29c:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "여기. 네가 오른손 볼 때 내 몸이 이쪽으로 왔어. 손은 계속 여기 있었고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 321,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:22bbd3ef3b6a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:730ea8410b6b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:730ea8410b6b:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가방석옆에서동전을꺼내보인다.의자밖이나옷속다른사람의물건에서나오는것은아니다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 319,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:c8df4d75b29c:1:late:RI02Late6AM"
+    },
+    "v4:48:h-bb32fa95e7:e:68609e31764a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:68609e31764a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 그래서 부탁하는 거야. 안다고 잘할 거라고 말한 건 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 317,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:730ea8410b6b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:91ce00985aae:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:91ce00985aae:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "알려 주면 다음에는 그때만 볼 텐데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 315,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:68609e31764a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-bb32fa95e7:e:8a6dcc181371:1:late:RI02Late6AM": {
+      "id": "v4:48:h-bb32fa95e7:e:8a6dcc181371:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 알려 줘. 지금 내가 어느 때 놓쳤는지 궁금해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 313,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B1. 이번 방법은 알려 달라고 한다",
+        "location": "h-bb32fa95e7"
+      },
+      "next": "v4:48:h-bb32fa95e7:e:91ce00985aae:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:3cc75a0407b1:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:3cc75a0407b1:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가더따지려다입을닫는다.리쿠는지금웃긴장면을만들었지만처음방법의비밀까지알려준것은아니다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 357,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:7f073b006ceb:1:late:RI02Late6AM"
+    },
+    "v4:48:h-dd09ced533:e:35ea4da2245d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:35ea4da2245d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네가 이번엔 나를 속이는 줄 알았는데. 본 척만 하는 거.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 355,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:3cc75a0407b1:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:b67a08df5de5:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:b67a08df5de5:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 마술 안 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 353,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:35ea4da2245d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:a81066a6ca2a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:a81066a6ca2a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 네가 없을 데만 보길래.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 351,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:b67a08df5de5:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:2073b710fbe4:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:2073b710fbe4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그대로네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 349,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:a81066a6ca2a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:68beb97426f0:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:68beb97426f0:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "이번동작의끝에동전은그의왼손에있다.그가왼손을먼저펴보인다.미오는사라질줄알고반대손을보고있다가웃는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 347,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:2073b710fbe4:1:late:RI02Late6AM"
+    },
+    "v4:48:h-dd09ced533:e:c50c56e6c080:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:c50c56e6c080:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가동전을회수하는부분은몸으로가린다.미오는이경로에서방석옆이정답이었다는것을직접보지못한다.그가일어나책상반대쪽에선뒤동전을다시보여준다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 345,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:68beb97426f0:1:late:RI02Late6AM"
+    },
+    "v4:48:h-dd09ced533:e:71e213356ffc:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:71e213356ffc:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그렇다고 네가 다 아는 건 아니잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 343,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:c50c56e6c080:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:d5cb2caee0b0:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:d5cb2caee0b0:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네 얼굴이 여기에 있는데 어떻게 숨길 건데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 341,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:71e213356ffc:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-dd09ced533:e:2dcd42f1eebc:1:late:RI02Late6AM": {
+      "id": "v4:48:h-dd09ced533:e:2dcd42f1eebc:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알려 주지는 마. 한 번 더. 이번에는 내가 어디 보는지 말 안 할게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 339,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B2. 방법은 안 듣고 한 번 더 본다",
+        "location": "h-dd09ced533"
+      },
+      "next": "v4:48:h-dd09ced533:e:d5cb2caee0b0:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:fe6ecd85c15f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:fe6ecd85c15f:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가리쿠에게동전을돌려준다.이경로에서손기술을즉시익혔다거나첫방법을전수받았다고처리하지않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 385,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-1f8ab0d7ff:e:7f073b006ceb:1:late:RI02Late6AM"
+    },
+    "v4:48:h-06e6fdb41d:e:a42733cc17c9:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:a42733cc17c9:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 네가 한 걸 봤다는 말. 안 된 것까지.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 383,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:fe6ecd85c15f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:123185ba0a0d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:123185ba0a0d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 뭐가 잘됐다는 말 아니지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 381,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:a42733cc17c9:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:eb9fe2ba04ab:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:eb9fe2ba04ab:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 잘 봤어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 379,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:123185ba0a0d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:33ed3d21669e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:33ed3d21669e:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "끝. 나는 여기까지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 377,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:eb9fe2ba04ab:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:b92769597a3f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:b92769597a3f:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가손을모으고다음시도를기다린다.미오는이번에는동전을빼지않고양손사이에서한번옮긴뒤주먹을편다.아무것도안사라진다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 375,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:33ed3d21669e:1:late:RI02Late6AM"
+    },
+    "v4:48:h-06e6fdb41d:e:21497fcb02b8:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:21497fcb02b8:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "맞네. 내가 끝내 줬다.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 373,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:b92769597a3f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:d35b6fd529d5:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:d35b6fd529d5:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도 내가 다 할 때까지 기다린다고 했어야지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 371,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:21497fcb02b8:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:64c96bd046d3:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:64c96bd046d3:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가뒤손을편다.동전은그대로있다.숨기기전관객이답하는모양이되자미오가먼저웃는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 369,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:d35b6fd529d5:1:late:RI02Late6AM"
+    },
+    "v4:48:h-06e6fdb41d:e:b72334ebbc15:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:b72334ebbc15:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "답하지 말고. 아직 안 끝났어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 367,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:64c96bd046d3:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:eb746f12694a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:eb746f12694a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "뒤.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 365,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:b72334ebbc15:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-06e6fdb41d:e:d07af7337daf:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:d07af7337daf:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가몸으로가리며방석옆의동전을회수한뒤미오에게준다.미오는첫방법을배우지않은상태로양손사이에서동전을옮긴다.손이겹칠때한손을급히뒤로뺀다.리쿠는그손을보고있다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 363,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:eb746f12694a:1:late:RI02Late6AM"
+    },
+    "v4:48:h-06e6fdb41d:e:44a52fc49eb0:1:late:RI02Late6AM": {
+      "id": "v4:48:h-06e6fdb41d:e:44a52fc49eb0:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나한테 줘. 네가 보는 데서 할게. 대신 일부러 못 본 척하지 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 361,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "B3. 미오도 같은 것을 해 본다",
+        "location": "h-06e6fdb41d"
+      },
+      "next": "v4:48:h-06e6fdb41d:e:d07af7337daf:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI02-B:menu:late:RI02Late6AM": {
+      "id": "v4:48:F-RI02-B:menu:late:RI02Late6AM",
+      "type": "menu",
+      "q": "모르는 채 볼 수 있을까",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 309,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "선택 F-RI02-B — 모르는 채 볼 수 있을까",
+        "location": "F-RI02-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "이번 방법은 알려 달라고 한다",
+          "to": "v4:48:h-bb32fa95e7:e:8a6dcc181371:1:late:RI02Late6AM",
+          "set": {
+            "F-RI02-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "방법은 안 듣고 한 번 더 본다",
+          "to": "v4:48:h-dd09ced533:e:2dcd42f1eebc:1:late:RI02Late6AM",
+          "set": {
+            "F-RI02-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "미오도 같은 것을 해 본다",
+          "to": "v4:48:h-06e6fdb41d:e:44a52fc49eb0:1:late:RI02Late6AM",
+          "set": {
+            "F-RI02-B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:48:missing:actual-previous-guess:late:RI02Late6AM": {
+      "id": "v4:48:missing:actual-previous-guess:late:RI02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-RI01-A"
+    },
+    "v4:48:F-RI01-A1:e:9838b42889be:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-A1:e:9838b42889be:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "맞을 수도 있고. 그걸로 잘 봤다고 할지는 네가 정할 거고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 293,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-A1:오답을 골랐다",
+        "location": "F-RI01-A1"
+      },
+      "next": "v4:48:F-RI02-B:menu:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-A1:e:4a076ce2d4dc:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-A1:e:4a076ce2d4dc:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지난번처럼 그냥 고르면 또 틀릴 수도 있겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 291,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-A1:오답을 골랐다",
+        "location": "F-RI01-A1"
+      },
+      "next": "v4:48:F-RI01-A1:e:9838b42889be:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-A2:e:ad5eb276f298:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-A2:e:ad5eb276f298:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "안 해. 오늘은 보여 주는 거라고 했잖아. 네가 안 맞힌 걸 점수로 세지도 않을 거고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 299,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-A2:추측을 거절했다",
+        "location": "F-RI01-A2"
+      },
+      "next": "v4:48:F-RI02-B:menu:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-A2:e:822b4c81c960:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-A2:e:822b4c81c960:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에도 하나 골라 보라는 말은 하지 마. 못 봤다고 했으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 297,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-A2:추측을 거절했다",
+        "location": "F-RI01-A2"
+      },
+      "next": "v4:48:F-RI01-A2:e:ad5eb276f298:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-A3:e:a32fc89a38c8:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-A3:e:a32fc89a38c8:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "처음 본 것하고 지금 어디 있는 건 달라. 이번엔 없는 동전을 처음부터 있다고 한 건 아니야.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 305,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-A3:전체를 먼저 확인했다",
+        "location": "F-RI01-A3"
+      },
+      "next": "v4:48:F-RI02-B:menu:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI01-A3:e:7f0bfd42cbe4:1:late:RI02Late6AM": {
+      "id": "v4:48:F-RI01-A3:e:7f0bfd42cbe4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "처음에 양손 다 봤는데도 모르겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 303,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "F-RI01-A3:전체를 먼저 확인했다",
+        "location": "F-RI01-A3"
+      },
+      "next": "v4:48:F-RI01-A3:e:a32fc89a38c8:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:actual-previous-guess:late:RI02Late6AM": {
+      "id": "v4:48:actual-previous-guess:late:RI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-RI01-A",
+          "equals": "A1",
+          "to": "v4:48:F-RI01-A1:e:4a076ce2d4dc:1:late:RI02Late6AM"
+        },
+        {
+          "flag": "F-RI01-A",
+          "equals": "A2",
+          "to": "v4:48:F-RI01-A2:e:822b4c81c960:1:late:RI02Late6AM"
+        },
+        {
+          "flag": "F-RI01-A",
+          "equals": "A3",
+          "to": "v4:48:F-RI01-A3:e:7f0bfd42cbe4:1:late:RI02Late6AM"
+        }
+      ],
+      "default": "v4:48:missing:actual-previous-guess:late:RI02Late6AM"
+    },
+    "v4:48:h-221fbc1bfc:e:051e88a1bac7:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:051e88a1bac7:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그래. 이번에는 안 보였지.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 285,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:actual-previous-guess:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:0936d727a16e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:0936d727a16e:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에는 모르겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 283,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:051e88a1bac7:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:01a8175b9e84:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:01a8175b9e84:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가양손을편다.미오가그의손목을보려고몸을기울인다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 281,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:0936d727a16e:1:late:RI02Late6AM"
+    },
+    "v4:48:h-221fbc1bfc:e:fa500f8f7e40:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:fa500f8f7e40:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가웃는다.그는바로다음동작을한다.이번에는미오가손가락을보고있는동안몸을조금움직여동전을의자방석옆으로떨어뜨려놓는다.이짧은부분은리쿠손의실제행동을제작지문에명시하고미오의직접관찰과구별한다.대역이나물체순간이동이아니다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 279,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:01a8175b9e84:1:late:RI02Late6AM"
+    },
+    "v4:48:h-221fbc1bfc:e:043566bac000:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:043566bac000:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 번쯤은 맞히고 싶어서. 네가 나를 안 속이는 사람이라고 생각한 건 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 277,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:fa500f8f7e40:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:a1aeada431dd:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:a1aeada431dd:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네가 물었잖아. 안다고 하고도 끝까지 우기면 네가 짜증 낼 거고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 275,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:043566bac000:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:1f91215d4a72:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:1f91215d4a72:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐야. 안 감춰?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 273,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:a1aeada431dd:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:87ac12636cfe:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:87ac12636cfe:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가오른손을펴동전을보여준다.미오는너무쉽게끝나오히려소리를내웃는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 271,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:1f91215d4a72:1:late:RI02Late6AM"
+    },
+    "v4:48:h-221fbc1bfc:e:ee27057a179f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:ee27057a179f:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "있어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 269,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:87ac12636cfe:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:ffc37548c486:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:ffc37548c486:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오른손에 있지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 267,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:ee27057a179f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:515bc0f44c7b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:515bc0f44c7b:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 왼손으로동전을옮기는듯보인다.그가왼손을펴자비어있다.미오는그의오른손을본다.리쿠는바로펴지않고어깨위쪽을가리킨다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 265,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:ffc37548c486:1:late:RI02Late6AM"
+    },
+    "v4:48:h-221fbc1bfc:e:f9fae51ccf3d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:f9fae51ccf3d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "아니. 어디로 갔는지 보이면 봤다고 해도 되고. 일단 내가 끝낼 때까지만.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 263,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:515bc0f44c7b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:a425e7aad9b2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:a425e7aad9b2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "볼래. 이번엔 내가 맞혀야 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 261,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:f9fae51ccf3d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:d1487bb5ce89:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:d1487bb5ce89:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "이건 그냥 봐. 네 비밀값으로 치지는 않을게. 관객 하기 싫으면 말하고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 259,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:a425e7aad9b2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:d5a78f2b08d1:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:d5a78f2b08d1:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 어깨를들어보인다.미오앞으로동전을내민다.오른손의동전한개와빈왼손을보이고,동전앞뒤도보여준뒤한손에쥔다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 257,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:d1487bb5ce89:1:late:RI02Late6AM"
+    },
+    "v4:48:h-221fbc1bfc:e:9c29c5b2b224:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:9c29c5b2b224:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 먼저 그런 말 할 줄은 몰랐네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 255,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:d5a78f2b08d1:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:c81af89535aa:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:c81af89535aa:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "내가 무슨 말 해도 그게 아닌 답을 알고 있다고 할까 봐. 그런 건 싫으니까.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 253,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:9c29c5b2b224:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:8799535cb0e3:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:8799535cb0e3:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "생각보다 제대로 대답했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 251,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:c81af89535aa:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-221fbc1bfc:e:effe22c68481:1:late:RI02Late6AM": {
+      "id": "v4:48:h-221fbc1bfc:e:effe22c68481:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "됐어? 말 돌렸다고 생각하면 지금 말해.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 249,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "대답의 값",
+        "location": "h-221fbc1bfc"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:8799535cb0e3:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:c67279f7089d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:c67279f7089d:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오는방금그를관객이아닌검사관으로먼저상정했다는것을알아차린다.그렇다고그의모든속임을앞으로양해한것은아니다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 49,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:effe22c68481:1:late:RI02Late6AM"
+    },
+    "v4:48:h-d7cdfcef6b:e:16a60f795289:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:16a60f795289:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 계속 설명할 것 같아서. 지금 네가 물은 것처럼 뭘 아는지도 다 대답해야 하면 피곤하거든.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 47,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:c67279f7089d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:7e5cfda41c87:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:7e5cfda41c87:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 아는 것도 모르는 척할 때 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 45,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:16a60f795289:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:5ffb29ea4e8c:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:5ffb29ea4e8c:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "방법 다 안다고 먼저 정하지 마. 처음 보는 것도 있어. 근데 마술사 아들이라고 앉혀 놓으면 놀라도 진짜 놀랐냐고 물어. 아는 척 안 했는데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 43,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:7e5cfda41c87:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:316ee25444d7:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:316ee25444d7:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 동전을 손바닥에놓는다.지금은관객에게고르라고하지않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 41,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:5ffb29ea4e8c:1:late:RI02Late6AM"
+    },
+    "v4:48:h-d7cdfcef6b:e:4af0145a62dd:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:4af0145a62dd:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 넌 방법 다 알 테니까 뭘 싫어하는지 궁금했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 39,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:316ee25444d7:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:5b436d112be2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:5b436d112be2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그래서 물은 거야? 내가 나한테 걸리라고?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 37,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:4af0145a62dd:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:1faba4873fb9:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:1faba4873fb9:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 하는 거잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 35,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:5b436d112be2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:bf820134b789:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:bf820134b789:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "있어. 자꾸 내 눈 보고 맞히라는 거.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 33,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:1faba4873fb9:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-d7cdfcef6b:e:eaaddc0ca500:1:late:RI02Late6AM": {
+      "id": "v4:48:h-d7cdfcef6b:e:eaaddc0ca500:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "남이 하면 보기 싫은 마술도 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 31,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A1. 어떤 마술을 보기 싫어하는지 묻는다",
+        "location": "h-d7cdfcef6b"
+      },
+      "next": "v4:48:h-d7cdfcef6b:e:bf820134b789:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:35f219acf9e8:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:35f219acf9e8:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 동전을 다시 손바닥 위에 놓는다. 미오는 그 말을 듣고 바로 노트를 꺼내지 않는다. 현재 아버지의 행방이나 과거 사고의 새 목격, 마법을 가르친 경위는 이 이야기에서 확인하지 않았다. 오래전 공연의 익명 관객을 현재 참가자 누군가로 연결하지 않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 151,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:effe22c68481:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:9db37197a621:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:9db37197a621:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "나 가고 나서 누구한테 불쌍해서 그랬대, 이러지 마. 아까 너한테 짜증도 났고 지금 동전 보여 주고도 싶은데. 또 아버지 아들부터 말하면 나 다시 처음부터 소개해야 하잖아.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 149,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:35f219acf9e8:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:99a399d144d2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:99a399d144d2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 불쌍하다고 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 147,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:9db37197a621:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:009bc8ed1746:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:009bc8ed1746:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "조금. 근데 네가 계속 뭘 아냐고 물으면 내가 많이 아는 건 보여 주고 싶기도 해. 다 네가 만들어 놓은 내 불쌍한 이유는 아니야.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 145,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:99a399d144d2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:a6d342757ec2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:a6d342757ec2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 나한테도 장난 안 하면 재미없을까 봐?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 143,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:009bc8ed1746:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:8c1b88109cb9:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:8c1b88109cb9:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "다음엔 안 그러겠다고 해 놓고, 연습할 때도 아버지 이름부터 생각하더라. 그 말 하면 잘 들어줄 텐데. 누가 내 이름만 듣고 안 궁금해하면 내가 뭘 더 해야 하지. 그런 생각 하다가 그냥 장난부터 치고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 141,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:a6d342757ec2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:2bfe0f35d91b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:2bfe0f35d91b:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 자기가 조금 전 냈던 소개의 표정을 다시 해 보려다 입꼬리만 움직인다. 지금 실제 무대에 새로 올라가거나 미오에게 박수를 시키지는 않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 139,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:8c1b88109cb9:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:98c9cc3bf136:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:98c9cc3bf136:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 내가 불렀어. 아버지가 앞에 나온 것도 아닌데. 그 사람 뒤에서 기다리기만 했고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 137,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:2bfe0f35d91b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:7e40e3871169:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:7e40e3871169:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 그다음에 네가 다시 아버지 불렀네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 135,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:98c9cc3bf136:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:31d01dd263a4:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:31d01dd263a4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "처음 내 이름만 말한 거. 웃긴 건 그거야. 아무도 바로 웃지도 않았고 아직 잘한 것도 없는데. 그때 잠깐은 나 혼자 나온 것 같았어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 133,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:7e40e3871169:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:212fba154e89:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:212fba154e89:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "미안. 네가 좋아했던 건 뭐였는데? 아버지가 고른 것 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 131,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:31d01dd263a4:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:88e5b4236a99:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:88e5b4236a99:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 고개를 낮췄다가 다시 든다. 리쿠는 자기가 한 장난을 전부 사과하는 자리로 돌아가지 않는다. 미오도 이 대답을 들었으니 이제 리쿠의 장난은 모두 거절해도 되는 표를 받은 것처럼 말하지 않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 129,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:212fba154e89:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:63d8b5ee2cf2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:63d8b5ee2cf2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그랬지. 그런데 지금 네 말 싫어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 127,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:88e5b4236a99:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:919eaba34a64:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:919eaba34a64:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 내가 싫어해도 웃잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 125,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:63d8b5ee2cf2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:5708adc16181:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:5708adc16181:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 내가 웃으면 네가 잘 받아친 걸로 끝나니까.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 123,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:919eaba34a64:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:6ca9588fba96:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:6ca9588fba96:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 나한테 하는 말처럼 하면 너도 웃을 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 121,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:5708adc16181:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:3e0022c977ae:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:3e0022c977ae:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오는 바로 웃음을 거두려다 아직 웃고 있지도 않았다는 것을 느낀다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 119,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:6ca9588fba96:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:6677a20fc01b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:6677a20fc01b:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네가 지금 나 놀리는 건 알아?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 117,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:3e0022c977ae:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:3dd093c69510:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:3dd093c69510:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "사람들이 그때 바로 웃었다며.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 115,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:6677a20fc01b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:2ca65a6eb9d8:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:2ca65a6eb9d8:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그게 제일 좋았냐고 물은 거야?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 113,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:3dd093c69510:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:5a5f6c467149:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:5a5f6c467149:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 미오를 본다. 동전 위에 대고 있던 손가락이 멈춘다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 111,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:2ca65a6eb9d8:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:70602fac0b4b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:70602fac0b4b:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아버지 나온다고 말한 거?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 109,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:5a5f6c467149:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:232eaaefb816:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:232eaaefb816:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "맞아. 그래서 내가 먼저 물었어. 어느 게 제일 좋았냐고. 나도 웃기지. 듣기 싫다고 했다가 또 묻고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 107,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:70602fac0b4b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:d0fe239e46f6:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:d0fe239e46f6:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 잘했는지 안 했는지는 듣고 싶었잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 105,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:232eaaefb816:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:0fbd619301f1:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:0fbd619301f1:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 잘한 것도 아버지가 잘 봐 줘야 끝나는 것 같아서. 아버지한테 그런 말 하지 말라고 하면 뭐라고 하겠어. 못했다고 말해 달라는 건가.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 103,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:d0fe239e46f6:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:bb96ee876b4b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:bb96ee876b4b:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런데도 싫었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 101,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:0fbd619301f1:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:6f43ae9f242a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:6f43ae9f242a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "하던 거 했어. 박수도 받았고. 끝나고 아버지가 잘했다고 했어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 99,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:bb96ee876b4b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:bac150a14433:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:bac150a14433:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그다음에는?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 97,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:6f43ae9f242a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:0c618c557ca7:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:0c618c557ca7:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그래서 내가 먼저 말했어. 아버지는 좀 있다 나온다고. 그러니까 그때 웃더라. 내가 숨겨 놓고 놀린 것처럼. 다들 그 한마디에는 바로 대답해 줬어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 95,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:bac150a14433:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:bd4e3e2558c7:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:bd4e3e2558c7:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오는 무릎에 손을 놓는다. 리쿠가 아까 손등에서 동전을 굴린 것처럼 자기 손가락을 한번 펴 보았다가 접는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 93,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:0c618c557ca7:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:97a4066abafe:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:97a4066abafe:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "아니. 안 물었어. 그래서 더 싫어. 나는 그 사람한테 아버지 찾지 말라고도 못 하잖아. 그냥 내가 그렇게 본 건데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 91,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:bd4e3e2558c7:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:9a4b618b690d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:9a4b618b690d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "진짜 물었어? 아버지 어디 있냐고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 89,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:97a4066abafe:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:108a4637be54:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:108a4637be54:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "첫마디 하는 동안 누가 뒤로 돌아봤어. 아버지가 어디 있는지 찾는 건지, 누가 들어온 건지 모르지. 그런데 나는 아버지 찾는 것 같더라. 내 앞에서. 아직 아무것도 안 했는데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 87,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:9a4b618b690d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:85a3084d257e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:85a3084d257e:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 의자에서 등을 뗀다. 웃는 얼굴을 만들어 보다가 미오가 손이 아니라 얼굴을 보자 그만둔다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 85,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:108a4637be54:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:00323869a657:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:00323869a657:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그걸 안 알려 주고 싶었어. 내가 먼저 하는 걸 보고 온 사람도 있었으면 해서. 그래서 그냥 리쿠라고 했고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 83,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:85a3084d257e:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:d26028d22868:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:d26028d22868:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 먼저 하고 아버지가 나오는 거였구나.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 81,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:00323869a657:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:4a3c8ef523fb:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:4a3c8ef523fb:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 앞자리에서 아버지 보고 들어온 사람 있다고 들었거든. 나는 내 차례부터 나오기로 했는데. 아버지는 뒤에서 기다리고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 79,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:d26028d22868:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:96f97d48e5e3:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:96f97d48e5e3:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 이름을 모르는 사람들이었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 77,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:4a3c8ef523fb:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:5ad66e7a9da4:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:5ad66e7a9da4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "처음 혼자 소개하던 날에도 그랬어. 이름만 말하면 되는데, 꼭 아버지 이름을 먼저 말하고 싶더라. 아들이라고 해야 다들 기다려 줄 것 같아서.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 75,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:96f97d48e5e3:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:08aaf92da042:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:08aaf92da042:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 동전을 손가락 끝에 세워 보려다 눕힌다. 미오는 그가 다음 시연을 할 줄 알고 손을 보고 있지만, 그는 손바닥을 테이블 위에 놓는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 73,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:5ad66e7a9da4:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:0f8c15531d90:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:0f8c15531d90:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "지금은 네가 먼저 물었지. 이건 그걸로 해.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 71,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:08aaf92da042:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:e19d77ce9a2a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:e19d77ce9a2a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 나한테도?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 69,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:0f8c15531d90:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:8862124b30ec:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:8862124b30ec:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "아버지 얘기 그만하라고 하고 나서 내가 먼저 한 적도 있어. 이건 아버지도 잘 못한다고. 내가 잘했다는 말 받고 싶어서.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 67,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:e19d77ce9a2a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:447563fc48d8:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:447563fc48d8:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 동전을 주머니에넣었다가다시꺼낸다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 65,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:8862124b30ec:1:late:RI02Late6AM"
+    },
+    "v4:48:h-4e6bdbf5a0:e:8f2d93dc0369:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:8f2d93dc0369:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "좋아한 적도 있어. 내가 못하면 아버지보다 못하다는 얘기로 끝나잖아. 처음 보는 사람한테 그냥 못한다는 말 들으면 더 아프고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 63,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:447563fc48d8:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:8cda1b94b4d4:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:8cda1b94b4d4:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 건 싫었겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 61,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:8f2d93dc0369:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:8e3f44c1b9d0:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:8e3f44c1b9d0:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "같이 할 때도 있고 혼자 할 때도 있었어. 혼자 나와도 아버지는 어디 있냐고 묻는 사람이 많았고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 59,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:8cda1b94b4d4:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:51045c1cf99f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:51045c1cf99f:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 그래서 물어보는 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 57,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:8e3f44c1b9d0:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:4abe98f807c2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:4abe98f807c2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "두 개 중 하나 골라야 돼?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 55,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:51045c1cf99f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-4e6bdbf5a0:e:d77ada495c23:1:late:RI02Late6AM": {
+      "id": "v4:48:h-4e6bdbf5a0:e:d77ada495c23:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 아버지랑 다른 걸 하고 싶어? 같이 하는 건 싫고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 53,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A2. 아버지와 다른 무대를 하고 싶은지 묻는다",
+        "location": "h-4e6bdbf5a0"
+      },
+      "next": "v4:48:h-4e6bdbf5a0:e:4abe98f807c2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:6309fd785a05:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:6309fd785a05:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 탁자의 빈 모서리를 본다. 미오는 지금 그 영화를 같이 보자고 휴게실 기기를 찾지 않는다. 이 대화에서 특정 실재 작품의 이름이나 결말을 인용하지 않고, 다른 두 질문 A1/A2의 답도 얻지 않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 243,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-221fbc1bfc:e:effe22c68481:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:663af3be849e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:663af3be849e:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그날은. 어떤 날은 대답하고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 241,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:6309fd785a05:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:6c14e56202fa:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:6c14e56202fa:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 누가 불렀을 때 없는 척하는 건 실패네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 239,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:663af3be849e:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:7e687bd27d4e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:7e687bd27d4e:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 뒤돌아보는 데인지 알아. 나한테 묻는 말 대답하면서도 지금 쟤 또 뒤돌아보네, 생각할 수 있어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 237,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:6c14e56202fa:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:f47ccfd89e90:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:f47ccfd89e90:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 멈추고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 235,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:7e687bd27d4e:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:eccad0d014d8:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:eccad0d014d8:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 다 봤던 것도. 처음 보는 거면 누가 오면 멈춰야 하잖아. 봤던 건 그냥 소리 줄여.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 233,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:f47ccfd89e90:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:075d6ba138e9:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:075d6ba138e9:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "집에 가서 문 잠그면 그런 걸 혼자 봐?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 231,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:eccad0d014d8:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:2b986bbe1a71:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:2b986bbe1a71:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃음을 참으려 입술을 누른다. 리쿠는 동전을 쥔 오른손을 반대 무릎으로 옮긴다. 숨긴 손기술을 지금 가르친 것은 아니다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 229,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:075d6ba138e9:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:85b627ccf786:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:85b627ccf786:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "자기 집보다 작으면 못 알아볼 수도 있지.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 227,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:2b986bbe1a71:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:2ca3f94ad82c:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:2ca3f94ad82c:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "건물 위에?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 225,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:85b627ccf786:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:b6fd2ad964de:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:b6fd2ad964de:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 엄청 멀리서 헤엄쳐 왔는데 나오자마자 다들 시끄럽게 하잖아. 자기 집인 줄 알고 누웠을 수도 있는데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 223,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:2ca3f94ad82c:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:e7b2e79661a1:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:e7b2e79661a1:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 221,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:b6fd2ad964de:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:4bed0e30bcf5:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:4bed0e30bcf5:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "영화마다 달라. 괴수 편일 때도 있고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 219,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:e7b2e79661a1:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:e9fcdd42e2f1:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:e9fcdd42e2f1:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래도 마지막에는 사람들 살지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 217,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:4bed0e30bcf5:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:6025770ffa7a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:6025770ffa7a:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 입을 열었다가 웃는다. 리쿠가 탁자에서 손을 내린다. 영화 속 인물의 행동을 현재 다른 참가자의 과거 행동과 맞추거나, 실제 공원의 대피 경로를 설명하는 자료로 쓰지 않는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 215,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:e9fcdd42e2f1:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:226269e99c2e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:226269e99c2e:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그러네. 사람만 한 번 멈추게 해 놓고 너는 뛰네.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 213,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:6025770ffa7a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:d412baebce86:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:d412baebce86:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 저 사람 편 들어 준 거야. 내가 남겠다고 한 게 아니라.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 211,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:226269e99c2e:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:45ae6f154683:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:45ae6f154683:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "아까는 보고 싶다며.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 209,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:d412baebce86:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:d99ef1231f99:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:d99ef1231f99:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 뛸래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 207,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:45ae6f154683:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:5f490df246db:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:5f490df246db:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그럼 미오가 찍어. 뛰지 말고. 나중에 잘 찍었다고 할게.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 205,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:d99ef1231f99:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:4eeb76b90f3f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:4eeb76b90f3f:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "리쿠가 두 손가락을 멈춘다. 미오는 그가 사람을 넘어뜨릴 줄 알고 기다린다. 리쿠는 손가락을 똑바로 세워 그 자리에서 자기 쪽으로 돌린다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 203,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:5f490df246db:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:2e3d7a379797:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:2e3d7a379797:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누가 찍어. 다 뛰는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 201,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:4eeb76b90f3f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:a779a889d173:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:a779a889d173:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "아니. 그건 내가 보고 싶지. 쟤는 나중에 사진으로 보면 되잖아.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 199,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:2e3d7a379797:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:e45c6972fe0d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:e45c6972fe0d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 보는 영화니까 쟤도 한 번은 보고 싶겠지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 197,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:a779a889d173:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:040a2d924708:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:040a2d924708:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "막 도망가. 쟤가 그렇게 큰데 뒤돌아보고 또 봐. 그럴 시간에 뛰면 되는데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 195,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:e45c6972fe0d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:ad8e0aba904f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:ad8e0aba904f:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃는다. 리쿠는 자기 손가락을 펴 탁자 위에 세우려다가 동전을 쥔 쪽 손을 먼저 무릎 위로 옮긴다. 동전은 실제로 바닥이나 탁자 위에 내려놓지 않는다. 빈 왼손 두 손가락만 작은 사람처럼 탁자 위를 걷게 한다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 193,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:040a2d924708:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:e3d324f2d2a3:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:e3d324f2d2a3:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그런 건 안 설명해 주는 게 더 재밌어. 괴수는 나오면 나오잖아. 거기서 쟤 사실 다른 건물입니다, 안 하고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 191,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:ad8e0aba904f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:f1fa69c40599:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:f1fa69c40599:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누가 누구 속이는 거. 끝에서 다 설명해 주는 거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 189,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:e3d324f2d2a3:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:88122d61636b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:88122d61636b:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "내가 뭘 좋아할 것 같았는데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 187,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:f1fa69c40599:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:1054427a0a28:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:1054427a0a28:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 그런 거 좋아해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 185,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:88122d61636b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:d787b5a74820:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:d787b5a74820:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "괴수 나오는 거. 엄청 큰 거. 건물 같은 거 막 밟고.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 183,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:1054427a0a28:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:9e7266f5b8f2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:9e7266f5b8f2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어떤 거?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 181,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:d787b5a74820:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:92d0f000e679:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:92d0f000e679:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "영화 봐.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 179,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:9e7266f5b8f2:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:50e32f1c0b0e:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:50e32f1c0b0e:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방에서는 뭐 해. 마술 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 177,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:92d0f000e679:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:41d4704700df:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:41d4704700df:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오는 리쿠가 손에 쥔 동전이 아니라 그 뒤 빈 벽을 본다. 잠긴 방을 떠올리려는데 자꾸 지금 휴게실의 의자와 낮은 탁자만 놓인다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 175,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:50e32f1c0b0e:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:7d45a04c451c:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:7d45a04c451c:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "응. 그럼 그 방. 그 안에서 동전 떨어뜨려도 내가 주울 때까지 아무도 안 보는 거.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 173,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:41d4704700df:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:88294f197207:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:88294f197207:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 어디 가고 싶은지 물은 거야. 지금도 꼭 거기 가고 싶어야 한다는 건 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 171,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:7d45a04c451c:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:611ad61905ad:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:611ad61905ad:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그렇게 보지 마. 돌아가고 싶은 데 말하라며. 그럼 내가 아는 방 얘기를 하지, 아무것도 몰라서 대답 못한다고 해야 돼?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 169,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:88294f197207:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:4f98390c0a03:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:4f98390c0a03:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가말을잇지않는다.그역시현재그집과사람들이어떤지확인하지못했다는것을두사람모두안다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 167,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:611ad61905ad:1:late:RI02Late6AM"
+    },
+    "v4:48:h-55078f402b:e:6e1f80d081fc:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:6e1f80d081fc:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "그건 내가 아는 사람들이고. 내가 안 대답했을 때 얼마나 기다릴지도 알아.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 165,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:4f98390c0a03:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:c434577818ff:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:c434577818ff:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너네 집에서도 부를 텐데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 163,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:6e1f80d081fc:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:c1df8173d37d:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:c1df8173d37d:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "여기선 잠그면 누가 나 안에 있냐고 와. 밖에서는 그냥 없는 척하면 되는데.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 161,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:c434577818ff:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:6b413804d630:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:6b413804d630:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 방도 잠기잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 159,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:c1df8173d37d:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:0ac40b69670f:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:0ac40b69670f:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "내 방 가서 문 잠글 거야.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 157,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:6b413804d630:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-55078f402b:e:1cd1008b9aa2:1:late:RI02Late6AM": {
+      "id": "v4:48:h-55078f402b:e:1cd1008b9aa2:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "밖에 나가면 뭐부터 할 거야? 마술 말고도.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 155,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "A3. 돌아가면 가장 먼저 뭘 할 건지 묻는다",
+        "location": "h-55078f402b"
+      },
+      "next": "v4:48:h-55078f402b:e:0ac40b69670f:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:F-RI02-A:menu:late:RI02Late6AM": {
+      "id": "v4:48:F-RI02-A:menu:late:RI02Late6AM",
+      "type": "menu",
+      "q": "이번에 묻는 것",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 27,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "선택 F-RI02-A — 이번에 묻는 것",
+        "location": "F-RI02-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "어떤 마술을 보기 싫어하는지 묻는다",
+          "to": "v4:48:h-d7cdfcef6b:e:eaaddc0ca500:1:late:RI02Late6AM",
+          "set": {
+            "F-RI02-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "아버지와 다른 무대를 하고 싶은지 묻는다",
+          "to": "v4:48:h-4e6bdbf5a0:e:d77ada495c23:1:late:RI02Late6AM",
+          "set": {
+            "F-RI02-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "돌아가면 가장 먼저 뭘 할 건지 묻는다",
+          "to": "v4:48:h-55078f402b:e:1cd1008b9aa2:1:late:RI02Late6AM",
+          "set": {
+            "F-RI02-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:48:h-9373b46ed9:e:d8333c6e7955:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:d8333c6e7955:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네 질문. 맞히는 거 말고라며. 해.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 25,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:F-RI02-A:menu:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:bd86cba6ec30:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:bd86cba6ec30:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "질문 가져왔어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 23,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:d8333c6e7955:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:db993e574b2a:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:db993e574b2a:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네가 또 확인할 것 같아서. 오늘은 카드 없어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 21,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:bd86cba6ec30:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:ef7a67aaaea8:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:ef7a67aaaea8:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "앉으라고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 19,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:db993e574b2a:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:2ef9b24a74ed:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:2ef9b24a74ed:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 입꼬리를 올린다.리쿠가자기앞빈의자를발로조금당긴다.의자위에는아무것도없다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 17,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:ef7a67aaaea8:1:late:RI02Late6AM"
+    },
+    "v4:48:h-9373b46ed9:e:f13dd03c7283:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:f13dd03c7283:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "네 표정이 먼저 했지.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 15,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:2ef9b24a74ed:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:419858690db6:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:419858690db6:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 뭐라고 안 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 13,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:f13dd03c7283:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:8c4e42d7a7ff:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:8c4e42d7a7ff:1:late:RI02Late6AM",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "이번엔 바닥 안 갔어.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 11,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:419858690db6:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:48:h-9373b46ed9:e:b8958dcdec6b:1:late:RI02Late6AM": {
+      "id": "v4:48:h-9373b46ed9:e:b8958dcdec6b:1:late:RI02Late6AM",
+      "type": "stage",
+      "direction": "휴게실의 낮은 의자.리쿠가 동전을 손가락 사이에 놓는다.미오가 들어오자 동전이 손등을 굴러 무릎에 떨어진다.그가 바닥으로 가기 전에 잡는다.",
+      "source": {
+        "file": "48_자유시간_리쿠_02.md",
+        "line": 9,
+        "fileSha256": "b1691be00edcb5400ec5917ae02f041bdc84dc499833fdf003187c625ea4cbe2",
+        "heading": "시작 — 떨어뜨릴 곳이 있는 손",
+        "location": "h-9373b46ed9"
+      },
+      "next": "v4:48:h-9373b46ed9:e:8c4e42d7a7ff:1:late:RI02Late6AM"
+    },
+    "v4:90:h-aad5ebee64:e:b395d890be8d:1": {
+      "id": "v4:90:h-aad5ebee64:e:b395d890be8d:1",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "말해 봐. 내가 그 얼굴 해 주나 보게.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 113,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:48:h-9373b46ed9:e:b8958dcdec6b:1:late:RI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:90:h-aad5ebee64:e:81c8d0773d71:1": {
+      "id": "v4:90:h-aad5ebee64:e:81c8d0773d71:1",
+      "type": "stage",
+      "direction": "리쿠가 동전을 뒤집는다. 자기 앞 탁자 위에 다시 놓고 미오를 본다.",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 111,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:90:h-aad5ebee64:e:b395d890be8d:1"
+    },
+    "v4:90:h-aad5ebee64:e:a65c71756c71:1": {
+      "id": "v4:90:h-aad5ebee64:e:a65c71756c71:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 답 안 하는 얼굴까지는 생각했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 109,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:90:h-aad5ebee64:e:81c8d0773d71:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:90:h-aad5ebee64:e:0d7730dfb989:1": {
+      "id": "v4:90:h-aad5ebee64:e:0d7730dfb989:1",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "미리 답 정해 놓은 건 아니고?",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 107,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:90:h-aad5ebee64:e:a65c71756c71:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:90:h-aad5ebee64:e:702ea15d0ece:1": {
+      "id": "v4:90:h-aad5ebee64:e:702ea15d0ece:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 골라 왔어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 105,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:90:h-aad5ebee64:e:0d7730dfb989:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:90:h-aad5ebee64:e:6b7b283f3def:1": {
+      "id": "v4:90:h-aad5ebee64:e:6b7b283f3def:1",
+      "type": "say",
+      "speaker": "리쿠",
+      "actor": "riku",
+      "text": "얼굴 묻는 거 말고 다른 질문이라며.",
+      "mono": false,
+      "delivery": "리쿠",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 103,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:90:h-aad5ebee64:e:702ea15d0ece:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "리쿠",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:90:h-aad5ebee64:e:97538e091bcf:1": {
+      "id": "v4:90:h-aad5ebee64:e:97538e091bcf:1",
+      "type": "stage",
+      "direction": "리쿠가 손에 든 동전을 방석 위로 내려놓는다. 미오가 들어와 가방을 의자 옆에 둔다.",
+      "source": {
+        "file": "90_자유시간_리쿠_2장_첫_승부.md",
+        "line": 101,
+        "fileSha256": "896a55642eb80a12c9587cf65175f908bdddd09a32ecf33b8e8e0d9af6e96206",
+        "heading": "늦은02 — 다음 날 실제 질문",
+        "location": "h-aad5ebee64"
+      },
+      "next": "v4:90:h-aad5ebee64:e:6b7b283f3def:1"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "90_자유시간_리쿠_2장_첫_승부.md",
+  "baseSourceFile": "48_자유시간_리쿠_02.md",
+  "completionFlag": "fte:RI02Late6AM:complete",
+  "routingStatus": "explicit-reviewed-late-calendar",
+  "campaignReady": false,
+  "requiresPriorFlags": {
+    "F-RI01-A": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "F-RI01-B": [
+      "B1",
+      "B2",
+      "B3"
+    ]
+  },
+  "physicalState": "OnlyA1/A2/A3 respective personal answer is known. OnlyB1 sees the cushion-side method; B2 hidden recovery plus a different second demonstration, B3 fails without learning the first method. Coin always returns toRiku; no surrogate, teleportation, technique reward, heirloom or new incident evidence.",
+  "lateCalendarKey": "RI02Late6AM",
+  "eligibility": "Only the exact source-authored separate calendar window; never a first-case substitute or same-window chain.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "48_자유시간_리쿠_02.md:h-0cd20d37db": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-5b950e7794": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-abdbc2b5cc": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-5badb47f2a": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI01-B1": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI01-B2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI01-B3": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-1f8ab0d7ff": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-bb32fa95e7": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-dd09ced533": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-06e6fdb41d": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI02-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI01-A1": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI01-A2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI01-A3": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-221fbc1bfc": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-d7cdfcef6b": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-4e6bdbf5a0": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-55078f402b": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:F-RI02-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "48_자유시간_리쿠_02.md:h-9373b46ed9": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "90_자유시간_리쿠_2장_첫_승부.md:h-aad5ebee64": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

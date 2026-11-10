@@ -1,0 +1,5576 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:33:F-TA01-01:e:8e38af8e5218:1",
+  "nodes": {
+    "v4:33:return": {
+      "id": "v4:33:return",
+      "type": "return"
+    },
+    "v4:33:F-TA01-07:e:0bd0281a43b9:1": {
+      "id": "v4:33:F-TA01-07:e:0bd0281a43b9:1",
+      "type": "stage",
+      "direction": "미오는 호텔 쪽으로 걷는다. 타이가는 뒤따라오다가 갈림길에서 다른 쪽을 고른다. 이번에는 같이 가자고 하지 않는다. 미오는 뒤돌아 그가 어느 길을 골랐는지 본다. 사람이 먼저 나선다고 항상 모두가 그 뒤를 따라야 하는 것은 아니었다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 544,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-07 먼저 일어나는 사람",
+        "location": "F-TA01-07"
+      },
+      "next": "v4:33:return"
+    },
+    "v4:33:F-TA01-07:e:9a0c0c2b7482:1": {
+      "id": "v4:33:F-TA01-07:e:9a0c0c2b7482:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "알았어. 네가 먼저 가.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 542,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-07 먼저 일어나는 사람",
+        "location": "F-TA01-07"
+      },
+      "next": "v4:33:F-TA01-07:e:0bd0281a43b9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-07:e:ef2ac6d0d9d9:1": {
+      "id": "v4:33:F-TA01-07:e:ef2ac6d0d9d9:1",
+      "type": "stage",
+      "direction": "타이가가 웃는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 540,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-07 먼저 일어나는 사람",
+        "location": "F-TA01-07"
+      },
+      "next": "v4:33:F-TA01-07:e:9a0c0c2b7482:1"
+    },
+    "v4:33:F-TA01-07:e:bfbd2e314c4b:1": {
+      "id": "v4:33:F-TA01-07:e:bfbd2e314c4b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 바퀴라고 하면 한 바퀴야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 538,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-07 먼저 일어나는 사람",
+        "location": "F-TA01-07"
+      },
+      "next": "v4:33:F-TA01-07:e:ef2ac6d0d9d9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-07:e:aa90e47d7073:1": {
+      "id": "v4:33:F-TA01-07:e:aa90e47d7073:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "다음에 또 돌자.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 536,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-07 먼저 일어나는 사람",
+        "location": "F-TA01-07"
+      },
+      "next": "v4:33:F-TA01-07:e:bfbd2e314c4b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-07:e:04c3bc83dab4:1": {
+      "id": "v4:33:F-TA01-07:e:04c3bc83dab4:1",
+      "type": "stage",
+      "direction": "미오가 가방을 멘다. 타이가는 빈 물병을 한 번 흔들고 일어난다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 534,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-07 먼저 일어나는 사람",
+        "location": "F-TA01-07"
+      },
+      "next": "v4:33:F-TA01-07:e:aa90e47d7073:1"
+    },
+    "v4:33:F-TA01-B:e:598d1fe3328e:1": {
+      "id": "v4:33:F-TA01-B:e:598d1fe3328e:1",
+      "type": "stage",
+      "direction": "미오가 자기 발을 도로 본다. 타이가는 웃으며 양손을 턴다. 길이 막혔다는 사정은 물건뿐 아니라 자기가 서 있던 자리에도 있었고,미오가 또 옮겨야 비로소 끝난다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 444,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-07:e:04c3bc83dab4:1"
+    },
+    "v4:33:F-TA01-B:e:594290522ee0:1": {
+      "id": "v4:33:F-TA01-B:e:594290522ee0:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "너 옆에 조금만 비켜 있으면 다른 애가 나올 때도 편하겠다.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 442,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:598d1fe3328e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:4978f5df0fd1:1": {
+      "id": "v4:33:F-TA01-B:e:4978f5df0fd1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 고마워.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 440,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:594290522ee0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:ec7caa056276:1": {
+      "id": "v4:33:F-TA01-B:e:ec7caa056276:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "됐어?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 438,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:4978f5df0fd1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:84a137bc6284:1": {
+      "id": "v4:33:F-TA01-B:e:84a137bc6284:1",
+      "type": "stage",
+      "direction": "타이가가 입간판을 세우고 손을 뗀다. 미오가 문이 열릴 자리를 눈으로 다시 본다. 자기가 들지 않은 물건을 굳이 한번 들었다 놓아 기여를 덧붙이지는 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 436,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:ec7caa056276:1"
+    },
+    "v4:33:F-TA01-B:e:646f1e77685c:1": {
+      "id": "v4:33:F-TA01-B:e:646f1e77685c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내 발 빼면 되지. 내가 너 움직이는 건 보면서 내 발은 안 봤네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 434,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:84a137bc6284:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:3b8adb49395b:1": {
+      "id": "v4:33:F-TA01-B:e:3b8adb49395b:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "거기 있으면 네 발 위에 세워야 되는데.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 432,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:646f1e77685c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:be4295391149:1": {
+      "id": "v4:33:F-TA01-B:e:be4295391149:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아. 여기.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 430,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:3b8adb49395b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:fa684824b2db:1": {
+      "id": "v4:33:F-TA01-B:e:fa684824b2db:1",
+      "type": "stage",
+      "direction": "미오가 입간판 아래를 보다가 발을 한 발 뺀다. 자기가 가리킨 자리에 자기 신발이 놓여 있었다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 428,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:be4295391149:1"
+    },
+    "v4:33:F-TA01-B:e:950432f218f2:1": {
+      "id": "v4:33:F-TA01-B:e:950432f218f2:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "간판 놓으려면 나부터 가야지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 426,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:fa684824b2db:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:f0e1b0758c40:1": {
+      "id": "v4:33:F-TA01-B:e:f0e1b0758c40:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 지금 네가 서 있는 데 말고, 간판이.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 424,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:950432f218f2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:d6b0b6b7ef48:1": {
+      "id": "v4:33:F-TA01-B:e:d6b0b6b7ef48:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "이쪽?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 422,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:f0e1b0758c40:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:d3ca805b4adb:1": {
+      "id": "v4:33:F-TA01-B:e:d3ca805b4adb:1",
+      "type": "stage",
+      "direction": "타이가는 옆으로 옮긴다. 혼자 들었다고 위치까지 혼자 결정하지는 않는다. 미오는 자신이 힘쓰지 않은 것을 숨기려고 장황하게 고맙다고 하지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 420,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:d6b0b6b7ef48:1"
+    },
+    "v4:33:F-TA01-B:e:22b08d0650de:1": {
+      "id": "v4:33:F-TA01-B:e:22b08d0650de:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금 옆. 문 열면 부딪혀.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 418,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:d3ca805b4adb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:1a9c7ea6963f:1": {
+      "id": "v4:33:F-TA01-B:e:1a9c7ea6963f:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "여기?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 416,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:22b08d0650de:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:11d535501d56:1": {
+      "id": "v4:33:F-TA01-B:e:11d535501d56:1",
+      "type": "stage",
+      "direction": "타이가가 입간판을 들고 미오가 가리킨 벽 쪽으로 옮긴다. 마법 시연으로 확정할 만한 과도한 힘은 쓰지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 414,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:1a9c7ea6963f:1"
+    },
+    "v4:33:F-TA01-B:e:8f2cf46c5ef2:1": {
+      "id": "v4:33:F-TA01-B:e:8f2cf46c5ef2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 부탁할게. 어디에 놓을지만 같이 보자.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 412,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:11d535501d56:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:3caf49f81f0c:1": {
+      "id": "v4:33:F-TA01-B:e:3caf49f81f0c:1",
+      "type": "stage",
+      "direction": "타이가도 웃는다. 미오는 빈손을 내려다보았다가 가방 손잡이를 든다. 입간판은 두 사람이 같이 옮긴 한 번의 작업으로 끝나며, 힘을 비교하는 새 시합으로 이어지지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 486,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-07:e:04c3bc83dab4:1"
+    },
+    "v4:33:F-TA01-B:e:0c9f0c58af9f:1": {
+      "id": "v4:33:F-TA01-B:e:0c9f0c58af9f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 계속 말한 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 484,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:3caf49f81f0c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:35a6326a1361:1": {
+      "id": "v4:33:F-TA01-B:e:35a6326a1361:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "됐다. 다 옮겼는데 이제 어렵게 하지 마.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 482,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:0c9f0c58af9f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:29983adb5ff9:1": {
+      "id": "v4:33:F-TA01-B:e:29983adb5ff9:1",
+      "type": "stage",
+      "direction": "그가 말을 멈춘다. 미오가 웃는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 480,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:35a6326a1361:1"
+    },
+    "v4:33:F-TA01-B:e:976c1470c434:1": {
+      "id": "v4:33:F-TA01-B:e:976c1470c434:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그럼 저기서는 내 쪽이 네 쪽이고…….",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 478,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:29983adb5ff9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:c5eb12f4c1b5:1": {
+      "id": "v4:33:F-TA01-B:e:c5eb12f4c1b5:1",
+      "type": "stage",
+      "direction": "타이가가 미오를 보다가 방금 서 있던 반대편을 가리킨다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 476,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:976c1470c434:1"
+    },
+    "v4:33:F-TA01-B:e:5f0265d37f9a:1": {
+      "id": "v4:33:F-TA01-B:e:5f0265d37f9a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 방금은 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 474,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:c5eb12f4c1b5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:ff49e9d5b07b:1": {
+      "id": "v4:33:F-TA01-B:e:ff49e9d5b07b:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그래서 네 쪽이라고 했잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 472,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:5f0265d37f9a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:adaa2ea0ebfe:1": {
+      "id": "v4:33:F-TA01-B:e:adaa2ea0ebfe:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 보고 이쪽이라고 하니까. 내 쪽인지 네 쪽인지 모르겠어서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 470,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:ff49e9d5b07b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:a49f456bc7e3:1": {
+      "id": "v4:33:F-TA01-B:e:a49f456bc7e3:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "왜.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 468,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:adaa2ea0ebfe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:c1ec404e742c:1": {
+      "id": "v4:33:F-TA01-B:e:c1ec404e742c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 아까 여기서 들어 올리자고 했으면 내가 네 쪽으로 갔겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 466,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:a49f456bc7e3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:10c78d57387f:1": {
+      "id": "v4:33:F-TA01-B:e:10c78d57387f:1",
+      "type": "stage",
+      "direction": "미오가 자기 쪽을 조금 낮춘다. 입간판이 벽 쪽에 기대고,타이가가 손을 뗀 뒤 미오도 놓는다. 받침이 길 쪽으로 튀어나오지 않았는지 두 사람이 내려다본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 464,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:c1ec404e742c:1"
+    },
+    "v4:33:F-TA01-B:e:c4fcb0c09b62:1": {
+      "id": "v4:33:F-TA01-B:e:c4fcb0c09b62:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "내려. 놓지 말고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 462,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:10c78d57387f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:c0a792f2fbbb:1": {
+      "id": "v4:33:F-TA01-B:e:c0a792f2fbbb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 놔?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 460,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:c4fcb0c09b62:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:9dadb1e95daf:1": {
+      "id": "v4:33:F-TA01-B:e:9dadb1e95daf:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "네 쪽 조금 내려.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 458,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:c0a792f2fbbb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:d947cad8e08d:1": {
+      "id": "v4:33:F-TA01-B:e:d947cad8e08d:1",
+      "type": "stage",
+      "direction": "타이가는 미오를 보고 웃는다. 그 말이 도움이 필요하다는 뜻인지 자기 힘을 인정해 달라는 뜻인지 전부 묻지는 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 456,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:9dadb1e95daf:1"
+    },
+    "v4:33:F-TA01-B:e:2b6ccb997889:1": {
+      "id": "v4:33:F-TA01-B:e:2b6ccb997889:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 같이 했으면 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 454,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:d947cad8e08d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:32bfa316292b:1": {
+      "id": "v4:33:F-TA01-B:e:32bfa316292b:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "혼자 해도 됐는데.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 452,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:2b6ccb997889:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:ee9cf8575fa6:1": {
+      "id": "v4:33:F-TA01-B:e:ee9cf8575fa6:1",
+      "type": "stage",
+      "direction": "타이가는 반대편을 잡는다. 미오가 걸린 받침을 빼는 동안 무게를 받친다. 두 사람은 입간판을 벽 쪽으로 옮긴다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 450,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:32bfa316292b:1"
+    },
+    "v4:33:F-TA01-B:e:ce5f10b73d00:1": {
+      "id": "v4:33:F-TA01-B:e:ce5f10b73d00:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도 쉬려고 앉았잖아. 내가 이쪽 잡을게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 448,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:ee9cf8575fa6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:563001ab7bfd:1": {
+      "id": "v4:33:F-TA01-B:e:563001ab7bfd:1",
+      "type": "stage",
+      "direction": "미오는 타이가가 자기 뜻을 따르지 않았다고 잘못했다며 몰지 않는다. 타이가는 미오에게 일하지 않았다고 사과를 요구하지 않는다. 다만 두 사람이 지금 같은 것을 중요하게 여기지 않았다는 점은 남는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 528,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-07:e:04c3bc83dab4:1"
+    },
+    "v4:33:F-TA01-B:e:a1f2464e9b11:1": {
+      "id": "v4:33:F-TA01-B:e:a1f2464e9b11:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그냥 여기 두고 가기 싫었던 거야. 네가 다 할 필요 없다고 한 건 알아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 526,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:563001ab7bfd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:7c0fba14ba85:1": {
+      "id": "v4:33:F-TA01-B:e:7c0fba14ba85:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내 말 들으면 뭘 안 한 사람이 되는 것 같아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 524,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:a1f2464e9b11:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:1358ddcc8b3d:1": {
+      "id": "v4:33:F-TA01-B:e:1358ddcc8b3d:1",
+      "type": "stage",
+      "direction": "미오가 바로 아니라고 하지 못한다. 타이가는 더 기다리며 잘못 들은 말부터 고치라고 하지는 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 522,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:7c0fba14ba85:1"
+    },
+    "v4:33:F-TA01-B:e:94248c46785d:1": {
+      "id": "v4:33:F-TA01-B:e:94248c46785d:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "내가 하고 있으니까 너는 안 해도 되잖아. 아까는 그게 싫었냐.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 520,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:1358ddcc8b3d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:dd4868427e46:1": {
+      "id": "v4:33:F-TA01-B:e:dd4868427e46:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 안 하는 거 계속 신경 쓰는 줄 알았네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 518,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:94248c46785d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:8c06b2fa4526:1": {
+      "id": "v4:33:F-TA01-B:e:8c06b2fa4526:1",
+      "type": "stage",
+      "direction": "미오가 타이가를 본다. 타이가는 벤치 쪽으로 고개를 돌렸다가 그녀가 이미 가방을 멘 것을 보고 손을 내린다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 516,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:dd4868427e46:1"
+    },
+    "v4:33:F-TA01-B:e:fd0007af3958:1": {
+      "id": "v4:33:F-TA01-B:e:fd0007af3958:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "널? 너 저기 앉아 있는데 내가 이거 세우면서 널 어떻게 계속 봐.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 514,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:8c06b2fa4526:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:bcd95e9255dc:1": {
+      "id": "v4:33:F-TA01-B:e:bcd95e9255dc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러니까 자꾸 보고 있었구나 싶어서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 512,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:fd0007af3958:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:9be15f42b70b:1": {
+      "id": "v4:33:F-TA01-B:e:9be15f42b70b:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "알아. 네가 계속 앉아 있는 것도 봤고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 510,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:bcd95e9255dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:8d1334aeb7f7:1": {
+      "id": "v4:33:F-TA01-B:e:8d1334aeb7f7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 그냥 가고 싶었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 508,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:9be15f42b70b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:acce0c30125d:1": {
+      "id": "v4:33:F-TA01-B:e:acce0c30125d:1",
+      "type": "stage",
+      "direction": "미오가 입간판을 본다. 타이가는 앞뒤를 확인할 뿐 다른 길을 가리키는 새 안내를 쓰지는 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 506,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:8d1334aeb7f7:1"
+    },
+    "v4:33:F-TA01-B:e:653acacd4345:1": {
+      "id": "v4:33:F-TA01-B:e:653acacd4345:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "간판인데. 아예 뒤로 세우면 치우기만 한 거잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 504,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:acce0c30125d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:7bc9c58f649c:1": {
+      "id": "v4:33:F-TA01-B:e:7bc9c58f649c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "남들이 볼 수 있게까지 해야 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 502,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:653acacd4345:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:8e966f28a630:1": {
+      "id": "v4:33:F-TA01-B:e:8e966f28a630:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "응. 글자 안 보이게 세웠나 해서.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 500,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:7bc9c58f649c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:26ff3714619b:1": {
+      "id": "v4:33:F-TA01-B:e:26ff3714619b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 498,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:8e966f28a630:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:934a14270ffb:1": {
+      "id": "v4:33:F-TA01-B:e:934a14270ffb:1",
+      "type": "stage",
+      "direction": "타이가는 입간판을 벽 쪽으로 옮긴다. 미오는 입간판에서 손을 떼고 벤치로 돌아가 앉았다가 일어난다. 타이가가 손을 놓고도 입간판을 보고 있어 미오는 가방을 멘 채 기다린다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 496,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:26ff3714619b:1"
+    },
+    "v4:33:F-TA01-B:e:4e6c9ada6549:1": {
+      "id": "v4:33:F-TA01-B:e:4e6c9ada6549:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "다른 애가 걸릴 수 있어. 잠깐만 기다려.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 494,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:934a14270ffb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:e:afb6dcc142b4:1": {
+      "id": "v4:33:F-TA01-B:e:afb6dcc142b4:1",
+      "type": "stage",
+      "direction": "타이가가 바닥을 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 492,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:4e6c9ada6549:1"
+    },
+    "v4:33:F-TA01-B:e:dc5f4723eb5c:1": {
+      "id": "v4:33:F-TA01-B:e:dc5f4723eb5c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "저기 옆으로 지나가면 돼. 지금 다 우리가 고칠 필요는 없잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 490,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      },
+      "next": "v4:33:F-TA01-B:e:afb6dcc142b4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-B:menu": {
+      "id": "v4:33:F-TA01-B:menu",
+      "type": "menu",
+      "q": "바로 옆의 도움",
+      "options": [
+        {
+          "id": "B1",
+          "label": "타이가에게 맡긴다.",
+          "to": "v4:33:F-TA01-B:e:8f2cf46c5ef2:1",
+          "set": {
+            "F-TA01-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "둘이 함께 하자고 한다.",
+          "to": "v4:33:F-TA01-B:e:ce5f10b73d00:1",
+          "set": {
+            "F-TA01-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "오늘은 건드리지 말고 가자고 한다.",
+          "to": "v4:33:F-TA01-B:e:dc5f4723eb5c:1",
+          "set": {
+            "F-TA01-B": "B3"
+          }
+        }
+      ],
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 408,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-B — 바로 옆의 도움",
+        "location": "F-TA01-B"
+      }
+    },
+    "v4:33:F-TA01-06:e:0fca2e7bc80a:1": {
+      "id": "v4:33:F-TA01-06:e:0fca2e7bc80a:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "내가 할게.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 406,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-06 누가 힘을 쓰나",
+        "location": "F-TA01-06"
+      },
+      "next": "v4:33:F-TA01-B:menu",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-06:e:f81e475e0dad:1": {
+      "id": "v4:33:F-TA01-06:e:f81e475e0dad:1",
+      "type": "stage",
+      "direction": "벤치 옆에서 쓰러진 작은 안내 입간판이 바닥을 막고 있다. 미오가 발로 세우려다 손으로 잡는다. 받침이 걸려 바로 서지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 404,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-06 누가 힘을 쓰나",
+        "location": "F-TA01-06"
+      },
+      "next": "v4:33:F-TA01-06:e:0fca2e7bc80a:1"
+    },
+    "v4:33:F-TA01-05b:e:eb348064dea6:1": {
+      "id": "v4:33:F-TA01-05b:e:eb348064dea6:1",
+      "type": "stage",
+      "direction": "미오는 손을 가방에서 떼고 벤치에 둔다.타이가가 조금 남은 물을 마시고 뚜껑을 닫는다.이후 빈 물병으로 끝 장면에 이어진다.타이가는 없는 이어폰을 꺼내거나 미오에게 노래를 따라 부르게 하지 않는다.두 사람은 실제 음악을 재생하지 않았고,현재 여기에 새 휴대폰이나 녹음이 생긴 것도 아니다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 400,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-06:e:f81e475e0dad:1"
+    },
+    "v4:33:F-TA01-05b:e:fb571608b4a8:1": {
+      "id": "v4:33:F-TA01-05b:e:fb571608b4a8:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "알아. 지금은 끝났어. 이건.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 398,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:eb348064dea6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:20e7d517090f:1": {
+      "id": "v4:33:F-TA01-05b:e:20e7d517090f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 처음 한 말도 같이 한 바퀴 돌자는 거였어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 396,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:fb571608b4a8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:23d4c5b53d84:1": {
+      "id": "v4:33:F-TA01-05b:e:23d4c5b53d84:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "됐다. 지금은 그냥 앉자. 네가 자꾸 말 걸면 나도 할 말 생겨.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 394,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:20e7d517090f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:232484415997:1": {
+      "id": "v4:33:F-TA01-05b:e:232484415997:1",
+      "type": "stage",
+      "direction": "미오는 입을 벌렸다가 닫는다.타이가가 먼저 큰 소리로 웃어 버린다.그 웃음 뒤에 붙일 변명을 미오가 찾지 못하자,타이가가 물병을 무릎 위에 놓는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 392,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:23d4c5b53d84:1"
+    },
+    "v4:33:F-TA01-05b:e:916620de79a1:1": {
+      "id": "v4:33:F-TA01-05b:e:916620de79a1:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "항상 대충 하는 줄! 너는 말을 왜 그쪽으로 받아먹냐.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 390,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:232484415997:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:ee8e6dea6a4e:1": {
+      "id": "v4:33:F-TA01-05b:e:ee8e6dea6a4e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "항상 아는 척하는 줄?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 388,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:916620de79a1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:bc1edbf2fb49:1": {
+      "id": "v4:33:F-TA01-05b:e:bc1edbf2fb49:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "네가 내가 항상 그러는 줄 알까 봐.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 386,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:ee8e6dea6a4e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:03fdb6fe8319:1": {
+      "id": "v4:33:F-TA01-05b:e:03fdb6fe8319:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 내가 물어본 것도 아닌데 말해 주네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 384,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:bc1edbf2fb49:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:0c65174bbc94:1": {
+      "id": "v4:33:F-TA01-05b:e:0c65174bbc94:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그래도 다른 애가 몇 개 했냐고 물으면 말해 줄 게 있어야 되잖아. 모르겠다고 하면 안 한 거랑 비슷하게 듣고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 382,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:03fdb6fe8319:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:01eef465659f:1": {
+      "id": "v4:33:F-TA01-05b:e:01eef465659f:1",
+      "type": "stage",
+      "direction": "미오가 웃는다.타이가는 이번에는 따라 웃지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 380,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:0c65174bbc94:1"
+    },
+    "v4:33:F-TA01-05b:e:15927420a25e:1": {
+      "id": "v4:33:F-TA01-05b:e:15927420a25e:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "나한테. 나밖에 없으니까.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 378,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:01eef465659f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:7411a2abc5e6:1": {
+      "id": "v4:33:F-TA01-05b:e:7411a2abc5e6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누구한테?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 376,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:15927420a25e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:2ed5424db726:1": {
+      "id": "v4:33:F-TA01-05b:e:2ed5424db726:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "항상 그렇게 하는 건 아니고. 많이 했으면 그냥 했다고 해.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 374,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:7411a2abc5e6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:6e960224662a:1": {
+      "id": "v4:33:F-TA01-05b:e:6e960224662a:1",
+      "type": "stage",
+      "direction": "미오가 타이가를 본다.타이가가 먼저 눈을 피한다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 372,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:2ed5424db726:1"
+    },
+    "v4:33:F-TA01-05b:e:a524d8c63c64:1": {
+      "id": "v4:33:F-TA01-05b:e:a524d8c63c64:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그럼 처음부터 다시 하면 맞잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 370,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:6e960224662a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:584e3d9b89fa:1": {
+      "id": "v4:33:F-TA01-05b:e:584e3d9b89fa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 나한테 말 안 해도 된다고 하는 게 아니라 한 번 더 하라고 하는구나.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 368,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:a524d8c63c64:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:e3f020256b93:1": {
+      "id": "v4:33:F-TA01-05b:e:e3f020256b93:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "나는 다른 거 생각하면 더 못해. 다음 것만 보고 있어야 돼. 누가 옆에서 말 걸면 대답하다가 횟수 잊고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 366,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:584e3d9b89fa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:f1bf1f4537ee:1": {
+      "id": "v4:33:F-TA01-05b:e:f1bf1f4537ee:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭘 쓸지도 생각해야지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 364,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:e3f020256b93:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:637c785056fe:1": {
+      "id": "v4:33:F-TA01-05b:e:637c785056fe:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "쓰는 건 손으로 하는 거잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 362,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:f1bf1f4537ee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:d10aea779536:1": {
+      "id": "v4:33:F-TA01-05b:e:d10aea779536:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 음악 틀면 음악만 들어. 쓰던 거 못 하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 360,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:637c785056fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:912f62d7cf63:1": {
+      "id": "v4:33:F-TA01-05b:e:912f62d7cf63:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "너는 소리 없으면 더 편해?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 358,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:d10aea779536:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:2b57fe3fb3cf:1": {
+      "id": "v4:33:F-TA01-05b:e:2b57fe3fb3cf:1",
+      "type": "stage",
+      "direction": "미오는 벤치 등받이에 몸을 기댄다.타이가가 자기 물병의 바닥을 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 356,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:912f62d7cf63:1"
+    },
+    "v4:33:F-TA01-05b:e:d891c3eb2fb8:1": {
+      "id": "v4:33:F-TA01-05b:e:d891c3eb2fb8:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "내가 또 걷자고 했냐. 지금 앉아 있잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 354,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:2b57fe3fb3cf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:88da0089136e:1": {
+      "id": "v4:33:F-TA01-05b:e:88da0089136e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘도 그거였네. 한 번만 더.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 352,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:d891c3eb2fb8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:fffaab898197:1": {
+      "id": "v4:33:F-TA01-05b:e:fffaab898197:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "한 번 더 듣고. 이번에는 끝나면 바로 끄고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 350,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:88da0089136e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:f5896b7beea9:1": {
+      "id": "v4:33:F-TA01-05b:e:f5896b7beea9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 언제 끝내?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 348,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:fffaab898197:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:196d6996e569:1": {
+      "id": "v4:33:F-TA01-05b:e:196d6996e569:1",
+      "type": "stage",
+      "direction": "미오가 웃는다.타이가도 웃다가 물병을 들어 입을 댄다.아직 물이 조금 남아 있다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 346,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:f5896b7beea9:1"
+    },
+    "v4:33:F-TA01-05b:e:c576cd7b08a7:1": {
+      "id": "v4:33:F-TA01-05b:e:c576cd7b08a7:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "응. 다 했는데 계속 처음으로 돌아가더라고. 반복 켜 놔서.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 344,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:196d6996e569:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:444bc8bad723:1": {
+      "id": "v4:33:F-TA01-05b:e:444bc8bad723:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "기다리면서 쉬고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 342,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:c576cd7b08a7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:3b25a50c0386:1": {
+      "id": "v4:33:F-TA01-05b:e:3b25a50c0386:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그렇게 한 적도 있어.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 340,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:444bc8bad723:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:62f39f08dd63:1": {
+      "id": "v4:33:F-TA01-05b:e:62f39f08dd63:1",
+      "type": "stage",
+      "direction": "타이가가 미오를 본다.미오는 웃음을 참는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 338,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:3b25a50c0386:1"
+    },
+    "v4:33:F-TA01-05b:e:cd87c4847755:1": {
+      "id": "v4:33:F-TA01-05b:e:cd87c4847755:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 네가 그날 하고 싶은 데까지 해 놓고 노래 끝나는 거 기다리면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 336,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:62f39f08dd63:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:467b4df168f1:1": {
+      "id": "v4:33:F-TA01-05b:e:467b4df168f1:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "끝났는지는 알지. 귀에서 끝나는 게 들리는데.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 334,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:cd87c4847755:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:02edbc7e3f89:1": {
+      "id": "v4:33:F-TA01-05b:e:02edbc7e3f89:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "얼마나 했는지도 모르네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 332,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:467b4df168f1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:52a1c8081f48:1": {
+      "id": "v4:33:F-TA01-05b:e:52a1c8081f48:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그건 안 봤고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 330,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:02edbc7e3f89:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:bdf69295fe77:1": {
+      "id": "v4:33:F-TA01-05b:e:bdf69295fe77:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "몇 분인데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 328,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:52a1c8081f48:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:eb3fbd9433f0:1": {
+      "id": "v4:33:F-TA01-05b:e:eb3fbd9433f0:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "처음에는 그거 한 번 끝나면 나도 끝냈어.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 326,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:bdf69295fe77:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:ac73bfba0227:1": {
+      "id": "v4:33:F-TA01-05b:e:ac73bfba0227:1",
+      "type": "stage",
+      "direction": "미오는 고개를 끄덕인다.타이가는 방금 자신이 얼마나 꾸준한지 설명한 것처럼 등을 편다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 324,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:eb3fbd9433f0:1"
+    },
+    "v4:33:F-TA01-05b:e:abd90b4ee236:1": {
+      "id": "v4:33:F-TA01-05b:e:abd90b4ee236:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "들으려고 켜면 그때부터 고르기만 해. 걷기도 전에 앉아서. 그래서 그냥 같은 거 들어.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 322,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:ac73bfba0227:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:dee0db9fb5b9:1": {
+      "id": "v4:33:F-TA01-05b:e:dee0db9fb5b9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다른 노래는 안 들어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 320,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:abd90b4ee236:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:1303a047c96c:1": {
+      "id": "v4:33:F-TA01-05b:e:1303a047c96c:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "저장해 놨지. 처음 나오는 게 그거니까. 지우지만 않으면 됐어.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 318,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:dee0db9fb5b9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:49df8ad31449:1": {
+      "id": "v4:33:F-TA01-05b:e:49df8ad31449:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 맨날 어떻게 찾아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 316,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:1303a047c96c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:96976b26a67f:1": {
+      "id": "v4:33:F-TA01-05b:e:96976b26a67f:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "말해도 모를걸. 운동 영상에서 들은 건데 제목은 모르고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 314,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:49df8ad31449:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:ca181e5a5203:1": {
+      "id": "v4:33:F-TA01-05b:e:ca181e5a5203:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무슨 노래야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 312,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:96976b26a67f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:465a64dafd60:1": {
+      "id": "v4:33:F-TA01-05b:e:465a64dafd60:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "뛸 때 듣는 거. 휴대폰 없으니까 자꾸 앞만 생각나. 뒤가 안 이어지고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 310,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:ca181e5a5203:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:8ac454127a49:1": {
+      "id": "v4:33:F-TA01-05b:e:8ac454127a49:1",
+      "type": "stage",
+      "direction": "타이가가 웃으며 손을 무릎에서 뗀다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 308,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:465a64dafd60:1"
+    },
+    "v4:33:F-TA01-05b:e:13e96bdf0d19:1": {
+      "id": "v4:33:F-TA01-05b:e:13e96bdf0d19:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 머리 안에서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 306,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:8ac454127a49:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:f3e7010a3a5c:1": {
+      "id": "v4:33:F-TA01-05b:e:f3e7010a3a5c:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "안 듣는데.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 304,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:13e96bdf0d19:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:8875292949b5:1": {
+      "id": "v4:33:F-TA01-05b:e:8875292949b5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐 듣고 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 302,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:f3e7010a3a5c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05b:e:92846e3c7113:1": {
+      "id": "v4:33:F-TA01-05b:e:92846e3c7113:1",
+      "type": "stage",
+      "direction": "타이가가 무릎 위에서 손가락을 두 번 두드린다.멈췄다가 같은 빠르기로 다시 두 번 친다.미오가 그 손을 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 300,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05b 한 곡이 안 끝나는 날",
+        "location": "F-TA01-05b"
+      },
+      "next": "v4:33:F-TA01-05b:e:8875292949b5:1"
+    },
+    "v4:33:F-TA01-05:e:5553b839d2a1:1": {
+      "id": "v4:33:F-TA01-05:e:5553b839d2a1:1",
+      "type": "stage",
+      "direction": "미오는 그 조금이 얼마나 긴지 궁금하다. 타이가는 물을 마신다. 모르는 채로 사람들이 자신을 기다릴 때의 불편은 지금 털어놓지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 296,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05b:e:92846e3c7113:1"
+    },
+    "v4:33:F-TA01-05:e:12d937ab4055:1": {
+      "id": "v4:33:F-TA01-05:e:12d937ab4055:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "바로 알면 바로 말하지. 나도 확인해야 하면 조금 기다리라고 하고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 294,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:5553b839d2a1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:714ce4ddd6e5:1": {
+      "id": "v4:33:F-TA01-05:e:714ce4ddd6e5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "모른다고 잘 말해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 292,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:12d937ab4055:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:aabc3c9dbb0f:1": {
+      "id": "v4:33:F-TA01-05:e:aabc3c9dbb0f:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "쉬면 후배가 또 와. 이거 어떻게 하냐고. 내가 모르면 선배 불렀고. 운동하러 온 애들이 보기엔 맨날 내가 가르치는 것 같았겠지만 나도 모르는 거 많아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 290,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:714ce4ddd6e5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:0eeef3a27be2:1": {
+      "id": "v4:33:F-TA01-05:e:0eeef3a27be2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "체육관에서도 이러고 쉬었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 288,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:aabc3c9dbb0f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:96e62bd93071:1": {
+      "id": "v4:33:F-TA01-05:e:96e62bd93071:1",
+      "type": "stage",
+      "direction": "미오는 자기가 아무것도 안 하고 앉아 있어도 누군가에게는 같이 있는 것으로 쓸모가 생길 수 있다고 생각한다. 그렇다고 타이가가 원할 때마다 이 벤치에 와야 한다는 뜻은 아니다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 286,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:0eeef3a27be2:1"
+    },
+    "v4:33:F-TA01-05:e:62b83b4e81dc:1": {
+      "id": "v4:33:F-TA01-05:e:62b83b4e81dc:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "너 있잖아. 혼자 있을 때랑 다르지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 284,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:96e62bd93071:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:47982568a716:1": {
+      "id": "v4:33:F-TA01-05:e:47982568a716:1",
+      "type": "stage",
+      "direction": "타이가가 미오를 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 282,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:62b83b4e81dc:1"
+    },
+    "v4:33:F-TA01-05:e:521562dce9e3:1": {
+      "id": "v4:33:F-TA01-05:e:521562dce9e3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 280,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:47982568a716:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:7e14b2529999:1": {
+      "id": "v4:33:F-TA01-05:e:7e14b2529999:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "쉬어야 다음에 하지. 싫은 건 가만히 있어야 하는데 할 게 없는 거고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 278,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:521562dce9e3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:970819f09749:1": {
+      "id": "v4:33:F-TA01-05:e:970819f09749:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 쉬는 거 싫어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 276,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:7e14b2529999:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-05:e:1e7c43119591:1": {
+      "id": "v4:33:F-TA01-05:e:1e7c43119591:1",
+      "type": "stage",
+      "direction": "타이가가 물병을 꺼낸다. 미오는 자기 물병을 보여 준다. 타이가는 건네려던 손을 바로 거둔다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 274,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-05 쉬는 사람의 자리",
+        "location": "F-TA01-05"
+      },
+      "next": "v4:33:F-TA01-05:e:970819f09749:1"
+    },
+    "v4:33:F-TA01-A:e:bed084f26aa5:1": {
+      "id": "v4:33:F-TA01-A:e:bed084f26aa5:1",
+      "type": "stage",
+      "direction": "미오가 옆에 앉는다. 세 번째 바퀴를 새로 시작하거나,타이가가 반복 제안을 안 했으니 앞으로도 안 할 거라고 약속하는 장면은 없다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 160,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-05:e:1e7c43119591:1"
+    },
+    "v4:33:F-TA01-A:e:8a72df89f925:1": {
+      "id": "v4:33:F-TA01-A:e:8a72df89f925:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "네가 여기로 왔잖아. 그럼 앉아야지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 158,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:bed084f26aa5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:340923436c38:1": {
+      "id": "v4:33:F-TA01-A:e:340923436c38:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 나 먼저 가라고 할 필요 없었네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 156,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:8a72df89f925:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:6295ab9aea0e:1": {
+      "id": "v4:33:F-TA01-A:e:6295ab9aea0e:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "앉자고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 154,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:340923436c38:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:b563c87e3ed3:1": {
+      "id": "v4:33:F-TA01-A:e:b563c87e3ed3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방금 뭐라고 하려던 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 152,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:6295ab9aea0e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:1eb969d132b0:1": {
+      "id": "v4:33:F-TA01-A:e:1eb969d132b0:1",
+      "type": "stage",
+      "direction": "타이가가 웃는다. 미오도 웃다가 다시 앞을 본다. 두 사람은 새로운 구역으로 빠지거나 지도에 없는 길을 발견하지 않고 한 바퀴를 더 돌아온다. 미오가 벤치 앞에서 멈추자 타이가는 입을 열었다가 먼저 앉는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 150,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:b563c87e3ed3:1"
+    },
+    "v4:33:F-TA01-A:e:a324e403dc25:1": {
+      "id": "v4:33:F-TA01-A:e:a324e403dc25:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 148,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:1eb969d132b0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:38a33adfe6de:1": {
+      "id": "v4:33:F-TA01-A:e:38a33adfe6de:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "내가 그래서 걷는 걸 방해하는 거네.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 146,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:a324e403dc25:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:5b65fe2d9477:1": {
+      "id": "v4:33:F-TA01-A:e:5b65fe2d9477:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 네가 얼마나 빨라질지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 144,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:38a33adfe6de:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:cae65c0023d7:1": {
+      "id": "v4:33:F-TA01-A:e:cae65c0023d7:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "너 걷다가 무슨 생각 하냐?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 142,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:5b65fe2d9477:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:c7d975595de4:1": {
+      "id": "v4:33:F-TA01-A:e:c7d975595de4:1",
+      "type": "stage",
+      "direction": "타이가가 미오 옆으로 온다. 이번에는 분수의 다른 쪽을 보며 묻는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 140,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:cae65c0023d7:1"
+    },
+    "v4:33:F-TA01-A:e:9d3f56873c2f:1": {
+      "id": "v4:33:F-TA01-A:e:9d3f56873c2f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 빨라지면 나는 뛰어야 했으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 138,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:c7d975595de4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:15101f83e40a:1": {
+      "id": "v4:33:F-TA01-A:e:15101f83e40a:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "뛰진 않았어. 아까도.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 136,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:9d3f56873c2f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:3ff8c664f0de:1": {
+      "id": "v4:33:F-TA01-A:e:3ff8c664f0de:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "옆에 와도 돼. 앞에 뛰어나가지만 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 134,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:15101f83e40a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:1931f2f5a021:1": {
+      "id": "v4:33:F-TA01-A:e:1931f2f5a021:1",
+      "type": "stage",
+      "direction": "미오는 먼저 걷는다. 타이가는 길이 넓어지는 곳에서 옆으로 나오려다 다시 미오 뒤에서 같은 속도로 걷는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 132,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:3ff8c664f0de:1"
+    },
+    "v4:33:F-TA01-A:e:6e87048d1d8d:1": {
+      "id": "v4:33:F-TA01-A:e:6e87048d1d8d:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "길 보고 있지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 130,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:1931f2f5a021:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:569ef7f52064:1": {
+      "id": "v4:33:F-TA01-A:e:569ef7f52064:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가. 내가 앞에 있으니까 네가 어디 보는지 잘 안 보여서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 128,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:6e87048d1d8d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:be3a9f7925da:1": {
+      "id": "v4:33:F-TA01-A:e:be3a9f7925da:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "왜. 이제 안 가?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 126,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:569ef7f52064:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:6f14a4b8201c:1": {
+      "id": "v4:33:F-TA01-A:e:6f14a4b8201c:1",
+      "type": "stage",
+      "direction": "미오가 고개를 돌려 타이가를 본다. 그가 정말 뒤에 서 있자 출발하려던 발이 잠깐 멎는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 124,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:be3a9f7925da:1"
+    },
+    "v4:33:F-TA01-A:e:554c5c032e23:1": {
+      "id": "v4:33:F-TA01-A:e:554c5c032e23:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "나는 네가 어디로 가려는지 모르잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 122,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:6f14a4b8201c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:dad54f6f16f6:1": {
+      "id": "v4:33:F-TA01-A:e:dad54f6f16f6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 아는 길일 수도 있지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 120,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:554c5c032e23:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:a14a21fce48a:1": {
+      "id": "v4:33:F-TA01-A:e:a14a21fce48a:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그럼 내가 모르는 길이니까 너 따라가면 되겠네.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 118,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:dad54f6f16f6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:368e00bdf9fd:1": {
+      "id": "v4:33:F-TA01-A:e:368e00bdf9fd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이쪽. 아까 같은 데로 안 돌아갈 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 116,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:a14a21fce48a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:e068a8ec7772:1": {
+      "id": "v4:33:F-TA01-A:e:e068a8ec7772:1",
+      "type": "stage",
+      "direction": "타이가가 내밀었던 손을 뒤통수로 올린다. 미오는 길을 정하고 지도를 가방에 넣는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 114,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:368e00bdf9fd:1"
+    },
+    "v4:33:F-TA01-A:e:9ea83a8708ad:1": {
+      "id": "v4:33:F-TA01-A:e:9ea83a8708ad:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 잡으면 네가 먼저 읽을 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 112,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:e068a8ec7772:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:154afac2a26f:1": {
+      "id": "v4:33:F-TA01-A:e:154afac2a26f:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "잡아 주려고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 110,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:9ea83a8708ad:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:6710b3a4e277:1": {
+      "id": "v4:33:F-TA01-A:e:6710b3a4e277:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 볼게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 108,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:154afac2a26f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:0e6dc99a53ca:1": {
+      "id": "v4:33:F-TA01-A:e:0e6dc99a53ca:1",
+      "type": "stage",
+      "direction": "타이가는 재촉하려다 말을 삼킨다. 미오가 지도를 접지 못하고 모서리를 다시 펴자 그가 자기 손을 앞으로 내민다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 106,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:6710b3a4e277:1"
+    },
+    "v4:33:F-TA01-A:e:1a69a07fe68e:1": {
+      "id": "v4:33:F-TA01-A:e:1a69a07fe68e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 보는 중이야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 104,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:0e6dc99a53ca:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:ada99bebed94:1": {
+      "id": "v4:33:F-TA01-A:e:ada99bebed94:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "어느 쪽?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 102,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:1a69a07fe68e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:4f8a39832955:1": {
+      "id": "v4:33:F-TA01-A:e:4f8a39832955:1",
+      "type": "stage",
+      "direction": "미오는 아까와 다른 옆길을 고른다. 타이가는 모퉁이에서 먼저 가려다가 미오가 멈추자 같이 멈춘다. 미오가 지도를 확인할 때 기다리는 일이 타이가에게는 걷는 것보다 어렵다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 100,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:ada99bebed94:1"
+    },
+    "v4:33:F-TA01-A:e:e4e836f12c00:1": {
+      "id": "v4:33:F-TA01-A:e:e4e836f12c00:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "좋아! 이번에는 네가 길 정해.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 98,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:4f8a39832955:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:d96280dbefeb:1": {
+      "id": "v4:33:F-TA01-A:e:d96280dbefeb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 번 더. 이번에도 걸을 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 96,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:e4e836f12c00:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:0e13a24ba2df:1": {
+      "id": "v4:33:F-TA01-A:e:0e13a24ba2df:1",
+      "type": "stage",
+      "direction": "타이가가 벤치 끝을 본다. 미오가 앉아서 얻은 것이 자기 바퀴보다 덜하다고 더 따지지는 않는다. 아래에서 자기 물병을 꺼낸다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 212,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-05:e:1e7c43119591:1"
+    },
+    "v4:33:F-TA01-A:e:e043c9b194db:1": {
+      "id": "v4:33:F-TA01-A:e:e043c9b194db:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 난 그거 하려고 왔으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 210,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:0e13a24ba2df:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:c3fa6138b951:1": {
+      "id": "v4:33:F-TA01-A:e:c3fa6138b951:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그건 그냥 안 움직인 거잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 208,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:e043c9b194db:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:c584962a3b1b:1": {
+      "id": "v4:33:F-TA01-A:e:c584962a3b1b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기서 더 천천히 있었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 206,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:c3fa6138b951:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:f682b01bb41e:1": {
+      "id": "v4:33:F-TA01-A:e:f682b01bb41e:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "아니. 너 없는 데서는 좀 더 빨리 걸었지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 204,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:c584962a3b1b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:6715b2adf716:1": {
+      "id": "v4:33:F-TA01-A:e:6715b2adf716:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 혼자 돌 때도 계속 같은 속도야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 202,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:f682b01bb41e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:7dc21a04d8c1:1": {
+      "id": "v4:33:F-TA01-A:e:7dc21a04d8c1:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 타이가는 웃지 않고 숨을 고르다가 미오가 빈자리를 만든 쪽으로 조금 옮겨 앉는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 200,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:6715b2adf716:1"
+    },
+    "v4:33:F-TA01-A:e:30a30d218fc0:1": {
+      "id": "v4:33:F-TA01-A:e:30a30d218fc0:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그럼 왜 벌써 가는 얘기 해. 방금 왔는데.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 198,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:7dc21a04d8c1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:96c9e412cd4b:1": {
+      "id": "v4:33:F-TA01-A:e:96c9e412cd4b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 196,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:30a30d218fc0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:81ea81f6643d:1": {
+      "id": "v4:33:F-TA01-A:e:81ea81f6643d:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "가야 돼?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 194,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:96c9e412cd4b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:b530861daffe:1": {
+      "id": "v4:33:F-TA01-A:e:b530861daffe:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이제 네가 앉았는데 내가 빨리 가자고 하면 싫겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 192,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:81ea81f6643d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:feea7e397844:1": {
+      "id": "v4:33:F-TA01-A:e:feea7e397844:1",
+      "type": "stage",
+      "direction": "타이가가 미오를 본다. 미오가 자기 가방을 무릎으로 도로 옮긴다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 190,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:b530861daffe:1"
+    },
+    "v4:33:F-TA01-A:e:0b0eb42d419f:1": {
+      "id": "v4:33:F-TA01-A:e:0b0eb42d419f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 잘했지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 188,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:feea7e397844:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:446e743a34a1:1": {
+      "id": "v4:33:F-TA01-A:e:446e743a34a1:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "계속?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 186,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:0b0eb42d419f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:b66f4bf15906:1": {
+      "id": "v4:33:F-TA01-A:e:b66f4bf15906:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "앉아 있었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 184,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:446e743a34a1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:4a100627f794:1": {
+      "id": "v4:33:F-TA01-A:e:4a100627f794:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "뭐 했어?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 182,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:b66f4bf15906:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:730c14030372:1": {
+      "id": "v4:33:F-TA01-A:e:730c14030372:1",
+      "type": "stage",
+      "direction": "타이가가 한 바퀴를 더 돌고 돌아와 미오 옆의 거리를 두고 앉는다. 그는 미오의 가방이 옆에 있어 더 멀리 앉은 것이지, 미오가 같은 바퀴를 몰래 따라온 상태가 아니다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 180,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:4a100627f794:1"
+    },
+    "v4:33:F-TA01-A:e:27787b7816bf:1": {
+      "id": "v4:33:F-TA01-A:e:27787b7816bf:1",
+      "type": "stage",
+      "direction": "미오는 발을 앞으로 뻗었다가 다시 벤치 밑으로 넣는다. 가방을 무릎에서 옆으로 옮기자 아까 걸을 때 어깨를 누르던 자리가 가벼워진다. 타이가가 돌아올 쪽을 계속 보고 있지는 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 178,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:730c14030372:1"
+    },
+    "v4:33:F-TA01-A:e:652923882eca:1": {
+      "id": "v4:33:F-TA01-A:e:652923882eca:1",
+      "type": "stage",
+      "direction": "타이가가 혼자 출발한다. 미오는 벤치에 앉는다. 따라가지 않았다고 혼자 남겨져 버림받은 연출을 넣지 않는다. 타이가는 모퉁이를 돌기 전에 한번 돌아본다. 미오가 손을 흔들자 그도 손만 들고 간다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 176,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:27787b7816bf:1"
+    },
+    "v4:33:F-TA01-A:e:e14c0532e825:1": {
+      "id": "v4:33:F-TA01-A:e:e14c0532e825:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 나는 여기 있을게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 174,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:652923882eca:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:c4f56f0c5c73:1": {
+      "id": "v4:33:F-TA01-A:e:c4f56f0c5c73:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그래. 그럼 나만 한 번 더 돌고 올까?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 172,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:e14c0532e825:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:d036e13267d7:1": {
+      "id": "v4:33:F-TA01-A:e:d036e13267d7:1",
+      "type": "stage",
+      "direction": "타이가가 미오를 보다가 분수 쪽을 돌아본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 170,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:c4f56f0c5c73:1"
+    },
+    "v4:33:F-TA01-A:e:706171cba435:1": {
+      "id": "v4:33:F-TA01-A:e:706171cba435:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "할 수 있는 거하고 하고 싶은 거하고 달라.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 168,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:d036e13267d7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:bdd7d7cc7bda:1": {
+      "id": "v4:33:F-TA01-A:e:bdd7d7cc7bda:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "아직 할 수 있잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 166,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:706171cba435:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:5e924ee8ce0a:1": {
+      "id": "v4:33:F-TA01-A:e:5e924ee8ce0a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기까지. 한 바퀴 하고 앉으려고 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 164,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:bdd7d7cc7bda:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:047a90c186aa:1": {
+      "id": "v4:33:F-TA01-A:e:047a90c186aa:1",
+      "type": "stage",
+      "direction": "둘이 다시 앞을 본다. 미오는 웃음이 나려다 참는다. 타이가가 그것을 보고 자기 입가도 한번 누른다. 바로 사이가 좋아진 것으로 넘기지 않은 채 아래의 물병 장면으로 이어진다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 268,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-05:e:1e7c43119591:1"
+    },
+    "v4:33:F-TA01-A:e:642ed3298433:1": {
+      "id": "v4:33:F-TA01-A:e:642ed3298433:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그러면 좀 안 하면 되지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 266,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:047a90c186aa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:d0ff776254a9:1": {
+      "id": "v4:33:F-TA01-A:e:d0ff776254a9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 지금 앉아 있으면 무슨 말 해야 편해질지 모르겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 264,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:642ed3298433:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:2b0c42ddfbda:1": {
+      "id": "v4:33:F-TA01-A:e:2b0c42ddfbda:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "네가 못 하는 것처럼 들리게 한 건 미안해. 그런데 네가 싫다고 하니까 내가 뭘 하면 좋을지 바로 다 알게 되는 건 아니야.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 262,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:d0ff776254a9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:7d23486686d5:1": {
+      "id": "v4:33:F-TA01-A:e:7d23486686d5:1",
+      "type": "stage",
+      "direction": "타이가가 벤치 등받이에 몸을 기댄다. 먼저 한숨을 쉬고 나서 미오 쪽을 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 260,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:2b0c42ddfbda:1"
+    },
+    "v4:33:F-TA01-A:e:a324e403dc25:2": {
+      "id": "v4:33:F-TA01-A:e:a324e403dc25:2",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 258,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:7d23486686d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:9beb441e4852:1": {
+      "id": "v4:33:F-TA01-A:e:9beb441e4852:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그래. 그만하자고 했어. 지금 앉았고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 256,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:a324e403dc25:2",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:c5e709f8f027:1": {
+      "id": "v4:33:F-TA01-A:e:c5e709f8f027:1",
+      "type": "stage",
+      "direction": "타이가가 입을 벌렸다가 닫는다. 미오는 자기가 그 말까지 따질 줄 몰랐다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 254,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:9beb441e4852:1"
+    },
+    "v4:33:F-TA01-A:e:5bcf3f60d0a3:1": {
+      "id": "v4:33:F-TA01-A:e:5bcf3f60d0a3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잘못했다고 말한 건 아니잖아. 그만하자고 했지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 252,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:c5e709f8f027:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:b88554040f6d:1": {
+      "id": "v4:33:F-TA01-A:e:b88554040f6d:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "네가 화난 건 알겠는데 나도 계속 잘못했다고만 하고 있으면 좀 그렇지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 250,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:5bcf3f60d0a3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:a957be587555:1": {
+      "id": "v4:33:F-TA01-A:e:a957be587555:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 여기 앉아 있어. 내가 기분 풀어 주는 말은 못 해 줄 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 248,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:b88554040f6d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:27e44984a2e4:1": {
+      "id": "v4:33:F-TA01-A:e:27e44984a2e4:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "같이 돌자고 해 놓고 혼자 가는 거, 내가 하면 좀 싫어. 먼저 한 바퀴 더 하자고 한 건 나니까.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 246,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:a957be587555:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:c7050178a721:1": {
+      "id": "v4:33:F-TA01-A:e:c7050178a721:1",
+      "type": "stage",
+      "direction": "미오가 타이가를 본다. 그는 처음으로 미오의 가방이 아니라 자기 발끝을 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 244,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:27e44984a2e4:1"
+    },
+    "v4:33:F-TA01-A:e:ae5ca1311f81:1": {
+      "id": "v4:33:F-TA01-A:e:ae5ca1311f81:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "내가.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 242,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:c7050178a721:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:72c22f174bcc:1": {
+      "id": "v4:33:F-TA01-A:e:72c22f174bcc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그렇게 생각할 것 같아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 240,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:ae5ca1311f81:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:f5ec4a542363:1": {
+      "id": "v4:33:F-TA01-A:e:f5ec4a542363:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "지금 가면 또 네가 너무 세게 말해서 내가 간 것 같잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 238,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:72c22f174bcc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:a93d9587c062:1": {
+      "id": "v4:33:F-TA01-A:e:a93d9587c062:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가도 되는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 236,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:f5ec4a542363:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:262f960f6933:1": {
+      "id": "v4:33:F-TA01-A:e:262f960f6933:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "조금.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 234,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:a93d9587c062:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:696ad520ce16:1": {
+      "id": "v4:33:F-TA01-A:e:696ad520ce16:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 아직 가고 싶어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 232,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:262f960f6933:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:e749fbe83f23:1": {
+      "id": "v4:33:F-TA01-A:e:e749fbe83f23:1",
+      "type": "stage",
+      "direction": "미오가 자기 가방 손잡이를 한번 감았다가 푼다. 타이가는 분수 쪽으로 돌린 발을 그대로 둔다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 230,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:696ad520ce16:1"
+    },
+    "v4:33:F-TA01-A:e:35307fdfc93c:1": {
+      "id": "v4:33:F-TA01-A:e:35307fdfc93c:1",
+      "type": "stage",
+      "direction": "둘은 벤치에 앉는다. 타이가는 미오를 안심시키려고 더 크게 칭찬하지 않는다. 한동안 둘 다 말이 없다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 228,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:e749fbe83f23:1"
+    },
+    "v4:33:F-TA01-A:e:060be6a29624:1": {
+      "id": "v4:33:F-TA01-A:e:060be6a29624:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "알았어. 그만하자.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 226,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:35307fdfc93c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:b00426386d4f:1": {
+      "id": "v4:33:F-TA01-A:e:b00426386d4f:1",
+      "type": "stage",
+      "direction": "타이가는 입을 다문다. 미오는 그가 기분 나빴을 수 있다는 것을 안다. 그래도 말한 것을 없애지 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 224,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:060be6a29624:1"
+    },
+    "v4:33:F-TA01-A:e:f38f5410e449:1": {
+      "id": "v4:33:F-TA01-A:e:f38f5410e449:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 잘한 데서 끝내 줘.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 222,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:b00426386d4f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:a984b9ec7cbc:1": {
+      "id": "v4:33:F-TA01-A:e:a984b9ec7cbc:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "누가 못 걷는다고 했냐. 잘했다고 한 거잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 220,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:f38f5410e449:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:e:61ae0f2f4a95:1": {
+      "id": "v4:33:F-TA01-A:e:61ae0f2f4a95:1",
+      "type": "stage",
+      "direction": "타이가가 조금 당황한다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 218,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:a984b9ec7cbc:1"
+    },
+    "v4:33:F-TA01-A:e:fe2a46db7504:1": {
+      "id": "v4:33:F-TA01-A:e:fe2a46db7504:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "못 걷는 거 아냐. 걷기 싫어서 그만하는 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 216,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      },
+      "next": "v4:33:F-TA01-A:e:61ae0f2f4a95:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-A:menu": {
+      "id": "v4:33:F-TA01-A:menu",
+      "type": "menu",
+      "q": "한 번 더",
+      "options": [
+        {
+          "id": "A1",
+          "label": "한 바퀴만 더 걷겠다고 한다.",
+          "to": "v4:33:F-TA01-A:e:d96280dbefeb:1",
+          "set": {
+            "F-TA01-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "아까 말한 한 바퀴에서 끝내겠다고 한다.",
+          "to": "v4:33:F-TA01-A:e:5e924ee8ce0a:1",
+          "set": {
+            "F-TA01-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "더 걸을 수 있지만 싫다고 분명히 말한다.",
+          "to": "v4:33:F-TA01-A:e:fe2a46db7504:1",
+          "set": {
+            "F-TA01-A": "A3"
+          }
+        }
+      ],
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 92,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "선택 F-TA01-A — 한 번 더",
+        "location": "F-TA01-A"
+      }
+    },
+    "v4:33:F-TA01-04:e:3b36e394b256:1": {
+      "id": "v4:33:F-TA01-04:e:3b36e394b256:1",
+      "type": "stage",
+      "direction": "미오는 벤치를 본다. 몸이 못 버틸 정도는 아니다. 다만 이미 끝이라고 생각했다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 90,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-04 벤치가 보이는 곳",
+        "location": "F-TA01-04"
+      },
+      "next": "v4:33:F-TA01-A:menu"
+    },
+    "v4:33:F-TA01-04:e:dfa8d68d0cb4:1": {
+      "id": "v4:33:F-TA01-04:e:dfa8d68d0cb4:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "괜찮은데? 한 바퀴 더 해도 되겠네.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 88,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-04 벤치가 보이는 곳",
+        "location": "F-TA01-04"
+      },
+      "next": "v4:33:F-TA01-04:e:3b36e394b256:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-04:e:c4a61343ff6f:1": {
+      "id": "v4:33:F-TA01-04:e:c4a61343ff6f:1",
+      "type": "stage",
+      "direction": "처음의 벤치가 보인다. 타이가가 분수 쪽으로 엄지를 든다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 86,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-04 벤치가 보이는 곳",
+        "location": "F-TA01-04"
+      },
+      "next": "v4:33:F-TA01-04:e:dfa8d68d0cb4:1"
+    },
+    "v4:33:F-TA01-03:e:2da17159de0c:1": {
+      "id": "v4:33:F-TA01-03:e:2da17159de0c:1",
+      "type": "stage",
+      "direction": "미오는 그 설명이 거짓 같지는 않다. 그래도 도움과 귀찮음이 같은 말일 수 있다는 것을 타이가에게 전부 납득시키려 하지는 않는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 82,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-04:e:c4a61343ff6f:1"
+    },
+    "v4:33:F-TA01-03:e:c1e5a32d2cd0:1": {
+      "id": "v4:33:F-TA01-03:e:c1e5a32d2cd0:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "도움이 될까 해서지.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 80,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:2da17159de0c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:e21671196de3:1": {
+      "id": "v4:33:F-TA01-03:e:e21671196de3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 나한테도 한 번 더 하라고 하는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 78,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:c1e5a32d2cd0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:cc7d5578d52d:1": {
+      "id": "v4:33:F-TA01-03:e:cc7d5578d52d:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "나는 누가 옆에서 해 주면 더 잘돼. 혼자 하면 적당히 해 버리거든. 한 번 더 하라고 해 줄 사람이 있어야 끝까지 하고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 76,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:e21671196de3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:df3c517dd479:1": {
+      "id": "v4:33:F-TA01-03:e:df3c517dd479:1",
+      "type": "stage",
+      "direction": "미오는 걷는 속도와 쉬는 방법까지 서로 다르다고 생각한다. 타이가가 먼저 말을 잇는다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 74,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:cc7d5578d52d:1"
+    },
+    "v4:33:F-TA01-03:e:bfbf848a1dc7:1": {
+      "id": "v4:33:F-TA01-03:e:bfbf848a1dc7:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그럴 것 같긴 하네.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 72,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:df3c517dd479:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:3a49c355ff4a:1": {
+      "id": "v4:33:F-TA01-03:e:3a49c355ff4a:1",
+      "type": "stage",
+      "direction": "타이가가 웃다가 자기 뒤통수를 만진다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 70,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:bfbf848a1dc7:1"
+    },
+    "v4:33:F-TA01-03:e:03b48dcff5eb:1": {
+      "id": "v4:33:F-TA01-03:e:03b48dcff5eb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 집에 있으면 쉬는 건데. 네가 거기 있었으면 또 밖으로 불렀겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 68,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:3a49c355ff4a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:bfd8b6031928:1": {
+      "id": "v4:33:F-TA01-03:e:bfd8b6031928:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그런 뜻 아니야. 나는 밖에 나가야 쉬는 것 같아서. 집에 있으면 또 몸이 근질거리고.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 66,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:03b48dcff5eb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:fbf7700e5491:1": {
+      "id": "v4:33:F-TA01-03:e:fbf7700e5491:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "많이 안 걸었지. 그래서 지금 느리다고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 64,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:bfd8b6031928:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-03:e:e1bf575a888e:1": {
+      "id": "v4:33:F-TA01-03:e:e1bf575a888e:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "밖에서도 이렇게 많이 걸었냐?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 62,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-03 잘하는 것을 묻는 법",
+        "location": "F-TA01-03"
+      },
+      "next": "v4:33:F-TA01-03:e:fbf7700e5491:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:ad05c323eda2:1": {
+      "id": "v4:33:F-TA01-02:e:ad05c323eda2:1",
+      "type": "stage",
+      "direction": "미오는 그 말이 의외라 먼저 걷는다. 타이가가 뒤에서 길을 고치지 않는 동안은 편하다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 58,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-03:e:e1bf575a888e:1"
+    },
+    "v4:33:F-TA01-02:e:d40e16566fe5:1": {
+      "id": "v4:33:F-TA01-02:e:d40e16566fe5:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그래. 네가 앞에 가.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 56,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:ad05c323eda2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:41324bcf6827:1": {
+      "id": "v4:33:F-TA01-02:e:41324bcf6827:1",
+      "type": "stage",
+      "direction": "타이가가 멈춰 서서 안내판을 본다. 미오가 가리킨 길로 몸을 돌린다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 54,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:d40e16566fe5:1"
+    },
+    "v4:33:F-TA01-02:e:beb5bdc8d66c:1": {
+      "id": "v4:33:F-TA01-02:e:beb5bdc8d66c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가까운 거 하고 싶다고 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 52,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:41324bcf6827:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:24a9f69f5838:1": {
+      "id": "v4:33:F-TA01-02:e:24a9f69f5838:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "큰 길로 가도 금방이야.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 50,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:beb5bdc8d66c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:e6e0b865d35b:1": {
+      "id": "v4:33:F-TA01-02:e:e6e0b865d35b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "벤치는 이쪽이 더 가까워.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 48,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:24a9f69f5838:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:75ac150eb531:1": {
+      "id": "v4:33:F-TA01-02:e:75ac150eb531:1",
+      "type": "stage",
+      "direction": "잠시 같은 속도로 간다. 분수 모퉁이를 돌자 타이가는 본능적으로 큰 길 쪽을 고른다. 미오는 안내판을 본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 46,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:e6e0b865d35b:1"
+    },
+    "v4:33:F-TA01-02:e:a324e403dc25:1": {
+      "id": "v4:33:F-TA01-02:e:a324e403dc25:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 44,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:75ac150eb531:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:c04e2600c755:1": {
+      "id": "v4:33:F-TA01-02:e:c04e2600c755:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "아. 미안. 이 정도?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 42,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:a324e403dc25:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:ec5e1e69b769:1": {
+      "id": "v4:33:F-TA01-02:e:ec5e1e69b769:1",
+      "type": "stage",
+      "direction": "타이가가 미오 발을 보고 속도를 줄인다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 40,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:c04e2600c755:1"
+    },
+    "v4:33:F-TA01-02:e:b0c77d31a33d:1": {
+      "id": "v4:33:F-TA01-02:e:b0c77d31a33d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 38,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:ec5e1e69b769:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:44aacc6641e0:1": {
+      "id": "v4:33:F-TA01-02:e:44aacc6641e0:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "걷고 있잖아.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 36,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:b0c77d31a33d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:f686f2c44384:1": {
+      "id": "v4:33:F-TA01-02:e:f686f2c44384:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "걷자며.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 34,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:44aacc6641e0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-02:e:d01f78067d35:1": {
+      "id": "v4:33:F-TA01-02:e:d01f78067d35:1",
+      "type": "stage",
+      "direction": "처음에는 둘이 나란히 걷는다. 타이가는 한두 마디 말을 하다가 미오보다 반 걸음 앞선다. 미오가 맞춰 걸으니 조금 더 빨라진다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 32,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-02 같이 걷는 보폭",
+        "location": "F-TA01-02"
+      },
+      "next": "v4:33:F-TA01-02:e:f686f2c44384:1"
+    },
+    "v4:33:F-TA01-01:e:ef0bfe33c910:1": {
+      "id": "v4:33:F-TA01-01:e:ef0bfe33c910:1",
+      "type": "stage",
+      "direction": "미오는 걷자고 한다. 타이가가 고개를 끄덕이고 옆에 선다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 28,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-02:e:d01f78067d35:1"
+    },
+    "v4:33:F-TA01-01:e:cbd988a511f3:1": {
+      "id": "v4:33:F-TA01-01:e:cbd988a511f3:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "네가 정해. 같이 한 바퀴만.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 26,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:ef0bfe33c910:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:ddeb532acf99:1": {
+      "id": "v4:33:F-TA01-01:e:ddeb532acf99:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뛰는 거야, 걷는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 24,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:cbd988a511f3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:647a6065c858:1": {
+      "id": "v4:33:F-TA01-01:e:647a6065c858:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "그럼 할 거냐?",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 22,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:ddeb532acf99:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:9968b41bc114:1": {
+      "id": "v4:33:F-TA01-01:e:9968b41bc114:1",
+      "type": "stage",
+      "direction": "타이가가 돌아본다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 20,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:647a6065c858:1"
+    },
+    "v4:33:F-TA01-01:e:2941d98843f7:1": {
+      "id": "v4:33:F-TA01-01:e:2941d98843f7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 한다고 아직 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 18,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:9968b41bc114:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:f295d5b6c5f0:1": {
+      "id": "v4:33:F-TA01-01:e:f295d5b6c5f0:1",
+      "type": "stage",
+      "direction": "미오는 분수까지의 거리를 본다. 멀지는 않다. 타이가가 이미 출발하려는 자세라 먼저 손을 든다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 16,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:2941d98843f7:1"
+    },
+    "v4:33:F-TA01-01:e:b246385700ea:1": {
+      "id": "v4:33:F-TA01-01:e:b246385700ea:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "한 바퀴 돌고 앉으면 되지. 여기서 분수 돌아오는 거. 별로 안 멀어.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 14,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:f295d5b6c5f0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:2568d034e694:1": {
+      "id": "v4:33:F-TA01-01:e:2568d034e694:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 앉으려고 왔어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 12,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:b246385700ea:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:1e2b4262774e:1": {
+      "id": "v4:33:F-TA01-01:e:1e2b4262774e:1",
+      "type": "say",
+      "speaker": "타이가",
+      "actor": "taiga",
+      "text": "미오! 잘됐다. 한 바퀴 돌자.",
+      "mono": false,
+      "delivery": "타이가",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 10,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:2568d034e694:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "타이가",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:33:F-TA01-01:e:8e38af8e5218:1": {
+      "id": "v4:33:F-TA01-01:e:8e38af8e5218:1",
+      "type": "stage",
+      "direction": "중앙 광장 옆 길. 미오가 벤치에 앉으려 하자 타이가가 반대편에서 돌아온다. 숨은 차 있지만 걸음은 빠르다.",
+      "source": {
+        "file": "33_자유시간_타이가_01.md",
+        "line": 8,
+        "fileSha256": "5747a537cd64be29bf7a19b1ced0fcf36ab246dfe12c799f8b8e6243a75a9471",
+        "heading": "F-TA01-01 벤치에 앉으러 온 사람",
+        "location": "F-TA01-01"
+      },
+      "next": "v4:33:F-TA01-01:e:1e2b4262774e:1"
+    }
+  },
+  "kind": "freetime",
+  "routingStatus": "authored_simple_convergence",
+  "sourceFile": "33_자유시간_타이가_01.md",
+  "completionFlag": "fte:33:complete",
+  "eligibility": "Caller must enforce the exact manuscript day/time and prior-meeting requirements. No caller may auto-play every library file.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "33_자유시간_타이가_01.md:F-TA01-07": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-06": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-05b": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-05": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-02": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "33_자유시간_타이가_01.md:F-TA01-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

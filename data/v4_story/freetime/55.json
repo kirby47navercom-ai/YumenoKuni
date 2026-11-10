@@ -1,0 +1,5246 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:55:F-KO03-01:e:e112541e5922:1",
+  "nodes": {
+    "v4:55:return": {
+      "id": "v4:55:return",
+      "type": "return"
+    },
+    "v4:55:F-KO03-04:e:309b6065c740:1": {
+      "id": "v4:55:F-KO03-04:e:309b6065c740:1",
+      "type": "stage",
+      "direction": "모든 경로에서 새 종이/펜/향 주머니는 코토에게 남고 미오의 새 소지품은 없다.36의실제노동A/거절B/코토에게맡김C와나나공개정정A/둘사이B/개별확인C는바뀌지않는다.미오는실제본경로에따라첫승리·집계제외또는미정리·무승부/동석/퇴실을기억한다.어떤선택도다음날모든업무나확인시연에동의한것이아니다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 514,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:return"
+    },
+    "v4:55:F-KO03-04:e:5440b3ed1ea0:1": {
+      "id": "v4:55:F-KO03-04:e:5440b3ed1ea0:1",
+      "type": "stage",
+      "direction": "코토가 짧게 웃는다. 첫 판을A에 따른 상태로 두고, 둘째 판은 반으로 접는다. 버리거나 사건 자료로 공유하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 492,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:309b6065c740:1"
+    },
+    "v4:55:F-KO03-04:e:97566ae433ee:1": {
+      "id": "v4:55:F-KO03-04:e:97566ae433ee:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 이긴 판 가지고 계속 놀릴까 봐 묻는 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 490,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:5440b3ed1ea0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:26c0c31cbce8:1": {
+      "id": "v4:55:F-KO03-04:e:26c0c31cbce8:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 내일 누구한테 미오 씨와 뭘 했는지 말씀드릴까 봐 그러세요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 488,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:97566ae433ee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:177a785025b5:1": {
+      "id": "v4:55:F-KO03-04:e:177a785025b5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "종이? 아니. 네가 정리해. 내일 이겼다고 보여 주러 갈 건 아니라서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 486,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:26c0c31cbce8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:a5e6d2336078:1": {
+      "id": "v4:55:F-KO03-04:e:a5e6d2336078:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "가져가실 거예요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 484,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:177a785025b5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:0fe150e171b9:1": {
+      "id": "v4:55:F-KO03-04:e:0fe150e171b9:1",
+      "type": "stage",
+      "direction": "두 사람은 첫 판과 무승부 판을 같은 집계로 합치지 않는다. 미오가 동그라미와 가위표를 번갈아 보다가 펜을 돌려준다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 482,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:a5e6d2336078:1"
+    },
+    "v4:55:F-KO03-04:e:a4c53157a8b2:1": {
+      "id": "v4:55:F-KO03-04:e:a4c53157a8b2:1",
+      "type": "stage",
+      "direction": "미오는 같이 앉아 있었다고 말한다. 코토가 웃는다. 물을 따라 준 시간이 둘 중 한 사람의 공로가 되는 결론으로 정리하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 506,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:309b6065c740:1"
+    },
+    "v4:55:F-KO03-04:e:8b410c023e6e:1": {
+      "id": "v4:55:F-KO03-04:e:8b410c023e6e:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그러면 그 말을 해 주세요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 504,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:a4c53157a8b2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:46e782015bac:1": {
+      "id": "v4:55:F-KO03-04:e:46e782015bac:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 그냥 같이 있었다고 말하려고 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 502,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:8b410c023e6e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:87f9ecd7a695:1": {
+      "id": "v4:55:F-KO03-04:e:87f9ecd7a695:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 그런데 그걸 잘했다고 하시면 조금 싫을 것 같아요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 500,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:46e782015bac:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:0bf0de08f13d:1": {
+      "id": "v4:55:F-KO03-04:e:0bf0de08f13d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 다른 일 하나 더 안 정했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 498,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:87f9ecd7a695:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-04:e:23ef2af488bc:1": {
+      "id": "v4:55:F-KO03-04:e:23ef2af488bc:1",
+      "type": "stage",
+      "direction": "코토는 향 주머니를 자기 가방에 돌려넣는다. 미오에게 선물하거나 담긴 것을 공유하지 않는다. 미오가 빈 컵을 두었던 곳을 손바닥으로 짚는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 496,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:0bf0de08f13d:1"
+    },
+    "v4:55:F-KO03-04:e:c9ea50646968:1": {
+      "id": "v4:55:F-KO03-04:e:c9ea50646968:1",
+      "type": "stage",
+      "direction": "미오는 복도를 혼자 간다. 코토가 그 뒤에 어떤 표정으로 남았는지 알지 못한다. 다시 돌아가서 웃고 있는지 확인하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 510,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-04 남겨 둔 종이",
+        "location": "F-KO03-04"
+      },
+      "next": "v4:55:F-KO03-04:e:309b6065c740:1"
+    },
+    "v4:55:h-5237ebeb93:e:e008bd37a5d5:1": {
+      "id": "v4:55:h-5237ebeb93:e:e008bd37a5d5:1",
+      "type": "stage",
+      "direction": "코토가 잠깐 생각하다 고개를 끄덕인다. 미오를 문 앞까지 따라가지 않는다. 미오는 자기 의자를 넣고 가방을 든다. 코토는 새 빈 종이를 접어 가방에 넣는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 476,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:F-KO03-04:e:c9ea50646968:1"
+    },
+    "v4:55:missing:current-first-game-treatment": {
+      "id": "v4:55:missing:current-first-game-treatment",
+      "type": "gate",
+      "reason": "Actual prior FTE choice absent: KOTO-03A"
+    },
+    "v4:55:h-5237ebeb93:e:ec78f120aa29:1": {
+      "id": "v4:55:h-5237ebeb93:e:ec78f120aa29:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 인정해 줘야 이긴 게 된다고 기다린 건 아니야. 네가 뭐라고 하는지는 듣고 싶었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 464,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e008bd37a5d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:68812edafed6:1": {
+      "id": "v4:55:h-5237ebeb93:e:68812edafed6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 지워도 좋다고 했어. 그 말까지 네가 져 준 것처럼 끝내지는 마.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 468,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e008bd37a5d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:af2aeacb1df3:1": {
+      "id": "v4:55:h-5237ebeb93:e:af2aeacb1df3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 정리하자는 건 안 했어. 내가 접은 건 맞고. 그것까지 네가 양보한 걸로 말하지 마.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 472,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e008bd37a5d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:current-first-game-treatment": {
+      "id": "v4:55:current-first-game-treatment",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "KOTO-03A",
+          "equals": "A1",
+          "to": "v4:55:h-5237ebeb93:e:ec78f120aa29:1"
+        },
+        {
+          "flag": "KOTO-03A",
+          "equals": "A2",
+          "to": "v4:55:h-5237ebeb93:e:68812edafed6:1"
+        },
+        {
+          "flag": "KOTO-03A",
+          "equals": "A3",
+          "to": "v4:55:h-5237ebeb93:e:af2aeacb1df3:1"
+        }
+      ],
+      "default": "v4:55:missing:current-first-game-treatment"
+    },
+    "v4:55:h-5237ebeb93:e:cf0c092f269e:1": {
+      "id": "v4:55:h-5237ebeb93:e:cf0c092f269e:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "알겠어요. 제가 졌다고 하는 데까지는 기다려 주셨네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 460,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:current-first-game-treatment",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:569a61a493c0:1": {
+      "id": "v4:55:h-5237ebeb93:e:569a61a493c0:1",
+      "type": "stage",
+      "direction": "코토가 펜 뚜껑을 닫는다. 미오가 약속을 안 해서 상처받았다는 말을 하지는 않지만, 의자를 먼저 넣어 주지도 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 458,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:cf0c092f269e:1"
+    },
+    "v4:55:h-5237ebeb93:e:7b62f8056a82:1": {
+      "id": "v4:55:h-5237ebeb93:e:7b62f8056a82:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 아직 모르겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 456,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:569a61a493c0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:3e8b064cf71f:1": {
+      "id": "v4:55:h-5237ebeb93:e:3e8b064cf71f:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "다음에요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 454,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:7b62f8056a82:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:6f2711d94b7e:1": {
+      "id": "v4:55:h-5237ebeb93:e:6f2711d94b7e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "난 지금 갈래. 한 판 했고. 네가 한 번 더 해 달라고 한 건 들었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 452,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:3e8b064cf71f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:9a5df3ef3313:1": {
+      "id": "v4:55:h-5237ebeb93:e:9a5df3ef3313:1",
+      "type": "stage",
+      "direction": "코토가 펜을 놓는다. 세 번째 판을 그리지 않는다. 첫 판의 집계는A에 따른 상태로 남고, 두 번째 판은 둘이 실제로 둔 무승부다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 348,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:F-KO03-04:e:0fe150e171b9:1"
+    },
+    "v4:55:h-5237ebeb93:e:e4fdca8a632c:1": {
+      "id": "v4:55:h-5237ebeb93:e:e4fdca8a632c:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "알아요. 그래도 먼저 말하고 싶을 때가 있어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 346,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:9a5df3ef3313:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:ec3595275807:1": {
+      "id": "v4:55:h-5237ebeb93:e:ec3595275807:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "먼저 말하면 이기는 거 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 344,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e4fdca8a632c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:a89b59d1f915:1": {
+      "id": "v4:55:h-5237ebeb93:e:a89b59d1f915:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 먼저 비겼다고 하려고 했어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 342,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ec3595275807:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:f9ec5e1b0a74:1": {
+      "id": "v4:55:h-5237ebeb93:e:f9ec5e1b0a74:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "비겼어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 340,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:a89b59d1f915:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:256c9b2f4f20:1": {
+      "id": "v4:55:h-5237ebeb93:e:256c9b2f4f20:1",
+      "type": "stage",
+      "direction": "코토가 펜을 내려놓는다. 미오는 칸 밖으로 튀어나온 가위표 끝을 손가락으로 한번 따라갔다가 손을 뗀다. 선이 칸 밖으로 나왔다는 이유로 다른 칸까지 차지하거나 세 번째 표가 생기는 규칙은 없다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 338,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:f9ec5e1b0a74:1"
+    },
+    "v4:55:h-5237ebeb93:e:8268d357fe15:1": {
+      "id": "v4:55:h-5237ebeb93:e:8268d357fe15:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 이번에는 내가 이긴 데도 안 보이는데 왜 져.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 336,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:256c9b2f4f20:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:5db9dda49694:1": {
+      "id": "v4:55:h-5237ebeb93:e:5db9dda49694:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 졌다고 먼저 말해 드릴까요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 334,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:8268d357fe15:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:35f75d5a62dc:1": {
+      "id": "v4:55:h-5237ebeb93:e:35f75d5a62dc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 그럴 때 기다리기가 싫네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 332,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:5db9dda49694:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:1e139ad5133c:1": {
+      "id": "v4:55:h-5237ebeb93:e:1e139ad5133c:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "저도 보고 있어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 330,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:35f75d5a62dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:053df5fe6b8d:1": {
+      "id": "v4:55:h-5237ebeb93:e:053df5fe6b8d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 놓친 데 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 328,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:1e139ad5133c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:443c19700a79:1": {
+      "id": "v4:55:h-5237ebeb93:e:443c19700a79:1",
+      "type": "stage",
+      "direction": "코토가 가로줄 세 개를 눈으로 따라가고 세로줄과 대각선도 본다. 지우개를 들거나 이미 그은 동그라미를 다른 칸으로 옮기지는 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 326,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:053df5fe6b8d:1"
+    },
+    "v4:55:h-5237ebeb93:e:d2d42c255a30:1": {
+      "id": "v4:55:h-5237ebeb93:e:d2d42c255a30:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "잠깐만요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 324,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:443c19700a79:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:9a499fedca0d:1": {
+      "id": "v4:55:h-5237ebeb93:e:9a499fedca0d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다 찼네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 322,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:d2d42c255a30:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:68ed418836d1:1": {
+      "id": "v4:55:h-5237ebeb93:e:68ed418836d1:1",
+      "type": "stage",
+      "direction": "미오는 아래 가운데를 보다가 위 가운데에 가위표를 그린다. 코토는 자기 차례가 오자 남은 아래 가운데를 채운다. 종이에 표시가 아홉 개가 됐지만 동그라미/가위표 어느 쪽도 가로·세로·대각선의 한 줄 셋을 이루지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 320,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:9a499fedca0d:1"
+    },
+    "v4:55:h-5237ebeb93:e:58ceb8249815:1": {
+      "id": "v4:55:h-5237ebeb93:e:58ceb8249815:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 318,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:68ed418836d1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:b57af2dc9cb2:1": {
+      "id": "v4:55:h-5237ebeb93:e:b57af2dc9cb2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이제 두 칸.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 316,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:58ceb8249815:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:ab06f5732433:1": {
+      "id": "v4:55:h-5237ebeb93:e:ab06f5732433:1",
+      "type": "stage",
+      "direction": "코토가 오른쪽 위에 동그라미를 놓는다. 현재 코토는 가운데/오른쪽 아래/왼쪽 가운데/오른쪽 위,미오는왼쪽위/왼쪽아래/오른쪽가운데다. 빈 곳은 위 가운데와 아래 가운데 두 칸이다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 314,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:b57af2dc9cb2:1"
+    },
+    "v4:55:h-5237ebeb93:e:9b3041d9e031:1": {
+      "id": "v4:55:h-5237ebeb93:e:9b3041d9e031:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 계속해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 312,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ab06f5732433:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:e7c39be02536:1": {
+      "id": "v4:55:h-5237ebeb93:e:e7c39be02536:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "지금은 안 바꿉니다.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 310,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:9b3041d9e031:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:83bd8bc97226:1": {
+      "id": "v4:55:h-5237ebeb93:e:83bd8bc97226:1",
+      "type": "stage",
+      "direction": "첫 판은A별로남은선/지운표/접힌종이상태그대로옆에있다.미오는이번판을지우거나그앞판의집계를새로정하지않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 308,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e7c39be02536:1"
+    },
+    "v4:55:h-5237ebeb93:e:0c87dcd62d07:1": {
+      "id": "v4:55:h-5237ebeb93:e:0c87dcd62d07:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 이기고 싶다고 한 게 싫었던 건 아니야. 내가 이긴 다음에 이름 바꾸는 게 싫었고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 306,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:83bd8bc97226:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:048a21f85dda:1": {
+      "id": "v4:55:h-5237ebeb93:e:048a21f85dda:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "저만 그러는 줄 알았어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 304,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:0c87dcd62d07:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:8283c76601a1:1": {
+      "id": "v4:55:h-5237ebeb93:e:8283c76601a1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 나 이기고 싶어서 시작했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 302,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:048a21f85dda:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:2167331ab767:1": {
+      "id": "v4:55:h-5237ebeb93:e:2167331ab767:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그럼 이번 판에서 미오 씨도 지기 싫으시네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 300,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:8283c76601a1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:7b3a3d0f1c6e:1": {
+      "id": "v4:55:h-5237ebeb93:e:7b3a3d0f1c6e:1",
+      "type": "stage",
+      "direction": "코토가 잠깐 미오를 본다. 미오는 자기가 먼저 웃는다. 코토도 웃지만 자기 표시 두 개를 손가락으로 가리키며 다시 기회를 주지는 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 298,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:2167331ab767:1"
+    },
+    "v4:55:h-5237ebeb93:e:604b34d41c94:1": {
+      "id": "v4:55:h-5237ebeb93:e:604b34d41c94:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 이길 때는 네가 안 봤으면 좋겠고, 네가 이길 때는 내가 봐야지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 296,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:7b3a3d0f1c6e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:ae3530b3cc2e:1": {
+      "id": "v4:55:h-5237ebeb93:e:ae3530b3cc2e:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "아까는 제가 안 봤으면 좋겠다고 하셨잖아요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 294,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:604b34d41c94:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:86384587dc72:1": {
+      "id": "v4:55:h-5237ebeb93:e:86384587dc72:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 방금 그렸어. 안 볼 수가 없지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 292,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ae3530b3cc2e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:d708c768b43d:1": {
+      "id": "v4:55:h-5237ebeb93:e:d708c768b43d:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그쪽은 보셨네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 290,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:86384587dc72:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:4206dd084426:1": {
+      "id": "v4:55:h-5237ebeb93:e:4206dd084426:1",
+      "type": "stage",
+      "direction": "코토가 펜을 미오 앞에 놓는다. 이번에는 미오가 생각하는 동안 먼저 둘 자리를 손으로 짚지 않는다. 미오는 가운데 가로줄의 코토 표시 두 개를 보고 오른쪽 가운데를 막는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 288,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:d708c768b43d:1"
+    },
+    "v4:55:h-5237ebeb93:e:121bb64ce927:1": {
+      "id": "v4:55:h-5237ebeb93:e:121bb64ce927:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 이미 봤잖아. 다음엔 못 본 척 두지 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 286,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:4206dd084426:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:48aa345a60c6:1": {
+      "id": "v4:55:h-5237ebeb93:e:48aa345a60c6:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 안 보고 다른 데 둘까요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 284,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:121bb64ce927:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:aa9693b93bf1:1": {
+      "id": "v4:55:h-5237ebeb93:e:aa9693b93bf1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그거 안 봤으면 좋았을 텐데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 282,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:48aa345a60c6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:96f348fd1acc:1": {
+      "id": "v4:55:h-5237ebeb93:e:96f348fd1acc:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "왜요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 280,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:aa9693b93bf1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:90350572afa9:1": {
+      "id": "v4:55:h-5237ebeb93:e:90350572afa9:1",
+      "type": "stage",
+      "direction": "코토는 미오의 왼쪽 두 표시를 보다가 자기 펜을 왼쪽 가운데에 댄다. 동그라미가 닫힐 때 미오가 고개를 조금 뒤로 뺀다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 278,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:96f348fd1acc:1"
+    },
+    "v4:55:h-5237ebeb93:e:963ab2915da3:1": {
+      "id": "v4:55:h-5237ebeb93:e:963ab2915da3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 나 혼자 급했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 276,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:90350572afa9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:7e51d6e451de:1": {
+      "id": "v4:55:h-5237ebeb93:e:7e51d6e451de:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "말 안 하고 있었는데요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 274,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:963ab2915da3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:bc2df8aa11a8:1": {
+      "id": "v4:55:h-5237ebeb93:e:bc2df8aa11a8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "생각 오래 하면 네가 아는 척 말할 것 같아서 빨리 뒀어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 272,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:7e51d6e451de:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:e87a7b4b4d03:1": {
+      "id": "v4:55:h-5237ebeb93:e:e87a7b4b4d03:1",
+      "type": "stage",
+      "direction": "코토가 웃다가 오른쪽 아래에 동그라미를 그린다. 미오는 왼쪽 아래에 가위표를 긋는다. 미오의 왼쪽 위/아래 사이에는 아직 빈칸이 있다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 270,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:bc2df8aa11a8:1"
+    },
+    "v4:55:h-5237ebeb93:e:5d48217987e5:1": {
+      "id": "v4:55:h-5237ebeb93:e:5d48217987e5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이겨 보겠다고는 안 했는데 벌써 이긴 얼굴이야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 268,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e87a7b4b4d03:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:ae44eade50e9:1": {
+      "id": "v4:55:h-5237ebeb93:e:ae44eade50e9:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "보셨어요? 제가 지금 먼저 이기려고 하는 거.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 266,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:5d48217987e5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:ff4804035465:1": {
+      "id": "v4:55:h-5237ebeb93:e:ff4804035465:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 아까 먼저 둔 데라서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 264,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ae44eade50e9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:8572ef7fadeb:1": {
+      "id": "v4:55:h-5237ebeb93:e:8572ef7fadeb:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "먼저 두기로 했잖아요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 262,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ff4804035465:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:f560851ea465:1": {
+      "id": "v4:55:h-5237ebeb93:e:f560851ea465:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에는 거기 먼저 가져갔네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 260,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:8572ef7fadeb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:b5143aadf4eb:1": {
+      "id": "v4:55:h-5237ebeb93:e:b5143aadf4eb:1",
+      "type": "stage",
+      "direction": "코토가 새 판 가운데에 동그라미를 그린다. 미오는 왼쪽 위에 가위표를 그린다. 첫 판과 다르게 코토가 가운데를 차지한 상태다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 258,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:f560851ea465:1"
+    },
+    "v4:55:h-5237ebeb93:e:ca53f248ed64:1": {
+      "id": "v4:55:h-5237ebeb93:e:ca53f248ed64:1",
+      "type": "stage",
+      "direction": "새 판. 코토가 이번에는 먼저 동그라미를 두겠다고 하고 미오가 동의한다. 각자 자기 차례를 직접 고른다. 아래의 한 판을 짧은 실제 동작으로 보여 주며 같은 장면을 반복 재생하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 256,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:b5143aadf4eb:1"
+    },
+    "v4:55:h-5237ebeb93:e:e39486980cf8:1": {
+      "id": "v4:55:h-5237ebeb93:e:e39486980cf8:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그게 더 빨리 끝나겠네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 254,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ca53f248ed64:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:5d72c98f96f0:1": {
+      "id": "v4:55:h-5237ebeb93:e:5d72c98f96f0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하자. 대신 이번에는 내가 부탁하기 전에는 둘 자리 알려 주지 마. 네 것도 내가 대신 안 골라 줄게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 252,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e39486980cf8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:85937e9758f6:1": {
+      "id": "v4:55:h-5237ebeb93:e:85937e9758f6:1",
+      "type": "stage",
+      "direction": "실제 새 업무 배정은 없다. 코토는 미오의 물을 더 채우지 않는다. 미오는 자기 컵을 직접 치우고 잠시 더 앉아 있다가 일어난다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 448,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:F-KO03-04:e:23ef2af488bc:1"
+    },
+    "v4:55:h-5237ebeb93:e:dac850d377c7:1": {
+      "id": "v4:55:h-5237ebeb93:e:dac850d377c7:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그러면 지금은 안 말할래요. 일 끝낸 다음에 쉬었다고 생각하고 싶어서요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 446,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:85937e9758f6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:b90a3dff1eb3:1": {
+      "id": "v4:55:h-5237ebeb93:e:b90a3dff1eb3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무슨 일인지도 모르는데 대답 못 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 444,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:dac850d377c7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:6ebbff9dc74f:1": {
+      "id": "v4:55:h-5237ebeb93:e:6ebbff9dc74f:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "있어요. 그런데 그걸 말씀드리면 도와주고 가실 거예요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 442,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:b90a3dff1eb3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:45042be2d998:1": {
+      "id": "v4:55:h-5237ebeb93:e:45042be2d998:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "끝나고 해야 할 일 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 440,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:6ebbff9dc74f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:7b98da73814e:1": {
+      "id": "v4:55:h-5237ebeb93:e:7b98da73814e:1",
+      "type": "stage",
+      "direction": "미오가 컵을 들어 숨기듯 마신다.코토는 내일 같이 보자고 말을 바꾸지 않는다.새 영상 재생/관람 약속/현재 통신 창구는 없다.과거의 사적 관람 얘기만 했고 B1/B3에는 이 대화가 없다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 438,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:45042be2d998:1"
+    },
+    "v4:55:h-5237ebeb93:e:6d6d99903c6a:1": {
+      "id": "v4:55:h-5237ebeb93:e:6d6d99903c6a:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그럼 미오 씨도 안 부를게요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 436,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:7b98da73814e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:c2d5e9cf56b9:1": {
+      "id": "v4:55:h-5237ebeb93:e:c2d5e9cf56b9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 네가 어디서 끄는지 보고 싶을 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 434,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:6d6d99903c6a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:566c51b35503:1": {
+      "id": "v4:55:h-5237ebeb93:e:566c51b35503:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "싫어요. 저 놀라는 걸 보려고 옆에 앉을 거잖아요. 화면 말고 저를.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 432,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:c2d5e9cf56b9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:a7f329699f83:1": {
+      "id": "v4:55:h-5237ebeb93:e:a7f329699f83:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "켄한테 말하면 분명 같이 보자고 하겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 430,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:566c51b35503:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:80faae7a904f:1": {
+      "id": "v4:55:h-5237ebeb93:e:80faae7a904f:1",
+      "type": "stage",
+      "direction": "미오가 웃는다.코토도 짧게 웃고 향 주머니를 손에서 놓는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 428,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:a7f329699f83:1"
+    },
+    "v4:55:h-5237ebeb93:e:87d352292ee8:1": {
+      "id": "v4:55:h-5237ebeb93:e:87d352292ee8:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "대낮에요. 소리도 작게. 그런데 제가 전날 껐던 데가 제일 무섭더라고요. 어디서 나오는지 알면서도 기다리니까요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 426,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:80faae7a904f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:602160cbc9e6:1": {
+      "id": "v4:55:h-5237ebeb93:e:602160cbc9e6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 다음 날에는 켰어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 424,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:87d352292ee8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:e8ed5e56abdf:1": {
+      "id": "v4:55:h-5237ebeb93:e:e8ed5e56abdf:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "혼자였어요. 그때는.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 422,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:602160cbc9e6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:fef5d480fcd0:1": {
+      "id": "v4:55:h-5237ebeb93:e:fef5d480fcd0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 꺼도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 420,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e8ed5e56abdf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:2fe2b86e1249:1": {
+      "id": "v4:55:h-5237ebeb93:e:2fe2b86e1249:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 그러다가 밤에 무서워서 제가 먼저 꺼 놓은 적도 있어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 418,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:fef5d480fcd0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:728948ae17b6:1": {
+      "id": "v4:55:h-5237ebeb93:e:728948ae17b6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너부터 물어보고 끄라고 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 416,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:2fe2b86e1249:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:ec3b94863f26:1": {
+      "id": "v4:55:h-5237ebeb93:e:ec3b94863f26:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그 사람이 먼저 끄면 좀 화나요. 제가 보고 있는데.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 414,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:728948ae17b6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:4304e14b8715:1": {
+      "id": "v4:55:h-5237ebeb93:e:4304e14b8715:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 보는 사람이 무서워하면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 412,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:ec3b94863f26:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:86b250dc6168:1": {
+      "id": "v4:55:h-5237ebeb93:e:86b250dc6168:1",
+      "type": "stage",
+      "direction": "미오는 첫 판 종이를 본다.코토는 그것을 치우지 않고 컵을 자기 쪽으로 당긴다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 410,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:4304e14b8715:1"
+    },
+    "v4:55:h-5237ebeb93:e:220363d5774b:1": {
+      "id": "v4:55:h-5237ebeb93:e:220363d5774b:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "영화 속에서 제가 지는 건 아니니까요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 408,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:86b250dc6168:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:5d9a145125a0:1": {
+      "id": "v4:55:h-5237ebeb93:e:5d9a145125a0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 지는 거 싫어했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 406,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:220363d5774b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:9b952419aeeb:1": {
+      "id": "v4:55:h-5237ebeb93:e:9b952419aeeb:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "무서우면 끌 수 있다는 뜻이었어요. 이기려고 보는 건 아닌데.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 404,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:5d9a145125a0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:5d71391d630f:1": {
+      "id": "v4:55:h-5237ebeb93:e:5d71391d630f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 끌 수 있다고 하니까. 너만 괜찮을 수 있는 거 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 402,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:9b952419aeeb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:c68df7db56cf:1": {
+      "id": "v4:55:h-5237ebeb93:e:c68df7db56cf:1",
+      "type": "stage",
+      "direction": "미오가 컵을 내려놓는다.코토는 방금 말을 웃으며 덮지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 400,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:5d71391d630f:1"
+    },
+    "v4:55:h-5237ebeb93:e:a05f52369368:1": {
+      "id": "v4:55:h-5237ebeb93:e:a05f52369368:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "싫어요. 영화 얘기하고 있는데 꼭 저한테 미오 씨 해치고 싶은지 물으시네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 398,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:c68df7db56cf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:c3e4e710e470:1": {
+      "id": "v4:55:h-5237ebeb93:e:c3e4e710e470:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 보고 싶은 거야? 나 혼자 다니는 걸.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 396,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:a05f52369368:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:db6df5eb3703:1": {
+      "id": "v4:55:h-5237ebeb93:e:db6df5eb3703:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "미오 씨 나오는 영화는 다시 볼 수가 없잖아요. 제가 아까 놓친 부분으로 돌릴 수도 없고.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 394,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:c3e4e710e470:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:8a6de52288ea:1": {
+      "id": "v4:55:h-5237ebeb93:e:8a6de52288ea:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기서는 나한테 혼자 다니지 말라고 하면서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 392,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:db6df5eb3703:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:d278d141e4f8:1": {
+      "id": "v4:55:h-5237ebeb93:e:d278d141e4f8:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "말해요. 그런데 혼자 다녀야 볼 게 생기잖아요. 다 같이 전등 밑에서 날 밝을 때까지 있으면 영화가 안 되고.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 390,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:8a6de52288ea:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:175a8f12b398:1": {
+      "id": "v4:55:h-5237ebeb93:e:175a8f12b398:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 누가 나올 때마다 왜 혼자 다니냐고 말할 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 388,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:d278d141e4f8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:0e06b5256009:1": {
+      "id": "v4:55:h-5237ebeb93:e:0e06b5256009:1",
+      "type": "stage",
+      "direction": "미오가 컵을 들다 말고 웃는다.코토는 향 주머니를 손끝으로 돌리며 미오를 본다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 386,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:175a8f12b398:1"
+    },
+    "v4:55:h-5237ebeb93:e:fba80b8d61ee:1": {
+      "id": "v4:55:h-5237ebeb93:e:fba80b8d61ee:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "거기서는 제가 끌 수 있으니까요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 384,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:0e06b5256009:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:6431743f1f83:1": {
+      "id": "v4:55:h-5237ebeb93:e:6431743f1f83:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 여기 있는데 그걸 또 보고 싶어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 382,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:fba80b8d61ee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:48f66bf319d6:1": {
+      "id": "v4:55:h-5237ebeb93:e:48f66bf319d6:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "무서운 거요. 문 열었는데 아까 그 복도고. 한 층 내려왔는데 같은 방이 있는 거.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 380,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:6431743f1f83:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:00b14835c6a0:1": {
+      "id": "v4:55:h-5237ebeb93:e:00b14835c6a0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무슨 영화?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 378,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:48f66bf319d6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:a1e887153d34:1": {
+      "id": "v4:55:h-5237ebeb93:e:a1e887153d34:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "영화를 볼 때는 앉아 있죠. 끝까지.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 376,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:00b14835c6a0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:f91f28591e7c:1": {
+      "id": "v4:55:h-5237ebeb93:e:f91f28591e7c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 누가 돌아올 때까지 기다리는 거 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 374,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:a1e887153d34:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:7e9c3b746eaf:1": {
+      "id": "v4:55:h-5237ebeb93:e:7e9c3b746eaf:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "혼자 있을 때요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 372,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:f91f28591e7c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:b386b4750ca9:1": {
+      "id": "v4:55:h-5237ebeb93:e:b386b4750ca9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 평소에도 이렇게 앉아 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 370,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:7e9c3b746eaf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:be000e4ab43b:1": {
+      "id": "v4:55:h-5237ebeb93:e:be000e4ab43b:1",
+      "type": "stage",
+      "direction": "미오는 맡아 보겠다며 손을 뻗지 않는다.코토는 향 주머니를 자기 앞에 놓는다.둘은 컵의 물을 조금씩 마신다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 368,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:b386b4750ca9:1"
+    },
+    "v4:55:h-5237ebeb93:e:a1ae83f55b41:1": {
+      "id": "v4:55:h-5237ebeb93:e:a1ae83f55b41:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "저도 정확한 이름은 몰라요. 좋다고만 고를 때도 있고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 366,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:be000e4ab43b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:5d79835acd2d:1": {
+      "id": "v4:55:h-5237ebeb93:e:5d79835acd2d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "싫다고는 안 했어. 무슨 냄새인지 모르겠어서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 364,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:a1ae83f55b41:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:45003675ceec:1": {
+      "id": "v4:55:h-5237ebeb93:e:45003675ceec:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 제 옷에 넣어 뒀던 거요. 싫으시면 넣을게요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 362,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:5d79835acd2d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:f33986c5405e:1": {
+      "id": "v4:55:h-5237ebeb93:e:f33986c5405e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "냄새 나던 게 그거였어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 360,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:45003675ceec:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:595b670b37cf:1": {
+      "id": "v4:55:h-5237ebeb93:e:595b670b37cf:1",
+      "type": "stage",
+      "direction": "미오가 컵 두 개를 들고 코토가 주전자를 확인한다. 현재 마실 수 있는 따뜻한 물이 남아 있다. 둘은 각자 컵을 채운다. 코토는 자기 가방에서 개인용 향 주머니 하나를 꺼내 탁자 가장자리에 놓는다. 음료에 넣거나 나누어 먹는 물건이 아니다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 358,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:f33986c5405e:1"
+    },
+    "v4:55:h-5237ebeb93:e:e2ef79d13977:1": {
+      "id": "v4:55:h-5237ebeb93:e:e2ef79d13977:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 같이 갈게. 네가 따라 줘야 내가 앉아 있을 수 있는 건 아니니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 356,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:595b670b37cf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:625e9dbd14af:1": {
+      "id": "v4:55:h-5237ebeb93:e:625e9dbd14af:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "확인해 볼게요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 354,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:e2ef79d13977:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-5237ebeb93:e:b0a9541fc9c6:1": {
+      "id": "v4:55:h-5237ebeb93:e:b0a9541fc9c6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 판 더는 싫어. 조금 더 앉아 있을 수는 있어. 물 아직 따뜻해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 352,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "next": "v4:55:h-5237ebeb93:e:625e9dbd14af:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:KOTO-03B:menu": {
+      "id": "v4:55:KOTO-03B:menu",
+      "type": "menu",
+      "q": "한 번 더 있는 방법",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 248,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03B — 한 번 더 있는 방법",
+        "location": "h-5237ebeb93"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "조언 없이 한 판 더 둔다",
+          "to": "v4:55:h-5237ebeb93:e:5d72c98f96f0:1",
+          "set": {
+            "KOTO-03B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "더 두지 않고 따뜻한 물을 마시며 있자고 한다",
+          "to": "v4:55:h-5237ebeb93:e:b0a9541fc9c6:1",
+          "set": {
+            "KOTO-03B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "여기서 만남을 끝낸다",
+          "to": "v4:55:h-5237ebeb93:e:6f2711d94b7e:1",
+          "set": {
+            "KOTO-03B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:55:F-KO03-03:e:21a3570b2681:1": {
+      "id": "v4:55:F-KO03-03:e:21a3570b2681:1",
+      "type": "stage",
+      "direction": "미오가 코토를 본다. 코토는 다른 사람들 앞에서 안 좋은 말을 했다며 사과할 때처럼 미소를 먼저 만들지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 246,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:KOTO-03B:menu"
+    },
+    "v4:55:F-KO03-03:e:9c6cf9acb6d4:1": {
+      "id": "v4:55:F-KO03-03:e:9c6cf9acb6d4:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 그래서 좀 얄밉고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 244,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:21a3570b2681:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:4ca773ecff4e:1": {
+      "id": "v4:55:F-KO03-03:e:4ca773ecff4e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "칭찬 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 242,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:9c6cf9acb6d4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:f3d09775254f:1": {
+      "id": "v4:55:F-KO03-03:e:f3d09775254f:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "잘 못하는 걸 같이 하면 칭찬해 주실 거라고 생각했는데. 막상 지니까 별로 안 듣고 싶더라고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 240,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:4ca773ecff4e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:9c69e39add04:1": {
+      "id": "v4:55:F-KO03-03:e:9c69e39add04:1",
+      "type": "stage",
+      "direction": "코토가 지운 흔적이나 접힌 첫 종이를 본다. A1은 여전히 남은 가로줄, A2는 지운 표, A3은 접힌 면이다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 238,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:f3d09775254f:1"
+    },
+    "v4:55:F-KO03-03:e:a5a2b788fad5:1": {
+      "id": "v4:55:F-KO03-03:e:a5a2b788fad5:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "지는 것도 싫었어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 236,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:9c69e39add04:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:6d55fc2b2c6a:1": {
+      "id": "v4:55:F-KO03-03:e:6d55fc2b2c6a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 내가 이겼는데도 끝내기 싫었던 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 234,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:a5a2b788fad5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:f63fa8fddc59:1": {
+      "id": "v4:55:F-KO03-03:e:f63fa8fddc59:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 그런데 저는 뭘 물어보실지 기다렸어요. 표시를 어디 두었는지, 내일 뭘 할 건지. 그 얘기가 안 나오면 다른 데 가실 것 같아서요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 232,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:6d55fc2b2c6a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:8965c9b8968f:1": {
+      "id": "v4:55:F-KO03-03:e:8965c9b8968f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나 그냥 앉아 있었잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 230,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:f63fa8fddc59:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:6b91aae31102:1": {
+      "id": "v4:55:F-KO03-03:e:6b91aae31102:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "사람이 남아 있으면 할 일을 먼저 찾게 돼요. 없어도 되는 일을 붙일 때도 있고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 228,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:8965c9b8968f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:74e4c4250416:1": {
+      "id": "v4:55:F-KO03-03:e:74e4c4250416:1",
+      "type": "stage",
+      "direction": "코토가 종이의 아래쪽을 조금 접는다. 반듯한 자국을 만들려고 손톱으로 누른다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 226,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:6b91aae31102:1"
+    },
+    "v4:55:F-KO03-03:e:e0acb3e18427:1": {
+      "id": "v4:55:F-KO03-03:e:e0acb3e18427:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 지금 이 한 판이요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 224,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:74e4c4250416:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:96be1f936a03:1": {
+      "id": "v4:55:F-KO03-03:e:96be1f936a03:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나중에 또 해도 좋겠다는 뜻은 아니지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 222,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:e0acb3e18427:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:ab00d811b534:1": {
+      "id": "v4:55:F-KO03-03:e:ab00d811b534:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "한 줄 완성하거나 칸이 다 차면 끝. 그 뒤에 연습으로 바꾸지 않을게요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 220,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:96be1f936a03:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:6acbb54971ef:1": {
+      "id": "v4:55:F-KO03-03:e:6acbb54971ef:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에는 언제 끝나는지부터 말해 줘.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 218,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:ab00d811b534:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:5fa56654041f:1": {
+      "id": "v4:55:F-KO03-03:e:5fa56654041f:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "한 판 더 해도 돼요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 216,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:6acbb54971ef:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-03:e:48eec66d1faf:1": {
+      "id": "v4:55:F-KO03-03:e:48eec66d1faf:1",
+      "type": "stage",
+      "direction": "첫 선택 뒤 코토가 두 번째 아홉 칸을 그리려다가 펜을 미오 앞에 놓는다. A1/A3의 첫 종이는 그대로 따로 두고, A2도 첫 종이를 다시 쓰지 않는다. 새 빈 종이다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 214,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-03 부탁하지 않으면 남는 시간",
+        "location": "F-KO03-03"
+      },
+      "next": "v4:55:F-KO03-03:e:5fa56654041f:1"
+    },
+    "v4:55:h-05ccb53a04:e:784e0e7ee499:1": {
+      "id": "v4:55:h-05ccb53a04:e:784e0e7ee499:1",
+      "type": "stage",
+      "direction": "코토가 웃으려다가 종이 모서리만 접는다. 미오에게 기분을 풀어 주려고 다시 져 달라는 부탁은 하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 176,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:F-KO03-03:e:48eec66d1faf:1"
+    },
+    "v4:55:h-05ccb53a04:e:62e5bd5f9a23:1": {
+      "id": "v4:55:h-05ccb53a04:e:62e5bd5f9a23:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭘 아니라고 해? 네가 이긴 것도 아닌데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 174,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:784e0e7ee499:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:593b5eda2621:1": {
+      "id": "v4:55:h-05ccb53a04:e:593b5eda2621:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "미오 씨도 조금은 아니라고 하실 줄 알았어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 172,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:62e5bd5f9a23:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:a324e403dc25:1": {
+      "id": "v4:55:h-05ccb53a04:e:a324e403dc25:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 170,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:593b5eda2621:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:f735e6309277:1": {
+      "id": "v4:55:h-05ccb53a04:e:f735e6309277:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그럼 제가 졌어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 168,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:a324e403dc25:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:fc19f79eafd9:1": {
+      "id": "v4:55:h-05ccb53a04:e:fc19f79eafd9:1",
+      "type": "stage",
+      "direction": "코토가 지우개를 놓는다. 미오는 날짜나 코토의 이름을 새로 적어 증거 문서처럼 만들지 않는다. 가운데 가로줄만 남는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 166,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:f735e6309277:1"
+    },
+    "v4:55:h-05ccb53a04:e:d9ca205e1ac7:1": {
+      "id": "v4:55:h-05ccb53a04:e:d9ca205e1ac7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지우려고 하니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 164,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:fc19f79eafd9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:90db99a7afc9:1": {
+      "id": "v4:55:h-05ccb53a04:e:90db99a7afc9:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "꼭 적어 두셔야겠어요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 162,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:d9ca205e1ac7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:0f0c215af11d:1": {
+      "id": "v4:55:h-05ccb53a04:e:0f0c215af11d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 번 더 해도 이건 내가 이겼어. 다음부터 세는 걸로 바꾸지는 않을래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 160,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:90db99a7afc9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:5787ce7aae83:1": {
+      "id": "v4:55:h-05ccb53a04:e:5787ce7aae83:1",
+      "type": "stage",
+      "direction": "코토의 짧은 대답을 미오는 좋아한다. 그렇다고 다음 부탁도 들어주기로 약속한 것은 아니다. 첫 승리는 실제로 있었고, 두 사람이 집계에서 빼기로 한 것이다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 194,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:F-KO03-03:e:48eec66d1faf:1"
+    },
+    "v4:55:h-05ccb53a04:e:58ceb8249815:1": {
+      "id": "v4:55:h-05ccb53a04:e:58ceb8249815:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 192,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:5787ce7aae83:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:9180829a29bc:1": {
+      "id": "v4:55:h-05ccb53a04:e:9180829a29bc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번엔 네가 다시 하고 싶어서 물은 거네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 190,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:58ceb8249815:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:429d210d5b43:1": {
+      "id": "v4:55:h-05ccb53a04:e:429d210d5b43:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "미오 씨가 다시 하고 싶으셨으면요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 188,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:9180829a29bc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:5b9d621f01da:1": {
+      "id": "v4:55:h-05ccb53a04:e:5b9d621f01da:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 졌으면 연습으로 하자고 했을까?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 186,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:429d210d5b43:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:0218288f3ac3:1": {
+      "id": "v4:55:h-05ccb53a04:e:0218288f3ac3:1",
+      "type": "stage",
+      "direction": "코토가 미오의 가로줄을 먼저 지운다. 자기 동그라미도 모두 지우고 나서 종이 가루를 손끝으로 모은다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 184,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:5b9d621f01da:1"
+    },
+    "v4:55:h-05ccb53a04:e:0ba36a17e247:1": {
+      "id": "v4:55:h-05ccb53a04:e:0ba36a17e247:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "알아요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 182,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:0218288f3ac3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:9874110504fc:1": {
+      "id": "v4:55:h-05ccb53a04:e:9874110504fc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "좋아. 다음부터 세자. 내가 방금 이긴 걸 몰라서 그러는 건 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 180,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:0ba36a17e247:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:21691fc282bc:1": {
+      "id": "v4:55:h-05ccb53a04:e:21691fc282bc:1",
+      "type": "stage",
+      "direction": "코토는 접힌 종이를 펴지 않는다. 둘 다 상대가 일을 어렵게 만들었다고 느끼지만 그 기분을 같은 양으로 나누어 가졌다고 서술하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 210,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:F-KO03-03:e:48eec66d1faf:1"
+    },
+    "v4:55:h-05ccb53a04:e:f031007cac03:1": {
+      "id": "v4:55:h-05ccb53a04:e:f031007cac03:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 그냥 이겼다고 말하고 싶었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 208,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:21691fc282bc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:cb33f1050f19:1": {
+      "id": "v4:55:h-05ccb53a04:e:cb33f1050f19:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그냥 놀자고 한 것도 이렇게 물으셔야 해요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 206,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:f031007cac03:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:584344271daf:1": {
+      "id": "v4:55:h-05ccb53a04:e:584344271daf:1",
+      "type": "stage",
+      "direction": "미오가 종이를 두 번 접어 가운데에 놓는다. 점수 장부를 만들지 않았고, 코토가 실제로 이겼다고 고친 것도 아니다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 204,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:cb33f1050f19:1"
+    },
+    "v4:55:h-05ccb53a04:e:98cfa2a57f0c:1": {
+      "id": "v4:55:h-05ccb53a04:e:98cfa2a57f0c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지는 말 해 줬다는 게 다음에 내가 받아 줄 말이 될 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 202,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:584344271daf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:07a568a406d2:1": {
+      "id": "v4:55:h-05ccb53a04:e:07a568a406d2:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 졌다고 끝내면 되는데요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 200,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:98cfa2a57f0c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:h-05ccb53a04:e:20e5fe9dd323:1": {
+      "id": "v4:55:h-05ccb53a04:e:20e5fe9dd323:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "난 이긴 줄 알았고 너는 연습으로 하고 싶었잖아. 그거 정리하는 데 판보다 오래 걸리겠다. 지금은 접어 두자.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 198,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "next": "v4:55:h-05ccb53a04:e:07a568a406d2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:KOTO-03A:menu": {
+      "id": "v4:55:KOTO-03A:menu",
+      "type": "menu",
+      "q": "끝난 판의 이름",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 156,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "선택 KOTO-03A — 끝난 판의 이름",
+        "location": "h-05ccb53a04"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "이긴 판을 없애는 데 동의하지 않는다.",
+          "to": "v4:55:h-05ccb53a04:e:0f0c215af11d:1",
+          "set": {
+            "KOTO-03A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "첫 판을 점수에서 빼고 종이를 지운다.",
+          "to": "v4:55:h-05ccb53a04:e:9874110504fc:1",
+          "set": {
+            "KOTO-03A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "승패를 함께 정리하지 않고 이 판을 접는다.",
+          "to": "v4:55:h-05ccb53a04:e:20e5fe9dd323:1",
+          "set": {
+            "KOTO-03A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:55:F-KO03-02:e:035dfb6c5cb1:1": {
+      "id": "v4:55:F-KO03-02:e:035dfb6c5cb1:1",
+      "type": "stage",
+      "direction": "코토가 지우개를 집었다가 미오의 펜이 그대로 있는 것을 보고 손을 멈춘다. 미오가 한 판 이겼다는 일은 어느 선택에서도 실제 발생한 과거다. 다만 둘이 그 결과를 어떻게 취급하고 다음 판을 청하는지는 다르다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 154,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:KOTO-03A:menu"
+    },
+    "v4:55:F-KO03-02:e:bbdf04aa488e:1": {
+      "id": "v4:55:F-KO03-02:e:bbdf04aa488e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 번 더 하겠다고는 아직 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 152,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:035dfb6c5cb1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:7e943023ff12:1": {
+      "id": "v4:55:F-KO03-02:e:7e943023ff12:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "진 건 아니에요. 점수를 안 세자는 거죠. 한 번 더 하려고 온 거니까요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 150,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:bbdf04aa488e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:38e1bb28ec56:1": {
+      "id": "v4:55:F-KO03-02:e:38e1bb28ec56:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러니까 내가 진 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 148,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:7e943023ff12:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:fa9cbbcac889:1": {
+      "id": "v4:55:F-KO03-02:e:fa9cbbcac889:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 먼저 방법을 말씀드렸잖아요. 막는 자리도요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 146,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:38e1bb28ec56:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:405300cb9cca:1": {
+      "id": "v4:55:F-KO03-02:e:405300cb9cca:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "연습이라고 안 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 144,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:fa9cbbcac889:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:b206d766eee0:1": {
+      "id": "v4:55:F-KO03-02:e:b206d766eee0:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "지금 건 연습으로 하고, 다음부터 셀까요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 142,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:405300cb9cca:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:c8133cdc4d02:1": {
+      "id": "v4:55:F-KO03-02:e:c8133cdc4d02:1",
+      "type": "stage",
+      "direction": "코토가 웃다가 미오 손에 든 펜을 본다. 미오는 이긴 줄 밑에 짧게 선을 긋는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 140,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:b206d766eee0:1"
+    },
+    "v4:55:F-KO03-02:e:53461913c148:1": {
+      "id": "v4:55:F-KO03-02:e:53461913c148:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그다음 차례에는 제가 이기죠.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 138,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:c8133cdc4d02:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:42ac76ec2166:1": {
+      "id": "v4:55:F-KO03-02:e:42ac76ec2166:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 말한 데 두면 못 이기잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 136,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:53461913c148:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:3b6127fa1e8f:1": {
+      "id": "v4:55:F-KO03-02:e:3b6127fa1e8f:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "아. 그쪽이 있었네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 134,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:42ac76ec2166:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:486ad26bbed2:1": {
+      "id": "v4:55:F-KO03-02:e:486ad26bbed2:1",
+      "type": "stage",
+      "direction": "코토가 아래쪽에 나란히 둔 자기 동그라미 두 개를 보다가 미오의 가로줄을 본다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 132,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:3b6127fa1e8f:1"
+    },
+    "v4:55:F-KO03-02:e:44544a156fdb:1": {
+      "id": "v4:55:F-KO03-02:e:44544a156fdb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 먼저 이겼는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 130,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:486ad26bbed2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:5087bfc3659c:1": {
+      "id": "v4:55:F-KO03-02:e:5087bfc3659c:1",
+      "type": "stage",
+      "direction": "미오는 아래 가운데를 보다가 오른쪽 가운데에 가위표를 그린다. 가운데 가로줄이 완성된다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 128,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:44544a156fdb:1"
+    },
+    "v4:55:F-KO03-02:e:3bfae430d0ee:1": {
+      "id": "v4:55:F-KO03-02:e:3bfae430d0ee:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "이번에는 아래 가운데요. 또 막으셔야 해요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 126,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:5087bfc3659c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:6156fbb70649:1": {
+      "id": "v4:55:F-KO03-02:e:6156fbb70649:1",
+      "type": "stage",
+      "direction": "미오가 왼쪽 가운데를 막는다. 코토는 오른쪽 아래에 동그라미를 그린다. 지금 미오의 표시는 가운데/오른쪽 위/왼쪽 가운데, 코토는 왼쪽 위/왼쪽 아래/오른쪽 아래에 있다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 124,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:3bfae430d0ee:1"
+    },
+    "v4:55:F-KO03-02:e:9a1dc30bdcf4:1": {
+      "id": "v4:55:F-KO03-02:e:9a1dc30bdcf4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알아. 거기 두려고 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 122,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:6156fbb70649:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:c00860fccd9d:1": {
+      "id": "v4:55:F-KO03-02:e:c00860fccd9d:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "왼쪽 가운데 안 막으시면 제가 이겨요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 120,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:9a1dc30bdcf4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-02:e:781b69df752c:1": {
+      "id": "v4:55:F-KO03-02:e:781b69df752c:1",
+      "type": "stage",
+      "direction": "새 종이에 그린 아홉 칸을 쓴다. 사건 자료나 남아 있던 문 표시 종이가 아니다. 먼저 미오가 가운데에 가위표, 코토가 왼쪽 위에 동그라미를 그린다. 다음은 미오 오른쪽 위, 코토 왼쪽 아래다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 118,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-02 모르는 사람의 다음 수",
+        "location": "F-KO03-02"
+      },
+      "next": "v4:55:F-KO03-02:e:c00860fccd9d:1"
+    },
+    "v4:55:F-KO03-01:e:75fa279c8490:1": {
+      "id": "v4:55:F-KO03-01:e:75fa279c8490:1",
+      "type": "stage",
+      "direction": "미오가 동그라미를 하나 그려 보려다가 빈 종이를 그대로 둔다. 코토는 자신이 못 그린 것을 인정했으니 이제 잘 그려 보라는 분위기로 만들지는 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 114,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-02:e:781b69df752c:1"
+    },
+    "v4:55:F-KO03-01:e:46818d3d18a6:1": {
+      "id": "v4:55:F-KO03-01:e:46818d3d18a6:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 동그라미를 덜 못 그려서요. 펜 돌리실 때도 자꾸 보게 되니까.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 112,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:75fa279c8490:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:62f0dbc1e517:1": {
+      "id": "v4:55:F-KO03-01:e:62f0dbc1e517:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 110,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:46818d3d18a6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:04e4bb6d4924:1": {
+      "id": "v4:55:F-KO03-01:e:04e4bb6d4924:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "제가 동그라미 할게요. 미오 씨는 가위표요. 먼저 두세요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 108,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:62f0dbc1e517:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:29f137a03ca8:1": {
+      "id": "v4:55:F-KO03-01:e:29f137a03ca8:1",
+      "type": "stage",
+      "direction": "코토가 펜을 내려놓고 작은 지우개를 가운데 둔다. 미오가 동그라미를 먼저 잡으려 하자 고개를 기울인다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 106,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:04e4bb6d4924:1"
+    },
+    "v4:55:F-KO03-01:e:e0354d38839f:1": {
+      "id": "v4:55:F-KO03-01:e:e0354d38839f:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그건 더 싫어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 104,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:29f137a03ca8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:8e399c5fd90f:1": {
+      "id": "v4:55:F-KO03-01:e:8e399c5fd90f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "모르는 척해 줄까?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 102,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:e0354d38839f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:289bed32084b:1": {
+      "id": "v4:55:F-KO03-01:e:289bed32084b:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그러면 가르쳐드릴 게 없네요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 100,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:8e399c5fd90f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:a7722d8c7f71:1": {
+      "id": "v4:55:F-KO03-01:e:a7722d8c7f71:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 알아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 98,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:289bed32084b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:c91bb784d360:1": {
+      "id": "v4:55:F-KO03-01:e:c91bb784d360:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "번갈아 표시해서 먼저 한 줄 만드는 거요. 가로세로 대각선 셋. 저도 하는 법은 알아요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 96,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:a7722d8c7f71:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:18fbb89e22e4:1": {
+      "id": "v4:55:F-KO03-01:e:18fbb89e22e4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐 하는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 94,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:c91bb784d360:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:missing:actual-prior-labour": {
+      "id": "v4:55:missing:actual-prior-labour",
+      "type": "gate",
+      "reason": "Actual prior FTE choice absent: KOTO-02A"
+    },
+    "v4:55:F-KO03-01:e:9195cf25a6a3:1": {
+      "id": "v4:55:F-KO03-01:e:9195cf25a6a3:1",
+      "type": "stage",
+      "direction": "미오는 자기 가방을 발치에 내려놓는다. 지난번 실제로 도왔던 비용이 오늘도 돕기로 했다는 허락은 아니다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 70,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:18fbb89e22e4:1"
+    },
+    "v4:55:F-KO03-01:e:d9e81193738d:1": {
+      "id": "v4:55:F-KO03-01:e:d9e81193738d:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "오늘 볼 물품은 다 봤어요. 미오 씨가 먼저 해 주셔야 할 일도 없고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 68,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:9195cf25a6a3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:d8fe9c67a64d:1": {
+      "id": "v4:55:F-KO03-01:e:d8fe9c67a64d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘도 다른 일 먼저 끝내야 같이 있는 거면 지금 말해 줘. 저번엔 내 거 뒤로 밀고 수건 옮겼어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 66,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:d9e81193738d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:4d1cbc8477aa:1": {
+      "id": "v4:55:F-KO03-01:e:4d1cbc8477aa:1",
+      "type": "stage",
+      "direction": "코토는 그때 나나가 일을 나누어 했다는 일을 들어 미오에게 지금 빚을 갚으라고 하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 80,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:18fbb89e22e4:1"
+    },
+    "v4:55:F-KO03-01:e:4288746bc0a0:1": {
+      "id": "v4:55:F-KO03-01:e:4288746bc0a0:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "알아요. 제가 그렇게 받아들였던 것 같아서요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 78,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:4d1cbc8477aa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:d4e7fceed59e:1": {
+      "id": "v4:55:F-KO03-01:e:d4e7fceed59e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "수건 안 옮겼다고 너하고 계속 안 만나겠다는 말은 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 76,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:4288746bc0a0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:8a0b7990b902:1": {
+      "id": "v4:55:F-KO03-01:e:8a0b7990b902:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "오늘 오신다고 하셨을 때는 조금 놀랐어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 74,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:d4e7fceed59e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:cf216b47f141:1": {
+      "id": "v4:55:F-KO03-01:e:cf216b47f141:1",
+      "type": "stage",
+      "direction": "코토가 알겠다고 답한다. 미오가 그때 코토에게 일을 맡기고 지켜본 일이, 오늘도 코토의 시간을 먼저 정할 권한은 아니다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 90,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:18fbb89e22e4:1"
+    },
+    "v4:55:F-KO03-01:e:0b619e6f26a8:1": {
+      "id": "v4:55:F-KO03-01:e:0b619e6f26a8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 오늘도 기다릴 생각으로 온 건 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 88,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:cf216b47f141:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:48790a7e6876:1": {
+      "id": "v4:55:F-KO03-01:e:48790a7e6876:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "그때 제가 해야 한다고 하셨잖아요. 끝내고 나오니까 미오 씨는 오래 기다리셨고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 86,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:0b619e6f26a8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:f06001a3cbab:1": {
+      "id": "v4:55:F-KO03-01:e:f06001a3cbab:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 네가 끝나고 나를 불렀네. 저번엔 나한테 먼저 기다리라고 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 84,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:48790a7e6876:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:actual-prior-labour": {
+      "id": "v4:55:actual-prior-labour",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "KOTO-02A",
+          "equals": "A",
+          "to": "v4:55:F-KO03-01:e:d8fe9c67a64d:1"
+        },
+        {
+          "flag": "KOTO-02A",
+          "equals": "B",
+          "to": "v4:55:F-KO03-01:e:8a0b7990b902:1"
+        },
+        {
+          "flag": "KOTO-02A",
+          "equals": "C",
+          "to": "v4:55:F-KO03-01:e:f06001a3cbab:1"
+        }
+      ],
+      "default": "v4:55:missing:actual-prior-labour"
+    },
+    "v4:55:missing:actual-prior-public-correction": {
+      "id": "v4:55:missing:actual-prior-public-correction",
+      "type": "gate",
+      "reason": "Actual prior FTE choice absent: KOTO-02B"
+    },
+    "v4:55:F-KO03-01:e:bdfbfe275a65:1": {
+      "id": "v4:55:F-KO03-01:e:bdfbfe275a65:1",
+      "type": "stage",
+      "direction": "미오는 코토가 이제 무엇이든 허락받는 사람이 되었다고 생각하지 않는다. 나나 앞에서 실제 정정한 말은 이미 둘이 아는 일이다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 36,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:actual-prior-labour"
+    },
+    "v4:55:F-KO03-01:e:c51cb233de06:1": {
+      "id": "v4:55:F-KO03-01:e:c51cb233de06:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 그래서 제가 먼저 말할까 하다가, 또 안심부터 시키려고 한다고 하실 것 같아서요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 34,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:bdfbfe275a65:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:f8c6129c7a63:1": {
+      "id": "v4:55:F-KO03-01:e:f8c6129c7a63:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 물어볼 줄 알았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 32,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:c51cb233de06:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:cc0f1ececddf:1": {
+      "id": "v4:55:F-KO03-01:e:cc0f1ececddf:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "미오 씨한테 먼저 말씀드렸어요. 지금 다른 일을 하기로 기다리는 사람도 없고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 30,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:f8c6129c7a63:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:8a4cbf2940fa:1": {
+      "id": "v4:55:F-KO03-01:e:8a4cbf2940fa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에는 나나한테 먼저 얘기하지 않았지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 28,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:cc0f1ececddf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:40329b906964:1": {
+      "id": "v4:55:F-KO03-01:e:40329b906964:1",
+      "type": "stage",
+      "direction": "오늘의 명확한 약속이 지난 세탁실 일에 관한 나나의 이해까지 자동 정정하지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 46,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:actual-prior-labour"
+    },
+    "v4:55:F-KO03-01:e:8dc70e0b0824:1": {
+      "id": "v4:55:F-KO03-01:e:8dc70e0b0824:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 그 둘을 섞어서 말씀드리지는 않을게요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 44,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:40329b906964:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:9e8ab366d7c8:1": {
+      "id": "v4:55:F-KO03-01:e:9e8ab366d7c8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그때도 나나가 정확히 어떻게 들었는지 다시 묻지는 않았어. 오늘 만나기로 한 건 내가 답했고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 42,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:8dc70e0b0824:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:5a4a0669c124:1": {
+      "id": "v4:55:F-KO03-01:e:5a4a0669c124:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "오늘은 다른 분께 미오 씨가 오신다는 말씀도 안 드렸어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 40,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:9e8ab366d7c8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:87efd3d1a34b:1": {
+      "id": "v4:55:F-KO03-01:e:87efd3d1a34b:1",
+      "type": "stage",
+      "direction": "코토가 빈 칸을 보인다. 미오는 자기 의자를 직접 당긴다. 코토의 수첩에 남았던 개별 확인 표시는 이 말로 사라지지 않는다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 60,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:actual-prior-labour"
+    },
+    "v4:55:F-KO03-01:e:362165bfd5e4:1": {
+      "id": "v4:55:F-KO03-01:e:362165bfd5e4:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "오늘은 이름 안 적었어요. 칸만 그렸고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 58,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:87efd3d1a34b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:ba425b9e6fb4:1": {
+      "id": "v4:55:F-KO03-01:e:ba425b9e6fb4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "부탁하면 된다고 했잖아. 내 이름을 일할 사람으로 먼저 적지 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 56,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:362165bfd5e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:4377f1ca579b:1": {
+      "id": "v4:55:F-KO03-01:e:4377f1ca579b:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "어디까지 이미 정한 걸로 해도 되는지 제가 잘 모르겠어요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 54,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:ba425b9e6fb4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:eb9853eb3ed5:1": {
+      "id": "v4:55:F-KO03-01:e:eb9853eb3ed5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 놀자고 해서 왔어. 의자까지 매번 허락받으라는 건 아니었는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 52,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:4377f1ca579b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:a65cbed0371c:1": {
+      "id": "v4:55:F-KO03-01:e:a65cbed0371c:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "여기 앉아 주셔도 되겠어요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 50,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:eb9853eb3ed5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:actual-prior-public-correction": {
+      "id": "v4:55:actual-prior-public-correction",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "KOTO-02B",
+          "equals": "A",
+          "to": "v4:55:F-KO03-01:e:8a4cbf2940fa:1"
+        },
+        {
+          "flag": "KOTO-02B",
+          "equals": "B",
+          "to": "v4:55:F-KO03-01:e:5a4a0669c124:1"
+        },
+        {
+          "flag": "KOTO-02B",
+          "equals": "C",
+          "to": "v4:55:F-KO03-01:e:a65cbed0371c:1"
+        }
+      ],
+      "default": "v4:55:missing:actual-prior-public-correction"
+    },
+    "v4:55:F-KO03-01:e:85ab0537d34c:1": {
+      "id": "v4:55:F-KO03-01:e:85ab0537d34c:1",
+      "type": "stage",
+      "direction": "두 사람이 라운지 탁자에서 다시 만난다. 코토가 빈 종이에 가로세로 두 줄씩 긋고 있다. 아홉 칸이다. 미오는 문가에서 손을 든다. 새 초대와 수락을 오늘 실제로 한 뒤다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 24,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:actual-prior-public-correction"
+    },
+    "v4:55:F-KO03-01:e:e6c72ea1b330:1": {
+      "id": "v4:55:F-KO03-01:e:e6c72ea1b330:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "네. 제가 종이 가져갈게요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 22,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:85ab0537d34c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:3e76bf7e242f:1": {
+      "id": "v4:55:F-KO03-01:e:3e76bf7e242f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 좋아. 라운지에서?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 20,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:e6c72ea1b330:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:53a721bee5f4:1": {
+      "id": "v4:55:F-KO03-01:e:53a721bee5f4:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "한 줄 만드는 거. 아홉 칸 그려서요. 다른 사람이 해야 할 일은 없어요. 저하고 하시겠어요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 18,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:3e76bf7e242f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:4d609dc2e9e9:1": {
+      "id": "v4:55:F-KO03-01:e:4d609dc2e9e9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭘?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 16,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:53a721bee5f4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:e1b4003b11ed:1": {
+      "id": "v4:55:F-KO03-01:e:e1b4003b11ed:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "놀자고 하려고요.",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 14,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:4d609dc2e9e9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:a8aa165668cd:1": {
+      "id": "v4:55:F-KO03-01:e:a8aa165668cd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무슨 일이야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 12,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:e1b4003b11ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:a5a7455a9c49:1": {
+      "id": "v4:55:F-KO03-01:e:a5a7455a9c49:1",
+      "type": "say",
+      "speaker": "코토",
+      "actor": "koto",
+      "text": "미오 씨. 지금 시간 조금 있으세요?",
+      "mono": false,
+      "delivery": "코토",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 10,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:a8aa165668cd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "코토",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:55:F-KO03-01:e:e112541e5922:1": {
+      "id": "v4:55:F-KO03-01:e:e112541e5922:1",
+      "type": "stage",
+      "direction": "호텔 입구. 개인 시간에 돌아온 미오가 로비를 지나자, 물품 확인을 마친 코토가 수첩을 가방에 넣고 부른다.",
+      "source": {
+        "file": "55_자유시간_코토_03.md",
+        "line": 8,
+        "fileSha256": "a5e8cfa66241eab850693966244ecb4ef4bdd4451f47741de335fcc24cbc95fc",
+        "heading": "F-KO03-01 기다려 달라는 부탁",
+        "location": "F-KO03-01"
+      },
+      "next": "v4:55:F-KO03-01:e:a5a7455a9c49:1"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "55_자유시간_코토_03.md",
+  "completionFlag": "fte:55:complete",
+  "routingStatus": "reviewed-explicit-later-meeting",
+  "campaignReady": false,
+  "requiresPriorFlags": {
+    "KOTO-02A": [
+      "A",
+      "B",
+      "C"
+    ],
+    "KOTO-02B": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "eligibility": "Ninth-day3-32b only after21/36, including exact144 late first. One chosen person before mandatory156 teamgame.",
+  "physicalState": "Mio actually wins first game in every path. A1 keeps scoredwin/A2 jointly excludes it and erases/A3 folds without shared score settlement. B1 plays one actual draw, B2 sits with own filled water and Koto own scentbag, B3 leaves. Paper,pen,scentbag stayKoto; no inventory gift, signed oath, earlier laundry consent or unseen second game.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "55_자유시간_코토_03.md:F-KO03-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "55_자유시간_코토_03.md:h-5237ebeb93": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "55_자유시간_코토_03.md:F-KO03-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "55_자유시간_코토_03.md:h-05ccb53a04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "55_자유시간_코토_03.md:F-KO03-02": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "55_자유시간_코토_03.md:F-KO03-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

@@ -1,0 +1,4796 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:20:h-f2f9d8f503:e:39661df70b46:1",
+  "nodes": {
+    "v4:20:return": {
+      "id": "v4:20:return",
+      "type": "return"
+    },
+    "v4:20:h-a7dccdd7c2:e:b4ce8a423f20:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:b4ce8a423f20:1",
+      "type": "stage",
+      "direction": "답할 틈도 없이 린이 모퉁이를 돈다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 446,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:return"
+    },
+    "v4:20:h-a7dccdd7c2:e:76f56731e3b5:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:76f56731e3b5:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "아까 발, 잘 접었어.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 444,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:b4ce8a423f20:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:d1a353310e2a:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:d1a353310e2a:1",
+      "type": "stage",
+      "direction": "미오는 따라가지 않는다. 조금 뒤 린이 돌아본다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 442,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:76f56731e3b5:1"
+    },
+    "v4:20:h-a7dccdd7c2:e:558f1cffc794:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:558f1cffc794:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "알려 주기 싫은 데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 440,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:d1a353310e2a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:7e64028ddd41:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:7e64028ddd41:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어디 가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 438,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:558f1cffc794:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:261fe3ff455f:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:261fe3ff455f:1",
+      "type": "stage",
+      "direction": "린은 호텔 쪽이 아니라 정문 반대 방향으로 간다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 436,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:7e64028ddd41:1"
+    },
+    "v4:20:h-a7dccdd7c2:e:e31e4b0aff81:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:e31e4b0aff81:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "이제 좀 아네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 434,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:261fe3ff455f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:ebe520af8825:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:ebe520af8825:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "세어도 안 맞을 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 432,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:e31e4b0aff81:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:ae4d9b22f107:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:ae4d9b22f107:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "네가 또 몇 개인지 셀까 봐.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 430,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:ebe520af8825:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:b85323e677cc:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:b85323e677cc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "소리 안 나게 하려고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 428,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:ae4d9b22f107:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:d94e113b9a3f:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:d94e113b9a3f:1",
+      "type": "stage",
+      "direction": "린은 장난감을 선반 위에 놓는다. 나란히 걸을 때 장식 열쇠가 린 손 안의 작은 나사와 부딪혀 소리가 난다. 미오가 그쪽을 보자 린이 주머니 안에 넣는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 426,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:b85323e677cc:1"
+    },
+    "v4:20:h-a7dccdd7c2:e:c2220c54ac8d:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:c2220c54ac8d:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "응. 고칠 때는 되게 큰 거 같았는데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 424,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:d94e113b9a3f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:4c119dab6415:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:4c119dab6415:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가벼워.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 422,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:c2220c54ac8d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:8c1cf513f8b5:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:8c1cf513f8b5:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "무게만 재 봐.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 420,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:4c119dab6415:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:7f1599e1ade4:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:7f1599e1ade4:1",
+      "type": "stage",
+      "direction": "린이 장난감을 다시 꺼내 미오 손에 잠깐 올린다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 418,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:8c1cf513f8b5:1"
+    },
+    "v4:20:h-a7dccdd7c2:e:6198acfa307c:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:6198acfa307c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "회수는 아니네. 네 거 아니니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 416,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:7f1599e1ade4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:cd56dcfeaee4:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:cd56dcfeaee4:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "훔치는 거라고 먼저 말한 사람이 누구더라.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 414,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:6198acfa307c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:085dfb01248b:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:085dfb01248b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "토끼 말이야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 412,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:cd56dcfeaee4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:d4458c616139:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:d4458c616139:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "선반은 닫아야지.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 410,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:085dfb01248b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:13470af7918d:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:13470af7918d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 두고 가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 408,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:d4458c616139:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-a7dccdd7c2:e:f53c219ebf42:1": {
+      "id": "v4:20:h-a7dccdd7c2:e:f53c219ebf42:1",
+      "type": "stage",
+      "direction": "린은 앞으로 나온 판매용 선반을 바로 밀어 넣지 않는다. 판매대 직원에게 보여 줄 수 없다는 사실을 떠올린 듯 손을 멈춘다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 406,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "끝 — 돌아갈 때",
+        "location": "h-a7dccdd7c2"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:13470af7918d:1"
+    },
+    "v4:20:h-2993808eea:e:530d9f287fe3:1": {
+      "id": "v4:20:h-2993808eea:e:530d9f287fe3:1",
+      "type": "stage",
+      "direction": "결과: 미오는 관찰과 자기 기여를 구분해 적는다. 린의 접근 수단을 공유 정보로 만들지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 366,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:f53c219ebf42:1"
+    },
+    "v4:20:h-2993808eea:e:98d3fa533fb7:1": {
+      "id": "v4:20:h-2993808eea:e:98d3fa533fb7:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그러면 네가 접은 발도 써. 내가 다 했다고 하지 말고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 364,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:530d9f287fe3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-2993808eea:e:73d4adecb709:1": {
+      "id": "v4:20:h-2993808eea:e:73d4adecb709:1",
+      "type": "stage",
+      "direction": "린이 태엽을 감던 손을 멈춘다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 362,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:98d3fa533fb7:1"
+    },
+    "v4:20:h-2993808eea:e:da199f48f97d:1": {
+      "id": "v4:20:h-2993808eea:e:da199f48f97d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 오늘 한 일이 아무것도 없는 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 360,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:73d4adecb709:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-2993808eea:e:81ecceb4989b:1": {
+      "id": "v4:20:h-2993808eea:e:81ecceb4989b:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "네가 왜 그거 적고 싶어졌는지도 써.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 358,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:da199f48f97d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-2993808eea:e:a324e403dc25:1": {
+      "id": "v4:20:h-2993808eea:e:a324e403dc25:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 356,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:81ecceb4989b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-2993808eea:e:2ce8c614fe4f:1": {
+      "id": "v4:20:h-2993808eea:e:2ce8c614fe4f:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "진열장 연 건 빼고?",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 354,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:a324e403dc25:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-2993808eea:e:eff92a9f6648:1": {
+      "id": "v4:20:h-2993808eea:e:eff92a9f6648:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이거 적어도 돼? 장난감 고친 거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 352,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 장난감을 고쳤다는 것만 적는다",
+        "location": "h-2993808eea"
+      },
+      "next": "v4:20:h-2993808eea:e:2ce8c614fe4f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-5e7f338186:e:c16ba7f10b0a:1": {
+      "id": "v4:20:h-5e7f338186:e:c16ba7f10b0a:1",
+      "type": "stage",
+      "direction": "결과: 즉시 호감 정답으로 보상하지 않는다. 다음 만남에서 린은 미오가 자신과 한 일을 기억하는지 직접 묻는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 382,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:f53c219ebf42:1"
+    },
+    "v4:20:h-5e7f338186:e:6782d0b37f74:1": {
+      "id": "v4:20:h-5e7f338186:e:6782d0b37f74:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 없어져. 우리가 했는데 왜 없어져.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 380,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-5e7f338186:e:c16ba7f10b0a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-5e7f338186:e:ed46efc06615:1": {
+      "id": "v4:20:h-5e7f338186:e:ed46efc06615:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 뭘 했는지는 없어지잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 378,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-5e7f338186:e:6782d0b37f74:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-5e7f338186:e:21631b79df5b:1": {
+      "id": "v4:20:h-5e7f338186:e:21631b79df5b:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그럼 그거 남겨. 모르겠다고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 376,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-5e7f338186:e:ed46efc06615:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-5e7f338186:e:16bee6614b81:1": {
+      "id": "v4:20:h-5e7f338186:e:16bee6614b81:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭘 남겨야 할지 모르겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 374,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-5e7f338186:e:21631b79df5b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-5e7f338186:e:b2f35c1097ea:1": {
+      "id": "v4:20:h-5e7f338186:e:b2f35c1097ea:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "내 눈치 봐서?",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 372,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-5e7f338186:e:16bee6614b81:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-5e7f338186:e:0f36607c614c:1": {
+      "id": "v4:20:h-5e7f338186:e:0f36607c614c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 안 적을래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 370,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 아무것도 적지 않는다",
+        "location": "h-5e7f338186"
+      },
+      "next": "v4:20:h-5e7f338186:e:b2f35c1097ea:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:b45fb45bc79b:1": {
+      "id": "v4:20:h-0472879fe8:e:b45fb45bc79b:1",
+      "type": "stage",
+      "direction": "결과: 관계가 즉시 회복되지 않는다. 다음 만남은 접근 경로 공개 여부를 처리하는 장면으로 시작한다. 미오가 아직 공개하지 않았는데 공개한 것으로 반응시키지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 402,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-a7dccdd7c2:e:f53c219ebf42:1"
+    },
+    "v4:20:h-0472879fe8:e:c0c4900966b2:1": {
+      "id": "v4:20:h-0472879fe8:e:c0c4900966b2:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "넌 나쁜 애라서 못 지키는 게 아닐 거야. 좋은 이유 찾아서 못 지킬 거야. 그게 더 골치 아파.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 400,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:b45fb45bc79b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:dcfccaa4056b:1": {
+      "id": "v4:20:h-0472879fe8:e:dcfccaa4056b:1",
+      "type": "stage",
+      "direction": "미오는 대답하지 못한다. 린이 장난감을 선반 안쪽에 놓는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 398,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:c0c4900966b2:1"
+    },
+    "v4:20:h-0472879fe8:e:da5074269a39:1": {
+      "id": "v4:20:h-0472879fe8:e:da5074269a39:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그럼 내가 싫다고 하면 지켜 줄 거야?",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 396,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:dcfccaa4056b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:f662fdc03a2b:1": {
+      "id": "v4:20:h-0472879fe8:e:f662fdc03a2b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 뜻으로 말한 거 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 394,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:da5074269a39:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:7ffb150fa465:1": {
+      "id": "v4:20:h-0472879fe8:e:7ffb150fa465:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "나중에 내가 위험해지면 네가 날 팔아도 된다고, 지금 허락하라는 말이네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 392,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:f662fdc03a2b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:bc469ec1bc1f:1": {
+      "id": "v4:20:h-0472879fe8:e:bc469ec1bc1f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 390,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:7ffb150fa465:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:b76b9e0b9693:1": {
+      "id": "v4:20:h-0472879fe8:e:b76b9e0b9693:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 알려 주면 네가 오해받아?",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 388,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:bc469ec1bc1f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-0472879fe8:e:e05481209e32:1": {
+      "id": "v4:20:h-0472879fe8:e:e05481209e32:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누가 여기에 들어갈 수 있는지는 알려야 해. 나중에 오해받을 수도 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 386,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 출입 방법도 다른 사람에게 알려야 한다고 말한다",
+        "location": "h-0472879fe8"
+      },
+      "next": "v4:20:h-0472879fe8:e:b76b9e0b9693:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:RIN-01B:menu": {
+      "id": "v4:20:RIN-01B:menu",
+      "type": "menu",
+      "q": "도와준 일을 어디까지 남길까",
+      "options": [
+        {
+          "id": "A",
+          "label": "장난감을 고쳤다는 것만 적는다",
+          "to": "v4:20:h-2993808eea:e:eff92a9f6648:1",
+          "set": {
+            "RIN-01B": "A"
+          }
+        },
+        {
+          "id": "B",
+          "label": "아무것도 적지 않는다",
+          "to": "v4:20:h-5e7f338186:e:0f36607c614c:1",
+          "set": {
+            "RIN-01B": "B"
+          }
+        },
+        {
+          "id": "C",
+          "label": "출입 방법도 다른 사람에게 알려야 한다고 말한다",
+          "to": "v4:20:h-0472879fe8:e:e05481209e32:1",
+          "set": {
+            "RIN-01B": "C"
+          }
+        }
+      ],
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 346,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "선택 RIN-01B — 도와준 일을 어디까지 남길까",
+        "location": "h-2f2caa35c0"
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:3c77e6c564f8:1": {
+      "id": "v4:20:h-76ae27bbcf:e:3c77e6c564f8:1",
+      "type": "stage",
+      "direction": "린이 토끼를 선반 위에 세운다.미오는 다음에 꼭 오겠다고 말하지 않는다.이번 경기에는 실제 상금도,장난감 소유권도 걸리지 않았다.토끼가 맞은 발로 잠깐 서 있다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 344,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:RIN-01B:menu"
+    },
+    "v4:20:h-76ae27bbcf:e:1a791f4d1019:1": {
+      "id": "v4:20:h-76ae27bbcf:e:1a791f4d1019:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 하셔도 됩니다. 패자분의 명예 회복 기회를 드린 것뿐입니다.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 342,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:3c77e6c564f8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:27f3ad2f11cd:1": {
+      "id": "v4:20:h-76ae27bbcf:e:27f3ad2f11cd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 이겼으니까 내가 또 해야 하는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 340,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:1a791f4d1019:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:b1d72419638a:1": {
+      "id": "v4:20:h-76ae27bbcf:e:b1d72419638a:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그럼 네가 나중에 감아 주든가.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 338,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:27f3ad2f11cd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:24b00b6fbdaa:1": {
+      "id": "v4:20:h-76ae27bbcf:e:24b00b6fbdaa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다 풀려 있는 채로 두면 고장 난 줄 알 텐데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 336,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:b1d72419638a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:2e9c1b8860ed:1": {
+      "id": "v4:20:h-76ae27bbcf:e:2e9c1b8860ed:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "누가 오면. 안 오면 안 움직이고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 334,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:24b00b6fbdaa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:3f77d16206e9:1": {
+      "id": "v4:20:h-76ae27bbcf:e:3f77d16206e9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 가져갈 거면 누가 또 감아 줄까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 332,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:2e9c1b8860ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:91c9fafee877:1": {
+      "id": "v4:20:h-76ae27bbcf:e:91c9fafee877:1",
+      "type": "stage",
+      "direction": "미오는 손을 내린다.린은 토끼를 뒤집고 종이가 너무 깊이 밀리지 않았는지 본다.아직 비뚤게 걷지만 짧은 거리는 버틸 수 있다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 330,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:3f77d16206e9:1"
+    },
+    "v4:20:h-76ae27bbcf:e:d19e68294f3e:1": {
+      "id": "v4:20:h-76ae27bbcf:e:d19e68294f3e:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그러니까 이번엔 내가 못 도망가게 잡았지. 배운 걸 왜 나쁜 데 써.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 328,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:91c9fafee877:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:92c98eaeab53:1": {
+      "id": "v4:20:h-76ae27bbcf:e:92c98eaeab53:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 네 마음대로 재경기했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 326,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:d19e68294f3e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:8e552e4adb86:1": {
+      "id": "v4:20:h-76ae27bbcf:e:8e552e4adb86:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "야. 결승선 도망간다.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 324,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:92c98eaeab53:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:8dff3d9d4539:1": {
+      "id": "v4:20:h-76ae27bbcf:e:8dff3d9d4539:1",
+      "type": "stage",
+      "direction": "미오가 손가락을 옮기려 하자 린이 토끼를 먼저 집어 든다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 322,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:8e552e4adb86:1"
+    },
+    "v4:20:h-76ae27bbcf:e:0c34b82cf9a4:1": {
+      "id": "v4:20:h-76ae27bbcf:e:0c34b82cf9a4:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "네 손까지 왔어. 평행하게 오라고 안 했지롱.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 320,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:8dff3d9d4539:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:336009cef198:1": {
+      "id": "v4:20:h-76ae27bbcf:e:336009cef198:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "비스듬하잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 318,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:0c34b82cf9a4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:6d90b6d2b2ee:1": {
+      "id": "v4:20:h-76ae27bbcf:e:6d90b6d2b2ee:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "도착.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 316,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:336009cef198:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:4870d6963417:1": {
+      "id": "v4:20:h-76ae27bbcf:e:4870d6963417:1",
+      "type": "stage",
+      "direction": "토끼가 움직인다.미오의 손가락보다 조금 옆으로 다가간다.린은 손을 뒤로 감추고 지켜본다.종이 발의 끝이 접혔다 펴지며 토끼가 마지막 한 걸음을 뗀다.몸통이 미오의 손톱에 닿는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 314,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:6d90b6d2b2ee:1"
+    },
+    "v4:20:h-76ae27bbcf:e:eae843a3cf8b:1": {
+      "id": "v4:20:h-76ae27bbcf:e:eae843a3cf8b:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "가만있어. 출발한다.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 312,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:4870d6963417:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:54515a5441fb:1": {
+      "id": "v4:20:h-76ae27bbcf:e:54515a5441fb:1",
+      "type": "stage",
+      "direction": "린이 이마를 문지른다.그는 웃지 않으려 입술을 오므리지만 손을 치우자 웃음이 나온다.미오도 이마를 누른 채 웃는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 310,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:eae843a3cf8b:1"
+    },
+    "v4:20:h-76ae27bbcf:e:36a46e63d0a5:1": {
+      "id": "v4:20:h-76ae27bbcf:e:36a46e63d0a5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 그 규칙처럼 네가 먼저 있으면 내가 아픈 건 무효야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 308,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:54515a5441fb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:23f42141cf3f:1": {
+      "id": "v4:20:h-76ae27bbcf:e:23f42141cf3f:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "내가 여기 있었어.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 306,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:36a46e63d0a5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:9fac8f78a97a:1": {
+      "id": "v4:20:h-76ae27bbcf:e:9fac8f78a97a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도 내려왔잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 304,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:23f42141cf3f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:b537c9f7068d:1": {
+      "id": "v4:20:h-76ae27bbcf:e:b537c9f7068d:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "아! 너 왜 내려와!",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 302,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:9fac8f78a97a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:df01db16b47c:1": {
+      "id": "v4:20:h-76ae27bbcf:e:df01db16b47c:1",
+      "type": "stage",
+      "direction": "린이 반박하려다가 미오를 본다.그가 손을 떼지 않자 토끼의 방향을 다시 맞춘다.미오는 몸을 숙여 발을 보다가 린의 앞머리와 이마가 부딪힌다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 300,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:b537c9f7068d:1"
+    },
+    "v4:20:h-76ae27bbcf:e:f5cc4b6715ea:1": {
+      "id": "v4:20:h-76ae27bbcf:e:f5cc4b6715ea:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 더 쉽게 이기겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 298,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:df01db16b47c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:c9d3618450f9:1": {
+      "id": "v4:20:h-76ae27bbcf:e:c9d3618450f9:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "짧은데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 296,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:f5cc4b6715ea:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:e25cce344db1:1": {
+      "id": "v4:20:h-76ae27bbcf:e:e25cce344db1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번엔 여기까지. 내가 정할게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 294,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:c9d3618450f9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:da1e09e35342:1": {
+      "id": "v4:20:h-76ae27bbcf:e:da1e09e35342:1",
+      "type": "stage",
+      "direction": "미오가 선반 한쪽에 손가락을 놓는다.토끼에서 손가락까지는 아까의 절반도 되지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 292,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:e25cce344db1:1"
+    },
+    "v4:20:h-76ae27bbcf:e:0a5a4f59d3fe:1": {
+      "id": "v4:20:h-76ae27bbcf:e:0a5a4f59d3fe:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "지금도 하고 있잖아. 이미 보상이 나갔는데 또 달라고 하네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 290,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:da1e09e35342:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:db3d9603dd28:1": {
+      "id": "v4:20:h-76ae27bbcf:e:db3d9603dd28:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "적어도 네가 못 이기면 내가 놀릴 수는 있게 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 288,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:0a5a4f59d3fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:1de886d943ec:1": {
+      "id": "v4:20:h-76ae27bbcf:e:1de886d943ec:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "너 이기라고 내가 고치겠냐.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 286,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:db3d9603dd28:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:9726bb8f3269:1": {
+      "id": "v4:20:h-76ae27bbcf:e:9726bb8f3269:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 규칙 만들 때부터 내가 못 이기게 하고 싶은 거지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 284,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:1de886d943ec:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:8b9835844706:1": {
+      "id": "v4:20:h-76ae27bbcf:e:8b9835844706:1",
+      "type": "stage",
+      "direction": "미오는 린의 손에 들린 태엽 열쇠를 본다.린은 웃는 얼굴 그대로 감기 시작한다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 282,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:9726bb8f3269:1"
+    },
+    "v4:20:h-76ae27bbcf:e:f0991bf60664:1": {
+      "id": "v4:20:h-76ae27bbcf:e:f0991bf60664:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "응. 재경기.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 280,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:8b9835844706:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:e496c9e3649d:1": {
+      "id": "v4:20:h-76ae27bbcf:e:e496c9e3649d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 지금 아무도 안 이겨?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 278,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:f0991bf60664:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:a8a26d2a99ff:1": {
+      "id": "v4:20:h-76ae27bbcf:e:a8a26d2a99ff:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "규칙은 중간에 자면 네가 이긴다고 했지.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 276,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:e496c9e3649d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:d7c4d5f966be:1": {
+      "id": "v4:20:h-76ae27bbcf:e:d7c4d5f966be:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "끝까지 못 갔잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 274,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:a8a26d2a99ff:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:2f85d651db34:1": {
+      "id": "v4:20:h-76ae27bbcf:e:2f85d651db34:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 잤어. 제자리 운동이야.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 272,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:d7c4d5f966be:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:44c14cd4f976:1": {
+      "id": "v4:20:h-76ae27bbcf:e:44c14cd4f976:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 이겼네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 270,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:2f85d651db34:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:9ac9586c1906:1": {
+      "id": "v4:20:h-76ae27bbcf:e:9ac9586c1906:1",
+      "type": "stage",
+      "direction": "린이 손바닥을 선반 아래로 내린다.토끼는 떨어지지 않고 선반 안쪽에서 두 번 맴돌다가 멈춘다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 268,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:44c14cd4f976:1"
+    },
+    "v4:20:h-76ae27bbcf:e:d1e965778b9b:1": {
+      "id": "v4:20:h-76ae27bbcf:e:d1e965778b9b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 밑에서 받아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 266,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:9ac9586c1906:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:57acb0d968e7:1": {
+      "id": "v4:20:h-76ae27bbcf:e:57acb0d968e7:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "떨어질까 봐 받는 거야.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 264,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:d1e965778b9b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:348706fb21e0:1": {
+      "id": "v4:20:h-76ae27bbcf:e:348706fb21e0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "밀지 마.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 262,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:57acb0d968e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:53cfc6a2c632:1": {
+      "id": "v4:20:h-76ae27bbcf:e:53cfc6a2c632:1",
+      "type": "stage",
+      "direction": "린이 태엽을 감는다.토끼는 선반 가장자리를 따라 움직이다 안쪽으로 틀어진다.그가 입술을 깨물고 손을 옆에 댄다.미오가 손목을 붙잡는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 260,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:348706fb21e0:1"
+    },
+    "v4:20:h-76ae27bbcf:e:9a75b2ba1405:1": {
+      "id": "v4:20:h-76ae27bbcf:e:9a75b2ba1405:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "세상은 원래 잔인하지롱.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 258,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:53cfc6a2c632:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:db77d44d66cf:1": {
+      "id": "v4:20:h-76ae27bbcf:e:db77d44d66cf:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 내가 고친 게 고장 나야 이기네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 256,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:9a75b2ba1405:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:e4158defba24:1": {
+      "id": "v4:20:h-76ae27bbcf:e:e4158defba24:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "중간에 자면 네가 이긴 거.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 254,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:db77d44d66cf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:5795d758a245:1": {
+      "id": "v4:20:h-76ae27bbcf:e:5795d758a245:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 언제 이겨?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 252,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:e4158defba24:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:25a6b598a8b3:1": {
+      "id": "v4:20:h-76ae27bbcf:e:25a6b598a8b3:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "끝까지 가면 내가 이긴 거.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 250,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:5795d758a245:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:00f232424e71:1": {
+      "id": "v4:20:h-76ae27bbcf:e:00f232424e71:1",
+      "type": "stage",
+      "direction": "린은 선반의 긴 모서리를 손가락으로 문지른다.먼지를 털고 양쪽 끝을 살핀 뒤 토끼를 한쪽에 세운다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 248,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:25a6b598a8b3:1"
+    },
+    "v4:20:h-76ae27bbcf:e:769e04336688:1": {
+      "id": "v4:20:h-76ae27bbcf:e:769e04336688:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "대충 접으면 그렇지. 잘 접어도 다른 데가 엉망이면 또 그러고. 기계도 되게 성격 나빠.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 246,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:00f232424e71:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:5b056c82ce94:1": {
+      "id": "v4:20:h-76ae27bbcf:e:5b056c82ce94:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 대충 하면 계속 전다며.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 244,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:769e04336688:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:4eeb70a536d4:1": {
+      "id": "v4:20:h-76ae27bbcf:e:4eeb70a536d4:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "아직은. 너 벌써 칭찬받고 집에 갈 생각이지.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 242,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:5b056c82ce94:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:ccac091e866d:1": {
+      "id": "v4:20:h-76ae27bbcf:e:ccac091e866d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 접은 건 괜찮았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 240,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:4eeb70a536d4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:302180c0f0f1:1": {
+      "id": "v4:20:h-76ae27bbcf:e:302180c0f0f1:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "잘 걷는 쪽이 잡아당기고 있었네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 238,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:ccac091e866d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:578a1edefe81:1": {
+      "id": "v4:20:h-76ae27bbcf:e:578a1edefe81:1",
+      "type": "stage",
+      "direction": "린은 토끼를 빼앗듯 집어 반대쪽 발을 살핀다.미오가 접은 쪽을 바로 뜯지는 않는다.원래 붙어 있던 발 끝이 바닥에 걸리는 각도를 바꾼다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 236,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:302180c0f0f1:1"
+    },
+    "v4:20:h-76ae27bbcf:e:0c7a340e791a:1": {
+      "id": "v4:20:h-76ae27bbcf:e:0c7a340e791a:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "네가 안 비켜 줘서 그렇지. 나 줘 봐.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 234,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:578a1edefe81:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:0e07cfdba4cd:1": {
+      "id": "v4:20:h-76ae27bbcf:e:0e07cfdba4cd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 도망 못 가네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 232,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:0c7a340e791a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:816008523a5a:1": {
+      "id": "v4:20:h-76ae27bbcf:e:816008523a5a:1",
+      "type": "stage",
+      "direction": "토끼가 미오의 손가락을 두드린다.미오는 손을 거두지 않고 길을 막는다.태엽이 다 풀리자 장난감이 멎는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 230,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:0e07cfdba4cd:1"
+    },
+    "v4:20:h-76ae27bbcf:e:c14776cc17f4:1": {
+      "id": "v4:20:h-76ae27bbcf:e:c14776cc17f4:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "쟤가 그걸 어떻게 알아. 발 접어 준 손이 네 손이었는데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 228,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:816008523a5a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:b0cb50df7dad:1": {
+      "id": "v4:20:h-76ae27bbcf:e:b0cb50df7dad:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 고쳤잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 226,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:c14776cc17f4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:b194c505bdae:1": {
+      "id": "v4:20:h-76ae27bbcf:e:b194c505bdae:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "네가 보호자라서.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 224,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:b0cb50df7dad:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:bc8d8e455ccb:1": {
+      "id": "v4:20:h-76ae27bbcf:e:bc8d8e455ccb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 나한테 와?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 222,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:b194c505bdae:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-76ae27bbcf:e:6958d655bdb0:1": {
+      "id": "v4:20:h-76ae27bbcf:e:6958d655bdb0:1",
+      "type": "stage",
+      "direction": "미오가 접은 종이를 린이 빠진 발 자리에 맞춘다.린은 남는 끝을 한 번 더 접어 바닥에 대고 장난감을 놓는다.태엽을 놓자 토끼가 세 걸음 움직인 뒤 몸을 돌린다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 220,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "연습 — 결승선이 움직이는 경기",
+        "location": "h-76ae27bbcf"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:bc8d8e455ccb:1"
+    },
+    "v4:20:h-387f7a3a4e:e:1ff5cd4541bf:1": {
+      "id": "v4:20:h-387f7a3a4e:e:1ff5cd4541bf:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "대충 하면 계속 절어. 네가 볼 때만 안 절게 만들 순 없잖아.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 216,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-76ae27bbcf:e:6958d655bdb0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:4ce5c26224e8:1": {
+      "id": "v4:20:h-387f7a3a4e:e:4ce5c26224e8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "접는 것도 시험 봐?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 214,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:1ff5cd4541bf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:a26db50f1406:1": {
+      "id": "v4:20:h-387f7a3a4e:e:a26db50f1406:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "이거 반 접어. 모서리 맞춰서.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 212,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:4ce5c26224e8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:8237ec7d2fc5:1": {
+      "id": "v4:20:h-387f7a3a4e:e:8237ec7d2fc5:1",
+      "type": "stage",
+      "direction": "린이 두꺼운 포장지를 미오에게 건넨다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 210,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:a26db50f1406:1"
+    },
+    "v4:20:h-387f7a3a4e:e:6442784174ef:1": {
+      "id": "v4:20:h-387f7a3a4e:e:6442784174ef:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "재활이지롱. 아직 걷는 연습 중.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 208,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:8237ec7d2fc5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:4c64dd182de4:1": {
+      "id": "v4:20:h-387f7a3a4e:e:4c64dd182de4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "환자한테 종이 발은 괜찮아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 206,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:6442784174ef:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:846b4551f75b:1": {
+      "id": "v4:20:h-387f7a3a4e:e:846b4551f75b:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "웃지 마. 환자 앞이야.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 204,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:4c64dd182de4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:fb20c3e8a340:1": {
+      "id": "v4:20:h-387f7a3a4e:e:fb20c3e8a340:1",
+      "type": "stage",
+      "direction": "린은 빠진 발 대신 접은 종이를 끼워 본다. 토끼가 다시 넘어진다. 미오도 웃는다. 이번에는 린이 웃긴 말을 하려고 하지 않았다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 202,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:846b4551f75b:1"
+    },
+    "v4:20:h-387f7a3a4e:e:9c135f1e3359:1": {
+      "id": "v4:20:h-387f7a3a4e:e:9c135f1e3359:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "알아. 근데 그냥이라는 말 붙이면 만드는데 걸린 시간까지 없어지는 거 같잖아.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 200,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:fb20c3e8a340:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:be043d985990:1": {
+      "id": "v4:20:h-387f7a3a4e:e:be043d985990:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 놀리는 건 아니었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 198,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:9c135f1e3359:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:6ec647d0f8a9:1": {
+      "id": "v4:20:h-387f7a3a4e:e:6ec647d0f8a9:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "봐. 얘도 네 말 듣고 누웠다.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 196,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:be043d985990:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:764467e02339:1": {
+      "id": "v4:20:h-387f7a3a4e:e:764467e02339:1",
+      "type": "stage",
+      "direction": "린이 태엽을 감는다. 토끼가 한쪽으로 돌다가 옆으로 쓰러진다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 194,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:6ec647d0f8a9:1"
+    },
+    "v4:20:h-387f7a3a4e:e:ca47ed48f41c:1": {
+      "id": "v4:20:h-387f7a3a4e:e:ca47ed48f41c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그냥 장난감인데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 192,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:764467e02339:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:7d3074265bbf:1": {
+      "id": "v4:20:h-387f7a3a4e:e:7d3074265bbf:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "원래 저 밑에 끼어 있었어. 나사 하나 굴러나온 거 보고 알았고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 190,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:ca47ed48f41c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:6c9ad9237f71:1": {
+      "id": "v4:20:h-387f7a3a4e:e:6c9ad9237f71:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그거 가지려고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 188,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:7d3074265bbf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:48c3e002e9bd:1": {
+      "id": "v4:20:h-387f7a3a4e:e:48c3e002e9bd:1",
+      "type": "stage",
+      "direction": "린이 선반에서 손바닥만 한 토끼 태엽 장난감을 꺼낸다. 유리에 전시된 것과 다르게 한쪽 발이 없다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 186,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:6c9ad9237f71:1"
+    },
+    "v4:20:h-387f7a3a4e:e:0d142fd1f2b0:1": {
+      "id": "v4:20:h-387f7a3a4e:e:0d142fd1f2b0:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "넌 진짜 배운 걸 바로 쓰네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 184,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:48c3e002e9bd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:5b719c87daf9:1": {
+      "id": "v4:20:h-387f7a3a4e:e:5b719c87daf9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방금 그거는 말하기 싫었던 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 182,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:0d142fd1f2b0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:0c216c466c0e:1": {
+      "id": "v4:20:h-387f7a3a4e:e:0c216c466c0e:1",
+      "type": "stage",
+      "direction": "린은 진열장 옆 틈으로 손을 넣어 작은 레버를 누른다. 장식판이 열리는 게 아니라 위쪽 판매용 선반만 조금 앞으로 나온다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 180,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:5b719c87daf9:1"
+    },
+    "v4:20:h-387f7a3a4e:e:7ef3381ba8a3:1": {
+      "id": "v4:20:h-387f7a3a4e:e:7ef3381ba8a3:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "듣는 사람은 다르겠지. 해 줘야 되는 쪽은 안 다를 때도 있어.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 178,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:0c216c466c0e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:567b3791cbe1:1": {
+      "id": "v4:20:h-387f7a3a4e:e:567b3791cbe1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 되는데 안 말하는 거랑, 되는데 안 말하는 거랑 다르잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 176,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:7ef3381ba8a3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:f54d5d2c5dc8:1": {
+      "id": "v4:20:h-387f7a3a4e:e:f54d5d2c5dc8:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "말 안 하고 싶을 때도.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 174,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:567b3791cbe1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:18c50538e511:1": {
+      "id": "v4:20:h-387f7a3a4e:e:18c50538e511:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 된다고 말해도 믿어 줬으면 좋겠다는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 172,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:f54d5d2c5dc8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:c301a8535d10:1": {
+      "id": "v4:20:h-387f7a3a4e:e:c301a8535d10:1",
+      "type": "stage",
+      "direction": "미오는 어제 정문 앞에 없었다. 그래서 그때 린이 어떤 표정을 지었는지 모른다. 상상한 표정을 사실처럼 붙이지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 170,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:18c50538e511:1"
+    },
+    "v4:20:h-387f7a3a4e:e:b4b64127d204:1": {
+      "id": "v4:20:h-387f7a3a4e:e:b4b64127d204:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "나도 나가고 싶어. 근데 내가 여기서 뭔가 할 수 있다는 말이, 다 할 수 있다는 말은 아닌데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 168,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:c301a8535d10:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:5dfaa774fd6d:1": {
+      "id": "v4:20:h-387f7a3a4e:e:5dfaa774fd6d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나가려고 했으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 166,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:b4b64127d204:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:e722f16e61d8:1": {
+      "id": "v4:20:h-387f7a3a4e:e:e722f16e61d8:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "정문 안 된다고 하니까 다른 문. 담 안 된다고 하니까 위. 한 군데 아니라고 할 때마다 다음 데를 주더라.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 164,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:5dfaa774fd6d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:9aafeb3deba8:1": {
+      "id": "v4:20:h-387f7a3a4e:e:9aafeb3deba8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어떤 거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 162,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:e722f16e61d8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:d6e7328b3310:1": {
+      "id": "v4:20:h-387f7a3a4e:e:d6e7328b3310:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "어제 타이가가 딱 그랬어.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 160,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:9aafeb3deba8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:693316c95be4:1": {
+      "id": "v4:20:h-387f7a3a4e:e:693316c95be4:1",
+      "type": "stage",
+      "direction": "린이 미오를 본다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 158,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:d6e7328b3310:1"
+    },
+    "v4:20:h-387f7a3a4e:e:8d0fe02a3ccb:1": {
+      "id": "v4:20:h-387f7a3a4e:e:8d0fe02a3ccb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다른 쪽은?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 156,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:693316c95be4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:17f166d1965a:1": {
+      "id": "v4:20:h-387f7a3a4e:e:17f166d1965a:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "여기는 못 열지. 열리게 만든 데가 아니니까.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 154,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:8d0fe02a3ccb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:0b935f038fb8:1": {
+      "id": "v4:20:h-387f7a3a4e:e:0b935f038fb8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 못 열어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 152,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:17f166d1965a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:197ea4fe5a7f:1": {
+      "id": "v4:20:h-387f7a3a4e:e:197ea4fe5a7f:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안에 실린더가 없어. 자물쇠 모양만 파 놨어.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 150,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:0b935f038fb8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:878537e50677:1": {
+      "id": "v4:20:h-387f7a3a4e:e:878537e50677:1",
+      "type": "stage",
+      "direction": "린이 열쇠를 뺀다. 구멍 안으로 작은 빛을 비춘다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 148,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:197ea4fe5a7f:1"
+    },
+    "v4:20:h-387f7a3a4e:e:70401c39359d:1": {
+      "id": "v4:20:h-387f7a3a4e:e:70401c39359d:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "열쇠가 맞는데 안 돌아간다는 거야. 지금 그게 재밌는 부분이고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 146,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:878537e50677:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:de78a52527a6:1": {
+      "id": "v4:20:h-387f7a3a4e:e:de78a52527a6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 맞는다는 거야, 열쇠가 맞는다는 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 144,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:70401c39359d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:23948007e19d:1": {
+      "id": "v4:20:h-387f7a3a4e:e:23948007e19d:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "맞아.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 142,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:de78a52527a6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:4136696983b2:1": {
+      "id": "v4:20:h-387f7a3a4e:e:4136696983b2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 맞는 거 아냐?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 140,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:23948007e19d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-387f7a3a4e:e:81a804b6e7f9:1": {
+      "id": "v4:20:h-387f7a3a4e:e:81a804b6e7f9:1",
+      "type": "stage",
+      "direction": "린은 열쇠를 진열장 아래쪽 장식판의 구멍에 넣는다. 딱 들어가지만 돌아가지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 138,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:4136696983b2:1"
+    },
+    "v4:20:h-387f7a3a4e:e:c0290bb6861b:1": {
+      "id": "v4:20:h-387f7a3a4e:e:c0290bb6861b:1",
+      "type": "stage",
+      "direction": "B에서는 린이 의자에 올라 장식 열쇠 하나를 직접 뺀다.C에서는 미오가 약속한 관찰 범위를 확인한 뒤 하나를 내려 준다.A에서는 이미 받은 하나를 쓴다.어느 경로에서도 벽의 꾸러미 전체를 가져온 것으로 바꾸지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 136,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "합류 — 자물쇠가 아닌 것",
+        "location": "h-387f7a3a4e"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:81a804b6e7f9:1"
+    },
+    "v4:20:h-16825129e6:e:0cbe554caa36:1": {
+      "id": "v4:20:h-16825129e6:e:0cbe554caa36:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "고마워. 그냥 그거야. 고맙다고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 78,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:c0290bb6861b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:183ef6b41a89:1": {
+      "id": "v4:20:h-16825129e6:e:183ef6b41a89:1",
+      "type": "stage",
+      "direction": "린이 열쇠를 받는다. 미오에게 보이게 손바닥 위에서 돌린다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 76,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:0cbe554caa36:1"
+    },
+    "v4:20:h-16825129e6:e:ba4fbfa7d31d:1": {
+      "id": "v4:20:h-16825129e6:e:ba4fbfa7d31d:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 되네. 두 번 하면 재미없네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 74,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:183ef6b41a89:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:6256a765bd22:1": {
+      "id": "v4:20:h-16825129e6:e:6256a765bd22:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "연습시키지 마.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 72,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:ba4fbfa7d31d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:cb002ada2188:1": {
+      "id": "v4:20:h-16825129e6:e:cb002ada2188:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "야, 그거 괜찮다. 한 번 더 해 봐.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 70,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:6256a765bd22:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:f08ab66eafa5:1": {
+      "id": "v4:20:h-16825129e6:e:f08ab66eafa5:1",
+      "type": "stage",
+      "direction": "린이 웃는다. 소리가 짧게 새고 나서 입을 가린다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 68,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:cb002ada2188:1"
+    },
+    "v4:20:h-16825129e6:e:ae09b4bc0990:1": {
+      "id": "v4:20:h-16825129e6:e:ae09b4bc0990:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너한테.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 66,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:f08ab66eafa5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:8a34a7f03487:1": {
+      "id": "v4:20:h-16825129e6:e:8a34a7f03487:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "말 꼬투리 잡는 거 배웠다?",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 64,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:ae09b4bc0990:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:3e5808733d5a:1": {
+      "id": "v4:20:h-16825129e6:e:3e5808733d5a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하나만 내려 달라고 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 62,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:8a34a7f03487:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:5428681bc452:1": {
+      "id": "v4:20:h-16825129e6:e:5428681bc452:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "전체를 달라는 거였는데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 60,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:3e5808733d5a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-16825129e6:e:20906d5c196a:1": {
+      "id": "v4:20:h-16825129e6:e:20906d5c196a:1",
+      "type": "stage",
+      "direction": "미오가 손을 뻗는다. 꾸러미 전체가 아니라 가장자리의 열쇠 하나만 빼낸다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 58,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "A. 열쇠를 내려 준다",
+        "location": "h-16825129e6"
+      },
+      "next": "v4:20:h-16825129e6:e:5428681bc452:1"
+    },
+    "v4:20:h-fe105db321:e:3610fcbacfbd:1": {
+      "id": "v4:20:h-fe105db321:e:3610fcbacfbd:1",
+      "type": "stage",
+      "direction": "린이 의자를 가져온다. 바닥에 천을 깔고 그 위에 올린다. 진열장 유리에 의자 다리가 부딪히지 않는 위치를 먼저 확인한다. 미오는 그 과정을 보고도 아직 돕지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 108,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:c0290bb6861b:1"
+    },
+    "v4:20:h-fe105db321:e:430e6067b126:1": {
+      "id": "v4:20:h-fe105db321:e:430e6067b126:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "설명하기 싫을 수도 있잖아.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 106,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:3610fcbacfbd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:5a74f9cc28c2:1": {
+      "id": "v4:20:h-fe105db321:e:5a74f9cc28c2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "설명할 수는 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 104,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:430e6067b126:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:cd49372a13d9:1": {
+      "id": "v4:20:h-fe105db321:e:cd49372a13d9:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "뭐든 거절하고 나면 상대가 화났는지부터 확인해? 그럼 거절이 되게 비싸지겠다.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 102,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:5a74f9cc28c2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:8abd91c81fb1:1": {
+      "id": "v4:20:h-fe105db321:e:8abd91c81fb1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "화났어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 100,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:cd49372a13d9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:e27a4a8e533d:1": {
+      "id": "v4:20:h-fe105db321:e:e27a4a8e533d:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "됐어. 의자 쓸게.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 98,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:8abd91c81fb1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:154e06e3637d:1": {
+      "id": "v4:20:h-fe105db321:e:154e06e3637d:1",
+      "type": "stage",
+      "direction": "린이 미오를 올려다본다. 잠깐 기다렸다가 자기 신발을 신는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 96,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:e27a4a8e533d:1"
+    },
+    "v4:20:h-fe105db321:e:f9315ed3ccb3:1": {
+      "id": "v4:20:h-fe105db321:e:f9315ed3ccb3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 안 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 94,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:154e06e3637d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:2b1f969ab568:1": {
+      "id": "v4:20:h-fe105db321:e:2b1f969ab568:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "아니. 내 거면 열쇠를 갖고 있겠지.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 92,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:f9315ed3ccb3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:4f0fc7abd05d:1": {
+      "id": "v4:20:h-fe105db321:e:4f0fc7abd05d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 90,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:2b1f969ab568:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:14d9f0d9fdc0:1": {
+      "id": "v4:20:h-fe105db321:e:14d9f0d9fdc0:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "진열장.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 88,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:4f0fc7abd05d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:73db268ec1b9:1": {
+      "id": "v4:20:h-fe105db321:e:73db268ec1b9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무엇을 열 건데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 86,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:14d9f0d9fdc0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:e6ce6ca79fbc:1": {
+      "id": "v4:20:h-fe105db321:e:e6ce6ca79fbc:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "문이 아닐 수도 있지.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 84,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:73db268ec1b9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-fe105db321:e:833b4520e8c8:1": {
+      "id": "v4:20:h-fe105db321:e:833b4520e8c8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어떤 문을 열 건데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 82,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "B. 무엇에 쓸 건지 먼저 묻는다",
+        "location": "h-fe105db321"
+      },
+      "next": "v4:20:h-fe105db321:e:e6ce6ca79fbc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:5f5c88ce01d4:1": {
+      "id": "v4:20:h-92d0d8e241:e:5f5c88ce01d4:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "좋아. 그건 나도 못 시키니까.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 132,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-387f7a3a4e:e:c0290bb6861b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:08a08823f047:1": {
+      "id": "v4:20:h-92d0d8e241:e:08a08823f047:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "기억하는 것까지 약속하지는 않을게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 130,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:5f5c88ce01d4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:6536d355a0c6:1": {
+      "id": "v4:20:h-92d0d8e241:e:6536d355a0c6:1",
+      "type": "stage",
+      "direction": "잠깐 침묵. 미오가 가방을 닫는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 128,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:08a08823f047:1"
+    },
+    "v4:20:h-92d0d8e241:e:97812ba21996:1": {
+      "id": "v4:20:h-92d0d8e241:e:97812ba21996:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "보여 주는 건 내가 정하고.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 126,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:6536d355a0c6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:916f2c058177:1": {
+      "id": "v4:20:h-92d0d8e241:e:916f2c058177:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "적는 건 내가 정해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 124,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:97812ba21996:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:361a14f95b44:1": {
+      "id": "v4:20:h-92d0d8e241:e:361a14f95b44:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 돼. 보는 데까지만. 노트는 닫아.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 122,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:916f2c058177:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:9a2fdc046062:1": {
+      "id": "v4:20:h-92d0d8e241:e:9a2fdc046062:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 120,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:361a14f95b44:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:10f0f3ac53f3:1": {
+      "id": "v4:20:h-92d0d8e241:e:10f0f3ac53f3:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그러니까 비싸다고. 그 정도로 내 일을 사려고 하네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 118,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:9a2fdc046062:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:12b4f4d25cbd:1": {
+      "id": "v4:20:h-92d0d8e241:e:12b4f4d25cbd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "손 한 번 뻗는 값으로?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 116,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:10f0f3ac53f3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:1eb58f3c486a:1": {
+      "id": "v4:20:h-92d0d8e241:e:1eb58f3c486a:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "비싼데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 114,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:12b4f4d25cbd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-92d0d8e241:e:67a483e0cbb0:1": {
+      "id": "v4:20:h-92d0d8e241:e:67a483e0cbb0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내려 주면 뭘 하는지 같이 볼래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 112,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "C. 같이 보고 싶다고 거래한다",
+        "location": "h-92d0d8e241"
+      },
+      "next": "v4:20:h-92d0d8e241:e:1eb58f3c486a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:RIN-01A:menu": {
+      "id": "v4:20:RIN-01A:menu",
+      "type": "menu",
+      "q": "부탁의 값",
+      "options": [
+        {
+          "id": "A",
+          "label": "열쇠를 내려 준다",
+          "to": "v4:20:h-16825129e6:e:20906d5c196a:1",
+          "set": {
+            "RIN-01A": "A"
+          }
+        },
+        {
+          "id": "B",
+          "label": "무엇에 쓸 건지 먼저 묻는다",
+          "to": "v4:20:h-fe105db321:e:833b4520e8c8:1",
+          "set": {
+            "RIN-01A": "B"
+          }
+        },
+        {
+          "id": "C",
+          "label": "같이 보고 싶다고 거래한다",
+          "to": "v4:20:h-92d0d8e241:e:67a483e0cbb0:1",
+          "set": {
+            "RIN-01A": "C"
+          }
+        }
+      ],
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 54,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "선택 RIN-01A — 부탁의 값",
+        "location": "h-132acb0f20"
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:132b26a847d5:1": {
+      "id": "v4:20:h-f2f9d8f503:e:132b26a847d5:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "네가 있잖아.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 52,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:RIN-01A:menu",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:f71cff19a770:1": {
+      "id": "v4:20:h-f2f9d8f503:e:f71cff19a770:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "밟고 올라갈 의자 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 50,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:132b26a847d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:8eacdee929f0:1": {
+      "id": "v4:20:h-f2f9d8f503:e:8eacdee929f0:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "저 중에 하나만 내려 줘. 난 키가 모자라서.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 48,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:f71cff19a770:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:3c139f00444d:1": {
+      "id": "v4:20:h-f2f9d8f503:e:3c139f00444d:1",
+      "type": "stage",
+      "direction": "린은 벽에 걸린 열쇠 꾸러미를 가리킨다. 장식용 열쇠들이다. 번호가 아니라 놀이공원 로고가 새겨져 있다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 46,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:8eacdee929f0:1"
+    },
+    "v4:20:h-f2f9d8f503:e:3fcd783cbd2e:1": {
+      "id": "v4:20:h-f2f9d8f503:e:3fcd783cbd2e:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "보는 눈이 보여 달라고 하고 있었어.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 44,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:3c139f00444d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:68ce0b215382:1": {
+      "id": "v4:20:h-f2f9d8f503:e:68ce0b215382:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "보여 달라고 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 42,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:3fcd783cbd2e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:655411ef2ca0:1": {
+      "id": "v4:20:h-f2f9d8f503:e:655411ef2ca0:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그건 안 보여 줄 건데.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 40,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:68ce0b215382:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:12aad6c9ac38:1": {
+      "id": "v4:20:h-f2f9d8f503:e:12aad6c9ac38:1",
+      "type": "stage",
+      "direction": "린은 나사를 문지른다. 나사산에 붉은 가루가 묻었다. 미오가 가까이 보려 하자 손을 접는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 38,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:655411ef2ca0:1"
+    },
+    "v4:20:h-f2f9d8f503:e:caf4a678d87a:1": {
+      "id": "v4:20:h-f2f9d8f503:e:caf4a678d87a:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "기억 잘하네. 그럼 정정도 잘해. 도둑질 말고 회수.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 36,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:12aad6c9ac38:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:a404f7e2e559:1": {
+      "id": "v4:20:h-f2f9d8f503:e:a404f7e2e559:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "기계에서 돌려주지 않은 거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 34,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:caf4a678d87a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:c2abae375f43:1": {
+      "id": "v4:20:h-f2f9d8f503:e:c2abae375f43:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "그건 동전 찾은 거야. 내 동전.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 32,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:a404f7e2e559:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:f2621654151f:1": {
+      "id": "v4:20:h-f2f9d8f503:e:f2621654151f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방금은 내 앞에서 엎드렸잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 30,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:c2abae375f43:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:32100e4a652c:1": {
+      "id": "v4:20:h-f2f9d8f503:e:32100e4a652c:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "할 거였으면 네 앞에서 엎드렸겠냐.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 28,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:f2621654151f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:ac2da3d23b2b:1": {
+      "id": "v4:20:h-f2f9d8f503:e:ac2da3d23b2b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "도둑질하려고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 26,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:32100e4a652c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:23faf4151c87:1": {
+      "id": "v4:20:h-f2f9d8f503:e:23faf4151c87:1",
+      "type": "stage",
+      "direction": "린이 몸을 빼낸다. 손에 작은 나사 하나가 들려 있다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 24,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:ac2da3d23b2b:1"
+    },
+    "v4:20:h-f2f9d8f503:e:5bf8c0167815:1": {
+      "id": "v4:20:h-f2f9d8f503:e:5bf8c0167815:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "숨어 있는 걸 예쁘게 말해 줬는데 말을 꼭 그렇게 받아먹네.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 22,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:23faf4151c87:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:8737553c7600:1": {
+      "id": "v4:20:h-f2f9d8f503:e:8737553c7600:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 거기 없잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 20,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:5bf8c0167815:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:9a21fa0bfb97:1": {
+      "id": "v4:20:h-f2f9d8f503:e:9a21fa0bfb97:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "안 떨어진 걸 찾는 중.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 18,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:8737553c7600:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:2aa81d2688bb:1": {
+      "id": "v4:20:h-f2f9d8f503:e:2aa81d2688bb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐 떨어졌어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 16,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:9a21fa0bfb97:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:db9e6849c73d:1": {
+      "id": "v4:20:h-f2f9d8f503:e:db9e6849c73d:1",
+      "type": "stage",
+      "direction": "미오가 신발을 옆으로 민다. 린은 고개를 꺼내지 않는다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 14,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:2aa81d2688bb:1"
+    },
+    "v4:20:h-f2f9d8f503:e:69e371ee59c6:1": {
+      "id": "v4:20:h-f2f9d8f503:e:69e371ee59c6:1",
+      "type": "say",
+      "speaker": "린",
+      "actor": "rin",
+      "text": "밟았으면 닦아 주고 가. 아직 안 밟았으면 좀 밀어 줘.",
+      "mono": false,
+      "delivery": "린",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 12,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:db9e6849c73d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "린",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:c0b16510ea72:1": {
+      "id": "v4:20:h-f2f9d8f503:e:c0b16510ea72:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "신발 밟을 뻔했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 10,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:69e371ee59c6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:20:h-f2f9d8f503:e:39661df70b46:1": {
+      "id": "v4:20:h-f2f9d8f503:e:39661df70b46:1",
+      "type": "stage",
+      "direction": "기념품점 옆 통로. 린이 바닥에 엎드려 진열장 아래를 보고 있다. 신발 하나가 벗겨져 통로 가운데 있다.",
+      "source": {
+        "file": "20_자유시간_린_01.md",
+        "line": 8,
+        "fileSha256": "d3e9cd93db3bed04dd1468a510b69f6993574ad1d34f7d51bb8bd778b0f8172e",
+        "heading": "만남 — 기념품점 옆의 자물쇠",
+        "location": "h-f2f9d8f503"
+      },
+      "next": "v4:20:h-f2f9d8f503:e:c0b16510ea72:1"
+    }
+  },
+  "kind": "freetime",
+  "routingStatus": "authored_simple_convergence",
+  "sourceFile": "20_자유시간_린_01.md",
+  "completionFlag": "fte:20:complete",
+  "eligibility": "Caller must enforce the exact manuscript day/time and prior-meeting requirements. No caller may auto-play every library file.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "20_자유시간_린_01.md:h-a7dccdd7c2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-2993808eea": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-5e7f338186": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-0472879fe8": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-2f2caa35c0": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-76ae27bbcf": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-387f7a3a4e": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-16825129e6": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-fe105db321": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-92d0d8e241": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-132acb0f20": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "20_자유시간_린_01.md:h-f2f9d8f503": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

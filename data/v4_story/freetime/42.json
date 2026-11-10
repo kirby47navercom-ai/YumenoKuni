@@ -1,0 +1,4700 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:42:h-cf078ed5d4:e:9de0df9c92f5:1",
+  "nodes": {
+    "v4:42:return": {
+      "id": "v4:42:return",
+      "type": "return"
+    },
+    "v4:42:h-461b5379ba:e:107c883e8410:1": {
+      "id": "v4:42:h-461b5379ba:e:107c883e8410:1",
+      "type": "stage",
+      "direction": "미오가손을흔든다.앞선경기의다른거리를같은선으로소급하지않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 455,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-02A B",
+        "location": "h-461b5379ba"
+      },
+      "next": "v4:42:return"
+    },
+    "v4:42:missing:actual-earlier-throwing-line": {
+      "id": "v4:42:missing:actual-earlier-throwing-line",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: SORA-02A"
+    },
+    "v4:42:h-3026c4f871:e:13b9da21602e:1": {
+      "id": "v4:42:h-3026c4f871:e:13b9da21602e:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "알지. 다음에도.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 447,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-02A A/C",
+        "location": "h-3026c4f871"
+      },
+      "next": "v4:42:h-461b5379ba:e:107c883e8410:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-3026c4f871:e:edc6ae7f37bc:1": {
+      "id": "v4:42:h-3026c4f871:e:edc6ae7f37bc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나 아까도 뒤였어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 445,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-02A A/C",
+        "location": "h-3026c4f871"
+      },
+      "next": "v4:42:h-3026c4f871:e:13b9da21602e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-461b5379ba:e:059d73e70cc3:1": {
+      "id": "v4:42:h-461b5379ba:e:059d73e70cc3:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "아직 봐준다고 안 했어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 453,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-02A B",
+        "location": "h-461b5379ba"
+      },
+      "next": "v4:42:h-461b5379ba:e:107c883e8410:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-461b5379ba:e:0c651f65ee35:1": {
+      "id": "v4:42:h-461b5379ba:e:0c651f65ee35:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 봐주기 없어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 451,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-02A B",
+        "location": "h-461b5379ba"
+      },
+      "next": "v4:42:h-461b5379ba:e:059d73e70cc3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:actual-earlier-throwing-line": {
+      "id": "v4:42:actual-earlier-throwing-line",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "SORA-02A",
+          "equals": "A",
+          "to": "v4:42:h-3026c4f871:e:edc6ae7f37bc:1"
+        },
+        {
+          "flag": "SORA-02A",
+          "equals": "B",
+          "to": "v4:42:h-461b5379ba:e:0c651f65ee35:1"
+        },
+        {
+          "flag": "SORA-02A",
+          "equals": "C",
+          "to": "v4:42:h-3026c4f871:e:edc6ae7f37bc:1"
+        }
+      ],
+      "default": "v4:42:missing:actual-earlier-throwing-line"
+    },
+    "v4:42:h-b1270dbb20:e:f6fc734071fd:1": {
+      "id": "v4:42:h-b1270dbb20:e:f6fc734071fd:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그래. 다음에 한 판 더 하자. 너도 다음엔 뒤에서 던져.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 441,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:actual-earlier-throwing-line",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:0a70d1184482:1": {
+      "id": "v4:42:h-b1270dbb20:e:0a70d1184482:1",
+      "type": "stage",
+      "direction": "소라가「같이」라고 말하려다 유우의 공을 받는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 439,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:f6fc734071fd:1"
+    },
+    "v4:42:h-b1270dbb20:e:4d4fc010fc52:1": {
+      "id": "v4:42:h-b1270dbb20:e:4d4fc010fc52:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이제 다른 데. 너희 더 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 437,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:0a70d1184482:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:761532e7b844:1": {
+      "id": "v4:42:h-b1270dbb20:e:761532e7b844:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "어디 가?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 435,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:4d4fc010fc52:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:8fc6a519cc84:1": {
+      "id": "v4:42:h-b1270dbb20:e:8fc6a519cc84:1",
+      "type": "stage",
+      "direction": "소라가 미오 쪽으로 몸을 돌리고 일부러 크게 웃어 보인다.유우가 따라 하자 둘의 웃음소리가 겹친다.미오는 웃다가도 먼저 등을 돌린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 433,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:761532e7b844:1"
+    },
+    "v4:42:h-b1270dbb20:e:b0169ebf6a71:1": {
+      "id": "v4:42:h-b1270dbb20:e:b0169ebf6a71:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금도 멈췄네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 431,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:8fc6a519cc84:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:f1c3f6d344d7:1": {
+      "id": "v4:42:h-b1270dbb20:e:f1c3f6d344d7:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "갑자기 그러면 또 못 웃어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 429,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:b0169ebf6a71:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:7cd021294a30:1": {
+      "id": "v4:42:h-b1270dbb20:e:7cd021294a30:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "사진 찍던 날에도 그렇게 웃으면 됐겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 427,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:f1c3f6d344d7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:f6b129b17e07:1": {
+      "id": "v4:42:h-b1270dbb20:e:f6b129b17e07:1",
+      "type": "stage",
+      "direction": "미오는 그 웃음을 사진에서 보았던 꾸민 미소와 같은 모양이라고 판정하지 않는다. 여기에는 사진을 찍는 카메라가 없다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 425,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:7cd021294a30:1"
+    },
+    "v4:42:h-b1270dbb20:e:2bbc1dac9ad8:1": {
+      "id": "v4:42:h-b1270dbb20:e:2bbc1dac9ad8:1",
+      "type": "stage",
+      "direction": "유우가 공을 옆구리에 끼고 웃는다. 소라도 웃는다. 새 내기나 점수는 없고 깡통 경기의 결과도 바뀌지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 423,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:f6b129b17e07:1"
+    },
+    "v4:42:h-b1270dbb20:e:bbeaf3d4e908:1": {
+      "id": "v4:42:h-b1270dbb20:e:bbeaf3d4e908:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에는 네가 뭘 할지 보였어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 421,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:2bbc1dac9ad8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:94eae5a59272:1": {
+      "id": "v4:42:h-b1270dbb20:e:94eae5a59272:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "공 올릴 때는 그렇게 빨리 안 비켜 주더니.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 419,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:bbeaf3d4e908:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:5c75af6cd271:1": {
+      "id": "v4:42:h-b1270dbb20:e:5c75af6cd271:1",
+      "type": "stage",
+      "direction": "미오가 한 발 물러나 손을 뒤로 감춘다. 소라는 따라가 붙잡지 않고 내밀었던 손으로 자기 이마를 짚는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 417,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:94eae5a59272:1"
+    },
+    "v4:42:h-b1270dbb20:e:f09633ae9403:1": {
+      "id": "v4:42:h-b1270dbb20:e:f09633ae9403:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "계속 해 줘야 되겠네. 걸어도 안 넘어지잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 415,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:5c75af6cd271:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:e04c5581ee79:1": {
+      "id": "v4:42:h-b1270dbb20:e:e04c5581ee79:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "지금도 안 넘어졌어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 413,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:f09633ae9403:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:c6d447aa969e:1": {
+      "id": "v4:42:h-b1270dbb20:e:c6d447aa969e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 411,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:e04c5581ee79:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:46261bc099ac:1": {
+      "id": "v4:42:h-b1270dbb20:e:46261bc099ac:1",
+      "type": "stage",
+      "direction": "유우가 소라 옆으로 손을 내민다. 미오는 공부터 유우의 다른 손에 돌려주고 손바닥을 맞댄다. 소라가 두 사람 사이에 손을 한 번 더 넣는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 409,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:c6d447aa969e:1"
+    },
+    "v4:42:h-b1270dbb20:e:68db7c02730b:1": {
+      "id": "v4:42:h-b1270dbb20:e:68db7c02730b:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "나도.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 407,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:46261bc099ac:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:bbcb17a77266:1": {
+      "id": "v4:42:h-b1270dbb20:e:bbcb17a77266:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "축하해. 다음에도 서 있어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 405,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:68db7c02730b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:cd92c0c1bf94:1": {
+      "id": "v4:42:h-b1270dbb20:e:cd92c0c1bf94:1",
+      "type": "stage",
+      "direction": "소라가 미오에게 손바닥을 펴 보인다. 미오는 공을 왼손으로 옮겨 잡고 오른손으로 소라의 손바닥에 한 번 가볍게 맞댄다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 403,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:bbcb17a77266:1"
+    },
+    "v4:42:h-b1270dbb20:e:526dd1b7b739:1": {
+      "id": "v4:42:h-b1270dbb20:e:526dd1b7b739:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "맞네. 우리는 서 있었어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 401,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:cd92c0c1bf94:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:febe46c62f45:1": {
+      "id": "v4:42:h-b1270dbb20:e:febe46c62f45:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그건 통이 넘어간 거고. 지금은 내가 안 넘어졌잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 399,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:526dd1b7b739:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:666fc392ba7d:1": {
+      "id": "v4:42:h-b1270dbb20:e:666fc392ba7d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 네가 맞힌 건 쳤어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 397,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:febe46c62f45:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:cdf616c5ee28:1": {
+      "id": "v4:42:h-b1270dbb20:e:cdf616c5ee28:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "이제는 박수도 안 쳐 줘?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 395,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:666fc392ba7d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:43994ee41d82:1": {
+      "id": "v4:42:h-b1270dbb20:e:43994ee41d82:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그냥 손으로 들고 다녀. 올라갔다 내려오는 거 내가 봐 줄게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 393,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:cdf616c5ee28:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:ce5ae0411fcd:1": {
+      "id": "v4:42:h-b1270dbb20:e:ce5ae0411fcd:1",
+      "type": "stage",
+      "direction": "유우가 공을 머리에 얹고 턱을 지나치게 내린다. 앞으로 떨어진 공이 카운터 앞 바닥에 튄다. 미오가 자기 발 가까이 온 공을 집는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 391,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:43994ee41d82:1"
+    },
+    "v4:42:h-b1270dbb20:e:455370396001:1": {
+      "id": "v4:42:h-b1270dbb20:e:455370396001:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "내가 해 봐서 알아. 안 되는 거.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 389,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:ce5ae0411fcd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:5482408d90c8:1": {
+      "id": "v4:42:h-b1270dbb20:e:5482408d90c8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "방금 네가 들었잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 387,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:455370396001:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:c2b0a8d5874d:1": {
+      "id": "v4:42:h-b1270dbb20:e:c2b0a8d5874d:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "너는 고개 들지 말고.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 385,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:5482408d90c8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:13e4c750933b:1": {
+      "id": "v4:42:h-b1270dbb20:e:13e4c750933b:1",
+      "type": "stage",
+      "direction": "소라가 뒤로 돌아 공을 줍는다. 유우가 자기도 다시 올려 보겠다며 손을 내민다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 383,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:c2b0a8d5874d:1"
+    },
+    "v4:42:h-b1270dbb20:e:cf04bef41c02:1": {
+      "id": "v4:42:h-b1270dbb20:e:cf04bef41c02:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "안 보여 줘도 됐는데. 떨어지는 건 잘 봤어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 381,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:13e4c750933b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:36500541dd98:1": {
+      "id": "v4:42:h-b1270dbb20:e:36500541dd98:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "네가 보고 있길래 잘 보이게 하려고.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 379,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:cf04bef41c02:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:93dfb1a101c0:1": {
+      "id": "v4:42:h-b1270dbb20:e:93dfb1a101c0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "손 떼기 전에 고개부터 들었잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 377,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:36500541dd98:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:dc5b5eef5706:1": {
+      "id": "v4:42:h-b1270dbb20:e:dc5b5eef5706:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "머리가 안 동그라면 더 이상한 거 아니야?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 375,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:93dfb1a101c0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:d2d44c3e0b44:1": {
+      "id": "v4:42:h-b1270dbb20:e:d2d44c3e0b44:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너도 동그래.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 373,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:dc5b5eef5706:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:6ff430f0fe8f:1": {
+      "id": "v4:42:h-b1270dbb20:e:6ff430f0fe8f:1",
+      "type": "stage",
+      "direction": "유우가 공을 소라에게 내민다. 소라는 자기 정수리에 올렸다가 손을 뗀다. 공이 곧바로 뒤로 떨어진다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 371,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:d2d44c3e0b44:1"
+    },
+    "v4:42:h-b1270dbb20:e:fcd31c301fda:1": {
+      "id": "v4:42:h-b1270dbb20:e:fcd31c301fda:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "공이 너무 동그래서 그런가.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 369,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:6ff430f0fe8f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:17e66e32bbec:1": {
+      "id": "v4:42:h-b1270dbb20:e:17e66e32bbec:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그게 네 머리 탓이야?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 367,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:fcd31c301fda:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:56c3724f26a1:1": {
+      "id": "v4:42:h-b1270dbb20:e:56c3724f26a1:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "이건 못해. 누가 머리가 평평해?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 365,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:17e66e32bbec:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-b1270dbb20:e:ccde4a0423af:1": {
+      "id": "v4:42:h-b1270dbb20:e:ccde4a0423af:1",
+      "type": "stage",
+      "direction": "02B C는다른부스앞에서유우가한손으로공굴리는모습을둘이본다.A/B는부스를정리하고통로로나온뒤유우와만난다.유우가뒤통수에공을올렸다떨어뜨리며새놀이를찾는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 363,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "끝 — 사진의 다음 장",
+        "location": "h-b1270dbb20"
+      },
+      "next": "v4:42:h-b1270dbb20:e:56c3724f26a1:1"
+    },
+    "v4:42:h-2a1dd6b8b5:e:33094b41d186:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:33094b41d186:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 아쉬워해. 봐줬다고 하지 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 299,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-b1270dbb20:e:ccde4a0423af:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2a1dd6b8b5:e:e67bbdfa55bf:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:e67bbdfa55bf:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "네 거 두 개 더 떨어질 줄 알았는데.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 297,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:33094b41d186:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2a1dd6b8b5:e:c4956044fa46:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:c4956044fa46:1",
+      "type": "stage",
+      "direction": "미오가 박수를 한 번 친다.소라가 웃다가 자기도 한 번 친다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 295,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:e67bbdfa55bf:1"
+    },
+    "v4:42:h-2a1dd6b8b5:e:2c27e5b763da:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:2c27e5b763da:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번엔 네가 이겼어. 박수는 한 번만.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 293,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:c4956044fa46:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2a1dd6b8b5:e:1d8c283f305d:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:1d8c283f305d:1",
+      "type": "stage",
+      "direction": "새판.미오 세 개/소라 네 개를 떨어뜨린다.소라가 한 번 더 하자고 하자 미오는 자기가 정한 이번 판은 끝났다고 한다.소라가 이겼다고 직접 말해 준다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 291,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:2c27e5b763da:1"
+    },
+    "v4:42:h-2a1dd6b8b5:e:62dfa3ba7880:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:62dfa3ba7880:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그럼 너도 아까 내가 그렇게 생각했는지 맞히려고 하지 말고. 한 번씩. 같은 선. 통 바깥으로 떨어진 것만.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 289,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:1d8c283f305d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2a1dd6b8b5:e:565f2939bd4a:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:565f2939bd4a:1",
+      "type": "stage",
+      "direction": "소라가 공을 쥔다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 287,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:62dfa3ba7880:1"
+    },
+    "v4:42:h-2a1dd6b8b5:e:b6c8b5f4031c:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:b6c8b5f4031c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직 안 했지. 하려는 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 285,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:565f2939bd4a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2a1dd6b8b5:e:9ba9efaed78e:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:9ba9efaed78e:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "내가 언제 그랬어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 283,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:b6c8b5f4031c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2a1dd6b8b5:e:c50b80a35ae1:1": {
+      "id": "v4:42:h-2a1dd6b8b5:e:c50b80a35ae1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "유우 이기려고 나 이기지는 마. 다시 할 거면 우리끼리 점수 정하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 281,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 소라와 다시 겨룬다",
+        "location": "h-2a1dd6b8b5"
+      },
+      "next": "v4:42:h-2a1dd6b8b5:e:9ba9efaed78e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:0c111063f756:1": {
+      "id": "v4:42:h-1598d0e82a:e:0c111063f756:1",
+      "type": "stage",
+      "direction": "미오가 바닥의 공을 주워 바구니에 넣는다. 소라는 서 있는 마지막 두 통을 한 손씩 잡아 내려놓는다. 둘은 그 실패를 처음부터 성공한 구조 훈련 같은 것으로 부르지 않는다. 미오는 괜찮다고 매번 덧붙이지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 335,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-b1270dbb20:e:ccde4a0423af:1"
+    },
+    "v4:42:h-1598d0e82a:e:163d023b503c:1": {
+      "id": "v4:42:h-1598d0e82a:e:163d023b503c:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "알아. 그래서 지금 네가 못한 건 없어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 333,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:0c111063f756:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:6a1700c5566f:1": {
+      "id": "v4:42:h-1598d0e82a:e:6a1700c5566f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 세 쌍으로 놓아 보라고 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 331,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:163d023b503c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:b2456d7bd9d0:1": {
+      "id": "v4:42:h-1598d0e82a:e:b2456d7bd9d0:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "거기 잘 놨네. 내가 안 맞게.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 329,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:6a1700c5566f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:8196933b8f88:1": {
+      "id": "v4:42:h-1598d0e82a:e:8196933b8f88:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 공 주울게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 327,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:b2456d7bd9d0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:f5fe35dc8ab9:1": {
+      "id": "v4:42:h-1598d0e82a:e:f5fe35dc8ab9:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "아. 거기 맞았으면 둘 다 넘어가는데.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 325,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:8196933b8f88:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:1bed27af1db8:1": {
+      "id": "v4:42:h-1598d0e82a:e:1bed27af1db8:1",
+      "type": "stage",
+      "direction": "미오가 소라 발을 보고 비킨다. 그가 같은 선에서 마지막 공을 던진다. 공은 오른쪽 두 통의 바깥을 지나가고 그 쌍은 서 있다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 323,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:f5fe35dc8ab9:1"
+    },
+    "v4:42:h-1598d0e82a:e:53741d3f5cf7:1": {
+      "id": "v4:42:h-1598d0e82a:e:53741d3f5cf7:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "선은 안 넘었어. 여기 서서 보는 거야.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 321,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:1bed27af1db8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:717ebfbc26a6:1": {
+      "id": "v4:42:h-1598d0e82a:e:717ebfbc26a6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가까이 가는 건 안 돼.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 319,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:53741d3f5cf7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:f6f67d1cb79f:1": {
+      "id": "v4:42:h-1598d0e82a:e:f6f67d1cb79f:1",
+      "type": "stage",
+      "direction": "다음 배치는 미오가 정한 세 쌍이다. 소라는 첫 공으로 왼쪽 두 개,둘째로 가운데 두 개를 넘긴다. 마지막 공을 들기 전에 카운터 옆으로 고개를 기울여 오른쪽 한 쌍을 본다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 317,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:717ebfbc26a6:1"
+    },
+    "v4:42:h-1598d0e82a:e:d3da01b79d24:1": {
+      "id": "v4:42:h-1598d0e82a:e:d3da01b79d24:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그래. 그럼 다음엔 두 개씩 떨어뜨려 놔. 할 수 있나 보게.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 315,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:f6f67d1cb79f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:fe0b6e56ce2d:1": {
+      "id": "v4:42:h-1598d0e82a:e:fe0b6e56ce2d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 한 번에 안 무너지게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 313,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:d3da01b79d24:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:02ab85b3e831:1": {
+      "id": "v4:42:h-1598d0e82a:e:02ab85b3e831:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "네가 일부러 저걸 떨어뜨려 놨잖아.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 311,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:fe0b6e56ce2d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:579b4c6cba00:1": {
+      "id": "v4:42:h-1598d0e82a:e:579b4c6cba00:1",
+      "type": "stage",
+      "direction": "미오가 여섯 개를 낮고 넓게 쌓는다.소라가 위의 두 개를 손대려다가 공을 든다.세 공으로 다섯 개가 쓰러지고 마지막 하나가 서 있다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 309,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:02ab85b3e831:1"
+    },
+    "v4:42:h-1598d0e82a:e:079568d6f643:1": {
+      "id": "v4:42:h-1598d0e82a:e:079568d6f643:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 내가 정하고. 아까 네가 간격 바꾸는 것처럼.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 307,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:579b4c6cba00:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:200c6a7b1925:1": {
+      "id": "v4:42:h-1598d0e82a:e:200c6a7b1925:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "어떤 모양으로?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 305,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:079568d6f643:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1598d0e82a:e:2720be5d50a0:1": {
+      "id": "v4:42:h-1598d0e82a:e:2720be5d50a0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 더 해. 난 세울게. 나한테 가르치지 말고 네가 던지는 걸 보여 줘.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 303,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 소라가 던지고 미오가 쌓는다",
+        "location": "h-1598d0e82a"
+      },
+      "next": "v4:42:h-1598d0e82a:e:200c6a7b1925:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:c0bbf6b34005:1": {
+      "id": "v4:42:h-1c20fb5d07:e:c0bbf6b34005:1",
+      "type": "stage",
+      "direction": "그가 마지막 통을 놓고 따라간다.미오는 소라 손을 잡아 끌지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 359,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-b1270dbb20:e:ccde4a0423af:1"
+    },
+    "v4:42:h-1c20fb5d07:e:f0cb51ff9241:1": {
+      "id": "v4:42:h-1c20fb5d07:e:f0cb51ff9241:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "……안 가고 싶진 않아. 정리만 하고.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 357,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:c0bbf6b34005:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:2ed00d785aa7:1": {
+      "id": "v4:42:h-1c20fb5d07:e:2ed00d785aa7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "버린다는 말은 내가 했네. 그런 뜻으로 물었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 355,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:f0cb51ff9241:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:a64841162d42:1": {
+      "id": "v4:42:h-1c20fb5d07:e:a64841162d42:1",
+      "type": "stage",
+      "direction": "소라가 미오를 본다.미오가 너무 큰 말을 했다는 것을 먼저 알아차린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 353,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:2ed00d785aa7:1"
+    },
+    "v4:42:h-1c20fb5d07:e:9f3940c5805c:1": {
+      "id": "v4:42:h-1c20fb5d07:e:9f3940c5805c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너랑 왔다가 다른 사람도 보러 가는 건데. 너를 버리러 가는 건 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 351,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:a64841162d42:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:34a905d0860f:1": {
+      "id": "v4:42:h-1c20fb5d07:e:34a905d0860f:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "같이 노는 사람. 내가 안 가도 그냥 갈 것 같아서.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 349,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:9f3940c5805c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:0eef417b7a65:1": {
+      "id": "v4:42:h-1c20fb5d07:e:0eef417b7a65:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 347,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:34a905d0860f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:01801a2485be:1": {
+      "id": "v4:42:h-1c20fb5d07:e:01801a2485be:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "너는 누구든 상관없어?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 345,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:0eef417b7a65:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:9df7e5001de7:1": {
+      "id": "v4:42:h-1c20fb5d07:e:9df7e5001de7:1",
+      "type": "stage",
+      "direction": "미오가 공을 바구니에 넣는다.소라는 통 여섯 개를 처음 모양으로 쌓는다.평소처럼 미오 것을 대신 더 주워 주려다가 손을 멈추고 자기 통만 정리한다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 343,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:01801a2485be:1"
+    },
+    "v4:42:h-1c20fb5d07:e:3b503dbaafb9:1": {
+      "id": "v4:42:h-1c20fb5d07:e:3b503dbaafb9:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그럼 여기 세워 두고 가야지.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 341,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:9df7e5001de7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-1c20fb5d07:e:c36c566ab9a0:1": {
+      "id": "v4:42:h-1c20fb5d07:e:c36c566ab9a0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "유우가 찾는 거 보러 갈래? 이번에는 우리가 구경하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 339,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 둘이 아닌 다른 판을 보자고 한다",
+        "location": "h-1c20fb5d07"
+      },
+      "next": "v4:42:h-1c20fb5d07:e:3b503dbaafb9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:SORA-02B:menu": {
+      "id": "v4:42:SORA-02B:menu",
+      "type": "menu",
+      "q": "다음 판의 자리",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 277,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선택 SORA-02B — 다음 판의 자리",
+        "location": "h-92725012c4"
+      },
+      "options": [
+        {
+          "id": "A",
+          "label": "소라와 다시 겨룬다",
+          "to": "v4:42:h-2a1dd6b8b5:e:c50b80a35ae1:1",
+          "set": {
+            "SORA-02B": "A"
+          }
+        },
+        {
+          "id": "B",
+          "label": "소라가 던지고 미오가 쌓는다",
+          "to": "v4:42:h-1598d0e82a:e:2720be5d50a0:1",
+          "set": {
+            "SORA-02B": "B"
+          }
+        },
+        {
+          "id": "C",
+          "label": "둘이 아닌 다른 판을 보자고 한다",
+          "to": "v4:42:h-1c20fb5d07:e:c36c566ab9a0:1",
+          "set": {
+            "SORA-02B": "C"
+          }
+        }
+      ]
+    },
+    "v4:42:h-9f23dfe669:e:12cbac15c329:1": {
+      "id": "v4:42:h-9f23dfe669:e:12cbac15c329:1",
+      "type": "stage",
+      "direction": "소라는 자기가 필요하지 않았다는 말까지는 하지 않는다.미오가 그 속마음을 이미 전부 파악한 독백으로 채우지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 275,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:SORA-02B:menu"
+    },
+    "v4:42:h-9f23dfe669:e:990ceb5a0603:1": {
+      "id": "v4:42:h-9f23dfe669:e:990ceb5a0603:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "응. 근데……아냐. 더 할래?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 273,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:12cbac15c329:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:232c235f6cc4:1": {
+      "id": "v4:42:h-9f23dfe669:e:232c235f6cc4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 나한테 알려 줬잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 271,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:990ceb5a0603:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:6542476a4b46:1": {
+      "id": "v4:42:h-9f23dfe669:e:6542476a4b46:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "나는 적어도 이건 내가 알려 주는 줄 알았어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 269,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:232c235f6cc4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:219aff73f1d5:1": {
+      "id": "v4:42:h-9f23dfe669:e:219aff73f1d5:1",
+      "type": "stage",
+      "direction": "소라가 바닥으로 떨어진 파란 통을 집어 든다.손바닥으로 찌그러진 옆을 편다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 267,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:6542476a4b46:1"
+    },
+    "v4:42:h-9f23dfe669:e:9bfc02eb82aa:1": {
+      "id": "v4:42:h-9f23dfe669:e:9bfc02eb82aa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "몰라. 방금은 잘했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 265,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:219aff73f1d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:14dabafffd50:1": {
+      "id": "v4:42:h-9f23dfe669:e:14dabafffd50:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "쟤 원래 저런 거 잘해? 유우.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 263,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:9bfc02eb82aa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:f7dd7ba8fbdb:1": {
+      "id": "v4:42:h-9f23dfe669:e:f7dd7ba8fbdb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "맞아. 이번에는 그랬어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 261,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:14dabafffd50:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:a6f5e9852c2b:1": {
+      "id": "v4:42:h-9f23dfe669:e:a6f5e9852c2b:1",
+      "type": "stage",
+      "direction": "미오가 공을 카운터에 놓는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 259,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:f7dd7ba8fbdb:1"
+    },
+    "v4:42:h-9f23dfe669:e:8b91e2d383c8:1": {
+      "id": "v4:42:h-9f23dfe669:e:8b91e2d383c8:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "너는 자꾸 내가 무슨 말 하고 싶은지 먼저 고르더라.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 257,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:a6f5e9852c2b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:7e734b030484:1": {
+      "id": "v4:42:h-9f23dfe669:e:7e734b030484:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알아. 지면 그렇게 말하고 싶을까 궁금해서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 255,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:8b91e2d383c8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:54228083ce73:1": {
+      "id": "v4:42:h-9f23dfe669:e:54228083ce73:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "아니. 너랑 할 때랑 똑같이 했어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 253,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:7e734b030484:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:8d2f53a9f59d:1": {
+      "id": "v4:42:h-9f23dfe669:e:8d2f53a9f59d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 못 맞히겠지 하고 쌓았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 251,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:54228083ce73:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9f23dfe669:e:9f76f8a86c03:1": {
+      "id": "v4:42:h-9f23dfe669:e:9f76f8a86c03:1",
+      "type": "stage",
+      "direction": "유우가 다른 부스에도 공이 있나 보러 간다.미오가 공을 줍는다.소라는 쓰러진 통을 한참 보고 있다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 249,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "남이 세우는 통",
+        "location": "h-9f23dfe669"
+      },
+      "next": "v4:42:h-9f23dfe669:e:8d2f53a9f59d:1"
+    },
+    "v4:42:h-2fe2fdff24:e:818aaa1d5d15:1": {
+      "id": "v4:42:h-2fe2fdff24:e:818aaa1d5d15:1",
+      "type": "stage",
+      "direction": "미오가 웃는다.유우도 웃다가 상품 진열장 앞으로 간다.박수는 소라가 아닌 미오가 친다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 245,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-9f23dfe669:e:9f76f8a86c03:1"
+    },
+    "v4:42:h-2fe2fdff24:e:dcdaa05f64ba:1": {
+      "id": "v4:42:h-2fe2fdff24:e:dcdaa05f64ba:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그건 안 한다고 했지!",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 243,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:818aaa1d5d15:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:38f47355ec95:1": {
+      "id": "v4:42:h-2fe2fdff24:e:38f47355ec95:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "됐네. 업어 줘.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 241,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:dcdaa05f64ba:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:b48c896ba511:1": {
+      "id": "v4:42:h-2fe2fdff24:e:b48c896ba511:1",
+      "type": "stage",
+      "direction": "소라가 공을 하나 든다.자기 첫 공으로 네 개를 쓰러뜨리고 통을 다시 쌓는다.유우가 던진 공은 아래쪽을 맞혀 여섯 개를 모두 쓰러뜨린다.두 사람 모두 같은 선에서 한 공씩이었다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 239,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:38f47355ec95:1"
+    },
+    "v4:42:h-2fe2fdff24:e:642b7015fd2c:1": {
+      "id": "v4:42:h-2fe2fdff24:e:642b7015fd2c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다른 경기야. 지금 새로 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 237,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:b48c896ba511:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:53bc965554b1:1": {
+      "id": "v4:42:h-2fe2fdff24:e:53bc965554b1:1",
+      "type": "stage",
+      "direction": "소라가 막 대답하려다가 앞선 경기 규칙이 달랐다는 것을 떠올린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 235,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:642b7015fd2c:1"
+    },
+    "v4:42:h-2fe2fdff24:e:05ceec5c2e06:1": {
+      "id": "v4:42:h-2fe2fdff24:e:05ceec5c2e06:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너 몇 개인데.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 233,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:53bc965554b1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:d2dfeb4ed5ee:1": {
+      "id": "v4:42:h-2fe2fdff24:e:d2dfeb4ed5ee:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "나를.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 231,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:05ceec5c2e06:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:67a82ba8a16d:1": {
+      "id": "v4:42:h-2fe2fdff24:e:67a82ba8a16d:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "누구를?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 229,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:d2dfeb4ed5ee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:a2539c25b401:1": {
+      "id": "v4:42:h-2fe2fdff24:e:a2539c25b401:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "한 번으로 다섯 개 넘기면 이긴 걸로 할까?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 227,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:67a82ba8a16d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:f25225ef9052:1": {
+      "id": "v4:42:h-2fe2fdff24:e:f25225ef9052:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "한 번만. 세 번 다 하면 지면 아까워.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 225,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:a2539c25b401:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:3cc80da1aa39:1": {
+      "id": "v4:42:h-2fe2fdff24:e:3cc80da1aa39:1",
+      "type": "stage",
+      "direction": "소라가 바로 거절하고 나서 미오를 본다.미오는 그가 거절한 것을 칭찬하지 않는다.유우가 공 하나를 손에 굴린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 223,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:f25225ef9052:1"
+    },
+    "v4:42:h-2fe2fdff24:e:c3d9dc148637:1": {
+      "id": "v4:42:h-2fe2fdff24:e:c3d9dc148637:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "싫어. 네가 던지면 내가 왜 벌을 받아.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 221,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:3cc80da1aa39:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:401a0069e69f:1": {
+      "id": "v4:42:h-2fe2fdff24:e:401a0069e69f:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 네가 한 번 업어 줘. 이기면.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 219,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:c3d9dc148637:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:9004fb54b117:1": {
+      "id": "v4:42:h-2fe2fdff24:e:9004fb54b117:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "상품권도 아직 없어. 지금 만든 말이야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 217,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:401a0069e69f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:f526d905783d:1": {
+      "id": "v4:42:h-2fe2fdff24:e:f526d905783d:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "못 꺼내. 가짜 상품권만.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 215,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:9004fb54b117:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:58c0761939a1:1": {
+      "id": "v4:42:h-2fe2fdff24:e:58c0761939a1:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "저거 걸고 해?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 213,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:f526d905783d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-2fe2fdff24:e:e3e940a6ed61:1": {
+      "id": "v4:42:h-2fe2fdff24:e:e3e940a6ed61:1",
+      "type": "stage",
+      "direction": "유우가 부스 안쪽을 들여다본다.상품 인형을 보더니 카운터에 팔을 올린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 211,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "구경꾼이 왔을 때",
+        "location": "h-2fe2fdff24"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:58c0761939a1:1"
+    },
+    "v4:42:h-9c5a9f6cee:e:734e342dd06d:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:734e342dd06d:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "뭐가 다른지는 있잖아.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 111,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:e3e940a6ed61:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:455ea8f23569:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:455ea8f23569:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "둘 다 네가 이겼네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 109,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:734e342dd06d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:c959b87aaaa6:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:c959b87aaaa6:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그럼 쓰러진 걸로 할까? 너는 셋이고 나는 여섯.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 107,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:455ea8f23569:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:55867c00c356:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:55867c00c356:1",
+      "type": "stage",
+      "direction": "소라가 자기 점수를 손가락으로 세다가 내린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 105,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:c959b87aaaa6:1"
+    },
+    "v4:42:h-9c5a9f6cee:e:de40aa64b74a:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:de40aa64b74a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 네가 시작하기 전에 말했어야지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 103,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:55867c00c356:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:db98638cd100:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:db98638cd100:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "다섯. 밖으로 떨어진 것만 세자.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 101,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:de40aa64b74a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:9e7290e27451:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:9e7290e27451:1",
+      "type": "stage",
+      "direction": "소라가 통을 다시 세운 뒤 같은 선에서 던진다.첫 공은 네 개를 떨어뜨린다.둘째는 남은 두 개를 쓰러뜨리지만 하나는 카운터 안에 남는다.셋째로 그것을 밀어내려다 빗나간다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 99,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:db98638cd100:1"
+    },
+    "v4:42:h-9c5a9f6cee:e:855f245b58ee:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:855f245b58ee:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 아직 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 97,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:9e7290e27451:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:f36c3865136f:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:f36c3865136f:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "괜찮은데? 두 개.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 95,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:855f245b58ee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-9c5a9f6cee:e:a84bf977da90:1": {
+      "id": "v4:42:h-9c5a9f6cee:e:a84bf977da90:1",
+      "type": "stage",
+      "direction": "미오가 원래 선으로 간다.첫 공은 맨 아래 깡통의 오른쪽에 맞는다.한 개가 밖으로 떨어지고 안쪽의 다른 한 개가 옆으로 눕는다.나머지는 기울지만 서 있다.둘째는 빗나가고 셋째가 무너진 파란 통 하나를 밖으로 밀어내고,서 있던 빨간 통 하나도 안쪽으로 넘어뜨린다.밖으로 떨어진 것은 둘,쓰러진 것은 셋이다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 93,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "A. 같은 뒤쪽 선에서 던진다",
+        "location": "h-9c5a9f6cee"
+      },
+      "next": "v4:42:h-9c5a9f6cee:e:f36c3865136f:1"
+    },
+    "v4:42:h-208be9a522:e:f92939da9c7b:1": {
+      "id": "v4:42:h-208be9a522:e:f92939da9c7b:1",
+      "type": "stage",
+      "direction": "그가 박수 두 번을 친다.미오는 그 빠른 박수가 생각했던 것보다 기분 좋지 않다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 133,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:e3e940a6ed61:1"
+    },
+    "v4:42:h-208be9a522:e:1fd188825a42:1": {
+      "id": "v4:42:h-208be9a522:e:1fd188825a42:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "응. 그럼 네가 이겼어. 박수.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 131,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:f92939da9c7b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-208be9a522:e:132a659c0f26:1": {
+      "id": "v4:42:h-208be9a522:e:132a659c0f26:1",
+      "type": "stage",
+      "direction": "소라가 마지막 통을 손으로 눕힌다.자기 점수에 더하지는 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 129,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:1fd188825a42:1"
+    },
+    "v4:42:h-208be9a522:e:17c8141b8290:1": {
+      "id": "v4:42:h-208be9a522:e:17c8141b8290:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 정했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 127,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:132a659c0f26:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-208be9a522:e:68b54d818187:1": {
+      "id": "v4:42:h-208be9a522:e:68b54d818187:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "거리가 다르니까 그건…….",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 125,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:17c8141b8290:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-208be9a522:e:3c0e4feb5bae:1": {
+      "id": "v4:42:h-208be9a522:e:3c0e4feb5bae:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 이겼다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 123,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:68b54d818187:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-208be9a522:e:a414a151f2d5:1": {
+      "id": "v4:42:h-208be9a522:e:a414a151f2d5:1",
+      "type": "stage",
+      "direction": "소라가 통 여섯 개를 다시 세운 뒤 뒤쪽 선에서 세 번 던진다.첫 공에 세 개/둘째에 두 개,마지막 하나가 셋째 공에도 남는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 121,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:3c0e4feb5bae:1"
+    },
+    "v4:42:h-208be9a522:e:3d73d515570f:1": {
+      "id": "v4:42:h-208be9a522:e:3d73d515570f:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그렇지? 가까이서 하면 되잖아.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 119,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:a414a151f2d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-208be9a522:e:adc780c5e52e:1": {
+      "id": "v4:42:h-208be9a522:e:adc780c5e52e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다 됐어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 117,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:3d73d515570f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-208be9a522:e:e3cb90b67419:1": {
+      "id": "v4:42:h-208be9a522:e:e3cb90b67419:1",
+      "type": "stage",
+      "direction": "미오는 소라가 가리킨 가까운 선에 선다.첫 공이 맨 아래를 맞혀 네 개를 쓰러뜨린다.둘째는 통을 더 떨어뜨리지 못하고,셋째가 남은 두 개를 함께 쓰러뜨린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 115,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "B. 가까운 선에서 던진다",
+        "location": "h-208be9a522"
+      },
+      "next": "v4:42:h-208be9a522:e:adc780c5e52e:1"
+    },
+    "v4:42:h-219444095f:e:38f69747f467:1": {
+      "id": "v4:42:h-219444095f:e:38f69747f467:1",
+      "type": "stage",
+      "direction": "같은 판의 남은 통을 차례로 맞힌 점수가 아니다. 매번 여섯 개를 새로 세운 여섯 번이며 미오1·2·1=4개/소라3·0·4=7개다. 이미 끝난 세 번 뒤에 결과 없는 네 번째 투구를 덧붙이지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 205,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-2fe2fdff24:e:e3e940a6ed61:1"
+    },
+    "v4:42:h-219444095f:e:3c4f2bbc91e5:1": {
+      "id": "v4:42:h-219444095f:e:3c4f2bbc91e5:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "응. 그래서 지금 말해도 되지.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 203,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:38f69747f467:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:750bb5b0b0c7:1": {
+      "id": "v4:42:h-219444095f:e:750bb5b0b0c7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번에는 맞혔잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 201,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:3c4f2bbc91e5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:8e77c4420d07:1": {
+      "id": "v4:42:h-219444095f:e:8e77c4420d07:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "네가 놓은 건 맞히기 좀 싫어. 안 맞으면 네가 그래서 놓은 것 같아서.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 199,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:750bb5b0b0c7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:537128f71452:1": {
+      "id": "v4:42:h-219444095f:e:537128f71452:1",
+      "type": "stage",
+      "direction": "미오가 남은 두 통을 만지지 않은 채 소라를 본다. 소라가 마지막 공을 주워 카운터에 올린다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 197,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:8e77c4420d07:1"
+    },
+    "v4:42:h-219444095f:e:d75c84a8f21a:1": {
+      "id": "v4:42:h-219444095f:e:d75c84a8f21a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "봤어. 네가 공 던진 데를 내가 안 보고 있던 것도 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 195,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:537128f71452:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:3fd27bba326b:1": {
+      "id": "v4:42:h-219444095f:e:3fd27bba326b:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "방금은 아래 봤어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 193,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:d75c84a8f21a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:253da56ff54a:1": {
+      "id": "v4:42:h-219444095f:e:253da56ff54a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 이겼네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 191,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:3fd27bba326b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:218c17f9f97e:1": {
+      "id": "v4:42:h-219444095f:e:218c17f9f97e:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "넷! 나는 일곱.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 189,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:253da56ff54a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:eb3cef8a8827:1": {
+      "id": "v4:42:h-219444095f:e:eb3cef8a8827:1",
+      "type": "stage",
+      "direction": "미오가 마지막으로 통 여섯 개를 세운다. 소라는 이번에도 간격을 바꾸지 않고 같은 선에 선다. 마지막 공이 아래쪽을 맞혀 네 개가 함께 넘어진다. 남은 두 개는 그 자리에서 흔들리다 멈춘다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 187,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:218c17f9f97e:1"
+    },
+    "v4:42:h-219444095f:e:a97c8f79e171:1": {
+      "id": "v4:42:h-219444095f:e:a97c8f79e171:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알았어. 지금은 내가 다 했고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 185,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:eb3cef8a8827:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:4aee9ff68993:1": {
+      "id": "v4:42:h-219444095f:e:4aee9ff68993:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "다음에 던질 때는 위 보지 말라고…….",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 183,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:a97c8f79e171:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:d25625775813:1": {
+      "id": "v4:42:h-219444095f:e:d25625775813:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하나 더. 넷.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 181,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:4aee9ff68993:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:22ec52327e5d:1": {
+      "id": "v4:42:h-219444095f:e:22ec52327e5d:1",
+      "type": "stage",
+      "direction": "소라가 공을 주워 놓고 여섯 개의 배치를 다시 만든다. 미오의 셋째 공은 위의 하나를 옆으로 떨어뜨린다. 다른 것은 넘어가지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 179,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:d25625775813:1"
+    },
+    "v4:42:h-219444095f:e:71b6495018d1:1": {
+      "id": "v4:42:h-219444095f:e:71b6495018d1:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "네 차례라고 하면 돼. 아직 나 셋이야.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 177,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:22ec52327e5d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:410c834311e4:1": {
+      "id": "v4:42:h-219444095f:e:410c834311e4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "웃으려고 한 거 아니야. 무슨 말 해야 할지 생각했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 175,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:71b6495018d1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:d16b5a43af80:1": {
+      "id": "v4:42:h-219444095f:e:d16b5a43af80:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "지금 웃어도 되는데.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 173,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:410c834311e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:9011c3efc3a6:1": {
+      "id": "v4:42:h-219444095f:e:9011c3efc3a6:1",
+      "type": "stage",
+      "direction": "소라의 둘째 공이 통 사이를 지나 뒤쪽 판에 맞는다. 하나도 쓰러지지 않는다. 미오가 입을 다물고 공이 굴러 나오는 것부터 본다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 171,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:d16b5a43af80:1"
+    },
+    "v4:42:h-219444095f:e:fc41d320b9ae:1": {
+      "id": "v4:42:h-219444095f:e:fc41d320b9ae:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 네가 정해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 169,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:9011c3efc3a6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:138233074b1c:1": {
+      "id": "v4:42:h-219444095f:e:138233074b1c:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "이번에는 저기부터 맞히면 되겠네.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 167,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:fc41d320b9ae:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:71f2d2deb688:1": {
+      "id": "v4:42:h-219444095f:e:71f2d2deb688:1",
+      "type": "stage",
+      "direction": "미오가 자기 차례의 배치를 만든다. 소라가 벌어진 틈으로 손을 내밀려다 뒤로 감춘다. 미오는 그가 가만히 있는 것을 한번 확인하고 선 옆으로 비킨다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 165,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:138233074b1c:1"
+    },
+    "v4:42:h-219444095f:e:8074689065d5:1": {
+      "id": "v4:42:h-219444095f:e:8074689065d5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 세울 때는 네가 하고, 내가 세울 때는 나한테 줘.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 163,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:71f2d2deb688:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:99df53743394:1": {
+      "id": "v4:42:h-219444095f:e:99df53743394:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "좀 벌어졌길래.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 161,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:8074689065d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:0692fdf727ec:1": {
+      "id": "v4:42:h-219444095f:e:0692fdf727ec:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 쌓을 때 네가 통 간격 바꿨잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 159,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:99df53743394:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:60b8ee764e8e:1": {
+      "id": "v4:42:h-219444095f:e:60b8ee764e8e:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "넌 자꾸 가운데 위를 봐. 아래를 봐야 한꺼번에…….",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 157,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:0692fdf727ec:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:a9addff67600:1": {
+      "id": "v4:42:h-219444095f:e:a9addff67600:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "둘. 나는 셋이네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 155,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:60b8ee764e8e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:dd3da73e8535:1": {
+      "id": "v4:42:h-219444095f:e:dd3da73e8535:1",
+      "type": "stage",
+      "direction": "소라가 통을 세운다. 미오는 맨 위를 보다가 아래쪽으로 눈을 옮긴다. 둘째 공이 아래 두 개를 함께 눕힌다. 다른 통들은 흔들리기만 한다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 153,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:a9addff67600:1"
+    },
+    "v4:42:h-219444095f:e:96f91619b938:1": {
+      "id": "v4:42:h-219444095f:e:96f91619b938:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "셋. 다음 네 거.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 151,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:dd3da73e8535:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:a86a0e7c218d:1": {
+      "id": "v4:42:h-219444095f:e:a86a0e7c218d:1",
+      "type": "stage",
+      "direction": "미오가 통 여섯 개를 다시 놓는다. 소라가 맨 위의 것을 옆으로 조금 밀고 선으로 간다. 그의 첫 공에 세 개가 쓰러진다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 149,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:96f91619b938:1"
+    },
+    "v4:42:h-219444095f:e:c8a92381bbd0:1": {
+      "id": "v4:42:h-219444095f:e:c8a92381bbd0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 세고 있는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 147,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:a86a0e7c218d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:5dcc4dfe3799:1": {
+      "id": "v4:42:h-219444095f:e:5dcc4dfe3799:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "맞았으니까 하나.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 145,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:c8a92381bbd0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:212d6a942db5:1": {
+      "id": "v4:42:h-219444095f:e:212d6a942db5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하나.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 143,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:5dcc4dfe3799:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:00eab8649192:1": {
+      "id": "v4:42:h-219444095f:e:00eab8649192:1",
+      "type": "stage",
+      "direction": "두 사람은 원래의 뒤쪽 선 하나를 함께 쓰기로 먼저 정한다. 한 번 던질 때마다 여섯 개를 다시 세운다. 먼저 소라가 세우고 미오가 첫 공을 던진다. 옆의 한 개만 눕는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 141,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:212d6a942db5:1"
+    },
+    "v4:42:h-219444095f:e:f4c5caab7b31:1": {
+      "id": "v4:42:h-219444095f:e:f4c5caab7b31:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그럼 쓰러진 거 다 세는 거야. 밖에 안 떨어져도. 네가 한 번, 내가 한 번.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 139,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:00eab8649192:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-219444095f:e:74bc22094762:1": {
+      "id": "v4:42:h-219444095f:e:74bc22094762:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "세 번씩 말고 하나씩. 세우는 것도 바꿔.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 137,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "C. 번갈아 세우고 던진다",
+        "location": "h-219444095f"
+      },
+      "next": "v4:42:h-219444095f:e:f4c5caab7b31:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:SORA-02A:menu": {
+      "id": "v4:42:SORA-02A:menu",
+      "type": "menu",
+      "q": "첫 세 번",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 89,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선택 SORA-02A — 첫 세 번",
+        "location": "h-a58d3c0029"
+      },
+      "options": [
+        {
+          "id": "A",
+          "label": "같은 뒤쪽 선에서 던진다",
+          "to": "v4:42:h-9c5a9f6cee:e:a84bf977da90:1",
+          "set": {
+            "SORA-02A": "A"
+          }
+        },
+        {
+          "id": "B",
+          "label": "가까운 선에서 던진다",
+          "to": "v4:42:h-208be9a522:e:e3cb90b67419:1",
+          "set": {
+            "SORA-02A": "B"
+          }
+        },
+        {
+          "id": "C",
+          "label": "번갈아 세우고 던진다",
+          "to": "v4:42:h-219444095f:e:74bc22094762:1",
+          "set": {
+            "SORA-02A": "C"
+          }
+        }
+      ]
+    },
+    "v4:42:h-28287d9f46:e:e28cafafbb63:1": {
+      "id": "v4:42:h-28287d9f46:e:e28cafafbb63:1",
+      "type": "stage",
+      "direction": "소라가 가까운 선 위에서 발을 뺀다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 87,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:SORA-02A:menu"
+    },
+    "v4:42:h-28287d9f46:e:9a4fcc8fd829:1": {
+      "id": "v4:42:h-28287d9f46:e:9a4fcc8fd829:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 나 대신 못하는 걸 골라 주네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 85,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:e28cafafbb63:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:f7de77eb14c7:1": {
+      "id": "v4:42:h-28287d9f46:e:f7de77eb14c7:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "아니. 근데 너는 기록하는 거 잘하고 나는…….",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 83,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:9a4fcc8fd829:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:3800584a1a50:1": {
+      "id": "v4:42:h-28287d9f46:e:3800584a1a50:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "본 적 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 81,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:f7de77eb14c7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:9a9d443f7c04:1": {
+      "id": "v4:42:h-28287d9f46:e:9a9d443f7c04:1",
+      "type": "stage",
+      "direction": "소라가 말한 뒤 미오 손을 본다.미오는 아직 한 번도 던지지 않았다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 79,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:3800584a1a50:1"
+    },
+    "v4:42:h-28287d9f46:e:c7183fd30314:1": {
+      "id": "v4:42:h-28287d9f46:e:c7183fd30314:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "내가 더 잘 던지잖아.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 77,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:9a9d443f7c04:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:bdbf4c50b0f5:1": {
+      "id": "v4:42:h-28287d9f46:e:bdbf4c50b0f5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 하면 왜 다른 데서 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 75,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:c7183fd30314:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:e4fb0f627c9e:1": {
+      "id": "v4:42:h-28287d9f46:e:e4fb0f627c9e:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "나는 뒤에서 하면 되지.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 73,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:bdbf4c50b0f5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:02aac9d7625f:1": {
+      "id": "v4:42:h-28287d9f46:e:02aac9d7625f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 71,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:e4fb0f627c9e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:8047935efb6e:1": {
+      "id": "v4:42:h-28287d9f46:e:8047935efb6e:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "여기서 해. 저 뒤는 멀어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 69,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:02aac9d7625f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-28287d9f46:e:e98e40e8356e:1": {
+      "id": "v4:42:h-28287d9f46:e:e98e40e8356e:1",
+      "type": "stage",
+      "direction": "소라가 바닥의 오래된 던지기 선을 본다.미오 발 앞쪽에도 좀 더 가까운 작은 선이 있다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 67,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "선을 고르는 사람",
+        "location": "h-28287d9f46"
+      },
+      "next": "v4:42:h-28287d9f46:e:8047935efb6e:1"
+    },
+    "v4:42:missing:actual-earlier-praise": {
+      "id": "v4:42:missing:actual-earlier-praise",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: SORA-01B"
+    },
+    "v4:42:h-802c5a8fd4:e:4d02b9e4cd4b:1": {
+      "id": "v4:42:h-802c5a8fd4:e:4d02b9e4cd4b:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "혼자 넘기면 혼자 세워야 하니까. 그건 재미없어.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 41,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B A:사람을 모은 것을 칭찬했다",
+        "location": "h-802c5a8fd4"
+      },
+      "next": "v4:42:h-28287d9f46:e:e98e40e8356e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-802c5a8fd4:e:a8f3de730a4a:1": {
+      "id": "v4:42:h-802c5a8fd4:e:a8f3de730a4a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 혼자 놀아도 되잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 39,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B A:사람을 모은 것을 칭찬했다",
+        "location": "h-802c5a8fd4"
+      },
+      "next": "v4:42:h-802c5a8fd4:e:4d02b9e4cd4b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-802c5a8fd4:e:692321ce7f5c:1": {
+      "id": "v4:42:h-802c5a8fd4:e:692321ce7f5c:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "잠깐. 사람들끼리 좀 놀 게 있으면 좋겠어서.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 37,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B A:사람을 모은 것을 칭찬했다",
+        "location": "h-802c5a8fd4"
+      },
+      "next": "v4:42:h-802c5a8fd4:e:a8f3de730a4a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-802c5a8fd4:e:1775c6e7ef83:1": {
+      "id": "v4:42:h-802c5a8fd4:e:1775c6e7ef83:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까부터 여기 있었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 35,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B A:사람을 모은 것을 칭찬했다",
+        "location": "h-802c5a8fd4"
+      },
+      "next": "v4:42:h-802c5a8fd4:e:692321ce7f5c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-802c5a8fd4:e:71706668dd88:1": {
+      "id": "v4:42:h-802c5a8fd4:e:71706668dd88:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "이번에는 너 먼저 하고. 잘되면 유우도 부르려고.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 33,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B A:사람을 모은 것을 칭찬했다",
+        "location": "h-802c5a8fd4"
+      },
+      "next": "v4:42:h-802c5a8fd4:e:1775c6e7ef83:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-e2a74e594c:e:37276b5ddc5e:1": {
+      "id": "v4:42:h-e2a74e594c:e:37276b5ddc5e:1",
+      "type": "stage",
+      "direction": "소라는 칭찬받았던 촬영을 이번에도 모두를 불러 세우라는 의무로 바꾸지 않는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 51,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B B:소라가 찍은 사진을 골라 칭찬했다",
+        "location": "h-e2a74e594c"
+      },
+      "next": "v4:42:h-28287d9f46:e:e98e40e8356e:1"
+    },
+    "v4:42:h-e2a74e594c:e:05ac9b58d514:1": {
+      "id": "v4:42:h-e2a74e594c:e:05ac9b58d514:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "바꿔. 너 먼저. 네가 어디서 던지는지 봐야 내가 얼마나 떨어질지 정하지.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 49,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B B:소라가 찍은 사진을 골라 칭찬했다",
+        "location": "h-e2a74e594c"
+      },
+      "next": "v4:42:h-e2a74e594c:e:37276b5ddc5e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-e2a74e594c:e:96d72e4d5726:1": {
+      "id": "v4:42:h-e2a74e594c:e:96d72e4d5726:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 던지면 내가 세워 줄게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 47,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B B:소라가 찍은 사진을 골라 칭찬했다",
+        "location": "h-e2a74e594c"
+      },
+      "next": "v4:42:h-e2a74e594c:e:05ac9b58d514:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-e2a74e594c:e:36b4b1c67843:1": {
+      "id": "v4:42:h-e2a74e594c:e:36b4b1c67843:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "사진처럼 뒤에 서 있으려고 했는데, 이건 누가 던져야 하잖아.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 45,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B B:소라가 찍은 사진을 골라 칭찬했다",
+        "location": "h-e2a74e594c"
+      },
+      "next": "v4:42:h-e2a74e594c:e:96d72e4d5726:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-4ef3b0bf8f:e:e0967c78e1be:1": {
+      "id": "v4:42:h-4ef3b0bf8f:e:e0967c78e1be:1",
+      "type": "stage",
+      "direction": "미오가 소라를 본다.소라가 자기가 던지려던 공을 미오 앞에 놓는다.그의 밝은 권유에 작은 가시가 남는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 61,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B C:모이는 것과 즐거워하는 것을 나눴다",
+        "location": "h-4ef3b0bf8f"
+      },
+      "next": "v4:42:h-28287d9f46:e:e98e40e8356e:1"
+    },
+    "v4:42:h-4ef3b0bf8f:e:bd6ec217018d:1": {
+      "id": "v4:42:h-4ef3b0bf8f:e:bd6ec217018d:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "알지. 미리 말해 둔 거야. 나중에 또 그때 싫은 사람이 있었을 수도 있다고 할까 봐.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 59,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B C:모이는 것과 즐거워하는 것을 나눴다",
+        "location": "h-4ef3b0bf8f"
+      },
+      "next": "v4:42:h-4ef3b0bf8f:e:e0967c78e1be:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-4ef3b0bf8f:e:5846c99be91d:1": {
+      "id": "v4:42:h-4ef3b0bf8f:e:5846c99be91d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직 싫다고 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 57,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B C:모이는 것과 즐거워하는 것을 나눴다",
+        "location": "h-4ef3b0bf8f"
+      },
+      "next": "v4:42:h-4ef3b0bf8f:e:bd6ec217018d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-4ef3b0bf8f:e:99a9e659d1e0:1": {
+      "id": "v4:42:h-4ef3b0bf8f:e:99a9e659d1e0:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "억지로 하라는 건 아니야. 보러 온 거면 그냥 봐도 돼.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 55,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "SORA-01B C:모이는 것과 즐거워하는 것을 나눴다",
+        "location": "h-4ef3b0bf8f"
+      },
+      "next": "v4:42:h-4ef3b0bf8f:e:5846c99be91d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:actual-earlier-praise": {
+      "id": "v4:42:actual-earlier-praise",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "SORA-01B",
+          "equals": "A",
+          "to": "v4:42:h-802c5a8fd4:e:71706668dd88:1"
+        },
+        {
+          "flag": "SORA-01B",
+          "equals": "B",
+          "to": "v4:42:h-e2a74e594c:e:36b4b1c67843:1"
+        },
+        {
+          "flag": "SORA-01B",
+          "equals": "C",
+          "to": "v4:42:h-4ef3b0bf8f:e:99a9e659d1e0:1"
+        }
+      ],
+      "default": "v4:42:missing:actual-earlier-praise"
+    },
+    "v4:42:h-cf078ed5d4:e:0bb0838d24ee:1": {
+      "id": "v4:42:h-cf078ed5d4:e:0bb0838d24ee:1",
+      "type": "stage",
+      "direction": "소라가 대답하려다가 입을 다문다.미오가 공을 든다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 27,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:actual-earlier-praise"
+    },
+    "v4:42:h-cf078ed5d4:e:d8b8a5401242:1": {
+      "id": "v4:42:h-cf078ed5d4:e:d8b8a5401242:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 실패해도 해 줄 것 같은데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 25,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:0bb0838d24ee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:731b53ab72cd:1": {
+      "id": "v4:42:h-cf078ed5d4:e:731b53ab72cd:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그럼 내가 박수 쳐 줄게.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 23,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:d8b8a5401242:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:44a2eca8695d:1": {
+      "id": "v4:42:h-cf078ed5d4:e:44a2eca8695d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "상품도 가짜네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 21,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:731b53ab72cd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:cb322ab73e04:1": {
+      "id": "v4:42:h-cf078ed5d4:e:cb322ab73e04:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그건 열쇠가 없어. 원하면 그림은 그려 줄 수 있는데.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 19,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:44a2eca8695d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:2d10ebeb4b78:1": {
+      "id": "v4:42:h-cf078ed5d4:e:2d10ebeb4b78:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "맞히면 저거 주게?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 17,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:cb322ab73e04:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:2414f553f267:1": {
+      "id": "v4:42:h-cf078ed5d4:e:2414f553f267:1",
+      "type": "stage",
+      "direction": "소라가 부드러운 공 세 개를 카운터에 올린다.미오는 맞은편의 인형 진열장을 본다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 15,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:2d10ebeb4b78:1"
+    },
+    "v4:42:h-cf078ed5d4:e:7a04bf02ab54:1": {
+      "id": "v4:42:h-cf078ed5d4:e:7a04bf02ab54:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "공도 있고 통도 있고. 원래 사람 서 있어야 하는 데가 비어 있어서 그렇지.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 13,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:2414f553f267:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:d322698252b6:1": {
+      "id": "v4:42:h-cf078ed5d4:e:d322698252b6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 할 수 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 11,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:7a04bf02ab54:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:4ea29368f440:1": {
+      "id": "v4:42:h-cf078ed5d4:e:4ea29368f440:1",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "던져 볼래?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 9,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:d322698252b6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:42:h-cf078ed5d4:e:9de0df9c92f5:1": {
+      "id": "v4:42:h-cf078ed5d4:e:9de0df9c92f5:1",
+      "type": "stage",
+      "direction": "공원 놀이 부스.소라가 빈 깡통 여섯 개를 쌓고 있다.빨간 세 개/파란 세 개다.미오가 다가가자 그중 맨 위의 것을 내려놓는다.",
+      "source": {
+        "file": "42_자유시간_소라_02.md",
+        "line": 7,
+        "fileSha256": "06e8807606eb7c05bb935357c25aec7a628ab9308ccf3ce4fbbde2382a8bd55d",
+        "heading": "시작 — 무너뜨릴 수 있는 것",
+        "location": "h-cf078ed5d4"
+      },
+      "next": "v4:42:h-cf078ed5d4:e:4ea29368f440:1"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "42_자유시간_소라_02.md",
+  "completionFlag": "fte:42:complete",
+  "routingStatus": "reviewed-explicit-callbacks",
+  "campaignReady": false,
+  "requiresPriorFlags": {
+    "SORA-01B": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "eligibility": "Sixth-day F2-B only, after actual24 and before first small performance. Sora is alive in his own body.",
+  "physicalState": "A same backline: Mio2outside/3fallen vsSora5outside/6fallen. B nearerMio6 vsfartherSora5. C six rebuilt racks, accumulatedMio4/Sora7. LaterYuu single-ball6 vsSora4 is separate, as areB rematch/rack failure/spectating. No miniature arcade judgment, prize, new photo, ability, fourth throw or uniform retroactive scoring is fabricated.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "42_자유시간_소라_02.md:h-461b5379ba": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-3026c4f871": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-b1270dbb20": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-2a1dd6b8b5": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-1598d0e82a": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-1c20fb5d07": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-92725012c4": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-9f23dfe669": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-2fe2fdff24": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-9c5a9f6cee": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-208be9a522": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-219444095f": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-a58d3c0029": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-28287d9f46": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-802c5a8fd4": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-e2a74e594c": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-4ef3b0bf8f": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "42_자유시간_소라_02.md:h-cf078ed5d4": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

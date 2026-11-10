@@ -1,0 +1,4172 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:32:F-SA01-01:e:a44b7a833e2c:1",
+  "nodes": {
+    "v4:32:return": {
+      "id": "v4:32:return",
+      "type": "return"
+    },
+    "v4:32:F-SA01-06:e:3fe1484fd3d8:1": {
+      "id": "v4:32:F-SA01-06:e:3fe1484fd3d8:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 사츠키는 빈손으로 밖을 돌아본다. 미오는 그 시선이 고양이가 나온 쪽인지, 누군가 오기로 한 길인지 끝까지 확인하지 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 405,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:return"
+    },
+    "v4:32:F-SA01-06:e:4788b3e68a89:1": {
+      "id": "v4:32:F-SA01-06:e:4788b3e68a89:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "그릇이 더러우면. 없는데 찾지 말고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 403,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:3fe1484fd3d8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-06:e:051c24a2de35:1": {
+      "id": "v4:32:F-SA01-06:e:051c24a2de35:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다음에는 나도 그릇 씻을게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 401,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:4788b3e68a89:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-06:e:12f65a0efd5f:1": {
+      "id": "v4:32:F-SA01-06:e:12f65a0efd5f:1",
+      "type": "stage",
+      "direction": "미오는 사츠키가 이름을 붙였다고 고양이를 자기 것처럼 데려오려 하지는 않는다는 것을 본다. 그와 별개로 사람에게는 훨씬 빠르게 자기 편을 정하는 모습도 이미 보았다. 둘을 지금 한 문장으로 납득하려 들지 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 399,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:051c24a2de35:1"
+    },
+    "v4:32:F-SA01-06:e:3d9462749d59:1": {
+      "id": "v4:32:F-SA01-06:e:3d9462749d59:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "두고 가면 다른 게 먹을 수도 있어. 내가 볼 때 줄 거야.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 397,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:12f65a0efd5f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-06:e:d39360d7fbb8:1": {
+      "id": "v4:32:F-SA01-06:e:d39360d7fbb8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 오면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 395,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:3d9462749d59:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-06:e:a8de619198e7:1": {
+      "id": "v4:32:F-SA01-06:e:a8de619198e7:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "오면.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 393,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:d39360d7fbb8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-06:e:64dccff73196:1": {
+      "id": "v4:32:F-SA01-06:e:64dccff73196:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내일도 밥 줄 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 391,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:a8de619198e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-06:e:ac5e3b2b1dcd:1": {
+      "id": "v4:32:F-SA01-06:e:ac5e3b2b1dcd:1",
+      "type": "stage",
+      "direction": "함께 돌아가는 B1/B2에서는 사츠키가 그릇을 가져갈 자리를 찾는다. B3에서는 미오가 호텔로 가려던 길의 세면대 앞에서 잠깐 다시 만난다. B1에서는 사츠키가 여기서 그릇을 실제로 씻고 말릴 자리에 놓는다.B2/B3에서는 이미 씻은 그릇을 말려 둔다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 389,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-06 남는 그릇",
+        "location": "F-SA01-06"
+      },
+      "next": "v4:32:F-SA01-06:e:64dccff73196:1"
+    },
+    "v4:32:F-SA01-B:e:81e656d6efe3:1": {
+      "id": "v4:32:F-SA01-B:e:81e656d6efe3:1",
+      "type": "stage",
+      "direction": "말이 날카로워 미오는 입을 다문다. 사츠키는 자기가 화난 것처럼 말했음을 뒤늦게 알아차리지만 길게 사과하는 대신 돌아갈 길을 비켜 준다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 341,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-06:e:ac5e3b2b1dcd:1"
+    },
+    "v4:32:F-SA01-B:e:aa9983be5f23:1": {
+      "id": "v4:32:F-SA01-B:e:aa9983be5f23:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "아까도 봤잖아. 보고 싶어서 온 거지 붙잡으러 온 거 아냐.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 339,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:81e656d6efe3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:0ecaf71b7961:1": {
+      "id": "v4:32:F-SA01-B:e:0ecaf71b7961:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가까이 왔는데도 안 만지네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 337,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:aa9983be5f23:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:e3e0f14ce456:1": {
+      "id": "v4:32:F-SA01-B:e:e3e0f14ce456:1",
+      "type": "stage",
+      "direction": "사츠키는 틈 안까지 손을 넣지 않는다. 미오가 뒤로 물러나자 같이 돌아선다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 335,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:0ecaf71b7961:1"
+    },
+    "v4:32:F-SA01-B:e:99c4a6f9f7a4:1": {
+      "id": "v4:32:F-SA01-B:e:99c4a6f9f7a4:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "낮엔 여기 있을 수도 있지.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 333,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:e3e0f14ce456:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:3711b125d57a:1": {
+      "id": "v4:32:F-SA01-B:e:3711b125d57a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 사나 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 331,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:99c4a6f9f7a4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:0708e33689e0:1": {
+      "id": "v4:32:F-SA01-B:e:0708e33689e0:1",
+      "type": "stage",
+      "direction": "두 사람은 열려 있는 청소 도구 마당 입구로 간다. 고양이는 접힌 천 위에 앉아 있다. 사람 손이 닿지 않는 높은 틈으로 더 들어갈 수 있다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 329,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:3711b125d57a:1"
+    },
+    "v4:32:F-SA01-B:e:f54a6123604d:1": {
+      "id": "v4:32:F-SA01-B:e:f54a6123604d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 가 볼래. 어디 들어가는지만.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 327,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:0708e33689e0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:cf917f949d59:1": {
+      "id": "v4:32:F-SA01-B:e:cf917f949d59:1",
+      "type": "stage",
+      "direction": "사츠키가 대답하지 않고 마당 문을 본다. 미오는 방금의 단단한 원칙도 누구에게나 똑같이 적용되지는 않을 수 있다고 느낀다. 사츠키는 예외인 사람의 이름을 말하지 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 363,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-06:e:ac5e3b2b1dcd:1"
+    },
+    "v4:32:F-SA01-B:e:1fd875124367:1": {
+      "id": "v4:32:F-SA01-B:e:1fd875124367:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "좋아하는 사람이면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 361,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:cf917f949d59:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:c4f435fd9607:1": {
+      "id": "v4:32:F-SA01-B:e:c4f435fd9607:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "한번은 기다려. 계속 그러면 다음엔 안 가.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 359,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:1fd875124367:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:92c178f15b9a:1": {
+      "id": "v4:32:F-SA01-B:e:92c178f15b9a:1",
+      "type": "stage",
+      "direction": "미오가 사츠키를 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 357,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:c4f435fd9607:1"
+    },
+    "v4:32:F-SA01-B:e:085a89075c22:1": {
+      "id": "v4:32:F-SA01-B:e:085a89075c22:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "오겠다고 한 사람이 안 오면.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 355,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:92c178f15b9a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:cba0ffe90be6:1": {
+      "id": "v4:32:F-SA01-B:e:cba0ffe90be6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어떤 때?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 353,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:085a89075c22:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:25b9da415ccc:1": {
+      "id": "v4:32:F-SA01-B:e:25b9da415ccc:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "안 할 때도 있어.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 351,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:cba0ffe90be6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:c9d9d8dd6561:1": {
+      "id": "v4:32:F-SA01-B:e:c9d9d8dd6561:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "사츠키는 기다리는 거 잘하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 349,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:25b9da415ccc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:ede878ac7318:1": {
+      "id": "v4:32:F-SA01-B:e:ede878ac7318:1",
+      "type": "stage",
+      "direction": "사츠키가 그릇을 씻고 돌아온다. 두 사람은 이번에는 같은 벤치에 앉는다. 고양이는 한동안 나오지 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 347,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:c9d9d8dd6561:1"
+    },
+    "v4:32:F-SA01-B:e:c4c6c285721a:1": {
+      "id": "v4:32:F-SA01-B:e:c4c6c285721a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기서 좀 있을게. 다시 나올 수도 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 345,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:ede878ac7318:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:331e8b05a259:1": {
+      "id": "v4:32:F-SA01-B:e:331e8b05a259:1",
+      "type": "stage",
+      "direction": "사츠키가 고개를 끄덕인다. 미오는 그 다음의 소소한 약속이, 사츠키와 꼭 함께 와야 한다는 말은 아니어서 조금 편하다.미오가 먼저 호텔 쪽으로 걷는 동안 사츠키는 그릇을 가지고 세면대로 가서 씻는다.다음에 마주칠 때는 씻은 그릇을 들고 있다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 383,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-06:e:ac5e3b2b1dcd:1"
+    },
+    "v4:32:F-SA01-B:e:74c3789c773c:1": {
+      "id": "v4:32:F-SA01-B:e:74c3789c773c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 모르지. 있으면 불러 볼게. 단추라고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 381,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:331e8b05a259:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:c3e91f7d0653:1": {
+      "id": "v4:32:F-SA01-B:e:c3e91f7d0653:1",
+      "type": "stage",
+      "direction": "미오가 웃다가 고개를 젓는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 379,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:74c3789c773c:1"
+    },
+    "v4:32:F-SA01-B:e:3fa5a47be0a4:1": {
+      "id": "v4:32:F-SA01-B:e:3fa5a47be0a4:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "고양이. 네가 다음에 본다길래.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 377,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:c3e91f7d0653:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:0dc5ca1ef6b7:1": {
+      "id": "v4:32:F-SA01-B:e:0dc5ca1ef6b7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 375,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:3fa5a47be0a4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:6e889c79d381:1": {
+      "id": "v4:32:F-SA01-B:e:6e889c79d381:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "내일도 여기 있을까?",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 373,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:0dc5ca1ef6b7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:46073ca14d86:1": {
+      "id": "v4:32:F-SA01-B:e:46073ca14d86:1",
+      "type": "stage",
+      "direction": "대답이 짧아서 미오가 가방을 고쳐 멘다. 사츠키는 그릇을 들고 일어나며 미오를 다시 부른다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 371,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:6e889c79d381:1"
+    },
+    "v4:32:F-SA01-B:e:27e881fb4108:1": {
+      "id": "v4:32:F-SA01-B:e:27e881fb4108:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "응.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 369,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:46073ca14d86:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:e:f82f436669df:1": {
+      "id": "v4:32:F-SA01-B:e:f82f436669df:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 갈게. 다시 나오면 다음에 봐야겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 367,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      },
+      "next": "v4:32:F-SA01-B:e:27e881fb4108:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-B:menu": {
+      "id": "v4:32:F-SA01-B:menu",
+      "type": "menu",
+      "q": "남은 시간",
+      "options": [
+        {
+          "id": "B1",
+          "label": "마당 입구까지만 함께 가 본다.",
+          "to": "v4:32:F-SA01-B:e:f54a6123604d:1",
+          "set": {
+            "F-SA01-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "뒤뜰에서 기다린다.",
+          "to": "v4:32:F-SA01-B:e:c4c6c285721a:1",
+          "set": {
+            "F-SA01-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "먼저 호텔로 돌아간다.",
+          "to": "v4:32:F-SA01-B:e:f82f436669df:1",
+          "set": {
+            "F-SA01-B": "B3"
+          }
+        }
+      ],
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 323,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-B — 남은 시간",
+        "location": "F-SA01-B"
+      }
+    },
+    "v4:32:F-SA01-05:e:7d7cfd754c9d:1": {
+      "id": "v4:32:F-SA01-05:e:7d7cfd754c9d:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "그릇만 씻고. 걔는 나올 때 나오겠지.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 321,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-05 담 너머로 간 것",
+        "location": "F-SA01-05"
+      },
+      "next": "v4:32:F-SA01-B:menu",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-05:e:e8e24991fe0e:1": {
+      "id": "v4:32:F-SA01-05:e:e8e24991fe0e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "따라가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 319,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-05 담 너머로 간 것",
+        "location": "F-SA01-05"
+      },
+      "next": "v4:32:F-SA01-05:e:7d7cfd754c9d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-05:e:afa4f35c5302:1": {
+      "id": "v4:32:F-SA01-05:e:afa4f35c5302:1",
+      "type": "stage",
+      "direction": "고양이가 담 아래의 관리용 작은 마당으로 넘어간다. 문은 낮은 청소 도구 보관 구역으로 이어지며 밖으로 나가는 출구가 아니다. 미오가 일어나자 사츠키가 빈 그릇을 든다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 317,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-05 담 너머로 간 것",
+        "location": "F-SA01-05"
+      },
+      "next": "v4:32:F-SA01-05:e:e8e24991fe0e:1"
+    },
+    "v4:32:F-SA01-04a:e:c881e8369cd5:1": {
+      "id": "v4:32:F-SA01-04a:e:c881e8369cd5:1",
+      "type": "stage",
+      "direction": "사츠키가 바닥을 보며 작게 웃는다.두 사람은 그림을 사진으로 남기거나 종이에 옮기지 않는다.미오가 일어서며 발을 비키자 얼굴 아래가 조금 더 흐트러지고,사츠키의 꼬리 한 줄은 옆에 남는다.새 보관품이나 후속 수사의 표식이 되지 않는 일상의 흙 그림이다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 313,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-05:e:afa4f35c5302:1"
+    },
+    "v4:32:F-SA01-04a:e:12d167685bb8:1": {
+      "id": "v4:32:F-SA01-04a:e:12d167685bb8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "단추. 감자는 내 그림.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 311,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:c881e8369cd5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:889d41ca8d3c:1": {
+      "id": "v4:32:F-SA01-04a:e:889d41ca8d3c:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "안 와도 부르는 건 같게 해. 너는 단추로 할 건지 감자로 할 건지부터 정하고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 309,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:12d167685bb8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:c9f353e7dbc3:1": {
+      "id": "v4:32:F-SA01-04a:e:c9f353e7dbc3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 온다며.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 307,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:889d41ca8d3c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:fd75fb53b194:1": {
+      "id": "v4:32:F-SA01-04a:e:fd75fb53b194:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "걔 이름 자꾸 바꾸지 마.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 305,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:c9f353e7dbc3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:f2b64f197c0d:1": {
+      "id": "v4:32:F-SA01-04a:e:f2b64f197c0d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "감자.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 303,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:fd75fb53b194:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:9839ad9c41f7:1": {
+      "id": "v4:32:F-SA01-04a:e:9839ad9c41f7:1",
+      "type": "stage",
+      "direction": "고양이는 이번에는 돌아보지 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 301,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:f2b64f197c0d:1"
+    },
+    "v4:32:F-SA01-04a:e:b09f55b95bce:1": {
+      "id": "v4:32:F-SA01-04a:e:b09f55b95bce:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "단추.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 299,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:9839ad9c41f7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:9370e474f073:1": {
+      "id": "v4:32:F-SA01-04a:e:9370e474f073:1",
+      "type": "stage",
+      "direction": "미오가 사츠키를 본다.사츠키는 이번에도 긴 설명 대신 담을 가리킨다.고양이가 앞발을 모아 다시 앉는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 297,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:b09f55b95bce:1"
+    },
+    "v4:32:F-SA01-04a:e:651c2fe93aba:1": {
+      "id": "v4:32:F-SA01-04a:e:651c2fe93aba:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "고양이만 보고 있지는 않았어. 네가 계속 말하고 있는데.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 295,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:9370e474f073:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:144bf1e7d0c9:1": {
+      "id": "v4:32:F-SA01-04a:e:144bf1e7d0c9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 그것도 보고 있었네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 293,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:651c2fe93aba:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:38c0654f3a8e:1": {
+      "id": "v4:32:F-SA01-04a:e:38c0654f3a8e:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "아까 갑자기 뛰면 놀랄 것 같다고 했잖아.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 291,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:144bf1e7d0c9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:f3deaf2ba228:1": {
+      "id": "v4:32:F-SA01-04a:e:f3deaf2ba228:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 잡히면 갑자기 손톱 나올 것부터 생각나.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 289,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:38c0654f3a8e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:530824d1666e:1": {
+      "id": "v4:32:F-SA01-04a:e:530824d1666e:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "응. 푹신해 보이니까. 못 만졌는데도 본 느낌은 계속 나. 내 손으로 해 보면 다를 수도 있겠지.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 287,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:f3deaf2ba228:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:07d028a03658:1": {
+      "id": "v4:32:F-SA01-04a:e:07d028a03658:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도 궁금해서 대 보긴 했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 285,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:530824d1666e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:16a8060c340d:1": {
+      "id": "v4:32:F-SA01-04a:e:16a8060c340d:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "내가 손 대니까 빼더라. 그래서 못 만졌어.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 283,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:07d028a03658:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:c9375413c01b:1": {
+      "id": "v4:32:F-SA01-04a:e:c9375413c01b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "전에 봤다는 애는?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 281,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:16a8060c340d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:686418f39da4:1": {
+      "id": "v4:32:F-SA01-04a:e:686418f39da4:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "얘는 없어.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 279,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:c9375413c01b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:716a7e7e1b5c:1": {
+      "id": "v4:32:F-SA01-04a:e:716a7e7e1b5c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 다른 거 물을게. 발 만져 본 적 있어? 저 하얀 데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 277,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:686418f39da4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:0aa07e30a26a:1": {
+      "id": "v4:32:F-SA01-04a:e:0aa07e30a26a:1",
+      "type": "stage",
+      "direction": "미오는 대꾸하려다 입을 다문다.담 위의 고양이는 뒷발을 핥는다.침묵 사이에도 둘이 보던 동물은 계속 다른 일을 한다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 275,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:716a7e7e1b5c:1"
+    },
+    "v4:32:F-SA01-04a:e:5e89d0703464:1": {
+      "id": "v4:32:F-SA01-04a:e:5e89d0703464:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "네가 먼저 안 해 주는 얘기 했어.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 273,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:0aa07e30a26a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:5e1ae0758b11:1": {
+      "id": "v4:32:F-SA01-04a:e:5e1ae0758b11:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직 그런 건 없어. 그런데 그렇게 말하면 내가 네가 해 준 거 세는 사람 같잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 271,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:5e89d0703464:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:c91999aec8a5:1": {
+      "id": "v4:32:F-SA01-04a:e:c91999aec8a5:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "너한테 뭘 안 해 줬는데.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 269,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:5e1ae0758b11:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:10e220d18b74:1": {
+      "id": "v4:32:F-SA01-04a:e:10e220d18b74:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 네가 사람한테 못 해 주는 걸 얘한테 하는 건가 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 267,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:c91999aec8a5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:a2cb15e6ed7e:1": {
+      "id": "v4:32:F-SA01-04a:e:a2cb15e6ed7e:1",
+      "type": "stage",
+      "direction": "미오가 모아 둔 가방 끈을 내려다본다.고양이가 관심을 보였던 길이다.다시 흔들어 유인하지는 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 265,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:10e220d18b74:1"
+    },
+    "v4:32:F-SA01-04a:e:be11db1b3465:1": {
+      "id": "v4:32:F-SA01-04a:e:be11db1b3465:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "내가 고양이 좋다고 하면 꼭 사람 얘기 해. 고양이가 좋은데. 턱 하얀 것도 좋고, 아까 네 가방 끈 잡으려고 발 내민 것도 웃겼고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 263,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:a2cb15e6ed7e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:374f7948718b:1": {
+      "id": "v4:32:F-SA01-04a:e:374f7948718b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "사람한테는 설명하기 싫어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 261,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:be11db1b3465:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:29e0a2ae7004:1": {
+      "id": "v4:32:F-SA01-04a:e:29e0a2ae7004:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "안 멈추는 날도 있었어. 그러면 걔가 나한테 서운했는지 모르지. 다음 날 보면 또 자거나 걷거나. 나 못 봤다고 설명할 필요도 없고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 259,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:374f7948718b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:0f5d8d867ad8:1": {
+      "id": "v4:32:F-SA01-04a:e:0f5d8d867ad8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "맞아. 나는 네가 고양이 있으면 다 멈출 것 같았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 257,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:29e0a2ae7004:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:08cfcc0c70db:1": {
+      "id": "v4:32:F-SA01-04a:e:08cfcc0c70db:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "집에 올 때랬잖아. 빨리 들어가고 싶은 날도 있지.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 255,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:0f5d8d867ad8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:4a5f6430fa17:1": {
+      "id": "v4:32:F-SA01-04a:e:4a5f6430fa17:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "학교 갈 때?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 253,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:08cfcc0c70db:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:eedddd4dc287:1": {
+      "id": "v4:32:F-SA01-04a:e:eedddd4dc287:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "어떤 날은. 어떤 날은 가다가 내 발 앞에 누웠고. 나는 늦어서 넘어가고 싶었는데 또 가면 일어날 것 같았어. 그래서 옆으로 돌아갔어. 뒤돌아보니까 그대로 자더라. 나 막으려고 누운 것도 아닌데.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 251,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:4a5f6430fa17:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:a4d194f6d778:1": {
+      "id": "v4:32:F-SA01-04a:e:a4d194f6d778:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "전에 봤다는 애는 너한테도 왔어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 249,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:eedddd4dc287:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:2fccdd6a8bcd:1": {
+      "id": "v4:32:F-SA01-04a:e:2fccdd6a8bcd:1",
+      "type": "stage",
+      "direction": "사츠키는 미오가 자기를 잘 이해했다고 칭찬하지 않는다.담 위에서 고양이가 몸을 길게 편다.두 사람 모두 그쪽을 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 247,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:a4d194f6d778:1"
+    },
+    "v4:32:F-SA01-04a:e:518f8dc3fdf3:1": {
+      "id": "v4:32:F-SA01-04a:e:518f8dc3fdf3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 거기서 내가 싫으냐고까지 갔네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 245,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:2fccdd6a8bcd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:7bfc625e2afb:1": {
+      "id": "v4:32:F-SA01-04a:e:7bfc625e2afb:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "지금 네가 물은 건 그림이잖아.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 243,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:518f8dc3fdf3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:6f342770e211:1": {
+      "id": "v4:32:F-SA01-04a:e:6f342770e211:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 나한테는 짧게 말해도 되는 거네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 241,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:7bfc625e2afb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:ee0a1d411a23:1": {
+      "id": "v4:32:F-SA01-04a:e:ee0a1d411a23:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "붙이고 싶은 사람한테. 그림 못 그리는 건 네가 벌써 볼 텐데 길게 말해서 뭐 해.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 239,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:6f342770e211:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:e553382416c8:1": {
+      "id": "v4:32:F-SA01-04a:e:e553382416c8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 아니라고 바로 했으면서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 237,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:ee0a1d411a23:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:a1aca8e93f0c:1": {
+      "id": "v4:32:F-SA01-04a:e:a1aca8e93f0c:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "나도 붙여.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 235,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:e553382416c8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:993c3598b449:1": {
+      "id": "v4:32:F-SA01-04a:e:993c3598b449:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "넌 싫으면 싫다고, 못 하면 못 한다고 하잖아. 난 그러면 미움받을까 봐 꼭 한마디 더 해. 지금도 그리면 된다면서 네 눈치부터 보고 있었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 233,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:a1aca8e93f0c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:5de7602dad3b:1": {
+      "id": "v4:32:F-SA01-04a:e:5de7602dad3b:1",
+      "type": "stage",
+      "direction": "미오는 수염이 여러 줄인 얼굴을 다시 본다.사츠키의 한 줄 옆에 놓으니 자기 것이 더 열심히 실패한 것 같다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 231,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:993c3598b449:1"
+    },
+    "v4:32:F-SA01-04a:e:ad763c1f87d3:1": {
+      "id": "v4:32:F-SA01-04a:e:ad763c1f87d3:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "네가 내 것도 보겠다고 했잖아. 봤고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 229,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:5de7602dad3b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:d560200656a0:1": {
+      "id": "v4:32:F-SA01-04a:e:d560200656a0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 이긴 걸로 끝내려고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 227,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:ad763c1f87d3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:17f2a06ac352:1": {
+      "id": "v4:32:F-SA01-04a:e:17f2a06ac352:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "그러니까 됐어.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 225,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:d560200656a0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:7f2ae29b75fa:1": {
+      "id": "v4:32:F-SA01-04a:e:7f2ae29b75fa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "진짜 네 것처럼 하고 있네. 나머지 숨기고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 223,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:17f2a06ac352:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:663a7bde8004:1": {
+      "id": "v4:32:F-SA01-04a:e:663a7bde8004:1",
+      "type": "stage",
+      "direction": "사츠키가 웃는다.미오도 웃으며 담 위를 본다.고양이는 꼬리를 몸 옆에 감고 앉아 있다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 221,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:7f2ae29b75fa:1"
+    },
+    "v4:32:F-SA01-04a:e:8aa52a8123f1:1": {
+      "id": "v4:32:F-SA01-04a:e:8aa52a8123f1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그림은 네가 그리는 건데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 219,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:663a7bde8004:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:b713a74356ed:1": {
+      "id": "v4:32:F-SA01-04a:e:b713a74356ed:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "저쪽에 있겠지. 고양이가 다 보여야 고양이야?",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 217,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:8aa52a8123f1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:ea438cc3cca0:1": {
+      "id": "v4:32:F-SA01-04a:e:ea438cc3cca0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "몸은?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 215,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:b713a74356ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:ccf16798534b:1": {
+      "id": "v4:32:F-SA01-04a:e:ccf16798534b:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "꼬리.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 213,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:ea438cc3cca0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:12a54179a7bb:1": {
+      "id": "v4:32:F-SA01-04a:e:12a54179a7bb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 211,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:ccf16798534b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:8fe245cccc9d:1": {
+      "id": "v4:32:F-SA01-04a:e:8fe245cccc9d:1",
+      "type": "stage",
+      "direction": "사츠키가 신발 끝으로 미오 그림 옆에 짧은 선을 긋는다.아래로 휘어 끝만 살짝 올라가는 한 줄이다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 209,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:12a54179a7bb:1"
+    },
+    "v4:32:F-SA01-04a:e:3e40a92a16dc:1": {
+      "id": "v4:32:F-SA01-04a:e:3e40a92a16dc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다음에는 네가 그려. 나는 계속 보고 있을게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 207,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:8fe245cccc9d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:1ecb2d0d9864:1": {
+      "id": "v4:32:F-SA01-04a:e:1ecb2d0d9864:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "네가 물어보니까.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 205,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:3e40a92a16dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:778af7613483:1": {
+      "id": "v4:32:F-SA01-04a:e:778af7613483:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 점점 먹는 거만 말한다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 203,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:1ecb2d0d9864:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:2c7cc0ecfe22:1": {
+      "id": "v4:32:F-SA01-04a:e:2c7cc0ecfe22:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "지금은 치즈.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 201,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:778af7613483:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:e0260267205f:1": {
+      "id": "v4:32:F-SA01-04a:e:e0260267205f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "망했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 199,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:2c7cc0ecfe22:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:faf107293fbb:1": {
+      "id": "v4:32:F-SA01-04a:e:faf107293fbb:1",
+      "type": "stage",
+      "direction": "미오가 발끝으로 턱 아래를 조금 밀어 밝은 마른 흙이 드러나게 한다.얼굴 둘레도 함께 무너진다.고양이가 소리에 고개를 돌렸다가 다시 반대편을 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 197,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:e0260267205f:1"
+    },
+    "v4:32:F-SA01-04a:e:f831da7e2c88:1": {
+      "id": "v4:32:F-SA01-04a:e:f831da7e2c88:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "맞네. 너한테 계속 물어보면서 내가 그렸다고 하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 195,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:faf107293fbb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:9f641037fb3f:1": {
+      "id": "v4:32:F-SA01-04a:e:9f641037fb3f:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "네가 그리는 건데.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 193,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:f831da7e2c88:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:cd08bf69e812:1": {
+      "id": "v4:32:F-SA01-04a:e:cd08bf69e812:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기는 왜 안 그렸어. 턱에 하얀 거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 191,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:9f641037fb3f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:9499afd35130:1": {
+      "id": "v4:32:F-SA01-04a:e:9499afd35130:1",
+      "type": "stage",
+      "direction": "사츠키가 손가락으로 자기 코 옆을 가리킨다.미오가 그 위치를 보고 바닥의 수염을 더 위에 긋는다.옛 선은 지워지지 않아 아래에도 남는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 189,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:cd08bf69e812:1"
+    },
+    "v4:32:F-SA01-04a:e:7da8cef9d2fe:1": {
+      "id": "v4:32:F-SA01-04a:e:7da8cef9d2fe:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "봤다고 이름이 생겨? 밥 주는 사람은 따로 있었어. 나는 집에 오는 길에 봤고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 187,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:9499afd35130:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:c5c917c3f260:1": {
+      "id": "v4:32:F-SA01-04a:e:c5c917c3f260:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 고양이를 많이 보면서 하나도 안 부르네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 185,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:7da8cef9d2fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:e6c2bc9b567e:1": {
+      "id": "v4:32:F-SA01-04a:e:e6c2bc9b567e:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "걔도 몰라.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 183,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:c5c917c3f260:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:908e7b01a00c:1": {
+      "id": "v4:32:F-SA01-04a:e:908e7b01a00c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이름은?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 181,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:e6c2bc9b567e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:39f71f98f6e4:1": {
+      "id": "v4:32:F-SA01-04a:e:39f71f98f6e4:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "전에 살던 데에도 있었어. 얘하고는 다르게 생긴 거. 검고 코만 조금 까맸어……아니, 코만 조금 하얬어. 아까 검다고 해 놓고.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 179,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:908e7b01a00c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:aaa5a93071e9:1": {
+      "id": "v4:32:F-SA01-04a:e:aaa5a93071e9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잘 안다. 고양이 진짜 많이 봤어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 177,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:39f71f98f6e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:ca43255a6ee0:1": {
+      "id": "v4:32:F-SA01-04a:e:ca43255a6ee0:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "그럼 수염이 너무 밑에 있어. 걔는 여기서 나잖아. 코 옆.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 175,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:aaa5a93071e9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:af89ac6c0b88:1": {
+      "id": "v4:32:F-SA01-04a:e:af89ac6c0b88:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기. 동그란 데 아래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 173,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:ca43255a6ee0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:3c396ffca006:1": {
+      "id": "v4:32:F-SA01-04a:e:3c396ffca006:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "턱이 어디야.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 171,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:af89ac6c0b88:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:830f94ec741d:1": {
+      "id": "v4:32:F-SA01-04a:e:830f94ec741d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "됐지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 169,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:3c396ffca006:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:5047a8599927:1": {
+      "id": "v4:32:F-SA01-04a:e:5047a8599927:1",
+      "type": "stage",
+      "direction": "미오가 양옆으로 선을 세 개씩 긋는다.사츠키가 몸을 조금 앞으로 기울인다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 167,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:830f94ec741d:1"
+    },
+    "v4:32:F-SA01-04a:e:15a772fe0a9b:1": {
+      "id": "v4:32:F-SA01-04a:e:15a772fe0a9b:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "수염 해 봐.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 165,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:5047a8599927:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:4211e561b08a:1": {
+      "id": "v4:32:F-SA01-04a:e:4211e561b08a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "귀 달린 감자보다 낫잖아. 이제 고양이 같지 않아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 163,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:15a772fe0a9b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:5d4d68827ed9:1": {
+      "id": "v4:32:F-SA01-04a:e:5d4d68827ed9:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "처음부터 그렇게 그린 것처럼 말한다.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 161,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:4211e561b08a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:f8b882317400:1": {
+      "id": "v4:32:F-SA01-04a:e:f8b882317400:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "눈 감았어. 왼쪽은 자는 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 159,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:5d4d68827ed9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:2f57be6387b9:1": {
+      "id": "v4:32:F-SA01-04a:e:2f57be6387b9:1",
+      "type": "stage",
+      "direction": "미오가 웃으며 얼굴 안에 눈을 찍는다.발끝으로 작은 점을 찍기가 어려워 한쪽 눈만 크게 파인다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 157,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:f8b882317400:1"
+    },
+    "v4:32:F-SA01-04a:e:773c177987cf:1": {
+      "id": "v4:32:F-SA01-04a:e:773c177987cf:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "잘 그리는 사람만 감자 알아보는 건 아니잖아.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 155,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:2f57be6387b9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:0a6638556e47:1": {
+      "id": "v4:32:F-SA01-04a:e:0a6638556e47:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그렇게 바로 아니라고 해 놓고 계속 말하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 153,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:773c177987cf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:a7e704335c6d:1": {
+      "id": "v4:32:F-SA01-04a:e:a7e704335c6d:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "아니.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 151,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:0a6638556e47:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:a85b8de7ac9f:1": {
+      "id": "v4:32:F-SA01-04a:e:a85b8de7ac9f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 더 잘 그려?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 149,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:a7e704335c6d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:5881a12549c7:1": {
+      "id": "v4:32:F-SA01-04a:e:5881a12549c7:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "귀 달린 감자.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 147,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:a85b8de7ac9f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:e6efedeab448:1": {
+      "id": "v4:32:F-SA01-04a:e:e6efedeab448:1",
+      "type": "stage",
+      "direction": "미오가 위에 뾰족한 귀 두 개를 붙인다.사츠키는 고양이와 바닥을 번갈아 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 145,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:5881a12549c7:1"
+    },
+    "v4:32:F-SA01-04a:e:01d4fe529507:1": {
+      "id": "v4:32:F-SA01-04a:e:01d4fe529507:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "귀가 아직 없잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 143,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:e6efedeab448:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:0af686528ca3:1": {
+      "id": "v4:32:F-SA01-04a:e:0af686528ca3:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "감자네.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 141,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:01d4fe529507:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:29fb47cf39d5:1": {
+      "id": "v4:32:F-SA01-04a:e:29fb47cf39d5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "단추 얼굴. 안 오면 내가 그리지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 139,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:0af686528ca3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:dfd186732f71:1": {
+      "id": "v4:32:F-SA01-04a:e:dfd186732f71:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "뭐 해.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 137,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:29fb47cf39d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04a:e:78765a3d73f4:1": {
+      "id": "v4:32:F-SA01-04a:e:78765a3d73f4:1",
+      "type": "stage",
+      "direction": "고양이는 아직 담 위에 있다.미오는 발끝으로 벤치 앞의 마른 흙을 긁는다.둥근 얼굴을 그리다가 턱을 지나 원이 길어진다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 135,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04a 얼굴을 그리면",
+        "location": "F-SA01-04a"
+      },
+      "next": "v4:32:F-SA01-04a:e:dfd186732f71:1"
+    },
+    "v4:32:F-SA01-04:e:779c99ba4cf5:1": {
+      "id": "v4:32:F-SA01-04:e:779c99ba4cf5:1",
+      "type": "stage",
+      "direction": "미오가 웃자 사츠키도 다시 한번 부른다. 이번에는 고양이가 귀를 돌린다. 이름을 알아들었다고 둘이 즉시 확정하지는 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 131,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04a:e:78765a3d73f4:1"
+    },
+    "v4:32:F-SA01-04:e:dfa0e30ad89b:1": {
+      "id": "v4:32:F-SA01-04:e:dfa0e30ad89b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 붙였으니까!",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 129,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:779c99ba4cf5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:87ab1d8f47b1:1": {
+      "id": "v4:32:F-SA01-04:e:87ab1d8f47b1:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "안 와.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 127,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:dfa0e30ad89b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:1d49360cc85c:1": {
+      "id": "v4:32:F-SA01-04:e:1d49360cc85c:1",
+      "type": "stage",
+      "direction": "사츠키는 조금 생각한 뒤 단추라고 불러 본다. 고양이는 돌아보지 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 125,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:87ab1d8f47b1:1"
+    },
+    "v4:32:F-SA01-04:e:414d3609a4c6:1": {
+      "id": "v4:32:F-SA01-04:e:414d3609a4c6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이름인데 꼭 모양이 같을 필요는 없잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 123,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:1d49360cc85c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:e570079ea506:1": {
+      "id": "v4:32:F-SA01-04:e:e570079ea506:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "단추는 둥근데.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 121,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:414d3609a4c6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:e5588758e0fa:1": {
+      "id": "v4:32:F-SA01-04:e:e5588758e0fa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "단추 어때. 턱이 작고 하얘서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 119,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:e570079ea506:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:46cc4ccbf70f:1": {
+      "id": "v4:32:F-SA01-04:e:46cc4ccbf70f:1",
+      "type": "stage",
+      "direction": "사츠키는 고양이를 본다. 미오가 말을 잇는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 117,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:e5588758e0fa:1"
+    },
+    "v4:32:F-SA01-04:e:5020c157e8b4:1": {
+      "id": "v4:32:F-SA01-04:e:5020c157e8b4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "계속 부르면 알겠지. 지금은 몰라도.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 115,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:46cc4ccbf70f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:26b3b576d5dc:1": {
+      "id": "v4:32:F-SA01-04:e:26b3b576d5dc:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "부르면 와?",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 113,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:5020c157e8b4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:1fd10cb7901f:1": {
+      "id": "v4:32:F-SA01-04:e:1fd10cb7901f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하나 붙이지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 111,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:26b3b576d5dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:161f535ea504:1": {
+      "id": "v4:32:F-SA01-04:e:161f535ea504:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "몰라.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 109,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:1fd10cb7901f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-04:e:54ee67f05961:1": {
+      "id": "v4:32:F-SA01-04:e:54ee67f05961:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이름은 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 107,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-04 이름을 부르면",
+        "location": "F-SA01-04"
+      },
+      "next": "v4:32:F-SA01-04:e:161f535ea504:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:41e1d436431e:1": {
+      "id": "v4:32:F-SA01-03:e:41e1d436431e:1",
+      "type": "stage",
+      "direction": "사츠키도 짧게 웃는다. 고양이는 둘을 보지 않고 담 위로 올라간다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 103,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-04:e:54ee67f05961:1"
+    },
+    "v4:32:F-SA01-03:e:9d296d19291b:1": {
+      "id": "v4:32:F-SA01-03:e:9d296d19291b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "얘는 가방 열어 달라고 말 안 하잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 101,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:41e1d436431e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:25e00e8f072e:1": {
+      "id": "v4:32:F-SA01-03:e:25e00e8f072e:1",
+      "type": "stage",
+      "direction": "미오는 잠시 생각하다 웃는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 99,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:9d296d19291b:1"
+    },
+    "v4:32:F-SA01-03:e:aea6e622aaad:1": {
+      "id": "v4:32:F-SA01-03:e:aea6e622aaad:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "사람은 가방 보고 오면 싫고, 고양이는 와도 돼?",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 97,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:25e00e8f072e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:d3a6e5b19f2e:1": {
+      "id": "v4:32:F-SA01-03:e:d3a6e5b19f2e:1",
+      "type": "stage",
+      "direction": "사츠키가 고양이 쪽을 본다. 입가가 조금 움직인다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 95,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:aea6e622aaad:1"
+    },
+    "v4:32:F-SA01-03:e:d8b253bd1774:1": {
+      "id": "v4:32:F-SA01-03:e:d8b253bd1774:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 나랑 다른 거지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 93,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:d3a6e5b19f2e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:3c9c222a5c6c:1": {
+      "id": "v4:32:F-SA01-03:e:3c9c222a5c6c:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "가방은 네가 갖고 있잖아.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 91,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:d8b253bd1774:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:1024277eb5e4:1": {
+      "id": "v4:32:F-SA01-03:e:1024277eb5e4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나한테 관심 있는 줄 알았는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 89,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:3c9c222a5c6c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:7616b13166a0:1": {
+      "id": "v4:32:F-SA01-03:e:7616b13166a0:1",
+      "type": "stage",
+      "direction": "늘어진 가방 끈이 고양이 앞에서 흔들린다. 미오가 끈을 걷어 올리자 고양이는 다른 곳을 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 87,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:1024277eb5e4:1"
+    },
+    "v4:32:F-SA01-03:e:3cf557f3f08c:1": {
+      "id": "v4:32:F-SA01-03:e:3cf557f3f08c:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "네 가방 흔들리는 거.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 85,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:7616b13166a0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:52955d4ef869:1": {
+      "id": "v4:32:F-SA01-03:e:52955d4ef869:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 나한테 와.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 83,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:3cf557f3f08c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-03:e:21313d5e7e9e:1": {
+      "id": "v4:32:F-SA01-03:e:21313d5e7e9e:1",
+      "type": "stage",
+      "direction": "고양이가 그릇을 비운다. 사츠키는 그릇을 바로 거두지 않고 기다린다. 고양이는 앞발을 핥다가 미오의 가방 쪽으로 간다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 81,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-03 먹고 나서",
+        "location": "F-SA01-03"
+      },
+      "next": "v4:32:F-SA01-03:e:52955d4ef869:1"
+    },
+    "v4:32:F-SA01-A:e:fd175587c410:1": {
+      "id": "v4:32:F-SA01-A:e:fd175587c410:1",
+      "type": "stage",
+      "direction": "사츠키는 고양이를 억지로 잡아 미오에게 만지게 하지 않는다. 잠시 뒤 고양이가 돌아와 먹는다. 미오는 손을 무릎 위에 그대로 둔다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 49,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-03:e:21313d5e7e9e:1"
+    },
+    "v4:32:F-SA01-A:e:8e0c5f6a704d:1": {
+      "id": "v4:32:F-SA01-A:e:8e0c5f6a704d:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "아직 너 몰라.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 47,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:fd175587c410:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:20cca570ad82:1": {
+      "id": "v4:32:F-SA01-A:e:20cca570ad82:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 싫은가 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 45,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:8e0c5f6a704d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:8158780861e1:1": {
+      "id": "v4:32:F-SA01-A:e:8158780861e1:1",
+      "type": "stage",
+      "direction": "미오가 천천히 다가와 옆에 앉는다. 고양이가 먹다 말고 한 번 물러난다. 미오도 멈춘다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 43,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:20cca570ad82:1"
+    },
+    "v4:32:F-SA01-A:e:fdd23aabdd53:1": {
+      "id": "v4:32:F-SA01-A:e:fdd23aabdd53:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "나한테는 와도 돼. 걔는 몰라.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 41,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:8158780861e1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:261530ef347c:1": {
+      "id": "v4:32:F-SA01-A:e:261530ef347c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 옆에 가도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 39,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:fdd23aabdd53:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:17984660c660:1": {
+      "id": "v4:32:F-SA01-A:e:17984660c660:1",
+      "type": "stage",
+      "direction": "미오는 고양이가 사츠키 옆에 있기만 해도 괜찮은 모양이라고 생각한다. 굳이 말로 확인받지는 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 61,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-03:e:21313d5e7e9e:1"
+    },
+    "v4:32:F-SA01-A:e:8f426f6c2736:1": {
+      "id": "v4:32:F-SA01-A:e:8f426f6c2736:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "지금 먹잖아.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 59,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:17984660c660:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:6e465ac50751:1": {
+      "id": "v4:32:F-SA01-A:e:6e465ac50751:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 계속 만질 생각 안 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 57,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:8f426f6c2736:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:58fa8adffba8:1": {
+      "id": "v4:32:F-SA01-A:e:58fa8adffba8:1",
+      "type": "stage",
+      "direction": "미오는 벤치 끝에 앉는다. 사츠키는 고개를 끄덕인다. 고양이는 먹는 동안 미오를 한 번 더 보지만 도망가지는 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 55,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:6e465ac50751:1"
+    },
+    "v4:32:F-SA01-A:e:301b16bf48e1:1": {
+      "id": "v4:32:F-SA01-A:e:301b16bf48e1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기 앉을래. 잘 보여.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 53,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:58fa8adffba8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:017e45af27bb:1": {
+      "id": "v4:32:F-SA01-A:e:017e45af27bb:1",
+      "type": "stage",
+      "direction": "미오는 거기에 앉는다. 고양이를 가까이서 보는 경로와 같은 경험으로 합치지는 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 75,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-03:e:21313d5e7e9e:1"
+    },
+    "v4:32:F-SA01-A:e:08288861d517:1": {
+      "id": "v4:32:F-SA01-A:e:08288861d517:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "말은 들려.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 73,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:017e45af27bb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:b205699e6ded:1": {
+      "id": "v4:32:F-SA01-A:e:b205699e6ded:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너무 멀어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 71,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:08288861d517:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:fc2b0099a11c:1": {
+      "id": "v4:32:F-SA01-A:e:fc2b0099a11c:1",
+      "type": "stage",
+      "direction": "미오는 통로 옆 그늘로 간다. 고양이는 바로 다시 그릇으로 간다. 사츠키가 자기와 이야기할 마음이 없나 싶다가, 사츠키가 몸을 돌려 미오가 보이는 쪽에 앉는 것을 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 69,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:b205699e6ded:1"
+    },
+    "v4:32:F-SA01-A:e:c560dfc5b4ce:1": {
+      "id": "v4:32:F-SA01-A:e:c560dfc5b4ce:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "안 불러도 돼. 네가 보고 싶으면 와.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 67,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:fc2b0099a11c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:e:414189c80885:1": {
+      "id": "v4:32:F-SA01-A:e:414189c80885:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 좀 물러날게. 다 먹으면 불러.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 65,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      },
+      "next": "v4:32:F-SA01-A:e:c560dfc5b4ce:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-A:menu": {
+      "id": "v4:32:F-SA01-A:menu",
+      "type": "menu",
+      "q": "가까이 있는 방법",
+      "options": [
+        {
+          "id": "A1",
+          "label": "조금 가까이 가 봐도 되는지 묻는다.",
+          "to": "v4:32:F-SA01-A:e:261530ef347c:1",
+          "set": {
+            "F-SA01-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "떨어진 곳에 앉는다.",
+          "to": "v4:32:F-SA01-A:e:301b16bf48e1:1",
+          "set": {
+            "F-SA01-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "고양이가 먹을 동안 통로 쪽으로 비킨다.",
+          "to": "v4:32:F-SA01-A:e:414189c80885:1",
+          "set": {
+            "F-SA01-A": "A3"
+          }
+        }
+      ],
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 35,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "선택 F-SA01-A — 가까이 있는 방법",
+        "location": "F-SA01-A"
+      }
+    },
+    "v4:32:F-SA01-02:e:162d9385498e:1": {
+      "id": "v4:32:F-SA01-02:e:162d9385498e:1",
+      "type": "stage",
+      "direction": "고양이가 다시 그릇을 본다. 사츠키는 손을 내밀지 않는다. 미오는 사츠키 옆의 빈 돌턱을 본다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 33,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-02 먼저 움직이는 쪽",
+        "location": "F-SA01-02"
+      },
+      "next": "v4:32:F-SA01-A:menu"
+    },
+    "v4:32:F-SA01-01:e:8e1c8f283532:1": {
+      "id": "v4:32:F-SA01-01:e:8e1c8f283532:1",
+      "type": "stage",
+      "direction": "미오는 사츠키가 허락한 자리처럼 느껴져 조금 짜증이 난다. 그래도 담 아래를 보려고 걸음을 더 옮기지는 않는다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 29,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-02:e:162d9385498e:1"
+    },
+    "v4:32:F-SA01-01:e:1f3925064fd5:1": {
+      "id": "v4:32:F-SA01-01:e:1f3925064fd5:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "그럼 거기 있어.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 27,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:8e1c8f283532:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:23101d67c28e:1": {
+      "id": "v4:32:F-SA01-01:e:23101d67c28e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 갑자기 뛰면 내가 놀랄 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 25,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:1f3925064fd5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:2a078921cf21:1": {
+      "id": "v4:32:F-SA01-01:e:2a078921cf21:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "싫어해?",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 23,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:23101d67c28e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:4786efc90e0f:1": {
+      "id": "v4:32:F-SA01-01:e:4786efc90e0f:1",
+      "type": "stage",
+      "direction": "사츠키가 그릇을 조금 밀어 준다. 고양이는 바로 먹지 않고 미오를 본다. 미오는 몸을 굳힌다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 21,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:2a078921cf21:1"
+    },
+    "v4:32:F-SA01-01:e:1cca3256ade9:1": {
+      "id": "v4:32:F-SA01-01:e:1cca3256ade9:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "배고픈 것 같아서.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 19,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:4786efc90e0f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:64f9300e4f74:1": {
+      "id": "v4:32:F-SA01-01:e:64f9300e4f74:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "밥 주는데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 17,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:1cca3256ade9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:a7e704335c6d:1": {
+      "id": "v4:32:F-SA01-01:e:a7e704335c6d:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "아니.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 15,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:64f9300e4f74:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:8047b70340d9:1": {
+      "id": "v4:32:F-SA01-01:e:8047b70340d9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 키우는 애야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 13,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:a7e704335c6d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:c8d29d2b846f:1": {
+      "id": "v4:32:F-SA01-01:e:c8d29d2b846f:1",
+      "type": "stage",
+      "direction": "미오는 멈춘다. 담 아래 그림자에서 턱밑이 흰 고양이가 나온다. 사츠키 앞에 놓인 작은 그릇으로 간다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 11,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:8047b70340d9:1"
+    },
+    "v4:32:F-SA01-01:e:dccacf2d105c:1": {
+      "id": "v4:32:F-SA01-01:e:dccacf2d105c:1",
+      "type": "say",
+      "speaker": "사츠키",
+      "actor": "satsuki",
+      "text": "잠깐.",
+      "mono": false,
+      "delivery": "사츠키",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 9,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:c8d29d2b846f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "사츠키",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:32:F-SA01-01:e:a44b7a833e2c:1": {
+      "id": "v4:32:F-SA01-01:e:a44b7a833e2c:1",
+      "type": "stage",
+      "direction": "호텔 뒤뜰. 사츠키가 낮은 담 아래를 보고 앉아 있다. 미오가 뒤에서 부르자 사츠키가 손가락 하나를 든다.",
+      "source": {
+        "file": "32_자유시간_사츠키_01.md",
+        "line": 7,
+        "fileSha256": "28d53ef7492be38a12577e61adea967b6360db139175031fd18fc9cf5e4d3845",
+        "heading": "F-SA01-01 낮은 담 옆",
+        "location": "F-SA01-01"
+      },
+      "next": "v4:32:F-SA01-01:e:dccacf2d105c:1"
+    }
+  },
+  "kind": "freetime",
+  "routingStatus": "authored_simple_convergence",
+  "sourceFile": "32_자유시간_사츠키_01.md",
+  "completionFlag": "fte:32:complete",
+  "eligibility": "Caller must enforce the exact manuscript day/time and prior-meeting requirements. No caller may auto-play every library file.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "32_자유시간_사츠키_01.md:F-SA01-06": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-05": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-04a": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-02": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "32_자유시간_사츠키_01.md:F-SA01-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

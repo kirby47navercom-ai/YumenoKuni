@@ -1,0 +1,5120 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:147:h-b5a2e5989a:e:0c93ab5fdab9:1",
+  "nodes": {
+    "v4:27:return:late:147": {
+      "id": "v4:27:return:late:147",
+      "type": "return"
+    },
+    "v4:27:F-RE01-06:e:bba9c1250ff6:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:bba9c1250ff6:1:late:147",
+      "type": "stage",
+      "direction": "미오가 손을 한번 편다. 천을 쥐었던 자리를 손가락으로 문지른다. 방금 닦은 앞면이 유리 너머로 보인다. 더 손대려고 돌아가지는 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 395,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:return:late:147"
+    },
+    "v4:27:F-RE01-06:e:3e59c1d90721:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:3e59c1d90721:1:late:147",
+      "type": "stage",
+      "direction": "미오가 유리문에서 손을 뗀다. 닦는 천도 양동이도 만지지 않고 한동안 곁에 있었다. 밖으로 나와서야 자기가 오늘 아무 일도 하지 않았다고 말하면 레이와 주고받은 말까지 빠지는 것 같아진다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 399,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:return:late:147"
+    },
+    "v4:27:hands-after-B:late:147": {
+      "id": "v4:27:hands-after-B:late:147",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-RE01-B",
+          "equals": "B2",
+          "to": "v4:27:F-RE01-06:e:bba9c1250ff6:1:late:147"
+        }
+      ],
+      "default": "v4:27:F-RE01-06:e:3e59c1d90721:1:late:147"
+    },
+    "v4:27:hands:late:147": {
+      "id": "v4:27:hands:late:147",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-RE01-A",
+          "equals": "A1",
+          "to": "v4:27:F-RE01-06:e:bba9c1250ff6:1:late:147"
+        }
+      ],
+      "default": "v4:27:hands-after-B:late:147"
+    },
+    "v4:27:F-RE01-06:e:119f02d28f8c:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:119f02d28f8c:1:late:147",
+      "type": "stage",
+      "direction": "미오는 정원 밖으로 나온다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 391,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:hands:late:147"
+    },
+    "v4:27:F-RE01-06:e:17915cdbe7ed:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:17915cdbe7ed:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그럼 오늘은 이만하죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 389,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:119f02d28f8c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-06:e:590369cb1993:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:590369cb1993:1:late:147",
+      "type": "stage",
+      "direction": "레이가 미오를 본다. 미오는 웃고, 레이는 한 박자 뒤에 짧게 숨을 내쉰다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 387,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:17915cdbe7ed:1:late:147"
+    },
+    "v4:27:F-RE01-06:e:f5997406677b:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:f5997406677b:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금도.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 385,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:590369cb1993:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-06:e:df2ad1d572e9:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:df2ad1d572e9:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "불편하십니까?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 383,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:f5997406677b:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-06:e:163814b03acd:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:163814b03acd:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "레이. 너 가끔 별로 대단하지 않은 것도 되게 정식으로 물어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 381,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:df2ad1d572e9:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-06:e:a67aac6b2613:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:a67aac6b2613:1:late:147",
+      "type": "stage",
+      "direction": "미오는 필요한 경로에서는 받아 손을 닦고 돌려준다. 안 쓰겠다고 하면 레이는 그대로 접어 넣는다. 손수건의 수락이 친밀도의 유일한 정답은 아니다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 379,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:163814b03acd:1:late:147"
+    },
+    "v4:27:F-RE01-06:e:fc39efb80ecc:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:fc39efb80ecc:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "필요합니까?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 377,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:a67aac6b2613:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-06:e:47f626e03423:1:late:147": {
+      "id": "v4:27:F-RE01-06:e:47f626e03423:1:late:147",
+      "type": "stage",
+      "direction": "헤어지기 전 레이가 손수건을 꺼낸다. 자기 손을 닦는다.실제로 닦는 일을 함께 한A1 또는B2의 미오는 손이 젖었고,레이가 그쪽을 본다.A2/A3 뒤B1/B3에서는 미오의 손이 젖었다고 새로 쓰지 않는다.레이는 손수건을 바로 건네지 않고 묻는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 375,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-06 닦은 손",
+        "location": "F-RE01-06"
+      },
+      "next": "v4:27:F-RE01-06:e:fc39efb80ecc:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:53255484d338:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:53255484d338:1:late:147",
+      "type": "stage",
+      "direction": "레이는 미오의 불편함을 고쳐 주려 일어나지 않는다. 둘은 잠시 완성되지 않은 정원 앞에 앉아 있는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 335,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-06:e:47f626e03423:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:fcb13b85b130:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:fcb13b85b130:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 지금도 그래. 그래도 그만할래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 333,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:53255484d338:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:865779f850dc:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:865779f850dc:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "남겨 두면 신경 쓰일 거라고 하신 분도 미오 씨였습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 331,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:fcb13b85b130:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:322e81e39319:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:322e81e39319:1:late:147",
+      "type": "stage",
+      "direction": "레이가 화분을 원래 방향으로 돌린다. 두 사람은 벤치에 앉는다. 옆줄은 여전히 먼지가 있다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 329,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:865779f850dc:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:8176b3b21cc0:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:8176b3b21cc0:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 내일 보면 되지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 327,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:322e81e39319:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:cbb37dd43d45:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:cbb37dd43d45:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "뒷면은 남았지만요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 325,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:8176b3b21cc0:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:7e27f8d017f0:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:7e27f8d017f0:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "됐어. 네가 앉으려던 자리도 보이잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 323,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:cbb37dd43d45:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:4881324f9724:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:4881324f9724:1:late:147",
+      "type": "stage",
+      "direction": "작업 뒤 미오는 레이에게 어디까지 했는지 물으면 똑같이 답해 달라고 말한다. 레이는 앞면만 닦았다고 적어 붙일 필요까지는 없다고 한다. 둘은 과시할 성과를 만들지는 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 349,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-06:e:47f626e03423:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:c21147b1c607:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:c21147b1c607:1:late:147",
+      "type": "stage",
+      "direction": "레이는 새 천을 짠다. 미오도 이번 경로에서는 함께 앞면을 닦는다. 처음에 구경만 하겠다고 했던 선택 A2/A3 경로에서는 미오가 지금 마음을 바꾸었다고 직접 말하고 천을 받는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 347,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:4881324f9724:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:72f2d0a1b3d1:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:72f2d0a1b3d1:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 여기까지만 했다고 말하면 되지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 345,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:c21147b1c607:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:31812ff7efc3:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:31812ff7efc3:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "보이는 데만 고르면, 다른 분도 다 끝난 줄 알겠군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 343,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:72f2d0a1b3d1:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:f05c70ba38d4:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:f05c70ba38d4:1:late:147",
+      "type": "stage",
+      "direction": "레이가 미오를 본다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 341,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:31812ff7efc3:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:56aa08d72c3e:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:56aa08d72c3e:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "옆줄 앞만 하면 다 깨끗해 보여. 안쪽까지 하는 건 다음에 하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 339,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:f05c70ba38d4:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:be565e3e52e6:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:be565e3e52e6:1:late:147",
+      "type": "stage",
+      "direction": "미오는 다음 약속으로 받아 적지 않고 떠날 준비를 한다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 369,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-06:e:47f626e03423:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:eed1f5109621:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:eed1f5109621:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "오늘은 조금 더 있겠습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 367,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:be565e3e52e6:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:8a724e5f2d1a:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:8a724e5f2d1a:1:late:147",
+      "type": "stage",
+      "direction": "레이가 대답을 고른다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 365,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:eed1f5109621:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:e2644234d094:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:e2644234d094:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다음에도 네가 있을 거라는 뜻이야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 363,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:8a724e5f2d1a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:df627586dc11:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:df627586dc11:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "다음에 같은 자리에 앉아도 됩니다. 깨끗한지는 제가 먼저 확인할 테니.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 361,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:e2644234d094:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:9a323ae4e671:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:9a323ae4e671:1:late:147",
+      "type": "stage",
+      "direction": "미오가 천을 썼던 경로에서는 빨아 짜서 양동이 옆에 둔다. 쓰지 않았던 경로에서는 양동이를 건드리지 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 359,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:df627586dc11:1:late:147"
+    },
+    "v4:27:F-RE01-B:e:65e260053cd3:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:65e260053cd3:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 나 잡은 건 아니야. 내가 더 물어봤지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 357,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:9a323ae4e671:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:e0a60c7d0bc5:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:e0a60c7d0bc5:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "쉬시러 오신 거였죠. 붙잡은 셈이 됐군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 355,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:65e260053cd3:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:e:3a8b92c5e541:1:late:147": {
+      "id": "v4:27:F-RE01-B:e:3a8b92c5e541:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기까지 할래. 너는 더 하고 싶으면 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 353,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "next": "v4:27:F-RE01-B:e:e0a60c7d0bc5:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-B:menu:late:147": {
+      "id": "v4:27:F-RE01-B:menu:late:147",
+      "type": "menu",
+      "q": "끝낼 자리",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 319,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-B — 끝낼 자리",
+        "location": "F-RE01-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "처음 정한 한 줄에서 끝내자고 한다.",
+          "to": "v4:27:F-RE01-B:e:7e27f8d017f0:1:late:147",
+          "set": {
+            "F-RE01-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "보이는 앞면만 옆줄까지 닦자고 제안한다.",
+          "to": "v4:27:F-RE01-B:e:56aa08d72c3e:1:late:147",
+          "set": {
+            "F-RE01-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "레이가 하고 싶은 만큼 하게 두고 먼저 간다.",
+          "to": "v4:27:F-RE01-B:e:3a8b92c5e541:1:late:147",
+          "set": {
+            "F-RE01-B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:27:F-RE01-05:e:ecf2daac21e2:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:ecf2daac21e2:1:late:147",
+      "type": "stage",
+      "direction": "레이는 한동안 천을 든 채 서 있다가 양동이에 내려놓는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 317,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-B:menu:late:147"
+    },
+    "v4:27:F-RE01-05:e:e504d8d8602a:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:e504d8d8602a:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 나한테 가르친 게 아니라 네가 한 말이야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 315,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:ecf2daac21e2:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-05:e:919768679459:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:919768679459:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제 말을 빨리 배우시는군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 313,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:e504d8d8602a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-05:e:341d9dfe5a59:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:341d9dfe5a59:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "끝낼 위치 정하라던 사람이 누구였지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 311,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:919768679459:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-05:e:e7e03505f673:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:e7e03505f673:1:late:147",
+      "type": "stage",
+      "direction": "레이가 옆줄을 본다. 말이 끊긴다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 309,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:341d9dfe5a59:1:late:147"
+    },
+    "v4:27:F-RE01-05:e:40bbc18ab4ce:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:40bbc18ab4ce:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "저쪽도 돌리면 보일걸.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 307,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:e7e03505f673:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-05:e:2dc81da3fdd1:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:2dc81da3fdd1:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "이쪽은 돌리면 보입니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 305,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:40bbc18ab4ce:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-05:e:a24f6728028c:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:a24f6728028c:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "앉는 데 보이는 데만 한다며.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 303,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:2dc81da3fdd1:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-05:e:d99004eee7ba:1:late:147": {
+      "id": "v4:27:F-RE01-05:e:d99004eee7ba:1:late:147",
+      "type": "stage",
+      "direction": "한 줄의 마지막 화분이다. 미오는 레이가 안쪽의 보이지 않는 잎까지 닦으려는 것을 본다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 301,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-05 적당히 해도 되는 일",
+        "location": "F-RE01-05"
+      },
+      "next": "v4:27:F-RE01-05:e:a24f6728028c:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:0dae4ac1d5af:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:0dae4ac1d5af:1:late:147",
+      "type": "stage",
+      "direction": "레이는 외부 주문 방법을 알아내겠다거나자기가곧나가게해주겠다고약속하지않는다.접었던천을다시펴고미오앞의마지막화분을본다.자기방의탁자는여기에없다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 297,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-05:e:d99004eee7ba:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:9cf918c1efe9:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:9cf918c1efe9:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 295,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:0dae4ac1d5af:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:8ead46fec1e5:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:8ead46fec1e5:1:late:147",
+      "type": "stage",
+      "direction": "레이가 말하고 나서야 정원 밖을 본다.호텔의 유리문이 보인다.방에 둘 물건을 고르는 이야기가,집으로 연락할 수도 없는 곳에서 끝난다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 293,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:9cf918c1efe9:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:af43a896fcd2:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:af43a896fcd2:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "지금은 살 곳도 없군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 291,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:8ead46fec1e5:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:d896a31cd8e9:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:d896a31cd8e9:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 안 살 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 289,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:af43a896fcd2:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:4e213a8d628c:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:4e213a8d628c:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "원하신다면 작은 것부터 말씀드릴 수는 있습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 287,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:d896a31cd8e9:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:2bbf3367be68:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:2bbf3367be68:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나중에 남한테 물건 추천은 하지 마. 마지막에 집 하나 남아 있어야 끝날 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 285,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:4e213a8d628c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:5b976891b75f:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:5b976891b75f:1:late:147",
+      "type": "stage",
+      "direction": "그 평범한 말이 지금은 이상한 뜻으로 들리지 않는다.레이의 능력을 본 적도 없고 물어본 적도 없는 미오에게는,그저 집 안에 탁자가 여럿 있는 사람의 대답이다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 283,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:2bbf3367be68:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:2d365d429f03:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:2d365d429f03:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "원래 두었습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 281,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:5b976891b75f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a53b9ea49d7b:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a53b9ea49d7b:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "탁자는 하나 더 있었네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 279,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:2d365d429f03:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:c9d29b8684fe:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:c9d29b8684fe:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "컵을 놓으려고 방을 새로 산 건 아니니 그만 웃으시죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 277,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a53b9ea49d7b:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:52caf1b1ba6f:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:52caf1b1ba6f:1:late:147",
+      "type": "stage",
+      "direction": "미오가 참지 못하고 웃는다.레이가 고개를 돌린다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 275,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:c9d29b8684fe:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:5a2aaee480a1:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:5a2aaee480a1:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "옆의 작은 탁자요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 273,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:52caf1b1ba6f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:6396d12cf28f:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:6396d12cf28f:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어디였는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 271,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:5a2aaee480a1:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:11bce927c9c7:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:11bce927c9c7:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "바닥은 아니었습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 269,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:6396d12cf28f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:d53648becbb9:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:d53648becbb9:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 나랑 같은 거 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 267,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:11bce927c9c7:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:f3e16578a3f8:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:f3e16578a3f8:1:late:147",
+      "type": "stage",
+      "direction": "잠깐 조용해진다.미오가 레이를 본다.레이는 들고 있던 잎만 본다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 265,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:d53648becbb9:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:d7898033221e:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:d7898033221e:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "다른 데 놓았죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 263,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:f3e16578a3f8:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a8aac1f4796c:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a8aac1f4796c:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 컵은.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 261,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:d7898033221e:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:30011f58b46b:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:30011f58b46b:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "놓았습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 259,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a8aac1f4796c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:f7cae7e8df10:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:f7cae7e8df10:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 맞아. 네 것도 종이 더 놓고 싶지 않았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 257,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:30011f58b46b:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:2be7ae9888ca:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:2be7ae9888ca:1:late:147",
+      "type": "stage",
+      "direction": "미오가 웃는다.부정하려고 입을 열었다가 도로 닫는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 255,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:f7cae7e8df10:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:176a2eefd40a:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:176a2eefd40a:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "넓어진 데에도 종이를 놓으실 것 같습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 253,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:2be7ae9888ca:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a08b1c4f2aeb:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a08b1c4f2aeb:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜. 넓으면 올려 둘 수 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 251,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:176a2eefd40a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:1e64037c2db1:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:1e64037c2db1:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그건……탁자를 넓히셔도 해결이 안 되겠군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 249,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a08b1c4f2aeb:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a324e403dc25:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a324e403dc25:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 247,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:1e64037c2db1:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:960d0d4e0329:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:960d0d4e0329:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "물컵을요?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 245,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a324e403dc25:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:ff9c3409846f:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:ff9c3409846f:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 그랬어. 그래서 바닥에 뒀다가 발로 찼고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 243,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:960d0d4e0329:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:560ebde64ee0:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:560ebde64ee0:1:late:147",
+      "type": "stage",
+      "direction": "미오는 대답 대신 자기 무릎 위의 손을 본다.책상에 펼친 것만 전부 중요하다고 우기며 다른 물건을 바닥에 내려놨던 날이 떠오른다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 241,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:ff9c3409846f:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:fb245b0107bc:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:fb245b0107bc:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그 종이도 제가 보고 싶은 겁니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 239,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:560ebde64ee0:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:20c011ac6628:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:20c011ac6628:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "종이를 옮기면 안 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 237,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:fb245b0107bc:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:197d74fdb33a:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:197d74fdb33a:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "크기 문제가 아니었어요. 앞에 놓을 종이가 있고, 같이 놓을 책이 있고. 가장자리에 놓으면 제가 팔로 칩니다. 멀리 놓으면 다시 일어나야 하고.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 235,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:20c011ac6628:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a5945cca7a68:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a5945cca7a68:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "큰 탁자인데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 233,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:197d74fdb33a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:ddb3859adb84:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:ddb3859adb84:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "물컵을 내려놓을 자리가 자꾸 없었습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 231,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a5945cca7a68:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a83a5195abda:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a83a5195abda:1:late:147",
+      "type": "stage",
+      "direction": "레이가 미오를 본다.미오는 이번에는 놀리려고 웃지 않는다.말이 길어지면 자기가 앉아 듣겠다는 준비까지 해 놓은 얼굴이다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 229,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:ddb3859adb84:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:8431874241d4:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:8431874241d4:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 재밌어서. 너는 탁자 하나를 왜 그렇게 오래 골라.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 227,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a83a5195abda:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:608ceb485fd1:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:608ceb485fd1:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "물건 소개를 더 들으면 제 경우가 덜 답답해집니까?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 225,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:8431874241d4:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:612f176b9724:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:612f176b9724:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 그래서 네가 고른 거 더 얘기해 줘. 나는 그 집에 가 본 적도 없는데 벌써 아는 척 물었잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 223,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:608ceb485fd1:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:018dd48687f6:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:018dd48687f6:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제 경우만 생각했군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 221,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:612f176b9724:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:5410a83cde82:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:5410a83cde82:1:late:147",
+      "type": "stage",
+      "direction": "레이가 천 끝을 고르게 접는다.미오에게 가난하냐고 묻거나,자기가 대신 사 주겠다고 하지 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 219,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:018dd48687f6:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:5a6bea2baa11:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:5a6bea2baa11:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이미 그렇게 살고 있는데 네가 방법처럼 알려 주니까 웃겨.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 217,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:5410a83cde82:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:74e3de5aff2d:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:74e3de5aff2d:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그때는 고르지 않으시면 됩니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 215,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:5a6bea2baa11:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:90347596deac:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:90347596deac:1:late:147",
+      "type": "stage",
+      "direction": "레이가 입을 다문다.미오는 웃으려다 웃지 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 213,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:74e3de5aff2d:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:e4ee29987664:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:e4ee29987664:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다른 데도 다 비싸면.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 211,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:90347596deac:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:2a0afcc51740:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:2a0afcc51740:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그런 곳이면 다른 데서 사시면 됩니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 209,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:e4ee29987664:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:47c23948ebb7:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:47c23948ebb7:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 살 거라고 먼저 말하기 싫어서. 구경만 하다 나올 수도 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 207,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:2a0afcc51740:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:deba456b0e44:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:deba456b0e44:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "앉아서 망가질 의자를 살 생각도 없으시겠죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 205,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:47c23948ebb7:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:0d616b12a012:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:0d616b12a012:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 비싸면 앉지도 않을 것 같아. 떨어뜨리거나 눌러서 망가뜨리면 어떡해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 203,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:deba456b0e44:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:c3eb699254fd:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:c3eb699254fd:1:late:147",
+      "type": "stage",
+      "direction": "미오는 가게에서 마음에 드는 의자에 앉으려다가 가격표를 먼저 보았던 기억을 떠올린다.레이가 그것까지 같은 순서로 보았을 거라고는 생각하기 어렵다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 201,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:0d616b12a012:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:978f2df6c08c:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:978f2df6c08c:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제 물건을 고르러 가서 남이 앉은 사진만 보고 나오면, 그편이 더 이상하지 않습니까.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 199,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:c3eb699254fd:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:4415d8326754:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:4415d8326754:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그렇게 물어보면 내가 이상해지잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 197,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:978f2df6c08c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:12c6ac49416d:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:12c6ac49416d:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "앉으라고 둔 의자에 앉았는데요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 195,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:4415d8326754:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:a0c1f5af382d:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:a0c1f5af382d:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "직원이 이상하게 보지 않았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 193,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:12c6ac49416d:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:5c10278f6c77:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:5c10278f6c77:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "앉아 봤습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 191,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:a0c1f5af382d:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:39541099eef5:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:39541099eef5:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그걸 가게에서 다 봤어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 189,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:5c10278f6c77:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:8f6cb97dbd35:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:8f6cb97dbd35:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "보통은 가로와 세로만 보시는데, 안쪽에 받침이 어디 있는지도 중요합니다. 가운데 기둥 하나면 다리를 놓기 편한 자리와 불편한 자리가 달라지고요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 187,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:39541099eef5:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:3804958e40df:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:3804958e40df:1:late:147",
+      "type": "stage",
+      "direction": "레이가 벤치 아래의 빈 공간을 가리킨다.여기에 새 탁자가 있다는 뜻은 아니며,다리가 들어갈 자리를 설명하고 있다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 185,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:8f6cb97dbd35:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:c7acbcd80de9:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:c7acbcd80de9:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "앉고 나서 매번 걸리는 것보다는 낫습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 183,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:3804958e40df:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:7e49a7b7d5fb:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:7e49a7b7d5fb:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "앉을 때마다 보는 건 아니잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 181,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:c7acbcd80de9:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:45d150217b02:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:45d150217b02:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "아니요. 의자를 넣었을 때 다리가 어디 걸리는지도 봐야죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 179,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:7e49a7b7d5fb:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:ab5e94f215f4:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:ab5e94f215f4:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런데 모서리가 둥글면 다 괜찮은 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 177,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:45d150217b02:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:16b46302a938:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:16b46302a938:1:late:147",
+      "type": "stage",
+      "direction": "미오가 뜻밖에 웃음을 터뜨린다. 레이는 웃지 않지만 다시 잎을 든다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 175,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:ab5e94f215f4:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:23cb992add63:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:23cb992add63:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "비싸기는 했습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 173,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:16b46302a938:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:23b07dac4492:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:23b07dac4492:1:late:147",
+      "type": "stage",
+      "direction": "미오가 대답하지 못한다. 레이가 천을 접는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 171,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:23cb992add63:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:e33736839a54:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:e33736839a54:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "무척 비싼 물건을 골랐다고 하면 더 자연스럽겠군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 169,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:23b07dac4492:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:0fd765a91f69:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:0fd765a91f69:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 내가 듣고 싶은 답이 따로 있었나 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 167,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:e33736839a54:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:8bb4947a395a:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:8bb4947a395a:1:late:147",
+      "type": "stage",
+      "direction": "미오는 잠시 입을 다문다. 레이는 혼내려는 얼굴이 아니다. 정말로 자기 선택을 설명했는데 다른 답을 요구받아 불쾌한 표정이다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 165,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:0fd765a91f69:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:8fd698010d8a:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:8fd698010d8a:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그 선택이 덜 제 취향입니까?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 163,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:8bb4947a395a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:d2b1ef330256:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:d2b1ef330256:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그거 말고 모양이나 색.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 161,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:8fd698010d8a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:7b3a29d3e8b3:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:7b3a29d3e8b3:1:late:147",
+      "type": "stage",
+      "direction": "미오가 웃는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 159,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:d2b1ef330256:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:7c0670594122:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:7c0670594122:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "모서리가 덜 날카로운 쪽으로.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 157,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:7b3a29d3e8b3:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:6ac32a780a8e:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:6ac32a780a8e:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어떻게?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 155,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:7c0670594122:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:c64265ca783d:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:c64265ca783d:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제 방의 탁자는 골랐어요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 153,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:6ac32a780a8e:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:d3bf5c89c5ba:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:d3bf5c89c5ba:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 네가 고른 건 뭔데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 151,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:c64265ca783d:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:1d2527e639ce:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:1d2527e639ce:1:late:147",
+      "type": "stage",
+      "direction": "미오는 레이의 집을 구경한 적 없다. 지금 레이가 고른 말만 들었다. 몇 마디 듣고 그 집까지 안다고 생각했던 것을 알아차린다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 149,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:d3bf5c89c5ba:1:late:147"
+    },
+    "v4:27:F-RE01-04:e:02e46bfbf650:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:02e46bfbf650:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제가 고르지 않은 것도 많습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 147,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:1d2527e639ce:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:52377e98c839:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:52377e98c839:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 집인데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 145,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:02e46bfbf650:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:9da10ac1c26c:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:9da10ac1c26c:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "정원은 있습니다. 이 잎이 있는지는 모르겠군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 143,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:52377e98c839:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-04:e:0b69186d14df:1:late:147": {
+      "id": "v4:27:F-RE01-04:e:0b69186d14df:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너희 집에도 이런 거 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 141,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-04 집에 있던 정원",
+        "location": "F-RE01-04"
+      },
+      "next": "v4:27:F-RE01-04:e:9da10ac1c26c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:15f040401c52:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:15f040401c52:1:late:147",
+      "type": "stage",
+      "direction": "레이가 고개를 끄덕인다. 그것을 사람들이 멍청해서라고 설명하지 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 137,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-04:e:0b69186d14df:1:late:147"
+    },
+    "v4:27:F-RE01-03:e:0ff2a4dd4db2:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:0ff2a4dd4db2:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런데 가까이 볼 일이 없었어. 그냥 정원이라고 생각했지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 135,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:15f040401c52:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:72cbe77b7830:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:72cbe77b7830:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "가까이 보시면 대개는 압니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 133,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:0ff2a4dd4db2:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:a8d49703253a:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:a8d49703253a:1:late:147",
+      "type": "stage",
+      "direction": "레이는 대답 대신 닦은 잎을 비춘다. 먼지가 걷히자 비닐 같은 빛이 조금 더 뚜렷하다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 131,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:72cbe77b7830:1:late:147"
+    },
+    "v4:27:F-RE01-03:e:51b8b159df88:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:51b8b159df88:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 섞인 건 몰랐는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 129,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:a8d49703253a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:42c6a228272f:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:42c6a228272f:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "다들 진짜 정원을 원하니까요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 127,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:51b8b159df88:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:bdfa3e7d5138:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:bdfa3e7d5138:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 다 가짜로 하면 안 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 125,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:42c6a228272f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:a5acca5390af:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:a5acca5390af:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "전부 진짜로 놓으면 상태가 고르지 않죠. 일 년 내내 잎이 같은 것도 아니고요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 123,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:bdfa3e7d5138:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:357f3d00b74e:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:357f3d00b74e:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 진짜하고 가짜를 섞어 놨지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 121,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:a5acca5390af:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:968d66211068:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:968d66211068:1:late:147",
+      "type": "stage",
+      "direction": "미오가 발을 멈춘다. 벌레는 유리 지붕 쪽으로 간다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 119,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:357f3d00b74e:1:late:147"
+    },
+    "v4:27:F-RE01-03:e:77bbf75ece02:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:77bbf75ece02:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "양동이 밟습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 117,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:968d66211068:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-03:e:a717c5efc311:1:late:147": {
+      "id": "v4:27:F-RE01-03:e:a717c5efc311:1:late:147",
+      "type": "stage",
+      "direction": "실제 화분이 섞인 옆줄에서 작은 날벌레가 나온다. 미오가 손을 저으며 몸을 피한다. 레이는 잎을 놓고 미오의 발밑을 본다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 115,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-03 옆줄의 벌레",
+        "location": "F-RE01-03"
+      },
+      "next": "v4:27:F-RE01-03:e:77bbf75ece02:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:4576e3e3b68a:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:4576e3e3b68a:1:late:147",
+      "type": "stage",
+      "direction": "미오가 잎을 다시 꽂는다. 진짜였으면 어땠을지 혼날 줄 알았는데 레이는 다음 잎을 건넨다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 75,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-03:e:a717c5efc311:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:1b426eb6ec86:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:1b426eb6ec86:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "이건 나무가 아니니 지금의 해결을 하시죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 73,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:4576e3e3b68a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:90c52857e056:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:90c52857e056:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나무였으면 못 돌려놓네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 71,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:1b426eb6ec86:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:fcf81333d0be:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:fcf81333d0be:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "꽂혀 있는 겁니다. 다시 넣을 수 있어요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 69,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:90c52857e056:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:fb40660e0c92:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:fb40660e0c92:1:late:147",
+      "type": "stage",
+      "direction": "레이가 빠진 잎을 본다. 미오가 부러뜨렸는지 살피는 동안 기다린다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 67,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:fcf81333d0be:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:f94482aa451f:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:f94482aa451f:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 65,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:fb40660e0c92:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:ad4e4296aa30:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:ad4e4296aa30:1:late:147",
+      "type": "stage",
+      "direction": "레이가 여분 천을 건넨다. 미오는 소매를 걷고 물을 짠다. 첫 잎을 세게 잡아 줄기에서 빠뜨린다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 63,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:f94482aa451f:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:5dd1b034e59c:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:5dd1b034e59c:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "걷으면 되지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 61,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:ad4e4296aa30:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:274987e7d847:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:274987e7d847:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "소매 젖습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 59,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:5dd1b034e59c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:c56d40afad5c:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:c56d40afad5c:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "천 하나 더 있어? 나는 이쪽 할게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 57,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:274987e7d847:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:9c0dafeeb2aa:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:9c0dafeeb2aa:1:late:147",
+      "type": "stage",
+      "direction": "레이가 미오를 본다. 누구인지 묻지 않고 양동이를 자기 발 쪽으로 옮긴다. 미오가 벤치에 앉아 있기 위해 계속 사과할 필요는 없어진다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 91,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-03:e:a717c5efc311:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:8573fa2b705f:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:8573fa2b705f:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 사람도 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 89,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:9c0dafeeb2aa:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:af3772e5ff9f:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:af3772e5ff9f:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제가 일을 시작하면 옆에 앉은 사람은 전부 일해야 합니까?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 87,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:8573fa2b705f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:1beb2b84964d:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:1beb2b84964d:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 도와주면 내가 불편할 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 85,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:af3772e5ff9f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:4162892e140e:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:4162892e140e:1:late:147",
+      "type": "stage",
+      "direction": "미오가 멋쩍게 시선을 돌린다. 레이는 천을 헹구고 자기 작업을 계속한다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 83,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:1beb2b84964d:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:93d712424e8f:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:93d712424e8f:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "아직 부탁하지 않았습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 81,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:4162892e140e:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:71ab39736bd4:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:71ab39736bd4:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 앉아 있을래. 도와달라는 말은 하지 마.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 79,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:93d712424e8f:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:1eeb96d3e444:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:1eeb96d3e444:1:late:147",
+      "type": "stage",
+      "direction": "미오는 그 말이 맞는지 생각하며 벤치에 더 깊이 앉는다. 레이는 자기 줄을 끝내고 나서도 미오가 일을 거부한 데 대해 평가하지 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 109,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-03:e:a717c5efc311:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:4f34acb9c522:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:4f34acb9c522:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "안 닦아 두면 제가 눈에 거슬립니다. 이것까지 남이 정하게 두고 싶지는 않군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 107,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:1eeb96d3e444:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:46c149a93a99:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:46c149a93a99:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런데도 할 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 105,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:4f34acb9c522:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:7f56639e1c13:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:7f56639e1c13:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그럴 수도 있겠군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 103,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:46c149a93a99:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:863916aac34c:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:863916aac34c:1:late:147",
+      "type": "stage",
+      "direction": "레이가 닦던 손을 멈춘다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 101,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:7f56639e1c13:1:late:147"
+    },
+    "v4:27:F-RE01-A:e:a74e238925d7:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:a74e238925d7:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 없으니까. 우리가 하게 만들려고 놔둔 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 99,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:863916aac34c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:43b269b0d9f5:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:43b269b0d9f5:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "관리하는 분을 만나면 그렇게 말씀하시죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 97,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:a74e238925d7:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:e:2dda269b3f29:1:late:147": {
+      "id": "v4:27:F-RE01-A:e:2dda269b3f29:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 여기 관리하는 사람이 해야 하는 거 아냐?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 95,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "next": "v4:27:F-RE01-A:e:43b269b0d9f5:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-A:menu:late:147": {
+      "id": "v4:27:F-RE01-A:menu:late:147",
+      "type": "menu",
+      "q": "옆에 있는 일",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 53,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "선택 F-RE01-A — 옆에 있는 일",
+        "location": "F-RE01-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "한 줄을 함께 닦는다.",
+          "to": "v4:27:F-RE01-A:e:c56d40afad5c:1:late:147",
+          "set": {
+            "F-RE01-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "앉아서 구경만 하겠다고 한다.",
+          "to": "v4:27:F-RE01-A:e:71ab39736bd4:1:late:147",
+          "set": {
+            "F-RE01-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "호텔 일을 직접 해야 하는 게 이상하다고 말한다.",
+          "to": "v4:27:F-RE01-A:e:2dda269b3f29:1:late:147",
+          "set": {
+            "F-RE01-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:27:F-RE01-02:e:a53810c1de9b:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:a53810c1de9b:1:late:147",
+      "type": "stage",
+      "direction": "말은 쉬운데 미오는 자기가 책상 한쪽을 정리하다 서랍까지 전부 꺼내 놓고 포기했던 일을 떠올린다. 레이가 같은 일을 하지 않는다고 약간 얄미워진다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 51,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-A:menu:late:147"
+    },
+    "v4:27:F-RE01-02:e:59d29b770244:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:59d29b770244:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "끝낼 위치를 정하고 시작하면 됩니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 49,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:a53810c1de9b:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-02:e:908600fc4847:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:908600fc4847:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 중간에서 끊기잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 47,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:59d29b770244:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-02:e:1dedffad699c:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:1dedffad699c:1:late:147",
+      "type": "stage",
+      "direction": "미오가 옆줄을 본다. 닦인 곳과 닦이지 않은 곳이 더 뚜렷해질 것 같다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 45,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:908600fc4847:1:late:147"
+    },
+    "v4:27:F-RE01-02:e:65812cf50933:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:65812cf50933:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제가 지금 여기에 앉을 거라서요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 43,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:1dedffad699c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-02:e:4edf206d65df:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:4edf206d65df:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "옆에 똑같이 더러운데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 41,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:65812cf50933:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-02:e:286f4d5f585c:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:286f4d5f585c:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "여기 줄만요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 39,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:4edf206d65df:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-02:e:b60cc2a467bd:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:b60cc2a467bd:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이쪽도 다 할 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 37,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:286f4d5f585c:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-02:e:7576c6668cc7:1:late:147": {
+      "id": "v4:27:F-RE01-02:e:7576c6668cc7:1:late:147",
+      "type": "stage",
+      "direction": "레이가 미오 쪽의 잎을 닦으려다 손이 닿지 않자 몸을 조금 기울인다. 미오가 옆으로 비켜 준다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 35,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-02 보이는 범위",
+        "location": "F-RE01-02"
+      },
+      "next": "v4:27:F-RE01-02:e:b60cc2a467bd:1:late:147"
+    },
+    "v4:27:F-RE01-01:e:35e27b7e6a2e:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:35e27b7e6a2e:1:late:147",
+      "type": "stage",
+      "direction": "레이 옆 벤치는 비어 있다. 미오는 천천히 앉는다. 레이는 먼저 앉으라고 권하지 않는다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 31,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-02:e:7576c6668cc7:1:late:147"
+    },
+    "v4:27:F-RE01-01:e:45c46cb89889:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:45c46cb89889:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "아니요. 앉으려는데 눈에 보여서요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 29,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:35e27b7e6a2e:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:1ae398ec5d8c:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:1ae398ec5d8c:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "부탁받았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 27,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:45c46cb89889:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:9c59ad04565d:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:9c59ad04565d:1:late:147",
+      "type": "stage",
+      "direction": "미오는 물을 잘못 줬다 민망해서 둘러대는 것인지 한번 더 본다. 물뿌리개는 없다. 작은 양동이에 천을 헹군 흔적만 있다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 25,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:1ae398ec5d8c:1:late:147"
+    },
+    "v4:27:F-RE01-01:e:8ed9bd063045:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:8ed9bd063045:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "먼지가 있으면 닦을 수 있으니까요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 23,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:9c59ad04565d:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:a3bfaa477c79:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:a3bfaa477c79:1:late:147",
+      "type": "stage",
+      "direction": "레이는 손에 든 천을 접어 깨끗한 면을 바깥으로 돌린다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 21,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:8ed9bd063045:1:late:147"
+    },
+    "v4:27:F-RE01-01:e:0f9d0989f17a:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:0f9d0989f17a:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그걸 왜 닦아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 19,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:a3bfaa477c79:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:92fd420aef76:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:92fd420aef76:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그렇습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 17,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:0f9d0989f17a:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:f3b75b288407:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:f3b75b288407:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가짜네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 15,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:92fd420aef76:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:06feea96c032:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:06feea96c032:1:late:147",
+      "type": "stage",
+      "direction": "미오가 잎을 가까이 본다. 매끈한 표면과 일정한 잎맥이다. 만지면 진짜가 아니라는 것을 알 수 있지만 멀리서는 자연스럽다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 13,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:f3b75b288407:1:late:147"
+    },
+    "v4:27:F-RE01-01:e:143f2438d952:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:143f2438d952:1:late:147",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "이쪽은 물 줄 필요 없습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 11,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:06feea96c032:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:110c79dcb89b:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:110c79dcb89b:1:late:147",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "물 주는 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 9,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:143f2438d952:1:late:147",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:27:F-RE01-01:e:53f313b70a33:1:late:147": {
+      "id": "v4:27:F-RE01-01:e:53f313b70a33:1:late:147",
+      "type": "stage",
+      "direction": "호텔 옆 실내 정원. 유리 지붕 아래 화분들이 줄지어 있다. 레이가 젖은 천으로 큰 잎을 닦는다. 미오는 그 모습을 보고 걸음을 늦춘다.",
+      "source": {
+        "file": "27_자유시간_레이_01.md",
+        "line": 7,
+        "fileSha256": "04eedc56902b880dd07b6672988ad04431d79eb347039787349efc71a91efe55",
+        "heading": "F-RE01-01 젖지 않은 잎",
+        "location": "F-RE01-01"
+      },
+      "next": "v4:27:F-RE01-01:e:110c79dcb89b:1:late:147"
+    },
+    "v4:147:h-b5a2e5989a:e:4ad3783ff0f9:1": {
+      "id": "v4:147:h-b5a2e5989a:e:4ad3783ff0f9:1",
+      "type": "stage",
+      "direction": "미오는 그 말을 듣고 자기 책상 한쪽을 정리하다 서랍까지 꺼내 놓고 포기했던 일을 떠올린다. 레이의 양동이를 피해 발을 옮긴다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 103,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:27:F-RE01-A:menu:late:147"
+    },
+    "v4:147:h-b5a2e5989a:e:59d29b770244:1": {
+      "id": "v4:147:h-b5a2e5989a:e:59d29b770244:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "끝낼 위치를 정하고 시작하면 됩니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 101,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:4ad3783ff0f9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:00c80cfeb3e4:1": {
+      "id": "v4:147:h-b5a2e5989a:e:00c80cfeb3e4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "옆줄은 더 지저분해 보일 텐데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 99,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:59d29b770244:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:542bb04135b2:1": {
+      "id": "v4:147:h-b5a2e5989a:e:542bb04135b2:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "여기 줄만 하겠습니다. 이쪽에 앉을 생각이었으니까요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 97,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:00c80cfeb3e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:c74fd1d8c829:1": {
+      "id": "v4:147:h-b5a2e5989a:e:c74fd1d8c829:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 여기 줄만 닦아? 저쪽은?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 95,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:542bb04135b2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:a3c829ad0b3f:1": {
+      "id": "v4:147:h-b5a2e5989a:e:a3c829ad0b3f:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "나가시라는 건 아닙니다. 다만 지금은 그 이야기를 더 하고 싶지 않군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 93,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:c74fd1d8c829:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:f329ebdec95e:1": {
+      "id": "v4:147:h-b5a2e5989a:e:f329ebdec95e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 다시 갖고 왔네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 91,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:a3c829ad0b3f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:1c6130febb1c:1": {
+      "id": "v4:147:h-b5a2e5989a:e:1c6130febb1c:1",
+      "type": "stage",
+      "direction": "미오가 입을 다문다. 레이는 위로하는 말을 잇지 않고 천을 헹군다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 89,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:f329ebdec95e:1"
+    },
+    "v4:147:h-b5a2e5989a:e:b0c4f28b6f60:1": {
+      "id": "v4:147:h-b5a2e5989a:e:b0c4f28b6f60:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "지금 말씀하시기 전에는요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 87,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:1c6130febb1c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:6d4e8ca4d6a3:1": {
+      "id": "v4:147:h-b5a2e5989a:e:6d4e8ca4d6a3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아예 안 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 85,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:b0c4f28b6f60:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:95ee600d1857:1": {
+      "id": "v4:147:h-b5a2e5989a:e:95ee600d1857:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "저는 잎의 먼지를 보고 있었습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 83,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:6d4e8ca4d6a3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:5ebbdb4d4e07:1": {
+      "id": "v4:147:h-b5a2e5989a:e:5ebbdb4d4e07:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "정원에 앉아 있으면 법정 생각을 안 할 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 81,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:95ee600d1857:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:6743fc010623:1": {
+      "id": "v4:147:h-b5a2e5989a:e:6743fc010623:1",
+      "type": "stage",
+      "direction": "이대화는능력을알아보고숨긴장면이아니다.미오에게현재알려진것은일반인조화분과레이의청소뿐이다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 79,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:5ebbdb4d4e07:1"
+    },
+    "v4:147:h-b5a2e5989a:e:f8bac859acef:1": {
+      "id": "v4:147:h-b5a2e5989a:e:f8bac859acef:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그렇게 듣지 않았습니다. 미오 씨가 무엇을 봤는지 제가 먼저 정할 필요는 없죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 77,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:6743fc010623:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:dab3cd271e3f:1": {
+      "id": "v4:147:h-b5a2e5989a:e:dab3cd271e3f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 아까 없던 것 같다고 한 건 잎 하나였어. 네가 뭘 만들어 놨다는 얘기가 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 75,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:f8bac859acef:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:5da4e6f67b18:1": {
+      "id": "v4:147:h-b5a2e5989a:e:5da4e6f67b18:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "더러워져도 시들지 않으니까 오히려 그냥 두기 쉽습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 73,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:dab3cd271e3f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:b574c9806eec:1": {
+      "id": "v4:147:h-b5a2e5989a:e:b574c9806eec:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래도 닦아야 하네. 아무것도 안 해도 되는 건 아니구나.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 71,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:5da4e6f67b18:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:5ce6ad7ba086:1": {
+      "id": "v4:147:h-b5a2e5989a:e:5ce6ad7ba086:1",
+      "type": "stage",
+      "direction": "미오는 진짜와 가짜가 섞였다는 말을 듣고 옆줄을 보지만 아직 벌레가 나오지는 않는다.27의뒤실제날벌레장면은그때한번만발생한다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 69,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:b574c9806eec:1"
+    },
+    "v4:147:h-b5a2e5989a:e:ae67df72f5dc:1": {
+      "id": "v4:147:h-b5a2e5989a:e:ae67df72f5dc:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "이 잎에서는요. 저쪽 화분은 다릅니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 67,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:5ce6ad7ba086:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:98cc0e75023c:1": {
+      "id": "v4:147:h-b5a2e5989a:e:98cc0e75023c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 물도 안 줘도 되고 벌레도 안 생기겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 65,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:ae67df72f5dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:7092b55faf5f:1": {
+      "id": "v4:147:h-b5a2e5989a:e:7092b55faf5f:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "네.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 63,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:98cc0e75023c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:f3b75b288407:1": {
+      "id": "v4:147:h-b5a2e5989a:e:f3b75b288407:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가짜네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 61,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:7092b55faf5f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:af5d22382608:1": {
+      "id": "v4:147:h-b5a2e5989a:e:af5d22382608:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "있었습니다. 이 잎은 자라지도 않습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 59,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:f3b75b288407:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:e11981f1370d:1": {
+      "id": "v4:147:h-b5a2e5989a:e:e11981f1370d:1",
+      "type": "stage",
+      "direction": "미오가 닦여서 빛나는 잎을 가리킨다. 가까이 보면 일정한 잎맥과 매끈한 이음새가 있다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 57,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:af5d22382608:1"
+    },
+    "v4:147:h-b5a2e5989a:e:9d439588d21c:1": {
+      "id": "v4:147:h-b5a2e5989a:e:9d439588d21c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 아까 없던 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 55,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:e11981f1370d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:dacf24445b80:1": {
+      "id": "v4:147:h-b5a2e5989a:e:dacf24445b80:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "잠깐 지나갔습니다. 지금처럼 오래 있지는 않았어요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 53,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:9d439588d21c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:11217ef0f3bd:1": {
+      "id": "v4:147:h-b5a2e5989a:e:11217ef0f3bd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 아침에도 여기 있었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 51,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:dacf24445b80:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:7b8a2b8a9a64:1": {
+      "id": "v4:147:h-b5a2e5989a:e:7b8a2b8a9a64:1",
+      "type": "stage",
+      "direction": "미오가 앉는다. 레이는 아직 서서 자기 앞의 잎을 닦는다. 도와주겠다는 말이 나오지 않자 먼저 천을 건네지도 않는다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 49,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:11217ef0f3bd:1"
+    },
+    "v4:147:h-b5a2e5989a:e:199ea97cc302:1": {
+      "id": "v4:147:h-b5a2e5989a:e:199ea97cc302:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "두 사람이 앉으면 한 사람이 밀려날 크기는 아닙니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 47,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:7b8a2b8a9a64:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:ff379bb735b7:1": {
+      "id": "v4:147:h-b5a2e5989a:e:ff379bb735b7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 앉으려고 닦고 있다며.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 45,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:199ea97cc302:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:e64996aaf82d:1": {
+      "id": "v4:147:h-b5a2e5989a:e:e64996aaf82d:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "비어 있습니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 43,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:ff379bb735b7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:ada57db4633a:1": {
+      "id": "v4:147:h-b5a2e5989a:e:ada57db4633a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 앉아도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 41,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:e64996aaf82d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:7aac83ed84ea:1": {
+      "id": "v4:147:h-b5a2e5989a:e:7aac83ed84ea:1",
+      "type": "stage",
+      "direction": "레이가 짧게 고개를 숙인다. 미오는 비어 있는 벤치 끝을 가리킨다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 39,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:ada57db4633a:1"
+    },
+    "v4:147:h-b5a2e5989a:e:7666f919090c:1": {
+      "id": "v4:147:h-b5a2e5989a:e:7666f919090c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 닫았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 37,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:7aac83ed84ea:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:288ae967e818:1": {
+      "id": "v4:147:h-b5a2e5989a:e:288ae967e818:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "설명을 들어야 할 일이 있으면 묻겠습니다. 지금은 문을 닫아 달라고 했죠.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 35,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:7666f919090c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:00d6dcf65884:1": {
+      "id": "v4:147:h-b5a2e5989a:e:00d6dcf65884:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어디 갔다 왔는지 물으면 네가 또 설명하라고 할까 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 33,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:288ae967e818:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:971532cfbee6:1": {
+      "id": "v4:147:h-b5a2e5989a:e:971532cfbee6:1",
+      "type": "stage",
+      "direction": "미오는 벌써 자기가 핑계를 고르는 쪽이 된 것 같아 벤치에 앉지 않는다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 31,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:00d6dcf65884:1"
+    },
+    "v4:147:h-b5a2e5989a:e:2c09719c4277:1": {
+      "id": "v4:147:h-b5a2e5989a:e:2c09719c4277:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그럼 이제 여기 있다고 생각하시면 됩니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 29,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:971532cfbee6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:3330fcf302e7:1": {
+      "id": "v4:147:h-b5a2e5989a:e:3330fcf302e7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 누가 안 보인다고 해서. 나는 네가 방에 있겠거니 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 27,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:2c09719c4277:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:655f6a47069f:1": {
+      "id": "v4:147:h-b5a2e5989a:e:655f6a47069f:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "제가 방에 있겠다고 말씀드렸습니까?",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 25,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:3330fcf302e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:e5886402e467:1": {
+      "id": "v4:147:h-b5a2e5989a:e:e5886402e467:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 방에 있다더니.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 23,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:655f6a47069f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:11cb6eb22db2:1": {
+      "id": "v4:147:h-b5a2e5989a:e:11cb6eb22db2:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "그럴 생각은 없었는데, 하나를 닦으면 옆의 먼지가 더 보이는군요.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 21,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:e5886402e467:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:63a0442cae50:1": {
+      "id": "v4:147:h-b5a2e5989a:e:63a0442cae50:1",
+      "type": "stage",
+      "direction": "레이는 닦던 잎 하나를 놓고 그 뒤의 다른 잎을 넘기지 않는다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 19,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:11cb6eb22db2:1"
+    },
+    "v4:147:h-b5a2e5989a:e:bf480c3c074b:1": {
+      "id": "v4:147:h-b5a2e5989a:e:bf480c3c074b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "앉으려면 그렇게 다 해야 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 17,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:63a0442cae50:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:c9cba6bb428e:1": {
+      "id": "v4:147:h-b5a2e5989a:e:c9cba6bb428e:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "앉으려고 온 사람입니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 15,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:bf480c3c074b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:728579a8f11d:1": {
+      "id": "v4:147:h-b5a2e5989a:e:728579a8f11d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기서는 네가 관리하는 사람이네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 13,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:c9cba6bb428e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:92bfa5b34fdd:1": {
+      "id": "v4:147:h-b5a2e5989a:e:92bfa5b34fdd:1",
+      "type": "stage",
+      "direction": "미오가 문을 닫는다. 벤치 위 마른 천 한 장의 모서리가 들렸다가 내려앉는다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 11,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:728579a8f11d:1"
+    },
+    "v4:147:h-b5a2e5989a:e:3fc99bfa961b:1": {
+      "id": "v4:147:h-b5a2e5989a:e:3fc99bfa961b:1",
+      "type": "say",
+      "speaker": "레이",
+      "actor": "rei",
+      "text": "닫아 주시겠습니까. 바람에 천이 떨어집니다.",
+      "mono": false,
+      "delivery": "레이",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 9,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:92bfa5b34fdd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "레이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:147:h-b5a2e5989a:e:0c93ab5fdab9:1": {
+      "id": "v4:147:h-b5a2e5989a:e:0c93ab5fdab9:1",
+      "type": "stage",
+      "direction": "호텔 옆 실내 정원. 미오가 유리문 앞에서 멈춘다. 레이가 벤치 앞 큰 잎의 먼지를 닦고 있다. 미오는 그가 자기 쪽을 보기를 기다리다가 직접 문을 민다.",
+      "source": {
+        "file": "147_자유시간_레이_2장_먼지_남은_정원.md",
+        "line": 7,
+        "fileSha256": "9b5839d04030c66e1507340b1bf94aef5226d43d4a7d9ce587ba4669a583d298",
+        "heading": "RE-LATE01-01 아무도 앉지 않는 쪽",
+        "location": "h-b5a2e5989a"
+      },
+      "next": "v4:147:h-b5a2e5989a:e:3fc99bfa961b:1"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "147_자유시간_레이_2장_먼지_남은_정원.md",
+  "baseSourceFile": "27_자유시간_레이_01.md",
+  "completionFlag": "fte:147:complete",
+  "routingStatus": "explicit-reviewed-late-calendar",
+  "campaignReady": false,
+  "lateCalendarKey": "147",
+  "eligibility": "Only the exact source-authored separate calendar window; never a first-case substitute or same-window chain.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "27_자유시간_레이_01.md:F-RE01-06": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-05": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-02": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "27_자유시간_레이_01.md:F-RE01-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "147_자유시간_레이_2장_먼지_남은_정원.md:h-b5a2e5989a": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

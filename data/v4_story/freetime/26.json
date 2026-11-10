@@ -1,0 +1,5555 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "F",
+  "entry": "v4:26:F-YU01-01:e:649de7a9e22f:1",
+  "nodes": {
+    "v4:26:return": {
+      "id": "v4:26:return",
+      "type": "return"
+    },
+    "v4:26:F-YU01-05:e:7e71db7a9851:1": {
+      "id": "v4:26:F-YU01-05:e:7e71db7a9851:1",
+      "type": "stage",
+      "direction": "유우가 재생기를 집는다. 아까 미오의 수첩에 한 말을 돌려받은 걸 알고 둘이 웃는다. 헤어진 뒤 미오는 유우가 자신을 특별히 골라 불렀다고 적지 않는다. 오늘은 자기가 소리를 따라 들어갔다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 531,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:return"
+    },
+    "v4:26:F-YU01-05:e:ea6d0755d08f:1": {
+      "id": "v4:26:F-YU01-05:e:ea6d0755d08f:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그거 내 거. 네가 가져가면 안 되지.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 529,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:7e71db7a9851:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:749704ee0349:1": {
+      "id": "v4:26:F-YU01-05:e:749704ee0349:1",
+      "type": "stage",
+      "direction": "유우가 먼저 복도로 나간다. 미오는 잠깐 남아 꺼진 재생기를 본다. 유우가 문밖에서 돌아온다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 527,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:ea6d0755d08f:1"
+    },
+    "v4:26:F-YU01-05:e:95ce4eb44c41:1": {
+      "id": "v4:26:F-YU01-05:e:95ce4eb44c41:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 일찍 와. 같이 시작해.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 525,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:749704ee0349:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:bddbb4598041:1": {
+      "id": "v4:26:F-YU01-05:e:bddbb4598041:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 다음에도 들으러 오면 또 늦게 끝나겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 523,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:95ce4eb44c41:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:e697debc72ba:1": {
+      "id": "v4:26:F-YU01-05:e:e697debc72ba:1",
+      "type": "stage",
+      "direction": "미오는 좋은 뜻으로 받아도 되는지 한 박자 늦게 생각한다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 521,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:bddbb4598041:1"
+    },
+    "v4:26:F-YU01-05:e:15a72febcaea:1": {
+      "id": "v4:26:F-YU01-05:e:15a72febcaea:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "혼자면 대충 하고 갔어. 오늘은 누가 듣고 있었잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 519,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:e697debc72ba:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:ea76574651d7:1": {
+      "id": "v4:26:F-YU01-05:e:ea76574651d7:1",
+      "type": "stage",
+      "direction": "미오가 올려다본다. 유우는 바구니를 옆구리에 끼워 문을 잡는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 517,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:15a72febcaea:1"
+    },
+    "v4:26:F-YU01-05:e:4a6bc2bb94d9:1": {
+      "id": "v4:26:F-YU01-05:e:4a6bc2bb94d9:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "네가 와서 그렇지.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 515,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:ea76574651d7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:8e65243cc729:1": {
+      "id": "v4:26:F-YU01-05:e:8e65243cc729:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 아까 끝나면 빨리 가고 싶다며. 노래해서 더 오래 걸렸네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 513,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:4a6bc2bb94d9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:1528aea81eef:1": {
+      "id": "v4:26:F-YU01-05:e:1528aea81eef:1",
+      "type": "stage",
+      "direction": "유우가 떨어진 수건을 다시 세탁통에 넣는다. 미오가 남은 집게를 집어 든다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 511,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:8e65243cc729:1"
+    },
+    "v4:26:F-YU01-05:e:1df089cdd75d:1": {
+      "id": "v4:26:F-YU01-05:e:1df089cdd75d:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "아, 진짜. 끝난 줄 알면 하나씩.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 509,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:1528aea81eef:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-05:e:c51c917b04bf:1": {
+      "id": "v4:26:F-YU01-05:e:c51c917b04bf:1",
+      "type": "stage",
+      "direction": "돌아갈 시간. B1/B2의 유우는 개인 재생기를 세탁실 탁자에 잠깐 내려놓고 바구니를 든다. B3에서는 앞서 그 탁자에 둔 그대로다. 유우가 빈 바구니를 한 손으로 끼고 나오려는데 건조대의 수건 하나가 바닥으로 떨어진다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 507,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-05 바구니가 비고 나서",
+        "location": "F-YU01-05"
+      },
+      "next": "v4:26:F-YU01-05:e:1df089cdd75d:1"
+    },
+    "v4:26:F-YU01-B2-N:e:29578c95bbee:1": {
+      "id": "v4:26:F-YU01-B2-N:e:29578c95bbee:1",
+      "type": "stage",
+      "direction": "유우는 소개를 연습하듯 입술만 움직인다. 미오가 웃자 그만하라는 듯 손을 내젓는다. 지금 공개 공연을 하거나 다른 사람에게 이름을 전하지는 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 357,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-05:e:c51c917b04bf:1"
+    },
+    "v4:26:F-YU01-B2-N:e:078732b29908:1": {
+      "id": "v4:26:F-YU01-B2-N:e:078732b29908:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "맞아. 내가 물어봤지. 이제 안 틀릴게.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 355,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:29578c95bbee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:1998d1b86de4:1": {
+      "id": "v4:26:F-YU01-B2-N:e:1998d1b86de4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 물어봤잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 353,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:078732b29908:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:d493c8e789bb:1": {
+      "id": "v4:26:F-YU01-B2-N:e:d493c8e789bb:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너 한마디 넣는 데 나보다 말 많이 한다.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 351,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:1998d1b86de4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:7cc379da8ff7:1": {
+      "id": "v4:26:F-YU01-B2-N:e:7cc379da8ff7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 그거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 349,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:d493c8e789bb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:d2b9628c68e4:1": {
+      "id": "v4:26:F-YU01-B2-N:e:d2b9628c68e4:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "내가 부르고 싶었는데 미오도 이게 좋대서 골랐다고. 이거면 됐어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 347,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:7cc379da8ff7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:ea736055001d:1": {
+      "id": "v4:26:F-YU01-B2-N:e:ea736055001d:1",
+      "type": "stage",
+      "direction": "유우가 재생기를 쥔 손으로 자기 이마를 가볍게 친다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 345,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:d2b9628c68e4:1"
+    },
+    "v4:26:F-YU01-B2-N:e:e0aeb5c68c76:1": {
+      "id": "v4:26:F-YU01-B2-N:e:e0aeb5c68c76:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 부르기 싫은데 나 때문에 하는 것 같잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 343,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:ea736055001d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:12058eebf8f5:1": {
+      "id": "v4:26:F-YU01-B2-N:e:12058eebf8f5:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "아. 그게 그렇게 달라?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 341,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:e0aeb5c68c76:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:c0140c130798:1": {
+      "id": "v4:26:F-YU01-B2-N:e:c0140c130798:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "듣고 싶다고는 했는데, 무대에서 해 달라고 하진 않았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 339,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:12058eebf8f5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:6d62d5e5faef:1": {
+      "id": "v4:26:F-YU01-B2-N:e:6d62d5e5faef:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 시작하기 전에 할게. 미오가 이거 듣고 싶다고 해서—",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 337,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:c0140c130798:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:90244996c85d:1": {
+      "id": "v4:26:F-YU01-B2-N:e:90244996c85d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "말해도 돼. 내가 두 번째가 좋다고 했다고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 335,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:6d62d5e5faef:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:0c2c35da09df:1": {
+      "id": "v4:26:F-YU01-B2-N:e:0c2c35da09df:1",
+      "type": "stage",
+      "direction": "웃는 소리가 조금 늦게 나온다. 유우는 다시 허락을 구하거나 몰래 미오를 소개하기로 마음먹지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 393,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-05:e:c51c917b04bf:1"
+    },
+    "v4:26:F-YU01-B2-N:e:9f4afd2ca4d6:1": {
+      "id": "v4:26:F-YU01-B2-N:e:9f4afd2ca4d6:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "이름도 안 하는데 어떻게 네 탓을 해. 나 혼자 망해야지.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 391,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:0c2c35da09df:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:d6ac7b6797d8:1": {
+      "id": "v4:26:F-YU01-B2-N:e:d6ac7b6797d8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나중에 내 탓 안 하면 돼.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 389,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:9f4afd2ca4d6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:3774561c2e57:1": {
+      "id": "v4:26:F-YU01-B2-N:e:3774561c2e57:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 내가 좋아해서 골랐다고 하지 뭐. 그것도 맞으니까.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 387,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:d6ac7b6797d8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:debaec98ad01:1": {
+      "id": "v4:26:F-YU01-B2-N:e:debaec98ad01:1",
+      "type": "stage",
+      "direction": "미오가 더 그럴듯한 이유를 붙이지 않는다. 유우는 꺼진 화면에 비친 자기 얼굴을 보다가 다시 전원을 켠다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 385,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:3774561c2e57:1"
+    },
+    "v4:26:F-YU01-B2-N:e:a324e403dc25:1": {
+      "id": "v4:26:F-YU01-B2-N:e:a324e403dc25:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 383,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:debaec98ad01:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:8866f61a34d3:1": {
+      "id": "v4:26:F-YU01-B2-N:e:8866f61a34d3:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그건 해 주고, 소개는 안 해 주고.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 381,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:a324e403dc25:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:042e55c9dbef:1": {
+      "id": "v4:26:F-YU01-B2-N:e:042e55c9dbef:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 고르는 건 좋았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 379,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:8866f61a34d3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:0a4f0647d4d4:1": {
+      "id": "v4:26:F-YU01-B2-N:e:0a4f0647d4d4:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "조금. 같이 골랐다고 말하면 좋아할 줄 알았거든.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 377,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:042e55c9dbef:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:89c5587d2907:1": {
+      "id": "v4:26:F-YU01-B2-N:e:89c5587d2907:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "기분 나빠?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 375,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:0a4f0647d4d4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:3e1fd444f349:1": {
+      "id": "v4:26:F-YU01-B2-N:e:3e1fd444f349:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "알았어. 이름 안 할게.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 373,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:89c5587d2907:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:c8665a365af7:1": {
+      "id": "v4:26:F-YU01-B2-N:e:c8665a365af7:1",
+      "type": "stage",
+      "direction": "유우가 재생 화면을 끈다. 미오에게 건넨 이어폰 줄이 잠깐 팽팽해진다. 유우가 손을 다시 가까이 가져온다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 371,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:3e1fd444f349:1"
+    },
+    "v4:26:F-YU01-B2-N:e:c01ee668cb19:1": {
+      "id": "v4:26:F-YU01-B2-N:e:c01ee668cb19:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너한테는 그랬어. 사람들 앞에서 또 말하고 싶지는 않아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 369,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:c8665a365af7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:fa8b3bebe8c2:1": {
+      "id": "v4:26:F-YU01-B2-N:e:fa8b3bebe8c2:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "좋으니까 골랐다고 하면 되지.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 367,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:c01ee668cb19:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:3c76ae521b35:1": {
+      "id": "v4:26:F-YU01-B2-N:e:3c76ae521b35:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 애들이 나 보겠지. 잘 모르는 곡인데 왜 골랐냐고 물으면 뭐라고 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 365,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:fa8b3bebe8c2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:69750c1abf58:1": {
+      "id": "v4:26:F-YU01-B2-N:e:69750c1abf58:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "누가 골랐는지는 좀 말할 수 있잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 363,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:3c76ae521b35:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:c3909d92f862:1": {
+      "id": "v4:26:F-YU01-B2-N:e:c3909d92f862:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이름은 빼 줘. 그냥 네가 고른 곡으로 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 361,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:69750c1abf58:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:menu": {
+      "id": "v4:26:F-YU01-B2-N:menu",
+      "type": "menu",
+      "q": "앞에서 부를 이름",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 331,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "options": [
+        {
+          "id": "N1",
+          "label": "골랐다고 말해도 된다고 한다.",
+          "to": "v4:26:F-YU01-B2-N:e:90244996c85d:1",
+          "set": {
+            "F-YU01-B2-N": "N1"
+          }
+        },
+        {
+          "id": "N2",
+          "label": "곡만 부르고 이름은 빼 달라고 한다.",
+          "to": "v4:26:F-YU01-B2-N:e:c3909d92f862:1",
+          "set": {
+            "F-YU01-B2-N": "N2"
+          }
+        }
+      ]
+    },
+    "v4:26:F-YU01-B:e:b0846f70b4f7:1": {
+      "id": "v4:26:F-YU01-B:e:b0846f70b4f7:1",
+      "type": "stage",
+      "direction": "유우는 농담처럼 웃는다. 미오도 따라 웃다가 한쪽 이어폰을 손바닥에 쥔다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 329,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B2-N:menu"
+    },
+    "v4:26:F-YU01-B:e:4cd4cfb60f97:1": {
+      "id": "v4:26:F-YU01-B:e:4cd4cfb60f97:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "조금. 네가 안 좋았다고 하기는 어려울 거잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 327,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:b0846f70b4f7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:56f6d21fee07:1": {
+      "id": "v4:26:F-YU01-B:e:56f6d21fee07:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 고르면 덜 무서워?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 325,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:4cd4cfb60f97:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:29238d1d53d5:1": {
+      "id": "v4:26:F-YU01-B:e:29238d1d53d5:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 이거는 따로 연습해 볼게. 너 고른 거라고 앞에서 말해도 돼?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 323,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:56f6d21fee07:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:178ad54903f1:1": {
+      "id": "v4:26:F-YU01-B:e:178ad54903f1:1",
+      "type": "stage",
+      "direction": "유우가 화면을 다시 본다. 밝은 곡을 아래로 내리지만 제목을 선택한 채 한동안 손을 떼지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 321,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:29238d1d53d5:1"
+    },
+    "v4:26:F-YU01-B:e:7f958ba6e0ed:1": {
+      "id": "v4:26:F-YU01-B:e:7f958ba6e0ed:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 지금 듣고 고른 건데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 319,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:178ad54903f1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:cced1dff2c60:1": {
+      "id": "v4:26:F-YU01-B:e:cced1dff2c60:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "지금이니까 그런 거 아니야? 사람 많을 때는 다를걸.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 317,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:7f958ba6e0ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:13291fb566b3:1": {
+      "id": "v4:26:F-YU01-B:e:13291fb566b3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "두 번째. 지금 듣기엔 그게 좋아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 315,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:cced1dff2c60:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:db6fac3cfab0:1": {
+      "id": "v4:26:F-YU01-B:e:db6fac3cfab0:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 유우도 웃다가 첫 곡을 목록 맨 위에 남긴다. 낮은 곡은 지우지 않는다. 지금의선택이공개공연출연·미오이름소개허락·함께완창약속으로바뀌지않으며,실제들린것은후보앞부분의반복뿐이다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 310,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-05:e:c51c917b04bf:1"
+    },
+    "v4:26:F-YU01-B:e:20405ec61de4:1": {
+      "id": "v4:26:F-YU01-B:e:20405ec61de4:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그건 네가 원래도 잘하는 거잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 308,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:db6fac3cfab0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:e126537b3c38:1": {
+      "id": "v4:26:F-YU01-B:e:e126537b3c38:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그때 네가 더 잘난 척하면 내가 또 그만둘 수도 있고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 306,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:20405ec61de4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:888caa8c8f90:1": {
+      "id": "v4:26:F-YU01-B:e:888caa8c8f90:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "알았어. 다음에 맞추고 싶으면 물어봐. 내가 먼저 옆에서 세고 있지는 않을게.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 304,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:e126537b3c38:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:c0353abd1b9a:1": {
+      "id": "v4:26:F-YU01-B:e:c0353abd1b9a:1",
+      "type": "stage",
+      "direction": "유우가 미오의 무릎을 보다가 고개를 든다. 미오는 일부러 틀린 박자를 두드려 그를 다시 시험하지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 302,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:888caa8c8f90:1"
+    },
+    "v4:26:F-YU01-B:e:c484bd54bec7:1": {
+      "id": "v4:26:F-YU01-B:e:c484bd54bec7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 나는 네 노래 듣다가 움직인 거니까. 합주 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 300,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:c0353abd1b9a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:e881648e92c8:1": {
+      "id": "v4:26:F-YU01-B:e:e881648e92c8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "틀려도?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 298,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:c484bd54bec7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:bed2be735d01:1": {
+      "id": "v4:26:F-YU01-B:e:bed2be735d01:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 오늘은 내가 아는 데서 손가락만 움직여도 그냥 둬.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 296,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:e881648e92c8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:dd66edab4373:1": {
+      "id": "v4:26:F-YU01-B:e:dd66edab4373:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "머리로는 그래. 근데 내가 앞에 서 있으면 내가 해야 되는 쪽만 생각나.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 294,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:bed2be735d01:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:c9ea12d60c04:1": {
+      "id": "v4:26:F-YU01-B:e:c9ea12d60c04:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 안 해도 괜찮은 거하고 네가 해도 아무 차이 없는 거하고는 다를 텐데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 292,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:dd66edab4373:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:7949b61fac18:1": {
+      "id": "v4:26:F-YU01-B:e:7949b61fac18:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그래도 같이 부를 사람이 있으면 좋겠어. 내가 안 부르는 동안에도 노래가 가는 거. 아까 잠깐 멈춘 것처럼 내가 손 놓으면 다 멈추는 건 싫거든.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 290,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:c9ea12d60c04:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:65e0c8f20448:1": {
+      "id": "v4:26:F-YU01-B:e:65e0c8f20448:1",
+      "type": "stage",
+      "direction": "유우가 재생기를 쥔 손을 자기 쪽으로 당긴다. 미오에게 다시 골라 달라고 내밀지는 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 288,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:7949b61fac18:1"
+    },
+    "v4:26:F-YU01-B:e:8932d3eca491:1": {
+      "id": "v4:26:F-YU01-B:e:8932d3eca491:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "응. 알아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 286,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:65e0c8f20448:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:5c38062e5fc7:1": {
+      "id": "v4:26:F-YU01-B:e:5c38062e5fc7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 말한 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 284,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:8932d3eca491:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:4ff227abb6d0:1": {
+      "id": "v4:26:F-YU01-B:e:4ff227abb6d0:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그렇게 들으니까 되게 별로다.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 282,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:5c38062e5fc7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:de5adf23f0ba:1": {
+      "id": "v4:26:F-YU01-B:e:de5adf23f0ba:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 남들이 아는 거 하면 좋겠다고 해 놓고, 아는 애들이 따라 하면 싫고, 안 하면 또 싫네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 280,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:4ff227abb6d0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:907da57b275b:1": {
+      "id": "v4:26:F-YU01-B:e:907da57b275b:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그러면 내가 못하나 싶겠네.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 278,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:de5adf23f0ba:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:934fe1440b1e:1": {
+      "id": "v4:26:F-YU01-B:e:934fe1440b1e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 잘하면 웃음이 안 날 수도 있지. 그냥 보고 있을 수도 있고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 276,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:907da57b275b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:dc982b18c640:1": {
+      "id": "v4:26:F-YU01-B:e:dc982b18c640:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그래도 웃으면서 봐 줄 수는 있잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 274,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:934fe1440b1e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:cb97284e62bd:1": {
+      "id": "v4:26:F-YU01-B:e:cb97284e62bd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 네가 해 달라고 하면 못 부를 수도 있어. 지금 박자도 못 맞혔고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 272,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:dc982b18c640:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:3822fa823013:1": {
+      "id": "v4:26:F-YU01-B:e:3822fa823013:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "이상한 건 아는데, 내가 다 같이 부르라고 했잖아. 그런데 내가 없어도 됐다는 생각 들면 그걸 내가 시킨 것까지 싫더라.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 270,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:cb97284e62bd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:0d46e9984ad7:1": {
+      "id": "v4:26:F-YU01-B:e:0d46e9984ad7:1",
+      "type": "stage",
+      "direction": "유우가 재생 목록의 첫 제목을 손끝으로 한번 누른다. 곡이 다시 시작되기 전에 손을 뗀다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 268,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:3822fa823013:1"
+    },
+    "v4:26:F-YU01-B:e:b5529e2857d1:1": {
+      "id": "v4:26:F-YU01-B:e:b5529e2857d1:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "응. 끝나고 나서는 또 싫었어. 내가 잘해서 그랬는지, 애들이 원래 좋아해서 그랬는지 모르겠어서.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 266,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:0d46e9984ad7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:d4fce6f72128:1": {
+      "id": "v4:26:F-YU01-B:e:d4fce6f72128:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 좋았네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 264,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:b5529e2857d1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:c486b2c00056:1": {
+      "id": "v4:26:F-YU01-B:e:c486b2c00056:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "아니. 준비한 거 했어. 애들 반응 좋았고. 후렴 때는 내가 마이크 옆으로 뺐어. 다 같이 부르는 게 좋아서.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 262,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:d4fce6f72128:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:31c844e9da53:1": {
+      "id": "v4:26:F-YU01-B:e:31c844e9da53:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 다른 거 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 260,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:c486b2c00056:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:6b2072e250bf:1": {
+      "id": "v4:26:F-YU01-B:e:6b2072e250bf:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "좋은 말이지. 그런데 곡 이름 나오니까 먼저 박수 쳤어. 나는 아직 뒤에 서 있었는데. 갑자기 내가 안 나와도 반주만 틀면 다 좋아하겠다는 생각이 드는 거야.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 258,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:31c844e9da53:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:0007bc5067a4:1": {
+      "id": "v4:26:F-YU01-B:e:0007bc5067a4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 좋은 말 아니야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 256,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:6b2072e250bf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:fda9cec389b8:1": {
+      "id": "v4:26:F-YU01-B:e:fda9cec389b8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "행사에서 그런 소개 들은 적 있어. 다들 아는 곡이라 같이 즐길 수 있을 거라고. 나 나오기 전에.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 254,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:0007bc5067a4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:37d050cf04e7:1": {
+      "id": "v4:26:F-YU01-B:e:37d050cf04e7:1",
+      "type": "stage",
+      "direction": "유우가 재생을 끈다. 미오가 자기 손가락을 한번 내려다본다. 박자를 다시 맞춰 보려고 하지는 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 252,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:fda9cec389b8:1"
+    },
+    "v4:26:F-YU01-B:e:9c8fc831375f:1": {
+      "id": "v4:26:F-YU01-B:e:9c8fc831375f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 물어보는 얼굴이 아직 끝난 것 같지가 않아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 250,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:37d050cf04e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:6d09553b1e97:1": {
+      "id": "v4:26:F-YU01-B:e:6d09553b1e97:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "벌써 골랐어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 248,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:9c8fc831375f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:84ecbd9b6f53:1": {
+      "id": "v4:26:F-YU01-B:e:84ecbd9b6f53:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 이거 고를래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 246,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:6d09553b1e97:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:0053d8c92d27:1": {
+      "id": "v4:26:F-YU01-B:e:0053d8c92d27:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "알아. 내가 너무 나갔어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 244,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:84ecbd9b6f53:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:3c53d86f6838:1": {
+      "id": "v4:26:F-YU01-B:e:3c53d86f6838:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 골라 달라고 했잖아. 나는 네가 그 노래 부르면 듣겠다고 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 242,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:0053d8c92d27:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:9d23c7694ea8:1": {
+      "id": "v4:26:F-YU01-B:e:9d23c7694ea8:1",
+      "type": "stage",
+      "direction": "유우가 웃으려다 입술을 붙인다. 미오는 앞서 친절하게 대답했다고 생각했는데, 이제는 자기가 고른 곡까지 바꿔야 할 것 같아진다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 240,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:3c53d86f6838:1"
+    },
+    "v4:26:F-YU01-B:e:ecb1bc25d692:1": {
+      "id": "v4:26:F-YU01-B:e:ecb1bc25d692:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이 노래 좋아하는 사람이 너 하나는 아니겠지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 238,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:9d23c7694ea8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:a141911b0f9a:1": {
+      "id": "v4:26:F-YU01-B:e:a141911b0f9a:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그러면 내가 아니어도 되네.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 236,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:ecb1bc25d692:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:bc71dcfd283c:1": {
+      "id": "v4:26:F-YU01-B:e:bc71dcfd283c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금. 네가 사람들 앞에서 하면 나도 아는 데가 있으니까. 끝까지 다 몰라도 듣다가 아, 여기다 할 수 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 234,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:a141911b0f9a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:d7c71e520ef8:1": {
+      "id": "v4:26:F-YU01-B:e:d7c71e520ef8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "편하려고 골랐어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 232,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:bc71dcfd283c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:684bb081fc6a:1": {
+      "id": "v4:26:F-YU01-B:e:684bb081fc6a:1",
+      "type": "stage",
+      "direction": "유우가 입을 연다. 잠시 뒤 자기 손을 무릎에서 뗀다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 230,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:d7c71e520ef8:1"
+    },
+    "v4:26:F-YU01-B:e:3c8523c530f7:1": {
+      "id": "v4:26:F-YU01-B:e:3c8523c530f7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 할래. 내가 아는 거 고르면 편할 줄 알았는데 네가 내가 아는 데까지 고쳐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 228,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:684bb081fc6a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:36e20a269303:1": {
+      "id": "v4:26:F-YU01-B:e:36e20a269303:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그러면 같이 하면 되지.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 226,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:3c8523c530f7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:72e3aeed6fdd:1": {
+      "id": "v4:26:F-YU01-B:e:72e3aeed6fdd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 네가 어디 두드리는지는.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 224,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:36e20a269303:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:3fe927f1af85:1": {
+      "id": "v4:26:F-YU01-B:e:3fe927f1af85:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "알겠어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 222,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:72e3aeed6fdd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:62f3011e33fd:1": {
+      "id": "v4:26:F-YU01-B:e:62f3011e33fd:1",
+      "type": "stage",
+      "direction": "미오가 이번에는 손가락을 움직이지 않는다. 유우가 혼자 두 번 무릎을 두드린다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 220,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:3fe927f1af85:1"
+    },
+    "v4:26:F-YU01-B:e:d05ea80c4482:1": {
+      "id": "v4:26:F-YU01-B:e:d05ea80c4482:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "지금. 여기.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 218,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:62f3011e33fd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:89cdf7048913:1": {
+      "id": "v4:26:F-YU01-B:e:89cdf7048913:1",
+      "type": "stage",
+      "direction": "유우가 재생기를 내려다보다 다시 시작한다. 처음으로 되감은 구간은 같은 앞부분이다. 한 곡을 끝까지 듣거나 새 녹음을 하는 일이 아니다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 216,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:d05ea80c4482:1"
+    },
+    "v4:26:F-YU01-B:e:6ab29a1de7f9:1": {
+      "id": "v4:26:F-YU01-B:e:6ab29a1de7f9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나 듣고 있었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 214,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:89cdf7048913:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:e26ebbd84d24:1": {
+      "id": "v4:26:F-YU01-B:e:e26ebbd84d24:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "들려주려고 그런 거야.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 212,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:6ab29a1de7f9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:5c6e4ac4a42a:1": {
+      "id": "v4:26:F-YU01-B:e:5c6e4ac4a42a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "멈추면 내가 틀린 데만 남잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 210,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:e26ebbd84d24:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:cf9d6041cc0a:1": {
+      "id": "v4:26:F-YU01-B:e:cf9d6041cc0a:1",
+      "type": "stage",
+      "direction": "유우가 화면을 눌러 멈춘다. 미오의 손도 멈춘다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 208,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:5c6e4ac4a42a:1"
+    },
+    "v4:26:F-YU01-B:e:52c9c4535d52:1": {
+      "id": "v4:26:F-YU01-B:e:52c9c4535d52:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "노래 들어오는 바로 전. 봐. 여기서…….",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 206,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:cf9d6041cc0a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:239aa03261fe:1": {
+      "id": "v4:26:F-YU01-B:e:239aa03261fe:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 노래하는 데 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 204,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:52c9c4535d52:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:df01daaec273:1": {
+      "id": "v4:26:F-YU01-B:e:df01daaec273:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "네가 두드린 데. 한 번 빨라.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 202,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:239aa03261fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:d99944705eeb:1": {
+      "id": "v4:26:F-YU01-B:e:d99944705eeb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐가.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 200,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:df01daaec273:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:a1a2bb0eb11a:1": {
+      "id": "v4:26:F-YU01-B:e:a1a2bb0eb11a:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "거기 아니야.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 198,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:d99944705eeb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:76c4e6f15146:1": {
+      "id": "v4:26:F-YU01-B:e:76c4e6f15146:1",
+      "type": "stage",
+      "direction": "유우가 첫 곡의 앞부분을 다시 재생한다. 미오가 무릎 위에 손을 얹자 손가락 하나가 먼저 움직인다. 유우는 노래를 덧씌우지 않고 그 손을 본다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 196,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:a1a2bb0eb11a:1"
+    },
+    "v4:26:F-YU01-B:e:2a4e26554494:1": {
+      "id": "v4:26:F-YU01-B:e:2a4e26554494:1",
+      "type": "stage",
+      "direction": "미오는 그 대답이 맞는지 바로 말하지 못한다. 첫 곡을 골랐던 자기 취향까지 나쁜 것이 되지는 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 194,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:76c4e6f15146:1"
+    },
+    "v4:26:F-YU01-B:e:32dbd65d1511:1": {
+      "id": "v4:26:F-YU01-B:e:32dbd65d1511:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "듣는 애들한테.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 192,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:2a4e26554494:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:87b72308c84f:1": {
+      "id": "v4:26:F-YU01-B:e:87b72308c84f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너한테?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 190,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:32dbd65d1511:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:b4750748dc7a:1": {
+      "id": "v4:26:F-YU01-B:e:b4750748dc7a:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "좋아하는 걸 다 부르는 건 아니야. 부르면 안 어울릴 수도 있고.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 188,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:87b72308c84f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:27a180034417:1": {
+      "id": "v4:26:F-YU01-B:e:27a180034417:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "근데 너는 두 번째 더 좋아하는 것 같던데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 186,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:b4750748dc7a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:9098ed5b8a0a:1": {
+      "id": "v4:26:F-YU01-B:e:9098ed5b8a0a:1",
+      "type": "stage",
+      "direction": "유우가 첫 곡을 재생 목록 위로 올린다. 두 번째는 지우지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 184,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:27a180034417:1"
+    },
+    "v4:26:F-YU01-B:e:d2312e442b63:1": {
+      "id": "v4:26:F-YU01-B:e:d2312e442b63:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그렇지? 나도 그럴 것 같아서 넣었어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 182,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:9098ed5b8a0a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:e:8019eb7c08c8:1": {
+      "id": "v4:26:F-YU01-B:e:8019eb7c08c8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "첫 번째. 같이 따라 부르면 좋을 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 180,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "next": "v4:26:F-YU01-B:e:d2312e442b63:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:b5c8d8b7a5e1:1": {
+      "id": "v4:26:F-YU01-B2-N:e:b5c8d8b7a5e1:1",
+      "type": "stage",
+      "direction": "유우가 재생을 종료하고 바구니를 든다. 두 사람은 수건과 남은 집게가 있는 세탁실로 돌아간다. 유우는 아직 세탁실 탁자에 재생기를 내려놓는다. B3에서만 미오가 두 곡 전체와 낮은 곡의 끝 구절을 실제로 들었다. 곡의 뜻을 같게 해석하거나 다음 공개 선곡·이름 소개에 동의한 것은 아니다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 501,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-05:e:c51c917b04bf:1"
+    },
+    "v4:26:F-YU01-B2-N:e:5e7fdce00231:1": {
+      "id": "v4:26:F-YU01-B2-N:e:5e7fdce00231:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "응. 오늘은.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 499,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:b5c8d8b7a5e1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:339e612bc983:1": {
+      "id": "v4:26:F-YU01-B2-N:e:339e612bc983:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 들었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 497,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:5e7fdce00231:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:186ce5fc4bf2:1": {
+      "id": "v4:26:F-YU01-B2-N:e:186ce5fc4bf2:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "두 번째 끝은 기억해 줘. 거기까지 듣는 사람 별로 없어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 495,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:339e612bc983:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:9630ecfd9e80:1": {
+      "id": "v4:26:F-YU01-B2-N:e:9630ecfd9e80:1",
+      "type": "stage",
+      "direction": "미오가 수첩을 들고 일어난다. 유우는 바로 따라 일어나지 않고 마지막 구절을 아주 작게 입 안에서 굴린다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 493,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:186ce5fc4bf2:1"
+    },
+    "v4:26:F-YU01-B2-N:e:040a094b8a7f:1": {
+      "id": "v4:26:F-YU01-B2-N:e:040a094b8a7f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "두 곡 다 들었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 491,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:9630ecfd9e80:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:f96adbc8bd56:1": {
+      "id": "v4:26:F-YU01-B2-N:e:f96adbc8bd56:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "시간 있다더니.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 489,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:040a094b8a7f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:6062190a99c4:1": {
+      "id": "v4:26:F-YU01-B2-N:e:6062190a99c4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 다음에.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 487,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:f96adbc8bd56:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:c2f2660bbef5:1": {
+      "id": "v4:26:F-YU01-B2-N:e:c2f2660bbef5:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "지금 한 번 더?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 485,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:6062190a99c4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:473e55380c74:1": {
+      "id": "v4:26:F-YU01-B2-N:e:473e55380c74:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다시 들으면 다르게 들릴 수도 있겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 483,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:c2f2660bbef5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:2306bfc109e7:1": {
+      "id": "v4:26:F-YU01-B2-N:e:2306bfc109e7:1",
+      "type": "stage",
+      "direction": "유우가 웃다가 물을 찾듯 주위를 둘러본다. 가져온 물은 없다. 재생기와 바구니뿐이다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 481,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:473e55380c74:1"
+    },
+    "v4:26:F-YU01-B2-N:e:6b982b8ac56d:1": {
+      "id": "v4:26:F-YU01-B2-N:e:6b982b8ac56d:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "나한테 가사 검사 맡긴 거 아니야. 노래해 달랬잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 479,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:2306bfc109e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:6c040e4d65e8:1": {
+      "id": "v4:26:F-YU01-B2-N:e:6c040e4d65e8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 오지 않는다는 말이 안 맞잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 477,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:6b982b8ac56d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:b39bfff8f672:1": {
+      "id": "v4:26:F-YU01-B2-N:e:b39bfff8f672:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "나는 타고 싶은 게 없는데 계속 오는 쪽으로 생각했어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 475,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:6c040e4d65e8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:32e6cec4ba89:1": {
+      "id": "v4:26:F-YU01-B2-N:e:32e6cec4ba89:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 타려는 버스만 안 온다는 건가.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 473,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:b39bfff8f672:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:8bdec5370483:1": {
+      "id": "v4:26:F-YU01-B2-N:e:8bdec5370483:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너 그거 물어볼 줄 몰랐어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 471,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:32e6cec4ba89:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:e7fd019654cf:1": {
+      "id": "v4:26:F-YU01-B2-N:e:e7fd019654cf:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "버스가 안 왔는데 어떻게 지나가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 469,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:8bdec5370483:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:89b94d5f2f58:1": {
+      "id": "v4:26:F-YU01-B2-N:e:89b94d5f2f58:1",
+      "type": "stage",
+      "direction": "마지막 구절은 처음 들려준 짧은 부분 다음에 있다. 유우가 끝 음을 놓은 뒤에도 반주가 남는다. 손을 뻗었다가 멈추고, 소리가 끝날 때까지 화면을 누르지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 467,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:e7fd019654cf:1"
+    },
+    "v4:26:F-YU01-B2-N:e:2c691066b148:1": {
+      "id": "v4:26:F-YU01-B2-N:e:2c691066b148:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "비워 둔 정류장에 / 내일이 먼저 앉아 / 오지 않는 버스도 / 한 번 더 지나가네.",
+      "mono": false,
+      "delivery": "유우·노래",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 465,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:89b94d5f2f58:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:062cde66734c:1": {
+      "id": "v4:26:F-YU01-B2-N:e:062cde66734c:1",
+      "type": "stage",
+      "direction": "낮은 반주가 나온다. 첫 곡과 달리 유우가 무릎을 두드리지 않는다. 앞부분에서 한 번 너무 일찍 숨을 들이쉰 뒤, 입을 다물고 반주를 기다린다. 처음부터 다시 틀지 않고 그다음 구절로 들어간다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 463,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:2c691066b148:1"
+    },
+    "v4:26:F-YU01-B2-N:e:e083616340ec:1": {
+      "id": "v4:26:F-YU01-B2-N:e:e083616340ec:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "들어가는 데가. 듣기에는 쉬운데, 내가 기다리는 것보다 반 박자 늦어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 461,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:062cde66734c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:5ea63dad1d07:1": {
+      "id": "v4:26:F-YU01-B2-N:e:5ea63dad1d07:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가사가 어려워?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 459,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:e083616340ec:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:d16750f49b58:1": {
+      "id": "v4:26:F-YU01-B2-N:e:d16750f49b58:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "맞네. 다음 건 안 시켜. 나도 아직 틀릴 때 있어서 같이 들어오면 더 헷갈려.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 457,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:5ea63dad1d07:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:56817deb1643:1": {
+      "id": "v4:26:F-YU01-B2-N:e:56817deb1643:1",
+      "type": "stage",
+      "direction": "유우가 반박하려다가 웃는다. 두 번째 곡으로 넘기면서 첫 곡의 진행 바가 끝에 닿아 있는지 확인한다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 455,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:d16750f49b58:1"
+    },
+    "v4:26:F-YU01-B2-N:e:a20feae6de15:1": {
+      "id": "v4:26:F-YU01-B2-N:e:a20feae6de15:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 내가 왜 불러.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 453,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:56817deb1643:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:e4ecd5c6f02c:1": {
+      "id": "v4:26:F-YU01-B2-N:e:e4ecd5c6f02c:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "내가 덮어 줄 수 있는데.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 451,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:a20feae6de15:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:f2041c265261:1": {
+      "id": "v4:26:F-YU01-B2-N:e:f2041c265261:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잘하는 사람 옆에서 부르면 내 목소리만 더 이상해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 449,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:e4ecd5c6f02c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:860433283869:1": {
+      "id": "v4:26:F-YU01-B2-N:e:860433283869:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "꼭 그렇게 정한 대로만 해야 돼?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 447,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:f2041c265261:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:2665559d5237:1": {
+      "id": "v4:26:F-YU01-B2-N:e:2665559d5237:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알지. 네가 부르는 거 듣겠다고 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 445,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:860433283869:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:ff589b9b4bec:1": {
+      "id": "v4:26:F-YU01-B2-N:e:ff589b9b4bec:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "거기 아는 줄 알았는데.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 443,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:2665559d5237:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:dc9767dddf50:1": {
+      "id": "v4:26:F-YU01-B2-N:e:dc9767dddf50:1",
+      "type": "stage",
+      "direction": "유우가 미오 쪽을 보며 다음 구절을 기다린다. 미오는 입을 다문다. 유우는 박자를 놓치기 직전에 혼자 이어 간다. 끝까지 부르고 나서 재생을 멈춘다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 441,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:ff589b9b4bec:1"
+    },
+    "v4:26:F-YU01-B2-N:e:d5f5db7dd17b:1": {
+      "id": "v4:26:F-YU01-B2-N:e:d5f5db7dd17b:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "창문이 먼저 아침을 열면 / 나는 아직 신발을 찾고 있어.",
+      "mono": false,
+      "delivery": "유우·노래",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 439,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:dc9767dddf50:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:4f3226181ad2:1": {
+      "id": "v4:26:F-YU01-B2-N:e:4f3226181ad2:1",
+      "type": "stage",
+      "direction": "손바닥을 낮추는 시늉이다. 미오가 그대로 따라 하자 유우가 한 번 웃고 첫 곡을 시작한다. 밝은 박자에 맞추어 무릎을 두드린다. 후렴이 돌아올 때는 미오도 멜로디를 알아듣는다. 곡 전체를 실제로 들은 시간은 장면 안에서 지나가되, 아래는 그중 현재 불린 가상의 창작 가사와 대화다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 437,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:d5f5db7dd17b:1"
+    },
+    "v4:26:F-YU01-B2-N:e:1b48040bf9d6:1": {
+      "id": "v4:26:F-YU01-B2-N:e:1b48040bf9d6:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "손으로 해. 이렇게.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 435,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:4f3226181ad2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:9493729dd270:1": {
+      "id": "v4:26:F-YU01-B2-N:e:9493729dd270:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "노래 끝나기 전에?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 433,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:1b48040bf9d6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:171666d06c43:1": {
+      "id": "v4:26:F-YU01-B2-N:e:171666d06c43:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "반주는 작아도 나까지 작게 하면 이상하니까. 시끄러우면 말해.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 431,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:9493729dd270:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:7e76355610de:1": {
+      "id": "v4:26:F-YU01-B2-N:e:7e76355610de:1",
+      "type": "stage",
+      "direction": "유우가 문에서 먼 의자를 끌어온다. 바구니를 옆 의자에 올렸다가 미오가 앉을 자리를 보고 바닥으로 내린다. 두 사람은 이어폰을 나누어 끼는 대신 재생기의 작은 스피커를 낮게 켠다. 음악을 외부로 보내거나 녹음하지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 429,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:171666d06c43:1"
+    },
+    "v4:26:F-YU01-B2-N:e:764da6edea99:1": {
+      "id": "v4:26:F-YU01-B2-N:e:764da6edea99:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 아직은 앉아 있어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 427,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:7e76355610de:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:bb05fb28c3e0:1": {
+      "id": "v4:26:F-YU01-B2-N:e:bb05fb28c3e0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 425,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:764da6edea99:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:edfd4cb547e8:1": {
+      "id": "v4:26:F-YU01-B2-N:e:edfd4cb547e8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "지금 생겼어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 423,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:bb05fb28c3e0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:a4ba1c1700b2:1": {
+      "id": "v4:26:F-YU01-B2-N:e:a4ba1c1700b2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "급한 일이 생기면 가야지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 421,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:edfd4cb547e8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:845e5e191282:1": {
+      "id": "v4:26:F-YU01-B2-N:e:845e5e191282:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "진짜 두 곡 다 듣는다. 중간에 아, 맞다 하고 나가기 없기.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 419,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:a4ba1c1700b2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:fa703f7b67bc:1": {
+      "id": "v4:26:F-YU01-B2-N:e:fa703f7b67bc:1",
+      "type": "stage",
+      "direction": "유우는 문밖을 확인한다. 세탁실 바로 옆 휴게실은 비어 있다. 둘은 거기로 옮긴다. 수건은 건조대에 남고, 유우는 비운 바구니와 개인 재생기를 가져온다. 미오는 수첩을 자기 무릎 위에 둔다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 417,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:845e5e191282:1"
+    },
+    "v4:26:F-YU01-B2-N:e:df91dc37a721:1": {
+      "id": "v4:26:F-YU01-B2-N:e:df91dc37a721:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 네가 계속 불러도 되는 데면.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 415,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:fa703f7b67bc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:b47727ac7de3:1": {
+      "id": "v4:26:F-YU01-B2-N:e:b47727ac7de3:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "여기서? 끝까지?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 413,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:df91dc37a721:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:57517cd3b1e8:1": {
+      "id": "v4:26:F-YU01-B2-N:e:57517cd3b1e8:1",
+      "type": "stage",
+      "direction": "유우가 미오를 본다. 부탁하지 않은 답을 받은 표정이다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 411,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:b47727ac7de3:1"
+    },
+    "v4:26:F-YU01-B2-N:e:62770789838a:1": {
+      "id": "v4:26:F-YU01-B2-N:e:62770789838a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 나한테는 둘 다 들려줘. 나 시간 있어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 409,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:57517cd3b1e8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:6d53c64ecc90:1": {
+      "id": "v4:26:F-YU01-B2-N:e:6d53c64ecc90:1",
+      "type": "stage",
+      "direction": "미오가 이어폰을 뺀다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 407,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:62770789838a:1"
+    },
+    "v4:26:F-YU01-B2-N:e:1fe4a8d99b3d:1": {
+      "id": "v4:26:F-YU01-B2-N:e:1fe4a8d99b3d:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "없지. 그런데 계속 나만 하긴 좀 그렇잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 405,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:6d53c64ecc90:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:6ca577f98b03:1": {
+      "id": "v4:26:F-YU01-B2-N:e:6ca577f98b03:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다음 사람도 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 403,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:1fe4a8d99b3d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:345c680b1e6f:1": {
+      "id": "v4:26:F-YU01-B2-N:e:345c680b1e6f:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 고른 게 아니잖아. 그사이에 다음 사람이 못 나올 수도 있어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 401,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:6ca577f98b03:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B2-N:e:a211a11266bf:1": {
+      "id": "v4:26:F-YU01-B2-N:e:a211a11266bf:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "둘 다 하면 안 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 399,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B2-N — 앞에서 부를 이름",
+        "location": "F-YU01-B2-N"
+      },
+      "next": "v4:26:F-YU01-B2-N:e:345c680b1e6f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-B:menu": {
+      "id": "v4:26:F-YU01-B:menu",
+      "type": "menu",
+      "q": "남의 무대에 보태는 취향",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 176,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-B — 남의 무대에 보태는 취향",
+        "location": "F-YU01-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "사람들이 아는 첫 곡을 고른다",
+          "to": "v4:26:F-YU01-B:e:8019eb7c08c8:1",
+          "set": {
+            "F-YU01-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "유우가 오래 듣던 두 번째 곡을 고른다",
+          "to": "v4:26:F-YU01-B:e:13291fb566b3:1",
+          "set": {
+            "F-YU01-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "두 곡을 다 들을 수 있는지 묻는다",
+          "to": "v4:26:F-YU01-B2-N:e:a211a11266bf:1",
+          "set": {
+            "F-YU01-B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:26:F-YU01-04:e:6bd03097c562:1": {
+      "id": "v4:26:F-YU01-04:e:6bd03097c562:1",
+      "type": "stage",
+      "direction": "두 후보는 분위기가 다르다. 첫 곡은 재생기를 켜자 미오가 멜로디를 따라갈 수 있는 밝은 곡, 두 번째는 낮고 조용한 곡이다. 유우는 두 번째를 재생할 때 화면을 오래 본다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 174,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-B:menu"
+    },
+    "v4:26:F-YU01-04:e:c4844d734bf4:1": {
+      "id": "v4:26:F-YU01-04:e:c4844d734bf4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그냥 버릇이야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 172,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:6bd03097c562:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-04:e:a83b8eba13bd:1": {
+      "id": "v4:26:F-YU01-04:e:a83b8eba13bd:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "내가 귀에 병 옮길 것 같아?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 170,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:c4844d734bf4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-04:e:b66685ad688e:1": {
+      "id": "v4:26:F-YU01-04:e:b66685ad688e:1",
+      "type": "stage",
+      "direction": "유우는 이어폰 한쪽을 건넨다. 미오는 귀에 꽂기 전에 손으로 한번 문지른다. 유우가 웃는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 168,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:a83b8eba13bd:1"
+    },
+    "v4:26:F-YU01-04:e:150c73f9ada7:1": {
+      "id": "v4:26:F-YU01-04:e:150c73f9ada7:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "조금씩 들려줄게. 너 아는 것도 있어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 166,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:b66685ad688e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-04:e:03e6aef34ebf:1": {
+      "id": "v4:26:F-YU01-04:e:03e6aef34ebf:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "제목만 보고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 164,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:150c73f9ada7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-04:e:0aca374c0cda:1": {
+      "id": "v4:26:F-YU01-04:e:0aca374c0cda:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "하나만 골라 줘. 다음에 부를 거.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 162,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:03e6aef34ebf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-04:e:698d7968863d:1": {
+      "id": "v4:26:F-YU01-04:e:698d7968863d:1",
+      "type": "stage",
+      "direction": "바구니가 비어 간다. 유우는 걸어 놓은 수건 사이를 비집고 나와 작은 음원 재생기를 꺼낸다. 개인 소지품으로, 외부 통신이나 녹음 기능은 확인되지 않는다. 수사에서 갑자기 녹음 장치로 바꾸지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 160,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-04 다음 노래를 고르는 일",
+        "location": "F-YU01-04"
+      },
+      "next": "v4:26:F-YU01-04:e:0aca374c0cda:1"
+    },
+    "v4:26:F-YU01-03:e:bcb851b1c511:1": {
+      "id": "v4:26:F-YU01-03:e:bcb851b1c511:1",
+      "type": "stage",
+      "direction": "별것 아닌 말을 넘기는 속도가 빠르다. 미오는 받지 못한 감사가 늦게 도착한 기분이 든다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 156,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-04:e:698d7968863d:1"
+    },
+    "v4:26:F-YU01-03:e:e073e235e5cd:1": {
+      "id": "v4:26:F-YU01-03:e:e073e235e5cd:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 고마워. 아까 못 했으니까 지금 하는 거야.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 154,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:bcb851b1c511:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:add33cfdbdfc:1": {
+      "id": "v4:26:F-YU01-03:e:add33cfdbdfc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 아까는.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 152,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:e073e235e5cd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:0b8f892ebae4:1": {
+      "id": "v4:26:F-YU01-03:e:0b8f892ebae4:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "어쨌든 너는 끝까지 있었다는 거네.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 150,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:add33cfdbdfc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:f6f979e478a2:1": {
+      "id": "v4:26:F-YU01-03:e:f6f979e478a2:1",
+      "type": "stage",
+      "direction": "유우가 웃는데 미오는 따라 웃지 못한다. 남의 이름을 말하지 않은 것이 배려인지, 자기 이야기가 다른 가수 이야기로 바뀌는 게 싫어서인지 알 수 없다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 148,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:0b8f892ebae4:1"
+    },
+    "v4:26:F-YU01-03:e:b2d8d72da354:1": {
+      "id": "v4:26:F-YU01-03:e:b2d8d72da354:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "됐어. 그 사람 얘기까지 하려고 꺼낸 건 아니야.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 146,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:f6f979e478a2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:ef9142a8cdca:1": {
+      "id": "v4:26:F-YU01-03:e:ef9142a8cdca:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누구였는데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 144,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:b2d8d72da354:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:f0b4234d0de5:1": {
+      "id": "v4:26:F-YU01-03:e:f0b4234d0de5:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "뒤에 나 있다고 붙잡아 놓진 않았어. 근데 걔만 보러 왔다 가는 건 좀 그렇더라.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 142,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:ef9142a8cdca:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:eed2442a4a02:1": {
+      "id": "v4:26:F-YU01-03:e:eed2442a4a02:1",
+      "type": "stage",
+      "direction": "미오가 놀라 유우를 본다. 유우는 어깨를 으쓱한다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 140,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:f0b4234d0de5:1"
+    },
+    "v4:26:F-YU01-03:e:61829d10d98d:1": {
+      "id": "v4:26:F-YU01-03:e:61829d10d98d:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "말하던 사람 바뀌면 다 가 버리잖아. 밖에서 공연할 때도 앞 순서 끝나고 절반이 나간 적 있거든.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 138,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:eed2442a4a02:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:6231ac91202c:1": {
+      "id": "v4:26:F-YU01-03:e:6231ac91202c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "듣는지 확인하려고 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 136,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:61829d10d98d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:347ae77ffd48:1": {
+      "id": "v4:26:F-YU01-03:e:347ae77ffd48:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그래? 나는 네가 노래 듣는 줄 알았는데.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 134,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:6231ac91202c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:804da0bdfa03:1": {
+      "id": "v4:26:F-YU01-03:e:804da0bdfa03:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "수건. 네가 같은 수건 계속 들고 있어서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 132,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:347ae77ffd48:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-03:e:e408e07d9cb6:1": {
+      "id": "v4:26:F-YU01-03:e:e408e07d9cb6:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "아까 내가 두 번 부를 때, 너 어디 보고 있었어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 130,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-03 어디에 서 있었나",
+        "location": "F-YU01-03"
+      },
+      "next": "v4:26:F-YU01-03:e:804da0bdfa03:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:7bf49947f61f:1": {
+      "id": "v4:26:F-YU01-02:e:7bf49947f61f:1",
+      "type": "stage",
+      "direction": "미오는 건조대의 수건 쪽으로 눈을 돌린다. 자기 목소리는 아주 작게도 못 냈던 발표가 떠오른다. 그때 누가 먼저 박수를 쳤는지는 기억나지 않는다. 그 얼굴에 유우를 끼워 넣지는 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 126,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-03:e:e408e07d9cb6:1"
+    },
+    "v4:26:F-YU01-02:e:130c546823d7:1": {
+      "id": "v4:26:F-YU01-02:e:130c546823d7:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "시작도 못하면 그건 안 민망해?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 124,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:7bf49947f61f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:101e1f8fe3f3:1": {
+      "id": "v4:26:F-YU01-02:e:101e1f8fe3f3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "시작하고 나서 망하면 더 민망하지 않아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 122,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:130c546823d7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:075adcffc65b:1": {
+      "id": "v4:26:F-YU01-02:e:075adcffc65b:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너도 애들 앞에서 뭐 할 때 있잖아. 발표 같은 거. 시작하기 전에 한 번만 박수 쳐 줬으면 할 때 없어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 120,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:101e1f8fe3f3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:12c0e033532b:1": {
+      "id": "v4:26:F-YU01-02:e:12c0e033532b:1",
+      "type": "stage",
+      "direction": "유우가 웃으며 자기 손바닥을 보여 준다. 지금은 물 때문에 축축하다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 118,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:075adcffc65b:1"
+    },
+    "v4:26:F-YU01-02:e:dbec60dca0bc:1": {
+      "id": "v4:26:F-YU01-02:e:dbec60dca0bc:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "재밌어. 둘 다 하면 안 돼?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 116,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:12c0e033532b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:631704a31c33:1": {
+      "id": "v4:26:F-YU01-02:e:631704a31c33:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "난 네가 재밌어서 하는 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 114,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:dbec60dca0bc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:73cba2fb8412:1": {
+      "id": "v4:26:F-YU01-02:e:73cba2fb8412:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "했어. 손에 땀 엄청 나. 마이크 잡고 있으면 내가 젖게 한 건지 원래 그런 건지도 모르겠어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 112,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:631704a31c33:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:a16e56b53b57:1": {
+      "id": "v4:26:F-YU01-02:e:a16e56b53b57:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 앞에 나가도 긴장 안 할 것 같았는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 110,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:73cba2fb8412:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:10de9a3a4556:1": {
+      "id": "v4:26:F-YU01-02:e:10de9a3a4556:1",
+      "type": "stage",
+      "direction": "유우가 부러진 집게를 빈 주머니에 넣는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 108,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:a16e56b53b57:1"
+    },
+    "v4:26:F-YU01-02:e:e0181c22a524:1": {
+      "id": "v4:26:F-YU01-02:e:e0181c22a524:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "서 봤지. 거긴 보기 싫어도 앉아 있어야 하잖아. 선생님이 뒤에서 보고 있고.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 106,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:10de9a3a4556:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:340df07c7466:1": {
+      "id": "v4:26:F-YU01-02:e:340df07c7466:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "학교 공연장 같은 데도 서 봤어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 104,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:e0181c22a524:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:6331ab46b342:1": {
+      "id": "v4:26:F-YU01-02:e:6331ab46b342:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "이름 대면 아는 데. 내가 나왔다고 하면 사람들이 찾아보는 데.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 102,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:340df07c7466:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:17808cb67ff3:1": {
+      "id": "v4:26:F-YU01-02:e:17808cb67ff3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "큰 데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 100,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:6331ab46b342:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:2042dcdb5ae5:1": {
+      "id": "v4:26:F-YU01-02:e:2042dcdb5ae5:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "나 원래 큰 데서 부르고 싶었거든.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 98,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:17808cb67ff3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-02:e:8ff57f91aba1:1": {
+      "id": "v4:26:F-YU01-02:e:8ff57f91aba1:1",
+      "type": "stage",
+      "direction": "둘이 바구니를 사이에 놓고 선다. 유우가 바닥에 떨어진 빨래집게를 줍는다. 한쪽 끝이 부러졌다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 96,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-02 들을 사람 없이",
+        "location": "F-YU01-02"
+      },
+      "next": "v4:26:F-YU01-02:e:2042dcdb5ae5:1"
+    },
+    "v4:26:F-YU01-A:e:7c347810053e:1": {
+      "id": "v4:26:F-YU01-A:e:7c347810053e:1",
+      "type": "stage",
+      "direction": "유우는 더 부르지 않는다. 미오가 모른다고 했을 때 반드시 초보 관객 교육으로 이어지지 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 54,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-02:e:8ff57f91aba1:1"
+    },
+    "v4:26:F-YU01-A:e:8e9a0e784b09:1": {
+      "id": "v4:26:F-YU01-A:e:8e9a0e784b09:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "됐어. 나도 가끔 그래. 다시 들으면 아는데 다시 부르면 또 모르겠어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 52,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:7c347810053e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:1c5bd4d77c9d:1": {
+      "id": "v4:26:F-YU01-A:e:1c5bd4d77c9d:1",
+      "type": "stage",
+      "direction": "유우가 손등으로 입술을 한번 닦는다. 미오에게 더 가까이 서려다가 바구니를 발로 건드린다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 50,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:8e9a0e784b09:1"
+    },
+    "v4:26:F-YU01-A:e:fff39095a2ed:1": {
+      "id": "v4:26:F-YU01-A:e:fff39095a2ed:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "소리는 들었지. 뭐가 다른지 모르겠다고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 48,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:1c5bd4d77c9d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:5da80f5153e8:1": {
+      "id": "v4:26:F-YU01-A:e:5da80f5153e8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "너 진짜 못 들었어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 46,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:fff39095a2ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:f224d9b97eda:1": {
+      "id": "v4:26:F-YU01-A:e:f224d9b97eda:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "미안. 나는 잘 모르겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 44,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:5da80f5153e8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:5affca5a266a:1": {
+      "id": "v4:26:F-YU01-A:e:5affca5a266a:1",
+      "type": "stage",
+      "direction": "유우가 웃는다. 미오는 지금은 적지 않고 기억해 보겠다고 한다. 유우는 그 말을 마음에 들어 한다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 72,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-02:e:8ff57f91aba1:1"
+    },
+    "v4:26:F-YU01-A:e:5e88a4f0254f:1": {
+      "id": "v4:26:F-YU01-A:e:5e88a4f0254f:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그럼 그렇게 적어 놔. 나중에 네가 긴 게 낫다고 하기 없기야.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 70,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:5affca5a266a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:5c2c26e6c296:1": {
+      "id": "v4:26:F-YU01-A:e:5c2c26e6c296:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 그렇게 들었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 68,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:5e88a4f0254f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:bf346ac60010:1": {
+      "id": "v4:26:F-YU01-A:e:bf346ac60010:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그래도 그게 좋을 수도 있겠네. 끝에 다 쓸 필요는 없으니까.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 66,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:5c2c26e6c296:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:def04da13213:1": {
+      "id": "v4:26:F-YU01-A:e:def04da13213:1",
+      "type": "stage",
+      "direction": "미오는 괜히 전문가처럼 말한 것 같아 수첩을 만진다. 유우는 자기 배에 손을 얹고 다시 한 번 숨을 들이쉰다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 64,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:bf346ac60010:1"
+    },
+    "v4:26:F-YU01-A:e:f94482aa451f:1": {
+      "id": "v4:26:F-YU01-A:e:f94482aa451f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 62,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:def04da13213:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:3b6fe1c4b310:1": {
+      "id": "v4:26:F-YU01-A:e:3b6fe1c4b310:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그건 숨 모자라서 끊은 건데.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 60,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:f94482aa451f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:353c0c7d1f87:1": {
+      "id": "v4:26:F-YU01-A:e:353c0c7d1f87:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "방금 게 좋아. 끝날 때 갑자기 조용해져서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 58,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:3b6fe1c4b310:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:768572641b54:1": {
+      "id": "v4:26:F-YU01-A:e:768572641b54:1",
+      "type": "stage",
+      "direction": "유우는 다음 수건을 넌 뒤에야 다시 부른다. 미오가 일을 전부 떠맡고 유우가 일방적으로 공연하는 모양이 되지는 않는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 90,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-02:e:8ff57f91aba1:1"
+    },
+    "v4:26:F-YU01-A:e:30c76474fd9b:1": {
+      "id": "v4:26:F-YU01-A:e:30c76474fd9b:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "나도 그래. 지금 똑같은 데만 몇 번째인지 모르겠어.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 88,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:768572641b54:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:2950658945db:1": {
+      "id": "v4:26:F-YU01-A:e:2950658945db:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오래 걸리는 건 싫으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 86,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:30c76474fd9b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:6b84cc4e8b35:1": {
+      "id": "v4:26:F-YU01-A:e:6b84cc4e8b35:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "저런 데까지 맞추고. 나 아이한테 배워 온 줄 알았네.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 84,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:2950658945db:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:c7f30d606e94:1": {
+      "id": "v4:26:F-YU01-A:e:c7f30d606e94:1",
+      "type": "stage",
+      "direction": "유우가 수건 한 장을 건넨다. 미오는 양쪽 끝을 맞춰 건다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 82,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:6b84cc4e8b35:1"
+    },
+    "v4:26:F-YU01-A:e:8632342cbcfb:1": {
+      "id": "v4:26:F-YU01-A:e:8632342cbcfb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 안 불렀어. 내가 왔어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 80,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:c7f30d606e94:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:5d68ab1e51c1:1": {
+      "id": "v4:26:F-YU01-A:e:5d68ab1e51c1:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그러면 내가 빨래 시키려고 불러 세운 것 같잖아.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 78,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:8632342cbcfb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:e:f142242fab9c:1": {
+      "id": "v4:26:F-YU01-A:e:f142242fab9c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 수건 널어 줄게. 너는 부르고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 76,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "next": "v4:26:F-YU01-A:e:5d68ab1e51c1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-A:menu": {
+      "id": "v4:26:F-YU01-A:menu",
+      "type": "menu",
+      "q": "아직 끝나지 않은 노래",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 40,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "선택 F-YU01-A — 아직 끝나지 않은 노래",
+        "location": "F-YU01-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "차이를 못 알아들었다고 한다.",
+          "to": "v4:26:F-YU01-A:e:f224d9b97eda:1",
+          "set": {
+            "F-YU01-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "마지막을 짧게 부른 쪽이 좋았다고 말한다.",
+          "to": "v4:26:F-YU01-A:e:353c0c7d1f87:1",
+          "set": {
+            "F-YU01-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "더 듣기보다 같이 수건을 널겠다고 한다.",
+          "to": "v4:26:F-YU01-A:e:f142242fab9c:1",
+          "set": {
+            "F-YU01-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:26:F-YU01-01:e:af1badb32cbb:1": {
+      "id": "v4:26:F-YU01-01:e:af1badb32cbb:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "지금 거. 앞에 거랑 뭐가 달랐어?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 38,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-A:menu",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:e5625ce9949a:1": {
+      "id": "v4:26:F-YU01-01:e:e5625ce9949a:1",
+      "type": "stage",
+      "direction": "유우는 수건을 걸어 놓고 숨을 고른다. 같은 짧은 부분을 다시 부른다. 가사는 가상의 창작곡이며 실제 노래를 인용하지 않는다. 끝 음을 길게 끌다가 중간에 목소리를 끊는다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 36,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:af1badb32cbb:1"
+    },
+    "v4:26:F-YU01-01:e:26f6227698b1:1": {
+      "id": "v4:26:F-YU01-01:e:26f6227698b1:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "괜찮은데 계속 부르겠어? 잠깐만. 이번 거 듣고 말해 줘.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 34,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:e5625ce9949a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:1b6a6224b9b0:1": {
+      "id": "v4:26:F-YU01-01:e:1b6a6224b9b0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이상하다고 안 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 32,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:26f6227698b1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:d9f4d13c9512:1": {
+      "id": "v4:26:F-YU01-01:e:d9f4d13c9512:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "들었어? 어디가 이상해?",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 30,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:1b6a6224b9b0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:910455c12587:1": {
+      "id": "v4:26:F-YU01-01:e:910455c12587:1",
+      "type": "stage",
+      "direction": "유우가 수건을 펼친 채 멈춘다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 28,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:d9f4d13c9512:1"
+    },
+    "v4:26:F-YU01-01:e:49a58adc50fd:1": {
+      "id": "v4:26:F-YU01-01:e:49a58adc50fd:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "노래는 안 끝나던데. 아까 그 부분 또 하는 거지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 26,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:910455c12587:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:831a840d0467:1": {
+      "id": "v4:26:F-YU01-01:e:831a840d0467:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "하고 있어. 이거 하고, 노래도 하고. 한꺼번에 하면 빨리 끝나. 이거 끝나면 빨리 올라가려고.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 24,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:49a58adc50fd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:56ed0fc13b4e:1": {
+      "id": "v4:26:F-YU01-01:e:56ed0fc13b4e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "소리 들려서 와 봤어. 연습하는 줄 알고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 22,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:831a840d0467:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:0f8ae0689134:1": {
+      "id": "v4:26:F-YU01-01:e:0f8ae0689134:1",
+      "type": "stage",
+      "direction": "유우가 수건을 털자 물방울이 미오의 소매에 튄다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 20,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:56ed0fc13b4e:1"
+    },
+    "v4:26:F-YU01-01:e:1646311c28f8:1": {
+      "id": "v4:26:F-YU01-01:e:1646311c28f8:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "그건 네가 들고 있어야지. 나중에 내가 가져갔다고 하지 말고.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 18,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:0f8ae0689134:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:41cca48ab387:1": {
+      "id": "v4:26:F-YU01-01:e:41cca48ab387:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이걸?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 16,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:1646311c28f8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:763ec969afcc:1": {
+      "id": "v4:26:F-YU01-01:e:763ec969afcc:1",
+      "type": "stage",
+      "direction": "미오는 세탁물을 가져온 것이 아니다. 손에 든 수첩을 보여 준다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 14,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:41cca48ab387:1"
+    },
+    "v4:26:F-YU01-01:e:6a14648fdd54:1": {
+      "id": "v4:26:F-YU01-01:e:6a14648fdd54:1",
+      "type": "say",
+      "speaker": "유우",
+      "actor": "yuu",
+      "text": "왔어? 그거 거기 걸어. 비어 있는 칸.",
+      "mono": false,
+      "delivery": "유우",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 12,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:763ec969afcc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "유우",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:4d4b0552cbb2:1": {
+      "id": "v4:26:F-YU01-01:e:4d4b0552cbb2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 있었네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 10,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:6a14648fdd54:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:26:F-YU01-01:e:649de7a9e22f:1": {
+      "id": "v4:26:F-YU01-01:e:649de7a9e22f:1",
+      "type": "stage",
+      "direction": "미오는 복도에서 노래를 듣는다. 유우의 목소리는 알겠는데 방 위치가 이상하다. 세탁실 문이 열려 있다. 유우가 바구니를 바닥에 놓고 수건 한 장씩을 건조대에 건다.",
+      "source": {
+        "file": "26_자유시간_유우_01.md",
+        "line": 8,
+        "fileSha256": "8a990390790c81e6784b780224df54f8714926498108cc3988a54cecbda94a2c",
+        "heading": "F-YU01-01 세탁실의 가수",
+        "location": "F-YU01-01"
+      },
+      "next": "v4:26:F-YU01-01:e:4d4b0552cbb2:1"
+    }
+  },
+  "kind": "freetime",
+  "routingStatus": "reviewed-nested-first-meeting",
+  "sourceFile": "26_자유시간_유우_01.md",
+  "completionFlag": "fte:26:complete",
+  "eligibility": "Only the exact first-case daytime window. Late-entry replacements are separate and cannot use this introduction.",
+  "sourceConditionalPolicy": "Nested song-name consent, actual leaf-wiping, actual role-play response, current tea and current-photo deletion remain distinct. No unseen branch is replayed.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "26_자유시간_유우_01.md:F-YU01-05": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-B2-N": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-02": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "26_자유시간_유우_01.md:F-YU01-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

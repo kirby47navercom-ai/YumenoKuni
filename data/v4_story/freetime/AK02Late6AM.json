@@ -1,0 +1,4893 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:151:actual-first-laundry",
+  "nodes": {
+    "v4:39:return:late:AK02Late6AM": {
+      "id": "v4:39:return:late:AK02Late6AM",
+      "type": "return"
+    },
+    "v4:39:F-AK02-09:e:8b71b15e364c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:8b71b15e364c:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 대답하지 못한다.아카리가 먼저 문을 열고,미오가 가방을 메고 따라간다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 489,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:return:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-09:e:d9386627775c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:d9386627775c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "아까부터 칭찬 기다리고 계셨잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 487,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:8b71b15e364c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-09:e:900be3a165b2:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:900be3a165b2:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그 말은 좀 얄밉다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 485,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:d9386627775c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-09:e:5232ba2c4a51:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:5232ba2c4a51:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "아뇨. 잘 안 돼도 미오 씨가 하기로 한 거였으니까요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 483,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:900be3a165b2:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-09:e:d844c2828d2b:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:d844c2828d2b:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 조금 웃는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 481,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:5232ba2c4a51:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-09:e:1e87d7177b1b:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:1e87d7177b1b:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 잘해서?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 479,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:d844c2828d2b:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-09:e:33e4f2cfb56e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:33e4f2cfb56e:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "제가 안 해도 되는 게 많았어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 477,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:1e87d7177b1b:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-09:e:3f26fdc074c8:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:3f26fdc074c8:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘 가르치는 건 어땠어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 475,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:33e4f2cfb56e:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "B1/B2는 라운지에서 각자 정리한 뒤 나간다.B3은 물품표 확인을 끝낸 뒤 갈라진다.아카리가 통을 가방에 넣는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 473,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-09 떠날 때의 말",
+        "location": "F-AK02-09"
+      },
+      "next": "v4:39:F-AK02-09:e:3f26fdc074c8:1:late:AK02Late6AM"
+    },
+    "v4:39:missing:B1-current-cup-not-universal:late:AK02Late6AM": {
+      "id": "v4:39:missing:B1-current-cup-not-universal:late:AK02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-AK02-A"
+    },
+    "v4:39:F-AK02-B:e:f7985d362318:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:f7985d362318:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 자기 잔을 집어 남은 차를 마신다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 391,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:c7805bc55805:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:c7805bc55805:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 자기 기호와 달라 남긴 차를 비우고 잔을 헹군 뒤 물을 받는다. 미오는 자기가 좋아한 연한 차를 계속 마신다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 395,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:50eaff4246ca:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:50eaff4246ca:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "두 사람이 쓴 차를 각자 비우고 잔을 헹군 뒤 같은 잔에 물을 받는다. 새 차를 만들어 성공한 결과를 붙이지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 403,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:f51f72956e3a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:f51f72956e3a:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네. 저도 다시 만들고 싶지는 않아요. 지금은요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 401,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:50eaff4246ca:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:adbe6dbdd412:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:adbe6dbdd412:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다시 하면 이번에는 시계만 보겠다. 나는 물 마실래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 399,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:f51f72956e3a:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:B1-current-cup-not-universal:late:AK02Late6AM": {
+      "id": "v4:39:B1-current-cup-not-universal:late:AK02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AK02-A",
+          "equals": "A1",
+          "to": "v4:39:F-AK02-B:e:f7985d362318:1:late:AK02Late6AM"
+        },
+        {
+          "flag": "F-AK02-A",
+          "equals": "A2",
+          "to": "v4:39:F-AK02-B:e:c7805bc55805:1:late:AK02Late6AM"
+        },
+        {
+          "flag": "F-AK02-A",
+          "equals": "A3",
+          "to": "v4:39:F-AK02-B:e:adbe6dbdd412:1:late:AK02Late6AM"
+        }
+      ],
+      "default": "v4:39:missing:B1-current-cup-not-universal:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:7730753dd81f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:7730753dd81f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네. 그러긴 했어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 387,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:B1-current-cup-not-universal:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:f58f62720d96:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:f58f62720d96:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 저녁에 달라고 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 385,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:7730753dd81f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:77f0089ce668:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:77f0089ce668:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "미오 씨가 잡아 주셔서 안 간 것처럼 됐네요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 383,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:f58f62720d96:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:ba382bc0ea6a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:ba382bc0ea6a:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "나나가 나간다.아카리가 앉아서 남은 차를 본다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 381,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:77f0089ce668:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:3936d2029211:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:3936d2029211:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그럼 저녁에 주세요. 제가 그때도 볼 수 있는지 먼저 말씀드릴게요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 379,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:ba382bc0ea6a:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:f40bbc46b7c9:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:f40bbc46b7c9:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 나나를 본다.나나는 뒤에 다시 부탁하겠다고 한다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 377,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:3936d2029211:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:81e0233e4013:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:81e0233e4013:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나 아직 너랑 마시고 싶어. 급한 게 아니면 조금 뒤에 해도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 375,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:f40bbc46b7c9:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:4fbb930b9965:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:4fbb930b9965:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "A2에서는 마시지 않은 잔을 내려놓고도 함께 앉아 있을 수 있다.A3에서는 다시 만들지 않고 잠깐 더 이야기하는 쪽을 고른다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 419,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:fdd7d646c613:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:fdd7d646c613:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "저걸 보면 남은 시간이 다 그 얘기가 될 것 같아서요. 지금은 이 잔부터 볼래요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 417,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:4fbb930b9965:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:718f7cb30cdb:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:718f7cb30cdb:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 물품표를 한번 보고,나나에게 저녁에 가져와 달라고 한다.그녀 스스로 남기로 한다.미오가 「가도 돼」라고 말했으므로 떠난 결과로 쓰지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 415,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:fdd7d646c613:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:4fde9f1ea53d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:4fde9f1ea53d:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 어느 쪽 하고 싶어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 413,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:718f7cb30cdb:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:fca3e981539a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:fca3e981539a:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "미안해서만 앉아 있는 건 아니에요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 411,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:4fde9f1ea53d:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:fcdf45cf3cf3:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:fcdf45cf3cf3:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도 그쪽이 신경 쓰이면 오늘은 여기까지 하자. 나한테 미안해서 앉아 있을 필요는 없고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 409,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:fca3e981539a:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:4a9271c28a10:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:4a9271c28a10:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "세 사람은 표를 남긴다.이 경로에서는 라운지에서 더 오래 마신 시간이 없다.일을 같이 한 경험으로 이어진다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 469,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-09:e:b41b742eb6ef:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:033da9cf6c27:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:033da9cf6c27:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 한 종류만 가져갔어. 그러면 이 표가 맞겠네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 467,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:4a9271c28a10:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:6e851c5394b8:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:6e851c5394b8:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "여기 두 종류네요. 하나 지우면 안 돼요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 465,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:033da9cf6c27:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:2f832bee6755:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:2f832bee6755:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "세 사람은 실제 물건과 기존 번호를 대조했다.새 규격의 잔을 만들어 수량을 맞춘 것이 아니고,미오가 가져간 두 잔 이외에 추가로 인출하거나 파손한 물건도 없다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 463,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:6e851c5394b8:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:bced46aa333e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:bced46aa333e:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "지금은 안 지워요. 같은 이름은 두 줄 다 남겨 두고요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 461,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:2f832bee6755:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:5e94e677ee79:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:5e94e677ee79:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "나나",
+      "actor": "nana",
+      "text": "저는 하나 지우면 되는 줄 알았어요. 물어보고 하길 잘했네요.",
+      "mono": false,
+      "delivery": "나나",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 459,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:bced46aa333e:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "나나",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:e9c07dcaa9af:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:e9c07dcaa9af:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 미오를 본다.나나는 둘의 얼굴을 번갈아 보고 표를 선반에 다시 편다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 457,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:5e94e677ee79:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:0a0ffb1fbf68:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:0a0ffb1fbf68:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 금방 알아내니까 내가 잘못한 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 455,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:e9c07dcaa9af:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:bb687d71a130:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:bb687d71a130:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "확인하러 오셨잖아요. 가져간 수를 잘못 썼다고는 안 했어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 453,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:0a0ffb1fbf68:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:3e1ed3fb9b97:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:3e1ed3fb9b97:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 내가 다른 칸에서 꺼냈는지는 나도 지금 보러 온 거고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 451,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:bb687d71a130:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:f086933e6d8c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:f086933e6d8c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "나나",
+      "actor": "nana",
+      "text": "그럼 이쪽 두 개만 돌아온 걸로 보면 되겠네요.",
+      "mono": false,
+      "delivery": "나나",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 449,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:3e1ed3fb9b97:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "나나",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:359871f9a73d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:359871f9a73d:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "나나가 표를 기울여 선반 표지와 나란히 놓는다.미오는 자기가 가져갔던 칸을 가리킨다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 447,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:f086933e6d8c:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:a26a3aceee63:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:a26a3aceee63:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "규격이요. 이름만 보고 합치면 다른 잔이 없어져요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 445,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:359871f9a73d:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:14f60bad88fd:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:14f60bad88fd:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같은 이름인데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 443,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:a26a3aceee63:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:b5e5345cf425:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:b5e5345cf425:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "이건 뒤 번호가 달라요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 441,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:14f60bad88fd:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:c4cb5ffc5186:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:c4cb5ffc5186:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 두 줄의 오른쪽을 번갈아 본다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 439,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:b5e5345cf425:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:5349fc5ebadd:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:5349fc5ebadd:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "나나",
+      "actor": "nana",
+      "text": "그 위에도 찻잔이라고 적혀 있어서요. 그쪽까지 빼야 하는 건지 몰랐어요.",
+      "mono": false,
+      "delivery": "나나",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 437,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:c4cb5ffc5186:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "나나",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:eaef1d7ddf6d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:eaef1d7ddf6d:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 적은 건 여기. 두 개. 그때 하나씩 꺼냈어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 435,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:5349fc5ebadd:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:97f842523496:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:97f842523496:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "나나가 문가에서 표의 접힌 부분을 가리킨다.미오와 아카리는 먼저 자기 잔을 각각 비우고 씻는다.01 때 쓰던 잔을 새로 꺼내 합치지 않고 지금 인출표에 적은 두 잔만 반납한다.그 뒤 세 사람이 물품 선반 앞에 선다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 433,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:eaef1d7ddf6d:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-B:e:51977bbb12ae:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:51977bbb12ae:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "나나",
+      "actor": "nana",
+      "text": "네. 같이 적힌 데는 여기예요.",
+      "mono": false,
+      "delivery": "나나",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 431,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:97f842523496:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "나나",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:2d58ab71b891:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:2d58ab71b891:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "나나 씨. 치우고 갈게요. 표는 갖고 계셔도 돼요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 429,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:51977bbb12ae:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:deb5a1ac1551:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:deb5a1ac1551:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 찻잔 두 개 꺼내면서 내가 적었어. 내가 적은 게 겹친 건지 볼 수는 있지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 427,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:2d58ab71b891:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:3d2a4a7d095f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:3d2a4a7d095f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "미오 씨까지 하실 필요는…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 425,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:deb5a1ac1551:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:e:b586a954463d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:e:b586a954463d:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내 잔부터 치울게. 그다음에 같이 봐도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 423,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "next": "v4:39:F-AK02-B:e:3d2a4a7d095f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-B:menu:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-B:menu:late:AK02Late6AM",
+      "type": "menu",
+      "q": "남은 차를 두고",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 371,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-B",
+        "location": "F-AK02-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "지금은 함께 마시고 싶다고 말한다",
+          "to": "v4:39:F-AK02-B:e:81e0233e4013:1:late:AK02Late6AM",
+          "set": {
+            "F-AK02-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "확인하러 가고 싶으면 끝내도 된다고 말한다",
+          "to": "v4:39:F-AK02-B:e:fcdf45cf3cf3:1:late:AK02Late6AM",
+          "set": {
+            "F-AK02-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "정리하고 같이 표를 확인하러 가자고 한다",
+          "to": "v4:39:F-AK02-B:e:b586a954463d:1:late:AK02Late6AM",
+          "set": {
+            "F-AK02-B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:39:F-AK02-07:e:564b0e0166e7:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-07:e:564b0e0166e7:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 앉지 못하고 의자 옆에 선다.나나는 그 자리에 기다리며 답을 강요하지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 367,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-07 새로 들어온 부탁",
+        "location": "F-AK02-07"
+      },
+      "next": "v4:39:F-AK02-B:menu:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-07:e:a2c836a7674a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-07:e:a2c836a7674a:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "나나",
+      "actor": "nana",
+      "text": "급한 건 아니에요. 제가 한 번 더 맞춰 보고 저녁에 드려도 돼요.",
+      "mono": false,
+      "delivery": "나나",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 365,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-07 새로 들어온 부탁",
+        "location": "F-AK02-07"
+      },
+      "next": "v4:39:F-AK02-07:e:564b0e0166e7:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "나나",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-07:e:e14eb123da94:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-07:e:e14eb123da94:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "지금 할게요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 363,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-07 새로 들어온 부탁",
+        "location": "F-AK02-07"
+      },
+      "next": "v4:39:F-AK02-07:e:a2c836a7674a:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-07:e:e97237cfa12a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-07:e:e97237cfa12a:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 바로 일어나려 한다.미오는 포트를 잡고 있다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 361,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-07 새로 들어온 부탁",
+        "location": "F-AK02-07"
+      },
+      "next": "v4:39:F-AK02-07:e:e14eb123da94:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-07:e:5b580fa69f64:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-07:e:5b580fa69f64:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "나나",
+      "actor": "nana",
+      "text": "아카리 씨. 지금 보고 계신 것 끝나면 찻잔 항목 확인해 주실래요? 같은 이름이 두 번 적혀 있어서요.",
+      "mono": false,
+      "delivery": "나나",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 359,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-07 새로 들어온 부탁",
+        "location": "F-AK02-07"
+      },
+      "next": "v4:39:F-AK02-07:e:e97237cfa12a:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "나나",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-07:e:8df7f5346211:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-07:e:8df7f5346211:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "나나가 라운지 문가에 온다.공용 물품표를 들고 있다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 357,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-07 새로 들어온 부탁",
+        "location": "F-AK02-07"
+      },
+      "next": "v4:39:F-AK02-07:e:5b580fa69f64:1:late:AK02Late6AM"
+    },
+    "v4:39:missing:current-different-taste:late:AK02Late6AM": {
+      "id": "v4:39:missing:current-different-taste:late:AK02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-AK02-A"
+    },
+    "v4:39:h-16a36e86f6:e:e4257f352aa1:1:late:AK02Late6AM": {
+      "id": "v4:39:h-16a36e86f6:e:e4257f352aa1:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 아카리가 「제가 하면」이라는 말을 안 붙인 것을 듣는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 329,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A1",
+        "location": "h-16a36e86f6"
+      },
+      "next": "v4:39:F-AK02-07:e:8df7f5346211:1:late:AK02Late6AM"
+    },
+    "v4:39:h-16a36e86f6:e:d5030331ed06:1:late:AK02Late6AM": {
+      "id": "v4:39:h-16a36e86f6:e:d5030331ed06:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "저는 맛있어요. 조금 다른데, 좋아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 327,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A1",
+        "location": "h-16a36e86f6"
+      },
+      "next": "v4:39:h-16a36e86f6:e:e4257f352aa1:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-16a36e86f6:e:403b9a975773:1:late:AK02Late6AM": {
+      "id": "v4:39:h-16a36e86f6:e:403b9a975773:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "괜찮다는 게 맛있다는 뜻이야, 처음치고 괜찮다는 뜻이야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 325,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A1",
+        "location": "h-16a36e86f6"
+      },
+      "next": "v4:39:h-16a36e86f6:e:d5030331ed06:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-16a36e86f6:e:7612be03e681:1:late:AK02Late6AM": {
+      "id": "v4:39:h-16a36e86f6:e:7612be03e681:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "괜찮아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 323,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A1",
+        "location": "h-16a36e86f6"
+      },
+      "next": "v4:39:h-16a36e86f6:e:403b9a975773:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-c8361f9b46:e:07687d679745:1:late:AK02Late6AM": {
+      "id": "v4:39:h-c8361f9b46:e:07687d679745:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 조금만 마신 뒤 잔을 내려놓는다.서로 괜찮은 사람이 되려고 같은 차를 끝까지 비우지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 339,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A2",
+        "location": "h-c8361f9b46"
+      },
+      "next": "v4:39:F-AK02-07:e:8df7f5346211:1:late:AK02Late6AM"
+    },
+    "v4:39:h-c8361f9b46:e:6e540a6f1c3c:1:late:AK02Late6AM": {
+      "id": "v4:39:h-c8361f9b46:e:6e540a6f1c3c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네. 지금 미오 씨 마실 걸 만드셨으니까요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 337,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A2",
+        "location": "h-c8361f9b46"
+      },
+      "next": "v4:39:h-c8361f9b46:e:07687d679745:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-c8361f9b46:e:df0e866ed987:1:late:AK02Late6AM": {
+      "id": "v4:39:h-c8361f9b46:e:df0e866ed987:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 이게 좋은데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 335,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A2",
+        "location": "h-c8361f9b46"
+      },
+      "next": "v4:39:h-c8361f9b46:e:6e540a6f1c3c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-c8361f9b46:e:581f4c4e7be6:1:late:AK02Late6AM": {
+      "id": "v4:39:h-c8361f9b46:e:581f4c4e7be6:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "저는 조금 더 진한 게 좋아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 333,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A2",
+        "location": "h-c8361f9b46"
+      },
+      "next": "v4:39:h-c8361f9b46:e:df0e866ed987:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-1398b376fd:e:77060f54f382:1:late:AK02Late6AM": {
+      "id": "v4:39:h-1398b376fd:e:77060f54f382:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 잔을 내려놓는다.아카리가 오늘 시간을 낭비했다고 생각한 것은 아니었다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 353,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A3",
+        "location": "h-1398b376fd"
+      },
+      "next": "v4:39:F-AK02-07:e:8df7f5346211:1:late:AK02Late6AM"
+    },
+    "v4:39:h-1398b376fd:e:f72f3ed353e7:1:late:AK02Late6AM": {
+      "id": "v4:39:h-1398b376fd:e:f72f3ed353e7:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "말하면 이야기 그만하실 것 같았어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 351,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A3",
+        "location": "h-1398b376fd"
+      },
+      "next": "v4:39:h-1398b376fd:e:77060f54f382:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-1398b376fd:e:ffeb29921d08:1:late:AK02Late6AM": {
+      "id": "v4:39:h-1398b376fd:e:ffeb29921d08:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알고 있었잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 349,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A3",
+        "location": "h-1398b376fd"
+      },
+      "next": "v4:39:h-1398b376fd:e:f72f3ed353e7:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-1398b376fd:e:3791dccff9cd:1:late:AK02Late6AM": {
+      "id": "v4:39:h-1398b376fd:e:3791dccff9cd:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그렇죠.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 347,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A3",
+        "location": "h-1398b376fd"
+      },
+      "next": "v4:39:h-1398b376fd:e:ffeb29921d08:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-1398b376fd:e:31a08dcb0580:1:late:AK02Late6AM": {
+      "id": "v4:39:h-1398b376fd:e:31a08dcb0580:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "쓰다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 345,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A3",
+        "location": "h-1398b376fd"
+      },
+      "next": "v4:39:h-1398b376fd:e:3791dccff9cd:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-1398b376fd:e:49ec6a5f7962:1:late:AK02Late6AM": {
+      "id": "v4:39:h-1398b376fd:e:49ec6a5f7962:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 한 모금 마시고 얼굴을 찡그린다.미오가 웃다가 자기 차를 마시고 같은 얼굴이 된다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 343,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "A3",
+        "location": "h-1398b376fd"
+      },
+      "next": "v4:39:h-1398b376fd:e:31a08dcb0580:1:late:AK02Late6AM"
+    },
+    "v4:39:current-different-taste:late:AK02Late6AM": {
+      "id": "v4:39:current-different-taste:late:AK02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AK02-A",
+          "equals": "A1",
+          "to": "v4:39:h-16a36e86f6:e:7612be03e681:1:late:AK02Late6AM"
+        },
+        {
+          "flag": "F-AK02-A",
+          "equals": "A2",
+          "to": "v4:39:h-c8361f9b46:e:581f4c4e7be6:1:late:AK02Late6AM"
+        },
+        {
+          "flag": "F-AK02-A",
+          "equals": "A3",
+          "to": "v4:39:h-1398b376fd:e:49ec6a5f7962:1:late:AK02Late6AM"
+        }
+      ],
+      "default": "v4:39:missing:current-different-taste:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-06:e:dfbfe8075cbb:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-06:e:dfbfe8075cbb:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 먼저 마신다.그 다음 아카리가 잔을 든다.이 순서로 미오가 독을 검사하거나 안전을 증명하는 역할을 맡는 것은 아니다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 319,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-06 먼저 마시는 사람",
+        "location": "F-AK02-06"
+      },
+      "next": "v4:39:current-different-taste:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:05087fc6f28b:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:05087fc6f28b:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 따른다.아카리는 향을 맡고 바로 마시지 않는다.미오는 그 얼굴을 보고 벌써 성공한 것 같은 기분이 든다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 151,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-06:e:dfbfe8075cbb:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:d4077cc4a898:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:d4077cc4a898:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "지금이요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 149,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:05087fc6f28b:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:f260b6d3a410:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:f260b6d3a410:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금이라고 해. 그 말은 기다리고 있었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 147,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:d4077cc4a898:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:bbd04021cea0:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:bbd04021cea0:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "그녀가 시계를 보고 말을 멈춘다.미오가 포트를 든다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 145,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:f260b6d3a410:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:e8510f9d845f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:e8510f9d845f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그러면 지금쯤…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 143,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:bbd04021cea0:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:d3ff2667cf8d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:d3ff2667cf8d:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 조금 앞으로 앉는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 141,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:e8510f9d845f:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:bc404cbd1e4c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:bc404cbd1e4c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 네가 좋아하는 쪽으로 해 보고 싶어. 내가 마실 건 나중에 바꾸면 되니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 139,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:d3ff2667cf8d:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:e475b5e8ef73:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:e475b5e8ef73:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 자기 잔을 든다.선생님이어서 무조건 같은 맛을 좋아해야 하는 것은 아니다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 167,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-06:e:dfbfe8075cbb:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:403808d7bead:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:403808d7bead:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 아직 맛 안 봤어. 너도 싫으면 안 마셔도 되고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 165,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:e475b5e8ef73:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:eda32e88e98a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:eda32e88e98a:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "제가 마시는 것보다 연하네요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 163,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:403808d7bead:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:4cb53e727339:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:4cb53e727339:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 고개를 끄덕인다.미오는 차를 따른다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 161,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:eda32e88e98a:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:ff4df41db345:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:ff4df41db345:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럴 수도 있겠지. 그래도 그렇게 마셔 볼래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 159,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:4cb53e727339:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:9e04553d3c67:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:9e04553d3c67:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그러면 향은 덜…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 157,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:ff4df41db345:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:fb24ebf068eb:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:fb24ebf068eb:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 지난번보다 연한 게 좋아. 조금 일찍 따를게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 155,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:9e04553d3c67:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:a63e52cd41da:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:a63e52cd41da:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 말하고 나서 미오를 본다.미오는 굳이 책임을 반씩 쓰자고 하지 않고 차를 따른다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 313,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-06:e:dfbfe8075cbb:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:993b8e5fadc8:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:993b8e5fadc8:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네. 저만 실수한 건 아니네요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 311,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:a63e52cd41da:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:2b7ec03c45b1:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:2b7ec03c45b1:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "우리 둘 다 보고 있었지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 309,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:993b8e5fadc8:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:d1595fe3236b:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:d1595fe3236b:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "둘이 이야기를 멈췄을 때 차는 아카리가 원한 시간보다 오래 우러나 있다.이번에는 미오도 알고 있다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 307,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:2b7ec03c45b1:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:a76e6d71cd5f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:a76e6d71cd5f:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 다시 웃는다.그 뒤에야 포트 쪽으로 시선이 돌아간다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 305,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:d1595fe3236b:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:aecdbf352e7c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:aecdbf352e7c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "내려올 때만 안 찍으면요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 303,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:a76e6d71cd5f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:9befd75b79ce:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:9befd75b79ce:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그것도 사진 찍어 주면 안 타?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 301,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:aecdbf352e7c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:a11d5bc37c6a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:a11d5bc37c6a:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "전망용 엘리베이터는 괜찮을 것 같아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 299,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:9befd75b79ce:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:f4d1e2437323:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:f4d1e2437323:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 잠깐 창밖을 본다.좌석은 움직이지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 297,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:a11d5bc37c6a:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:426c290667a5:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:426c290667a5:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 네가 미안해하라고 한 건 아니야. 내가 하던 말이 벌써 옛날 얘기처럼 들려서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 295,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:f4d1e2437323:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:3ac5a105e611:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:3ac5a105e611:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "죄송해요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 293,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:426c290667a5:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:2b73c66fa356:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:2b73c66fa356:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 그 얘기하면 재미없어지는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 291,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:3ac5a105e611:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:94517fa581a1:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:94517fa581a1:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그런데 여기서는 사진 고르는 얘기를 하는 것도 좀 이상하네요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 289,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:2b73c66fa356:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:d3ec8eae3d81:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:d3ec8eae3d81:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 사진을 찍어 주겠다고 새 약속을 하지 않는다.미오도 지금 카메라를 가져오지 않는다.둘이 웃음이 가라앉는 동안 탁자 위 포트는 그대로 있다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 287,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:94517fa581a1:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:474348f61b15:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:474348f61b15:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 안 보이고 싶었으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 285,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:d3ec8eae3d81:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:bfd7f328e746:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:bfd7f328e746:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그러면 원래 얼굴을 못 찍잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 283,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:474348f61b15:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:95eaec0adcc1:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:95eaec0adcc1:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 그냥 찍을 때부터 이랬어. 멋있게 안 나오니까 장난친 거라고 하려고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 281,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:bfd7f328e746:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:34b21a00922b:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:34b21a00922b:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 입을 다문다.이번에는 미오가 먼저 자기 얼굴을 조금 일그러뜨린다.사진 앞에서 웃는 척하다 실패한 얼굴이다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 279,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:95eaec0adcc1:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:704a4cd4b1c3:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:704a4cd4b1c3:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "변명 길어진다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 277,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:34b21a00922b:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:dffe98d301ed:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:dffe98d301ed:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "다른 분 것도 지워 달라고 하시면 지워 드렸고요. 그전까지 제가 골라서 지워 버리면 또 왜 지웠냐고…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 275,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:704a4cd4b1c3:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:f94482aa451f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:f94482aa451f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 273,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:dffe98d301ed:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:8391b9d45af5:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:8391b9d45af5:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "알아요. 저도 제 사진만 골라 지운 적 있어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 271,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:f94482aa451f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:82d71bb5e87a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:82d71bb5e87a:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 말고. 전에.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 269,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:8391b9d45af5:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:def60655399e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:def60655399e:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 미오를 본다.미오는 아카리에게 그런 일을 당했다고 말하는 것은 아니라는 듯 고개를 젓는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 267,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:82d71bb5e87a:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:5959762c5e52:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:5959762c5e52:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 자기 것만 먼저 지워 놓고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 265,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:def60655399e:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:642f52589512:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:642f52589512:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "사진 지워 달라고 하면 재미있게 나왔다고 하죠.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 263,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:5959762c5e52:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:f367124af1a1:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:f367124af1a1:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알았어. 나도 그런 사진 싫어. 다른 사람은 타고 나와서 잘 찍혔다고 하니까 더 싫고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 261,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:642f52589512:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:8b4b0d5e86f6:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:8b4b0d5e86f6:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "얼굴만 그래서 싫은 건 아니에요. 높은 데서 그렇게 움직이는 것도 싫고요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 259,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:f367124af1a1:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:01bf5ddfd6b4:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:01bf5ddfd6b4:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 얼굴에서 웃음을 지우려다가 실패한다.아카리가 포트가 아니라 자기 잔을 본다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 257,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:8b4b0d5e86f6:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:41c68f7c672f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:41c68f7c672f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "지금도 웃고 계세요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 255,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:01bf5ddfd6b4:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:fa60ce6e82ff:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:fa60ce6e82ff:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "봤어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 253,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:41c68f7c672f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:a8e5f3ab4409:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:a8e5f3ab4409:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "하려고 하셨잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 251,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:fa60ce6e82ff:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:705692efa01d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:705692efa01d:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 249,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:a8e5f3ab4409:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:9874794bd902:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:9874794bd902:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "하지 마세요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 247,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:705692efa01d:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:ace6870c40b2:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:ace6870c40b2:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 입술을 꾹 누른다.미오가 그 표정을 따라 하려 하자 손을 편다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 245,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:9874794bd902:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:302426fb0840:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:302426fb0840:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "제 거요. 내려올 때. 사진 찍힌 거 보면 입이…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 243,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:ace6870c40b2:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:8522f8a0fae8:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:8522f8a0fae8:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누구 얼굴.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 241,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:302426fb0840:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:9284675aabbb:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:9284675aabbb:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "무섭죠. 그리고 얼굴이 싫어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 239,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:8522f8a0fae8:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:0b88d90545d4:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:0b88d90545d4:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 안 무서워?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 237,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:9284675aabbb:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:96a5cc7f7cfa:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:96a5cc7f7cfa:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 웃음을 터뜨린다.미오는 따라서 웃다가 아카리 쪽으로 몸을 조금 기울인다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 235,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:0b88d90545d4:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:961d403169fe:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:961d403169fe:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무서워지고 나서는 안 보고 싶었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 233,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:96a5cc7f7cfa:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:a10155885080:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:a10155885080:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "아까는 앞사람 보려고 뒤에 타셨다면서요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 231,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:961d403169fe:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:a895cf717f4d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:a895cf717f4d:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "눈 감았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 229,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:a10155885080:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:8385cfd11c0c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:8385cfd11c0c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그래서 소리 지르셨어요?",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 227,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:a895cf717f4d:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:54881a273a48:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:54881a273a48:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 알아. 내가 잘못 골랐어. 그런데 옆에서 그 얘기 계속하면 더 무서워.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 225,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:8385cfd11c0c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:f79f584c0ded:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:f79f584c0ded:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 웃음을 참으려고 입을 다문다.미오는 그 표정을 보고 손을 든다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 223,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:54881a273a48:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:3a9e9fdec0a5:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:3a9e9fdec0a5:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "탔으니까 알지. 지금은.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 221,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:f79f584c0ded:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:e1995950fa8f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:e1995950fa8f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "뒤쪽도 똑같이 올라가잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 219,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:3a9e9fdec0a5:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:6193e81b44db:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:6193e81b44db:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "앞에 사람들 보이면 덜 올라가는 것 같을 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 217,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:e1995950fa8f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:7dce8ef094bf:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:7dce8ef094bf:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "왜요?",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 215,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:6193e81b44db:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:11ed17ea5f6e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:11ed17ea5f6e:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 전에 다른 데서 바이킹 탔어. 뒤에 앉으면 덜 무서울 줄 알고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 213,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:7dce8ef094bf:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:2739b50f5fea:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:2739b50f5fea:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 아카리를 본다.아카리는 진지하게 고개를 끄덕인다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 211,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:11ed17ea5f6e:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:f8670f56c936:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:f8670f56c936:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그럼 탈래요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 209,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:2739b50f5fea:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:1ecbd8d5db6c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:1ecbd8d5db6c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 이름도 바꿔야겠다. 전망용 엘리베이터.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 207,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:f8670f56c936:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:29d80c660ede:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:29d80c660ede:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "천천히 내려오면 되죠. 엘리베이터처럼.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 205,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:1ecbd8d5db6c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:52f252829d43:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:52f252829d43:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 떨어지면 계속 위에 있어야 하는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 203,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:29d80c660ede:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:5fccb0667504:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:5fccb0667504:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네. 보이는 것도 좋고. 그다음에 꼭 떨어뜨리잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 201,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:52f252829d43:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:ccee4cba9c53:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:ccee4cba9c53:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "올라갈 때는 괜찮고?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 199,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:5fccb0667504:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:8e6096d60e74:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:8e6096d60e74:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "내려오는 거요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 197,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:ccee4cba9c53:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:d02c6ce13ded:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:d02c6ce13ded:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "타는 건 싫어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 195,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:8e6096d60e74:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:20f53ebafea3:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:20f53ebafea3:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "안 타고 보는 건 괜찮아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 193,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:d02c6ce13ded:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:6fd8ddb94e54:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:6fd8ddb94e54:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "저거 지금 움직이면 얼마나 놀랄까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 191,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:20f53ebafea3:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:fd41ba86fd99:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:fd41ba86fd99:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃고 창문을 본다.정지한 놀이기구의 좌석들이 같은 각도로 매달려 있다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 189,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:6fd8ddb94e54:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:2484dbf4c096:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:2484dbf4c096:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "지금까지 여러 번 들었어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 187,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:fd41ba86fd99:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:75cf6ab4af83:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:75cf6ab4af83:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 안 늦었다고 말하려고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 185,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:2484dbf4c096:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:da21b3d7ce9c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:da21b3d7ce9c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그래서 저 들어올 때 계속 보셨구나.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 183,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:75cf6ab4af83:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:523316d6c178:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:523316d6c178:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잔 꺼냈어. 네가 볼 때 잘 꺼내는 것처럼 보이고 싶었는데 너무 빨리 와서 다 해 버렸고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 181,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:da21b3d7ce9c:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:86ff9dc0dcb7:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:86ff9dc0dcb7:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "먼저 오셔서 뭐 하셨어요?",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 179,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:523316d6c178:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:80d90aee7bd4:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:80d90aee7bd4:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 시계를 뒤집어 놓지는 않는다.대신 문 쪽을 본다.미오는 포트 손잡이에 손을 대지 않고 자기 무릎에 얹는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 177,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:86ff9dc0dcb7:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-A:e:8773142e2ef8:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:8773142e2ef8:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알겠는데, 마실 때까지 그것만 보고 있을 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 175,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:80d90aee7bd4:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:101710300b99:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:101710300b99:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "맛이 달라지니까요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 173,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:8773142e2ef8:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:e:2b95adc92176:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:e:2b95adc92176:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘도 시계만 보고 있네. 지난번엔 내가 늦어서 봤고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 171,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "next": "v4:39:F-AK02-A:e:101710300b99:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-A:menu:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-A:menu:late:AK02Late6AM",
+      "type": "menu",
+      "q": "어떤 맛으로 만들까",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 135,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "선택 F-AK02-A",
+        "location": "F-AK02-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "아카리가 좋아하는 맛에 맞춰 보고 싶다고 한다.",
+          "to": "v4:39:F-AK02-A:e:bc404cbd1e4c:1:late:AK02Late6AM",
+          "set": {
+            "F-AK02-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "미오가 마시고 싶은 맛으로 만든다.",
+          "to": "v4:39:F-AK02-A:e:fb24ebf068eb:1:late:AK02Late6AM",
+          "set": {
+            "F-AK02-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "시간을 보지 않고 둘이 이야기하다가 따른다.",
+          "to": "v4:39:F-AK02-A:e:2b95adc92176:1:late:AK02Late6AM",
+          "set": {
+            "F-AK02-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:39:F-AK02-04:e:1670de52a14d:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:1670de52a14d:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃는다.아카리가 입술을 누르다가 함께 웃는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 131,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-A:menu:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-04:e:a429d6bce0ea:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:a429d6bce0ea:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "기다리면서 말도 할 수 있잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 129,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:1670de52a14d:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-04:e:d34e65f88dd6:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:d34e65f88dd6:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 방금은?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 127,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:a429d6bce0ea:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-04:e:0fa5a31916c9:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:0fa5a31916c9:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "할 수 있어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 125,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:d34e65f88dd6:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-04:e:1f0952c46443:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:1f0952c46443:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "기다리는 건 못하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 123,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:0fa5a31916c9:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-04:e:5ea593436a3f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:5ea593436a3f:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리는 접시를 원래대로 돌려놓지 않는다.손만 자기 무릎으로 내린다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 121,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:1f0952c46443:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-04:e:5c537bd32749:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:5c537bd32749:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그냥 자리 넓히려고 옮겼어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 119,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:5ea593436a3f:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-04:e:27df7d844898:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:27df7d844898:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "여기 놓으면 흘릴 때…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 117,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:5c537bd32749:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-04:e:1aae4a625498:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-04:e:1aae4a625498:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "차가 우러나는 동안 미오가 잔 옆의 작은 접시를 밀어 둔다.아카리가 그 접시를 잡는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 115,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-04 미리 알고 있는 감상",
+        "location": "F-AK02-04"
+      },
+      "next": "v4:39:F-AK02-04:e:27df7d844898:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-03:e:39a6c68e02a9:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:39a6c68e02a9:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 뚜껑을 마저 연다.두 사람이 동시에 웃는다.모든 조언을 간섭으로 바꿔 거절하는 게임은 아니다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 111,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-04:e:1aae4a625498:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-03:e:6f9fbb0f2148:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:6f9fbb0f2148:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "뚜껑이 덜 열렸어요. 그건 필요해요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 109,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:39a6c68e02a9:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:190cec1607e9:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:190cec1607e9:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 미오의 손과 통을 번갈아 본다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 107,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:6f9fbb0f2148:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-03:e:277fd5657ab7:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:277fd5657ab7:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 필요한 말이야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 105,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:190cec1607e9:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:47c73288e887:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:47c73288e887:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그건…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 103,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:277fd5657ab7:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:a5b657e08159:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:a5b657e08159:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "잠깐 조용하다.미오가 통을 집는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 101,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:47c73288e887:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-03:e:5ea93c343d52:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:5ea93c343d52:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 99,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:a5b657e08159:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:6a7a7e8c522b:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:6a7a7e8c522b:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 뜨거워. 손잡이 잡고 있고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 97,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:5ea93c343d52:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:5b11c396245e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:5b11c396245e:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "바닥이 뜨거울 수 있어서요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 95,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:6a7a7e8c522b:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:40828efa3672:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:40828efa3672:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 93,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:5b11c396245e:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-03:e:67ad1bd281d3:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-03:e:67ad1bd281d3:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 물을 준비한다.아카리는 옆에서 순서를 말하다가,미오가 잔을 잡은 손을 다른 손으로 바꾸자 입을 다문다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 91,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-03 잔에 남겨 둔 손",
+        "location": "F-AK02-03"
+      },
+      "next": "v4:39:F-AK02-03:e:40828efa3672:1:late:AK02Late6AM"
+    },
+    "v4:39:missing:previous-request:late:AK02Late6AM": {
+      "id": "v4:39:missing:previous-request:late:AK02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-AK01-B"
+    },
+    "v4:39:h-634b298845:e:55b3f580a01c:1:late:AK02Late6AM": {
+      "id": "v4:39:h-634b298845:e:55b3f580a01c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "오늘은 하나씩 하죠. 제가 다 해 버리면 뭘 배우시겠어요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 57,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B1 — 차 만들기를 배우기로 했던 경우",
+        "location": "h-634b298845"
+      },
+      "next": "v4:39:F-AK02-03:e:67ad1bd281d3:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-634b298845:e:2664b5790d0a:1:late:AK02Late6AM": {
+      "id": "v4:39:h-634b298845:e:2664b5790d0a:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 잠깐 생각하다 머리핀을 만진다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 55,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B1 — 차 만들기를 배우기로 했던 경우",
+        "location": "h-634b298845"
+      },
+      "next": "v4:39:h-634b298845:e:55b3f580a01c:1:late:AK02Late6AM"
+    },
+    "v4:39:h-634b298845:e:e7555c8ed608:1:late:AK02Late6AM": {
+      "id": "v4:39:h-634b298845:e:e7555c8ed608:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그 뒤에도 있었어. 네가 너무 빨리 말했지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 53,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B1 — 차 만들기를 배우기로 했던 경우",
+        "location": "h-634b298845"
+      },
+      "next": "v4:39:h-634b298845:e:2664b5790d0a:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-634b298845:e:b0fcf1d66232:1:late:AK02Late6AM": {
+      "id": "v4:39:h-634b298845:e:b0fcf1d66232:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "물부터라고만 말씀드렸잖아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 51,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B1 — 차 만들기를 배우기로 했던 경우",
+        "location": "h-634b298845"
+      },
+      "next": "v4:39:h-634b298845:e:e7555c8ed608:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-634b298845:e:18719d4634e7:1:late:AK02Late6AM": {
+      "id": "v4:39:h-634b298845:e:18719d4634e7:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 내가 해 볼게. 앞에서 말한 건 아직 다 못 외웠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 49,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B1 — 차 만들기를 배우기로 했던 경우",
+        "location": "h-634b298845"
+      },
+      "next": "v4:39:h-634b298845:e:b0fcf1d66232:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-5a0d250819:e:314eee51d15b:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:314eee51d15b:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 중간에 다른 일을 골랐던 것을 말한다.아카리가 시킨 일에 실패한 이야기가 아니라,미오가 부탁한 순서를 스스로 바꾼 이야기다.그 뒤 오늘은 차를 직접 만들어 보고 싶다고 새로 제안한다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 75,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:F-AK02-03:e:67ad1bd281d3:1:late:AK02Late6AM"
+    },
+    "v4:39:h-5a0d250819:e:d5964c9dc395:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:d5964c9dc395:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "네. 듣고 있을게요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 73,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:314eee51d15b:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-5a0d250819:e:82140588e774:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:82140588e774:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 종이를 잡으려던 손을 내린다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 71,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:d5964c9dc395:1:late:AK02Late6AM"
+    },
+    "v4:39:h-5a0d250819:e:3534706dd873:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:3534706dd873:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "분석해 달라고 가져온 건 아니야. 어떻게 됐는지 말해 주려고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 69,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:82140588e774:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-5a0d250819:e:af97588427d5:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:af97588427d5:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그럼 어디에서 시간이…….",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 67,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:3534706dd873:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-5a0d250819:e:448e858b2454:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:448e858b2454:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "첫 번째는 오늘 했어. 그다음에는 여기 왔고. 적어 둔 순서대로 끝까지 하지는 않았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 65,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:af97588427d5:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-5a0d250819:e:b22428586bc6:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:b22428586bc6:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 자신이 실제로 고른 세 가지가 적힌 종이를 꺼낸다.세 항목은31에서 실제로 고른 개인 빨래 널기→그림 그리기→메모 정리다.하지 않은 일을 완료 표시로 채워 넣지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 63,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:448e858b2454:1:late:AK02Late6AM"
+    },
+    "v4:39:h-5a0d250819:e:d3f51d28c54e:1:late:AK02Late6AM": {
+      "id": "v4:39:h-5a0d250819:e:d3f51d28c54e:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "지난번에 적은 건 해 보셨어요?",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 61,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B2 — 미오가 고른 세 가지 일의 순서를 적었던 경우",
+        "location": "h-5a0d250819"
+      },
+      "next": "v4:39:h-5a0d250819:e:b22428586bc6:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-0f8aa61409:e:d9ccabc9567f:1:late:AK02Late6AM": {
+      "id": "v4:39:h-0f8aa61409:e:d9ccabc9567f:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "제가 하는 대로 똑같이 안 하셔도 돼요. 지난번에 맛이 다르다고 하셨으니까요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 85,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B3 — 추가 노동을 부탁하지 않았던 경우",
+        "location": "h-0f8aa61409"
+      },
+      "next": "v4:39:F-AK02-03:e:67ad1bd281d3:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-0f8aa61409:e:4ba002416714:1:late:AK02Late6AM": {
+      "id": "v4:39:h-0f8aa61409:e:4ba002416714:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 통을 꺼낸다.지난번에 가르쳐 주기로 했다는 말은 하지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 83,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B3 — 추가 노동을 부탁하지 않았던 경우",
+        "location": "h-0f8aa61409"
+      },
+      "next": "v4:39:h-0f8aa61409:e:d9ccabc9567f:1:late:AK02Late6AM"
+    },
+    "v4:39:h-0f8aa61409:e:124d0cfa1219:1:late:AK02Late6AM": {
+      "id": "v4:39:h-0f8aa61409:e:124d0cfa1219:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "해 보실래요? 좋아요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 81,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B3 — 추가 노동을 부탁하지 않았던 경우",
+        "location": "h-0f8aa61409"
+      },
+      "next": "v4:39:h-0f8aa61409:e:4ba002416714:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:h-0f8aa61409:e:9e0373bf05d0:1:late:AK02Late6AM": {
+      "id": "v4:39:h-0f8aa61409:e:9e0373bf05d0:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 내가 해 봐도 돼? 계속 네가 따라 주는 거 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 79,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "01-B3 — 추가 노동을 부탁하지 않았던 경우",
+        "location": "h-0f8aa61409"
+      },
+      "next": "v4:39:h-0f8aa61409:e:124d0cfa1219:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:previous-request:late:AK02Late6AM": {
+      "id": "v4:39:previous-request:late:AK02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AK01-B",
+          "equals": "B1",
+          "to": "v4:39:h-634b298845:e:18719d4634e7:1:late:AK02Late6AM"
+        },
+        {
+          "flag": "F-AK01-B",
+          "equals": "B2",
+          "to": "v4:39:h-5a0d250819:e:d3f51d28c54e:1:late:AK02Late6AM"
+        },
+        {
+          "flag": "F-AK01-B",
+          "equals": "B3",
+          "to": "v4:39:h-0f8aa61409:e:9e0373bf05d0:1:late:AK02Late6AM"
+        }
+      ],
+      "default": "v4:39:missing:previous-request:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-01:e:2d7102a81f9e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:2d7102a81f9e:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "아카리가 잔을 보다가 고개를 끄덕인다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 43,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:previous-request:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-01:e:5f326a41fade:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:5f326a41fade:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "먼저 올 필요는 없고. 이건 꺼내도 되는 잔이지?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 41,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:2d7102a81f9e:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-01:e:966561204684:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:966561204684:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그건 시간이 지났을 때 말하면 되잖아요. 제가 먼저 오려고 했는데.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 39,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:5f326a41fade:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-01:e:6e58753e9346:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:6e58753e9346:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃는다.아카리는 가방을 내려놓으며 시계를 다시 보지 않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 37,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:966561204684:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-01:e:56f087636958:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:56f087636958:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "잘하셨다고요?",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 35,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:6e58753e9346:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-01:e:e477031fad55:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:e477031fad55:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "더 없어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 33,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:56f087636958:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-01:e:e4499a3312eb:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:e4499a3312eb:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "아카리",
+      "actor": "akari",
+      "text": "그러시네요.",
+      "mono": false,
+      "delivery": "아카리",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 31,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:e477031fad55:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아카리",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-01:e:b4e25d3f03cd:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:b4e25d3f03cd:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이번엔 안 늦었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 29,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:e4499a3312eb:1:late:AK02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:39:F-AK02-01:e:b24904f5ad8f:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-01:e:b24904f5ad8f:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "라운지.미오는 약속 시간보다 먼저 와 있다.공용 물품 선반에서 찻잔 두 개를 꺼내 인출표의 찻잔 항목에2라고 직접 적는다.그 잔을 탁자에 놓고 문 쪽을 본다.아카리가 들어오다 시계를 본다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 27,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-01 먼저 온 사람",
+        "location": "F-AK02-01"
+      },
+      "next": "v4:39:F-AK02-01:e:b4e25d3f03cd:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-00B2:e:1048ceb73657:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:1048ceb73657:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 그림을 시작하지 않는다. 순서 메모만 가방에 넣고 약속 장소로 간다.빨래가아직젖어있다는것을첫항목도안한것으로되돌리지않고,그림/메모정리는안했다는채아래찻잔인출로이어진다.같은개인시간에다른인물과의만남을추가완료하지않는다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 23,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-01:e:b24904f5ad8f:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-00B2:e:f2a5998f192c:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:f2a5998f192c:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그 순서대로 하겠다고 하면 또 늦겠다.",
+      "mono": true,
+      "delivery": "미오·속말",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 21,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:1048ceb73657:1:late:AK02Late6AM",
+      "presentation": {}
+    },
+    "v4:39:F-AK02-00B2:e:0276eb02fc6a:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:0276eb02fc6a:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 방에 돌아와 메모를 편다. 첫 항목 옆에 작은 표시를 한다. 다른 두 칸은 비워 둔 채 그림용 일반 종이를 보다가,아카리와 만나려던 라운지 쪽을 본다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 19,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:f2a5998f192c:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-00B2:e:0551b62a1caf:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:0551b62a1caf:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "말리는 동안 그림. 그다음 메모.",
+      "mono": true,
+      "delivery": "미오·속말",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 17,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:0276eb02fc6a:1:late:AK02Late6AM",
+      "presentation": {}
+    },
+    "v4:39:F-AK02-00B2:e:ea33b460ef20:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:ea33b460ef20:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "한쪽 끝이 접힌 채 걸린 것을 보고 다시 펴서 건다. 사람이 대신 와서 해 주는 장면 없이 미오 손으로 마친다.지금도마르기를기다리는수건이지건조완료품은아니다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 15,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:0551b62a1caf:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-00B2:e:a13f37c452d5:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:a13f37c452d5:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 지금 쓸 개인 수건을 들고 세탁실로 간다. 남의 세탁물을 꺼내거나 누가 맡긴 수건을 대신 정리하지 않는다. 자기 수건을 실제로 빨고 물기를 정리한 뒤 빈 건조대 한 자리에 넌다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 13,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:ea33b460ef20:1:late:AK02Late6AM"
+    },
+    "v4:39:F-AK02-00B2:e:2451778b742e:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:2451778b742e:1:late:AK02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 아직도 내일이네.",
+      "mono": true,
+      "delivery": "미오·속말",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 11,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:a13f37c452d5:1:late:AK02Late6AM",
+      "presentation": {}
+    },
+    "v4:39:F-AK02-00B2:e:6d7452974785:1:late:AK02Late6AM": {
+      "id": "v4:39:F-AK02-00B2:e:6d7452974785:1:late:AK02Late6AM",
+      "type": "stage",
+      "direction": "미오는 자기 방에서 일반 순서 메모를 꺼낸다. 빨래 널기, 그림 그리기, 메모 정리. 내일 하고 싶다고 자기가 골랐던 세 가지다. 그 내일은 이미 지났다.첫 항목 옆에 끝냈다는 표시는 없다.",
+      "source": {
+        "file": "39_자유시간_아카리_02.md",
+        "line": 9,
+        "fileSha256": "a6f1f5066085b03379514f902f2f299d494f64cfeab54ed110d1629798aa2a33",
+        "heading": "F-AK02-00B2 오늘 처음 끝낸 것",
+        "location": "F-AK02-00B2"
+      },
+      "next": "v4:39:F-AK02-00B2:e:2451778b742e:1:late:AK02Late6AM"
+    },
+    "v4:39:B2-laundry-is-current:late:AK02Late6AM": {
+      "id": "v4:39:B2-laundry-is-current:late:AK02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "AK01Late5",
+          "equals": true,
+          "to": "v4:39:F-AK02-01:e:b24904f5ad8f:1:late:AK02Late6AM"
+        }
+      ],
+      "default": "v4:39:F-AK02-00B2:e:6d7452974785:1:late:AK02Late6AM"
+    },
+    "v4:39:actually-chosen-order:late:AK02Late6AM": {
+      "id": "v4:39:actually-chosen-order:late:AK02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AK01-B",
+          "equals": "B2",
+          "to": "v4:39:B2-laundry-is-current:late:AK02Late6AM"
+        }
+      ],
+      "default": "v4:39:F-AK02-01:e:b24904f5ad8f:1:late:AK02Late6AM"
+    },
+    "v4:151:h-586422f04e:e:7d6f5bb76ad3:1": {
+      "id": "v4:151:h-586422f04e:e:7d6f5bb76ad3:1",
+      "type": "stage",
+      "direction": "라운지로온미오는39의시작대로찻잔두개를현재새로꺼내인출표에2라고쓰고아카리를기다린다.어제31잔은이미씻어반납했으며이인출을어제의수량표에겹쳐적은것이아니다.",
+      "source": {
+        "file": "151_자유시간_아카리_2장_내일의_첫줄.md",
+        "line": 55,
+        "fileSha256": "b43ea1f8db4cd1c9a022aa5aff4fd17b45893f625c1ab6efce644fac6495b739",
+        "heading": "AK-LATE-B2-Next 첫 번째만 한 아침",
+        "location": "h-586422f04e"
+      },
+      "next": "v4:39:actually-chosen-order:late:AK02Late6AM"
+    },
+    "v4:151:h-586422f04e:e:d28cf43bfeb9:1": {
+      "id": "v4:151:h-586422f04e:e:d28cf43bfeb9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 한 것까지 할 거라고 쓰면 어제랑 똑같겠다. 지금은 가야지.",
+      "mono": true,
+      "delivery": "미오·속말",
+      "source": {
+        "file": "151_자유시간_아카리_2장_내일의_첫줄.md",
+        "line": 53,
+        "fileSha256": "b43ea1f8db4cd1c9a022aa5aff4fd17b45893f625c1ab6efce644fac6495b739",
+        "heading": "AK-LATE-B2-Next 첫 번째만 한 아침",
+        "location": "h-586422f04e"
+      },
+      "next": "v4:151:h-586422f04e:e:7d6f5bb76ad3:1",
+      "presentation": {}
+    },
+    "v4:151:h-586422f04e:e:990f4d376097:1": {
+      "id": "v4:151:h-586422f04e:e:990f4d376097:1",
+      "type": "stage",
+      "direction": "미오는 그림을 그릴 일반 종이를 꺼내려다 시계를 본다. 아카리와 새로 만나기로 한 시각이 가깝다. 종이를 방에 두고 어제의 순서 메모만 가방에 넣는다. 그림과 메모정리를끝냈다고표시하지않는다.",
+      "source": {
+        "file": "151_자유시간_아카리_2장_내일의_첫줄.md",
+        "line": 51,
+        "fileSha256": "b43ea1f8db4cd1c9a022aa5aff4fd17b45893f625c1ab6efce644fac6495b739",
+        "heading": "AK-LATE-B2-Next 첫 번째만 한 아침",
+        "location": "h-586422f04e"
+      },
+      "next": "v4:151:h-586422f04e:e:d28cf43bfeb9:1"
+    },
+    "v4:151:h-586422f04e:e:7742879c7421:1": {
+      "id": "v4:151:h-586422f04e:e:7742879c7421:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "첫 번째는 했네.",
+      "mono": true,
+      "delivery": "미오·속말",
+      "source": {
+        "file": "151_자유시간_아카리_2장_내일의_첫줄.md",
+        "line": 49,
+        "fileSha256": "b43ea1f8db4cd1c9a022aa5aff4fd17b45893f625c1ab6efce644fac6495b739",
+        "heading": "AK-LATE-B2-Next 첫 번째만 한 아침",
+        "location": "h-586422f04e"
+      },
+      "next": "v4:151:h-586422f04e:e:990f4d376097:1",
+      "presentation": {}
+    },
+    "v4:151:h-586422f04e:e:18f46f35c0d2:1": {
+      "id": "v4:151:h-586422f04e:e:18f46f35c0d2:1",
+      "type": "stage",
+      "direction": "미오가 자기 방에 둔 일반 메모를 본다. 빨래, 그림, 메모. 어제 자기가 말한 순서다. 이미 세탁을 마쳐 두었던 자기 옷을 들고 세탁실 건조대에 넌다. 다른 사람의젖은옷을만지거나유우의개인세탁장면을같이본것이아니다.",
+      "source": {
+        "file": "151_자유시간_아카리_2장_내일의_첫줄.md",
+        "line": 47,
+        "fileSha256": "b43ea1f8db4cd1c9a022aa5aff4fd17b45893f625c1ab6efce644fac6495b739",
+        "heading": "AK-LATE-B2-Next 첫 번째만 한 아침",
+        "location": "h-586422f04e"
+      },
+      "next": "v4:151:h-586422f04e:e:7742879c7421:1"
+    },
+    "v4:151:actual-first-laundry": {
+      "id": "v4:151:actual-first-laundry",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AK01-B",
+          "equals": "B2",
+          "to": "v4:151:h-586422f04e:e:18f46f35c0d2:1"
+        }
+      ],
+      "default": "v4:39:actually-chosen-order:late:AK02Late6AM"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "151_자유시간_아카리_2장_내일의_첫줄.md",
+  "baseSourceFile": "39_자유시간_아카리_02.md",
+  "completionFlag": "fte:AK02Late6AM:complete",
+  "routingStatus": "explicit-reviewed-late-calendar",
+  "campaignReady": false,
+  "requiresPriorFlags": {
+    "F-AK01-B": [
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "AK01Late5": [
+      true
+    ]
+  },
+  "physicalState": "Exactly two current common cups withdrawn and eventually returned. A1 matchesAkari/A2 onlyMio/A3 overbrews; onlyB1 has the exact source cup-water replacement. B2 Akari voluntarily remains, B3 returns cups then compares existing two item numbers without deleting either. No poison-test claim, newcup, oath, rewind, numerical relationship reward or inherited personal cup.",
+  "lateCalendarKey": "AK02Late6AM",
+  "eligibility": "Only the exact source-authored separate calendar window; never a first-case substitute or same-window chain.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "39_자유시간_아카리_02.md:F-AK02-09": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-07": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:h-16a36e86f6": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:h-c8361f9b46": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:h-1398b376fd": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-06": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:h-634b298845": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:h-5a0d250819": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:h-0f8aa61409": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "39_자유시간_아카리_02.md:F-AK02-00B2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "151_자유시간_아카리_2장_내일의_첫줄.md:h-586422f04e": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

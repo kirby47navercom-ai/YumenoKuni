@@ -1,0 +1,5171 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "F",
+  "entry": "v4:34:F-HA01-01:e:602afe82c90e:1",
+  "nodes": {
+    "v4:34:return": {
+      "id": "v4:34:return",
+      "type": "return"
+    },
+    "v4:34:F-HA01-06:e:2a0b77c34c3e:1": {
+      "id": "v4:34:F-HA01-06:e:2a0b77c34c3e:1",
+      "type": "stage",
+      "direction": "하루카는 그 대답을 조금 오래 듣는 표정으로 미오를 본다. 무조건 응이라고 하지 않은 말이어서 섭섭하지만, 거절도 아니어서 더 묻지 못한다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 512,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:return"
+    },
+    "v4:34:F-HA01-06:e:1a61d0f5ef4c:1": {
+      "id": "v4:34:F-HA01-06:e:1a61d0f5ef4c:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나중에 꺼낼 수 있으면 보자.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 510,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:2a0b77c34c3e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-06:e:2f9798dad10c:1": {
+      "id": "v4:34:F-HA01-06:e:2f9798dad10c:1",
+      "type": "stage",
+      "direction": "미오는 지금 원하는 것이 사진을 보자는 약속인지, 앞으로도 같이 있자는 약속인지 묻지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 508,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:1a61d0f5ef4c:1"
+    },
+    "v4:34:F-HA01-06:e:ba5a38982ef2:1": {
+      "id": "v4:34:F-HA01-06:e:ba5a38982ef2:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나중에 같이 보면 좋겠다.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 506,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:2f9798dad10c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-06:e:ed95ccf84f46:1": {
+      "id": "v4:34:F-HA01-06:e:ed95ccf84f46:1",
+      "type": "stage",
+      "direction": "대여 카메라가 비어 있었던 것은 본편에서 확인한 사실이다. 이 말을 생성물의 정체를 단독으로 증명하는 단서처럼 쓰지 않는다. 하루카는 방금 새로 남긴 사진 또는 지운 화면을 떠올린다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 504,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:ba5a38982ef2:1"
+    },
+    "v4:34:F-HA01-06:e:267944e8c8a9:1": {
+      "id": "v4:34:F-HA01-06:e:267944e8c8a9:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "내 것도 지금은 없네. 여기는 새로 찍은 것만 있고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 502,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:ed95ccf84f46:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-06:e:1e4545bd7a2d:1": {
+      "id": "v4:34:F-HA01-06:e:1e4545bd7a2d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아마. 안 가져왔으니까. 네 건?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 500,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:267944e8c8a9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-06:e:b192fafc5b3d:1": {
+      "id": "v4:34:F-HA01-06:e:b192fafc5b3d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "미오, 여기 오기 전에 찍은 네 사진은 집에 있어?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 498,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:1e4545bd7a2d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-06:e:e86616979f40:1": {
+      "id": "v4:34:F-HA01-06:e:e86616979f40:1",
+      "type": "stage",
+      "direction": "가게 밖. B3경로에서는 카메라를 더 꺼내지 않는다. 다른 경로에서는 하루카가 렌즈 덮개를 확인하고 가방에 넣는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 496,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-06 나중의 사진",
+        "location": "F-HA01-06"
+      },
+      "next": "v4:34:F-HA01-06:e:b192fafc5b3d:1"
+    },
+    "v4:34:F-HA01-05a:e:0c13557d1a60:1": {
+      "id": "v4:34:F-HA01-05a:e:0c13557d1a60:1",
+      "type": "stage",
+      "direction": "두 사람은 물건을 구입하거나 주머니에 넣지 않고 가게 밖으로 나온다.기억 속 어린 시절의 취향은 현재 두 사람이 그렇게 기억한다고 말한 것이며 객관적인 과거 장면으로 재생하지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 492,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-06:e:e86616979f40:1"
+    },
+    "v4:34:F-HA01-05a:e:ba277ea0c056:1": {
+      "id": "v4:34:F-HA01-05a:e:ba277ea0c056:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 쟤는 꼬리가 짧았어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 490,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:0c13557d1a60:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:bacf2f29d6e1:1": {
+      "id": "v4:34:F-HA01-05a:e:bacf2f29d6e1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "꼬리도?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 488,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:ba277ea0c056:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:8a87333185a3:1": {
+      "id": "v4:34:F-HA01-05a:e:8a87333185a3:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "됐어. 봤어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 486,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:bacf2f29d6e1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:1d81d51e5d9b:1": {
+      "id": "v4:34:F-HA01-05a:e:1d81d51e5d9b:1",
+      "type": "stage",
+      "direction": "미오가 고개를 저으며 웃는다.잠깐 전 물건마다 하루카의 기분을 물으려던 버릇과,지금 두 사람이 엉터리로 표정을 붙이는 일은 겹치지만 같지는 않다.하루카는 입 벌린 고양이도 제자리에 돌려놓고 빈손으로 문 쪽으로 온다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 484,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:8a87333185a3:1"
+    },
+    "v4:34:F-HA01-05a:e:c47d9041e457:1": {
+      "id": "v4:34:F-HA01-05a:e:c47d9041e457:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "너는 화난 다음에는 우는 거네.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 482,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:1d81d51e5d9b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:65b473857d78:1": {
+      "id": "v4:34:F-HA01-05a:e:65b473857d78:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "울고 있을 수도 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 480,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:c47d9041e457:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:cc7c03655ab8:1": {
+      "id": "v4:34:F-HA01-05a:e:cc7c03655ab8:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "하품할 수도 있지.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 478,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:65b473857d78:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:dee7d5259fa7:1": {
+      "id": "v4:34:F-HA01-05a:e:dee7d5259fa7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그것도 졸린 거라고 할 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 476,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:cc7c03655ab8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:fd6c01bd969c:1": {
+      "id": "v4:34:F-HA01-05a:e:fd6c01bd969c:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "이쪽에는 입 벌린 것도 있네.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 474,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:dee7d5259fa7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:b370caea5b48:1": {
+      "id": "v4:34:F-HA01-05a:e:b370caea5b48:1",
+      "type": "stage",
+      "direction": "미오는 바로 문을 열지 않는다.하루카가 옆 칸의 작은 장식들을 보는 동안 자기 앞 토끼를 다시 본다.하루카와 같은 것을 더 보든 다른 것을 보든,새 선물의 소유나 쌍 장식 완성으로 처리하지 않는다.카메라는 이 구간에서 꺼내지 않으며 B3의 오늘 추가 촬영 거절도 유지한다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 472,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:fd6c01bd969c:1"
+    },
+    "v4:34:F-HA01-05a:e:42ce95979418:1": {
+      "id": "v4:34:F-HA01-05a:e:42ce95979418:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "조금만 더 보자. 너도 보고 싶은 데 있으면 먼저 가 있고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 470,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:b370caea5b48:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:49be69d2f66f:1": {
+      "id": "v4:34:F-HA01-05a:e:49be69d2f66f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 끝난 줄 알고. 가게 밖 얘기하려고 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 468,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:42ce95979418:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:ebaf65ebd165:1": {
+      "id": "v4:34:F-HA01-05a:e:ebaf65ebd165:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "제일 마음에 드는 거 하나 찾으면 나머지는 안 봐?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 466,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:49be69d2f66f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:616ca3c0c91e:1": {
+      "id": "v4:34:F-HA01-05a:e:616ca3c0c91e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "고양이 골랐잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 464,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:ebaf65ebd165:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:e75395acd980:1": {
+      "id": "v4:34:F-HA01-05a:e:e75395acd980:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 여기까지 왔는데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 462,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:616ca3c0c91e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:c91054a0af10:1": {
+      "id": "v4:34:F-HA01-05a:e:c91054a0af10:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다른 것도 볼 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 460,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:e75395acd980:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:989f91ec6b14:1": {
+      "id": "v4:34:F-HA01-05a:e:989f91ec6b14:1",
+      "type": "stage",
+      "direction": "하루카가 고양이 장식을 제자리에 둔다.미오는 웃는 토끼와 자는 토끼를 나란히 본다.하루카는 미오가 어느 것을 좋아하는지 다시 묻지 않고 옆 선반으로 한 걸음 옮긴다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 458,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:c91054a0af10:1"
+    },
+    "v4:34:F-HA01-05a:e:532811cfa5db:1": {
+      "id": "v4:34:F-HA01-05a:e:532811cfa5db:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 계속 화난 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 456,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:989f91ec6b14:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:73a3905deed0:1": {
+      "id": "v4:34:F-HA01-05a:e:73a3905deed0:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "네가 먼저 화났다고 했잖아. 고양이.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 454,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:532811cfa5db:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:193e38a43c86:1": {
+      "id": "v4:34:F-HA01-05a:e:193e38a43c86:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 지금은 꼬리 보자. 내가 보고도 왜 그렇게 봤는지 설명 안 해도 되고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 452,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:73a3905deed0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:54e06c1011f6:1": {
+      "id": "v4:34:F-HA01-05a:e:54e06c1011f6:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그래도 꼬리는 보여 주고 싶었어. 너도 봤으면 했고. 너한테 내가 아직 기분 나쁘다고 말하면 우리가 계속 그 얘기만 해야 할 것 같아서 안 했는데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 450,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:193e38a43c86:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a324e403dc25:1": {
+      "id": "v4:34:F-HA01-05a:e:a324e403dc25:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 448,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:54e06c1011f6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:661cfec8cd47:1": {
+      "id": "v4:34:F-HA01-05a:e:661cfec8cd47:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "화난 거 조금 있어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 446,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a324e403dc25:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:7bc59116415b:1": {
+      "id": "v4:34:F-HA01-05a:e:7bc59116415b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까부터 네가 나한테 화났는지만 보고 있었어. 얘가 화났다고 하면서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 444,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:661cfec8cd47:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:7d2a3dc9697d:1": {
+      "id": "v4:34:F-HA01-05a:e:7d2a3dc9697d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 그래서 이거. 앞만 보고 고른 거 아니야.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 442,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:7bc59116415b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a891fc7db8d4:1": {
+      "id": "v4:34:F-HA01-05a:e:a891fc7db8d4:1",
+      "type": "stage",
+      "direction": "하루카가 물건을 돌린다.등 뒤로 작은 꼬리가 몸에 붙어 있다.미오는 그것을 본 뒤 다시 앞모습을 보려는데 하루카가 뒤를 조금 더 보여 준다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 440,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:7d2a3dc9697d:1"
+    },
+    "v4:34:F-HA01-05a:e:9381922c706b:1": {
+      "id": "v4:34:F-HA01-05a:e:9381922c706b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 꼬리 있네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 438,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a891fc7db8d4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a24790eb5433:1": {
+      "id": "v4:34:F-HA01-05a:e:a24790eb5433:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "보는 것도 기대하고 보는 거잖아. 앞에서 다 해 놓고 뒤는 안 했네 싶었어. 그래도 다시 앞에 두면 예뻐서 계속 봤고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 436,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:9381922c706b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:c05209c54a42:1": {
+      "id": "v4:34:F-HA01-05a:e:c05209c54a42:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "손해? 돈 내고 본 것도 아닌데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 434,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a24790eb5433:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:9f3a4616b1e3:1": {
+      "id": "v4:34:F-HA01-05a:e:9f3a4616b1e3:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나 어릴 때는 이런 거 뒷면이 더 궁금했던 것 같아. 사람들은 앞에서 예쁘다고 하고, 나는 뒤에도 꼬리 그려져 있는지. 그런데 뒤집어 보면 밑에 숫자만 있거나 아무것도 없어서 조금 손해 본 기분.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 432,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:c05209c54a42:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:27a75fe6c7a0:1": {
+      "id": "v4:34:F-HA01-05a:e:27a75fe6c7a0:1",
+      "type": "stage",
+      "direction": "이번에는 미오가 웃는다.하루카도 웃다가 자기 앞의 고양이를 한번 톡 건드린다.넘어뜨릴 만큼 밀지는 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 430,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:9f3a4616b1e3:1"
+    },
+    "v4:34:F-HA01-05a:e:9a735e0c8ddd:1": {
+      "id": "v4:34:F-HA01-05a:e:9a735e0c8ddd:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "내가 치웠지. 고양이가 한 거 아니고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 428,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:27a75fe6c7a0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:230c65d31a22:1": {
+      "id": "v4:34:F-HA01-05a:e:230c65d31a22:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "고양이가 다른 것 다 밀어냈네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 426,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:9a735e0c8ddd:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:84fbb4a073d2:1": {
+      "id": "v4:34:F-HA01-05a:e:84fbb4a073d2:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "없으면 치워야지. 치우고 가운데 놓으면 돼.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 424,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:230c65d31a22:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:44a618e22862:1": {
+      "id": "v4:34:F-HA01-05a:e:44a618e22862:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 책상에 그런 데 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 422,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:84fbb4a073d2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:cc5686f820ac:1": {
+      "id": "v4:34:F-HA01-05a:e:cc5686f820ac:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나는 책 안 꺼내는 쪽에 놓을래. 그러면 안 옮겨도 되잖아.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 420,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:44a618e22862:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a7abb68fb308:1": {
+      "id": "v4:34:F-HA01-05a:e:a7abb68fb308:1",
+      "type": "stage",
+      "direction": "하루카가 고양이 장식을 선반 앞에 놓는다.두 사람은 잠깐 말없이 물건을 본다.미오는 하루카가 자기 말에 기분이 상했는지 보려다가,조금 전 사진을 볼 때부터 계속 그 얼굴을 먼저 살피고 있었음을 느낀다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 418,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:cc5686f820ac:1"
+    },
+    "v4:34:F-HA01-05a:e:227f4085df94:1": {
+      "id": "v4:34:F-HA01-05a:e:227f4085df94:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 한 번 옮기면 되지. 처음 자리 평생 쓰는 것도 아닌데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 416,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a7abb68fb308:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:cbd881f3dd15:1": {
+      "id": "v4:34:F-HA01-05a:e:cbd881f3dd15:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "꺼내다가 걸린다며.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 414,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:227f4085df94:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a511da078759:1": {
+      "id": "v4:34:F-HA01-05a:e:a511da078759:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "책 옆 예쁘잖아. 나는 맨날 볼 수도 있고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 412,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:cbd881f3dd15:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:2e54abd4c656:1": {
+      "id": "v4:34:F-HA01-05a:e:2e54abd4c656:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "또 나중부터 생각하네. 지금 예쁘게 놓는 데는 없어?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 410,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a511da078759:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:d3d0b56cd9f3:1": {
+      "id": "v4:34:F-HA01-05a:e:d3d0b56cd9f3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "햇빛 받으면 색 바랠 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 408,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:2e54abd4c656:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:510d216cce27:1": {
+      "id": "v4:34:F-HA01-05a:e:510d216cce27:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "창가에는?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 406,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:d3d0b56cd9f3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:616b3359e6b6:1": {
+      "id": "v4:34:F-HA01-05a:e:616b3359e6b6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "책 옆. 책 세워 둔 데 앞에. 근데 책 꺼내다가 손에 걸리면 다른 데 옮길 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 404,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:510d216cce27:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:9d92abd94e50:1": {
+      "id": "v4:34:F-HA01-05a:e:9d92abd94e50:1",
+      "type": "stage",
+      "direction": "미오가 토끼를 집었다가 밑면을 본다.작은 평평한 받침이 있다.그녀는 선반의 원래 자리에 내려놓는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 402,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:616b3359e6b6:1"
+    },
+    "v4:34:F-HA01-05a:e:0b6a28ffa5de:1": {
+      "id": "v4:34:F-HA01-05a:e:0b6a28ffa5de:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러니까 상상은 할 수 있지. 네 책상 어디에 놓을 건지. 먼지 말고 처음 놨을 때.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 400,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:9d92abd94e50:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:63612a7124e7:1": {
+      "id": "v4:34:F-HA01-05a:e:63612a7124e7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 사는 거 아니잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 398,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:0b6a28ffa5de:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:93391717b9ed:1": {
+      "id": "v4:34:F-HA01-05a:e:93391717b9ed:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그래서 안 사?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 396,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:63612a7124e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a7e841bcdf8f:1": {
+      "id": "v4:34:F-HA01-05a:e:a7e841bcdf8f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 그런 거 있으면 먼지만 보고 닦아야겠다고 생각할 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 394,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:93391717b9ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:6eeddd0a87e2:1": {
+      "id": "v4:34:F-HA01-05a:e:6eeddd0a87e2:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "해도 되지. 누가 듣는 것도 아니고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 392,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a7e841bcdf8f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:057b79629625:1": {
+      "id": "v4:34:F-HA01-05a:e:057b79629625:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 방에 들어가는데 네 물건한테 늦었다고 말해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 390,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:6eeddd0a87e2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:fd4a1a936fb3:1": {
+      "id": "v4:34:F-HA01-05a:e:fd4a1a936fb3:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "지금 보고 있는 것 중에서는. 방 안에 놓으면 문 쪽 보고 있게 할래. 문 열 때마다 쟤가 나 보는 거야. 화났으면 내가 늦었다고 하고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 388,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:057b79629625:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:8a1df28b6377:1": {
+      "id": "v4:34:F-HA01-05a:e:8a1df28b6377:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이게 제일 좋아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 386,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:fd4a1a936fb3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:d51d6228788c:1": {
+      "id": "v4:34:F-HA01-05a:e:d51d6228788c:1",
+      "type": "stage",
+      "direction": "미오가 선반의 토끼 장식을 손가락으로 가리킨다.가운데 것은 눈을 감고 두 앞발을 모은 모양이다.방금 하루카가 든 고양이는 눈을 뜨고 있다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 384,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:8a1df28b6377:1"
+    },
+    "v4:34:F-HA01-05a:e:e657a588c409:1": {
+      "id": "v4:34:F-HA01-05a:e:e657a588c409:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그건 잠들었고. 이건 깨어 있는데 안 웃고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 382,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:d51d6228788c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:6426a00f2573:1": {
+      "id": "v4:34:F-HA01-05a:e:6426a00f2573:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "눈 감은 건 안 웃는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 380,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:e657a588c409:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:7a869ae55f68:1": {
+      "id": "v4:34:F-HA01-05a:e:7a869ae55f68:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나는 웃지 않는 게 좋아. 옆에 토끼는 다 웃고 있잖아. 하나만 혼자 이렇게 있어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 378,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:6426a00f2573:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:40be584804fa:1": {
+      "id": "v4:34:F-HA01-05a:e:40be584804fa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금 덜 화났네. 그래도 웃고 있지는 않아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 376,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:7a869ae55f68:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:f938197f9a8f:1": {
+      "id": "v4:34:F-HA01-05a:e:f938197f9a8f:1",
+      "type": "stage",
+      "direction": "하루카가 웃는다.미오가 이번에는 손으로 장식의 턱 아래를 가리키며 본다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 374,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:40be584804fa:1"
+    },
+    "v4:34:F-HA01-05a:e:d36f49535f0f:1": {
+      "id": "v4:34:F-HA01-05a:e:d36f49535f0f:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "아. 가만히 있을게.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 372,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:f938197f9a8f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:a915ffdd0183:1": {
+      "id": "v4:34:F-HA01-05a:e:a915ffdd0183:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너까지 내리면 똑같잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 370,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:d36f49535f0f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:ded16f3292e3:1": {
+      "id": "v4:34:F-HA01-05a:e:ded16f3292e3:1",
+      "type": "stage",
+      "direction": "미오가 조금 몸을 낮춰 본다.하루카는 낮아진 미오에게 맞춰 장식도 내린다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 368,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:a915ffdd0183:1"
+    },
+    "v4:34:F-HA01-05a:e:08e63b0c3bab:1": {
+      "id": "v4:34:F-HA01-05a:e:08e63b0c3bab:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "밑에서 봐 봐. 내려다보면 더 그렇게 보일 수도 있고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 366,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:ded16f3292e3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:070a69be457d:1": {
+      "id": "v4:34:F-HA01-05a:e:070a69be457d:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "옆으로 화났어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 364,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:08e63b0c3bab:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:c994317f3c75:1": {
+      "id": "v4:34:F-HA01-05a:e:c994317f3c75:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "지금은?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 362,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:070a69be457d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:11735d63d598:1": {
+      "id": "v4:34:F-HA01-05a:e:11735d63d598:1",
+      "type": "stage",
+      "direction": "하루카가 장식을 한쪽으로 기울인다.미오도 고개를 같은 쪽으로 기울인다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 360,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:c994317f3c75:1"
+    },
+    "v4:34:F-HA01-05a:e:dab930ad1d1b:1": {
+      "id": "v4:34:F-HA01-05a:e:dab930ad1d1b:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "고양이잖아. 나는 아니고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 358,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:11735d63d598:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:43fd6a427e21:1": {
+      "id": "v4:34:F-HA01-05a:e:43fd6a427e21:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "눈이 이쪽으로 올라갔잖아. 너는 졸리면 눈꼬리가 올라가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 356,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:dab930ad1d1b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:66f73bfcaaee:1": {
+      "id": "v4:34:F-HA01-05a:e:66f73bfcaaee:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "졸린 거 아니야?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 354,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:43fd6a427e21:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05a:e:e6072bbab9a6:1": {
+      "id": "v4:34:F-HA01-05a:e:e6072bbab9a6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "화났는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 352,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05a 웃지 않는 고양이",
+        "location": "F-HA01-05a"
+      },
+      "next": "v4:34:F-HA01-05a:e:66f73bfcaaee:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:3b660aaab838:1": {
+      "id": "v4:34:F-HA01-05:e:3b660aaab838:1",
+      "type": "stage",
+      "direction": "하루카가 고양이 장식을 하나 들어 미오 쪽으로 돌린다.눈썹처럼 그어진 선 때문에 조금 화난 얼굴이다.둘이 고르는 것은 지금 볼 물건이며 계산하거나 가져가는 장면이 아니다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 348,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05a:e:e6072bbab9a6:1"
+    },
+    "v4:34:F-HA01-05:e:de25c3b7ba45:1": {
+      "id": "v4:34:F-HA01-05:e:de25c3b7ba45:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러면 내가 먼저 고를게.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 346,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:3b660aaab838:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:7137f01b7673:1": {
+      "id": "v4:34:F-HA01-05:e:7137f01b7673:1",
+      "type": "stage",
+      "direction": "하루카가 장식을 내려놓는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 344,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:de25c3b7ba45:1"
+    },
+    "v4:34:F-HA01-05:e:3685e406bace:1": {
+      "id": "v4:34:F-HA01-05:e:3685e406bace:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금. 네가 내 거하고 똑같이 고를 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 342,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:7137f01b7673:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:3828ba38149d:1": {
+      "id": "v4:34:F-HA01-05:e:3828ba38149d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "대답 어려워?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 340,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:3685e406bace:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:8d7ca0d0ed43:1": {
+      "id": "v4:34:F-HA01-05:e:8d7ca0d0ed43:1",
+      "type": "stage",
+      "direction": "미오는 그 말이 달갑다가도 이제 무엇을 고르면 하루카가 같은 것을 고를 것 같아 망설인다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 338,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:3828ba38149d:1"
+    },
+    "v4:34:F-HA01-05:e:8599069bf941:1": {
+      "id": "v4:34:F-HA01-05:e:8599069bf941:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "네가 좋아하는 것도 같이 보고 싶어서.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 336,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:8d7ca0d0ed43:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:5fe66525825c:1": {
+      "id": "v4:34:F-HA01-05:e:5fe66525825c:1",
+      "type": "stage",
+      "direction": "지금물건의취향이며실제과거하루카의취향과같았는지대조하는답은아니다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 334,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:8599069bf941:1"
+    },
+    "v4:34:F-HA01-05:e:f0c3c6c23dff:1": {
+      "id": "v4:34:F-HA01-05:e:f0c3c6c23dff:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 눈 작은 거. 큰 눈으로 계속 보고 있는 것보다, 옆에서 딴 데 보는 게 좋아. 근데 네가 고르면 되잖아. 네가 보고 싶어서 들어왔는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 332,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:5fe66525825c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:126cd899a2c0:1": {
+      "id": "v4:34:F-HA01-05:e:126cd899a2c0:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 토끼도 있네. 너는 어느 쪽?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 330,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:f0c3c6c23dff:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:9740f65e17ba:1": {
+      "id": "v4:34:F-HA01-05:e:9740f65e17ba:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "고양이?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 328,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:126cd899a2c0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:d6f0e15c9656:1": {
+      "id": "v4:34:F-HA01-05:e:d6f0e15c9656:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "저거 귀엽다.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 326,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:9740f65e17ba:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-05:e:8cf9ca2444f6:1": {
+      "id": "v4:34:F-HA01-05:e:8cf9ca2444f6:1",
+      "type": "stage",
+      "direction": "사진을 정리한 뒤 하루카가 기념품점 안을 본다. 작은 고양이 모양 장식들이 있다. 미오는 출입문을 열어 준다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 324,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-05 반대쪽 길",
+        "location": "F-HA01-05"
+      },
+      "next": "v4:34:F-HA01-05:e:d6f0e15c9656:1"
+    },
+    "v4:34:h-639c8ece27:e:a17eecf462e5:1": {
+      "id": "v4:34:h-639c8ece27:e:a17eecf462e5:1",
+      "type": "stage",
+      "direction": "하루카가 카메라를 가방에 넣는다. 미오는 잘 해결됐다며 바로 웃을 수 없다. 하고 싶지 않은 것을 거절했지만 하루카도 기분이 상했다. 어느 한쪽이 잘못된 감정이라며 지워 주지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 318,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:F-HA01-05:e:8cf9ca2444f6:1"
+    },
+    "v4:34:h-639c8ece27:e:f962383a63be:1": {
+      "id": "v4:34:h-639c8ece27:e:f962383a63be:1",
+      "type": "stage",
+      "direction": "두 사람 사이에 카메라가 잠깐 내려가 있다. 미오가 도로 받아 촬영으로 달래 주지 않는다. 다른 날 다른 사람과의 촬영을 금지하거나 지금 화해 사진을 만드는 약속도 없다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 316,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:a17eecf462e5:1"
+    },
+    "v4:34:h-639c8ece27:e:3a064d52f89d:1": {
+      "id": "v4:34:h-639c8ece27:e:3a064d52f89d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "알아. 나도 안 찍는다고 했어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 314,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:f962383a63be:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:0602916856aa:1": {
+      "id": "v4:34:h-639c8ece27:e:0602916856aa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 더 안 찍을래. 그건 그대로야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 312,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:3a064d52f89d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:73b8aab23014:1": {
+      "id": "v4:34:h-639c8ece27:e:73b8aab23014:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러면 더 싫어. 내가 지우고 나서 네가 나한테 미안하다고 다시 찍으면.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 310,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:0602916856aa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:5c991f6c3967:1": {
+      "id": "v4:34:h-639c8ece27:e:5c991f6c3967:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 바보라고 말하면 내가 지워 달라는 거 취소할 거 같아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 308,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:73b8aab23014:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:6b2a8e74dbc9:1": {
+      "id": "v4:34:h-639c8ece27:e:6b2a8e74dbc9:1",
+      "type": "stage",
+      "direction": "미오는 아니라고 곧바로 말하지 않는다. 하루카가 카메라를 잡은 손으로 자기 가방 입구를 연다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 306,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:5c991f6c3967:1"
+    },
+    "v4:34:h-639c8ece27:e:c7778f383766:1": {
+      "id": "v4:34:h-639c8ece27:e:c7778f383766:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 없는데 벌써 생각하고 있어. 바보 같지.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 304,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:6b2a8e74dbc9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:40be870737dc:1": {
+      "id": "v4:34:h-639c8ece27:e:40be870737dc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 사진 생긴 것도 아니잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 302,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:c7778f383766:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:1a0183d29892:1": {
+      "id": "v4:34:h-639c8ece27:e:1a0183d29892:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나한테만 안 찍고 싶은 건 아니겠지. 근데 나중에 네가 다른 애 옆에서 웃으면 나는 지금 생각할 거 같아. 내가 너무 붙었나, 내가 찍으니까 싫었나.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 300,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:40be870737dc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:14d55d138ab1:1": {
+      "id": "v4:34:h-639c8ece27:e:14d55d138ab1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 그런 말을 해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 298,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:1a0183d29892:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:c09a9d1d8d44:1": {
+      "id": "v4:34:h-639c8ece27:e:c09a9d1d8d44:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "이따가 누가 찍어 준다고 하면 나 보지 말고 웃어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 296,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:14d55d138ab1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:871bbeb9ede9:1": {
+      "id": "v4:34:h-639c8ece27:e:871bbeb9ede9:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "지금은 더 안 찍어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 294,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:c09a9d1d8d44:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:0e8779d5bc28:1": {
+      "id": "v4:34:h-639c8ece27:e:0e8779d5bc28:1",
+      "type": "stage",
+      "direction": "하루카가 직접 지운다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 282,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:871bbeb9ede9:1"
+    },
+    "v4:34:h-639c8ece27:e:72d9064ef191:1": {
+      "id": "v4:34:h-639c8ece27:e:72d9064ef191:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "싫어. 준비됐다고 한 게 그 표정으로 찍으라는 뜻은 아니었어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 280,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:0e8779d5bc28:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:104ced5aba26:1": {
+      "id": "v4:34:h-639c8ece27:e:104ced5aba26:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네 사진이라 네가 갖고 싶으면 남겨도 돼. 내가 네가 싫어하는 순간을 찍은 것 같아서 그래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 278,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:72d9064ef191:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:4fa1c4849e28:1": {
+      "id": "v4:34:h-639c8ece27:e:4fa1c4849e28:1",
+      "type": "stage",
+      "direction": "하루카는 지우기 버튼 앞에서 멈춘다. 미오가 기다리자 화면을 한번 눌러 지운다. 삭제한 사진을 몰래 남겼다고 나중에 바꾸지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 290,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:871bbeb9ede9:1"
+    },
+    "v4:34:h-639c8ece27:e:81734f19cba4:1": {
+      "id": "v4:34:h-639c8ece27:e:81734f19cba4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래도 나는 싫어. 내 모습이 남는 거니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 288,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:4fa1c4849e28:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:37349adfa441:1": {
+      "id": "v4:34:h-639c8ece27:e:37349adfa441:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나도 같이 찍은 건데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 286,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:81734f19cba4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:B3-deletion": {
+      "id": "v4:34:B3-deletion",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-HA01-A",
+          "equals": "A2",
+          "to": "v4:34:h-639c8ece27:e:104ced5aba26:1"
+        }
+      ],
+      "default": "v4:34:h-639c8ece27:e:37349adfa441:1"
+    },
+    "v4:34:h-639c8ece27:e:93d6b0f85a3b:1": {
+      "id": "v4:34:h-639c8ece27:e:93d6b0f85a3b:1",
+      "type": "stage",
+      "direction": "하루카가 화면을 오래 본다. A2경로에서는 자기 사진이므로 미오는 자기 뜻을 상대에게 강요하지 않고 이유를 덧붙인다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 274,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:B3-deletion"
+    },
+    "v4:34:h-639c8ece27:e:40b49507cd98:1": {
+      "id": "v4:34:h-639c8ece27:e:40b49507cd98:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘 건 지워 줘. 나는 남기고 싶지 않아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 272,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:93d6b0f85a3b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-B:e:f59d85a449c2:1": {
+      "id": "v4:34:F-HA01-B:e:f59d85a449c2:1",
+      "type": "stage",
+      "direction": "A2경로의 사진에는 하루카만 있다. 미오가 그 사진을 좋아한다고 했다고 미오도 함께 나온 사진으로 고치지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 142,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-05:e:8cf9ca2444f6:1"
+    },
+    "v4:34:F-HA01-B:e:e1d05b5f0bbf:1": {
+      "id": "v4:34:F-HA01-B:e:e1d05b5f0bbf:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "알았어. 오늘 건 내가 갖고 있을게.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 140,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:f59d85a449c2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-B:e:291771f6ec45:1": {
+      "id": "v4:34:F-HA01-B:e:291771f6ec45:1",
+      "type": "stage",
+      "direction": "하루카가 고개를 끄덕이지만 얼굴은 밝아지지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 138,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:e1d05b5f0bbf:1"
+    },
+    "v4:34:F-HA01-B:e:3ea32b816aab:1": {
+      "id": "v4:34:F-HA01-B:e:3ea32b816aab:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 남겨도 좋다는 거야. 다음에도 내가 말한 거 안 지켜도 된다는 건 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 136,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:291771f6ec45:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-B:e:02ed83a5a96b:1": {
+      "id": "v4:34:F-HA01-B:e:02ed83a5a96b:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러면 괜찮았다는 거야?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 134,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:3ea32b816aab:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-B:e:3c0d8fdfc7bf:1": {
+      "id": "v4:34:F-HA01-B:e:3c0d8fdfc7bf:1",
+      "type": "stage",
+      "direction": "하루카가 화면을 본다. A3경로에서는 미오의 뜻을 어기고 비친 모습을 넣은 것이라는 사실도 그대로 남는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 132,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:02ed83a5a96b:1"
+    },
+    "v4:34:F-HA01-B:e:f24dd17b26a6:1": {
+      "id": "v4:34:F-HA01-B:e:f24dd17b26a6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지우진 마. 오늘 이렇게 찍었다는 건 남아도 좋겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 130,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:3c0d8fdfc7bf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:e6d9c920f70f:1": {
+      "id": "v4:34:h-639c8ece27:e:e6d9c920f70f:1",
+      "type": "stage",
+      "direction": "하루카는 두 사람이 사진을 좋아하는 이유까지 같다고 묻지 않는다. 카메라에는 이번 공동 사진이 남고, 바로 앞 첫 사진은 위에서 이미 지웠다. 추가 반사 사진이나 두 번째 재촬영은 없다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 268,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:F-HA01-05:e:8cf9ca2444f6:1"
+    },
+    "v4:34:h-639c8ece27:e:34b8a830c95b:1": {
+      "id": "v4:34:h-639c8ece27:e:34b8a830c95b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도. 다시 찍자는 말 안 할게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 266,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:e6d9c920f70f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:4daf157aacc3:1": {
+      "id": "v4:34:h-639c8ece27:e:4daf157aacc3:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 이번 건 안 지울래.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 264,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:34b8a830c95b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:b738ada03edc:1": {
+      "id": "v4:34:h-639c8ece27:e:b738ada03edc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알아. 방금은 나 본 거 알아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 262,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:4daf157aacc3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:674f355c2a22:1": {
+      "id": "v4:34:h-639c8ece27:e:674f355c2a22:1",
+      "type": "stage",
+      "direction": "미오가 하루카를 본다. 하루카는 화면에서 자기 옆 사람을 손톱으로 가리키려다, 렌즈 쪽이 아니라 화면 가장자리만 잡는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 260,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:b738ada03edc:1"
+    },
+    "v4:34:h-639c8ece27:e:91d49d63f158:1": {
+      "id": "v4:34:h-639c8ece27:e:91d49d63f158:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "너 보고 있었는데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 258,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:674f355c2a22:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:1276671e8bc6:1": {
+      "id": "v4:34:h-639c8ece27:e:1276671e8bc6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 네가 정면으로 나온 게 좋아. 나만 렌즈 보고 있으면 네가 딴 데 가고 싶은 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 256,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:91d49d63f158:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:78050425b8df:1": {
+      "id": "v4:34:h-639c8ece27:e:78050425b8df:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "옆도 나야.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 254,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:1276671e8bc6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:69f33fc5e26f:1": {
+      "id": "v4:34:h-639c8ece27:e:69f33fc5e26f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 너 얼굴 옆만 나오잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 252,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:78050425b8df:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:c90f6c2bc9c1:1": {
+      "id": "v4:34:h-639c8ece27:e:c90f6c2bc9c1:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "내가 너 봤을 때 찍혔어도 좋았을 텐데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 250,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:69f33fc5e26f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:d672c5b5a0b5:1": {
+      "id": "v4:34:h-639c8ece27:e:d672c5b5a0b5:1",
+      "type": "stage",
+      "direction": "하루카가 두 얼굴을 번갈아 본다. 이번 사진에서 미오 손은 몸 옆에 있고 하루카도 달려오는 중이 아니다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 248,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:c90f6c2bc9c1:1"
+    },
+    "v4:34:h-639c8ece27:e:69419fd35981:1": {
+      "id": "v4:34:h-639c8ece27:e:69419fd35981:1",
+      "type": "stage",
+      "direction": "하루카가 새 사진을 고른다. 앞선 사진은 이 선택에서 함께 지운다. A3에서 있었던 행동까지 없던 일로 서술하지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 246,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:d672c5b5a0b5:1"
+    },
+    "v4:34:h-639c8ece27:e:9a73b7e1a1e4:1": {
+      "id": "v4:34:h-639c8ece27:e:9a73b7e1a1e4:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 이게 좋아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 244,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:69419fd35981:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:342e6ec67111:1": {
+      "id": "v4:34:h-639c8ece27:e:342e6ec67111:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "아까 거보다 좋아?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 242,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:9a73b7e1a1e4:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:13339b5c1575:1": {
+      "id": "v4:34:h-639c8ece27:e:13339b5c1575:1",
+      "type": "stage",
+      "direction": "새 사진에는 두 사람이 나란히 들어간다. 타이머를 기다리다가 동시에 카메라 쪽을 본 순간이다. 완벽하게 자연스러운 웃음은 아니어도 둘 다 원해서 선 사진이다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 240,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:342e6ec67111:1"
+    },
+    "v4:34:h-639c8ece27:e:6ed668ac8d2c:1": {
+      "id": "v4:34:h-639c8ece27:e:6ed668ac8d2c:1",
+      "type": "stage",
+      "direction": "하루카가 고개를 카메라 쪽으로 돌린다. 미오도 같은 쪽을 본다. 자연스러운 웃음을 만들겠다며 타이머를 새로 시작하거나 촬영을 여러 번 하지는 않는다. 아래의 새 공동 사진 한 장이 지금 찍힌다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 238,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:13339b5c1575:1"
+    },
+    "v4:34:h-639c8ece27:e:62dae6b44e67:1": {
+      "id": "v4:34:h-639c8ece27:e:62dae6b44e67:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러면 내가 안 보고…….",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 236,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:6ed668ac8d2c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:f7b73f97b39e:1": {
+      "id": "v4:34:h-639c8ece27:e:f7b73f97b39e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 말하면 못 웃겠어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 234,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:62dae6b44e67:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:9221f9543c3d:1": {
+      "id": "v4:34:h-639c8ece27:e:9221f9543c3d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "웃어 봐.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 232,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:f7b73f97b39e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:9763d3e4404a:1": {
+      "id": "v4:34:h-639c8ece27:e:9763d3e4404a:1",
+      "type": "stage",
+      "direction": "미오가 타이머를 시작하고 하루카가 남겨 둔 자리로 온다. 두 사람은 한 번씩 상대의 발을 보며 서는 위치를 맞춘다. 미오가 바닥의 선을 보고 고개를 들 때 하루카는 아직 그의 얼굴을 보고 있다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 230,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:9221f9543c3d:1"
+    },
+    "v4:34:h-639c8ece27:e:e6d1075acf5e:1": {
+      "id": "v4:34:h-639c8ece27:e:e6d1075acf5e:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러니까 네가 이제 알아들었어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 228,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:9763d3e4404a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:2ce3dcdae481:1": {
+      "id": "v4:34:h-639c8ece27:e:2ce3dcdae481:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "붙으면 된다는 말은 처음부터 네가 했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 226,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:e6d1075acf5e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:3034989d1464:1": {
+      "id": "v4:34:h-639c8ece27:e:3034989d1464:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "안 잘리게 붙을게.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 224,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:2ce3dcdae481:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:ac1c6023edc1:1": {
+      "id": "v4:34:h-639c8ece27:e:ac1c6023edc1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 남겨 줘. 네가 가운데 오면 나는 잘려.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 222,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:3034989d1464:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:23932621184a:1": {
+      "id": "v4:34:h-639c8ece27:e:23932621184a:1",
+      "type": "stage",
+      "direction": "하루카가 마스코트 옆으로 돌아간다. 미오는 타이머를 누르기 전에 손으로 빈 자리를 가리킨다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 220,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:ac1c6023edc1:1"
+    },
+    "v4:34:h-639c8ece27:e:ca451e72aec7:1": {
+      "id": "v4:34:h-639c8ece27:e:ca451e72aec7:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "셋이 찍는 거였네.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 218,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:23932621184a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:897eda8c8aa3:1": {
+      "id": "v4:34:h-639c8ece27:e:897eda8c8aa3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "둘이 이상하면 얘라도 멀쩡해야지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 216,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:ca451e72aec7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:e66dff8617a3:1": {
+      "id": "v4:34:h-639c8ece27:e:e66dff8617a3:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "얘도 예쁘게 나와야 해?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 214,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:897eda8c8aa3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:7affca15a02c:1": {
+      "id": "v4:34:h-639c8ece27:e:7affca15a02c:1",
+      "type": "stage",
+      "direction": "미오가 카메라를 살짝 돌려 마스코트의 머리가 잘리지 않는 자리를 잡는다. 하루카가 화면 옆으로 고개를 내민다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 212,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:e66dff8617a3:1"
+    },
+    "v4:34:h-639c8ece27:e:0f27a3b0e4e2:1": {
+      "id": "v4:34:h-639c8ece27:e:0f27a3b0e4e2:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "지금은 그냥 받아 둘래. 네가 내가 더 예쁠까 봐 걱정한다고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 210,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:7affca15a02c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:2672cbe9c262:1": {
+      "id": "v4:34:h-639c8ece27:e:2672cbe9c262:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면이라고 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 208,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:0f27a3b0e4e2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:3ce7d1c9104a:1": {
+      "id": "v4:34:h-639c8ece27:e:3ce7d1c9104a:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나 예쁘다고 해 준 거야?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 206,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:2672cbe9c262:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:11129d4d2d4b:1": {
+      "id": "v4:34:h-639c8ece27:e:11129d4d2d4b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 더 예쁘게 나오면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 204,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:3ce7d1c9104a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:4b8fda26500a:1": {
+      "id": "v4:34:h-639c8ece27:e:4b8fda26500a:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그러면 둘 다 똑같이 이상하자.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 202,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:11129d4d2d4b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:d76be404154e:1": {
+      "id": "v4:34:h-639c8ece27:e:d76be404154e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "둘이 서면 더 이상하겠다. 내가 이러고 네가 그러고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 200,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:4b8fda26500a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:4288c30862b1:1": {
+      "id": "v4:34:h-639c8ece27:e:4288c30862b1:1",
+      "type": "stage",
+      "direction": "미오가 화면을 확인한다. 앞서A에서찍은첫사진은있지만,B2의재촬영사진은아직없다. 하루카가 버튼에서 손을 떼어 보여 주자 미오는 자기가 확인한 것을 말로 결산하지 않고 옆으로 비킨다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 198,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:d76be404154e:1"
+    },
+    "v4:34:h-639c8ece27:e:6e576aa1d75e:1": {
+      "id": "v4:34:h-639c8ece27:e:6e576aa1d75e:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "아니. 안 눌렀어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 196,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:4288c30862b1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:1fd0c015054a:1": {
+      "id": "v4:34:h-639c8ece27:e:1fd0c015054a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 찍었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 194,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:6e576aa1d75e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:7e5d2acf315d:1": {
+      "id": "v4:34:h-639c8ece27:e:7e5d2acf315d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나는 그렇게 찍혀도 좋아. 방금 웃던 거.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 192,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:1fd0c015054a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:e18bb3d4f3c2:1": {
+      "id": "v4:34:h-639c8ece27:e:e18bb3d4f3c2:1",
+      "type": "stage",
+      "direction": "미오가 손을 내린다. 하루카는 화면을 보며 웃다가 카메라를 그대로 둔다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 190,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:7e5d2acf315d:1"
+    },
+    "v4:34:h-639c8ece27:e:8a5ce349d5d1:1": {
+      "id": "v4:34:h-639c8ece27:e:8a5ce349d5d1:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그 잡지는 망하겠다. 안 보이면 누가 사.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 188,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:e18bb3d4f3c2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:a6a4c6b797fe:1": {
+      "id": "v4:34:h-639c8ece27:e:a6a4c6b797fe:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "찍지 마세요.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 186,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:8a5ce349d5d1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:215260c6809b:1": {
+      "id": "v4:34:h-639c8ece27:e:215260c6809b:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "제목은 뭐야.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 184,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:a6a4c6b797fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:bc7a2af13d73:1": {
+      "id": "v4:34:h-639c8ece27:e:bc7a2af13d73:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "무슨 잡지 표지 같네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 182,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:215260c6809b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:13039a4f712d:1": {
+      "id": "v4:34:h-639c8ece27:e:13039a4f712d:1",
+      "type": "stage",
+      "direction": "미오가 팔을 살짝 벌린다. 하루카가 고개를 젓는다. 미오는 허리에 손을 얹었다가 자기가 먼저 웃는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 180,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:bc7a2af13d73:1"
+    },
+    "v4:34:h-639c8ece27:e:2a90dbb1409d:1": {
+      "id": "v4:34:h-639c8ece27:e:2a90dbb1409d:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 나도 그랬어.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 178,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:13039a4f712d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:2249bebe9ea8:1": {
+      "id": "v4:34:h-639c8ece27:e:2249bebe9ea8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가만히 있는 건데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 176,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:2a90dbb1409d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:4d6a3c0e372b:1": {
+      "id": "v4:34:h-639c8ece27:e:4d6a3c0e372b:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그렇게 있으면 혼나는 사람 같아.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 174,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:2249bebe9ea8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:c7d1da17fd87:1": {
+      "id": "v4:34:h-639c8ece27:e:c7d1da17fd87:1",
+      "type": "stage",
+      "direction": "미오가 카메라를 타이머 대기 상태로 두고 그 옆에 선다. 하루카가 화면을 확인하러 온다. 셔터를 누르지는 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 172,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:4d6a3c0e372b:1"
+    },
+    "v4:34:h-639c8ece27:e:4a8038883775:1": {
+      "id": "v4:34:h-639c8ece27:e:4a8038883775:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "네가 먼저 해 봐. 나는 볼게.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 170,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:c7d1da17fd87:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:38e1878f33f0:1": {
+      "id": "v4:34:h-639c8ece27:e:38e1878f33f0:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 하루카는 웃지 않고 자기 발을 본다. 조금 벌렸다가 다시 모은다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 168,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:4a8038883775:1"
+    },
+    "v4:34:h-639c8ece27:e:b29e819bf53e:1": {
+      "id": "v4:34:h-639c8ece27:e:b29e819bf53e:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "네가 그냥 서 있으라며!",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 166,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:38e1878f33f0:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:7ea712d70296:1": {
+      "id": "v4:34:h-639c8ece27:e:7ea712d70296:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "졸업사진 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 164,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:b29e819bf53e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:9c063d665d3c:1": {
+      "id": "v4:34:h-639c8ece27:e:9c063d665d3c:1",
+      "type": "stage",
+      "direction": "하루카가 두 발을 나란히 모은다. 손끝도 몸 옆에 붙인다. 미오는 화면을 보다가 고개를 든다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 162,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:7ea712d70296:1"
+    },
+    "v4:34:h-639c8ece27:e:c7afb47a8362:1": {
+      "id": "v4:34:h-639c8ece27:e:c7afb47a8362:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그냥 서 있어 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 160,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:9c063d665d3c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:104dfce11155:1": {
+      "id": "v4:34:h-639c8ece27:e:104dfce11155:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "뭘 해도 어색하다고 할 거 같은데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 158,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:c7afb47a8362:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:2adc586239cc:1": {
+      "id": "v4:34:h-639c8ece27:e:2adc586239cc:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "어색해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 156,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:104dfce11155:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:19b2f4716c28:1": {
+      "id": "v4:34:h-639c8ece27:e:19b2f4716c28:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "나 이렇게 있어?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 154,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:2adc586239cc:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:h-639c8ece27:e:3e6efa9be17f:1": {
+      "id": "v4:34:h-639c8ece27:e:3e6efa9be17f:1",
+      "type": "stage",
+      "direction": "미오가 타이머를 누르기 전에 카메라 둘 자리를 먼저 본다. 하루카가 마스코트의 옆으로 가서 손을 허리에 댔다가 내린다. 아직 셔터는 작동하지 않았다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 152,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "B2의 준비 — 자연스럽게 서 있으라는 말",
+        "location": "h-639c8ece27"
+      },
+      "next": "v4:34:h-639c8ece27:e:19b2f4716c28:1"
+    },
+    "v4:34:F-HA01-B:e:9f7e1c72804b:1": {
+      "id": "v4:34:F-HA01-B:e:9f7e1c72804b:1",
+      "type": "stage",
+      "direction": "A2/A3경로에서는 미오가 지금은 함께 찍기로 마음을 바꾸었다고 직접 말한다. 하루카는 급히 카메라를 들지만 미오가 먼저 자리를 정할 때까지 기다린다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 148,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:h-639c8ece27:e:3e6efa9be17f:1"
+    },
+    "v4:34:F-HA01-B:e:7b889cf53e74:1": {
+      "id": "v4:34:F-HA01-B:e:7b889cf53e74:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금 건 말고, 둘 다 준비됐을 때 찍자. 자리도 내가 먼저 볼게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 146,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "next": "v4:34:F-HA01-B:e:9f7e1c72804b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-B:menu": {
+      "id": "v4:34:F-HA01-B:menu",
+      "type": "menu",
+      "q": "남길 사진",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 126,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-B — 남길 사진",
+        "location": "F-HA01-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "지금의 어색한 사진을 남긴다",
+          "to": "v4:34:F-HA01-B:e:f24dd17b26a6:1",
+          "set": {
+            "F-HA01-B": "B1",
+            "photo:F-HA01:kept": true,
+            "photo:F-HA01:replacement": false
+          }
+        },
+        {
+          "id": "B2",
+          "label": "둘이 준비해서 한 장 새로 찍는다",
+          "to": "v4:34:F-HA01-B:e:7b889cf53e74:1",
+          "set": {
+            "F-HA01-B": "B2",
+            "photo:F-HA01:kept": true,
+            "photo:F-HA01:replacement": true
+          }
+        },
+        {
+          "id": "B3",
+          "label": "오늘 찍은 사진을 지워 달라고 한다",
+          "to": "v4:34:h-639c8ece27:e:40b49507cd98:1",
+          "set": {
+            "F-HA01-B": "B3",
+            "photo:F-HA01:kept": false,
+            "photo:F-HA01:replacement": false
+          }
+        }
+      ]
+    },
+    "v4:34:F-HA01-03:e:8821260114d5:1": {
+      "id": "v4:34:F-HA01-03:e:8821260114d5:1",
+      "type": "stage",
+      "direction": "미오는 다른 사람이라면 물었을 질문을 하루카에게 늦게 했다는 것을 안다. 친하다는 이유로 묻지 않았는데, 지금 묻자 그 친함을 의심한 사람이 되어 버렸다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 122,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-B:menu"
+    },
+    "v4:34:F-HA01-03:e:06b01208a5bb:1": {
+      "id": "v4:34:F-HA01-03:e:06b01208a5bb:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "너는 나하고 찍을 때도 그렇게 물어봐야 해?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 120,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:8821260114d5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:850b8ba83096:1": {
+      "id": "v4:34:F-HA01-03:e:850b8ba83096:1",
+      "type": "stage",
+      "direction": "하루카가 미오를 본다. 웃던 얼굴이 조금 굳는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 118,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:06b01208a5bb:1"
+    },
+    "v4:34:F-HA01-03:e:758b9360d63a:1": {
+      "id": "v4:34:F-HA01-03:e:758b9360d63a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 보려고 찍으면 내 사진도 네 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 116,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:850b8ba83096:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:dcd85f7de741:1": {
+      "id": "v4:34:F-HA01-03:e:dcd85f7de741:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "지금은 아무도. 내가 보려고.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 114,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:758b9360d63a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:a56ecc038286:1": {
+      "id": "v4:34:F-HA01-03:e:a56ecc038286:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "누구 보여 주려고 찍는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 112,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:dcd85f7de741:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:7df9dc8a02e2:1": {
+      "id": "v4:34:F-HA01-03:e:7df9dc8a02e2:1",
+      "type": "stage",
+      "direction": "미오는 카메라를 자기 쪽으로 조금 돌린다. 하루카는 손을 완전히 놓지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 110,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:a56ecc038286:1"
+    },
+    "v4:34:F-HA01-03:e:33abd127ace6:1": {
+      "id": "v4:34:F-HA01-03:e:33abd127ace6:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "알아. 그래서 같이 보는 거지.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 108,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:7df9dc8a02e2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:88bdacdfc767:1": {
+      "id": "v4:34:F-HA01-03:e:88bdacdfc767:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 고른 거하고 내가 고른 거 다를 수도 있잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 106,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:33abd127ace6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:a774b2bdff62:1": {
+      "id": "v4:34:F-HA01-03:e:a774b2bdff62:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "이때 표정 좋다.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 104,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:88bdacdfc767:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-03:e:305e7ed46e6d:1": {
+      "id": "v4:34:F-HA01-03:e:305e7ed46e6d:1",
+      "type": "stage",
+      "direction": "두 사람은 벤치에서 방금 사진을 확인한다. 하루카는 미오보다 먼저 어떤 부분이 마음에 드는지 말한다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 102,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-03 남에게 안 보여도",
+        "location": "F-HA01-03"
+      },
+      "next": "v4:34:F-HA01-03:e:a774b2bdff62:1"
+    },
+    "v4:34:F-HA01-A:e:ee8ad57e5616:1": {
+      "id": "v4:34:F-HA01-A:e:ee8ad57e5616:1",
+      "type": "stage",
+      "direction": "하루카가 카메라를 뒤로 옮긴다. 다시 달려오는 동안 미오는 웃음을 터뜨린다. 첫 사진에는 하루카의 한쪽 손이 들린 채 찍힌다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 48,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-03:e:305e7ed46e6d:1"
+    },
+    "v4:34:F-HA01-A:e:15122abfe6e6:1": {
+      "id": "v4:34:F-HA01-A:e:15122abfe6e6:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "카메라를 조금 뒤로 두면 되지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 46,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:ee8ad57e5616:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:d05c4cc9dd57:1": {
+      "id": "v4:34:F-HA01-A:e:d05c4cc9dd57:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "멀어져. 화면에서.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 44,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:15122abfe6e6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:af56fb6658d3:1": {
+      "id": "v4:34:F-HA01-A:e:af56fb6658d3:1",
+      "type": "stage",
+      "direction": "하루카가 웃으며 타이머를 맞춘다. 미오는 마스코트 옆에 선다. 하루카가 옆으로 뛰어와 너무 가까이 서자 미오가 팔꿈치를 조금 빼낸다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 42,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:d05c4cc9dd57:1"
+    },
+    "v4:34:F-HA01-A:e:edc8d94661ed:1": {
+      "id": "v4:34:F-HA01-A:e:edc8d94661ed:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "그럼 두 장이잖아.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 40,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:af56fb6658d3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:7a3ae0e37a2a:1": {
+      "id": "v4:34:F-HA01-A:e:7a3ae0e37a2a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 장만. 내가 이상하게 나오면 다시 찍고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 38,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:edc8d94661ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:95084cb3c882:1": {
+      "id": "v4:34:F-HA01-A:e:95084cb3c882:1",
+      "type": "stage",
+      "direction": "둘은 같은 준비를 뜻하지 않았다는 것을 알고도 잠시 서로를 본다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 72,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-03:e:305e7ed46e6d:1"
+    },
+    "v4:34:F-HA01-A:e:56b8550441b2:1": {
+      "id": "v4:34:F-HA01-A:e:56b8550441b2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "준비됐다고 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 70,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:95084cb3c882:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:5e1fb9622a49:1": {
+      "id": "v4:34:F-HA01-A:e:5e1fb9622a49:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "기다렸어야지!",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 68,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:56b8550441b2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:9bcda62fc9e1:1": {
+      "id": "v4:34:F-HA01-A:e:9bcda62fc9e1:1",
+      "type": "stage",
+      "direction": "미오는 하루카가 표정을 바꾸기 전의 한 장을 찍는다. 하루카가 화면을 보고 작게 소리친다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 66,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:5e1fb9622a49:1"
+    },
+    "v4:34:F-HA01-A:e:c21840413eeb:1": {
+      "id": "v4:34:F-HA01-A:e:c21840413eeb:1",
+      "type": "stage",
+      "direction": "하루카는 잠깐 생각하다 카메라를 준다. 마스코트 옆에 서서 머리카락을 정리한다. 미오가 준비됐는지 묻자 고개를 끄덕이지만 웃음은 조금 늦다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 64,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:9bcda62fc9e1:1"
+    },
+    "v4:34:F-HA01-A:e:2314aeee7830:1": {
+      "id": "v4:34:F-HA01-A:e:2314aeee7830:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 네 사진 찍는 것도 같이 하는 거라고 생각했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 62,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:c21840413eeb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:d1ca5da093ff:1": {
+      "id": "v4:34:F-HA01-A:e:d1ca5da093ff:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "같이 찍자고 한 건데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 60,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:2314aeee7830:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:4192094d3f17:1": {
+      "id": "v4:34:F-HA01-A:e:4192094d3f17:1",
+      "type": "stage",
+      "direction": "하루카가 카메라를 바로 건네지 않는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 58,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:d1ca5da093ff:1"
+    },
+    "v4:34:F-HA01-A:e:145cea0a36e2:1": {
+      "id": "v4:34:F-HA01-A:e:145cea0a36e2:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 찍는 쪽.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 56,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:4192094d3f17:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:22cdabad8152:1": {
+      "id": "v4:34:F-HA01-A:e:22cdabad8152:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "너는?",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 54,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:145cea0a36e2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:d7bf5258fd09:1": {
+      "id": "v4:34:F-HA01-A:e:d7bf5258fd09:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 먼저 서. 내가 찍어 줄게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 52,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:22cdabad8152:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:5e2034f89b43:1": {
+      "id": "v4:34:F-HA01-A:e:5e2034f89b43:1",
+      "type": "stage",
+      "direction": "미오는 입을 다문다. 이 경로에서 하루카가 요청을 완전히 지켰다고 서술하지 않는다. 다음 선택에서 실제 사진을 어떻게 할지 처리한다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 96,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-03:e:305e7ed46e6d:1"
+    },
+    "v4:34:F-HA01-A:e:ba9c0a1984ed:1": {
+      "id": "v4:34:F-HA01-A:e:ba9c0a1984ed:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "조금. 이 정도는 괜찮을 것 같아서.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 94,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:5e2034f89b43:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:bf88e20df9e7:1": {
+      "id": "v4:34:F-HA01-A:e:bf88e20df9e7:1",
+      "type": "stage",
+      "direction": "하루카가 바로 아니라고 하지 못한다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 92,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:ba9c0a1984ed:1"
+    },
+    "v4:34:F-HA01-A:e:b1595c4a330f:1": {
+      "id": "v4:34:F-HA01-A:e:b1595c4a330f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "보고 찍었어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 90,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:bf88e20df9e7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:0522aa86d18b:1": {
+      "id": "v4:34:F-HA01-A:e:0522aa86d18b:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "여기 비친 건데.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 88,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:b1595c4a330f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:097945ded058:1": {
+      "id": "v4:34:F-HA01-A:e:097945ded058:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나 들어갔네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 86,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:0522aa86d18b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:f2d9e28ac7e8:1": {
+      "id": "v4:34:F-HA01-A:e:f2d9e28ac7e8:1",
+      "type": "stage",
+      "direction": "하루카는 말없이 카메라를 든다. 미오가 옆으로 비킨 뒤 풍경을 찍는다. 화면을 보여 줄 때 유리문에 미오의 옆모습이 비쳐 있는 것이 보인다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 84,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:097945ded058:1"
+    },
+    "v4:34:F-HA01-A:e:a09204bc1549:1": {
+      "id": "v4:34:F-HA01-A:e:a09204bc1549:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "우리가 알면 되지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 82,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:f2d9e28ac7e8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:98ae5705095a:1": {
+      "id": "v4:34:F-HA01-A:e:98ae5705095a:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "여기만 찍으면 누가 왔는지 안 보이잖아.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 80,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:a09204bc1549:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:e:37f20136fe30:1": {
+      "id": "v4:34:F-HA01-A:e:37f20136fe30:1",
+      "type": "stage",
+      "direction": "하루카가 마스코트와 미오를 번갈아 본다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 78,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:98ae5705095a:1"
+    },
+    "v4:34:F-HA01-A:e:5f8b7c0af404:1": {
+      "id": "v4:34:F-HA01-A:e:5f8b7c0af404:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 나 안 찍을래. 여기 풍경만 찍어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 76,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "next": "v4:34:F-HA01-A:e:37f20136fe30:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-A:menu": {
+      "id": "v4:34:F-HA01-A:menu",
+      "type": "menu",
+      "q": "첫 사진의 범위",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 34,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "선택 F-HA01-A — 첫 사진의 범위",
+        "location": "F-HA01-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "둘이 함께 찍는다.",
+          "to": "v4:34:F-HA01-A:e:7a3ae0e37a2a:1",
+          "set": {
+            "F-HA01-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "하루카만 찍어 주겠다고 한다.",
+          "to": "v4:34:F-HA01-A:e:d7bf5258fd09:1",
+          "set": {
+            "F-HA01-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "사람 없이 장소만 찍자고 한다.",
+          "to": "v4:34:F-HA01-A:e:5f8b7c0af404:1",
+          "set": {
+            "F-HA01-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:34:F-HA01-01:e:eced3de2a4e9:1": {
+      "id": "v4:34:F-HA01-01:e:eced3de2a4e9:1",
+      "type": "stage",
+      "direction": "미오는 사진을 찍자는 말에는 아직 대답하지 않았다. 하루카는 기기 둘 자리를 먼저 찾는다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 30,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-A:menu"
+    },
+    "v4:34:F-HA01-01:e:e0f595f9ee24:1": {
+      "id": "v4:34:F-HA01-01:e:e0f595f9ee24:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "붙어야 같이 들어가지. 너는 꼭 반대로 말해.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 28,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:eced3de2a4e9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:d88f289fa2e9:1": {
+      "id": "v4:34:F-HA01-01:e:d88f289fa2e9:1",
+      "type": "stage",
+      "direction": "하루카가 카메라 화면을 본다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 26,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:e0f595f9ee24:1"
+    },
+    "v4:34:F-HA01-01:e:2f788778c87f:1": {
+      "id": "v4:34:F-HA01-01:e:2f788778c87f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금도 옆에 너무 붙으면 안 들어갈걸.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 24,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:d88f289fa2e9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:b55e67816c2e:1": {
+      "id": "v4:34:F-HA01-01:e:b55e67816c2e:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "아니. 그냥 해 본 말이야. 벌써 뒤로 가 있으니까.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 22,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:2f788778c87f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:e2e7a41395c0:1": {
+      "id": "v4:34:F-HA01-01:e:e2e7a41395c0:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 그렇게 서겠다고 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 20,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:b55e67816c2e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:6e28208aff59:1": {
+      "id": "v4:34:F-HA01-01:e:6e28208aff59:1",
+      "type": "stage",
+      "direction": "미오는 키를 재는 그림과 하루카를 번갈아 본다. 아직 같이 사진을 찍자는 말에 동의하지 않았다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 18,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:e2e7a41395c0:1"
+    },
+    "v4:34:F-HA01-01:e:a61e4f9d9fcf:1": {
+      "id": "v4:34:F-HA01-01:e:a61e4f9d9fcf:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "응. 네가 조금 앞에 서면 나보다 커 보이겠다.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 16,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:6e28208aff59:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:5e9b0c518c59:1": {
+      "id": "v4:34:F-HA01-01:e:5e9b0c518c59:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "키 재는 거?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 14,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:a61e4f9d9fcf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:c7e4a3b72efb:1": {
+      "id": "v4:34:F-HA01-01:e:c7e4a3b72efb:1",
+      "type": "say",
+      "speaker": "하루카",
+      "actor": "haruka",
+      "text": "여기 와 봐. 여기 서면 둘이 같이 찍을 수 있겠다.",
+      "mono": false,
+      "delivery": "하루카",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 12,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:5e9b0c518c59:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "하루카",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:34:F-HA01-01:e:602afe82c90e:1": {
+      "id": "v4:34:F-HA01-01:e:602afe82c90e:1",
+      "type": "stage",
+      "direction": "기념품점 앞. 하루카가 미오를 부른다. 대여 카메라를 들고 있고, 뒤에는 키를 재는 마스코트 그림이 서 있다.",
+      "source": {
+        "file": "34_자유시간_하루카_01.md",
+        "line": 10,
+        "fileSha256": "21cf898753978784ed8c5f4ce2a06131744bb5a717a761be1980707d997466c1",
+        "heading": "F-HA01-01 먼저 정한 자리",
+        "location": "F-HA01-01"
+      },
+      "next": "v4:34:F-HA01-01:e:c7e4a3b72efb:1"
+    }
+  },
+  "kind": "freetime",
+  "routingStatus": "reviewed-nested-first-meeting",
+  "sourceFile": "34_자유시간_하루카_01.md",
+  "completionFlag": "fte:34:complete",
+  "eligibility": "Only the exact first-case daytime window. Late-entry replacements are separate and cannot use this introduction.",
+  "sourceConditionalPolicy": "Nested song-name consent, actual leaf-wiping, actual role-play response, current tea and current-photo deletion remain distinct. No unseen branch is replayed.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "34_자유시간_하루카_01.md:F-HA01-06": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:F-HA01-05a": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:F-HA01-05": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:h-639c8ece27": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:F-HA01-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:F-HA01-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:F-HA01-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "34_자유시간_하루카_01.md:F-HA01-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

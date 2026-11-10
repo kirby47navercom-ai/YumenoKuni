@@ -1,0 +1,4906 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:145:h-8adfa9fd52:e:c4a82cb39519:1",
+  "nodes": {
+    "v4:43:return:late:AI02Late6AM": {
+      "id": "v4:43:return:late:AI02Late6AM",
+      "type": "return"
+    },
+    "v4:43:missing:previous-taste:late:AI02Late6AM": {
+      "id": "v4:43:missing:previous-taste:late:AI02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-AI01-B"
+    },
+    "v4:43:F-AI01-B1:e:182096bd03c9:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B1:e:182096bd03c9:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃는다.아이도늦게작게웃는다.후속마다미오를필수시식자로부르지는않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 421,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B1:직접 쓴맛을 평가했다",
+        "location": "F-AI01-B1"
+      },
+      "next": "v4:43:return:late:AI02Late6AM"
+    },
+    "v4:43:F-AI01-B1:e:8abbc187fc5e:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B1:e:8abbc187fc5e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그럼 다음에는 제 것 안 드셔도 돼요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 419,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B1:직접 쓴맛을 평가했다",
+        "location": "F-AI01-B1"
+      },
+      "next": "v4:43:F-AI01-B1:e:182096bd03c9:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B1:e:1901638339a1:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B1:e:1901638339a1:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘도 정답 못 받네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 417,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B1:직접 쓴맛을 평가했다",
+        "location": "F-AI01-B1"
+      },
+      "next": "v4:43:F-AI01-B1:e:8abbc187fc5e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B1:e:8d3f54936ff0:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B1:e:8d3f54936ff0:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "미오 씨 입에 썼다고 정답이 된 건 아니에요. 저는 다른 쪽이 좋을 수도 있었잖아요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 415,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B1:직접 쓴맛을 평가했다",
+        "location": "F-AI01-B1"
+      },
+      "next": "v4:43:F-AI01-B1:e:1901638339a1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B1:e:973589f0fd4f:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B1:e:973589f0fd4f:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 맞혔네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 413,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B1:직접 쓴맛을 평가했다",
+        "location": "F-AI01-B1"
+      },
+      "next": "v4:43:F-AI01-B1:e:8d3f54936ff0:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B1:e:6e6269929b1a:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B1:e:6e6269929b1a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그때 쓰다고 하신 건, 절반만 바꿔 봤어요. 저도 바꾼 쪽이 좋았어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 411,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B1:직접 쓴맛을 평가했다",
+        "location": "F-AI01-B1"
+      },
+      "next": "v4:43:F-AI01-B1:e:973589f0fd4f:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B2:e:759df525825e:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:759df525825e:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오는 이미 곁에서 본 두 몫의 비교를 처음 전해 듣지 않는다.직접 맛보지 않은 상태는 그대로며 지금 새 시식이나 조리를 시작하지 않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 437,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:return:late:AI02Late6AM"
+    },
+    "v4:43:F-AI01-B2:e:7836172a1c14:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:7836172a1c14:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알았어. 나도 오늘 만들어 달라는 말은 안 할게. 다음에 있으면 그때 물어보고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 435,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:F-AI01-B2:e:759df525825e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B2:e:8ed6d3d9ea0e:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:8ed6d3d9ea0e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "식혀서도 먹어 봐야죠. 지금 다시 끓일 건 아니고요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 433,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:F-AI01-B2:e:7836172a1c14:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B2:e:139f350b70f2:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:139f350b70f2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 내가 섞어 보자고 했을 때 오늘은 여기까지라고 했구나. 나는 네가 바로 골랐으면 끝인 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 431,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:F-AI01-B2:e:8ed6d3d9ea0e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B2:e:dc730fd9f417:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:dc730fd9f417:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 식으면 달라질까 해서 다시 먹어 본 거예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 429,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:F-AI01-B2:e:139f350b70f2:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B2:e:281bea5138f9:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:281bea5138f9:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그때도 먹는 건 그쪽이 낫다고 했지. 냄새는 처음 게 더 좋았고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 427,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:F-AI01-B2:e:dc730fd9f417:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B2:e:656385743d0a:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B2:e:656385743d0a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그때 나눠 끓인 건 식힌 뒤에도 먹어 봤어요. 향 뺀 쪽이 낫더라고요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 425,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B2:나눠 끓이고 비교하는 것을 곁에서 보았다",
+        "location": "F-AI01-B2"
+      },
+      "next": "v4:43:F-AI01-B2:e:281bea5138f9:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B3:e:217faa0b4801:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:217faa0b4801:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오는자기가그맛을알고쓴맛을지적했다고말하지않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 453,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:return:late:AI02Late6AM"
+    },
+    "v4:43:F-AI01-B3:e:e086a1000cd5:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:e086a1000cd5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 두 번째부터. 있으면.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 451,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:F-AI01-B3:e:217faa0b4801:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B3:e:b4d42feb535f:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:b4d42feb535f:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "실패한 걸 다시 만들어 달라고는 하지 마세요. 남는 거 치우는 것도 저예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 449,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:F-AI01-B3:e:e086a1000cd5:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B3:e:4933cb963cfa:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:4933cb963cfa:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 말 들으니까 오히려 처음 게 궁금해지네. 나는 옆에서 보기만 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 447,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:F-AI01-B3:e:b4d42feb535f:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B3:e:c8b787736c6e:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:c8b787736c6e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "뺀 거요. 처음 건 미오 씨가 안 드신 게 다행이었을지도 몰라요. 이제 먹으면 저도 별로일 것 같아요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 445,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:F-AI01-B3:e:4933cb963cfa:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B3:e:489b8ec10583:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:489b8ec10583:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 어느 게 좋았어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 443,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:F-AI01-B3:e:c8b787736c6e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-B3:e:5d2f337ce1f4:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-B3:e:5d2f337ce1f4:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그때 제 것만 만들던 거요. 반은 재료를 빼고 다시 해 봤어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 441,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-B3:만드는 것을 보았으나 뒤의 두 몫 비교는 보지 않았다",
+        "location": "F-AI01-B3"
+      },
+      "next": "v4:43:F-AI01-B3:e:489b8ec10583:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:previous-taste:late:AI02Late6AM": {
+      "id": "v4:43:previous-taste:late:AI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AI01-B",
+          "equals": "B1",
+          "to": "v4:43:F-AI01-B1:e:6e6269929b1a:1:late:AI02Late6AM"
+        },
+        {
+          "flag": "F-AI01-B",
+          "equals": "B2",
+          "to": "v4:43:F-AI01-B2:e:656385743d0a:1:late:AI02Late6AM"
+        },
+        {
+          "flag": "F-AI01-B",
+          "equals": "B3",
+          "to": "v4:43:F-AI01-B3:e:5d2f337ce1f4:1:late:AI02Late6AM"
+        }
+      ],
+      "default": "v4:43:missing:previous-taste:late:AI02Late6AM"
+    },
+    "v4:43:h-3b151141a4:e:9f520a0b491b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-3b151141a4:e:9f520a0b491b:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "B1은주방갈림길에서,B2는휴게실을함께나올때,B3는떠나기직전에이대화를한다.시간상다시돌아와같은인사를반복하지않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 407,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "끝 — 처음 맛본 것은 누구였나",
+        "location": "h-3b151141a4"
+      },
+      "next": "v4:43:previous-taste:late:AI02Late6AM"
+    },
+    "v4:43:F-AI02-A1:e:f96c8341a9ac:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:f96c8341a9ac:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이는 미오가 찾기 전에 이미 끼어드는 말을 삼켰던 것이다.그것을 친절의 완벽한 사례로 닫지 않는다.미오는 그 정도 말은 해도 된다고 생각했고,아이는 침묵을 너무 엄격히 지키면 자신의 일을 방해받지 않아도 된다는 편함도 느꼈다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 365,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:h-3b151141a4:e:9f520a0b491b:1:late:AI02Late6AM"
+    },
+    "v4:43:F-AI02-A1:e:0345947d4365:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:0345947d4365:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 다음에는요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 363,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:f96c8341a9ac:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A1:e:7679acd2b1d7:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:7679acd2b1d7:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "말해도 됐는데. 그런 건.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 361,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:0345947d4365:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A1:e:8648c42c9278:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:8648c42c9278:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "조금 전에요. 도와 달라고 안 하셔서요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 359,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:7679acd2b1d7:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A1:e:b9c01e4b31fe:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:b9c01e4b31fe:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까부터 봤어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 357,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:8648c42c9278:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A1:e:b42b9c83d496:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:b42b9c83d496:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 소매를 펼친다.조각 하나가 나온다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 355,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:b9c01e4b31fe:1:late:AI02Late6AM"
+    },
+    "v4:43:F-AI02-A1:e:084413636ddd:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:084413636ddd:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "소매에 끼어 있어요. 오른쪽.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 353,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:b42b9c83d496:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A1:e:41c65f0313d9:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A1:e:41c65f0313d9:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 가운데 지붕을 맞춘다.파란 조각 하나가 보이지 않아 상자를 뒤집어 보다가 탁자를 건드린다.아이 책이흔들린다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 351,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A1/A3:퍼즐 진행 경로",
+        "location": "F-AI02-A1"
+      },
+      "next": "v4:43:F-AI02-A1:e:084413636ddd:1:late:AI02Late6AM"
+    },
+    "v4:43:F-AI02-A2:e:e6052eaf6f61:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A2:e:e6052eaf6f61:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 책을 본다.아이도 같은 그림을 본다.미래의실제수족관방문을약속하거나확정하지않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 379,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A2:공동 사진집 경로",
+        "location": "F-AI02-A2"
+      },
+      "next": "v4:43:h-3b151141a4:e:9f520a0b491b:1:late:AI02Late6AM"
+    },
+    "v4:43:F-AI02-A2:e:c3a3ab6d0cc5:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A2:e:c3a3ab6d0cc5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "같이 가자고 하신 것처럼 들렸어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 377,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A2:공동 사진집 경로",
+        "location": "F-AI02-A2"
+      },
+      "next": "v4:43:F-AI02-A2:e:e6052eaf6f61:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A2:e:72d6355119d1:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A2:e:72d6355119d1:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 간다고 안 했는데 벌써 따로 다니네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 375,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A2:공동 사진집 경로",
+        "location": "F-AI02-A2"
+      },
+      "next": "v4:43:F-AI02-A2:e:c3a3ab6d0cc5:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A2:e:5c5a5266902c:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A2:e:5c5a5266902c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "다른 데 보고 와도 되잖아요. 거기 가면요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 373,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A2:공동 사진집 경로",
+        "location": "F-AI02-A2"
+      },
+      "next": "v4:43:F-AI02-A2:e:72d6355119d1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A2:e:6f1a009a403c:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A2:e:6f1a009a403c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 여기가 보고 싶어. 작은 데부터. 큰 데 보면서 무서울 생각하고 있으면 네가 짜증 날 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 371,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A2:공동 사진집 경로",
+        "location": "F-AI02-A2"
+      },
+      "next": "v4:43:F-AI02-A2:e:5c5a5266902c:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A2:e:f241aed8424d:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A2:e:f241aed8424d:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "퍼즐을하지않았으므로없는조각을찾지않는다.미오가사진집뒷장의관람동선을보고처음의거대한수조보다작은수조구역을가리킨다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 369,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI02-A2:공동 사진집 경로",
+        "location": "F-AI02-A2"
+      },
+      "next": "v4:43:F-AI02-A2:e:6f1a009a403c:1:late:AI02Late6AM"
+    },
+    "v4:43:current-activity:late:AI02Late6AM": {
+      "id": "v4:43:current-activity:late:AI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AI02-A",
+          "equals": "A2",
+          "to": "v4:43:F-AI02-A2:e:f241aed8424d:1:late:AI02Late6AM"
+        }
+      ],
+      "default": "v4:43:F-AI02-A1:e:41c65f0313d9:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b67952fdef:e:a042f7d95c8a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b67952fdef:e:a042f7d95c8a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 여기 있어. 나도 내 거 좀 더 하고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 347,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B2. 여기서 하던 일을 끝낸다",
+        "location": "h-b67952fdef"
+      },
+      "next": "v4:43:current-activity:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:c3bf4fa46845:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:c3bf4fa46845:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 그 책 아직 재미있어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 343,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-3b151141a4:e:9f520a0b491b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:da1b19eb1f50:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:da1b19eb1f50:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다시 책 보러 갈 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 341,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:c3bf4fa46845:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:9e4ea25c171d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:9e4ea25c171d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저는 됐어요. 미오 씨 건 물어보세요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 337,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:da1b19eb1f50:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:5f21f07495ab:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:5f21f07495ab:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "너희 것도 줄까?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 335,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:9e4ea25c171d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:508ed3e2cdad:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:508ed3e2cdad:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "잠깐 뒤 아이가 사진집을 닫는다.아이가실제로동행을택하는경로다.미오의설득이맞았다는보증은없다.주방에서아이는이미씻은작은바구니를가리키고소라에게그것만쓰라고말한다.소라는나머지를건드리지않는다.아이는칼을직접잡지않고물러난다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 333,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:5f21f07495ab:1:late:AI02Late6AM"
+    },
+    "v4:43:h-291e964f33:e:688061ad4a27:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:688061ad4a27:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "쉬운 것처럼 말씀하시네요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 331,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:508ed3e2cdad:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:da258ce80e86:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:da258ce80e86:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 미오를 본다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 329,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:688061ad4a27:1:late:AI02Late6AM"
+    },
+    "v4:43:h-291e964f33:e:00a38c8fdecd:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:00a38c8fdecd:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 네가 그만두면 되지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 327,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:da258ce80e86:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:1c6886247c70:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:1c6886247c70:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "제가 지금 가면 결국 제가 할 것 같은데요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 325,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:00a38c8fdecd:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-291e964f33:e:e3da186b4884:1:late:AI02Late6AM": {
+      "id": "v4:43:h-291e964f33:e:e3da186b4884:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 갈래. 나는 내 간식 가져오고, 너는 소라한테 어느 건지 보여 줘. 다 해 주라는 말 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 323,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B1. 같이 주방으로 가자고 한다",
+        "location": "h-291e964f33"
+      },
+      "next": "v4:43:h-291e964f33:e:1c6886247c70:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:986b66c0d4a9:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:986b66c0d4a9:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "오늘 계속 계셔야 한다는 말은 아니니까요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 403,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-3b151141a4:e:9f520a0b491b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:1c02641d2c7a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:1c02641d2c7a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘 귀찮았다고 하고 그 말도 하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 401,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:986b66c0d4a9:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:013496876295:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:013496876295:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "다음에 또 오셔도 돼요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 399,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:1c02641d2c7a:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:964763fafee1:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:964763fafee1:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "퍼즐경로는미오가흩어진조각을상자안에모으고이어맞춘부분은평평하게남긴다.공동사진집경로는없는조각을정리하지않고의자만넣는다.아이는먼저인사를한다.미오는자기기분을풀기위해아이에게또대답을요구하지않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 397,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:013496876295:1:late:AI02Late6AM"
+    },
+    "v4:43:h-818a4490b1:e:bb5eaab0f414:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:bb5eaab0f414:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 취소하지 마. 나는 그냥 다른 데 가는 거야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 395,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:964763fafee1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:09c7ff490388:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:09c7ff490388:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "조금요. 제가 귀찮다고 한 걸 취소하면 더 계실 것 같아서요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 393,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:bb5eaab0f414:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:020e41dce50a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:020e41dce50a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그 정도로 들렸어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 391,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:09c7ff490388:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:34a58e5b7863:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:34a58e5b7863:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 아이를 본다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 389,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:020e41dce50a:1:late:AI02Late6AM"
+    },
+    "v4:43:h-818a4490b1:e:4b66edaf302a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:4b66edaf302a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "가실 때까지 제가 달래 드려야 하는 건 아니죠?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 387,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:34a58e5b7863:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-818a4490b1:e:1e3de71b4374:1:late:AI02Late6AM": {
+      "id": "v4:43:h-818a4490b1:e:1e3de71b4374:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 갈래. 너 조용히 있는 거 방해도 했고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 385,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "B3. 미오가 먼저 다른 곳으로 간다",
+        "location": "h-818a4490b1"
+      },
+      "next": "v4:43:h-818a4490b1:e:4b66edaf302a:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-B:menu:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-B:menu:late:AI02Late6AM",
+      "type": "menu",
+      "q": "남은 시간의 약속",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 319,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "선택 F-AI02-B — 남은 시간의 약속",
+        "location": "F-AI02-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "같이 주방으로 가자고 한다",
+          "to": "v4:43:h-291e964f33:e:e3da186b4884:1:late:AI02Late6AM",
+          "set": {
+            "F-AI02-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "여기서 하던 일을 끝낸다",
+          "to": "v4:43:h-b67952fdef:e:a042f7d95c8a:1:late:AI02Late6AM",
+          "set": {
+            "F-AI02-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "미오가 먼저 다른 곳으로 간다",
+          "to": "v4:43:h-818a4490b1:e:1e3de71b4374:1:late:AI02Late6AM",
+          "set": {
+            "F-AI02-B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:43:h-f1954d036f:e:a32599055111:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:a32599055111:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이의 경계에는 실제 일의 구분도 있고 자기 방식을 지키려는 마음도 있다.미오가 어느 한쪽만 보며 전부 정당화하지 않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 317,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:F-AI02-B:menu:late:AI02Late6AM"
+    },
+    "v4:43:h-f1954d036f:e:f1e73ed84718:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:f1e73ed84718:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 그래서 안 해도 된다고 먼저 말했어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 315,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:a32599055111:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:156f4da625a6:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:156f4da625a6:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직 안 그랬어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 313,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:f1e73ed84718:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:103b3d852973:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:103b3d852973:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오는 소라가 반드시 그 말을 할 거라고 생각하지는 않는다.아이도 그가 한 말을 인용한 것이 아니라 앞으로 받을 말을 미리 정해 놓았다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 311,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:156f4da625a6:1:late:AI02Late6AM"
+    },
+    "v4:43:h-f1954d036f:e:37816318413e:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:37816318413e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "제가 한 게 마음에 안 든다고 하면, 지금 도와주려고 했는데 왜 그러냐고 할 거잖아요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 309,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:103b3d852973:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:503e0980e9ce:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:503e0980e9ce:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "돌아갔을 때 이미 다 해 놨으면 편할 수도 있는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 307,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:37816318413e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:7404f94ad19a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:7404f94ad19a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그러면 지금 책 덮어야 해요. 가서 어느 걸 말하는지 봐야 하고요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 305,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:503e0980e9ce:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:e1ff99d50fab:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:e1ff99d50fab:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "설명해 주고 맡기면 되잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 303,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:7404f94ad19a:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:b0d784d3ec58:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:b0d784d3ec58:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "소라가 알겠다고 하고 간다.아이는 책을 바로 가방에 넣지 않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 301,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:e1ff99d50fab:1:late:AI02Late6AM"
+    },
+    "v4:43:h-f1954d036f:e:106cfdbc2a59:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:106cfdbc2a59:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "안 씻은 게 섞여 있어요. 제가 따로 놓았어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 299,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:b0d784d3ec58:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:085ca571d906:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:085ca571d906:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "과일도 그래야 해?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 297,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:106cfdbc2a59:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:4d4331a01291:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:4d4331a01291:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그럼 소라 씨 드실 만큼만 하세요. 다 같이 먹을 만큼은 제가 할 때 할게요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 295,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:085ca571d906:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:393c0e1eff8b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:393c0e1eff8b:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "그러니까, 있으면 다들 하나씩 먹을 수 있을 것 같아서. 너 책 보라며 내가 해 놓으려고.",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 293,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:4d4331a01291:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:6fd259f9a99b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:6fd259f9a99b:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "아직 안 하셔도 돼요. 제가 돌아가서 할 거예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 291,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:393c0e1eff8b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:3970b75c89a5:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:3970b75c89a5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "소라",
+      "actor": "sora",
+      "text": "아이, 지금 시간 있어? 그거 어디까지 썰어 놓으면 돼?",
+      "mono": false,
+      "delivery": "소라",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 289,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:6fd259f9a99b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "소라",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-f1954d036f:e:fbe0b825e86f:1:late:AI02Late6AM": {
+      "id": "v4:43:h-f1954d036f:e:fbe0b825e86f:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "소라가 휴게실 문에 얼굴을 내민다.주방 쪽에서 과일을 내놓아도 되는지 찾고 있었다고 한다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 287,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "먼저 나가는 사람이 놓은 일",
+        "location": "h-f1954d036f"
+      },
+      "next": "v4:43:h-f1954d036f:e:3970b75c89a5:1:late:AI02Late6AM"
+    },
+    "v4:43:h-845b389b59:e:923850e1f181:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:923850e1f181:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "A1/A3에서는 미오가 조각을 집으려다가 손을 멈춘다.A2에서는 책에 댔던 손을 그대로 둔다.아이는 물고기를 보던 때보다 차분한 얼굴이다.좋은 사람으로 보이려고 급히 말을 바꾸지 않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 283,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-f1954d036f:e:fbe0b825e86f:1:late:AI02Late6AM"
+    },
+    "v4:43:h-845b389b59:e:99ad321b87e1:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:99ad321b87e1:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "지금 그 질문은 조금요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 281,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:923850e1f181:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:3cad88689bec:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:3cad88689bec:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 귀찮아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 279,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:99ad321b87e1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:eb2035b8e86c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:eb2035b8e86c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "조용한 건 달라요. 혼자 있을 때보다 덜 조용해요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 277,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:3cad88689bec:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:7f6074cc013d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:7f6074cc013d:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 말을 멈춘다.A1/A3의 미오는 퍼즐 조각 하나를 상자에 떨어뜨린다.A2의 미오는 닫힌 퍼즐 상자를 열지 않고 사진집 모서리를 만진다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 275,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:eb2035b8e86c:1:late:AI02Late6AM"
+    },
+    "v4:43:h-845b389b59:e:8629ae0b823e:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:8629ae0b823e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "책은 같죠.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 273,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:7f6074cc013d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:48eefabed33a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:48eefabed33a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 내가 여기 있든 말든 별로 안 다르겠다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 271,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:8629ae0b823e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:624829aef346:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:624829aef346:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "말이 짧게 끝난다.미오는 아이가 자신에게 같이 좋아해 달라고 부탁한 적 없다는 것을 알면서도 약간 서운하다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 269,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:48eefabed33a:1:late:AI02Late6AM"
+    },
+    "v4:43:h-845b389b59:e:a772b13d019d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:a772b13d019d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그럼 미오 씨는 빨리 보시면 돼요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 267,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:624829aef346:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:962b67340f92:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:962b67340f92:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 다음 장에 뭐 나오는지 알면 빨리 넘길 것 같은데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 265,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:a772b13d019d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:f13c71f9a1a2:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:f13c71f9a1a2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "한 번 봤다고 그만 좋아지는 건 아니니까요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 263,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:962b67340f92:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:49077aac12c7:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:49077aac12c7:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다 기억하는데 또 봐?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 261,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:f13c71f9a1a2:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:18244dab57c5:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:18244dab57c5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "아까도 봤어요. 여기는 두 번째예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 259,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:49077aac12c7:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:d3dbbe644df4:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:d3dbbe644df4:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "벌써 다 봤어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 257,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:18244dab57c5:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-845b389b59:e:39d7191fa358:1:late:AI02Late6AM": {
+      "id": "v4:43:h-845b389b59:e:39d7191fa358:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 책을 덮는다.미오가 남은 시간을 보고 묻는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 255,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "기억하는 그림과 있는 물건",
+        "location": "h-845b389b59"
+      },
+      "next": "v4:43:h-845b389b59:e:d3dbbe644df4:1:late:AI02Late6AM"
+    },
+    "v4:43:h-e2a36a2d48:e:b9dd6d71b428:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:b9dd6d71b428:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "다요. 저 사진에 있는 것만 있는 건 아니겠죠.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 133,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-845b389b59:e:39d7191fa358:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:1d74aff34b2d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:1d74aff34b2d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러네. 너는 뭘 보고 싶어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 131,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:b9dd6d71b428:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:ee5042276fa4:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:ee5042276fa4:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃으려다가 아이가 웃지 않는 것을 본다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 129,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:1d74aff34b2d:1:late:AI02Late6AM"
+    },
+    "v4:43:h-e2a36a2d48:e:4d5b88c2330c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:4d5b88c2330c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저는 가고 싶은 이유를 설명하려고 책 폈는데요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 127,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:ee5042276fa4:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:bca4aabb4c3e:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:bca4aabb4c3e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 안 가고 싶은 이유를 설명하려고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 125,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:4d5b88c2330c:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:79500c8b459c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:79500c8b459c:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 모서리 하나를 집는다.아이가 손으로 자기 페이지를 눌러 넘겨지지 않게 한다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 123,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:bca4aabb4c3e:1:late:AI02Late6AM"
+    },
+    "v4:43:h-e2a36a2d48:e:b25d46078757:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:b25d46078757:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "수족관은 왜 굳이 금 가는 걸 먼저 생각하세요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 121,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:79500c8b459c:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:f1c3181dd3c1:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:f1c3181dd3c1:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 말은 굳이 안 해도 됐잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 119,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:b25d46078757:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:4a5902c84890:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:4a5902c84890:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "지금 건물도 무너지면 갇혀요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 117,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:f1c3181dd3c1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:faee4d70199e:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:faee4d70199e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 저렇게 큰 데 있으면 좀 무서울 것 같아. 금 가면 물 다 쏟아질 것 같고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 115,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:4a5902c84890:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-e2a36a2d48:e:9edc96bfa386:1:late:AI02Late6AM": {
+      "id": "v4:43:h-e2a36a2d48:e:9edc96bfa386:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 테두리를 고른다.아이는 물고기 사진을 넘긴다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 113,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A1. 퍼즐을 하며 다른 이야기를 한다",
+        "location": "h-e2a36a2d48"
+      },
+      "next": "v4:43:h-e2a36a2d48:e:faee4d70199e:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:3b42b8f1b315:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:3b42b8f1b315:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 아이를 본다. 아이는 대답을 기다리지 않고 다음 페이지를 편다. 미오도 웃으며 같이 본다.새촬영/거울/기억확인·능력사용은없다.물개사진을보는현재장난이며아이의실제시식평가나옛사건관찰을새로만들지않는다.이사진집공동열람은A2에만있고퍼즐을진행한것으로바꾸지않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 227,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-845b389b59:e:39d7191fa358:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:33710b4893b9:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:33710b4893b9:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "수족관이요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 225,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:3b42b8f1b315:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:0b6040a1c0ef:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:0b6040a1c0ef:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 자꾸 나 보고 웃어서 내가 동물원 된 줄 알았잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 223,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:33710b4893b9:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:d2038e735ca2:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:d2038e735ca2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "아까도 진짜였어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 221,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:0b6040a1c0ef:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:df68c0ae086c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:df68c0ae086c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "넘겨. 이번에는 진짜 사진 볼게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 219,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:d2038e735ca2:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:8721bfb18a10:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:8721bfb18a10:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 페이지 가장자리를 들어 보인다. 미오가 그쪽을 보고 몸을 조금 옮긴다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 217,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:df68c0ae086c:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:390170b2f4e5:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:390170b2f4e5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "다음 사진은 있는데 다음 표정은 없어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 215,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:8721bfb18a10:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:ee24ad50b1a8:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:ee24ad50b1a8:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 번만 더 해 봐. 아까 내가 어떤 얼굴이었는지 보게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 213,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:390170b2f4e5:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:c5a9c9afb380:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:c5a9c9afb380:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃음을 터뜨린다. 아이는 표정을 풀고 책을 자기 쪽으로 조금 당긴다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 211,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:ee24ad50b1a8:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:db076c11ce3d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:db076c11ce3d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저도 완벽하게는 못 하죠.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 209,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:c5a9c9afb380:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:4ab194aca3bd:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:4ab194aca3bd:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "난 저렇게 안 했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 207,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:db076c11ce3d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:2c346f62c056:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:2c346f62c056:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 미오 씨 한 거예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 205,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:4ab194aca3bd:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:9bbedb165650:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:9bbedb165650:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "물개가 아니라 나 같은데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 203,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:2c346f62c056:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:798e29349d11:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:798e29349d11:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 잠깐 미오를 본다. 그리고 목을 뒤로 조금 빼고 입술을 꼭 다문다. 미오가 사진 쪽으로 고개를 돌렸다가 다시 아이를 본다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 201,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:9bbedb165650:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:ac7b038f3437:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:ac7b038f3437:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 봤는데 네가 자꾸 내 얼굴 봤잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 199,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:798e29349d11:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:b910a33239d0:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:b910a33239d0:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저는 그냥 보는 게 좋아요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 197,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:ac7b038f3437:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:30195f4bbaea:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:30195f4bbaea:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 하면 어떻게 생겼는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 195,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:b910a33239d0:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:f62a6857973f:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:f62a6857973f:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 웃는다. 아이도 따라 웃다가 책이 넘어가려 하자 모서리를 누른다. 두 사람은 같은 물개 사진 앞에 있다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 193,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:30195f4bbaea:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:e70554a6995a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:e70554a6995a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "미오 씨가 그 얼굴을 그만하시면요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 191,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:f62a6857973f:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:7b975edc340c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:7b975edc340c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 그만하라고 하면 그만 웃어 줄 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 189,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:e70554a6995a:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:a188d49849ab:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:a188d49849ab:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "똑같이 하시라고 시킨 건 아니에요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 187,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:7b975edc340c:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:43938ba13d5c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:43938ba13d5c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜. 시킨 대로 했는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 185,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:a188d49849ab:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:4024b140bb34:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:4024b140bb34:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 입술을 푼다. 이번에는 입을 조금 벌리고 책을 본다. 아이가 웃다가 손등으로 자기 입을 가린다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 183,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:43938ba13d5c:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:331c6e0bfa7d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:331c6e0bfa7d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "지금은요. 아까는 꽉 다무셨어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 181,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:4024b140bb34:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:fd605e6b9c82:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:fd605e6b9c82:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 주고 있는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 179,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:331c6e0bfa7d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:aceeba6264a5:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:aceeba6264a5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "거기서 입에 힘을 주시니까요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 177,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:fd605e6b9c82:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:7a4938b32a63:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:7a4938b32a63:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너무 달라?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 175,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:aceeba6264a5:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:23346f72f1f6:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:23346f72f1f6:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 웃음을 삼킨다. 미오가 고개를 바로 세운다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 173,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:7a4938b32a63:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:e948d7a4875d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:e948d7a4875d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건가?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 171,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:23346f72f1f6:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:2955b0ce53db:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:2955b0ce53db:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이는 미오 얼굴을 보다가 사진으로 눈을 내린다. 미오는 자기 턱을 조금 더 당긴다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 169,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:e948d7a4875d:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:dc1efde2139a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:dc1efde2139a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "모르겠어. 너도 해 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 167,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:2955b0ce53db:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:f7219a3aee9e:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:f7219a3aee9e:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "똑같이 하면 편해져요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 165,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:dc1efde2139a:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:45d37727f968:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:45d37727f968:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "저 표정. 편해 보여서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 163,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:f7219a3aee9e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:66e5764c83ce:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:66e5764c83ce:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "뭐 하세요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 161,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:45d37727f968:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:b1c9e1895237:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:b1c9e1895237:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 물개 사진을 다시 본다. 눈은 뜨고 있는데 목을 조금 뒤로 젖힌 얼굴이다. 미오도 턱을 당겼다가 올린다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 159,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:66e5764c83ce:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:3682dac86fc4:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:3682dac86fc4:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "둘이 한 권 보니까 기다리는 것도 다르네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 157,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:b1c9e1895237:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:70840d076ff9:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:70840d076ff9:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그쪽 보고 싶으시면 보세요. 저는 다음에 다시 찾아도 돼요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 155,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:3682dac86fc4:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:d1c1df1c1b86:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:d1c1df1c1b86:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 앞장으로 돌아가려다가 아이가 아직 작은 사진을 보는 것을 보고 손을 뗀다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 153,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:70840d076ff9:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:3fd4e0bc210c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:3fd4e0bc210c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "보고 싶으면요. 다른 걸 보고 오면 일어날 수도 있고요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 151,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:d1c1df1c1b86:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:26e8a756616a:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:26e8a756616a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 기다릴 수 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 149,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:3fd4e0bc210c:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:16cf142173d2:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:16cf142173d2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "기다려서 찍었을 거예요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 147,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:26e8a756616a:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:6fa33b4104af:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:6fa33b4104af:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나는 동물 앞에 가면 다들 자고 있더라. 사진은 눈 뜨고 있어서 이상해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 145,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:16cf142173d2:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:93cff999acd0:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:93cff999acd0:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "사진 찍을 때 그랬겠죠.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 143,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:6fa33b4104af:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:3d31792d19b9:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:3d31792d19b9:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 계속 저 자세로 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 141,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:93cff999acd0:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-b6ffa3dc64:e:46bce03ec103:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:46bce03ec103:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 책을 두 사람 가운데로 옮긴다.퍼즐 상자는닫고탁자끝에놓는다.미오는 물개 사진을 가리킨다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 139,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:3d31792d19b9:1:late:AI02Late6AM"
+    },
+    "v4:43:h-b6ffa3dc64:e:5ebec6297c34:1:late:AI02Late6AM": {
+      "id": "v4:43:h-b6ffa3dc64:e:5ebec6297c34:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 볼래. 다 보고 넘겨.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 137,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A2. 퍼즐 대신 사진집을 같이 본다",
+        "location": "h-b6ffa3dc64"
+      },
+      "next": "v4:43:h-b6ffa3dc64:e:46bce03ec103:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:84374ea10859:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:84374ea10859:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 다시 책을 본다.미오는 억지로 끼우려던 조각을 빼놓는다.침묵은짧은장면전환이며실시간대기로운영하지않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 249,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-845b389b59:e:39d7191fa358:1:late:AI02Late6AM"
+    },
+    "v4:43:h-c736c1c6d6:e:4906d0ba4fe0:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:4906d0ba4fe0:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그러면 반쯤만 들을게요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 247,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:84374ea10859:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:2ed712a7a0c2:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:2ed712a7a0c2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "반쯤은.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 245,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:4906d0ba4fe0:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:9bf479481501:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:9bf479481501:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "혼잣말인 줄 알았어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 243,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:2ed712a7a0c2:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:87e39054468b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:87e39054468b:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아. 설명 안 해 줘도 된다고 하고 바로 묻네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 241,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:9bf479481501:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:dff3d6a33c7b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:dff3d6a33c7b:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 고개를 든다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 239,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:87e39054468b:1:late:AI02Late6AM"
+    },
+    "v4:43:h-c736c1c6d6:e:b8daa6e17822:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:b8daa6e17822:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이거 맞는 것 같지 않아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 237,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:dff3d6a33c7b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:94f7dcd21bc8:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:94f7dcd21bc8:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 테두리 조각을 돌려 놓는다.아이가 책장을 넘기는 소리가 난다.미오는 한 조각을 끼우지 못하고 여러 번 같은 데 대 본다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 235,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:b8daa6e17822:1:late:AI02Late6AM"
+    },
+    "v4:43:h-c736c1c6d6:e:591d27c54160:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:591d27c54160:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 233,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:94f7dcd21bc8:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-c736c1c6d6:e:e343cbeff5c7:1:late:AI02Late6AM": {
+      "id": "v4:43:h-c736c1c6d6:e:e343cbeff5c7:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나 퍼즐 할게. 네 책까지 설명 안 해 줘도 돼.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 231,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "A3. 각자 말없이 한다",
+        "location": "h-c736c1c6d6"
+      },
+      "next": "v4:43:h-c736c1c6d6:e:591d27c54160:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI02-A:menu:late:AI02Late6AM": {
+      "id": "v4:43:F-AI02-A:menu:late:AI02Late6AM",
+      "type": "menu",
+      "q": "어느 쪽을 보고 있을까",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 109,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "선택 F-AI02-A — 어느 쪽을 보고 있을까",
+        "location": "F-AI02-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "퍼즐을 하며 다른 이야기를 한다",
+          "to": "v4:43:h-e2a36a2d48:e:9edc96bfa386:1:late:AI02Late6AM",
+          "set": {
+            "F-AI02-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "퍼즐 대신 사진집을 같이 본다",
+          "to": "v4:43:h-b6ffa3dc64:e:5ebec6297c34:1:late:AI02Late6AM",
+          "set": {
+            "F-AI02-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "각자 말없이 한다",
+          "to": "v4:43:h-c736c1c6d6:e:e343cbeff5c7:1:late:AI02Late6AM",
+          "set": {
+            "F-AI02-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:43:h-51f69f3c59:e:af1137f31d48:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:af1137f31d48:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 책에 닿지 않는 쪽으로 조각을 모은다.아이는 조각을 맞춰 주려고 손을 내밀지 않는다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 107,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:F-AI02-A:menu:late:AI02Late6AM"
+    },
+    "v4:43:h-51f69f3c59:e:a4dff7385e10:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:a4dff7385e10:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "제 건 아니에요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 105,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:af1137f31d48:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:09d3399c427b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:09d3399c427b:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이거 내가 해도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 103,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:a4dff7385e10:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:1e206c12b57e:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:1e206c12b57e:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 퍼즐 상자를 열어 본다.완성 그림은 공원 전경이다.비슷한 나무와 지붕이 많다.조각 몇 개가 탁자에 흩어져 있다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 101,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:09d3399c427b:1:late:AI02Late6AM"
+    },
+    "v4:43:h-51f69f3c59:e:0ffe3ac6f58b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:0ffe3ac6f58b:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "알아도 보고 싶을 수 있잖아요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 99,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:1e206c12b57e:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:57b87f22c8e6:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:57b87f22c8e6:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "유리인 거 알잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 97,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:0ffe3ac6f58b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:0025cc6a43e1:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:0025cc6a43e1:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 큰 데요. 벽이 전부 물 같아 보이는 데.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 95,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:57b87f22c8e6:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:84b5255d8111:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:84b5255d8111:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "수족관?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 93,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:0025cc6a43e1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:f9b213181d7c:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:f9b213181d7c:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저도 가끔 먹는 생각해요. 근데 이건 보러 가고 싶어서 보고 있어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 91,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:84b5255d8111:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:b9f03ea152bf:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:b9f03ea152bf:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 입을 다문다.아이가 다음 페이지를 편다.동그랗고 짧은 물고기 여러 마리가 같은 방향으로 떠 있다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 89,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:f9b213181d7c:1:late:AI02Late6AM"
+    },
+    "v4:43:h-51f69f3c59:e:7b80a2d713c5:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:7b80a2d713c5:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "미오 씨는 사람 볼 때 이름을 어디에 적을지부터 생각하세요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 87,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:b9f03ea152bf:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:18c1538cafbd:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:18c1538cafbd:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알아. 요리하는 사람들은 보면 그런 것도 생각하나 해서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 85,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:7b80a2d713c5:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:ccb76a6484a3:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:ccb76a6484a3:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저건 먹는 사진 아니에요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 83,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:18c1538cafbd:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:58773a258e02:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:58773a258e02:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "재료 책인 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 81,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:ccb76a6484a3:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-51f69f3c59:e:83e0805efb5b:1:late:AI02Late6AM": {
+      "id": "v4:43:h-51f69f3c59:e:83e0805efb5b:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 책을 본다.푸른 수조 안에 은색 물고기가 겹쳐 있다.아이는 페이지 아래의 작은 설명보다 사진을 보고 있다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 79,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "사진 속 물고기",
+        "location": "h-51f69f3c59"
+      },
+      "next": "v4:43:h-51f69f3c59:e:58773a258e02:1:late:AI02Late6AM"
+    },
+    "v4:43:missing:actual-lunch:late:AI02Late6AM": {
+      "id": "v4:43:missing:actual-lunch:late:AI02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous meeting choice absent: F-AI01-A3-LUNCH"
+    },
+    "v4:43:1-13-F-AI01의현재점심에서실제먹었을때:e:7fae5894d053:1:late:AI02Late6AM": {
+      "id": "v4:43:1-13-F-AI01의현재점심에서실제먹었을때:e:7fae5894d053:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그럼 계속 작게 드릴게요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 65,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "1-13-F-AI01의현재점심에서실제먹었을때",
+        "location": "1-13-F-AI01의현재점심에서실제먹었을때"
+      },
+      "next": "v4:43:h-51f69f3c59:e:83e0805efb5b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:1-13-F-AI01의현재점심에서실제먹었을때:e:07d161e4766a:1:late:AI02Late6AM": {
+      "id": "v4:43:1-13-F-AI01의현재점심에서실제먹었을때:e:07d161e4766a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 맛있는 건 아니었는데 먹었어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 63,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "1-13-F-AI01의현재점심에서실제먹었을때",
+        "location": "1-13-F-AI01의현재점심에서실제먹었을때"
+      },
+      "next": "v4:43:1-13-F-AI01의현재점심에서실제먹었을때:e:7fae5894d053:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:eba9a33b61ef:1:late:AI02Late6AM": {
+      "id": "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:eba9a33b61ef:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "A3은고정장면1-13-F-AI01의실제먹음/남김을그대로소비한다.이답변으로이전행동을새로고르거나먹은것을남긴것으로바꾸지않는다.남김경로만지금다음배식부탁을바꾼다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 73,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때",
+        "location": "1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때"
+      },
+      "next": "v4:43:h-51f69f3c59:e:83e0805efb5b:1:late:AI02Late6AM"
+    },
+    "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:e8c07252c0b4:1:late:AI02Late6AM": {
+      "id": "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:e8c07252c0b4:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "네. 그러면 양은 그만큼 적어져요. 다른 걸로 채우는 건 다시 말씀해 주세요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 71,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때",
+        "location": "1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때"
+      },
+      "next": "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:eba9a33b61ef:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:98ca83c30da2:1:late:AI02Late6AM": {
+      "id": "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:98ca83c30da2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "남겼어. 다음에는 빼 줘. 먹겠다고 해 놓고 싫은 걸 안 싫은 척한 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 69,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때",
+        "location": "1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때"
+      },
+      "next": "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:e8c07252c0b4:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:actual-lunch:late:AI02Late6AM": {
+      "id": "v4:43:actual-lunch:late:AI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "AI01Dinner5A3",
+          "equals": "EAT",
+          "to": "v4:43:1-13-F-AI01의현재점심에서실제먹었을때:e:07d161e4766a:1:late:AI02Late6AM"
+        },
+        {
+          "flag": "AI01Dinner5A3",
+          "equals": "LEAVE",
+          "to": "v4:43:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때:e:98ca83c30da2:1:late:AI02Late6AM"
+        }
+      ],
+      "default": "v4:43:missing:actual-lunch:late:AI02Late6AM",
+      "calendarMealSource": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 139,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "25-A3",
+        "location": "h-55464a6d53"
+      }
+    },
+    "v4:43:F-AI01-A3:e:2572da905a21:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-A3:e:2572da905a21:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "작은 조각은 드셨어요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 59,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-A3:그냥 먹겠다고 했다",
+        "location": "F-AI01-A3"
+      },
+      "next": "v4:43:actual-lunch:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-A2:e:2b88d2f7bb50:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-A2:e:2b88d2f7bb50:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "이경로에서만따로덜어준식사를먹은현재경험이있다.필수식사대사에도중복식사가생기지않게짧은반영동작으로연결할것.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 55,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-A2:섞기 전에 덜어 달라고 했다",
+        "location": "F-AI01-A2"
+      },
+      "next": "v4:43:h-51f69f3c59:e:83e0805efb5b:1:late:AI02Late6AM"
+    },
+    "v4:43:F-AI01-A2:e:a470caac5f7d:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-A2:e:a470caac5f7d:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "두었어. 고마워.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 53,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-A2:섞기 전에 덜어 달라고 했다",
+        "location": "F-AI01-A2"
+      },
+      "next": "v4:43:F-AI01-A2:e:2b88d2f7bb50:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-A2:e:7a2549c87cd7:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-A2:e:7a2549c87cd7:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "그럼 다음에도 그렇게 할게요. 통은 빈 쪽에 두셨죠?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 51,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-A2:섞기 전에 덜어 달라고 했다",
+        "location": "F-AI01-A2"
+      },
+      "next": "v4:43:F-AI01-A2:e:a470caac5f7d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-A2:e:55bee3c77ac2:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-A2:e:55bee3c77ac2:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 섞여 있을 때보다 괜찮았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 49,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-A2:섞기 전에 덜어 달라고 했다",
+        "location": "F-AI01-A2"
+      },
+      "next": "v4:43:F-AI01-A2:e:7a2549c87cd7:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:F-AI01-A2:e:23e89ba6e93a:1:late:AI02Late6AM": {
+      "id": "v4:43:F-AI01-A2:e:23e89ba6e93a:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "따로 담은 건 다 드셨어요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 47,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "F-AI01-A2:섞기 전에 덜어 달라고 했다",
+        "location": "F-AI01-A2"
+      },
+      "next": "v4:43:F-AI01-A2:e:55bee3c77ac2:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:missing:previous-request:late:AI02Late6AM": {
+      "id": "v4:43:missing:previous-request:late:AI02Late6AM",
+      "type": "gate",
+      "reason": "Actual previous food request is absent."
+    },
+    "v4:43:previous-request:late:AI02Late6AM": {
+      "id": "v4:43:previous-request:late:AI02Late6AM",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-AI01-A",
+          "equals": "A1",
+          "to": "v4:145:h-ec2582888e:e:c178379135b9:1"
+        },
+        {
+          "flag": "F-AI01-A",
+          "equals": "A2",
+          "to": "v4:43:F-AI01-A2:e:23e89ba6e93a:1:late:AI02Late6AM"
+        },
+        {
+          "flag": "F-AI01-A",
+          "equals": "A3",
+          "to": "v4:43:F-AI01-A3:e:2572da905a21:1:late:AI02Late6AM"
+        }
+      ],
+      "default": "v4:43:missing:previous-request:late:AI02Late6AM"
+    },
+    "v4:43:h-0ad2ed36da:e:4699ef8bf8ac:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:4699ef8bf8ac:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "거기 앉으시면 돼요. 탁자 반은 안 써요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 27,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:previous-request:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:e7cc6b8c898d:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:e7cc6b8c898d:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "미오가 잠깐 웃는다.아이는 자기 책을 조금 안쪽으로 당긴다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 25,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:4699ef8bf8ac:1:late:AI02Late6AM"
+    },
+    "v4:43:h-0ad2ed36da:e:b59c338b99e7:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:b59c338b99e7:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "아직 안 하셨어요. 이제부터 하실 건가요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 23,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:e7cc6b8c898d:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:10091e2b2089:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:10091e2b2089:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 방해했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 21,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:b59c338b99e7:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:0236480661f1:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:0236480661f1:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "아이가 사진집의 모서리를 손으로 누른다.미오는 앉다가 멈춘다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 19,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:10091e2b2089:1:late:AI02Late6AM"
+    },
+    "v4:43:h-0ad2ed36da:e:93c9d800a0bb:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:93c9d800a0bb:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "밥 먹는 시간 아닐 때도요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 17,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:0236480661f1:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:4af1c1151b27:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:4af1c1151b27:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그건 아는데. 나는 네가 계속 거기 있는 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 15,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:93c9d800a0bb:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:75d9ad05db86:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:75d9ad05db86:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "여기도 의자가 있어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 13,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:4af1c1151b27:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:213e5f10cb60:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:213e5f10cb60:1:late:AI02Late6AM",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘은 여기네. 주방에 없길래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 11,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:75d9ad05db86:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:43:h-0ad2ed36da:e:f540ba3f1128:1:late:AI02Late6AM": {
+      "id": "v4:43:h-0ad2ed36da:e:f540ba3f1128:1:late:AI02Late6AM",
+      "type": "stage",
+      "direction": "휴게실.아이가 큰 사진집을 펴 놓고 있다.옆자리에는 맞추다 만 조각 퍼즐 상자가 있다.미오는 한동안 책 표지를 보다가 의자를 당긴다.",
+      "source": {
+        "file": "43_자유시간_아이_02.md",
+        "line": 9,
+        "fileSha256": "f47828e4acc93bf6084a95641f6c74910d25254a312796e725c95de7d947ab4b",
+        "heading": "시작 — 오늘은 물이 튀지 않는 자리",
+        "location": "h-0ad2ed36da"
+      },
+      "next": "v4:43:h-0ad2ed36da:e:213e5f10cb60:1:late:AI02Late6AM"
+    },
+    "v4:145:h-ec2582888e:e:6cac8bf278b5:1": {
+      "id": "v4:145:h-ec2582888e:e:6cac8bf278b5:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "응. 지금 말해 주면 나도 또 받으러 갈 것 같았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 129,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "25-A1의 첫 문답 대체",
+        "location": "h-ec2582888e"
+      },
+      "next": "v4:43:h-51f69f3c59:e:83e0805efb5b:1:late:AI02Late6AM",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-ec2582888e:e:bd7cc8019ab7:1": {
+      "id": "v4:145:h-ec2582888e:e:bd7cc8019ab7:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "다음에 더 필요하시면 그때 말씀해 주세요. 제가 지금 가져다드리겠다는 건 아니고요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 127,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "25-A1의 첫 문답 대체",
+        "location": "h-ec2582888e"
+      },
+      "next": "v4:145:h-ec2582888e:e:6cac8bf278b5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-ec2582888e:e:0e2219517bb1:1": {
+      "id": "v4:145:h-ec2582888e:e:0e2219517bb1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금 모자란 것 같았어. 지금은 배고프지는 않고. 네가 다른 걸 덜 준 건 아니야. 내가 빼 달라고 했으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 125,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "25-A1의 첫 문답 대체",
+        "location": "h-ec2582888e"
+      },
+      "next": "v4:145:h-ec2582888e:e:bd7cc8019ab7:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-ec2582888e:e:c178379135b9:1": {
+      "id": "v4:145:h-ec2582888e:e:c178379135b9:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "어젯밤에 덜 드린 양은 괜찮으셨어요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 123,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "25-A1의 첫 문답 대체",
+        "location": "h-ec2582888e"
+      },
+      "next": "v4:145:h-ec2582888e:e:0e2219517bb1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:538bd17c4d8f:1": {
+      "id": "v4:145:h-8adfa9fd52:e:538bd17c4d8f:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 아이는 웃지 않지만 탁자 반쪽을 쓸 수 있도록 책 옆을 치운다.",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 117,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:43:previous-request:late:AI02Late6AM"
+    },
+    "v4:145:h-8adfa9fd52:e:15eac0653851:1": {
+      "id": "v4:145:h-8adfa9fd52:e:15eac0653851:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "궁금해서 여쭤본 거예요. 또 제가 하겠다고 나선 건 아니고요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 115,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:538bd17c4d8f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:ddac1a7193fe:1": {
+      "id": "v4:145:h-8adfa9fd52:e:ddac1a7193fe:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 먼저 밥 얘기하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 113,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:15eac0653851:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:dfcf9b81046c:1": {
+      "id": "v4:145:h-8adfa9fd52:e:dfcf9b81046c:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "어제 저녁은 괜찮으셨어요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 111,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:ddac1a7193fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:c1dcf1b6ee72:1": {
+      "id": "v4:145:h-8adfa9fd52:e:c1dcf1b6ee72:1",
+      "type": "stage",
+      "direction": "아이가 고개를 들었다가 미오의 빈손을 본다.",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 109,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:dfcf9b81046c:1"
+    },
+    "v4:145:h-8adfa9fd52:e:6d212b1aca8a:1": {
+      "id": "v4:145:h-8adfa9fd52:e:6d212b1aca8a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 일 얘기 말고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 107,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:c1dcf1b6ee72:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:132ac2fee8c9:1": {
+      "id": "v4:145:h-8adfa9fd52:e:132ac2fee8c9:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "조금요. 오늘은 책 물어보시면 좋겠어요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 105,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:6d212b1aca8a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:ed59d1b07f3e:1": {
+      "id": "v4:145:h-8adfa9fd52:e:ed59d1b07f3e:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 네가 어디 있는지 찾으면 또 일 시키러 온 것 같아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 103,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:132ac2fee8c9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:a517d4d37135:1": {
+      "id": "v4:145:h-8adfa9fd52:e:a517d4d37135:1",
+      "type": "stage",
+      "direction": "미오가 의자를 당긴다. 아이가 책을 조금 안쪽으로 옮긴다. 옆에는 맞추다 만 퍼즐이 있다.",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 101,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:ed59d1b07f3e:1"
+    },
+    "v4:145:h-8adfa9fd52:e:c6863c355ed2:1": {
+      "id": "v4:145:h-8adfa9fd52:e:c6863c355ed2:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "저도 다른 데 보고 싶어서 왔어요. 책이라도요.",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 99,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:a517d4d37135:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:c9015aae9abb:1": {
+      "id": "v4:145:h-8adfa9fd52:e:c9015aae9abb:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니. 없으니까 다른 데 보러 왔어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 97,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:c6863c355ed2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:f4faabcb8297:1": {
+      "id": "v4:145:h-8adfa9fd52:e:f4faabcb8297:1",
+      "type": "say",
+      "speaker": "아이",
+      "actor": "ai",
+      "text": "오늘도 거기 있어야 해요?",
+      "mono": false,
+      "delivery": "아이",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 95,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:c9015aae9abb:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "아이",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:86ba724fe926:1": {
+      "id": "v4:145:h-8adfa9fd52:e:86ba724fe926:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기 있었네. 어제 앉았던 데 없어서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 93,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:f4faabcb8297:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:145:h-8adfa9fd52:e:c4a82cb39519:1": {
+      "id": "v4:145:h-8adfa9fd52:e:c4a82cb39519:1",
+      "type": "stage",
+      "direction": "호텔 휴게실. 아이가 사진집을 펴 놓는다. 미오는 주방에서 그를 찾다가 이쪽으로 온다. 어제 그가 식탁에 오지 않고 따로 먹던 것은 이미 봤다.",
+      "source": {
+        "file": "145_자유시간_아이_2장_첫_접시.md",
+        "line": 91,
+        "fileSha256": "1528665171ed516d9adc6b6a5be95330b5197647a669495bbc69d00ddc3da2d0",
+        "heading": "AI-LATE02-01 하루 지나 책 앞에서",
+        "location": "h-8adfa9fd52"
+      },
+      "next": "v4:145:h-8adfa9fd52:e:86ba724fe926:1"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "145_자유시간_아이_2장_첫_접시.md",
+  "baseSourceFile": "43_자유시간_아이_02.md",
+  "completionFlag": "fte:AI02Late6AM:complete",
+  "routingStatus": "explicit-reviewed-late-calendar",
+  "campaignReady": false,
+  "requiresPriorFlags": {
+    "F-AI01-A": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "F-AI01-B": [
+      "B1",
+      "B2",
+      "B3"
+    ]
+  },
+  "physicalState": "Only A1/A3 progress a puzzle; A2 shares the photo book. Current lunch eaten/left is consumed as prior fact, not selected again. No automatic substitute meal, repaired salt shaker or tasting reward.",
+  "lateCalendarKey": "AI02Late6AM",
+  "eligibility": "Only the exact source-authored separate calendar window; never a first-case substitute or same-window chain.",
+  "conditionalPriorFlags": {
+    "AI01Dinner5A3": {
+      "when": {
+        "F-AI01-A": "A3"
+      },
+      "values": [
+        "EAT",
+        "LEAVE"
+      ]
+    }
+  },
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "43_자유시간_아이_02.md:F-AI01-B1": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI01-B2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI01-B3": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-3b151141a4": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI02-A1": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI02-A2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-b67952fdef": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-291e964f33": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-818a4490b1": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI02-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-f1954d036f": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-845b389b59": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-e2a36a2d48": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-b6ffa3dc64": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-c736c1c6d6": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI02-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-51f69f3c59": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:1-13-F-AI01의현재점심에서실제먹었을때": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:1-13-F-AI01의현재점심에서남겼고이제부탁을바꿀때": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI01-A3": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:F-AI01-A2": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "43_자유시간_아이_02.md:h-0ad2ed36da": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "145_자유시간_아이_2장_첫_접시.md:h-ec2582888e": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "145_자유시간_아이_2장_첫_접시.md:h-8adfa9fd52": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}

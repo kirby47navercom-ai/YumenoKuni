@@ -1,0 +1,5930 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "v4",
+  "chapter": "freetime",
+  "entry": "v4:150:h-440e67d571:e:b93c88612886:1",
+  "nodes": {
+    "v4:28:return:late:150": {
+      "id": "v4:28:return:late:150",
+      "type": "return"
+    },
+    "v4:28:F-KE01-06:e:41d481144923:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:41d481144923:1:late:150",
+      "type": "stage",
+      "direction": "미오는 나온다. 문이 닫힌 뒤에야 안에서 물건을 정리하는 소리가 난다. 누가 없는 방에 남아 있는 사람이 반드시 비밀을 꾸미는 것은 아니라는 생각을 이번에는 적지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 475,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:return:late:150"
+    },
+    "v4:28:F-KE01-06:e:f9bc834d7a6b:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:f9bc834d7a6b:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "응. 다음 손님 받으려면 쉬어야지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 473,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:41d481144923:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-06:e:a8a7e12c3506:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:a8a7e12c3506:1:late:150",
+      "type": "stage",
+      "direction": "켄이 고개를 든다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 471,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:f9bc834d7a6b:1:late:150"
+    },
+    "v4:28:F-KE01-06:e:36d89171049e:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:36d89171049e:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "켄. 나는 이제 갈게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 469,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:a8a7e12c3506:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-06:e:ab894bc044ca:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:ab894bc044ca:1:late:150",
+      "type": "stage",
+      "direction": "미오는 더 말하지 않고 문으로 간다. 켄이 바로 다른 대사를 시작할 줄 알았는데 조용하다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 467,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:36d89171049e:1:late:150"
+    },
+    "v4:28:F-KE01-06:e:d2ee3449ce61:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:d2ee3449ce61:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "너 왔잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 465,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:ab894bc044ca:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-06:e:234714644796:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:234714644796:1:late:150",
+      "type": "stage",
+      "direction": "켄이 인형에서 손을 뗀다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 463,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:d2ee3449ce61:1:late:150"
+    },
+    "v4:28:F-KE01-06:e:eef861edcbda:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:eef861edcbda:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여긴 손님이 없는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 461,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:234714644796:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-06:e:37c9ce33a82a:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:37c9ce33a82a:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "다음 손님은 제대로 된 금붕어를 봐야지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 459,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:eef861edcbda:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-06:e:5170dc663a65:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:5170dc663a65:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그거 네가 놔뒀던 거잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 457,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:37c9ce33a82a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-06:e:1fb1413d0d77:1:late:150": {
+      "id": "v4:28:F-KE01-06:e:1fb1413d0d77:1:late:150",
+      "type": "stage",
+      "direction": "미오가 나가려 하자 켄이 금붕어 인형의 방향을 맞춘다. 꼬리가 통로 쪽으로 튀어나와 있다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 455,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-06 끝나는 인사",
+        "location": "F-KE01-06"
+      },
+      "next": "v4:28:F-KE01-06:e:5170dc663a65:1:late:150"
+    },
+    "v4:28:F-KE01-05:e:795da8c42c02:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:795da8c42c02:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "잘 배웠네. 감상평도 바로 하고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 451,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-06:e:1fb1413d0d77:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:2f73fb9d418c:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:2f73fb9d418c:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "지금은 별로야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 449,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:795da8c42c02:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:72a293639387:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:72a293639387:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "너무 감동하면 다음 장면도 맡겨야 할 것 같잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 447,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:2f73fb9d418c:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:75a88fd967db:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:75a88fd967db:1:late:150",
+      "type": "stage",
+      "direction": "미오는 펜을 든 채 켄을 본다. 켄은 그 시선을 견디다 먼저 웃는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 445,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:72a293639387:1:late:150"
+    },
+    "v4:28:F-KE01-05:e:52bbc35110c2:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:52bbc35110c2:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "방금까지 그런 손님 상대했잖아. 아직 배역이 좀 남았나 봐.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 443,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:75a88fd967db:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:69446b4ce665:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:69446b4ce665:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너한테 손해 보는 쪽이 없네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 441,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:52bbc35110c2:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:14e5e0fe3ee4:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:14e5e0fe3ee4:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그때는 내 덕이지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 439,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:69446b4ce665:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:8e1fd0f0799a:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:8e1fd0f0799a:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잘 쓰면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 437,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:14e5e0fe3ee4:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:284776897ace:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:284776897ace:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "어설프게 쓰면 내가 가르쳤다는 말은 빼. 내 이름값 깎지 말고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 435,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:8e1fd0f0799a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:deb2e7f9b92e:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:deb2e7f9b92e:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 하면 좀 다르겠지.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 433,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:284776897ace:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:8000de192237:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:8000de192237:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "써. 그런데 그 말 하면 다 끝나는 주문처럼 쓰지 마. 누가 말하는지도 중요하니까.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 431,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:deb2e7f9b92e:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:991038499fb0:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:991038499fb0:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "상황 다 설명할 필요는 없다는 거.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 423,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:8000de192237:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:2f1cc495b1ac:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:2f1cc495b1ac:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "어느 말?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 421,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:991038499fb0:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:2f0cd4b939db:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:2f0cd4b939db:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 말, 써도 돼? 내가 나중에 써먹게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 419,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:2f1cc495b1ac:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-05:e:9faf7ae3bfaa:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:9faf7ae3bfaa:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "같이 있으면 계속할 수 있다고 했지. 그 말 적어 둬도 돼?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 427,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:F-KE01-05:e:8000de192237:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:B-current:late:150": {
+      "id": "v4:28:B-current:late:150",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-KE01-B",
+          "equals": "B2",
+          "to": "v4:28:F-KE01-05:e:2f0cd4b939db:1:late:150"
+        }
+      ],
+      "default": "v4:28:F-KE01-05:e:9faf7ae3bfaa:1:late:150"
+    },
+    "v4:28:F-KE01-05:e:57e81a02b855:1:late:150": {
+      "id": "v4:28:F-KE01-05:e:57e81a02b855:1:late:150",
+      "type": "stage",
+      "direction": "켄이 계산대에서 나온다. 미오는 그가 방금 했던 말을 수첩에 적어 두고 싶어진다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 415,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-05 말의 주인",
+        "location": "F-KE01-05"
+      },
+      "next": "v4:28:B-current:late:150"
+    },
+    "v4:28:F-KE01-B:e:5d619d6d89f0:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:5d619d6d89f0:1:late:150",
+      "type": "stage",
+      "direction": "미오는 자기가 더 크게 화내야 연기라고 생각했던 것을 알아차린다. 켄은 둘러대는 말을 추가하지 않고 끝낼지 묻는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 361,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-05:e:57e81a02b855:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:629f0c09b59a:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:629f0c09b59a:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네가 아까 손님처럼 안 했으니까. 네 장면을 왜 내가 훔쳐?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 359,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:5d619d6d89f0:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:4e665369c749:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:4e665369c749:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까처럼 안 하네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 357,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:629f0c09b59a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:d63a37be95a2:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:d63a37be95a2:1:late:150",
+      "type": "stage",
+      "direction": "미오가 켄을 본다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 355,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:4e665369c749:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:cb66d7cee772:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:cb66d7cee772:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럼 구매하신 내역을 확인할 다른 게 있으면 도와드리겠습니다.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 353,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:d63a37be95a2:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:fd239ce11717:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:fd239ce11717:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "없어요.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 351,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:cb66d7cee772:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:1b8ae0f20827:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:1b8ae0f20827:1:late:150",
+      "type": "stage",
+      "direction": "미오가 빈손을 본다. 켄은 평범한 점원처럼 기다린다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 349,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:fd239ce11717:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:295e518bc1a8:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:295e518bc1a8:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네, 가능합니다. 영수증 있으세요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 347,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:1b8ae0f20827:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:656945911927:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:656945911927:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이거 파란색으로 바꾸고 싶어요.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 345,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:295e518bc1a8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:4a5e999dc7c8:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:4a5e999dc7c8:1:late:150",
+      "type": "stage",
+      "direction": "켄이 고개를 끄덕인다. 상황을 해결한 멋진 말로 점수를 받으려 한 건지 진짜 점원이라면 그랬을지는 미오가 모른다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 385,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-05:e:57e81a02b855:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:f4f8d17e72fa:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:f4f8d17e72fa:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "바꿀게요. 제가 고를게요, 이번에도.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 383,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:4a5e999dc7c8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:63fdc536a33c:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:63fdc536a33c:1:late:150",
+      "type": "stage",
+      "direction": "미오가 인형을 꽉 잡았다가 놓는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 381,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:f4f8d17e72fa:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:29d3341d464b:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:29d3341d464b:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "원하시는 게 바꾸는 건지 돌려주시는 건지 알려 주시면 됩니다. 선물받은 분 이야기를 전부 하실 필요는 없어요.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 379,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:63fdc536a33c:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:d86b9a887613:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:d86b9a887613:1:late:150",
+      "type": "stage",
+      "direction": "켄의 얼굴이 조심스러워진다. 아까 손님을 연기할 때와 다르게 미오가 말할 자리를 남긴다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 377,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:29d3341d464b:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:cab0293bb1da:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:cab0293bb1da:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아니요. 그냥 잘못 고른 것 같아서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 375,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:d86b9a887613:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:bcf5f1f3efa9:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:bcf5f1f3efa9:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럼 상품에 문제가 있었나요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 373,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:cab0293bb1da:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:34ea36d70947:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:34ea36d70947:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그런 건 아닌데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 371,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:bcf5f1f3efa9:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:3cd610548aa7:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:3cd610548aa7:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "다른 색을 원하셨나요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 369,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:34ea36d70947:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:5a9e15861221:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:5a9e15861221:1:late:150",
+      "type": "stage",
+      "direction": "켄이 인형을 본다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 367,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:3cd610548aa7:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:aa82262d5da3:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:aa82262d5da3:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "선물하려고 샀는데요. 받은 사람이 조금…",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 365,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:5a9e15861221:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:78da118bfdd5:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:78da118bfdd5:1:late:150",
+      "type": "stage",
+      "direction": "미오가 인형을 선반에 돌려놓는다. 켄의 실수에 이겼다는 승리 음악이나 친밀도 정답을 붙이지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 409,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-05:e:57e81a02b855:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:0cb7242a3b62:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:0cb7242a3b62:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그래. 무조건 정답만 내는 점원은 재미없잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 407,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:78da118bfdd5:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:ca8d314d896a:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:ca8d314d896a:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너도 그러네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 405,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:0cb7242a3b62:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:3445a196b1d0:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:3445a196b1d0:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그건 내가 성급했네. 너 손에 있으니까 먼저 썼어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 403,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:ca8d314d896a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:f904c375fcfc:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:f904c375fcfc:1:late:150",
+      "type": "stage",
+      "direction": "켄이 연기를 멈추고 웃는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 401,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:3445a196b1d0:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:1353e51640b3:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:1353e51640b3:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아직 안 훔쳤는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 399,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:f904c375fcfc:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:460ab43d6463:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:460ab43d6463:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "돌려주시면 보지 못한 걸로 하겠습니다.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 397,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:1353e51640b3:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:813540cc64c4:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:813540cc64c4:1:late:150",
+      "type": "stage",
+      "direction": "켄이 미오를 본다. 계산대 밖으로 나오지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 395,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:460ab43d6463:1:late:150"
+    },
+    "v4:28:F-KE01-B:e:44822c2016ac:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:44822c2016ac:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "훔치면요?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 393,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:813540cc64c4:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:6d80ecd14e07:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:6d80ecd14e07:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그러면 구경하고 가셔도 됩니다.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 391,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:44822c2016ac:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:e:867908a47b79:1:late:150": {
+      "id": "v4:28:F-KE01-B:e:867908a47b79:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "사고 싶은데 돈이 없어요.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 389,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "next": "v4:28:F-KE01-B:e:6d80ecd14e07:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-B:menu:late:150": {
+      "id": "v4:28:F-KE01-B:menu:late:150",
+      "type": "menu",
+      "q": "원하는 것을 숨길까",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 341,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-B — 원하는 것을 숨길까",
+        "location": "F-KE01-B"
+      },
+      "options": [
+        {
+          "id": "B1",
+          "label": "다른 색으로 바꾸고 싶다고 바로 말한다.",
+          "to": "v4:28:F-KE01-B:e:656945911927:1:late:150",
+          "set": {
+            "F-KE01-B": "B1"
+          }
+        },
+        {
+          "id": "B2",
+          "label": "인형이 마음에 들지 않는 이유를 직접 말하지 않는다.",
+          "to": "v4:28:F-KE01-B:e:aa82262d5da3:1:late:150",
+          "set": {
+            "F-KE01-B": "B2"
+          }
+        },
+        {
+          "id": "B3",
+          "label": "마음에 들지만 돈이 없다고 말한다.",
+          "to": "v4:28:F-KE01-B:e:867908a47b79:1:late:150",
+          "set": {
+            "F-KE01-B": "B3"
+          }
+        }
+      ]
+    },
+    "v4:28:F-KE01-04:e:5e0064d5bfd4:1:late:150": {
+      "id": "v4:28:F-KE01-04:e:5e0064d5bfd4:1:late:150",
+      "type": "stage",
+      "direction": "켄이 계산대 안쪽으로 간다. 미오는 잠깐 생각한 뒤 인형을 하나 든다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 339,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-04 이번에는 미오가",
+        "location": "F-KE01-04"
+      },
+      "next": "v4:28:F-KE01-B:menu:late:150"
+    },
+    "v4:28:F-KE01-04:e:2f7896378f46:1:late:150": {
+      "id": "v4:28:F-KE01-04:e:2f7896378f46:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네가 정해. 내가 들을게.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 337,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-04 이번에는 미오가",
+        "location": "F-KE01-04"
+      },
+      "next": "v4:28:F-KE01-04:e:5e0064d5bfd4:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-04:e:35968313ca45:1:late:150": {
+      "id": "v4:28:F-KE01-04:e:35968313ca45:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나도 환불하러 와?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 335,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-04 이번에는 미오가",
+        "location": "F-KE01-04"
+      },
+      "next": "v4:28:F-KE01-04:e:2f7896378f46:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-04:e:8713ee642cf6:1:late:150": {
+      "id": "v4:28:F-KE01-04:e:8713ee642cf6:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "이번에는 네가 손님 해 봐.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 333,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-04 이번에는 미오가",
+        "location": "F-KE01-04"
+      },
+      "next": "v4:28:F-KE01-04:e:35968313ca45:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:5426fad40c47:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:5426fad40c47:1:late:150",
+      "type": "stage",
+      "direction": "미오가 짧게 박수를 친다. 켄은 앙코르 인사를 하지 않고 계산대 안쪽으로 돌아간다. 받지 못한 박수까지 오늘 전부 받은 사람처럼 웃지도 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 329,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-04:e:8713ee642cf6:1:late:150"
+    },
+    "v4:28:F-KE01-A3의:e:ef5b0747808a:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:ef5b0747808a:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그걸 먼저 말해.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 327,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:5426fad40c47:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:95849600c9ed:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:95849600c9ed:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "관객 없으니까 내가 쳐도 되지. 네가 따라 쳐 주면 더 좋고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 325,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:ef5b0747808a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:f00c33e895f0:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:f00c33e895f0:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이것도 끝나면 박수 받고 싶어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 323,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:95849600c9ed:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:6266af2e898c:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:6266af2e898c:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "했으면 됐지. 나 못 봐도 혼자 올라와.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 281,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:f00c33e895f0:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:50217af5ece7:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:50217af5ece7:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 먼저 하라고 했으니까 끝까지 내가 하면 됐는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 279,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:6266af2e898c:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:a59b75e888cc:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:a59b75e888cc:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "재밌으면 웃는다고 했잖아. 눈으로 나 찾는 게 보여서.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 277,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:50217af5ece7:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:75b38fe4ccb0:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:75b38fe4ccb0:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "웃지 마.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 275,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:a59b75e888cc:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:41f4e5f86a5a:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:41f4e5f86a5a:1:late:150",
+      "type": "stage",
+      "direction": "미오가 먼저 숙인다. 켄이 뒤늦게 따라온다. 미오는 이번에는 그가 올라왔는지 보려다 고개를 옆으로 돌려 버린다. 켄은 그 모습을 보고 웃는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 273,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:75b38fe4ccb0:1:late:150"
+    },
+    "v4:28:F-KE01-A1의:e:0435268fe401:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:0435268fe401:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럼 이번엔 네가 먼저 해. 내가 볼게.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 271,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:41f4e5f86a5a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:2766d6216fc5:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:2766d6216fc5:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "글씨는 보이니까. 네가 언제 고개 드는지는 모르고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 269,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:0435268fe401:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A1의:e:8b29cf5338d7:1:late:150": {
+      "id": "v4:28:F-KE01-A1의:e:8b29cf5338d7:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "아까 인형이라고 큰 글씨 가리킬 때는 당당하더니.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 267,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A1의 현재 대면",
+        "location": "F-KE01-A1의"
+      },
+      "next": "v4:28:F-KE01-A1의:e:2766d6216fc5:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:c00f61cfc767:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:c00f61cfc767:1:late:150",
+      "type": "stage",
+      "direction": "미오가 혼자 고개를 숙였다 든다. 켄은 박수 두 번을 친다. 환불을 받고 물러나는 손님 흉내는 하지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 301,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:f00c33e895f0:1:late:150"
+    },
+    "v4:28:F-KE01-A2의:e:a5a3cee85866:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:a5a3cee85866:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "보고 나면 하고 싶을 수도 있지. 안 듣는 건 네가 하고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 299,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:c00f61cfc767:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:f94f6f448e17:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:f94f6f448e17:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "말 안 하겠다는 건 아니네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 297,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:a5a3cee85866:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:0fea9dbd53ed:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:0fea9dbd53ed:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럼 네가 끝날 때 끝내. 고치라고 말할 건 남겨 둘게.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 295,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:f94f6f448e17:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:b8e2aed3f205:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:b8e2aed3f205:1:late:150",
+      "type": "stage",
+      "direction": "켄이 웃다가 똑바로 선다. 이번에는 미오가 먼저 움직일 때까지 숙이지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 293,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:0fea9dbd53ed:1:late:150"
+    },
+    "v4:28:F-KE01-A2의:e:df9ff19d28be:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:df9ff19d28be:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "조금. 고개 들면 또 뭘 고치라고 할 것 같아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 291,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:b8e2aed3f205:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:fce15a6777fc:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:fce15a6777fc:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "지금도 그 손님 같아?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 289,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:df9ff19d28be:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:d015e9761e43:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:d015e9761e43:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "안 나갈 거잖아. 사과까지 해도 더 말하던 손님인데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 287,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:fce15a6777fc:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A2의:e:2ea47dfbaecd:1:late:150": {
+      "id": "v4:28:F-KE01-A2의:e:2ea47dfbaecd:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "아까는 빨리 내보내려더니, 이번에는 나랑 끝까지 같이하네.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 285,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A2의 현재 대면",
+        "location": "F-KE01-A2의"
+      },
+      "next": "v4:28:F-KE01-A2의:e:d015e9761e43:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:f2e91da91d77:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:f2e91da91d77:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "알아. 그래도 내가 그다음 대사 없다는 건 말해 줘야 할 것 같아서.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 319,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:f00c33e895f0:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:4b47a39a509c:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:4b47a39a509c:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 기억하는지 확인하려고 말한 거 아니야.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 317,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:f2e91da91d77:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:3c64e613115b:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:3c64e613115b:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "기억해. 한 번 말하면 됐어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 315,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:4b47a39a509c:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:a28864f01922:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:a28864f01922:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 말 없이 멈췄으니까.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 313,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:3c64e613115b:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:697005d89e48:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:697005d89e48:1:late:150",
+      "type": "stage",
+      "direction": "켄이 먼저 숙인다. 미오가 뒤따른다. 머리를 들었을 때 켄은 다음 동작을 지시하지 않는다. 미오가 자기 수첩을 다시 잡자 켄도 손을 내린다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 311,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:a28864f01922:1:late:150"
+    },
+    "v4:28:F-KE01-A3의:e:0ad83520189f:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:0ad83520189f:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "응. 이번 한 번.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 309,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:697005d89e48:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:ce1400c4b1e7:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:ce1400c4b1e7:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "인사는 이번 한 번 하고 그만할게.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 307,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:0ad83520189f:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A3의:e:e8fb07269df2:1:late:150": {
+      "id": "v4:28:F-KE01-A3의:e:e8fb07269df2:1:late:150",
+      "type": "stage",
+      "direction": "미오는 허리를 숙이려다 먼저 켄을 본다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 305,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-A3의 현재 대면",
+        "location": "F-KE01-A3의"
+      },
+      "next": "v4:28:F-KE01-A3의:e:ce1400c4b1e7:1:late:150"
+    },
+    "v4:28:missing-A:late:150": {
+      "id": "v4:28:missing-A:late:150",
+      "type": "gate",
+      "reason": "Required current role-play choice missing."
+    },
+    "v4:28:A-current:late:150": {
+      "id": "v4:28:A-current:late:150",
+      "type": "branch",
+      "cases": [
+        {
+          "flag": "F-KE01-A",
+          "equals": "A1",
+          "to": "v4:28:F-KE01-A1의:e:8b29cf5338d7:1:late:150"
+        },
+        {
+          "flag": "F-KE01-A",
+          "equals": "A2",
+          "to": "v4:28:F-KE01-A2의:e:2ea47dfbaecd:1:late:150"
+        },
+        {
+          "flag": "F-KE01-A",
+          "equals": "A3",
+          "to": "v4:28:F-KE01-A3의:e:e8fb07269df2:1:late:150"
+        }
+      ],
+      "default": "v4:28:missing-A:late:150"
+    },
+    "v4:28:F-KE01-03c:e:fc3fb037b8a1:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:fc3fb037b8a1:1:late:150",
+      "type": "stage",
+      "direction": "켄이 잠시 멈춘 뒤 옆으로 한 발 간다. 진열대에 막혀 둘이 넓게 서지는 못한다. 미오는 계산대 바깥 모서리를 피하고, 자기 수첩을 몸 가까이 붙인다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 263,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:A-current:late:150"
+    },
+    "v4:28:F-KE01-03c:e:59c30012fc89:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:59c30012fc89:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그럼 네 옆에 서야겠네. 안 보이잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 261,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:fc3fb037b8a1:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:bd1ce2e510f0:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:bd1ce2e510f0:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "내가 끝날 때.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 259,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:59c30012fc89:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:845eab234881:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:845eab234881:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "언제 끝나는지 몰라서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 257,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:bd1ce2e510f0:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:5cf72a445ef2:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:5cf72a445ef2:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "급해. 누가 쫓아와?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 255,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:845eab234881:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:a491dcd85214:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:a491dcd85214:1:late:150",
+      "type": "stage",
+      "direction": "미오는 웃지 않겠다는 말까지 받아내려다가 그만둔다. 켄이 허리를 숙이고, 머리를 든 다음에 입꼬리를 올린다. 미오가 따라 숙였다가 그보다 먼저 머리를 든다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 253,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:5cf72a445ef2:1:late:150"
+    },
+    "v4:28:F-KE01-03c:e:19c0881976cb:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:19c0881976cb:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "재밌으면.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 251,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:a491dcd85214:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:64b64ed6ad49:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:64b64ed6ad49:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 웃을 거잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 249,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:19c0881976cb:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:072e30209583:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:072e30209583:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "여기서 못하면 공연장 가서 더 못 해. 빈 데는 안 웃거든.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 247,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:64b64ed6ad49:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:d2230bd9813b:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:d2230bd9813b:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "여기서?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 245,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:072e30209583:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:dda5cfb161b8:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:dda5cfb161b8:1:late:150",
+      "type": "stage",
+      "direction": "켄이 계산대 밖으로 나와 진열대를 건드리지 않을 만큼 발을 모은다. 미오는 그가 인형들에게 고개를 숙일 줄 알았는데, 켄은 가게 안 빈 공간을 향해 선다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 243,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:d2230bd9813b:1:late:150"
+    },
+    "v4:28:F-KE01-03c:e:819fc404d6e4:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:819fc404d6e4:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "여기 없잖아. 관객한테. 끝나고 나와서 이만큼 숙이는 거.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 241,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:dda5cfb161b8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:515e6e4b3a37:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:515e6e4b3a37:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그 애한테?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 239,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:819fc404d6e4:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03c:e:f59c4e7a04b0:1:late:150": {
+      "id": "v4:28:F-KE01-03c:e:f59c4e7a04b0:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "인사하는 건 해 볼래?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 237,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03c 끝나고 서는 자리",
+        "location": "F-KE01-03c"
+      },
+      "next": "v4:28:F-KE01-03c:e:515e6e4b3a37:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:a944acd3b291:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:a944acd3b291:1:late:150",
+      "type": "stage",
+      "direction": "미오는 그날의 상대 이름을 묻지 않는다. 켄도 자기 잘못을 알아보았다는 이유로 그 사람에게 용서받았다고 덧붙이지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 233,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03c:e:f59c4e7a04b0:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:080275d06c3e:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:080275d06c3e:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "해야겠다고 생각할 때는 걔가 이미 지나갔어. 계속 그런 핑계가 잘 생겨.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 231,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:a944acd3b291:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:f0cfab97f53d:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:f0cfab97f53d:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 먼저 안 해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 229,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:080275d06c3e:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:02f20bb0866c:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:02f20bb0866c:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "아니. 내가 멋있게 끝내고 싶었어. 사실은 인사하는 것도 그 애가 먼저 하면 해.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 227,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:f0cfab97f53d:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:5f1e69d80d9f:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:5f1e69d80d9f:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 기대했대?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 225,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:02f20bb0866c:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:3095f3a6befd:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:3095f3a6befd:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "인사는 해. 필요한 거 있으면 말도 하고. 네가 기대하는 마지막 화해 장면은 없어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 223,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:5f1e69d80d9f:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:01f462f4276f:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:01f462f4276f:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그 애하고는 그 뒤에 어떻게 됐어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 221,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:3095f3a6befd:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:687739dd8db8:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:687739dd8db8:1:late:150",
+      "type": "stage",
+      "direction": "켄이 금붕어를 선반 안쪽으로 밀어 넣는다. 꼬리를 잡고 끌어내는 대신 몸통을 받친다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 219,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:01f462f4276f:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:90bce98d4f3a:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:90bce98d4f3a:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그랬지. 더 받아 보려고 했나 봐.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 217,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:687739dd8db8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:642123afc0bd:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:642123afc0bd:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "처음에 잘했다고 했잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 215,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:90bce98d4f3a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:8f495d700da6:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:8f495d700da6:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "자꾸 그다음까지 물어보네. 내가 안 틀렸다고 말하면 좀 시원해할 줄 알았는데.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 213,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:642123afc0bd:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:4c2ab171c667:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:4c2ab171c667:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 211,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:8f495d700da6:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:b4a8651b8c38:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:b4a8651b8c38:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그날 대사 틀렸는지는 나중에 확인했어. 나는 안 틀렸어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 209,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:4c2ab171c667:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:d37c5f132065:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:d37c5f132065:1:late:150",
+      "type": "stage",
+      "direction": "켄이 손을 편다. 미오 쪽으로 내민 것이 아니라 빈 계산대 위에 놓은 것이다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 207,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:b4a8651b8c38:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:ce7ffd0cddd9:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:ce7ffd0cddd9:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "내가 기다리는 얼굴을 별로 잘 못 해. 설명하면 채점할 사람처럼 보고 있었을걸.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 205,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:d37c5f132065:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:7a620cf20ac8:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:7a620cf20ac8:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나중에라도?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 203,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:ce7ffd0cddd9:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:bff2db39d232:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:bff2db39d232:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "나도 그걸 물었어. 대답은 못 들었고. 걔는 자기가 무슨 말을 해야 했는지 나한테 다 설명하고 싶지는 않았겠지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 201,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:7a620cf20ac8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:dfe1b0831079:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:dfe1b0831079:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 계속 서 있어야 했다는 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 199,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:bff2db39d232:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:2ac1155a863a:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:2ac1155a863a:1:late:150",
+      "type": "stage",
+      "direction": "미오가 인형의 딱딱한 꼬리 끝을 누른다. 조금 전에는 켄의 손님을 멈추고 싶었는데, 지금은 그가 자기 말이 맞았다는 말을 기다리는 것이 보인다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 197,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:dfe1b0831079:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:cb778a2eee0d:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:cb778a2eee0d:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "응. 고맙다고 할 줄 알았거든. 네가 방금 한 말처럼.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 195,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:2ac1155a863a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:c5bd09057c28:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:c5bd09057c28:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "…싸웠어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 193,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:cb778a2eee0d:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:57b6cf1165ff:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:57b6cf1165ff:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그것도 말했어. 내가. 그러면 말을 했어야지, 하고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 191,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:c5bd09057c28:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:b236195fab2f:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:b236195fab2f:1:late:150",
+      "type": "stage",
+      "direction": "켄이 웃는다. 이번에는 미오가 자기를 위해 해 준 말을 놓치지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 189,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:57b6cf1165ff:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:25c024bcb330:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:25c024bcb330:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "가만히 있었으면서?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 187,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:b236195fab2f:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:616dbb50a586:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:616dbb50a586:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그 애는 끝나고 나한테 화냈어. 자기 말 뺏었다고. 혼자 다 하면 되겠다고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 185,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:25c024bcb330:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:bce553db6dba:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:bce553db6dba:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜. 그러면 안 됐어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 183,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:616dbb50a586:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:e7c124b20e9c:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:e7c124b20e9c:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "넌 그쪽이구나.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 181,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:bce553db6dba:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:593765d95cfd:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:593765d95cfd:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잘했네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 179,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:e7c124b20e9c:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:8e1051de6705:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:8e1051de6705:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그래서 내가 계속했어. 그 애가 할 말도 조금 바꿔서 내가 하고, 내 대사로 넘어가고. 그다음에 걔가 다시 들어올 수 있는 데까지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 177,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:593765d95cfd:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:02388abfcb04:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:02388abfcb04:1:late:150",
+      "type": "stage",
+      "direction": "켄은 자기 목소리를 줄인다. 기념품점에 그날 관객이 나타나거나 당시 실제 음성이 재생되지는 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 175,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:8e1051de6705:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:9b31ac272010:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:9b31ac272010:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "몰랐다니까. 맞은 것 같은데 확신은 없고. 앞줄에서 누가 웃었어. 그게 제일 싫더라.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 173,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:02388abfcb04:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:e9cc0969f412:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:e9cc0969f412:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "틀렸으면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 171,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:9b31ac272010:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:77df0d319eaa:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:77df0d319eaa:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "다시 하면 내가 먼저 틀렸다는 걸 관객한테 알려 주는 거잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 169,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:e9cc0969f412:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:62dd318f4486:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:62dd318f4486:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그래서 네 대사 다시 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 167,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:77df0d319eaa:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:d4e3de232682:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:d4e3de232682:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럴 수도 있지. 그때는 아니라고 생각했어. 나랑 눈 마주치고 있었거든. 내가 먼저 틀린 줄 알았어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 165,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:62dd318f4486:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:7a594366a063:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:7a594366a063:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "잊었나 보다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 163,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:d4e3de232682:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:0e76ded94f57:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:0e76ded94f57:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "상대가 다음 말을 안 했어. 내가 질문했는데, 나를 보고만 있는 거야. 분명 그다음에 화내야 했는데.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 161,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:7a594366a063:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:eb11f6fefa64:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:eb11f6fefa64:1:late:150",
+      "type": "stage",
+      "direction": "미오가 웃다가 켄의 얼굴을 본다. 지금은 반품 손님의 얼굴이 아니다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 159,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:0e76ded94f57:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:2e9f452f65d7:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:2e9f452f65d7:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "내가 남의 대사를 했거든.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 157,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:eb11f6fefa64:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:fb5357ab2ad5:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:fb5357ab2ad5:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이름은 왜 말해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 155,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:2e9f452f65d7:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:f1b517f4c16f:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:f1b517f4c16f:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "있었어. 끝나고 다들 내 이름 말하는데 박수는 별로였던 날.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 153,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:fb5357ab2ad5:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:5280a100c348:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:5280a100c348:1:late:150",
+      "type": "stage",
+      "direction": "켄이 인형의 꼬리표를 접었다 편다. 새 주름을 만들려다가 그만둔다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 151,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:f1b517f4c16f:1:late:150"
+    },
+    "v4:28:F-KE01-03b:e:7b0aa0f847da:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:7b0aa0f847da:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그냥 못한 날.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 149,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:5280a100c348:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:6d922986d448:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:6d922986d448:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "안 나오는 역할은 못 받지. 죽은 줄 알았는데 다음 막에 살아나면 한 번 더 받고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 147,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:7b0aa0f847da:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03b:e:ca2e88d00957:1:late:150": {
+      "id": "v4:28:F-KE01-03b:e:ca2e88d00957:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "박수 못 받은 역할도 했어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 145,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03b 박수를 먼저 받은 사람",
+        "location": "F-KE01-03b"
+      },
+      "next": "v4:28:F-KE01-03b:e:6d922986d448:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:f04183bb47bb:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:f04183bb47bb:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "이건 안 움직여도 사람들이 귀엽다고 하네. 나는 조금 더 해야 하고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 141,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03b:e:ca2e88d00957:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:f96d1531b911:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:f96d1531b911:1:late:150",
+      "type": "stage",
+      "direction": "켄이 금붕어를 집어 한 번 흔든다. 태그가 서로 부딪힌다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 139,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:f04183bb47bb:1:late:150"
+    },
+    "v4:28:F-KE01-03:e:a89d0cc2aef1:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:a89d0cc2aef1:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "우는 역할도 박수 받고, 죽는 역할도 받고. 질문이 너무 넓잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 137,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:f96d1531b911:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:6ae3fb73c51b:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:6ae3fb73c51b:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "정말로?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 135,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:a89d0cc2aef1:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:2daf0e1cd668:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:2daf0e1cd668:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "끝에 박수 받는 역할.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 133,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:6ae3fb73c51b:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:23176d547539:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:23176d547539:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 무슨 역할이 좋아?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 131,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:2daf0e1cd668:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:b2261c60466f:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:b2261c60466f:1:late:150",
+      "type": "stage",
+      "direction": "미오는 켄이 연기를 잘하는 이유를 성격이 나빠서라고 단순히 생각하고 싶어진다. 그러나 방금 자기가 말로 끊거나 침묵으로 멈췄을 때 켄도 연기를 멈춘 것은 사실이다.A3에서는 웃기보다 먼저 끝낸 것인지 확인했다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 129,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:23176d547539:1:late:150"
+    },
+    "v4:28:F-KE01-03:e:7a9a5ff0963a:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:7a9a5ff0963a:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "같이 있으면. 네가 가 버리면 다른 장면 해야지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 127,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:b2261c60466f:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:d2063100e505:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:d2063100e505:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 내가 뭘 해도 계속할 수 있네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 125,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:7a9a5ff0963a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:e19b26dbfe25:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:e19b26dbfe25:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네 대답을 듣고 배역을 바꾼 거야. 처음부터 딱 그 대답을 기다린 건 아니고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 123,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:d2063100e505:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:5a9e15861221:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:5a9e15861221:1:late:150",
+      "type": "stage",
+      "direction": "켄이 인형을 본다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 121,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:e19b26dbfe25:1:late:150"
+    },
+    "v4:28:F-KE01-03:e:e3c25f9e46fc:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:e3c25f9e46fc:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "나한테 화난 거야, 아닌 거야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 119,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:5a9e15861221:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:67084c85eabc:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:67084c85eabc:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그랬으면 여기서 끝나지는 않았겠지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 117,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:e3c25f9e46fc:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:3de2e58e9c83:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:3de2e58e9c83:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 진짜 화난 것 같았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 115,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:67084c85eabc:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-03:e:214932098472:1:late:150": {
+      "id": "v4:28:F-KE01-03:e:214932098472:1:late:150",
+      "type": "stage",
+      "direction": "켄은 계산대에서 물러난다. 미오는 인형의 꼬리를 다시 누른다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 113,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-03 웃지 않았던 얼굴",
+        "location": "F-KE01-03"
+      },
+      "next": "v4:28:F-KE01-03:e:3de2e58e9c83:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:c15217c4cd91:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:c15217c4cd91:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그러니까 그만했잖아. 내가 알아들은 걸 네가 못 알아듣는 줄 알고 계속 설명해 주면 더 길어졌겠지만.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 67,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-03:e:214932098472:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:b2ee6fe24760:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:b2ee6fe24760:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "진짜 화났거든.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 65,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:c15217c4cd91:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:5073141baa9e:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:5073141baa9e:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "화났네. 그 얼굴 보려고 안 돌아간 거지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 63,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:b2ee6fe24760:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:17ae5b274842:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:17ae5b274842:1:late:150",
+      "type": "stage",
+      "direction": "켄이 얼굴을 풀고 웃는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 61,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:5073141baa9e:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:f0d9371da920:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:f0d9371da920:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 계속 말을 바꾸잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 59,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:17ae5b274842:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:416ffce556e8:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:416ffce556e8:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "나한테 글을 못 읽는다고 하시는 거예요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 57,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:f0d9371da920:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:13d684813529:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:13d684813529:1:late:150",
+      "type": "stage",
+      "direction": "미오가 진열대의 큰 '봉제 인형' 글씨를 가리킨다. 켄은 그쪽을 보고도 태도를 바꾸지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 55,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:416ffce556e8:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:7f7eac3cfbbd:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:7f7eac3cfbbd:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럼 처음부터 인형이라고 크게 써 놓으셔야죠. 왜 작게 써 놓고 못 본 사람 책임으로 돌려요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 53,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:13d684813529:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:9f76aac68bbf:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:9f76aac68bbf:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "이건 인형이에요. 살아 있는 금붕어하고는 달라요. 설명이 틀린 건 아니에요.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 51,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:7f7eac3cfbbd:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:aeaa3f04d57e:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:aeaa3f04d57e:1:late:150",
+      "type": "stage",
+      "direction": "켄은 이 대답을 현실의 모든 민원인에게 적용하라고 가르치지 않는다. 지금 연기한 사람의 목적만 설명한다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 89,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-03:e:214932098472:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:9764fedefacf:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:9764fedefacf:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "나가라고 돈 주면 안 나가지. 있을수록 받을 게 생기는데. 지금은 사과까지 나왔잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 87,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:aeaa3f04d57e:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:f9fb797a9f86:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:f9fb797a9f86:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "원래 돈 돌려주면 끝 아니야?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 85,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:9764fedefacf:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:e04249153683:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:e04249153683:1:late:150",
+      "type": "stage",
+      "direction": "켄이 웃음을 터뜨린다. 미오는 인형을 계산대에 내려놓는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 83,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:f9fb797a9f86:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:f7b9658f6ea2:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:f7b9658f6ea2:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "…그럼 안 해 줄래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 81,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:e04249153683:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:46bb6d38b8d8:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:46bb6d38b8d8:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "미안한 이유를 말해야죠. 그냥 나가라고 하시는 것 같은데.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 79,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:f7b9658f6ea2:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:5a6f0dbf68d1:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:5a6f0dbf68d1:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "미안합니다.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 77,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:46bb6d38b8d8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:d63a37be95a2:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:d63a37be95a2:1:late:150",
+      "type": "stage",
+      "direction": "미오가 켄을 본다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 75,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:5a6f0dbf68d1:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:1d7c5ae19ae8:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:1d7c5ae19ae8:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "사과는요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 73,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:d63a37be95a2:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:75d2195141ee:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:75d2195141ee:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "알겠어요. 돌려주세요. 환불해 드릴게요.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 71,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:1d7c5ae19ae8:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:76f5b8d6ac25:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:76f5b8d6ac25:1:late:150",
+      "type": "stage",
+      "direction": "미오는 켄이 예상보다 진지해서 고개를 끄덕인다. 침묵이 모든 갈등의 정답이었다고 보상하지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 107,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-03:e:214932098472:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:d4a4d84a5db9:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:d4a4d84a5db9:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "돌아가기는 하지. 다음에는 그만한다고 먼저 말해. 지금 내가 계속해야 하는지 모르겠으니까.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 105,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:76f5b8d6ac25:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:bcdec12b2806:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:bcdec12b2806:1:late:150",
+      "type": "stage",
+      "direction": "켄은 바로 웃지 않는다. 인형을 집었다가 다시 놓는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 103,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:d4a4d84a5db9:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:bd70083708d9:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:bd70083708d9:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "손님하고 이야기 안 해 주면 돌아갈까 봐.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 101,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:bcdec12b2806:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:a043dbcdb5a2:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:a043dbcdb5a2:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "…끝낸 거야?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 99,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:bd70083708d9:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:a5df40196ae5:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:a5df40196ae5:1:late:150",
+      "type": "stage",
+      "direction": "미오가 그대로 있자 켄이 미오의 얼굴을 본다. 말이 잠깐 끊긴다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 97,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:a043dbcdb5a2:1:late:150"
+    },
+    "v4:28:F-KE01-A:e:cd3421a76a79:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:cd3421a76a79:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "직원분? 못 들은 척하면 안 끝납니다. 누구라도 불러 오세요.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 95,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:a5df40196ae5:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-A:e:982ac91411b9:1:late:150": {
+      "id": "v4:28:F-KE01-A:e:982ac91411b9:1:late:150",
+      "type": "stage",
+      "direction": "미오는 인형을 내려놓고 입을 다문다. 켄은 처음에는 계속 손님을 연기한다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 93,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "next": "v4:28:F-KE01-A:e:cd3421a76a79:1:late:150"
+    },
+    "v4:28:F-KE01-A:menu:late:150": {
+      "id": "v4:28:F-KE01-A:menu:late:150",
+      "type": "menu",
+      "q": "첫 대답",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 47,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "선택 F-KE01-A — 첫 대답",
+        "location": "F-KE01-A"
+      },
+      "options": [
+        {
+          "id": "A1",
+          "label": "인형이라고 설명하며 환불을 거절한다.",
+          "to": "v4:28:F-KE01-A:e:9f76aac68bbf:1:late:150",
+          "set": {
+            "F-KE01-A": "A1"
+          }
+        },
+        {
+          "id": "A2",
+          "label": "환불해 주고 빨리 보내겠다고 한다.",
+          "to": "v4:28:F-KE01-A:e:75d2195141ee:1:late:150",
+          "set": {
+            "F-KE01-A": "A2"
+          }
+        },
+        {
+          "id": "A3",
+          "label": "대답하지 않는다.",
+          "to": "v4:28:F-KE01-A:e:982ac91411b9:1:late:150",
+          "set": {
+            "F-KE01-A": "A3"
+          }
+        }
+      ]
+    },
+    "v4:28:F-KE01-02:e:49157efeacae:1:late:150": {
+      "id": "v4:28:F-KE01-02:e:49157efeacae:1:late:150",
+      "type": "stage",
+      "direction": "미오의 웃음이 멈춘다. 실제로 켄이 화난 것처럼 느껴진다. 켄은 미오가 인형을 내려놓는 손을 기다린다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 45,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-02 말도 안 되는 손님",
+        "location": "F-KE01-02"
+      },
+      "next": "v4:28:F-KE01-A:menu:late:150"
+    },
+    "v4:28:F-KE01-02:e:6c79fb9f1a6b:1:late:150": {
+      "id": "v4:28:F-KE01-02:e:6c79fb9f1a6b:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "지금 웃으시는 거예요? 손님이 그렇게 우습습니까?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 43,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-02 말도 안 되는 손님",
+        "location": "F-KE01-02"
+      },
+      "next": "v4:28:F-KE01-02:e:49157efeacae:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-02:e:0b3b9b250ef1:1:late:150": {
+      "id": "v4:28:F-KE01-02:e:0b3b9b250ef1:1:late:150",
+      "type": "stage",
+      "direction": "미오가 웃으려 하자 켄이 고개를 기울인다. 연기는 멈추지 않는다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 41,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-02 말도 안 되는 손님",
+        "location": "F-KE01-02"
+      },
+      "next": "v4:28:F-KE01-02:e:6c79fb9f1a6b:1:late:150"
+    },
+    "v4:28:F-KE01-02:e:37d0b927175a:1:late:150": {
+      "id": "v4:28:F-KE01-02:e:37d0b927175a:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "금붕어라고 써 있죠. 금붕어가 뭔지 모르고 파세요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 39,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-02 말도 안 되는 손님",
+        "location": "F-KE01-02"
+      },
+      "next": "v4:28:F-KE01-02:e:0b3b9b250ef1:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-02:e:cf56e141b397:1:late:150": {
+      "id": "v4:28:F-KE01-02:e:cf56e141b397:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "설명에 헤엄친다고 써 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 37,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-02 말도 안 되는 손님",
+        "location": "F-KE01-02"
+      },
+      "next": "v4:28:F-KE01-02:e:37d0b927175a:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:d13eec6000c7:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:d13eec6000c7:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "저기요. 이거 설명하고 다르잖아요.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 33,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-02:e:cf56e141b397:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:d84aa7e5aaf1:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:d84aa7e5aaf1:1:late:150",
+      "type": "stage",
+      "direction": "미오가 인형을 내려다본다. 켄은 계산대 앞에 서며 얼굴을 바꾼다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 31,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:d13eec6000c7:1:late:150"
+    },
+    "v4:28:F-KE01-01:e:9dd1e33b12c5:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:9dd1e33b12c5:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네가 점원. 내가 손님. 금붕어를 샀는데 물에서 헤엄을 안 쳐. 환불하러 왔어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 29,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:d84aa7e5aaf1:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:59fa4b3d9afb:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:59fa4b3d9afb:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭘 해야 하는데?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 27,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:9dd1e33b12c5:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:59dab3361c04:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:59dab3361c04:1:late:150",
+      "type": "stage",
+      "direction": "미오는 인형을 돌려주려다 촉감을 한번 만져 본다. 꼬리 끝이 유난히 단단하다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 25,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:59fa4b3d9afb:1:late:150"
+    },
+    "v4:28:F-KE01-01:e:524603ca4afd:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:524603ca4afd:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "보고 웃었으니까 관객 하나는 생겼다고 생각했지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 23,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:59dab3361c04:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:e43436668656:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:e43436668656:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "왜 내가 들어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 21,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:524603ca4afd:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:cdd4c79e7e3f:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:cdd4c79e7e3f:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "잠깐 들어 줘. 대답도 하고. 시간이 조금 남아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 19,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:e43436668656:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:f6a05f73c1d6:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:f6a05f73c1d6:1:late:150",
+      "type": "stage",
+      "direction": "미오가 웃는다. 켄은 바로 인형 하나를 미오에게 건넨다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 17,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:cdd4c79e7e3f:1:late:150"
+    },
+    "v4:28:F-KE01-01:e:6b59c239c0bd:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:6b59c239c0bd:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "대사도 없는데 사람들이 먼저 보잖아. 배우 입장에선 위협이지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 15,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:f6a05f73c1d6:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:1a78e356766f:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:1a78e356766f:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "인형이?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 13,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:6b59c239c0bd:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:a0d48aad8541:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:a0d48aad8541:1:late:150",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "해고. 방금 내 역할을 가져갔어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 11,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:1a78e356766f:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:4c282b0102b7:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:4c282b0102b7:1:late:150",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "뭐해?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 9,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:a0d48aad8541:1:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:28:F-KE01-01:e:0001a35d0e2b:1:late:150": {
+      "id": "v4:28:F-KE01-01:e:0001a35d0e2b:1:late:150",
+      "type": "stage",
+      "direction": "기념품점. 켄이 손바닥만 한 금붕어 모양 인형을 진열대에 돌려놓는다. 미오는 색이 다른 인형을 보러 왔다가 그가 인형에게 인사하는 것을 본다.",
+      "source": {
+        "file": "28_자유시간_켄_01.md",
+        "line": 7,
+        "fileSha256": "89c1b37a3bab4aec7c24eb9589134b6868e325f05ff40f00c84865b001780c4e",
+        "heading": "F-KE01-01 한 번만 들어 봐",
+        "location": "F-KE01-01"
+      },
+      "next": "v4:28:F-KE01-01:e:4c282b0102b7:1:late:150"
+    },
+    "v4:150:h-440e67d571:e:6c79fb9f1a6b:1": {
+      "id": "v4:150:h-440e67d571:e:6c79fb9f1a6b:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "지금 웃으시는 거예요? 손님이 그렇게 우습습니까?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 103,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:28:F-KE01-A:menu:late:150",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:e5f07ff6586c:1": {
+      "id": "v4:150:h-440e67d571:e:e5f07ff6586c:1",
+      "type": "stage",
+      "direction": "미오가 웃으려 하자 켄이 고개를 기울인다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 101,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:6c79fb9f1a6b:1"
+    },
+    "v4:150:h-440e67d571:e:37d0b927175a:1": {
+      "id": "v4:150:h-440e67d571:e:37d0b927175a:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "금붕어라고 써 있죠. 금붕어가 뭔지 모르고 파세요?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 99,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:e5f07ff6586c:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:cf56e141b397:1": {
+      "id": "v4:150:h-440e67d571:e:cf56e141b397:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "설명에 헤엄친다고 써 있어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 97,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:37d0b927175a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:d13eec6000c7:1": {
+      "id": "v4:150:h-440e67d571:e:d13eec6000c7:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "저기요. 이거 설명하고 다르잖아요.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 95,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:cf56e141b397:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:82375af97d41:1": {
+      "id": "v4:150:h-440e67d571:e:82375af97d41:1",
+      "type": "stage",
+      "direction": "켄이 인형을 미오에게 건넨다. 미오가 단단한 꼬리 끝을 한번 눌러 보고 계산대에 둔다. 켄은 바깥 손님 쪽으로 선다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 93,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:d13eec6000c7:1"
+    },
+    "v4:150:h-440e67d571:e:6f916e22384d:1": {
+      "id": "v4:150:h-440e67d571:e:6f916e22384d:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "손님이 무슨 말을 해도 직원이 잘 듣는다고 믿고 시작하는 가게입니다.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 91,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:82375af97d41:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:422e3e3ea50b:1": {
+      "id": "v4:150:h-440e67d571:e:422e3e3ea50b:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "처음부터 헷갈렸네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 89,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:6f916e22384d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:2d6923642df6:1": {
+      "id": "v4:150:h-440e67d571:e:2d6923642df6:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네가 산 금붕어가 물에서 헤엄을 안 친다고 온 손님. 아니, 내가 샀어. 네가 팔았고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 87,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:422e3e3ea50b:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:18b1c75c6703:1": {
+      "id": "v4:150:h-440e67d571:e:18b1c75c6703:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "한 번 해 볼게. 진짜 장사하는 건 아니고.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 85,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:2d6923642df6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:bc265fec9fa2:1": {
+      "id": "v4:150:h-440e67d571:e:bc265fec9fa2:1",
+      "type": "stage",
+      "direction": "미오는 다시 금붕어를 본다. 켄이 인형을 손에서 손으로 돌리지 않고 선반 위에 놓아 둔다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 83,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:18b1c75c6703:1"
+    },
+    "v4:150:h-440e67d571:e:47024eca125a:1": {
+      "id": "v4:150:h-440e67d571:e:47024eca125a:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그럼 그만한 건지 물을게. 지금은 한다는 대답도 안 들었고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 81,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:bc265fec9fa2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:1c3177fb22aa:1": {
+      "id": "v4:150:h-440e67d571:e:1c3177fb22aa:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "내가 말 안 하면?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 79,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:47024eca125a:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:fcf7a737f504:1": {
+      "id": "v4:150:h-440e67d571:e:fcf7a737f504:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "자리 바꾸면 네가 쫓아낼 수 있잖아.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 77,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:1c3177fb22aa:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:585a36f2576f:1": {
+      "id": "v4:150:h-440e67d571:e:585a36f2576f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까 같은 건데 자리만 바꿔?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 75,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:fcf7a737f504:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:efe822cdf578:1": {
+      "id": "v4:150:h-440e67d571:e:efe822cdf578:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "맞아. 그럼 지금 물어볼게. 잠깐 할래? 네가 점원 하고 나는 손님. 말이 안 통하는 사람 하나.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 73,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:585a36f2576f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:5af7c9f1f5b1:1": {
+      "id": "v4:150:h-440e67d571:e:5af7c9f1f5b1:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 그전에 시작했어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 71,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:efe822cdf578:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:93143e2ce3e5:1": {
+      "id": "v4:150:h-440e67d571:e:93143e2ce3e5:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "내가 안 보고 어떻게 하겠어. 네가 싫다고 하면 멈출 수는 있지.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 69,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:5af7c9f1f5b1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:debac8d97b3a:1": {
+      "id": "v4:150:h-440e67d571:e:debac8d97b3a:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "오늘도 네가 사람들 어디서 웃는지 보는 거면 나는 안 할래.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 67,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:93143e2ce3e5:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:de12c7278acf:1": {
+      "id": "v4:150:h-440e67d571:e:de12c7278acf:1",
+      "type": "stage",
+      "direction": "미오가 계산대에서 한 걸음 물러난다. 켄이 따라오지는 않는다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 65,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:debac8d97b3a:1"
+    },
+    "v4:150:h-440e67d571:e:60afe8092938:1": {
+      "id": "v4:150:h-440e67d571:e:60afe8092938:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "응. 네가 표정 바꾸니까 붙여 봤어.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 63,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:de12c7278acf:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:71b4dc49eec8:1": {
+      "id": "v4:150:h-440e67d571:e:71b4dc49eec8:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "설명은 나중에 붙였네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 61,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:60afe8092938:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:50484c0ffb8d:1": {
+      "id": "v4:150:h-440e67d571:e:50484c0ffb8d:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네가 여기 있어도 되냐고 물어서. 가게 주인 아닌 사람하고 주인인 사람은 다르다는 걸 보여 준 거고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 59,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:71b4dc49eec8:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:5ca95189d2da:1": {
+      "id": "v4:150:h-440e67d571:e:5ca95189d2da:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "하지 마. 정말로 내가 잘못한 줄 알았어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 57,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:50484c0ffb8d:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:376435b916db:1": {
+      "id": "v4:150:h-440e67d571:e:376435b916db:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "어때. 귀엽지는 않았지?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 55,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:5ca95189d2da:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:848ac048b960:1": {
+      "id": "v4:150:h-440e67d571:e:848ac048b960:1",
+      "type": "stage",
+      "direction": "미오가 물건에서 손을 뗀다. 켄은 곧바로 자세를 푼다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 53,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:376435b916db:1"
+    },
+    "v4:150:h-440e67d571:e:9c160499cdde:1": {
+      "id": "v4:150:h-440e67d571:e:9c160499cdde:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "손님한테 딱 한 번만 더 부탁드릴게요. 안 사실 거면 만지지 말아 주세요.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 51,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:848ac048b960:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:8755c42dc4ed:1": {
+      "id": "v4:150:h-440e67d571:e:8755c42dc4ed:1",
+      "type": "stage",
+      "direction": "켄이 계산대 바깥으로 나와 허리를 조금 굽힌다. 미오가 그의 얼굴을 보자, 켄은 웃음을 지우고 한숨을 쉰다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 49,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:9c160499cdde:1"
+    },
+    "v4:150:h-440e67d571:e:1ab5b1a5ee21:1": {
+      "id": "v4:150:h-440e67d571:e:1ab5b1a5ee21:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "못 들어 봤는데 어떻게 알아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 47,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:8755c42dc4ed:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:06fcc9c247d6:1": {
+      "id": "v4:150:h-440e67d571:e:06fcc9c247d6:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "네가 지금 그 얼굴로 귀엽다고 해 줄 거야?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 45,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:1ab5b1a5ee21:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:9f8524b63300:1": {
+      "id": "v4:150:h-440e67d571:e:9f8524b63300:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "네가 귀여운 역할 하면 되잖아.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 43,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:06fcc9c247d6:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:5fcd3e2cf890:1": {
+      "id": "v4:150:h-440e67d571:e:5fcd3e2cf890:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "내가 나온 줄 알았거든. 뒤에서 조용히 서 있으면 사람들 먼저 봐. 걔는 말 안 해도 귀엽다고 하고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 41,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:9f8524b63300:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:c424b14b6bef:1": {
+      "id": "v4:150:h-440e67d571:e:c424b14b6bef:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "아까는 왜 자꾸 세웠어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 39,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:5fcd3e2cf890:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:f2916cd086a2:1": {
+      "id": "v4:150:h-440e67d571:e:f2916cd086a2:1",
+      "type": "stage",
+      "direction": "미오는 웃다가 아래 선반의 물건 하나를 만져 본다. 켄은 방금 세웠던 금붕어를 옆으로 눕힌다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 37,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:c424b14b6bef:1"
+    },
+    "v4:150:h-440e67d571:e:41592b6cc734:1": {
+      "id": "v4:150:h-440e67d571:e:41592b6cc734:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "내가 가게 주인은 아니야. 오래 있으면 계산하라고 할 생각도 없고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 35,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:f2916cd086a2:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:21322a900b3f:1": {
+      "id": "v4:150:h-440e67d571:e:21322a900b3f:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "그러면 여기 계속 있어도 되는 거네.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 33,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:41592b6cc734:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:045776e483ac:1": {
+      "id": "v4:150:h-440e67d571:e:045776e483ac:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "골랐다가 놓을 수도 있지. 사라고 한 건 아니고.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 31,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:21322a900b3f:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:0250ecdc35c7:1": {
+      "id": "v4:150:h-440e67d571:e:0250ecdc35c7:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "다 가져갈 수도 없는데 왜 색부터 고르냐고 물어.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 29,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:045776e483ac:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:e0aa1828221e:1": {
+      "id": "v4:150:h-440e67d571:e:e0aa1828221e:1",
+      "type": "stage",
+      "direction": "미오가 선반 쪽으로 간다. 켄은 몸을 돌려 그가 실제로 보는 인형을 본다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 27,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:0250ecdc35c7:1"
+    },
+    "v4:150:h-440e67d571:e:d1cf650474f1:1": {
+      "id": "v4:150:h-440e67d571:e:d1cf650474f1:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "안 하지. 네가 있으니까 해.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 25,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:e0aa1828221e:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:c6306bd81ac3:1": {
+      "id": "v4:150:h-440e67d571:e:c6306bd81ac3:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너는 아무도 없을 때도 그런 말 만들어?",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 23,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:d1cf650474f1:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:98b5292a00fe:1": {
+      "id": "v4:150:h-440e67d571:e:98b5292a00fe:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "그러면 인형보다 먼저 봤네. 좋은 시작이다.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 21,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:c6306bd81ac3:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:075d77f0a1e9:1": {
+      "id": "v4:150:h-440e67d571:e:075d77f0a1e9:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "너 여기 있는 거 보여서.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 19,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:98b5292a00fe:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:3eab4c9ebf26:1": {
+      "id": "v4:150:h-440e67d571:e:3eab4c9ebf26:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "색 고르러 왔어?",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 17,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:075d77f0a1e9:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:56e8c289f418:1": {
+      "id": "v4:150:h-440e67d571:e:56e8c289f418:1",
+      "type": "stage",
+      "direction": "미오가 웃는다. 켄이 인형을 집어 주려다가 손을 멈춘다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 15,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:3eab4c9ebf26:1"
+    },
+    "v4:150:h-440e67d571:e:077ba43be399:1": {
+      "id": "v4:150:h-440e67d571:e:077ba43be399:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "양쪽에서 본다는 말이네. 단독 공연인데 좌석이 두 개야.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 13,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:56e8c289f418:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:b75045381243:1": {
+      "id": "v4:150:h-440e67d571:e:b75045381243:1",
+      "type": "say",
+      "speaker": "미오",
+      "actor": "mio",
+      "text": "눈이 옆에 붙어 있는데.",
+      "mono": false,
+      "delivery": "미오",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 11,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:077ba43be399:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "미오",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:7b0497d97d64:1": {
+      "id": "v4:150:h-440e67d571:e:7b0497d97d64:1",
+      "type": "say",
+      "speaker": "켄",
+      "actor": "ken",
+      "text": "쟤는 말없이 내 뒤통수를 봐 주네. 좋은 관객이야.",
+      "mono": false,
+      "delivery": "켄",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 9,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:b75045381243:1",
+      "presentation": {
+        "camera": {
+          "operation": "focus-speaker",
+          "speaker": "켄",
+          "transition": "keep-if-same-otherwise-directed-move",
+          "sound": false
+        }
+      }
+    },
+    "v4:150:h-440e67d571:e:b93c88612886:1": {
+      "id": "v4:150:h-440e67d571:e:b93c88612886:1",
+      "type": "stage",
+      "direction": "기념품점. 켄이 금붕어 모양 인형을 선반에 세워 놓는다. 자꾸 꼬리 쪽으로 기울어진다. 미오가 문 앞에서 보자 켄은 인형을 자기 쪽으로 돌려 앉힌다.",
+      "source": {
+        "file": "150_자유시간_켄_2장_표정_다시_고르기.md",
+        "line": 7,
+        "fileSha256": "21a6ea36f81433716d0dca221406f4e20a6c6e9ad45b346c45383db3274dd069",
+        "heading": "KE-LATE01-01 손님 없는 가게",
+        "location": "h-440e67d571"
+      },
+      "next": "v4:150:h-440e67d571:e:7b0497d97d64:1"
+    }
+  },
+  "kind": "freetime",
+  "sourceFile": "150_자유시간_켄_2장_표정_다시_고르기.md",
+  "baseSourceFile": "28_자유시간_켄_01.md",
+  "completionFlag": "fte:150:complete",
+  "routingStatus": "explicit-reviewed-late-calendar",
+  "campaignReady": false,
+  "lateCalendarKey": "150",
+  "eligibility": "Only the exact source-authored separate calendar window; never a first-case substitute or same-window chain.",
+  "presentation": {
+    "entryMusic": "bgm_freetime",
+    "sectionBeds": {
+      "28_자유시간_켄_01.md:F-KE01-06": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-05": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-B": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-04": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-A3의": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-A1의": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-A2의": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-03c": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-03b": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-03": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-A": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-02": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "28_자유시간_켄_01.md:F-KE01-01": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      },
+      "150_자유시간_켄_2장_표정_다시_고르기.md:h-440e67d571": {
+        "music": "bgm_freetime",
+        "restore": "bed-only-no-one-shot"
+      }
+    },
+    "policy": "section bed is a scene-enter request, never replay per dialogue node",
+    "save": "persist actual current music and silence; do not infer from next speaker"
+  }
+}
