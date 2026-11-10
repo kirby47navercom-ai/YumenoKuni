@@ -45,6 +45,7 @@ import {emitOptionsV4} from '../../tools/v4_options_widget.mjs';
 import {installV4StoryUI} from './v4-story-ui.mjs';
 import {publishV4Data} from './v4-data.mjs';
 import {publishRevisedCampaign} from './revised-campaign-data.mjs';
+import {emitScrumClaims} from './claude-scrum-text.mjs';
 import {emitV4ComicUI} from './v4-comic-ui.mjs';
 import {emitV4ScrumUI} from './v4-scrum-ui.mjs';
 import {emitV4AnagramUI} from './v4-anagram-ui.mjs';
@@ -237,7 +238,7 @@ await write('Assets/Data/story.json',{chapters:['P','1','2','3','4','5','6'],tri
 for(const f of (await fs.readdir(path.join(repo,'data/flow'))).filter(f=>f.endsWith('.json')))await copy('data/flow/'+f,'Assets/Data/flow/'+f);
 await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/hotspots.json','Assets/Data/hotspots.json');await copy('data/skills.json','Assets/Data/skills.json');await copy('data/reactions.json','Assets/Data/reactions.json');
 await copy('data/kotodama.json','Assets/Data/kotodama.json'); // 이름·설명 : tools/build_trial.py · build_flow.py
-for(const file of ['showdown_extra.json','showdown_pre.json','scrum_v3.json','scrum_v3text.json'])await copy('data/'+file,'Assets/Data/'+file);
+for(const file of ['showdown_extra.json','showdown_pre.json','scrum_v3.json'])await copy('data/'+file,'Assets/Data/'+file);
 for(const f of (await fs.readdir(path.join(repo,'data/trials'))).filter(f=>f.endsWith('.json')))await copy('data/trials/'+f,'Assets/Data/trials/'+f);
 
 // 2) 교칙 : docs/spec/11 §2·§3 표
@@ -866,6 +867,8 @@ await write('Assets/UI/TitleShellV4.hbwidget.json',titleSource);
 await emitCenteredSourceCanvases({root,write});
 // Publishing validates generated fonts and actor art even on the first build.
 await publishV4Data({repo,copy,write});
+const scrumTasks=JSON.parse(await fs.readFile(path.join(repo,'data/v4_story/native_tasks.json'),'utf8')).tasks;
+await emitScrumClaims({tasks:Object.values(scrumTasks),source:root,write});
 // 패키지 줄이기 : PNG → WebP, 글꼴 서브셋 (tools/optimize_assets.py)
 execFileSync('python',['-X','utf8',path.join(repo,'tools/optimize_assets.py')],{stdio:'inherit'});
 // Register raster fonts only after the optimizer has finished writing them.
