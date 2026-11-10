@@ -1,0 +1,116 @@
+{
+  "policy": "Two explicitly selected existing decorative planters in each of three public spaces. No evidence furniture, doorway or new geometry. Physical bounce returns to its authored pose, so collision remains valid. Own durability3/stock2 and input timing; source reward gates retained.",
+  "spaces": {
+    "plaza": {
+      "file": "art/space_v4/reactions_v1/plaza_base.glb",
+      "sha256": "b34fd6e3ee3c089d0a0237387b519364598e42cbd8496a4b4d41cdfd7ddb765d",
+      "bytes": 74480580,
+      "props": [
+        {
+          "file": "art/space_v4/reactions_v1/plaza_0.glb",
+          "sha256": "d86e6678d1d5603dae70e63ad75773f152381a97c963ab5d3aabc0ab5ed27a69",
+          "bytes": 20068200,
+          "id": "plaza_detail_planter",
+          "runtime": "Assets/Art/explore3d/reaction_plaza_0.glb",
+          "p": [
+            -10,
+            0,
+            8
+          ],
+          "label": "장식 화분",
+          "durability": 3,
+          "stock": 2
+        },
+        {
+          "file": "art/space_v4/reactions_v1/plaza_1.glb",
+          "sha256": "f251316e8b35ac39bde2a860e11e683813f0f43c517c4cbf439702dc287a8262",
+          "bytes": 20068220,
+          "id": "plaza_detail_planter.001",
+          "runtime": "Assets/Art/explore3d/reaction_plaza_1.glb",
+          "p": [
+            -10,
+            0,
+            -8
+          ],
+          "label": "장식 화분",
+          "durability": 3,
+          "stock": 2
+        }
+      ]
+    },
+    "hotel_lobby": {
+      "file": "art/space_v4/reactions_v1/hotel_lobby_base.glb",
+      "sha256": "cd25b60f899fcf3827a3e979f651798a762c6ddc16cbd5175b7304dc22562ea0",
+      "bytes": 75035260,
+      "props": [
+        {
+          "file": "art/space_v4/reactions_v1/hotel_lobby_0.glb",
+          "sha256": "501845fc255879c0d4910e37864278e2451d0223af0e123560692ecf660da130",
+          "bytes": 20068340,
+          "id": "hotel_lobby_detail_planter",
+          "runtime": "Assets/Art/explore3d/reaction_hotel_lobby_0.glb",
+          "p": [
+            -5.699999809265137,
+            0,
+            -3
+          ],
+          "label": "장식 화분",
+          "durability": 3,
+          "stock": 2
+        },
+        {
+          "file": "art/space_v4/reactions_v1/hotel_lobby_1.glb",
+          "sha256": "62fe0d93f274f1c24754ba197ba6ca8d3ed5ebab930a7a1f2b71e9f6764ee2fe",
+          "bytes": 20068360,
+          "id": "hotel_lobby_detail_planter.001",
+          "runtime": "Assets/Art/explore3d/reaction_hotel_lobby_1.glb",
+          "p": [
+            5.699999809265137,
+            0,
+            -3
+          ],
+          "label": "장식 화분",
+          "durability": 3,
+          "stock": 2
+        }
+      ]
+    },
+    "park_garden": {
+      "file": "art/space_v4/reactions_v1/park_garden_base.glb",
+      "sha256": "46e1c0778abef65036cec09a8a0562fc66f0b297231610e69ab481dba8720db8",
+      "bytes": 20356980,
+      "props": [
+        {
+          "file": "art/space_v4/reactions_v1/park_garden_0.glb",
+          "sha256": "0a96b7ea53097633551e0671ec8a5b6ab1dfed3e4f1a1ebc9fcf28b7fbb59788",
+          "bytes": 20068272,
+          "id": "park_garden_detail_planter",
+          "runtime": "Assets/Art/explore3d/reaction_park_garden_0.glb",
+          "p": [
+            -7,
+            0,
+            6
+          ],
+          "label": "장식 화분",
+          "durability": 3,
+          "stock": 2
+        },
+        {
+          "file": "art/space_v4/reactions_v1/park_garden_1.glb",
+          "sha256": "6b36065a58ad34bd93c692fdee60c0b0e4b77db316960d3cdce6a610143d0bd2",
+          "bytes": 20068292,
+          "id": "park_garden_detail_planter.001",
+          "runtime": "Assets/Art/explore3d/reaction_park_garden_1.glb",
+          "p": [
+            -7,
+            0,
+            0
+          ],
+          "label": "장식 화분",
+          "durability": 3,
+          "stock": 2
+        }
+      ]
+    }
+  }
+}
