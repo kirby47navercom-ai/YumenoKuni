@@ -35,7 +35,20 @@ bool Yumeno::scv3OpIntro(float t){
 // 2. 주제·두 팀(33.5~42.5초) : 어둠에서 밝아짐 → 가운데 주제 글(34.2) → 왼쪽 팀 + 붉은 띠(35.5~37.2) → 오른쪽 팀 + 푸른 띠(38.5) → 두 줄 전체(39.5) → 검은 번쩍(40.3) → 「논의 스크럼 시작」(41.5)
 bool Yumeno::scv3TeamIntro(float t){
  const auto& d=scv3Task();auto topic=d.value("topic",std::string()),lt=d.value("them",std::string()),ut=d.value("us",std::string());
- const auto& pairs=stage["pairs"];int nThem=0,nUs=0;{std::set<std::string> a,b{"미오"};for(auto& p:pairs){a.insert(p.value("them",""));b.insert(p.value("us",""));}nThem=int(a.size());nUs=int(b.size());}
+ int nThem=0,nUs=0;
+ if(stage.contains("scrumSides")){
+  const auto& sides=stage.at("scrumSides");
+  nThem=int(sides.at("them").size());
+  nUs=int(sides.at("us").size());
+ }else{
+  std::set<std::string> them,us{"미오"};
+  for(const auto& pair:stage.at("pairs")){
+   them.insert(pair.value("them",""));
+   us.insert(pair.value("us",""));
+  }
+  nThem=int(them.size());
+  nUs=int(us.size());
+ }
  float zThem=(nThem-1)*.56f,zUs=(nUs-1)*.56f;
  if(t<2.f)setCam({0,1.7f,3.6f,0,6,-7}); /* 솟은 증언대 위에서 통로 너머 왕좌 쪽(34.2초 기울인 화면) */                                                       // 34.2초 : 왕좌를 비스듬히 올려다봄
  else if(t<3.4f){float u=(t-2.f)/1.4f;setCam({.2f+.1f*u,1.8f,zThem+.75f-.25f*u,52,-3,0}); /* 37초 : 맨 앞 사람부터 가슴 위가 크게 줄지어 보인다 */}    // 37초 : 왼쪽(상대) 팀을 앞에서 비스듬히

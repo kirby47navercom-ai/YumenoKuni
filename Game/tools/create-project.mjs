@@ -95,6 +95,18 @@ async function emitNativeHuds(){
  for(const [key,emit] of [['gpuPanicHud',emitGpuPanicAssets],['gpuAnagramHud',emitGpuAnagramAssets],['gpuStageClock',emitGpuStageClock],['gpuShowdownHud',emitGpuShowdownAssets],['scopedCourt',emitScopedCourtScenes],['gpuNoiseHud',emitGpuNoiseAssets],['gpuPanicCache',emitPanicCacheScene]])console.log(JSON.stringify({[key]:await emit({output:root,write})}));
  console.log(JSON.stringify({armamentPresentation:await emitArmamentPresentation({write})}));
 }
+async function emitTrialDebateWidgets(){
+ const source=path.join(repo,'ui/v4/trial_modes_source/runtime');
+ for(const file of await fs.readdir(source,{recursive:true,withFileTypes:true})){
+  if(!file.isFile()||!file.name.endsWith('.webp'))continue;
+  const input=path.join(file.parentPath,file.name);
+  const target=path.relative(source,input).split(path.sep).join('/');
+  await write('Assets/Art/ui/'+target,await fs.readFile(input));
+ }
+ for(const tool of ['claude_showdown_nodes.py','claude_scrum_nodes.py']){
+  execFileSync('python',['-X','utf8',path.join(repo,'tools',tool)],{stdio:'inherit'});
+ }
+}
 if(process.argv.includes('--trial-entry-only')){
  await emitTrialEntryUI({write});
  const panic='Assets/Scenes/PanicHud.hbscene.json';
@@ -108,6 +120,7 @@ if(process.argv.includes('--trial-input-motion-only')){const bank=await emitTria
 if(process.argv.includes('--gpu-huds-only')){await emitNativeHuds();
 await emitNonstopSourceHud({repo,root,write});console.log(JSON.stringify({gpuHudsOnly:true,storyChanged:false}));process.exit(0);}
 if(process.argv.includes('--revised-campaign-runtime-only')){
+ await emitTrialDebateWidgets();
  console.log(JSON.stringify({revisedCampaign:await publishRevisedCampaign({repo,write,runtimeSource:root})}));process.exit(0);
 }
 if(process.argv.includes('--park-levels-only')){console.log(JSON.stringify(await emitParkLevels({root,repo,write})));process.exit(0);}
@@ -135,7 +148,7 @@ if(process.argv.includes('--result-ink-only')){
 if(process.argv.includes('--debate-fx-only')){console.log(JSON.stringify(await emitResultForegroundOnly({root,repo,write})));process.exit(0);}
 if(process.argv.includes('--evidence-art-only')){console.log(JSON.stringify(await publishEvidenceArtOnly({repo,write})));process.exit(0);}
 if(process.argv.includes('--scrum-profiles-only')){const name='Assets/Data/court.json',court=JSON.parse(await fs.readFile(path.join(root,name),'utf8'));court.scrumFaces=await applyScrumProfiles({repo,write,figures:court.figures});await write(name,court);console.log(JSON.stringify({scrumProfilesOnly:true,keys:Object.keys(court.scrumFaces)}));process.exit(0);}
-if(process.argv.includes('--scrum-ui-only')){const w=await emitV4ScrumUI({write,body:'Assets/Fonts/pretendard/Pretendard-Medium.otf',head:'Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf'});console.log(JSON.stringify({scrumUiOnly:true,nodes:w.nodes.length,storyChanged:false}));process.exit(0);}
+if(process.argv.includes('--scrum-ui-only')){const w=await emitV4ScrumUI({write,body:'Assets/Fonts/pretendard/Pretendard-Medium.otf',head:'Assets/Fonts/blackhansans/BlackHanSans-Regular.ttf'});await emitTrialDebateWidgets();console.log(JSON.stringify({scrumUiOnly:true,nodes:w.nodes.length,storyChanged:false}));process.exit(0);}
 if(process.argv.includes('--reasoning-ui-only')){
  await emitReasoningVisuals({write});const file='Assets/UI/Stage.hbwidget.json';await write(file,applyReasoningStage(JSON.parse(await fs.readFile(path.join(root,file),'utf8'))));console.log(JSON.stringify({reasoningUiOnly:true,storyChanged:false}));process.exit(0);
 }
@@ -873,6 +886,7 @@ await emitScrumClaims({tasks:Object.values(scrumTasks),source:root,write});
 execFileSync('python',['-X','utf8',path.join(repo,'tools/optimize_assets.py')],{stdio:'inherit'});
 // Register raster fonts only after the optimizer has finished writing them.
 await emitNativeHuds();
+await emitTrialDebateWidgets();
 await emitNonstopSourceHud({repo,root,write});
 const selectedCampaign=await fs.readFile(path.join(root,'Assets/Data/v4_story/revision/campaign.json'),'utf8')
  .then(JSON.parse,error=>{if(error.code==='ENOENT')return null;throw error;});

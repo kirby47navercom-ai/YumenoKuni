@@ -126,9 +126,10 @@ void Yumeno::v4TaskStart(){
   auto intro=v4Task.value("queues",Json::object()).value("intro",Json::array());
   if(kind=="panic"){
    panicStorySpeakers.clear();panicLeadTask.clear();panicLeadCount=0;panicLeadSplit=0;
+   const bool authored=std::any_of(intro.begin(),intro.end(),[](const Json& row){return row.value("panicInterruption",false);});
    const auto& d=v4Task.at("debate");
    const auto& lines=d.at("lines");
-   for(const auto& lane:d.at("lanes")){
+   if(!authored)for(const auto& lane:d.at("lanes")){
     const Json* claim=nullptr;
     for(const auto& id:lane.at("lines")){
      const auto row=std::find_if(lines.begin(),lines.end(),[&](const Json& line){return line.at("id")==id;});
@@ -187,7 +188,8 @@ void Yumeno::v4TaskQueueNext(){
   if(dir){auto fx=dir->value("fx",std::string());if(trialdirection::has(fx,"shake"))if(auto* cam=actor("Camera"))Camera::Shake(cam,.02f,.25f);if(dir->contains("se"))sfx((*dir)["se"].get<std::string>());}
   UI::SetColor(this,UI_ID,"Body",row.value("mono",false)?Color{.62f,.84f,1,1}:Color{.96f,.94f,.97f,1});sdTalkOn=stageKind=="showdown"&&v4QueueAfter.rfind("showdown",0)==0&&v4QueueAfter!="showdown-pre"&&who=="mio"&&!row.value("mono",false); /* V3 영상 Hs3Y7uyOAQk 174~178초 : 쇼다운 중 주인공 발언 = 주인공 화면 가득 + 하늘색 큰 글, 대화창 없음 */dialogVisible(!sdTalkOn);if(stageKind=="showdown")for(auto id:{"SdLeft","SdDivider"})svis(id,!sdTalkOn);showLine();if(sdTalkOn){dialogVisible(false);UI::SetVisible(this,UI_ID,"Next",false);sdTalkT=0;sdTalkWords.clear();for(int k=0;k<16;k++)for(auto pre:{"SdV3TW","SdV3TP"})UI::SetFont(this,"sdv3",pre+std::to_string(k),"Assets/Fonts/gothica1/GothicA1-Bold.ttf"); /* 한국어판 3114~3118초 : 대화창·NEXT 없이 낱말이 흐르고 저절로 넘어간다 */
    std::vector<std::string> w;auto flush=[&]{if(w.empty())return;int t=sdTail(w);std::string a,b;for(size_t k=0;k<w.size();k++)(int(k)>=int(w.size())-t?b:a)+=w[k];if(a.empty()){a=b;b.clear();}sdTalkWords.push_back({a,b});w.clear();};
-   for(auto& g:debate::glyphs(line)){if(g==" "){flush();continue;}w.push_back(g);if(g=="."||g==","||g=="?"||g=="!")flush();}flush();if(sdTalkWords.size()>16)sdTalkWords.resize(16);}
+   for(auto& g:debate::glyphs(line)){if(g==" "){flush();continue;}w.push_back(g);if(g=="."||g==","||g=="?"||g=="!")flush();}flush();}
+  if(!sdTalkOn)dialogueCue(row.value("delivery",std::string()),false);
   if(stageKind=="climax"&&v4QueueAfter=="comic"&&v4ComicReplay)v4ComicReplayDrawV3(true);
   if(stageKind=="climax"&&v4QueueAfter=="success"&&!v4ComicPage.empty())v4ComicComplete(true);
   auto readId="task:"+v4Task.value("taskId",std::string())+":"+v4QueueAfter+":"+row.value("id",readSignature(line));
@@ -206,13 +208,15 @@ bool Yumeno::v4TaskQueueUpdate(float delta){
   bool adv=sdAdvT<1.4f&&sdAdvT>0;UI::SetVisible(this,"sdv3","SdV3Adv",adv);UI::SetVisible(this,"sdv3","SdV3AdvLine",adv);if(adv&&previousAdvance>=1.4f)sfx("v3se_374");dialogVisible(sdAdvT<=0&&!sdTalkOn); /* 발전 동안 대화창 없음 */return true;} /* V3 172.5초 : 「Advance!」가 걷힌 뒤 발언 */
  updateCamera(delta);shown=std::min(float(lineLength),shown+delta*optv4::CharactersPerSecond(optionsV4));text("Body",u8prefix(dialogueText(),int(shown)));if(sdTalkOn){sdTalkT+=delta;float x=130,y=300;int n=int(sdTalkWords.size()); /* 3115~3118초 : 가운데 왼쪽, 보통 크기 */ /* 낱말마다 0.22초 간격으로 왼쪽에서 밀려 들어온다 */
   // 3114.2~3119.1초 : 문장 하나씩(앞 문장은 지우고), 낱말이 0.3초마다 왼쪽에서 붙는다. 화면 가운데 높이
-  std::vector<int> sent(n,0);{int s=0;for(int k=0;k<n;k++){sent[k]=s;auto& wd=sdTalkWords[k][1].empty()?sdTalkWords[k][0]:sdTalkWords[k][1];if(!wd.empty()&&std::string(".?!").find(wd.back())!=std::string::npos)++s;}}
+  std::vector<int> sent(n,0);{int s=0,count=0;for(int k=0;k<n;k++){sent[k]=s;auto& wd=sdTalkWords[k][1].empty()?sdTalkWords[k][0]:sdTalkWords[k][1];if(++count==16||(!wd.empty()&&std::string(".?!").find(wd.back())!=std::string::npos)){++s;count=0;}}}
   std::vector<float> start(n,0);{float t0=0;int prev=-1,idx=0;for(int k=0;k<n;k++){if(sent[k]!=prev){if(prev>=0)t0+=idx*.3f+1.2f;prev=sent[k];idx=0;}start[k]=t0+idx*.3f;++idx;}}
   float total=n?start[n-1]+1.5f:0;int cur=-1;for(int k=0;k<n;k++)if(sdTalkT>=start[k])cur=sent[k];
-  x=320;y=330;for(int k=0;k<16;k++){auto a="SdV3TW"+std::to_string(k),b="SdV3TP"+std::to_string(k);bool on=k<n&&sent[k]==cur&&sdTalkT>=start[k];UI::SetVisible(this,"sdv3",a,on);UI::SetVisible(this,"sdv3",b,on&&!sdTalkWords[k][1].empty());if(k>=n||sent[k]!=cur)continue;
+  int first=cur<0?n:int(std::find(sent.begin(),sent.end(),cur)-sent.begin());
+  x=320;y=330;for(int slot=0;slot<16;slot++){int k=first+slot;auto a="SdV3TW"+std::to_string(slot),b="SdV3TP"+std::to_string(slot);bool on=k<n&&sent[k]==cur&&sdTalkT>=start[k];UI::SetVisible(this,"sdv3",a,on);UI::SetVisible(this,"sdv3",b,on&&!sdTalkWords[k][1].empty());if(k>=n||sent[k]!=cur)continue;
    float wa=52.f*u8len(sdTalkWords[k][0]),wb=26.f*u8len(sdTalkWords[k][1]);if(x+wa+wb>1150){x=360;y+=78;}float u=std::clamp((sdTalkT-start[k])/.15f,0.f,1.f),dx=-40*(1-u);
    if(on){UI::SetText(this,"sdv3",a,sdTalkWords[k][0]);UI::SetPosition(this,"sdv3",a,{x+dx,y});UI::SetOpacity(this,"sdv3",a,u);UI::SetText(this,"sdv3",b,sdTalkWords[k][1]);UI::SetPosition(this,"sdv3",b,{x+wa+dx,y+24});UI::SetOpacity(this,"sdv3",b,u);}x+=wa+wb+18;}
   UI::SetVisible(this,UI_ID,"Next",false);if(sdTalkT>total)v4TaskQueueNext();return true;}
+ dialogueCueTick(delta);
  bool done=int(shown)>=lineLength;if(optv4::ReportRead(optionsV4,done&&dialogueFinal()))v4.read.insert(optionsV4.line.id);UI::SetVisible(this,UI_ID,"Next",done);
  bool next=pressed("Enter")||pressed("Space")||pressed("mouse0");
  if(optv4::CanSkip(optionsV4,Input::IsKeyDown("Control"))){skipTimer+=delta;if(skipTimer>.05f){skipTimer=0;next=true;}}

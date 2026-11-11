@@ -173,6 +173,7 @@ void Yumeno::v4Enter(bool restoring){
    }
    UI::SetColor(this,UI_ID,"Body",n.value("mono",false)?Color{.62f,.84f,1,1}:Color{.96f,.94f,.97f,1});
    showLine();if(n.contains("comicPage"))v4ComicComplete(true);if(!v4RenderedCg.empty())UI::SetVisible(this,UI_ID,"Portrait",false);if(v4Court){UI::SetVisible(this,UI_ID,"Portrait",false);if(!slug.empty()&&!n.value("mono",false))focusSpeaker(slug,key);}
+   dialogueCue(n.value("delivery",std::string()),restoring);
    // 한국어판 V3(Uba6XjXj8OU 2934.6~2938초) : 반론 쇼다운으로 넘어가는 상대의 반론 대사는 그 상대의 「반론」 컷인 → 초록 깨짐 뒤에 나온다
    if(v4Court&&!restoring&&!slug.empty())try{const auto& nx=storyv4::lookup(v4.graph,n.value("next",std::string()));if(nx.value("type",std::string())=="task"){auto task=nx.value("taskId",std::string());const auto& tasks=storyv4::bucketData(v4.graph.value("taskBucketPrefix",std::string("Assets/Data/v4_story/native_tasks/")),storyv4::bucket(task,64))["tasks"];
     if(tasks.contains(task)&&tasks[task]["stage"].value("kind",std::string())=="showdown"&&tasks[task]["stage"].value("showdownV4",Json::object()).value("opponent",std::string())==slug){sdCutinSlug=slug;sdStoryCut=0;sdIntroPrev=-1;UI::Show(this,"Assets/UI/ShowdownV3.hbwidget.json","sdv3");dialogVisible(false);}}}catch(const std::exception&){}
@@ -336,6 +337,7 @@ void Yumeno::v4Update(float delta,bool next,bool click){
   if(next||forward){if(documentV4.next()){pv4::Action(presentationV4,"page_turn");v4DocumentDraw();return;}if(!next)return;if(kind=="evidence")playerClaim("GetKotodama","evidence-out:"+v4.node+":"+std::to_string(v4.generation));storyv4::jump(v4,n.value("next",""));v4Enter();}return;
  }
  if(kind!="say")return;
+ dialogueCueTick(delta);
  shown=std::min(float(lineLength),shown+delta*optv4::CharactersPerSecond(optionsV4));text("Body",u8prefix(dialogueText(),int(shown)));
  UI::SetVisible(this,UI_ID,"Next",int(shown)>=lineLength);
  bool skip=optv4::CanSkip(optionsV4,Input::IsKeyDown("Control"));if(skip){skipTimer+=delta;if(skipTimer>.05f){skipTimer=0;next=true;shown=float(lineLength);}}

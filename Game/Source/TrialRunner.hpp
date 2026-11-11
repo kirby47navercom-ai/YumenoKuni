@@ -1045,8 +1045,14 @@ void Yumeno::scrumFormation(float t,float rise){ // rise<0 : t 를 따른다(0 �
  auto& pairs=stage["pairs"];
  std::vector<std::string> them,us;
  auto add=[&](std::vector<std::string>& v,const std::string& n){auto sl=slugs.count(n)?slugs.at(n):"";if(!sl.empty()&&std::find(v.begin(),v.end(),sl)==v.end())v.push_back(sl);};
- for(auto& p:pairs){add(them,p.value("them",""));add(us,p.value("us",""));}
- if(std::find(us.begin(),us.end(),"mio")==us.end())us.insert(us.begin(),"mio");
+ if(stage.contains("scrumSides")){
+  const auto& sides=stage.at("scrumSides");
+  them=sides.at("them").get<std::vector<std::string>>();
+  us=sides.at("us").get<std::vector<std::string>>();
+ }else{
+  for(auto& p:pairs){add(them,p.value("them",""));add(us,p.value("us",""));}
+  if(std::find(us.begin(),us.end(),"mio")==us.end())us.insert(us.begin(),"mio");
+ }
  float e=t<.5f?2*t*t:1-std::pow(-2*t+2,2)/2;
  if(rise<0)rise=t>0?1.f:0.f;float r=rise<.5f?2*rise*rise:1-std::pow(-2*rise+2,2)/2;
  if(auto* bd=actor("ScrumBackdrop"))Components::Set(bd,"MeshRenderer","visible",t>0); // V3 : 변형된 재판장 벽(밝은 타일·남색 원)

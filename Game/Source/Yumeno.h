@@ -270,7 +270,9 @@ private:
  std::vector<std::pair<std::string,std::string>> padRows()const;void padShowPage();void padEvidenceImageDraw();void padGiftDraw();void padGiftLeave();std::string padReportActor()const;bool padReportAllowed(int index)const;int padReportPages()const;void padReportDraw();void padSkillDraw();std::vector<hb::Json> padSkills()const;void updatePad(float delta,bool click);void armNoteDraw();
  void dialogVisible(bool visible);
  void dialogueSurface(bool trial);void dialogueName();void dialoguePortrait();void dialoguePrepare();const std::string& dialogueText()const;bool dialogueFinal()const;bool dialogueAdvance();
+ void dialogueCue(const std::string& delivery,bool replay);void dialogueCueTick(float delta);
  std::vector<dialoguetext::Page> dialoguePages;int dialoguePage=0;bool dialogueTrial=false,dialogueHero=false;
+ float dialogueCueTime=0;
  void startDebate(const hb::Json& d);
  void updateDebate(float delta);
  void resolveDebateShot(float x,float y,const std::string& evidence,bool lieShot);
