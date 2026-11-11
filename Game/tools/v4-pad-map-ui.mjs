@@ -16,7 +16,7 @@ export async function emitV4PadMapUI({repo,write,body,preparedWorld=null}){
  // Derive each map footprint from the actual runtime catalog instead of hiding
  // that mismatch or rebaking unrelated artwork.
  const groupOf=id=>id==='ferris_cabin'?'cabin':world.parkLevels&&world.instances[id].district&&!['residence','depths'].includes(world.instances[id].district)?world.instances[id].district:id==='hotel_corridor'||id.startsWith('guest_')?'hotel_upper':id==='ferris_cabin'?'cabin':id==='trial_elevator'?'court':world.instances[id].p[1]<-1?'lower':'surface';
- const physical=id=>{const i=world.instances[id],b=world.spaces[i.space].bounds,a=(i.rotation||0)*Math.PI/180;return [[b[0],b[1]],[b[2],b[1]],[b[2],b[3]],[b[0],b[3]]].map(([x,z])=>[i.p[0]+x*Math.cos(a)-z*Math.sin(a),i.p[2]+x*Math.sin(a)+z*Math.cos(a)]);};
+ const physical=id=>{const i=world.instances[id],s=world.spaces[i.space],b=s.footprintBounds||s.bounds,a=(i.rotation||0)*Math.PI/180;return [[b[0],b[1]],[b[2],b[1]],[b[2],b[3]],[b[0],b[3]]].map(([x,z])=>[i.p[0]+x*Math.cos(a)-z*Math.sin(a),i.p[2]+x*Math.sin(a)+z*Math.cos(a)]);};
  const atlas={assets:[]};
  for(const state of world.parkLevels?[...Object.keys(world.parkLevels.districts),'surface','hotel_upper','lower','court','cabin']:['surface','hotel_upper','lower','court','cabin']){
   const rooms=[];

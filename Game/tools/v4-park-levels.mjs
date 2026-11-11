@@ -62,7 +62,7 @@ export async function emitParkLevels({root,repo,write}){
  // existing V3 presentation and chapter-aware runtime visibility.
  for(const [id,d] of Object.entries(world.parkLevels.districts)){
   const rooms=Object.entries(world.instances).filter(([,i])=>i.district===id),b=world.spaces[world.instances[d.hub].space].bounds;
-  const rect=rooms.map(([,i])=>{const r=world.spaces[i.space].bounds;return `<rect x="${i.p[0]+r[0]}" y="${i.p[2]+r[1]}" width="${r[2]-r[0]}" height="${r[3]-r[1]}" fill="#282330" stroke="#ffda24" stroke-width=".35"/>`;}).join('');
+  const rect=rooms.map(([,i])=>{const s=world.spaces[i.space],r=s.footprintBounds||s.bounds;return `<rect x="${i.p[0]+r[0]}" y="${i.p[2]+r[1]}" width="${r[2]-r[0]}" height="${r[3]-r[1]}" fill="#282330" stroke="#ffda24" stroke-width=".35"/>`;}).join('');
   await tracked('Assets/Art/park_levels/map_'+id+'.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${b[0]} ${b[1]} ${b[2]-b[0]} ${b[3]-b[1]}">${rect}</svg>`);
  }
  await emitV4PadMapUI({repo,write:tracked,body:'Assets/Fonts/pretendard/Pretendard-Medium.otf',preparedWorld:world});

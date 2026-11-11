@@ -15,8 +15,23 @@ def hedge_collision(boxes, centerlines):
         segments[tuple(round(n,5) for n in bounds)]=[x,z,xx,zz]
     return [box+segments.get(tuple(round(n,5) for n in box),[]) for box in boxes]
 
+def district_collision(asset, world):
+    boxes=deepcopy(asset['collision'])
+    if asset['id']=='clockwork':
+        # park_architecture_v6.loading_gate is an open loading canopy with four
+        # piers and a central barred gate, not a solid 12 x 12 m building.
+        i=world['instances']['loading_gate'];x,y,z=i['p'];b=[-6,-6,6,6]
+        old=[x+b[0],z+b[1],x+b[2],z+b[3]]
+        matches=[c for c in boxes if c[:4]==old]
+        assert len(matches)==1,('Loading canopy footprint changed',matches)
+        boxes.remove(matches[0])
+        for px in [-4.85,4.85]:
+            for pz in [-4.4,4.4]:boxes.append([x+px-.35,z+pz-.33,x+px+.35,z+pz+.33,y,y+4.9])
+        boxes.append([x-3.95,z-.34,x+3.95,z+.34,y+.13,y+3.91])
+    return boxes
+
 def apply(world,require_art=True):
-    p=plan();groups=membership(p);districts={d['id']:d for d in p['districts']};before=deepcopy(world['instances']);specs=world['spaces'];assets={};hedges={}
+    p=plan();groups=membership(p);districts={d['id']:d for d in p['districts']};before=deepcopy(world['instances']);specs=world['spaces'];local_specs=deepcopy(specs);assets={};hedges={}
     if require_art:
         m=json.loads((O/'manifest.json').read_text(encoding='utf8'));assert m['geometryComplete'];assets={a['id']:a for a in m['assets']}
         hedges=json.loads((R/'data/park_hedge_centerlines.json').read_text(encoding='utf8'))['districts']
@@ -43,11 +58,38 @@ def apply(world,require_art=True):
             # Keep original plaza/exit local poses, but let the public plaza be a
             # genuine whole outdoor level instead of a tiny cell in a backdrop.
             s=specs[world['instances'][hub]['space']]
-            if hub=='plaza':s.update(bounds=d['bounds'],spawn=d['spawn'],walk_surfaces=[[*d['bounds'],0]])
+            s.update(bounds=d['bounds'],walk_surfaces=[[*d['bounds'],0]])
+            if hub=='plaza':s['spawn']=d['spawn']
             world['instances'][hub]['p']=[0,0,0];world['instances'][hub]['label']=d['name']
         if require_art:
-            a=assets[d['id']];s['collision']=hedge_collision(a['collision'],hedges.get(d['id'],[]));s['walk_surfaces']=deepcopy(a['walkSurfaces'])
+            a=assets[d['id']];s['collision']=hedge_collision(district_collision(a,world),hedges.get(d['id'],[]));s['walk_surfaces']=deepcopy(a['walkSurfaces'])
         s.update(district=d['id'],levelScene=d['scene'],outdoor=True)
+    # Every free-walk exterior renders the scene-owned district, not its retired
+    # small local mesh. Use that same district's physical space in local saved
+    # coordinates. Keeping old garden/platform bounds made visible pavement
+    # impassable; keeping their old boxes also blocked objects no longer drawn.
+    # Fixed-eye sets retain their own visible mesh and original collision.
+    for ident,i in world['instances'].items():
+        s=specs[i['space']]
+        if not s.get('outdoor') or s.get('mode')=='fixed_pan':continue
+        d=districts[i['district']];hub=world['instances'][d['hub']]
+        source=specs[hub['space']];ox,oy,oz=i['p']
+        if ident!=d['hub']:
+            original=deepcopy(s)
+            # Never mutate another instance that happens to share a local set.
+            if sum(v['space']==i['space'] for v in world['instances'].values())>1:
+                i['space']=ident;s=deepcopy(original);specs[ident]=s;s['id']=ident
+            s['footprintBounds']=deepcopy(original['bounds'])
+            s['bounds']=[source['bounds'][0]-ox,source['bounds'][1]-oz,source['bounds'][2]-ox,source['bounds'][3]-oz]
+            s['floor']=source.get('floor',0)-oy
+            s['walk_surfaces']=[[a-ox,b-oz,c-ox,d-oz,h-oy] for a,b,c,d,h in source['walk_surfaces']]
+            s['collision']=[]
+            for box in source['collision']:
+                c=box[:];c[:4]=[c[0]-ox,c[1]-oz,c[2]-ox,c[3]-oz]
+                if len(c)>=6:c[4:6]=[c[4]-oy,c[5]-oy]
+                if len(c)==10:c[6:]=[c[6]-ox,c[7]-oz,c[8]-ox,c[9]-oz]
+                s['collision'].append(c)
+        s['walkingOrigin']=[ox,oy,oz]
     # Existing room-to-room door anchors remain intact, including case-critical
     # paired boundaries. Chapter gates apply to traversal, not historical shots.
     kept=[]
@@ -59,7 +101,7 @@ def apply(world,require_art=True):
         if (edge['a']=='plaza'and edge['b']in replaced)or(edge['b']=='plaza'and edge['a']in replaced):continue
         # Public travel between themed parks goes through their actual gate.
         # Retain authored restricted service/depth links and the common hotel.
-        if ga!=gb and 'depths'not in [ga,gb]and 'perimeter'not in [ga,gb]and set([ga,gb])!={'fairytale','residence'}:continue
+        if ga!=gb and edge.get('kind')!='paired_boundary' and 'depths'not in [ga,gb]and 'perimeter'not in [ga,gb]and set([ga,gb])!={'fairytale','residence'}:continue
         kept.append(edge)
     world['connections']=kept
     links=[]
@@ -70,7 +112,7 @@ def apply(world,require_art=True):
         for ident in rooms:
             if ident==hub:continue
             if ident in ['theatre_preparation','mirror_workbay','screening_room','inspection_hall_changed','ferris_cabin']:continue
-            i=world['instances'][ident];s=specs[i['space']];x,y,z=i['p'];front=s['bounds'][3]
+            i=world['instances'][ident];s=local_specs[before[ident]['space']];x,y,z=i['p'];front=s['bounds'][3]
             links.append({'id':'park_entry:'+hub+':'+ident,'a':hub,'b':ident,'a_p':[x,1.2,z+front+1.1],'b_p':[0,1.2,front-.15],'kind':'park_door','minimumChapter':d['chapter']})
     gates=[('carnival',[59,1.2,1]),('mirrors',[64,1.2,-42]),('clockwork',[-64,1.2,-24]),('starlight',[24,1.2,64])]
     for ident,anchor in gates:
@@ -96,7 +138,7 @@ def apply(world,require_art=True):
             hubspec=specs[world['instances'][d['hub']]['space']];b=hubspec['bounds'];parts=[]
             for i in world['instances'].values():
                 if i['district']!=ident:continue
-                q=specs[i['space']]['bounds'];parts.append(f'<rect x="{i["p"][0]+q[0]}" y="{i["p"][2]+q[1]}" width="{q[2]-q[0]}" height="{q[3]-q[1]}" fill="#282330" stroke="#ffda24" stroke-width=".35"/>')
+                room=specs[i['space']];q=room.get('footprintBounds',room['bounds']);parts.append(f'<rect x="{i["p"][0]+q[0]}" y="{i["p"][2]+q[1]}" width="{q[2]-q[0]}" height="{q[3]-q[1]}" fill="#282330" stroke="#ffda24" stroke-width=".35"/>')
             file=O/'maps'/('map_'+ident+'.svg');file.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{b[0]} {b[1]} {b[2]-b[0]} {b[3]-b[1]}">'+''.join(parts)+'</svg>',encoding='utf8');copies.append({'from':file.relative_to(R).as_posix(),'to':'Assets/Art/park_levels/'+file.name})
     return {'copies':copies,'world':world}
 if __name__=='__main__':

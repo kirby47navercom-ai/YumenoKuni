@@ -13,6 +13,9 @@ LINKS = [
     ('hotel_indoor_garden', 'garden_rest_area', [3.6, 1.2, 2.1], [3.6, 1.2, 2.1]),
     ('hotel_corridor', 'hotel_rest_lounge', [1.88, 1.2, 3], [0, 1.2, 5.5]),
     ('hotel_corridor', 'hotel_washroom', [1.88, 1.2, -4], [0, 1.2, 4]),
+    # Existing east corridor doorway / the dedicated set's authored main entry.
+    # The investigation already visits this set; it also needs a way back out.
+    ('lower_corridor', 'core_external_inspection', [1.78, 1.2, -4], [-1.5, 1.2, 4.8]),
 ]
 
 

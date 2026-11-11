@@ -91,7 +91,7 @@ struct HedgeFootprint {
 inline bool solid(const State& s,float x,float z,float radius=RADIUS){
  if(!s.active)return false;auto& d=s.spec();auto& b=d["bounds"];
  if(x<b[0].get<float>()+radius||x>b[2].get<float>()-radius||z<b[1].get<float>()+radius||z>b[3].get<float>()-radius)return true;
- if(s.id=="plaza"&&s.data.contains("parkLevels"))for(const auto& gate:s.data["connections"])if(gate.value("kind",std::string())=="park_gate"&&gate.value("minimumChapter",0)>s.accessChapter){auto p=point(gate["a_p"]);if(std::abs(x-p.x)<3.5f+radius&&std::abs(z-p.z)<.25f+radius)return true;}
+ if(d.contains("walkingOrigin")&&d.value("district",std::string())=="fairytale")for(const auto& gate:s.data["connections"])if(gate.value("kind",std::string())=="park_gate"&&gate.value("minimumChapter",0)>s.accessChapter){auto p=point(gate["a_p"]),origin=point(d["walkingOrigin"]);if(std::abs(x+origin.x-p.x)<3.5f+radius&&std::abs(z+origin.z-p.z)<.25f+radius)return true;}
  float floor=s.pose.y-d.value("eye_height",1.6f);
  for(auto& c:d["collision"])if((c.size()<6||(c[4].get<float>()<floor+1.6f&&c[5].get<float>()>floor+.34f))&&x>c[0].get<float>()-radius&&x<c[2].get<float>()+radius&&z>c[1].get<float>()-radius&&z<c[3].get<float>()+radius&&(c.size()!=10||HedgeFootprint(c).contains(x,z,radius)))return true;
  return false;

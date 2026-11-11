@@ -6,7 +6,7 @@ R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'tools'))
 from v4_lowpoly_glb import read,array
 from v4_dedicated_spaces import apply_world
 from v4_freetime_paths import apply as ft
-from v4_park_levels import apply
+from v4_park_levels import apply,district_collision
 O=R/'art/space_v4/park_levels_v1';W=R/'Game/Saved/park-levels-20261104'
 base=json.loads((R/'art/space_v4/runtime_v1/world.json').read_text(encoding='utf8'));apply_world(base);ft(base);w=json.loads(json.dumps(base));apply(w)
 m=json.loads((O/'manifest.json').read_text(encoding='utf8'));rows=[];errors=[]
@@ -35,7 +35,7 @@ for a in m['assets']:
             area=np.linalg.norm(np.cross(pos[ids[:,1]]-pos[ids[:,0]],pos[ids[:,2]]-pos[ids[:,0]]),axis=1);assert np.all(area>1e-12),(a['id'],'Degenerate geometry')
             tri+=len(ids);normal_maps+=int('normalTexture'in j['materials'][p['material']])
     assert normal_maps>0;assert tri==a['triangles'];d=w['parkLevels']['districts'][a['id']];hub=d['hub'];s=w['spaces'][w['instances'][hub]['space']];bounds=s['bounds'];boxes=s['collision'];step=.5
-    assert [c[:6] for c in boxes]==a['collision'],('Unexpected collision change',a['id'])
+    assert [c[:6] for c in boxes]==district_collision(a,w),('Unexpected collision change',a['id'])
     for c in boxes:
         if len(c)==10:
             assert blocks_player(c,(c[6]+c[8])/2,(c[7]+c[9])/2),('Walk-through hedge',a['id'],c)
