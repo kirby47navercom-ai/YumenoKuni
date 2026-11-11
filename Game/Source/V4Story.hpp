@@ -18,7 +18,7 @@ int Yumeno::titleMenuHit(float x,float y)const{
  static const auto layout=Data::Get("Assets/Data/v4_story/title_chapter_layout.json");for(int i=4;i>=0;i--){const auto& r=layout["mainRects"][i];if(x>=r[0].get<float>()&&x<=r[0].get<float>()+r[2].get<float>()&&y>=r[1].get<float>()&&y<=r[1].get<float>()+r[3].get<float>())return i;}return -1;
 }
 void Yumeno::updateTitle(bool click){
- Vec2 mouse;Input::GetMousePositionForCanvas({1280,720},mouse);int old=titleChoice;bool moved=mouse.x!=titleMouseX||mouse.y!=titleMouseY;titleMouseX=mouse.x;titleMouseY=mouse.y;
+ Vec2 mouse;Input::GetCenteredMousePositionForCanvas({1280,720},mouse);int old=titleChoice;bool moved=mouse.x!=titleMouseX||mouse.y!=titleMouseY;titleMouseX=mouse.x;titleMouseY=mouse.y;
  int hit=titleMenuHit(mouse.x,mouse.y);if(moved&&hit>=0)titleChoice=hit;
  if(pressed("w")||pressed("ArrowUp"))titleChoice=(titleChoice+4)%5;if(pressed("s")||pressed("ArrowDown"))titleChoice=(titleChoice+1)%5;
  if(old!=titleChoice){sfx("ui_select");titleMenu(true);}int action=-1;if(pressed("o"))action=3;else if(pressed("c"))action=1;else if(enterNow||pressed("Space"))action=titleChoice;else if(click&&hit>=0)action=hit;
@@ -324,7 +324,7 @@ void Yumeno::v4Update(float delta,bool next,bool click){
  if(kind=="investigate"||v4FreeWorld()){v4WorldUpdate(delta,click);return;}
  if(kind=="menu"){
   if(pressed("g")){v4GiftOpen();return;}if(pressed("c")){v4GiftOpen(true);return;}
-  int picked=-1,old=menuHover;Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);
+  int picked=-1,old=menuHover;Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);
   if(pressed("w")||pressed("ArrowUp"))menuHover=(menuHover+menuCount-1)%menuCount;
   if(pressed("s")||pressed("ArrowDown"))menuHover=(menuHover+1)%menuCount;
   if(menuHover!=old)pv4::Action(presentationV4,"ui_focus");
@@ -368,7 +368,7 @@ void Yumeno::v4LogRender(){
 bool Yumeno::v4LogUpdate(bool click){
  if(!v4LogOpen)return false;if(pressed("Backspace")||pressed("mouse1")||pressed("l")||pressed("Escape")){v4Log(false);return true;}
  int old=v4LogCursor,total=int(v4.log.size());if(pressed("w")||pressed("ArrowUp"))--v4LogCursor;if(pressed("s")||pressed("ArrowDown"))++v4LogCursor;if(pressed("q"))v4LogCursor-=4;if(pressed("e"))v4LogCursor+=4;v4LogCursor=std::clamp(v4LogCursor,0,std::max(0,total-1));
- if(click){Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);const auto pages=Data::Get("Assets/Data/v4_story/system_pages_layout.json");for(int i=0;i<4;i++)if(v4LogRow+i<total&&padsystem::hit(m,pages["backlog"]["rows"][i]["body"]))v4LogCursor=v4LogRow+i;}
+ if(click){Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);const auto pages=Data::Get("Assets/Data/v4_story/system_pages_layout.json");for(int i=0;i<4;i++)if(v4LogRow+i<total&&padsystem::hit(m,pages["backlog"]["rows"][i]["body"]))v4LogCursor=v4LogRow+i;}
  if(v4LogCursor<v4LogRow)v4LogRow=v4LogCursor;if(v4LogCursor>=v4LogRow+4)v4LogRow=v4LogCursor-3;if(old!=v4LogCursor)v4LogRender();return true;
 }
 hb::Json Yumeno::v4Snapshot(){

@@ -120,6 +120,7 @@ if(process.argv.includes('--armament-ui-only')){execFileSync('python',['-X','utf
 if(process.argv.includes('--trial-input-motion-only')){const bank=await emitTrialInputMotionUI({repo,write,read:async file=>JSON.parse(await fs.readFile(path.join(root,file),'utf8'))});await finalizeVoteTVUI({repo,write,read:async file=>JSON.parse(await fs.readFile(path.join(root,file),'utf8'))});console.log(JSON.stringify({trialInputMotionOnly:true,widgets:bank.widgets,storyChanged:false}));process.exit(0);}
 if(process.argv.includes('--gpu-huds-only')){await emitNativeHuds();
 await emitNonstopSourceHud({repo,root,write});console.log(JSON.stringify({gpuHudsOnly:true,storyChanged:false}));process.exit(0);}
+if(process.argv.includes('--options-ui-only')){console.log(JSON.stringify(await emitOptionsV4({repo,write})));process.exit(0);}
 if(process.argv.includes('--revised-campaign-runtime-only')){
  await emitTrialDebateWidgets();
  console.log(JSON.stringify({revisedCampaign:await publishRevisedCampaign({repo,write,runtimeSource:root})}));process.exit(0);

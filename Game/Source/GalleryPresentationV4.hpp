@@ -104,7 +104,7 @@ void Yumeno::galleryViewerClose(){
 }
 void Yumeno::galleryUpdate(float delta){
  galleryReadTick();if(gallerySaving){int result=galleryCommit();if(result==0)return;gallerySaving=false;if(result<0){gallerySavePhase=0;gallerySaveJob={};toast("저장하지 못했어요. 다시 시도해 주세요");galleryConfirmDraw();return;}galleryConfirm=false;UI::Remove(this,"galleryconfirm");galleryClose();return;}if(!galleryArmed){if(!Input::IsKeyDown("Enter")&&!Input::IsKeyDown("mouse0"))galleryArmed=true;return;}
- bool click=pressed("mouse0"),enter=pressed("Enter"),back=pressed("Escape")||pressed("Backspace")||pressed("mouse1");Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/gallery_layout.json");
+ bool click=pressed("mouse0"),enter=pressed("Enter"),back=pressed("Escape")||pressed("Backspace")||pressed("mouse1");Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/gallery_layout.json");
  auto hit=[&](const Json& r){return m.x>=r[0].get<float>()&&m.x<r[0].get<float>()+r[2].get<float>()&&m.y>=r[1].get<float>()&&m.y<r[1].get<float>()+r[3].get<float>();};
  if(galleryConfirm){
   if(back){galleryConfirm=false;UI::Remove(this,"galleryconfirm");return;}int old=galleryConfirmChoice;if(pressed("a")||pressed("ArrowLeft"))galleryConfirmChoice=0;if(pressed("d")||pressed("ArrowRight"))galleryConfirmChoice=1;

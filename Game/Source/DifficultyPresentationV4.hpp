@@ -19,7 +19,7 @@ void Yumeno::difficultyUpdate(){
  if(pressed("w")||pressed("ArrowUp"))difficultyRow=(difficultyRow+2)%3;if(pressed("s")||pressed("ArrowDown"))difficultyRow=(difficultyRow+1)%3;
  if(pressed("a")||pressed("ArrowLeft"))difficultyv4::change(difficultyV4,difficultyRow,-1);if(pressed("d")||pressed("ArrowRight"))difficultyv4::change(difficultyV4,difficultyRow,1);
  bool confirm=pressed("Enter")||pressed("Space");
- if(pressed("mouse0")){Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/difficulty_layout.json");auto hit=[&](const Json& r){return m.x>=r[0].get<float>()&&m.x<r[0].get<float>()+r[2].get<float>()&&m.y>=r[1].get<float>()&&m.y<r[1].get<float>()+r[3].get<float>();};
+ if(pressed("mouse0")){Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/difficulty_layout.json");auto hit=[&](const Json& r){return m.x>=r[0].get<float>()&&m.x<r[0].get<float>()+r[2].get<float>()&&m.y>=r[1].get<float>()&&m.y<r[1].get<float>()+r[3].get<float>();};
   // The source Start sign is drawn last and overlaps the action row's AABB.
   if(hit(layout["rows"][2])){difficultyRow=2;confirm=true;}else{for(int r=0;r<2;r++)if(hit(layout["rows"][r]))difficultyRow=r;for(int r=0;r<2;r++)for(int d=0;d<3;d++)if(hit(layout["values"][r][d])){difficultyRow=r;(r?difficultyV4.action:difficultyV4.logic)=d;}}
  }

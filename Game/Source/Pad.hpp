@@ -37,7 +37,7 @@ void Yumeno::padToggle(bool playCloseSound){
  beforePad=mode;UI::SetVisible(this,"trialvitalsv4","root",false);if(beforePad==Mode::Trial&&v4TaskActive){v4CancelInput();v4TaskRoot(false);}mode=Mode::Pad;padPageAt=-1;padRow=0;padSystemView=0;
  if(comicShown)UI::SetVisible(this,"comicv4","root",false);
  for(int layer=0;layer<4;layer++)pv4::HideSequence(presentationV4,layer);
- Vec2 mouse;Input::GetMousePositionForCanvas({1280,720},mouse);padMouseX=mouse.x;padMouseY=mouse.y;sfx("ui_pad");
+ Vec2 mouse;Input::GetCenteredMousePositionForCanvas({1280,720},mouse);padMouseX=mouse.x;padMouseY=mouse.y;sfx("ui_pad");
  for(auto id:{"PdFloor","PdTint","PdHead","PdFace","PdTitle","PdBubble","PdDesc","PdBig","PdSide","PdCoins","PdName","PdSchool","PdHint"})pvis(id,true);
  UI::SetTexture(this,padui::ID,"PdFace","Assets/Art/pad/face_lappy.webp");
  for(int i=0;i<6;i++){pvis("PdIcon"+std::to_string(i),true);UI::SetTexture(this,padui::ID,"PdIcon"+std::to_string(i),std::string("Assets/Art/ui/v3/pad_home/icon_")+padui::ICONS[i].key+".svg");}
@@ -182,7 +182,7 @@ void Yumeno::padShowPage(){
 }
 void Yumeno::updatePad(float delta,bool click){
  if(padPageAt==1&&padHintRow>=0){padHintTime+=std::max(0.f,delta);UI::SetOpacity(this,padui::ID,"PdRowP"+std::to_string(padHintRow),evidencehintv4::opacity(padHintTime));}
- Vec2 m{0,0};Input::GetMousePositionForCanvas({1280,720},m);
+ Vec2 m{0,0};Input::GetCenteredMousePositionForCanvas({1280,720},m);
  if(padPageAt==0){padMapUpdate(delta,click);return;}
  if(padPageAt==5){padSystemUpdate(delta,click);return;}
  if(padPageAt==4&&padRuleTimer>0){padRulesUpdate(delta,click);return;}

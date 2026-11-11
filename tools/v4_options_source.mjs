@@ -49,13 +49,13 @@ export async function emitSourceOptions({repo,write}){
  }
  for(const [id,p,bg]of[['OptionsScrollBase','i_scroll_base/d1','#000000'],['OptionsScrollTrack','i_scroll_yohaku_base/d1','#ffffff44'],['OptionsScroll','p_scroll/d1','#ffffff']])add('Panel',id,leaf(p).rect_1280,{background:bg});
  add('Text','Description',c.main_geometry.notice_text_rect,{wrap:true});
- add('Text','ControlsShadow',[41.5,677.5,1200,30],{fontSize:18,align:'right',color:'#000000',text:'휠 / W/S 항목 · A/D 변경 · Enter 결정 · Backspace 돌아가기'});
- add('Text','Controls',[40,676,1200,30],{fontSize:18,align:'right',text:'휠 / W/S 항목 · A/D 변경 · Enter 결정 · Backspace 돌아가기'});
- add('Panel','DisplayConfirm',[340,240,600,220],{background:'#090716fa',visible:false},'root');
+ add('Text','ControlsShadow',[41.5,677.5,1200,30],{fontSize:18,align:'right',color:'#000000',text:'휠 / 방향키 항목 · 좌우 변경 · Enter 결정 · Esc / Backspace 돌아가기'});
+ add('Text','Controls',[40,676,1200,30],{fontSize:18,align:'right',text:'휠 / 방향키 항목 · 좌우 변경 · Enter 결정 · Esc / Backspace 돌아가기'});
+ add('Panel','DisplayConfirm',[340,240,600,220],{background:'#090716fa',visible:false},'OptionsRoot');
  add('Text','DisplayQuestion',[30,25,540,90],{fontSize:28,wrap:true,align:'center'},'DisplayConfirm');
  for(const [id,x,label]of [['DisplayKeep',40,'유지'],['DisplayRevert',320,'되돌리기']]){add('Image',id,[x,130,240,50],{texture:'Assets/Art/ui/v3/choice_off.svg',imageFit:'fill'},'DisplayConfirm');add('Text',id+'Label',[x,135,240,40],{text:label,fontSize:26,align:'center'},'DisplayConfirm');}
  await applyMapOptionsSource({repo,write,w,screen:'options'});
  if(!validWidgetAsset(w))throw Error('Invalid source options widget');await write('Assets/UI/OptionsV4.hbwidget.json',w);
- await write('Assets/Data/options_layout.json',{visible:8,total:14,kinds:[0,1,2,3,4,5,6,7,8,9,'frameRate','windowMode','resolution',12],rows,scroll:leaf('p_scroll/d1').rect_1280,sourceControl:c.key_first_row_geometry.control_frame,scope:'Eight source row positions/RGBA/provided Korean labels. Source PC kinds0..9,12; original numeric defaults and separate consumers. Own voice files/packs unavailable so preview/language reload not reconstructed; PC bindings, reveal update time base and disk policy are own adaptations. Original complete material/animation identity unclaimed.'});
+ await write('Assets/Data/options_layout.json',{visible:8,total:15,kinds:[0,1,2,3,4,5,6,7,8,9,'frameRate','windowMode','resolution','bindings',12],rows,scroll:leaf('p_scroll/d1').rect_1280,sourceControl:c.key_first_row_geometry.control_frame,scope:'Eight source row positions/RGBA/provided Korean labels. Source PC kinds0..9,12; original numeric defaults and separate consumers. Own voice files/packs unavailable so preview/language reload not reconstructed; PC bindings, reveal update time base and disk policy are own adaptations. Original complete material/animation identity unclaimed.'});
  return w.nodes.length;
 }

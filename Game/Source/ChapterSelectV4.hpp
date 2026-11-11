@@ -27,7 +27,7 @@ void Yumeno::chapterSelectOptions(){
 bool Yumeno::chapterSelectUpdate(float delta){
  if(!chapterSelectOn)return false;if(!chapterSelectArmed){if(!Input::IsKeyDown("Enter")&&!Input::IsKeyDown("mouse0"))chapterSelectArmed=true;return true;}
  bool back=pressed("Backspace")||pressed("Escape")||pressed("mouse1");if(back){if(chapterSelectDepth){chapterSelectDepth=0;chapterSelectRow=0;chapterSelectDraw();}else chapterSelectClose();return true;}
- Vec2 mouse;Input::GetMousePositionForCanvas({1280,720},mouse);bool confirm=pressed("Enter");int old=chapterSelectDepth?chapterSelectRow:chapterSelectChapter;
+ Vec2 mouse;Input::GetCenteredMousePositionForCanvas({1280,720},mouse);bool confirm=pressed("Enter");int old=chapterSelectDepth?chapterSelectRow:chapterSelectChapter;
  if(chapterSelectDepth==0){if(pressed("a")||pressed("ArrowLeft"))chapterSelectChapter=(chapterSelectChapter+6)%7;if(pressed("d")||pressed("ArrowRight"))chapterSelectChapter=(chapterSelectChapter+1)%7;
   if(pressed("mouse0")){int hit=chapterSelectHit(mouse.x,mouse.y);if(hit>=0){chapterSelectChapter=hit;confirm=true;}}
   if(old!=chapterSelectChapter){sfx("ui_select");chapterSelectDraw();}if(confirm){chapterSelectOptions();if(chapterSelectTypes.empty()){sfx("ui_cancel");return true;}chapterSelectDepth=1;chapterSelectRow=0;chapterSelectArmed=false;chapterSelectDraw();}return true;

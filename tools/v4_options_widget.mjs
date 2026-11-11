@@ -7,5 +7,5 @@ export async function emitOptionsV4({repo,copy,write}){
  if(!validAudioMixer(mixer))throw Error('V4 mixer contract invalid');
  await write('Assets/Audio/MX_Yumeno.hbaudiomixer.json',mixer);
  const nodes=await emitSourceOptions({repo,write});
- return {widget:'Assets/UI/OptionsV4.hbwidget.json',mixer:'Assets/Audio/MX_Yumeno.hbaudiomixer.json',nodes,rows:8,totalSettings:14};
+ return {widget:'Assets/UI/OptionsV4.hbwidget.json',mixer:'Assets/Audio/MX_Yumeno.hbaudiomixer.json',nodes,rows:8,totalSettings:15};
 }

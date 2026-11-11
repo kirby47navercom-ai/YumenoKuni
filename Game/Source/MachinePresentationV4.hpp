@@ -33,7 +33,7 @@ void Yumeno::machineUpdate(float delta){
  if(!machineActive)return;if(!machineArmed){if(!Input::IsKeyDown("Enter")&&!Input::IsKeyDown("mouse0")&&!Input::IsKeyDown("z"))machineArmed=true;return;}
  if(machineHelp){if(pressed("F3")||pressed("Escape")||pressed("Backspace")||pressed("Enter")||pressed("mouse0")){machineHelp=false;machineArmed=false;machineDraw();}return;}
  using P=machinev4::Phase;static std::mt19937 rng{std::random_device{}()};auto random=[&](){return rng();};
- bool click=pressed("mouse0"),confirm=pressed("Enter")||pressed("z");Vec2 mouse;Input::GetMousePositionForCanvas({1280,720},mouse);
+ bool click=pressed("mouse0"),confirm=pressed("Enter")||pressed("z");Vec2 mouse;Input::GetCenteredMousePositionForCanvas({1280,720},mouse);
  if(machineV4.phase==P::Select){
   if(pressed("Escape")||pressed("Backspace")||pressed("x")||pressed("mouse1")){machineClose();return;}
   static const auto layout=Data::Get("Assets/Data/v4_story/machine_layout.json");auto hit=[&](const char* key){const auto& r=layout.at(key);return mouse.x>=r[0].get<float>()&&mouse.x<r[0].get<float>()+r[2].get<float>()&&mouse.y>=r[1].get<float>()&&mouse.y<r[1].get<float>()+r[3].get<float>();};

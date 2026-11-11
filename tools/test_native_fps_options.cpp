@@ -13,5 +13,5 @@ int main(){
  for(int mode:{0,1,2}){v.windowMode=mode;v.width=1600;v.height=900;assert(optv4::Decode(optv4::Encode(v),d)&&d.windowMode==mode&&d.width==1600&&d.height==900);}
  j=optv4::Encode(v);j.erase("windowMode");j.erase("width");j.erase("height");assert(optv4::Decode(j,d)&&d.windowMode==0&&d.width==1280&&d.height==720);
  j["windowMode"]=99;j["width"]=-1;j["height"]=99999;assert(optv4::Decode(j,d)&&d.windowMode==2&&d.width==1280&&d.height==720);
- assert(optv4::Adjust(s,13,1)&&s.values.frameRate==120);assert(optv4::Rows==14);std::cout<<"30/60/120 FPS encode/decode, legacy migration, invalid fallback, cycling, session apply, state preservation and defaults PASS\n";
+ assert(optv4::Adjust(s,14,1)&&s.values.frameRate==120);assert(optv4::Rows==15);std::cout<<"30/60/120 FPS encode/decode, legacy migration, invalid fallback, cycling, session apply, state preservation and defaults PASS\n";
 }

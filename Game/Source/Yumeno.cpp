@@ -27,6 +27,7 @@ std::string baseName(const std::string& speaker){auto p=speaker.find('(');return
 }
 
 void Yumeno::sampleInput(){
+ keybindv4::enabled=!optionsV4.open;
  keyEdges.clear();mouseWheelV4=Input::GetAxis("MouseWheelAxis");
  for(auto key:{"mouse0","mouse1","mouse2","F1","F3","z","x","r","Enter","Space","Tab","Backspace","Escape","Control","Shift","ArrowUp","ArrowDown","ArrowLeft","ArrowRight","a","d","w","s","q","f","e","g","m","c","t","y","l","o","1","2","3","4","5","6","7","8","9"}){
   bool now=Input::IsKeyDown(key);keyEdges[key]=now&&!held[key];held[key]=now;
@@ -540,7 +541,6 @@ void Yumeno::resolveDebateShot(float x,float y,const std::string& evidence,bool 
 }
 
 void Yumeno::Update(float delta){
- Input::centeredCanvas=!optionsV4.open&&(mode==Mode::Pad||mode==Mode::Gallery||mode==Mode::Title||mode==Mode::Menu);
  trialImpactCooldown=std::max(0.f,trialImpactCooldown-std::max(0.f,delta));
  gpunoisehudv4::Frame noiseFrame;gpupanichudv4::Frame panicFrame;gputrialhudv4::Frame gpuFrame;
  struct LoadingCover {Yumeno* owner;~LoadingCover(){if(scenesv4::waiting()&&!scenesv4::loadingShown)try{UI::Show(owner,"Assets/UI/LoadingV4.hbwidget.json","loadingv4");scenesv4::loadingShown=true;}catch(const std::exception& e){owner->lastError=std::string("Loading cover: ")+e.what();}}} loadingCover{this};
@@ -594,15 +594,21 @@ void Yumeno::Update(float delta){
  playerTick(delta);
  pv4::Tick(presentationV4,delta,mode!=Mode::Pad&&!optionsV4.open&&!v4LogOpen);
   if(optionsV4.open){
-   Vec2 m,physicalMouse;Input::GetMousePositionForCanvas({1280,720},m);Input::GetMousePosition(physicalMouse);exworld::refreshViewport();m.x-=(exworld::viewport.width/exworld::viewport.fit-1280.f)*.5f;m.y-=(exworld::viewport.height/exworld::viewport.fit-720.f)*.5f;optv4::Edges e;e.wheel=mouseWheelV4;
+   Vec2 m,physicalMouse;Input::GetCenteredMousePositionForCanvas({1280,720},m);Input::GetMousePosition(physicalMouse);optv4::Edges e;e.wheel=mouseWheelV4;auto physical=Input::PollPhysical();e.binding=physical.pressed;e.anyPhysicalDown=physical.held;
    e.up=pressed("w")||pressed("ArrowUp");e.down=pressed("s")||pressed("ArrowDown");e.left=pressed("a")||pressed("ArrowLeft");e.right=pressed("d")||pressed("ArrowRight");
    e.confirm=pressed("Enter");e.cancel=pressed("Escape")||pressed("Backspace")||pressed("mouse1");e.click=pressed("mouse0");
    // Canvas coordinates change after a resize even when the pointer stays still.
    e.mouseMoved=physicalMouse.x!=optionsMouseX||physicalMouse.y!=optionsMouseY;e.mouseX=m.x;e.mouseY=m.y;optionsMouseX=physicalMouse.x;optionsMouseY=physicalMouse.y;optv4::Handle(optionsV4,e);
+   if(!optionsV4.open){keybindv4::enabled=true;keyEdges.clear();for(auto& [key,down]:held)down=Input::IsKeyDown(key);}
    if(!optionsV4.open&&mode==Mode::Pad&&padPageAt==5)padSystemDraw();
-   if(!optionsV4.open&&mode==Mode::Title)titleMenu(true);
+   if(!optionsV4.open&&mode==Mode::Title&&!difficultyOn&&!chapterSelectOn)titleMenu(true);
    if(!optionsV4.open&&mode==Mode::Trial){if(v4.active){v4CancelInput();if(v4TaskActive){v4TaskRoot(!v4QueueActive);if(playingDebate&&!v4QueueActive)debateHud(true);if(v4QueueAfter=="success"&&!v4ComicPage.empty())v4ComicComplete(true);}else if(v4.current().contains("comicPage"))v4ComicComplete(true);}else{v4TaskRoot(true);if(playingDebate)debateHud(true);}}
    return;
+  }
+  if(pressed("Escape")&&mode!=Mode::Pad){
+   if(mode==Mode::Trial){if(v4.active)v4CancelInput();v4TaskRoot(false);}
+   if(mode==Mode::Title)titleMenu(false);
+   optv4::Open(optionsV4);return;
   }
   if(v4LogOpen){v4LogUpdate(pressed("mouse0"));return;}
   if(mode==Mode::Machine){machineUpdate(delta);return;}
@@ -619,7 +625,7 @@ void Yumeno::Update(float delta){
   }
  bool click=pressed("mouse0");enterNow=pressed("Enter");bool next=enterNow|pressed("Space")|click; // 프레임 시작에 수집한 입력을 각 모드에서 공유한다.
  if(mode==Mode::Menu&&menuVisualUpdate(delta))return;
- if((pressed("Tab")||(pressed("Escape")&&mode==Mode::Explore))&&v4GiftMode==0&&(mode==Mode::Pad||flowOn||v4.active)&&(trialEntryTime<0||mode==Mode::Pad)&&(mode==Mode::Story||mode==Mode::Pad||mode==Mode::Menu||mode==Mode::Grid||mode==Mode::Explore||mode==Mode::Map)){
+ if(pressed("Tab")&&v4GiftMode==0&&(mode==Mode::Pad||flowOn||v4.active)&&(trialEntryTime<0||mode==Mode::Pad)&&(mode==Mode::Story||mode==Mode::Pad||mode==Mode::Menu||mode==Mode::Grid||mode==Mode::Explore||mode==Mode::Map)){
   padToggle();
   return;
  }

@@ -113,7 +113,7 @@ void Yumeno::padSystemDraw(){
 void Yumeno::padSystemUpdate(float delta,bool click){
  if(padSystemLog){v4LogUpdate(click);return;}
  if(padStorageBusy){if((padStorageDelay-=delta)>0)return;int result=padManualSaveStep();if(result==0)return;padStorageBusy=false;padSavePhase=0;padSaveSnapshot=Json();padSaveWriter={};padSystemDraw();toast(result>0?"저장했어요":"저장하지 못했어요. 다시 시도해 주세요");return;}
- Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);bool back=pressed("Backspace")||pressed("mouse1")||pressed("Escape");
+ Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);bool back=pressed("Backspace")||pressed("mouse1")||pressed("Escape");
  if(back){if(padSystemView==0){padPageAt=-1;padHidePage();padMenu();}else{padSystemView=padSystemView==3?2:padSystemView==6?1:0;padSystemDraw();}sfx("ui_cancel");return;}
  static const auto layout=Data::Get("Assets/Data/v4_story/system_layout.json"),pages=Data::Get("Assets/Data/v4_story/system_pages_layout.json");
  bool select=enterNow;

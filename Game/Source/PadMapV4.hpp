@@ -110,7 +110,7 @@ void Yumeno::padMapTravel(){
  else if(room>=0){mode=Mode::Explore;enterRoom(room);}
 }
 void Yumeno::padMapUpdate(float delta,bool click){
- (void)delta;Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/map_layout.json");
+ (void)delta;Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/map_layout.json");
  if(pressed("Backspace")||pressed("mouse1")||pressed("Escape")||pressed("x")||pressed("r")){padPageAt=-1;padHidePage();padMenu();sfx("ui_cancel");return;}
  bool redraw=false;
  int nextMode=padMapMode;if(pressed("Space"))nextMode=1-padMapMode;

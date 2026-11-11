@@ -95,7 +95,7 @@ bool Yumeno::padSkillConfirmUpdate(bool click){
  if(!padSkillConfirmArmed){if(!Input::IsKeyDown("Enter")&&!Input::IsKeyDown("mouse0"))padSkillConfirmArmed=true;return true;}
  if(pressed("Backspace")||pressed("mouse1")||pressed("Escape")){close();sfx("ui_cancel");return true;}
  int before=padSkillConfirm;if(pressed("a")||pressed("ArrowLeft"))padSkillConfirm=0;if(pressed("d")||pressed("ArrowRight"))padSkillConfirm=1;bool select=pressed("Enter");
- if(click){Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/system_pages_layout.json");for(int i=0;i<2;i++){const auto& r=layout["confirm"][i==0?"yes":"no"];if(m.x>=r[0].get<float>()&&m.x<r[0].get<float>()+r[2].get<float>()&&m.y>=r[1].get<float>()&&m.y<r[1].get<float>()+r[3].get<float>()){padSkillConfirm=i;select=true;}}}
+ if(click){Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);static const auto layout=Data::Get("Assets/Data/v4_story/system_pages_layout.json");for(int i=0;i<2;i++){const auto& r=layout["confirm"][i==0?"yes":"no"];if(m.x>=r[0].get<float>()&&m.x<r[0].get<float>()+r[2].get<float>()&&m.y>=r[1].get<float>()&&m.y<r[1].get<float>()+r[3].get<float>()){padSkillConfirm=i;select=true;}}}
  if(before!=padSkillConfirm){padSkillConfirmDraw();sfx("ui_select");}if(!select)return true;
  if(padSkillConfirm==0){auto result=growthv4::Purchase(growthV4,padSkillPurchase,true,v4.active&&!v4Court&&!(machineActive&&machineFromGallery)&&v4.current().value("type",std::string())!="investigate");sfx(result.changed?"ui_confirm":"ui_cancel");if(!result.changed)toast(result.reason=="insufficient-fp"?"FP가 부족해요":"지금은 구입할 수 없어요");}else sfx("ui_cancel");close();return true;
 }

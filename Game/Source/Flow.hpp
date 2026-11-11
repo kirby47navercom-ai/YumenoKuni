@@ -497,7 +497,7 @@ void Yumeno::showResult(){
 }
 
 void Yumeno::updateFlow(float delta,bool next,bool click){
- Vec2 m{0,0};Input::GetMousePositionForCanvas({1280,720},m);
+ Vec2 m{0,0};Input::CanvasMouse({1280,720},m,mode==Mode::Menu);
  if(mode==Mode::Card){if(next){resultPending=false;nextBeat();}return;}
  if(mode==Mode::Credits){if(next){saveFlow();toTitle();}return;}
  if(mode==Mode::Menu){

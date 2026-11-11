@@ -162,7 +162,7 @@ void Yumeno::v4WorldUpdate(float delta,bool click){
  bool free=v4FreeWorld();
  if(mode==Mode::Menu){
   if(pressed("Backspace")||pressed("mouse1")){if(free){v4FreeActor.clear();v4FreeChoice=-1;}pv4::Action(presentationV4,"ui_cancel");hideMenu();mode=Mode::Explore;return;}
-  int pick=-1,old=menuHover;Vec2 m;exworld::canvasMouse(m);
+  int pick=-1,old=menuHover;Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);
   if(menuCount>0){if(pressed("w")||pressed("ArrowUp"))menuHover=(menuHover+menuCount-1)%menuCount;if(pressed("s")||pressed("ArrowDown"))menuHover=(menuHover+1)%menuCount;}
   if(old!=menuHover)pv4::Action(presentationV4,"ui_focus");
   for(int i=0;i<menuCount;i++)if(pressed(std::to_string(i+1)))pick=i;

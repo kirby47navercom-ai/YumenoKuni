@@ -3,8 +3,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
-import {MixerState,dbGain,validAudioMixer} from '../../engineCreate/prototype/audio-mixer.js';
-import {validWidgetAsset} from '../../engineCreate/prototype/ui-assets.js';
+import {MixerState,dbGain,validAudioMixer} from '../Game/engineCreate/prototype/audio-mixer.js';
+import {validWidgetAsset} from '../Game/engineCreate/prototype/ui-assets.js';
 import {emitOptionsV4} from './v4_options_widget.mjs';
 const repo=path.dirname(path.dirname(fileURLToPath(import.meta.url))),files=new Map(),copied=[];
 const report=await emitOptionsV4({repo,
@@ -31,5 +31,5 @@ state.set('Music',20*Math.log10(.5));assert.ok(Math.abs(dbGain(state.get('Music'
 assert.equal(dbGain(state.get('SFX')),1);assert.equal(dbGain(state.get('UI')),1);
 state.set('Music',-80);assert.equal(dbGain(state.get('Music')),0);
 state.set('Master',-80);assert.equal(dbGain(state.get('Master')),0);
-const contract=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/options_ui_contract.json'),'utf8'));for(let i=0;i<8;i++){const node=widget.nodes.find(n=>n.id==='Label'+i),r=[...contract.key_first_row_geometry.label_text];r[1]+=i*contract.coordinate_contract.row_gap_1280;node.slot.offset.forEach((v,j)=>assert(Math.abs(v-r[j])<.002));assert.equal(node.properties.fontSize,30);}assert.equal([...files.keys()].filter(k=>k.includes('/v3row/')&&k.endsWith('.svg')).length,58);assert.equal(report.totalSettings,14);
+const contract=JSON.parse(await fs.readFile(path.join(repo,'docs/analysis/v3_rebuild/options_ui_contract.json'),'utf8'));for(let i=0;i<8;i++){const node=widget.nodes.find(n=>n.id==='Label'+i),r=[...contract.key_first_row_geometry.label_text];r[1]+=i*contract.coordinate_contract.row_gap_1280;node.slot.offset.forEach((v,j)=>assert(Math.abs(v-r[j])<.002));assert.equal(node.properties.fontSize,30);}assert.equal([...files.keys()].filter(k=>k.includes('/v3row/')&&k.endsWith('.svg')).length,58);assert.equal(report.totalSettings,15);
 console.log(JSON.stringify({status:'pass',gameFilesWritten:0,audioPlayed:false,mixerMathOnly:true,copiedAssets:copied.length,...report}));

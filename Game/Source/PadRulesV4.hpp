@@ -37,7 +37,7 @@ bool Yumeno::padRulesUpdate(float delta,bool click){
   UI::SetPosition(this,"padrules",figure,{r[0].get<float>(),r[1].get<float>()+displacement});
   UI::SetOpacity(this,"padrules",figure,std::abs(phase*2-1));return true;
  }
- Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);int direction=pressed("w")?-1:pressed("s")?1:0;
+ Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);int direction=pressed("w")?-1:pressed("s")?1:0;
  if(click&&m.x>=618.6667f&&m.x<=662.f){if(padRow>0&&m.y>=498.6667f&&m.y<552.f)direction=-1;if(m.y>=(padRow==0?620.6667f:629.3333f)&&m.y<=682.6667f)direction=1;}
  int next=std::clamp(padRow+direction,0,int(padRuleIds().size()));if(next==padRow)return false;
  padRuleTarget=next;padRuleDirection=direction;padRuleSwapped=false;padRuleTimer=layout.value("transitionSeconds",.24f);sfx("ui_select");return true;

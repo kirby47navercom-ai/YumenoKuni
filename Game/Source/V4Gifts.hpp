@@ -76,7 +76,7 @@ bool Yumeno::v4GiftUpdate(float delta,bool next,bool click){
  if(pressed("Backspace")||pressed("mouse1")){auto found=std::find(v4GiftChoices.begin(),v4GiftChoices.end(),"back");v4GiftPick(int(found-v4GiftChoices.begin()));return true;}
  if(menuCount<=0)return true;int old=menuHover;if(pressed("w"))menuHover=(menuHover+menuCount-1)%menuCount;if(pressed("s"))menuHover=(menuHover+1)%menuCount;
  if(old!=menuHover)pv4::Action(presentationV4,"ui_focus");
- int pick=enterNow?menuHover:-1;if(click){Vec2 m;Input::GetMousePositionForCanvas({1280,720},m);pick=menuAt(m.x,m.y);}if(pick>=0)menuAccept(pick,3);return true;
+ int pick=enterNow?menuHover:-1;if(click){Vec2 m;Input::GetCenteredMousePositionForCanvas({1280,720},m);pick=menuAt(m.x,m.y);}if(pick>=0)menuAccept(pick,3);return true;
 }
 void Yumeno::DebugV4GiftFixture(){
  v4Start("2");v4.flags["fte:20:complete"]=true;v4ObserveGrowth();gifts["G14"]=2;gifts["G01"]=1;gifts["G02"]=0;giftKnown={"G01","G02","G14"};giftNew={"G14"};coins=20;
