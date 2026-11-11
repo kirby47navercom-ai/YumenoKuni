@@ -79,6 +79,7 @@ import {applyExplorationMaterialLight} from './v4-exploration-material-light.mjs
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const repo=path.dirname(root);
+const finishWorldSignage=()=>execFileSync('python',['-X','utf8',path.join(repo,'tools/finish_v4_world_signage.py'),root],{encoding:'utf8',windowsHide:true});
 let resultPlaneDefinitions=[];
 const write=async(name,data)=>{
  const file=path.join(root,name),temporary=file+'.'+randomUUID()+'.tmp';await fs.mkdir(path.dirname(file),{recursive:true});
@@ -123,6 +124,7 @@ if(process.argv.includes('--revised-campaign-runtime-only')){
  await emitTrialDebateWidgets();
  console.log(JSON.stringify({revisedCampaign:await publishRevisedCampaign({repo,write,runtimeSource:root})}));process.exit(0);
 }
+if(process.argv.includes('--world-signage-only')){console.log(finishWorldSignage().trim());process.exit(0);}
 if(process.argv.includes('--park-levels-only')){console.log(JSON.stringify(await emitParkLevels({root,repo,write})));process.exit(0);}
 if(process.argv.includes('--mine-objects-only')){console.log(JSON.stringify(await publishMineObjectsOnly({root,repo,write})));process.exit(0);}
 if(process.argv.includes('--nonstop-source-hud-only')){console.log(JSON.stringify(await emitNonstopSourceHud({repo,root,write})));process.exit(0);}
@@ -880,6 +882,7 @@ await write('Assets/UI/TitleShellV4.hbwidget.json',titleSource);
 await emitCenteredSourceCanvases({root,write});
 // Publishing validates generated fonts and actor art even on the first build.
 await publishV4Data({repo,copy,write});
+console.log(finishWorldSignage().trim());
 const scrumTasks=JSON.parse(await fs.readFile(path.join(repo,'data/v4_story/native_tasks.json'),'utf8')).tasks;
 await emitScrumClaims({tasks:Object.values(scrumTasks),source:root,write});
 // 패키지 줄이기 : PNG → WebP, 글꼴 서브셋 (tools/optimize_assets.py)
