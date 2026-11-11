@@ -190,6 +190,7 @@ void Yumeno::v4TaskQueueNext(){
    std::vector<std::string> w;auto flush=[&]{if(w.empty())return;int t=sdTail(w);std::string a,b;for(size_t k=0;k<w.size();k++)(int(k)>=int(w.size())-t?b:a)+=w[k];if(a.empty()){a=b;b.clear();}sdTalkWords.push_back({a,b});w.clear();};
    for(auto& g:debate::glyphs(line)){if(g==" "){flush();continue;}w.push_back(g);if(g=="."||g==","||g=="?"||g=="!")flush();}flush();}
   if(!sdTalkOn)dialogueCue(row.value("delivery",std::string()),false);
+  if(speakerSeat>=0&&row.contains("dialogueShot")){shotKind=row.at("dialogueShot").get<int>();shotTime=0;}
   if(stageKind=="climax"&&v4QueueAfter=="comic"&&v4ComicReplay)v4ComicReplayDrawV3(true);
   if(stageKind=="climax"&&v4QueueAfter=="success"&&!v4ComicPage.empty())v4ComicComplete(true);
   auto readId="task:"+v4Task.value("taskId",std::string())+":"+v4QueueAfter+":"+row.value("id",readSignature(line));

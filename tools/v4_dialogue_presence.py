@@ -64,7 +64,7 @@ def continue_live_replies(graphs,bindings,assets):
         key=(file,location,line,n.get('pov'),json.dumps([n.get('scene'),n.get('sceneVariants'),n.get('shot')],sort_keys=True))
         if key in cache:return cache[key]
         result=None
-        if file and location and not location.startswith('T')and not re.match(r'^1[1-6]c',file)and not n.get('pov'):
+        if file and location and not location.startswith('T')and not re.match(r'^0[1-6]-[TR]',location)and not re.match(r'^1[1-6]c',file)and not n.get('pov'):
             scene=bindings.get('sections',{}).get(file+':'+location,n.get('scene',{}))
             for row in bindings.get('sceneRanges',[]):
                 if row['source']['file']==file and row['startLine']<=line<row['endLineExclusive']:scene=row

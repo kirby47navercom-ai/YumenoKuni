@@ -25,7 +25,7 @@ RULES=[
  ('C05','explicit-anger',r'(화를 낸다|분노를 터뜨린다|이를 악문다)',None),
  ('C04','explicit-surprise',r'(놀라서.{0,8}물러|눈을 크게 뜬다|놀란 얼굴로)',None),
  ('C09','visible-nervous-sweat',r'(식은땀을 흘린다|진땀을 흘린다)',None),
- ('C03','explicit-big-laugh',r'(크게 웃는다|소리 내어 웃는다|배를 잡고 웃는다)',None),
+ ('C03','explicit-big-laugh',r'(크게 웃는다|소리 내(?:어)? 웃는다|배를 잡고 웃는다)',None),
  ('C02','explicit-small-smile',r'(미소를 짓는다|미소 짓는다|작게 웃는다|짧게 웃는다|조금 웃는다|웃는다|웃으며)',None),
  ('C08','hand-on-chin',r'턱을.{0,4}(괴고|괴며|짚고)|턱에.{0,4}손을.{0,4}(댄다|얹는다)',None),
  ('C13','actual-side-glance',r'(곁눈질한다|눈을 가늘게 뜬다|의심스러운 눈으로)',None),
@@ -34,7 +34,7 @@ RULES=[
 ]
 # Reject production/counterfactual/history clauses rather than turning their
 # vocabulary into a present facial expression.
-UNSAFE=re.compile(r'(경로|선택|경우|이면|라면|때에는|때는|했을|했었다|했었|어제|그제|지난|이전|회상|떠올|기억|사진 속|그림 속|녹음|재생|원고|대본|분기|조건|미열람|지문|연기|흉내|처럼|듯이|하려다|려다가|려던|웃는 척|웃으려|비웃|억지|않|못|아니|없|멈춘|그친|그만|굳어|사라진|5년|몇 년 전|그때|옛날|어릴|기억 속|당시)')
+UNSAFE=re.compile(r'(경로|선택|경우|이면|라면|때에는|때는|했을|했었다|했었|어제|그제|지난|이전|회상|떠올|기억|사진 속|그림 속|녹음|재생|원고|대본|분기|조건|미열람|지문|연기|흉내|처럼|듯이|하려다|려다가|려던|웃는 척|웃으려|비웃|억지|않|못|아니|없|멈춘|그친|그만|굳어|사라진|뻔|안\s*웃|5년|몇 년 전|그때|옛날|어릴|기억 속|당시)')
 NAMES=sorted(SPEAKERS,key=len,reverse=True)
 SUBJECT=re.compile('('+'|'.join(map(re.escape,NAMES))+r')(?:가|는|은|이)(?=\s|[가-힣])')
 BLOCKED={('koto','T02'):'The corrected T02 retains one held clipboard; it cannot depict both authored hands braced on a podium.',('ken','C02'):'The selected sprite holds the pendulum; smile alone cannot prove a presently-held prop.',('haruka','C14'):'Selected sprite has camera put away; a sigh alone cannot prove its current storage state.'}

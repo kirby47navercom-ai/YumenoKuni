@@ -13,7 +13,7 @@ g=graph([node('a','ken','b',pose='ken_C05'),node('b','mio','c'),node('c','mio','
 before=copy.deepcopy(g);result=continue_live_replies(g,bindings,{'ken','ken_C05','rin'})
 assert result=={'b':'ken_C05','c':'ken_C05','d':'ken_C05'}
 assert g['g']['nodes']['b']['actor']=='mio'
-for mode in ('stage','choice','conflict','newscene','cg','mono','recording','private','trial','pool'):
+for mode in ('stage','choice','conflict','newscene','cg','mono','recording','private','trial','v5-trial','v5-verdict','pool'):
     g=graph([node('a','ken','b'),node('b','mio')])
     if mode=='stage':g['g']['nodes']['a'].update(type='stage')
     if mode=='choice':g['g']['nodes']['a'].pop('next');g['g']['nodes']['a'].update(type='menu',options=[{'to':'b'}])
@@ -25,6 +25,8 @@ for mode in ('stage','choice','conflict','newscene','cg','mono','recording','pri
     if mode=='private':g['g']['nodes']['b']['pov']='rei'
     if mode=='trial':
         for n in g['g']['nodes'].values():n['source']['location']='T-01'
+    if mode in ('v5-trial','v5-verdict'):
+        for n in g['g']['nodes'].values():n['source']['location']='03-T01'if mode=='v5-trial'else'03-R00'
     if mode=='pool':g['g']['nodes']['b'].update(type='menu',selectionRole='freetime')
     assert not continue_live_replies(g,bindings,{'ken','rin'}),mode
 g=graph([node('a','ken','b'),node('b','mio')]);g['other']=copy.deepcopy(g['g'])

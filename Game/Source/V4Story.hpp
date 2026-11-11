@@ -169,11 +169,12 @@ void Yumeno::v4Enter(bool restoring){
     if(courtFigures.is_null()||courtFigures.empty())courtFigures=Data::Get("Assets/Data/court.json")["figures"];
     if(courtFigures.contains(key))portrait=courtFigures[key].value("texture",std::string());
     else if(courtFigures.contains(appearance))portrait=courtFigures[appearance].value("texture",std::string());
-    else if(slug=="lappy")portrait="Assets/Art/v4/lappy.webp";
+    else if(displayed=="lappy")portrait="Assets/Art/v4/lappy.webp";
    }
    UI::SetColor(this,UI_ID,"Body",n.value("mono",false)?Color{.62f,.84f,1,1}:Color{.96f,.94f,.97f,1});
    showLine();if(n.contains("comicPage"))v4ComicComplete(true);if(!v4RenderedCg.empty())UI::SetVisible(this,UI_ID,"Portrait",false);if(v4Court){UI::SetVisible(this,UI_ID,"Portrait",false);if(!slug.empty()&&!n.value("mono",false))focusSpeaker(slug,key);}
    dialogueCue(n.value("delivery",std::string()),restoring);
+   if(v4Court&&speakerSeat>=0&&n.contains("dialogueShot")){shotKind=n.at("dialogueShot").get<int>();shotTime=0;}
    // 한국어판 V3(Uba6XjXj8OU 2934.6~2938초) : 반론 쇼다운으로 넘어가는 상대의 반론 대사는 그 상대의 「반론」 컷인 → 초록 깨짐 뒤에 나온다
    if(v4Court&&!restoring&&!slug.empty())try{const auto& nx=storyv4::lookup(v4.graph,n.value("next",std::string()));if(nx.value("type",std::string())=="task"){auto task=nx.value("taskId",std::string());const auto& tasks=storyv4::bucketData(v4.graph.value("taskBucketPrefix",std::string("Assets/Data/v4_story/native_tasks/")),storyv4::bucket(task,64))["tasks"];
     if(tasks.contains(task)&&tasks[task]["stage"].value("kind",std::string())=="showdown"&&tasks[task]["stage"].value("showdownV4",Json::object()).value("opponent",std::string())==slug){sdCutinSlug=slug;sdStoryCut=0;sdIntroPrev=-1;UI::Show(this,"Assets/UI/ShowdownV3.hbwidget.json","sdv3");dialogVisible(false);}}}catch(const std::exception&){}

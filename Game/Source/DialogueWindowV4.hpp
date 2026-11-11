@@ -60,9 +60,10 @@ void Yumeno::dialoguePrepare(){
  lineLength=u8len(dialogueText());shown=0;blink=0;nextShown=false;UI::SetVisible(this,UI_ID,"Next",false);text("Body","");
 }
 void Yumeno::dialogueCue(const std::string& delivery,bool replay){
- if(!dialogueTrial||delivery.empty())return;
+ if(delivery.empty())return;
  if(delivery=="resolve")UI::SetColor(this,UI_ID,"Body",Color{.68f,.92f,1,1});
  else if(delivery=="challenge")UI::SetColor(this,UI_ID,"Body",Color{1,.91f,.72f,1});
+ else if(delivery=="quiet")UI::SetColor(this,UI_ID,"Body",Color{.84f,.85f,.9f,1});
  else if(delivery=="interrupt"){
   UI::SetColor(this,UI_ID,"Body",Color{1,.77f,.70f,1});
   if(!replay&&!optionsV4.values.reducedEffects){dialogueCueTime=.28f;dialogueCueTick(0);}
@@ -71,7 +72,8 @@ void Yumeno::dialogueCue(const std::string& delivery,bool replay){
 void Yumeno::dialogueCueTick(float delta){
  if(dialogueCueTime<=0)return;
  dialogueCueTime=optionsV4.values.reducedEffects?0:std::max(0.f,dialogueCueTime-delta);
- const auto& body=dialogueui::layout()["trial"]["body"];
+ const auto& layout=dialogueui::layout();
+ const auto& body=dialogueTrial?layout["trial"]["body"]:layout["body"];
  const float x=dialogueCueTime==0?0:5.f*(dialogueCueTime/.28f)*std::cos((.28f-dialogueCueTime)*75.f);
  UI::SetPosition(this,UI_ID,"Body",{body[0].get<float>()-640+x,body[1].get<float>()-720});
 }

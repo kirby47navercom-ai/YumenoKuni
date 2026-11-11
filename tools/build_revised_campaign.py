@@ -16,6 +16,7 @@ from revised_life import life_route
 from revised_investigation import checked_investigation, examine_document_bundles, first_investigation_close, first_photo_investigation, supplemental_inspection
 from revised_voice_polish import speech_address
 from revised_trial_bridges import apply_trial_bridges
+from revised_dialogue_direction import apply_dialogue_direction
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -8055,6 +8056,7 @@ def main():
     chapters = {'P': CampaignGraph().compile_prologue(scenes), '1': trial, '2': second, '3': third,
                 '4': fourth, '5': fifth, '6': sixth}
     apply_trial_bridges(chapters, tasks)
+    apply_dialogue_direction(chapters, tasks, scenes)
     free_entries = {
         '1': ('rev:01-F02:visit', 'hotel_lobby', {'meet': ('sora', [1.35, 0, 2.2])}),
         '2': ('rev:02:free-after-breakfast', 'dining_room',

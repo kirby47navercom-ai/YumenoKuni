@@ -13,6 +13,8 @@ def main():
  a=build_acting();assert len(a['assets'])==384
  assert direction_choice('(린이 웃는다.)','린','rin')[0]=='C02'
  assert direction_choice('(린이 웃지 않는다.)','린','rin') is None
+ assert direction_choice('(타이가가 웃을 뻔하다가 안 웃는다.)','타이가','taiga') is None
+ assert direction_choice('(린은 소리 내 웃는다.)','린','rin')[0]=='C03'
  assert direction_choice('(미오가 웃는다.)','린','rin') is None
  assert direction_choice('(A를 선택한 경로에서 린이 웃는다.)','린','rin') is None
  assert direction_choice('(린은 어제 웃었던 일을 말한다.)','린','rin') is None
