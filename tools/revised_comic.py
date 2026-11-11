@@ -173,8 +173,8 @@ def chapter_two_comic_stage(scene):
         line, text = narration[index]
         parts = [text]
         if index == 16:
-            before, after = text.split('그것 때문에', 1)
-            parts = [before.strip(), '그것 때문에'+after]
+            before, after = text.split('그랬다고', 1)
+            parts = [before.strip(), '그랬다고'+after]
         return [{'type':'say','id':f'{ident}:{index}:recap:{part}','actor':'mio','speaker':'미오',
                  'text':words,'source':scene.source(line)} for part,words in enumerate(parts)]
 

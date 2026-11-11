@@ -218,7 +218,7 @@ bool Yumeno::v4TaskQueueUpdate(float delta){
    if(on){UI::SetText(this,"sdv3",a,sdTalkWords[k][0]);UI::SetPosition(this,"sdv3",a,{x+dx,y});UI::SetOpacity(this,"sdv3",a,u);UI::SetText(this,"sdv3",b,sdTalkWords[k][1]);UI::SetPosition(this,"sdv3",b,{x+wa+dx,y+24});UI::SetOpacity(this,"sdv3",b,u);}x+=wa+wb+18;}
   UI::SetVisible(this,UI_ID,"Next",false);if(sdTalkT>total)v4TaskQueueNext();return true;}
  dialogueCueTick(delta);
- bool done=int(shown)>=lineLength;if(optv4::ReportRead(optionsV4,done&&dialogueFinal()))v4.read.insert(optionsV4.line.id);UI::SetVisible(this,UI_ID,"Next",done);
+ bool done=int(shown)>=lineLength;if(optv4::ReportRead(optionsV4,done&&dialogueFinal()))v4.read.insert(optionsV4.line.id);UI::SetVisible(this,UI_ID,"Next",done&&!dialogueComicCaption);
  bool next=pressed("Enter")||pressed("Space")||pressed("mouse0");
  if(optv4::CanSkip(optionsV4,Input::IsKeyDown("Control"))){skipTimer+=delta;if(skipTimer>.05f){skipTimer=0;next=true;}}
  if(optv4::AutoAdvance(optionsV4,delta,done))next=true;

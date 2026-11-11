@@ -56,8 +56,16 @@ void Yumeno::dialoguePrepare(){
  dialogueSurface(mode==Mode::Trial||v4Court||inScript);dialogueName();const auto& l=dialogueui::layout();
  dialoguePortrait();
  float size=dialogueTrial?l["trial"]["font"].get<float>():l["font"].get<float>(),width=dialogueTrial?l["trial"]["body"][2].get<float>()-8:l["ownWrap"]["width"].get<float>();int rows=dialogueTrial?2:3;
+ dialogueComicCaption=v4.active&&(
+  (v4QueueActive&&stageKind=="climax"&&
+   ((v4QueueAfter=="comic"&&v4ComicReplay)||(v4QueueAfter=="success"&&!v4ComicPage.empty())))||
+  (!v4QueueActive&&v4.current().contains("comicPage")));
+ if(dialogueComicCaption){
+  // ReplayCaption in v4-comic-ui.mjs has its own 950 px / three-row box.
+  size=26.f;width=950.f;rows=3;
+ }
  dialoguePages=dialoguetext::pages(line,width,rows,[&](const std::string& g){return flowchoice::width(g)*size/26.6666667f;},true);dialoguePage=0;
- lineLength=u8len(dialogueText());shown=0;blink=0;nextShown=false;UI::SetVisible(this,UI_ID,"Next",false);text("Body","");
+ lineLength=u8len(dialogueText());shown=dialogueComicCaption?float(lineLength):0.f;blink=0;nextShown=false;UI::SetVisible(this,UI_ID,"Next",false);text("Body","");
 }
 void Yumeno::dialogueCue(const std::string& delivery,bool replay){
  if(delivery.empty())return;
@@ -84,6 +92,7 @@ bool Yumeno::dialogueAdvance(){
  if(!Input::IsKeyDown("Control"))sfx("v3se_003"); // V3 BTN confirmation, after the text finishes.
  if(!dialogueFinal()){
   ++dialoguePage;lineLength=u8len(dialogueText());shown=0;blink=0;nextShown=false;UI::SetVisible(this,UI_ID,"Next",false);text("Body","");
+  if(dialogueComicCaption){shown=float(lineLength);v4ComicCaption(true);}
   optionsV4.line.fullSeconds=0;optionsV4.line.fullSeen=false;return false;
  }return true;
 }

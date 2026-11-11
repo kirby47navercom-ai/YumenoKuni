@@ -340,7 +340,7 @@ void Yumeno::v4Update(float delta,bool next,bool click){
  if(kind!="say")return;
  dialogueCueTick(delta);
  shown=std::min(float(lineLength),shown+delta*optv4::CharactersPerSecond(optionsV4));text("Body",u8prefix(dialogueText(),int(shown)));
- UI::SetVisible(this,UI_ID,"Next",int(shown)>=lineLength);
+ UI::SetVisible(this,UI_ID,"Next",!dialogueComicCaption&&int(shown)>=lineLength);
  bool skip=optv4::CanSkip(optionsV4,Input::IsKeyDown("Control"));if(skip){skipTimer+=delta;if(skipTimer>.05f){skipTimer=0;next=true;shown=float(lineLength);}}
  if(optv4::ReportRead(optionsV4,int(shown)>=lineLength&&dialogueFinal())){v4.read.insert(v4.node);v4CaptureRecords(n);}
  if(optv4::AutoAdvance(optionsV4,delta,int(shown)>=lineLength))next=true;

@@ -55,17 +55,23 @@ void Yumeno::v4ComicUnlockDrawV3(){
  UI::SetVisible(this,"comicv4","V3SelectedLocked",false);v4ComicTileV3("V3Unlock",row->at("tile"),!v4ComicExpanded);
  const auto& pose=row->at("ownImage");auto r=pose.at("rect").get<std::array<float,4>>();auto id="CandidateI"+std::to_string(index%comicv4ui::stockPageSize);UI::SetTexture(this,"comicv4",id,v4ComicStock[index].at("image").get<std::string>());UI::SetPosition(this,"comicv4",id,{r[0],r[1]});UI::SetSize(this,"comicv4",id,{r[2],r[3]});UI::SetRotation(this,"comicv4",id,pose.value("rotation",0.f));UI::SetOpacity(this,"comicv4",id,pose.value("opacity",1.f));UI::SetVisible(this,"comicv4",id,!v4ComicExpanded);UI::SetText(this,"comicv4","Caption",v4ComicStock[index].value("label",std::string()));
 }
+void Yumeno::v4ComicCaption(bool visible){
+ for(auto id:{"ReplayCaption","ReplayCaptionShadow"}){
+  UI::SetText(this,"comicv4",id,visible?dialogueText():std::string());
+  UI::SetVisible(this,"comicv4",id,visible);
+ }
+}
 void Yumeno::v4ComicReplayDrawV3(bool dialogue){
  v4ComicClear();UI::SetVisible(this,"comicv4","root",true);UI::SetVisible(this,"comicv4","ReplayShade",true);
  const auto& frame=v4ComicBankV3.at("book").at("replay").at(v4ComicReplayAt);v4ComicTileV3("ReplayImage",frame.at("image"),true);dialogVisible(false);
  // The original replays a page's panels in order and waits for narration;
  // a correct piece is never presented as a separate invented ACT slideshow.
- for(auto id:{"ReplayCaption","ReplayCaptionShadow"}){UI::SetText(this,"comicv4",id,dialogue?line:std::string());UI::SetVisible(this,"comicv4",id,dialogue);}
+ v4ComicCaption(dialogue);
 }
 void Yumeno::v4ComicComplete(bool dialogue){
  if(!comicShown){UI::Show(this,"Assets/UI/ComicV4.hbwidget.json","comicv4");comicShown=true;}if(v4ComicBankV3.empty())v4ComicBankV3=Data::Get("Assets/Data/climax_ui_v3.json");if(v4ComicReplay){v4ComicReplayDrawV3(dialogue);return;}if(!dialogue&&stage.contains("slots")){v4ComicDraw();return;}v4ComicClear();UI::SetVisible(this,"comicv4","root",true);
  if(!v4ComicBankV3.contains("book")){auto id="T"+v4.graph.value("chapter",std::string())+"-MG-01";v4ComicBankV3["book"]=Data::Get(v4ComicBankV3.at("bookFiles").at(id).get<std::string>());}
- UI::SetVisible(this,"comicv4","ReplayShade",true);v4ComicTileV3("CompletePage",v4ComicBankV3.at("book").at("pages").back().at("complete"),true);if(dialogue){for(auto id:{"ReplayCaption","ReplayCaptionShadow"}){UI::SetText(this,"comicv4",id,line);UI::SetVisible(this,"comicv4",id,true);}dialogVisible(false);}
+ UI::SetVisible(this,"comicv4","ReplayShade",true);v4ComicTileV3("CompletePage",v4ComicBankV3.at("book").at("pages").back().at("complete"),true);if(dialogue){v4ComicCaption(true);dialogVisible(false);}
 }
 void Yumeno::v4ComicDraw(){
  v4ComicClear();UI::SetVisible(this,"comicv4","root",true);const auto& bank=v4ComicBankV3;for(auto id:{"Shade","Caption","CaptionPlate","V3Koma"})UI::SetVisible(this,"comicv4",id,true);

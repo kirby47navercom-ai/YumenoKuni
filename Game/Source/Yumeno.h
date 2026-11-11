@@ -160,7 +160,7 @@ private:
  hb::Json v4ComicStockAnimationV4;float v4ComicStockAnimationTimeV4=-1;
  bool v4ComicReview=false,comicShown=false,v4ComicZoom=false,v4ComicExpanded=false,v4ComicReplay=false;int v4ComicReplayAt=0;float v4ComicReplayTime=0;int v4ComicSpread=0,v4ComicCursor=0,v4ComicPlacing=-1;float v4ComicPlaceTicks=0;std::string v4ComicPage;
  void v4ComicDraw();hb::Json v4ComicAuto()const;
- void v4ComicClear();void v4ComicComplete(bool dialogue=false);bool v4ComicUpdate(float delta,bool click);void v4ComicHighlight();
+ void v4ComicClear();void v4ComicComplete(bool dialogue=false);void v4ComicCaption(bool visible);bool v4ComicUpdate(float delta,bool click);void v4ComicHighlight();
  showdownv4::State showdownV4;float showdownTicks=0,showdownMouseX=0,showdownMouseY=0;int showdownShown=-1;
  void v4ShowdownExtra();void v4ShowdownBlades();void v4ShowdownStart();bool v4ShowdownUpdate(float delta,bool click,bool released);void v4ShowdownDraw();std::vector<showdownv4::Glyph> v4ShowdownGlyphs()const;hb::Json v4ShowdownAuto()const;
  reactionv4::State exploreReactions;std::string reactionWorld;int reactionAt=-1;float reactionTime=0;bool reactionCommitted=false;void exploreReactionPlace(bool targets);bool exploreReactionUpdate(float delta,int over);
@@ -271,7 +271,7 @@ private:
  void dialogVisible(bool visible);
  void dialogueSurface(bool trial);void dialogueName();void dialoguePortrait();void dialoguePrepare();const std::string& dialogueText()const;bool dialogueFinal()const;bool dialogueAdvance();
  void dialogueCue(const std::string& delivery,bool replay);void dialogueCueTick(float delta);
- std::vector<dialoguetext::Page> dialoguePages;int dialoguePage=0;bool dialogueTrial=false,dialogueHero=false;
+ std::vector<dialoguetext::Page> dialoguePages;int dialoguePage=0;bool dialogueTrial=false,dialogueHero=false,dialogueComicCaption=false;
  float dialogueCueTime=0;
  void startDebate(const hb::Json& d);
  void updateDebate(float delta);
