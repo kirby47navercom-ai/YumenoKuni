@@ -16,6 +16,7 @@ from revised_life import life_route
 from revised_investigation import checked_investigation, examine_document_bundles, first_investigation_close, first_photo_investigation, supplemental_inspection
 from revised_voice_polish import speech_address
 from revised_trial_bridges import apply_trial_bridges
+from revised_choice_dialogue import apply_choice_dialogue
 from revised_dialogue_direction import apply_dialogue_direction
 
 
@@ -181,7 +182,7 @@ HEADING_BRANCHES = {
     'P07d': ('문 앞에 두고 갈 말', '다들 방으로 갈 때'),
     'P08': ('불을 끄기 전에 치운 것', '공통'),
 }
-NARRATION = {'P01': ('미오가 눈을 뜬 곳은',), 'P08': ('(창 밖을 한 번 더 보려다가',)}
+NARRATION = {'P01': ('눈을 뜨자 손등 아래로',), 'P08': ('(창 밖을 한 번 더 보려다가',)}
 INTRODUCTIONS = {
     'haruka': '하루카. 아사노 하루카.', 'sho': '저는 쇼입니다.',
     'kaede': '카에데가 선을 지우던 코토를 본다. 펜을 받아 들고 자기 이름을 쓴다.',
@@ -8053,9 +8054,11 @@ def main():
     sixth, more_tasks = chapter_six_entry(scenes,sill_objects,motion_objects)
     tasks.update(more_tasks)
     apply_authored_vpoints(scenes,tasks)
-    chapters = {'P': CampaignGraph().compile_prologue(scenes), '1': trial, '2': second, '3': third,
+    prologue = CampaignGraph()
+    chapters = {'P': prologue.compile_prologue(scenes), '1': trial, '2': second, '3': third,
                 '4': fourth, '5': fifth, '6': sixth}
     apply_trial_bridges(chapters, tasks)
+    apply_choice_dialogue(chapters, introductions=prologue.introductions)
     apply_dialogue_direction(chapters, tasks, scenes)
     free_entries = {
         '1': ('rev:01-F02:visit', 'hotel_lobby', {'meet': ('sora', [1.35, 0, 2.2])}),
