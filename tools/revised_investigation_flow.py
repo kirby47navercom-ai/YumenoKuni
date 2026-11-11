@@ -66,3 +66,44 @@ def apply_investigation_flow(chapters):
     nodes[arrival] = {'id': arrival, 'type': 'branch', 'default': court,
                       'cases': [{'flag': boarded, 'equals': True, 'to': returned}]}
     nodes[returned] = {'id': returned, 'type': 'return'}
+
+    for chapter in ('2', '3', '4', '5', '6'):
+        connect_trial_summons(chapters[chapter]['nodes'], chapter)
+
+
+def connect_trial_summons(nodes, chapter):
+    prefix = f'rev:0{chapter}:'
+    # Chapter 3 has a separate earlier investigation. It must resume the story.
+    hub = nodes[prefix + ('second-investigation' if chapter == '3' else 'investigate')]
+    court = prefix + 'court-entry'
+    announcement = prefix + 'investigation-ended'
+    gather = prefix + 'trial-gather'
+    board = prefix + 'trial-gather:board'
+    finish = prefix + 'trial-gather:return'
+    spot = f'0{chapter}-trial-call'
+
+    review = hub['next']
+    for node in nodes.values():
+        if node['id'] != hub['id'] and node.get('next') == court:
+            node['next'] = gather
+    hub.update(next=announcement, finishOnRequiredCards=True)
+
+    nodes[announcement] = {
+        'id': announcement, 'type': 'say', 'actor': 'lappy', 'speaker': '래피',
+        'text': '수사 시간이 끝났어요! 모두 재판 엘리베이터로 모여 주세요.',
+        'presentation': {'actions': ['broadcast_on'], 'music': {'operation': 'stop', 'fade_seconds': .3}},
+        'next': prefix + 'trial-summons-off',
+    }
+    off = prefix + 'trial-summons-off'
+    nodes[off] = {'id': off, 'type': 'stage', 'presentation': {'actions': ['broadcast_off']},
+                  'next': gather if review == court else review}
+    nodes[gather] = {
+        'id': gather, 'type': 'investigate', 'objectiveRole': 'trial-gather', 'keepCurrentRoom': True,
+        'space_id': 'hotel_lobby', 'investigationMusic': 'bgm_tense', 'requiredSpotIds': [spot],
+        'spots': [{'id': spot, 'label': '재판 엘리베이터 탑승', 'neutralLabel': '재판 엘리베이터 탑승',
+                   'space_id': 'trial_elevator', 'world_pos': [0, .9, 0], 'entry': board}],
+        'next': court,
+    }
+    nodes[board] = {'id': board, 'type': 'say', 'actor': 'mio', 'speaker': '미오', 'mono': True,
+                    'text': '엘리베이터에 올라탔다. 문이 닫히고 바닥이 천천히 내려갔다.', 'next': finish}
+    nodes[finish] = {'id': finish, 'type': 'return'}
