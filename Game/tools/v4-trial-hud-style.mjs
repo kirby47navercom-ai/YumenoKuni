@@ -21,7 +21,7 @@ export function applyTrialHudStyle(widget){
  node('Timer').slot.offset=[1040,653,176,36];node('Timer').properties.fontSize=27;
  node('Cylinder').slot.offset=[12,554,140,140];node('BulletPlate').slot.offset=[122,626,420,50];
  Object.assign(node('StatusLabel').properties,{text:'STATUS',fontSize:14,color:'#ffffff'});
- Object.assign(node('BulletLabel').properties,{text:'언령',fontSize:18,color:'#e9ffff'});
+ Object.assign(node('BulletLabel').properties,{text:'코토다마',fontSize:18,color:'#e9ffff'});
  node('BulletLabel').slot.offset=[155,678,260,25];
  node('Bullet').properties.fontSize=27;node('Bullet').slot.offset=[156,631,370,40];
  return applyTrialNameStyle(widget);

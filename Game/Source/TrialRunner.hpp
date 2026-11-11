@@ -2,7 +2,7 @@
 #include "SpotLayoutV4.hpp"
 #include "ArmamentIntroSourceV4.hpp"
 // 학급 재판 단계 실행기 (docs/spec/15 §4, 대본 docs/design/1Nc). Yumeno.cpp 끝에서 한 번 포함한다.
-// 단계 : 대사(개정·장면·인터럽트·휴정) / 논의(논스톱·패닉 → Debate.hpp) / 선택형(객관식·언령·지점·인물·투표)
+// 단계 : 대사(개정·장면·인터럽트·휴정) / 논의(논스톱·패닉 → Debate.hpp) / 선택형(객관식·코토다마·지점·인물·투표)
 //        / 클라이맥스 / 반론 쇼다운 / 논의 스크럼 / 이론 무장 / 섬광 애너그램 / 발굴 이매지네이션 / 브레인 드라이브
 // 위젯 좌표는 tools/create-project.mjs 의 W_Stage 와 같다.
 
@@ -125,7 +125,7 @@ void Yumeno::debateHud(bool on){
   UI::SetPosition(this,UI_ID,"NamePanel",{14,10});UI::SetSize(this,UI_ID,"NamePanel",{360,84});
   UI::SetPosition(this,UI_ID,"TrialSpeaker",{44,18});UI::SetSize(this,UI_ID,"TrialSpeaker",{290,38});
   UI::SetFont(this,UI_ID,"TrialSpeaker","Assets/Fonts/pretendard/Pretendard-Medium.otf");UI::SetFontSize(this,UI_ID,"TrialSpeaker",24); /* V3 : 얇고 넓은 자간 */UI::SetColor(this,UI_ID,"TrialSpeaker",Color{1,1,1,1});}
- for(auto id:{"Cylinder","BulletPlate","Bullet","TimerPanel","Timer","VPoint"})UI::SetVisible(this,UI_ID,id,on&&((!sourceHud&&stageKind!="nonstop")||std::string(id)=="VPoint"));UI::SetVisible(this,UI_ID,"BulletLabel",false); /* 「언령」「Kotodama」 표기 둘 다 뺀다(주인님 지시 2026-11-05) */
+ for(auto id:{"Cylinder","BulletPlate","Bullet","TimerPanel","Timer","VPoint"})UI::SetVisible(this,UI_ID,id,on&&((!sourceHud&&stageKind!="nonstop")||std::string(id)=="VPoint"));UI::SetVisible(this,UI_ID,"BulletLabel",false); /* 「코토다마」「Kotodama」 표기 둘 다 뺀다(주인님 지시 2026-11-05) */
  UI::SetVisible(this,UI_ID,"TrialBack",on);
  UI::SetVisible(this,UI_ID,"Lens",on&&!debate.panic()&&stageKind!="showdown"&&stageKind!="nonstop");
  if(!on){UI::SetVisible(this,UI_ID,"StartBand",false);UI::Remove(this,"panicphasestartv4");}
@@ -184,7 +184,7 @@ void Yumeno::focusSpeaker(const std::string& slug,const std::string& texture){
 }
 // 화자 입상을 밝은 UI 층으로 겹치는 단계(대사·논의). 쇼다운·스크럼·이론 무장·미니게임은 자기 그림이 있다
 bool Yumeno::overlayStage()const{static const std::set<std::string> no{"showdown","scrum","armament","climax","anagram","mindmine","taxi"};return !no.count(stageKind);}
-// 고르기 화면(객관식·언령·인물·지점·투표) 뒤 : 재판장 가운데에서 천천히 돌며 모두를 비춘다
+// 고르기 화면(객관식·코토다마·인물·지점·투표) 뒤 : 재판장 가운데에서 천천히 돌며 모두를 비춘다
 void Yumeno::courtWide(){courtIdle=true;speakerSeat=-3;cameraTime=1;UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);}
 court::Cam Yumeno::shotCam(int seat,float u)const{
  const bool nonstop=playingDebate&&v4TaskActive&&stageKind=="nonstop";
@@ -512,7 +512,7 @@ bool Yumeno::updateDebateIntro(float delta){
     UI::SetPosition(owner,"intro",id,{gx+size*.5f+d*std::cos(a)-w*.5f,gy+size*.5f+d*std::sin(a)-w*.5f});UI::SetSize(owner,"intro",id,{w,w});UI::SetOpacity(owner,"intro",id,1-focus);}
   }
   if(v4TaskActive&&sourceAmmo)UI::SetOpacity(owner,"intro","IntroGun",1.f-focus);
-  bool selected=!(v4TaskActive&&sourceAmmo)&&loading&&loaded>=std::min(9,count)&&focus>=.45f; /* 위 목록이 다 보이고 사라진 뒤에만(주인님 지시 2026-11-05 : 목록과 같이 있으면 안 됨) */ /* 장전이 다 끝난 뒤에만 고른 언령 이름표(주인님 지적 : 아무것도 안 했는데 미리 떠 있음) */
+  bool selected=!(v4TaskActive&&sourceAmmo)&&loading&&loaded>=std::min(9,count)&&focus>=.45f; /* 위 목록이 다 보이고 사라진 뒤에만(주인님 지시 2026-11-05 : 목록과 같이 있으면 안 됨) */ /* 장전이 다 끝난 뒤에만 고른 코토다마 이름표(주인님 지적 : 아무것도 안 했는데 미리 떠 있음) */
   svis("IntroSelectedPlate",selected);svis("IntroSelectedText",selected);
   if(selected)for(auto id:{"IntroSelectedPlate","IntroSelectedText"})UI::SetOpacity(owner,"intro",id,1.f);
  }
@@ -719,7 +719,7 @@ void Yumeno::showOptions(const std::string& question,const std::vector<std::stri
  if(spot)spotShow();
  optionHighlight();
 }
-// 고른 띠만 파랗게(V3). 언령 고르기는 오른쪽 카드·설명도 바꾼다
+// 고른 띠만 파랗게(V3). 코토다마 고르기는 오른쪽 카드·설명도 바꾼다
 void Yumeno::bladeList(){
  if(v4TaskActive&&stageKind=="showdown"&&stage.contains("showdownV4")){
   for(int i=0;i<8;i++){svis("OptP"+std::to_string(i),false);svis("OptT"+std::to_string(i),false);}
@@ -918,7 +918,7 @@ void Yumeno::setupPlay(){
  if(k=="choice"||k=="bullet"||k=="spot"||k=="person"||k=="vote"||k=="mindmine")courtWide(); // 고르는 동안 뒤에서 재판장이 천천히 돈다
  if(k=="choice"){for(auto& v:stage["options"])o.push_back(v.get<std::string>());optAnswer=stage.value("answer",0);showOptions(stage.value("question",""),o);}
  else if(k=="bullet"||k=="showdown"||k=="mindmine"){
-  /* V3 : 언령은 장마다 그 사건에서 모은 것만 쓴다. 지난 장 언령까지 101개를 돌리면 칼을 고를 수 없다(T4-RS-A03 정답이 64번째). id 의 장 표시(v4:E<장>- / v4:<장>:)가 지금 장과 다른 것은 뺀다. 표시가 없는 공통 항목은 둔다. */
+  /* V3 : 코토다마는 장마다 그 사건에서 모은 것만 쓴다. 지난 장 코토다마까지 101개를 돌리면 칼을 고를 수 없다(T4-RS-A03 정답이 64번째). id 의 장 표시(v4:E<장>- / v4:<장>:)가 지금 장과 다른 것은 뺀다. 표시가 없는 공통 항목은 둔다. */
   {auto chapterOf=[](const std::string& id){if(id.rfind("v4:E",0)==0&&id.size()>5&&std::isdigit((unsigned char)id[4])&&id[5]=='-')return id[4]-'0';if(id.size()>4&&std::isdigit((unsigned char)id[3])&&id[4]==':')return id[3]-'0';return -1;};
    if(v4TaskActive&&chapterAt>0){Json kept=Json::array();for(auto& v:stage["options"]){int c=chapterOf(v.value("id",""));if(c<0||c==chapterAt)kept.push_back(v);}if(!kept.empty())stage["options"]=kept;}}
   bladeIds.clear();for(auto& v:stage["options"]){bladeIds.push_back(v.value("id",""));o.push_back(v.value("name",""));}
@@ -937,7 +937,7 @@ void Yumeno::setupPlay(){
  if(v4TaskActive&&k=="climax"){v4TaskRoot(true);v4ComicStart();v4ComicShow();return;}
  if(k=="climax"){usedPieces.clear();filledPanel.assign(stage["panels"].size(),false);climaxOptions();}
  if((k=="showdown"||k=="armament")&&stage.contains("opponent")){auto who=stage.value("opponent","");speakerSeat=-1;focusSpeaker(who,who=="lappy"?who:poseTexture(who,"",who+(k=="armament"?"_T04":"_C12")));}
- if(k=="showdown"){sdBullet=0;sdTime=0;stext("BladeName","언령의 칼 · "+(bladeIds.empty()?std::string():stage["options"][0].value("name","")));svis("BladeName",true);svis("Blade",true);
+ if(k=="showdown"){sdBullet=0;sdTime=0;stext("BladeName","코토노하 · "+(bladeIds.empty()?std::string():stage["options"][0].value("name","")));svis("BladeName",true);svis("Blade",true);
   auto who=stage.value("opponent","");svis("SdFace",true);UI::SetTexture(this,trialui::ID,"SdFace","Assets/Art/cutin/"+who+"_2.webp");
   UI::SetVisible(this,UI_ID,"Portrait",false);UI::SetVisible(this,UI_ID,"SpeakerPodium",false);
   stext("SpkName",v4TaskActive?stage.value("opponentDisplay",nameOf(who)):nameOf(who));svis("SpkTag",true);svis("SpkName",true);bladeList();if(v4TaskActive&&stage.contains("showdownV4")){v4ShowdownStart();return;}}
@@ -1518,8 +1518,8 @@ void Yumeno::updateTrial(float delta){
  }
  if(k=="showdown"){
   auto& lines=stage["lines"];int n=int(lines.size());bool final=sdLine==n-1;
-  if(final){if(pressed("e")){sdBullet=(sdBullet+1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));bladeList();}
-            if(pressed("q")){sdBullet=(sdBullet+int(bladeIds.size())-1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","언령의 칼 · "+stage["options"][sdBullet].value("name",""));bladeList();}}
+  if(final){if(pressed("e")){sdBullet=(sdBullet+1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","코토노하 · "+stage["options"][sdBullet].value("name",""));bladeList();}
+            if(pressed("q")){sdBullet=(sdBullet+int(bladeIds.size())-1)%std::max<int>(1,int(bladeIds.size()));stext("BladeName","코토노하 · "+stage["options"][sdBullet].value("name",""));bladeList();}}
   sdTime+=delta;float dur=(final?6.f:3.6f)*(skillOn("showdown_time")?1.3f:1.f);
   float x=1280-(1280+700)*(sdTime/dur);
   stext("Blade",lines[sdLine].value("text",""));UI::SetPosition(this,trialui::ID,"Blade",{x,trialui::BLADE_Y});

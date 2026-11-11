@@ -250,7 +250,7 @@ for(const f of sceneFiles){const {source,...data}=JSON.parse(await fs.readFile(p
 await write('Assets/Data/emotion.json',JSON.parse(await fs.readFile(path.join(repo,'data/emotion_map.json'),'utf8')));
 // 진행 순서 : 프롤로그부터 (장이 늘면 여기 추가). 재판 : data/trials (tools/build_trial.py)
 await write('Assets/Data/story.json',{chapters:['P','1','2','3','4','5','6'],trials:['11c','12c'],dead:{'11c':['taiga'],'12c':['taiga','sho','yuu']}});
-// 장 진행표 (tools/build_flow.py) · 선물 · 언령 이름
+// 장 진행표 (tools/build_flow.py) · 선물 · 코토다마 이름
 for(const f of (await fs.readdir(path.join(repo,'data/flow'))).filter(f=>f.endsWith('.json')))await copy('data/flow/'+f,'Assets/Data/flow/'+f);
 await copy('data/gifts.json','Assets/Data/gifts.json');await copy('data/hotspots.json','Assets/Data/hotspots.json');await copy('data/skills.json','Assets/Data/skills.json');await copy('data/reactions.json','Assets/Data/reactions.json');
 await copy('data/kotodama.json','Assets/Data/kotodama.json'); // 이름·설명 : tools/build_trial.py · build_flow.py
@@ -295,7 +295,7 @@ for(const [dir,files] of Object.entries(fontFiles))for(const f of files)await co
 // 배경·재판장 (4차 에셋이 있으면)
 let bgs=[];try{bgs=(await fs.readdir(path.join(repo,'bg'))).filter(f=>f.endsWith('.webp'));}catch(e){if(e.code!=='ENOENT')throw e;}
 for(const f of bgs)await copy('bg/'+f,'Assets/Art/bg/'+f);
-// 언령 카드 그림 (있는 것만)
+// 코토다마 카드 그림 (있는 것만)
 let icons=[];try{icons=(await fs.readdir(path.join(repo,'ui/kotodama'))).filter(f=>/^[ETMNR]\d?-\d+.*\.png$/.test(f));}catch(e){if(e.code!=='ENOENT')throw e;}
 for(const f of icons)await copy('ui/kotodama/'+f,'Assets/Art/kotodama/'+f);
 for(const f of ['frame_evidence','frame_testimony','frame_rule_magic','frame_memo'])await copy(`ui/kotodama/${f}.png`,`Assets/Art/ui/kotodama/${f}.png`);
@@ -457,7 +457,7 @@ stretchTitleBackdrop(w);applyTrialHudStyle(w);applyTrialDialogueResponsive(w);aw
  await write('Assets/UI/DebateFX.hbwidget.json',fx);
 }
 
-// 4-2) 재판 단계 위젯 (객관식·언령 고르기·지점·인물 지목·투표·쇼다운·스크럼·이론 무장·애너그램·발굴·택시·클라이맥스). Main 위에 겹쳐 띄운다.
+// 4-2) 재판 단계 위젯 (객관식·코토다마 고르기·지점·인물 지목·투표·쇼다운·스크럼·이론 무장·애너그램·발굴·택시·클라이맥스). Main 위에 겹쳐 띄운다.
 // 좌표는 Source/TrialRunner.hpp 의 상수와 같다.
 {
  const v=createWidgetAsset('W_Stage');v.scaleMode='scale';v.scaleRule='fit';
@@ -665,7 +665,7 @@ await emitTrialInputMotionUI({repo,write,read:async file=>JSON.parse(await fs.re
  put('Text','FCredits',[140,60,1000,600],{fontSize:26,align:'center',wrap:true,color:'#efe6f4'});
  await write('Assets/UI/Flow.hbwidget.json',f);
 }
-// 4-4) 탐색 위젯 W_Explore (docs/spec/16 §1-1·§5-2) : 1인칭 방 시점·조준점·이름표·장소 띠·미니맵 / 지도(이동) / 예·아니오 / 언령 획득 / 띠 연출
+// 4-4) 탐색 위젯 W_Explore (docs/spec/16 §1-1·§5-2) : 1인칭 방 시점·조준점·이름표·장소 띠·미니맵 / 지도(이동) / 예·아니오 / 코토다마 획득 / 띠 연출
 {
  const e=createWidgetAsset('W_Explore');e.scaleMode='scale';e.scaleRule='fit';
  const put=(type,id,rect,props={},parent='root')=>{const n=createWidgetNode(type,id,parent);n.name=id;n.slot.offset=rect;Object.assign(n.properties,{text:'',font:body,fontSize:24,color:'#ffffff',background:'#00000000',padding:0,focusable:false,visible:false,...props});e.nodes.push(n);return n;};
@@ -713,7 +713,7 @@ await emitTrialInputMotionUI({repo,write,read:async file=>JSON.parse(await fs.re
  put('Text','CfText',[320,268,640,70],{font:head,fontSize:30,align:'center',wrap:true});
  put('Image','CfYesP',[380,360,220,50],{texture:'Assets/Art/ui/map_item_on.svg',imageFit:'fill'});put('Text','CfYes',[380,366,220,38],{font:head,fontSize:26,align:'center',text:'예'});
  put('Image','CfNoP',[660,360,220,50],{texture:'Assets/Art/ui/map_item.svg',imageFit:'fill'});put('Text','CfNo',[660,366,220,38],{font:head,fontSize:26,align:'center',text:'아니오'});
- // 언령 획득 : 빛 + 카드 + 이름 띠
+ // 코토다마 획득 : 빛 + 카드 + 이름 띠
  put('Panel','KShade',[0,0,1280,720],{background:'#05030acc'});
  {const n=put('Image','KGlow',[340,60,600,600],{texture:'Assets/Art/ui/kget_glow.svg',imageFit:'contain'});}
  put('Image','KFrame',[490,130,300,410],{texture:'Assets/Art/ui/kotodama/frame_evidence.png',imageFit:'fill'});

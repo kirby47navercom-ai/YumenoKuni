@@ -10,6 +10,7 @@
 #include "GlyphDisplayV4.hpp"
 #include "Courtroom.hpp"
 #include "ExploreWorld.hpp"
+#include "InvestigationV4.hpp"
 #include "StoryGraphV4.hpp"
 #include "PresentationV4.hpp"
 #include "TrialRulesV4.hpp"

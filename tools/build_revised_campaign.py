@@ -13,6 +13,7 @@ from build_v4_story import SPEAKERS
 from build_revised_mine_assets import ART as MINE_ART, archive_package_comparison, archive_slot, corridor_sightlines, door_comparison, inspection_latch_section, inspection_mines, mirror_comparison, mirror_knife_sequence, paper_comparison, theatre_pedestal, theatre_ring, theatre_section
 from revised_comic import chapter_two_comic_stage, chapter_three_comic_stage, chapter_four_comic_stage, chapter_five_comic_stage, chapter_six_comic_stage, comic_stage
 from revised_life import life_route
+from revised_investigation_flow import apply_investigation_flow
 from revised_investigation import checked_investigation, examine_document_bundles, first_investigation_close, first_photo_investigation, supplemental_inspection
 from revised_voice_polish import speech_address
 from revised_trial_bridges import apply_trial_bridges
@@ -2048,7 +2049,7 @@ def chapter_two_last_sighting(graph, scenes, tasks, records, dead, seats, tail, 
     tail = graph.lines(scene, diagram_rule+1, len(scene.body), tail)
     exits = ('v4:E205','v4:E210','v4:E211')
     tail = task('T2-BU-REV02', ref(scene, diagram_rule), {
-        'kind':'bullet','question':'작업 통로의 끝을 실제 시설과 비교하려면 어떤 언령이 필요할까?',
+        'kind':'bullet','question':'작업 통로의 끝을 실제 시설과 비교하려면 어떤 코토다마가 필요할까?',
         'answer':exits[2],'options':[{'id':key,'name':records[key][0],'text':records[key][1]} for key in exits],
     }, exits, tail, [({'optionIndex':0},'레이','그 격자가 이어지는 곳은 의상실입니다. 도면에서 표시한 바깥 통로를 보십시오.'),
                       ({'optionIndex':1},'소라','종이가 한 장 더 있었다고 그 종이 끝에 문이 생기지는 않잖아.')])
@@ -8058,6 +8059,7 @@ def main():
     chapters = {'P': prologue.compile_prologue(scenes), '1': trial, '2': second, '3': third,
                 '4': fourth, '5': fifth, '6': sixth}
     apply_trial_bridges(chapters, tasks)
+    apply_investigation_flow(chapters)
     apply_choice_dialogue(chapters, introductions=prologue.introductions)
     apply_dialogue_direction(chapters, tasks, scenes)
     free_entries = {
@@ -8143,6 +8145,8 @@ def main():
                         if answer not in options:
                             raise ValueError(f'Authored statement has no usable answer: {row["id"]}')
             pending.extend(node[key] for key in ('next', 'success', 'default') if key in node)
+            if node.get('reminder'):
+                pending.append(node['reminder']['node'])
             pending.extend(option['to'] for option in node.get('options', []))
             pending.extend(spot['entry'] for spot in node.get('spots', []))
             pending.extend(case['to'] for case in node.get('cases', []))

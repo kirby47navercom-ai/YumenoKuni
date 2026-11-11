@@ -74,7 +74,9 @@ def trace(campaign, reverse):
                 continue
             if kind == 'investigate':
                 spot = next((spot for spot in node['spots'] if (current, spot['id']) not in inspected
-                             and set(spot.get('requiresCards', [])) <= cards), None)
+                             and set(spot.get('requiresCards', [])) <= cards
+                             and all(flags.get(key, False) == value for key, value in spot.get('requiresFlags', {}).items())
+                             and (not spot.get('missingCards') or bool(set(spot['missingCards']) - cards))), None)
                 if spot:
                     inspected.add((current, spot['id']))
                     stack.append((current, {f"spot:{spot['id']}:complete": True}))

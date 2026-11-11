@@ -251,6 +251,30 @@ def write_kotodama():
         json.dump(out, f, ensure_ascii=False, indent=1)
 
 
+def player_term_text(text):
+    text = text.replace('언령의 칼', '코토노하').replace('언령', '코토다마')
+    for before, after in {
+        '코토다마이라는': '코토다마라는', '코토다마이라고': '코토다마라고',
+        '코토다마이에요': '코토다마예요', '코토다마이랑': '코토다마랑',
+        '코토다마으로': '코토다마로', '코토다마을': '코토다마를',
+        '코토다마은': '코토다마는', '코토다마이 ': '코토다마가 ', '코토다마과': '코토다마와',
+        '코토노하을': '코토노하를', '코토노하은': '코토노하는',
+        '코토노하이 ': '코토노하가 ', '코토노하과': '코토노하와',
+    }.items():
+        text = text.replace(before, after)
+    return text
+
+
+def player_terms(value):
+    if isinstance(value, list):
+        return [player_terms(item) for item in value]
+    if isinstance(value, dict):
+        return {key: (player_term_text(item)
+                      if key in {'text', 'action', 'name', 'title', 'question', 'hint', 'prompt'} and isinstance(item, str)
+                      else item if key == 'source' else player_terms(item)) for key, item in value.items()}
+    return value
+
+
 def main():
     write_kotodama()
     ids, names = known_cards()
@@ -260,7 +284,7 @@ def main():
         os.remove(old)
     for f in sorted(glob.glob(os.path.join(ROOT, "docs", "design", "1[1-6]c_*.md"))):
         chapter, stages, debates = build(f, ids, names)
-        json.dump({"stages": stages, "debates": debates}, open(os.path.join(out, chapter + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        json.dump(player_terms({"stages": stages, "debates": debates}), open(os.path.join(out, chapter + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         counts = {}
         for s in stages:
             counts[s["kind"]] = counts.get(s["kind"], 0) + 1

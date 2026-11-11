@@ -1,11 +1,11 @@
 // 래피 패드 (V3 모노패드 배치, docs/spec/16 §4·§5-2). Tab 열기/닫기, A/D·마우스 아이콘, Enter 들어가기, Backspace·우클릭 돌아가기.
-// 하위 화면 : 지도 · 언령 · 선물 · 통신부 · 교칙 · 설정. 위젯 W_Pad 좌표는 tools/create-project.mjs 와 같다.
+// 하위 화면 : 지도 · 코토다마 · 선물 · 통신부 · 교칙 · 설정. 위젯 W_Pad 좌표는 tools/create-project.mjs 와 같다.
 namespace padui {
 const char* ID="pad";
 struct Icon{const char* key;const char* title;const char* desc;Color tint;};
 const Icon ICONS[6]{
  {"map","MAP  지도","공원 지도를 확인합니다. 지금 갈 수 있는 구역이 표시됩니다.",{1,.16f,.3f,.13f}},
- {"bullet","KOTODAMA  언령","모은 언령(증거·증언·교칙·마법)을 확인합니다.",{.85f,.85f,.9f,.1f}},
+ {"bullet","KOTODAMA  코토다마","모은 코토다마를 확인합니다. 증거·증언·교칙·마법이 기록돼 있어요.",{.85f,.85f,.9f,.1f}},
  {"gift","PRESENT  선물","가지고 있는 선물을 확인합니다. 자유행동 때 줄 수 있습니다.",{.2f,.7f,1,.13f}},
  {"card","REPORT CARD  통신부","함께한 시간이 쌓인 학생들의 통신부를 확인합니다.",{1,.16f,.3f,.13f}},
  {"rules","SCHOOL RULES  교칙","래피가 정한 교칙을 확인합니다. 어기면 처벌입니다.",{.2f,.7f,1,.13f}},
@@ -162,7 +162,7 @@ void Yumeno::padShowPage(){
   if(!on)continue;ptext(t,rows[k].second);UI::SetColor(this,padui::ID,t,evidencePage&&k==padRow?Color{0,0,0,1}:Color{1,1,1,1});UI::SetTexture(this,padui::ID,p,evidencePage?(k==padRow?"Assets/Art/ui/pad_evidence_row_on.svg":"Assets/Art/ui/pad_evidence_row.svg"):(k==padRow?"Assets/Art/ui/pad_row_on.svg":"Assets/Art/ui/pad_row.svg"));
   if(evidencePage){constexpr float textY[11]{141,217,296,373,451,529,606,685,763,840,918};UI::SetPosition(this,padui::ID,p,{.6667f,81.3333f+52*i});UI::SetSize(this,padui::ID,p,{566.6667f,54});UI::SetPosition(this,padui::ID,t,{52,textY[i]*(2.f/3)});UI::SetSize(this,padui::ID,t,{514,51.3333f});UI::SetFontSize(this,padui::ID,t,std::min(30.f,500.f/std::max(1,u8len(rows[k].second))));}
  }
- if(rows.empty()){pvis("PdRowT0",true);ptext("PdRowT0",padPageAt==1?"아직 언령이 없다.":padPageAt==2?(v4.active?"선물이 없다. 자유행동 때 C 로 캡슐 머신을 돌릴 수 있다.":"선물이 없다. 자유행동 때 G 로 캡슐 머신을 돌릴 수 있다."):"없음");return;}
+ if(rows.empty()){pvis("PdRowT0",true);ptext("PdRowT0",padPageAt==1?"아직 코토다마가 없다.":padPageAt==2?(v4.active?"선물이 없다. 자유행동 때 C 로 캡슐 머신을 돌릴 수 있다.":"선물이 없다. 자유행동 때 G 로 캡슐 머신을 돌릴 수 있다."):"없음");return;}
  auto& cur=rows[padRow];std::string pic,title=cur.second,body;
  if(padPageAt==1){bool icon=false;for(auto& c:art["kotodama"])if(c.get<std::string>()==cur.first)icon=true;if(icon)pic="Assets/Art/kotodama/"+cur.first+".webp";title=kotodamaName(cur.first);body=kotodamaText(cur.first);}
  if(padPageAt==2){pic=artPath("gifts",cur.first,"gift",".webp");if(v4.active){if(v4GiftCatalog.empty())v4GiftCatalog=Data::Get("Assets/Data/v4_story/gifts.json");if(v4GiftCatalog["items"].contains(cur.first))pic=v4GiftCatalog["items"][cur.first].value("image",std::string());}title=giftName(cur.first);for(auto& g:giftData["items"])if(g.value("id","")==cur.first)body="등급 : "+g.value("tier","");}

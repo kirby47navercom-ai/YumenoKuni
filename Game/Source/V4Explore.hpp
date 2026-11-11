@@ -51,18 +51,13 @@ void Yumeno::v4FreeContinue(){
   v4Enter();
  }else v4FreeBegin();
 }
-bool Yumeno::v4SpotEligible(const Json& spot)const{
- if(spot.contains("requiresFlags"))for(auto& [key,value]:spot["requiresFlags"].items())if(!v4.flags.contains(key)||v4.flags[key]!=value)return false;
- if(spot.contains("requiresCards"))for(auto& id:spot["requiresCards"])if(!cards.count(id.get<std::string>()))return false;
- return true;
-}
+bool Yumeno::v4SpotEligible(const Json& spot)const{return investigationv4::Eligible(spot,v4.flags,cards);}
 void Yumeno::v4Investigate(){
- const auto& hub=v4.current();bool complete=true;
- if(hub.contains("requiredSpotIds"))for(auto& id:hub["requiredSpotIds"]){auto flag="spot:"+id.get<std::string>()+":complete";if(!v4.flags.value(flag,false))complete=false;}
- if(hub.contains("requiredCards"))for(auto& id:hub["requiredCards"])if(!cards.count(id.get<std::string>()))complete=false;
- if(complete&&hub.contains("next")){if(storyv4::jump(v4,hub["next"].get<std::string>()))v4Enter();return;}
+ const auto& hub=v4.current();const auto progress=investigationv4::Check(hub,v4.flags,cards);
+ if(hub.contains("reminder")){const auto& reminder=hub["reminder"];auto flag=reminder.value("flag",std::string());if(progress.cards+1==progress.totalCards&&!cards.count(reminder.value("missingCard",std::string()))&&!v4.flags.value(flag,false)){if(storyv4::jump(v4,reminder.at("node").get<std::string>()))v4Enter();return;}}
+ if(progress.complete&&hub.contains("next")){if(storyv4::jump(v4,hub["next"].get<std::string>()))v4Enter();return;}
  hideMenu();dialogVisible(false);UI::SetVisible(this,UI_ID,"Portrait",false);exworld::load(world);
- if(v4HubNode!=v4.node){v4HubNode=v4.node;v4HubPage=0;auto id=hub.value("space_id",std::string());if(id.empty()&&hub.contains("spots")&&!hub["spots"].empty())id=hub["spots"][0].value("space_id",std::string());if(!id.empty()&&world.id!=id)exworld::begin(world,id,true);}
+ if(v4HubNode!=v4.node){v4HubNode=v4.node;v4HubPage=0;auto id=hub.value("keepCurrentRoom",false)&&world.active?world.id:hub.value("space_id",std::string());if(id.empty()&&hub.contains("spots")&&!hub["spots"].empty())id=hub["spots"][0].value("space_id",std::string());if(!id.empty()&&world.id!=id)exworld::begin(world,id,true);}
  if(!world.active){auto id=hub.value("space_id",std::string());if(id.empty()&&hub.contains("spots")&&!hub["spots"].empty())id=hub["spots"][0].value("space_id",std::string());exworld::begin(world,id,true);}
  if(!world.active){v4.blocked="Investigation has no bound authored space";lastError="V4: "+v4.blocked;return;}
  mode=Mode::Explore;music(hub.value("investigationMusic",std::string(chapterAt>=5?"bgm_investigation_final":"bgm_investigation")));v4WorldPlace();
@@ -85,9 +80,7 @@ void Yumeno::v4WorldPlace(){
  for(auto& id:allowed)world.roomIds.push_back(id);
  const auto& hub=v4.current();int index=0;
  for(auto& spot:spots){
-  auto sid=spot.value("id",std::string());bool eligible=true;
-  if(spot.contains("requiresFlags"))for(auto& [key,value]:spot["requiresFlags"].items())if(!v4.flags.contains(key)||v4.flags[key]!=value)eligible=false;
-  if(spot.contains("requiresCards"))for(auto& id:spot["requiresCards"])if(!cards.count(id.get<std::string>()))eligible=false;
+  auto sid=spot.value("id",std::string());bool eligible=v4SpotEligible(spot);
   if(eligible&&spot.value("space_id","")==world.id){
    bool located=false;exworld::Point p{};auto target=spot.value("target_id",std::string());
    if(!target.empty())for(auto& t:world.spec()["targets"])if(t.value("id","")==target){p=exworld::point(t["p"]);located=true;break;}
@@ -133,15 +126,13 @@ void Yumeno::v4HubMenu(){
  auto& spots=v4.current()["spots"];v4HubChoices.clear();std::vector<std::string> labels;
  int start=v4HubPage*7;
  for(int i=start;i<std::min(start+7,int(spots.size()));i++){
-  auto& s=spots[i];auto id=s.value("id",std::string());bool eligible=true;
-  if(s.contains("requiresFlags"))for(auto& [key,value]:s["requiresFlags"].items())if(!v4.flags.contains(key)||v4.flags[key]!=value)eligible=false;
-  if(s.contains("requiresCards"))for(auto& card:s["requiresCards"])if(!cards.count(card.get<std::string>()))eligible=false;
+  auto& s=spots[i];auto id=s.value("id",std::string());bool eligible=v4SpotEligible(s);
   if(!eligible)continue;
   v4HubChoices.push_back(i);labels.push_back((v4.flags.value("spot:"+id+":complete",false)?"확인함 · ":"")+s.value("label",id));
  }
  if(start>0){v4HubChoices.push_back(-1);labels.push_back("이전 쪽");}
  if(start+7<int(spots.size())){v4HubChoices.push_back(-2);labels.push_back("다음 쪽");}
- showMenu("조사 장소",labels,MenuKind::Event);
+ showMenu(v4.current().value("objectiveRole",std::string())=="trial-gather"?"재판 엘리베이터로 이동해 탑승하세요.":"조사 장소",labels,MenuKind::Event);
 }
 void Yumeno::v4HubPick(int index,int clickedPerson){
  if(index<0||index>=int(v4HubChoices.size()))return;int spotIndex=v4HubChoices[index];

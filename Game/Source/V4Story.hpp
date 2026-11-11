@@ -193,7 +193,7 @@ void Yumeno::v4Enter(bool restoring){
     auto id=n.value("evidenceId",std::string());if(id.empty()){v4.blocked="Evidence has no authored ID";break;}
     if(n.value("revision",false)&&!v4.evidence.contains(id)){v4.blocked="Cannot revise an unacquired evidence ID: "+id;break;}
     bool fresh=!v4.evidence.contains(id);v4.evidence[id]={{"name",n.value("name",id)},{"text",n.value("text",std::string())}};cards.insert(id);
-    title=(n.value("revision",false)?"언령 갱신 · ":"언령 획득 · ")+n.value("name",id);rows=n.value("text",std::string());
+    title=(n.value("revision",false)?"코토다마 갱신 · ":"코토다마 획득 · ")+n.value("name",id);rows=n.value("text",std::string());
     auto action=n.value("revision",false)?"evidence_revised":"evidence_acquired";bool hasAction=false;
     if(n.contains("presentation")&&n["presentation"].contains("actions"))for(auto& a:n["presentation"]["actions"])if(a==action)hasAction=true;
     if(!hasAction&&!restoring&&(fresh||n.value("revision",false)))pv4::Action(presentationV4,action);
@@ -418,7 +418,7 @@ bool Yumeno::v4Load(const std::string& slot,bool archiveReplay){
   for(const auto& receipt:nextGrowth.giftReceipts)nextGiftKnown.insert(receipt.value("giftId",std::string()));
   galleryv4::State nextGallery;if(!galleryv4::restore(nextGallery,s.value("gallery",Json())))return false;galleryv4::merge(nextGallery,galleryState);
   machinev4::State nextMachine;bool nextMachineActive=s.contains("machine");if(nextMachineActive&&(!machinev4::restore(nextMachine,s["machine"],nextCoins,machinePool())||next.current().value("selectionRole",std::string())!="freetime"))return false;
-  auto nextCards=s.value("cards",std::set<std::string>{});for(auto& p:nextBonds)if(p.second<0)return false;for(auto& p:nextGifts)if(p.second<0)return false;
+  auto nextCards=s.value("cards",std::set<std::string>{});for(const auto& [id,record]:next.evidence.items())nextCards.insert(id);for(auto& p:nextBonds)if(p.second<0)return false;for(auto& p:nextGifts)if(p.second<0)return false;
   exworld::State restoredWorld;exworld::load(restoredWorld);exworld::restore(restoredWorld,s.value("world",Json::object()));
   if(next.current().value("type",std::string())=="task"){auto task=next.current().value("taskId",std::string());const auto& bundle=storyv4::bucketData(g.value("taskBucketPrefix",std::string("Assets/Data/v4_story/native_tasks/")),storyv4::bucket(task,64))["tasks"].at(task);taskv4::prepare(bundle,next.evidence);if(!pending.empty())taskv4::success(next.current(),bundle,pending.at("judgment").get<std::string>());}
   auto nextWorldId=s.value("worldId",std::string("plaza"));if(!nextWorldId.empty()&&!restoredWorld.data["instances"].contains(nextWorldId))return false;int nextPulls=std::max(0,s.value("pulls",0));

@@ -245,14 +245,14 @@ void Yumeno::band(const std::string& kind){
  if(kind=="body"){evis("Flash",true);flashTimer=.25f;} // 소리(충격 + 시체 발견 징글)는 사망 CG 이벤트에 붙어 있다(tools/sound_design.py)
  else if(kind!="invend")sfx("sfx_band");
 }
-// 언령 획득 : 빛 + 카드 + 「언령 ○○를 손에 넣었다」. 클릭할 때까지
+// 코토다마 획득 : 빛 + 카드 + 「코토다마 ○○를 손에 넣었다」. 클릭할 때까지
 void Yumeno::kotodamaGet(const std::string& id){
  for(auto x:{"KShade","KGlow","KFrame","KCard","KBand","KTitle","KMsg"})evis(x,true);
  bool icon=false;for(auto& c:art["kotodama"])if(c.get<std::string>()==id)icon=true;
  evis("KCard",icon);if(icon)UI::SetTexture(this,exui::ID,"KCard","Assets/Art/kotodama/"+id+".webp");
  std::string frame=id[0]=='T'?"frame_testimony":id[0]=='M'||id[0]=='R'?"frame_rule_magic":id[0]=='N'?"frame_memo":"frame_evidence";
  UI::SetTexture(this,exui::ID,"KFrame","Assets/Art/ui/kotodama/"+frame+".webp");
- etext("KTitle","언령 「"+kotodamaName(id)+"」");etext("KMsg",josa(kotodamaName(id),"를","을")+" 손에 넣었다!");
+ etext("KTitle","코토다마 「"+kotodamaName(id)+"」");etext("KMsg",josa(kotodamaName(id),"를","을")+" 손에 넣었다!");
  popupFrom=mode;mode=Mode::Popup;kspin=0;sfx("sfx_card");
 }
 void Yumeno::updateExplore(float delta,bool click){

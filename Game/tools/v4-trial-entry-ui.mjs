@@ -16,7 +16,7 @@ export async function emitTrialEntryUI({write}){
  add('Panel','Prep','root',full,{background:'#080c20db'});
  add('Panel','PrepRule','Prep',[96,228,1088,3],{background:'#41e4ff'});
  add('Text','PrepTitle','Prep',[100,139,610,78],{text:'변론준비',font,fontSize:64,color:'#f2faff'});
- for(const [i,label] of ['재판 시작','언령 확인','스킬 장착'].entries()){
+ for(const [i,label] of ['재판 시작','코토다마 확인','스킬 장착'].entries()){
   const id='PrepChoice'+i;
   add('Panel',id,'Prep',[770,285+i*64,390,56],{background:'#133858',borderColor:'#50dfff',borderWidth:2});
   add('Text',id+'Label',id,[28,6,340,44],{text:label,font,fontSize:31,color:'#f2faff'});
